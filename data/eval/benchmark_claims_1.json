@@ -1,0 +1,207 @@
+[
+  {
+    "query_id": "q001",
+    "query_type": "broad_synthesis",
+    "query": "What are the main advantages of silicon pixel detectors in high-energy physics experiments?",
+    "gold_answer": "Silicon pixel detectors provide fine spatial granularity, excellent vertex and tracking performance, high-rate capability, and strong radiation tolerance, making them well suited for environments with high occupancy and dense particle flux.",
+    "claims": [
+      "Silicon pixel detectors provide fine spatial granularity.",
+      "Silicon pixel detectors support precise vertexing and tracking.",
+      "Silicon pixel detectors are well suited to high-rate or high-occupancy environments.",
+      "Silicon pixel detectors can be designed for strong radiation tolerance."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "silicon pixel detector",
+      "spatial resolution",
+      "vertexing",
+      "tracking",
+      "radiation tolerance",
+      "occupancy"
+    ]
+  },
+  {
+    "query_id": "q002",
+    "query_type": "broad_synthesis",
+    "query": "What are the main trade-offs between hybrid pixel detectors and monolithic pixel detectors?",
+    "gold_answer": "Hybrid pixel detectors offer mature high-performance readout and radiation hardness, but they require sensor-readout interconnection such as bump bonding and usually have higher material and assembly complexity. Monolithic pixel detectors reduce material and integration complexity by combining sensing and electronics in one substrate, but their performance, radiation tolerance, and timing capability depend strongly on the technology node and detector design.",
+    "claims": [
+      "Hybrid pixel detectors use separate sensor and readout electronics.",
+      "Hybrid pixel detectors often require bump bonding or similar interconnection.",
+      "Monolithic pixel detectors integrate sensing and readout electronics more closely.",
+      "Monolithic pixel detectors can reduce material budget and assembly complexity.",
+      "Technology choices strongly affect radiation and timing performance in monolithic pixels."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "hybrid pixel",
+      "monolithic pixel",
+      "bump bonding",
+      "material budget",
+      "radiation hardness",
+      "timing"
+    ]
+  },
+  {
+    "query_id": "q003",
+    "query_type": "broad_synthesis",
+    "query": "Why are 3D silicon pixel sensors attractive for radiation-hard environments?",
+    "gold_answer": "3D silicon pixel sensors place electrodes inside the bulk, reducing carrier drift distance and allowing lower depletion voltage. These features improve charge collection and operational robustness after high irradiation, which makes 3D architectures attractive in radiation-hard tracking systems.",
+    "claims": [
+      "3D silicon sensors place electrodes inside the sensor bulk.",
+      "3D geometry reduces carrier drift distance.",
+      "3D silicon sensors can operate at lower depletion voltage.",
+      "Reduced drift distance helps charge collection after irradiation."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "3D silicon sensor",
+      "drift distance",
+      "depletion voltage",
+      "irradiation",
+      "charge collection"
+    ]
+  },
+  {
+    "query_id": "q004",
+    "query_type": "broad_synthesis",
+    "query": "What factors determine the spatial resolution of silicon pixel detectors?",
+    "gold_answer": "The spatial resolution of silicon pixel detectors depends on pixel pitch, charge sharing, sensor thickness, incidence angle, threshold settings, diffusion, and the cluster reconstruction algorithm. Good charge sharing and well-tuned reconstruction can improve resolution beyond the binary limit set by pixel pitch alone.",
+    "claims": [
+      "Pixel pitch influences spatial resolution.",
+      "Charge sharing influences spatial resolution.",
+      "Threshold and clustering algorithms affect spatial resolution.",
+      "Sensor thickness and incidence angle can modify charge sharing and therefore resolution.",
+      "Resolution can improve beyond the binary limit when charge sharing is exploited."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "pixel pitch",
+      "charge sharing",
+      "threshold",
+      "sensor thickness",
+      "incidence angle",
+      "clustering"
+    ]
+  },
+  {
+    "query_id": "q005",
+    "query_type": "broad_synthesis",
+    "query": "What are the main challenges in achieving precise timing with silicon pixel detectors?",
+    "gold_answer": "Precise timing in silicon pixel detectors is limited by electronic jitter, signal amplitude variations, sensor thickness, charge collection time, front-end bandwidth, time walk, and readout architecture. Achieving good timing therefore requires both suitable sensor design and fast low-noise electronics.",
+    "claims": [
+      "Electronic jitter limits timing precision.",
+      "Signal amplitude variations can degrade timing.",
+      "Charge collection time influences timing precision.",
+      "Front-end electronics and readout architecture are important for precise timing."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "timing",
+      "jitter",
+      "time walk",
+      "charge collection time",
+      "front-end electronics"
+    ]
+  },
+  {
+    "query_id": "q006",
+    "query_type": "precise_fact",
+    "query": "How does charge sharing improve spatial resolution in silicon pixel detectors?",
+    "gold_answer": "Charge sharing improves spatial resolution because the deposited charge is distributed across neighbouring pixels, allowing interpolation from the cluster pattern instead of assigning the hit to a single pixel centre.",
+    "claims": [
+      "Charge sharing spreads deposited charge over more than one pixel.",
+      "Cluster information can be used to interpolate hit position.",
+      "Interpolation can improve resolution beyond a purely binary assignment."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "charge sharing",
+      "cluster",
+      "interpolation",
+      "spatial resolution"
+    ]
+  },
+  {
+    "query_id": "q007",
+    "query_type": "precise_fact",
+    "query": "Why does smaller pixel pitch generally improve two-track separation?",
+    "gold_answer": "Smaller pixel pitch improves two-track separation because finer segmentation reduces hit merging and makes it easier to distinguish nearby particle trajectories in dense environments.",
+    "claims": [
+      "Smaller pixel pitch gives finer segmentation.",
+      "Finer segmentation reduces hit merging.",
+      "Reduced merging improves two-track separation."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "pixel pitch",
+      "two-track separation",
+      "segmentation",
+      "hit merging"
+    ]
+  },
+  {
+    "query_id": "q008",
+    "query_type": "precise_fact",
+    "query": "How does irradiation affect depletion voltage and charge collection in silicon pixel sensors?",
+    "gold_answer": "Irradiation can change effective doping, typically increasing the depletion voltage needed for full depletion and degrading charge collection because of trapping and other damage effects.",
+    "claims": [
+      "Irradiation changes the effective sensor properties relevant to depletion.",
+      "Irradiation can increase the depletion voltage needed for operation.",
+      "Irradiation can degrade charge collection due to trapping or damage."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "irradiation",
+      "depletion voltage",
+      "charge collection",
+      "trapping"
+    ]
+  },
+  {
+    "query_id": "q009",
+    "query_type": "precise_fact",
+    "query": "Why can 3D silicon sensors operate at lower depletion voltage than planar sensors?",
+    "gold_answer": "3D silicon sensors can operate at lower depletion voltage because the electrode spacing is decoupled from the full sensor thickness, so depletion occurs over a much shorter distance than in planar geometries.",
+    "claims": [
+      "In 3D silicon sensors the relevant electrode spacing is shorter than the full thickness.",
+      "Shorter depletion distance reduces the required depletion voltage.",
+      "This distinguishes 3D from planar sensor operation."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "3D silicon sensor",
+      "planar sensor",
+      "electrode spacing",
+      "depletion voltage"
+    ]
+  },
+  {
+    "query_id": "q010",
+    "query_type": "precise_fact",
+    "query": "What is the role of threshold and noise performance in hit efficiency for silicon pixel readout?",
+    "gold_answer": "Threshold and noise performance determine whether small signals can be detected reliably. If the threshold is too high or the noise too large, genuine hits may be missed, reducing hit efficiency and worsening cluster formation.",
+    "claims": [
+      "Threshold determines whether small signals are registered.",
+      "Noise affects reliable hit detection.",
+      "High threshold or poor noise performance can reduce hit efficiency."
+    ],
+    "gold_chunk_ids": [],
+    "gold_sources": [],
+    "gold_entities": [
+      "threshold",
+      "noise",
+      "hit efficiency",
+      "cluster formation"
+    ]
+  }
+]
