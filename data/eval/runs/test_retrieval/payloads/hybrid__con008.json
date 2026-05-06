@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "con008",
+    "query_type": "conceptual",
+    "query": "Why can BM25 be strong in technical detector corpora?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "BM25"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why can BM25 be strong in technical detector corpora?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 825,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi.md",
+        "title": "2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi",
+        "text": "Detector (MTD) will be constructed as\n\npart of the upgrade of the CMS experiment to provide a time resolution for single charged tracks\n\nin the range of 30 − 60 ps using LYSO:Ce crystal arrays read out with Silicon Photomultipliers\n\n(SiPMs). A major challenge for the operation of such a detector is the extremely high radiation\nlevel, of about 2 × 10 [14] 1 MeV(Si) Eqv. n/cm [2], that will be integrated over a decade of operation\n\nof the High Luminosity Large Hadron Collider (HL-LHC). Silicon Photomultipliers exposed to\n\nthis level of radiation have shown a strong increase in dark count rate and radiation damage effects\n\nthat also impact their gain and photon detection efficiency. For this reason during operations the\n\nwhole detector is cooled down to about −35 [◦] C . In this paper we illustrate an innovative and\n\ncost-effective solution to mitigate the impact of radiation damage on the timing performance of the\n\ndetector, by integrating small thermo-electric coolers (TECs) on the back of the SiPM package.\n\nThis additional feature, fully integrated as part of the SiPM array, enables a further decrease in\n\noperating temperature down to about −45 [◦] C. This leads to a reduction by a factor of about two in\n\nthe dark count rate without requiring additional power budget, since the power required by the TEC\n\nis almost entirely offset by a decrease in the power required for the SiPM operation due to leakage\n\ncurrent. In addition, the operation of the TECs with reversed polarity during technical stops of the\n\naccelerator can raise the temperature of the SiPMs up to 60 [◦] C (about 50 [◦] C higher than the rest of\n\nthe detector), thus accelerating the annealing of radiation damage effects and partly recovering the\n\nSiPM performance.\n\nKeywords: SiPMs, Thermo-Electric Coolers, Radiation Damage, Cooling, Timing Detectors\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Radiation damage and thermal annealing effects on SiPMs** **3**\n\n**3** **Integration of TECs into SiPM arrays and proof-of-principle** **6**\n\n**4** **TEC characterization and optimization** **8**\n\n**5** **Simulation of TEC performance in BTL modules** **11**\n\n**6** **Uniformity, radiation tolerance and longevity tests** **12**\n\n**7** **Conclusions** **14**\n\n**1** **Introduction**\n\nThe CMS detector is planning for a major upgrade during the long shutdown (LS3) which will start\n\naround 2026. The upgrade will allow the detector to maintain its event reconstruction capabilities\n\nduring the High Luminos",
+        "score": -1.8093191769387988,
+        "dense_score": null,
+        "bm25_score": 16.225696769538693,
+        "graph_score": 0.0,
+        "rerank_score": -2.7921149730682373,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4916,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "## Direct Comparison of SiPM and PMT Sensor Performances in a large-size imaging air Cherenkov telescope\n\nA. Hahn a,b,∗, R. Mirzoyan a, A. Dettlaff a, D. Fink a, D. Mazin a,c, M. Teshima a,c\n\n_a_ _Max Planck Institute for Physics (Werner-Heisenberg-Institut), Boltzmannstr. 8, 85748 Garching, Germany_\n_b_ _Physics Department, Technical University Munich, James-Franck-Str. 1, 85748 Garching, Germany_\n_c_ _Institute for Cosmic Ray Research, The University of Tokyo, 5-1-5 Kashiwa-no-Ha, Kashiwa City, Chiba, 277-8582, Japan_\n\n**Abstract**\n\nThe peak photon detection efficiency (PDE) of silicon photomultipliers (SiPMs) can be as good or better than the PDE of\nphotomultiplier tubes (PMTs). There are experiments where the signal is measured in the presence of a strong, steady background\nlight emission. In these, one needs to accurately evaluate the signal-to-noise ratio. Imaging Atmospheric Cherenkov Telescopes\n(IACTs) observe in the presence of strong noise induced by the light of the night sky. It is certainly interesting to investigate the\nSiPM performance under operational conditions of IACTs and to compare it with that of the PMTs.\nFor that purpose, we built a SiPM-based detector module, which was installed in one of the imaging cameras of the two Major\nAtmospheric Gamma-ray Imaging Cherenkov (MAGIC) telescopes in 2015. The experience gained from that module was used to\ndesign the second generation of modules of improved performance. Two such modules were installed in 2017.\nMAGIC is a system of two IACTs located on the Canary Island of La Palma. The mechanical structure of the MAGIC imaging\ncameras offers the possibility to install up to 6 additional detector modules of 7 pixels each into the open vertices of the\nhexagonal-shaped camera. This allows us to directly, without making any assumption, compare the performance of the PMT-based\nmodules with that of the SiPM-based prototype modules, where SiPMs from three different manufacturers are used.\n\n_Keywords:_ SiPM, PMT, Low Light Level sensor, Multi-pixel avalanche photodiode, Calibration, IACT\n\n**1. Introduction**\n\nImaging Atmospheric Cherenkov Telescopes (IACT) capture faint images in Cherenkov light, lasting a few nanoseconds. These are produced in the atmosphere by very highenergy cosmic and gamma rays [1]. Currently, the cameras\nof all relatively large-size IACTs are based on classical Photo\nMultiplier Tubes (PMTs) as light detectors [2–6]. SiPMs\nare being considered for the next generation of cameras for",
+        "score": -2.7585140228271485,
+        "dense_score": null,
+        "bm25_score": 16.131050735235988,
+        "graph_score": 0.0,
+        "rerank_score": -4.252281188964844,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2247,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device.md",
+        "title": "2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device",
+        "text": "semiconductor, has been\ninvestigated as a detector material for nearly 20 years[9]. In recent years, SiC\nhas received more attention due to the interest of semiconductor industries\n\nSpringer Nature 2021 L [A] TEX template\n\n_Design and simulation of a novel 4H-SiC LGAD timing device_ 3\n\nin the renewable energy revolution, leading to broader application in powerefficient transistors, photovoltaic inverters and electric vehicle drive trains, etc.\nCompared with silicon, SiC has higher band-gap and atomic displacement,\nwhich leads to its strong potential for irradiation resistance[10]. In addition,\nthe higher breakdown electric field, saturated electron drift velocity and thermal conductivity mean that a SiC detector would have a faster time response\nand lower temperature sensitivity[11]. Zhang’s group reported a 4H-SiC detector with a time response of 117 ps to alpha particles[12]. However, there are\nvery few reports on the time response of Minimum Ionizing Particles (MIPs).\nWe have investigated the time performance of a 4H-SiC PIN detector with\na thickness of 100 _µm_, and the time resolution of MIPs is 94 ps[13]. It is\nnoteworthy that the average ionization rates of electron-hole pairs of MIPs in\n4H-SiC and Si are 55 pairs/ _µm_ and 75 pairs/ _µm_, respectively, which means\nthat the response of the 4H-SiC detector is less than that of the Si detector.\nAt present, the main problem of Si-based LGAD is the reduction of timing\nperformance caused by high-intensity irradiation. Once 4H-SiC has the excellent timing performance of LGAD, combined with its irradiation resistance\nand temperature stability, 4H-SiC LGAD will be a candidate for high pileup,\nhigh radiation environment and stable operation at room temperature.\nIn this work, a novel 4H-SiC LGAD timing device was designed by adjusting\nthe doping concentration and epitaxial structure using the RAdiation SEmiconductoR (RASER) software, and its electrical characteristics were simulated.\nThe design of the technical process has also been carried out and RASER is\nfurther used to simulate the time resolution of the 4H-SiC LGAD. The time\n\nresolution of the 4H-SiC LGAD designed by adjusting the thickness and doping concentration is basically the same as that of the Si-based LGAD detector\n(34 ps)[14], which is obviously superior to the corresponding PIN device[13].\n\n### **2 Design scheme of 4H-SiC LGAD**\n\nIn this work, the design scheme of 4H-SiC LGAD will be introduced from\ntwo aspects: epitaxial structure and techni",
+        "score": -2.902364696673493,
+        "dense_score": null,
+        "bm25_score": 15.685738777487032,
+        "graph_score": 0.0,
+        "rerank_score": -4.473213195800781,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6807,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment.md",
+        "title": "2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment",
+        "text": "cation detectors include Time-of-Flight (ToF)\nsystems ToF 400 and ToF 700, based on multi-gap resistive plate chamber (mRPC) technology, enabling hadron (pi, K, p) and light nuclei separation with momentum up to a\nfew GeV/c. The collision geometry detectors consist of the Forward Hadron Calorimeter\n(FHCal), the Forward Quartz Hodoscope (FQH) and the Scintillation Wall (ScWall) used\nto estimate centrality and reaction plane of the collision. The trigger system contains\nthe barrel detector together with the group of beam detectors producing trigger signal\nfor the DAQ of the BM@N.\n\nFigure 1: Schematic view of the BM@N experiment. The legend has list of sub-detectors [15].\n\nTaking into account the available space to place the HGND at BM@N experimental\narea, two options are considered. The possible positions of the HGND are shown in Fig. 2.\nAt position (1) the distance from the target is 5 m and at position (2) the distance is 7\nm. At these positions the angles of the HGND relative to the incident direction of the\nion beam are 17 and 10 degrees, correspondingly. In order to compensate the decreasing\nof detector acceptance at larger distance, the HGND positioned at 7 m is proposed to be\ndivided into two parts (”arms”) placed out of the horizontal plane. The side view of the\nHGND options at the BM@N is shown in Fig. 2 (right).\nThe HGND concept positioned at 5m from the target includes 16 alternating active\nlayers with 121 scintillator cells grouped in an 11×11 array, with copper absorber plates\nof 3 cm thickness placed in between [16]. The first scintillation layer will be used as\na VETO detector for charged particles. As already mentioned, each module of the ”2arms” HGND positioned at 7m is shorter and consists of 8 scintillator layers with copper\nabsorber in between. The HGND module schematic view is shown in Fig. 3 (left). The\narray of scintillators is assembled in a common support frame (Fig. 3, right). The cells\n\n3\n\nFigure 2: Left (a): Top view of position options for the HGND at BM@N experimental area. Position\n1 (red box) is for 16 layers single module option. Position 2 (blue boxes) is for ”2-arms” option. Right\n(b): The side view of the single and ”2-arms” options of the HGND at the BM@N.\n\nFigure 3: Left: schematic view of HGND structure. Right: The HGND active layer view.\n\n4\n\nare made up of 4 _×_ 4 _×_ 2 _._ 5 _cm_ [3] plastic scintillators based on polystyrene with additions of\n1.5% paraterphenyl and 0.01% POPOP. This plastic scintillator, with a light",
+        "score": -3.1953033879597985,
+        "dense_score": 0.4148057699203491,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.923030853271484,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4913,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter.md",
+        "title": "2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter",
+        "text": "plied to the data. The time resolution at _𝑃_ _density_ = 0.9 W/cm [2]\n\nand HV = 200 V was measured to be (20.0 ± 1.0) ps before proton irradiation. At the highest proton\nfluence studied of 1 × 10 [16] n eq /cm [2], the time resolution became (53.1 ± 3.4) ps. An increase of the\nsensor bias voltage to HV = 300 V improved the result to (45.3 ± 1.6) ps.\nThe scan in sensor bias voltage of the board exposed to 1 × 10 [16] n eq /cm [2], showed that the\nplateau in detection efficiency was just reached at 300 V, while the time resolution did not yet reach\n\nits plateau value. These observations, supported by an estimation of the change in resistivity after\n1 × 10 [16] n eq /cm [2], imply that the sensor was not yet fully depleted at 300 V and suggest that the\nnominal working point at that proton fluence is beyond 300 V.\n\nIn conclusion, this study gives first hints that an amplifier using SiGe HBT is not affected\ngreatly by doses up to 1 × 10 [16] n eq /cm [2] . The data show that very high efficiency, very high time\nresolution and radiation tolerance can be obtained by monolithic pixelated silicon detectors without\n\ninternal gain layer that exploit low noise, low power and fast response SiGe HBTs. Commercial\n\nSiGe BiCMOS foundry processes therefore represent a very strong candidate to build monolithic\n\nsilicon detectors for 4D tracking systems at future colliders at a contained cost.\n\n**Acknowledgments**\n\nThis research is supported by the Horizon 2020 MONOLITH ERC Advanced Grant ID: 884447.\n\nThe authors wish to thank Coralie Husi, Javier Mesa, Gabriel Pelleriti, and the technical staff\n\nof the University of Geneva and IHP Microelectronics. The authors acknowledge the support of\n\nEUROPRACTICE in providing design tools and MPW fabrication services, as well as the CERN\n\nSPS testbeam team.\n\n– 13 –\n\n**References**\n\n[1] ATLAS Collaboration. Technical Design Report: A High-Granularity Timing Detector for the\nATLAS Phase-II Upgrade. _CERN-LHCC-2020-007; ATLAS-TDR-031_, June 2020.\n\n[2] CMS Collaboration. A MIP Timing Detector for the CMS Phase-2 Upgrade.\n\n_CERN-LHCC-2019-003; CMS-TDR-020_, March 2019.\n\n[3] G. Pellegrini et al. Technology developments and first measurements of Low Gain Avalanche\nDetectors (LGAD) for high energy physics applications. _Nuclear Instruments and Methods Section A_,\n765:12–16, 2014. Proceedings of the HSTD-9 2013 \"Hiroshima\" Symposium.\n\n[4] Hartmut F-W Sadrozinski, Abraham Seiden, and Nicolò Cartiglia. 4D tracking with ultra-fast silicon\ndetectors",
+        "score": -3.4630353158520113,
+        "dense_score": null,
+        "bm25_score": 16.569755820739477,
+        "graph_score": 0.0,
+        "rerank_score": -5.336431503295898,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 832,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi.md",
+        "title": "2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi",
+        "text": "sitive temperature gradient between the SiPM and the copper housing of about 50 [◦] C such that\n\na temperature of the SiPM of about 60 [◦] C can be reached. This way, high temperature annealing\n\ncan be performed exploiting the HL-LHC technical stops and long shutdowns, with beneficial\n\nimpact on the dark count rate and the timing performance. The expected dark count rate for one\n\nSiPM operated at 1 V over-voltage is shown in figure 5, throughout the entire detector operation\n\nand for a few different scenarios of the operating and annealing temperature. The decrease of\n\noperating temperature has obviously a large impact but also does the possibility to increase the\n\ndetector temperature during technical stops from −35 [◦] C to 10, 40 or 60 [◦] C . For instance, annealing\n\nat 60 [◦] C yields approximately a 50% lower dark count rate compared to annealing at 40 [◦] C for a\n\n– 5 –\n\n**Figure 5** . Evolution of dark count rate at fixed operating over-voltage of 1 V throughout the detector\noperation assuming the current baseline running plan of the HL-LHC [12] and for different scenarios of SiPM\ntemperature during operation (T op ) and during technical stops (T ann ) when annealing can be accelerated.\n\nmaximum of 10 GHz instead of 15 GHz at the end of detector operation.\n\nThe inclusion of small thermo-electric coolers on the back of the SiPM package thus represents\n\nan excellent tool to exploit both the radiation damage annealing and dark count reduction at lower\n\ntemperature to enable SiPM operation at the unprecedented radiation levels of the MTD.\n\n**3** **Integration of TECs into SiPM arrays and proof-of-principle**\n\nA BTL SiPM array consists of a 16-channel linear array with a 3.2 mm pitch and a height of about\n\n3.0 mm. The total width of the package is 51.5 mm and the height is about 6.5 mm to house the\n\nSiPMs and their wire bondings. A flex cable is soldered on the rear side of the package to connect\n\nthe individual SiPMs to the electronics (as also bias voltage is provided). An RTD is soldered in the\n\ncenter of the package below the flex cable as shown in figure 6 to monitor the operating temperature.\n\nDriven by the environmental challenges discussed in the previous section, a series of small\n\nthermo-electric coolers (TECs) based on Bismuth Sesquitelluride (Bi 2 Te 3 ) have also been included\n\nas an integrated component of the SiPM package. The TECs are re-flow soldered at 220 [◦] C to the\n\nrear side of the SiPM package on dedicated solder pads. The TECs s",
+        "score": -3.60172839694553,
+        "dense_score": null,
+        "bm25_score": 15.035267152989073,
+        "graph_score": 0.0,
+        "rerank_score": -5.5485992431640625,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5380,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2819330__2408.09470__Rapid_quench_annealing_of_Er_implanted_Si_for_quantum_networking_applications.md",
+        "title": "2024__recid_2819330__2408.09470__Rapid_quench_annealing_of_Er_implanted_Si_for_quantum_networking_applications",
+        "text": "h site A and B, and DC 950 SL can be arranged in a sequence,\n\nas shown in Fig. 4, along with the fitting of these with orthorhombic CFPs. All of these were\n\nreasonably well reproduced, with Gritsch site A being a particularly good fit. Measured Gritsch sites\nA and B exhibited only six levels in the [4] I 15/2 manifold, which could be due to the long wavelength\ncutoff of the detection system used in their experiments. By allowing two levels in the [4] I 15/2 to vary\n\nfreely, the fits predict the position of the two longest wavelength PL peaks. Our proposed RTA 950\ncrystal field splitting is also shown. The first excited Stark level of the [4] I 13/2 manifold was determined\nfrom the 2 [nd] derivative of the 65 K PL spectrum in Fig. 1 d) and corresponds to hot line, HL1. The hot\n\nline, HL2 transition would approximately overlap with the main PL peak, which explains why it was\n\nnot observed, and could explain the shift and excessive thermal broadening of the main PL peak, as\nshown in Fig 1 d). The hot line, HL3 transition corresponds to the 6476 cm [-1] peak in Fig. 1 d), and is\n\nconsistent with hot line, HL1.\n\nThe RTA 950 splitting could not be put in the same sequence as the Gritsch A, B and DC 950\n\nSL levels, but it does closely match the Stark splitting of Er 2 O 3 [39], which has an almost identical\n\nsplitting to Er doped Y 2 O 3 [40] in C 2 sites, and in both of these materials, Er is 6 fold coordinated to\nO. The missing level at ~155 cm [-1] may not have been resolved because of inadequate spectral\nresolution. Additional peaks at 295 and 345 cm [-1] can be attributed to Er in different sites, which was\n\nalso observed in Er doped Y 2 O 3 [40]. Because of the strong similarity, we propose that the emission\n\npeaks in the RTA 950 spectrum originate from the same six-fold O coordinated Er centre, with C 2\n\nsymmetry as that observed in Er 2 O 3 and Er:Y 2 O 3 . The splitting of Er:Y 2 O 3 was previously fitted to the\n\n14 CFPs of the C 2 point group [40], but for consistency with our fitting to Gritsch A, B and DC 950, we\n\nfitted with the 9 CFPs of C 2v, of which C 2 is a subgroup.\n\n4 I\n13/2\n\n6900\n\n6800\n\n6700\n\n6600\n\n6500\n\n500\n\n400\n\n300\n\n4 I\n15/2\n\n200\n\n100\n\n0\n\n|Col1|Measured Orthorhombic fit|\n|---|---|\n||1<br>3<br>2<br>Hot lines|\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n\n_Fig. 4 Measured crystal field splitting and orthorhombic fit to Gritsch site A and B [2] DC 950 SL, RTA_\n\n_950 (this work) and Er:Y_ _2_ _O_ _3_ [40]. _Blue arrows indicate the trend in monotonic shift",
+        "score": -3.8153903195352266,
+        "dense_score": null,
+        "bm25_score": 15.685969701521152,
+        "graph_score": 0.0,
+        "rerank_score": -5.877989768981934,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6981,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2873914__2501.17339__Multiplexed_color_centers_in_a_silicon_photonic_cavity_array.md",
+        "title": "2025__recid_2873914__2501.17339__Multiplexed_color_centers_in_a_silicon_photonic_cavity_array",
+        "text": "individually addressable\nin frequency for multiplexed operation.\nThis platform could also be used for the scalable generation of entanglement between color centers on-chip.\nThe inherent sharing of spatial modes between separate\nT centers in this platform enables direct interference in\nthe frequency domain [26]. By leveraging silicon photonics components such as switches [34, 35], single-photon\ndetectors [36, 37], and modulators [38, 39], on-chip entanglement generation could be achieved with high efficiency.\nThe quality of individual nodes is critical to achieving high success rates in heralded entanglement generation. The quality of the optical interface is characterized by the cooperativity _C_ = 4 _g_ [2] _/_ ( _κγ_ ), where _g_ is the\nemitter-cavity coupling, _κ_ is the cavity linewidth, and\n_γ_ is the emitter linewidth. We estimate cooperativities\nranging from 0 _._ 5 _×_ 10 _[−]_ [3] to 3 _._ 5 _×_ 10 _[−]_ [3] in our device, limited by broad cavity linewidths and emitter linewidths\nincluding power broadening. Several approaches can be\ntaken in improving the cooperativity. Cavity linewidths\ncan be reduced through lower implantation densities\nand optimized fabrication, and emitter linewidths can\nbe decreased with environment engineering through active electronics [40, 41]. With realistic improvements of\n_κ/_ 2 _π_ = 500 MHz and _γ/_ 2 _π_ = 5 MHz [19, 24], cooperativities exceeding 10 could be achieved. With sufficiently\nhigh cooperativities _C ∼_ 100, on-chip entanglement between emitters could be achieved by leveraging the strong\nand tunable interactions between cavities in this platform [42]. The addition of photonic phase shifters can dynamically control the cavity hybridization to tailor longrange coherent and dissipative interactions [43, 44].\n**Acknowledgments.** We thank Yiyang Zhi, Zihuai\nZhang, Xudong Li, and Niccolo Fiaschi for technical\nassistance. This work was supported by the Office of\nAdvanced Scientific Computing Research (ASCR), Office of Science, U.S. Department of Energy, under Contract No. DE-AC02-05CH11231 and Berkeley Lab FWP\nFP00013429. L.K. and A.S acknowledge support from\nthe NSF (QLCI program through grant number OMA2016245, and Award No. 2137645). X.Z. acknowledges\nsupport from the Miller Institute for Basic Research in\nScience. The devices used in this work were fabricated\nat the Berkeley Marvell NanoLab.\n\n[1] S. Muralidharan, L. Li, J. Kim, N. L¨utkenhaus, M. D.\nLukin, and L. Jiang, Optimal architectures for long\n[distanc",
+        "score": -3.8406297613592706,
+        "dense_score": null,
+        "bm25_score": 15.459730496477999,
+        "graph_score": 0.0,
+        "rerank_score": -5.916579723358154,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3943,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2745344__2401.05087__Lowering_the_energy_threshold_using_a_plastic_scintillator_and_radiation-damaged_SiPMs.md",
+        "title": "2024__recid_2745344__2401.05087__Lowering_the_energy_threshold_using_a_plastic_scintillator_and_radiation-damaged_SiPMs",
+        "text": "er the energy threshold to approximately 34% (from\n128 keV to 43 keV) compared to that of at 20 [◦] C. Accordingly, we conclude\nthat the energy threshold can be lowered to approximately 15% by using a\ncombination of these three methods.\n\nKeywords: Gamma-ray Detector; Plastic Scintillator; Silicon\nPhotomultiplier (SiPM, MPPC); Coincidence; Current Waveform\n\nAmplifier; Low Temperature\n\n1. Introduction\n\nIn soft gamma-ray observations, the entire detector is generally surrounded\nby an active shield that can effectively reduce potential background events using an anti-coincidence technique. Recent soft gamma-ray observation satellites often use Be 4 Ge 3 O 12 (BGO) inorganic scintillators as an active shield,\nthat facilitate high-sensitivity observations due to their high blocking capacity against gamma rays and charged particles[1]. However, BGO has the\ndisadvantages of heavy mass and slow decay time, which is in the range of\nseveral hundred ns. Organic plastic scintillators, which are composed of C\nand H, are approximately one-seventh the density of BGO, low-cost, and exhibit a fast decay time of several ns. Additionally, the light yield of plastic\nscintillator is similar to that of BGO. Ce:Gd 3 Al 2 Ga 3 O 12 (GAGG) exhibits\na large light yield, however BGO and GAGG are heavy and thus not suitable for CubeSats. For example, in the case of 1U CubeSat, if we use BGO\nplates with dimensions of 10cm × 10cm × 3cm, five plates are required to\ncover; hence, the weight of CubeSat becomes 10 kg. This weight will limit\nthe resources allocated for other subsystems onboard the satellite. A lighter\nscintillator is better for satellite attitude control or orbit control. As a re\nsult, detectors combining a plastic scintillator and a silicon photomultiplier\n(SiPM) are suitable for small satellites such as the CubeSats. However, the\nproblem with this setup is that when SiPMs are in the satellite orbit, dark\ncurrent is bound to increase drastically due to the radiation damage caused\nby cosmic rays, especially by protons[2][3]. Therefore, the present study attempts to address this issue by lowering the energy threshold of a detector\nconsisting of a plastic scintillator and radiation-damaged SiPMs. In this\npaper, we define the energy threshold as the limit below which cannot be\ndetected.\n\nFirst, the plastic scintillator has a short decay time of several ns and\nnoise has various time scales; hence, the signal to noise ratio of the pulse\nheight is larger for the SiPM raw output th",
+        "score": -3.8484403636720446,
+        "dense_score": 0.4432176947593689,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.929224491119385,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7519,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2964877__2509.06791__Toward_Axion_Signal_Extraction_in_Semiconductor_Spin_Qubits_via_Spectral_Engineering.md",
+        "title": "2025__recid_2964877__2509.06791__Toward_Axion_Signal_Extraction_in_Semiconductor_Spin_Qubits_via_Spectral_Engineering",
+        "text": "ange of our method. In\naddition, strong spin–orbit coupling and magnetic field\neffects arising from gauge terms can tilt the spin quantization axis. Therefore, the spin dynamics in hole systems\nare expected to be more complex, potentially leading to\ndistinct modulation patterns in the spin response.\nPost-filter spectral analysis demonstrates that the dynamic SNR near the sideband can reach up to 20dB,\nunderscoring the efficacy of our method for 5 _σ_ highsensitivity axion searches. Notwithstanding the comprehensive noise model (cf. Table III), the observed SNR\nmay be artificially elevated due to several factors. First,\nthe parametric noise model may not fully capture all realworld noise sources, such as ambient temperature fluctuations, radio-frequency leakage, and impedance mismatches at critical device interfaces, which can result in\nresidual technical noise. Second, non-idealities in the actual passband response of the filtering chain and lock-in\ndetection stages can result in overestimated noise suppression, and also the non-ideality of the measurement\napparatus. Finally, calibration uncertainties in amplifier\ngain and systematic biases introduced by the choice of\nwindow functions and overlap strategies during Fourier\nanalysis can further inflate the apparent dynamic SNR.\nCompared to the previous work in superconducting\nsystems, spin qubits offer excellent tunability and control\nvia both electric and magnetic fields, making them a versatile platform for scanning a wide range of resonant frequencies that could coincide with potential axion signals.\nTheir relatively long coherence times, compared to other\nsolid-state qubits, enhance sensitivity to weak axioninduced perturbations. Moreover, the compatibility of\nsemiconductor spin qubits with existing CMOS fabrication techniques enables large-scale integration, paving\nthe way for the development of array-based sensor networks for high-sensitivity axion detection.\nHowever, we emphasize that although our method can\nbe adapted to various spin qubit platforms, the inherently weak interaction between axions and conventional\nmatter still requires ultra-low-noise environments and\ncryogenic operating temperatures, which increase experimental complexity. Residual noise sources, such as hyperfine interactions, charge fluctuations, and magnetic\nfield inhomogeneities, can further limit coherence times\nand reduce the SNR. Moreover, accurately reading out\nthese qubits requires advanced measurement and amplification tech",
+        "score": -3.848485441207886,
+        "dense_score": null,
+        "bm25_score": 15.175208969179378,
+        "graph_score": 0.0,
+        "rerank_score": -5.928439140319824,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.408190090674907,
+    "generation_latency_s": 7.199123501777649e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.408190090674907,
+    "generation_latency_s": 7.199123501777649e-07
+  }
+}

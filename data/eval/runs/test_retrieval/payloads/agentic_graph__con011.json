@@ -1,0 +1,419 @@
+{
+  "benchmark": {
+    "query_id": "con011",
+    "query_type": "conceptual",
+    "query": "Why is local deployment attractive for HEP collaborations?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "is",
+      "local",
+      "deployment"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why is local deployment attractive for HEP collaborations?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5243,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "r with the same overvoltage. In\nthis scenario, the photo-electron distribution of SiPM2 should\nbe free of pedestal due to the deployment of the 0.5 PE height\ntrigger. Subsequently, a software algorithm was used to search\nfor coincidence signals in SiPM1 within a time gate T 0 +dT,\nwhere dT=50ns and T 0 is the trigger time for SiPM2. If there\nis a PE signal in the time window, we integrate over the area\nof the PE signal (Fig. 1(a)) of SiPM1. On the contrary, if there\nis nothing but baseline in the gate, we integrate over the same\n\nregion of SiPM2 in SiPM1(Fig. 1(b)). In this trigger mode,\nthe PE distribution of SiPM1 has a majority of pedestal. For\nexample, Fig 2 displays the PE distributions of two SensL\nSiPMs in a dark environment at 4.5V overvoltage and liquid\nnitrogen temperature.\n\n(a)\n\n(b)\n\nFig. 1: Illustrations of the software selection for two SiPM\nsamples (SiPM1 and SiPM2)\n\n.\n\nThe coincidence probability _P_ _coin_ is defined as the ratio\nof PE events on SiPM1 in coincidence with PE events on\n\nSiPM2 to triggered PE events on SiPM2, resulting in _P_ _coin_\n= 2834/30000 = 9.45%, as shown in Fig 2. Initially, _P_ _coin_\nreflects the eCT level of both SiPM1 and SiPM2, as eCT\nphotons emitted from the dark noise of SiPM2 are then\nreceived by SiPM1, and vice versa, both contributing to the\ncoincidence probability. If this is accurate, an increase in the\novervoltage of SiPM2 would be expected to lead to a higher\n_P_ _coin_, as the overvoltage enhances the SiPM gain, resulting\nin more charge carriers in avalanches. Theoretically, a higher\nnumber of charge carriers in a single avalanche corresponds to\na higher eCT probability. In other words, _P_ _coin_ as a function of\nthe SiPM overvoltage _V_ _over_ is expected to be a monotonically\nincreasing function. However, our measurement indicates that\n_P_ _coin_ does not increase consistently with _V_ _over_ for SiPM2.\nFig 3 shows _P_ _coin_ as a function of _V_ _over_ for SiPM2. It is\nworth noting that accidental coincidences of dark signals are\ndisregarded, as the DCR of the SiPM is approximately 0.2\nHz/mm [2] at liquid nitrogen temperature. At this dark noise\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 3\n\nSiPM 1\n\nSiPM 2\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n-1 0 1 2 3 4 5 6\n\nPE\n\n-1 0 1 2 3 4 5 6\n\nPE\n\nFig. 2: PE distributions of two Sensl J-60035 SiPMs facing\neach other. Both graphs present 30000 dark signals in the trigger mode where only SiPM2 was triggered with the threshold\no",
+        "score": -6.899873539603364,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.614824619457313,
+        "rerank_score": -10.707886695861816,
+        "matched_nodes": [
+          "For",
+          "On",
+          "At",
+          "The",
+          "In",
+          "SCIENCE",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4038,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2750102__2401.11036__Heavy_Flavor_Physics_at_the_sPHENIX_Experiment.md",
+        "title": "2024__recid_2750102__2401.11036__Heavy_Flavor_Physics_at_the_sPHENIX_Experiment",
+        "text": "## **Heavy Flavor Physics at the sPHENIX** **Experiment**\n\nZhaozhong Shi [1], on behalf of the sPHENIX Collaboration\n\n1 Physics Division, Los Alamos National Laboratory, Los Alamos, NM, 87545 USA\n\nzhaozhongshi@lanl.gov\n\nJanuary 23, 2024\n\n**Abstract**\n\nThe sPHENIX experiment is a state-of-the-art jet and heavy flavor physics de\n\ntector which successfully recorded its first Au + Au collision data at 200 GeV at\n\nRHIC. sPHENIX will provide heavy flavor physics measurements covering an unex\n\nplored kinematic region and unprecedented precision at RHIC to probe the parton\n\nenergy loss mechanism, parton transport coefficients in quark-gluon plasma, and the\n\nhadronization process under various medium conditions. At the center of sPHENIX,\n\nthe Monolithic-Active-Pixel-Sensor (MAPS) based VerTeX detector (MVTX) is a\n\nhigh-precision silicon pixel detector. The MVTX provides excellent position resolu\n\ntion and the capability of operating in continuous streaming readout mode, allowing\n\nprecise vertex determination and recording a large data sample, both of which are par\n\nticularly crucial for heavy flavor physics measurements. In this work, we will show the\n\ngeneral performance of heavy-flavor hadron reconstruction. In addition, we will discuss\n\nthe commissioning experience with sPHENIX. Finally, we will provide the projection\n\nof b-hadron and jet observables and discuss the estimated constraints on theoretical\n\nmodels.\n\n1\n\n### **1 Introduction**\n\nThe sPHENIX experiment [1] is the first new experiment at RHIC in over 20 years.\n\nAccording to the 2015 [2] and 2023 [3] United States Nuclear Science Advisory Committee\n\n(NSAC) Long Range Plan for Nuclear Science, the sPHENIX is considered as a Depart\n\nment of Energy flagship experiment in heavy-ion physics. The physics goal of sPHENIX\n\nis to probe the inner workings of quark-gluon plasma (QGP) by resolving its properties\n\nat shorter and shorter length scales and is complementary with experiments at the LHC.\n\nsPHENIX is a state-of-the-art heavy flavor and jet detector at RHIC. It has a 2 _π_\n\nangular acceptance over the rapidity range of _|y| <_ 1. It consists of tracking and calorimeter\n\nsystems with excellent capabilities for studying the strongly interacting QCD matter at\n\nRHIC. In addition, sPHENIX is equipped with a minimum bias detector (MBD) and zero\n\ndegree calorimeter (ZDC) in the far forward region and a trigger system for global event\n\ncharacterization. A schematic drawing of the sPHENIX detector is shown in Figure",
+        "score": -6.991012231441778,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6955658504301787,
+        "rerank_score": -10.860273361206055,
+        "matched_nodes": [
+          "Collaboration",
+          "At",
+          "The",
+          "In",
+          "LHC",
+          "USA",
+          "Physics"
+        ],
+        "path_nodes": [
+          "Collaboration"
+        ],
+        "community_id": "Collaboration",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5128,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "rs)\n\n_Sensors_ **2024**, _1_, 0 2 of 19\n\nThe effects of radiation damage are already measurable at the fluences of LHC Run 2\nand Run 3. For instance, the charge collection efficiency (CCE) of the innermost ATLAS\nPixel layer has now reduced to approximately _∼_ 70% at a fluence of about 1 _×_ 10 [15] n eq cm _[−]_ [2]\n\n[10].\nThe ATLAS, CMS, and LHCb collaborations have developed algorithms to incorporate\nradiation damage effects into their Monte Carlo (MC)-simulated events [ 11 ]. Thanks to these\nalgorithms, it is possible to track the evolution of pixel detector performance as radiation\ndamage accumulates. Despite the different approaches adopted by the three collaborations,\nthe level of agreement between data and Monte Carlo (MC) simulations is remarkable,\nachieving agreement at the _O_ ( % ) level [ 10 ]. These algorithms enable the prediction of\noperational parameters such as depletion voltage and make possible the generation of\nsamples for future detector conditions; these are essential for training reconstruction\nalgorithms.\nDespite the importance and success of these algorithms, some may not be viable for\nthe HL-LHC phase due to computing resource constraints. This is particularly true for the\nATLAS Pixel detectors. Therefore, there is a pressing need for faster yet equally precise\nalgorithms to meet the demands of the HL-LHC data-taking conditions.\nIn this paper, a new lightweight algorithm is presented which is able to address the\nchallenges posed by the HL-LHC on computing resources for the inclusion of radiation\ndamage effects in MC simulated events. The paper is organized as follows.\nIn Section 2, the ATLAS algorithm for simulating radiation damage effects to silicon\npixel sensors is presented along with some key results. Section 3 introduces the new\nalgorithm, which relies on Look-Up Tables (LUTs). This section also discusses the various\ntypes of simulations—TCAD (Technology–Computer-Aided Design) and Geant4 [ 12 – 14 ]\nbased—that serve as inputs to the new algorithm.\nIn order to validate the new algorithm, a series of closure tests were conducted,\ncomparing events simulated using the LUTs algorithm to fully simulated events. The\nresults of these closures tests are reported in Section 4. Finally, the paper concludes (Section\n5) with a discussion on the results and an outlook for the project.\n\n**2. The ATLAS IBL and Pixel Radiation Damage Digitizer**\n\nThe ATLAS Collaboration developed and implemented an algorithm to include the\neffects of radiat",
+        "score": -7.0081861398810075,
+        "dense_score": null,
+        "bm25_score": 16.78243052647869,
+        "graph_score": 0.6677696889477168,
+        "rerank_score": -10.888290405273438,
+        "matched_nodes": [
+          "For",
+          "Collaboration",
+          "The",
+          "In",
+          "LHC",
+          "CMS",
+          "Run",
+          "ATLAS"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 10,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2629741__2302.02044__Neutron_capture-induced_silicon_nuclear_recoils_for_dark_matter_and_CENS.md",
+        "title": "2023__recid_2629741__2302.02044__Neutron_capture-induced_silicon_nuclear_recoils_for_dark_matter_and_CENS",
+        "text": "the Monte\nCarlo procedure. The histogram is the PDF derived from\nmany events generated by the Monte Carlo procedure.\n\n**V.** **USES FOR DARK MATTER AND CEνNS**\n\nOur major goals in understanding the neutron capture\ninduced nuclear recoil spectra are (a) to use these nuclear\nrecoil events to enhance our understanding of low-energy\nnuclear recoils in solids — to provide excellent low-energy\ncalibrations and (b) to compute the experimental backgrounds for dark matter and CEνNS searches.\n\nIn silicon and other materials there has not been con\nsensus on how much ionization nuclear recoils produce\nat low recoil energies. Typically, our theoretical guidance in the field comes from the early Lindhard paper [4]\nand associated work. On the other hand, measurements\ndown to the 100 eV range seem like they may deviate\nfrom those predictions _and_ be marginally consistent or\ninconsistent with each other [6, 13, 14].\n\nExploring the detector response to NRs at low energies\nis therefore prudent and thermal neutron induced captures provide an excellent venue for this — as pointed\nout by the CRAB Collaboration [7] and others working\nwith xenon for dark matter [5]. The key features for\nthermal neutron induced captures are shown in Fig. 8.\nIn that figure a nominal Lindhard ionization yield [4] is\napplied to the result shown in Fig. 7.\n\n6\n\nthat the spectrum has sharp mono-energetic features that\nare lacking in wide-band photoneutron or [252] Cf sources.\nThe spectrum extends down well below 100 eV which is\nprobably near the limit of elastic scattering sources. Using this technique is also feasible _in situ_ because any neutron source will elevate the thermal neutron flux during\nits deployment. Finally, if there is a case where exiting\ngammas can be measured in coincidence, the direct-toground transitions provide _directionally tagged_ nuclear\nrecoils. This would lead to a heretofore unavailable NR\ndirectionality calibration, as pointed out in [7].\n\nA large enough thermal neutron flux could lead\nto meaningful backgrounds for low-mass dark matter\nsearches or CEνNS measurements. The thermal neutron flux is typically not measured directly in many experiments because of the difficulty in doing so. One\nmeasurement that does exist for CEνNS is from the\nMINER collaboration [19] and is several orders of magnitude higher than the accepted sea level environmental\nvalue, 4 cm _[−]_ [2] hr _[−]_ [1] [20]. We have previously shown the\neffect of thermal neutrons on CEνNS measurements in\ndetail",
+        "score": -7.134560537964362,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.642620780939775,
+        "rerank_score": -11.073134422302246,
+        "matched_nodes": [
+          "For",
+          "On",
+          "Collaboration",
+          "The",
+          "In",
+          "We"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1098,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2676761__2307.06433__Probing_NV_and_SiV_charge_state_dynamics_using_high-voltage_nanosecond_pulse_and_photolumi.md",
+        "title": "2023__recid_2676761__2307.06433__Probing_NV_and_SiV_charge_state_dynamics_using_high-voltage_nanosecond_pulse_and_photolumi",
+        "text": "## Probing NV and SiV charge state dynamics using high-voltage nanosecond pulse and photoluminescence spectral analysis\n\nArtur Pambukhchyan\n\nDepartment of Chemistry, University of Southern California, Los Angeles CA 90089, USA\n\nSizhe Weng\n\nDepartment of Electrical Engineering, University of Southern California, Los Angeles CA\n90089, USA\n\nIndu Aravind\n\nDepartment of Physics & Astronomy, University of Southern California, Los Angeles CA\n90089, USA\n\nStephen B. Cronin\n\nDepartment of Electrical Engineering, University of Southern California, Los Angeles CA\n90089, USA\n\nSusumu Takahashi\n\nE-mail: susumu.takahashi@usc.edu\n\nDepartment of Chemistry, University of Southern California, Los Angeles CA 90089, USA\nDepartment of Physics & Astronomy, University of Southern California, Los Angeles CA\n90089, USA\n\nJuly 2023\n\nAbstract. Nitrogen-vacancy (NV) and silicon-vacancy (SiV) color defects in diamond are\npromising systems for applications in quantum technology. The NV and SiV centers have\nmultiple charge states, and their charge states have different electronic, optical and spin\nproperties. For the NV centers, most investigations for quantum sensing applications are\ntargeted on the negatively charged NV (NV [−] ), and it is important for the NV centers to be in\nthe NV [−] state. However, it is known that the NV centers are converted to the neutrally charged\nstate (NV [0] ) under laser excitation. An energetically favorable charge state for the NV and SiV\ncenters depends on their local environments. It is essential to understand and control the\ncharge state dynamics for their quantum applications. In this work, we discuss the charge state\ndynamics of NV and SiV centers under high-voltage nanosecond pulse discharges. The NV\nand SiV centers coexist in the diamond crystal. The high-voltage pulses enable manipulating\nthe charge states efficiently. These voltage-induced changes in charge states are probed by\ntheir photoluminescence spectral analysis. The analysis result from the present experiment\nshows that the high-voltage nanosecond pulses cause shifts of the chemical potential and can\n\nProbing NV and SiV charge state dynamics ... 2\n\nconvert the charge states of NV and SiV centers with the transition rates of ∼ MHz. This\nresult also indicates that the major population of the SiV centers in the sample is the doubly\nnegatively charged state (SiV [2][−] ), which is often overlooked because of its non-fluorescent and\nnon-magnetic nature. This demonstration paves a path for a me",
+        "score": -7.203488386079699,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.727994705493051,
+        "rerank_score": -11.192049026489258,
+        "matched_nodes": [
+          "For",
+          "CA",
+          "The",
+          "In",
+          "USA",
+          "University",
+          "Physics",
+          "Department"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 399,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "eling the reactor as well as detector related\nsystematic uncertainties. In future, the same detector setup\ncan be placed at other reactor facilities such as DHRUVA,\nBARC [39], Proto-type Fast Breeder Reactor (PFBR), IGCAR, Kalpakkam, and VVER, Kudankulam in India [40].\nThe DHRUVA reactor core has radius _∼_ 1.5 m and height\n_∼_ 3.03 m (defined as an extended source) [39], which can operate at a maximum thermal power of 100 MW th consuming\nnatural uranium as fuel. On the other hand, PFBR is relatively\na compact source as compared to DHRUVA with a dimension\nof about 1 m both in radius and height. The PFBR can operate\nat a maximum thermal power of 1250 MW th with mixed oxide (MOX, PuO 2 -UO 2 ) as fuel [40]. The VVER power reactor\nhas thermal power of 3000 MW th and core has radius _∼_ 1.5 m\nand height _∼_ 3.03 m (also an extended source). The VVER\nreactor is a pressurized water reactor and uses 3.92% enriched\nuranium as a fuel [41]. It can be noted here that the fractional\ncontributions of each isotope to the reactor thermal power and\nthe parameter lists used to fit the neutrino energy spectra for\nthe above mentioned reactor are mentioned in Ref. [42]. Due\nto their compact size, U-Apsara and PFBR reactors are the\nideal sources to utilize the detector set-up for investigating the\nASN mixing at short distances. On the other hand, at very\nclose distances there are significant background contributions\nfrom the reactor come into play, impacting the sensitivity of\nsterile neutrino measurements. The above-mentioned reactors\n\nare not only different with respect to their sizes and thermal\npower but also in fuel compositions, as detailed in Table I.\n\n4\n\n**IV.** **COHERENT NEUTRINO-NUCLEUS SCATTERING**\n\n**MEASUREMENT**\n\nThe CE _ν_ NS scattering has been first proposed by Freedman [3] within the SM. In this process, the low-energy neutrinos scatter off nuclei which carry only energies up to a few\nkeV. It is very hard to measure such low energies ( _∼_ few tens\nof eV) of recoiling nuclei which requires the minimization of\nuncertainties associated with the relevant measurements. The\n\ndifferential CE _ν_ NS scattering cross-section is expressed as:\n\n_dTdσ_ [(] _[E]_ _[ν]_ _[, T]_ [) =] _[ G]_ 8 _π_ _F_ [2] � _Z_ (4sin [2] _θ_ _W_ _−_ 1) + _N_ � 2\n\n_× A_ 2 _−_ _[TA]_\n� _E_ _ν_ [2]\n\n(1)\n_|f_ ( _q_ ) _|_ [2]\n�\n\nwhere _A, N,_ and _Z_ are the mass number, number of neutrons, and number of protons in the nucleus, respectively. Further, _E_ _ν_ is the incident neutrino energy, _T",
+        "score": -7.207638550430793,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.642620780939775,
+        "rerank_score": -11.185562133789062,
+        "matched_nodes": [
+          "On",
+          "IV",
+          "NS",
+          "The",
+          "In",
+          "CE"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 100,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630827__2302.04281__The_impact_of_the_Large_Magellanic_Cloud_on_dark_matter_direct_detection_signals.md",
+        "title": "2023__recid_2630827__2302.04281__The_impact_of_the_Large_Magellanic_Cloud_on_dark_matter_direct_detection_signals",
+        "text": "aking the properties of the experiments and the local DM distribution as\ninputs, these packages provide the exclusion limits at a desired confidence level. To perform\nthe direct detection analysis, we directly use the local DM velocity distributions extracted\nfrom the simulations.\n\n**5.1** **Dark matter - nucleus scattering**\n\nIn the case of DM-nucleus scattering, we consider a DM particle of mass _m_ _χ_ scattering with\na target nucleus of mass _m_ _T_ in an underground detector, and depositing the nuclear recoil\nenergy, _E_ _R_ . The differential events rate is given by\n\n_dR_\n= _[ρ]_ _[χ]_\n_dE_ _R_ _m_ _χ_\n\n1\n\n_m_ _T_\n\n�\n\n_d_ [3] _v_ _[dσ]_ _[T]_\n_v>v_ min _dE_\n\n_[T]_ _v_ _f_ [˜] det ( **v** _, t_ ) _,_ (5.1)\n\n_dE_ _R_\n\n7 This period of time is comparable to the overdensity wake induced by the passage of a satellite galaxy in\na host DM halo in the Auriga simulations [74].\n\n– 22 –\n\nwhere _σ_ _T_ is the DM-nucleus scattering cross section. Assuming elastic scattering, the minimum speed required for a DM particle to deposit a recoil energy _E_ _R_ to the detector is given\nby\n\n_v_ min ( _E_ _R_ ) =\n\n~~�~~\n\n_m_ _T_ _E_ _R_\n\n_,_ (5.2)\n2 _µ_ [2] _χT_\n\nwhere _µ_ _χT_ is the reduced mass of the DM and nucleus.\nFor spin-independent interactions, the differential cross section is given by\n\n_dσ_ _T_ = _m_ _T_ _A_ [2] _σ_ _χ_ [SI] _N_ _F_ [2] ( _E_ _R_ ) _,_ (5.3)\n_dE_ _R_ 2 _µ_ [2] _χN_ _[v]_ [2]\n\nwhere _A_ is the atomic mass number of the target nucleus, _σ_ _χN_ [SI] [is the spin-independent DM-]\nnucleon scattering cross section at zero momentum transfer, _µ_ _χN_ is the reduced mass of the\nDM and nucleon, and _F_ ( _E_ _R_ ) is the spin-independent nuclear form factor for which we use\nthe Helm form factor [78].\nHence, the differential event rate can be written in terms of the halo integral (eq. (4.1))\n\nas\n_dR_ = _ρ_ _χ_ _A_ [2] _σ_ _χ_ [SI] _N_ _F_ [2] ( _E_ _R_ ) _η_ ( _v_ min _, t_ ) _._ (5.4)\n_dE_ _R_ 2 _m_ _χ_ _µ_ [2] _χN_\n\nWe consider two idealized direct detection experiments, one with a xenon target nucleus\nand the other with germanium. These detectors are based on the sensitivity of the LZ [79, 80]\nand SuperCDMS [81] direct detection experiments in the near future. Noble liquid detectors,\nsuch as LZ which has recently published its first results [79], can reach large exposures and\nare sensitive to large DM masses and lower cross sections. On the other hand, cryogenic\nsolid state detectors such as SuperCDMS are sensitive sub-GeV DM masses. Considered\ntoget",
+        "score": -7.216160578681648,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6029119788219722,
+        "rerank_score": -11.192686080932617,
+        "matched_nodes": [
+          "For",
+          "On",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 33,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 393,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "from one place to another,\na phenomenon commonly referred to as neutrino flavor oscillation. At present several efforts are going on for the precise determination of neutrino oscillation parameters [1, 2].\nMany experiments are being performed to obtain more accurate values of neutrino-nucleus cross-sections. Coherent elas\ntic neutrino-nucleus scattering (CE _ν_ NS) is a standard model\n(SM) process where the low energy neutrinos scatter off the\natomic nucleus coherently through the neutral-current weak\ninteractions [3]. For low-energy neutrinos ( _<_ 50 MeV), the\nCE _ν_ NS process has a larger cross-section for neutron-rich targets compared to other known processes, such as inverse beta\ndecay (IBD) and neutrino-electron scattering [4], which have\nbeen traditionally used for neutrino measurements. Further,\nthe CE _ν_ NS is a threshold-less process in contrast to IBD. Although, having a larger cross-section, the CE _ν_ NS process has\nnot been observed earlier due to the challenge of measuring\nthe low-energy recoil nuclei. The measurement of CE _ν_ NS\ncross-section requires a high flux of low energy neutrinos and\nmeasurement of low nuclear recoil energies.\n\nThere are mainly three possible sources of (anti)neutrinos\n\n_∗_ [Electronic address: shiba@barc.gov.in](mailto:shiba@barc.gov.in)\n\nthat could be used to search for the measurement of the\n\nCE _ν_ NS process, namely pion decay at rest (DAR) beam, an\nintense radioactive source, or a nuclear reactor. Recently, the\nCE _ν_ NS cross-section has been measured by the COHERENT\nexperiment using the neutrinos produced from the spallation\nneutron source as a DAR [5]. The neutrinos produced due to\nthis method have a maximum energy of about 53 MeV. The\nendeavor to measure CE _ν_ NS using neutrinos from a nuclear\nreactor or an intense radioactive source presents both challenges and intriguing possibilities. In the case of reactor, ~~_ν_~~ _e_ s\nproduced due to nuclear fission have an endpoint energy near\n10 MeV. Due to the lower neutrino energies as compared to\nother sources, it becomes imperative to employ novel detector technologies capable of achieving detection thresholds in\nthe range of a few tens of eV. Various cryogenic bolometers\nstand out as promising candidates for optimization to meet\nthis need.\n\nThe measurement of CE _ν_ NS cross-section by the COHERENT group has opened up an avenue for exploring various\naspects related to physics beyond the SM at low energy.\nAt present, several experiments are going on and som",
+        "score": -7.241170788437385,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.642620780939775,
+        "rerank_score": -11.237150192260742,
+        "matched_nodes": [
+          "For",
+          "NS",
+          "At",
+          "The",
+          "In",
+          "CE"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1192,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "d tesla-range magnetic fields [36].\nFurthermore, our easy-to-implement charge-stabilization\nscheme will find immediate applications in other quantum\ntechnology applications of SiV _[−]_, including the development\nof quantum repeaters [37], quantum networks [13, 38] or\nindistinguishable single photon sources [39]. Lastly, it is\nconceivable that our approach for generating and stabilizing\nnear-surface color centers with high optical coherence extends\nto other color centers in diamond or in other wide-bandgap\nhosts such as hBN [40] or SiC [41].\n\n**METHODS**\n\n**Optical Setups**\nTo characterize our diamond samples at room temperature (RT),\nwe employ a home-built confocal microscopy setup. This setup is\nequipped with a continuous wave (cw) 515 nm diode laser (Cobolt\n06-MLD) for off-resonant excitation. At low temperature ( _∼_ 7 K),\nthe sample is housed in a variable-temperature closed-cycle cryostat\n(attocube attoDRY800) and we perform optical spectroscopy again\nwith a home-built confocal microscopy setup. For this setup, we\nput to use cw 445 nm and cw 515 nm diode lasers (Cobolt 06-MLD)\nfor off-resonant excitation as well as a narrow-linewidth (200 kHz)\ntunable (720-739 nm) diode laser (Sacher Lasertechnik LION) for\nresonant excitation. Frequency modulation and control of the LION\nis achieved through a PID loop of a HighFinesse WS-U wavelength\nmeter. Additionally, we stabilize the intensity of the resonant laser\nthrough the PID loop of a home-built optical intensity stabilization\n(OIS) module (Physics Basel SP 999). In case of the resonant laser\nand if applicable to the experiment in question, we carve pulses with\nan acousto-optical modulator (AOM, G&H R15210), whereas the\noff-resonant lasers can be electronically modulated out of the box.\nFor both RT and LT, we focus laser light onto the sample with a\n\n6\n\n0.8 NA objective (Olympus LMPLFLN 100X) thermalized at RT,\nthrough which we also collect the signal. Photons are detected by\nsilicon-based single-photon counting modules (SPCM, Excelitas\nAQRH-33-FC). We perform photon-correlation measurements\nusing a time-correlated single-photon counting (TCSPC) system\n(PicoQuant PicoHarp 300) connected to the SPCMs. For optical\nlifetime measurements we use a pulsed laser (NKT Photonics\nSuperK Extreme EXW-12) tuned to 515 nm and said TCSPC system. Optical spectra are recorded on the camera of a spectrograph\n(Princeton Instruments SP-2500).\n\n**Data availability**\nThe data that support the findings of this study are available",
+        "score": -7.245015759422005,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6029119788219722,
+        "rerank_score": -11.237078666687012,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3393,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science.md",
+        "title": "2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science",
+        "text": "## Fast timing detectors with applications in cosmic ray physics and medical science\n\nC. Royon [a], F. Gautier [1]\n\n_a_ _University of Kansas, Lawrence, USA._\n\n**Abstract**\n\nWe discuss the use of Low Gain Avalanche (LGAD) silicon detectors for two\nspecific applications, namely measuring cosmic rays in space in collaboration\nwith NASA] and beam properties and received doses for patients undergoing\ncancer treatment in flash beam therapy.\n\n_Keywords:_ Time-of-flight, Time precision, Ultra Fast silicon Detectors,\nCharge Sensitive Amplifier, Picosecond Time Measurement\n\n**1. Introduction: LGAD silicon detectors**\n\nIn this report, we will discuss the use of Low Gain Avalanche (LGAD) silicon\ndetectors. These detectors were initially developed for particle timing measurements at the Large Hadron Collider at CERN. We will focus on two specific\napplications for LGAD detectors. The first application involves measuring cosmic rays in space, and this research is conducted in collaboration with NASA.\nThe second application pertains to the measurement of beam properties and\nreceived doses for patients undergoing cancer treatment. This is especially relevant in the context of flash beam therapy.\nIn order to obtain the largest possible signal from a silicon detector, we\nneed large velocity _v_ (which means a fast detector), large fields _E_ _W_ and large\npads to have a uniform field, and lots of charge _q_ following the Ramo’s theorem\n_I ∼_ _qvE_ _w_ . If we want to measure many particles entering in our detector as a\nfunction of time (for instance cosmic rays in space and electron/protons crossing\nour detector during flash beam cancer therapy), it is clear that we need a short\nsignal in order to avoid pile up between different particles. For this sake, we\nchose ultra fast silicon detectors (UFSDs) that seemed more adapted to our\nproblems that lead to typical signal of a few nanoseconds. These detectors are\nalready used at the LHC for instance in the TOTEM experiment in order to\nmeasure the proton time-of-flight with precisions close to 20 ps per layer. They\nwill also be used to measure time-of-flights of all particles (in the central and/or\n\n_Email addresses:_ `christophe.royon@cern.ch` (C. Royon),\n`florian.gautier.borrallo@gmail.com` (F. Gautier)\n\nthe forward parts of the detectors) in the ATLAS and CMS collaborations for\nthe high luminosity LHC [1, 2].\nIn order to measure the signal, the first step is usually to amplify the signal\nusing an amplifier designed at the Univ",
+        "score": -7.246307114165008,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7207147584381204,
+        "rerank_score": -11.256826400756836,
+        "matched_nodes": [
+          "For",
+          "The",
+          "In",
+          "We",
+          "LHC",
+          "CMS",
+          "USA",
+          "CERN",
+          "ATLAS"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "For": 1.0,
+      "On": 1.0,
+      "IV": 1.0,
+      "Collaboration": 1.0,
+      "NS": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "De": 1.0
+    },
+    "expanded_nodes": {
+      "For": 1.0,
+      "On": 1.0,
+      "IV": 1.0,
+      "Collaboration": 1.0,
+      "NS": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "De": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "LHC": 0.7,
+      "CMS": 0.7,
+      "CE": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "CERN": 0.24499999999999997,
+      "Run": 0.24499999999999997,
+      "ATLAS": 0.24499999999999997,
+      "Department": 0.24499999999999997,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 29,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 9.805910999886692,
+    "generation_latency_s": 7.799826562404633e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 29.0,
+    "retrieval_latency_s": 9.805910999886692,
+    "generation_latency_s": 7.799826562404633e-07
+  }
+}

@@ -1,0 +1,275 @@
+{
+  "benchmark": {
+    "query_id": "con001",
+    "query_type": "conceptual",
+    "query": "Why are HV-MAPS attractive for high-rate tracking?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why are HV-MAPS attractive for high-rate tracking?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5634,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "vely being developed for HEP applications. Decades of\n\nR&D have made CMOS-based detector systems easy and cheap to manufacture and sensor can\n\nbe integrated into a single chip for easier assembly. Additionally, radiation damage in CMOS is\n\nwell understood due to decades of R&D and therefore the system can be optimized to be radiation\n\ntolerant. CMOS technology can be employed for 4D tracking by optimizing for spatial and temporal\n\nresolution. For example, FASTPIX is a monolithic CMOS sensor with pixel pitches tested from\n\n8.66 um to 20 um and its design is optimized for timing through the application of a doping implant\n\nin the sensor to shape the electric field uniformly to improve the drift path of charges[10, 11].\n\nFurthermore, in contrast to traditional pixel sensors, FASTPIX uses a hexagonal sensor grid that\n\nshortens drift time and reduces charge sharing at the edges[10, 11]. The demonstrator device has\n\nbeen experimentally measured to have a good timing resolution of 120 – 180 ps[11]. While CMOS\n\ntechnology shows promise, the current limitation is its trailing time resolution compared to 3D\n\nsilicon sensors and the associated high power consumption due to small pixel sizes.\n\nFinally, another attractive option developed in the last decade is Low Gain Avalanche Detectors\n\n(LGADs) which is the paper’s main focus of study. LGADs are silicon pixel detectors optimised\n\nfor timing performance[12] and a schematic is shown in figure 1. Particularly, LGADs have a\n\nlow internal gain of about 10 − 20 that is achieved by modifying the doping profile of a standard\n\np-n junction[2]. LGADs have excellent temporal and spatial resolution that are designed to fulfil\n\nthe requirements of 4D tracking. Optimising the gain and thickness parameters allow a sensor\n\nwith a fast charge collection time that could improve the time resolution in the order of 10 ps[2].\n\nExcellent spatial resolution can be achieved through innovative designs such as AC-LGADs that\n\nutilise charge sharing between multiple electrodes and therefore surpasses the spatial resolution\n\nlimitation of single pad detectors[13, 14]. In the context of radiation tolerance, LGADs can fulfil\n\nthis requirement by utilising carbon as a dopant for the gain layer and through the use of a narrower\n\ngain layer[15]. Last but not least, an internal gain layer reduces the need for amplifier electronics\n\nand hence reduces power consumption for the operation of HL-LHC[4].\n\nLGADs are an excellent candidate for 4D tracking an",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 17.00873532927011,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7259,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2909952__2504.06671__Defects_in_Silicon_Carbide_as_Quantum_Qubits_Recent_Advances_in_Defect_Engineering.md",
+        "title": "2025__recid_2909952__2504.06671__Defects_in_Silicon_Carbide_as_Quantum_Qubits_Recent_Advances_in_Defect_Engineering",
+        "text": "ped Ions:\n\nTrapped ion qubits are individual ions confined by electromagnetic fields and controlled using laser-based\n\ntechniques. Commonly used materials include calcium ions (Ca⁺), barium ions (Ba⁺), and ytterbium ions\n\n(Yb⁺). The internal states of these ions, such as electronic or hyperfine states, serve as qubits. Trapped ion\n\nqubits are known for their long coherence times and high-fidelity gate operations. They are ideal for\n\nquantum simulations and algorithms, but the main challenge is scalability due to the need for precise laser\n\ncontrol and individual ion manipulation [33,34].\n\niii) Defect-Based Qubits:\n\nDefect-based qubits are based on point defects in solid-state materials, where the electronic spin states\n\nof defects are used to encode information. Examples include the NV center in diamond and V Si or V C -V Si\n\ncenters in SiC. These defects can operate at room temperature, making them attractive for practical\n\nquantum applications. However, challenges remain in defect creation and control, as well as improving\n\ncoherence times and gate fidelity [9,12,21]. For instance, NV centers in diamond are well-established for\n\nquantum sensing and communication applications, while SiC is gaining attention for scalable quantum\n\ncomputing [8,23].\n\niv) Spin-Based Qubits:\n\nSpin-based qubits utilize the spin states of electrons or nuclei in materials like silicon and gallium arsenide\n(GaAs). Quantum dots, such as semiconductor quantum dots made from InAs/GaAs or Si/SiGe systems,\n\nare also commonly used. The qubit states are represented by spin-up or spin-down orientations. Spin\nbased qubits offer long coherence times and are compatible with existing semiconductor technology,\n\nmaking them attractive for scalable quantum computing. However, challenges remain in improving\n\ncoupling efficiency and achieving high-fidelity gate operations [35,36].\n\nv) Topological Qubits:\n\nTopological qubits are based on anyonic excitations in topologically ordered materials, such as Majorana\n\nfermions in topological superconductors. Materials under investigation include superconducting\n\nnanowires made of InAs or MoTe₂. These qubits are robust to local noise and decoherence due to their\n\ntopological nature, offering the potential for long-lived qubits. However, this platform is still experimental,\n\nand significant challenges remain in achieving reliable and scalable topological qubit systems [37,38].\n\nTable 1 provides a summary the main advantages and challenges for all physical sy",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 16.38106251219083,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3733,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2734139__2312.05098__Comparison_of_readout_systems_for_high-rate_silicon_photomultiplier_applications.md",
+        "title": "2024__recid_2734139__2312.05098__Comparison_of_readout_systems_for_high-rate_silicon_photomultiplier_applications",
+        "text": "Prepared for submission to JINST\n\n## **Comparison of readout systems for high-rate silicon** **photo-multiplier applications**\n\n**M. L. Wong,** **1** _[𝑎]_ **M. Kołodziej,** **2** _[𝑎,𝑏]_ **K. Briggl,** _[𝑐]_ **R. Hetzel,** _[𝑑]_ **G. Korcyl,** _[𝑎]_ **R. Lalik,** _[𝑎]_ **A. Malige,** _[𝑒]_\n\n**A. Magiera,** _[𝑎]_ **G. Ostrzołek,** _[𝑎]_ **K. Rusiecka,** _[𝑎]_ **A. Stahl,** _[𝑑]_ **V. Urbanevych,** _[𝑎]_ **M. Wiebusch,** _[𝑓]_ **and**\n\n**A. Wrońska** _[𝑎]_\n\n_𝑎_ _M. Smoluchowski Institute of Physics, Jagiellonian University, Kraków, Poland_\n_𝑏_ _Doctoral School of Exact and Natural Sciences, Jagiellonian University, Kraków, Poland_\n\n_𝑐_ _Kirchhoff-Institute of Physics, Universität Heidelberg, Heidelberg, Germany_\n_𝑑_ _Physics Institute III B, RWTH Aachen University, Aachen, Germany_\n\n_𝑒_ _Department of Physics, Columbia University, USA_\n_𝑓_ _GSI, Darmstadt, Germany_\n\n_E-mail:_ [ming-liang.wong@clermont.in2p3.fr](mailto:ming-liang.wong@clermont.in2p3.fr), [mkolodziej@doctoral.uj.edu.pl](mailto:mkolodziej@doctoral.uj.edu.pl)\n\nAbstract: Recent years have shown an increased use of silicon photo-multipliers (SiPM) in experiments as\nthey are of reasonable cost, have relatively low power consumption and are easily available in a variety of form\nfactors allowing for a large number of readout channels. At the same time, experiments are generating data\nat increasingly high rates requiring the use of more efficient readout systems. In this work, the dead time,\nefficiency, dynamic range, coincidence time resolution and energy resolution of five different readout systems\nat various stages of maturity are evaluated to determine the best system for acquiring data from a detector in a\nhigh rate experiment. Additional functionalities of the systems are also discussed.\n\nKeywords: Data acquisition concepts, Scintillators and scintillating fibres and light guides, SiPMs\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Readout systems** **2**\n2.1 DT5742 - CAEN Desktop Digitizer 3\n\n2.2 TwinPeaks+TRB5sc 3\n\n2.3 A5202 4\n\n2.4 KLauS6b 4\n\n2.5 TOFPET2c 4\n\n**3** **Test setups** **5**\n\n**4** **Methodology** **6**\n\n4.1 Dead time 6\n\n4.2 Coincidence time resolution 6\n\n4.3 Energy resolution 7\n4.4 Efficiency 7\n4.5 Dynamic range 7\n\n**5** **Results** **8**\n\n**6** **Summary** **9**\n\n**1** **Introduction**\n\nHigh-rate readout and digitization of data from accelerator experiments are now becoming commonplace. The\nHigh-Luminosity LHC project aims to increase its instantaneous luminosity by a fact",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 15.841336109762107,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5718,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2715321__2310.18607__Simulation_Study_of_Photon-to-Digital_Converter_PDC_Timing_Specifications_for_LoLX_Experim.md",
+        "title": "2025__recid_2715321__2310.18607__Simulation_Study_of_Photon-to-Digital_Converter_PDC_Timing_Specifications_for_LoLX_Experim",
+        "text": "erall LoLX results will assist large**\n**LXe-based experiments and motivate the assembly of a LXe-**\n**based TOF-PET demonstrator system.**\n\n_**Index Terms**_ **—Cerenkov radiation, liquid xenon, photon-to-**\n**digital converter, silicon photomultiplier, time-to-digital converter**\n\nManuscript received October 20, 2023; revised August 30, 2024; This\nresearch was undertaken thanks in part to funding from the Canada First\nResearch Excellence Fund through the Arthur B. McDonald Astroparticle\nPhysics Research Institute, with support from the National Sciences and Engineering Research Council of Canada (NSERC), and the Fonds de Recherche\ndu Quebec Nature et Technologies (FQRNT). This was also supported by\nCHELN and CHELNX projects funded by Grant INFN n. 19593, and the\nPQBA program of Osaka University.\nN. V. H. Viet and M. Nomachi are with the Research Center\nfor Nuclear Physics (RCNP), Osaka University, Osaka, Japan. (e-mail:\nnvhviet@rcnp.osaka-u.ac.jp)\nA. Al Masri, M.-A.T´etrault, J. Lefebvre, and E. M. Rtimi are with the Department of Electrical and Computer Engineering, Universit´e de Sherbrooke,\nSherbrooke, QC, Canada.\nS. Al Kharusi, T. Brunner, C. Chambers, E. Egan, D. Gallacher, T.\nMcElroy, B. Rebeiro, and L. Rudolph are with the Physics Department, McGill\nUniversity, Montr´eal, QC, Canada.\nB. Chana, D. Goeldi, and S. Viel are with the Department of Physics,\nCarleton University, Ottawa, ON, Canada.\nA. de St. Croix, C. Malbrunot, P. Margetak, J. Martin, M. Patel, F. Reti`ere,\nand L. Xie are with TRIUMF, Vancouver, BC, Canada.\nM. Francesconi and L. Galli are with INFN, Pisa, Italy.\nP. Giampa is with SNOLAB, Lively, ON, Canada.\n\nI. I NTRODUCTION\n# S CINTILLATORS are core components for many particlephysics detectors. The choice of scintillator relies on its\n\nmaterial properties and the sought-after experimental data,\ngenerally position, deposited energy and occurrence time.\nLiquid xenon (LXe) is a scintillator offering attractive performances on these three figures of merit due to its good\nlight yield, fast timing, and dual light/charge readout paths.\nAlthough it needs to be cooled to -110 °C, and thus requires\na cryostat to operate, it can be shaped into a large, continuous\nvolume, an attractive feature for neutrino experiments like\nnEXO [1], which requires 1% energy resolution at 2.5 MeV Qvalue of [136] Xe in its search for neutrinoless double beta decay\n(0 _ν_ 2 _β_ ). The Light-only Liquid Xenon (LoLX) experiment [2],\n\n[3] supports nEXO in testing candi",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 15.254113078026943,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3771,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2734691__2312.05567__Towards_a_fiber_barrel_detector_for_next-generation_high-pressure_gaseous_xenon_TPCs.md",
+        "title": "2024__recid_2734691__2312.05567__Towards_a_fiber_barrel_detector_for_next-generation_high-pressure_gaseous_xenon_TPCs",
+        "text": "fibers**\n\nA WLS fiber barrel for the NEXT experiment must satisfy three main requirements: (1) be able to\ndetect scintillation photons from [83m] Kr decays, which release a total energy of 41.5 keV and are\n\nused for detector calibration, (2) be radiopure enough to not increase the radioactive budget of the\n\ndetector, (3) be mechanically viable and work in a high-pressure vessel filled with gaseous xenon.\n\nThe current baseline design employs round WLS fibers with a diameter of 1 mm coated with\n\na wavelength shifting material, whose goal is to shift the ∼170 nm photons emitted by the excited\n\nxenon gas to a wavelength large enough to be absorbed by the fiber. The top of the fiber away from\n\nthe photosensor is coated with an aluminum mirror, which provides a reflectivity of ∼ 75% [6].\n\nTwo options for the WLS fibers are being considered: blue-to-green fibers (e.g. Kuraray Y11 [7])\n\ncoated with tetraphenyl butadiene (TPB) and UV-to-blue fibers (e.g. Kuraray B2) coated with\n\np-terphenyl (TPH). In both cases, the emission spectra of the WLS materials are well matched\n\nto the respective fiber absorption lengths, as shown in figure 2. TPB has a long history of being\n\nemployed as a wavelength-shifting material in particle physics experiments. As an example, a barrel\n\nof WLS fibers coated with TPB and submerged in liquid argon has been successfully implemented\n\nby the GERDA experiment as a Compton veto [8, 9]. TPB does not significantly affect the purity\n\nof gaseous xenon and it has already been used to coat the light tube and the tracking plane of the\n\nNEXT-White and NEXT-100 detectors.\n\nP-terphenyl represents an attractive alternative, given its high quantum efficiency [10, 11]. Its\n\nuse as a coating material has been pioneered by the DUNE collaboration for the X-ARAPUCA\n\n– 2 –\n\ndevice [12]. However, the literature provides somehow conflicting measurements [13] and a\n\ndedicated R&D effort is necessary to assess its performances as a coating material for optical fibers\n\nand its behavior in gaseous xenon.\n\n1 _._ 0\n\n0 _._ 5\n\n0 _._ 0\n\n_−_ 0 _._ 5\n\n|Col1|Col2|\n|---|---|\n|TPB emission<br>Y11 absorption|TPB emission<br>Y11 absorption|\n\n300 400 500\n### Wavelength [nm]\n\n_−_ 1 _._ 0\n\n300 400 500\n### Wavelength [nm]\n\n**Figure 2** . Emission spectrum of the wavelength-shifting coating (TPH [11] and TPB [14]) and absorption\nspectrum of the corresponding fiber (Kuraray B2 and Kuraray Y11).\n\n**2.2** **Photosensors**\n\nIn the baseline design of the barrel fiber detector, the light",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 15.137990309099761,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 833,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi.md",
+        "title": "2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi",
+        "text": "oolers (TECs) based on Bismuth Sesquitelluride (Bi 2 Te 3 ) have also been included\n\nas an integrated component of the SiPM package. The TECs are re-flow soldered at 220 [◦] C to the\n\nrear side of the SiPM package on dedicated solder pads. The TECs specifications can be found on\n\nthe manufacturer (Phononic) website [13]. In the presence of TECs the heat produced by the SiPM\n\ncan flow only through the TEC surfaces (rather than through the entire substrate). It is therefore\n\nimportant to use a high conductivity thermal gap filler to maximize the heat flow between the TEC\n\nside coupled to the SiPM substrate and the side coupled to the copper housing. A THERMFLOW\n\nPhase-Change Thermal Interface Pad (T558) [14] with thickness of about 50-150 _𝜇_ m was found as a\n\ngood compromise between high thermal conductivity and capability to absorb potential ruggedness\n\nor non-planarity of the TEC and copper housing surfaces.\n\n– 6 –\n\nTEC mechanical specifications\n\n**Figure 6** . Top: Technical drawing of the back side of a BTL SiPM array where the location of the temperature\nsensor (RTD) and of the four TECs is visible, including dimensions of the thermo-electric coolers. Bottom:\npicture of BTL SiPM arrays (back side) from different manufacturers with TECs and RTDs (left) and picture\nof a batch of TECs as received from the supplier.\n\nBesides cost and integration implications another key parameter to consider is the additional\n\npower required by the TECs to provide an additional temperature gradient of about 10 [◦] C . This is\n\nbecause the total heat produced by a detector module ultimately needs to be extracted by the CO 2\n\ncooling system which has a finite capacity [2]. The reason why TECs represent a very attractive\n\nsolution for integration with irradiated SiPMs is that the power required to cool down the SiPMs by\n\nadditional 10 [◦] C compared to the cooling plate is almost entirely compensated by the decrease of\n\nSiPM leakage current.\n\nTo achieve a first proof-of-principle of this power compensation mechanism, a set of four\noff-the-shelf TEC prototypes of 2 × 2 mm [2] area were mounted on SiPM arrays, irradiated to\n2 × 10 [14] n eq /cm [2], annealed for 80 minutes at 60 [◦] C and then glued to a LYSO crystal array to gauge\nthe actual performance in cooling down a BTL module operated at around 1.0 V. The TEC hot sides\n\nwere thermally coupled to a large heat sink (emulating the detector cooling plate) and placed inside\n\na climate chamber at a temperature of −35 [◦] C . T",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 14.971392697647126,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7008,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2874836__2502.01305__Generation_of_photon_pairs_through_spontaneous_four-wave_mixing_in_subwavelength_nonlinear.md",
+        "title": "2025__recid_2874836__2502.01305__Generation_of_photon_pairs_through_spontaneous_four-wave_mixing_in_subwavelength_nonlinear",
+        "text": "_𝑅_ _𝑠𝑢𝑏_ ∝ _𝐴_ [2] _𝑠𝑢𝑏_ [.]\nTo calculate Δ _𝜙_, we find that Δ _𝑘_ _𝑠𝑢𝑏_ _𝐿_ /2 = 0 _._ 51 _𝜋_, while Δ _𝑘_ _𝑙_ _𝑓_ /2 are between 0 _._ 01 _𝜋_ and 0 _._ 08 _𝜋_ .\nOverall, the interference phase is between 0 _._ 52 _𝜋_ and 0 _._ 59 _𝜋_, leading to destructive interference\nfor all samples. This gives an idea why sample B on a substrate yields fewer pairs than the\nsubstrate alone.\n\nThe rates of real coincidences under the same pump power inside the films are plotted in Fig. 4\n(c) as solid bars. We now change the interference phase by choosing other wavelengths of the\n\nsignal and idler photons: 800 nm and 1450 nm, respectively. Because of the slow dispersion,\nthe only significant result of passing to these wavelengths is that the phase Δ _𝑘_ _𝑠𝑢𝑏_ _𝐿_ /2 becomes\n0 _._ 39 _𝜋_, which turns destructive interference into constructive one: now, Δ _𝜙_ is from 0 _._ 40 _𝜋_ to\n0 _._ 47 _𝜋_ for different samples. The corresponding real coincidence rates (Fig. 4 (c), dashed bars)\nare indeed higher than in the previous case, especially for sample B. The reason why only film B\nshows pronounced interference is that its amplitude _𝐴_ _𝑓_ is close to the one of the substrate. Other\nfilms contribute to SFWM much stronger (sample A) or much weaker (samples C,D) than the\nsubstrate. Therefore, they show almost the same pair emission rate for both phases Δ _𝜙_ .\nBecause the substrate contribution to SFWM is comparable to those of the SiN films, it can be\nused as a reference to evaluate the third-order susceptibility for all samples. To this end, from\nEq. (2) we find the ratio _𝐴_ _𝑓_ / _𝐴_ _𝑠𝑢𝑏_ for each SiN film. Meanwhile, the amplitude _𝐴_ _𝑓_ scales as [38]\n\n_𝜒_ [(][3][)]\n_𝐴_ _𝑓_ ∝ _𝑓_ - _𝑃_ _𝑐_ - _𝑙_ - sinc(Δ _𝑘_ _𝑓_ _𝑙_ /2) · ~~√~~ _𝑇_ _𝑠_ - _𝑇_ _𝑖_ _,_ (3)\n_𝑛_ _𝑝_\n\nwhere _𝑛_ _𝑝_ is the pump refractive index, _𝜒_ [(] _𝑓_ [3][)] the third-order susceptibility for SFWM, _𝑃_ _𝑐_ the\npump power inside the film, and _𝑇_ _𝑠,𝑖_ the transmission coefficients for the output photons caused\nby the etalon effect. These coefficients vary considerably from sample to sample and with the\nwavelength; see Supplement 1 Sec. 4 for their calculation and measurement. For the substrate,\nthe etalon effect is negligible because its refractive index is low.\nFor the substrate contribution, we can similarly write\n\n_𝐴_ _𝑠𝑢𝑏_ ∝ _𝜒_ _𝐹𝑆_ [(][3][)] - _𝑃_ _𝑐_ - _𝐿_ - sinc(Δ _𝑘_ _𝑠𝑢𝑏_ _𝐿_ /2) · _𝑇_ _𝑝_ _,_ (4)\n_𝑛_ _𝑝_\n\nwhere _𝜒_ _𝐹𝑆_ [(][3][)] [is the third-order susceptibility for fused silica and] _[",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 14.212933137217245,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 644,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker.md",
+        "title": "2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker",
+        "text": "2<br>1<br>0<br>0|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|\n|---|---|---|---|---|---|---|---|---|---|\n|0<br><br><br>0<br>1<br>2<br>3|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors||\n|0<br><br><br>0<br>1<br>2<br>3|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors||\n|0<br><br><br>0<br>1<br>2<br>3|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors||\n|0<br><br><br>0<br>1<br>2<br>3|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors|~~X-~~ray detectors<br>Tracking detectors||\n|0<br><br><br>0<br>1<br>2<br>3|2<br>4<br>FitAf [10<br>1|2<br>4<br>FitAf [10<br>1|3 V|2|6<br>, ~~-~~3|8<br>7 oC]|8<br>7 oC]|10|10|\n\nFig. 7. Histograms showing fitted _I_ leak (top) and _A_ _f_ (bottom) for Si(Li) strips\non x-ray detectors (solid blue) and tracking detectors (dashed red). Values of\n_I_ leak and _A_ _f_ less than zero are placed in the leftmost bin. There are _∼_ 30\nstrips with fit _I_ leak _>_ 50 nA and _∼_ 20 strips with _A_ _f_ _>_ 10 _[−]_ [12] V [2], though\nsince the discrete preamplifiers are expected to saturate near 50 nA, those\nresults should be taken with care.\n\nsystem. The first Antarctic flight of GAPS is currently planned\nfor late 2024.\n\nA CKNOWLEDGMENTS\n\nWe thank SUMCO Corporation and Shimadzu Corporation\nfor their cooperation in detector development. We also thank\nall of the members of the GAPS collaboration for their tireless\n\nwork and for their comments on this manuscript.",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 13.965261977039162,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_.md",
+        "title": "2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_",
+        "text": "**\n\nThe upcoming Mu3e experiment at PSI aims to find or exclude the cLFV decay\n_µ_ [+] _→_ _e_ [+] _e_ _[−]_ _e_ [+] with an unprecedented sensitivity to branching ratios as low as 10 _[−]_ [16] . In\na first phase, branching ratios of 10 _[−]_ [14] to a few 10 _[−]_ [15] can be studied. In addition, dark\nphotons emitted in muon decays can be investigated with competitive sensitivity, and\ncurrent limits on _µ_ [+] _→_ _e_ [+] _X_ decays can be surpassed by two orders of magnitude already\nwith the phase I Mu3e experiment.\nCurrently, the design and prototyping phase of the phase I Mu3e experiment is\nfinishing and the experiment is transitioning to the production and construction phase.\nDemonstrator detector modules have been successfully operated in an integration run in\n2021 and a cosmics run in 2022. Commissioning and first physics data taking are expected\nfor 2024.\n\n**Funding:** The author’s work is funded by the Federal Ministry of Education and Research (BMBF)\nand the Baden-Württemberg Ministry of Science as part of the Excellence Strategy of the German\nFederal and State Governments. The author further acknowledges the support by the German\nResearch Foundation (DFG) funded Research Training Group “Particle Physics beyond the Standard\nModel” (GK 1994) on previous works on this subject.\n\n**Institutional Review Board Statement:** Not applicable\n\n**Informed Consent Statement:** Not applicable\n\n**Data Availability Statement:** Data sharing not applicable\n\n**Conflicts of Interest:** The author declares no conflict of interest.\n\n**Abbreviations**\n\nThe following abbreviations are used in this manuscript:\n\nSM Standard Model\n\nBSM Beyond the Standard Model\n(c)LFV (charged) Lepton Flavour Violation\nPSI Paul Scherrer Institute\n\nCL Confidence Level\nDAQ Data Acquisition\nASIC Application-Specific Integrated Circuit\nMuTRiG Muon Timing Resolver including Gigabit-Link\nHV-MAPS High-Voltage Monolithic Active Pixel Sensors\n\n_Phys. Sci. Forum_ **2023**, _8_, 30 6 of 6\n\n**References**\n\n1. Arndt, K.; Augustin, H.; Baesso, P.; Berger, N.; Berg, F.; Betancourt, C.; Bortoletto, D.; Bravar, A.; Briggl, K.; vom Bruch, D.; et al.\nTechnical Design of the Phase I Mu3e Experiment. _Nucl. Instrum. Meth. A_ **2021**, _1014_ [, 165679. https://doi.org/10.1016/j.nima.20](https://doi.org/10.1016/j.nima.2021.165679)\n[21.165679.](https://doi.org/10.1016/j.nima.2021.165679)\n\n2. Bellgardt, U.; Otter, G.; Eichler, R.; Felawka, L.; Niebuhr, C.; Walter, H.K.; Bertl, W.; Lordong, N.; Martino, J.; Egl",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 13.816225083448918,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1938,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "n the 90–180 mrad and 40–90 mrad\nfor RICH1 and RICH2, respectively. The results are summarised in table 9. Consistent\n\n99\n\nFigure 74: Left: average quantum efficiency of the MaPMTs used in the RICH detectors.\nRight: a typical PID performance of the kaon identification obtained from the LHCb software\nfor the configuration described in the text (red). A corresponding curve for the Run 2 conditions\n(prepared using the simulation with LHCb Run 2 geometry and luminosity, as reported in\nref. [124]) is shown for reference (black).\n\nFigure 75: Average expected occupancy per channel for different MaPMTs in the (left) RICH1\nand (right) RICH2 detector.\n\nTable 9: Simulated performance of the upgraded RICH detectors. For RICH2, the values are\ngiven for the inner detector regions populated with the 1-inch MaPMTs.\n\n**Photoelectron yield** **Cherenkov angle resolution [mrad]**\n_N_ ph [optimal] _N_ ph [typical] chromatic emission point pixel _σ_ _θ_ ∆ _θ_ C\nRICH1 63 59 0.52 0.36 0.50 0.81 0.18\n\nRICH2 34 30 0.34 0.32 0.22 0.52 0.17\n\n100\n\nresults are found when using _B_ _s_ [0] _[→]_ _[ϕϕ]_ [ events provided that the selected tracks fulfil the]\nconstraints described above for the single particle simulation. The photoelectron yield\ndecreases when the optimal track requirements are relaxed. This is shown in table 9\nwhere a typical photoelectron yield, _N_ ph [typical], is reported. The typical photoelectron yield\nvalues are lower than the optimal ones, mainly due to the limitations in the acceptance\ndue to the beam pipe region. As it can be extracted from table 9, the contributions\nto the total Cherenkov angle resolution from the RICH and tracking systems at high\nmomentum are of similar magnitude, and slightly dominated by the _C_ tracking term. The\n_C_ tracking contribution used here is the asymptotic limit of approximately 0.15 mrad at high\nmomentum, dominated by the intrinsic resolution of the tracking detectors.\n\n### **8 Calorimeters**\n\nTo cope with the new LHCb readout scheme, the FE and readout electronics of the\nelectromagnetic and hadronic calorimeters have been entirely redesigned and replaced.\nMoreover, two subdetectors of the previous calorimeter system, namely the Scintillating\nPad Detector (SPD) and the PreShower (PS) [125], have been removed, given their reduced\nrole in the new LHCb all-software trigger.\nThe layout of both the electromagnetic calorimeter (ECAL) and hadronic calorimeter\n(HCAL) remains unchanged for the upgrade. A complete description of the geome",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 13.587887444384641,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 120,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 1.042564987204969,
+    "generation_latency_s": 3.3015385270118713e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.042564987204969,
+    "generation_latency_s": 3.3015385270118713e-07
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "benchmark": {
+    "query_id": "mul005",
+    "query_type": "multi_hop",
+    "query": "How does material budget influence vertexing through multiple scattering?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "does",
+      "material",
+      "budget"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How does material budget influence vertexing through multiple scattering?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 131,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit.md",
+        "title": "2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit",
+        "text": "] [,] (4)\n\nor a linear form motivated and explored in Ref. [55],\n\nν IV = _b_ + _m_ | _E_ [⃗] | [α], (5)\n\nwhere _E_ [⃗] is the electric field, and the coefficients and exponents\nare specified in the “lattice material” table (see Table B.10).\nWe note that the spectrum of phonons resulting from intervalley scattering at large fields may not be accurately reproduced\n\nin G4CMP. A more complete model of the scattering process\nwould include emission of an optical phonon and a corresponding rotation of the electron’s wavevector. G4CMP does not currently model the optical phonon and thus crystal momentum\nis not conserved. Instead, the electron immediately aligns itself to the new valley via the electron-phonon scattering process described in Sec. 2.3.2, resulting in a spectrum of acoustic\nphonons that is generally different from the spectrum that would\nresult from the decay of the optical phonon. This inaccuracy\ncould be fixed in a future update of G4CMP by modifying the\nintervalley scattering process to rotate the electron wavevector\nand create acoustic phonons based on the spectrum expected\nfrom down-conversion of the optical phonon. For small fields,\nthe current G4CMP implementation is a good representation of\nthe effectively random valley changes that occur when electrons\nscatter off impurities.\n\nThe combination of oblique propagation and intervalley scattering can produce distinct charge-collection patterns for electrons drifted across a Ge or Si crystal by an electric field.\nAgain, optical phonons are not explicitly modeled as independent particles in G4CMP. Instead, G4CMP uses measured scattering rates to simulate charge transport. Intervalley scattering rates have been derived as a function of electric field for\nboth Ge [54, 56] (using the quadratic parameterization) and\nSi [49, 57] (using the linear parameterization), and are used to\nset the scattering amplitudes in the G4CMP framework. The\nresults of simulating electrons and holes propagating through\nGe and Si crystals are shown in Fig. 4. Simulations were performed both with (top row) and without (bottom row) the intervalley scattering process. A comparison between the two\n\n5\n\nFigure 4: G4CMP simulations of electron transport (black) through 1.67 cm thick Ge (left) and Si (right) crystals, both with (top) and without (bottom) intervalley\n(IV) scattering. In the former case (top), intervalley scattering tends to scatter electrons toward the center of the crystal and thus encourages transport to align with",
+        "score": -4.606278705211577,
+        "dense_score": null,
+        "bm25_score": 13.521320139986756,
+        "graph_score": 0.7346774193548387,
+        "rerank_score": -7.1793670654296875,
+        "matched_nodes": [
+          "In",
+          "Ge",
+          "The",
+          "We",
+          "For",
+          "Si"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 130,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit.md",
+        "title": "2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit",
+        "text": "ustic phonons via the\nNeganov-Trofimov-Luke (NTL) process [44–46], and charge\ntrapping and impact ionization [47, 48]. We also include an\nassessment of charge-carrier drift speeds that result from simulations of these transport processes in G4CMP.\n\n4\n\nFigure 3: **Left:** The first Brillouin zone for Si, reproduced from Ref. [49]. The minimum-energy valleys of the conduction band are indicated by the ellipsoids near\nthe edge of the Brillouin zone along the _k_ _x_, _k_ _y_, and _k_ _z_ directions. **Right:** Energy band structure for Si (adapted from Ref. [50]), highlighting the bandgap between\nthe valence-band maximum along the ⟨000⟩ direction and the conduction-band minimum along the ⟨100⟩ direction. The latter corresponds to the minimum-energy\nX valleys (ellipsoids in the left panel). Similar diagrams can be found in Ref. [51] for Ge, which has its conduction-band minimum along the ⟨111⟩ direction (L\nvalleys).\n\n_2.3.1. Oblique transport_ & _intervalley scattering_\nAt the small electric fields and temperatures of interest,\nelectron propagation in Ge and Si has the interesting feature that electrons propagate through the crystal along distinct minimum-energy valleys that are displaced from zero momentum. As a result, electron transport is generally oblique\nto the direction of the applied electric field [17, 52]. The\nminimum-energy valleys and the energy band structure are illustrated in Fig. 3 for silicon, which has its conduction-band\nminimum along the ⟨100⟩ crystal axis (X valleys). In contrast, the conduction-band minimum for germanium is along\nthe ⟨111⟩ direction (L valleys).\nElectrons can scatter between valleys via a process known\nas _intervalley scattering_, which occurs in one of two ways: an\nelectron scatters off the lattice or off an impurity [53]. The rate\nfor both processes is dependent on the electric-field strength,\nwith lattice scattering being the dominant factor in larger fields\n(≳5 V/cm) and impurity scattering dominant in smaller fields\n(∼1 V/cm). G4CMP provides two parameterizations of this dependence which may be selected at runtime (see Table A.5,\n`G4CMP` ~~`I`~~ `V` ~~`R`~~ `ATE` ~~`M`~~ `ODEL` ): a quadratic form from Ref. [54],\n\nν IV = _A_ � _E_ 0 [2] [+][ |] _[E]_ [⃗][|] [2] [�] [α/][2] [,] (4)\n\nor a linear form motivated and explored in Ref. [55],\n\nν IV = _b_ + _m_ | _E_ [⃗] | [α], (5)\n\nwhere _E_ [⃗] is the electric field, and the coefficients and exponents\nare specified in the “lattice material” table (see Table B.10).\nWe note t",
+        "score": -5.249795865212718,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8225806451612903,
+        "rerank_score": -8.174053192138672,
+        "matched_nodes": [
+          "In",
+          "At",
+          "Ge",
+          "The",
+          "We",
+          "Si",
+          "Energy"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6155,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "**Optical single-shot readout of spin qubits in silicon**\n\nAndreas Gritsch, Alexander Ulanowski, Jakob Pforr, and Andreas Reiserer _[∗]_\n\n_Max-Planck-Institute of Quantum Optics, Quantum Networks Group,_\n_Hans-Kopfermann-Straße 1, 85748 Garching, Germany and_\n_Technical University of Munich, TUM School of Natural Sciences,_\n_Physics Department and Munich Center for Quantum Science and Technology (MCQST),_\n_James-Franck-Straße 1, 85748 Garching, Germany_\n\nThe digital revolution was enabled by nanostructured devices made from silicon. A similar prominence of this material is anticipated in the upcoming quantum era as the unrivalled maturity of\nsilicon nanofabrication offers unique advantages for integration [1] and up-scaling [2, 3], while its\nfavorable material properties [4] facilitate quantum memories with hour-long coherence [5]. While\nsmall spin-qubit registers have exceeded error-correction thresholds [6], their connection to large\nquantum computers is an outstanding challenge. To this end, spin qubits with optical interfaces [7]\noffer key advantages: they can minimize the heat load [8] and give access to modular quantum computing architectures that eliminate cross-talk and offer a large connectivity via room-temperature\nphoton routing [9]. Here, we implement such an efficient spin-photon interface based on erbium\ndopants in a nanophotonic resonator [10]. We thus demonstrate optical single-shot readout [11, 12]\nof a spin in silicon whose coherence exceeds the Purcell-enhanced optical lifetime, paving the way\nfor entangling remote spins via photon interference [13, 14]. As erbium dopants can emit coherent\nphotons [15, 16] in the minimal-loss band of optical fibers, and tens of such qubits can be spectrally\nmultiplexed [15, 17] in each resonator, the demonstrated hardware platform offers unique promise\nfor distributed quantum information processing and the implementation of a quantum internet [18]\nbased on integrated silicon devices.\n\n**INTRODUCTION**\n\nIn the last decades, quantum information processing\nhas seen major advances, and first systems have outperformed classical devices in certain tasks [19, 20]. Advanced solid-state systems in this context are superconducting circuits [19] and spin qubits in silicon [21]. The\nlatter can operate at higher temperatures _>_ 1 K [22], enable very dense integration [23], and give access to longterm quantum memories [5]. So far, however, up-scaling\nof such systems is hampered by cross-talk and heating\ncaused by the",
+        "score": -5.889495212161156,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7991935483870967,
+        "rerank_score": -9.155435562133789,
+        "matched_nodes": [
+          "In",
+          "The",
+          "We",
+          "To",
+          "Department",
+          "University",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 400,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "W_ _−_ 1) + _N_ � 2\n\n_× A_ 2 _−_ _[TA]_\n� _E_ _ν_ [2]\n\n(1)\n_|f_ ( _q_ ) _|_ [2]\n�\n\nwhere _A, N,_ and _Z_ are the mass number, number of neutrons, and number of protons in the nucleus, respectively. Further, _E_ _ν_ is the incident neutrino energy, _T_ is nuclear recoil\nenergy, with its maximum value denoted as ( _T_ max ( _E_ _ν_ ) =\n2 _E_ _ν_ [2] _[/]_ [(] _[A]_ [ + 2] _[E]_ _[ν]_ [)][),] _[ G]_ _[F]_ [is the Fermi coupling constant,] _[ θ]_ _[W]_\nis the weak mixing angle, and _f_ ( _q_ ) is the nuclear form factor for a momentum transfer _q_ . For low-energy neutrinos\n( _E_ _ν_ _<_ 50 MeV), the momentum transfer is very small such\nthat _q_ [2] _R_ [2] _<_ 1, where R is the radius of the nucleus, _f_ ( _q_ ) _∼_ 1.\nAt small momentum transfers, the scattering amplitude from\nindividual nucleons is in phase and added coherently, which\nleads to the increase of cross-section.The weak mixing angle\nsin [2] _θ_ _W_ has been experimentally determined to be 0.23867 _±_\n0.00016 _∼_ 1/4 [43]. Hence, the cross-section is proportional to\n_N_ [2] . Although the scattering cross-section is enhanced by the\nnumber of nucleons, it depends on the measurement of very\nlow energies of recoiling nuclei. The recoil energy of the nucleus depends on its mass, which decreases with the increase\nin the mass of target nuclei. For instance, with a neutrino energy of 1 MeV, the maximum recoil energy is about 20 eV and\n50 eV for Ge and Si targets, respectively.\n\nThe maximal recoil energy of different target nuclei (Si,\nGe) considered in this study is shown in Fig. 2 as a function of\nreactor ~~_ν_~~ _e_ energy. It can be observed from Eq. 1 that the crosssection is maximum at zero recoil energy and it decreases with\nthe increase of _T_ . Hence, a detector with a higher threshold energy for detecting the signal leads to a lesser number of\nevents. Therefore, it is very tough to select the type of detector\nfor the measurement of such a cross-section. Because of the\n\nlow energy of the antineutrinos, the recoil energy deposited in\nthe detector is up to a few keV.\n\n**V.** **EXPECTED EVENT RATE IN DETECTOR**\n\nThe CE _ν_ NS reaction cross section per unit detector mass\ncould be up to two orders of magnitude greater than that for\nIBD process, potentially allowing for detectors in the kilogram range. The expected signal event rate due to CE _ν_ NS is\n\nwhere _M_ det is the mass of the detector, _t_ is the time duration of\ndata taking, _λ_ 0 is the total ~~_ν_~~ _e_ flux and, _λ_ ( _E_ _ν_ ) is the ~~",
+        "score": -6.292035479859383,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7830645161290322,
+        "rerank_score": -9.772817611694336,
+        "matched_nodes": [
+          "In",
+          "At",
+          "Ge",
+          "The",
+          "For",
+          "Si"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5202,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2791763__2405.19974__Atomistic_Compositional_Details_and_Their_Importance_for_Spin_Qubits_in_Isotope-Purified_S.md",
+        "title": "2024__recid_2791763__2405.19974__Atomistic_Compositional_Details_and_Their_Importance_for_Spin_Qubits_in_Isotope-Purified_S",
+        "text": "lear spins. Anticipating further improvements in coherence times,\nisotope-purified Ge could then be used in and around the [28] Si QW [69], suppressing hyperfine interaction\nwith [73] Ge. Also, the fact that we determined _g_ = 2 _._ 00 _±_ 0 _._ 01 [45] in this heterostructure, demonstrates\nthat the slight addition of Ge to the [28] Si QW does not induce relevant spin-orbit coupling.\n\n#### **5 Conclusion**\n\nSummarizing our findings, our analysis allows us to experimentally extract realistic concentration profiles of\nthe MBE heterostructure in its as-grown state as well as after a post-growth thermal anneal, representative\nof the thermal budget to which a spin qubit device is exposed during sample processing. We have found\nstate of the art width values for the as-grown interfaces between the [28] Si QW and the top and bottom\nSi 0 _._ 7 Ge 0 _._ 3 barrier. The post-growth anneal leads to a seemingly small, but clearly detectable, broadening of\nthe top interface due to isotropic bulk diffusion, while the bottom barrier width remains unchanged within\nthe experimental detection limit. At the same time, we reveal signs of Ge segregation on comparably small\nlength scales, imputable to the growth of the heterostructure. Segregation trailing edges have been reported\non significantly larger length scales (due to the use of higher substrate temperatures during the epitaxy)\nbefore [60]. APT proves here to be highly suited to analyze such rather subtle signatures of segregation and\npost-growth annealing. In comparison, we found ToF-SIMS to reveal the slightly retarded turn-on of Ge at\n\n10\n\nthe top interface, but to be resolution-limited regarding the trailing edge at the bottom interface and also\nthe effect of post-growth annealing. We attribute the resolution limitation to the heterostructure-inherent\nstrain relaxation. Using an APT needle in horizontal configuration to increase the analysis volume of the\n10 _._ 5 nm thin QW, APT allowed us to assess an isotope purity of the [28] Si QW of (50 _±_ 20) ppm [29] Si and\ndown to the detection limit of 10 ppm for [30] Si. Additionally, we found the upper boundary of the Ge\ncomposition within the [28] Si QW to be 0 _._ 3 % in the horizontal needle configuration, which represents an\nunprecedented level of precision in a segregation or diffusion study in Si. This upper boundary agrees\nwell with the parameter _C_ _min_ (Ge) of our APT Ge concentration profile fit function which increases from\n0 _._ 21% in the as-grown to 0 _._",
+        "score": -6.379396958664925,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7830645161290322,
+        "rerank_score": -9.907219886779785,
+        "matched_nodes": [
+          "In",
+          "At",
+          "Ge",
+          "The",
+          "We",
+          "Si"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 922,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu.md",
+        "title": "2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu",
+        "text": "nt materials and conditions\n\n(i.e., strain and composition) we consider, as well as the related electronic transition levels\n\n( _ε_ ) associated with ionization or charge-trapping processes that may occur in qubit devices\n\nunder operation. [13] We additionally evaluate energy barriers associated with instantaneous\n\ncharge-transfer between defect states, as may be expected for optical excitations or tunneling\n\nprocesses that can induce high- or low-frequency charge noise.\n\nIn a typical Si/Si 1 _−x_ Ge _x_ quantum well device architecture, a strained Si layer is sand\n\nwiched between Si 1 _−x_ Ge _x_ layers to introduce a two-dimensional electron gas (2DEG) confined\n\nin the strained Si layer as shown schematically in Figure 1. The choice of Si 1 _−x_ Ge _x_ composi\n\ntion influences the details of the heterostructure band diagram, through both strain and band\n\ngap effects, with a typical design using _∼_ 30% Ge leading to high performing devices. [14] The\n\nbottom layer is a relaxed Si 1 _−x_ Ge _x_ layer grown on a graded Si 1 _−x_ Ge _x_ virtual substrate that\n\nhas compositional variations to tune both the strain in the quantum well and the resulting\n\n2DEG quality while minimizing dislocations generated during the growth process. [14] Even\n\n_−_\nwith optimized growth processes, threading dislocation densities on the order of 10 [5] 10 [6]\n\ncm _[−]_ [2] have been reported. [14,15] The top layers can also include relaxed Si 1 _−x_ Ge _x_ layers with\n\nadditional doped layers to contribute carriers to the 2DEG. Owing to the presence of strain\n\nand likely compositional variations, including strain variations associated with defects and\n\ndevice patterning, we investigate the dependence of defect energy levels associated with DBs\n\nfrom Si and Ge, exploring the role of the local and global chemical environment. Specifically,\n\nwe consider DBs from Si and Ge that are back-bonded to Si and Ge in bulk Si and Ge host\n\n3\n\nmaterials to evaluate the scenarios of locally Si-rich and Ge-rich compositions, respectively.\n\nTo avoid confusing notation with substitutional defects, we adopt a subscript in front to\n\ndenote back-bonding that helps to clarify the local environment. For example, an isolated Si\n\nDB in Si is redundantly labeled as Si Si Si, an isolated Ge Si DB in Si is represented as Si Ge Si,\n\nwhile a locally-Ge rich region with all Ge nearest neighbors to the Ge Si is labeled as Ge Ge Si .\n\nWe summarize schematics of studied DB structures in Fig. 2. We additionally cons",
+        "score": -6.478566112862865,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8475806451612903,
+        "rerank_score": -10.06743049621582,
+        "matched_nodes": [
+          "In",
+          "Ge",
+          "The",
+          "We",
+          "For",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4603,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter.md",
+        "title": "2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter",
+        "text": "the optical budget for the ASE-sourced transmitter and evolution of the rawkey rate and QBER when seeding Alice’ polarization encoder with (b) the ASE-sourced and (c) the Ge-on-Si PIN light source.\n\ndrive to suppress symbol transitions. Before transmitting the photons to Bob, we used an optical attenuator to set the signal\nlaunch power to a mean photon number of μ Q = 0.1 photons/symbol.\n\nAt Bob’s side we manually aligned the polarization of the incoming signal to the axes of our polarization analyzer with a\npolarization controller (PC). The outputs of the polarization analyzer were connected to a pair of free-running InGaAs SPADs\nwith dark count rates of 560 and 525 cts/s. We consecutively measured the received quantum signal in the **H** / **V** and **D** / **A** bases\nand recorded the detection events of the SPADs with a TTM. A real-time QBER evaluation was then performed, which included\n\n|12 0.1<br>10 [kb/s] = Q<br>µ<br>8<br>rate<br>6<br>key<br>4<br>Raw<br>2<br>0<br>-16 -12 -8 -4<br>(a) Relative optica|hν/pulse|\n|---|---|\n|<br>0<br>2<br>4<br>6<br>8<br>10<br>12<br>-16 -12 -8<br>-4<br><br>**Relative optica**<br>**Raw key rate [kb/s]**<br>(a)<br>µQ = 0.1|0<br>4<br>8<br>12 16<br>**l budget****_OB_ [dB]**|\n|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|\n\nframe synchronization with the pre-defined pseudo random bit sequence transmitted by Alice, as well as temporal filtering to\n50% of the symbol period to reduce the dark counts. Additionally, basis sifting was performed during this process.\n\nTo confirm the correct operation of our transmitter and receiver architectures we also performed a classical\n\ncharacterization. For this we replaced the attenuator by an additional EDFA and the SPADs and TTM with balanced receivers\nand a real-time oscilloscope. The carved optical output at Alice ( _Ξ_ ) and the characteristic three-level signals ( _ρ_ ) for the **H** / **V** and\n**D** / **A** bases under 4-state polarization encoding are included in Fig. 3(a).\n\nIn order to assess the performance as a function of the optical budget (OB) between Alice and Bob, defined as the difference\nof the transmitted power level at Alice and the received optical power (ROP) at Bob, we used the ASE seed light for Al",
+        "score": -6.546605053292552,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8475806451612903,
+        "rerank_score": -10.17210578918457,
+        "matched_nodes": [
+          "In",
+          "At",
+          "The",
+          "We",
+          "For",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 12,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2629741__2302.02044__Neutron_capture-induced_silicon_nuclear_recoils_for_dark_matter_and_CENS.md",
+        "title": "2023__recid_2629741__2302.02044__Neutron_capture-induced_silicon_nuclear_recoils_for_dark_matter_and_CENS",
+        "text": "pectra. The\ncapture cross section is assumed to be 0.171 barns, from\n2003 measurements at Brookhaven National Lab [23]\n(this value is also used in the EGAF (Evaluated Gamma\nActivation File) database [24]). This value is about 4%\nhigher than the value given by evaluations a few years\nearlier at Los Alamos National Lab that are used in\nENDF and the JENDL 5 database [25] and the cross\nsection measurements made by Raman [9].\n\n7\n\nFor a CEνNS experiment with a 1 MW reactor at a\ndistance of 8 m we arbitrarily compared a thermal neutron flux of 0.1% of the sea level value. We have used\nthe Mueller spectrum for the reactor anti-neutrinos [26].\nThe detector resolution function is assumed to have a\n10 eV baseline that rises to 30 eV at a recoil energy of\n25 eV. We use this form for the energy-varying resolution: � _σ_ 0 [2] [+] _[ AE]_ _[r]_ [;] _[ E]_ _[r]_ [ is the recoil energy and] _[ σ]_ [0] [ and] _[ A]_\n\nare constants.\nFor the dark matter comparisons in Fig. 9 we used a\n1 GeV mass dark matter particle with a cross section just\nbelow the limit produced in recent SuperCDMS work [21,\n27].\nFigure 9 shows that both for dark matter searches and\nCEνNS the spectral overlap of thermal neutron capture\ninduced NRs can interfere with measurements especially\nin cases where the detector baseline resolutions are larger\nthan 10 eV — true for all but the best modern detectors.\n\n**VI.** **CONCLUSION**\n\nWe have carefully derived and simulated the spectrum\nof NRs following thermal neutron captures in silicon. The\nspectra do not match the contemporary `Geant4` particle\ntransport code, indicating the details of decay-in-flight\nand atomic slowing-down are poorly modeled.\nThe level of thermal neutron fluxes that may be\npresent in underground laboratories (mostly from radiogenic sources in deep labs) is comparable to the contemporary rate limits on dark matter scattering. Furthermore, in the CEνNS venue the thermal neutron capture\nbackground could also play an important role due to the\nproximity of some experiments to neutron-generating reactors [28, 29]. In both of these situations the authors\nrecommend studies of the thermal neutron flux levels and\ntaking the thermal neutron capture background into account during data analysis.\n\n**ACKNOWLEDGMENTS**\n\nWe gratefully acknowledge support from the U.S. Department of Energy (DOE) Office of High Energy Physics\nand from the National Science Foundation (NSF). This\nwork was supported by DOE Grant No. DE-SC0021364\nand in part by NSF Grant No. 2",
+        "score": -6.58597258967738,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8870967741935484,
+        "rerank_score": -10.23735237121582,
+        "matched_nodes": [
+          "In",
+          "DOE",
+          "The",
+          "We",
+          "For",
+          "Office",
+          "Department",
+          "Energy"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2962,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2701118__2309.12243__Electrical_operation_of_hole_spin_qubits_in_planar_MOS_silicon_quantum_dots.md",
+        "title": "2024__recid_2701118__2309.12243__Electrical_operation_of_hole_spin_qubits_in_planar_MOS_silicon_quantum_dots",
+        "text": "ined**\n**germanium hole system** . The strained germanium quantum well is grown epitaxially on a strain-relaxed SiGe layer.\nThe portion of the silicon in SiGe can be tuned experimentally, therefore, the axial strain can be controlled. Gate B2\nand T1 can control the inter-dot tunneling. In this picture,\nwe set the growth direction to be along ˆ _z_ -direction.\n\n_H_ LKBP ) intermix the heavy-hole and light-hole states.\nFor silicon hole quantum dots based on metal-oxidesemiconductor platforms, strain naturally develops in\nthe device due to the differences in the thermal contraction between metal electrodes and the silicon substrate. While strain engineering is a common practice\nin the classical electronics industry, academic research\ninto quantum dots has not been focused on this aspect thus far, except for the occasional consideration on\nchoices of material stacks [229]. In the case of germanium\nhole spin qubits based on a homogeneous uni-axial strain\nstrained germanium quantum well in a SiGe/Ge/SiGe\nheterostructure, strain can be meticulously controlled.\nThe substrate includes a fully strain-relaxed SiGe layer.\nThe middle of the heterostructure comprises an epitaxially grown layer of strained germanium, hosting the hole\nqubit, and another layer of relaxed SiGe atop the Ge\nlayer. The concentration of Si atoms in Si _x_ Ge 1 _−x_, represented by the component fraction factor _x_, also determines the strain in the pure Ge layer via Vegard’s law.\nTo quantitatively compare the strain in the silicon and\nthe germanium hole spin qubit devices, we use typical\nparameters as listed in Ref. [156]. For instance, if the relaxed SiGe layer is Si 0 _._ 25 Ge 0 _._ 75, ( _x_ = 0.25) the axial compressive strain will be _ϵ_ _xx_ =- 0.001, which is _∼_ 5 times\nlarger than the strain present in the silicon metal-oxidesemiconductor quantum dot. In Table. II, we summarize\nvarious typical configurations, including strains, top gate\nfields, magnetic fields, and geometries to reach the optimal operation points in different materials. We notice\nthat the parameters used to fit experimental data, such\nas the dot geometry, shear strain, and axial strain, are\nestimates. It is crucial to include the non-uniform strain\nfrom the gate electrodes, as shown in Ref.[135]. For more\nprecise results, direct strain profilling as in Ref. [230], or\ndevice-specific modelling can be employed. Strain will be\nthoroughly investigated in future works. In this context,\nwe note that we do not anticipate str",
+        "score": -6.639561024056711,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8475806451612903,
+        "rerank_score": -10.315114974975586,
+        "matched_nodes": [
+          "In",
+          "Ge",
+          "The",
+          "We",
+          "For",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 20,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6800,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2852346__2411.16974__Computed_Models_of_Natural_Radiation_Backgrounds_in_Qubits_and_Superconducting_Detectors.md",
+        "title": "2025__recid_2852346__2411.16974__Computed_Models_of_Natural_Radiation_Backgrounds_in_Qubits_and_Superconducting_Detectors",
+        "text": "CLUSION\n\nWe have simulated the effects of cosmic and terrestrial\n\nradiation backgrounds in a variety of objects whose size,\nshape, and composition are representative of the substrates\nof superconducting qubits and superconducting sensors. We\nhave modeled realistic quantities of radiation shielding and\ngenerated the expected spectrum of energy deposited in such\nsubstrates by both sources of background. We have summarized the spectra by formulas that capture how the relevant\neffects of radiation depend on substrate material and geometry\nand (for cosmic rays) on elevation. We believe that the absolute\nrates given in this work are accurate to some _±_ 25 % over\na range of realistic conditions, and that the values can be\nused productively for approximate but quantitative estimates of\nbackground levels. They can also give intuitive understanding\nof what shielding steps might benefit any specific experiment.\n\n\n\n_c_ _s_ + _g_ _s_ _τ_\n\n _p_ _s_ _τ_ _[β]_ _[s]_\n\n _m_ _s_ _τ_ _[α]_ _[s]_\n\nTable II gives the appropriate values for:\n\n_•_ _n_ _s_, the nominal specific activity of each gammaproducing decay chain in typical concrete,\n\n_•_ _c_ _s_, the charged-particle event rate of source _s_ in silicon\nwafers of any thickness,\n\nIEEE TRANSACTIONS ON APPLIED SUPERCONDUCTIVITY 5\n\nA CKNOWLEDGMENTS\n\nWe thank all our co-authors on [8] for helping to set the\ndirection of this modeling effort, and Matthew Nathale, Mark\nKeller, and Pieter Mumm for helpful comments on a draft of\nthis work. We gratefully acknowledge support from the U.S.\nDepartment of Energy, Office of Science, Office of Nuclear\nPhysics, under Award Numbers DE- SC0021415 and DESC0023682.\n\nR EFERENCES\n\n[1] S. Bravyi, O. Dial, J. M. Gambetta, D. Gil, and Z. Nazario, “The\nfuture of quantum computing with superconducting qubits,” _Journal_\n_of Applied Physics_, vol. 132, no. 16, p. 160902, 10 2022. [Online].\n[Available: https://doi.org/10.1063/5.0082975](https://doi.org/10.1063/5.0082975)\n\n[2] M. Kjaergaard, M. E. Schwartz, J. Braum¨uller, P. Krantz, J. I.J. Wang, S. Gustavsson, and W. D. Oliver, “Superconducting\nqubits: current state of play,” _Annual Review of Condensed Matter_\n_Physics_, vol. 11, no. 1, pp. 369–395, 2020. [Online]. Available:\n[https://doi.org/10.1146/annurev-conmatphys-031119-050605](https://doi.org/10.1146/annurev-conmatphys-031119-050605)\n\n[3] J. Zmuidzinas, “Superconducting microresonators: Physics and applications,” _Annual Review of Condensed Matter Physics_, vol. 3, no. 1, pp.\n169–214, Mar.",
+        "score": -6.727310642562374,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7959677419354838,
+        "rerank_score": -10.444000244140625,
+        "matched_nodes": [
+          "The",
+          "We",
+          "Office",
+          "Department",
+          "IEEE",
+          "Physics",
+          "Transactions",
+          "Nuclear",
+          "On",
+          "Review"
+        ],
+        "path_nodes": [
+          "In",
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "DOE": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "LE": 1.0,
+      "FL": 1.0,
+      "MA": 1.0,
+      "Ge": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "DOE": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "LE": 1.0,
+      "FL": 1.0,
+      "MA": 1.0,
+      "Ge": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "Office": 0.7,
+      "Department": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "IEEE": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "Si": 0.7,
+      "Energy": 0.24499999999999997,
+      "Transactions": 0.24499999999999997,
+      "Nuclear": 0.24499999999999997,
+      "On": 0.24499999999999997,
+      "Nature": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 27,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.310014811810106,
+    "generation_latency_s": 3.497116267681122e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 27.0,
+    "retrieval_latency_s": 6.310014811810106,
+    "generation_latency_s": 3.497116267681122e-07
+  }
+}

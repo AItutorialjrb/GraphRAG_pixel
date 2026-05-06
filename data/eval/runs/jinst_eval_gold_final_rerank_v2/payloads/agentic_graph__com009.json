@@ -1,0 +1,1922 @@
+{
+  "query": "Compare drift and diffusion charge collection.",
+  "expanded_query": "Compare drift and diffusion charge collection.",
+  "mode": "agentic_graph+light_rerank",
+  "retrieved": [
+    {
+      "rank": 1,
+      "chunk_id": "2745",
+      "doc_id": "113",
+      "title": "2024__recid_2692914__2309.00225__Rapid_single-shot_parity_spin_readout_in_a_silicon_double_quantum_dot_with_fidelity_exceed",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2692914__2309.00225__Rapid_single-shot_parity_spin_readout_in_a_silicon_double_quantum_dot_with_fidelity_exceed.md",
+      "score": 13.560660252008509,
+      "retriever": "graph+light_rerank",
+      "text": "erver, S. V. Amitonov, M. Botifoll, J. Arbiol, L.\n\nM. K. Vandersypen, M. Russ, and G. Scappucci, _Reducing Charge Noise in Quantum Dots by_\n\n_Using Thin Silicon Quantum Wells_, Nat Commun **14**, 1385 (2023).\n\n[19] A. Noiri, K. Takeda, J. Yoneda, T. Nakajima, T. Kodera, and S. Tarucha, _Radio-Frequency_\n\n_Detected Fast Charge Sensing in Undoped Silicon Quantum Dots_, Nano Letters **20**, 947 (2020).\n\n[20] E. J. Connors, J. J. Nelson, and J. M. Nichol, _Rapid High-Fidelity Spin-State Readout in_\n\n_$¥mathrm{Si}$/$¥mathrm{Si}$-$¥mathrm{Ge}$ Quantum Dots via Rf Reflectometry_, Physical\n\nReview Applied **13**, 24019 (2020).\n\n[21] T. A. Baart, M. Shafiei, T. Fujita, C. Reichl, W. Wegscheider, and L. M. K. Vandersypen, _Single-_\n\n_Spin CCD_, Nature Nanotechnology **11**, 330 (2016).\n\n[22] Y. Tokura, W. G. Van Der Wiel, T. Obata, and S. Tarucha, _Coherent Single Electron Spin Control_\n\n_in a Slanting Zeeman Field_, Physical Review Letters **96**, 1 (2006).\n\n[23] F. Martins, F. K. Malinowski, P. D. Nissen, E. Barnes, S. Fallahi, G. C. Gardner, M. J. Manfra, C.\n\nM. Marcus, and F. Kuemmeth, _Noise Suppression Using Symmetric Exchange Gates in Spin_\n\n_Qubits_, Physical Review Letters **116**, 116801 (2016).\n\n[24] M. D. Reed et al., _Reduced Sensitivity to Charge Noise in Semiconductor Spin Qubits via_\n\n_Symmetric Operation_, Physical Review Letters **116**, 110402 (2016).\n\n[25] P. Huang and X. Hu, _Spin Relaxation in a Si Quantum Dot Due to Spin-Valley Mixing_, Phys. Rev.\n\nB **90**, 235315 (2014).\n\n[26] F. Borjans, D. M. Zajac, T. M. Hazard, and J. R. Petta, _Single-Spin Relaxation in a Synthetic Spin-_\n\n_Orbit Field_, Physical Review Applied **10**, 1 (2018).\n\n[27] A. R. Mills, C. R. Guinn, M. M. Feldman, A. J. Sigillito, M. J. Gullans, M. T. Rakher, J. Kerckhoff,\n\nC. A. C. Jackson, and J. R. Petta, _High-Fidelity State Preparation, Quantum Control, and Readout_\n\n_of an Isotopically Enriched Silicon Spin Qubit_, Phys. Rev. Appl. **18**, 064028 (2022).\n\n[28] J. Z. Blumoff et al., _Fast and High-Fidelity State Preparation and Measurement in Triple-_\n\n_Quantum-Dot Spin Qubits_, PRX Quantum **3**, 10352 (2022).\n\n[29] L. DiCarlo, H. J. Lynch, A. C. Johnson, L. I. Childress, K. Crockett, C. M. Marcus, M. P. Hanson,\n\nand A. C. Gossard, _Differential Charge Sensing and Charge Delocalization in a Tunable Double_\n\n_Quantum Dot_, Physical Review Letters **92**, 1 (2004).\n\n[30] T. F. Watson et al., _A Programmable Two-Qubit Quantum Processor in Silicon_, Nature **555**, 633\n\n(20",
+      "_rerank_score": 13.560660252008509,
+      "score_original": 23.292109549106378
+    },
+    {
+      "rank": 2,
+      "chunk_id": "7879",
+      "doc_id": "357",
+      "title": "2026__recid_2956743__2508.00532__Low_Activity_Tritium_Detection_in_CCDs_Using_Deep_Learning_Techniques",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956743__2508.00532__Low_Activity_Tritium_Detection_in_CCDs_Using_Deep_Learning_Techniques.md",
+      "score": 13.065665180398138,
+      "retriever": "graph+light_rerank",
+      "text": "ts<br>0<br>10 nm 0 100 200<br>Deadlayer [nm]<br>100 nm<br>250 nm|Col4|\n|---|---|---|---|\n|||100 nm<br>10 nm<br>250 nm<br>0 nm<br>0<br>100<br>200<br>Deadlayer [nm]<br>0<br>50<br>~~100~~<br>Events lost to<br>deadlayer [%]||\n|||||\n|||||\n\n0 5 10 15\n\nEnergy detected (keV)\n\nFig. 5. The fraction of tritium beta particles that deposit energy in the sensitive\nCCD volume for dead layer thicknesses of 0, 10, 100, and 250 nm. The inset\nplot show the percentage of incoming tritium particles that are lost due to the\ndead layer.\n\nassumption should not impact the overall conclusions drawn\nfrom these results.\n\n_B. CCD Charge Drift and Diffusion Modeling_\n\nDrift and diffusion affects the charges in a CCD as they\nmove towards the readout plane. These effects were modeled\nin Python using the energy deposition for each particle step\ntaken in the Geant4 simulation. The charges liberated by the\nincoming particles were sampled from a Gaussian distribution\nwith a mean of the deposited energy _/_ 3 _._ 6 eV (the mean energy\nfor creating an electron-hole pair) and a variance corresponding to a Fano Factor of 0.16[21]. The cloud of charges will\ndrift towards the readout side of the CCD based on the applied\nvoltage. We matched our experimental setup with 70 V applied\nto the CCD, resulting in drift times between 0-40 ns from\nenergy deposition to charge collection, depending on the depth\nof interaction in the CCD. The drift time is used to apply\nlateral diffusion that occurs in CCDs. A table of pre-calculated\ndiffusion kernels for varying depth of energy deposition was\nprepared and applied to the charges, with an increasingly wide\nGaussian point spread function with increasing interaction\ndepth. The widths are calculated from the drift times which\nare fitted from measured responses from CCDs manufactured\nat Lawrence Berkeley National Laboratory. A per-pixel noise\nwas added to the final image to account for the noise in the\nCCD. The noise was sampled from a Gaussian distribution\nwith a mean of 0 and a standard deviation of 3.5 electrons as\n\nobserved in our experimental data.\n\n_C. Ice-layer Simulations_\n\nBecause of the short range of tritium beta particles, samples\nshould be placed close to the CCD to maximize the signal. One\noption is to freeze an aqueous sample onto the CCD surface.\nHere we use ice-layer simulations to investigate how varying\nthicknesses affect the fraction of tritium beta particles that\nreach the CCD.\n\nWe conducted simulations of tritium-containing ice layers\nof varyin",
+      "_rerank_score": 13.065665180398138,
+      "score_original": 11.028482146178431
+    },
+    {
+      "rank": 3,
+      "chunk_id": "5526",
+      "doc_id": "243",
+      "title": "2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico.md",
+      "score": 10.703973050252284,
+      "retriever": "graph+light_rerank",
+      "text": "ion: (a) Charge collection within 20 ns along the device depth for the LGAD with\nthe same laser intensity settings as the experimental data shown in Fig.6. (b) The gain as function of\ndepth in the device as obtained by dividing the CC in the LGAD by the CC in the centre of a PIN for\nthe same laser intensity .\n\nIntegration of the simulated waveforms results in one value for the CC as function of\nfocal depth and intensity of the laser pulse. The CC profiles for the various simulated laser\nintensities are given in Figure 8a. The shark-fin effect observed for the experimental data\n(Figure 6) is correctly reproduced in the TCAD simulations. Some deviations towards the\nbackside of the LGAD are visible, but are known to be originating from the reflection of\nthe laser beam at the back side metal of the device that was not taken into account in the\n\nsimulation. The effect was already describe in section 4.2 for the PIN detector data shown\nin Figure 3a.\nDividing the CC by the charge _Q_ _TPA_, defined as the charge injected when the laser is\nfocused close to the middle of the sensor bulk ( _≈_ 150 µm), results in the data presented in\nFigure8b, which can be seen as a gain profile. For the lowest injected charge, the highest\ngain of about 15 is observed, with only small differences between injection at the front side\nand the back side. With further rising laser pulse intensity (rising injected charge) the gain\nis suppressed and a more pronounced difference between the gain obtained at the front\nand the back side.\n\nThe gain values obtained at two different injection depths are given in Figure 9 for the\nexperimental and the simulated data over three orders of magnitude in injected charge. The\nagreement between simulation and experiment clearly confirms that the shark-fin effect\nand the gain suppression mechanism in general, can successfully be simulated in TCAD\nsimulations, employing a local impact-ionization model within the standard drift-diffusion\nsimulation approach.\n\n**6. Conclusions**\n\nWe demonstrated that TCAD device simulations can be used to simulate depth resolved TPA-TCT measurements. A very good agreement between simulation and experiment was found. Simulation helps to interpret measurement data, as the influence of\noperational and device parameters can be easily distinguished. In this work the simulation\nwas used to interpret Time over Threshold (ToT) and Weighted Prompt Current (WPC)\nprofiles and successfully compared to measured data. For example, it was",
+      "_rerank_score": 10.703973050252284,
+      "score_original": 9.461769182276877
+    },
+    {
+      "rank": 4,
+      "chunk_id": "7789",
+      "doc_id": "352",
+      "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+      "score": 9.49500103770605,
+      "retriever": "graph+light_rerank",
+      "text": "## Simulation of irradiated hybrid planar pixels modules at fluences expected at HL-LHC\n\nM. Bomben\n\n_APC, Universite Paris Cite, CNRS/IN2P3, 10 rue Alice Domon et Leonie_\n_Duquet, Paris, 75013, France_\n\n**Abstract**\n\nSignal loss is the main limitation on tracking/vertexing performance due\nto radiation damage effect to hybrid pixel detectors when irradiated at fluences expected at High Luminosity LHC (HL-LHC). It is important to have\nreliable predictions on the charge collection performance after irradiation in\norder to predict operational voltage values and test tracking algorithms robustness. In this paper the validation of combined TCAD and Monte Carlo\nsimulations of hybrid silicon planar pixels sensors will be presented. In particular different trapping models will be compared to identify the one giving the\nbest predictions. Eventually predictions on the collected charge performance\nof planar pixels modules at HL-LHC will be discussed.\n\n_Keywords:_ silicon radiation detectors, simulations, radiation damage\n\n**1. Introduction**\n\nSilicon radiation detectors are exposed to unprecedented hadron fluences\nat Large Hadron Collider (LHC) experiments ATLAS, CMS and LHCb [1].\nDeep defects are created in the Si bandgap by hadrons determining modifications to the space charge distribution and to the generation rate [2]. As a\nresult the leakage current and the depletion voltage of the detector increases,\nwhile carriers being trapped result in a reduction of the signal amplitude.\nCharge trapping can lead to induced signals being below detection threshold,\ndetermining the distortion of cluster shapes, resulting in degradation of spatial resolution and hit efficiency [3]. It is extremely important to have Monte\nCarlo (MC) simulated events that can reproduce the loss of collected signal\nwith the increase of integrated luminosity, hence fluence. The ATLAS [4]\n\nand CMS [5] collaboration have developed and implemented algorithms that\nreproduce with percent precisioni [6] the loss of collected charge with the\naccumulated fluence.\nThe LHC will be upgraded into a high luminosity collider (HL-LHC),\ncapable of delivering proton-propton collisions at a rate five to seven times\nlarger than today with the goal to accumulate a data set ten times larger\nthan the actual one in about ten years of operations [7]. Such an increase of\ncollisions rate and particles poses stringent constraints on the silicon detectors\nin terms of radiation damage - up to 10 times larger than today - to the",
+      "_rerank_score": 9.49500103770605,
+      "score_original": 10.90000188673827
+    },
+    {
+      "rank": 5,
+      "chunk_id": "3548",
+      "doc_id": "148",
+      "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+      "score": 9.370840138651724,
+      "retriever": "graph+light_rerank",
+      "text": "within a single\n\npixel. The Geant4 simulations will, thus, not generate extended clusters of neighboring pixels\n\nsince charge diffusion in the epitaxial layer is not simulated. This results in a discrepancy between\n\nthe simulations (dark blue histogram) and the measured data (black points).\n\nHowever, creating an accurate description of this process can be extensive and time-consuming.\n\nIt requires detailed knowledge of the electric field in the epitaxial layer and around the charge\n\ncollection node, which is non-disclosure material. Instead, a simpler model [34] was implemented\n\nas a post-processing step to the Geant4 simulation, in order to reproduce the experimental pixel\n\nhit distributions. Additional pixels are generated using an empirical model of charge diffusion in\n\nthe sensor. The simulated charge deposited in the sensor is translated into the spatial width of the\n\nelectron diffusion by using an empiric parametrization. This width is then used to derive the pixel\n\ncluster size from a two-dimensional Gaussian probability density function.\n\n– 24 –\n\n|Hits<br>0.16 dN/dN<br>0.14<br>1/N<br>0.12<br>0.1<br>0.08<br>0.06<br>0.04<br>0.02<br>00 500 1000|Hits<br>ALICE FoCal-E Pixel 0.05 dN/dN<br>SPS H2 May 2023<br>Electrons<br>Layer 5 20 GeV 0.04 1/N<br>Data 0.03<br>GEANT4<br>GEANT4 + Diffusion model<br>0.02<br>0.01<br>1500 2000 2500 3000 00 500 1000<br>N<br>Hits|0.04 Hits<br>ALICE FoCal-E Pixel dN/dN<br>SPS H2 May 2023 0.035<br>Electrons<br>Layer 5 1/N<br>100 GeV 0.03<br>0.025<br>Data<br>GEANT4 0.02<br>GEANT4 + Diffusion model<br>0.015<br>0.01<br>0.005<br>1500 2000 2500 3000 00 500 1000<br>N<br>Hits|\n|---|---|---|\n|~~0~~<br>~~500~~<br>~~1000~~<br>0<br>0.02<br>0.04<br>0.06<br>0.08<br>0.1<br>0.12<br>0.14<br>0.16<br>0.18<br>0.2<br>0.22<br>0.24<br>Hits<br>1/N dN/dN|~~1500~~<br>~~2000~~<br>~~2500~~<br>~~3000~~<br>Hits<br>N<br>**ALICE FoCal-E Pixel**<br>SPS H2 May 2023<br>Electrons<br>Layer 10<br>20 GeV<br>Data<br>GEANT4<br>GEANT4 + Diffusion model<br>~~0~~<br>~~500~~<br>~~1000~~<br>0<br>0.01<br>0.02<br>0.03<br>0.04<br>0.05<br>0.06<br>0.07<br>0.08<br>Hits<br>1/N dN/dN|~~1500~~<br>~~2000~~<br>~~2500~~<br>~~3000~~<br>Hits<br>N<br>**ALICE FoCal-E Pixel**<br>SPS H2 May 2023<br>Electrons<br>Layer 10<br>100 GeV<br>Data<br>GEANT4<br>GEANT4 + Diffusion model<br>~~0~~<br>~~500~~<br>~~1000~~<br>0<br>0.01<br>0.02<br>0.03<br>0.04<br>0.05<br>0.06<br>Hits<br>1/N dN/dN|\n\n**Figure 21** . Number of hits distributions for data, Geant4 simulations and Geant4 simulations with an\napplie",
+      "_rerank_score": 9.370840138651724,
+      "score_original": 9.310618433912225
+    },
+    {
+      "rank": 6,
+      "chunk_id": "7790",
+      "doc_id": "352",
+      "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+      "score": 9.255649139005891,
+      "retriever": "graph+light_rerank",
+      "text": "ten times larger\nthan the actual one in about ten years of operations [7]. Such an increase of\ncollisions rate and particles poses stringent constraints on the silicon detectors\nin terms of radiation damage - up to 10 times larger than today - to the\npoint that a new inner detector is needed in both experiments. ATLAS will\nimplement a new all silicon inner detector, the Inner Tracker (ITk) [8, 9].\nHybrid silicon n-on-p pixel modules will be used in the core part of ITk, with\nstrip detectors at larger radii. The innermost part of the ITk Pixel detector\nwill be instrumented with 3D sensors will all the rest will be equipped with\nplanar ones; more details on the ITk layout can be found in [10]. The largest\nfluence to be integrated by 3D and planar sensors is of about 1 _._ 6 _×_ 10 [16] and\n3 _._ 5 _×_ 10 [15] n eq _/_ cm [2] respectively.\nIt is extremely important to have predictions on charge collection performance after such large fluences and the combination of TCAD [1] and MC tools\nlike Allpix [2] [11] is perfect as with the first a precise simulation of the electric\nfield inside the sensor is possible while the latter is adapted for simulating\nparticles impinging on the detector under different conditions (temperature,\nthreshold, angle, etc.). This approach is being used for example in several\ncases in detector development for high energy physics [12, 13].\nAt the moment no data from irradiated modules equipped with the final\nversion of readout chip (ITkPixV2 [14]) for the ATLAS ITk pixel detector\nexist. In order to assess the expected collected charge existing data on similar\ndevices after HL-LHC like fluences have been identified; in particular the\nCMS tracker group investigated passive CMOS sensors [15, 16] bump bonded\nto an RD53A readout chip [17]. Results from testbeams for n-on-p sensors\nwith a thickness of 150 µm were reported. These results have been used to\nvalidate the predictions of TCAD and Allpix [2] .\nIn Section 2 the simulation setup will be presented, then its validation\nwill be discussed (Section 3). The expected charge collection performance of\nATLAS ITk planar pixel modules will be presented in Section 4; Section 5\n\n1 Technology Computer Aided Design\n\n2\n\nwill conclude the paper.\n\n**2. Simulation Setup**\n\nThe simulation of the irradiated silicon pixels sensors has been carried out\nusing the Geant4 [18, 19, 20] based Allpix [2] (v3.2.0) MC simulation framework, with precise electric field and weighting potential [21, 22] maps calculated",
+      "_rerank_score": 9.255649139005891,
+      "score_original": 10.464816616374346
+    },
+    {
+      "rank": 7,
+      "chunk_id": "779",
+      "doc_id": "36",
+      "title": "2023__recid_2662395__2305.14515__Effects_of_temperature_fluctuations_on_charge_noise_in_quantum_dot_qubits",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2662395__2305.14515__Effects_of_temperature_fluctuations_on_charge_noise_in_quantum_dot_qubits.md",
+      "score": 8.613390800216361,
+      "retriever": "graph+light_rerank",
+      "text": "**Effects of Temperature Fluctuations on Charge Noise in Quantum Dot Qubits**\n\nDan Mickelsen, [1] Herve Carruzzo, [1] S. N. Coppersmith, [2] and Clare C. Yu [1]\n\n1 _University of California, Irvine, California 92697, USA_\n2 _University of New South Wales, Sydney, NSW 2052, Australia_\n(Dated: May 25, 2023)\n\nSilicon quantum dot qubits show great promise but suffer from charge noise with a 1 _/f_ _[α]_ spectrum,\nwhere _f_ is frequency and _α_ ≲ 1. It has recently been proposed that 1 _/f_ _[α]_ noise spectra can\nemerge from a few thermally activated two-level fluctuators in the presence of sub-bath temperature\nfluctuations associated with a two-dimensional electron gas (2DEG) [1]. We investigate this proposal\nby doing Monte Carlo simulations of a single Ising spin in a bath with a fluctuating temperature.\nWe find that to obtain noise with a 1 _/f_ _[α]_ spectrum with _α_ ≲ 1 down to low frequencies, the duration\nof temperature fluctuations must be comparable to the inverse of the lowest frequency at which the\nnoise is measured. This result is consistent with an analytic calculation in which the fluctuator is a\ntwo-state system with dynamics governed by time-dependent switching rates. In this case we find\nthat the noise spectrum follows a Lorentzian at frequencies lower than the inverse of the average\nduration of the lowest switching rate. We then estimate relaxation times of thermal fluctuations\nby considering thermal diffusion in an electron gas in a confined geometry. We conclude that\ntemperature fluctuations in a 2DEG sub-bath would require an unphysically long duration to be\nconsistent with experimental measurements of 1/f-like charge noise in quantum dots at frequencies\nextending well below 1 Hz.\n\n**I.** **INTRODUCTION**\n\nDecoherence arising from charge noise presents a challenge to the use of silicon quantum dots (QDs) as quantum bits. The charge noise spectrum in Si/SiGe quantum\ndots goes as 1 _/f_ _[α]_ with _α_ ≲ 1 over many decades in frequency [2, 3], where _f_ is the frequency and _α_ is the noise\nexponent.\nCharge noise in quantum dots arises due to coupling\nto two-level fluctuators. Experiments have shown that\neach quantum dot is coupled to a small number of fluctuators [1, 4]. While initial experiments indicated that\nthe noise in neighboring quantum dots is not correlated\n\n[5], more direct subsequent experiments did find correlations [6]. With only a few two-level fluctuators, a\nLorentzian power spectra is expected, but instead, noise\nwith a 1 _",
+      "_rerank_score": 8.613390800216361,
+      "score_original": 12.25161963675702
+    },
+    {
+      "rank": 8,
+      "chunk_id": "5128",
+      "doc_id": "224",
+      "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+      "score": 8.53487722573643,
+      "retriever": "graph+light_rerank",
+      "text": "rs)\n\n_Sensors_ **2024**, _1_, 0 2 of 19\n\nThe effects of radiation damage are already measurable at the fluences of LHC Run 2\nand Run 3. For instance, the charge collection efficiency (CCE) of the innermost ATLAS\nPixel layer has now reduced to approximately _∼_ 70% at a fluence of about 1 _×_ 10 [15] n eq cm _[−]_ [2]\n\n[10].\nThe ATLAS, CMS, and LHCb collaborations have developed algorithms to incorporate\nradiation damage effects into their Monte Carlo (MC)-simulated events [ 11 ]. Thanks to these\nalgorithms, it is possible to track the evolution of pixel detector performance as radiation\ndamage accumulates. Despite the different approaches adopted by the three collaborations,\nthe level of agreement between data and Monte Carlo (MC) simulations is remarkable,\nachieving agreement at the _O_ ( % ) level [ 10 ]. These algorithms enable the prediction of\noperational parameters such as depletion voltage and make possible the generation of\nsamples for future detector conditions; these are essential for training reconstruction\nalgorithms.\nDespite the importance and success of these algorithms, some may not be viable for\nthe HL-LHC phase due to computing resource constraints. This is particularly true for the\nATLAS Pixel detectors. Therefore, there is a pressing need for faster yet equally precise\nalgorithms to meet the demands of the HL-LHC data-taking conditions.\nIn this paper, a new lightweight algorithm is presented which is able to address the\nchallenges posed by the HL-LHC on computing resources for the inclusion of radiation\ndamage effects in MC simulated events. The paper is organized as follows.\nIn Section 2, the ATLAS algorithm for simulating radiation damage effects to silicon\npixel sensors is presented along with some key results. Section 3 introduces the new\nalgorithm, which relies on Look-Up Tables (LUTs). This section also discusses the various\ntypes of simulations—TCAD (Technology–Computer-Aided Design) and Geant4 [ 12 – 14 ]\nbased—that serve as inputs to the new algorithm.\nIn order to validate the new algorithm, a series of closure tests were conducted,\ncomparing events simulated using the LUTs algorithm to fully simulated events. The\nresults of these closures tests are reported in Section 4. Finally, the paper concludes (Section\n5) with a discussion on the results and an outlook for the project.\n\n**2. The ATLAS IBL and Pixel Radiation Damage Digitizer**\n\nThe ATLAS Collaboration developed and implemented an algorithm to include the\neffects of radiat",
+      "_rerank_score": 8.53487722573643,
+      "score_original": 9.154322228611692
+    }
+  ],
+  "seed_nodes": [
+    "Charge",
+    "DIFFUSION",
+    "Drift",
+    "Collection",
+    "Ion",
+    "Charge Noise",
+    "Charge Sensing",
+    "Charge Delocalization"
+  ],
+  "expanded_nodes": [
+    "AC-LGAD",
+    "ADC",
+    "ALICE",
+    "ASIC",
+    "ATLAS",
+    "Ansys Lumerical",
+    "Applied Physics",
+    "Applied Physics Letters",
+    "Associated Equipment",
+    "Beam Interactions",
+    "Bias",
+    "CMOS",
+    "CMS",
+    "Charge",
+    "Charge Delocalization",
+    "Charge Noise",
+    "Charge Sensing",
+    "Coherent Manipulation",
+    "Collection",
+    "Collection And",
+    "Condensed Matter",
+    "Cryogenic Dark Matter Search",
+    "DAC",
+    "DIFFUSION",
+    "Deutsche Forschungsgemeinschaft",
+    "Double Quantum",
+    "Drift",
+    "Electrical Engineering",
+    "Electron Devices",
+    "European Commission",
+    "European Research Council",
+    "Fe",
+    "Geant4",
+    "German Research",
+    "HGTD",
+    "Heat Transport",
+    "ITS3",
+    "Integrated Cryogenic",
+    "Ion",
+    "Istituto Nazionale",
+    "LGAD",
+    "Lawrence Berkeley National",
+    "Layer",
+    "Let",
+    "MAPS",
+    "Marina Radulaski",
+    "Monte Carlo",
+    "Nano Letters",
+    "Nat Commun",
+    "Nature Communications",
+    "Nature Nanotechnology",
+    "Neutron",
+    "Noise",
+    "Nuclear Instruments",
+    "Over",
+    "Physical Review",
+    "Physical Review Applied",
+    "Physical Review Letters",
+    "Physics Research",
+    "Physics Research Section",
+    "Pixel",
+    "Proton",
+    "Quantum Dot",
+    "Quantum Dots",
+    "Quantum Information",
+    "RD53A",
+    "Radiation",
+    "Radiation Damage",
+    "Readout",
+    "Resolution",
+    "Science Advances",
+    "See Appendix",
+    "Semiconductor",
+    "Sensors",
+    "Silicon",
+    "Swedish Research Council",
+    "TCAD",
+    "Thin Silicon Quantum",
+    "Threshold",
+    "Time",
+    "Undoped Silicon Quantum",
+    "Van Der",
+    "pixel detector"
+  ],
+  "paths": [
+    [
+      "Charge",
+      "TCAD"
+    ],
+    [
+      "Charge",
+      "TCAD",
+      "LGAD"
+    ],
+    [
+      "Charge",
+      "TCAD",
+      "CMOS"
+    ],
+    [
+      "Charge",
+      "TCAD",
+      "Monte Carlo"
+    ],
+    [
+      "Charge",
+      "CMOS"
+    ],
+    [
+      "Charge",
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "Charge",
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "Charge",
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "Charge",
+      "Time"
+    ],
+    [
+      "Charge",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "Charge",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "Charge",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "Charge",
+      "Silicon"
+    ],
+    [
+      "Charge",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Charge",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Charge",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Charge",
+      "Monte Carlo"
+    ],
+    [
+      "Charge",
+      "Monte Carlo",
+      "Geant4"
+    ],
+    [
+      "Charge",
+      "Monte Carlo",
+      "TCAD"
+    ],
+    [
+      "Charge",
+      "Monte Carlo",
+      "Silicon"
+    ],
+    [
+      "Charge",
+      "Geant4"
+    ],
+    [
+      "Charge",
+      "Geant4",
+      "Monte Carlo"
+    ],
+    [
+      "Charge",
+      "Geant4",
+      "ALICE"
+    ],
+    [
+      "Charge",
+      "Geant4",
+      "TCAD"
+    ],
+    [
+      "Charge",
+      "LGAD"
+    ],
+    [
+      "Charge",
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "Charge",
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "Charge",
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "Charge",
+      "Neutron"
+    ],
+    [
+      "Charge",
+      "Neutron",
+      "Charge"
+    ],
+    [
+      "Charge",
+      "Neutron",
+      "Physics Research Section"
+    ],
+    [
+      "Charge",
+      "Neutron",
+      "TCAD"
+    ],
+    [
+      "Charge",
+      "Bias"
+    ],
+    [
+      "Charge",
+      "Bias",
+      "LGAD"
+    ],
+    [
+      "Charge",
+      "Bias",
+      "HGTD"
+    ],
+    [
+      "Charge",
+      "Bias",
+      "ATLAS"
+    ],
+    [
+      "Charge",
+      "CMS"
+    ],
+    [
+      "Charge",
+      "CMS",
+      "ATLAS"
+    ],
+    [
+      "Charge",
+      "CMS",
+      "RD53A"
+    ],
+    [
+      "Charge",
+      "CMS",
+      "pixel detector"
+    ],
+    [
+      "Charge",
+      "Radiation"
+    ],
+    [
+      "Charge",
+      "Radiation",
+      "Physics Research Section"
+    ],
+    [
+      "Charge",
+      "Radiation",
+      "Nuclear Instruments"
+    ],
+    [
+      "Charge",
+      "Radiation",
+      "Silicon"
+    ],
+    [
+      "Charge",
+      "Noise"
+    ],
+    [
+      "Charge",
+      "Noise",
+      "Threshold"
+    ],
+    [
+      "Charge",
+      "Noise",
+      "CMOS"
+    ],
+    [
+      "Charge",
+      "Noise",
+      "Charge"
+    ],
+    [
+      "DIFFUSION",
+      "Geant4"
+    ],
+    [
+      "DIFFUSION",
+      "Geant4",
+      "Monte Carlo"
+    ],
+    [
+      "DIFFUSION",
+      "Geant4",
+      "ALICE"
+    ],
+    [
+      "DIFFUSION",
+      "Geant4",
+      "TCAD"
+    ],
+    [
+      "DIFFUSION",
+      "Time"
+    ],
+    [
+      "DIFFUSION",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "DIFFUSION",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "DIFFUSION",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "DIFFUSION",
+      "Radiation"
+    ],
+    [
+      "DIFFUSION",
+      "Radiation",
+      "Physics Research Section"
+    ],
+    [
+      "DIFFUSION",
+      "Radiation",
+      "Nuclear Instruments"
+    ],
+    [
+      "DIFFUSION",
+      "Radiation",
+      "Silicon"
+    ],
+    [
+      "DIFFUSION",
+      "Pixel"
+    ],
+    [
+      "DIFFUSION",
+      "Pixel",
+      "CMOS"
+    ],
+    [
+      "DIFFUSION",
+      "Pixel",
+      "CMS"
+    ],
+    [
+      "DIFFUSION",
+      "Pixel",
+      "ATLAS"
+    ],
+    [
+      "DIFFUSION",
+      "Silicon"
+    ],
+    [
+      "DIFFUSION",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "DIFFUSION",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "DIFFUSION",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "DIFFUSION",
+      "Charge"
+    ],
+    [
+      "DIFFUSION",
+      "Charge",
+      "TCAD"
+    ],
+    [
+      "DIFFUSION",
+      "Charge",
+      "CMOS"
+    ],
+    [
+      "DIFFUSION",
+      "Charge",
+      "Time"
+    ],
+    [
+      "DIFFUSION",
+      "Layer"
+    ],
+    [
+      "DIFFUSION",
+      "Layer",
+      "Geant4"
+    ],
+    [
+      "DIFFUSION",
+      "Layer",
+      "ALICE"
+    ],
+    [
+      "DIFFUSION",
+      "Layer",
+      "Pixel"
+    ],
+    [
+      "DIFFUSION",
+      "ALICE"
+    ],
+    [
+      "DIFFUSION",
+      "ALICE",
+      "MAPS"
+    ],
+    [
+      "DIFFUSION",
+      "ALICE",
+      "CMOS"
+    ],
+    [
+      "DIFFUSION",
+      "ALICE",
+      "ITS3"
+    ],
+    [
+      "DIFFUSION",
+      "ADC"
+    ],
+    [
+      "DIFFUSION",
+      "ADC",
+      "ASIC"
+    ],
+    [
+      "DIFFUSION",
+      "ADC",
+      "DAC"
+    ],
+    [
+      "DIFFUSION",
+      "ADC",
+      "Fe"
+    ],
+    [
+      "DIFFUSION",
+      "European Research Council"
+    ],
+    [
+      "DIFFUSION",
+      "European Research Council",
+      "Swedish Research Council"
+    ],
+    [
+      "DIFFUSION",
+      "European Research Council",
+      "Deutsche Forschungsgemeinschaft"
+    ],
+    [
+      "DIFFUSION",
+      "European Research Council",
+      "German Research"
+    ],
+    [
+      "DIFFUSION",
+      "Noise"
+    ],
+    [
+      "DIFFUSION",
+      "Noise",
+      "Threshold"
+    ],
+    [
+      "DIFFUSION",
+      "Noise",
+      "CMOS"
+    ],
+    [
+      "DIFFUSION",
+      "Noise",
+      "Charge"
+    ],
+    [
+      "DIFFUSION",
+      "Swedish Research Council"
+    ],
+    [
+      "DIFFUSION",
+      "Swedish Research Council",
+      "European Research Council"
+    ],
+    [
+      "DIFFUSION",
+      "Swedish Research Council",
+      "European Commission"
+    ],
+    [
+      "DIFFUSION",
+      "Swedish Research Council",
+      "Istituto Nazionale"
+    ],
+    [
+      "Drift",
+      "Neutron"
+    ],
+    [
+      "Drift",
+      "Neutron",
+      "Charge"
+    ],
+    [
+      "Drift",
+      "Neutron",
+      "Physics Research Section"
+    ],
+    [
+      "Drift",
+      "Neutron",
+      "TCAD"
+    ],
+    [
+      "Drift",
+      "Geant4"
+    ],
+    [
+      "Drift",
+      "Geant4",
+      "Monte Carlo"
+    ],
+    [
+      "Drift",
+      "Geant4",
+      "ALICE"
+    ],
+    [
+      "Drift",
+      "Geant4",
+      "TCAD"
+    ],
+    [
+      "Drift",
+      "Physics Research Section"
+    ],
+    [
+      "Drift",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Drift",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Drift",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Drift",
+      "Silicon"
+    ],
+    [
+      "Drift",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Drift",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Drift",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Drift",
+      "ADC"
+    ],
+    [
+      "Drift",
+      "ADC",
+      "ASIC"
+    ],
+    [
+      "Drift",
+      "ADC",
+      "DAC"
+    ],
+    [
+      "Drift",
+      "ADC",
+      "Fe"
+    ],
+    [
+      "Drift",
+      "Noise"
+    ],
+    [
+      "Drift",
+      "Noise",
+      "Threshold"
+    ],
+    [
+      "Drift",
+      "Noise",
+      "CMOS"
+    ],
+    [
+      "Drift",
+      "Noise",
+      "Charge"
+    ],
+    [
+      "Drift",
+      "Readout"
+    ],
+    [
+      "Drift",
+      "Readout",
+      "CMOS"
+    ],
+    [
+      "Drift",
+      "Readout",
+      "Silicon"
+    ],
+    [
+      "Drift",
+      "Readout",
+      "ASIC"
+    ],
+    [
+      "Drift",
+      "DIFFUSION"
+    ],
+    [
+      "Drift",
+      "DIFFUSION",
+      "Geant4"
+    ],
+    [
+      "Drift",
+      "DIFFUSION",
+      "Time"
+    ],
+    [
+      "Drift",
+      "DIFFUSION",
+      "Radiation"
+    ],
+    [
+      "Drift",
+      "Lawrence Berkeley National"
+    ],
+    [
+      "Drift",
+      "Lawrence Berkeley National",
+      "Geant4"
+    ],
+    [
+      "Drift",
+      "Lawrence Berkeley National",
+      "Electrical Engineering"
+    ],
+    [
+      "Drift",
+      "Lawrence Berkeley National",
+      "Marina Radulaski"
+    ],
+    [
+      "Drift",
+      "Radiation Damage"
+    ],
+    [
+      "Drift",
+      "Radiation Damage",
+      "Silicon"
+    ],
+    [
+      "Drift",
+      "Radiation Damage",
+      "TCAD"
+    ],
+    [
+      "Drift",
+      "Radiation Damage",
+      "Neutron"
+    ],
+    [
+      "Collection",
+      "Monte Carlo"
+    ],
+    [
+      "Collection",
+      "Monte Carlo",
+      "Geant4"
+    ],
+    [
+      "Collection",
+      "Monte Carlo",
+      "TCAD"
+    ],
+    [
+      "Collection",
+      "Monte Carlo",
+      "Silicon"
+    ],
+    [
+      "Collection",
+      "Silicon"
+    ],
+    [
+      "Collection",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Collection",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Collection",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Collection",
+      "Over"
+    ],
+    [
+      "Collection",
+      "Over",
+      "Silicon"
+    ],
+    [
+      "Collection",
+      "Over",
+      "CMOS"
+    ],
+    [
+      "Collection",
+      "Over",
+      "MAPS"
+    ],
+    [
+      "Collection",
+      "TCAD"
+    ],
+    [
+      "Collection",
+      "TCAD",
+      "LGAD"
+    ],
+    [
+      "Collection",
+      "TCAD",
+      "CMOS"
+    ],
+    [
+      "Collection",
+      "TCAD",
+      "Monte Carlo"
+    ],
+    [
+      "Collection",
+      "See Appendix"
+    ],
+    [
+      "Collection",
+      "See Appendix",
+      "Time"
+    ],
+    [
+      "Collection",
+      "See Appendix",
+      "Cryogenic Dark Matter Search"
+    ],
+    [
+      "Collection",
+      "See Appendix",
+      "Resolution"
+    ],
+    [
+      "Collection",
+      "Integrated Cryogenic"
+    ],
+    [
+      "Collection",
+      "Integrated Cryogenic",
+      "Collection"
+    ],
+    [
+      "Collection",
+      "Integrated Cryogenic",
+      "Collection And"
+    ],
+    [
+      "Collection",
+      "Integrated Cryogenic",
+      "Ansys Lumerical"
+    ],
+    [
+      "Collection",
+      "Collection And"
+    ],
+    [
+      "Collection",
+      "Collection And",
+      "Collection"
+    ],
+    [
+      "Collection",
+      "Collection And",
+      "Integrated Cryogenic"
+    ],
+    [
+      "Collection",
+      "Collection And",
+      "Ansys Lumerical"
+    ],
+    [
+      "Collection",
+      "Ansys Lumerical"
+    ],
+    [
+      "Collection",
+      "Ansys Lumerical",
+      "Heat Transport"
+    ],
+    [
+      "Collection",
+      "Ansys Lumerical",
+      "Collection"
+    ],
+    [
+      "Collection",
+      "Ansys Lumerical",
+      "Integrated Cryogenic"
+    ],
+    [
+      "Ion",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Ion",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Let"
+    ],
+    [
+      "Ion",
+      "Let",
+      "CMOS"
+    ],
+    [
+      "Ion",
+      "Let",
+      "Radiation"
+    ],
+    [
+      "Ion",
+      "Let",
+      "Sensors"
+    ],
+    [
+      "Ion",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Ion",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Applied Physics"
+    ],
+    [
+      "Ion",
+      "Applied Physics",
+      "Physical Review"
+    ],
+    [
+      "Ion",
+      "Applied Physics",
+      "Applied Physics Letters"
+    ],
+    [
+      "Ion",
+      "Applied Physics",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Beam Interactions"
+    ],
+    [
+      "Ion",
+      "Beam Interactions",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Beam Interactions",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Beam Interactions",
+      "Associated Equipment"
+    ],
+    [
+      "Ion",
+      "CMOS"
+    ],
+    [
+      "Ion",
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "Ion",
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "Ion",
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "Ion",
+      "Electron Devices"
+    ],
+    [
+      "Ion",
+      "Electron Devices",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Electron Devices",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Electron Devices",
+      "Associated Equipment"
+    ],
+    [
+      "Ion",
+      "Proton"
+    ],
+    [
+      "Ion",
+      "Proton",
+      "Radiation"
+    ],
+    [
+      "Ion",
+      "Proton",
+      "ASIC"
+    ],
+    [
+      "Ion",
+      "Proton",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Neutron"
+    ],
+    [
+      "Ion",
+      "Neutron",
+      "Charge"
+    ],
+    [
+      "Ion",
+      "Neutron",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Neutron",
+      "TCAD"
+    ],
+    [
+      "Ion",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Nuclear Instruments",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Nuclear Instruments",
+      "Associated Equipment"
+    ],
+    [
+      "Ion",
+      "Nuclear Instruments",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Quantum Information"
+    ],
+    [
+      "Ion",
+      "Quantum Information",
+      "Physical Review"
+    ],
+    [
+      "Ion",
+      "Quantum Information",
+      "Nature Communications"
+    ],
+    [
+      "Ion",
+      "Quantum Information",
+      "Science Advances"
+    ],
+    [
+      "Ion",
+      "Physics Research"
+    ],
+    [
+      "Ion",
+      "Physics Research",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Physics Research",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Physics Research",
+      "Silicon"
+    ],
+    [
+      "Charge Noise",
+      "Charge"
+    ],
+    [
+      "Charge Noise",
+      "Charge",
+      "TCAD"
+    ],
+    [
+      "Charge Noise",
+      "Charge",
+      "CMOS"
+    ],
+    [
+      "Charge Noise",
+      "Charge",
+      "Time"
+    ],
+    [
+      "Charge Noise",
+      "Quantum Dots"
+    ],
+    [
+      "Charge Noise",
+      "Quantum Dots",
+      "CMOS"
+    ],
+    [
+      "Charge Noise",
+      "Quantum Dots",
+      "Charge Noise"
+    ],
+    [
+      "Charge Noise",
+      "Quantum Dots",
+      "Charge Sensing"
+    ],
+    [
+      "Charge Noise",
+      "Thin Silicon Quantum"
+    ],
+    [
+      "Charge Noise",
+      "Thin Silicon Quantum",
+      "Charge Noise"
+    ],
+    [
+      "Charge Noise",
+      "Thin Silicon Quantum",
+      "Nat Commun"
+    ],
+    [
+      "Charge Noise",
+      "Thin Silicon Quantum",
+      "Quantum Dots"
+    ],
+    [
+      "Charge Noise",
+      "Nat Commun"
+    ],
+    [
+      "Charge Noise",
+      "Nat Commun",
+      "Charge Noise"
+    ],
+    [
+      "Charge Noise",
+      "Nat Commun",
+      "Quantum Dots"
+    ],
+    [
+      "Charge Noise",
+      "Nat Commun",
+      "Thin Silicon Quantum"
+    ],
+    [
+      "Charge Noise",
+      "Monte Carlo"
+    ],
+    [
+      "Charge Noise",
+      "Monte Carlo",
+      "Geant4"
+    ],
+    [
+      "Charge Noise",
+      "Monte Carlo",
+      "TCAD"
+    ],
+    [
+      "Charge Noise",
+      "Monte Carlo",
+      "Silicon"
+    ],
+    [
+      "Charge Noise",
+      "Semiconductor"
+    ],
+    [
+      "Charge Noise",
+      "Semiconductor",
+      "CMOS"
+    ],
+    [
+      "Charge Noise",
+      "Semiconductor",
+      "Silicon"
+    ],
+    [
+      "Charge Noise",
+      "Semiconductor",
+      "TCAD"
+    ],
+    [
+      "Charge Noise",
+      "Silicon"
+    ],
+    [
+      "Charge Noise",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Charge Noise",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Charge Noise",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review",
+      "Nature Communications"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review",
+      "Condensed Matter"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review Letters",
+      "Physical Review"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review Letters",
+      "Nature Communications"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review Letters",
+      "Applied Physics Letters"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review Applied"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review Applied",
+      "Physical Review"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review Applied",
+      "Nature Communications"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review Applied",
+      "Silicon"
+    ],
+    [
+      "Charge Noise",
+      "Applied Physics Letters"
+    ],
+    [
+      "Charge Noise",
+      "Applied Physics Letters",
+      "Physical Review"
+    ],
+    [
+      "Charge Noise",
+      "Applied Physics Letters",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Noise",
+      "Applied Physics Letters",
+      "Applied Physics"
+    ],
+    [
+      "Charge Noise",
+      "Nature Communications"
+    ],
+    [
+      "Charge Noise",
+      "Nature Communications",
+      "Physical Review"
+    ],
+    [
+      "Charge Noise",
+      "Nature Communications",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Noise",
+      "Nature Communications",
+      "Applied Physics Letters"
+    ],
+    [
+      "Charge Sensing",
+      "Charge"
+    ],
+    [
+      "Charge Sensing",
+      "Charge",
+      "TCAD"
+    ],
+    [
+      "Charge Sensing",
+      "Charge",
+      "CMOS"
+    ],
+    [
+      "Charge Sensing",
+      "Charge",
+      "Time"
+    ],
+    [
+      "Charge Sensing",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Sensing",
+      "Physical Review Letters",
+      "Physical Review"
+    ],
+    [
+      "Charge Sensing",
+      "Physical Review Letters",
+      "Nature Communications"
+    ],
+    [
+      "Charge Sensing",
+      "Physical Review Letters",
+      "Applied Physics Letters"
+    ],
+    [
+      "Charge Sensing",
+      "Double Quantum"
+    ],
+    [
+      "Charge Sensing",
+      "Double Quantum",
+      "Coherent Manipulation"
+    ],
+    [
+      "Charge Sensing",
+      "Double Quantum",
+      "Charge Sensing"
+    ],
+    [
+      "Charge Sensing",
+      "Double Quantum",
+      "Semiconductor"
+    ],
+    [
+      "Charge Sensing",
+      "Quantum Dots"
+    ],
+    [
+      "Charge Sensing",
+      "Quantum Dots",
+      "CMOS"
+    ],
+    [
+      "Charge Sensing",
+      "Quantum Dots",
+      "Charge Noise"
+    ],
+    [
+      "Charge Sensing",
+      "Quantum Dots",
+      "Charge Sensing"
+    ],
+    [
+      "Charge Sensing",
+      "Charge Delocalization"
+    ],
+    [
+      "Charge Sensing",
+      "Charge Delocalization",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Sensing",
+      "Charge Delocalization",
+      "Charge Sensing"
+    ],
+    [
+      "Charge Sensing",
+      "Charge Delocalization",
+      "Charge"
+    ],
+    [
+      "Charge Sensing",
+      "Silicon"
+    ],
+    [
+      "Charge Sensing",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Charge Sensing",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Charge Sensing",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Charge Sensing",
+      "Physical Review Applied"
+    ],
+    [
+      "Charge Sensing",
+      "Physical Review Applied",
+      "Physical Review"
+    ],
+    [
+      "Charge Sensing",
+      "Physical Review Applied",
+      "Nature Communications"
+    ],
+    [
+      "Charge Sensing",
+      "Physical Review Applied",
+      "Silicon"
+    ],
+    [
+      "Charge Sensing",
+      "Nature Nanotechnology"
+    ],
+    [
+      "Charge Sensing",
+      "Nature Nanotechnology",
+      "Nature Communications"
+    ],
+    [
+      "Charge Sensing",
+      "Nature Nanotechnology",
+      "Physical Review"
+    ],
+    [
+      "Charge Sensing",
+      "Nature Nanotechnology",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Sensing",
+      "Van Der"
+    ],
+    [
+      "Charge Sensing",
+      "Van Der",
+      "Physical Review"
+    ],
+    [
+      "Charge Sensing",
+      "Van Der",
+      "Physical Review Applied"
+    ],
+    [
+      "Charge Sensing",
+      "Van Der",
+      "Nature Nanotechnology"
+    ],
+    [
+      "Charge Sensing",
+      "CMOS"
+    ],
+    [
+      "Charge Sensing",
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "Charge Sensing",
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "Charge Sensing",
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "Charge Sensing",
+      "Charge Noise"
+    ],
+    [
+      "Charge Sensing",
+      "Charge Noise",
+      "Charge"
+    ],
+    [
+      "Charge Sensing",
+      "Charge Noise",
+      "Quantum Dots"
+    ],
+    [
+      "Charge Sensing",
+      "Charge Noise",
+      "Thin Silicon Quantum"
+    ],
+    [
+      "Charge Sensing",
+      "Quantum Dot"
+    ],
+    [
+      "Charge Sensing",
+      "Quantum Dot",
+      "Charge"
+    ],
+    [
+      "Charge Sensing",
+      "Quantum Dot",
+      "Monte Carlo"
+    ],
+    [
+      "Charge Sensing",
+      "Quantum Dot",
+      "Silicon"
+    ],
+    [
+      "Charge Delocalization",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Delocalization",
+      "Physical Review Letters",
+      "Physical Review"
+    ],
+    [
+      "Charge Delocalization",
+      "Physical Review Letters",
+      "Nature Communications"
+    ],
+    [
+      "Charge Delocalization",
+      "Physical Review Letters",
+      "Applied Physics Letters"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge Sensing"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge Sensing",
+      "Charge"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge Sensing",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge Sensing",
+      "Double Quantum"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge",
+      "TCAD"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge",
+      "CMOS"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge",
+      "Time"
+    ],
+    [
+      "Charge Delocalization",
+      "Physical Review Applied"
+    ],
+    [
+      "Charge Delocalization",
+      "Physical Review Applied",
+      "Physical Review"
+    ],
+    [
+      "Charge Delocalization",
+      "Physical Review Applied",
+      "Nature Communications"
+    ],
+    [
+      "Charge Delocalization",
+      "Physical Review Applied",
+      "Silicon"
+    ],
+    [
+      "Charge Delocalization",
+      "Nature Nanotechnology"
+    ],
+    [
+      "Charge Delocalization",
+      "Nature Nanotechnology",
+      "Nature Communications"
+    ],
+    [
+      "Charge Delocalization",
+      "Nature Nanotechnology",
+      "Physical Review"
+    ],
+    [
+      "Charge Delocalization",
+      "Nature Nanotechnology",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Delocalization",
+      "Van Der"
+    ],
+    [
+      "Charge Delocalization",
+      "Van Der",
+      "Physical Review"
+    ],
+    [
+      "Charge Delocalization",
+      "Van Der",
+      "Physical Review Applied"
+    ],
+    [
+      "Charge Delocalization",
+      "Van Der",
+      "Nature Nanotechnology"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge Noise"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge Noise",
+      "Charge"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge Noise",
+      "Quantum Dots"
+    ],
+    [
+      "Charge Delocalization",
+      "Charge Noise",
+      "Thin Silicon Quantum"
+    ],
+    [
+      "Charge Delocalization",
+      "Nano Letters"
+    ],
+    [
+      "Charge Delocalization",
+      "Nano Letters",
+      "Physical Review"
+    ],
+    [
+      "Charge Delocalization",
+      "Nano Letters",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Delocalization",
+      "Nano Letters",
+      "Nature Communications"
+    ],
+    [
+      "Charge Delocalization",
+      "Nat Commun"
+    ],
+    [
+      "Charge Delocalization",
+      "Nat Commun",
+      "Charge Noise"
+    ],
+    [
+      "Charge Delocalization",
+      "Nat Commun",
+      "Quantum Dots"
+    ],
+    [
+      "Charge Delocalization",
+      "Nat Commun",
+      "Thin Silicon Quantum"
+    ],
+    [
+      "Charge Delocalization",
+      "Quantum Dots"
+    ],
+    [
+      "Charge Delocalization",
+      "Quantum Dots",
+      "CMOS"
+    ],
+    [
+      "Charge Delocalization",
+      "Quantum Dots",
+      "Charge Noise"
+    ],
+    [
+      "Charge Delocalization",
+      "Quantum Dots",
+      "Charge Sensing"
+    ],
+    [
+      "Charge Delocalization",
+      "Undoped Silicon Quantum"
+    ],
+    [
+      "Charge Delocalization",
+      "Undoped Silicon Quantum",
+      "Silicon"
+    ],
+    [
+      "Charge Delocalization",
+      "Undoped Silicon Quantum",
+      "Physical Review Letters"
+    ],
+    [
+      "Charge Delocalization",
+      "Undoped Silicon Quantum",
+      "Physical Review Applied"
+    ],
+    [
+      "Charge Delocalization",
+      "Thin Silicon Quantum"
+    ],
+    [
+      "Charge Delocalization",
+      "Thin Silicon Quantum",
+      "Charge Noise"
+    ],
+    [
+      "Charge Delocalization",
+      "Thin Silicon Quantum",
+      "Nat Commun"
+    ],
+    [
+      "Charge Delocalization",
+      "Thin Silicon Quantum",
+      "Quantum Dots"
+    ]
+  ],
+  "metrics": {
+    "retrieval_latency_s": 4.643899917602539,
+    "generation_latency_s": 0.0,
+    "unique_sources": 15,
+    "seed_node_count": 8,
+    "expanded_node_count": 83,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0
+  },
+  "answer": "",
+  "abstained": false,
+  "answer_abstained": false
+}

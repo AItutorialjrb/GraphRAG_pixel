@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "fac007",
+    "query_type": "factoid",
+    "query": "What is depletion depth?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "depletion",
+      "depth"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is depletion depth?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5503,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "nt up to 90 µm. The edge of the curve corresponds\nto the depletion depth that in this case is W ≈ 97 µm, close to the nominal 100 µm depth of the\nepitaxial layer. On the contrary, the A149 SiC of the RA0089-27 wafer shows a not uniform _N_\nprofile which decreases with depth. Moreover, the depletion depth is W ≈ 93 µm, significantly\nsmaller than the nominal value.\n\nWhen the depletion region reaches the backward contact, the capacitance remains constant\n(see for example Figure 4a), this value is sometimes referred to as _end capacitance C_ _end_ . The\nvoltage at which this situation occurrs is referred to as the full depletion voltage _V_ _FDV_ . It is\npossible to define the effective doping concentration _N_ _e f f_ in correspondence to _C_ _end_ and _V_ _FDV_ as\nfound in Ref. [30]\n\n_end_\n| _N_ _e f f_ | = [2] _[V]_ _[FDV]_ _[C]_ [2] (2)\n_e_ ε _A_ [2]\n9\n\nFigure 6: Doping concentration profile vs. depth inside two SiC sensors. The A142 device of the TT0012-11 wafer and\nthe A149 device of the RA0089-27 wafer are shown as the magenta and orange lines, respectively. The depletion depth\nis also indicated for the two curves.\n\nThe effective doping concentrations were evaluated from the C-V characteristic for all the\nSiC devices analysed so far. Examples are represented in Figure 5. There is a clear correlation\nbetween the FDV and the doping concentration. In particular, for the TT0012-11 wafer, in which\nthe average FDV is 777 V, the average doping concentration is 8.8 × 10 [13] atoms/cm [3] (MAD =\n0.7 × 10 [13] atoms/cm [3] ), whereas for the RA0089-27, the doping concentrations are much smaller\n(average value 3.4 x 10 [13] atoms/cm [3] and MAD = 0.5 × 10 [13] atoms/cm [3] ), corresponding to an\naverage FDV of 270 V.\n\n**6. Measurements with radioactive sources**\n\nSome of the detectors characterized in the previous sections were further investigated by\nusing α-particle source. In particular, the A41 and A45 sensors of the TT0012-11 wafer, as well\nas the A102 and A106 sensors of the RA0089-27 wafer were tested. The aim was to measure the\nenergy resolution of the SiC sensors, and to estimate the depletion depth. A [228] Th α-decay source\nwas chosen to perform such measurements, since it is characterized by a wide energy spectrum\nof the emitted alphas (E α = 5 to 9 MeV), penetrating and probing the SiC device at different\ndepths. Furthermore, the same source can be used to irradiate the device from the back, since the\nemitted alphas able to cross the ≈ 10 µm dead laye",
+        "score": 2.713504195515912,
+        "dense_score": 0.4243420362472534,
+        "bm25_score": 17.883093362155456,
+        "graph_score": 0.0,
+        "rerank_score": 4.15710973739624,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4639,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "ell, which shields n-wells within the circuitry from the epitaxial layer, preventing them from collecting charge and thus enabling full\nCMOS circuitry. The depletion zone is balloon-shaped extending from\nthe junction at the collection electrode without reaching the pixel edges.\nThe charge generated outside the depletion region is collected primarily\nby diffusion, but this collection is relatively slow and subject to charge\ntrapping in defects generated by exposure to non-ionizing radiation.\n\n - **Modified**, Figure 2(b): a deep low-dose n-type implant is added under the\nfull pixel area and creates a planar junction deep in the sensor, separated\nfrom the collection electrode extending over the full pixel area. With some\nreverse substrate bias, this allows full depletion of the epitaxial layer and\nsignal charge collection by drift.\n\n - **Modified with gap**, Figure 2(c): a gap of 2.5 µm is introduced in the\nlow-dose n-type implant at the pixel boundaries. This creates a vertical\njunction to increase the lateral electric field pushing the charge from the\n\n4\n\npixel boundary towards the collection electrode, thus reducing the charge\nsharing among neighbouring pixels.\n\nMoving from the pixel design 2(a) to 2(c), charge collection by drift becomes largely dominant, reducing charge sharing among pixels. This results in\na larger fraction of the charge collected by a single pixel and, consequently, in\nan increased signal to noise ratio (S/N) providing greater operational margins.\nTo optimise the sensor for ionizing-particle detection, where signal charge is\ngenerated over the full depth, the modified with gap design has been produced\nin four so-called _splits_ (named 1, 2, 3, 4), gradually modifying the doping levels\nof various implants [13].\nIn addition, to explore the influence on capacitance and charge collection,\nthe geometry and size of both n-well collection electrode and the p-well were\nimplemented in four different _variants_ :\n\n - **Reference** : n-well collection electrode size of 1.14 µm and a square p-well\nenclosure of 4.14 µm, see Figure 3(a) for the top view.\n\n - **Smaller p-well enclosure** : p-well enclosure of 3.14 µm.\n\n - **Larger n-well collection electrode** : n-well collection electrode of 2.28 µm.\n\n - **Finger-shaped p-well enclosure** : the shape of the p-well enclosure\nis changed as sketched in Figure 3(b) resulting in p-well fingers further\napproaching the collection electrode.\n\n(a) (b)\n\nFigure 3: Top view of half a pitch of a modified with g",
+        "score": 0.6168145441695263,
+        "dense_score": 0.3220781683921814,
+        "bm25_score": 13.715344524369966,
+        "graph_score": 0.0,
+        "rerank_score": 0.9347754120826721,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 7951,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie.md",
+        "title": "2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie",
+        "text": "nto the datapoints.\n\nThe electric field profile is calculated by assuming\nan abrupt junction in a planar pad diode [ 35 ]. If\nthe applied voltage is smaller than the full depletion\nvoltage _V_ FD, the electric field as a function of depth\n_x_ is given by the following expression, depending\non whether _x_ is smaller or larger than the depletion\ndepth _w_ :\n\n_qN_ eff\n\n_E_ ( _x_ ) =\n\n\n\n\n\n\n_ε_ 0 _ε_ r (1)\n\n0 _,_ _x ≥_ _w._\n\n( _w −_ _x_ ) _,_ _x < w,_\n_ε_ 0 _ε_ r\n\nIn the case of over-depletion, it is calculated as [ 22 ]\n\n_E_ ( _x_ ) = _[q][N]_ [eff]\n\n_[N]_ [eff]\n\n( _w −_ _x_ ) + _[V]_ [tot] _[ −]_ _[V]_ [FD]\n_ε_ 0 _ε_ r _d_\n\n_,_ (2)\n_d_\n\nwith _ε_ 0 being the vacuum permittivity, _ε_ r the relative permittivity of Silicon and _d_ the device thickness. The effective doping concentration _N_ eff and\napplied reverse bias _V_ bias determine the depletion\ndepth _w_ with\n\n_w_ =\n\n~~�~~\n\n2 _εV_ tot\n\n_,_ (3)\n_qN_ eff\n\n6\n\n0 _._ 20\n\n0 _._ 20\n\n0 _._ 15\n\n0 _._ 10\n\n0 _._ 05\n\n2 4 6 8 10 12\n_√E_ [�kV _/_ cm]\n\nFigure 8: Re-creation of Figure 7, but with the x-axis scaled\nto _√E_ . A linear dependence would be expected for defects\n\nsubject to the PF mechanism.\n\namplitude, due to a larger volume with defects being\nfilled contributing to the signal generation. Figure 6\nshows examples of difference spectra obtained after subtracting the pulse measurements from one\nanother, transient by transient. Clear shifts in the\npositions for the X-Defect peaks are observed, while\nthe C i O i peaks exhibit none, indicating that the\nX-Defect is subject to a field dependent emission\nprocess, while the C i O i is not. For these spectra the\nstandard DLTS analysis with correlator functions\nis performed to construct an Arrhenius plot, which\nyields the activation energy. The resulting activation energy versus the applied electric field strength\nis displayed in Figure 7. The measurement results\nshow that the field strength dependence for the\nX-Defect activation energy fits well to an _E_ [2] dependence, the expected behaviour for phonon-assisted\ntunnelling. An approach to fit a _√E_ dependence,\n\ni.e a PF related dependency, does not result in a\ngood data representation. The least-squares fitting\nof\n\n_f_ ( _E_ ) = _a · E_ [2] + _b_ (4)\n\nto the datapoints results in a zero-field activation\nenergy of _E_ A,0 = _b_ = (0 _._ 1962 _±_ 0 _._ 0007) eV . The\nslope parameter for the fit is _a_ = ( _−_ 1 _._ 024 _±_ 0 _._ 014) _·_\n10 _[−]_ [5] eV cm kV _[−]_ [1] . The reduced _χ_ [2] is 2 _._ 49, indicating\na",
+        "score": -0.04951267617329459,
+        "dense_score": 0.5237463712692261,
+        "bm25_score": 15.478651624148764,
+        "graph_score": 0.0,
+        "rerank_score": -0.09315909445285797,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5505,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "y an ORTEC EASY-MCA ADC connected to the acquisition PC.\nExamples of [228] Th α-decay spectra for the A41 sensor of the TT0012-11 wafer and the A106\nsensor of the RA0089-27 wafer at their FDVs are shown in Figure 8. The ADC channel spectrum\nwas calibrated in energy assuming the reference spectrum of the [228] Th source, reported in Table\n1, taking into account the energy loss of the α particles crossing the Au window and the Ni 2 Si\ndeposit in the front side of the SiC sensor. The resulting residual energies of the α particles\nentering in the active region of the sensors are listed in Table 1. For calibration purposes we\nconsidered only peaks labeled as 2, 3, 6, 7, and 8, since peaks 4 and 5 are very close to each other\nand peak 2 contains small contributions from α at 5448.6 and 5340.4 keV [31, 32]. The extracted\nenergy resolution is ≈ 0.5% FWHM for all the SiC samples, extracted from the peak at 8784.86\nkeV. This result is much better than those reported in a recent review regarding state-of-the-art\nresolutions achieved with SiC detectors in α spectrometry [33]. For the other peaks the extracted\nresolutions follow the 1/ √ _E_ slope, which indicates that the electrical noise is negligible.\n\nAfter the thinning procedure of the SiC substrate from the backside [6], an inert layer of ≈\n10 µm remains beyond the epitaxial layer, which in principle is 100 µm thick. However, from\nthe analysis of the doping profiles discussed above (see Figure 6), it seems that not only is the\ndepletion depth reached at the FDV less than the expected 100 µm, but it is also different for\n\n11\n\nFigure 8: Calibrated energy spectra measured with the [228] Th α-source irradiating the front side of the TT0012-11 A41\n(top panel) and RA0089-27 A106 (bottom panel) sensors at their FDVs. Peak labels refers to the α-decay energies listed\nin Table 1.\n\n12\n\nTable 2: Dead layer thickness and depletion depth at the FDV for the analysed SiC sensors.\n\nWafer Sensor Dead Layer Depletion depth\n(µm) (µm)\n\nTT0012-11 A41 9.6 ± 0.1 100.4 ± 0.1\n\nTT0012-11 A45 10.8 ± 0.1 99.2 ± 0.1\n\nRA0089-27 A106 14.6 ± 0.2 95.4 ± 0.2\n\nRA0089-27 A102 15.4 ± 0.2 94.6 ± 0.2\n\nthe two wafers. Thus, in order to have a more accurate estimate of the depletion depth, the SiC\ndetectors were irradiated with the [228] Th source from the back side. In this way, the thickness\nof the dead layer present at the back can be extracted from the measured residual energy in the\nactive region of the sensors.\nThe experimental setup was the same",
+        "score": -0.1985831555393007,
+        "dense_score": null,
+        "bm25_score": 16.51275945152168,
+        "graph_score": 0.0,
+        "rerank_score": -0.3140595555305481,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5507,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "detectors were performed in order\nto verify their performances in terms of the NUMEN project requirements. Sensors were produced from two different wafers, built from the same bulk material, doped with different doping\nconcentration corresponding to different full depletion voltages. The values of the FDV and the\ndoping profile were determined by measurements of the SiC I-V and C-V characteristics. Also\nthe energy resolution and the depletion depth were deduced from α-source irradiation tests. In\ngeneral, the tested SiC sensors display a good energy resolution (≈ 0.5 % FWHM), which complies with the NUMEN requirements. Differences were found in the depletion depth for SiC\nbelonging to the two wafers.\n\n13\n\nFigure 9: Calibrated energy spectra measured with the [228] Th α-source irradiating the back side of the TT0012-11 A41\n(top panel) and RA0089-27 A106 (bottom panel) sensors at their FDVs. Peak labels refers to the α-decay energies listed\nin Table 1. Peaks labeled with an asterisk correspond to the residual [228] Th α-source radioactivity from the decay of the\n220 Rn gaseous daughter nucleus.\n\n14\n\nThe observed spread in the FDV values (≈ 7% for the TT0012-11 wafer and ≈ 16% for the\nRA0089-27 one) is quite large compared to the typical values for the standard Silicon detectors.\nHowever, this is the first time that p-n junction, large area (≈ 2 cm [2] ), 100 µm thick epitaxial\nlayer SiC devices are produced from 6” wafers, thus the uniformity is not known _a priori_ . The\nproduction of the devices studied in the present work was a pioneering one, aimed also to guide\nfurther R&D activities.\nThe TT0012-11 wafer was doped with ≈ 9 × 10 [13] atoms/cm [3] . Devices belonging to this wafer\ndisplayed good C-V characteristics and doping profile, and they reach a depletion depth of ≈ 100\nµm, as expected. However, these sensors are characterized by quite high FDV, up to 950 V, which\nis challenging if we want to use more than 700 detectors in a low-pressure gas environment, as in\nthe focal plane detector of the MAGNEX spectrometer, due to an high probability of discharges\nand electrical instabilities.\nOn the other hand, sensors belonging to the RA0089-27 wafer, doped with ≈ 3 × 10 [13]\n\natoms/cm [3], are characterized by a much lower FDV (≈ 200-300 V), more suitable for the NUMEN purposes. However, from the analyses reported in this paper, their performance is worse,\nespecially in terms of the doping profile and depletion depth. Moreover, looking at the production yie",
+        "score": -0.33775623738765714,
+        "dense_score": null,
+        "bm25_score": 16.449921913919972,
+        "graph_score": 0.0,
+        "rerank_score": -0.5280384421348572,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7634,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement.md",
+        "title": "2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement",
+        "text": "m the implants, therefore the depleted area is smaller than the full\nchip size. For this reason, we expect 1/ _C_ [2] first to grow\nsub-linearly with the bias voltage until the depleted region between neighboring pixels reconnect. Indeed, the\nshape of the CV curve indicates a reduction of the slope\nbelow −25 V with quasi-linear dependence above this\nvoltage. The other feature is a sharp capacitance change\naround −150 V. It is dependent on the test frequency, indicating a possible relation to surface charge. Both features are under further investigation, however the functional shape of the CV curve suggests under-depletion\nand isolated depleted regions under each implant in the\nvoltage range tested.\n\nEstimations of the depletion depth that wafer 2 chips\ncan achieve was tested in Ref. 16 by measuring the\ncount rates of X-ray sources. This indirect measurement results in 60 ± 3 µm depletion at −150 V bias and\n94 ± 6 µm depletion at −350 V bias, which agrees with\nthe PN junction model curve with the uncertainty in the\nresistivity. Fitting a PN junction model to the data re\n\nFigure 12: CV curve for a wafer 2 chip tested at different frequencies.\nThe device is reverse biased. [17]\n\nproduces a resistivity of 236.8 ± 2.4 Ω - cm.\nA direct measurement of depletion depth from the\nsame wafer using the Edge Transition Current Technique [23] was conducted at the Santa Cruz Institute\nfor Particle Physics in November 2023. Current results from this study are detailed in Ref. 22 and Ref. 17.\nThese preliminary studies estimate depletion depths of\n∼ 275 µm at −150 V which over-estimates the theoretically expected value from Fig. 11. Unaccounted\nfor sources of error including reflections in the measurement setup, relative angle between the chip and the\nbeam, and charge sharing could all account for the difference. Further analysis of these data is ongoing.\n\n**6. Heavy-Ion Radiation Testing**\n\nAstroPix has been targeted for use in γ-ray detectors in low-Earth orbits at low inclination or outside\n\nEarth’s radiation belts, requiring resilience to heavyion radiation environments. A previous iteration of AstroPix, AstroPix_v2, was tested for radiation hardness\nto single-event effects (SEEs). While minor changes in\ndesign or processing of CMOS semiconductor chips can\nhave unintended consequences for SEE susceptibility,\nthis experiment provides some indication for expected\nSEE response in future AstroPix revisions. Two classes\nof SEE were monitored:\n\n10\n\n1. **Catastrophic** **Single",
+        "score": -0.7417470262242973,
+        "dense_score": 0.3132297396659851,
+        "bm25_score": 15.764178083254407,
+        "graph_score": 0.0,
+        "rerank_score": -1.1559998989105225,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7954,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie.md",
+        "title": "2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie",
+        "text": "s modified by the weighting field\nfor each slice, which in the case of a planar diode\ncorresponds to the inverse of the depletion depth\n\n[ 35 ]. The given defect concentration is assumed to\nbe homogeneously distributed throughout the sensor bulk, the fraction inside the depleted volume is\n\n_−_ 3 _m_ _∗_ ℏ _a_\n_τ_ 2 ( _T_ ) =\n� _q_ [2] _k_ B _T_\n\n1 _/_ 3\n_._ (9)\n�\n\nThese relations can be used to simulate a PAT\nenhanced emission process.\nThe used simulation software is a fully custom\npython framework. It is similar to the pyTSC framework used in References [ 19, 33 ]. It follows the basic\n\n8\n\ninitialised as fully filled and the remainder as empty.\nThe current is determined by the product of the\ndefect concentration _N_ t times the fractional change\nof the trap occupancy, and summed over all slices\nand time steps. Taking the product of this with the\nelectric charge _q_ and depleted volume results in a\ncurrent with the unit of ampere. The full equation\nbecomes\n\n_I_ TSC ( _T_ )= _[q][A]_\n\n2\n\n_n_\n�\n\n_i_ =1\n\n� [ _e_ ( _T_ ) _n_ t ( _T_ )Γ( _E,T_ )]∆ _z_ _i_ _,_ (12)\n\nDefects\n\nwhere ∆ _z_ _i_ are the _n_ slices of the sensor thickness and\n_n_ t is the fraction of defect states occupied, which\nevolves with an exponential decay over time according to Equation 11. The Γ factor comes from the\ndifferent field enhancement models, which can be\nactivated for each defect individually. For defects\nwith no field enhancement, Γ is set to 1. The PAT\nmodel is implemented as described by Equation 5,\nwith the factor Γ PAT ( _E, T_ ) being calculated for each\nslice and time step. The PF model is implemented\nwith Γ PF ( _E, T_ ) to modify the emission term. It is\ncalculated with the three-dimensional description of\nthe Poole-Frenkel effect from Hartke [ 39 ] for each\nslice and time step\n\nΓ PF ( _E, T_ ) = [1]\n\n(13)\n2 _[,]_\n\n[1]\n\n_γ_ [2] [[] _[e]_ _[γ]_ [(] _[γ][ −]_ [1) + 1] + 1] 2\n\nfalling edge is not shifted sufficiently to lower temperatures. For all but the highest biases, a good match\nof the positions of the peak maxima is observed.\nFigure 11 shows what the effect of the PF would\nlook like for the X-Defect. Clearly, this does not\nmatch the measured spectra. The simulated TSC\ncurves assuming a PF effect show peaks at lower\ntemperatures than the measured data. This is in\nline with the experimental and fitted data shown\nin Figure 7, where the activation energies from the\nPF fit are below those of the measurement at the\nrelevant field strengths of the TSC measurements\nshown in Fig",
+        "score": -0.790346039942841,
+        "dense_score": null,
+        "bm25_score": 14.962230070732538,
+        "graph_score": 0.0,
+        "rerank_score": -1.2239537239074707,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 7633,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement.md",
+        "title": "2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement",
+        "text": "e measured operational range\n14 − 200 keV.\n\nThe high-end of the operational range is hindered due\nto incomplete depletion (see Section 5.2) and amplifier saturation. Simulations of the amplifier in “high\ndynamic range\" mode showed that its output amplitude saturates at ∼ 250 keV. This is consistent with\n\nFig. 8 where the Cs-137 spectrum is terminated around\n260 keV. A subsequent iteration of AstroPix implements\ntest pixels with a dynamic feedback capacitance realized\nwith an NFET device [21] to enable higher measurements before saturation. Additionally, more ToT bits\nare allotted to prevent an operational range loss due to\noverflow in the digitization step in future versions.\n\n_5.2. Depletion Depth Measurements_\n\nThe highest-resistivity AstroPix_v3 design (25 ±\n8 kΩ - cm in wafer 3) was targeted for exploring the\ngoal depletion depth of 500 µm within a −100 V bias\nrange. The two other resistivities are included for comparison with previous generations and consideration for\nfurther studies. The different depletion depths expected\nfor each wafer resistivity are shown in Fig. 11.\nHowever, this high-resistivity substrate could not be\nthoroughly tested due to a high leakage current. An\ninherent voltage gradient coupling through conductive\nmounting to the test board contributes to a low breakdown voltage of < −1 V, but isolating the backside does\n\n9\n\nFigure 11: Theoretical achievable depletion of AstroPix_v3 substrates\n\n[22].\n\nnot resolve the high current. The cause of this current is\nan active area of investigation.\n\nDetector capacitance plays an important role in the\nreadout system performance. By design, it is connected\nto the input of the charge-sensitive amplifier. The amplifier noise is a monotonically increasing function of\nthe capacitance. Therefore, reducing the capacitance\nthrough higher bias reduces noise, in addition to increasing the ionization efficiency by augmenting the depletion region.\n\nA capacitance-voltage (CV) curve of the 200−400 Ω·\ncm wafer 2 substrate is shown in Fig. 12. Notably, the\nfunction shape at low voltages is different from the linear dependence of 1/ _C_ [2] on bias voltage. We attribute\nthis to the depletion area development. At near-zero\nbias the depleted regions starts to grow from the implants, therefore the depleted area is smaller than the full\nchip size. For this reason, we expect 1/ _C_ [2] first to grow\nsub-linearly with the bias voltage until the depleted region between neighboring pixels reconnect. Indeed, the\nshape o",
+        "score": -1.049082179646338,
+        "dense_score": 0.34512120485305786,
+        "bm25_score": 16.752247720457735,
+        "graph_score": 0.0,
+        "rerank_score": -1.6303497552871704,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7640,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement.md",
+        "title": "2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement",
+        "text": "ration. Currentvoltage measurements illustrated chip properties, including high-voltage breakdown between −380 − 400 V.\nAn overview of energy resolution studies and results\nfrom Ref. 16 were presented, where 10.4 ± 3.2%\nFWHM energy resolution at 59.5 keV was achieved using a medium-resistivity 200−400 Ω·cm substrate. The\nmeasured 94 ± 6 µm depletion of this substrate is discussed, and plans for increasing this depletion depth to\nthe designed 500 µm were presented. Radiation testing\nwith a cocktail of ions was performed with AstroPix_v2\nwhich shares an identical digital bloc to AstroPix_v3,\nand no catastrophic events were detected. Single event\nfunctional interrupt rates were estimated to be at the order of 10 [−][4] per day in the planned AMEGO-X orbit,\nwhich is a tolerable rate.\n\nThe first space-based test of AstroPix will be the Astropix Sounding rocket Technology dEmonstration Payload (A-STEP), featuring three AstroPix_v3 quad chips\nto be flown on a sounding rocket in 2026 [30]. The first\nlarge-format test of AstroPix is the AMEGO-X prototype tower ComPair2 [31], which is intended to fly on\na high-altitude balloon. The other AMEGO-X subsystems and operations team take heritage from the 2023\nComPair flight [32]. ComPair2 features 10 tracker lay\n\n13\n\ners with 380 AstroPix chips per layer, which will interact with a unified trigger system to return science data.\nThe results from this publication serve as a baseline for\nAstroPix_v3 operation, and will provide the basis for\nA-STEP design, optimization, calibration, and analysis.\nAt the time of writing, AstroPix_v4 has been fabricated and is undergoing preliminary testing [18]. This\ntesting has informed the submission of AstroPix_v5\nduring the 2025 calendar year. Continued improvements in power consumption and operational range\nare expected with the elimination of an external fast\n200 MHz clock and addition of dynamic feedback capacitance.\nThe AstroPix project benefits from the expertise of\ninternational collaborators in multiple fields of physics\nand engineering. Though not currently a final design,\neach AstroPix version improves upon the previous. The\nultimate design will revolutionize γ-ray astronomy, especially in the elusive MeV range.\n\n**Acknowledgments**\n\nThe authors would like to acknowledge the contributions of engineers and technicians at all participating\nintuitions, including but in no way limited to Kenneth\nSimms, David Durachka, Ryan Boggs, Timothy Cundiff, and Kirsten Affolder.\nThis work is fun",
+        "score": -1.7251760680501056,
+        "dense_score": null,
+        "bm25_score": 12.862313551799907,
+        "graph_score": 0.0,
+        "rerank_score": -2.6606836318969727,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 21,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 675,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656077__2305.01374__On-chip_lateral_SiTe_PIN_photodiodes_for_room-temperature_detection_in_the_telecom_optical.md",
+        "title": "2023__recid_2656077__2305.01374__On-chip_lateral_SiTe_PIN_photodiodes_for_room-temperature_detection_in_the_telecom_optical",
+        "text": "a crucial role in separating and transporting the electronhole pairs generated by the incident light, 𝜀 𝑆𝑖 is the product of the relative permittivity of Si ( 𝜀 𝑟 )\nand the permittivity of free space ( 𝜀 0 ) . The parameter 𝑥 𝑛 ( 𝑥 𝑝 ) is the width of the depletion region,\nwhich extends inside the _n-Si:Te_ region ( _p-Si:B region_ ), 𝑞 is the electron charge, while 𝑁 𝐷 (𝑁 𝐴 ) is\nthe density of active Te dopants (active B dopants) in the _n-Si:Te_ region ( _p-Si:B_ region). The\ndepletion region refers to the full width of the intrinsic region, as well as the extension of the\ndepletion region in the hyperdoped _n-_ Si:Te ( 𝑥 𝑛 ) and _p-_ Si:B ( 𝑥 𝑝 ) regions, which are given by:\n\n𝑥 𝑛 =\n~~√~~\n\n+𝑉 𝑅 )\n\n[, ] [𝑥] [𝑝] [= ] ~~[√]~~\n\n[𝑁] 𝑁𝐴 [𝐷] [)]\n\n𝐷\n\n2 [)] [ (4), ]\n\n𝑖\n\n2∙𝜀 𝑆𝑖 ∙(𝑉 𝑏𝑖 +𝑉 𝑅 )\n\n2∙𝜀 𝑆𝑖 ∙(𝑉 𝑏𝑖 +𝑉 𝑅 )\n\n+𝑉 𝑅 )\n\n[ (3), and ] [𝑉] [𝑏𝑖] [= 𝜙] [𝑇] [ln ] ~~[(]~~\n\n[𝑁] 𝑁𝐴 [𝐷] ~~[)]~~\n\n𝑁 𝐴 ⋅𝑁 𝐷\n\n𝑞∙𝑁 𝐷\n(1+ [𝑁] 𝑁𝐴 [𝐷]\n\n𝑞∙𝑁 𝐴\n(1+ [𝑁] 𝑁𝐴 [𝐷]\n\n𝑛 𝑖\n\nwhere 𝑉 𝑅 is the reverse bias voltage and 𝑉 𝑏𝑖 is the built-in voltage, 𝜙 𝑇 is the thermal voltage ≈\n25.9 mV and 𝑛 𝑖 is the intrinsic carrier concentration.\n\nFocusing on the n-Si:Te side, under unbiased conditions, the length 𝑥 𝑛 (and 𝑥 𝑝 ) is extremely small\ntypically ≤ 10 [-9 ] m due to hyperdoping (using eq. 3). When photons with an energy greater than\n1.1 eV impinge on the _n-_ Si:Te region ( _i.e.,_ the active absorber material), the photogeneration of\nelectron-hole pairs occurs. Due to the absence of an electric field in the _n-_ Si:Te region, the\ngenerated electrons in this region can only be transported through the slower diffusion currents.\nThe holes on the other hand rely on both, the diffusion and the drift currents. They reach the\nintrinsic region using diffusion current, from where they can be rapidly drifted with high velocities\n\ndue to the presence of the electric field 𝐸 [⃑ ] as shown in Fig. 5 (b).\nWhen a finite reverse bias voltage 𝑉 𝑅 is applied, most of the voltage drop appears across the high\nresistance intrinsic region, while minimal voltage appears across _n-_ Si:Te (and _p-_ Si:B) region. As\na result, the depletion region extends deeper (eq. 3 and 4) into the _n-_ Si:Te absorber layer from\nboth sides of the _n-_ Si:Te structure and can be represented as 𝑥 𝑛 [′] . This causes the electric field to\nincrease proportionally (using 𝑥 𝑛 [′] in eq. 2) and can be represented as 𝐸 [⃑ ] [′] .The increase in the\nelectric field enhances the separation of the photogenerated electron-hole pairs in the _n-_ Si:Te",
+        "score": -1.746752405213721,
+        "dense_score": 0.3132473826408386,
+        "bm25_score": 11.15648131295433,
+        "graph_score": 0.0,
+        "rerank_score": -2.699343681335449,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.408000980969518,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 5.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.408000980969518,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

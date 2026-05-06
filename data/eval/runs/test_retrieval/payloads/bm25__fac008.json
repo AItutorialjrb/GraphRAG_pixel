@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "fac008",
+    "query_type": "factoid",
+    "query": "What is a test beam used for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "a",
+      "test"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is a test beam used for?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1487,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "in Fig. 4\n\nFig. 7. Energy (Left) and time (Right) resolution obtained with the electron\nbeam test performed at BTF.\n\nperformed to study the performance expected with CE; due to\nlonger clusters and higher transversal leakage the linear and\nconstant term increased. An energy resolution better than 5\n(7.5)% was achieved at 100 MeV for runs at normal (at 50 _[◦]_ )\nincidence.\n\nTime resolution was evaluated as the difference between the\n\ntime of the two SiPM coupled to the same crystal, obtaining\na timing resolution better than 200 ps at 100 MeV. The fit\nfunction used for the time resolution is:\n\n_a_\n_σ_ _T_ = (2)\n_E_ [ _GeV_ ] _[⊕]_ _[b]_\n\nFig. 6. Left : Energy spectrum for a crystal irradiated with 6.13 MeV photons\nfrom the [16] _O_ . Right: primary and secondary distribution laser system.\n\nIII. C ALORIMETER PERFORMANCE\n\nTo verify the selected design before starting the massive\nproduction of the whole calorimeter components, a large size\nprototype was build and exposed to an electron beam at the\nBeam Test Facility of the National Laboratories of Frascati.\nThe Module-0 is composed of 52 undoped CsI crystals read\nout by 102 SiPM connected to FEE boards. Its mechanics\nwas designed to resemble as much as possible that of the\nfinal calorimeter, allowing the test assembly procedures and\ncooling. A detailed description of the setup and the main\nresults (reported in Fig. 7) obtained during the beam test can\nbe found in [13]. For what concerns the energy resolution, the\nfunction used to fit the data is:\n\n_σ_ _E_ _a_ _b_\n\n_a_ _b_\n\n_⊕_ (1)\n_E_ [ _GeV_ ] _E_ [ _GeV_ ] _[⊕]_ _[c]_\n\nwhere _a_ is proportional to the emission time constant of\nthe undoped CsI and _b_ represents the additional contribution\ndue to the readout electronics. In the years following the\ntest beam, the Module-0 has continuously operated to study\nthe behaviour in vacuum, at low temperature as well as for\ncarrying out vertical slice tests of increasing complexity, at a\nCosmic Ray test stand where the timing calibration algorithms\nwere improved. The timing resolution obtained subtracting\ntime of two SiPMs reading the same crystal is reported in\nFig. 8.\n\nFig. 8. Timing resolution of a single crystal of the large area prototype\n\nIV. C ALORIMETER PRODUCTION STATUS\n\n_A. Crystal and SiPMs characterization_\n\nThe physics requirements previously discussed were used\nto define a set of technical specifications for the undoped CsI\ncrystals and SiPMs. The selection criteria to accept crystals\nwere: _(i)_ a Light Y",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 24.33654639920896,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6469,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "that of the EUDET-type\nbeam telescopes [40]. While the tracking efficiency is low\nfor the _standard_ layout, it can be improved without significant loss of tracking resolution by utilising one of the\nother layouts.\n\n**6. Comparisons to data and previous simulations**\n\nComparisons of the outlined simulation procedure to\npreviously published data are performed, using results\nfrom a test beam carried out in the framework of the\n\nCLICdp Collaboration on the TowerJazz Investigator 1\nsensor, with a pixel size of 28 _×_ 28 µm [2] [7]. This sensor is designed in the _standard_ layout in a 180 nm CMOS\nimaging process with an epitaxial layer thickness of approximately 25 µm, and the studies are made at a bias\nvoltage of _−_ 6 V. The sensor investigated here is thus different from what was previously used as an example in\ndeveloping the simulation procedure, demonstrating the\nversatility of the approach.\nFigure 25 shows comparisons between data taken with\nthe sensor and results using the simulation procedure outlined in this paper. Figure 25a shows the cluster charge\nat a threshold of 120 electrons, and Figure 25b shows the\ncluster size versus threshold.\n\nIn the figures, data are shown in blue and the results\nof simulations using the generalised procedure outlined in\nthis paper are shown in red. Figure 25a indicates that the\nsimulation result cluster charge is shifted slightly higher\ncompared to the data, while the rising and falling slopes of\nthe distributions match in shape. A fit is performed using\na convolution of a Gaussian and Landau function, which\ngives a most probable cluster charge value of 1.47 kiloelectrons for the simulation results. For the data, the value is\n1.42 kiloelectrons [7]. The width of the Gaussian part is\n0.22 kiloelectrons in the simulation results, and 0.21 kiloelectrons in the data.\n\nIn Figure 25b the simulations and data match across the\nfull investigated threshold range, with a slight deviation at\nthresholds smaller than 300 electrons. The errors shown\n\nare purely statistical for both data and simulations, and\nthe maximum deviation between the data and simulations\nis 4%, at a threshold of 120 electrons.\nComparative studies have also been carried out in the\nframe of the Tangerine project, using test beam data for\nsensors in a 65 nm CMOS imaging process [5]. These\n\n(a) Cluster charge distribution at a threshold of 120 electrons\n\n(b) Threshold dependency of the cluster size\n\nFigure 25: Comparison between simulation results obtained using\nth",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 22.889063834949543,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 37,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5832,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2743105__2401.01747__Study_of_the_time_and_energy_resolution_of_an_ultracompact_sampling_calorimeter_RADiCAL_mo.md",
+        "title": "2025__recid_2743105__2401.01747__Study_of_the_time_and_energy_resolution_of_an_ultracompact_sampling_calorimeter_RADiCAL_mo",
+        "text": "ue to fluctuation by\none sample segment in the CAEN digitzer that is used\nto digitize the signal timing. This condition affected\nroughly 15% of the timing signals of all SiPM channels, causing the shift of ≈ 0.2 _ns_ relative to the MCP\nreference time. The effect appears only the average of\nthe sum of all channels relative to the MCP. It does not\n\nappear in Fig. 19 Lower Left, as this is the timing difference between downstream and upstream SiPM channels, which is independent of the MCP timing. In any\ncase, the timing resolution is determined by Gaussian\nfit to the main peaks, and hence the calculation of the\ntiming resolution calculation in the Lower Right hand\nplot is generally unaffected by the presence of this satellite peak. The main peak in Fig. 19 Lower Right is\nmore broad, but this is due primarily to the presence and\ncontribution of the MCP resolution to this distribution,\nrather than from a contribution from the satellite peak.\n\nThe timing resolution, in a generalized way over the\nenergy range 25 GeV≤ E _beam_ ≤150 GeV, could then\nbe assessed by taking the average timing of all eight\ntiming differences with respect to the MCP timing:\n(∆ _t_ _DW_ + ∆ _t_ _UP_ )/2; or by taking the average of the\ndifference in the time average of the four downstream\nhigh gain signals and the time average of the four upstream high gain signals: (∆ _t_ _DW_ − ∆ _t_ _UP_ )/2. The second method, through subtraction, gives a result which\nis independent of the MCP timing. Fig. 20 displays the\nresults of the second method for each step in beam energy. The Gaussian fits to the peaks indicate steady improvement in the time resolution as a function of beam\n\nenergy.\n\n_5.3. Refined timing analysis_\n\nWhat the above overview neglects to consider is that\nthe resolution of the timing signals depends on the detected/measured energy ( _E_ _meas_ ) in the RADiCAL module event by event for a given beam energy ( _E_ _beam_ ),\nrather than simply given by a unique and fixed energy\nvalue for all events. This consideration is based upon\nearlier study of the timing resolution of the RADiCAL\nmodule by our group at the Fermilab Test Beam Facility\nfor which a negative beam of _E_ _beam_ = 28 GeV was available [9], and where a strong dependence was observed\nfor the timing resolution as a function of the detected\nenergy in the RADiCAL module (in mV).\nThis issue is illustrated by examination of the measured energy signals shown in Fig. 16, where each of the\ndistributions exhibits a low energy tai",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 22.2463429083711,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 8302,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3073914__2510.21907__Evaluation_of_SiC_detector_performances_for_energy_and_timing_measurements.md",
+        "title": "2026__recid_3073914__2510.21907__Evaluation_of_SiC_detector_performances_for_energy_and_timing_measurements",
+        "text": "tion with α and proton beams_\nFinally, we performed a test using low-energy proton and _α_ beams provided by the singletron accelerator of the Dipartimento di Fisica and Astronomia (DFA) _Ettore Majorana_, of the University of Catania (Italy). The\n\n13\n\nFigure 9: (a) Energy of a pixel versus the energy of an adjacent pixel in coincidence\nevents. (b) Timing difference between the crossing time signals obtained with cuts shown\nin Figures (a,c,d). (c) Energy vs rise-time plot of a pixel in coincidence events with the\nadjacent pixel. (d) Energies sum of two pixels. _σ_ have been obtained within gaussian fits.\n\n14\n\nsingletron accelerator provided protons with energy of 1 MeV and _α_ with\nenergies of 1 and 2 MeV.\nThe measurement has been performed in a backscattering mode, placing the\n100 _µ_ m SiC detector at _θ ≈_ 150 _[◦]_ in the laboratory frame, inside a vacuum\nchamber. A thick carbon target with an evaporated Au layer _≈_ 20 _µ_ g _/_ cm [2]\n\nwas used. The thick carbon substrate was used to reduce the low energy\nbackscattering due to the steel target holder. Figure 10 displays the results\nobtained using the sharing method and the procedure discussed before, for _α_\nbeam at 2 MeV. For proton beam at 1 MeV a _σ_ =2709 _±_ 450 ps is obtained.\nWhile, in the case of _α_ beam at 1 MeV the shared signals are too low in\nenergy to be detected.\nTo conclude this timing investigation, Figure 11 shows the trend of the\nextracted _σ_ _pixel_ (ps) values as a function of the sharing energies. This trend\nroughly goes as _≈_ 1/E, in agreement with what expected. A fit has also been\nperformed and the extrapolation at a value of 10 MeV shows a _σ_ _pixel_ of _≈_ 50\nps. In addition, using a CAEN signal emulator, signals with a rise-time similar to the one observed with _α_ sources and several amplitudes, from 30 mV\nup to 800 mV, have been sent to the test input of the Mesytec preamplifier,\nin order to test the intrinsic timing resolution of the preamlifier coupled with\nthe CAEN digitizer. The values, showed as red points in Figure 11, show\nthat the used electronics is the most important limitation to the extracted\ntime resolution at high energy.\nWe underline that the figures and procedure have been discussed for two\nadjacent pixels, but this trend is also confirmed for the remaining adjacent\npixels. In conclusion, we were able to extract several information on the timing resolution as a function of the sharing energy. These information were\nextracted using _α_ radioactive sourc",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 22.09121001574255,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3937,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2744867__2401.04630__Characterisation_of_plastic_scintillator_paddles_and_lightweight_MWPCs_for_the_MID_subsyst.md",
+        "title": "2024__recid_2744867__2401.04630__Characterisation_of_plastic_scintillator_paddles_and_lightweight_MWPCs_for_the_MID_subsyst",
+        "text": "ing a rough estimate for _S_ (obtained from the fits), _S ≈_ 2.125 mm(GeV _/c_ ) _[−]_ [1], one can extract the\n\nmaterial budget of the experimental setup. Considering the detector geometry (three groups of chambers define\n\nthe _L_ = 2 _._ 5 m trajectory) the _S_ parameter can be estimated as _S ≈_ ( _L/_ 2)(14 MeV) _[√]_ ~~_x_~~ ~~(~~ 1 + 0 _._ 038 ln( _x_ )), where\n\n_x_ is expressed in units of radiation length. This formula yields _x ≈_ 2% which matches well the actual material\n\nbudget of about 5 mm glass epoxy.\n\nFigure 8: MWPC position resolution as a function of beam momentum. The lines correspond to the quadratic sum of a constant\n\nterm and an _S/p_ scattering term (see text for explanation). Here _S_ is set to 2.125 mm(GeV _/c_ ) _[−]_ [1] .\n\nThe systematic measurements presented above indicate that up to beam intensities of 100 Hz/cm [2], similarly\n\nto what was observed for the efficiency, there is a very small degradation of position resolution and that the\n\nangular spread of the beam particles does not dominate the measured resolution above _p_ = 2 GeV/ _c_ .\n\n**4. Summary and outlook**\n\nThe ALICE 3 experiment will entail a large-area muon detector, with high and uniform efficiency, and\n\nexcellent time resolution, and running with moderate occupancy and particle fluence. Scintillator, MWPC, and\n\nRPC based options are all taken into account, and two of these technologies were tested at the CERN T10 test\n\nbeam facility.\n\nRegarding plastic scintillator prototypes, the option that offers good performance on light-yield output\n\n(around 40 photoelectrons), good time resolution ( _<_ 2 ns), and that represents a moderate-cost solution is the\n\nextruded FNAL-NICADD scintillator bar equipped with WLS fiber and only one SiPM at one side of the bar.\n\nOther possibilities were tested, in particular ELJEN EJ-208 scintillator bar also exhibits a good performance\n\nbut the cost per bar is 4 times that of the FNAL-NICADD option. For the PROTVINO scintillator bar to be\n\ncompetitive, it had to be equipped with WLS fiber and two SiPMs. However, having two sensors per bar in\n\nthe MID detector would increase the cost of the readout electronics. The other issue is that the plastic is more\n\nthan 40 years old and its technical specifications are missing.\n\nConcerning the tested MWPCs, the detectors were functioning reliably during the test beam period, and\n\nthe results offer new detailed information with control on beam intensity, beam energy, and geometry, which\n\nmatches t",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 21.981663135286695,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8324,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "de, the\npulse is not detected (no threshold crossing), and no count\nis added. When the threshold is close to the baseline level,\nnoise (or other perturbations such as undershoot in the\nreturn to baseline) can cause a higher number of threshold\ncrossings, similar to what is shown in Figure 10.\nFigure 18 shows the occupancy as a function of\nthe threshold for 100 test pulses per threshold, using\n`dac` ~~`v`~~ `tpulse` equals 20 DACs (approximate most probable value for a MIP, about 700 electrons), injected into a\nsingle pixel. Above the Gaussian part (baseline), an occupancy of 100 is expected until the maximum pulse height\nis reached, after which the occupancy drops to zero. In\nthis region, an S-curve function is fitted, with the mean\nµ = (118 _._ 5 _±_ 0 _._ 1) THL DAC representing the test pulse\n\n9\n\n|Surrogate func<br>A = 0.018 ± 0.001<br>B = -6 ± 1 c.c.<br>C = 290 ± 30 c.c.<br>D = 650 ± 20 e|tion fit<br>c.c./e<br>e|Col3|\n|---|---|---|\n||||\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|||||||\n\nFigure 20: Calibrated ToT response for a single pixel.\n\nFigure 22: ToT spectrum of the [55] Fe source before calibration.\n\n|Gaussian fit<br>1640 ± 40 e<br>107 ± 3 e|Col2|\n|---|---|\n|||\n\nFigure 21: ToT response for the full matrix as a function of the\namplitude of the injected test pulses. The threshold is approximately\n600 electrons. The mean ToT is shown in red.\n\namplitude and the width σ = (0 _._ 2 _±_ 0 _._ 1) THL DAC reflecting the pixel noise and the amplitude variations across\nthe 100 injected pulses. This procedure is repeated for each\npixel and all possible `dac` ~~`v`~~ `tpulse` values, as shown in Figure 19. A linear regression in the region from `dac` ~~`v`~~ `tpulse`\nbetween 25 and 100 DAC is used to extract the conver\nsion factor between electrons and DACs. All pixels have\na similar linear gain, with maximum measured amplitude\nreaching the 8-bit `dac` ~~`v`~~ `thr` limit.\n\nThe ToT value for each test pulse amplitude is calculated from the average of 100 test pulse measurements at\na fixed threshold. This procedure is repeated for each pixel\nand all possible `dac` ~~`v`~~ `tpulse` values, as shown in Figure 21\nfor a threshold of approximately 600 electrons. At higher\ntest pulse amplitudes, far from the expected MIP value,\nthe measured ToT values vary between pixels, and the\nmaximum mean value is reached at 1 µs, coinciding with\n\nFigure 23: Amplitude spectrum of the [55] Fe source after calibration.\n\nthe acquisition frame duration. This large",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 21.431133857486074,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 1908,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "operties of the mirrors and the total integrated ionising dose along the fibre. The\nfibre properties can be adjusted to take into account ageing and exposure to radiation.\nA second standalone Geant4 -based simulation was developed to propagate optical\nphotons in a single irradiated fibre in order to produce the survival probability map,\nshown in figure 54, that can be used in the Boole simulation of the detector. The total\nphoton signal is divided amongst neighbouring channels based on the crossing angle of the\ntrack and a slight smearing to account for the cluster widths observed in test beam data.\nThe photon propagation simulation and the full detector simulation have been tuned to\ndata obtained from experimental measurements of irradiated fibres and test beam data.\nA detailed description is given in ref. [102].\n\nFigure 54: The survival probability (attenuation) map of direct and reflected photons in the\nSciFi Tracker after 50 fb _[−]_ [1] from simulation. Reproduced with permission from [102].\n\nIn the third part, the SiPM signal and PACIFIC chip digitisation are simulated. A\nsignal in each channel is obtained based on the quantum efficiency and other properties\nof the SiPM, the thresholds of the PACIFIC comparators, and the electronics response\nfunction of the ASIC, as it can be seen in figure 51 (right). The dark-noise avalanches of\nthe SiPM are also (optionally) simulated at this stage and added to the analog signal of\neach channel before digitisation. The simulated digitisation of the thresholds outputs are\nthen passed to the clusterisation output and the position of a cluster can be calculated\nand encoded. At this stage the output of the simulation corresponds to what is obtained\non detector electronics output. The simulations are used for the development of the\nanalysis and monitoring chain, as well as testing various scenarios such as the impact\nof threshold settings on the production of dark-noise clusters, single hit efficiency, and\ntracking performance.\n\n**6.9.1** **Spillover clusters**\n\nA spillover signal in a given bunch crossing is a signal due to a particle associated to an\ninteraction from a previous or following bunch crossing. There are two main sources of\n\n73\n\n|thresholds = 1.5, 2.5, 4.5 p.e.<br>fit p5q pz5<br>sim p5q pz5<br>fit p5q pz6<br>sim p5q pz6<br>-<br>-<br>-|thresholds = 1.5, 2.5, 4.5 p.e.<br>fit p5q pz5<br>sim p5q pz5<br>fit p5q pz6<br>sim p5q pz6|Col3|Col4|\n|---|---|---|---|\n|thresholds = 1.5, 2.5, 4.5 p.e.<br>-<br>-<br>-<br>f",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 21.16633598888361,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 90,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 8325,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "m the expected MIP value,\nthe measured ToT values vary between pixels, and the\nmaximum mean value is reached at 1 µs, coinciding with\n\nFigure 23: Amplitude spectrum of the [55] Fe source after calibration.\n\nthe acquisition frame duration. This large threshold of\n600 electrons is chosen in this measurement for consistency\nwith the ToT spectrum of the [55] Fe source measurements\npresented below.\nNext, the ToT and amplitude measurements can be\ncombined. Figure 20 shows the ToT as a function of the\ntest pulse amplitude in electrons for a single pixel. A surrogate function\n\nC\nToT = Ax + B + (2)\nx _−_ D\n\nis used to fit each pixels data, where x is the test pulse\namplitude, A modulates the linear component at higher\namplitudes, B adjusts the ToT offset, C represents the\ncurvature part at low amplitudes, and D indicates the offset in amplitude [25]. The inverse of the surrogate function\nallows the conversion of measured ToT in clock cycles to\nsignal amplitude in electrons.\nTo verify the calibration procedure, a ToT spectrum of\n55 Fe is recorded in ToT mode, as shown in Figure 22. The\n\n10\n\nthreshold of approximately 600 electrons is the same as\nused during the calibration. This spectrum is then converted into electrons, as shown in Figure 23, after applying the threshold and ToT calibration. The peak is described by a Gaussian with µ = 1640 _±_ 40 electrons corresponding to the resolved K α 1 amplitude with an accuracy\nsmaller than 5 %. The dominant systematic uncertainty\narises from the threshold calibration uncertainty.\nThe ToT calibration is applied to the test beam reconstructed data acquired in ToT mode down to a threshold\nof 300 electrons. For lower thresholds, the surrogate function fits (Equation (2)) do not converge —particularly the\nparameter C, which models the curvature at low thresholds.\n\n**4. Methodology for Test Beam Measurements**\n\nThis section describes the experimental setup and analysis procedure for the test beam measurements, where the\nH2M performance in MIP detection is studied.\n\n_4.1. Experimental Setup_\n\nThe data have been recorded at the DESY II [26] and\nCERN SPS [27] Test Beam Facilities employing the ADENIUM [28] and CLICdp Timepix3 [29] beam telescopes, respectively. Each beam telescope comprises three upstream\nand three downstream reference planes, with the device\nunder test (DUT) in between. These planes are arranged\nand oriented to optimise the pointing spatial resolution of\nthe beam telescope at the DUT position. With the used\nconfig",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 21.113154350656927,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7153,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "Hit-OR is gauged\nby comparing it with a scintillator signal coupled to a PMT and\nread out via an oscilloscope. The result is depicted in figure 9b\nexemplarily for a quasi noise-free threshold of 16. A Gaussian\nfit to the distributions’ core yields a σ of 2.28(1) ns, sufficient\nfor precise triggering at test beams. The absolute delay of the\n\n4\n\n(a) Hitmap of a telescope plane with TelePix2 as trigger. A DESY logo is programmed to\nthe fast Hit-OR.\n\nFigure 8: Time difference between reference trigger and TelePix2 cluster time\nversus the row number.\n\ntrigger compared to the scintillator is 15.32(1) ns, which is an\nacceptable latency for test beam operation.\n\n**5. User Stories**\n\nTelePix2 is in user operation and utilized by multiple groups\nto enhance data taking efficiency and suppress ambiguities. In\nthe following three examples using the different operating modes\nare discussed and the improvement due to TelePix2 is highlighted.\n\n_H2M - region of interest trigger mode_\n\nThe H2M (Hybrid-to-Monolithic) is implemented in a 65 nm\nCMOS imaging process as proof of concept for a digital-on-top\ndesign workflow. It ports a hybrid pixel-detector architecture,\nwith digital pulse processing in each pixel, into a monolithic\nchip. The chip matrix consists of 64×16 square pixels, each\nwith a size of 35×35 µm [2], and a total active area of approximately 1.25 mm [2] . A 100 MHz clock is used for non-simultaneous\nTime-over-Threshold (ToT) or Time-of-Arrival (ToA) measure\nments.\n\nH2M has been tested in the DESY II test beam test beam\n\nfacility using the ADENIUM telescope. TelePix2 is used as\nregion of interest trigger plane. A region of interest of approximately 3 mm [2] is left unmasked in TelePix2 matching the H2M\narea with a safety margin.\nFigure 10a compares the correlations in X between H2M\nand the reference plane with data taken from a small region of\ninterest and the entire TelePix2. While a one order of magnitude higher background of uncorrelated events is observed for\nthe full region, for the small region, most of the events are correlated. The latter reduces the number of empty readout frames\nof H2M and highly improves the data taking efficiency. Moreover, time studies have been performed based on TelePix2. Figure 10b shows the time residuals between the TelePix2 fast\n\nHit-OR and H2M time stamps. The tail to the left is caused by\ntime-walk of H2M.\n\n5\n\n(b) Time difference between reference trigger and TelePix2 hit-or at a threshold of 16.\n\nFigure 9: The fast Hit-OR of",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 20.635816417845554,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 8064,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2966144__2509.00908__Beam_test_results_of_the_Intermediate_Silicon_Tracker_for_sPHENIX.md",
+        "title": "2026__recid_2966144__2509.00908__Beam_test_results_of_the_Intermediate_Silicon_Tracker_for_sPHENIX",
+        "text": "erated for data collection, except for the most\nupstream ladder, due to a bias voltage issue [3] . The remaining three ladders showed good performance and are denoted\nas L 0, L 1, and L 2 hereafter. In each FPHX chip, the lowest comparator threshold was set to a DAC value of 15,\nunless otherwise specified. The trigger signals (processed by NIM logic modules) and the INTT hit data were sent to\na PHENIX FVTX front-end module (FEM) [9]. The FEM stores the INTT data only when an active trigger signal is\npresent. The data were collected using a data acquisition system developed with the PCIe-6536B (National Instruments\nCo.) running on a Windows 10 operating system.\nWe note that the INTT operational configuration used in the beam test was a prototype setup and differed slightly\nfrom the final configuration for the sPHENIX detector. In the beam test, a 40-centimeter flexible printed circuit (FPC)based cable was used to transmit signals between the HDI and ROC during the measurements, except for one run used\nfor the hit-detection efficiency study (as discussed in Section 2.4). In this run, a 1.3-meter prototype bus-extender (BEX)\ncable [10] was additionally connected to L 1 following the FPC-based cable. This measurement was intended to assess\nthe reliability of data transmission through the BEX. Data readout was performed using an FEM. In the final INTT\nsetup, a µ-coaxial cable [6] and a shorter 1.11-meter bus-extender cable are employed for each HDI-to-ROC connection,\nwith data read out by the FELIX board [11]. We also note that the bias voltage applied to the sensors during the beam\ntest was 50 V, slightly below the full depletion voltage of approximately 57 V. This was not an optimal configuration.\nNevertheless, as will be discussed in Section 2, the impact on the performance presented in this paper (hit-detection\nefficiency, multiple track reconstruction, etc.) under a bias voltage slightly below the full depletion voltage is marginal.\nFor INTT during the sPHENIX data taking, a nominal operating bias voltage of 100 V is applied.\n\n3 Though the most upstream ladder was not operated during the beam test, its water-cooling tube was connected in series with other ladders. It\nwas therefore left in place on the beamline without being removed.\n\n<C. W. Shih, _et al._ >: _Preprint submitted to Elsevier_ Page 3 of 11\n\nBeam test results of the Intermediate Silicon Tracker for sPHENIX\n\n**Figure 3:** The schematic diagram of the setup for the INTT beam test at RARiS. The I",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 20.590156113982594,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 1.7386600240133703,
+    "generation_latency_s": 4.2980536818504333e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.7386600240133703,
+    "generation_latency_s": 4.2980536818504333e-07
+  }
+}

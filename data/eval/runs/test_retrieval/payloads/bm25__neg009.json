@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "neg009",
+    "query_type": "negative",
+    "query": "What is the home address of the lead author?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "home"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the home address of the lead author?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2677,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2690605__2308.12464__The_Compton_Pair_telescope_A_prototype_for_a_next-generation_MeV_gamma-ray_observatory.md",
+        "title": "2024__recid_2690605__2308.12464__The_Compton_Pair_telescope_A_prototype_for_a_next-generation_MeV_gamma-ray_observatory",
+        "text": "Calorimeter, all of which are surrounded by a plastic scintillator anti-coincidence detector. These\n\nsubsystems together detect and characterize photons via Compton scattering and pair production,\n\nenable a veto of cosmic rays, and are a proof-of-concept for a space telescope with the same\n\narchitecture. A future medium-energy gamma-ray mission enabled through ComPair will address\n\nmany questions posed in the Astro2020 Decadal survey in both the New Messengers and New\n\nPhysics and the Cosmic Ecosystems themes. In this contribution, we will give an overview of the\n\nComPair project and steps forward to the balloon flight.\n\n38th International Cosmic Ray Conference (ICRC2023)\n26 July - 3 August, 2023\nNagoya, Japan\n\n∗ Speaker\n\n© Copyright owned by the author(s) under the terms of the Creative Commons\nAttribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). https://pos.sissa.it/\n\n_The ComPair MeV_ _𝛾-ray telescope_ Janeth Valverde\n\n**1.** **Introduction**\n\nGamma-ray astronomy is the study of the most energetic form of light and has been yielding\n\nimportant discoveries about our universe since the 1960s, and more recently in multi-messenger\n\nastrophysics. For instance, the combined detection of gamma rays with neutrinos from supernova\n\nSN1987A [1], most recently, gravitational waves (GWs) from the binary neutron star merger GW\n\n170817 [2], and the spatial correlation with the neutrino-producing blazar TXS 0506+056 [3].\n\nHowever, the MeV domain remains largely under explored, with the last major instrument sensitive\n\nto that energy range (0.8 – 30 MeV), the Imaging Compton Telescope [COMPTEL; 4], de-orbited\n\nin 2000. The Compton Pair Telescope (ComPair) team is developing the necessary technologies to\n\nenable a future MeV mission, like the All-sky Medium Energy Gamma-ray Observatory [AMEGO;\n\n5], which is a mission concept designed to address the MeV gap in sensitivity.\n\nComPair is lead out of NASA Goddard Space Flight Center (GSFC), with collaborators at the\n\nNaval Research Laboratory (NRL), Los Alamos National Laboratory (LANL), and Brookhaven\n\nNational Laboratory (BNL). The team has designed, built and tested a prototype of AMEGO in a\n\nbeam test and is currently preparing for its first balloon flight in August 2023. In the following, we\n\nprovide an overview of the motivation, mission concept, and current status of ComPair.\n\n**2.** **Motivation and mission concept**\n\nAMEGO1 targets the study of astrophysical objects that produce GWs an",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 30.352715242936284,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7807,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2945891__2507.10454__Performance_of_newly_constructed_plastic_scintillator_barrel_in_the_WASA-FRS_experiments_a.md",
+        "title": "2026__recid_2945891__2507.10454__Performance_of_newly_constructed_plastic_scintillator_barrel_in_the_WASA-FRS_experiments_a",
+        "text": "also of the full MPPC-based scintillator system, in terms of particle reconstruction capabilities under realistic experimental conditions, when it is integrated within a full\n\nspectrometer setup.\nWe developed a plastic scintillator system based on MPPC\nreadout [16] as a part of the Wide-Angle Shower Apparatus\n(WASA) spectrometer system [17, 18] and operated it in the\nfirst series of the WASA-FRS experiments at GSI [19, 20]. The\ndetector was employed for the identification of charged particles emitted from proton- and heavy-ion-induced reactions, by\nmeasuring their time of flight and the energy deposition in combination with momentum reconstruction performed using tracking detectors inside a 1 T solenoidal magnetic field. Two experiments were carried out in the first experimental campaign, one\non the spectroscopy of η [′] -mesic nuclei [21] and the other on\nlight hypernuclear spectroscopy using heavy-ion-induced reactions [22].\nIn this article, we report on a systematic investigation of the\nperformance of the newly constructed plastic scintillator barrel\nfrom the analysis of the spectroscopy experiment of η [′] -mesic\nnuclei. The detector response to energy deposition and the time\nresolution were analyzed under various conditions, including\ndependence on the counting rate and the total number of irradiating protons for evaluating radiation tolerance. The structure\nof this paper is as follows. First, the experimental setup and\n\n∗ Corresponding author\n_Email address:_ `yoshiki.tanaka@a.riken.jp` (Y. K. Tanaka)\n1 Present address: Department of Physics, The University of Osaka, 5600043, Osaka, Japan\n2 Present address: Auburn University, Auburn, AL 36832, USA\n3 Deceased\n4 Present address: Variable Energy Cyclotron Centre, Kolkata-700064, India\n\nmeasurements are introduced in Section 2. The data-analysis\nprocedure is presented in Section 3, followed by results and discussions in Section 4. Finally, the conclusions are summarized\nin Section 5.\n\n**2. Experiment**\n\nThe experimental setup for the spectroscopy of η [′] -mesic nuclei is illustrated in Figure 1. The central part of the WASA\ndetector was installed at the F2 focal plane of the fragment separator FRS [23]. We employed a 2.5 GeV proton beam extracted from the SIS-18 synchrotron, with a spill length of 10 s.\nThe beam impinged on a carbon target placed at F2 to produce\nη [′] -mesic nuclei with the [12] C( _p_, _d_ )η [′] ⊗ [11] C reaction. The typical beam rate was ∼ 5 × 10 [8] /s. The carbon target had an a",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 28.30338272480606,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 7666,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2898921__2503.07845__Characterization_of_the_SiPiC_payload_for_photon_detection_from_space.md",
+        "title": "2026__recid_2898921__2503.07845__Characterization_of_the_SiPiC_payload_for_photon_detection_from_space",
+        "text": "ion with gravitational wave events [14].\n\n∗ Lead author, corresponding author: lfinazzi@unsam.edu.ar\n\n - Corresponding author: gsanca@unsam.edu.ar\n\n1\n\nIn recent years, we have studied the performance of SiPMs under controlled light stimuli\nin Low Earth Orbit (LEO) [15, 16, 17, 18]. We have also developed a new generation of\nLabOSat instruments: the first one is an Onboard Computer to control Payloads in CubeSats\n(LabOSat-02) [19] and the second one is a PC104 compliant Payload called LabOSat-0104,\nwhich is an update on the LabOSat-01 Payload [20]. This will be the first space mission for\nthese new LabOSat instruments.\nIn this work, we introduce the SiPiC (SiPM Pinhole Camera) Payload. This Payload\nhas two distinct objectives: to perform an in-orbit validation (IOV) of new generation of\nLabOSat instruments, and to use SiPM technology to detect visible light originating from\nEarth. In this regard, this instrument serves as a pathfinder for Visual Light Communications between Earth and a satellite for different altitudes. We will also present and discuss\npreliminary measurements to assess performance of each of the Payload subsystems. In Section 2, the Payload description is presented, which includes its hardware and subsystems and\nits software. In Section 3, the characterization setup for the Payload pre-flight preliminary\nmeasurements is detailed. In Section 4, these measurements are presented and analysed. In\nSection 5, the conclusions are outlined and the outlook is briefly discussed.\n\n### **2 Payload Description**\n\n##### **2.1 Hardware and subsystems**\n\nIn Figure 1, an overview of each subsystem of the SiPiC Payload is shown with its corresponding electrical connections. In addition, a 3D CAD with a detail of all subsystems is\nshown in Figure 2.\nThe instrument is comprised of various electrical subsystems, including a Power Adapter\nBoard (PAB) and LabOSat-02 (LSO) (Control Subsystem, or CS), LabOSat-01 (LSS) with its\ncorresponding adapter board (LSB) (Imaging Subsystem, or IS) and LabOSat-0104 (LMB),\nwith its corresponding daughter board (LDB) (Validation Subsystem, or VS). The IS was\ndesigned to host two SiPM sensors. One of them is exposed to external light through a\npinhole, and the other is encapsulated in opaque epoxy to serve as a dark control.\nThe SiPM optics has a length of 60 mm and the corresponding pinhole has 0.3 mm\ndiameter. This results in a theoretical Field-of-View (FOV) on the Earth’s surface of 4000 km\nat 40000 km altitude or 50 km at 5",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 27.45365891387423,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2303,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2672417__2306.15336__Investigation_of_high_resistivity_math_altimgsi57.svg_displayinline_idd1e1353mipmimath-typ.md",
+        "title": "2024__recid_2672417__2306.15336__Investigation_of_high_resistivity_math_altimgsi57.svg_displayinline_idd1e1353mipmimath-typ",
+        "text": "; C i O i ; TSC; Surface current\n\n**1. Introduction**\n\nIn High Luminosity Large Hadron Collider (HL-LHC) experiments, strip and pixel silicon sensors in the inner tracking\ndetectors have to cope with extraordinarily high particle rates\nof up to 200 p–p collisions per bunch crossing. New types of\nsensors to be used for this purpose, started to be developed.\nThey are manufactured on boron doped ( _p_ -type) silicon and\nhave different structures, from the simplest p-i-n diode to devices which amplifies the signals and have better time resolution, as e.g. the Low Gain Avalanche Detectors (LGADs) [1, 2].\nThe degradation in the performance of these sensors is caused\nby the generation of electrically active radiation-induced defects. For instance, the charged defects at room temperature\n(e.g. E30K, B i O i, H140K, H152K and I P ) [3–6] cause changes\nof the space charge density ( _N_ eff ). Vacancy related traps such as\nV 2 and V 3 [7] lead to the degradation of charge collection efficiency (CCE) and an increase of dark current. In general, the\nradiation-induced defects can be classified according to their\n\n∼\nsize: point defects, up to 2 3 atoms size, or more extended\nones, also known as cluster-related defects. All the radiationinduced defects contribute to the degradation of silicon sensors\nand can be characterized using spectroscopic techniques such\n\n⋆ [Work performed in the frame of the CERN-RD50 collaboration.](https://rd50.web.cern.ch/)\n∗ Corresponding author\n_Email address:_ `chuan.liao@desy.de` (C. Liao)\n\nas Deep Level Transient Spectroscopy (DLTS), for low defect\nconcentration, and Thermally Stimulated Current (TSC) after\nhigh levels of irradiation when DLTS does not work anymore.\nDuring a temperature scan, both, point and cluster-related defects are contributing to the signals observed in TSC and DLTS\nmeasurements. Detecting and analyzing the combined effects\nof these defects pose a challenge for these techniques.\nThe main radiation damage effect seen in _p_ -type silicon sensors is the deactivation of the boron dopant. Thus, the atoms\nof substitutional Boron (B s ) may switch the sites with interstitial silicon (Si i ) created during radiation via a Watkins replacement mechanism [8] and transform in Boron interstitial\n(B i ), losing its acceptor character. The B i atoms migrate in\nthe crystal and react with interstitial Oxygen, found in abundance in silicon, leading to the formation of B i O i complex. Another possible acceptor removal mechanism in _p_",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 27.451043391413474,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6600,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2833880__2409.17558__Entanglement_distribution_over_155_km_metropolitan_fiber_using_a_CMOS-compatible_silicon_c.md",
+        "title": "2025__recid_2833880__2409.17558__Entanglement_distribution_over_155_km_metropolitan_fiber_using_a_CMOS-compatible_silicon_c",
+        "text": "k information 324\n\nA measurement of polarization stability of deployed fibers over a continuous period of 8 hours is 325\nconducted and the polarization state rotates 10 _._ 75 _[◦]_ (93 km link) and 12 _._ 63 _[◦]_ (62 km link) on the 326\nPoincar´e sphere. The results in Fig. 7. (a, b) indicate a relatively stable polarization behavior. 327\nAdditionally, signal crosstalk from other channels in metropolitan fiber networks can introduce 328\nbackground noise, which also affects the quantum state fidelity. The NUS-SUTD-NUS (or NUS- 329\nNTU-NUS) fiber loop experiences approximately 4 Mcps (2 kcps) of background noise without 330\nspectral filtering. This noise is broadband and can be effectively mitigated using a 0.8 nm band- 331\nwidth DWDM filter. After inserting the filter, the background noise in both channels is reduced to 332\nless than 200 cps. 333\n\n13\n\n## RESOURCE AVAILABILITY 334\n\n### Lead contact 335\n\nRequests for further information and resources should be directed to and will be fulfilled by the 336\nlead contact Alexander Ling (alexander.ling@nus.edu.sg). 337\n\n338\n### **Materials Availability**\n\nThis study did not generate new unique materials. 339\n\n340\n### **Data and code availability**\n\n - The data reported in this study are available from the lead author upon reasonable request. 341\n\n - This paper does not report any original code. 342\n\n - Any additional information required to reanalyze the data reported in this paper is available 343\nfrom the lead contact upon request. 344\n\n## ACKNOWLEDGMENTS 345\n\nThis research is supported by the National Research Foundation, Singapore, and A*STAR under 346\nits CQT Bridging Grant and Quantum Engineering Programme (Award No. NRF2021-QEP2-01- 347\nP02), QEP2 grant: NRF2021-QEP2-01-P01, and US Air Force grant (FA2386-21-1-0076). D. Tan 348\nacknowledges funding from the National Research Foundation, Singapore, and A*STAR under 349\nits QEP 2.0 Programme (Award No. NRF2022-QEP2-01-P08), the National Research Foun- 350\ndation Investigatorship (NRF-NRFI08-2022-0003) and the Ministry of Education Tier 2 Grant 351\n(Award No. MOE2019-T2-2-178). We acknowledge funding support from the National Re- 352\nsearch Foundation, Singapore and A*STAR under its Quantum Engineering Programme (Na- 353\ntional Quantum-Safe Network, NRF2021-QEP2-04-P01) and Netlink Trust for the provisioning 354\nof the fiber network. The authors acknowledge the assistance of setup alignment and litera- 355\nture review from Arya Chowdhury, and En Teng Lim, an",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 26.921023826875494,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6804,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment.md",
+        "title": "2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment",
+        "text": "## The Highly-Granular Time-of-Flight Neutron Detector for the BM@N experiment\n\nS. Morozov [a,] _[∗]_, V. Bocharnikov [b], D. Finogeev [a], M. Golubeva [a], F. Guber [a], A. Izvestnyy [a],\nN. Karpushkin [a], A. Makhnev [a], P. Parfenov [a], D. Serebryakov [a], A. Shabanov [a], V. Volkov [a],\nA. Zubankov [a]\n\n_a_ _Institute for Nuclear Research of the Russian Academy of Sciences,_\n_60-letiya Oktyabrya prospekt 7a, Moscow 117312, Russia_\n_b_ _HSE University, Moscow_\n\n**Abstract**\n\nA new Highly-Granular time-of-flight Neutron Detector (HGND) is being developed and\nconstructed to measure azimuthal neutron flow and neutron yields in nucleus-nucleus\ninteractions in heavy-ion collisions with energies up to 4A GeV in the fixed target experiment BM@N at JINR. Details of the detector design and results of performance studies\nfor neutron identification and reconstruction are shown. Comparison of simulations for\ndifferent options of the HGND layout at the BM@N is presented. Several proposed\nmethods of neutron reconstruction including machine learning and cluster methods are\ndiscussed.\n\n_Keywords:_ Neutron detectors, Heavy-ion collisions, Silicon photodetectors,\nTime-of-flight methods\n\n**1. Introduction**\n\nThe study of the equation of state (EoS) of dense nuclear matter is a key topic\nin relativistic nuclear physics. The EoS that can be defined as a binding energy per\nnucleon relates the pressure, density, energy, temperature for symmetric matter and\nsymmetry energy components [1]. The symmetric matter term of the EoS describes the\nmatter in their ground state where protons and neutrons have equal contributions to the\nbinding energy. This term has been under extensive study and has the most stringent\nconstraints from the vast set of experiments using observables such as meson yields,\nanisotropic flow measurements, etc. [2, 3, 4, 5]. However the discrepancies in the existing\nresults introduces the significant systematic uncertainty in the EoS constraints [5]. New\nexperimental data and state-of-the-art analysis techniques are required in order to address\nthis issue. The symmetry energy term of the EoS is responsible for the difference in\nisospin between neutron and proton parts of nuclear matter [1]. Study of this term is\nimportant for astrophysics because the mass and size of neutron stars and how they\n\n_∗_ Corresponding author\n_Email address:_ `morozovs@inr.ru` (S. Morozov)\n\n_Preprint submitted to Elsevier_ _December 3, 2024_\n\nmerge depend on the symmetry energy term i",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 26.867290154146197,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6617,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835439__2409.19030__Initial_performance_assessment_and_calibration_techniques_of_the_production_monolithic_sil.md",
+        "title": "2025__recid_2835439__2409.19030__Initial_performance_assessment_and_calibration_techniques_of_the_production_monolithic_sil",
+        "text": "at mid to high charge levels. In contrast, the\n\naveraging method demonstrates greater stability across the entire charge range. With its reduced\n\nsensitivity to saturation and a lower relative error of 15% at the saturation point, the averaging\n\nmethod may be the preferred and safest choice for reconstructing charges in the FASER experiment.\n\n**5** **Conclusions**\n\nIn conclusion, the production ASIC for the FASER experiment’s preshower detector demonstrates\n\nsignificant improvements in performance. Two calibration methods—fitting and averaging—were\n\nevaluated. The new preshower detector, equipped with its modules and silicon monolithic ASICs,\n\nis scheduled for installation in FASER at the end of 2024, marking a key milestone in enhancing\n\nthe experiment’s detection capabilities.\n\n**Acknowledgments**\n\nThe development and construction of the W-Si preshower of the FASER experiment was funded\n\nby the Swiss National Science Foundation (SNSF) under the FLARE grant 20FL21 - 201474 at\n\nthe University of Geneva. Additional financial contributions from KEK, Kyushu University, Mainz\n\nUniversity, Tsinghua University and the Heising-Simons Foundation are also acknowledged.\n\n**References**\n\n[1] FASER Collaboration, _The FASER W-Si High Precision Preshower Technical Proposal_ (2022),\n\n[https://cds.cern.ch/record/2803084/files/LHCC-P-023.pdf](https://cds.cern.ch/record/2803084/files/LHCC-P-023.pdf)\n\n[[2] FASER Website, https://home.cern/science/experiments/faser](https://home.cern/science/experiments/faser)\n\n[3] FASER Collaboration, _The FASER Detector_ (2022), https:\n\n[//cds.cern.ch/record/2816452/files/FASER_Detector_Paper_22.7.22.pdf?version=1](https://cds.cern.ch/record/2816452/files/FASER_Detector_Paper_22.7.22.pdf?version=1)\n\n[4] Allpix Squared Website,\n\n[https://project-allpix-squared.web.cern.ch/project-allpix-squared/](https://project-allpix-squared.web.cern.ch/project-allpix-squared/)\n\n[5] Cadence Spectre Simulation Platform Website,\n\n[https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation/spectre-simulation-platform.html)\n\n[circuit-simulation/spectre-simulation-platform.html](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/circuit-simulation/spectre-simulation-platform.html)\n\n[6] Lorenzo Paolozzi, _Pixel 2022 presentation: The monolithic ASIC for the high precision preshower_\n_detector of the FASER experiment at the LHC_ (2022)\n\n[https://in",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 26.845835998309454,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6921,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "ce of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been several theoretical attempts to answer these questions.\nOne of the first popular solution was to introduce superpartners to the SM\nparticles [1, 2]: each boson would have a fermion partner, and each fermion\nwould have a boson partner. This model is called Supersymmetry (SUSY)\nand would answer all the questions above. The partner of the quarks and\ngluons are the squarks and gluinos, while the partner of the leptons are the\nsleptons. For example, the SUSY partner of the top quark is the stop squark,\nand the partner of the tau lepton is the stau slepton. Further theories that\nanswer part of the questions above have been proposed, too. Among them\nthe solution is provided by introducing additional heavy Z _[′]_ bosons, or a 4th\ngeneration of fermions ( _τ_ _[′]_ ), or several other Higgs bosons.\nThese questions and theories have remained open for decades, since no\nsignificant experimental evidence for physics beyond the Standard Model\n(BSM) has been observed to date. The collider searches at the Large Hadron\nCollider (LHC) and other laboratories have been looking for signatures in\nwhich the BSM particles decay promptly. However, there are several mechanisms that can lead to longer lifetime, even in the SM. With this we have a\n\n2\n\nnew direction to explore BSM physics and to look for long-lived particles [3].\nIn this work, we search for ”stable” particles–meaning not necessarily fundamentally stable, but stable on the detector level, where they traverse the\ndetector without decaying. Figure 1 shows a flow chart to categorize how\nthese particles interact with different forces and what models would predict\ntheir existence. If they are electrically charged, these particles are often\nreferred to as Heavy Stable Charged Particles (HSCPs) [4, 5, 6, 7].\n\nFigure 1: Flow chart for possible new directions in searches.\n\nIf the HSCPs have color charge that means they will hadronize. A BSM\nexample for this are the R-hadrons from split-SUSY [8, 9, 10, 11]. R-hadrons\nare a bound state of SM and SUSY particles. Some of these form negative, neutral, positive, or even double positive hadrons. The R-hadron’s\ninteractions with matter is described in the model in Ref. [12, 13]. If the\nHSCPs are colorless, one can think of several theories tha",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 26.831829954826752,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7799,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+        "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+        "text": "ollected charge is reduced by 40% or more. In this report it was shown\nthat a combination of TCAD and Allpix [2] simulations deliver predictions on\ncollected charge that match quite well the value of saturated charge extracted\nfrom data. It was also shown that the voltage at which the saturation starts\ncan be correctly reproduced.\n\n13\n\nUsing this validated combined model predictions on collected charge at\nexpected fluences for the future ATLAS Inner Tracker were prepared. It was\nshown that the collected charge should always be well above the threshold,\nassuring a large signal-to-threshold ratio. The results also indicate that it\nwill not be necessary to run at the maximal voltage but a few hundreds of\nvolts less should anyhow assure full efficiency.\nSimilar studies are in preparation for 3D sensors which will be used in\nthe innermost layer of the ATLAS Inner Tracker; these sensors are expected\nto integrate fluences as high as Φ = 1 _._ 6 _×_ 10 [16] n eq _/_ cm [2] which is almost a\nfactor of 3 larger of what tested in this report. Given the different sensor\ngeometry and fluence range a dedicated study is needed.\nThe validated simulation model will be used to prepare look-up tables\nwhich will be input to the new algorithm [13] to include radiation damage\neffects in the ATLAS Monte Carlo event generator. It will be then possible\nto complete the assessment of the robustness of tracking and vertexing algorithms for ITk [10] exploring conditions close to those expected during data\ntaking.\n\n**Acknowledgements**\n\nThe author wants to thank Anna Macchiolo of Universität Zürich for\n\nsharing the CMS tracker group papers on passive CMOS pixels productions.\nThe author is thankful to the Allpix [2] developers and to Igor Mandić of Jožef\nStefan Institute of Ljubljana for the useful suggestions and discussions.\n\n**References**\n\n[1] I. Dawson, Radiation effects in the LHC experiments: Impact on detector performance and operation, CERN Yellow Reports: Monographs,\nCERN, Geneva, 2021. doi:10.23731/CYRM-2021-001.\nURL `https://cds.cern.ch/record/2764325`\n\n[2] M. Moll, Displacement damage in silicon detectors for high energy\nphysics, IEEE Transactions on Nuclear Science 65 (8) (2018) 1561–1582.\ndoi:10.1109/TNS.2018.2819506.\n\n[3] Performance of ATLAS Pixel Detector and Track Reconstruction at the\nstart of Run 3 in LHC Collisions at _[√]_ ~~_s_~~ = 900 _GeV_, Tech. rep., CERN,\n\n14\n\nGeneva (2022).\nURL `https://cds.cern.ch/record/2814766`\n\n[4] M. Aaboud, et al., Modelling radiation",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 26.510150074567353,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1373,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2684621__2308.00767__Membrane-in-the-middle_optomechanics_with_a_soft-clamped_membrane_at_milliKelvin_temperatu.md",
+        "title": "2023__recid_2684621__2308.00767__Membrane-in-the-middle_optomechanics_with_a_soft-clamped_membrane_at_milliKelvin_temperatu",
+        "text": "d\nsubstantial over-coupling greater than 95%. The cavity\nassembly is made of oxygen-free high-conductivity copper. The individual parts are clamped together tightly\nusing short stainless steel screws to reduce fluctuations\nwithin the cavity due to differences in thermal contraction. Within the assembly, the membrane frame lies parallel to the flat cavity mirror, separated by a 500 µm\nsilicon spacer. With an equally thick membrane chip,\nthe membrane is located at approximately 1 mm from\nthe flat mirror’s surface [25]. The total cavity length is\n_∼_ 24 mm. With the convex mirror’s radius of curvature\naround 25 mm, the waist of the optical mode at the position of the membrane is _∼_ 43 µm.\nThe light is coupled to the cavity by aiming a freespace laser beam through windows in the cryostat, onto\nthe more transmissive cavity mirror. Movements of the\n\n2\n\ncavity assembly in directions orthogonal to the longitudinal cavity axis can induce rather dramatic fluctuations in\nthe intracavity field. Likewise, movements of the cavity\nin the axial direction can lead to a motion of the mechanical resonator not limited by thermal noise. To address\nthose two issues, the cavity assembly is affixed to the\nsimple home-built vibration isolation platform shown in\nFig. 2(b) and (c). It consists of a heavy (1 _._ 9 kg) rectangular (264 mm _×_ 130 mm _×_ 6.25 mm) copper plate\nthat is suspended from the mixing chamber plate of a dry\ndilution refrigerator (LD250 by Bluefors) via thin copper\nsheets (24 cm _×_ 5.1 cm _×_ 0.6 mm), anchored at four points\nforming an inner rectangle of 170 mm _×_ 104 mm. This\nconstruction is ‘soft’ for oscillations along the cavity axis,\nallowing the platform to swing at a low eigenfrequency\nof 2.3 Hz, with the aim of mitigating MHz mechanical\nnoise due to non-thermal, external vibrations. For oscillations orthogonal to the cavity axis, it is much stiffer,\nwith the first eigenfrequency appearing at 145 Hz in the\nhorizontal direction. Here, the goal is to avoid large amplitude, low frequency excursions that lead to cavity axis\npointing noise. This platform allowed us to lock the laser\nto cavities with finesses up to _∼_ 31 _,_ 000, despite an active pulse tube disturbing the system (albeit without an\nintracavity membrane).\n\northogonal to the cavity axis, which allows centering the cavity field on the membrane defect. (b) Photograph of the\nvibration isolation platform mounted on the cryostat, with\nthe cavity and the in/out coupling lenses. (c) top (bottom):\nDi",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 26.402476562011245,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.09059810172766447,
+    "generation_latency_s": 2.300366759300232e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.09059810172766447,
+    "generation_latency_s": 2.300366759300232e-07
+  }
+}

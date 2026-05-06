@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "mul012",
+    "query_type": "multi_hop",
+    "query": "How can agentic routing improve multi-hop detector questions?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "agentic",
+      "routing"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can agentic routing improve multi-hop detector questions?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6921,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "ce of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been several theoretical attempts to answer these questions.\nOne of the first popular solution was to introduce superpartners to the SM\nparticles [1, 2]: each boson would have a fermion partner, and each fermion\nwould have a boson partner. This model is called Supersymmetry (SUSY)\nand would answer all the questions above. The partner of the quarks and\ngluons are the squarks and gluinos, while the partner of the leptons are the\nsleptons. For example, the SUSY partner of the top quark is the stop squark,\nand the partner of the tau lepton is the stau slepton. Further theories that\nanswer part of the questions above have been proposed, too. Among them\nthe solution is provided by introducing additional heavy Z _[′]_ bosons, or a 4th\ngeneration of fermions ( _τ_ _[′]_ ), or several other Higgs bosons.\nThese questions and theories have remained open for decades, since no\nsignificant experimental evidence for physics beyond the Standard Model\n(BSM) has been observed to date. The collider searches at the Large Hadron\nCollider (LHC) and other laboratories have been looking for signatures in\nwhich the BSM particles decay promptly. However, there are several mechanisms that can lead to longer lifetime, even in the SM. With this we have a\n\n2\n\nnew direction to explore BSM physics and to look for long-lived particles [3].\nIn this work, we search for ”stable” particles–meaning not necessarily fundamentally stable, but stable on the detector level, where they traverse the\ndetector without decaying. Figure 1 shows a flow chart to categorize how\nthese particles interact with different forces and what models would predict\ntheir existence. If they are electrically charged, these particles are often\nreferred to as Heavy Stable Charged Particles (HSCPs) [4, 5, 6, 7].\n\nFigure 1: Flow chart for possible new directions in searches.\n\nIf the HSCPs have color charge that means they will hadronize. A BSM\nexample for this are the R-hadrons from split-SUSY [8, 9, 10, 11]. R-hadrons\nare a bound state of SM and SUSY particles. Some of these form negative, neutral, positive, or even double positive hadrons. The R-hadron’s\ninteractions with matter is described in the model in Ref. [12, 13]. If the\nHSCPs are colorless, one can think of several theories tha",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 14.241830164904828,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6627,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835987__2410.00837__Fast_timing_silicon_RD_for_the_future_Electron-Ion_Collider.md",
+        "title": "2025__recid_2835987__2410.00837__Fast_timing_silicon_RD_for_the_future_Electron-Ion_Collider",
+        "text": "## Fast timing silicon R & D for the future Electron-Ion Collider\n\n_Xuan_ Li [1][,][∗], _Eric_ Renner [1], _Ming_ Liu [1], _Walter_ Sondheim [1], _Carlos_ Solans Sanchez [2], _Marcos_\nVazquez Nuñez [3], _Vicente_ Gonzalez [3], and _Yasser_ Corrales Morales [4]\n\n1 Los Alamos National Laboratory, USA\n2 CERN, Switzerland\n3 University of Valencia, Spain\n4 Massachusetts Institute of Technology, USA\n\n**Abstract.** The proposed Electron-Ion Collider (EIC) will utilize highluminosity high-energy electron+proton ( _e_ + _p_ ) and electron+nucleus ( _e_ + _A_ )\ncollisions to solve several fundamental questions including searching for gluon\nsaturation and studying the proton/nuclear structure. Complementary to the ongoing EIC project detector technical prototype carried out by the ePIC collaboration, a Depleted Monolithic Active Pixel Sensor (i.e., MALTA2) based fast\ntiming silicon tracking detector (FMT) has been proposed to provide additional\nhits for track reconstruction in the forward region at the EIC to improve the\noverall track reconstruction quality. The fast timing resolution of the MALTA2\ntechnology will help reject background events at the EIC as well. Progress of\nlatest MALTA2 R&D, the development of a new MALTA2 quad-sensor prototype module and impacts of the proposed FMT in EIC physics studies will be\ndiscussed.\n\n**1 Introduction**\n\nThe future Electron-Ion Collider (EIC) is expected to start construction at Brookhaven National Laboratory in 2025. It will support two interaction points (IP6 and IP8), where the\ndetector located at IP6 is referred to as the EIC project detector and the one at IP8 is named\nas detector II. A series of electron+proton ( _e_ + _p_ ) and electron+nucleus ( _e_ + _A_ ) collisions\n(A=2-238) at the center of mass energies of 20-141 GeV will be operated at the EIC [1]. The\nbunch crossing period at the EIC is around 10.2 ns with a 25 mrad beam crossing angle is\nintroduced to IP6 to reduce impacts from beam backgrounds. The current technical design of\nthe EIC project detector at IP6 led by the ePIC collaboration utilizes the 65 nm Monolithic\nActive Pixel Sensor (MAPS) [2], the Micro Pattern Gaseous Detector (MPGD) [3] and the\nAC-coupled Low Gain Avalanche Diode (AC-LGAD) [4] to form its vertex and tracking subsystem. In addition to ongoing EIC detector development, a Depleted MAPS (i.e., MALTA2\n\n[5]) based Fast MAPS Tracker (FMT) had been proposed as a new subsystem for either the\nePIC detector upgrade or the EIC detector II. The des",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 11.454431866907658,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6541,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights.md",
+        "title": "2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights",
+        "text": "ional and manpower for data\nscrutiny is significant. The operational efficacy of these detectors in an environment with minimal\nbackground interference necessitates substantial investment in cutting-edge technology and\nrigorous standards of cleanliness.\n\n**VI. Conclusion**\n\nIn this comprehensive review, we have explored the pivotal role of Germanium and Silicon\ndetectors in the ongoing quest to detect and understand dark matter, particularly focusing on\nWeakly Interacting Massive Particles (WIMPs). These detectors, renowned for their minimal\nradioactive backgrounds and substantial active volumes, have significantly advanced the frontier\nof dark matter research. Through the lens of various experiments and collaborations, we have seen\n\n21\n\nhow the unique properties of these detectors enable the precise measurement of nuclear recoils,\noffering a promising avenue towards the direct detection of dark matter particles.\nMoreover, the advancements in detector technology, particularly the development of cryogenic\ndetectors and their enhanced sensitivity at low temperatures, represent a monumental step in\nmeasuring interactions that were previously beyond our reach. The integration of sophisticated\nelectronics and phenomenological models has enabled these detectors not only to capture rare\nparticle interactions but also to discriminate between different types of particle interactions,\nthereby reducing background noise and enhancing signal clarity.\nAs we look forward, the field of dark matter detection stands on the brink of potentially\ntransformative discoveries. The ongoing refinement of detector technologies and experimental\ntechniques promises to increase our sensitivity to possible dark matter signals. Furthermore, the\ntheoretical exploration of dark matter candidates continues to evolve, suggesting new pathways\nfor investigation. The collaborative efforts across international borders underscore the global\nimportance of this search, highlighting the universal pursuit to unravel the mysteries of the cosmos.\nThe journey to detect and understand dark matter is fraught with challenges yet ripe with\nopportunity. The continued use of Germanium and Silicon detectors, coupled with theoretical\ninsights and technological advancements, holds the potential to eventually uncover the nature of\ndark matter. Such a discovery would not only answer long-standing questions about the\ncomposition of the universe but also redefine our understanding of its fundamental physical laws.",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 11.186771034820554,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7620,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement.md",
+        "title": "2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement",
+        "text": "C 20546, District of Columbia, U.S.A._\n_f_ _Carleton College, North College St., Northfield, MN 55057, Minnesota, U.S.A._\n_g_ _Center for Research and Exploration in Space Science and Technology, College Park, MD 20742, Maryland, U.S.A._\n_h_ _Physics Program, Graduate School of Advanced Science and Engineering, Hiroshima University, 1-3-1_\n_Kagamiyama, Higashihiroshima, 739-8526, Hiroshima, Japan_\n_i_ _Argonne National Laboratory, 9700 S. Cass Avenue, Lemont, IL 60439, Illinois, U.S.A._\n_j_ _University of Maryland, College Park, MD 20742, Maryland, U.S.A._\n_k_ _Institute for Space-Earth Environmental Research, Nagoya University, Furo-cho, Chikusa-ku, Nagoya, 464-8602, Aichi, Japan_\n_l_ _ASIC and Detector Laboratory, Karlsruhe Institute of Technology, Hermann-von-Helmholtz-Platz_\n_1, Karlsruhe, D-76344, Baden-Wurttemberg, Germany_\n_m_ _Rice University, 6100 Main St., Houston, TX 77005, Texas, U.S.A._\n_n_ _The George Washington University, 2121 I St. NW, Washington, DC 20052, District of Columbia, U.S.A._\n_o_ _Kobayashi-Maskawa Institute for the Origin of Particles and the Universe, Nagoya University, Furo-cho,_\n_Chikusa-ku, Nagoya, 464-8601, Aichi, Japan_\n_p_ _Department of Physics and Center for Space Sciences and Technology, University of Maryland Baltimore County, 1000 Hilltop_\n_Cir., Baltimore, MD 21250, Maryland, U.S.A._\n\n**Abstract**\n\nA next-generation medium-energy gamma-ray telescope targeting the MeV range would address open questions in\nastrophysics regarding how extreme conditions accelerate cosmic-ray particles, produce relativistic jet outflows, and\nmore. One concept, AMEGO-X, relies upon the mission-enabling CMOS Monolithic Active Pixel Sensor silicon chip\nAstroPix. AstroPix is designed for space-based use, featuring low noise, low power consumption, and high scalability.\nDesired performance of the device include an energy resolution of 5 keV (or 10% FWHM) at 122 keV and a dynamic\n\n−\nrange per-pixel of 25 700 keV, enabled by the addition of a high-voltage bias to each pixel which supports a depletion\ndepth of 500 µm. This work reports on the status of the AstroPix development process with emphasis on the current\nversion under test, version three (v3), and highlights of version two (v2). Version 3 achieves energy resolution of\n10.4 ± 3.2% at 59.5 keV and 94 ± 6 µm depletion in a low-resistivity test silicon substrate.\n\n_Keywords:_\nsilicon, CMOS, gamma-ray detector, astrophysics instrumentation, MeV gamma ray\n\n∗ Present address: Oak Ridge Nation",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 11.098581392047222,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3617,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond.md",
+        "title": "2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond",
+        "text": "ssio\n\n**Figure 1:** Left: Schematic view of ALICE 3 state-pf-the-art detector concept. Right: Improvement in\npointing resolution and expected effective statistics in heavy-ion collisions from ALICE 1 to ALICE 3.\n\n**1.** **Introduction**\n\nALICE (A Large Ion Collider Experiment) is a general-purpose experiment at the CERN Large\n\nHadron Collider (LHC) optimized to study the physics of ultrarelativistic heavy-ion collisions. The\n\nmain goal of the ALICE Collaboration is to study the microscopic dynamics of the strongly\n\ninteracting matter produced in such collisions and, in particular, the properties of the quark-gluon\n\nplasma (QGP), a state of matter where quarks and gluons are deconfined. The LHC Runs 1 and 2\n\nheavy-ion campaigns have already led to crucial advances in our understanding of the properties\n\nof QCD phase diagram and of the QGP [1]. With the current ALICE 2 and the future ALICE\n\n2.1 upgrades, LHC Runs 3 and 4 will allow further systematic measurements of fundamental\n\nproperties for our understanding of the QGP [2]. However, despite the rich planned physics\n\nprogram, fundamental questions will remain open and addressing such questions requires substantial\n\nimprovements in terms of detector performance and rate capabilities, calling for a next-generation\n\nheavy-ion experiment, the so-called ALICE 3 upgrade planned for LHC Run 5 and beyond [3].\n\n**2.** **ALICE 3 physics goals**\n\nThe ALICE 3 primary physics goal is to achieve a deep understanding of the underlying mech\nanisms affecting the different stages of heavy-ion collisions, from the early-stage medium formation\n\nto the heavy-flavour diffusion, thermalization and hadronization in the QGP. The main new studies\n\nin the QGP sector focus on low transverse momentum ( _𝑝_ _𝑇_ ) heavy-flavour production, including\n\nbeauty hadrons, multi-charm baryons and charm-charm correlations, as well as on measurements of\n\nnet-quantum number fluctuations to constrain the susceptibilities of the QGP and on precise mea\nsurements of dilepton emission to probe the time-evolution of the QGP, the early-stage temperature\n\nand the mechanism of chiral-symmetry restoration. Besides QGP studies, ALICE 3 can uniquely\n\ncontribute to hadronic physics, with femtoscopic studies of the interaction potentials between charm\n\nmesons and searches for nuclei with charm, and to fundamental physics, with precision experimntal\n\ntests of Low’s theorem for ultra-soft photon emission and searches for axion-like particles (ALP)\n\nin ultra-peri",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 10.068943771810423,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5904,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2749522__2401.10509__Sub-2_Kelvin_Characterization_of_Nitrogen-Vacancy_Centers_in_Silicon_Carbide_Nanopillars.md",
+        "title": "2025__recid_2749522__2401.10509__Sub-2_Kelvin_Characterization_of_Nitrogen-Vacancy_Centers_in_Silicon_Carbide_Nanopillars",
+        "text": "ts from the nanopillars. While the collective lifetime differed\n\nslightly between bulk and nanopillar measurements, it is similarly close to the previously\n\nreported higher temperature bulk measurements referenced above. That the lifetimes are\n\nsimilar lends evidence to the claim that the collection enhancements of the ZPLs is not due\n\nto factors like higher quantum efficiency due to stronger radiative recombination effects in\n\nthe nanopillars and is more likely due to waveguiding effect of the nanopillars.\n\n### **Discussion**\n\nIn this work we demonstrate, to our knowledge, the first integration of 4H-SiC NV _[−]_ centers\n\ninto nanopillars and report the spectral properties of NV center ensembles at temperatures\n\nbelow 2 K. These nanopillars display enhanced collection, up to 14-fold, relative to bulk mea\n\nsurements which will enable SiC NV center applications as efficient single photon sources\n\nand spin-photon entangling interfaces. Moreover, this enhancement is differentiating for ax\n\nial versus basal color centers and, in addition to being a practical tool for higher sensitivity\n\nmeasurements, it can serve as an assessment tool for the identification of the structure of\n\ncolor centers and agreements with theoretical calculations of their dipole orientations. The\n\nmeasured lifetimes and spectral properties agree well with literature results for both en\n\nsemble and single NV centers at higher temperatures in bulk samples, and no significant\n\nspectral broadening from nanofabrication-induced strain or surface proximity is observed.\n\nNotably, careful analysis of PL spectra and lifetime measurements has led to some interest\n\ning questions about how the defect site symmetry affects spectral properties. The _hk_ site\n\ndefect in particular, with its shorter fluorescence lifetime, robustness to fabrication stress,\n\nproximity to O-band wavelengths and predicted long coherence times [30] is a highly promising\n\ncandidate for networking applications. The success of these measurements paves the way for\n\n15\n\nmore complex nanophotonic structures like on-chip beamsplitters or integration with on-chip\n\nsingle-photon detectors. [31,32]\n\nIn this work we also developed new instrumentation, named ICECAP, that incorporates\n\nSNSPDs directly into the cryogenic sample chamber for spectroscopic characterization of NIR\n\nquantum emitters. The versatility of this system should be of particular interest to industry\n\npartners. Turn-key ICECAP instruments could conceivably be produced f",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 9.605574427714155,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 1881,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "ility to the pigtail for routing. The rightmost picture\nshows an example of bending when installed. Each subcable contains three copper layers\nof 35 µm thickness each, sandwiched between polyimide films and adhesive (adding up to\nabout 0.25 µm of polyimide and 75 µm of adhesive per subcable). The inner layer is used\nfor the differential pair signals and the outer layers for power lines. This provides good\nsignal integrity and low resistance for the power traces. The pigtails cross the detector\nbox walls through dedicated holes, which are sealed with foam to provide sufficient gas\nand light tightness.\n\n**5.6.3** **Peripheral electronics**\n\nThe periphery electronics processing interface (PEPI) units are responsible for readout\nand control of the detector. They connect to the staves via the pigtails. The full PEPI\nsystem comprises 24 backplanes, 24 pigtail power breakout boards (P2B2s), and 248\ndata and control boards (DCBs). The distribution of data, clock, and control signals is\nshown in figure 35. The GBTx, mounted on the DCBs, implements bidirectional links\nbetween the detector and the counting room with components that are radiation hard up\nto 1 MGy [52]. Each PEPI unit houses 3 backplanes that route power, data, and control\nsignals into and out of the detector volume and three P2B2s that route additional power.\nThe backplanes support up to 12 DCBs that connect to the counting room via optical\nlinks.\n\n48\n\nFigure 35: Schematic of LV, HV, data, fast and slow control signal distribution to UT FE\nelectronics.\n\n**5.6.4** **Backplanes and power breakout boards**\n\nThe routing of the backplanes balances the load carried by each DCB and organises the\ndata to minimise resources needed for event reconstruction. A fully utilised backplane\nsupports 6 half-staves read out by 12 DCBs. Due to space constraints in the area around\nthe staves the size of the backplane is limited. Matching the twelve 400-contact pigtail\nconnectors leads to a very high density of traces on the board. The signal routing is\nachieved by a 28-layer board with a PCB aspect ratio of 1:10 which is pushing the limits\nof manufacturability. There are two types of backplanes, referred to as true and mirror,\nwith different layouts to accommodate the geometry of pigtails from the detector. Each\ntype also has three variants: full, partial and depopulated. The full backplane is used for\nthe high-occupancy region of the detector, while the depopulated one is used for the outer\nregion of the detector planes,",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 9.495772762564927,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 63,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2111,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2663237__2305.17153__Novel_machine_learning_and_differentiable_programming_techniques_applied_to_the_VIP-2_unde.md",
+        "title": "2024__recid_2663237__2305.17153__Novel_machine_learning_and_differentiable_programming_techniques_applied_to_the_VIP-2_unde",
+        "text": "The gradient descent has\nshown substantial improvements of the spectroscopic properties of the detectors, both\nin terms of the compatibility of the line with its two components, and by bringing for\nthe first time in VIP-2 the SDD’s FWHM at 8 keV below 180 eV. Last, but not least,\nthe method has shown to correct for small miscalibrations. This novel approach has\nthe potential to improve the physics capabilities with enhanced calibration. For VIP-2,\nthis translates to several advantages: a smaller energy scale uncertainty, better control\nover the background in the ROI, and consequently a higher discovery significance for\nPEP violating signals. We plan to employ this method on the entire VIP-2 dataset.\nFurthermore, we plan to explore the advantages it yields in experiments which strongly\nrely on the precise determination of spectroscopic lines in the X-ray domain, such as\nthe SIDDHARTA-2 experiment [22] at the DAΦNE collider.\n\n**Acknowledgements**\n\nWe thank: the INFN Institute, for supporting the research presented in this article\nand, in particular, the Gran Sasso underground laboratory of INFN, INFN-LNGS, and\nits Director, Ezio Previtali, and the LNGS staff. We thank C. Capoccia from LNF\nand H. Schneider, L. Stohwasser, and D. St¨uckler from Stefan-Meyer-Institut for their\nfundamental contribution in designing and building the VIP-2 setup.\n\n**Funding**\n\nThis research was funded by the National Institute for Nuclear Physics (INFN, Italy).\nThis research was funded in whole, or in part, by the Austrian Science Fund (FWF)\ngrants P25529-N20, project P 30635-N36, and W1252-N27 (doctoral college particles\nand interactions). This publication was also made possible through the support of\nGrant 62099 from the John Templeton Foundation. The opinions expressed in this\npublication are those of the authors and do not necessarily reflect the views of the John\nTempleton Foundation. We also thank the support of the H2020 FET project TEQ\nwith grant 766900. We gratefully acknowledge support from Centro Ricerche Enrico\nFermi (“Problemi aperti nella meccanica quantistica” project), and from Foundational\nQuestions Institute (Grants No. FQXi-RFP-CPW-2008 and FQXi-MGA-2102).\n\n**Bibliography**\n\n[1] Suddhasattwa Brahma, Michele Ronco, Giovanni Amelino-Camelia, and Antonino Marciano.\nLinking loop quantum gravity quantization ambiguities with phenomenology. _Physical Review_\n\n12\n\n_D_, 95(4):044005, 2017.\n\n[2] Michele Arzano and Jerzy Kowalski-Glikman. Deformed discrete symmetries. _Ph",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 9.296037039344059,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5722,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2715321__2310.18607__Simulation_Study_of_Photon-to-Digital_Converter_PDC_Timing_Specifications_for_LoLX_Experim.md",
+        "title": "2025__recid_2715321__2310.18607__Simulation_Study_of_Photon-to-Digital_Converter_PDC_Timing_Specifications_for_LoLX_Experim",
+        "text": "average, 50% of the total Cerenkov\nphotons go through the long-pass filters and are detected. The\nratio of the number of scintillation photons ( _n_ Scint ) leaking\nthrough these filters to the number of Cerenkov photons\n( _n_ Ceren ) going through is approximately 10%. Based on these\nvalues, separation conditions for the time-based approach will\nbe defined in the next section.\n\n_E. PDC Timing Specification Study_\n\nThe goal of this study is to investigate if it is possible to\nimprove the Cerenkov separation using time-only measurements, without filters, and how the TDC parameters affect the\nseparation quality.\nThree TDC parameters are considered in this study: (a)\njitter, the uncertainty in a TDC’s timing measurement, (b)\nleast significant bit (LSB), the smallest timing step a TDC\ncan measure, and (c) the SPAD:TDC sharing ratio, how many\nSPADs share a TDC. This third parameter comes from the\npossibility to have one TDC per SPAD or for a small group\nof SPADs [9], a feature not possible in analog SiPMs. Various\ncombinations of the three parameters were simulated, and for\neach setting, a time-based upper cut was applied to select an\nearly time window that maximizes the _n_ Ceren obtained while\nminimizes the _n_ Scint remaining in this window. The separation\nquality was first evaluated with both TDC jitter (FWHM) and\nLSB varied between 1 and 50 ps. The initial SPAD:TDC\nratio was set to 1:1, and was subsequently altered after\nfinding optimal jitter and LSB values. These parameters are\nvaried within the DSAS model, where its other photodetection\nparameters have already been explained in Section II-C.\nFor the time-based separation purpose, photon information\ninput to DSAS was taken from LoLX Geant4 model with no\nfilter applied, i.e. all bare photosensors. The Sr-90 source was\npositioned at the center of the LoLX detector cage.\nTime-based cut conditions for the Cerenkov fraction and\n\nScintillation-to-Cerenkov ratio are set to exceed the filter performance (obtained in Section II-D), respectively, as follows:\n\n_f_ Ceren _≥_ 55% & _r_ SC _<_ 5% ( _∗_ )\n\nin which:\n\n_f_ Ceren = _[n]_ [Ceren] [ in CR]\n\n[Ceren] [ in CR] & _r_ SC = _[n]_ [Scint] [ remains in CR]\n\nTotal _n_ Ceren _n_ Ceren in CR\n\n_n_ Ceren in CR\n\nwhere CR is the Cerenkov Region as demonstrated in Fig. 2.\nWhile the _n_ Ceren in this figure is much less than the _n_ Scint, it\n\nFig. 2. Raw photon time profile of a bare photosensor from LoLX Geant4\nsimulation with focus on the early time window. In LoLX simul",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 9.110734406791858,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1733,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2652339__2304.09111__Wafer-scale_uniformity_of_Dolan-bridge_and_bridgeless_Manhattan-style_Josephson_junctions_.md",
+        "title": "2024__recid_2652339__2304.09111__Wafer-scale_uniformity_of_Dolan-bridge_and_bridgeless_Manhattan-style_Josephson_junctions_",
+        "text": "g requirements of circuit elements,\nas well as the routing of control lines needed for gate and measurement operations.\nThe latter motivates the active development of 3D integration strategies such as flipchip [5, 6, 7] to avoid overcrowding of circuit elements and vertical routing [8, 9, 10] of\ninput and output lines to circumvent the scaling limitations associated with lateral\nwirebonding. Through-silicon visas (TSVs) are needed in some vertical routing\napproaches [11, 12, 13, 14], and especially for suppression of resonance modes arising\nfrom the increased size of SQPs and their packaging.\n\nTSVs further aggravate the targeting of superconducting qubit frequencies, which\nalready bottlenecks the yield of operable devices even on planar substrates [15]. Poor\nqubit frequency targeting is a primary cause of crosstalk induced by microwave drives [2]\nand can limit gate speeds. It also increases residual 𝑍𝑍 coupling in processors with\nalways-on qubit-qubit coupling [16, 2, 3], making gate fidelity and leakage dependent\non the state of spectator qubits [17]. Laser annealing of qubit Josephson junctions\n(JJs) [18, 15, 19, 20, 21] is an established method for selective qubit frequency\ntrimming without intrinsic effect on qubit coherence. Currently, laser annealing allows\na monotonic decrease with ∼300 MHz range and ∼15 MHz precision. To safely rely\non laser annealing for post-fabrication trimming, fabrication itself must target qubit\nfrequencies with a precision of ∼50 MHz.\n\nThe main limit to qubit frequency targeting is variability in the fabrication of AlAlO x -Al JJs, which most commonly relies on double-angle shadow evaporation with\nintermediate in-situ oxidation. Two main variables affecting the Josephson coupling\nenergy are the overlap area between the two Al electrodes and the tunnel barrier\nthickness. The two most popular JJ fabrication variants differ only in the shadowing\nmechanism: Dolan [22] JJs use a suspended resist bridge whereas Manhattan [23]\njunctions do not. Since Dolan JJs are more sensitive to resist-height variation by\ndesign, Manhattan junctions may be preferable particularly on substrates with TSVs\nthat compromise the uniformity of spin-coated resist. On the other hand, recent reports\nby colleagues and us [24, 25, 26] indicate that geometric effects cause pronounced centreto-edge variation in Manhattan JJs, affecting their uniformity at wafer scale.\n\nIn this work, we present an experimental investigation comparing the uniformity of\nDolan ve",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 9.035775031723157,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.15911555709317327,
+    "generation_latency_s": 2.407468855381012e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.15911555709317327,
+    "generation_latency_s": 2.407468855381012e-07
+  }
+}

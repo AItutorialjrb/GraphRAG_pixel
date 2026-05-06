@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con012",
+    "query_type": "conceptual",
+    "query": "Why does graph-path evidence improve inspectability?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "does",
+      "graph-path",
+      "evidence"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why does graph-path evidence improve inspectability?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2341,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "cays.\nOverall, it was found that the efficiency and resolution were\nnearly constant throughout the detector system and did not\nchange significantly when the edges of the scintillator bars\n(i.e., the corners of the detector) were reached. This is due\nto the fact that the GGS is so small that the source is\n\nstill far enough away from the edges of the detector and\nnever touches them (compare Fig. 1(b)). Furthermore, decays\nthat lie slightly outside the detector are also allowed for\nreconstruction, which significantly increases efficiency.\n\nFig. 3 shows the three-dimensional distribution (Fig. 3(a))\nof the individual reconstructed tracer sphere positions without\nany averaging or iterating of a source that has been placed\nat (50 | 50 | -40) cm within the GGS volume, as well as\nexemplarily its projection in the x-direction (Fig. 3(b)). A\nvery present background is visible, and the spatial resolution\nreads 104.3 mm in the x-, 103.5 mm in the y-, and 124.8 mm\nin the z-direction. This is a very poor resolution since the\nsize of the largest tracer sphere is much smaller than the\nbest resolution obtained this way (103.5 mm _≫_ 20 mm). To\n\nimprove this resolution, the simulated data were now averaged\nand iterated (as described in Section 2.5), resulting in a\nspatial resolution of 0.6 mm in x and y, and 1.1 mm in z. This\ncorresponds to an improvement by a factor of about 170 in the\nx- and y-directions and a factor of 110 in the z-direction. The\nassociated three-dimensional distribution and its projection\non the x-axis can be found in Fig. 4.\n\n_3.2. Model path_\n\nTo extend the simulation and reconstruction to a moving\nsource and to investigate the behavior of the reconstruction\nalgorithm at the highest possible velocities, a model curve\nwas created on which the source moves circularly (r = 10 cm)\nat 17 cm/s in the xy-plane and linearly between -6 and 2 cm\nat 7 cm/s in the z-direction. On average, these velocities\napproximate the maximum tracer sphere velocities within\nthe GGS derived from corresponding DEM simulations. As\nmentioned in Section 2.5, the buffer size was set down to\n6,000 events instead of 36,000, with re-averaging every 3,000\nevents to achieve good resolution. The measurement time of\nthe whole curve was 4 s.\n\nA three-dimensional view of the model curve is shown\n\nin Fig. 5, with the reconstructed tracer sphere locations\nshown in green and the actual simulated path as a black\ntrajectory. The corresponding one-dimensional projections\non the x, y, and z axes ar",
+        "score": -3.494844885190328,
+        "dense_score": 0.271436870098114,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.383863925933838,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6316,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes.md",
+        "title": "2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes",
+        "text": "There have been some efforts improving decoding accuracy of BP over GF(4) and GF(2). Over GF(4), MBP [21]\nachieves a threshold of 14.5% to 16% for the planar surface\ncode by modifying the step size in the _a posteriori_ probability\nupdates. However, MBP is limited to serial scheduling, and\nthe outer loop for searching step sizes increases its time\ncomplexity. Over GF(2), GBP [33] achieves a 14% threshold\nby combining generalized belief propagation with multiple\nrounds of decoding. This algorithm can be implemented in\nparallel, but the number of outer loops increases with the\ncode length, adding to its time complexity. BP-OTS [34]\nperiodically detects and breaks trapping sets using manually\nset parameters, allowing parallel implementation while maintaining the original complexity. It outperforms MBP for short\ncodes but does not achieve a significant threshold.\nPost-processing methods, such as OSD, SI (stabilizer inactivation) [35], MWPM [36]–[38] and UN [3] are often\nused to improve BP’s decoding accuracy. However, they also\nintroduce extra time cost and all have high time complexities,\nranging from _O_ ( _N_ [2] ) to _O_ ( _N_ [3] ). Improving BP’s decoding\naccuracy to get rid of its reliance on post-processing algorithms remains a significant challenge.\nIn this article, we mainly focus on improving BP’s decoding accuracy for surface codes, while we also believe that the\nideas used in these improvements will also work for some\nother quantum LDPC codes. There are several explanations\nfor why surface codes are challenging for BP decoding. From\nthe perspective of degeneracy [21], [39], stabilizers of surface\ncodes have much lower weights compared to the code distance, leading to multiple low-weight errors corresponding to\nthe same syndrome, thus having negative influence on BP’s\nerror convergence. From the perspective of short cycles [20],\na number of 4-cycles over GF(4) and 8-cycles over GF(2) in\nsurface codes can cause BP’s inaccurate updating. A more\nintuitive explanation involves trapping sets [34], [40], where\nsurface codes have many symmetric trapping sets causing BP\nmessages to oscillate periodically.\nThis paper approaches BP improvements from two perspectives: optimizing message updates inspired by gradient\noptimization, and optimizing _a priori_ probabilities using\ninformation of previous iterations, leading to the proposal of\nthree algorithms.\nFirst, inspired by the similarity between BP message update and gradient descent of the energy function, w",
+        "score": -4.765130570199755,
+        "dense_score": null,
+        "bm25_score": 11.574030033896902,
+        "graph_score": 0.0,
+        "rerank_score": -7.339517116546631,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6022,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning.md",
+        "title": "2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning",
+        "text": "lies on the direct detection technique [5, 6]. These\nexperiments seek to observe rare interactions between\nDM particles from the Milky Way and detector materials placed deep underground in low-background envi\nronments.\nTraditionally, direct detection experiments have primarily focused on searching for nuclear recoil events induced by Weakly Interacting Massive Particles (WIMPs)\nscattering off target nuclei in crystals or liquid noble\ngases [7]. As a result, these experiments have mainly\nbeen sensitive to DM masses in the GeV – TeV range, as\nlighter particles would be unable to generate observable\nnuclear recoils.\n\n_∗_ [catena@chalmers.se](mailto:catena@chalmers.se)\n\n_†_ [urdshals@chalmers.se](mailto:urdshals@chalmers.se)\n\nWith the absence of direct evidence for WIMPs, efforts have been put in towards alternative experimental\napproaches better suited to probe DM particles with subGeV masses [8]. In this context, a crucial role is played\nby direct detection experiments designed to detect DMinduced electronic transitions or electron ejections in materials, offering a novel avenue for uncovering the nature\nof DM [9–20].\n\nTo interpret these experiments, a theoretical understanding of DM-electron interactions in detector materials is needed. In ref. [21–25], the interactions DM can\nhave with the electrons bound to silicon and germanium\ncrystals (as well as individual atoms and graphene targets) were classified and explored using a non-relativistic\neffective theory formalism. We implemented our formalism in QEdark-EFT [26], which interfaces with the planewave self-consistent field (PWscf) DFT code Quantum\nESPRESSO [27] and extends the QEdark code [28] to the\ncase of general DM-electron interactions. This allowed\nfor covering several DM models, although an extensive\nexploration was hindered by computational costs.\n\nThe deep neural network (DNN) developed in this paper is traned on the output of QEdark-EFT, and serves\nmainly two purposes. Firstly, it is easier to use and run\nthan QEdark-EFT. It takes less space on a hard drive\nand does not require computation of or access to material response functions. Secondly, it allows for evaluating a large number of DM-induced electronic transition\nrates cheaply on a laptop, and demonstrates the potential DNNs have for speeding up rate evaluations. Such a\nspeedup will be necessary to perform extensive parameter\nscans in the event of detection of a DM signal. For example, evaluating the rate of electron-hole pair creation\nin s",
+        "score": -5.11134672694736,
+        "dense_score": null,
+        "bm25_score": 7.53896244101289,
+        "graph_score": 0.0,
+        "rerank_score": -7.871088981628418,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1717,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2639229__2303.04090__Assessment_of_the_errors_of_high-fidelity_two-qubit_gates_in_silicon_quantum_dots.md",
+        "title": "2024__recid_2639229__2303.04090__Assessment_of_the_errors_of_high-fidelity_two-qubit_gates_in_silicon_quantum_dots",
+        "text": "wing\nthe analysis of the process in lab time through Bayesian\ninference [27] . The fidelities estimated across the full experiment by FBT in Fig. 4 show a very large uncertainty,\nwhich can be understood from the plot of the estimated\nfidelity of the DCZ gate in device B as a function of lab\ntime. Over time, the gate calibration degrades and infidelities more than double.\n\n**Implications to large scale spin quantum computers**\n\nBesides the benefits for operation at scale, the consistency of the operations demonstrated here significantly\nimproves the quality of the physical conclusions that can\nbe drawn from experiments. We were able to identify\ncommonalities between gates implemented in different\ndevices, setups and adopting different strategies.\n\nThe stability of the operations over time, combined\nwith the theoretical and methodological improvements\nin process tomography, opens a window into the physics\nof spin qubit errors. With the possibility of consistently\nperforming high-fidelity one- and two-qubit gates for several hours, we can form hypotheses and test them in a\nrepeatable manner over many hours or days of experiments. Our work not only offers compelling evidence for\nthe microscopic nature of some of the error sources, but\nit also reveals some unknown processes with, as yet, unclear physical origins.\n\nOne of the most important conclusions is that the entangling gate fidelities achieved here can be systematically improved with a combination of better materials to\nreduce noise [37][,][38], active use of these tomographic results\nto recalibrate gates against Hamiltonian errors [12][,][34] and\npulse engineering to reduce the stochastic errors with robust gates and dynamical decoupling [39][–][42] (see also: Supplementary Discussion: Comparison with other high fidelity two spin systems in silicon). The fidelity estimates\nquoted here are far from being fundamentally limited by\nthe physics of spin qubits or by the minimum noise levels\nin materials.\n\nThe scalability of the traditional Loss and DiVincenzo\napproach [43] to spin qubits can be obscured by the overhead imposed by the strategies required for high-fidelity\noperation. Due to the relative phases, the number of\nparameters requiring feedback grows prohibitively fast\nwith the number of qubits if no mitigation strategy is\nadopted [44] . Moreover, circumventing errors with increasingly convoluted engineered pulses tailored to the idiosyncrasies of each qubit leads to control signals that\nare hard to gen",
+        "score": -5.516555343849072,
+        "dense_score": 0.29295551776885986,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.49481201171875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5662,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708905__2310.06700__A_SWAP_Gate_for_Spin_Qubits_in_Silicon.md",
+        "title": "2025__recid_2708905__2310.06700__A_SWAP_Gate_for_Spin_Qubits_in_Silicon",
+        "text": "rther\n\nimproving the SWAP gate fidelity. When performing multiple SWAP gates, it may be beneficial to\n\nrecall that while the native SWAP gate requires uniform external field, it does not need to be\n\naccompanied by single-qubit gates. The accumulated single-qubit phase errors can be corrected at the\n\nend of a SWAP sequence. As such micromagnets can be placed strategically and with simple designs,\n\nallowing better scalability. As for improving SWAP gate fidelity, recall that coherent errors such as\n\nfinite 𝐽/|∆𝐸 𝑧 |, 𝐽 𝑜𝑓𝑓, and pulse errors are the dominant error sources for a SWAP gate. Pulse shape\n\ndesign could be an efficient approach to mitigate these coherent errors [36,61] . High circuit bandwidth\n\nand careful distortion calibration are also necessary to improve the gate fidelity. Last but not least,\n\nmodifying the exchange coupling 𝐽 through barrier gate voltage (instead of detuning) could lead to a\n\nwider range of 𝐽 values, making the 𝐽/∆𝐸 𝑧 ratio tunable in a larger range [62] .\n\nCompared to the two-qubit CPhase gate and the CROT gate, the SWAP gate is realized through control\n\nof exchange interaction only, whose fidelity is in turn dominated by the charge noise on 𝐽. When a\n\nseries of SWAP is performed, single-qubit phase correction is only needed at the end, making the\n\nwhole operation more streamlined. When using the SWAP gate to manipulate or transfer the qubit\n\nstates, the operation speed is typically faster than the two-qubit CPhase gate and the CROT gate due\n\nto the larger exchange coupling. In addition, in a quantum dot array, SWAP gates do not cause\n\nsignificant cross-talk and heating due to its very local nature, making it a more controllable tool in on\n\nchip communication. Lastly, the demonstration of a potentially high-fidelity SWAP gate here shows a\n\nclear promise to engineer the Heisenberg Hamiltonian [63-65] in silicon for the purpose of quantum\n\nsimulations.\n\n**13** / **23**\n\nIn summary, we demonstrate the native SWAP gate for spin qubits in a gate-defined double quantum\n\ndot in isotopically purified [28] Si. We implement a strategy to calibrate and eliminate local phase shifts\n\ninduced during the SWAP gate. The truth tables are measured to give the operation fidelity, and the\n\ninfluences of various error sources are analyzed to estimate and further improve gate fidelity. Although\n\nthe mis-calibrated SPAM error limits the extracted gate fidelity in our experiment, the demonstration\n\nindicates that a high-fidelity SWAP gate can be ach",
+        "score": -5.677560729980469,
+        "dense_score": null,
+        "bm25_score": 7.673130764817266,
+        "graph_score": 0.0,
+        "rerank_score": -8.742401123046875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2493,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "ver, it is important to consider that the\nperiodic pulsing of the electron between the two charge\nconfigurations gives way to relaxation-induced errors. By\nspending time inside (3,1) and (4,0), states tend to relax\nto _|↓↓⟩_ and _|S_ (4 _,_ 0) _⟩_, respectively, thus reducing the spin\nreadout fidelity. It becomes necessary to minimize the\ntime spent on each side whilst still pulsing for a sufficiently\nlarge number of periods so as to not penalize the demodulation (see Appendix K). The results from Figs. 3d), e)\nprovide evidence that this condition is met by operating\nat high frequencies, which allows multiple crossings to\ntake place during short total times, limiting the _T_ 1 relaxation as more periods are required to accumulate enough\nprobability to decay (see Appendix I). On the other hand,\ntoo high modulation frequencies can lead to a regime\nwhere errors are dominated by crossing-induced spin flips.\nThe non-zero probability _P_ sf can quickly accumulate as\nthe frequency increases, resulting in limited spin readout\n\nfidelity even over short integration times, although spin\nfidelities have been demonstrated to be maintained after\nthousands of inter-dot crossings [49].\n\n**B.** **Generalization to Other Platforms**\n\nThe methods presented in this work are not exclusive\nto an RF-SET-based sensing scheme, and other highbandwidth techniques such as gate-based dispersive readout and single-electron boxes can benefit from the modulation and correlation of signals from a group of sensors.\nOne way in which we envision our technique being applied\nto dispersive readout is by using the detuning pulse to\nprobe the quantum capacitance of the system at a reference point [i.e., deep inside (3,1)] and compare it to\nthat at the charge transition ( _ε_ = 0). Depending on the\nspin state of the electrons, the capacitance at the charge\ntransition will change and the frequency of the resonator\nwill be modulated accordingly. Fig. 4 depicts a diagram of\nhow this implementation would work. It is not unrealistic\nto contemplate a distributed array of gate-based sensors,\neach capacitively coupled to a number of gates, in which\ncross-correlations between the independent modulated\ntraces are exploited to improve the joint sensitivity of the\nsystem.\n\n**Figure 4: Generalization to gate-based sensors.**\nSchematic of a way to apply the modulation technique to\ngate-based dispersive readout. A detuning pulse\nmodulates the frequency of the resonator by periodically\nprobing the quantum capacit",
+        "score": -5.867317693373737,
+        "dense_score": null,
+        "bm25_score": 7.897168493125026,
+        "graph_score": 0.0,
+        "rerank_score": -9.034561157226562,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 897,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2667112__2306.04913__Momentum-space_second-order_pion-nucleus_potential_including_medium_effects_in_the_mathmro.md",
+        "title": "2023__recid_2667112__2306.04913__Momentum-space_second-order_pion-nucleus_potential_including_medium_effects_in_the_mathmro",
+        "text": "for a fully correlated\ncomponent between the data points of each differential\ncross-section data set (instrumental error). The normalization parameters are allowed to vary, keeping the number of degrees of freedom (ndf) the same.\nIn our formalism, only three energy-independent fitting parameters are entering Eq. (72): the ∆self-energy\nparameters Re Σ ∆ and Im Σ ∆ in Eq. (53), and the _s_ -wave\nisoscalar slope parameter _α_ _b_ 0 in Eq. (58). We also tested\nthe possibility of improving our fit by adding model parameters that modify the energy dependence of Σ ∆ and\n_b_ 0 . We found that the resulting _χ_ [2] _/_ ndf value can be improved only slightly in this way. However, the strong\ncorrelation between the parameters results in large uncertainties, making it impossible to determine the fitted\nparameters precisely. Moreover, introducing additional\nparameters does not improve our model predictions beyond the fitting range and for other nuclei.\nAs was mentioned in Sec. IV A, we also include the _d_ wave contribution to the first-order potential in addition\nto the traditional _s_ - and _p_ -wave terms. This small component does not change the overall energy and momentum\nbehavior of observables in a significant way. However,\nincluding the _d_ -wave amplitude improves the resulting\nminimal _χ_ [2] of the fit by about 10%. Note that the observables and fitting parameters are sensitive to the value\nof the effective bound nucleon mass, which in our calcu\n\nThe pion-nuclear potential is a non-Hermitian operator\ngiving rise to the reaction channel with the corresponding\ncross section, which can be calculated as\n\n_σ_ [R] = _σ_ [Tot] _−_ _σ_ [El] _._ (71)\n\nThe reaction cross section _σ_ _R_ includes quasielastic scattering, charge exchange, and true pion absorption.\nThe total cross section is significant for our analysis\nsince it has a different sensitivity to the imaginary part\nof the potential as compared with the differential elastic\ncross section.\n\n**B.** **Fit to** **[12]** **C data**\n\nVarious groups intensively studied pion scattering on\ncarbon from the 1970s through the 1990s. Table I summarizes the _π_ _[±]_ - [12] C scattering data used in our analysis. The dataset includes measurements of the total,\nangle-integrated elastic, reaction, and differential elastic cross sections done at different facilities: Schweizerisches Institut fur Nuklearforschung (SIN), Canada’s\nparticle accelerator center (TRIUMF), Los Alamos Meson Physics Facility (LAMPF), Rutherford Applet",
+        "score": -5.886946149305864,
+        "dense_score": null,
+        "bm25_score": 7.422724026492688,
+        "graph_score": 0.0,
+        "rerank_score": -9.063833236694336,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 27,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6394,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2811383__2407.18528__Time_performance_of_Analog_Pixel_Test_Structures_with_in-chip_operational_amplifier_implem.md",
+        "title": "2025__recid_2811383__2407.18528__Time_performance_of_Analog_Pixel_Test_Structures_with_in-chip_operational_amplifier_implem",
+        "text": "ively with respect to a chosen reference plane to\nincrease the tracking quality. These tracks are then interpolated at the plane of\nthe DUT. The six ALPIDE planes and the trigger plane (APTS-SF) are included\nin the tracking, excluding the DUT in order to obtain unbiased results. The\nfollowing quality selection criteria are applied to filter the data for the analysis:\n\n - a cluster is required in each tracking plane;\n\n - tracks are selected based on the quality of the fit, such that _χ_ [2] _/_ dof _<_ 5,\nwhere dof stands for the number of degrees of freedom;\n\n - only events with a single reconstructed track are selected, where an event\nhas to be triggered by the APTS-SF (cf. Sec. 3.1, Plane 4);\n\n - DUT clusters are associated to tracks passing within a radial distance of\n15 µm. A study was performed to select the proper association window\nradius, choosing it in order to guarantee the independence of the efficiency\nfrom this parameter (cf. App. B).\n\n - a Region Of Interest (ROI) is set to include only the associated tracks\ncrossing one of the three central pixels read out via the oscilloscope, in\norder to avoid border effects.\n\n10\n\nThe applied selection cuts reduce the statistics to roughly 20% of the recorded\nsamples quoted in Tab. 2.\n\n_Detection efficiency analysis._ In order to estimate the detection efficiency, a\ncluster is searched on the DUT plane, within the ROI, for each track. The\ndetection efficiency is computed as the ratio between the number of tracks providing an associated cluster in the DUT and the total number of tracks crossing\nthe ROI. It is worth noting that the choice of the above mentioned association\nwindow radius allows one to estimate the efficiency without any bias, taking\ninto account that the tracking resolution is much smaller, being equal to _σ_ track\n= 1 _._ 8 µm _±_ 0 _._ 1 µm, as obtained by the telescope optimiser tool [26]. Moreover,\nto assess the chip noise, an analysis of the baseline fluctuations was conducted\n(cf. App. C). The results in the following figures are shown for thresholds above\n75 e _[−]_, 3 times the maximum noise RMS.\n\n_Spatial resolution analysis._ For this analysis, the so-called _η_ -algorithm [27, 28]\nhas been applied to correct for the non-linear charge-sharing mechanism among\nthe pixels. Residual distributions are obtained by evaluating the distance between the intercept of each track on the DUT plane (reconstructed position)\nand the associated cluster position (corrected with the _η_ -algorithm), in",
+        "score": -6.041537589411582,
+        "dense_score": 0.3097309470176697,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.30335807800293,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 183,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2638493__2303.02067__Tagging_and_localization_of_ionizing_events_using_NbSi_transition_edge_phonon_sensors_for_.md",
+        "title": "2023__recid_2638493__2303.02067__Tagging_and_localization_of_ionizing_events_using_NbSi_transition_edge_phonon_sensors_for_",
+        "text": "3.5, 0.5) keV. This _lateral_ population overlaps partially\nthe magenta _intermediate_ one. Considering the relative\nstrength of the four population in Table II, the contamination of the _lateral_ population with _intermediate_\nevents should be small.\n\nTABLE II. Fraction of K-shell events in the different event\ncategories in Fig. 3. The errors are statistical only. The\nbias sign corresponds to _V_ _top_ _−_ _V_ _bottom_, i.e. electrons are\ncollected on the top electrode when _V >_ 0.\n\nThe origin of these four populations, and the reason\nwhy _E_ _top_ _< E_ _bottom_ for some of them, can be understood by inspecting the diagram in the bottom panel in\nFig. 3, where the color regions are defined by the geometry of the lines calculated with a COMSOL [®] [26]\nsimulation of the detector. All field lines connect to the\nbottom electrode, as it is the only one biased relative to\nthe grounded copper cover. There are two cases where\nthe other end of the field lines does not reach the top\nelectrode: some field lines intersect the surface covered\nby the NbSi sensor, while others exit the detector via its\ncylindrical lateral surface, which is not covered by an Al\nelectrode. The blue _center_ region is defined by all field\nlines connecting the bottom electrode to the 20 mm diameter region covered by the two NbSi films. In this\ncase, all the charge drifting upward will be collected in\nthe NbSi film, also set at ground. These charges are not\nread out, and therefore _E_ _top_ is zero, resulting in the blue\npopulation on the top panel of Fig. 3. In the other case\nwhere electrons or holes end their drift on the lateral\nsurface, the signals induced in both electrodes must be\n\ncalculated using the Shockley-Ramo theorem [27–30].\nThis will induce a reduced, but non-zero, signal on the\ntop electrode. The bottom electrode signal will also be\ndegraded, while remaining greater than the top one due\nto the field asymmetry. For example, the green _lateral_\narea on the bottom panel of Fig. 3 corresponds to the\nregion where the COMSOL [®] calculation predicts that\nthe signal induced in the bottom electrode corresponds\nto less than 95% of the total charge. This mechanism\nprovides an explanation for the green _lateral_ population\non the top panel of Fig. 3, where the bottom electrode\nsignal deviates from the nominal 10.37 keV _ee_ . The process of NTL amplification is also affected, and this population is also at the origin of the tails on the left-hand\nside of the L- and K-shell peaks obser",
+        "score": -6.289025436622509,
+        "dense_score": null,
+        "bm25_score": 7.842335732265161,
+        "graph_score": 0.0,
+        "rerank_score": -9.6832275390625,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6268,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex.md",
+        "title": "2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex",
+        "text": "means it has a small efficiency for neutron background and offers additional\nhadron background suppression capability. Our Geant4 simulation [118–120] finds that the low-energy neutrons\n( _E_ _k_ _<_ 0 _._ 3 GeV) generate almost no hit in the lead glass calorimeter, and the high-energy neutron (( _E_ _k_ _>_ 1\nGeV) has just about 45% probability to deposit more than 10 MeV energy in the calorimeter. As most of the\nneutrons from _pA →_ _X_ collision are low energy neutrons, the neutron background in the photon measurement\ncan be eliminated effectively with the lead glass calorimeter. With the inelastic events generated with GiBUU\npackage [121–124], we show in Fig. 3 the invariant mass distributions of two photons, with and without\nthe neutron background. The background for the _π_ [0] signal due to the neutron contamination is negligible,\nespecially for the channel _p_ [7] Li _→_ _π_ [+] _π_ _[−]_ _π_ [0] _X_ . In the simulation, the threshold for a hit in the calorimeter\ncorresponds to the signal generated by a 50 MeV photon. The neutron deposits less energy in the calorimeter\ncomparing to the photon, and with the same amount of energy deposition, the hadronic shower initiated by\nthe neutron generates less Cherenkov photons. That is why the abundant neutron background at low energy\nis strongly suppressed in the measurement of photon and _π_ [0] .\nAlthough lead glass calorimeter is effective at suppressing hadron backgrounds and is cost-effective, it has\nsignificant drawbacks compared to conventional crystal calorimeters. Firstly, the low Cherenkov light yield\nand severe light attenuation of lead glass result in poor energy resolution. Lead fluoride crystals, which have\nless light attenuation, can be used instead, but they are much more expensive. Another disadvantage is the\npoor radiation resistance. While radiation-resistant types of lead glass can be used to improve this, they suffer\nfrom worse light attenuation. Additionally, due to the low light yield, the Cherenkov light being mainly in\nthe UV range, and the detector being in a magnetic field, large-sized UV-sensitive SiPMs are required. These\ndrawbacks present challenges for the usage of lead glass in this project.\nOne option is to use the ADRIANO2 [125] dual-readout calorimeter currently being developed by the\nREDTOP group. This design combines scintillation material and lead glass to capture both Cherenkov light\nand scintillation light signals. It employs longitudinal layering and readout, providin",
+        "score": -6.336149377533884,
+        "dense_score": null,
+        "bm25_score": 8.583018344342916,
+        "graph_score": 0.0,
+        "rerank_score": -9.756080627441406,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.624219049233943,
+    "generation_latency_s": 5.597248673439026e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.624219049233943,
+    "generation_latency_s": 5.597248673439026e-07
+  }
+}

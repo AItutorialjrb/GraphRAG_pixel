@@ -1,0 +1,275 @@
+{
+  "benchmark": {
+    "query_id": "fac001",
+    "query_type": "factoid",
+    "query": "What does HV-MAPS stand for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What does HV-MAPS stand for?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 169,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2634722__2302.09172__Performance_of_the_wavelength-shifting_fiber_upgrade_for_the_Mu2e_cosmic-ray_veto_detector.md",
+        "title": "2023__recid_2634722__2302.09172__Performance_of_the_wavelength-shifting_fiber_upgrade_for_the_Mu2e_cosmic-ray_veto_detector",
+        "text": "in the Fermilab test\n\nbeam to determine the light yield gain from larger fiber diameter for fibers of the same age. A\n\n24% light yield gain was measured for the 1.8 mm fiber over the original 1.4 mm fiber. During\n\nthe fiber testing runs at the University of Virginia (UVA), a sample di-counter was created by\n\nthreading 1.4 mm diameter fiber through one scintillator side and 1.8 mm through the other side\n\nand tested with UVA’s cosmic test stand [14] to determine the actual light yield increase expected\n\nin the CRV sectors. The larger diameter fiber once again recorded about a 25% light yield increase\n\nover the 1.4 mm fiber which is consistent with geometrical expectations. In addition, several fully\n\nconstructed CRV modules with the new 1.8 mm fiber also show a similar light yield increase.\n\nBoth the test-beam data and measurements from the cosmic ray test stand confirm that larger fiber\n\ndiameter achieves the expected gain in light yield. However, the larger than expected light yield\n\nincrease as measured by the fiber scanner, beyond what was measured in the fully constructed\n\ndi-counters, hinted at potential aging effects in the fiber for wavelengths outside of the spectral\n\nsensitivity range of the SiPMs. This is described in the following section.\n\n**4.4** **Fiber aging studies**\n\nAfter observing that the benchmark 1.8 mm fiber spool, fabricated in 2015, had a significant\n\n∼\ndecrease ( 30%) in light yield in comparison to the new spools from 2021, and that all of the\n\nproduction 1.8 mm spools had a larger than expected increase in light yield over the older 1.4\n\nmm fiber (∼ 60% − 70%), it was decided to investigate potential fiber aging effects. Specifically,\n\nfive of the thirty-four new 1.8 mm fiber spools, and the benchmark 1.8 mm fiber spool, were\n\n– 6 –\n\nremeasured after approximately one year with both the spectrometer and photodiode to provide a\n\ndirect measurement of aging effects.4\n\nThe results, shown in figure 7, indicate a few percent decrease in light yield in the newer spools\n\nbut no appreciable aging effects in the benchmark spool. This hints that aging might occur within the\n\nfirst years of a fiber’s lifetime, but slows down significantly in later years. In addition, the increase\n\nin light yield loss with the distance from the readout end points to a decrease in attenuation length.\n\nFrom figure 5, there are hints of decreasing attenuation lengths for these wavelengths above 520\n\nnm; however, there is also large run-to-run variance for thes",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 15.592321761393368,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5067,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2783004__2405.01529__Characterization_of_Silicon_Photomultiplier_Photon_Detection_Efficiency_at_Liquid_Nitrogen.md",
+        "title": "2024__recid_2783004__2405.01529__Characterization_of_Silicon_Photomultiplier_Photon_Detection_Efficiency_at_Liquid_Nitrogen",
+        "text": "ghly the same number of photons when the test stand is\n\nat both room and cryogenic temperatures. Thus there is neither a shift in the emission spectrum of\n\nthe LED nor a shift in the reflectivity of the integrating sphere. This measurement also serves as an\n\n_in situ_ cross-check that the optical fibers’ transmission probability is not temperature dependent.\n\n– 9 –\n\n**Figure 5** . Comparing the number of photons detected by the reference SiPM located at the lid during\nroom and cryogenic temperature PDE measurements shows that there are no systematic shifts in the LED’s\nemission spectrum or the transmission coefficient of the optical fibers.\n\nWe ensured that condensation was not forming inside the integrating sphere or on the surfaces\n\nof the SiPMs. First, prior to data taking, a liquid nitrogen fill was performed and the dewar insert was\n\nlifted to visually check that no condensation was present. Second, the number of photons detected by\n\nthe reference SiPM at the lid does not change significantly between room temperature and cryogenic\n\ntemperature measurements in Fig. 5: any change in reflectivity engendered by condensation inside\n\nthe integrating sphere would cause a systematic change in the number of photons detected by the\n\nreference SiPM. The nitrogen gas boil-off from the liquid nitrogen ensures that condensation cannot\n\nform. Therefore, any changes in the optical properties of the test stand between the two temperatures\n\ndo not account for the observed decrease in PDE.\n\nThe decrease in PDE at 77 K indicates that some combination of the quantum efficiency,\n\navalanche triggering probability, and effective fill factor may be changing with temperature. Similar\n\nreductions of the PDE at cryogenic temperatures have been found in other SiPMs at 10 K using\n\na calibrated system [38], and at 77 K using uncalibrated systems [30, 32, 33, 39] and calibrated\n\nsystems [19, 29]. These systems show similar decreases in PDE of roughly 30% at liquid nitrogen\n\ntemperatures for wavelengths close to 560 nm. An FBK NUV-HD-cryo SiPM operated at 3 V\n\novervoltage was measured to have a PDE drop from ∼24% at room temperature to ∼18% at 75 K\n\nfor 525 nm light; however, the decrease in PDE at 5 V overvoltage is much smaller, dipping from\n\n∼34% down to only ∼29% [32]. A VUV-sensitive Hamamtsu SiPM at 4 V overvoltage displayed\n\na similar decrease in PDE from 28.4% at room temperature to 20.1% at 77 K for 570 nm light as\n\nreported in [29]. Because silicon is an indirect band-gap s",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 14.1608899912973,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1765,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2655375__2304.14435__Classical_chaos_in_quantum_computers.md",
+        "title": "2024__recid_2655375__2304.14435__Classical_chaos_in_quantum_computers",
+        "text": "the state energy on the dynamics.** (a) Lyapunov exponents for computational states of increasing energy. (b)\nLyapunov exponents for configurations including transmons initialized in states _E_ 0 _,_ 1 _,_ 2 _,_ 3 including values outside the computational sector. Values given are from a 10 qubit transmon chain with _E_ _C_ = 250\nMHz, _E_ _J_ = 10 GHz, and _δE_ _J_ = 559 MHz. Each point is the mean\nvalue of 20 _,_ 000 disorder realizations. For discussion, see text.\n\nsector [43].) Two features stand out: The Lyapunov exponents reach (i) larger values, however, these maximal values\nare attained (ii) only for larger values of the coupling. We reason that the relatively higher inertia to changes in _T_ has to do\nwith the fact that for larger energies of individual transmons\nthe coupling represents a relatively weaker perturbation. We\nnote that these findings are consistent with a recent study [44]\nof a (quantum) Bose-Hubbard model, that finds a suppression\nof the effective interaction between states with large occupation numbers on individual transmon sites.\n\n**IV.** **PREDICTIVE POWER OF CLASSICAL SIMULATIONS**\n\nAt this point, we have discussed key signatures of the classical dynamics of small scale transmon arrays. The big question\nnow of course is what bearings these findings have for our actual subject of interest, the quantum processor. In this section,\nwe formulate an answer in a succession of steps. First, as a\nwarmup, we show that several of the observations of the previous section afford a quantum interpretation. We then compare our results above with those of quantum simulations for\nthe ten transmon array, and for identical material parameters\n(except that now ℏ = 0 _̸_, of course), to observe a high level of\nagreement: classical chaos implies quantum chaos, and vice\nversa. We finally turn to the trump card of the classical approach, namely the option to reliably simulate arrays of thousands of transmons. Assuming that the quantum-to-classical\nfidelity extends to large numbers, we thus have a tool to obtain stability measures for realistic quantum hardware outside\nthe reach of quantum simulation on classical computers. In\nsection V, we substantiate this point by simulating large scale\ntwo-dimensional transmon arrays of current IBM design.\n\nQuantum mechanically, the passage from integrable to\nchaotic dynamics upon increasing _T_ is a manifestation of\na Fock space (de)localization transition: In the transmon\nregime, _E_ _J_ _≫_ _E_ _C_, Eq. (3) is wel",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 13.775447971484574,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1487,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "in Fig. 4\n\nFig. 7. Energy (Left) and time (Right) resolution obtained with the electron\nbeam test performed at BTF.\n\nperformed to study the performance expected with CE; due to\nlonger clusters and higher transversal leakage the linear and\nconstant term increased. An energy resolution better than 5\n(7.5)% was achieved at 100 MeV for runs at normal (at 50 _[◦]_ )\nincidence.\n\nTime resolution was evaluated as the difference between the\n\ntime of the two SiPM coupled to the same crystal, obtaining\na timing resolution better than 200 ps at 100 MeV. The fit\nfunction used for the time resolution is:\n\n_a_\n_σ_ _T_ = (2)\n_E_ [ _GeV_ ] _[⊕]_ _[b]_\n\nFig. 6. Left : Energy spectrum for a crystal irradiated with 6.13 MeV photons\nfrom the [16] _O_ . Right: primary and secondary distribution laser system.\n\nIII. C ALORIMETER PERFORMANCE\n\nTo verify the selected design before starting the massive\nproduction of the whole calorimeter components, a large size\nprototype was build and exposed to an electron beam at the\nBeam Test Facility of the National Laboratories of Frascati.\nThe Module-0 is composed of 52 undoped CsI crystals read\nout by 102 SiPM connected to FEE boards. Its mechanics\nwas designed to resemble as much as possible that of the\nfinal calorimeter, allowing the test assembly procedures and\ncooling. A detailed description of the setup and the main\nresults (reported in Fig. 7) obtained during the beam test can\nbe found in [13]. For what concerns the energy resolution, the\nfunction used to fit the data is:\n\n_σ_ _E_ _a_ _b_\n\n_a_ _b_\n\n_⊕_ (1)\n_E_ [ _GeV_ ] _E_ [ _GeV_ ] _[⊕]_ _[c]_\n\nwhere _a_ is proportional to the emission time constant of\nthe undoped CsI and _b_ represents the additional contribution\ndue to the readout electronics. In the years following the\ntest beam, the Module-0 has continuously operated to study\nthe behaviour in vacuum, at low temperature as well as for\ncarrying out vertical slice tests of increasing complexity, at a\nCosmic Ray test stand where the timing calibration algorithms\nwere improved. The timing resolution obtained subtracting\ntime of two SiPMs reading the same crystal is reported in\nFig. 8.\n\nFig. 8. Timing resolution of a single crystal of the large area prototype\n\nIV. C ALORIMETER PRODUCTION STATUS\n\n_A. Crystal and SiPMs characterization_\n\nThe physics requirements previously discussed were used\nto define a set of technical specifications for the undoped CsI\ncrystals and SiPMs. The selection criteria to accept crystals\nwere: _(i)_ a Light Y",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 13.249576066953278,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6920,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "## Search for long-lived charged particles using the CMS detector in Run-2\n\nTamas Almos Vami _[∗]_\n\n_a_ _University of California Santa Barbara,, Santa Barbara, 93117, CA, USA_\n\n**Abstract**\n\nLong-lived charged particles are predicted by various theories beyond the\nStandard Model, leading to unique signatures that could reveal new physics.\nAt the LHC, the CMS detector enables searches for these massive particles,\nidentifiable by their characteristic ionization patterns. Using data collected\nduring 2017-2018, we search for signals of anomalous ionization in the silicon\ntracker. We present a novel approach to background prediction, utilizing\nthe distinct ionization measurements of the silicon pixel and strip detectors\nas independent variables. We interpret the results within several models\nincluding those with staus, stops, gluinos, and multiply charged particles as\nwell as a new model with decays from a Z _[′]_ boson.\n\n_Keywords:_ Long-lived, exotic physics, energy loss in silicon, CMS\n\n_∗_ On behalf of the CMS Collaboration\n\n_Preprint submitted to Nuclear Physics B_ _December 18, 2024_\n\n**1. Introduction**\n\nThe Standard Model (SM) is a quantum field theory that explains the\nuniverse at its fundamental level. Often we describe it by its particle content.\nThe force-carrying particles, known as bosons, mediate fundamental interactions: the photon for electromagnetic interaction, gluons for the strong\ninteraction, and the W and Z bosons for the weak interaction. The Higgs\nboson, a scalar particle, gives mass to elementary particles through the Higgs\nmechanism. The remaining particles, called fermions, make up matter and\nare divided into quarks and leptons. The quarks interact with all the three\nforces, while the (charged) leptons interact with (electromagnetic and) weak\ninteraction(s). There are three fermion families in the SM.\nDespite its many successes, the Standard Model cannot be the ultimate\ntheory of the universe, as it leaves several fundamental questions unanswered.\nFor example, according to the Big Bang theory, equal amounts of matter and\nantimatter should have been created, yet the observable universe consists\nalmost entirely of matter. What causes this matter-antimatter asymmetry?\nThere is strong evidence of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been seve",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 12.92959194841404,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1134,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2677240__2302.12669__Design_optimization_of_plastic_scintillators_with_wavelength-shifting_fibers_and_silicon_p.md",
+        "title": "2023__recid_2677240__2302.12669__Design_optimization_of_plastic_scintillators_with_wavelength-shifting_fibers_and_silicon_p",
+        "text": "n 4 as our current optimal configuration. When\nthe PDE of SiPM is 40%, The threshold and corresponding\ntagging efficiency of a single PS strip were summarized in\ntable 3.\n\nTable 3. Threshold and corresponding tagging efficiency of single\nPS strip with 40% SiPM PDE\n\n|Threshold(p.e.)|3.1|6.3|10|15|19|\n|---|---|---|---|---|---|\n|Tagging effciency|99%|98%|97%|96%|95%|\n\nTo further verify the simulation, Another prototype with\noption 4 was build, the parameters of PS, optical fiber and reflective film are the same with before prototype in simulation.\nOnly the detection efficiency of the backend SiPMs/PMT is\ndifferent as labled. 2 SiPM were used as sensor and using\noscilloscope to collect data. The SiPM is from the K-series\nMicroK-40035-TSV[59]. The data is saved by the lecroy\n\nHDO4104A oscilloscope. Preliminary experimental results\nwere obtained.\n\nFigure 13 shows the experimental measurement and simulation results of the PS prototype of option 4. To avoid the\neffect of the SiPM dark noise and environment background,\nSignals stronger than 3 p.e. was analyzed, and the blue line\nis the energy spectrum of one SiPM from the measurement.\nThe red line is the result of the simulation. Every point has an\nerror bar, the abscissa is the light yield, and the ordinate is the\nlog stand for the normalized event rate. It can be seen from\nthe figure that in the spectrum below 12 p.e., the simulated\nspectrum almost corresponds to the experiment. It was found\nthat the most probable signal amplitude for passing through\nmuons is around 8 p.e. from data, So for the final configuration used for TAO where there are 4 SiPMs at each end\n\nof the PS strip, the sum of the most probable signal amplitude will be about 32 p.e. When the spectrum is in the range\nof 15 p.e. to 25 p.e., within the range of error, the event rate\nof the simulated spectrum is more than that of the experiment. When the spectrum is greater than 25 p.e.,the event\nrate of simulation and experiment events is relatively small.\nIn the high energy region, the energy spectrum does not show\ngood consistency, but it does not affect our optimization work.\nThere are several main factors that lead to differences in the\n\nenergy spectrum. The first is that the coupling between SiPM\nand PS is not firm. The coupling method will be improve in\nthe future. The second is that the widths of the two CRs are\n\nactually inconsistent, which may lead to a deviation of several\ncentimeters in the location where Muon hits. Resulting in an\nimpact on",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 12.779916427887796,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7257,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2909952__2504.06671__Defects_in_Silicon_Carbide_as_Quantum_Qubits_Recent_Advances_in_Defect_Engineering.md",
+        "title": "2025__recid_2909952__2504.06671__Defects_in_Silicon_Carbide_as_Quantum_Qubits_Recent_Advances_in_Defect_Engineering",
+        "text": "z et al. [24], \"Quantum Guidelines for Solid-State Spin Defects\". This review offers a\n\nset of broad guidelines for the development and application of solid-state spin defects in\n\nquantum information processing. The authors discuss defect properties, host material\n\ncharacteristics, engineering opportunities, and potential pathways for improving coherence\n\ntimes, optical properties, and scalability.\n\nGiven the existence of these in-depth and widely cited review articles, a legitimate question arises: What\n\nunique contribution does this paper make, and how does it differentiate itself from prior work? Unlike the\n\nbroader scope of the aforementioned reviews, this paper is specifically tailored for early-career\n\nexperimental researchers focusing on the controllable formation of color centers in SiC for quantum qubit\n\napplications. Instead of attempting to cover the entire landscape of SiC quantum applications, this review\n\nadopts a focused and practical approach by emphasizing defect engineering techniques and their\n\nrelevance to quantum qubit performance. This review provides an overview of methods for generating\n\nSiC defects, including irradiation, ion implantation, and laser processing [14,15,16,17,18]. Moreover,\n\nmany existing reviews are either theory-oriented [2,4] or focused on the comprehensive material\n\ncharacterization that includes a whole variety of techniques such as low-temperature photoluminescence\n(PL), electron paramagnetic resonance (EPR) and optically detected magnetic resonance (ODMR)\n\ntechniques [22,23,25,26,27,28]. This review aims to bridge the gap between theoretical studies and\n\ncomprehensive material characterization by focusing on the intermediate step, defect creation.\n\nThe paper is structured as follows. Section 2 introduces the fundamental principles of quantum qubits,\n\noutlining the criteria that a defect center must satisfy to function as a viable qubit. Section 3, the core of\n\nthis review, focuses on the selected SiC defects and their formation by different experimental methods.\n\nSection 4 provides a summary and conclusion. By maintaining a well-defined and specialized focus, this\n\nreview serves as a valuable resource for experimentalists looking to advance their expertise in SiC-based\n\nquantum defect fabrication. It ensures that researchers can efficiently access the most relevant\n\ninformation to accelerate their work on next-generation quantum technologies.\n\n**2.** **Quantum qubits**\n\nThis section provides an overview of the",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 12.630916068981222,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6921,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "ce of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been several theoretical attempts to answer these questions.\nOne of the first popular solution was to introduce superpartners to the SM\nparticles [1, 2]: each boson would have a fermion partner, and each fermion\nwould have a boson partner. This model is called Supersymmetry (SUSY)\nand would answer all the questions above. The partner of the quarks and\ngluons are the squarks and gluinos, while the partner of the leptons are the\nsleptons. For example, the SUSY partner of the top quark is the stop squark,\nand the partner of the tau lepton is the stau slepton. Further theories that\nanswer part of the questions above have been proposed, too. Among them\nthe solution is provided by introducing additional heavy Z _[′]_ bosons, or a 4th\ngeneration of fermions ( _τ_ _[′]_ ), or several other Higgs bosons.\nThese questions and theories have remained open for decades, since no\nsignificant experimental evidence for physics beyond the Standard Model\n(BSM) has been observed to date. The collider searches at the Large Hadron\nCollider (LHC) and other laboratories have been looking for signatures in\nwhich the BSM particles decay promptly. However, there are several mechanisms that can lead to longer lifetime, even in the SM. With this we have a\n\n2\n\nnew direction to explore BSM physics and to look for long-lived particles [3].\nIn this work, we search for ”stable” particles–meaning not necessarily fundamentally stable, but stable on the detector level, where they traverse the\ndetector without decaying. Figure 1 shows a flow chart to categorize how\nthese particles interact with different forces and what models would predict\ntheir existence. If they are electrically charged, these particles are often\nreferred to as Heavy Stable Charged Particles (HSCPs) [4, 5, 6, 7].\n\nFigure 1: Flow chart for possible new directions in searches.\n\nIf the HSCPs have color charge that means they will hadronize. A BSM\nexample for this are the R-hadrons from split-SUSY [8, 9, 10, 11]. R-hadrons\nare a bound state of SM and SUSY particles. Some of these form negative, neutral, positive, or even double positive hadrons. The R-hadron’s\ninteractions with matter is described in the model in Ref. [12, 13]. If the\nHSCPs are colorless, one can think of several theories tha",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 12.624204196469904,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2669,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2690445__2308.11657__Multiple_scattering_of_855_MeV_electrons_in_amorphous_and_crystalline_silicon_Simulations_.md",
+        "title": "2024__recid_2690445__2308.11657__Multiple_scattering_of_855_MeV_electrons_in_amorphous_and_crystalline_silicon_Simulations_",
+        "text": "randomly generated. For doing this the normal distribution\nwith the variance equal to u T is used. This algorithm\ndoes not exclude non-physical events when two (or more)\natoms will be located in close vicinity to each other. This\nwill result in the (local) increase in the scattering angle\nwhich inevitably will affect the multiple scattering angle\nas well.\n\nIV. CONCLUSION\n\nBy means of relativistic all-atom molecular dynamics\nimplemented in the MBN Explorer software package\nthe passage of ultra-relativistic electrons through crystalline and amorphous silicon media has been simulated.\nThe parameters of the 855 MeV electron beam and the\nthickness of the silicon targets utilized in the simulations\ncorrespond to those used in the experiment [14] which\nrevealed broad angular anisotropy of multiple scattering\nin the crystal. For each incident geometry considered\na sufficiently large number (≈ 4 × 10 [4] ) of statistically\nindependent trajectories has been generated. The statistical analysis carried out resulted in calculation of the\nprobability distribution functions (PDF) that allowed us\nto quantify the process of multiple scattering in terms of\nthe planar scattering angles. To double check the results,\nthe simulations and the analysis have been performed\nemploying both the Moli`ere and Pacios potentials for the\nelectron–Si-atom interaction. The dependencies of the\nscattering angle θ s on both the horizontal Θ h and vertical\nΘ v incident angles turned out to be virtually insensitive\nto the choice of the potential.\nWe have observed the differences in angular distributions of electrons deflected by the crystalline and the\n\n2 Also to be noted is that for the amorphous target our result\nand the experimental data both differ from the commonly used\nestimate [30] of the multiple scattering angle, see the dasheddotted lines in both graphs in Fig. 3.\n\n6\n\n0.24\n\n0.23\n\n0.22\n\n0.21\n\n0.20\n\n0.19\n\n0.18\n\n0.24\n\n0.23\n\n0.22\n\n0.21\n\n0.20\n\n0.19\n\n0.18\n\n10 20 30 40 50\nΘ h (mrad)\n\n2 4 6 8 10\nΘ v (mrad)\n\nFIG. 3. Left: Multiple scattering angle θ s as a function of the horizontal (left) and vertical (right) incident angles. Solid lines\nstand for the crystalline target, dashed lines indicate the results for the amorphous medium. Experimental data (red lines,\nfilled circles) and results of simulations with the CRYSTAL code (green lines, open circles) are from Ref. [14]. The results of\ncurrent simulations (black lines with diamonds) correspond to the Moli`ere potential. For the crystal Si, the",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 12.505187411897314,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6518,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights.md",
+        "title": "2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights",
+        "text": "# Germanium and Silicon Detectors for WIMP Searches: Key Experimental Insights\n\nM. Mirzakhani, [ a] - S. Maludze [ a]\n\na _Department of Physics and Astronomy, Texas A&M University, College Station, TX, 77843_\n\n- _[Mahdi_mirzakhani1995@tamu.edu](mailto:*Mahdi_mirzakhani1995@tamu.edu)_\n\n**Abstract**\n\nDark matter plays a crucial role in our comprehension of the universe, but its mysterious nature\nposes challenges for direct detection. A primary obstacle in detecting dark matter is distinguishing\ngenuine signals from the prevailing electromagnetic background. Germanium and Silicon detectors\nhave emerged as effective instruments in the pursuit of dark matter detection. Their minimal\nradioactive backgrounds, substantial active volumes, and efficient rejection mechanisms have\nsignificantly advanced our understanding of dark matter and its scattering cross section limits.\nNumerous experiments employing these detectors have yielded valuable insight into the properties\nof dark matter. Scientists have investigated potential dark matter candidates like Weakly Interacting\nMassive Particles (WIMPs) and evaluated their probability of being dark matter particles based on\nobserved scattering cross sections. This review consolidates the findings from significant\nexperiments, encompassing possible candidates and their likelihood of being dark matter particles.\nIt also recognizes the limitations of dark matter scattering cross section by assessing progress in\nthis field, detector technologies, experimental outcomes, and future prospects.\n\n_Keywords:_ Dark matter, Germanium detector, Silicon Detector, Nuclear recoil energy, Nucleonscattering cross-section, Low temperature\n\n**I. Introduction**\n\nIt is believed that dark matter constitutes about 85% of the universe's matter content [1]. Its\n\npresence is inferred from its gravitational influence on normal matter, radiation, and the cosmic\nstructure, yet it eludes direct observation because it does not interact with electromagnetic and\nstrong forces [2]. Among the various potential forms of dark matter, Weakly Interacting Massive\nParticles (WIMPs) stand out as prime candidates [3]. To detect WIMPs, experiments have\nfrequently employed germanium and silicon detectors, which are favored for their low levels of\nbackground noise, high purity, and capability to function at extremely low temperatures [4].\n\nThe following sections provide an overview of dark matter candidates and how they interact. It\nalso explores the detector technologie",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 12.358134583494346,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 22.87153422087431,
+    "generation_latency_s": 3.608874976634979e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 22.87153422087431,
+    "generation_latency_s": 3.608874976634979e-07
+  }
+}

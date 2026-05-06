@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "fac004",
+    "query_type": "factoid",
+    "query": "What is Time-of-Arrival used for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "Time-of-Arrival",
+      "used"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is Time-of-Arrival used for?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 28,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630139__2302.03646__Studies_of_time_resolution_light_yield_and_crosstalk_using_SiPM-on-tile_calorimetry_for_th.md",
+        "title": "2023__recid_2630139__2302.03646__Studies_of_time_resolution_light_yield_and_crosstalk_using_SiPM-on-tile_calorimetry_for_th",
+        "text": "placed the trigger tiles\n\ndirectly above and below the main cell of a megatile or 3D-printed frame. The optical crosstalk\n\nwould then be the ratio between the peak values of the distributions of the signals in the neighboring\n\nand main cells. We repeated this for the megatile without ink, the megatile with ink, and the 3D\nprinted frame. The optical crosstalk values were consistent with those obtained using the UV-LED\n\nsetup; in the latter case, the measured distribution is consistent with noise.\n\n**4.3** **Timing resolution**\n\nWe show the distribution of the time differences between the two back-to-back SiPMs in the Sr-90\n\ntiming setup in the left panel of Fig. 9. We fit this to a Gaussian function, yielding _𝜇_ =46±9 ps and\n\n_𝜎_ =540 ps. To obtain the resolution for a single SiPM, we divided the _𝜎_ of this Gaussian by the\n\nsquare root of two, yielding a single-SiPM timing resolution of 380 ps. This is comparable to the\n\n0.5 ns resolution reported in Ref. [28] for plastic scintillator tiles at the CERN H2 test beam.\n\nWe repeated this process while simultaneously binning the data in the number of photoelectrons\n\nin the two SiPMs in the same bins, and show the result in the right panel of Fig. 9, both for the\n\nSr-90 setup (blue circles) and for the cosmic-ray setup (green squares)5. We observe that the\ntiming resolution fits to _𝜎_ =3180/ ~~[√]~~ ~~_𝑛_~~ pe ~~,~~ where _𝑛_ pe is the number of photoelectrons. This is slightly\nbetter than the preliminary results reported in Ref. [31] for similarly sized cells. We repeated this\n\nmeasurement using all our algorithms to extract the time-of-arrival of signals; the results varied by\n\nonly about 2% from algorithm to algorithm.\n\nIt is often the case that the timing of a signal will have an amplitude dependence, known as a\n\n“time-walk” effect, and this can depend largely on the algorithm used for defining the signal time.\n\nWe investigated this effect and found that this change in the time-of-arrival can vary by about 250 ps\n\nwhen one SiPM has a very large signal and the other has a very small signal. However, this effect\n\nhas a negligible impact on the resolution shown in the right panel of Fig. 9, because we required\n\nthe two channels to have similar light yields, causing the time-walk effects on the two channels to\n\ncancel each other out.\n\n5In the left panel of Fig. 9, the requirement of having similar light yields in each cell was not used.\n\n– 10 –\n\n|Sr-90<br>Gaussian fit:<br>= 45±10 ps<br>= 536±10 ps|Col2|\n|---|-",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 17.64193892707664,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4771,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "ar pn-junctions enhanced by a thin layer\nwith high doping concentration, resulting in a high electric field, such that Geiger-mode operation is feasible at\nreverse bias voltages of a few 10 V. A Geiger discharge\ncan be triggered by ionizing radiation or single photons\n\n in the optical wavelength regime, with detection effi\nciencies on the order of 50 %. Due to the avalanche\n\n multiplication, the signal rise times of SiPMs are suffi\nciently short to reach a temporal resolution of a particles\n\n∗ Corresponding author\n_Email address:_ `finn.feindt@desy.de` (Finn Feindt)\n1 Also at University of Hamburg, Germany\n2 Also at University of Wuppertal, German\n3 Also at University of Bonn, Germany\n\ntime-of-arrival on the order of few 10 ps. Comprehensive introductions into the topic are given in for example\nin [1, 2, 3].\n\nAnother feature of the avalanche multiplication is that\nthe amplitude of the current induced by the avalanche is\nindependent of the amount of charge carriers produced\nby a particle or photon interaction. This absence of\ncharge information suggests the conversion into a binary\nsignal, by means of a discrimination, without any loss\nof information. On the other hand, digital signal processing on a SPAD level adds a lot of benefits. For example it allows to extract the position of a firing SPAD\nwithin the SPAD array. Such digital SiPMs (dSiPMs),\nproduced in a standard CMOS process, where first introduced in [4].\n\nApplications for dSiPMs include the use of dSiPMs\nas light-sensitive sensor for the readout of scintillating\nfibers [5]. This work explores the possibility to use a\n\n_Preprint submitted to Nucl. Instrum. Methods Phys. Res. A_ _February 3, 2025_\n\nFigure 1: Microscopic image of a single pixel. The four squares with\ncut-off corners are the SPADs. The in-pixel circuitry is visible at the\nbottom of the image. Taken from [7].\n\ndSiPM, designed at Deutsches Elektronen Synchrotron\n(DESY), as a 4D-tracking detector. In this case, a 4Dtracking device is to be understood as a detector providing the measurement of a Minimum-Ionizing-Particle’s\n(MIPs) impact coordinates and time-of-arrival, as discussed in [6]. The said dSiPM will be briefly described\nin the following section.\n\n**2. The DESY dSiPM**\n\nThe sensor is designed and produced in the LFoundry\n150-nm CMOS technology. The key building blocks\nare SPADs, with a fixed layout provided by the manufacturer. Four of these SPADs, with an active area of\n20×20 µm [2], form a pixel with a size of 69.6×76 µm [2],\na",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 16.78823299039448,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3527,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "nics K.K. (HPK) in the\n6-inch wafer fabrication process, is segmented in a matrix of 72, 1 × 1 cm [2], 320 _𝜇_ m thick pads. Two\n\nadditional pads of smaller size are inserted in the array for calibration purposes. The front plane of\n\nthe sensor is glued to the Printed Circuit Board (PCB) and wire bonded to the read-out electronics\n\nvia through-holes carrying the lines to the back of the boards. Other cavities are used to connect\n\nthe guard rings, high voltage, and ground connections. The depletion voltage is achieved by biasing\n\nthe sensors through the gold-plated common cathode on the wafer back side. More details, as well\n\nas the systematic studies of the sensors’ electrical properties, can be found in [15].\n\nFor the readout, each PCB hosts the HGCROC Application-Specific Integrated Circuit (ASIC)\n\noriginally developed by the OMEGA group for the CMS High Granularity Calorimeter (HG\n\n– 3 –\n\n**Figure 1** . Picture of the front, and back-plane of the single-pad board. The cavities are designed for wire\nbonding the individual silicon pads to the onboard electronics. At the center, some space is reserved for\npositioning the HGCROC readout chip. The Si wafer is aligned and glued to the back-plane, and it receives\nthe voltage for biasing the sensors through a connection routed by the board’s edges.\n\nCal) [16]. The energy deposit in each Si diode is converted into voltage pulses by the low-noise\n\npreamplification stage of the chip and later processed by a shape filter. The signal is then fed to the\n\nAnalog-to-Digital Converter (ADC) of the HGCROC which provides a linear response up to 320 fC,\n\nequivalent to about 100 Minimum Ionizing Particles (MIPs). The signal is also discriminated and\n\nprovided to two Time-to-Digital Converters (TDCs) used to extend the dynamic range via measuring\n\nthe Time-over-Threshold (ToT) of larger energy deposits. The ToT is measured relatively to a pre\ncise Time-of-Arrival (ToA) information, granting a total dynamic range going from 0.2 fC to 10 pC.\n\nThese quantities are sampled every 25 ns (40 MHz) and stored in a 512 sample deep circular buffer\n\nwhich is streamed to the acquisition electronics via 1.28 Gbit/s serial links when the HGCROC\n\nreceives a readout request through the Fast Command (FCMD) port. A buffer entry contains 72+2\n\nmeasurements of ADC, ToT, and ToA, the monitor of four common mode channels for coherent\n\nnoise subtraction, and the digital sums of groups of nine pads (eight sums for each sample) for\n\ntrigger generatio",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 16.12429978232405,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1395,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip.md",
+        "title": "2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip",
+        "text": "ver PIC\nwe can reduce this down to a single chip assembly, whilst allowing both transmitter and receiver\ncircuits to access the best properties from two\ndifferent material platforms.\n\nSimilarly, we can compare our edge-coupling\nhybrid approach to alternative hybrid or heterogeneous solutions, such as flip-chip or photonic\nwire bonding. For our purposes we believe that\nedge-coupling currently has two key strengths:\nlow optical coupling losses and sufficiently mature\nmanufacturing that is accessible in low volumes.\nAs parts of our chip are used as a receiver, the optical loss is critical. The fact that we find this can\nbe repeatably achieved with currently available\ncommercial manufacturing techniques is important and should be of interest to those working on\nother applications of quantum photonic integration. However, we do not discount the potential\nadvantages of alternative hybrid and heterogeneous integration approaches. For large circuits,\nas will likely be required for photonic quantum\ncomputing for example, the inherent scalability\nof some of the alternatives becomes a significant\nadvantage. Indeed, even for smaller circuits, such\nas used in QKD, wafer-scale approaches may prove\nto have more economical manufacturing. Recent\nwork has shown Si-InP photonic wire bonding\ncoupling losses as low as 0.4 dB [34] and repeatable sub-1dB losses resilient to thermal cycling\n\n[44].The ongoing development of various hybrid\nand heterogeneous integration methods and their\npermeation into industry offers exciting avenues\nfor future work.\n\nIn comparison to previous on-chip time-bin\nQKD demonstrations, we find the low minimum\n\n9\n\nQBER of the system notable. Sub-1% QBER, as\nwe measure, is more commonly associated with\ntime-of-arrival measurements due to the higher\nextinction ratio [9, 45]. In contrast, qubits encoded\nin differential phase, like in the present work,\nare more vulnerable to intensity imbalance and\ndelay-line mismatch between Alice and Bob. Here,\nwe find that the precise manufacturability of SiN\nyields excellently matched interferometers, which\nproduces high contrast interference. Further, the\navailability of heaters on SiN allows the AMZI\nstructures to be finely adjusted and offset manufacturing errors further. This stands favourably in\ncomparison to other material platforms used for\nQKD receivers, such as planar light-wave circuits\non silica.\n\nWe can also compare alternative material platforms for the modulator component. For example,\nthin film lithium-nio",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 16.113609636619117,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7153,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "Hit-OR is gauged\nby comparing it with a scintillator signal coupled to a PMT and\nread out via an oscilloscope. The result is depicted in figure 9b\nexemplarily for a quasi noise-free threshold of 16. A Gaussian\nfit to the distributions’ core yields a σ of 2.28(1) ns, sufficient\nfor precise triggering at test beams. The absolute delay of the\n\n4\n\n(a) Hitmap of a telescope plane with TelePix2 as trigger. A DESY logo is programmed to\nthe fast Hit-OR.\n\nFigure 8: Time difference between reference trigger and TelePix2 cluster time\nversus the row number.\n\ntrigger compared to the scintillator is 15.32(1) ns, which is an\nacceptable latency for test beam operation.\n\n**5. User Stories**\n\nTelePix2 is in user operation and utilized by multiple groups\nto enhance data taking efficiency and suppress ambiguities. In\nthe following three examples using the different operating modes\nare discussed and the improvement due to TelePix2 is highlighted.\n\n_H2M - region of interest trigger mode_\n\nThe H2M (Hybrid-to-Monolithic) is implemented in a 65 nm\nCMOS imaging process as proof of concept for a digital-on-top\ndesign workflow. It ports a hybrid pixel-detector architecture,\nwith digital pulse processing in each pixel, into a monolithic\nchip. The chip matrix consists of 64×16 square pixels, each\nwith a size of 35×35 µm [2], and a total active area of approximately 1.25 mm [2] . A 100 MHz clock is used for non-simultaneous\nTime-over-Threshold (ToT) or Time-of-Arrival (ToA) measure\nments.\n\nH2M has been tested in the DESY II test beam test beam\n\nfacility using the ADENIUM telescope. TelePix2 is used as\nregion of interest trigger plane. A region of interest of approximately 3 mm [2] is left unmasked in TelePix2 matching the H2M\narea with a safety margin.\nFigure 10a compares the correlations in X between H2M\nand the reference plane with data taken from a small region of\ninterest and the entire TelePix2. While a one order of magnitude higher background of uncorrelated events is observed for\nthe full region, for the small region, most of the events are correlated. The latter reduces the number of empty readout frames\nof H2M and highly improves the data taking efficiency. Moreover, time studies have been performed based on TelePix2. Figure 10b shows the time residuals between the TelePix2 fast\n\nHit-OR and H2M time stamps. The tail to the left is caused by\ntime-walk of H2M.\n\n5\n\n(b) Time difference between reference trigger and TelePix2 hit-or at a threshold of 16.\n\nFigure 9: The fast Hit-OR of",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 16.051261830523828,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6471,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "vables such as efficiency, cluster size,\nand resolution can be extracted. Example results of such\nsimulations have been presented, and agree well with expectations and studies of similar sensors.\nTransient simulations have been carried out in both\nTCAD and Allpix [2], and the results match well. Using\nthe induced charge given by transient simulations is more\naccurate than using the notion of “collected charge”, and\nwhen charge pulses are available more sophisticated digitisation simulation can be performed to extract accurate\nvalues for time-of-arrival and time-over-threshold. This\n\nwork is foreseen to continue in the near future, also including more accurate simulation of the sensor front-end\n\nresponse.\nThe described simulation procedure is applicable in multiple different cases, and constitutes a generic toolbox for\nperforming similar studies without using proprietary information. These simulations are able to provide accurate\npredictions of sensor behaviour and trade-offs with different designs, and can thus be used to inform decisions taken\nfor future sensor designs.\n\n**Acknowledgements**\n\nThe presented simulation studies have been performed\nin the frame of the Tangerine project, and in collaboration\nwith the CERN EP R&D programme.\n\n**CRediT authorship statement**\n\n**Dominik Dannheim:** Conceptualisation, Resources,\nWriting - Review & Editing. **Manuel Del Rio Viera:**\nFormal analysis, Investigation, Writing - Original Draft,\nVisualisation. **Katharina Dort:** Methodology, Resources, Writing - Review & Editing. **Doris Eckstein:**\nResources, Funding acquisition. **Finn Feindt:** Writing Review & Editing. **Ingrid-Maria Gregor:** Resources,\nFunding acquisition. **Lennart Huth:** Methodology.\n**Stephan Lachnit:** Software. **Larissa Mendes:** Formal\nanalysis, Investigation, Writing - Original Draft, Visualisation. **Daniil Rastorguev:** Writing - Review & Editing.\n\n**Sara Ruiz Daza:** Formal analysis, Investigation, Writing\n\n- Original Draft, Visualisation. **Paul Sch¨utze:** Methodology, Software. **Adriana Simancas:** Formal analysis,\nInvestigation, Writing - Original Draft, Writing - Review\n& Editing, Visualisation. **Walter Snoeys:** Conceptualisation, Writing - Review & Editing. **Simon Span-**\n**nagel:** Conceptualisation, Methodology, Software, Writing - Review & Editing, Project administration. **Marcel**\n**Stanitzki:** Funding acquisition. **Alessandra Tomal:**\nSupervision. **Anastasiia Velyka:** Methodology, Software, Formal analysis, Investiga",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 15.169733020765793,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 39,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 792,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2662395__2305.14515__Effects_of_temperature_fluctuations_on_charge_noise_in_quantum_dot_qubits.md",
+        "title": "2023__recid_2662395__2305.14515__Effects_of_temperature_fluctuations_on_charge_noise_in_quantum_dot_qubits",
+        "text": "imeters, and together with a diffusion constant equal to\n_D ∼_ 2 _·_ 10 _[−]_ [5] m [2] /s, produced minimal frequencies of the\norder of 1 Hz or less.) To estimate the lowest frequency\nin the present system, the diffusion constant _D_ must be\nevaluated at low temperatures for the 2DEG. In what\nfollows, the diffusion constant is expressed in terms of\nquantities measured in the Si/SiGe 2DEG of ref. [5].\nIn a diffusive regime (which is assumed to be the case\nhere), the diffusion constant _D_ is related to the thermal\nconductivity _κ_ via\n\n_D_ = _[κ]_ (32)\n\n_C_ _[,]_\n\nwhere _κ_ is the thermal conductivity in W/K (in two dimensions) and _C_ is the specific heat in J _/_ (K _·_ m [2] ). For\nthe 2DEG, the specific heat is given by [1]\n\n_b_ _[T]_\n_C_ = _[πmk]_ [2] _,_ (33)\n3ℏ [2]\n\nwhere the carrier’s mass is _m_ = 0 _._ 19 _m_ _e_, and _m_ _e_ is the\nmass of the electron.\nThe thermal conductivity is rarely available experimentally. Using the Wiedemann–Franz law, it is possible\nto relate the thermal conductivity to the electric conductivity _σ_ :\n\n7\n\nIt is therefore highly unlikely that a 2DEG bath can satisfy the assumption underlying the calculation of Ahn _et_\n_al_ . [1].\n\nWe can obtain a slightly different estimate in a different 2DEG (AlN/GaN) system where the WiedemannFranz law was verified [11]. This paper measured the\nspecific heat as well as thermal and electrical conductivity of the 2DEG. The thermal conductivity has the form\n_κ_ = 90 _T/_ 275 W/(K m) (where _T_ is temperature) while\nthe specific heat is _C_ = 0 _._ 05 _T_ in J/(kg K). (Note that\nthe units are appropriate for 3D quantities; the paper\n\n[11] measured the thickness of the electron gas for the\nconversion.) The diffusion constant is then _D_ = _κ/ρC_\nwhere _ρ_ is the density of the material (GaN) and is equal\nto 6150 kg/m [3] . The temperature dependences cancel out\nand the diffusion constant is found to be approximately\n10 _[−]_ [3] m [2] /s. This value is slightly smaller than what has\nbeen estimated for the Si/SiGe case but does not change\nthe conclusion.\n\nFinally, the diffusion constants obtained above are significantly larger than those used by Voss and Clarke in\nthe context of metal thin films ( _D ∼_ 2 _·_ 10 _[−]_ [5] m [2] /s).\nHowever, even with such a diffusion constant, the conclusion remains unchanged (the lowest frequency drops\nto 6 MHz).\n\n**V.** **CONCLUSIONS**\n\nWe have considered a quantum dot whose charge noise\nis determined by a fluctuator coupled to a thermal bath\nwith a flu",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 14.403855929048905,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1934,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "d), 950 V (green) and 1000 V (blue). Reprinted from [112],\nCopyright (2023), with permission from Elsevier. Right: RICH1 simulated photon detector\nhit time distribution showing the signal peak (S) and a possible time gate in the front-end\nelectronics. Reproduced from [111]. CC BY 4.0.\n\nmaximise the single photon efficiency. The photon detection chain is illuminated at very\nlow light intensity (single photon regime), and the threshold of the CLARO comparator\nis decremented in unit steps. It is found that the best operational points correspond to\nthreshold settings that are five steps above the pedestal. The distribution of the threshold\nsettings for all the RICH2 channels, converted to absolute charge as determined from DAC\nscans, is compared to the single photon peak distributions of the corresponding MaPMT\nanodes at different HV values in figure 73. Threshold scans, providing the integral pulse\nheight spectrum, are also used to estimate the single photon peak position for each channel,\nallowing to implement the monitoring of gain variations with MaPMT ageing.\n\n**7.5.1** **Time alignment**\n\nThe prompt Cherenkov radiation and focusing mirror optics lead to the nearly simultaneous\ntime-of-arrival to the detection plane of photons from a track in the RICH detector. This\nunique feature allows the application of a time gate at the FE electronics to exclude\nout-of-time background hits from the output data whilst accepting the photon signals\nwithin a narrow time interval. Figure 73 shows the distribution of photon hit times in\nRICH1 from a simulation. The signal peak spans approximately 2 ns due to the spread\nof primary interactions in LHCb, which dictates the minimal width for the FE time\ngate. In practice, the combination of CLARO time walk, channel-to-channel variations,\nMaPMT transit time spread and digital sampling rate at the FE electronics require a time\ngate whose width must be set to 3.125 ns or doubled to 6.250 ns if needed. In addition\nto the background from the beam interactions in figure 73, the time gate can exclude\nsensor noise, such as MaPMT cross-talk and afterpulses [111]. The achieved background\nreduction significantly improves the PID performance using the RICH pattern recognition\nalgorithms.\nGate generation and the time alignment procedure are implemented in the PDMDB\n\n97\n\nFPGA firmware. The time gating logic exploits the deserialiser embedded in every inputoutput logic block of the FPGA which can operate at gigabit rates. The deserialiser\nsa",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 14.364639884093389,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 116,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6921,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "ce of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been several theoretical attempts to answer these questions.\nOne of the first popular solution was to introduce superpartners to the SM\nparticles [1, 2]: each boson would have a fermion partner, and each fermion\nwould have a boson partner. This model is called Supersymmetry (SUSY)\nand would answer all the questions above. The partner of the quarks and\ngluons are the squarks and gluinos, while the partner of the leptons are the\nsleptons. For example, the SUSY partner of the top quark is the stop squark,\nand the partner of the tau lepton is the stau slepton. Further theories that\nanswer part of the questions above have been proposed, too. Among them\nthe solution is provided by introducing additional heavy Z _[′]_ bosons, or a 4th\ngeneration of fermions ( _τ_ _[′]_ ), or several other Higgs bosons.\nThese questions and theories have remained open for decades, since no\nsignificant experimental evidence for physics beyond the Standard Model\n(BSM) has been observed to date. The collider searches at the Large Hadron\nCollider (LHC) and other laboratories have been looking for signatures in\nwhich the BSM particles decay promptly. However, there are several mechanisms that can lead to longer lifetime, even in the SM. With this we have a\n\n2\n\nnew direction to explore BSM physics and to look for long-lived particles [3].\nIn this work, we search for ”stable” particles–meaning not necessarily fundamentally stable, but stable on the detector level, where they traverse the\ndetector without decaying. Figure 1 shows a flow chart to categorize how\nthese particles interact with different forces and what models would predict\ntheir existence. If they are electrically charged, these particles are often\nreferred to as Heavy Stable Charged Particles (HSCPs) [4, 5, 6, 7].\n\nFigure 1: Flow chart for possible new directions in searches.\n\nIf the HSCPs have color charge that means they will hadronize. A BSM\nexample for this are the R-hadrons from split-SUSY [8, 9, 10, 11]. R-hadrons\nare a bound state of SM and SUSY particles. Some of these form negative, neutral, positive, or even double positive hadrons. The R-hadron’s\ninteractions with matter is described in the model in Ref. [12, 13]. If the\nHSCPs are colorless, one can think of several theories tha",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 13.988819567109044,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1995,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "the Run 1 and Run 2 code in order to make them better able to efficiently use modern\nmulticore CPU architectures. An example of such optimised algorithms is described in\ndetail in ref. [191], while their performance is documented in section 13.\n\n**Kalman fit.** While the pattern recognition is used to accurately group detector hits\ninto collections corresponding to individual charged particles, a separate step based on a\nKalman filter (referred to as the _Kalman fit_ ) is required in order to determine the properties\nof charged particle trajectories with maximum accuracy and precision. Several approaches\nexist: a detailed Kalman fit which uses lookup tables to describe the magnetic field and\nmaterial distribution and Runge-Kutta methods to propagate the particle trajectories, an\nintermediate solution where the propagation is performed as in the detailed Kalman fit\n\n151\n\nFigure 111: Shapes used for the upgrade calorimeter reconstruction, referred to as _cross_ (left),\n_2 × 2_ (centre) and _3 × 3_ (right).\n\nbut the interactions with the detector material are parametrised, and a fully parametric\nKalman fit also parametrising the particle propagation through the LHCb magnetic field.\nThe last option is described in more detail in ref. [192]. Despite a significant investment\nof time and effort, a full parallelisation of the detailed Kalman fit has remained difficult.\nHowever, significant gains in speed have been achieved by simplifying the data structures\nused inside the algorithm and reducing the amount of output data to what is strictly\nnecessary for physics analysis. In addition, the software framework is sufficiently flexible\nto allow the use of a mixture of parametric and detailed Kalman processing, depending\non the specific application. While the parametric Kalman fit achieves a performance\nsuitable for nearly all physics applications, the detailed Kalman fit remains necessary for\nuse in the detector alignment procedure, as well as for certain analyses which require the\nultimate precision on track states. The detailed Kalman fit as well as the solution with\nthe parametrised material description will be therefore both available in HLT2 and in\noffline data processing and will be used depending on the specific needs.\n\n**Calorimeter reconstruction.** Although the LHCb calorimeter system comprises a\nhadronic and an electromagnetic calorimeter, during Run 1-2 the HCAL was used almost\nexclusively for the first level hardware trigger which has now been removed for",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 13.952099662250554,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 177,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 1.4014557502232492,
+    "generation_latency_s": 1.2991949915885925e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.4014557502232492,
+    "generation_latency_s": 1.2991949915885925e-07
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "mul012",
+    "query_type": "multi_hop",
+    "query": "How can agentic routing improve multi-hop detector questions?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "agentic",
+      "routing"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can agentic routing improve multi-hop detector questions?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2111,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2663237__2305.17153__Novel_machine_learning_and_differentiable_programming_techniques_applied_to_the_VIP-2_unde.md",
+        "title": "2024__recid_2663237__2305.17153__Novel_machine_learning_and_differentiable_programming_techniques_applied_to_the_VIP-2_unde",
+        "text": "The gradient descent has\nshown substantial improvements of the spectroscopic properties of the detectors, both\nin terms of the compatibility of the line with its two components, and by bringing for\nthe first time in VIP-2 the SDD’s FWHM at 8 keV below 180 eV. Last, but not least,\nthe method has shown to correct for small miscalibrations. This novel approach has\nthe potential to improve the physics capabilities with enhanced calibration. For VIP-2,\nthis translates to several advantages: a smaller energy scale uncertainty, better control\nover the background in the ROI, and consequently a higher discovery significance for\nPEP violating signals. We plan to employ this method on the entire VIP-2 dataset.\nFurthermore, we plan to explore the advantages it yields in experiments which strongly\nrely on the precise determination of spectroscopic lines in the X-ray domain, such as\nthe SIDDHARTA-2 experiment [22] at the DAΦNE collider.\n\n**Acknowledgements**\n\nWe thank: the INFN Institute, for supporting the research presented in this article\nand, in particular, the Gran Sasso underground laboratory of INFN, INFN-LNGS, and\nits Director, Ezio Previtali, and the LNGS staff. We thank C. Capoccia from LNF\nand H. Schneider, L. Stohwasser, and D. St¨uckler from Stefan-Meyer-Institut for their\nfundamental contribution in designing and building the VIP-2 setup.\n\n**Funding**\n\nThis research was funded by the National Institute for Nuclear Physics (INFN, Italy).\nThis research was funded in whole, or in part, by the Austrian Science Fund (FWF)\ngrants P25529-N20, project P 30635-N36, and W1252-N27 (doctoral college particles\nand interactions). This publication was also made possible through the support of\nGrant 62099 from the John Templeton Foundation. The opinions expressed in this\npublication are those of the authors and do not necessarily reflect the views of the John\nTempleton Foundation. We also thank the support of the H2020 FET project TEQ\nwith grant 766900. We gratefully acknowledge support from Centro Ricerche Enrico\nFermi (“Problemi aperti nella meccanica quantistica” project), and from Foundational\nQuestions Institute (Grants No. FQXi-RFP-CPW-2008 and FQXi-MGA-2102).\n\n**Bibliography**\n\n[1] Suddhasattwa Brahma, Michele Ronco, Giovanni Amelino-Camelia, and Antonino Marciano.\nLinking loop quantum gravity quantization ambiguities with phenomenology. _Physical Review_\n\n12\n\n_D_, 95(4):044005, 2017.\n\n[2] Michele Arzano and Jerzy Kowalski-Glikman. Deformed discrete symmetries. _Ph",
+        "score": -4.430974190375385,
+        "dense_score": null,
+        "bm25_score": 9.296037039344059,
+        "graph_score": 0.0,
+        "rerank_score": -6.824801921844482,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 3328,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector.md",
+        "title": "2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector",
+        "text": "roperties also suggest, that an e [+] e _[−]_ Higgs factory could be a good place for the LLP searches due to its\nclean experimental environment and trigger-less operation.\nThe International Large Detector (ILD) [2] is a multipurpose detector concept for an experiment at the\nHiggs factory, originally proposed for the International Linear Collider (ILC) [3]. Its design is optimised\nfor the particle-flow reconstruction and provides almost 4 _π_ angular coverage. The core of the ILD\ntracking systems is a time projection chamber (TPC) which allows for almost continuous tracking and\ndE/dx measurement for particle identification. As most of LLP signatures can be categorised as tracks\nthat do not point to, or do not originate from the interaction point (IP), ILD with its TPC provides very\ninteresting prospects for these measurements.\nAn experiment-focused approach is taken here. Benchmark scenarios are selected based on their\nexperimental/kinematic properties, and not as preferred points in a model parameter space. The signature\nof two tracks coming from a displaced vertex is studied as a generic case of an LLP search. For generality,\nno other assumptions about the final state are made.\n\n### **2 Analysis framework**\n\nTwo opposite extreme scenarios are considered as the benchmarks. The more challenging case involves the production of heavy scalars with small-boost and non-pointing, low- _p_ _T_ track pair in the final\nstate. This is provided by the Inert Doublet Model (IDM) [4], which introduces four additional scalars,\nincluding two neutral ones (one of them, H, being a stable dark matter candidate). The neutral scalars, A\nand H, can be produced in e [+] e _[−]_ _→_ AH process, with A _→_ Z [(] _[∗]_ [)] H as the main decay channel. If the mass\nsplitting, ∆ _m_ _AH_ = _m_ _A_ _−_ _m_ _H_, between the two scalars is sufficiently small, A could be long-lived. This\nalso makes the Z boson highly virtual, so for high masses of the scalars (small boost), the observed decay\nproducts will be soft and will not point to the IP. Four IDM benchmarks are selected for the analysis, with\n∆ _m_ _AH_ = 1 _,_ 2 _,_ 3 _,_ 5 GeV, decay length _cτ_ of A fixed to 1 m, and its mass _m_ _A_ = 155 GeV. Only Z _[∗]_ decays to\nmuons are considered.\n\nThe second type of scenario under study is a production of a very light pseudoscalar, the decay\nproducts of which have a very high boost and are almost colinear. This is the case for an axion-like\nparticle (ALP), which in many scenarios has a m",
+        "score": -4.7675239270733245,
+        "dense_score": 0.35572826862335205,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.343337059020996,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3617,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond.md",
+        "title": "2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond",
+        "text": "ssio\n\n**Figure 1:** Left: Schematic view of ALICE 3 state-pf-the-art detector concept. Right: Improvement in\npointing resolution and expected effective statistics in heavy-ion collisions from ALICE 1 to ALICE 3.\n\n**1.** **Introduction**\n\nALICE (A Large Ion Collider Experiment) is a general-purpose experiment at the CERN Large\n\nHadron Collider (LHC) optimized to study the physics of ultrarelativistic heavy-ion collisions. The\n\nmain goal of the ALICE Collaboration is to study the microscopic dynamics of the strongly\n\ninteracting matter produced in such collisions and, in particular, the properties of the quark-gluon\n\nplasma (QGP), a state of matter where quarks and gluons are deconfined. The LHC Runs 1 and 2\n\nheavy-ion campaigns have already led to crucial advances in our understanding of the properties\n\nof QCD phase diagram and of the QGP [1]. With the current ALICE 2 and the future ALICE\n\n2.1 upgrades, LHC Runs 3 and 4 will allow further systematic measurements of fundamental\n\nproperties for our understanding of the QGP [2]. However, despite the rich planned physics\n\nprogram, fundamental questions will remain open and addressing such questions requires substantial\n\nimprovements in terms of detector performance and rate capabilities, calling for a next-generation\n\nheavy-ion experiment, the so-called ALICE 3 upgrade planned for LHC Run 5 and beyond [3].\n\n**2.** **ALICE 3 physics goals**\n\nThe ALICE 3 primary physics goal is to achieve a deep understanding of the underlying mech\nanisms affecting the different stages of heavy-ion collisions, from the early-stage medium formation\n\nto the heavy-flavour diffusion, thermalization and hadronization in the QGP. The main new studies\n\nin the QGP sector focus on low transverse momentum ( _𝑝_ _𝑇_ ) heavy-flavour production, including\n\nbeauty hadrons, multi-charm baryons and charm-charm correlations, as well as on measurements of\n\nnet-quantum number fluctuations to constrain the susceptibilities of the QGP and on precise mea\nsurements of dilepton emission to probe the time-evolution of the QGP, the early-stage temperature\n\nand the mechanism of chiral-symmetry restoration. Besides QGP studies, ALICE 3 can uniquely\n\ncontribute to hadronic physics, with femtoscopic studies of the interaction potentials between charm\n\nmesons and searches for nuclei with charm, and to fundamental physics, with precision experimntal\n\ntests of Low’s theorem for ultra-soft photon emission and searches for axion-like particles (ALP)\n\nin ultra-peri",
+        "score": -4.819641849077665,
+        "dense_score": null,
+        "bm25_score": 10.068943771810423,
+        "graph_score": 0.0,
+        "rerank_score": -7.423117637634277,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7289,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2913434__2504.13098__Irradiation_studies_of_the_Resistive_AC-coupled_Silicon_Detector_RSDAC-LGAD.md",
+        "title": "2025__recid_2913434__2504.13098__Irradiation_studies_of_the_Resistive_AC-coupled_Silicon_Detector_RSDAC-LGAD",
+        "text": "nts in Low Gain Avalanche\nDiodes (LGADs) has culminated in 1.3 × 1.3 mm [2] sensors capable of < 50 ps time resolutions in the high radiation environments expected at the HL-LHC [1, 2, 3]. These sensors are now\nbeing used in the phase-2 upgrade projects at CMS and ATLAS\nfor timing layers. The evolution of LGADs from simple R&D\nprojects to full scale production detectors has motivated an entirely new generation of detectors capable of high spatial and\ntemporal resolution.\nAs with timing layers, constructing a tracking layer with such\nsensors can further improve pile-up discrimination in high rate\nenvironments (e.g. HL-LHC, FCC-hh) or provide time-of-flight\ninformation used for particle identification (e.g. FCC-ee). Additionally, constructing a full tracking system with multiple layers of such sensors allows for the possibility of ’4D’ tracking.\n’4D’ tracking would allow for the inclusion of timing information while tracks are created, thus greatly reducing track finding\ncombinatorics.\n\nSeveral novel ideas for devices to enable ’4D’ tracking are\nunder study, one such idea is the Resistive AC-coupled Silicon\nDetector (RSD) [4, 5, 6]. The RSD sensors utilize a gain implant similar to LGADs, but the segmentation into ”pixels” is\n\n∗ corresponding author\n_email:_ brendan.regnery@kit.edu\n\nprovided by AC-coupled electrodes, to enable high spatial resolution of hit via charge sharing. This allows for precise position resolution providing a 100% fill factor and requiring fewer\nreadout channels than traditional pixel sensors. The key to controlling the charge sharing is a precisely tuned n+ resistive layer\nas shown in figure 1. This differs from a Standard LGAD which\nuses a much more conductive, highly doped, n++ layer [6, 4].\n\nFigure 1: An RSD utilizes charge sharing on AC pads to provide high spatial\nresolution. A key difference between the RSD and a standard LGAD is the\nn+ resistive layer which is significantly less doped than the n++ layer in a\nstandard LGAD in order to provide the high resistivity needed to allow for\ncharge sharing.\n\n_Preprint submitted to VCI Proceedings in NIM A_ _April 18, 2025_\n\nIn several applications, such as adding RSD in a future HLLHC tracker or tracking for a future collider, the RSD sensors\nwill need to be able to operate in high fluence environments.\nThe second RSD production at FBK [7] focused on preparing\nfunctional RSD sensors by optimizing readout pad shapes and\nimproving the n+ resistive layer. However, these RSD sensors\nhave not",
+        "score": -4.870934886643381,
+        "dense_score": 0.32617342472076416,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.501904487609863,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6610,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835439__2409.19030__Initial_performance_assessment_and_calibration_techniques_of_the_production_monolithic_sil.md",
+        "title": "2025__recid_2835439__2409.19030__Initial_performance_assessment_and_calibration_techniques_of_the_production_monolithic_sil",
+        "text": "ome unresolved questions in physics, including the nature of dark matter, the origin of\n\nneutrino masses, and the observed matter-antimatter asymmetry in the universe [2]. If such particles\n\nexist, they might be generated by proton-proton collisions at the ATLAS detector’s interaction point\n\nwithin the LHC. Capable of traveling significant distances through rock and concrete without\n\ninteracting, these particles are expected to decay into detectable particles within FASER’s decay\n\nvolume, as depicted in Figure 1. FASER is situated 480 meters from the ATLAS experiment’s\n\nproton collision point at the LHC, aligned with the beam collision axis, and it has been taking\n\ndata during LHC Run 3. An upgrade of the FASER detector is foreseen at the end of 2024. The\n\n**Figure 1** . Left side: The current layout of FASER. This illustration shows the detector signature of a dark\nphoton ( _𝐴_ [′] ) decaying into an electron-positron pair within FASER’s decay volume, with the _𝐴_ [′] entering the\ndetector from the left. Right side: The upgraded layout of FASER, shows the same signal for the current\nlayout of the detector, but also the new preshower detector signature of a Long-Lived Particle ( _𝛼_ ) decaying\ninto a photon-photon pair inside FASER’s decay volume, with the _𝛼_ also entering the detector from the left\n\n[1].\n\ncurrent FASER preshower, composed of 2 radiation lengths of tungsten absorber and scintillating\n\n– 1 –\n\ndetectors, lacks sufficient granularity to discriminate particles on the beam’s transverse plane. To\n\novercome this limitation, a new high-resolution tungsten-silicon preshower will be installed in\n\nfront of the calorimeter to enhance the existing setup [1]. This enhanced detector will enable the\n\ndifferentiation of closely spaced photons with energies ranging from 100 GeV to several TeV, such\n\nas those associated with ALP signatures (Figure 1), from the neutral particle background. The\n\nupgraded preshower configuration will consist of six layers of tungsten absorber, with planes of\n\nmonolithic silicon pixel detectors in between, as illustrated in Figure 2. The tungsten layers, totaling\n\n6 radiation lengths in thickness, will facilitate efficient photon conversion and electromagnetic\n\nshower development, allowing the preshower detector to effectively sample and reconstruct two\n\nelectromagnetic showers and accurately determine their cores. The first two tungsten layers will be\n\nthicker to allow early photon conversion. The detector planes will consist",
+        "score": -5.088683873006742,
+        "dense_score": null,
+        "bm25_score": 8.143034139855637,
+        "graph_score": 0.0,
+        "rerank_score": -7.83612060546875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3622,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond.md",
+        "title": "2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond",
+        "text": "tor material budget in order to reduce the combinatorial background\nfrom _𝛾_ conversion or _𝜋_ [0] Dalitz decays and the excellent pointing resolution to efficiently suppress\n\nthe dominant background from heavy-flavour hadron decays beyond current limits.\n\n5\n\n_ALICE 3: a next-generation heavy-ion detector for LHC Run 5 and beyond_ Nicola Nicassio\n\n**4.2 Heavy-quark correlations**\n\nThe angular correlation of heavy-flavour hadron pairs is a powerful probe of QGP scattering,\n\nsince it is sensitive to the energy loss mechanisms and the degree of heavy-quark thermalization\nin the QGP, especially at low _𝑝_ _𝑇_ . Fig. 4 shows the ALICE 3 projection for _𝐷_ [0] [ ¯] _𝐷_ [0] correlation\nfor minimum-bias Pb-Pb collisions at ~~[√]~~ ~~_𝑠_~~ _𝑁𝑁_ = 5 _._ 52 TeV after six years of data taking. This\nmeasurement will be out of reach in LHC Runs 3 and 4, since it requires very high _𝐷_ [0] purity and\n\nreconstruction efficiency, as well as a large _𝜂_ coverage, and it will be only possible with ALICE 3.\n\n**4.3 Multi-charm baryons**\n\nMulti-charm baryon yields are powerful probes of the hadron formation mechanisms since they\n\nare expected to be produced by combination of uncorrelated charm quarks produced in heavy-ion\n\ncollisions. The ALICE 3 specifications will enable systematic measurements of multi-charm states\ncurrencly inaccessible, such as Ξ [++] _𝑐𝑐_ [→] [Ξ] [+] _𝑐_ _[𝜋]_ [+] [ with the subsequent decay][ Ξ] [+] _𝑐_ [→] [Ξ] [−] _[𝜋]_ [+] _[𝜋]_ [+] [. With the]\nfirst tracking layer at a distance of 5 mm from the beam axis, strange baryons like Ξ [−] can be directly\n\ntracked before they decay, thus improving the capability to identify weak decays from primary and\n\nsecondary sources. The resulting expected significance as a function of _𝑝_ _𝑇_ is shown in Fig. 4.\n\n**5.** **Conclusions**\n\nALICE 3 is a next-generation detector planned to replace the present ALICE apparatus for LHC\n\nRun 5 and beyond. Its main goal is to unravel the microscopic dynamics of the QGP produced in\n\nheavy-ion collisions by exploiting the full potential of the LHC as a heavy-ion collider. Apart from\n\nQGP physics, ALICE 3 also addresses fundamental open questions in QCD physics and beyond. An\n\ninnovative detector concept is needed to to ensure high-precision measurements of heavy-flavour\n\nhadrons and electromagnetic probes inaccessible in Runs 3 and 4, demanding for several novel\n\nR&Ds with broad impact also on future high-energy and nuclear physics experiments.\n\n**References**\n\n[1] ALICE Collabora",
+        "score": -5.099154982687552,
+        "dense_score": null,
+        "bm25_score": 7.660626240864844,
+        "graph_score": 0.0,
+        "rerank_score": -7.851669788360596,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 1881,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "ility to the pigtail for routing. The rightmost picture\nshows an example of bending when installed. Each subcable contains three copper layers\nof 35 µm thickness each, sandwiched between polyimide films and adhesive (adding up to\nabout 0.25 µm of polyimide and 75 µm of adhesive per subcable). The inner layer is used\nfor the differential pair signals and the outer layers for power lines. This provides good\nsignal integrity and low resistance for the power traces. The pigtails cross the detector\nbox walls through dedicated holes, which are sealed with foam to provide sufficient gas\nand light tightness.\n\n**5.6.3** **Peripheral electronics**\n\nThe periphery electronics processing interface (PEPI) units are responsible for readout\nand control of the detector. They connect to the staves via the pigtails. The full PEPI\nsystem comprises 24 backplanes, 24 pigtail power breakout boards (P2B2s), and 248\ndata and control boards (DCBs). The distribution of data, clock, and control signals is\nshown in figure 35. The GBTx, mounted on the DCBs, implements bidirectional links\nbetween the detector and the counting room with components that are radiation hard up\nto 1 MGy [52]. Each PEPI unit houses 3 backplanes that route power, data, and control\nsignals into and out of the detector volume and three P2B2s that route additional power.\nThe backplanes support up to 12 DCBs that connect to the counting room via optical\nlinks.\n\n48\n\nFigure 35: Schematic of LV, HV, data, fast and slow control signal distribution to UT FE\nelectronics.\n\n**5.6.4** **Backplanes and power breakout boards**\n\nThe routing of the backplanes balances the load carried by each DCB and organises the\ndata to minimise resources needed for event reconstruction. A fully utilised backplane\nsupports 6 half-staves read out by 12 DCBs. Due to space constraints in the area around\nthe staves the size of the backplane is limited. Matching the twelve 400-contact pigtail\nconnectors leads to a very high density of traces on the board. The signal routing is\nachieved by a 28-layer board with a PCB aspect ratio of 1:10 which is pushing the limits\nof manufacturability. There are two types of backplanes, referred to as true and mirror,\nwith different layouts to accommodate the geometry of pigtails from the detector. Each\ntype also has three variants: full, partial and depopulated. The full backplane is used for\nthe high-occupancy region of the detector, while the depopulated one is used for the outer\nregion of the detector planes,",
+        "score": -5.2597248347837535,
+        "dense_score": 0.32445839047431946,
+        "bm25_score": 9.495772762564927,
+        "graph_score": 0.0,
+        "rerank_score": -8.10795783996582,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 63,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6627,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835987__2410.00837__Fast_timing_silicon_RD_for_the_future_Electron-Ion_Collider.md",
+        "title": "2025__recid_2835987__2410.00837__Fast_timing_silicon_RD_for_the_future_Electron-Ion_Collider",
+        "text": "## Fast timing silicon R & D for the future Electron-Ion Collider\n\n_Xuan_ Li [1][,][∗], _Eric_ Renner [1], _Ming_ Liu [1], _Walter_ Sondheim [1], _Carlos_ Solans Sanchez [2], _Marcos_\nVazquez Nuñez [3], _Vicente_ Gonzalez [3], and _Yasser_ Corrales Morales [4]\n\n1 Los Alamos National Laboratory, USA\n2 CERN, Switzerland\n3 University of Valencia, Spain\n4 Massachusetts Institute of Technology, USA\n\n**Abstract.** The proposed Electron-Ion Collider (EIC) will utilize highluminosity high-energy electron+proton ( _e_ + _p_ ) and electron+nucleus ( _e_ + _A_ )\ncollisions to solve several fundamental questions including searching for gluon\nsaturation and studying the proton/nuclear structure. Complementary to the ongoing EIC project detector technical prototype carried out by the ePIC collaboration, a Depleted Monolithic Active Pixel Sensor (i.e., MALTA2) based fast\ntiming silicon tracking detector (FMT) has been proposed to provide additional\nhits for track reconstruction in the forward region at the EIC to improve the\noverall track reconstruction quality. The fast timing resolution of the MALTA2\ntechnology will help reject background events at the EIC as well. Progress of\nlatest MALTA2 R&D, the development of a new MALTA2 quad-sensor prototype module and impacts of the proposed FMT in EIC physics studies will be\ndiscussed.\n\n**1 Introduction**\n\nThe future Electron-Ion Collider (EIC) is expected to start construction at Brookhaven National Laboratory in 2025. It will support two interaction points (IP6 and IP8), where the\ndetector located at IP6 is referred to as the EIC project detector and the one at IP8 is named\nas detector II. A series of electron+proton ( _e_ + _p_ ) and electron+nucleus ( _e_ + _A_ ) collisions\n(A=2-238) at the center of mass energies of 20-141 GeV will be operated at the EIC [1]. The\nbunch crossing period at the EIC is around 10.2 ns with a 25 mrad beam crossing angle is\nintroduced to IP6 to reduce impacts from beam backgrounds. The current technical design of\nthe EIC project detector at IP6 led by the ePIC collaboration utilizes the 65 nm Monolithic\nActive Pixel Sensor (MAPS) [2], the Micro Pattern Gaseous Detector (MPGD) [3] and the\nAC-coupled Low Gain Avalanche Diode (AC-LGAD) [4] to form its vertex and tracking subsystem. In addition to ongoing EIC detector development, a Depleted MAPS (i.e., MALTA2\n\n[5]) based Fast MAPS Tracker (FMT) had been proposed as a new subsystem for either the\nePIC detector upgrade or the EIC detector II. The des",
+        "score": -5.297087687830771,
+        "dense_score": null,
+        "bm25_score": 11.454431866907658,
+        "graph_score": 0.0,
+        "rerank_score": -8.158050537109375,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3616,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond.md",
+        "title": "2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond",
+        "text": "## **ALICE 3: a next-generation heavy-ion detector for LHC** **Run 5 and beyond**\n\n**Nicola Nicassio** [∗] **on behalf of the ALICE Collaboration**\n\n_Dipartimento Interateneo di Fisica ‘M. Merlin’ and Sezione INFN,_\n_Via Orabona 4, Bari, Italy_\n\n_E-mail:_ [Nicola.Nicassio@ba.infn.it](mailto:Nicola.Nicassio@ba.infn.it)\n\nThe ALICE Collaboration proposes a completely new apparatus, ALICE 3, for the LHC Runs\n\n5 and 6. The detector consists of a large pixel-based tracking system covering eight units of\n\npseudorapidity, complemented by multiple systems for particle identification, including silicon\n\ntime-of-flight layers, a ring-imaging Cherenkov detector, a muon identification system, an electro\nmagnetic calorimeter and a forward conversion tracker. Track pointing resolution of better than\n\n10 _𝜇_ m for _𝑝_ _𝑇_ >200 MeV/ _𝑐_ can be achieved by placing the vertex detector on a retractable structure\n\ninside the beam pipe. ALICE 3 will, on the one hand, enable novel studies of the quark-gluon\n\nplasma (QGP) and, on the other hand, open up important physics opportunities in other areas\n\nof QCD and beyond. The main new studies in the QGP sector focus on low- _𝑝_ _𝑇_ heavy-flavour\n\nproduction, including beauty hadrons, multi-charm baryons and charm-charm correlations, as well\n\nas on precise multi-differential measurements of dielectron emission to probe the mechanism of\n\nchiral-symmetry restoration and the time-evolution of the QGP temperature. Besides QGP studies,\n\nALICE 3 can uniquely contribute to hadronic physics, with femtoscopic studies of the interaction\n\npotentials between charm mesons and searches for nuclei with charm, and to fundamental physics,\n\nwith tests of the Low theorem for ultra-soft photon emission. This paper will cover the detector\n\nconcept, the status of novel sensor R&D and the resulting physics performance.\n\n_The European Physical Society Conference on High Energy Physics (EPS-HEP2023)_\n_21-25 August 2023_\n_Hamburg, Germany_\n\n∗ Speaker\n\n© Copyright owned by the author(s) under the terms of the Creative Commons\nAttribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). https://pos.sissa.it/\n\n_ALICE 3: a next-generation heavy-ion detector for LHC Run 5 and beyond_ Nicola Nicassio\n\n**Figure 1:** Left: Schematic view of ALICE 3 state-pf-the-art detector concept. Right: Improvement in\npointing resolution and expected effective statistics in heavy-ion collisions from ALICE 1 to ALICE 3.\n\n**1.** **Introduction**\n\nALICE (A Lar",
+        "score": -5.686431293800228,
+        "dense_score": 0.38821351528167725,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.757183074951172,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6622,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance.md",
+        "title": "2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance",
+        "text": "rm of the\n\ndetector before the installation.\n\nsplicer connects, with a glue-less connection, the WLS fiber to a clear fiber of 2 m length to reduce\n\nthe light attenuation from the sensor to the light detector. This design ensures that both the tiles and\n\nthe external fibers can be independently and quickly replaced in case of failure. The nT2 is then\n\nassembled in quarters, two for each side of the interaction point (called _arm_ ), designed to be closed\n\naround the beam pipe (figure 1, center and right). The size of one arm of the detector, after being\n\nclosed around the beam pipe, is ∼ 25 cm in the direction along the beam axis, with an outer diameter\n\nof ∼ 50 cm, including the external support structure. Each quarter is made up of 4 detection layers,\n\neach one formed by 4 tiles arranged on a semi-circle with a partial overlap. A set of 4 aligned tiles\n\nis called a _wedge_ . Hence, each particle will traverse at least 4 aligned tiles in the wedge, providing\n\na good level of redundancy for particle detection and noise suppression. With such a design, the\n\ninstallation of the inner section of the detector on pre-installed rails can be done in few minutes\n\nand, after routing the fiber bundles through the available slot, the shields of CMS can be closed\n\nfor a much safer environment to work in, leaving only passive components inside (figure 2). The\n\nfibers are read out with an S13361-6050 16-channels SiPM matrix from Hamamatsu, one for each\n\nquarter, located outside the shields in the outer section of the detector together with the rest of the\n\nelectronics. The MPPC bias is generated by temperature-compensated voltage converters, one for\n\neach matrix, controlled through a serial interface. To digitize the signal the detector relies on a\n\nfast discriminator, the NINO chip [8], a differential amplifier and fixed threshold discriminator. An\n\nadditional feature of the chip is that the digital output signal has a Time Duration (TD) that depends\n\n3\n\n_The TOTEM nT2 detector: architecture, operation and performance_ E. Bossini\n\nshielding\n\nnT2\n\nOptical\nfibers\n\nNear-beam\n\nelectronics\n\n**Figure 2:** On the left, a drawing of the detector integrated in CMS. The beam pipe is perpendicular to the\npicture, in the center of the nT2 detector. On the center and right, two pictures taken during the installation\ntraining with a mock-up.\n\non the input charge Q, with higher charges generating longer TD.\n\nFor the read-out and control electronics, we benefit from the fruitful colla",
+        "score": -5.729055656789269,
+        "dense_score": 0.3145983815193176,
+        "bm25_score": 7.742681843714221,
+        "graph_score": 0.0,
+        "rerank_score": -8.828201293945312,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.829171824268997,
+    "generation_latency_s": 3.3993273973464966e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.829171824268997,
+    "generation_latency_s": 3.3993273973464966e-07
+  }
+}

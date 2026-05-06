@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "com012",
+    "query_type": "comparative",
+    "query": "Compare reranking and graph expansion.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Compare",
+      "reranking",
+      "and",
+      "graph"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare reranking and graph expansion.",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 54,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "the corresponding bits in the status vector are set\nto 1. SP comparisons are not all performed in a single clock\ncycle. On each clock, the load block extracts two subsets of\n16 SPs each from the buffer (Fig. 13). For each SP in the two\nsubsets it also computes the set of coordinates to be matched\nby the neighbours by one-unit additions and subtractions of the\ncoordinates of the SP row and column. The two SP subsets,\ntogether with the coordinates of the neighbours, are passed to\nthe flag block that performs the 16 _×_ 16 comparisons on the two\nsubsets. For each SP of the first subset, the flag block checks\nif the SP row is equal to one of the rows of the SPs in the\nsecond subset or to the row above or below; the same check is\nperformed on columns. If both the row and the column checks\nyield a positive result, the two SPs are flagged as neighbours,\nand the corresponding bits in the status vector are set to 1.\nOn each clock cycle, the load block selects a different pair\nof SP subsets from the buffer sending them to the flag block,\nuntil all possible combinations of 16-SP subsets have been\nchecked. The described architecture allows reusing the same\nlogic resources while updating the SP subsets to be flagged\nat each clock cycle. To perform the comparisons between _n_\n16-SP blocks, _n_ ( _n_ + 1) _/_ 2 clock cycles are needed.\nThe number of parallel comparisons performed for every\nclock cycle is the result of a trade-off between resource usage\nand throughput, and is based on the constraints of its use\nwithin the LHCb experiment.\nAs soon as all comparisons have been completed, the\ncontents of the flagging registers and the status vector are\ncopied to the write block, thus decoupling the flag and write\nprocesses. The write block is responsible for adding the\nisolation flag to the SP words and for sending flagged data\nto the next component, the switch. The data exchange within\nthe read-buffer-load-flag-write pipeline is regulated by backpressure: if a component cannot accept the data of an event\nbecause it is still processing the previous event, the control\nunit keeps the previous component on hold.\nThe decoder block, including flagging and bypass, uses 7%\n\nFig. 14. Block diagram of a 4 to 4 switching unit.\n\nof the logic and 1% of the M20K memories available in an\nArria 10 FPGA.\n\n_F. Switch block_\n\nThe cluster processing chain receives SPs from both sensors\nof a VELO half-module. The switch, placed after the decoder,\narranges SPs by sensor and by isolation flag, f",
+        "score": -5.198885554978342,
+        "dense_score": 0.29849404096603394,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.006443977355957,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6329,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes.md",
+        "title": "2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes",
+        "text": "P (Algo-_\n_rithm 2) realizes an exponentially weighted average of past_\n_horizontal message updates, specifically expressed as_\n\nloops, or global communication, thus not introducing any\nsignificant overhead. Therefore, the overall time complexity\nof the proposed algorithms remains _O_ ( _jτN_ ), where _j_ is the\naverage degree of the Tanner graph, and _τ_ is the number of\niterations.\n\nIn terms of space complexity, traditional BP requires storing messages and probability values, resulting in _O_ ( _N_ ) space\nrequirements. Our algorithms only add extra storage space\nto accumulate gradients or maintain exponential weighted\naverages which is proportional to the number of variable\nnodes and does not change the overall space complexity.\nThus, our improved algorithms maintain the same efficiency\nin both time and space as traditional BP, ensuring scalability\nand feasibility for practical implementation.\n\n**IV. SIMULATION RESULTS**\n\nIn all simulations, the criterion for successful decoding is that\nthe error estimate satisfies _E_ [ˆ] _∈_ _ES_, rather than _E_ [ˆ] = _E_\nas in classical information. All cases not meeting the above\ncondition are referred to as _logical errors_ in this article.\nHerein, a _detected error_ refers to _EE_ [ˆ] being anti-commutative\nwith any one stabilizer _EE_ ˆ commutes with all stabilizers, i.e., _S ∈S_ ; an _undetected error_ ˆ _EE ∈_ _N_ implies( _S_ ) _\\S_,\nwhere the result of error correction is a logical operator. Each\ndata point on the experimental curves represents the mean of\nat least 10 [4] simulations.\n\nWithout further specification, our simulations employ a\ndepolarizing channel, where each qubit has an equal probability _p/_ 3 of experiencing Pauli _X_, _Y_, or _Z_ errors, and a\nprobability of 1 _−_ _p_ of no error occurring. Additionally, for\nease of comparison, we adopt the simple noise model which\ndoes not consider measurement errors or error propagation in\nquantum circuits.\n\n_**A. BREAKING THE TRAPPING SETS**_\n\nWe first compare the performance of improved BP on the\ntrapping set shown in Fig. 2. In this example, qubit 1 and\nqubit 2 experience X errors, resulting in an error syndrome\nof [1 _,_ 0 _,_ 1 _,_ 0]. Fig. 3 shows the comparison between the\ntraditional LLR-BP 4 and AdaGrad-BP in Section III-A under\nparallel and serial scheduling, with the maximum iteration\nset to 50 and the _a priori_ probabilities set to 0.01. The hard\ndecision result of the traditional BP oscillates continuously\nbetween all _X_ and all _I_, where",
+        "score": -5.251729220728721,
+        "dense_score": 0.3126220107078552,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.088268280029297,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4481,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr.md",
+        "title": "2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr",
+        "text": "qubit p_ _log_ defined below is then plotted and\nused to compare the performance of various codes [7]:\n\n_p_ _log_ = 1 _−_ (1 _−_ _P_ _L_ ( _k, d_ )) [1] _[/kd]_ _._ (7)\n\nHere, _P_ _L_ ( _k, d_ ) is the probability that a logical error happens on at least one of the _k_ logical qubits of an [ _n, k, d_ ]\ncode running for _d_ rounds of stabiliser cycles.\n\n**A.** **Hypergraph product code with a repetition**\n**code**\n\nAs explained in Section II C, one class of codes that is\nparticularly suitable for our architecture are the hypergraph product (HGP) codes constructed with the repetition code as one of the seed codes. Indeed, let us\nsuppose that shuttling is performed in the vertical direction, and that a HGP code is built from a classical\nLDPC code placed in the direction of shuttling, and a\nrepetition code placed in the orthogonal direction. Let\nus first assume that both codes have distance _d_ . It follows that horizontal interactions have length at most 1 in\nthe 2D grid (length of the repetition code’s interactions),\nwhich translates into length _d_ in the linearised 2 _×_ N architecture. Therefore, any ancilla qubit has to interact\nwith data qubits that are at most _d_ increments away, and\ncompared to the surface code, the shuttling distance is\nnot increased. Rather, the only difference with the latter\nis that the data qubit row has to stop more often, as stabilisers may have higher weights, but also as it may not\nbe possible to synchronise the interactions as much as for\nthe surface code (adopting the framework of Section II,\nthe code’s check matrix has more non-zero diagonals).\nTherefore, implementing such HGP code comes at the\ncost of increased idling noise (but not increased shuttling\nnoise). This additional noise can be compensated for if\na _good_ classical code is chosen for the product with the\nrepetition code, as a higher-rate quantum code will be\ngenerated, thereby reducing the qubit overhead.\nIn the following, we study the example of a [234,3,8]\nHGP code. The code is obtained by taking the product of\na classical [17,3,8] LDPC code _H_ 1 (generated randomly\nuntil good parameters were obtained, see Appendix C)\nand a distance-8 repetition code _H_ 2 . To limit the number\nof two-qubit gates, which are expected to be the leading\nsource of noise, we generate _H_ 1 by enforcing two 1’s per\nrow on average, thereby guaranteeing that the stabilisers\nof the quantum code are weight-four on average. This\ncode is more compact than the surface code as it encode",
+        "score": -5.566692801989042,
+        "dense_score": 0.3050273656845093,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.572426795959473,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 32,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5090,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2784488__2405.04763__Room-temperature_photonic_quantum_computing_in_integrated_silicon_photonics_with_germanium.md",
+        "title": "2024__recid_2784488__2405.04763__Room-temperature_photonic_quantum_computing_in_integrated_silicon_photonics_with_germanium",
+        "text": "DC_ ~ _T_ _g_ 1 1 − _NR_ _DC_ _T_ _G_  1 − _SPDSPD_ \n\n1\n~ 1 − _NR_ _T_\n\n, **(6)**\n\n_F_ = _P_ _success_ ~ 1 − _NR_ _DC_ _T_\n_P_ _NR_ _DC_ _T_ _g_ 1\n\n_P_ _successclick_ _NR_ _DC_ ~ _T_ _g_ 1 1 − _NR_ _DC_ _T_ _G_   _SPDSPD_\n\n_DC_ _g_\n\n1\n\ngiven a good _η_ _SPD_ and negligible _NR_ _DC_ _T_ _G_ . Note that Eq. (6) is identical to Eq. (4). In the\nfollowing, we shall apply these figures of merit to compare the performance between GeSi\nSPAD and SNSPD for PQC.\n\n_4.3 Comparison between GeSi SPAD and SNSPD for PQC_\n\nThe following parameter values are used for comparing GeSi SPAD at 300 K and SNSPD at 4\nK. For the case of GeSi SPAD at 300 K, SPDE is assumed to be 95 % and DCR is assumed to\nbe 1.6 MHz based on the above simulations and calculations, considering 100 % avalanche\ntrigger probability at 2 V excess bias. For the case of SNSPD at 4 K, SPDE is assumed to be\n91 % and DCR is assumed to be 5886 Hz based on Ref. 12. In both cases _T_ _G_ is assumed to be\n1 ns, which can be easily generated by high-speed electronics and larger than the TJs of GeSi\nSPAD at 300 K and SNSPD at 4 K that are usually between tens to hundreds of picoseconds.\n\nFor the scheme of photon-based PQC, in Fig. 6(a) and 6(b), the success probability and the\nfidelity of photon detection considering 300 K GeSi SPAD are respectively plotted as a function\nof _M_ waveguides and _N_ photons. In Fig. 6(c) and 6(d), the difference in the success probabilities\nand the difference in the fidelities of photon detection considering 300 K GeSi SPAD and 4 K\nSNSPD are respectively plotted as a function of _M_ waveguides and _N_ photons. By inspecting\n6(c) and Fig. 6(d), it is observed that the success probability of 300 K GeSi SPAD is a few\npercents (e.g., 4 % when _N_ =1) higher than that of 4 K SNSPD due to the assumed SPDEs, and\nthe fidelity of 300 K GeSi SPAD is 0.0084 % lower than that of 4 K SNSPD. Note that it is\nexpected that the success probabilities shown in Fig. 6(a) go up when _M_ is much larger than _N_,\ndue to the reduced probability of finding more than one excitation in each waveguide SPD. For\n\nthe scheme of qubit-based PQC, in Fig. 7(a), the success probability and the fidelity of qubit\ndetection considering 300 K GeSi SPAD are respectively plotted as a function of _N_ qubits. In\nFig. 7(b), the difference in the success probabilities and the difference in the fidelities of qubit\ndetection considering 300 K GeSi SPAD and 4 K SNSPD are respectively plotted as a function\nof _N_ qubits.",
+        "score": -6.181959880237848,
+        "dense_score": 0.26076027750968933,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.518291473388672,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5925,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2751895__2401.14683__Generating_Shuttling_Procedures_for_Constrained_Silicon_Quantum_Dot_Array.md",
+        "title": "2025__recid_2751895__2401.14683__Generating_Shuttling_Procedures_for_Constrained_Silicon_Quantum_Dot_Array",
+        "text": "= ( _s_ _i−_ 1 _, l_ _i_ _, s_ _i_ ). The sequence of\nlabels _l_ 1 _, ..., l_ _i_ _, ..., l_ _n_ represents the operation procedure of\nthe array. If _p_ contains the operations of quantum gates and\nmeasurements in the same order as a quantum circuit, _p_ is\n\nFig. 13. Example of directed acyclic graph\n\n_Ord_ . _Ope_ is the set of nodes and _Ord_ is the set of edges.\nA node of the DAG represents an operation. An edge from\nnode _o_ 1 _∈_ _Ope_ to another node _o_ 2 _∈_ _Ope_ is represented as\n( _o_ 1 _, o_ 2 ), and ( _o_ 1 _, o_ 2 ) _∈_ _Ord_ holds. For the target quantum\ncircuit _QC_ = ( _Ope, Ord_ ), the path _p_ = [ _...,_ ( _s_ _i−_ 1 _, l_ _i_ _, s_ _i_ ) _, ..._ ]\nis required to satisfy the following formulae 22 and 23.\n\n_∀o_ 1 _, o_ 2 _∈_ _Ope, ∀l_ _a_ _, l_ _b_ _∈_ _L ·_ ( _o_ 1 _, o_ 2 ) _∈_ _Ord_\n\n_∧o_ 1 _∈_ _l_ _a_ _∧_ _o_ 2 _∈_ _l_ _b_ _⇒_ _a < b_ (22)\n\n_∀l ∈_ _L · o ∈_ _l ⇒_ _o ∈_ _Ope_ (23)\n\nFormula 22 expresses that the order of operations in _p_ is\nconsistent with the order defined by the DAG. Formula 23\nmeans that operations that do not consist of the DAG are not\nincluded in _p_ . When these formulae hold, the transition path\n_p_ is an operation procedure for executing the quantum circuit\n_QC_ .\n\nIV. P ROBLEM S TATEMENT\n\nWhen we can extract a transition path _p_ from _M_ that\nsatisfies all the constraints and requirements discussed in\n\n7\n\nSection III, _p_ corresponds to a procedure to execute a quantum\ncircuit _QC_ with SQDA. Whether _p_ satisfying the constraints\nand requirements can be extracted depends not only on the\nsearch method of _M_ but also on the array topology _A_, the\nstructure of the row-shared control gates represented by _R_, and\ninitial electron position _s_ 0 . Depending on _A_, _R_, and _s_ 0, there\nmay be no _p_ that satisfies the constraints and requirements.\nAn example is shown in Fig. 14. In (a), it is not possible to\nexecute a two-qubit gate on _b_ 0 and _b_ 4 because the array is\noverfilled with electrons relative to the number of quantum\ndots. If we add a third row in the array, as shown in (b),\nwe can execute that quantum gate. Otherwise, if the target\nquantum circuit includes only a two-qubit gate on _b_ 0 and _b_ 4\nbut not a two-qubit gate on _b_ 0 and _b_ 1, then the electrons should\ninitially be placed as in (c). This also allows the two-qubit\ngate on _b_ 0 and _b_ 4 to be executed without adding the third row.\nAs this example shows, certain quantum circuits may not be\nexecutable depending on _A_, _R_, and _s_",
+        "score": -6.226651460246036,
+        "dense_score": 0.24931137263774872,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.586548805236816,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4223,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2755603__2402.02641__Performance_studies_of_a_SiPM-readout_system_with_a_pico-second_timing_chip.md",
+        "title": "2024__recid_2755603__2402.02641__Performance_studies_of_a_SiPM-readout_system_with_a_pico-second_timing_chip",
+        "text": "tionship with _N_ p _._ e _._, exhibiting a linearity of\n\n0.9977, described by the equation:\n\n_ToT_ = _p_ 1 _· N_ p _._ e _._ + _p_ 0 _,_ (6)\n\nwhere _p_ 1 = 20 _._ 28 ns and _p_ 0 = 14 _._ 26 ns, as shown in Fig. 9(b). The corre\n\nsponding residuals are also within 15%.\n\n_Time walk._ In the subplot of Fig. 5, as the _N_ p _._ e _._ increases, the signal’s rise\n\ntime decreases and the slope of the leading edge increases. Consequently,\n\nlarger signals cross the threshold earlier than smaller ones, causing a reduc\n\ntion in the time interval. This effect, known as time walk, can affect the ToT\n\nresponse. To quantify the effect, time walk is defined as the relative differ\n\nence between the threshold crossing time at different signal levels and that\n\nat the maximum signal. The relationship between time walk and the signal\n\nis shown in Fig. 10, indicating a decrease in the time walk function with in\n\ncreasing _N_ p _._ e _._ . Upon comparing the measured performances of ToT and time\n\nwalk, the latter is relatively small, and any negative impacts attributed to\n\ntime walk can be considered negligible. Additionally, no significant difference\n\nin the time walk effect is observed between 10% CFD and 30% CFD.\n\n14\n\n|600|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|~~0~~<br>~~5~~<br>~~10~~<br>~~15~~<br>~~20~~<br>~~25~~<br>~~30~~<br>~~35~~<br>~~40~~<br>0<br>100<br>200<br>300<br>400<br>500<br><br>ToT [ns]<br>Leading : 10% Trailing : 50%<br>y = 352.16 · ln(x + 12.54) −889.67<br>0<br>5<br>10<br>15<br> (100%)|0% Trailing : 50%<br> ln(x + 12.54)8|9.67||||\n|~~0~~<br>~~5~~<br>~~10~~<br>~~15~~<br>~~20~~<br>~~25~~<br>~~30~~<br>~~35~~<br>~~40~~<br>0<br>100<br>200<br>300<br>400<br>500<br><br>ToT [ns]<br>Leading : 10% Trailing : 50%<br>y = 352.16 · ln(x + 12.54) −889.67<br>0<br>5<br>10<br>15<br> (100%)|· −|||||\n|~~0~~<br>~~5~~<br>~~10~~<br>~~15~~<br>~~20~~<br>~~25~~<br>~~30~~<br>~~35~~<br>~~40~~<br>0<br>100<br>200<br>300<br>400<br>500<br><br>ToT [ns]<br>Leading : 10% Trailing : 50%<br>y = 352.16 · ln(x + 12.54) −889.67<br>0<br>5<br>10<br>15<br> (100%)||||||\n|~~0~~<br>~~5~~<br>~~10~~<br>~~15~~<br>~~20~~<br>~~25~~<br>~~30~~<br>~~35~~<br>~~40~~<br>0<br>100<br>200<br>300<br>400<br>500<br><br>ToT [ns]<br>Leading : 10% Trailing : 50%<br>y = 352.16 · ln(x + 12.54) −889.67<br>0<br>5<br>10<br>15<br> (100%)||||||\n|~~0~~<br>~~5~~<br>~~10~~<br>15<br>10<br>5<br><br>Residua|~~15~~<br>~~20~~<br>~~25~~<br>~~30~~<br>~~35~~<br>~~40~~<br>Signal [1000 p. e. ]|~~15~~<br>~~20~~<br>~~25~~<br>~~30~~<",
+        "score": -6.279553442314023,
+        "dense_score": 0.33450353145599365,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.669678688049316,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7453,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2953123__2507.16783__Quantum_teleportation_of_a_silicon_nanophotonic_CNOT_gate.md",
+        "title": "2025__recid_2953123__2507.16783__Quantum_teleportation_of_a_silicon_nanophotonic_CNOT_gate",
+        "text": "Y. Peng, D. Liu, D. Dai, Q.\nHe, A. Laila Muthali, L. K. Oxenløwe, C. Vigliar, S. Paesani, H. Hou, R. Santagati, J. W.\nSilverstone, A. Laing, M. G. Thompson, J. L. O’Brien, Y. Ding, Q. Gong and J. Wang, Verylarge-scale integrated quantum graph photonics, _Nat. Photon._ **17**, 573 (2023).\n\n[9] D. Bluvstein, S. J. Evered, A. A. Geim, S. H. Li, H. Zhou, T. Manovitz, S. Ebadi, M. Cain, M.\nKalinowski, D. Hangleiter, J. P. B. Ataides, N. Maskara, I. Cong, X. Gao, P. S. Rodriguez, T.\nKarolyshyn, G. Semeghini, M. J. Gullans, M. Greiner, V. Vuletić and M. D. Lukin, Logical\nquantum processor based on reconfigurable atom arrays, _Nature_ **624**, https://doi.org/10.1038/\ns41586-023-06927-3 (2023).\n\n[10] X. M. Hu, Y. Guo, B. H. Liu, C. F. Li and G. C. Guo, Progress in quantum teleportation, _Nat._\n_Rev. Phys._ **5**, 339 (2023).\n\n[11] W. Luo, L. Cao, Y. Shi, L. Wan, H. Zhang, S. Li, G. Chen, Y. Li, S. Li, Y. Wang, S. Sun, M.\nFaeyz Karim, H. Cai, L. C. Kwek and A. Q. Liu, Recent progress in quantum photonic chips\nfor quantum communication and internet, _Light Sci. Appl._ **12**, 175 (2023).\n\n[12] S. L. N. Hermans, M. Pompili, H. K. C. Beukers, S. Baier, J. Borregaard, and R. Hanson,\nQubit teleportation between non-neighbouring nodes in a quantum network, _Nature_ **605**, 663\n(2022).\n\n[13] N. Fiaschi, B. Hensen, A. Wallucks, R. Benevides, J. Li, T. P .M. Alegre, and S. Gröblacher,\nOptomechanical quantum teleportation, _Nat. Photon._ **15**, 817 (2021).\n\n[14] X. M. Hu, C. Zhang, B. H. Liu, Y. Cai, X. J. Ye, Y. Guo, W. B. Xing, C. X. Huang, Y. F.\nHuang, C. F. Li, and G. C. Guo, Experimental high-dimensional quantum teleportation, _Phys._\n_Rev. Lett._ **125**, 230501 (2020).\n\n[15] Y. H. Luo, H. S. Zhong, M. Erhard, X. L. Wang, L. C. Peng, M. Krenn, X. Jiang, L. Li, N. L.\nLiu, C. Y. Lu, A. Zeilinger, and J.-W. Pan, Quantum teleportation in high dimensions, _Phys._\n_Rev. Lett._ **123**, 070505 (2019).\n\n[16] S. Pirandola, J. Eisert, C. Weedbrook, A. Furusawa, and S. L. Braunstein, Advances in\nquantum teleportation, _Nat. Photon._ **9**, 641 (2015).\n\n11\n\n[17] M. A. Nielsen, and I. L. Chuang, Programmable quantum gate arrays, _Phys. Rev. Lett._ **79**, 321\n(1997).\n\n[18] D. Gottesman, and I. L. Chuang, Demonstrating the viability of universal quantum\ncomputation using teleportation and single-qubit operations, _Nature_ **402**, 390 (1999).\n\n[19] E. Knill, R. Laflamme, and G. J. Milburn, A scheme for efficient quantum computation with\nlinear optics, _Nature_ **409**, 46 (2001).",
+        "score": -6.405908476096997,
+        "dense_score": 0.2674950361251831,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.86304759979248,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2450,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "9 1.03 0.80 0.72 1.05 0.88 1.21** _50% of_ 0.82 0.73 [12.1, 12.4] 0.72 0.83 [16.1, 25.0] 1.01 [16.9, 17.4] 0.86 0.88 0.78 [27.6, 29.0] 1.36 [12.2, 20.0] 1.37 1.07 1.12 1.22 1.20 [11.3, 11.4] 1.32 1.27 [10.7, 12.1] 1.36 1.65 1.86 [23.4, 24.7] 2.08 [27.6, 27.7] 2.24 [14.7, 15.5] _f_ sec _,_ tot [2.9, 12.2][3.7, 4.3][9.0, 9.2] _)_ 22.023.650.439.221.223.00.80.9 ✓✓✓✓✓✓✓✓✓✓✓✓ 0.50.91.00.50.40.60.60.80.90.20.80.90.10.10.80.80.30.70.70.50.5\n**2823** 29282232 Si+HNe+HSi+HS+H **SiNa** ++ **H** _→→→_ **H** _→→_ 19 _→_ 192521 **27** FFMg **19** Ne **SN** i e 0.520.590.570.520.640.58 **0.59 0.61 0.67 0.55 0.68 0.59** 0.59 [27.4, 29.6] 0.62 0.56 0.66 [36.3, 36.4] 0.83 0.71 [28.0, 28.8][3.5, 3.9][7.6, 7.7][4.8, 7.4] ✓✓✓✓✓ 0.60.40.20.60.80.9\n28 **56282224** 282130 **2856** 28 Si+HSi+HSi+HNe+HeSi+H **SiFeFeSiNeMg** ++++++ **HeHHH** _→→→→_ **HHe** _→→→→→→_ 26192623 **221919** _→_ 19 FAlNaMg **2019** **NON** **19** F **FN** ae **N** e e 0.360.330.400.400.320.370.440.360.410.400.52 **0.44 0.44 0.41 0.51 0.37 0.42 0.46 0.38 0.42 0.43 0.55** 0.40 [25.4, 31.9] 0.40 0.42 0.53 0.43 0.45 [15.7, 15.7] 0.48 0.66 0.56 [21.3, 22.8] 0.56 0.47 [19.3, 25.3][7.1, 7.8][3.9, 3.9][0.6, 0.9][3.5, 4.5][0.5, 1.1]16.214.9 ✓✓✓✓✓✓✓ 0.11.00.70.10.80.70.60.70.90.20.3\nSi+H _→_ Mg 0.35 **0.35** 0.35 [13.1, 13.8] ✓ 1.0\n\nTABLE XII. Reactions sorted according to their flux impact\n_f_ _abc_ (with [�] _f_ _abc_ = 1 _._ 42) on Ne at 10 GeV/n ( _f_ sec = 32%,\nsee Table I). The first 50 reactions shown provide 89.0% of\nthe total flux (417 reactions to reach 97%); reactions in **bold**\nhighlight short-lived fragments (see Sect. III.1 and Table II).\n\n~~_σ_~~\nReaction Flux impact _f_ _abc_ _σ_ [mb] Data\n_σ_ [cumul]\nMin **Mean** Max [Min,Max]\n~~**24**~~ **Mg** + **H** _→_ ~~**22**~~ **N** a 7.48 **7.96** 8.19 23.6 ✓ 0.5\n24242428 Mg+HMg+HMg+HSi+H _→→→→_ 21202221 NeNeNeNe 5.297.016.976.66 _(_ **5.74 7.42 7.41 7.06** _>50% of_ 7.63 7.64 7.26 5.97 [16.9, 17.4] _f_ tot _)_ 23.022.021.2 ✓✓✓✓ 0.90.50.81.0\n_(>25% of f_ sec _⇒_ _76% of f_ tot _)_\n2228 **222228** Ne+HSi+H **NeNeSi** +++ **H** _→_ **HH** _→→→→_ 2021 **22** Ne **2021** Ne **NFF** a _(>75% of_ 3.782.272.143.914.70 **3.93 2.52 2.23 4.07 5.01** _f_ tot _⇒_ 4.39 [36.3, 36.4] 4.01 [12.1, 12.4] 2.64 [19.3, 25.3] 2.39 [19.7, 20.0] 5.17 _22% of_ 14.9 _f_ sec _)_ ✓✓✓✓✓ 0.70.60.90.60.4\n24282226212328 **23** 28 Mg+HSi+HNe+HMg+HNe+HNa+HSi+H **Na** + _→→_ **H** _→→→→→→_ 2227242020212322 NeAl **22** NeNeNeNaNe **N** _(_ a _>80% of_ 1.631.321.131.591.431.441.261.33 **1.74",
+        "score": -6.434395631902358,
+        "dense_score": 0.23142503201961517,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.905405044555664,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 63,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 471,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment.md",
+        "title": "2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment",
+        "text": "g the subQUBO matrices of the desired size, by picking triplets in order of their impact. The impact\nis defined as the change in the value of the objective function when _T_ _i_ _→_ 1 _−_ _T_ _i_ . Each triplet\nis assigned an additional constant term representing the sum of all interactions with triplets\noutside of the sub-QUBO to retain sensitivity to the connections outside of each sub-QUBO\nwhen computing the value of the objective function. After the sub-QUBOs are solved, the\nsolution is combined. These steps are repeated for a number of iterations. The triplets selected\nby the QUBO minimisation are retained and matched to form track candidates.\n\n**Figure 7.** Diagram illustrating the QUBO solving procedure.\n\nAlternative algorithms for finding the optimal QUBO solution, such as the Quantum\nApproximate Optimisation Algorithm (QAOA) [21], were briefly investigated and were found to\n\nlead to significantly worse performance. A dedicated optimisation and characterisation of the\nresults of such alternative algorithms is left to future work.\n\n_4.2. Quantum graph neural network_\nThis approach is based on a graph neural network (GNN) [22, 23] that consists of both classical\nneural network layers and quantum circuits. The graph is constructed from doublets, where the\nhits are nodes and the connections between the hits are edges. All nodes of consecutive layers are\nconnected and only the ones that satisfy the pre-selection criteria are kept. The quantum graph\nneural network (QGNN) model follows the implementation of Ref. [11] and consists of three\nnetworks. First, the _InputNet_ takes the input node features, i.e. the three spatial coordinates,\nand produces hidden node features. For this purpose, a single fully connected neural network\nlayer that has 10 neurons with a _tanh_ activation function is used. Second, the _EdgeNet_ takes all\nconnected node pairs as input and produces a scalar edge feature for each of them using a _sigmoid_\nactivation function. This will later be the prediction score of the model for each doublet, as this\nmodel is essentially a segment classifier. _Circuit 10_ with two layers and 10 qubits is selected for\nthis task based on previous work [11]. Each layer of this circuit uses _R_ _Y_ gates and linear CNOT\nentanglers between all possible pairs of qubits. Third, the _NodeNet_ considers each node and\nits connecting nodes to update the hidden node features. The architecture of the _NodeNet_ is\nsimilar to _EdgeNet_, but it uses the _tanh_ activ",
+        "score": -6.491709531954865,
+        "dense_score": 0.2847668528556824,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.995282173156738,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3902,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2743705__2401.02900__New_detailed_characterization_of_the_residual_luminescence_emitted_by_the_GAGGCe_scintilla.md",
+        "title": "2024__recid_2743705__2401.02900__New_detailed_characterization_of_the_residual_luminescence_emitted_by_the_GAGGCe_scintilla",
+        "text": "] 9 · 10 [8]\n\n**3rd** 950.7 3.1 200 NA 1278 4 1 _._ 482 · 10 [11] 6 · 10 [8]\n\n**4th** 4077 17 200 NA 691.9 9.1 2 _._ 468 · 10 [11] 7 _._ 3 · 10 [9]\n\n**5th** 8174 374 200 NA 1700 54 1 _._ 131 · 10 [10] 3 _._ 6 · 10 [8]\n\n**6th** 2.803·10 [4] 4.7·10 [2] 200 NA 540.9 18.6 2 _._ 925 · 10 [11] 4 _._ 32 · 10 [10]\n\n**7th** 5.656·10 [5] 5.6·10 [3] 200 NA 3830 97 7 _._ 831 · 10 [11] 1 _._ 58 · 10 [10]\n\n**8th** 2.177·10 [6] 8.6·10 [4] 1.927 0.072 3139 192 9 _._ 550 · 10 [12] 3 _._ 063 · 10 [12]\n\nTable 1: Table listing all the traps parameters for the fit of the afterglow current generated during the LED irradiation campaign in Udine.\n\nwith quite long mean lifetimes are still active, is reproduced\ncorrectly by the model, confirming the relation between the\ntemperature of the crystal and the metastable states lifetime.\n\nThe afterglow characterisation by means of LED excitation\ngives important information about the GAGG:Ce crystal, however it is not directly linked to the conditions it will experiment\nin the LEO radiation environment. In fact, UV light has no\naccess to electrons whose binding energy is higher than that of\nthe photons, while ionization has not such a limitation. Moreover, it is not able to produce two of the phenomena that occur\nin the interaction of energetic particles with the crystal material: activation and radiation damage. For these reasons the\nsame crystal was subject to a second irradiation campaign at the\nTIFPA facility in Trento [9], using a beam of 70 MeV protons.\n\nAs shown in Figure 2, which compares two irradiation steps\nfeaturing similar duration but using UV light (left) and protons\n(right), the decay of the activated nuclei contribute a signal\nthat adds to afterglow. The task of separating the two signal\ncomponents can be accomplished only when the decay rate is\nsufficiently low to give a reasonable fraction of pure luminescence measurements. For a long-lasting irradiation this means\nthat the first tens of seconds, or even minutes, may not be used\nin the study of afterglow. When a crystal is exposed to high\nenergy radiation, some of its atoms get kicked out of their place\nin the lattice, producing interstitial atoms and crystal vacancies.\nThese radiation-induced defects, called displacement damage,\nmay give rise both to a reduced light yield, due to self-absorption\nby the newly formed colour centres, and to an enhancement of\nafterglow, via the introduction of further energy states in the\nband-gap. The need to study these additional phenom",
+        "score": -6.501029653549194,
+        "dense_score": 0.2649235129356384,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -10.009276390075684,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.452342180069536,
+    "generation_latency_s": 2.2025778889656067e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.452342180069536,
+    "generation_latency_s": 2.2025778889656067e-07
+  }
+}

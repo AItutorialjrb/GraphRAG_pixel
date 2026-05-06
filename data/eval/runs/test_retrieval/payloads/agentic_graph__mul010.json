@@ -1,0 +1,409 @@
+{
+  "benchmark": {
+    "query_id": "mul010",
+    "query_type": "multi_hop",
+    "query": "How can a benchmark separate retrieval failure from generation failure?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "a",
+      "benchmark"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can a benchmark separate retrieval failure from generation failure?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2218,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669055__2306.09220__Grating_Design_Methodology_for_Tailored_Free-Space_Beam-Forming.md",
+        "title": "2024__recid_2669055__2306.09220__Grating_Design_Methodology_for_Tailored_Free-Space_Beam-Forming",
+        "text": "e multiple electrode layers with\ncutouts for beam emission, as well as a thin (20 nm) ITO layer at the top\noxide-vacuum interface, but these features do not impact the outcoupler design\nand are not included in the simulations presented.\n\nbottom/top layers of 25/170 nm separated by 50 nm of\noxide (as in the previous generation [23]). Here we consider\nonly quasi-TE modes, but the design process easily extends\nto quasi-TM modes. An upper oxide cladding layer of 6.5\nμm covers (and fills) the waveguide structures. The grating\nstructure itself is produced with a single etch fully through\nthe waveguide layer. In the results, we analyze the effects of\nlithographic feature size limits.\n\n_B. 2D simulation: sweep grating structure parameters_\n\nIn a given material stack, we calculate _α_, _θ_, and _n_ eff as\na function of Λ and _DC_ via 2D FDTD or finite element\nsimulations. [1] For each combination of Λ and _DC_, we fit the\nemitted field profile to find _α_ and _θ_ . Extending beyond the\napproach of [17], we use the rate of phase accumulation within\nthe grating to find _n_ eff .\nFigure 3 shows the resulting 2D lookup tables for the 732\nnm light in the Si 3 N 4 grating. At 732 nm, we work in the\nregime where the first diffraction order is emitted backward,\nensuring that no higher diffraction orders can exist and all the\nupward-scattered light is into our mode of interest. Minimum\nfeature size limitations significantly restrict the accessible\nparameter range, so for shorter wavelengths we work in the\nforward-emitting regime where additional diffraction orders\n\nare present.\n\nThe grating strengths calculated in Fig. 3a include the\neffects of multiple reflections off both the substrate and oxidevacuum interface. Strong fringes arise from interference with\nthe primary back-reflection from the substrate, as well as\nweaker higher-order fringes which, based on their periodicity\nand strength, stem from interference with the initially upwarddiffracted beam after reflection off the vacuum interface and\nagain the bottom substrate. Equipped with the foundational\ndata, we now proceed to design individual gratings for specific\nbeam profiles.\n\n1 If the same material stack will be used for devices at different wavelengths,\nsimulation time could be greatly reduced by running the sweep with FDTD\nsimulations, as the results for all wavelengths of interest can be extracted from\nthe same individual simulation.\n\nFig. 3. Lookup tables resulting from 2D simulations for 732 nm light in\nSi 3 N",
+        "score": -6.950993753827987,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7041150072259831,
+        "rerank_score": -10.799995422363281,
+        "matched_nodes": [
+          "An",
+          "At",
+          "The",
+          "In",
+          "For",
+          "Si"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 816,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2664241__2305.19681__A_2D_quantum_dot_array_in_planar_28SiSiGe.md",
+        "title": "2023__recid_2664241__2305.19681__A_2D_quantum_dot_array_in_planar_28SiSiGe",
+        "text": "o.7957631) [26]\n\n**Appendix A: Device fabrication and screening**\n\nThis device is fabricated on a [28] Si/Si 70 Ge 30 heterostructure.\nA 2 _._ 5 _µ_ m strain relaxed Si 70 Ge 30 buffer layer makes the foundation. On top of it the isotopically enriched [28] Si quantum\nwell is grown. It has a residual [29] Si concentration of 0.08%\nand was measured to be 9 _._ 0 _±_ 0 _._ 5 nm thick. Afterwards a\n30 nm thick Si 70 Ge 30 spacer is grown to reduce strain relaxation in the quantum well and separate it from the gate dielectric. The heterostructure is finalized with a 1 nm silicon cap [27] .\nThe gate stack is separated from the heterostructure by 10 nm\nAl 2 O 3, formed by atomic-layer deposition (ALD) at 300 _[◦]_ C.\nThe three gate layers of the gate stack are made from Ti:Pd\nwith thicknesses of 3:17, 3:27 and 3:27 nm and are patterned\nusing electron beam lithography, electron beam evaporation\nand lift off. Each layer is electrically isolated from the previous layer by a 5 nm Al 2 O 3 dielectric grown by ALD. Above\nthe three gate layers a micro magnet is fabricated from Ti:Co\n(5:200 nm).\nAfter fabrication every device was screened by measuring\nturn-on curves and testing for gate leakage or shorted gates at\n4 _._ 2 K with a dipstick in liquid helium. This high turnaround\ntesting allows to verify the basic functionality of the device\nand quickly filter out defective devices. After verifying the\nfunctionality of all gates, NbTiN inductors are added to the\nohmic contacts to enable RF-readout. To address electrostatic\n\ndischarge concerns during rebonding, we screen the device a\nsecond time in liquid helium to verify that no damage has been\ndone. Then we cool down the devices in a Bluefors LD400\n\ndilution refrigerator to its base temperature of around 10 mK.\n\n**Appendix B: Setup**\n\nThe room-temperature control electronics to operate this\ndevice are separated into ac electronics in one rack and dc\nelectronics in a second one. In the latter, several in-house built\nSerial Peripheral Interface (SPI) racks host 18 bit Digital to\nAnalog Converter (DAC) modules which provide the required\ndc voltages. Voltage dividers were used to apply an accurate\nsource-drain bias when needed. The currents are measured\n\nwith a Keithley 2000 Multimeter (placed in the ac rack) via an\nin-house developed transconductance amplifier. The dc rack\n\n5\n\nis powered by batteries which are continuously charged via\ngyrators and filters.\nThe ac rack comprises the host computer, a Keysight chassis (M9019A)",
+        "score": -6.968624617017684,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7041150072259831,
+        "rerank_score": -10.827119827270508,
+        "matched_nodes": [
+          "On",
+          "Ge",
+          "The",
+          "In",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2616,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera.md",
+        "title": "2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera",
+        "text": "perature wrapping holes current\n(Gy/hr) ( _µ_ A)\nBC-412 0.3 3% O 2 ESR - 10.13\nBC-412 0.3 3% O 2 ESR - 10.52\nBC-412 0.3 N 2 ESR - 10.63\nBC-412 0.3 Air ESR - 7.49\nFNAL 0.3 3% O 2 ESR - 5.70\nBC-412 0.3 3% O 2 ESR A 7.28\nBC-412 0.3 3% O 2 ESR B 7.89\nBC-412 0.3 3% O 2 Black - 0.45\nBC-412 0.3 3% O 2 - - 0.44\nBC-412 0.3 N 2 - - 0.45\nBC-412 0.3 Air - - 0.40\nFNAL 0.3 3% O 2 - - 0.49\nFNAL 0.3 N 2 - - 0.58\nBC-412 1.3 3% O 2 ESR - 38.14\nBC-412 1.3 Air ESR - 29.77\nEJ-208 1.3 3% O 2 ESR - 38.94\nEJ-208 1.3 Air ESR - 30.79\nBC-412 1.3 Air Tyvek [®] - 15.13\nBC-412 1.6 Air, 22° C ESR - 23.9\n\nBecause we acquired data from a given channel only once every several sec\n_∼_\nonds, from these data we cannot rule out the possibility of a rapid ( seconds)\ninitial decline in scintillator signals upon irradiation. To test for a rapid initial decline, we employed a second, lower dose rate irradiator that contributed\nwith a dose rate 10 _[−]_ [3] that of the main irradiator, and thus would have caused\nminimal radiation damage. We measured SiPM signals using this low dose rate\nirradiator both before and after a one minute exposure to the primary irradiator\n(which was the first irradiation the tiles received). A decrease in the ratio of\nafter/before SiPM signals would indicate radiation damage in the first minute\nof irradiation. We determined this ratio independently for tiles at -30° C in air\nand in 3% O 2 . For each gas, we computed the weighted average of the ratio\nfor two similar tiles, EJ-208 and BC-412, both wrapped in ESR. We find the\n\n12\n\nweighted mean for air is 1 _._ 003 _±_ 0 _._ 004, and for 3% O 2 is 0 _._ 999 _±_ 0 _._ 004; both are\nconsistent with no damage from one minute of irradiation, so the values from\nTable 1 are accurate measurements of the initial signal.\nFigure 7 shows the effect of temperature on signal loss during irradiation,\npresumably due to increasing radical density. The dataset shows the relative\nlight yield as a function of dose for a BC-412 tile wrapped in Tyvek [®] in air.\nInitially the temperature was -30° C. At the dose corresponding to the left vertical line, the temperature was changed to -15° C. At the right vertical line, the\ntemperature was changed to 0° C. During the first period at -30° C, there is a\nrapid light loss. When the temperature is changed to -15° C, the slope changes\nand the rate of decrease of light loss slows. When the temperature is changed to\n0° C, the light yield increases. An increase is expected if the higher temperature\nallows",
+        "score": -7.060646416105208,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7041150072259831,
+        "rerank_score": -10.9686918258667,
+        "matched_nodes": [
+          "An",
+          "At",
+          "The",
+          "For",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7956,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie.md",
+        "title": "2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie",
+        "text": "nts of the _γ_ -irradiated diode for\ndifferent bias voltages are displayed in Figure 10\nand 11 (crosses). A shift of the X-Defect’s peak to\nlower temperatures with increasing bias is clearly\nvisible. Superimposed on these measurements are\nthe simulated spectra (solid lines), using the zerofield activation energy from Figure 7 and the capture\ncross-section obtained from DLTS measurements on\nthe same sample [ 19 ]. For this simulation the PAT\nenhancement model is used. A good, but not perfect match between measurement and simulation is\n\nfound. At the lower bias voltages, nearly perfect\nmatches are found. At higher biases, i.e. stronger\nelectric fields, the rising edge of the simulated peak\nis faster compared to the measured one, while the\n\n9\n\neffective doping concentration. The identification\nof PAT as an emission mechanism implies that the\nX-Defect is electrically neutral in the space charge\nregion, and therefore does not affect _N_ eff at ambient temperatures. Furthermore, the measured\ncharacteristics of the X-Defect, including apparent\nactivation energy, capture cross-section and emission mechanism, are in good agreement with literature values for the donor charge state of the singly\ncharged di-vacancy, V 2 (+ _/_ 0). The zero-field activation energy of the X-Defect is determined to be\n_E_ A,0 = (0 _._ 1962 _±_ 0 _._ 0007) eV.\nIn conclusion, the defect previously introduced\nas the X-Defect is indeed the singly charged Silicon\ndi-vacancy, V 2 (+ _/_ 0).\n\n**Appendix A. Validation of the PF model**\n\nTo validate the PF model implementation in the\nsimulation code, TSC measurements for the B i O i\ndefect were carried out on the _γ_ -irradiated diode at\ndifferent bias voltages, as the B i O i defect is known\nto be subject to the PF effect. The measurements\nalongside the simulation are shown in Figure A.12\nand A.13. An activation energy of 0 _._ 27 eV and a\ncapture-cross section of 1 _._ 05 _·_ 10 _[−]_ [14] cm [2] were used as\ninput parameters, taken from Ref. [ 14 ]. To obtain\nthe simulated spectra shown in Figure A.12, the\nemission enhancement factor Γ PF had to be modified by a factor of 0 _._ 97, a modification of 3 %. This\nadjustment is justified by the requirement formulated in Ref. [ 39 ]. Hartke states that the PF effect\narises from the electrostatic attraction between a\n\nsingly charged positive ion and an electron under the\ninfluence of a uniform electric field. The requirement\nof a uniform field might not be satisfied for a highly\ndoped, irradiated dio",
+        "score": -7.082548929609237,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7041150072259831,
+        "rerank_score": -11.002388000488281,
+        "matched_nodes": [
+          "An",
+          "At",
+          "The",
+          "In",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 386,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "80 pixels in both directions. Only the whole images not selected using the\ndefault grid would then be evaluated with the additional secondary grid.\nThe anomaly detector tends to select patches at a guard ring _§_, cell numbers and\ncell borders as false positive, due to the increase in the AE reconstruction error in these\nareas. In addition, contact marks are a common source of false positives, see (e) in\nfigure 11. With the proposed approach, where the detection is invariant to the anomaly\nlocation on the sensor, these cannot be eliminated.\n\n_6.2. Efficiency_\n\nAverage inference times for a whole image are reported in table 4, with both the default\ngrid and the secondary grid. An average sensor scan consisted of 335 images, for which\nthe picture-taking time is 9.2 minutes. On average, an inspector inspects a whole image\nin two seconds, evaluating one scan in 11 minutes. On an RTX A2000, the inference time\nis less than 6 minutes for the scan with both grids. The GPU is necessary, as the short\nrun time allows parallel picture-taking and pre-selection. At variance, the evaluation of\na scan would take approximately 45 minutes on a regular CPU, significantly delaying\nthe subsequent electrical characterization.\n\n**Table 4.** Average inference times on a GPU or a CPU for whole images using the\ndefault and secondary grids.\n\nGrid Run time [s]\n\nRTX A2000 GPU Default 0.8\n\n+ secondary 1.0\n\nCPU Default 8.1\n\n+ secondary 13.8\n\n_6.3. Continuous learning_\n\nGiven that new data will be measured continuously, the PSA should be retrained\nto adapt to the new data. Using new normal images to train the AE would not\nimprove its task of poor anomaly reconstruction, so it does not require retraining. Also\nthe background detector is considered to be robust enough to not require immediate\nretraining. However, the accuracy of the anomaly detector could be improved via\ntraining with novel anomalous patches. For example, training instances such as the\nmissed anomaly (d) in figure 10 did not exist in the original training data set.\nAnomalous images acquired after the initial deployment were given ground truth\nlabels to extend the training data set. The anomaly detector was retrained starting from\n\n_§_ A guard ring is a structure at the periphery of a sensor designed to protect it from currents from the\ncutting edge, and shown in figure 11 (f) as the black line with false positives.\n\n14\n\nrandomly initialized weights with 2.1 times more anomalous patches than the original\nmodel. An independ",
+        "score": -7.086842266906956,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7497527953145204,
+        "rerank_score": -11.015873908996582,
+        "matched_nodes": [
+          "On",
+          "An",
+          "At",
+          "The",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5193,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2791763__2405.19974__Atomistic_Compositional_Details_and_Their_Importance_for_Spin_Qubits_in_Isotope-Purified_S.md",
+        "title": "2024__recid_2791763__2405.19974__Atomistic_Compositional_Details_and_Their_Importance_for_Spin_Qubits_in_Isotope-Purified_S",
+        "text": "erve a postgrowth diffusional broadening of the Ge and Si profiles caused by annealing. The slight profile broadening\nis resolved by means of APT but not by ToF-SIMS measurements. Both APT and ToF-SIMS reveal\nsignatures of segregation of Ge during the growth process, which becomes evident in a slightly retarded\nonset of the Ge compared to the Si profile for the top Si 0 _._ 7 Ge 0 _._ 3 / [28] Si interface.\n\n**2.3** **Experimental analysis of the** [28] **Si/SiGe bottom interface**\n\nFigure 3 displays the depth-resolved composition profiles across the [28] Si/Si 0 _._ 7 Ge 0 _._ 3 bottom QW interface\nby ToF-SIMS and APT as well as the corresponding fits to the profiles. For highest resolution of this\ninterface, we we plot results of the APT specimens analyzed in top-down configuration.\nFigure 3a shows the Ge- and the Si profiles acquired by ToF-SIMS, both for as-grown and post-growth\nannealed samples. We find these profiles to be very similar to those observed for the top interface in Figure\n2d. Indeed, all profiles are accurately described with a simple error-function, following the model given by\nEq. 1 in the Experimental Section. Note, however, that for a Si overgrowth of Ge or SiGe, a segregation of\nGe atoms into the Si overgrowth layer has been reported and experimentally resolved for as-grown MBE\nstructures grown at higher substrate temperatures than our heterostructure in the past [59,60,62]. During\nSi overgrowth of SiGe, a self-limiting mechanism of Ge segregation at the growth front is invoked [60],\nleading to a stretched Ge concentration profile, termed as _trailing edge_ in the literature [59]. We conclude\nthat our experiments show that a Ge segregation and in particular its self-limiting character for [28] Si\novergrowth of SiGe at the bottom interface cannot be resolved via ToF-SIMS for this QW grown at 350 _[◦]_ C.\nIn contrast, a stretched Ge profile at the QW bottom interface is clearly resolved by means of APT as\nshown in Figure 3b. While the Si profiles _C_ (Si) are accurately described with the error-function of Eq. 1\n(see Experimental Section), this is not the case for the Ge profiles _C_ (Ge). After a drop in Ge concentration,\nfrom a certain threshold value, the decrease in the Ge concentration is less pronounced. This is indicative\nof a self-limitation of Ge segregation with increasing Si neighbouring and corresponds to the trailing edge\ndiscussed in the literature. To our knowledge, this is the most narrow trailing edge (as a consequenc",
+        "score": -7.098239530259124,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7649653913440327,
+        "rerank_score": -11.035701751708984,
+        "matched_nodes": [
+          "Ge",
+          "The",
+          "In",
+          "For",
+          "We",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "Ge"
+        ],
+        "community_id": "Ge",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4061,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2750105__2401.11438__Tensor_force_impact_on_shell_evolution_in_neutron-rich_Si_and_Ni_isotopes.md",
+        "title": "2024__recid_2750105__2401.11438__Tensor_force_impact_on_shell_evolution_in_neutron-rich_Si_and_Ni_isotopes",
+        "text": "id splitting. However, in this case,\nthe SGII+T interaction succeeds at reproducing the\nbehavior of the dependence at a qualitative level.\nRegarding the influence of the neutron excess on\nthe single-particle states of neutrons, here the presence of tensor interaction also leads to changes in\nSPEs, and the effect will be opposite compared to\nthe case of np-interaction. As seen from Fig. 2(c,d),\nas ν1d 3/2 is filled, the neutron states with j - are repelled, and with the filling ν1f 7/2 the attraction is\nstrengthened by the shell. At the same time, the unsatisfactory description of experimental estimates for\n1d2s states should be noted. On the other hand, it\nshould be noted that the accuracy of the experimental data based on the spectroscopy of single-nucleon\ntransfer reactions drops dramatically for the states\nlying much lower than the Fermi surface. Nevertheless, Fig. 3b shows that for the range of nuclei up to\n\n34 Si, it is the inclusion of tensor forces that makes it\npossible to qualitatively reproduce the dependence of\nthe neutron spin-orbit splitting of the d-states.\nFor neutron single-particle states, we can also consider the splitting between 1d 3/2 and 1f 7/2 . The\nexperimental data demonstrate a maximum in [34] Si\nrelated to the manifestation of the magic number\n\nN = 20 and a substantial drop to very small values\nas ν1f 7/2 is filled, which illustrates the decrease in\nthe role of shell effects in highly neutron-rich silicon\nisotopes. As can be seen in Fig. 3c, it is not possible to reproduce this character of the experimental\ndependence without including the tensor component,\nand the SGII+T parametrization makes it possible to\nreproduce the dependence at a qualitative level. The\nresults with SLy5+T also give a maximum in [34] Si,\nand the splitting value agrees with the experimental\n\nestimates.\n\nIt is important to note that the scale of the effect\nfor neutrons is comparable to that observed earlier\nfor protons (Fig. 3a). In [9] it is shown that in the\nmost elementary case, when α T = β T, the interaction of like nucleons (governed purely by the isovector\ncomponent of the forces) is 2 times weaker than npinteraction (dependant on both isoscalar and isovector components). Therefore, traditionally, when considering the effects associated with tensor interaction,\none treats the influence of the neutron excess on the\nstates of protons in isotopes or vice versa, the influence of the number of protons on the states of neutrons in isotones. In the case of i",
+        "score": -7.148160387433944,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7041150072259831,
+        "rerank_score": -11.103328704833984,
+        "matched_nodes": [
+          "On",
+          "At",
+          "The",
+          "In",
+          "For",
+          "Si"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2488,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "twin SET. **d), e)** Modulated\nreadout method using single SET 1 and single SET 2, respectively. _f_ mod = 25 kHz. **f)** Correlated readout method using\nthe twin SET modulated signal. _f_ mod = 25 kHz and the correlation function is given in Eq. 1. **g)** Square of the SNR\nas a function of integration time for the different techniques. Solid lines plot the fits to the function\nSNR [2] = _S_ 0 _τ/_ (1 + _A_ _f_ _τ_ _[α]_ ). **h)** Impact of the location of the charge transition on the charge readout infidelity for the\ndifferent techniques. _τ_ = 280 _µ_ s, _f_ mod = 25 kHz . Solid lines are used as guides to follow the trend of the points. The\ninset is a zoom-in to the region indicated by the box.\n\nwith integration time, consistent with signals affected by\n1 _/f_ _[α]_ (also known as “pink” or “flicker” for 0 _< α <_ 2)\nnoise [ 46, 47 ] (see Appendix F). In the regime where pink\nnoise is dominating, longer integration times will begin to\ncapture noise signals that are higher in amplitude, thus\nlosing the benefit of averaging over an increased number\nof samples. On the other hand, the modulation acts as a\nbandpass filter around _f_ mod, rendering the measurement\ninsensitive to pink noise. This result evidences the immunity to electrical noise provided by the modulation, and\nthe further improvement in readout sensitivity enabled\nby the correlation of the two signals.\n\nAn additional advantage of using a twin SET is that the\nreduction in signal that comes from moving the sensors\naway from the qubits can be compensated. In Fig. 2h),\nwe plot the charge readout infidelity obtained with the\ndifferent methods as a function of the double-dot pair,\nwhich is equivalent to changing the distance between\nthe center of the electric dipole and the sensors. For\ncomparison purposes, the total integration time in all\ncases is kept constant at 280 _µ_ s and the modulation\nfrequency is _f_ mod = 25 kHz . As expected, transitions\n\nbetween P1-P2 (P3-P4) are more weakly detected by\nSET 2 (SET 1 ) and the readout infidelity of the single SET\nmeasurement increases as the dipole is moved away from\nthe sensor. Notably, this monotonic trend is avoided by\nthe twin SET, with the correlation function providing\nbelow 0.3% readout infidelity ( _>_ 99 _._ 7% readout fidelity)\nthroughout the array.\n\n**IV.** **MODULATED SPIN READOUT**\n\nWe now study the impact that modulating the electron\nback and forth across a charge transition during readout\nhas on its spin degree of freedom. We load four el",
+        "score": -7.157151867307602,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7041150072259831,
+        "rerank_score": -11.117161750793457,
+        "matched_nodes": [
+          "On",
+          "An",
+          "The",
+          "In",
+          "For",
+          "We"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 922,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu.md",
+        "title": "2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu",
+        "text": "nt materials and conditions\n\n(i.e., strain and composition) we consider, as well as the related electronic transition levels\n\n( _ε_ ) associated with ionization or charge-trapping processes that may occur in qubit devices\n\nunder operation. [13] We additionally evaluate energy barriers associated with instantaneous\n\ncharge-transfer between defect states, as may be expected for optical excitations or tunneling\n\nprocesses that can induce high- or low-frequency charge noise.\n\nIn a typical Si/Si 1 _−x_ Ge _x_ quantum well device architecture, a strained Si layer is sand\n\nwiched between Si 1 _−x_ Ge _x_ layers to introduce a two-dimensional electron gas (2DEG) confined\n\nin the strained Si layer as shown schematically in Figure 1. The choice of Si 1 _−x_ Ge _x_ composi\n\ntion influences the details of the heterostructure band diagram, through both strain and band\n\ngap effects, with a typical design using _∼_ 30% Ge leading to high performing devices. [14] The\n\nbottom layer is a relaxed Si 1 _−x_ Ge _x_ layer grown on a graded Si 1 _−x_ Ge _x_ virtual substrate that\n\nhas compositional variations to tune both the strain in the quantum well and the resulting\n\n2DEG quality while minimizing dislocations generated during the growth process. [14] Even\n\n_−_\nwith optimized growth processes, threading dislocation densities on the order of 10 [5] 10 [6]\n\ncm _[−]_ [2] have been reported. [14,15] The top layers can also include relaxed Si 1 _−x_ Ge _x_ layers with\n\nadditional doped layers to contribute carriers to the 2DEG. Owing to the presence of strain\n\nand likely compositional variations, including strain variations associated with defects and\n\ndevice patterning, we investigate the dependence of defect energy levels associated with DBs\n\nfrom Si and Ge, exploring the role of the local and global chemical environment. Specifically,\n\nwe consider DBs from Si and Ge that are back-bonded to Si and Ge in bulk Si and Ge host\n\n3\n\nmaterials to evaluate the scenarios of locally Si-rich and Ge-rich compositions, respectively.\n\nTo avoid confusing notation with substitutional defects, we adopt a subscript in front to\n\ndenote back-bonding that helps to clarify the local environment. For example, an isolated Si\n\nDB in Si is redundantly labeled as Si Si Si, an isolated Ge Si DB in Si is represented as Si Ge Si,\n\nwhile a locally-Ge rich region with all Ge nearest neighbors to the Ge Si is labeled as Ge Ge Si .\n\nWe summarize schematics of studied DB structures in Fig. 2. We additionally cons",
+        "score": -7.171096242600433,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7649653913440327,
+        "rerank_score": -11.147789001464844,
+        "matched_nodes": [
+          "Ge",
+          "The",
+          "In",
+          "For",
+          "We",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "Ge"
+        ],
+        "community_id": "Ge",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 537,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648915__2304.01362__Low-Loss_Si-Based_Dielectrics_for_High_Frequency_Components_of_Superconducting_Detectors.md",
+        "title": "2023__recid_2648915__2304.01362__Low-Loss_Si-Based_Dielectrics_for_High_Frequency_Components_of_Superconducting_Detectors",
+        "text": ". For example, the widely used magnetron sputtering (MS) proved to be a promising approach for fabricating\nmany devices with relatively low losses and applied temperatures in the range of 200-400 _[◦]_ C. This method improves\nfilm quality by increasing atom mobility with RF bias and\nhigher temperature on the substrate during film growth [6].\n\n( _Corresponding author: Marharyta Lisovenko)_\nM. Lisovenko is with the Argonne National Laboratory, 9700 South Cass\nAvenue, Lemont, IL, 60439, USA (email: mlisovenko@anl.gov)\nP. Barry is with Cardiff University, Cardiff CF10 3AT, UK (email: barryp2@cardiff.ac.uk)\nZ. Pan, T. Cecil, R. Gualtieri, J. Li, V. Novosad, G. Wang, and V.\nYefremenko are with the Argonne National Laboratory, 9700 South Cass\nAvenue, Lemont, IL, 60439, USA (emails: zpan@anl.gov; cecil@anl.gov;\nrgualtieri@anl.gov; juliang.li@anl.gov; novosad@anl.gov; gwang@anl.gov;\nyefremenko@anl.gov)\nC. L. Chang is with the Argonne National Laboratory, Argonne, IL 60439\nUSA, and the University of Chicago, 5640 South Ellis Avenue, Chicago, IL\n60637 USA (email: clchang@kicp.uchicago.edu)\n\nHowever, high temperatures can degrade the characteristics of\nother microwave circuit components and exclude the use of\nthe lift-off technique. We need to reduce the dielectric loss\nfrom two-level systems without complicating fabrication steps\nwith high temperatures, which can cause topical problems in\nsuperconducting detector development [7], [8], [9].\nFor this purpose, we consider two enhanced approaches of\nIBAS and PECVD. Ion-beam-assisted sputtering utilizes an\nion source, which provides additional energy on the outermost\ngrowing atomic layer and allows control over film density and\nmicrostructure at room temperature. The same time the flux\nand the energy of ions can be changed independently of the\nflux of the depositing atoms, thus allowing easy control of the\nstoichiometry of compound films [10], [11].\nThe applied plasma in the CVD process enhances film\nuniformity and step coverage while improving adhesion and\ncontrol over film growth. In PECVD, the precursors do not\nrequire high temperatures for the chemical reaction, which\nallows utilizing a temperature below 200 _[◦]_ C with better uniformity, adhesion and deposition rate compared to magnetron\nsputtering [12].\nThis paper aims to outline the typical dielectrics and related properties and the factors controlling their quality. We\ncompare several silicon-based dielectric films grown under\ndifferent conditions, which result i",
+        "score": -7.179170907670013,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7649653913440327,
+        "rerank_score": -11.160211563110352,
+        "matched_nodes": [
+          "IL",
+          "The",
+          "In",
+          "For",
+          "We",
+          "USA",
+          "University"
+        ],
+        "path_nodes": [
+          "IL"
+        ],
+        "community_id": "IL",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "On": 1.0,
+      "An": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "RA": 1.0,
+      "IL": 1.0,
+      "MA": 1.0,
+      "Ge": 1.0
+    },
+    "expanded_nodes": {
+      "On": 1.0,
+      "An": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "RA": 1.0,
+      "IL": 1.0,
+      "MA": 1.0,
+      "Ge": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "For": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "CERN": 0.48999999999999994,
+      "PO": 0.48999999999999994,
+      "Physics": 0.7,
+      "Si": 0.7,
+      "Department": 0.24499999999999997,
+      "SPS": 0.17149999999999996,
+      "LHC": 0.17149999999999996,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 25,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 9.401905798353255,
+    "generation_latency_s": 3.702007234096527e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 25.0,
+    "retrieval_latency_s": 9.401905798353255,
+    "generation_latency_s": 3.702007234096527e-07
+  }
+}

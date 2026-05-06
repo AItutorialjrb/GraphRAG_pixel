@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "con011",
+    "query_type": "conceptual",
+    "query": "Why is local deployment attractive for HEP collaborations?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "is",
+      "local",
+      "deployment"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why is local deployment attractive for HEP collaborations?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5634,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "vely being developed for HEP applications. Decades of\n\nR&D have made CMOS-based detector systems easy and cheap to manufacture and sensor can\n\nbe integrated into a single chip for easier assembly. Additionally, radiation damage in CMOS is\n\nwell understood due to decades of R&D and therefore the system can be optimized to be radiation\n\ntolerant. CMOS technology can be employed for 4D tracking by optimizing for spatial and temporal\n\nresolution. For example, FASTPIX is a monolithic CMOS sensor with pixel pitches tested from\n\n8.66 um to 20 um and its design is optimized for timing through the application of a doping implant\n\nin the sensor to shape the electric field uniformly to improve the drift path of charges[10, 11].\n\nFurthermore, in contrast to traditional pixel sensors, FASTPIX uses a hexagonal sensor grid that\n\nshortens drift time and reduces charge sharing at the edges[10, 11]. The demonstrator device has\n\nbeen experimentally measured to have a good timing resolution of 120 – 180 ps[11]. While CMOS\n\ntechnology shows promise, the current limitation is its trailing time resolution compared to 3D\n\nsilicon sensors and the associated high power consumption due to small pixel sizes.\n\nFinally, another attractive option developed in the last decade is Low Gain Avalanche Detectors\n\n(LGADs) which is the paper’s main focus of study. LGADs are silicon pixel detectors optimised\n\nfor timing performance[12] and a schematic is shown in figure 1. Particularly, LGADs have a\n\nlow internal gain of about 10 − 20 that is achieved by modifying the doping profile of a standard\n\np-n junction[2]. LGADs have excellent temporal and spatial resolution that are designed to fulfil\n\nthe requirements of 4D tracking. Optimising the gain and thickness parameters allow a sensor\n\nwith a fast charge collection time that could improve the time resolution in the order of 10 ps[2].\n\nExcellent spatial resolution can be achieved through innovative designs such as AC-LGADs that\n\nutilise charge sharing between multiple electrodes and therefore surpasses the spatial resolution\n\nlimitation of single pad detectors[13, 14]. In the context of radiation tolerance, LGADs can fulfil\n\nthis requirement by utilising carbon as a dopant for the gain layer and through the use of a narrower\n\ngain layer[15]. Last but not least, an internal gain layer reduces the need for amplifier electronics\n\nand hence reduces power consumption for the operation of HL-LHC[4].\n\nLGADs are an excellent candidate for 4D tracking an",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 18.56518806019155,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7259,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2909952__2504.06671__Defects_in_Silicon_Carbide_as_Quantum_Qubits_Recent_Advances_in_Defect_Engineering.md",
+        "title": "2025__recid_2909952__2504.06671__Defects_in_Silicon_Carbide_as_Quantum_Qubits_Recent_Advances_in_Defect_Engineering",
+        "text": "ped Ions:\n\nTrapped ion qubits are individual ions confined by electromagnetic fields and controlled using laser-based\n\ntechniques. Commonly used materials include calcium ions (Ca⁺), barium ions (Ba⁺), and ytterbium ions\n\n(Yb⁺). The internal states of these ions, such as electronic or hyperfine states, serve as qubits. Trapped ion\n\nqubits are known for their long coherence times and high-fidelity gate operations. They are ideal for\n\nquantum simulations and algorithms, but the main challenge is scalability due to the need for precise laser\n\ncontrol and individual ion manipulation [33,34].\n\niii) Defect-Based Qubits:\n\nDefect-based qubits are based on point defects in solid-state materials, where the electronic spin states\n\nof defects are used to encode information. Examples include the NV center in diamond and V Si or V C -V Si\n\ncenters in SiC. These defects can operate at room temperature, making them attractive for practical\n\nquantum applications. However, challenges remain in defect creation and control, as well as improving\n\ncoherence times and gate fidelity [9,12,21]. For instance, NV centers in diamond are well-established for\n\nquantum sensing and communication applications, while SiC is gaining attention for scalable quantum\n\ncomputing [8,23].\n\niv) Spin-Based Qubits:\n\nSpin-based qubits utilize the spin states of electrons or nuclei in materials like silicon and gallium arsenide\n(GaAs). Quantum dots, such as semiconductor quantum dots made from InAs/GaAs or Si/SiGe systems,\n\nare also commonly used. The qubit states are represented by spin-up or spin-down orientations. Spin\nbased qubits offer long coherence times and are compatible with existing semiconductor technology,\n\nmaking them attractive for scalable quantum computing. However, challenges remain in improving\n\ncoupling efficiency and achieving high-fidelity gate operations [35,36].\n\nv) Topological Qubits:\n\nTopological qubits are based on anyonic excitations in topologically ordered materials, such as Majorana\n\nfermions in topological superconductors. Materials under investigation include superconducting\n\nnanowires made of InAs or MoTe₂. These qubits are robust to local noise and decoherence due to their\n\ntopological nature, offering the potential for long-lived qubits. However, this platform is still experimental,\n\nand significant challenges remain in achieving reliable and scalable topological qubit systems [37,38].\n\nTable 1 provides a summary the main advantages and challenges for all physical sy",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 18.363041156109905,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6131,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2778476__2404.11451__Method_for_Efficient_Large-Scale_Cryogenic_Characterization_of_CMOS_Technologies.md",
+        "title": "2025__recid_2778476__2404.11451__Method_for_Efficient_Large-Scale_Cryogenic_Characterization_of_CMOS_Technologies",
+        "text": "s) to allow parallel measurements\nacross several dies at once, providing further potential orders\nof efficiency improvement.\nRecently, a method has been shown which enables rapid\nmeasurements of multiplexed silicon CMOS transistors operating in the regime dominated by single-electron transport\n\n[35]. This is proof of principle for a time-domain multiple\n\nIEEE DRAFT 8\n\naccess (TDMA) scheme for quantum devices. A single RF\nreflectometry readout line measures the changes in device\nimpedance associated with the formation of Coulomb blockade\nstate, i.e. where electron transport is inhibited by the energy\ncost of adding a single electron to an isolated reservoir [36].\nThat work described a similar farm being measured within\na matter of minutes rather than hours, though the goals of\nthe two measurements are not comparable. This DC transistor\ncharacterization work takes significantly longer due to the\nreduced bandwidth of DC measurements, but such measurements are required for accurate extraction of DC device\ncharacteristics for PDK development - reflectometry would not\nprovide sufficient information.\n\n_D. Isothermal Modeling_\n\nAn attractive approach to deep-cryogenic transistor modelbuilding for quantum computing applications is to perform all\nmeasurements near 4 K (as opposed to lower temperatures)\nwhere material thermal conductivities are higher, promoting\nbetter thermalization, and relatively high cooling power helps\nensure stable operation to build reliable isothermal 4 K models.\nIsothermal models theoretically do not require measurements\nat higher ambient temperatures to characterize detailed temperature dependencies since the local self-heating effects are\nincluded in the core isothermal model itself [37]. Transistor\nbehavior below 4 K shows little change compared to 4 K\nbehavior due to a combination of physical parameter saturation\nand local self-heating during operation [14]. Therefore, such\nmodels would then also be able to quite accurately predict\ntransistor behavior at any ambient temperatures below 4 K.\n\nIf the measurement data for isothermal model building is\ncollected in a liquid helium immersion environment, then the\nself-heating effects will be different from those in a vacuum\n(e.g. dilution refrigerator). This means if an isothermal model\nbuilt from liquid-immersion measurement data is used to\nsimulate transistors operating at high current in a dilution\nrefrigerator, then some aspects of the behavior will not be\naccurately simulated. In a vacuum,",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 17.54655052648902,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1039,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "eam triplet is used for the alignment and analysis in this case. For modules\n\nwith 100 µm × 25 µm pixel size, hits in the DUT within a distance from a track of 150 µm in the\n\nlong pixel direction and 100 µm in the short pixel direction are assigned to the track. For modules\n\nwith 50 µm × 50 µm pixel size, hits within a 100 µm distance in both directions are accepted. A\n\nhit is defined as a pixel with a signal above threshold. Adjacent hit pixels are combined into a\n\ncluster and its position in local coordinates is calculated as the weighted mean of the pixel positions\n\nwith the pixel charges in units of ToT as weights (center-of-gravity reconstruction method). The\n\ndifference between the extrapolation of the track and the position of the cluster in the DUT is used\n\nto determine the alignment of the DUT with respect to the telescope. Six alignment parameters are\n\ndetermined for the DUT: three local position coordinates and three rotation angles.\n\n**5.2** **Hit Efficiency**\n\nThe hit efficiency is studied for non-irradiated and irradiated pixel modules. It is defined as:\n\n_𝜖_ hit = _[𝑁]_ [hit] _,_ (5.1)\n\n_𝑁_ t\n\nwhere _𝑁_ hit is the number of reconstructed in-time tracks with a hit on the DUT within an acceptance\n\nregion that corresponds to the _Linear front-end_, excluding its two last rows and columns, and _𝑁_ t is\n\nthe total number of tracks traversing the DUT.\n\nNon-irradiated modules without a bias dot achieve an efficiency greater than 99% at bias\n\nvoltages as low as 10 V, which is well below the full depletion voltage of ≈75 V.\nModules without a bias dot irradiated to fluences of Φ eq = 4.4, 5.4, 7.4, 10, and 21 × 10 [15] cm [−][2]\n\nwere investigated. As shown in Fig. 8, all these modules reach 99% hit efficiency. Although\n\nsignificantly higher bias voltages are required to reach the efficiency goal, these voltages are still\n\nbelow the 800 V limit considered for the operation in CMS. It is not understood why the efficiency\n\ncurve for M542 is systematically above the one for M564 despite the larger fluence.\n\nModules with a punch-through bias dot suffer from charge loss when a particle hits the bias\n\ndot at a small angle with respect to the module normal. Hence, a hit inefficiency in the vicinity\n\nof the bias dot is expected, as shown in Fig. 9a, which displays the efficiency as a function of\n\n– 14 –\n\n100\n\n99\n\n98\n\n97\n\n96\n\n95\n\n94\n\n93\n\n92\n\n91\n\n90\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|\n|---|---|---|---|---|---|---|---|---|---|\n|||||||||||\n|||||",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 17.448117687206487,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3279,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2713911__2310.15717__Breakdown_performance_of_guard_ring_designs_for_pixel_detectors_in_150_nm_CMOS_technology.md",
+        "title": "2024__recid_2713911__2310.15717__Breakdown_performance_of_guard_ring_designs_for_pixel_detectors_in_150_nm_CMOS_technology",
+        "text": "## Breakdown Performance of Guard Ring Designs for Pixel Detectors in 150 nm CMOS Technology\n\nSinuo Zhang [a], Ivan Caicedo [a], Tomasz Hemperek [a,b], Toko Hirono [a,c], Jochen Dingfelder [a]\n\n_a_ _Physikalisches Institut, Rheinische Friedrich-Wilhelms-Universit¨at Bonn, Nußallee 12, 53115 Bonn, Germany_\n_b_ _Now at: DECTRIS AG, T¨afernweg 1, Baden-D¨attwil, Switzerland_\n_c_ _Now at: Institut f¨ur Prozessdatenverarbeitung und Elektronik, Karlsruher Institut f¨ar Technologie, Hermann-von-Helmholtz-Platz 1, 76344_\n_Eggenstein-Leopoldshafen, Germany_\n\n**Abstract**\n\nSilicon pixel sensors manufactured using commercial CMOS processes are promising instruments for high-energy particle\nphysics experiments due to their high yield and proven radiation hardness. As one of the essential factors for the operation\nof detectors, the breakdown performance of pixel sensors constitutes the upper limit of the operating voltage. Six types of\npassive CMOS test structures were fabricated on high-resistivity wafers. Each of them features a combination of different\ninter-pixel designs and sets of floating guard rings, which differ from each other in the geometrical layout, implantation\ntype, and overhang structure. A comparative study based on leakage current measurements in the sensor substrate of\nunirradiated samples was carried out to identify correlations between guard ring designs and breakdown voltages. TCAD\nsimulations using the design parameters of the test structures were performed to discuss the observations and, together\nwith the measurements, ultimately provide design features targeting higher breakdown voltages.\n\n_Keywords:_ silicon pixel detector, guard ring, passive CMOS, DMAPS, TCAD simulation, sensor breakdown\n\n**1. Introduction**\n\nThe operation of silicon detectors in high–energy physics\n(HEP) experiments usually requires a high reverse bias\nvoltage on the sensors to provide a sufficiently high electric field and a possibly large depletion region to achieve\nfast charge collection by drift and a high signal-to-noise\nratio. The breakdown of the p–n junction emerges when\nthe local electric field is able to trigger the impact ionisation and avalanche multiplication of charge carriers. With\nthe consequence of a significantly high leakage current\nor even irreversible damage, such an effect is a limiting\nfactor of the sensor operating voltage. Multiple floating\nguard rings are commonly used in power electronics devices and silicon particle detectors for HEP experiment",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 16.986055675233803,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 833,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi.md",
+        "title": "2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi",
+        "text": "oolers (TECs) based on Bismuth Sesquitelluride (Bi 2 Te 3 ) have also been included\n\nas an integrated component of the SiPM package. The TECs are re-flow soldered at 220 [◦] C to the\n\nrear side of the SiPM package on dedicated solder pads. The TECs specifications can be found on\n\nthe manufacturer (Phononic) website [13]. In the presence of TECs the heat produced by the SiPM\n\ncan flow only through the TEC surfaces (rather than through the entire substrate). It is therefore\n\nimportant to use a high conductivity thermal gap filler to maximize the heat flow between the TEC\n\nside coupled to the SiPM substrate and the side coupled to the copper housing. A THERMFLOW\n\nPhase-Change Thermal Interface Pad (T558) [14] with thickness of about 50-150 _𝜇_ m was found as a\n\ngood compromise between high thermal conductivity and capability to absorb potential ruggedness\n\nor non-planarity of the TEC and copper housing surfaces.\n\n– 6 –\n\nTEC mechanical specifications\n\n**Figure 6** . Top: Technical drawing of the back side of a BTL SiPM array where the location of the temperature\nsensor (RTD) and of the four TECs is visible, including dimensions of the thermo-electric coolers. Bottom:\npicture of BTL SiPM arrays (back side) from different manufacturers with TECs and RTDs (left) and picture\nof a batch of TECs as received from the supplier.\n\nBesides cost and integration implications another key parameter to consider is the additional\n\npower required by the TECs to provide an additional temperature gradient of about 10 [◦] C . This is\n\nbecause the total heat produced by a detector module ultimately needs to be extracted by the CO 2\n\ncooling system which has a finite capacity [2]. The reason why TECs represent a very attractive\n\nsolution for integration with irradiated SiPMs is that the power required to cool down the SiPMs by\n\nadditional 10 [◦] C compared to the cooling plate is almost entirely compensated by the decrease of\n\nSiPM leakage current.\n\nTo achieve a first proof-of-principle of this power compensation mechanism, a set of four\noff-the-shelf TEC prototypes of 2 × 2 mm [2] area were mounted on SiPM arrays, irradiated to\n2 × 10 [14] n eq /cm [2], annealed for 80 minutes at 60 [◦] C and then glued to a LYSO crystal array to gauge\nthe actual performance in cooling down a BTL module operated at around 1.0 V. The TEC hot sides\n\nwere thermally coupled to a large heat sink (emulating the detector cooling plate) and placed inside\n\na climate chamber at a temperature of −35 [◦] C . T",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 16.953071182950122,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5128,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "rs)\n\n_Sensors_ **2024**, _1_, 0 2 of 19\n\nThe effects of radiation damage are already measurable at the fluences of LHC Run 2\nand Run 3. For instance, the charge collection efficiency (CCE) of the innermost ATLAS\nPixel layer has now reduced to approximately _∼_ 70% at a fluence of about 1 _×_ 10 [15] n eq cm _[−]_ [2]\n\n[10].\nThe ATLAS, CMS, and LHCb collaborations have developed algorithms to incorporate\nradiation damage effects into their Monte Carlo (MC)-simulated events [ 11 ]. Thanks to these\nalgorithms, it is possible to track the evolution of pixel detector performance as radiation\ndamage accumulates. Despite the different approaches adopted by the three collaborations,\nthe level of agreement between data and Monte Carlo (MC) simulations is remarkable,\nachieving agreement at the _O_ ( % ) level [ 10 ]. These algorithms enable the prediction of\noperational parameters such as depletion voltage and make possible the generation of\nsamples for future detector conditions; these are essential for training reconstruction\nalgorithms.\nDespite the importance and success of these algorithms, some may not be viable for\nthe HL-LHC phase due to computing resource constraints. This is particularly true for the\nATLAS Pixel detectors. Therefore, there is a pressing need for faster yet equally precise\nalgorithms to meet the demands of the HL-LHC data-taking conditions.\nIn this paper, a new lightweight algorithm is presented which is able to address the\nchallenges posed by the HL-LHC on computing resources for the inclusion of radiation\ndamage effects in MC simulated events. The paper is organized as follows.\nIn Section 2, the ATLAS algorithm for simulating radiation damage effects to silicon\npixel sensors is presented along with some key results. Section 3 introduces the new\nalgorithm, which relies on Look-Up Tables (LUTs). This section also discusses the various\ntypes of simulations—TCAD (Technology–Computer-Aided Design) and Geant4 [ 12 – 14 ]\nbased—that serve as inputs to the new algorithm.\nIn order to validate the new algorithm, a series of closure tests were conducted,\ncomparing events simulated using the LUTs algorithm to fully simulated events. The\nresults of these closures tests are reported in Section 4. Finally, the paper concludes (Section\n5) with a discussion on the results and an outlook for the project.\n\n**2. The ATLAS IBL and Pixel Radiation Damage Digitizer**\n\nThe ATLAS Collaboration developed and implemented an algorithm to include the\neffects of radiat",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 16.78243052647869,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1522,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2704998__2309.17413__Momentum-Space_Imaging_of_Ultra-Thin_Electron_Liquids_in_-Doped_Silicon.md",
+        "title": "2023__recid_2704998__2309.17413__Momentum-Space_Imaging_of_Ultra-Thin_Electron_Liquids_in_-Doped_Silicon",
+        "text": "were constrained to\n(0.16 ± 0.04) eV and the best fit parabola for all δ-layer samples yielded an effective mass of\n(0.90 ± 0.05)𝑚𝑚 𝑒𝑒, which lies close to the expected value of 0.98𝑚𝑚 𝑒𝑒 [S15].\n\n## **(G) Self-consistent Schrödinger-Poisson model of δ-layers**\n\nThe theoretical model being compared to the experimental data in Figure 4 of the main\nmanuscript is outlined here. The model employs an effective mass approximation [S16] and\naccounts for dopant segregation in realistic δ-layers [S17]. Given the latter, the model also\n\nS6\n\nneglects the inter-valley coupling, which becomes vanishingly small for δ-layers wider than\n\n0.2 nm [S17].\n\nIn highly doped δ-layers, a strong electrostatic potential is induced that confines\nelectrons to the plane. The high concentration of donor electrons leads to a substantial overlap\nof their wavefunction and screening of the attractive cores. As a result, the local disorder is\nsmoothed out. It is therefore convenient to ignore the placement of individual atoms and\ndescribe the layer by a constant average charge density. The system now exhibits planar\nsymmetries, where the electrostatic potential only varies in the plane-perpendicular direction.\nThe infinite δ-layer is thus described by one-dimensional Schrödinger-like equations:\n\n**𝑋**\n\n**𝑋**\n\n�− 2𝑚𝑚 [ℏ] [2] ∥\n\n�− 2𝑚𝑚 [ℏ] [2] ⊥\n\n**𝑋**\n\n**𝑋**\n\n𝑑𝑑 [2]\n\n[+ 𝑉𝑉(𝑧𝑧) �𝐹𝐹] [Γ] [(𝑧𝑧) = 𝜖𝜖] [Γ] [𝐹𝐹] [Γ] [(𝑧𝑧),] (7)\n𝑑𝑑𝑧𝑧 [2]\n\n𝑑𝑑 [2]\n\n[+ 𝑉𝑉(𝑧𝑧) �𝐹𝐹] [Δ] [(𝑧𝑧) = 𝜖𝜖] [Δ] [𝐹𝐹] [Δ] [(𝑧𝑧) .] (8)\n𝑑𝑑𝑧𝑧 [2]\n\n**𝑋**\n\n**𝑋**\n\n𝑑𝑑 [2]\n\n**𝑋**\n\n**𝑋**\n\n𝑑𝑑 [2]\n\n**𝑋**\n\n**𝑋**\n\nHere, 𝑚𝑚 ∥ ≈0.98𝑚𝑚 𝑒𝑒 corresponds to the longitudinal anisotropic electron mass in silicon and\n𝑚𝑚 ⊥ ≈0.19𝑚𝑚 𝑒𝑒 the transverse effective mass given in terms of the bare electron mass 𝑚𝑚 𝑒𝑒 . Note\nthat the equations are not given in terms of the full electronic wavefunction 𝜓𝜓(𝐫𝐫) =\n𝐹𝐹(𝐫𝐫)𝜓𝜓(𝐤𝐤, 𝐫𝐫), but instead of envelope functions 𝐹𝐹 𝑖𝑖 . The complete solutions of the wave\nequations include rapid Bloch oscillations that can be omitted in the effective mass\napproximation. The Schrödinger-like equations are re-written as systems of first order linear\nequations. The eigenvalues 𝜖𝜖 𝑖𝑖 and envelope functions are computed using a root-finding\nSchrödinger solver and the second order Runge-Kutta method. Note that the model neglects\ninter-valley coupling. This is appropriate for the current samples, as the valley splitting of the\n1Γ band becomes vanishingly small for δ-layers wider than 0.2 nm [S17].\n\nAssuming the electron wavefunctions are",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 16.626045113286683,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 26,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8047,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2966093__2509.02285__FPGA-Based_RoCEv2-RDMA_Readout_Electronics_for_the_CTAO-LST_Advanced_Camera.md",
+        "title": "2026__recid_2966093__2509.02285__FPGA-Based_RoCEv2-RDMA_Readout_Electronics_for_the_CTAO-LST_Advanced_Camera",
+        "text": "As are required for high\nradiation environment [37], [38].\nThe original core has been modified by removing the entire\ndata reception path as well as support for all RDMA READ\noperations. The rationale behind this operation is not only the\nnature of the application but also due to cost reasons: the\nAdvCam is made of about 7000 channels to sample, readout,\nprocess, store and broadcast, and FPGA area will seriously\nimpact the overall cost per channel. As shown in Tab. I, the\nmodified core results in a lighter and more portable design\nsuitable for deployment on smaller FPGAs. Moreover, the\nRoCEv2 core guarantees reliability in data transfer. By using it\nin Reliable Connection (RC) mode, the core provides features\nsuch as acknowledgment and retransmission, ensuring that\ndata are delivered reliably and in order, making up for the\nintrinsic unreliability of the UDP layer. RC mode is mandatory\nin physics experiments applications because data fragments\nfrom different parts of the detector are funneled at random\ntimes through network devices (e.g. RoCEv2 endpoints and\nswitches) to DAQ servers for event building: this process\ncannot rely on a bare UDP transport which is lossy by\nconstruction and is unable to handle potential congestion of\nswitch ports [39].\nA candidate system design for AdvCam readout addresses\nchannels in groups of 48, all processed by a single FPGA.\nThe estimated transfer rate after zero suppression, local trigger\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, 2025 8\n\n_D. RoCEv2 Firmware Simulation_\n\nFig. 13: RoCEv2 firmware simulation block diagram.\n\nprocessing and global trigger validation is largely compatible\nwith 10 Gb/s Ethernet line rate. For this reason the R&D on\n\nRDMA based readout has focused on this type of network.\n\nAs RoCEv2 uses UDP as its transport protocol, a full\nUDP/MAC network stack has been implemented. The 10 GbE\nnetwork system is heavily based on the SLAC Ultimate RTL\nFramework (SURF) [40], which consists of an open-source\nmodular framework designed to facilitate data acquisition in\nFPGA-based systems [41]. The framework integrates VHDLbased hardware modules and IPs with the SLAC ROGUE\n\nsoftware [42], which provides a high-level software interface\nfor data control, monitoring, and transfer over Ethernet. This\nintegration allows for easy communication between the FPGA\nhardware and the software, enabling flexible and scalable data\nacquisition systems. Importantly, SURF also provides an additional layer called RUDP (Reliable UDP), which",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 16.480130805645352,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1832,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "to hit clustering have been successfully implemented\nby different detectors. However, compression offers little advantage when the channel\noccupancy is high and so has not been used in some regions of the experiment. The\nrelatively modest radiation level in many parts of LHCb has allowed the widespread use\nof FPGAs although only after careful qualification procedures. These have brought many\nadvantages such as shorter design time and flexibility, as well as relaxing the demand\nfor specialised personpower and tools required for ASIC implementations. Efficient data\ncompression comes at the cost of variable latency, thus the data transport system in LHCb\nis asynchronous. To allow the proper reconstruction of event fragments downstream in\nthe system, data packets are tagged as early as possible with a unique time-stamp based\non the bunch-crossing identifier (BXID). Simplex data links, running at 4.8 Gbit/s, are\nconstructed from the gigabit transceiver (GBT) serialiser/deserialiser ASIC [14] and the\nversatile twin transmitter (VTTx) opto-electrical converter [15]. The only exception is\nthe VELO, where the serialiser is embedded directly in the FE ASIC. The duplex TFC\nand ECS links are constructed with the GBT, versatile link transceiver (VTRx) and slow\ncontrol adapter (SCA) [16]. This standardisation across LHCb has had major benefits\n\n5\n\nin easing both development and deployment, as well as the sharing of experience across\nthe wider LHC community. Power distribution has followed a similar common approach\nwith the use of FEASTMP DC-DC converters [17] for local power regulation. The specific\nimplementations of the FE architecture by each subdetector are described in subsequent\nsections. The BE electronics consist of custom PCI-express modules mounted in PC\nservers in the data centre. This module, known generically as PCIe generic back-end board\n(PCIe40), contains arrays of optical transmitters and receivers connected to a powerful\nFPGA. The PCIe40 was conceived and designed to fulfil the functionality required for both\ndata acquisition and controls. Hence, by the choice of the FPGA firmware, the module\ncan be configured for either data acquisition or controls. The role of the PCIe40 board\nfor data acquisition (TELL40) is to decode and process data, and then build multievent\npackets for transmission to the event-builder. The PCIe40 board for controls (SOL40) is\nthe ECS interface used to configure the FE electronics and transmit TFC commands to\nthe FE and TELL40s.",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 16.37669666677457,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.18263395316898823,
+    "generation_latency_s": 3.3993273973464966e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.18263395316898823,
+    "generation_latency_s": 3.3993273973464966e-07
+  }
+}

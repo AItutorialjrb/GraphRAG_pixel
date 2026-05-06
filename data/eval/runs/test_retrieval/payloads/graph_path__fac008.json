@@ -1,0 +1,402 @@
+{
+  "benchmark": {
+    "query_id": "fac008",
+    "query_type": "factoid",
+    "query": "What is a test beam used for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "a",
+      "test"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is a test beam used for?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1356,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2684575__2308.01148__Beam_test_simulation_and_performance_evaluation_of_PbF2_and_PWO-UF_crystals_with_SiPM_read.md",
+        "title": "2023__recid_2684575__2308.01148__Beam_test_simulation_and_performance_evaluation_of_PbF2_and_PWO-UF_crystals_with_SiPM_read",
+        "text": "of\nProto-0 during the assembly phase.\n\nS14160-3010PS SMD silicon photomultipliers [ 7 ], with 10- _`_ m pixel size, mounted on a dedicated PCB\n(SiPM board). The crystals were optically coupled to the SiPMs by direct contact without the use of\n\noptical grease. The left and right sides of the crystal were each read out by a pair of SiPMs connected in\nseries, providing two independent readout channels for each crystal (see inset in Figure 3). The signals\nwere transmitted from the SiPMs to the FEE board via micro-coaxial transmission lines. For the test, a\ntwo-channel prototype version of the Crilin front-end electronics (FEE) was used. On the FEE board, after\nproper termination, the pulses were processed first by a high-speed, non-inverting amplification stage with\n\n**Frontiers** **3**\n\n_**D. Paesani et al.**_\n\ngain 4. The first stage output drove a pole-zero cancellation circuit, followed by a second, non-inverting\nstage (with gain 4) to drive the digitisation section. The FEE circuit has a dynamic range of 2 V and an\noverall gain of 8. External HV supplies were used for biasing.\n\n### **2 BEAM TEST**\n\n**2.1** **Setup**\n\nAll measurements were carried out in the H2 beamline at the CERN SPS with a 120-GeV electron\n\nbeam and the setup illustrated in Figure 2. The trigger was obtained from the coincidence of the two\nscintillator counters, S1 and S2. The beam was tracked with a beam telescope consisting of two stations of\ntwo 9.5 ⇥ 9.5 cm [2] planes of silicon-microstrip tracking detectors, C1 and C2, spaced 15.4 m apart. Each\nsingle-sided tracking plane was 410 _`_ m thick and had a spatial resolution of 47 _`_ m, yielding an angular\nresolution for beam particles of about 3 _`_ rad. Single particle event selection was performed by rejecting\nmulti-cluster hits in the tracking detectors.\n\n**Figure 2.** Top panel: Schematic representation of the beam test setup, scintillating counters (S1-S2) and\ntracking detectors (C1-C2), along with the positioning of the module under test.\n\nThe prototype was placed on a 4-axis motorised stage, with 2 axes of rotation and 2 axes of translation,\nfor alignment (Figure 2, bottom). Two different data-taking configurations were employed:\n\n forward orientation, with the beam incident on the upstream face of the crystal and the SiPMs\n\ndownstream facing upstream (front incidence);\n\n - reversed orientation, with the beam incident on the back side of the SiPMs and the SiPMs at the\n\nupstream end of the crystal facing downstream (back inciden",
+        "score": -1.4512473392123615,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8372978116079923,
+        "rerank_score": -2.331875801086426,
+        "matched_nodes": [
+          "For",
+          "Test",
+          "Beam",
+          "The",
+          "CERN",
+          "SPS"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 3399,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science.md",
+        "title": "2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science",
+        "text": "arger distances. In addition, the\nLGAD detectors allow to measure the beam structure as shown in Fig. 8 for\nthe first time at the Dublin hospital. The good timing resolution of LGADs of\n15 to 20 picoseconds allow to see the periodicity of the beam of about _∼_ 330 ps,\nwhich is not possible using an ion chamber with an integration time of a few\nseconds. This method allows to measure single particles from the beam, which is\nfundamental to measure instantaneous doses for high intensity proton/electron\ntherapy for instance and to check online the quality of the machine.\nWe recently got a project approved by NIH with the goals of designing and\nbuilding a UFSD dosimetry prototype using the fast sampling method, and of\ntesting this prototype in a proton/electron flash beam facility at the University\nof Kansas and the University of Washington in St Louis. The longer term goals\nwill be to move from a 8/16 channel readout board to a 100 or 1000 channel\nboard that could have direct commercial applications to measure the machine\nquality and doses received by patients in flash beam therapy treatments.\n\n**4. Conclusion**\n\nFast timing and LGAD detectors were originally developed for high energy\nphysics at CERN. We developed at KU a readout electronics card using stan\n\n6\n\nFigure 6: Signal from the UFSD allowing to measure doses almost instantaneously by counting\nthe spikes in signal due to the particles crossing the detector. The bottom plot shows the\nzoomed region in red from the top plot. The red triangles show the particles that lead to a\ntrigger of our detector.\n\nFigure 7: Left: Correlation between the LGAD signal and the ion chamber results that\nshow a good agreement between bothe measurements. The ion chamber can only perform\nmeasurements every few seconds while LGAD has a time resolution of about 20 to 25 ps.\nRight: Comparison between the measurement of LGAD and ion chamber as a function of\ndistance from the beam and we not again a good agreement between both measurements.\n\n7\n\nFigure 8: Beam structure analysis in Dublin hospital using the UFSD detector. It was possible\nto see the beam structure for the first time benefitting from the short signals of UFSDs.\n\ndard components for different applications, the idea being to reconstruct the\nfull spectrum of a given signal using the fast sampling technique. The first application that we discussed is to measure cosmic ray particles (both identify the\ntype of particles and measure their energies) in a cube satellite in coll",
+        "score": -2.5192618497773975,
+        "dense_score": 0.4261721968650818,
+        "bm25_score": null,
+        "graph_score": 0.8667935299714558,
+        "rerank_score": -3.9827990531921387,
+        "matched_nodes": [
+          "Beam",
+          "ST",
+          "The",
+          "In",
+          "We",
+          "CERN"
+        ],
+        "path_nodes": [
+          "Beam"
+        ],
+        "community_id": "Beam",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1359,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2684575__2308.01148__Beam_test_simulation_and_performance_evaluation_of_PbF2_and_PWO-UF_crystals_with_SiPM_read.md",
+        "title": "2023__recid_2684575__2308.01148__Beam_test_simulation_and_performance_evaluation_of_PbF2_and_PWO-UF_crystals_with_SiPM_read",
+        "text": "re 5, bottom\n\n**Frontiers** **5**\n\n_**D. Paesani et al.**_\n\n**Figure 4.** Left panel: Example of signal fitted using a template generated from corresponding dataset;\nthe marker shows the constant fraction time. Right panel: Comparison between the pulse shapes for two\ndifferent types of crystal. PbF 2 shows a sharper rising edge than PWO-UF.\n\nleft; such a bias might be expected due to the variation of the waveform shape as a function of particle hit\nposition, which will be discussed in Section 4. Similarly, it was verified that the aforementioned selection\ncuts did not result in any bias with respect to pulse amplitude and timing. To ensure that the reconstructed\n\n**Figure 5.** Timing reconstruction diagnostics. Top left: Example of constant fraction optimisation by\nminimisation of the timing resolution. Top right: Plot of reconstructed time modulo the digitiser sampling\nperiod of 200 ps, showing no significant bias from the timing algorithm. Bottom left: Example of _j_ [2]\ndistributions resulting from template fits applied to PbF 2 waveforms for CH0 (black) and CH1 (red). Bottom\nright: _j_ [2] distribution as a function of the particle hit position on the crystal.\n\n**Frontiers** **6**\n\n_**D. Paesani et al.**_\n\ntiming information was free of any significant bias with respect to the digitiser sampling frequency, the plot\nin Figure 5, top right, was produced, which shows that the distribution of the reconstructed time modulo the\ndigitiser sampling period is flat.\n\n### **3 TEST BEAM SIMULATION**\n\nDetailed Geant4 [ 8 ] simulations of the beam, crystal, wrapping, and SiPM readout were developed for both\ntypes of crystals. A sensitive detector attached to the crystal volume was used to score energy deposits,\n6\nwhile different beam sources were used to reproduce the test beam scenarios, as discussed below. Figure\nshows the reference geometry, containing a single crystal and its wrapping, along with the four SiPM\npackages and active silicon regions.\n\n**3.1** **Optical transport**\n\nFor PbF 2 crystals, which represent the baseline choice for the Crilin design, a detailed simulation was\nalso implemented to study the optical transport of Cherenkov photons. The relevant optical properties and\nsurfaces were simulated. In particular, a dielectric-dielectric optical boundary between the PbF 2 crystal\nand Mylar wrapping was implemented, based on the LUT model [ 9 ]. The interface between the crystal\nand the four SiPM packages, made of silicone resin, was simulated using a p",
+        "score": -2.565330353480084,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.923882017126546,
+        "rerank_score": -4.0561065673828125,
+        "matched_nodes": [
+          "For",
+          "Test",
+          "Beam",
+          "The",
+          "In",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1910,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "e PACIFIC. Ideally, the thresholds are set\nas low as possible to maximise the efficiency, while accepting a tolerable amount of darknoise clusters that can be removed in the track finding algorithms. A comparison of the\nnumber of thermal-noise clusters per bunch crossing for two different electronics response\n\n74\n\nconfigurations is shown in figure 55. The data points are generated from a detailed model\nof the DCR, PACIFIC response function, SiPM cross-talk, and the clustering algorithm.\nA simple power law function, overlaid in the figure, describes well the data.\n\n##### **6.10 Test beam results**\n\nA slice test of two SciFi Tracker modules coupled to a complete set of nearly final FE\nreadout electronics was performed in 2018, with a preliminary standalone version of the\nLHCb 40 MHz PCIe40 readout [103]. The system was tested for its single particle hit\nreconstruction efficiency and position reconstruction resolution using a beam from the\nSuper Proton Synchrotron (SPS) at CERN’s North Area consisting of 180 GeV/ _c_ pions,\nprotons and/or muons. The SiPMs were not irradiated and kept at room temperature\nwith chilled water.\n\nTo ensure that the reconstructed particle tracks are of good quality and to provide a\nprecise hit location, the TimePix3 telescope in the H8A area was operated synchronously\nwith the PCIe40 readout. The telescope provides a fine time stamp that divides the 25 ns\nlong clock cycles into 96 intervals of about 0.25 ns . [49] This fine time stamp is required\nas the arrival of the particles from the SPS are not synchronised in time with the DAQ\nsystem, unlike the particles that will be generated at the LHC.\nFor every trigger and high-quality track from the telescope a search is made in the\nSciFi Tracker data for a corresponding signal cluster (one or more neighbouring channels\nwith a signal). The relative position of the found cluster is compared to the telescope\ntrack position in the module to determine the position resolution of the fibre modules, as\nwell as the single hit efficiency.\n\n**6.10.1** **Single-hit efficiency**\n\nA log-normal distribution describes well the measured inefficiency distribution observed in\nthe test beam as can be seen in figure 56 (left). From these data a mean hit efficiency for\nthe sensitive regions of the SciFi Tracker (excluding gaps) is estimated to be 0 _._ 993 _±_ 0 _._ 002\n(quoting the standard deviation of the log-normal as an estimator for the expected spread).\n\n**6.10.2** **Hit position resolution**\n\nThe hit",
+        "score": -2.609645058119218,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8268315889628924,
+        "rerank_score": -4.112786293029785,
+        "matched_nodes": [
+          "For",
+          "Test",
+          "The",
+          "To",
+          "CERN",
+          "SPS",
+          "LHC"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 92,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7778,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco.md",
+        "title": "2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco",
+        "text": "esponding ratio of simulation to\n\nmeasurement.\n\nValidation results obtained with the 650 µm sensor at\n150 V bias voltage, using 15 keV, 20 keV, and 25 keV X-ray\nphotons, are presented in Fig. 3. For all tested configurations,\nthe ratio of the simulated to experimental energy spectra\ncenters remained close to 100% typically within a ±10%\nmargin, demonstrating satisfactory agreement. Specifically,\nthe mean absolute deviations between simulation and mea\nsurement from 1 keV up to the beam energy are less than\n4% and the _𝜒_ [2] ∕NDF values were under 25. For the 320\nµm sensor, as shown in Fig. 4, similarly high consistency\nis obtained for 15 keV and 25 keV X-ray photons at 150\nV bias voltage, and for 25 keV X-ray photons at 90 V bias\nvoltage, with the mean absolute deviations remaining below\n3%, with _𝜒_ [2] ∕NDF values under 20. A comparison using the\nsimplified spherical model is shown in Fig. 5. This model\ndemonstrates comparable consistency but with significantly\nreduced simulation time, highlighting its efficiency and practical utility.\n\n**5. Discussion and conclusion**\n\n**5.1. Quantitative understanding of the repulsion**\n**effect**\nWe quantitatively investigated the influence of the repulsion effect on charge transport using the comprehensive\nsimulation method applied to a 320 µm-thick sensor biased\nat 150 V, a commonly employed configuration for hybrid\npixel detectors. Fig. 6 illustrates the root mean square (RMS)\nof the collected hole distribution as a function of photon\nabsorption depth for different photon energies. To examine\nthe theoretical limiting case of zero photon energy (0 keV),\nwe conducted additional simulations with a zero standard\n\ndeviation of the initial Gaussian distribution and the repulsion effect removed. This scenario is indicated in Fig. 6 by\na dashed line for reference. In the shallow absorption region\nof the plot, the repulsion effect rapidly broadens the charge\ncloud, with the extent of broadening strongly dependent on\n\n**Table 1**\nRoot mean square (RMS) of holes after transport simulation\nof 320 µm sensor at 150 V bias voltage for different photon\nenergies. The RMS is weighted by the attenuation probability\nat different absorption depths.\n\nWeighted RMS 5 keV 15 keV 25 keV\n\nWithout repulsion 5.7 µm 4.3 µm 4.3 µm\nWith repulsion 6.2 µm 5.3 µm 5.6 µm\n\nphoton energy. At longer drift distances, where the repulsion\neffect diminishes toward the end of the transport, the differences in RMS among different photon energies become\nstable",
+        "score": -4.6819024441063,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9134157944814463,
+        "rerank_score": -7.311131477355957,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "We",
+          "To",
+          "X-"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6753,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "with a low field region)\nand 21 _._ 11% at high ∆ _V_ (without a low field region). This can\nbe compared with the measurement result of 22% at low ∆ _V_\nand 17% at high ∆ _V_ .\n\n_D. Comparison with SciFi light source_\n\nThe microlens parameters were optimised for the SciFi as\na light source and represent one of the goals of the MLA\nproject. The test with the SciFi was performed at CERN\nSPS with pions at a momentum of _p_ = 180 _GeV/c_ . The\nSciFi module was arranged to perform a longitudinal scan.\nThe distance between the particle beam and the photodetector\nwas varied between 20 _cm −_ 230 _cm_ and the light intensity of\nthe normal incident particles was measured. With a Gaussian\nfit, the median is extracted from the characteristic Landau\ndistribution introduced by the energy deposit fluctuations. This\nvalue is called the light yield (LY) of the SciFi tracker. As a\nconsequence of the mirror placed at the far end of the SciFi\nmat at a distance of 245 _cm_ from the SiPM, the detected light\nis composed of a direct component and a mirrored component.\nAt a distance of 20 _cm_, the mirrored component is reduced to\nabout 20% due to attenuation. A fibre mat of 130 _mm_ width\nwas equipped with four flat layer dies and four microlens dies,\n256 channels each. In Fig. 11 the LY is plotted as a function\n\nof ∆ _V_ and given for two distances from the detector. The LY\nmeasurement has been performed after a gain calibration with\na light injection system for each acquisition channel.\nFor the SciFi light distribution for a propagation length of\n230 _cm_, the simulated LY enhancement is 24 _._ 57% for low ∆ _V_\nand 18 _._ 59% for high ∆ _V_, and the measured values with SciFi\nare 22 _._ 5% for low ∆ _V_ and 20 _._ 5% for high ∆ _V_ . Note that the\nsimulation was performed with a light exit angle distribution\ncorresponding to a 230 _cm_ long fibre.\n\nVII. C ONCLUSION\n\nIn this work, we present a novel implementation of MLA\nwith the objective of improving the PDE of SiPMs. The\nimplementation was guided by the technology limitation of\nthe MLA deposit by a mold and a UV-curable polymer.\nTo optimise the most important parameters, the geometry\nof the SiPM pixel was simulated with three regions: the\ndead region, the low field region representing a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter,",
+        "score": -4.788477980834206,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9134157944814463,
+        "rerank_score": -7.475093841552734,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "To",
+          "CERN",
+          "SPS"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6144,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2782384__2404.19592__Programmable_Activation_of_Quantum_Emitters_in_High-Purity_Silicon_with_Focused_Carbon_Ion.md",
+        "title": "2025__recid_2782384__2404.19592__Programmable_Activation_of_Quantum_Emitters_in_High-Purity_Silicon_with_Focused_Carbon_Ion",
+        "text": "ion\nbeam could be focused into a spot size less than 50 nm,\nand a total source lifetime of around 80 hours has been\n\nachieved.\n\nIn order to demonstrate the advantage of our C-FIB,\nwe use a high-purity (100) p-type silicon wafer with resistivity of 3500 Ωcm grown by Floating Zone (FZ) technique. It has low residual carbon concentration below\n\n2\n\nFIG. 2. PL spectra at _T_ = 7 K form a high-purity silicon wafer\nafter ion implantation. (a) Implantation with double-charged\nSi [2+] ions to a fluence of 1 _×_ 10 [12] cm _[−]_ [2] at an acceleration\npotential of 20 kV. Inset shows the atomic configuration of\nthe W center. (b) Implantation with single-charged C [+] ions\nto a fluence of 1 _×_ 10 [12] cm _[−]_ [2] at an acceleration potential of\n40 kV. The inset shows the atomic configuration of the G\n\ncenter.\n\n10 [15] cm _[−]_ [3] . For comparision, we start with the implantation of doubly-charged Si [2+] ions at an acceleration potential of 20 kV, i.e., with an implantation kinetic energy\nof 40 keV. This energy corresponds to the mean implantation depth of 60 nm. We use a Si-FIB to create a frame\nwith an implantation fluence Φ = 1 _×_ 10 [12] cm _[−]_ [2] . After\nimplantation, we measure PL in a confocal microscope\nat a temperature _T_ = 7 K using a continuous wave excitation at 637 nm. The details of the experimental setup\nare presented elsewhere [10].\nA PL spectrum after Si-FIB implantation into highpurity silicon is presented in Fig. 2(a). It is dominated\nby the zero-phonon line (ZPL) at _λ_ W = 1218 nm, which\nis the fingerprint of the W center [31]. It consists of three\nSi interstitials Si i _−_ Si i _−_ Si i [32], as schematically shown\nin the inset of Fig. 2(a). Obviously, the probability to\ncreate G centers, consisting of two C substitutional and\none Si interstitial [7], in a high-purity silicon wafer is very\nlow. Its atomic configuration C Si _−_ Si i _−_ C Si is schematically shown in the inset of Fig. 2(b). The spectroscopic\nfingerprint of the G center is the ZPL at _λ_ G = 1278 nm\n\n[21]. From the comparison of the relative ZPL intensities\nin Fig. 2(a), we estimate the probability to create the G\ncenters under Si implantation due to the residual carbon\ndoping _I_ G _/I_ W _<_ 0 _._ 05 (Table I).\nTo increase the probability of the creation of the G centers, we use now our C-FIB with singly-charged C [+] ions.\nThe implantation kinetic energy of 40 keV corresponds\n\nthe ZPL from the W center. The shadowed area represents\nthe noise floor. (c) PL spectrum from",
+        "score": -4.822146301104385,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8097050428163652,
+        "rerank_score": -7.514605522155762,
+        "matched_nodes": [
+          "For",
+          "The",
+          "In",
+          "We",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1192,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "d tesla-range magnetic fields [36].\nFurthermore, our easy-to-implement charge-stabilization\nscheme will find immediate applications in other quantum\ntechnology applications of SiV _[−]_, including the development\nof quantum repeaters [37], quantum networks [13, 38] or\nindistinguishable single photon sources [39]. Lastly, it is\nconceivable that our approach for generating and stabilizing\nnear-surface color centers with high optical coherence extends\nto other color centers in diamond or in other wide-bandgap\nhosts such as hBN [40] or SiC [41].\n\n**METHODS**\n\n**Optical Setups**\nTo characterize our diamond samples at room temperature (RT),\nwe employ a home-built confocal microscopy setup. This setup is\nequipped with a continuous wave (cw) 515 nm diode laser (Cobolt\n06-MLD) for off-resonant excitation. At low temperature ( _∼_ 7 K),\nthe sample is housed in a variable-temperature closed-cycle cryostat\n(attocube attoDRY800) and we perform optical spectroscopy again\nwith a home-built confocal microscopy setup. For this setup, we\nput to use cw 445 nm and cw 515 nm diode lasers (Cobolt 06-MLD)\nfor off-resonant excitation as well as a narrow-linewidth (200 kHz)\ntunable (720-739 nm) diode laser (Sacher Lasertechnik LION) for\nresonant excitation. Frequency modulation and control of the LION\nis achieved through a PID loop of a HighFinesse WS-U wavelength\nmeter. Additionally, we stabilize the intensity of the resonant laser\nthrough the PID loop of a home-built optical intensity stabilization\n(OIS) module (Physics Basel SP 999). In case of the resonant laser\nand if applicable to the experiment in question, we carve pulses with\nan acousto-optical modulator (AOM, G&H R15210), whereas the\noff-resonant lasers can be electronically modulated out of the box.\nFor both RT and LT, we focus laser light onto the sample with a\n\n6\n\n0.8 NA objective (Olympus LMPLFLN 100X) thermalized at RT,\nthrough which we also collect the signal. Photons are detected by\nsilicon-based single-photon counting modules (SPCM, Excelitas\nAQRH-33-FC). We perform photon-correlation measurements\nusing a time-correlated single-photon counting (TCSPC) system\n(PicoQuant PicoHarp 300) connected to the SPCMs. For optical\nlifetime measurements we use a pulsed laser (NKT Photonics\nSuperK Extreme EXW-12) tuned to 515 nm and said TCSPC system. Optical spectra are recorded on the camera of a spectrograph\n(Princeton Instruments SP-2500).\n\n**Data availability**\nThe data that support the findings of this study are available",
+        "score": -5.052163729933532,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8667935299714558,
+        "rerank_score": -7.875241279602051,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -5.175450215605529,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8667935299714558,
+        "rerank_score": -8.064912796020508,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4522,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2762357__2402.17271__Capacitive_Coupling_Study_of_the_HERD_SCD_Prototype_Preliminary_Results.md",
+        "title": "2024__recid_2762357__2402.17271__Capacitive_Coupling_Study_of_the_HERD_SCD_Prototype_Preliminary_Results",
+        "text": "XX, XXXX 2020 3\n\nFig. 5. Schematic diagram of a detector with five sets for each of the two\nstrip widths.\n\nFig. 7. The total bulk capacitance as a function of the bias voltage.\n\nTABLE II\n\nT HE CAPACITANCE MEASUREMENT RESULTS\n\n|Capacitance|Value (pF)|Error (pF)|\n|---|---|---|\n|Cc<br>Cb<br>Ci1<br>Ci2<br>Ci3|575<br>1.66<br>6.27<br>0.26<br>0.21|0.65<br>N/A<br>0.29<br>0.30<br>0.12|\n\nagreed with each other within the range of error. Therefore,\nonly the AC-AC pads were measured for the second interstrip\ncapacitance (C i2 ) and third interstrip capacitance (C i3 ). The\nfinal results were shown in Table 2.\n\nIV. I ON BEAM TEST RESULTS\n\nFig. 6. The coupling capacitance dependence on the frequency.\n\nthe LCR meter within a frequency range from 100 Hz to 2\nMHz, as shown in Fig. 6. At low frequencies, C p and C s were\nthe same and independent of the frequency. As the frequency\nincreased, the resistive implantation strip gradually blocked\nthe AC signal, causing a decrease in the measured capacitance\n\n[5]. The measurements at 600 Hz were chosen to evaluate the\ncoupling capacitance.\nThe total bulk capacitance was measured by probing the\nbias ring and the backplane of the detector. The bias voltage\nwas scanned from 5 V to 80 V at a frequency of 600 Hz,\nas shown in Fig. 7. Two linear fits were conducted, and the\nfull depletion voltage was approximately 29.9 V. The bulk\ncapacitance of a single strip (C b ) is calculated by dividing the\ntotal bulk capacitance by the number of strips.\nThree methods were used to measure the first interstrip\ncapacitance (C i1 ) by placing the probes on the pads of two\nadjacent strips: a) AC-AC pads, b) DC-DC pads and c) ACDC pads. The measurements were conducted with 10 kHz\nwhere the capacitance was independent of the frequency. The\ncapacitance obtained from the three methods were 6.18 ± 0.16\npF, 6.27 ± 0.27 pF, and 6.35 ± 0.27 pF, respectively. They\n\n_A. Experimental setup_\n\nAn ion beam test was conducted at the CERN Super\nProton Synchrotron (SPS) in October 2022 to investigate the\nresponse of ions for all the HERD prototype detectors. The\ntest involved a 150 GeV/n lead primary beam directed at a\n4 cm thick beryllium target. The secondary particles were\nselected using magnets and then directed towards the HERD\nprototype detectors. The SCD was mounted on a moving\nplatform perpendicular to the ion beam, and the height of the\nplatform was adjusted during the test to ensure that most of the\ndetector sets received illumination from the small collimat",
+        "score": -5.23231618877596,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8372978116079923,
+        "rerank_score": -8.148904800415039,
+        "matched_nodes": [
+          "At",
+          "Test",
+          "Beam",
+          "The",
+          "CERN",
+          "SPS"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "For": 1.0,
+      "At": 1.0,
+      "Test": 1.0,
+      "Beam": 1.0,
+      "ST": 1.0,
+      "OR": 1.0,
+      "TES": 1.0,
+      "SE": 1.0
+    },
+    "expanded_nodes": {
+      "For": 1.0,
+      "At": 1.0,
+      "Test": 1.0,
+      "Beam": 1.0,
+      "ST": 1.0,
+      "OR": 1.0,
+      "TES": 1.0,
+      "SE": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "CERN": 0.7,
+      "SQUID": 0.7,
+      "Si": 0.7,
+      "SPS": 0.24499999999999997,
+      "LHC": 0.24499999999999997,
+      "X-": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 18,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 7.292502108961344,
+    "generation_latency_s": 5.997717380523682e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 18.0,
+    "retrieval_latency_s": 7.292502108961344,
+    "generation_latency_s": 5.997717380523682e-07
+  }
+}

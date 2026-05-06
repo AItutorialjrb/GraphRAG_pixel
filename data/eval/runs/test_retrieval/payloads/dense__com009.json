@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "com009",
+    "query_type": "comparative",
+    "query": "Compare drift and diffusion charge collection.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Compare",
+      "drift",
+      "and",
+      "diffusion"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare drift and diffusion charge collection.",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6459,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "inegraph using an electric field with\ndopant diffusion added between the substrate and the epitaxial layer. There is no longer a strong electric field at\n_z_ = 0 mm, and charge movement by drift instead starts\ndominating at around _z_ = 3 µm. This situation results\nin a larger cluster size, as the region where charge moves\nprimarily by diffusion is extended.\n\n_4.10. Simulation parameter optimisation_\n\nThe sensitivity of the simulation to different parameters\nhas been investigated, and the results can be used to optimise the accuracy and performance of the Monte Carlo\nsimulations performed with Allpix [2] . The conclusions of\nsuch studies depend on the simulated geometry and the\ndesired accuracy of the final observables, and results do\nthus not necessarily translate between different simulated\nsetups, but it is beneficial to carry out the parameter optimisation before performing a large simulation campaign.\nThe details of which parameters to alter, and their impact\non simulation accuracy, have to be determined for each individual simulation case. Studies of the impact of parameter variation can also be used to determine systematic\nuncertainties in the simulations. A few selected results of\n\nsimulation parameter optimisation for the sensors studied\nin this project are shown below.\n\n_4.10.1. Collection electrode size_\nTo accurately collect charge, the collection electrode\nsize in Allpix [2] has to be set correctly, as discussed in\nSection 4.6. A study of the impact on the total collected charge of setting it to different sizes is shown in\nFigure 13, for a sensor with a nominal collection electrode size of 1 _×_ 1 µm [2] in the x- and y-directions before diffusion is applied in the TCAD simulations. The\n\n`[GenericPropagation]` module is used in this study, and\nthe mean value of the cluster charge for all events is shown.\n\n13\n\n10 µm thick\n\n50 µm thick\n\n500 µm thick\n\nFigure 13: Mean cluster charge collected per event as a function of\nthe implant size in x and y in Allpix [2] .\n\nIt can be seen that for implant sizes in Allpix [2] set to\nvalues smaller than 1.5 µm, not all charge with a final position near the collection electrode is counted as collected.\n\nAfter dopant diffusion is applied, the effective collection\nelectrode size in TCAD is approximately 2 _×_ 2 µm [2] for\nthis sensor, and the value used in Allpix [2] should be slightly\nlarger to prevent charge carriers being excluded from collection after their final diffusion step. In the simulations\npresented i",
+        "score": 1.6346083620320195,
+        "dense_score": 0.41657140851020813,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 2.5089292526245117,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 27,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6463,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "the pixels in this layout are only depleted around the pixel centre. As charge\nmoves predominantly by diffusion outside this region, the\nmovement is slow and charge has a higher probability of\nbeing recombined before it reaches a collection electrode,\nor not being collected within the integration time window\n(25 ns in this case, corresponding to the LHC bunch crossing frequency). The increased charge sharing due to diffusion also leads to each pixel receiving less charge so that\nit is less likely that the total collected charge in a pixel\nwill reach above the threshold value. In the _n-gap_ layout,\nthe charge collection is more complete, and the efficiency\nis higher and more uniform. The charge sharing is also\nreduced, as the pixels are fully depleted and charge moves\nprimarily by drift towards the collection electrodes.\n\n_5.3. Impact of threshold value_\n\nStudies of the dependence of observables on the detection threshold can be performed by running simulations\nwith different detection threshold values in the digitisation\nstage. Figure 19 shows the mean cluster size of the sensor\nversus the threshold value, for the three investigated sensor layouts. The results are presented for a pixel size of\n25 _×_ 25 µm [2] at a bias voltage of _−_ 4 _._ 8 V. Each data point\nin the graphs is the mean result of 500 000 single-electron\nevents, so the statistical errors are small.\nThe mean cluster size becomes smaller as the threshold\n\nincreases, as fewer pixels receive a signal above the threshold, especially when the charge is shared among multiple\n\n15\n\n(a) _Standard_ layout\n\n(b) _N-gap_ layout\n\nFigure 18: In-pixel efficiency for four adjacent pixels with a pixel\nsize of 25 _×_ 25 µm [2], at a bias voltage of _−_ 4 _._ 8 V and a threshold of\n200 electrons.\n\nFigure 20: Threshold dependency of the detection efficiency, at a\nbias voltage of _−_ 4 _._ 8 V for a sensor with a 25 _×_ 25 µm [2] pixel size.\n\nsults are shown for a bias voltage of _−_ 1 _._ 2 V. For the _n-gap_\nlayout, the efficient threshold range is slightly smaller than\nfor the larger pixel size at this bias voltage. This is due to\na reduced efficiency in the gap in the n-blanket between\npixels; in a smaller pixel this region takes up a larger fractional volume, as the gap size remains the same. The trend\nbetween the different layouts remains the same, with the\n_n-blanket_ layout more efficient than the _standard_ layout,\nand the _n-gap_ layout more efficient than the _n-blanket_ lay\nout.\n\nFigure 19: Threshold",
+        "score": 1.55676372221538,
+        "dense_score": 0.410960853099823,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 2.389526605606079,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 31,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 137,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit.md",
+        "title": "2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit",
+        "text": "t observable for charge transport under an applied electric field is drift speed. Comparison of simulated\nand measured drift speeds is thus a good test that the G4CMP\ncharge-transport processes are working as intended. For different values of the electric field, a maximum drift speed of the\ncharge carrier is reached, at which point energy from the electric field goes into emission of NTL phonons. Figure 7 shows\nthe average speeds of electrons and holes drifted through a Ge\ncrystal with O(V/cm) electric fields. The intervalley scattering\nrates for the G4CMP simulations are estimated using the theoretical model in Ref. [61]. The simulated results incorporate\nthe effects of all the charge transport processes described in this\nsection, yielding good agreement with experimental data [60].\nFor Si, G4CMP’s intervalley scattering rates are based on the\nmeasurements in Refs. [49, 57], including the option to select\neither of the two modeling methods reported in those papers.\n\n_2.4. Superconducting quasiparticle processes_\n\nGeometry surfaces may be configured in G4CMP to include modeling of phonon absorption by superconducting films\nand associated sensor response (see Sec. 3.2). To model\nquasiparticles in superconducting films, we have implemented\na “lumped” version [17] of Kaplan’s model for phononquasiparticle behavior [62] in a class named `G4CMPKaplanQP` .\nOur model traces the energy flow from a substrate phonon incident on the film to the amount of energy recorded by a sensor, including quasiparticle production, quasiparticle decay, and\n\nphonons re-emitted into the substrate, without tracking individual particles directly in the film. As implemented, energy\nexchange between phonons and quasiparticles is evaluated iteratively and the process effectively occurs instantaneously –\nany phonons re-emitted into the substrate are assigned the same\ntracking timestamp as the incident phonon. Consequently, energy delocalization via quasiparticle diffusion is not yet captured by this package. Future extensions of G4CMP will include modeling of quasiparticle recombination and concomitant phonon emission in order to improve the generality of the\ntoolkit beyond the originally intended dense arrays of athermal\nphonon sensors.\nIncluded in the model is the possibility for the initial incident phonon to be reflected back into the substrate without absorption ( _i.e._, no quasiparticles are produced), with a probability [17]\n\n_P_ escape ( _E_ _ph_ ) = exp �− λ [2] ( [ ·] _E_ [ 2]",
+        "score": 1.1142498418490092,
+        "dense_score": 0.449150025844574,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 1.7070510387420654,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6455,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "full paths travelled by the charge\ncarriers in an event, and can be activated for all propagation modules. These graphs are a useful tool for checking\nthe origin of particular sensor behaviours, but their creation takes a long time, so they should only be used to\ncheck a few key events. To capture the charge carrier\nmovement in sufficient detail, it is useful to reduce the\npropagation timestep. For thin silicon MAPS, a timestep\nsize between 0.05 ps and 0.5 ps has been found to give good\nresults that show the detail of the diffusion and drift paths.\nBy creating linegraphs of the same event with different values for the `integration` `time` parameter, the time evolution of collected charge can be visualised [7]. This can be\nuseful in determining charge collection time from different\nparts of a pixel.\n\n_Mobility models_\n\nMobility models can be selected in the propagation modules, and the default is the Jacoboni-Canali model [35].\nThe extended Canali model ( `masetti` ~~`c`~~ `anali` ) is used in\nthe example given in Listing 4.6. This model combines\nthe Jacoboni-Canali model with the Masetti model [36],\nto give a doping-dependent mobility parametrisation valid\nfor both low and high electric fields. From the available\nmobility models, two groups can be distinguished: dopingdependent and doping-independent models. It is advisable\nto utilise doping-dependent models when a significant doping concentration is present in the simulated sensor. If no\ndoping information is available, or the doping concentra\n\n11\n\ntion is low, doping-independent models (e.g. the JacoboniCanali model) suffice.\nFigure 11 shows linegraphs of electron propagation, using a doping-independent and a doping-dependent mobility model. A single MIP traversing the sensor is simulated,\nand the integration time is set to 5 ns to more clearly show\nthe differences in diffusion. Each line shows the path of\na single electron, in a sensor of the type described in Section 2 with a highly-doped substrate located at the bottom\n40 µm of the sensor.\n\n(a) Doping-independent mobility model\n\n(b) Doping-dependent mobility model\n\nFigure 11: Linegraphs of a single particle event, showing a significant\ndifference between mobility models in the substrate region.\n\nThere is a significant difference in charge propagation\nbehaviour in the substrate region for the two mobility models. The charge cloud is wider for the dopingindependent model, due to the larger diffusion in the\nhighly-doped substrate. This leads to unphysica",
+        "score": 0.6958423086854278,
+        "dense_score": 0.559056282043457,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 1.061699390411377,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6958,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement.md",
+        "title": "2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement",
+        "text": "alues, as listed in Table 2 in Section 3, were used.\nConsequently, when considering the proton incidence of\n3.3 MeV, – the range of the trajectory is about 110 µ m from\nthe common electrode –, the maximum drift time of the\nholes is estimated to be around 31 ns and the charge cloud\nextent at the end of the charge carrier drift _σ_ h is approximately 9 µ m. On the other hands, the maximum drift time\nof the electrons is estimated to be around 2.5 ns and the\n\ncharge cloud extent at the end of the charge carrier drift\n_σ_ e is approximately 4 µ m. We found that the cluster size in\nthe experiment is much larger than the one estimated from\nthe diffusion due to random thermal motion. In Section 3,\nwe will estimate the diffusion of charge clouds, accounting\nfor thermal random motion and Coulomb repulsion, using\na charge drift simulation and compared these results with\nthe experimental data to understand the physical process\n\n**3. Estimation of the Cluster Size using Simulation**\n\nFigure 6: The cluster size corresponding to the incident energy of proton\nin the range of 1.5 to 3.3 MeV. The blue plot shows the data from the\nexperiment and the blue dash line shows the fitting result of the blue plot\nusing a linear function.\n\nwhere _V_ is the reverse voltage, and _d_ is the thickness of\nsensor. We assumed that _E_ is constant in this calculation.\n\nThe silicon sensor in this TimePix3 detector becomes fully\ndepleted at a reverse voltage of 165 V. In this situation,\nthe fixed charges due to the impurities form an internal\nelectric field, in addition to the electric field caused by the\nreverse voltage. Consequently, the electric field throughout\nthe sensor is not uniform. However, based on the previous\nwork, the average electric field inside sensor is equivalent\nto the electric field induced by the reverse voltage [2]. Additionally, there is no difference in the maximum carrier drift\ntime whether the internal electric field is considered or not.\nTherefore, this assumption does not give a significant impact to the estimation of the diffusion area considering the\nthermal random motion. The velocity of the charge carriers\nis obtained from the mobility _µ_ as follows:\n\nWe used SSD (SolidStateDetectors.jl) [21], an opensource Julia package, to simulate the charge carrier transport in a solid state detector together with the corresponding induced charge on each electrode. Physical quantities\nin the solid state detector are calculated in 2D or 3D us\ning an SOR (Successive Over Rel",
+        "score": 0.6411053711368192,
+        "dense_score": 0.5542241334915161,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.9776310920715332,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7769,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco.md",
+        "title": "2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco",
+        "text": "lectron localization, accurate modeling\nof charge transport processes in the sensor is highly demanded. To address this, two open-source,\ntime-stepping Monte Carlo simulation methods have been developed, both explicitly incorporating\ncharge repulsion, which are found necessary for accurate simulation when charge sharing becomes\nimportant. The first method employs brute-force calculations accelerated by GPU computing to model\ncharge carrier dynamics, including drift, diffusion, and repulsion. The second utilizes a simplified\nspherical model that significantly reduces computational complexity. A parameterization scheme of\nthe charge transport behaviors has been developed to enable efficient and rapid generation of X-ray\nsimulation events. Both methods were rigorously validated using experimental data collected with\na monochromatic X-ray beam at the METROLOGIE beamline of the SOLEIL synchrotron, demonstrating excellent agreement with measured pixel-energy spectra across various sensor thicknesses,\nbias voltages, and photon energies. Furthermore, the impact of the repulsion effect on charge carrier\ndistributions was quantitatively evaluated. The potential applications of these simulation methods for\ndifferent particle detections and detector technologies are also discussed.\n\nAdvanced applications of the MÖNCH detector [1]—a\nhybrid pixel detector with a 25 µm pixel pitch and fast charge\nintegrating readout—have demonstrated enhanced spatial\nresolution for X-rays through subpixel interpolation [2] and\nfor 200 keV electrons using deep learning techniques [3]. In\nboth cases, simulation events are of increasing importance,\nas they enable the generation of interpolation mappings and\nthe training of deep learning models without the need for\ndedicated experimental setups and extensive data collection.\nHowever, accurately simulating charge transport in silicon\nsensors remains a challenge. For example, the spatial resolution achieved by deep learning models trained on simulated\ndata often falls short of that attained by models trained on experimental data [3]. This discrepancy is primarily attributed\nto limitations in simulation accuracy, particularly the neglect\nof charge repulsion effects during transport.\nCharge transport in silicon sensors, initiated by energy\ndeposition from incident particles, forms the basis of detector signal and is described by the continuity equation for\ncharge carriers:\n\n_𝜕𝜌_\n\n(1)\n_𝜕𝑡_ [=] _[ 𝐷]_ [Δ] _[𝜌]_ [−∇] [⋅] [(] _[𝜌𝜇⃗𝐸]_ [)]\n\nwhere _𝜌_",
+        "score": 0.5339483152295268,
+        "dense_score": 0.4243769645690918,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.815197765827179,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7543,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F.md",
+        "title": "2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F",
+        "text": "as injected between the pad and the charge collection\n(guard) ring. As this ring was left floating, the electric potential is expected to be identical to the pad\n(contact of the diode), therefore resulting in a uniform electric field. As a result, these measurements\nare expected to yield accurate results for the charge carrier drift velocities, even though the charge is\nnot injected directly in the center of the device. As a cross-check, the analysis of charge carrier drift\nvelocities based on the transient current waveforms was also performed for data obtained using a\nbeam of 62.4 MeV protons. Here, saturation velocities of ( 1.54 _±_ 0.02 ) _×_ 10 [7] cm s _[−]_ [1] for electrons and\n( 0.55 _±_ 0.04 ) _×_ 10 [7] cm s _[−]_ [1] for holes were obtained, with _β_ _e_ = 1.01 _±_ 0.02 and _β_ _h_ = 1.36 _±_ 0.03. If\n_β_ is fixed to the values obtained from UV-TCT measurements (see Table 1), the obtained saturation\nvelocities are ( 1.58 _±_ 0.02 ) _×_ 10 [7] cm s _[−]_ [1] for electrons and ( 0.68 _±_ 0.04 ) _×_ 10 [7] cm s _[−]_ [1] for holes. Both\napproaches are comparable to the UV-TCT measurement, albeit with slightly higher drift velocities\nfor electrons and slightly lower for holes. It is also possible that the error bars of the drift velocities\nextracted using the proton data are larger, because the transient current waveform in the proton beam\nmeasurements is estimated by averaging a small signal subset.\n\n**5. Conclusion**\n\nA high-frequency readout capable of resolving the transient current in 50 µm thin 4H-SiC PiN\ndiodes was developed and applied to measurements using a pulsed UV laser, alpha particles, and\na 62.4 MeV proton beam. The high effective readout bandwidth of 6 GHz was used to measure\nthe electron and hole drift velocities and to fit a high-field mobility model. From pulsed UV laser\nmeasurements, saturation drift velocities parallel to the _c_ -axis of ( 1.47 _±_ 0.02 ) _×_ 10 [7] cm s _[−]_ [1] for electrons\nand ( 0.69 _±_ 0.04 ) _×_ 10 [7] cm s _[−]_ [1] for holes were obtained, providing valuable input to TCAD simulations.\nIn order to understand the readout electronics in detail and to investigate the effect of parasitic\nimpedances such as the wire bond inductance, simulations leveraging TCAD, Allpix [2], and QUCS\nwere performed, which agree well with the measurements. Future studies will aim at applying\nthe developed readout electronics to other detector types, such as silicon-based detectors and lowgain avalanche diodes (LGADs), and wi",
+        "score": 0.33835843246277064,
+        "dense_score": 0.4541231393814087,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.5131752490997314,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5994,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc.md",
+        "title": "2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc",
+        "text": "tector [2]. The sensor design,\ndecoupling charge-generating volume from the drift distance,\naccommodates shorter electrode spacing, consequently\ndecreasing the charge carrier trapping probability. Recent\nstudies using the Transient Current Technique (TCT) [3, 4],\nhave further substantiated the exceptional timing performance\nof such devices. For vertically incident events, the orthogonal\nrelationship between drift direction and particle trajectory\nresults in an absence of Landau fluctuations **,** key factor in\nextending theoretical timing performance of such devices,\nprimarily constrained only by the signal's drift time.\n\nThis excellent performance is nevertheless impacted by\nfield non-uniformities, intrinsic to the column geometry of the\ncollection electrodes. The resulting radially expanding field\nwithin the pixel volume increases signal time-jitter, degrading\n\ntime resolution. Such a geometry, though detrimental under\nnormal operation, can lead to high field densities near the\ncollection electrode (> 30 V/μm) at higher bias voltages\n(> 500 V) typically used after irradiation. In this operating\nmode, impact ionization and charge multiplication occur near\nthe collection electrode in a similar way as in Multi-Wire\nProportional Chambers (MWPCs) and can compensate for\ntrapping induced charge collection efficiency issues.\n\nIn this study, three different geometries are examined after\nproton and neutron irradiation, using 120 GeV SPS pion\nbeams [5]. Pixel sizes of 55 x 55 μm [2] [6], 25 x 100 μm [2] and\n50 x 50 μm [2] [7] in substrates of 230 μm (190 μm active depth)\nfor the first geometry and 150 μm (130 μm active depth) for\nthe second and third, are tested to establish the minimum\nactive thickness and pixel size still yielding sufficient charge\nand low enough jitter to achieve a 30 ps time resolution.\nQuestions of signal integrity, bandwidth and efficiency are\ntreated.\n\n**2.** **Timing and Signal Integrity**\n\nStudies under a [90] Sr source of the 50 x 50 μm variety single\npixel structure (Figure 1 top), yield collected charge of\n1.73 ± 0.02 fq (10,830 e [-] ), in agreement with the theoretically\npredicted value of ~ 82 e/μm for a MIP in fully depleted Si [8]\nat a bias voltage of 20 V at -20 [o] C. Signals are characterized\nby a fast rise time (10 % - 90 %) of 175 ± 4 ps, but present a\ntail at the slower end, characteristic of filed non-uniformities.\nAlthough charge per micrometer in the 3D device is reduced\nby a factor of 60 with respect to a typical LGAD [1]",
+        "score": -0.13562827376218944,
+        "dense_score": 0.4789830446243286,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.2169429063796997,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1601,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2706661__2406.01839__Simulation_of_DAMPE_silicon_microstrip_detectors_in_the_Allpixmath_altimgsi3.svg_displayin.md",
+        "title": "2023__recid_2706661__2406.01839__Simulation_of_DAMPE_silicon_microstrip_detectors_in_the_Allpixmath_altimgsi3.svg_displayin",
+        "text": "on\nparameters. The default Jacoboni-Canali model is used here.\n\n - _charge_ ~~_p_~~ _er_ ~~_s_~~ _tep_\nThis parameter defines the maximum number of electrons for which the\nrandomized diffusion is calculated collectively. It allows propagation of\nsets of charge carriers together in order to speed up the simulation while\nmaintaining the required accuracy.\n\n - _integration_ ~~_t_~~ _ime_\nThe integration time of the VA140 is 6.5 µ _s_, during which the generated\ncarriers are collected. During the simulation, this parameter is set to 80 ns,\nwhich is enough time for all carriers to reach the electrode.\n\n - _propagate_ ~~_e_~~ _lectrons, propagate_ ~~_h_~~ _oles_\nThe resultant electrons will drift towards the cathode depending on the applied voltage, whereas the electrode receives a signal generated by electron\nand hole pairs, requiring both ”propagate ~~e~~ lectrons” and ”propagate ~~h~~ oles”\nto be set to ”true”.\n\n7\n\nIn addition, Allpix [2] offers a wide range of modules such as the charge carrier\nlifetime & recombination module, the trapping and detrapping of charge carriers module, and impact ionization models. These modules can be customized\nby users, greatly assisting in the simulation of more accurate and precise data.\nAllpix [2] also generates a diverse range of output plots, including the capability to\ncreate 3D GIF animations of charge carriers. Figure 6 provides a clear visualization of the movement of charge carriers within the detector. It illustrates the\ndispersion of charge carriers towards both sides when a particle interacts with the\nregion between two pitches. These visual representations offer a comprehensive\ndepiction of the internal dynamics of charge carriers in the detector, enabling a\nbetter understanding of their behavior.\n\nFigure 6: When particles under perpendicular incidence strike different positions within a pitch\nwidth, the movement of charge carriers is observed. Electrons are identified by their distinctive\nblue coloration, while holes are represented using various shades of orange.\n\n_3.4. Charge sharing and signal digitization_\n\nDuring the process of digitization, a simple digitization module translates the\ncollected charges into a digitized signal proportional to the input charge. In ground\ntesting, the ASICs demonstrated good linearity, with an average integral nonlinearity (INL) of less than 1.5% [24]. Figure 7 shows that on-orbit data displays\nhigh linearity as well in the unsaturated zone; gain calibration for each VA and\nal",
+        "score": -0.7067759654738686,
+        "dense_score": 0.4222017526626587,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.0934665203094482,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7770,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco.md",
+        "title": "2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco",
+        "text": "in silicon sensors, initiated by energy\ndeposition from incident particles, forms the basis of detector signal and is described by the continuity equation for\ncharge carriers:\n\n_𝜕𝜌_\n\n(1)\n_𝜕𝑡_ [=] _[ 𝐷]_ [Δ] _[𝜌]_ [−∇] [⋅] [(] _[𝜌𝜇⃗𝐸]_ [)]\n\nwhere _𝜌_ represents the charge carrier density, _𝐷_ = _𝜇𝑘𝑇_ ∕ _𝑒_ is\nthe diffusion coefficient determined by the Einstein relation,\n\n∗ Corresponding author\n\nxiangyu.xie@psi.ch ( X. Xie)\nORCID (s): 0000-0001-6473-7886 ( X. Xie)\n\n_𝜇_ is the charge carrier mobility, _𝑘_ is the Boltzmann constant,\n_𝑇_ is the tempreature, _𝑒_ denotes the unit charge, and _𝐸_ _[⃗]_\ndenotes the electric field [1] . The charge cloud, consistting\nof charge carriers, drifts towards the electrodes driven by\nthe applied bias voltage. In a coordinate system centered\non the drifting charge cloud, by neglecting the repulsion\neffect, Eq. 1 reduces to _[𝜕]_ _𝜕𝑡_ _[𝜌]_ = _𝐷_ Δ _𝜌_ . The solution is a\n\nGaussian with a standard deviation _𝜎_ = ~~√~~ 2 _𝐷𝑡_ in one\n\ndimension, where _𝑡_ is the drift time. This approximation\nis widely adopted in existing simulation frameworks [4, 5],\nand remains reasonably valid for minimum ionizing particles\n(MIPs) [2], where the resulting charge cloud is sufficiently\nspread out. However, for X-rays with energies of more than a\nfew keV, the point-like nature of energy depositions leads to\nhighly concentrated charge clouds. Under such conditions,\nthe repulsion effect becomes significant and cannot be neglected, particularly within the first couple of nanoseconds\n\n[6, 7].\nPrevious studies [8, 9] introduced a time dependent\ndiffusion coefficient _𝐷_ [′] = _𝐷_ + 24 _𝜋_ [3∕2] _𝜇𝑁𝑒𝜖_ 0 _𝜖_ _𝑟_ _𝜎_ ( _𝑡_ ) [[][10][] to account]\nfor the repulsion effect. Here, the electric field dependency of\nthe carrier mobility _𝜇_ was ignored, and the results were primarily validated using a high-Z sensor with relatively large\n225 µm and 75 µm pixel pitches. Another previous study [11]\nemployed a numerical method to simulate charge transport\n\n1 In conventional silicon detectors, recombination and generation of\ncharge carriers are negligible and thus omitted from this discussion.\n2 See Section 5.1 for details.\n\nX. Xie et al.: _Preprint submitted to Elsevier_ Page 1 of 8\n\nin silicon sensors with the repulsion effect included. However, due to the substantial simulation time—in the order\nof several hours per simulation run—the simulation results\nwere limited to only a few specific scenarios, preventing\nwidespread adoption within the research communi",
+        "score": -0.9736323323514727,
+        "dense_score": 0.5021053552627563,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.506442904472351,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.447583330329508,
+    "generation_latency_s": 4.00003045797348e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.447583330329508,
+    "generation_latency_s": 4.00003045797348e-07
+  }
+}

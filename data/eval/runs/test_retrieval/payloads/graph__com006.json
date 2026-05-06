@@ -1,0 +1,397 @@
+{
+  "benchmark": {
+    "query_id": "com006",
+    "query_type": "comparative",
+    "query": "Compare BM25 and dense retrieval for detector papers.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "BM25"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare BM25 and dense retrieval for detector papers.",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 454,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648447__2304.01103__Measurement_of_Dielectric_Loss_in_Silicon_Nitride_at_Centimeter_and_Millimeter_Wavelengths.md",
+        "title": "2023__recid_2648447__2304.01103__Measurement_of_Dielectric_Loss_in_Silicon_Nitride_at_Centimeter_and_Millimeter_Wavelengths",
+        "text": "amplifier or increase\nthe integration time during data collection. We also note that\nthe high-power microwave _Q_ _i_ of our microstrip with SiN _x_\nis lower than that reported by other groups [16], [17]. The\n_Q_ _i_ for resonators with aluminum inductors used in this paper\nstill has a positive slope vs. power at _−_ 90dBm, indicating\ntheir _Q_ _i_ is still being limited by dielectric loss there. However,\nthese resonators started to bifurcate at _∼−_ 90dBm. For all-Nb\n\nresonators with higher bifurcation power, we noticed that the\n_Q_ _i_ can reach 10 [5] at _−_ 70 dBm. For this paper, we are only\ninterested in the low-power limit of the _Q_ _i_ set by the dielectric\nloss. The other factors that limit our high-power _Q_ _i_ are orders\nof magnitude lower than the TLS loss.\n\nV. D IFFERENTIAL O PTICAL E FFICIENCY AT 150 GH Z\n\nThe third method compares optical efficiency for detectors\ncoupled through different lengths of microstrip lines, which\nrequests an mm-wave optical coupling setup. A temperaturecontrolled cryogenic blackbody provides a method to sweep\nthe incident power level, and is coupled to the detector sample\nbox through low-pass metal-mesh filters and infrared blockers\n(Fig. 6).\nThe optical setup we built is compatible with both 150 and\n220 GHz optical detector chips. Fig. 7 shows the detectors and\ntheir boxes. The 150 and 220 GHz chips were fabricated and\ndiced from the same silicon wafer.\n\nCryogenic\nblackbody\n\nFig. 6: Optical testing setup. The cryogenic blackbody is\nmounted on a copper plate with four heaters and thermometers\nfor temperature control. An infrared filter attenuates the power\nabove 1 THz, and two metal-mesh filters at 4 K and 1 K define\na low-pass frequency window below 280 GHz. The detectors\nare mounted in a sample box with feedhorns and backshorts.\nWe installed the optical components in a Bluefors dilution\nfridge shown on the left. The base temperature of the fridge\nis 8 mK. The optical window on the right of the CAD model\ncame with the fridge and was not used for this paper.\n\nFig. 7: 150 and 220 GHz sample boxes with detector chips\ninstalled. Left of each subfigure is the box bottom with the\ndetector chip. Right is the box lid with feedhorns.\n\nTo measure the optical response of the detectors, we heat the\nblackbody to different temperatures _T_ _BB_ and record the resonator frequency shift _df/f_ 0 vs. _T_ _BB_ . Here _df_ is the frequency\nshift, and _f_ 0 is the resonant frequency. We took measurements\nfor the 150 GHz device and",
+        "score": -4.562154883905112,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7096498719043552,
+        "rerank_score": -7.102766036987305,
+        "matched_nodes": [
+          "For",
+          "To",
+          "An",
+          "The",
+          "We"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6022,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning.md",
+        "title": "2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning",
+        "text": "lies on the direct detection technique [5, 6]. These\nexperiments seek to observe rare interactions between\nDM particles from the Milky Way and detector materials placed deep underground in low-background envi\nronments.\nTraditionally, direct detection experiments have primarily focused on searching for nuclear recoil events induced by Weakly Interacting Massive Particles (WIMPs)\nscattering off target nuclei in crystals or liquid noble\ngases [7]. As a result, these experiments have mainly\nbeen sensitive to DM masses in the GeV – TeV range, as\nlighter particles would be unable to generate observable\nnuclear recoils.\n\n_∗_ [catena@chalmers.se](mailto:catena@chalmers.se)\n\n_†_ [urdshals@chalmers.se](mailto:urdshals@chalmers.se)\n\nWith the absence of direct evidence for WIMPs, efforts have been put in towards alternative experimental\napproaches better suited to probe DM particles with subGeV masses [8]. In this context, a crucial role is played\nby direct detection experiments designed to detect DMinduced electronic transitions or electron ejections in materials, offering a novel avenue for uncovering the nature\nof DM [9–20].\n\nTo interpret these experiments, a theoretical understanding of DM-electron interactions in detector materials is needed. In ref. [21–25], the interactions DM can\nhave with the electrons bound to silicon and germanium\ncrystals (as well as individual atoms and graphene targets) were classified and explored using a non-relativistic\neffective theory formalism. We implemented our formalism in QEdark-EFT [26], which interfaces with the planewave self-consistent field (PWscf) DFT code Quantum\nESPRESSO [27] and extends the QEdark code [28] to the\ncase of general DM-electron interactions. This allowed\nfor covering several DM models, although an extensive\nexploration was hindered by computational costs.\n\nThe deep neural network (DNN) developed in this paper is traned on the output of QEdark-EFT, and serves\nmainly two purposes. Firstly, it is easier to use and run\nthan QEdark-EFT. It takes less space on a hard drive\nand does not require computation of or access to material response functions. Secondly, it allows for evaluating a large number of DM-induced electronic transition\nrates cheaply on a laptop, and demonstrates the potential DNNs have for speeding up rate evaluations. Such a\nspeedup will be necessary to perform extensive parameter\nscans in the event of detection of a DM signal. For example, evaluating the rate of electron-hole pair creation\nin s",
+        "score": -4.775774193993397,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7779675491033305,
+        "rerank_score": -7.439504146575928,
+        "matched_nodes": [
+          "For",
+          "To",
+          "The",
+          "In",
+          "We",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6002,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2765150__2403.02668__Material_Properties_of_Popular_Radiation_Detection_Scintillator_Crystals_for_Optical_Physi.md",
+        "title": "2025__recid_2765150__2403.02668__Material_Properties_of_Popular_Radiation_Detection_Scintillator_Crystals_for_Optical_Physi",
+        "text": "a state-of-theart Monte Carlo radiation transport toolkit that simulates the\nunderlying physical process of interaction and production of\nparticles through matter, has been employed to assist with\nthe design of scintillation detectors [6, 7, 8]. An important\naspect of development is accurate scintillator crystal modelling\nthrough optimised material properties within Geant4 optical\nphysics. In this work, the material parameters for several\n\nThis work was supported by The University of Melbourne’s Research\nComputing Services, the Petascale Campus Initiative, and an Australian\nGovernment Research Training Program (RTP) Scholarship.\nL. Miller and A. Chapman are with the Department of Mechanical Engineering, The University of Melbourne, Parkville, VIC 3010, Australia (e-mail:\nlysanderm@student.unimelb.edu.au; airlie.chapman@unimelb.edu.au).\nK. Auchettl is with the School of Physics, The University of Melbourne,\nParkville, VIC 3010, Australia (e-mail: katie.auchettl@unimelb.edu.au).\nJ. M. C. Brown is with the Optical Sciences Centre, Department of Physics\nand Astronomy, Swinburne University of Technology, Hawthorn, VIC 3122,\nAustralia (e-mail: jmbrown@swin.edu.au).\n\ncommon scintillator crystals were used as inputs for a Geant4\n(v. 11.1.2) simulation platform designed to model scintillator\ncrystals coupled to a silicon photomultiplier (SiPM) based\nradiation detector. The key material parameters identified to\naccurately simulate the scintillator crystals were: (1) density,\n(2) elemental composition, (3) refractive index, (4) optical\nyield (optical photons produced per MeV of energy deposited),\n(5) emission spectrum, (6) absorption length, (7) optical decay\ntimes, (8) resolution scale, and (9) dimensions [3].\nThe response of five different single-volume scintillator\ncrystal materials under the irradiation of gamma ray emissions\nfrom five radioactive isotopes was explored. Scintillator crystals GAGG:Ce, CLLBC:Ce, BGO, NaI:Tl, and CsI:Tl were\nselected as they offer a range of desirable properties for the\napplications mentioned previously. For example, CLLBC:Ce\nhas a high energy resolution [9], BGO provides a high\nsensitivity [10], GAGG:Ce offers a high sensitivity and good\nenergy resolution [11], and NaI:Tl and CsI:Tl are cost effective\n\n[12]. Radioactive sources [109] Cd (1 _µ_ Ci), [57] Co (1 _µ_ Ci), [137] Cs\n(0.1 _µ_ Ci), [22] Na (1 _µ_ Ci), and [152] Eu (0.5 _µ_ Ci) from Spectrum\nTechniques were considered in this study as they provided a\n30 keV to 2 MeV energy",
+        "score": -5.238707710495777,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7779675491033305,
+        "rerank_score": -8.15170955657959,
+        "matched_nodes": [
+          "For",
+          "An",
+          "The",
+          "In",
+          "CE",
+          "Physics"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2847,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector.md",
+        "title": "2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector",
+        "text": "to spurious signal excesses. Even if correctly modeled,\n\nwe expect the presence of external crosstalk to corrupt the low-energy thresholds of dark matter\n\nsearches, such as in xenon and argon-based dark matter detectors [17]. This is because a single,\n\nthermally-generated avalanche (dark count) could induce a coincident signal in a separate device.\n\nThe probability for spurious _𝑁_ -fold coincident events at detector threshold thus rises accordingly,\n\nmaking it challenging to distinguish genuine signals at low energy. For a dark matter detector\n\nin which sensitivity improves with decreasing energy threshold, the usage of SiPMs could prove\n\ndetrimental.\n\nIn this article, we have measured the magnitude of external crosstalk in a dual-phase, liquid\n\nxenon time projection chamber (TPC) fully instrumented with SiPMs, with the goal of understanding\n\nthe severity of this effect for future xenon dark matter experiments. We find the probability that a\n\nsingle detected photon generates external crosstalk can grow to ≳ 5% in our detector. We interpolate\n\nour measurement to a future xenon dark matter experiment, showing the low-energy threshold would\n\nworsen, and comment on potential paths forward.\n\n**2** **Measurement of external crosstalk**\n\n**2.1** **Detector description**\n\nFull details of the dual-phase, liquid xenon TPC may be found in [3]. As shown in figure 1 (left), a\n\ncylindrical TPC is contained with PTFE walls holding three electrodes: cathode, gate, and anode,\n\n– 2 –\n\nas well as two SiPM arrays located at either end of the TPC. This design is meant to emulate an\n\nLZ-like detector. The two SiPM arrays each contain four Hamamatsu VUV4 S13371-6050CQ\n\nSiPM devices for a total of 32 (31 operating in this study) SiPM channels. One of the arrays is\n\npictured in figure 1 (right). Each array is mounted on a circuit board which provides an independent\n\nbias voltage to each device. This bias voltage is low-pass filtered with _𝑅_ = 10 kΩ and _𝐶_ = 10 nF.\n\nAdditionally, a 50 Ω resistance to ground is located immediately after the output of each device.\n\nThe output signal of each SiPM channel is sent directly to one of three digitizers (CAEN V1730S)\n\nwithout amplification. The digitizer bandwidth is 250 MHz.\nAn external [57] Co source is present during all measurements, including SiPM calibrations. The\n\nsource emits two prominent _𝛾_ -rays with energies of 122 keV (≈ 88% branching fraction) and 136 keV\n\n(≈ 12% branching fraction) which mainly photoabsorb in the liquid",
+        "score": -5.3357099354383175,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.829205807002562,
+        "rerank_score": -8.307013511657715,
+        "matched_nodes": [
+          "For",
+          "An",
+          "CO",
+          "The",
+          "In",
+          "We"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3822,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": "tt criterion involving the transport\nmean free path being equal to lattice spacing, which plays no\nrole in doped semiconductors of interest to us. We also estimate the critical density by considering inhomogeneous density fluctuations induced by long-range Coulomb disorder in\nthe system and compare the result to the AIR critical density.\nSection VIII examines the effect of spin/valley degeneracy on\nthe mobility and the AIR critical density. Finally, we conclude\nand summarize in Section IX.\n\n3\n\nII. MOBILITY AND QUANTUM MOBILITY\n\nIn this section, we apply the Boltzmann transport theory to\ncalculate the mobility and quantum mobility at T = 0 [20, 37–\n42]. The transport mobility is given by µ = eτ/m [⋆], and the\nconductivity is en e µ, where n e is the 2DEG concentration,\nm [⋆] = 0.19 m 0 is the transverse effective mass of an electron\nin Si, m 0 is the free electron mass,\n\nfactor F c (qw) is given by\n\nF c (qw) =\n\n+∞\n\ndzdz [′] |ψ(z)| [2] |ψ(z [′] )| [2] exp(−q|z − z [′] |) . (6)\n\n��\n\n−∞\n\n2\n� �|U (q)| [2] [�], (1)\n\nτ1 [= 4] π [m] ℏ [3][⋆]\n\n2k F\n�\n\n0\n\ndq\n�4k F [2] [−] [q] [2]\n\ndq\n�4k F [2]\n\nq\n� 2k F\n\nq\n� 2k\n\nis the transport scattering rate, and U (q) is the screened potential of a given scattering source. k F = �4πn e /g is the Fermi\n\nwave vector. g = g s g v is the total degeneracy of electrons,\nwhere g s is the spin degeneracy and g v is the valley degeneracy. The quantum mobility is given by µ q = eτ q /m [⋆], where\nthe quantum (single particle) scattering rate reads\n\n1\n= [2][m] [⋆]\nτ q πℏ [3]\n\n2k F\n�\n\n0\n\ndq\n�4k F [2] [−] [q] [2]\n\n�|U (q)| [2] [�] . (2)\n\nIn Eq. (4) we ignore the screening from the top gate. To\ninclude the gate screening, we should add the Coulomb\npotential of the image charges and replace e [−][q] [|] [z][−][z] [′] [|] by\ne [−][q] [|] [z][−][z] [′] [| ] − e [−][q] [|] [2][d] [g] [−][z][−][z] [′] [|][�], where d g = d + d o + w/2 is\n�\nthe distance from the gate to the center of the 2DEG.\n\nIII. DELTA LAYER 2DEG APPROXIMATION\n\nFor simplicity, assuming that the gate is far away d g ≫ d\nand the wavefunction perpendicular to the quantum well has\na delta function profile |ψ(z)| [2] = δ(z), the form factors re2πe [2]\nduce to identities and U 1 (q, z) = κqǫ(q) [e] [−][q][|][z][|] [. In this sec-]\ntion, we disregard the local field correction, thus making the\ndielectric function the RPA form, ǫ(q) = 1 + q T F /q. We will\naddress the effect of form factors and local field correction in\nSection IV, and the effect of gate screening in Section VI. We\nuse",
+        "score": -5.457683032015467,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9487617421007686,
+        "rerank_score": -8.508827209472656,
+        "matched_nodes": [
+          "For",
+          "To",
+          "AND",
+          "The",
+          "In",
+          "We",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 396,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "ervations are found by detecting ~~_ν_~~ _e_ through the IBD\nprocess. There are several experiments currently proposed or\nplanned to investigate the mixing of active-sterile neutrinos\nusing CE _ν_ NS process [8, 31]. In pursuit of this goal, a feasibility study has been carried out to ascertain the ASN mixing\nsensitivity of various types of detectors by placing them at a\nshort baseline (L _≤_ 30m) through CE _ν_ NS channel.\nThe article is organized as follows. In the subsequent section, a comprehensive description of the detector setup is provided. Antineutrinos production and various types of reactors used in this study are presented in Sec.III. The CE _ν_ NS\nprocess and the underlying detection principle are expounded\nupon in Sec. IV. An estimation of the expected number of\nevents in the detector is presented in Section V. The phenomenon of ASN oscillation at short baseline considering the\n‘3+1’ mixing model is described in Sec. VI. The simulation\nprocedure for incorporation of detector response on coherent\nneutrino discussed in Sec. VII. The sensitivity of the proposed\nexperiment, statistical method on _χ_ [2] estimation considered in\nthis study is discussed in Sec. VIII. The sensitivity to sterile\nneutrino mixing at an exposure of one year is elaborated in\nSec. IX. Finally, in Sec. X, we summarize our observations\nand discuss the implication of this work.\n\n**II.** **DETECTOR SETUP AT CE** _ν_ **NS MEASUREMENT**\n\nFigure 1 shows the conceptual schematic of the detector\nsetup proposed for the measurement of CE _ν_ NS using antineutrinos produced from the reactor. The core detector volume is covered with various shielding materials for reducing\nbackgrounds. The active volume of the detector is placed at\nthe center within a cold copper box that is surrounded by 4\ncm thick plastic scintillator plates for vetoing cosmic muon.\nHigh-density polyethylene(HDPE) sheets of thickness 10 cm\nare placed next to the muon veto detectors for thermalizing the\nfast neutrons. A Lead shielding of 10 cm thickness is added\nto reduce the natural and reactor-generated gamma-rays background. Boronated polyethylene (BP) sheets with 15% boron\ncontent and thickness of 10 cm are positioned at the outer part\nof the setup to attenuate the thermal neutrons. The thickness\nof Lead and BP sheets are chosen considering the previous\nstudy performed for another reactor-based antineutrino experiment using the ISMRAN detector [32]. To maintain the required low temperature for detector operation,",
+        "score": -5.549512511503381,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.829205807002562,
+        "rerank_score": -8.635940551757812,
+        "matched_nodes": [
+          "To",
+          "An",
+          "NS",
+          "The",
+          "In",
+          "CE"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5800,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2736533__2312.07957__Scintillation_characteristics_of_an_undoped_CsI_crystal_at_low-temperature_for_dark_matter.md",
+        "title": "2025__recid_2736533__2312.07957__Scintillation_characteristics_of_an_undoped_CsI_crystal_at_low-temperature_for_dark_matter",
+        "text": "attering\n(CE _ν_ NS) [7, 8]. Since event rates are larger at low energy,\nlow threshold detectors are essential for dark matter or\n\nCE _ν_ NS detection. In the case of scintillators, higher light\nyields are strongly associated with lower energy thresholds.\nThe introduction of dopants during crystal growth, such\nas thallium in halide crystals (i.e., CsI(Tl) and NaI(Tl)),\nenhances radiative recombination and improves light emission efficiency. These doped crystals have been widely\nutilized at room temperature, coupled with photomultipliers, for dark matter and CE _ν_ NS detection experiments [7, 8, 9, 10, 11, 12, 13, 14]. The highest reported\nlight yields from doped NaI(Tl) crystals were 22 photoelectrons (PE) per keV [8] with a novel crystal encapsulation\ntechnique [15]. There have been reports suggesting that\nundoped CsI and NaI crystals exhibit higher light yields\nat low temperatures with PMTs [16, 17, 18, 19, 20, 21, 22]\nor silicom photomultipliers (SiPMs) [23]. At the liquid\n\n_Email addresses:_ `hylee@ibs.re.kr` (H. Y. Lee),\n`kwkim@ibs.re.kr` (K. W. Kim), `hyunsulee@ibs.re.kr` (H. S. Lee)\n\nnitrogen temperature of 77 K, the undoped CsI crystal,\ncoupled with SiPMs and a wavelength shifter, achieved a\nlight yield of 30.1 PE/keV [24].\n\nWe investigate the scintillation characteristics of an undoped CsI crystal to assess their temperature-dependent\nbehavior. To maximize the light collection efficiency of the\nundoped CsI crystal, two SiPMs are directly attached to\nthe crystal. In a temperature range between 86 K and\n293 K, we measured the light yield, scintillation decay\ntime, and energy resolution. Due to the exhibition of high\ndark count rates and crosstalks [25, 26], we have carefully\nanalyzed and corrected effects of them on the analysis of\n\nmeasurements.\n\nThe technique for radiopure CsI crystal growth [27,\n28, 29] has been developed for the KIMS experiment,\nwhich used CsI(Tl) crystals coupled with photomultipliers (PMTs) for WIMP dark matter search [30, 31, 32].\nThe production of 200 kg undoped CsI crystals can be performed at the Institute for Basic Science (IBS), Korea,\nwhich offers a powder purification facility [33, 34, 35] and\nKyropoulos crystal growers [36], installed and employed\nfor the growth of radiopure NaI(Tl) crystals [37, 38]. Additionally, about 400 kg of purified CsI powder remnants\nfrom the KIMS CsI(Tl) crystal growing have been stored\nat the Yangyang underground laboratory. We conducted\n\n_Preprint submitted to Astroparticle Physics_ _Augu",
+        "score": -5.701040245285816,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7779675491033305,
+        "rerank_score": -8.862990379333496,
+        "matched_nodes": [
+          "To",
+          "NS",
+          "The",
+          "In",
+          "We",
+          "CE"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3198,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2709989__2310.08457__A_plastic_scintillation_muon_veto_for_sub-Kelvin_temperatures.md",
+        "title": "2024__recid_2709989__2310.08457__A_plastic_scintillation_muon_veto_for_sub-Kelvin_temperatures",
+        "text": "en.\n\n**1.** **INTRODUCTION**\n\nExperiments searching for rare events - such as coherent elastic neutrino-nucleus scattering (CE _ν_ NS) [1–9] or\ndirect dark matter interactions [10–12] - are critically dependent on attaining the lowest possible level of background radiation in the target detectors. In particular,\ncosmic-ray muons can constitute a significant background\nto the signal events, either directly through energy deposition in the target detectors or indirectly through\ne.g. muon-induced spallation neutrons [13]. To mitigate\nmuon-induced background events, rare-event search experiments are usually deployed in laboratory facilities\n\n_∗_ [Corresponding author: andreas.erhart@tum.de](mailto:andreas.erhart@tum.de)\n\ndeep underground. In the case of the search for CE _ν_ NS,\non the contrary, experiments are commonly located in the\nimmediate vicinity of intense artificial neutrino sources.\nFor instance, the low energy (MeV) of reactor antineutrinos together with their large flux make nuclear fission\nreactors favorable neutrino sources for a measurement of\n\nelastic neutrino-nucleus scattering in the fully coherent\nregime. Artificial neutrino sources are typically located\nnear the surface, where cosmic-ray muons are of particular concern. Experiments conducted at sites with shallow\noverburden ( _<_ 10 m.w.e.) hence rely on the deployment\nof sophisticated shielding as primary method to reduce\nbackground radiation. Highly efficient muon vetos are\nthus essential to render rare-event searches in on-surface\n\nlaboratories possible.\n\nMany rare-event search experiments, such as RICOCHET [4], MINER [7] or NUCLEUS [14], are based on\ncryogenic detectors, since they exhibit excellent energy\nresolution. This entails the need for low temperatures of\n_O_ (10 mK) and hence complex cryogenic facilities. Stateof-the-art dilution refrigerators [15–17] consist of vertical cylindrical apparatuses in which the multi-stage cryogenic infrastructure occupies the space above the experimental volume. Such construction makes hermetic 4 _π_\n\nshielding of the cryogenic detectors a technical challenge.\nSince atmospheric muons characteristically follow a cos [2] _θ_\nangular zenithal distribution, it is crucial to minimize any\ncoverage gap in the muon veto, especially directly above\nthe target detector. Besides, the typically slow time response of cryogenic detectors ( _O_ (100 _µ_ s)) poses stringent\nconstraints on the tolerable anti-coincident muon rate.\n\nIn order to minimize the induced t",
+        "score": -5.878702802224814,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7096498719043552,
+        "rerank_score": -9.12822437286377,
+        "matched_nodes": [
+          "For",
+          "To",
+          "NS",
+          "In",
+          "CE"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 635,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker.md",
+        "title": "2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker",
+        "text": "the\nFaraday cages, in the center of the module, to provide a\nconsistent x-ray flux across the detectors.\nWith the module now sealed in the SUN chamber, we cool it\nto –37 _[◦]_ C over approximately 30 minutes. We also supply dry\nnitrogen gas at a rate of a few liters per minute to further\nsuppress any residual humidity within the chamber. When\nthe chamber temperature readout indicates the set temperature\nhas been reached, we begin to bias the detectors at a rate\nof 3 V/s until –250 V is reached. We find that an additional\n\n_∼_\n15 minutes are required for the high-voltage current to\ndecrease to its equilibrium value (typically below 100 nA\nfor high-quality detectors). The data-acquisition software is\ndescribed in the next section; here, we note that three minutes\nis sufficient to acquire several thousand events per strip for a\nsingle detector. During acquisition, we turn off the chamber\ninterior fan, heating, and cooling systems to suppress noise\n(i.e., only the temperature readout remains active). Following\nthe three-minute period, these systems are turned back on and\nthe chamber is allowed to re-cool for at least ten minutes.\n\nOnce x-ray events have been acquired for all detectors, we\nramp the detector bias down to zero at a rate of 3 V/s and allow\nthe chamber to return to room temperature over approximately\n30 minutes. The nitrogen gas flushing is particularly important\nfor humidity suppression during the warm-up, as the liquid nitrogen valve is closed. Once the chamber has returned to room\ntemperature, we remove the door assembly and disconnect the\nmodule’s mechanical and electrical connections. The module\n\nis then returned to the drybox for short-term storage.\n\n_D. Data Acquisition and Processing_\n\nFor each Si(Li) detector strip, we must acquire and fit\nx-ray energy spectra using at least ten peaking times _τ_ p,\nranging from 0.5–30 µs, to fully sample the noise model\ndescribed in Sec. II-D. (The pulse peaking time _τ_ p is the time\nrequired for the shaped pulse to reach its maximum [37].)\nWith more than 1000 detectors to test, any method involving\nthe acquisition of spectra at individual peaking times would\nrequire an impractical amount of time.\nTo increase the module testing speed, we implement custom\nsoftware to read each strip’s voltage waveforms directly from\nthe N6725 digitizer for later offline processing. To fully sample\nthe preamplifier signal, which has a decay time constant _τ_ d _∼_\n\n5\n\nTABLE I\n\nT ABLE OF CRITERIA AND YIELD RATES FOR X - RAY",
+        "score": -5.999881047769248,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7096498719043552,
+        "rerank_score": -9.314652442932129,
+        "matched_nodes": [
+          "For",
+          "To",
+          "AND",
+          "The",
+          "We"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3219,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2709989__2310.08457__A_plastic_scintillation_muon_veto_for_sub-Kelvin_temperatures.md",
+        "title": "2024__recid_2709989__2310.08457__A_plastic_scintillation_muon_veto_for_sub-Kelvin_temperatures",
+        "text": "um of events (figure 10a, _gray_ ), whereas\nthe information on the muon identification power relies\non the coincidence-restricted muon spectrum (figure 10a,\n_blue_ ). Below around 3000 FADC a.u. (corresponding to\n\n_∼_\n4 MeV), the total rate is increasingly dominated by\nthe high rate of ambient gammas and hence increases\nsteeply with decreasing threshold position. Nevertheless, due to the compactness of the cryogenic muon veto,\na muon identification power of _>_ 95 % can be achieved\nat moderate total rate of _<_ 10 Hz, given the underlying\ncoincidence-restricted sample of muons. This will allow\nus to apply an energy cut even below 5 MeV without\nsignificantly increasing the expected overall muon identification rate of _∼_ 325 Hz for the full assembly [33]. With\nsuch a low threshold, it will be possible to tag many of\nthe clipping muons. Muons that escape detection in the\ncryogenic muon veto despite the low threshold may eventually be detected in a neighboring panel.\n\nThe optimal choice of the energy cut for the cryogenic\nmuon veto, and from that the overall efficiency of muon\nidentification, will be conclusively determined during the\ncommissioning of the full NUCLEUS muon veto in 2023\nunder real operating conditions (i.e. for an unconstrained\n\nsample of muons and in the interplay of the complete\nNUCLEUS muon veto).\n\n**4.** **CONCLUSION AND OUTLOOK**\n\nMuon-induced events are anticipated to be among the\nlimiting background sources for experiments searching\nfor rare-events at experimental sites located on-surface.\nTo achieve the sensitivity goals, highly efficient and hermetic muon vetos are indispensable. By deploying cryogenic detectors, which typically exhibit slow time response ( _O_ (100 _µ_ s)), many rare-event search experiments\nface stringent constraints on the tolerable anti-coincident\nmuon rate. Considering the large experimental volume\noffered by state-of-the-art cryogenic facilities, crucial for\nachieving temperatures of _O_ (10 mK), compact muon veto\nsolutions integrated within the cryostat’s interior are an\nappealing option. In this context, we have developed a\nnovel cryogenic muon veto: an instrumented plastic scintillator operating inside a running dry dilution refrigeration.\n\nFor the NUCLEUS CE _ν_ NS experiment, we constructed and commissioned a cryogenic muon veto operating\nat 860 mK, which achieves a muon identification power\nof _>_ 95 % at moderate total rate of _<_ 10 Hz. As simulations have shown, the cryogenic muon veto is an essential\nc",
+        "score": -6.012888715744019,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -9.369059562683105,
+        "matched_nodes": [
+          "For",
+          "To",
+          "AND",
+          "NS",
+          "The",
+          "In",
+          "CE"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "For": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "NS": 1.0,
+      "De": 1.0,
+      "CO": 1.0,
+      "OR": 1.0
+    },
+    "expanded_nodes": {
+      "For": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "NS": 1.0,
+      "De": 1.0,
+      "CO": 1.0,
+      "OR": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "We": 0.7,
+      "CE": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 20,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 3.4044907656498253,
+    "generation_latency_s": 3.1990930438041687e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 20.0,
+    "retrieval_latency_s": 3.4044907656498253,
+    "generation_latency_s": 3.1990930438041687e-07
+  }
+}

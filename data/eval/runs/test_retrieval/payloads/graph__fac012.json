@@ -1,0 +1,408 @@
+{
+  "benchmark": {
+    "query_id": "fac012",
+    "query_type": "factoid",
+    "query": "What is a threshold scan?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "a",
+      "threshold"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is a threshold scan?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1902,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "ciency for separate\nsignals with the same number of photoelectrons occurring at different times with respect\nto the clock phase of the integrator. Dark-noise signals will arrive randomly in time and\nbe added on top of any signal pulse and charge spillover across bunch crossing windows.\n\n**6.5.4** **Threshold calibration**\n\nThe setting of the thresholds has a large impact on the single hit efficiency and dark-count\nrate. The calibration of the comparators which are used to set the signal thresholds\nconsists of two parts: (a) determining the ratio of events over threshold for each DAC\n\n_×_\nsetting for each of the three comparators of each channel (3 524 thousand) and (b) an\noffline fit to the data to extract the calibration constants. The threshold DAC scan is\nperformed under pulsed illumination provided by the light injection system (LIS). An\nexample of the results for one threshold is shown in figure 52 (left). The fit to the data is\nbased on an analytical description of the Poisson-like SiPM spectrum described in ref. [94],\nwhich includes contributions from cross-talk. It not only allows one to determine the\nthreshold DAC values corresponding to the discrete photoelectron amplitudes, nominally\n1.5, 2.5, and 4.5 photoelectrons, but also gives access to other important parameters\nsuch as the mean light intensity of the LIS. A more detailed discussion of the calibration\nprocedure can be found in ref. [95].\n\nFigure 51: Left: the simulated shaper amplitude as a function of time for a single 10 photoelectron\nsignal at 4 V above breakdown. Right: the track-and-hold output values as a function of signal\narrival time. The dashed lines indicate the nominal threshold value with respect to the maximum\nvalue for two settings (pz5 and pz6, see text).\n\n68\n\nth3\n\nth2\nth1\n\n|Amplitude|clustered channels<br>a large cluster fragment<br>(a)<br>(d)<br>(b)<br>t<br>(c) (e)<br>t<br>t|\n|---|---|\n|Amplitude|SiPM Channels|\n\n|Col1|Col2|Col3|Col4|(b)|Col6|Col7|Col8|Col9|Col10|Col11|Col12|\n|---|---|---|---|---|---|---|---|---|---|---|---|\n|||||(c)|(c)|(c)|(c)|||||\n|||||||||||||\n\nFigure 52: Left: an example threshold calibration for one comparator of one channel, showing\nthe ratio (number of data above threshold to the total number of data) as a function of the\nthreshold value. The red curve is the result of a fit. The vertical dashed lines through the steps\nhighlight the discrete photoelectron amplitudes. Reproduced with permission from [95]. Right:\na diagram of the clustering algorithm",
+        "score": -1.443366953502257,
+        "dense_score": 0.48585784435272217,
+        "bm25_score": 16.425990478380598,
+        "graph_score": 0.5800226533792614,
+        "rerank_score": -2.3010635375976562,
+        "matched_nodes": [
+          "Threshold",
+          "An",
+          "The",
+          "Col2",
+          "Col3"
+        ],
+        "path_nodes": [
+          "Threshold"
+        ],
+        "community_id": "Threshold",
+        "metadata": {
+          "chunk_index": 84,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4951,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "a narrow interference filter for LoNS rejection [46].\nWe repeated our LoNS and Cherenkov light simulations from\nsection 5.2 with an additional bandpass filter installed in front\nof the detector modules. For the simulations in this section,\nwe again include the novel PMT R-12992-100, which is used\nin the imaging cameras of the large (LST) and middle (MST)\nsized IACTs of CTA [34].\n\n16\n\n|108 3NN rate scan|Col2|Col3|Col4|\n|---|---|---|---|\n|~~0~~<br>~~5~~<br>~~10~~<br>~~15~~<br>Threshold (Phe)<br>100<br>102<br>104<br>106<br>108<br>Rate (Hz)<br>3NN rate scan|~~0~~<br>~~5~~<br>~~10~~<br>~~15~~<br>Threshold (Phe)<br>100<br>102<br>104<br>106<br>108<br>Rate (Hz)<br>3NN rate scan|~~20~~<br>~~2~~5<br><br>Hamamatsu<br>SensL<br>Excelitas<br>PMT macrocell 5<br>PMT macrocell 9<br>PMT macrocell 14|~~20~~<br>~~2~~5<br><br>Hamamatsu<br>SensL<br>Excelitas<br>PMT macrocell 5<br>PMT macrocell 9<br>PMT macrocell 14|\n|~~0~~<br>~~5~~<br>~~10~~<br>~~15~~<br>Threshold (Phe)<br>100<br>102<br>104<br>106<br>108<br>Rate (Hz)<br>3NN rate scan||||\n|~~0~~<br>~~5~~<br>~~10~~<br>~~15~~<br>Threshold (Phe)<br>100<br>102<br>104<br>106<br>108<br>Rate (Hz)<br>3NN rate scan||~~20~~<br>~~2~~5<br>||\n\nFigure 23: 3NN rate scan with moderate moonlight. The waning Moon illumination was 70% and the angular separation to the observed source-free region\n∼ 50 [◦] .\n\nWe simulated idealized filters with transmission curves following a Heaviside step function which only allows all photons\nbelow a certain cut-off wavelength to pass the filter. We determined the ideal cut-off wavelength in terms of maximizing the\nSNR as defined in formula 3. An example showing the 2D histograms for the Hamamatsu-based SiPM pixels is presented in\nfigure 24. Depending on the zenith distance, two dominant cutoff wavelengths were found, one at 555 nm and one at 722 nm.\nComparing to the LoNS spectrum in figure 7 one can see that\nthis corresponds to a cut-off just below of the O� 1 S� peak centered at 557.7 nm [88] and just below a set of Meinel OH bands\nabove ∼725 nm [89]. For few zenith distances, the maximum\nSNR was achieved with a cut-off wavelength just below the\nO� 1 D� line at 630 nm [76]. An ideal filter cutting wavelengths\nof around 550 nm was also obtained from an MC study of [21].\nThe differences between the three SNRs for filters at 555 nm,\n722 nm, or 630 nm are generally very small for SiPM and R12992-100 pixels and negligible for MAGIC PMT pixels. To\nexemplify this the SNRs for filters with a cut-off wavelength\nof 555",
+        "score": -2.079077382371697,
+        "dense_score": null,
+        "bm25_score": 17.940594798667302,
+        "graph_score": 0.7744075262629204,
+        "rerank_score": -3.296586751937866,
+        "matched_nodes": [
+          "Threshold",
+          "An",
+          "The",
+          "Col2",
+          "Col3",
+          "For",
+          "We"
+        ],
+        "path_nodes": [
+          "Threshold"
+        ],
+        "community_id": "Threshold",
+        "metadata": {
+          "chunk_index": 35,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8321,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "knesses. No significant\ndifferences are observed between samples. The combination of noise and threshold dispersion defines the rate of\nfake hits at a certain threshold level. Towards lower bias\nvoltages ( _<_ 2 V), the detector capacitance increases and\nnoise dominates the fake hit rate. At higher bias voltages,\n\n7\n\n|500|Col2|Col3|Col4|Col5|Col6|Col7|×|×105 ×103|\n|---|---|---|---|---|---|---|---|---|\n|100<br>200<br>300<br>400<br>500<br>|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|0.00<br>0.25<br>0.50<br>0.75<br>1.00<br>1.25<br>Counts<br>|= 140.4 ± 0.1 THL DAC<br> = 2.9 ± 0.1 THL DAC<br>Gaussian fit|\n|0|||||||||\n\nFigure 13: Single-pixel noise distribution of the pixel matrix.\n\n(a)\n\n(b)\n\nFigure 15: Occupancy (left axis) and its derivative (right axis) for\nthe full matrix as a function of the threshold for the [55] Fe source.\n\nFigure 14: Threshold dispersion (a) and mean single-pixel noise (b)\nas a function of the bias voltage for samples with different total chip\nthicknesses.\n\nthreshold dispersion among pixels [1], but the single-pixel\nnoise still dominates the fake hit rate. To overcome the\n\nincreased threshold dispersion at _−_ 4 _._ 2 V, a lower value for\nthe `dac` `itrim` is used at the cost of masking additional\npixels. This results in a smaller step size in the tuning\nprocess, covering a smaller threshold dynamic range. Consequently, 5 extra pixels (8 out of 1024) are masked compared to the other bias voltages. Operating the chip at\ndifferent sensor bias voltages changes the tuning DAC setting by one or two DACs for approximately 20% of the\npixels in the matrix.\n\n_3.3. Threshold Calibration_\n\nTo determine the applied threshold in electrons, the chip\nis calibrated using an iron ( [55] Fe) radioactive source. As a\ncross-check of the measurements, a 75 µm thick titanium\n( [48] Ti) layer is placed beneath the [55] Fe to produce X-ray\nfluorescence from [48] Ti. Assuming a mean energy of (3 _._ 66 _±_\n0 _._ 03) eV is required to produce an electron-hole pair in\n\n1 A higher reverse bias voltage reduces the drive current of the\nNMOS, slowing down digital gates, and reduces the active channel\nvolume, making the transistor more sensitive to dopant fluctuations\nand thus increasing the threshold dispersion.\n\n|Col1|Linear fit|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n||slope = 35.4 ± 1.1 e<br>/ THL DAC<br>Linear fit<br>Bas",
+        "score": -3.0000804078465295,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7744075262629204,
+        "rerank_score": -4.707245826721191,
+        "matched_nodes": [
+          "Threshold",
+          "At",
+          "The",
+          "Col2",
+          "Col3",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "Threshold"
+        ],
+        "community_id": "Threshold",
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 798,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2663245__2305.17762__Measurements_of_the_Cherenkov_effect_in_direct_detection_of_charged_particles_with_SiPMs.md",
+        "title": "2023__recid_2663245__2305.17762__Measurements_of_the_Cherenkov_effect_in_direct_detection_of_charged_particles_with_SiPMs",
+        "text": "ront-end\nwith an X-LEE amplifier [1] featuring a gain factor of about 40 dB. The trigger\nwas defined as the coincidence of the two LGADs in the telescope. At each\ntrigger, all four waveforms were stored using a Lecroy Wave-Runner 9404M-MS\ndigital oscilloscope.\nThe vertical scale of the oscilloscope was set to two different values: a larger\none (200 mV/div) for the measurement of the number of fired SPADs, and a\nsmaller one (100 mV/div) for timing measurements.\n\n**2.3 Signal selection**\n\nSignal and Dark Counts (DC) events selections proceed through different steps,\nsimilar to the procedure described in [1, 2].\nThe SiPM signals are those within a window of _±_ 2 ns from the (t 0 ) trigger\ngiven by the coincidence of the two LGAD sensors. During the position scan\n(see section 3.1) no further cuts were applied to evaluate the average signal\namplitude.\nThe DC signals are those measured in the interval -10 ns to -2.5 ns from\nthe t 0 . It should be noticed that the SiPM performances and in particular the\nDark Count Rate (DCR) were surely affected by the sensors being operated at\nroom temperature. Moreover during the data taking an increase of the DCR\nwith the integrated beam flux was observed: the effect was already noticed\nfor the same type of detectors in [7, 8], but at energies of the protons around\na few tens of MeV. In future, this effect should be quantified with dedicated\n\nmeasurements.\nFor the timing analysis, a fixed threshold of approximately 50% of the single\nSPAD signal amplitude was used for the tested SiPMs, while a CFD (Constant\nFraction Discrimination) threshold of 50% was used for the reference LGADs.\n\n### **3 Results**\n\n**3.1 Position scan results**\n\nIn Figure 2 the average signal amplitude as a function of the different positions\nboth for x and y scans are reported. Notice that the beam dimensions for\n\n1 https://www.minicircuits.com/pdfs/LEE-39+.pdf\n\nSpringer Nature 2021 L [A] TEX template\n\n5\n\n|Col1|Col2|Col3|\n|---|---|---|\n||||\n||||\n||||\n||||\n||||\n||||\n||||\n||||\n||||\n||||\n||||\n\n|Col1|Col2|\n|---|---|\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n\n**Fig. 2** : Measured average signal as a function of the x (above) and y (below)\nwith the position of the maximum setting the zero in the abscissa. The scans\nwere performed at 3 V OV. The vertical dashed lines indicate the dimension\nof the SiPM.\n\nthe scan are defined by the LGAD coincidence trigger area, _∼_ 1 mm [2], so it is\nexpected to have not sharp edges, but convoluted with a smooth distribution\na",
+        "score": -3.0622453151676914,
+        "dense_score": null,
+        "bm25_score": 15.766890791974248,
+        "graph_score": 0.6251148880100861,
+        "rerank_score": -4.789763927459717,
+        "matched_nodes": [
+          "At",
+          "The",
+          "In",
+          "Col2",
+          "Col3",
+          "For"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6880,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+        "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+        "text": "gure 7 shows the detection efficiency as a function of the threshold for the same dataset.\n\nRemarkably, even for a threshold 20 times the voltage noise _𝜎_ _𝑉_, the efficiency remains larger than\n\n99.6%. Figure 7 also reports the noise hit rate. The threshold of 7 _𝜎_ _𝑉_ utilized throughout this paper\nis well within the efficiency plateau and corresponds to a noise hit rate per pixel of 2 × 10 [−][2] Hz.\n\nVariation of the threshold by one unit of _𝜎_ _𝑉_ produces a change in noise hit rate of approximately\n\ntwo orders of magnitude.\n\nThe detection efficiency for all the datasets is reported in Table 1 and in Figure 8. As expected,\n\nefficiency increases with the preamplifier’s power density and with the sensor bias voltage. The\n\nformer is due to an increase in the front-end gain, and the latter is due to a larger charge multiplication\nin the gain layer. The measurements show that for _𝑃_ _density_ ≥ 0.1 W/cm [2] the detector reaches the\nplateau of efficiency at HV = 150 V. At _𝑃_ _density_ = 0.05 W/cm [2] a sensor bias voltage of 170 V is\nneeded to obtain a detection efficiency larger than 99%.\n\nFigure 9 shows the detection efficiency in bins of the distance from the pixel center for the\ndataset taken with the highest _𝑃_ _density_ = 2.6 W/cm [2] . The efficiency is well above 99.9% and does\nnot depend on the hit position for HV = 150 V and HV = 180 V. At HV = 120 V, the detection\n\nefficiency decreases to 99.5% near the pixel edge, likely due to charge sharing between adjacent\n\npixels.\n\n– 8 –\n\n10 2\n\n10\n\n1\n\n10 −1\n\n10 −2\n\n10 −3\n\n10 −4\n\n10 −5\n\n100\n\n99.8\n\n99.6\n\n99.4\n\n99.2\n\n99\n\n_**MONOLITH**_ prototype2 (2024) with gain layer\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|\n|---|---|---|---|---|---|---|---|---|\n|||=<br>density<br>P|2.6 W/c|, HV =<br>2<br>m|180 V,|C<br>°<br>T = -5|||\n||||CERN<br>Efficien|SPS Te<br>cy|stbeam|: 120 Ge|V/c pion|s|\n||||||||||\n||||Labora<br>Noise|tory Me<br>Hit Rate|asurem|ents|||\n||||||||||\n|||||Noise|Hit Rat|e Sensit|ivity Li|mit|\n||||||||||\n\n6 8 10 12 14 16 18 20\n\nThreshold [σ V ]\n\n**Figure 7** . Detection efficiency (red squares) and noise hit rate (blue dots) as a function of the threshold for\nthe dataset taken with HV = 180 V and _𝑃_ _density_ = 2.6 W/cm [2] . The threshold is given in units of the voltage\nnoise _𝜎_ _𝑉_ .\n\n_**MONOLITH**_ prototype2 (2024) with gain layer\n\n100\n\n90\n\n80\n\n70\n\n60\n\n50\n\n40\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|Col11|\n|---|---|---|---|---|---|---|---|---|---|---|\n||||||||||||\n||||||||||||",
+        "score": -3.6192563679391228,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6772150898210909,
+        "rerank_score": -5.648310661315918,
+        "matched_nodes": [
+          "Threshold",
+          "At",
+          "The",
+          "Col2",
+          "Col3",
+          "As"
+        ],
+        "path_nodes": [
+          "Threshold"
+        ],
+        "community_id": "Threshold",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8318,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "ments and yielded similar\nresults, as will be demonstrated.\n\n_3.1. Current-Voltage Characteristic_\n\nA current-voltage (IV) measurement has been performed, where the full chip p-well and substrate bias currents are recorded as a function of their reverse bias voltages (the sensor bias voltage). The configured chip is kept\nin the dark, at room temperature, and the p-well and substrate bias voltages are increased simultaneously in steps\nof 0 _._ 02 V. After each step, a delay of 1 _._ 5 s is applied to\nallow for stabilization, followed by 20 measurements from\nwhich the mean and RMS are calculated.\n\nFigure 9 shows the IV measurement for samples with different total chip thicknesses. Significantly higher currents\nare observed in samples with thicknesses below 25 µm, and\n\n|Col1|H2M-10 (21 µm)<br>H2M-9 (24 µm)<br>H2M-8 (25 µm)<br>H2M-6 (30 µm)<br>H2M-2 (50 µm)<br>H2M-3 (50 µm)|Col3|\n|---|---|---|\n||||\n||||\n\nFigure 9: IV measurements for samples with different total chip\nthicknesses.\n\nfurther systematic studies of thin samples are currently ongoing to have a better understanding of this behavior. All\nsamples show a punch-through current at absolute bias\nvoltages above 4 _._ 8 V. At this point, the change in current\nbetween two consecutive points exceeds 0 _._ 2 µA, and the\ncurrent begins to increase exponentially. An upper limit\nof _−_ 4 _._ 2 V is therefore defined as a safe operational sensor\nbias voltage for laboratory and test beam measurements.\n\n_3.2. Threshold Equalisation_\n\nVariations in the characteristics of circuit elements, and\ncurrent and voltage supplies over the pixel matrix cause\npixel-to-pixel variations of the threshold [19, 20]. If unaccounted for, these variations limit the minimum achievable threshold for noise-free operation. Hence, the analog\nfront-end allows adjustment of the threshold for each individual pixel ( `tuning` ~~`d`~~ `ac` ), as detailed in Section 2.2. To\nfind the optimal `tuning` ~~`d`~~ `ac` setting for each pixel, a noisebased equalisation procedure, similar to the one described\nin [21], is applied. The advantage of this method, compared to those based on calibration-pulse injection, is its\ninsensitivity with respect to gain variations.\nThe first step of the equalisation procedure is a scan of\nthe parameter `dac` ~~`v`~~ `thr` in units of the DAC (THL DAC),\nreferred to as a threshold scan. This is performed while operating the chip in the dark, configured in counting mode,\nand acquiring data for a fixed duration at each thres",
+        "score": -3.8632677278141916,
+        "dense_score": null,
+        "bm25_score": 16.531594985494966,
+        "graph_score": 0.6944942900361222,
+        "rerank_score": -6.031009674072266,
+        "matched_nodes": [
+          "Threshold",
+          "An",
+          "At",
+          "The",
+          "Col3",
+          "To"
+        ],
+        "path_nodes": [
+          "Threshold"
+        ],
+        "community_id": "Threshold",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7797,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+        "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+        "text": "while the thickness will be of 150 µm (“thick”) everywhere\nelse. In total there will four barrel layers and three endcap ones equipped\nwith planar sensors, all of 50 _×_ 50 µm [2] pitch [10].\n\n10\n\nFor the “thin” sensors fluences of Φ = 2.5, 3 and 3.5 _×_ 10 [15] n eq _/_ cm [2] have\nbeen simulated while for “thick” ones fluences from Φ = 1.5 to 3.5 _×_ 10 [15] in\nsteps of 0.5 _×_ 10 [15] n eq _/_ cm [2] have been considered; this set of fluences cover all\nthe expected lifetime values for the ITk Pixel detector equipped with planar\nsensors. The simulation setup is the one reported before.\nTo get a sense of the expected hit efficiency a sort of “effective threshold”\ncan be calculated as the sum in quadrature of the digitization threshold with\n5 times the sum in quadrature of the noise and threshold dispersion (see\nTable 1); an event with a collected charge above this “effective threshold” will\ncertainly be recorded. The value of “effective threshold” in this simulation\nsetup is of about 1.3 ke.\nIn Figure 6 and 7 the results of simulations of “thin” and “thick” samples,\nrespectively; for “thick” devices the number of results presented is a subset\nof the total one: this choice has been done to improve the readability of the\nfigure.\n\n6\n\n5.5\n\n5\n\n4.5\n\n4\n\n3.5\n\n3\n\n2.5\n\n2\n\n|Col1|Col2|Col3|Col4|w =|m µ = 100|Col7|Col8|Col9|Col10|\n|---|---|---|---|---|---|---|---|---|---|\n|||||||||||\n|||||||||||\n|||||||||||\n|||||||||||\n|||||||10<br>×<br>2.5<br>15<br><br><br>|15|||\n|||||||10<br>×<br>3<br><br>10<br>×<br>3.5|15|||\n|||||||||||\n\n100 200 300 400 500 600\n\nV bias [V]\n\nFigure 6: MPV of simulated cluster charge distribution as a function of the bias voltage\nfor a “thin” device after several fluences of irradiation. The simulation predictions are the\naverage of CMS and Mandić ones where the uncertainty is their semi-difference.\n\nAt all fluences and voltages and for both thicknesses enough charge is\ncollected to have full efficiency; this is due also to particles impinging at\nnormal incidence hence giving rise to almost no charge sharing. For “thin”\ndevices the value of collected charge seems to saturate at 300 V while for\n“thick” ones it could be beneficial to run at around 400 V. Nonetheless it\nseems that it will not be necessary to run at the largest possible voltage\n\n11\n\nFigure 7: MPV of simulated cluster charge distribution as a function of the bias voltage\nfor a “thick” device after several fluences of irradiation. The simulation predictions are the\naverage of CMS and Mand",
+        "score": -5.086193420764517,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7223073244519156,
+        "rerank_score": -7.910478591918945,
+        "matched_nodes": [
+          "At",
+          "The",
+          "In",
+          "Col2",
+          "Col3",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -5.260895489989731,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9166921973355746,
+        "rerank_score": -8.202278137207031,
+        "matched_nodes": [
+          "At",
+          "The",
+          "In",
+          "Col2",
+          "Col3",
+          "For",
+          "To",
+          "We",
+          "As"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8209,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "also agrees with the expected bias recovery time from\nsimulation.\n\nFigure 12 shows the dependence of the fake-hit rate on the strobe signal,\nillustrating the cumulative effect of perturbations over time on the probability\nof observing a fake hit. For random noise, the number of fake hits per unit\ntime is expected to be independent of strobe length. In practice, however,\ntwo systematic effects modify the measured fake-hit rate. At very short strobe\nlengths, the measurement is dominated by the few noisiest, continuously active\npixels. At very long strobe lengths, the fake-hit rate is underestimated because\nthe in-pixel latch can be asserted only once, limiting the contribution of the\nnoisiest pixels to a single fake hit. Consequently, the dependence of the fakehit rate on strobe duration is expected to decrease monotonically. Instead, a\nsudden increase is observed approximately 2 µs after the strobe is asserted. This\n\n15\n\n|40|Col2|Col3|\n|---|---|---|\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~||Dela<br>1.<br>~~1.~~|\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~||2.<br>3.|\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|||\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|||\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|||\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|~~I~~bias~~ origin~~|~~V~~shift~~ origin~~|\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|~~I~~bias~~ origin~~|150<br>200<br>Column|\n\nFigure 11: Column profile of threshold variation measured at different time delays after the\nstrobe is asserted. To isolate the effect of the perturbation, the threshold measured at a delay\nof 8 _._ 8 µs when the system is assumed to have recovered from the perturbation, is subtracted\nfrom the measurements at shorter delays. The small peak substructure arises from the different\ncoupling with the steering signals discussed in Sec. 4.1.\n\nbehaviour is consistent with the timescale for amplifying a small charge (noise\ninjection) at the input when the strobe begins.\n\n|102|2|Thres|\n|---|---|---|\n|10<br>1<br>100<br>Str<br>10<br>3<br>10<br>2<br>10<br>1<br>100<br>101<br><br>||Thres<br>1<br>1<br>|\n|10<br>1<br>100<br>Str<br>10<br>3<br>10<br>2<br>10<br>1<br",
+        "score": -5.30793103242868,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8959746638219315,
+        "rerank_score": -8.272186279296875,
+        "matched_nodes": [
+          "Threshold",
+          "At",
+          "The",
+          "In",
+          "Col2",
+          "Col3",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "Threshold"
+        ],
+        "community_id": "Threshold",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7468,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2954331__2507.18172__Silicon_Single-Photon_Detector_Achieving_Over_84_Photon_Detection_Efficiency_With_Flexible.md",
+        "title": "2025__recid_2954331__2507.18172__Silicon_Single-Photon_Detector_Achieving_Over_84_Photon_Detection_Efficiency_With_Flexible",
+        "text": "_S_ = _V_ _dd_ _−_ _i_ 1 _∗_ _R_ 1 _−_ _V_ _GS_, where _i_ 1 is the\ncurrent through the branch, which depends on _V_ _GS_ and is\ndetermined by the volt-ampere characteristics of D1. At low\nvoltages, _i_ 1 increases slowly with _V_ _GS_ . As _V_ _GS_ approaches the\nZener voltage ( _V_ _Zener_ ) of D1, _i_ 1 increases sharply, causing a\nsteep drop in _V_ _S_ . The red curve in Fig.2 (b) illustrates this\nrelationship between _V_ _S_ and _V_ _GS_ for this branch. For the\nsecond branch, _V_ _dd_ -M1-SPAD anode, _V_ _S_ can be solved from\nthe current balance equation, which is: _i_ 1 + _[V]_ _[dd]_ _R_ _M_ _[−]_ 1 _[V]_ _[S]_ = _[V]_ _R_ _[S]_ _[,]_\n\nwhere _R_ _M_ 1 is the resistance of M1, which is determined by\n_V_ _GS_, and _R_ is the resistance between the SPAD anode and\nGND. When _V_ _GS_ is low, _R_ _M_ 1 is large, so _V_ _S_ is nearly 0 V.\nAs _V_ _GS_ approaches the threshold voltage ( _V_ _on_ ) of M1, _R_ _M_ 1\ndrops to approximately 1 Ω, and _V_ _S_ approaches _V_ _dd_ . This\ntrend is shown by the blue line in Fig. 2 (b). In the stable idle\nstate, the circuit reaches equilibrium at the intersection of the\nred and blue curves, where _V_ _GS_ is just below _V_ _on_ and _V_ _S_ is\nslightly less than _V_ _dd_ . In the circuits, the _V_ _Zener_ is 4.3 V and\nthe _V_ _on_ is _∼_ 2.5 V.\nWhen the QUENCHING signal transitions from HIGH to\nLOW, _V_ _S_ rises from 0 V to a high voltage, switching the\nSPAD from the armed to the idle state. The rise time of _V_ _S_ is\n\na critical factor that limits both the maximum count rate and\n\nthe gate-off speed. To accelerate this transition, an inductor\nL1 is employed. In the armed state, M2 conducts, allowing\ncurrent to flow from _V_ _dd_ through R1, L1, and M2 to GND.\nWhen M2 turns off, L1 momentarily maintains the current via\nfreewheeling through D1, causing _V_ _GS_ to briefly reach _V_ _Zener_ .\n\n4\n\n**(b)** 100 mm\n\nFig. 3. (a) The design diagram of the Si SPD module. (b) The photograph of the SPD module.\n\nThis turns M1 fully on, significantly boosting the rise speed\nof _V_ _S_ .\n\nConversely, during the transition from the idle to the armed\nstate, the QUENCHING signal switches from LOW to HIGH,\nrapidly turning on M2 and switching off M1. However, due\nto the high impedance between the SPAD anode and GND in\nthis state, the anode voltage decreases slowly. To accelerate\nrecovery, the RESET signal is briefly asserted, activating M3,\nwhich quickly pulls the anode voltage to GND. This active\nreset also occurs during the gate-on p",
+        "score": -5.484555622356192,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6735579222175526,
+        "rerank_score": -8.517568588256836,
+        "matched_nodes": [
+          "At",
+          "The",
+          "In",
+          "For",
+          "To",
+          "Si",
+          "As"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "Threshold": 1.2507880449295044,
+      "An": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "SH": 1.0,
+      "HO": 1.0,
+      "IS": 1.0,
+      "Re": 1.0
+    },
+    "expanded_nodes": {
+      "Threshold": 1.2507880449295044,
+      "An": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "SH": 1.0,
+      "HO": 1.0,
+      "IS": 1.0,
+      "Re": 1.0,
+      "The": 0.875551631450653,
+      "In": 0.875551631450653,
+      "Col2": 0.875551631450653,
+      "Col3": 0.875551631450653,
+      "For": 0.7,
+      "To": 0.7,
+      "We": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "Si": 0.7,
+      "As": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 19,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 2.033487970009446,
+    "generation_latency_s": 3.702007234096527e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 19.0,
+    "retrieval_latency_s": 2.033487970009446,
+    "generation_latency_s": 3.702007234096527e-07
+  }
+}

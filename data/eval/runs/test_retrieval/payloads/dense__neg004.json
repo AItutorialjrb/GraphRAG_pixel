@@ -1,0 +1,274 @@
+{
+  "benchmark": {
+    "query_id": "neg004",
+    "query_type": "negative",
+    "query": "What is the user password for the detector DAQ machine?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "DAQ"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the user password for the detector DAQ machine?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1830,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "9.\nThe data acquisition system (DAQ) comprises the front-end (FE) and back-end (BE)\nelectronics connected by long-distance optical links, the event-builder and the event-filter\nfarms, both described in section 10.\n\n##### **2.2 Magnet**\n\nThe spectrometer’s dipole magnet has been maintained unchanged with respect to Run 1-2 .\nIt provides a vertical magnetic field with a bending power of _≃_ 4 Tm . It consists of two\nidentical, saddle-shaped coils, which are mounted symmetrically inside a window-frame\nyoke. To match the detector acceptance, the pole gap increases both vertically and\nhorizontally towards the downstream tracking stations. Detailed descriptions of the\nmagnet design can be found in refs. [10–12].\nEach coil is made from five triplets of aluminium pancakes and is supported by cast\naluminium clamps fixed to the yoke.\nThe initial magnetic field map was determined based on a set of measurement campaigns\n(prior to Run 1 ) complemented by finite-element simulations. Subsequent measurements\nfor limited regions inside the magnet, were carried out in 2011, 2014 and 2021, and were\nused to apply corrections to the field map.\nDuring data taking, the magnet polarity is reversed regularly (every few weeks) to\ncollect data sets of roughly equal size with the two field configurations.\n\n##### **2.3 Electronics architecture**\n\nThe architecture of LHCb Upgrade I is designed to transmit data collected from every\nbunch crossing all the way to the event-builder computing farm. To implement this\narchitecture, LHCb maximised the use of common building blocks to benefit from a\nunified approach. Common developments for the LHC experiment upgrades, such as\nradiation-tolerant optical links, have proven to be vital enabling technologies for the new\nLHCb detector. The general architecture is shown in figure 3. The FE electronics amplify\nand shape the signals generated within the particle detectors.\nThese signals are digitised and optically transmitted off the detector. All components\nof the FE electronics are located on or close to the detector, and are therefore exposed to\nbeam-induced radiation. Hence, they are all radiation tolerant by design and/or qualified\nfor the radiation environment in which they operate. The BE electronics are situated in a\ndata centre on the surface and are connected to the FE in the cavern by 250 m -long optical\nfibres. The BE electronics preprocess and format the data for transmission to the event\nbuilder. The data centre is a radiation-free envir",
+        "score": -0.9322930232802433,
+        "dense_score": 0.3689166307449341,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.442333698272705,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4319,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2756824__2402.05487__Performance_of_the_mass_testing_setup_for_arrays_of_silicon_photomultipliers_in_the_TAO_ex.md",
+        "title": "2024__recid_2756824__2402.05487__Performance_of_the_mass_testing_setup_for_arrays_of_silicon_photomultipliers_in_the_TAO_ex",
+        "text": "ct hardware elements of the mass-testing setup. Most of these hardware elements connect\n\nto the DAQ machine via USB. For slow control and monitoring, we utilize RS-232 and RS-485\n\nprotocols.\n\nThe ADC board interfaces with the DAQ machine through an optical 10GBit Ethernet connec\ntion. During data acquisition, the typical event rate is approximately 600Hz.\n\nThe ADC server software has two distinct components. Each implements its proprietary\n\nprotocol operating over UDP: one for data acquisition and the other for ADC board management.\n\nBoth data and management traffic traverse the same optical interface.\n\n– 6 –\n\n### **DCR Curve**\n\n**4**\n#### **10**\n\n**3**\n#### **10**\n\n**2**\n#### **10** **10**\n\n|hold|Col2|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n|**ph.e. thres**|||||||\n|**0.5**|||||||\n||||||||\n||||||||\n\n#### **0 200 400 600 800 1000 1200** **Threshold, ADC counts**\n\n**Figure 4** . An example of the software-reconstructed dark count rate curve for a 5V overvoltage.\n\nThe monitoring system, shown in Figure 6, provides real-time monitoring of the scanning\n\nprocess and alerts the user to any hardware malfunctions. It offers a user-friendly interface for\n\ninitiating two types of runs: light field scanning and data acquisition for SiPM tiles. These runs\n\ncan be combined to obtain comprehensive characteristics of the SiPM tiles. The monitoring system\n\nprovides efficient feedback on the LED intensity.\n\nDuring the joint run, certain data such as current measurements and temperature readings\n\nare recorded and stored in the light and main databases, respectively. Another portion of the\n\ndataset, specifically the oscillograms, is digitized using ADCs, saved to the disk, and subsequently\n\ntransferred to the IHEP cluster. Once transferred to the cluster, the data undergoes analysis using\n\nthe analysis software on the supercomputing system. The analysis software extracts the required\n\nparameters from the data files and populates the database with the extracted information, ensuring\n\ncomprehensive and organized storage of the SiPM characterization data.\n\n**5** **Setup performance**\n\nThe light field scan is conducted using the reference SiPM, as discussed in Section 2. The reference\n\nSiPM serves as a calibration standard for characterizing the light field across the SiPM tiles. It\n\nprovides a known and stable response to incident light, allowing for accurate mapping of the light\n\nintensity distribution. The data obtained from the light field scan is instrumental",
+        "score": -0.9716518463315191,
+        "dense_score": 0.35030806064605713,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.5021255016326904,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 7569,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2857516__2412.06687__Test_beam_characterization_of_a_digital_silicon_photomultiplier.md",
+        "title": "2026__recid_2857516__2412.06687__Test_beam_characterization_of_a_digital_silicon_photomultiplier",
+        "text": "toring during\nmeasurements and operation.\nFurther features of the DESY dSiPM, like a validation logic for topologybased event selection, external test circuits, and LED trigger pulse generation, are detailed in [9], along with a detailed report on the ASIC design and\nproperties.\n\n_2.1. Data Acquisition System_\nTo facilitate data acquisition (DAQ) and save development time, the\nDESY dSiPM is integrated into the Caribou DAQ system, an open-source\nhardware, software (Peary) and firmware project dedicated to pixel detector\ndevelopment [10, 11]. Its key component is a system-on-chip (SoC) board\n(AMD [12], Zynq 7000 SoC ZC706) containing an FPGA and a CPU. The\nCPU is running a fully-featured Yocto-based Linux distribution and Peary,\nwhile the FPGA executes custom written firmware blocks for configuration,\ncontrol, and readout of the dSiPM. The SoC board is connected to a mezzanine board, the CaR board, that provides supplies like current and voltage\nsources, and a physical interface to the dSiPM. The dSiPM itself is placed\non a custom chip board, connected to the CaR board, and hosting LVDS\nrepeaters, for communication with the chip, and further interfacing circuits.\nThe Caribou system provides everything required for operation of the\ndSiPM, but the high voltage required for biasing of SPADs, which requires\nan external voltage source. The provided supplies include power, current\nreferences, voltage references, LVDS links, a 3 MHz clock, a 408 MHz clock,\nand synchronous control signals generated in the FPGA. This way, the entire\nsystem is relatively compact, which eases physical integration at the test\nbeam, in a laser setup, or for microscopy.\nThe Peary software provides an interface to control the supplies on the\nCaR board, and to registers in the FPGA for control of the firmware, and\ndata transactions. It also provides a development environment to define\nsensor-specific powering, configuration and readout procedures. Following\na certain structure, naming convention, and implementing key functional\nfeatures, these procedures are intrinsically embedded in the EUDAQ data\n\n4\n\nFigure 2: IV-curves for one of the tested sensors, at temperatures between _−_ 25 _[◦]_ C\nand 20 _[◦]_ C. Each point represents the average of several measurements; the errors are\nwithin the marker.\n\nacquisition software framework [13, 14], used with the test-beam instrumentation introduced in section 4.\n\n**3. Laboratory Characterization**\n\nDetails on the laboratory characterization of the DE",
+        "score": -1.3238141107559205,
+        "dense_score": 0.331764280796051,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.043367862701416,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4509,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology.md",
+        "title": "2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology",
+        "text": "sured noise is about 30 electrons. More details on\n\nthe DAQ system and calibration are reported in [4].\n\n**4. Test-Beam Setup**\n\nTest-beam studies allow for the characterization of\n\nnew detector prototypes for particle physics applications under realistic conditions.\n\nThe test-beam setup consists of a MIMOSA26 telescope [17], composed of six planes and used for beam\nparticle track reconstruction. The device under test\n(DUT), in this case, the APTS, is placed between the\nthird and fourth telescope planes. The TelePix [18] detector is used as a trigger plane with a configurable acceptance window and is the last detector plane downstream. Finally, a Trigger Logic Unit (TLU) [19] manages the trigger signals of the setup to synchronize the\ndata acquisition between all the devices.\n\nThe employed data acquisition software is EUDAQ2 [20], which controls the storage and synchronization of data from all systems. The data analysis framework for online monitoring and offline event\nbuilding is Corryvreckan [21].\n\nTwo triggering schemes have been employed. To find\nthe position of the DUT relative to the beam telescope,\nit was operated in self-triggered mode. To allow for unbiased efficiency measurements, it was triggered externally using TelePix, where a mask was applied to trigger\non only a small region around the DUT.\n\nThe test-beam campaigns have been carried out at\nDESY-II [22], with a 4 GeV electron beam and a maximum beam particle rate of 5 kHz.\n\n**5. Test-Beam Characterization**\n\nThis section describes the reconstruction procedure\nof the test-beam data and discusses the results of cluster\nsize and efficiency studies.\n\n_5.1. Data Analysis_\n\nWhen the DAQ receives a trigger, the respective\nwaveforms are recorded. These are processed for each\npixel during the data analysis; their amplitude is measured and transformed to charge using the calibration\nmentioned in Section 3.\n\nTo calculate the amplitude, two regions are defined:\nthe baseline region (1 µs interval before the pulse starts)\nand the peak region (1.5 µs interval around the expected\npulse maximum). The baseline is obtained by averaging the values in the baseline region. The maximum\nof the pulse is taken from the peak region, and the amplitude is obtained by subtracting the baseline from the\nmaximum value. A threshold is applied to define pixel\nhits. The studied thresholds are in the typical operating\nrange, from 90 (∼ 3σ _noise_ ) to 400 electrons.\nIndividual hits on the same device that belong to\nthe same par",
+        "score": -1.5299780237501948,
+        "dense_score": 0.3638058304786682,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.3616161346435547,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1969,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "of the EB servers. After event-building the completed events\nare passed to the HLT1 running on GPUs installed in the EB servers. Accepted events are\nstored on the HLT1 buffer storage and then read by the HLT2 processes for final selection.\nAccepted events are consolidated into files and sent to permanent storage.\nThe various components of the DAQ system are described in more detail in the\nfollowing sections.\n\n**10.2.1** **Common readout and control PCIe40 board**\n\nLHCb has chosen to use a single, custom-made board for data acquisition, slow control and\nfast, synchronous and asynchronous control. The board concatenates data, transforming\ninput streams based on a custom protocol into an output stream based on a standard\nprotocol used in the data centre. The input stream is the VL running the GBT protocol\non top for all detectors except the VELO, which uses the GWT protocol. The output\nstream is PCIe Gen 3 with a bandwidth of 120 Gbit/s . This board has a PCIe form-factor\n(three-quarter length, standard height, dual slot) and it is designed according to PCIe\nspecifications. Hinting at the board interface and at the 40 MHz experiment’s driving\nclock, the board has been called PCIe40.\nThis board, shown in figure 99, is based on an FPGA [70] featuring 72 serialiser/deserialiser (SerDes) out of which 16 are used for the host-interface to the PC.\nThe front-end electronics can be connected via up to 48 bidirectional optical links. The\nbandwidth of each link is up to 10 Gbit/s in both directions. The FE facing links are\ndirectly connected to optical transceiver modules (MiniPods) to achieve high density. [71]\n\n70 Intel TM Arria10.\n71 Broadcom TM MiniPod.\n\n129\n\nPhysically, these links appear as eight MPO-12 connectors on the board. In addition, two\nserial links are reserved for the timing and fast control with a pluggable optical module.\nThe cooling of the FPGA and MiniPods is obtained through a custom heat sink and relies\non the air flow of the PC server. Components of the board require six different voltages\nwhich are provided by a daughter card connected to the main 12 V of the PC server. The\ncard supplies up to 45 A on 0.9 V to the core of the FPGA, in a sustained regime. Finally,\na series of phase-locked loops are implemented to distribute clocks at 40 and 240 MHz\nwith low jitter. Their phases are controlled at the level of 200 ps with respect to the LHC\nmain clock.\n\nWhen used for data acquisition, the PCIe40 interfaces the FE electronics with the EB.\nIn that c",
+        "score": -1.5711752608617149,
+        "dense_score": 0.34753143787384033,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.4243721961975098,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 151,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3930,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2744867__2401.04630__Characterisation_of_plastic_scintillator_paddles_and_lightweight_MWPCs_for_the_MID_subsyst.md",
+        "title": "2024__recid_2744867__2401.04630__Characterisation_of_plastic_scintillator_paddles_and_lightweight_MWPCs_for_the_MID_subsyst",
+        "text": "ever a particle crosses the chamber, the anode wire signal is capacitively coupled to the\n\nneighbouring electrodes: typically two (sometimes three) field wires, and two to four pick-up wires give signal\n\nabove an appropriately set threshold. This results in a pair of hit clusters for both directions.\n\nHaving 8 MWPCs provided sufficiently precise and redundant track information. A “track” is defined if\n\nat least 7 out of the 8 available detectors form a straight line within the position resolution of the detectors.\n\nIndividual detector efficiencies are typically above 95%, which ensures high efficiency for track identification.\n\nThe detector system was controlled and data were read out using a DAQ system designed for cosmic\n\nmuons [16], however, it proved to be sufficiently fast to operate up to the highest relevant beam intensity.\n\nThe dead time of the DAQ system was about 0.1 ms, leading to 10 kHz maximum event rate for recording.\n\nThe beam profile at any plane perpendicular to the beam direction was determined extrapolating the individ\n\nual tracks to the beam source. The beam profile was found to be strongly energy and position dependent (along\n\nthe _z_ axis), and slightly intensity dependent. Figure 2 shows an example of the _x_ position of the first MWPC.\n\nThe left panel shows the beam profile (number of particles along the _x_ axis) with triggering only on the MWPC\n\ndetectors, which is the “real” beam profile reaching the detectors. The right-hand side panel shows that the\n\ntwo-fold coincidence signal used for efficiency measurements gives a much cleaner beam definition. Apparently,\n\nthe beam widens at lower energies as expected [7], but it is conveniently usable for the measurements over the\n\nfull energy range. The triggered beam profile is relevant for efficiency measurements, however the complete\n\nbeam profile must be considered when the beam intensity is determined at any specific detector location.\n\n**3. Results**\n\n_3.1. Plastic scintillator bars_\n\nTo illustrate the quality of data, the charge ( _Q_ ) distributions obtained with the FNAL-NICADD plastic\n\nscintillator prototype are shown in Fig. 3 for different beam momenta as well as for different distances between\n\nthe hit and the SiPM. The charge was obtained by integrating the pulse within a time interval of 300 ns. The\n\ntime was measured relative to the arrival time of the trigger signal. The main peak of the signal exhibits little or\n\nno variation with respect to the distance due to the WLS f",
+        "score": -2.0255238261589636,
+        "dense_score": 0.3786618709564209,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.12447452545166,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4138,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi.md",
+        "title": "2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi",
+        "text": "same time serves as a\nholding structure for calibration sources. The detector\nmodule and the readout electronics are connected to\n\na cooling interface system. The test setup features a\nfeedthrough for all electrical connections as well as for\nthe cooling pipes. Inside the vacuum, the detector and\nreadout electronics are connected via four Kapton flat\ncables. Outside the vacuum, the signal lines are connected to the bias system via twisted cable pairs. The\nconnection of the signal lines to the DAQ system is realized using short flat cables.\n\nof about 12 mm to the SDD chip. For the detector\nmodule characterization with x-rays, [55] Fe and [241] Am\nsources were used. While the [55] Fe source features two\nprominent x-ray lines at energies of 5 _._ 9 keV (Mn-K _α_ )\nand 6 _._ 4 keV (Mn-K _β_ ), respectively, the [241] Am source\nhas several monoenergetic x-ray, gamma ray and, fluorescence lines in the energy range 5 keV to 60 keV [38,\n39]. Representative for the measurements in this work,\nfigure 6 shows a typical pixel map of the measured count\nrate for [55] Fe events with energies above 1 _._ 5 keV.\n\n3.2 Electron gun vacuum chamber\n\nThe characterization of the detector module with\n\nelectrons was performed using a customized electron\ngun installed in a cylindrical vacuum chamber [40], see\nfigure 7. For the measurements with electrons, good\nvacuum conditions are required since they have a small\nfree streaming length in air. Using a turbo-molecular\npump directly connected to the vacuum chamber,\npressure levels as low as 10 _[−]_ [7] mbar are achieved in the\n\ntest setup.\n\nThe electron gun is based on a hot cathode made\nfrom a tantalum filament (wire diameter of 25 µm).\nBy applying a voltage and thus heating the wire,\nelectrons are emitted as soon as their thermal energy\n\nFig. 6: Typical pixel map showing the rate distribution\nmeasured with an [55] Fe calibration source in the x-ray\nbench test setup. The measured count rate for events\nwith energies above 1 _._ 5 keV is represented by the color\nbar. The pixels are shown as seen from the entrance\nwindow side. The pixel marked in grey had to be disabled due to a loose contact in the signal line.\n\nexceeds 4 _._ 3 eV (work function for tantalum) [41]. The\nfilament is positioned such that there is no direct line\nof sight to the detector. This is necessary to minimize\nthe leakage current caused by the emission of photons\nfrom the hot cathode. The electron rate can be set in\n\nthe range 1 kcps to 30 kcps by adjusting the wi",
+        "score": -2.0755720522668626,
+        "dense_score": 0.38103222846984863,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.201734781265259,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3738,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2734139__2312.05098__Comparison_of_readout_systems_for_high-rate_silicon_photomultiplier_applications.md",
+        "title": "2024__recid_2734139__2312.05098__Comparison_of_readout_systems_for_high-rate_silicon_photomultiplier_applications",
+        "text": "215 [27],\nwhich can link up to 128 A5202 boards with a total number of 8192 channels. If DT5215 is unavailable, up\nto 16 A5202 can be daisy-chained. That board is then connected to a DAQ computer through Ethernet or\nUSB 3.0. Furthermore, multiple DT5215 boards can be synchronized in order to further extend the total number\nof channels. All the components are parts of the FERS-5200 system [28] by CAEN Technologies Inc.\n\n**2.4** **KLauS6b**\n\nThe board was originally designed by a group at the Heidelberg University for CALICE Analogue Hadronic\nCalorimeter (AHCAL) [29] & ScECAL [30] detectors targeting low gain SiPMs of charge range between 15 to\n150 pC. It can also operate with four different gain modes, with the lowest one spanning the dynamic range up\nto 450 pC. KLauS6b [31] is an auto/external-triggered, gain-configurable 36-channel ASIC fabricated in UMC\n180 nm CMOS technology. Analog data from the 36 channels are digitized and sent off-chip using either an I2C\ninterface (up to 20 Mbit/s) or a faster 160 Mbit/s LVDS interface, providing a 8b10b encoded data stream. The\ndevice that communicates with KLauS6b via I2C fetches data until the board is empty, and bundles all received\nhits into one acquisition object. KLauS6b samples the peak voltage and then converts it to digital code word by\nan ADC. A 10-bit or 12-bit ADC are available for one ASIC according to the purposes; in this work, we chose\n\nto work with a 10-bit ADC. The ADC block allows for conversion times in the order of 400 ns with a 40 MHz\n\ninternal system clock, not including the sampling time of typically 90 ns. The system is still under development\nrequiring an additional Raspberry Pi 4 connected to the development board and only a limited number of ASICs\nare available. It comes with acquisition software that works on Linux.\n\n**2.5** **TOFPET2c**\n\nThis is a readout and digitization 64-channel ASIC featuring low-noise and low-power for time-of-flight (TOF)\nmeasurements and other applications using SiPMs [32]. The digitization modules are present for each readout\nchannel. The chip has quad-buffered TDCs and QDCs in each channel. The chip is part of a complete, scalable\nreadout platform offered as an off-the-shelf solution by PETsys Electronics [33]. Up to 16 ASICs can be\nconnected to a single front-end board [33] that has a clock frequency of 200 MHz resulting in a total of 1024\nchannels. Groups of ASICs can be easily programmed to select coincident events within a pre-set time window.\nA combinat",
+        "score": -2.100689631038242,
+        "dense_score": 0.3549399971961975,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.2393088340759277,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1907,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": ".\n\n71\n\nFigure 53: A cutaway view of the cold-box fixed to the fibre module.\n\nwires are wrapped around the cold-box of each module, as well as transfer bellows on the\nmodules to maintain a stable outer temperature above the cavern dew point. The dry air\nflow rate out of each box is monitored individually. Four power supplies [48] are needed for\nthe detector which provide up to 50 W of heating power per cold-box.\n\n##### **6.8 ECS and DAQ**\n\nThe SciFi Tracker control system is implemented in the LHCb ECS platform described in\nsection 10.4. The ECS mainly includes the controls of the high-voltage power supplies for\nthe SiPMs, the low-voltage power supplies (electronics and heating wires), the FE and BE\nelectronics (including DAQ). Additionally, the ECS provides monitoring of the voltages,\ntemperatures and heating powers, of the water cooling system, of the SiPM cooling\nsystem, including the integrated vacuum system, of the dry gas system for controlling\nhumidity inside the cold-box, and of the BCAM position monitoring system.\nThe SciFi Tracker DAQ uses multiple data formats. Two formats are used for clustered\ndata in order to cope with the varying occupancy across the detector, as described earlier.\nIn addition to the two basic data formats and some TFC related outputs, a special data\nformat provides a nonzero-suppressed data mode which allows for the output of the raw\n2-bit data along with the clustered data. This requires sending only a fraction of the\nchannels per each bunch crossing, due to the larger amount of information. Detailed\ndocumentation can be found in refs. [99] and [100].\n\n##### **6.9 Simulation and reconstruction software**\n\nTo study the tracking performance a detailed SciFi Tracker simulation was performed. It\nconsists of three main parts.\n\n48 Wiener TM MARATON.\n\n72\n\nFirst, the energy deposition for each particle that traverses a fibre mat is computed\nin the Gauss application [101]. In Boole, where the signal created from the energy\ndeposited is simulated and digitised, the number of photons produced in each channel at\nthe track hit location is calculated assuming 8000 photons produced per MeV of energy\ndeposition. The survival probability for these photons to reach the SiPM is dependent on\nthe properties of the mirrors and the total integrated ionising dose along the fibre. The\nfibre properties can be adjusted to take into account ageing and exposure to radiation.\nA second standalone Geant4 -based simulation was developed to propagate optica",
+        "score": -2.2090724056766877,
+        "dense_score": 0.3852030634880066,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.4072577953338623,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 89,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7161,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2899370__2503.09303__Development_of_a_test_system_for_data_links_of_the_ATLAS_Inner_Tracker_ITk_upgrade_silicon.md",
+        "title": "2025__recid_2899370__2503.09303__Development_of_a_test_system_for_data_links_of_the_ATLAS_Inner_Tracker_ITk_upgrade_silicon",
+        "text": "**Multi-channel DAQ FPGA-based Framework**\n\nThe DAQ system for the BER scans is based on the Advanced Telecommunications Computing\n\nArchitecture (ATCA), having compact shelf and providing scalability to four data link assemblies at\n\nthe same time. The Cluster on Board (COB), shown in Figure 2a, was designed and manufactured\n\nby SLAC and provides the framework for the BER test scans. It includes nine Reconfigurable\n\nCluster Elements (RCEs), system-on-chip designs based on the Xilinx Zynq FPGAs, one in the\n\nData Transmission Module (DTM) for synchronization of the electronic equipment [3], and two\n\neach in the four Data Processing Modules (DPM0-3). DPM0-3 provide the capability to send,\n\nreceive and analyze pseudo-random bit streams at 1.28Gb/s, as well as the programmable biasing\n\nof the voltage and time offsets spanning the range of a logic unit. The COB interfaces to the Rear\n\nTransmission Module (RTM) and both are powered via the ATCA. For the BER scans, the RTM\n\nserves as an interface facilitating communication between the device under tests (DUTs) and DPMs.\n\n(a) (b)\n\n**Figure 2** : (a) The Cluster on Board (COB), (b) the adapters interfacing further connector types to\n\nthe RTM, MiniDP (left) and Dual FireFly (right).\n\n(a) (b)\n\n**Figure 3** : (a) A loop is created for each miniDP connector pair, starting from J1-J1, with six loops\n\n(J1-J1 to J6-J6) as DUTs, supporting five differential lanes (CMD, D0-D3) (b) Type-1 Twinax loop\n\nwith FireFly-1 (FF1-FF1) and FireFly-2 (FF2-FF2) as DUTs, each with 10 lanes (C1-C5, C7-C11).\n\nThe DAQ system employs two types of connectors: one connects six industry-standard miniDP\n\ncables for test system calibration, while the other supports Type-1 Twinax bundle testing, as shown\n\nin Figure 2b (left and right, respectively). Each connector is integrated through an RTM that\n\nsupports four channels (DPM0–DPM3) as shown in Figure 3. Two of these channels function as\n\n– 3 –\n\ntransmitters (TX), while the other two serve as receivers (RX). Transmission loops are established\n\nto assess the signal transmission quality of DUTs. Figure 3 shows the RTM-to-DUT mapping for\n\nboth test configurations.\n\n**4** **Aids in Correlating Virtual Eye Diagrams with Insertion Loss (IL)**\n\nThe ITk data links were qualified via S-parameter measurements, with specifications defined by\n\ninsertion loss (IL). Thus, the outputs of the DAQ system should be correlated against the IL.\n\nAdditionally, the study [6] demonstrates that IL can be employed for the p",
+        "score": -2.3286269032826987,
+        "dense_score": 0.31403374671936035,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.5882928371429443,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.2012032950297,
+    "generation_latency_s": 3.3015385270118713e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.2012032950297,
+    "generation_latency_s": 3.3015385270118713e-07
+  }
+}

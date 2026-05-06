@@ -1,0 +1,412 @@
+{
+  "query": "Which unpublished collaboration result is hidden in the corpus?",
+  "expanded_query": "Which unpublished collaboration result is hidden in the corpus?",
+  "mode": "graph_path",
+  "retrieved": [
+    {
+      "rank": 1,
+      "chunk_id": "5018",
+      "doc_id": "217",
+      "title": "2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec.md",
+      "score": 13.76984592006797,
+      "retriever": "graph",
+      "text": "Prepared for submission to JINST\n\n## **Embedded FPGA Developments in 130nm and 28nm** **CMOS for Machine Learning in Particle Detector** **Readout**\n\n**J. Gonski,** [1] **A. Gupta,** [1] **H. Jia,** [1] _[,]_ [2] **H. Kim,** [1] **L. Rota,** [1] **L. Ruckman,** [1] **A. Dragone,** [1] **and R.**\n**Herbst** [1]\n\n1 _SLAC National Accelerator Laboratory, 2575 Sand Hill Road, M/S 96, Menlo Park, CA 94025, USA_\n\n2 _Stanford University, 450 Jane Stanford Way, Stanford, CA 94305, USA_\n\n_E-mail:_ [jgonski@slac.stanford.edu](mailto:jgonski@slac.stanford.edu)\n\nAbstract:\n\nEmbedded field programmable gate array (eFPGA) technology allows the implementation\n\nof reconfigurable logic within the design of an application-specific integrated circuit (ASIC). This\n\napproach offers the low power and efficiency of an ASIC along with the ease of FPGA configuration,\n\nparticularly beneficial for the use case of machine learning in the data pipeline of next-generation\n\ncollider experiments. An open-source framework called \"FABulous\" was used to design eFPGAs\n\nusing 130 nm and 28 nm CMOS technology nodes, which were subsequently fabricated and verified\n\nthrough testing. The capability of an eFPGA to act as a front-end readout chip was assessed using\n\nsimulation of high energy particles passing through a silicon pixel sensor. A machine learning\nbased classifier, designed for reduction of sensor data at the source, was synthesized and configured\n\nonto the eFPGA. A successful proof-of-concept was demonstrated through reproduction of the\n\nexpected algorithm result on the eFPGA with perfect accuracy. Further development of the eFPGA\n\ntechnology and its application to collider detector readout is discussed.\n\nKeywords: Reconfigurable Computing; Open Source; FPGA; ASIC; Machine Learning\n\n[ArXiv ePrint: 2404.17701](http://arxiv.org/abs/2404.17701)\n\n**Contents**\n\n**1** **Background** **1**\n\n**2** **Developments in 130nm CMOS** **3**\n\n2.1 eFPGA Customization 3\n\n2.2 ASIC Digital Architecture 3\n\n2.3 Fabrication 4\n\n2.4 Testing Results 5\n\n2.4.1 Simple Counter Test 5\n\n2.4.2 ASIC Power Draw 6\n\n**3** **Motivation for Transitioning from 130nm to 28nm CMOS Technology** **6**\n\n**4** **Developments in 28nm CMOS** **7**\n\n4.1 eFPGA Customization 7\n\n4.2 ASIC Digital Architecture 7\n\n4.3 Fabrication 8\n\n4.4 Testing Results 9\n\n4.4.1 Simple Counter Test 9\n\n4.4.2 ASIC Power Draw 9\n\n4.4.3 AXI Stream Loopback in the eFPGA 10\n\n**5** **Application for Machine Learning-based At-Source Processing** **11**\n\n**6** **Summa"
+    },
+    {
+      "rank": 2,
+      "chunk_id": "248",
+      "doc_id": "9",
+      "title": "2023__recid_2640598__2303.05580__Beam_Test_Results_of_the_RADiCALA_Radiation_Hard_Innovative_EM_Calorimeter",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2640598__2303.05580__Beam_Test_Results_of_the_RADiCALA_Radiation_Hard_Innovative_EM_Calorimeter.md",
+      "score": 13.499108388776852,
+      "retriever": "graph",
+      "text": "# Beam Test Results of the RADiCAL - a Radiation Hard Innovative EM Calorimeter\n\nJames Wetzel _[∗]_, Dylan Blend _[∗]_, Paul Debbins _[∗]_, Max Hermann _[∗]_, Ohannes Kamer Koseyan _[∗]_, Gurkan Kamaran _[∗]_,\nYasar Onel _[∗]_, Thomas Anderson _[†]_, Nehal Chigurupati _[†]_, Brad Cox _[†]_, Max Dubnowski _[†]_, Alexander Ledovskoy _[†]_,\nCarlos Perez-Lara _[†]_, Thomas Barbera _[‡]_, Nilay Bostan _[‡]_, Kiva Ford _[‡]_, Colin Jessop _[‡]_, Randal Ruchti _[‡]_,\nDaniel Ruggiero _[‡]_, Daniel Smith _[‡]_, Mark Vigneault _[‡]_, Yuyi Wan _[‡]_, Mitchell Wayne _[‡]_, Chen Hu _[§]_,\nLiyuan Zhang _[§]_, Ren-Yuan Zhu _[§]_,\n\n_‡_ _Dept. of Physics & Astronomy_\n_University of Notre Dame_\nNotre Dame, USA\n\n_§_ _Dept. of Physics_\n_Caltech_\n\nPasadena, USA\n\n_∗_ _Dept. of Physics & Astronomy_\n_The University of Iowa_\nIowa City, USA\n\n_†_ _Dept. of Physics_\n_University of Virginia_\nCharlottesville, USA\n\n_**Abstract**_ **—High performance calorimetry conducted at fu-**\n**ture hadron colliders, such as the FCC-hh, poses a significant**\n**challenge for applying current detector technologies due to**\n**unprecedented beam luminosities and radiation fields. Solutions**\n**include developing scintillators that are capable of separating**\n**events at the sub-fifty picosecond level while also maintaining**\n**performance after extreme and constant neutron and ionizing**\n**radiation exposure.**\n**The RADiCAL is an approach that incorporates radiation**\n**tolerant materials in a sampling ‘shashlik’ style calorimeter**\n**configuration, using quartz capillaries filled with organic liquid**\n**or polymer-based wavelength shifters embedded in layers of**\n**tungsten plates and LYSO crystals.**\n**This novel design intends to address the Priority Research Di-**\n**rections (PRD) for calorimetry listed in the DOE Basic Research**\n**Needs (BRN) workshop for HEP Instrumentation. Here we report**\n**preliminary results from an experimental run at the Fermilab**\n**Test Beam Facility in June 2022. These tests demonstrate that**\n**the RADiCAL concept is capable of** _**<**_ **50 ps timing resolution.**\n_**Index Terms**_ **—fast-timing, calorimetry, radiation-hard, scintil-**\n**lator**\n\nI. I NTRODUCTION\n\nThe RADiCAL (radiation-hard innovative calorimeter) was\ninitially conceived to target precision calorimetry for use in\nfuture hadron collider experiments [1]. The requirements of\nsuch a collider include timing resolution under 50 ps and\nan EM energy resolution approaching _σ_ _E_ _/E_ = 10% ~~�~~ ( _E_ )"
+    },
+    {
+      "rank": 3,
+      "chunk_id": "6891",
+      "doc_id": "302",
+      "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+      "score": 13.340628867175534,
+      "retriever": "graph",
+      "text": "ithic Silicon Pixel Detector\nWithout Internal Gain Layer. _Journal of Instrumentation_, 18(03):P03047, Mar. 2023.\n\n[6] M. Milanesio et al. Time Resolution of a SiGe BiCMOS Monolithic Silicon Pixel Detector Without\n\nInternal Gain Layer with a Femtosecond Laser. _Journal of Instrumentation_, 19(04):P04029, Apr.\n\n2024.\n\n[7] T. Moretti et al. Testbeam Results of Irradiated SiGe BiCMOS Monolithic Silicon Pixel Detector\n\nwithout Internal Gain Layer. _Journal of Instrumentation_, 19(07):P07036, Jul. 2024.\n\n[8] G. Iacobucci, L. Paolozzi, and P. Valerio. Multi-Junction Pico-Avalanche Detector. _European Patent_\n\n_EP3654376A1, US Patent US2021280734A1_, Nov. 2018.\n\n[9] G. Iacobucci et al. Efficiency and time resolution of monolithic silicon pixel detectors in SiGe\nBiCMOS technology. _Journal of Instrumentation_, 17(02):P02019, 2022.\n\n[10] L. Paolozzi et al. Picosecond Avalanche Detector – Working Principle and Gain Measurement With a\nProof-of-Concept Prototype. _Journal of Instrumentation_, 17(10):P10032, Oct. 2022.\n\n[11] G. Iacobucci et al. Testbeam Results of the Picosecond Avalanche Detector Proof-of-Concept\nPrototype. _Journal of Instrumentation_, 17(10):P10040, Oct. 2022.\n\n[12] M. Milanesio et al. Radiation Tolerance of SiGe BiCMOS Monolithic Silicon Pixel Detectors\n\nWithout Internal Gain Layer. _Journal of Instrumentation_, 18(03):P03047, Oct. 2023.\n\n[13] M. Benoit et al. The FE-I4 telescope for particle tracking in testbeam experiments. _Journal of_\n_Instrumentation_, 11(07):P07003–P07003, Jul. 2016.\n\n[14] C. J. Clopper and E. S. Pearson. The use of confidence or fiducial limits illustrated in the case of the\nbinomial. _Biometrika_, 26(4):404–413, 12 1934.\n\n– 17 –"
+    },
+    {
+      "rank": 4,
+      "chunk_id": "4826",
+      "doc_id": "210",
+      "title": "2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators.md",
+      "score": 12.410470606484612,
+      "retriever": "graph",
+      "text": "DarkSide collaboration, _Constraints on Sub-GeV Dark-Matter–Electron Scattering from the_\n_DarkSide-50 Experiment_, _Phys. Rev. Lett._ **[121](https://doi.org/10.1103/PhysRevLett.121.111303)** (2018) 111303 [ `[1802.06998](https://arxiv.org/abs/1802.06998)` ].\n\n[11] SuperCDMS collaboration, _First Dark Matter Constraints from a SuperCDMS Single-Charge Sensitive_\n_Detector_, _Phys. Rev. Lett._ **[121](https://doi.org/10.1103/PhysRevLett.121.051301)** (2018) 051301 [ `[1804.10697](https://arxiv.org/abs/1804.10697)` ].\n\n[12] DAMIC collaboration, _Constraints on Light Dark Matter Particles Interacting with Electrons from_\n_DAMIC at SNOLAB_, _Phys. Rev. Lett._ **[123](https://doi.org/10.1103/PhysRevLett.123.181802)** (2019) 181802 [ `[1907.12628](https://arxiv.org/abs/1907.12628)` ].\n\n[13] SENSEI collaboration, _SENSEI: Direct-Detection Constraints on Sub-GeV Dark Matter from a Shallow_\n_Underground Run Using a Prototype Skipper-CCD_, _Phys. Rev. Lett._ **[122](https://doi.org/10.1103/PhysRevLett.122.161801)** (2019) 161801 [ `[1901.10478](https://arxiv.org/abs/1901.10478)` ].\n\n[14] XENON collaboration, _Light Dark Matter Search with Ionization Signals in XENON1T_, _[Phys. Rev.](https://doi.org/10.1103/PhysRevLett.123.251801)_\n_Lett._ **123** [(2019) 251801 [](https://doi.org/10.1103/PhysRevLett.123.251801) `[1907.11485](https://arxiv.org/abs/1907.11485)` ].\n\n[15] C. Blanco, J.I. Collar, Y. Kahn and B. Lillard, _Dark Matter-Electron Scattering from Aromatic Organic_\n_Targets_, _Phys. Rev. D_ **[101](https://doi.org/10.1103/PhysRevD.101.056001)** (2020) 056001 [ `[1912.02822](https://arxiv.org/abs/1912.02822)` ].\n\n– 36 –\n\n[16] SENSEI collaboration, _SENSEI: Direct-Detection Results on sub-GeV Dark Matter from a New_\n_Skipper-CCD_, _Phys. Rev. Lett._ **[125](https://doi.org/10.1103/PhysRevLett.125.171802)** (2020) 171802 [ `[2004.11378](https://arxiv.org/abs/2004.11378)` ].\n\n[17] SuperCDMS collaboration, _Constraints on low-mass, relic dark matter candidates from a_\n_surface-operated SuperCDMS single-charge sensitive detector_, _Phys. Rev. D_ **[102](https://doi.org/10.1103/PhysRevD.102.091101)** (2020) 091101\n\n[ `[2005.14067](https://arxiv.org/abs/2005.14067)` ].\n\n[18] XENON collaboration, _Emission of single and few electrons in XENON1T and limits on light dark_\n_matter_, _Phys. Rev. D_ **[106](https://doi.org/10.1103/PhysRevD.106.022001)** (2022) 022001 [ `[2112.12116](https://arxiv.org/abs/2112.12116)` ].\n\n[19] PandaX-II collaboration, _Search for Light Dark"
+    },
+    {
+      "rank": 5,
+      "chunk_id": "4049",
+      "doc_id": "176",
+      "title": "2024__recid_2750102__2401.11036__Heavy_Flavor_Physics_at_the_sPHENIX_Experiment",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2750102__2401.11036__Heavy_Flavor_Physics_at_the_sPHENIX_Experiment.md",
+      "score": 10.246031297392957,
+      "retriever": "graph",
+      "text": "r for the ALICE ITS upgrade”, Nucl. Instrum. Meth. A 824 (2016) 434-438\n\n[10] J. Anderson et al., “FELIX: a High-Throughput Network Approach for Interfacing\n\nto Front End Electronics for ATLAS Upgrades”, J. Phys. Conf. Ser. 664 (2015) 8,\n\n082050\n\n[11] sPHENIX Collaboration, “sPHENIX Beam Use Proposal”, sPH-TRG-2022-01,\n\nMay 2022, `[https://indico.bnl.gov/event/15845/attachments/40963/68517/](https://indico.bnl.gov/event/15845/attachments/40963/68517/sPHENIX_Beam_Use_Proposal_2022.pdf)`\n\n`[sPHENIX_Beam_Use_Proposal_2022.pdf](https://indico.bnl.gov/event/15845/attachments/40963/68517/sPHENIX_Beam_Use_Proposal_2022.pdf)` (Web)\n\n11\n\n[12] sPHENIX Collaboration, “Commissioning Status: August 2023”, sPHENIX Notes,\n\nAugust 2023, `[https://indico.bnl.gov/event/20373/attachments/49393/](https://indico.bnl.gov/event/20373/attachments/49393/84311/Commissioning_Status_August_2023.pdf)`\n\n`[84311/Commissioning_Status_August_2023.pdf](https://indico.bnl.gov/event/20373/attachments/49393/84311/Commissioning_Status_August_2023.pdf)` (Web)\n\n[13] C. Dean (sPHENIX Collaboration), “ _D_ [0] _→_ _K_ _[−]_ _π_ [+] Modelling and Selection in\n\nMin-bias Au+Au Simulations at sPHENIX”, sPHENIX-Invenio (2023) `[https://](https://sphenix-invenio.sdcc.bnl.gov/records/7c7gv-7qp49)`\n\n```\n sphenix-invenio.sdcc.bnl.gov/records/7c7gv-7qp49\n\n```\n\n[14] STAR Collaboration, “First measurement of Λ [+] _c_ [baryon production in Au+Au col-]\n\nlisions at _[√]_ ~~_s_~~ _NN_ = 200 GeV”, Phys. Rev. Lett. 124 (2020) 17, 172301\n\n[15] S. Digal, P. Petreczky, and H. Satz, “Quarkonium feed down and sequential sup\n\npression”, Phys. Rev. D 64 (2001) 094015\n\n[16] CMS Collaboration, “Observation of Sequential Upsilon Suppression in PbPb Col\n\nlisions”, Phys. Rev. Lett. 109 (2012) 222301\n\n[17] STAR Collaboration, “Observation of sequential Υ suppression in Au + Au collisions\n\nat _[√]_ ~~_s_~~ _NN_ = 200 GeV with the STAR experiment”, Phys. Rev. Lett. 130 (2023) 11,\n\n112301\n\n[18] CMS Collaboration, “Observation of the Υ(3 _S_ ) meson and suppression of Υ states\n\nin PbPb collisions at _[√]_ ~~_s_~~ _NN_ = 5 _._ 02 TeV”, CERN-EP-2023-011, submitted to PRL\n\n(2023) `[https://arxiv.org/abs/2303.17026](https://arxiv.org/abs/2303.17026)`\n\n12"
+    },
+    {
+      "rank": 6,
+      "chunk_id": "5019",
+      "doc_id": "217",
+      "title": "2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec.md",
+      "score": 10.225727075219353,
+      "retriever": "graph",
+      "text": "tal Architecture 7\n\n4.3 Fabrication 8\n\n4.4 Testing Results 9\n\n4.4.1 Simple Counter Test 9\n\n4.4.2 ASIC Power Draw 9\n\n4.4.3 AXI Stream Loopback in the eFPGA 10\n\n**5** **Application for Machine Learning-based At-Source Processing** **11**\n\n**6** **Summary** **14**\n\n**1** **Background**\n\nSilicon microelectronics technology is a key part of the modern computational paradigm,\n\noffering high performance and low power options for data processing tasks. A diversification\n\nof microchip designs offers the ability to customize computing solutions to a particular problem.\n\nCommon options such as application-specific integrated circuits (ASICs) or field-programmable\n\ngate arrays (FPGAs) offer trade-offs between performance, power consumption, and flexibility to\n\nsuit a wide variety of applications. While an FPGA is fully customizable, it draws more power than\n\nan ASIC; however, the ASIC requires considerable expertise to design, and is fixed to a certain task\n\nonce fabricated. Microelectronics remain a rapidly developing field, with advances promising to\n\ndeliver even denser logic, faster processing, and novel designs.\n\nIn parallel, artificial intelligence and machine learning (AI/ML) have become essential tools in\n\ndata science. In light of increasing dataset sizes and expanding computational capacity, ML-based\n\n– 1 –\n\nmethodology can execute common scientific tasks such as signal-noise classification, regression\n\nof key quantities, fast generation of simulation, or anomaly detection, with good efficiency and\n\nperformance. Leveraging ML in these scenarios requires a high degree of reconfigurability in\n\ncomputing architecture, such that weights and biases of a model, as well as the model itself, can be\n\nupdated throughout training and over time as the task evolves.\n\nIn the sciences, many data processing tasks have a requirement to perform sophisticated AI\n\ninference within resource-constrained systems, such as with low power or latency, motivating\n\nthe incorporation of ML into microelectronics. This is enabled by “fast ML\", wherein high\nlevel synthesis of software algorithms enables the implementation of ML models in hardware.\n\nIn this work the _embedded FPGA_ (eFPGA) technology is studied as an option to dynamically\n\nreconfigure logic to enable ML within an ASIC. eFPGAs comprise a digital block of FPGA fabric\n\nthat can be embedded into an ASIC design. In this way they can offer the best of both worlds\n\nbetween FPGA and ASIC processing, with lower power demand than an F"
+    },
+    {
+      "rank": 7,
+      "chunk_id": "6641",
+      "doc_id": "290",
+      "title": "2025__recid_2836017__2410.00251__High_energy_particle_detection_with_large_area_superconducting_microwire_array",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2836017__2410.00251__High_energy_particle_detection_with_large_area_superconducting_microwire_array.md",
+      "score": 9.881221804256636,
+      "retriever": "graph",
+      "text": "roduction** **1**\n\n**2** **Superconducting microwire single photon detector array** **2**\n\n**3** **The experimental setup at the FNAL Test Beam Facility** **4**\n\n**4** **Experimental Results** **5**\n\n4.1 Experimental Results for Protons 5\n\n4.2 Experimental Results for Electrons and Pions 9\n\n**5** **Summary** **11**\n\n**Contents**\n\n**1** **Introduction**\n\nSuperconducting Nanowire Single Photon Detectors (SNSPDs) are a leading detector technology\n\nfor single-photon detection with diverse applications in optical communications [1, 2], quantum\n\ninformation science [3–8], and astronomy [9–11]. SNSPDs have been demonstrated to have ultralow energy threshold of below 0.04 eV (or above 29 _µ_ m) [12], low dark counts of 10 _[−]_ [5] Hz [5, 13, 14],\n\nand pico-second level time resolution [15, 16], making them a potentially game-changing detector\n\ntechnology in high energy physics applications at accelerator-based experiments.\n\nHowever, until recently, SNSPDs have had limited use cases in high energy physics (HEP)\nexperiments due to the small active area (100 _µ_ m [2] ) of traditional SNSPDs which are comprised of\n\nnanowires with widths of 100 nm. Recent advances in the preparation of thin superconducting films\nhave enabled the fabrication of large area (mm [2] ) single photon detectors with micrometer-width\n\nsuperconducting wires [11, 17, 18], which we refer to as superconducting microwire single-photon\n\ndetectors (SMSPDs) in the rest of the paper. This advancement in large active area makes SMSPD\n\nan ideal photosensor to detect single photons in dark matter detection experiments [14, 19] and a\n\npotential innovative detector technology for future accelerator-based experiments.\n\nThe fundamental operating principles of SNSPDs and SMSPDs suggests that energy deposit\n\nfrom charged particles similarly induce hotspot formation and can be detected efficiently [20–25].\n\nHowever, previous studies have been limited to low energy (keV) electrons and ions and with the\n\nconventional small area, single-pixel SNSPDs. To characterize SMSPDs for a future accelerator\nbased experiments, such as EIC [26], FCC-ee [27], FCC-hh [28], or the muon collider [29], we\n\nmake use of the GeV-energy particles from the Fermilab Test Beam Facility (FTBF) [30].\n\nIn this paper, we report for the first time a full characterization of the detection efficiency and\ntime resolution of an 8-pixel 2 _×_ 2 mm [2] SMSPD array fabricated tungsten silicide (WSi) films\n\n– 1 –\n\nunder the exposure of 120 GeV proto"
+    },
+    {
+      "rank": 8,
+      "chunk_id": "5819",
+      "doc_id": "254",
+      "title": "2025__recid_2743105__2401.01747__Study_of_the_time_and_energy_resolution_of_an_ultracompact_sampling_calorimeter_RADiCAL_mo",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2743105__2401.01747__Study_of_the_time_and_energy_resolution_of_an_ultracompact_sampling_calorimeter_RADiCAL_mo.md",
+      "score": 9.360478952664863,
+      "retriever": "graph",
+      "text": "## Study of time and energy resolution of an ultra-compact sampling calorimeter (RADiCAL) module at EM shower maximum over the energy range 25 GeV ≤ E ≤ 150 GeV\n\nCarlos Perez-Lara [d], James Wetzel [c,e], Ugur Akgun [c,e], Thomas Anderson [j], Thomas Barbera [i], Dylan Blend [e], Kerem\nCankocak [h], Salim Cerci [a,k], Nehal Chigurupati [j], Bradley Cox [j], Paul Debbins [e], Max Dubnowski [j], Buse Duran [f], Gizem\nGul Dincer [h], Selbi Hatipoglu [f], Ilknur Hos [g], Bora Isildak [k], Colin Jessop [i], Ohannes Kamer Koseyan [d], Ayben Karasu\nUysal [k], Reyhan Kurt [k], Berkan Kaynak [f], Alexander Ledovskoy [j], Alexi Mestvirishvili [e], Yasar Onel [e], Suat\nOzkorucuklu [f], Aldo Penzo [e], Onur Potok [f], Daniel Ruggiero [i], Randal Ruchti [i], Deniz Sunar Cerci [a,k], Ali Tosun [f], Mark\nVigneault [i], Yuyi Wan [i], Mitchell Wayne [i], Taylan Yetkin [k], Liyuan Zhang [b], Renyuan Zhu [b], Caglar Zorbilmez [f]\n\n_a_ _Adiyaman University, Adiyaman, Turkiye_\n_b_ _California Institute of Technology, Pasadena, CA USA_\n_c_ _Coe College, Cedar Rapids, IA, USA_\n_d_ _Hofstra University, Hempstead, NY, USA_\n_e_ _University of Iowa, Iowa City, IA, USA_\n_f_ _Istanbul University, Istanbul, Turkiye_\n_g_ _Istanbul University - Cerrahpasa, Istanbul, Turkiye_\n_h_ _Istanbul Technical University, Istanbul, Turkiye_\n_i_ _University of Notre Dame, Notre Dame, IN, USA_\n_j_ _University of Virginia, Charlottesville, VA, USA_\n_k_ _Yildiz Technical University, Istanbul, Turkiye_\n\n**Abstract**\n\nThe RADiCAL Collaboration is conducting R&D on high performance electromagnetic (EM) calorimetry to address\nthe challenges expected in future collider experiments under conditions of high luminosity and/or high irradiation\n(FCC-ee, FCC-hh and fixed target and forward physics environments). Under development is a sampling calorimeter\napproach, known as RADiCAL modules, based on scintillation and wavelength-shifting (WLS) technologies and\nphotosensor, including SiPM and SiPM-like technology. The modules discussed herein consist of alternating layers\nof very dense (W) absorber and scintillating crystal (LYSO:Ce) plates, assembled to a depth of 25 _X_ 0 . The scintillation\nsignals produced by the EM showers in the region of EM shower maximum (shower max) are transmitted to SiPM\nlocated at the upstream and downstream ends of the modules via quartz capillaries which penetrate the full length\nof the module. The capillaries contain DSB1 organic plastic WLS filaments positioned within the region of s"
+    }
+  ],
+  "seed_nodes": [
+    "Ion",
+    "Dark Matter Search Results",
+    "Direct-Detection Results",
+    "Beam Test Results",
+    "Testing Results",
+    "Testbeam Results",
+    "Experimental Results",
+    "Col"
+  ],
+  "expanded_nodes": [
+    "ALICE",
+    "ASIC",
+    "ATLAS",
+    "Alexander Ledovskoy",
+    "Applied Physics",
+    "Beam Interactions",
+    "Beam Test Results",
+    "CMOS",
+    "CMS",
+    "Carrier",
+    "Col",
+    "Conceptual Design",
+    "Dark Matter",
+    "Dark Matter Density",
+    "Dark Matter Search Results",
+    "Developments",
+    "Direct-Detection Constraints",
+    "Direct-Detection Results",
+    "Dylan Blend",
+    "Efficiency",
+    "Electron Devices",
+    "Experimental Results",
+    "Fermilab Test Beam Facility",
+    "Front End Electronics",
+    "High-Throughput Network Approach",
+    "Internal Gain",
+    "Internal Gain Layer",
+    "Ion",
+    "Let",
+    "Light Dark",
+    "Light Dark Matter Particles Interacting",
+    "Local Standard",
+    "Machine Learning",
+    "Matter-Electron Scattering",
+    "Max Dubnowski",
+    "Milky Way",
+    "Monolithic Silicon Pixel Detector",
+    "Monolithic Silicon Pixel Detector Without",
+    "Multi-Junction Pico-Avalanche",
+    "Muon Collider",
+    "National Accelerator",
+    "Nehal Chigurupati",
+    "Ohannes Kamer Koseyan",
+    "One Ton-Year Exposure",
+    "Particle Physics",
+    "Paul Debbins",
+    "Physical Review",
+    "Physics Research Section",
+    "Picosecond Avalanche Detector",
+    "Power Draw",
+    "Proton",
+    "Protons",
+    "Prototype",
+    "Run Using",
+    "Sensors",
+    "Silicon",
+    "Simple Counter Test",
+    "Stream Loopback",
+    "Superconducting Nanowire Single Photon Detectors",
+    "Test Beam",
+    "Testbeam Results",
+    "Testing Results",
+    "Thomas Anderson",
+    "Yasar Onel",
+    "time resolution"
+  ],
+  "paths": [
+    [
+      "Ion",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Let"
+    ],
+    [
+      "Ion",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Applied Physics"
+    ],
+    [
+      "Ion",
+      "Beam Interactions"
+    ],
+    [
+      "Ion",
+      "CMOS"
+    ],
+    [
+      "Ion",
+      "Electron Devices"
+    ],
+    [
+      "Ion",
+      "Proton"
+    ],
+    [
+      "Dark Matter Search Results",
+      "Dark Matter"
+    ],
+    [
+      "Dark Matter Search Results",
+      "One Ton-Year Exposure"
+    ],
+    [
+      "Dark Matter Search Results",
+      "Conceptual Design"
+    ],
+    [
+      "Dark Matter Search Results",
+      "Particle Physics"
+    ],
+    [
+      "Dark Matter Search Results",
+      "Milky Way"
+    ],
+    [
+      "Dark Matter Search Results",
+      "Local Standard"
+    ],
+    [
+      "Dark Matter Search Results",
+      "Dark Matter Density"
+    ],
+    [
+      "Dark Matter Search Results",
+      "Physical Review"
+    ],
+    [
+      "Direct-Detection Results",
+      "Dark Matter"
+    ],
+    [
+      "Direct-Detection Results",
+      "Prototype"
+    ],
+    [
+      "Direct-Detection Results",
+      "Direct-Detection Constraints"
+    ],
+    [
+      "Direct-Detection Results",
+      "Run Using"
+    ],
+    [
+      "Direct-Detection Results",
+      "Light Dark Matter Particles Interacting"
+    ],
+    [
+      "Direct-Detection Results",
+      "Matter-Electron Scattering"
+    ],
+    [
+      "Direct-Detection Results",
+      "Light Dark"
+    ],
+    [
+      "Direct-Detection Results",
+      "Sensors"
+    ],
+    [
+      "Beam Test Results",
+      "Dylan Blend"
+    ],
+    [
+      "Beam Test Results",
+      "Paul Debbins"
+    ],
+    [
+      "Beam Test Results",
+      "Ohannes Kamer Koseyan"
+    ],
+    [
+      "Beam Test Results",
+      "Yasar Onel"
+    ],
+    [
+      "Beam Test Results",
+      "Thomas Anderson"
+    ],
+    [
+      "Beam Test Results",
+      "Nehal Chigurupati"
+    ],
+    [
+      "Beam Test Results",
+      "Max Dubnowski"
+    ],
+    [
+      "Beam Test Results",
+      "Alexander Ledovskoy"
+    ],
+    [
+      "Testing Results",
+      "ASIC"
+    ],
+    [
+      "Testing Results",
+      "Simple Counter Test"
+    ],
+    [
+      "Testing Results",
+      "Power Draw"
+    ],
+    [
+      "Testing Results",
+      "Stream Loopback"
+    ],
+    [
+      "Testing Results",
+      "Developments"
+    ],
+    [
+      "Testing Results",
+      "Silicon"
+    ],
+    [
+      "Testing Results",
+      "National Accelerator"
+    ],
+    [
+      "Testing Results",
+      "Machine Learning"
+    ],
+    [
+      "Testbeam Results",
+      "Efficiency"
+    ],
+    [
+      "Testbeam Results",
+      "time resolution"
+    ],
+    [
+      "Testbeam Results",
+      "Internal Gain"
+    ],
+    [
+      "Testbeam Results",
+      "Internal Gain Layer"
+    ],
+    [
+      "Testbeam Results",
+      "Monolithic Silicon Pixel Detector"
+    ],
+    [
+      "Testbeam Results",
+      "Monolithic Silicon Pixel Detector Without"
+    ],
+    [
+      "Testbeam Results",
+      "Multi-Junction Pico-Avalanche"
+    ],
+    [
+      "Testbeam Results",
+      "Picosecond Avalanche Detector"
+    ],
+    [
+      "Experimental Results",
+      "Carrier"
+    ],
+    [
+      "Experimental Results",
+      "Fermilab Test Beam Facility"
+    ],
+    [
+      "Experimental Results",
+      "Protons"
+    ],
+    [
+      "Experimental Results",
+      "Muon Collider"
+    ],
+    [
+      "Experimental Results",
+      "Superconducting Nanowire Single Photon Detectors"
+    ],
+    [
+      "Experimental Results",
+      "Test Beam"
+    ],
+    [
+      "Col",
+      "CMS"
+    ],
+    [
+      "Col",
+      "ATLAS"
+    ],
+    [
+      "Col",
+      "ALICE"
+    ],
+    [
+      "Col",
+      "High-Throughput Network Approach"
+    ],
+    [
+      "Col",
+      "Front End Electronics"
+    ]
+  ],
+  "metrics": {
+    "retrieval_latency_s": 7.187750577926636,
+    "generation_latency_s": 0.0,
+    "unique_sources": 7,
+    "seed_node_count": 8,
+    "expanded_node_count": 65,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0
+  },
+  "answer": ""
+}

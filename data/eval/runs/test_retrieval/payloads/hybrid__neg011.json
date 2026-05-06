@@ -1,0 +1,274 @@
+{
+  "benchmark": {
+    "query_id": "neg011",
+    "query_type": "negative",
+    "query": "Which paper says HV-MAPS are impossible in principle?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "Which paper says HV-MAPS are impossible in principle?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5253,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "of the gain of SiPM\nsamples, which are 5.80 _×_ 10 [6] for HPK VUV4 13370-6050CN\nSiPM [23] and 1.93 _×_ 10 [6] for Sensl J-60035 SiPM [15] at\n_V_ _over_ =4V, the average number of photons per electron can be\n\nTABLE II:\n\nParameters defined in Fig. 4. _V_ _bd_ for SiPM samples was\nmeasured under 76 K dark environment.\n\nSiPM type _V_ _bd_ _PDE_ _max_ _α_\nHPK SiPM 42.25 11.1 _±_ 0.56 % 3.18 _±_ 0.37 _×_ 10 ~~_[−]_~~ ~~[2]~~\n\nSensL SiPM 20.58 5.51 _±_ 0.98 % 4.77 _±_ 1.17 _×_ 10 _[−]_ [2]\n\neasily calculated. The results are included in Table. III.\n\nTABLE III:\n\nNumber of eCT photons per electron.\n\nSiPM type eCT photon number per e ~~_[−]_~~\n\nHPK SiPM 7.66 _±_ 0.48 _×_ 10 ~~_[−]_~~ ~~[8]~~\n\nSensL SiPM 3.65 _±_ 0.64 _×_ 10 _[−]_ [7]\n\nV. D ISCUSSION\n\nIn Sec. IV, the probability of emitting a single photon per\navalanche has been estimated for two types of SiPMs in our\nexperimental setup. The eCT ratio calculated in the paper\nrepresents a statistical average and does not quantitatively\ndemonstrate the angular acceptance. In principle, the eCT\nprobability depends on the specific detector configuration,\nresulting that the refractive index of the coupling between the\nSiPM and the detector could significantly impact the probability. A similar refractive index could reduce the likelihood of\nsecondary photons reflecting back to the pixel that generated\nthem. Consequently, iCT photons would be converted into eCT\nphotons as a result of the change in the photon propagation\nmedium. For example, a specific face-to-face setup would\nsuggest a higher probability of photons emitted by a SiPM\nreflecting back onto the other SiPM, potentially resulting in a\nhigher iCT ratio and a lower eCT ratio. Utilizing probability as\nan approximation method is common practice. However, the\nexact number of photons emitted in each avalanche remains\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 8\n\n**0.6**\n\n**0.5**\n\n**0.4**\n\n**0.3**\n\n**0.2**\n\n**0.1**\n\n0.09\n\n0.08\n\n0.07\n\n0.06\n\n0.05\n\n**0.012**\n\n**0.01**\n\n**0.008**\n\n**0.006**\n\n**0.004**\n\n**0.002**\n\n**0**\n\n**0**\n\n3 4 5 6 7\nV over [V]\n\n(a) _P_ _coin_ versus _V_ _over_ for SensL SiPM samples.\n\n**300** **400** **500** **600** **700** **800** **900** **1000**\n\n**wavelength [nm]**\n\nFig. 11: The black curve represents the PDE versus wavelength for the SensL SiPM sample at 420 nm and _V_ _over_ 6V,\nobtained from the SensL J-series datasheet [18]. The blue\ncurve represents the normalized eCT spectrum data for the\nVUV4 SiPM sample, extracted fr",
+        "score": -3.518155174255371,
+        "dense_score": null,
+        "bm25_score": 13.552450427258217,
+        "graph_score": 0.0,
+        "rerank_score": -5.419277191162109,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7112,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2893262__2502.15494__Measuring_Dark_Currents_in_Multiple_Cryogenic_SiPMs_With_Sub-pA_Sensitivity_Using_an_Autom.md",
+        "title": "2025__recid_2893262__2502.15494__Measuring_Dark_Currents_in_Multiple_Cryogenic_SiPMs_With_Sub-pA_Sensitivity_Using_an_Autom",
+        "text": "ded geometrically [28]:\n\n1\nECF = 1 _−_ _aV_ _OV_ (1 _−_ exp ( _−bV_ _OV_ )) _[,]_ (6)\n\nFig. 9. The time delay between all counts for channel 2 of the SiPM in the\ndark at 5 V overvoltage. An exponential distribution is fit to the histogram for\ncounts with a time difference greater than 0.1 s. Excess counts with shorter\ntime differences are due to burst events, likely triggered by a cosmic muon\ncausing luminescence. The inset shows a waveform of a typical burst event.\n\nFig. 10. The voltage dependence of the DCR, measured for all channels of\nthe SiPM. The error bars are, generally, smaller than the markers used in the\nplot. The y-error is calculated assuming Poisson fluctuations in the count rate;\nhowever, this underestimates the true error, as the avalanche rate in a burst\nevent decays exponentially. The true measurement error is estimated using the\nbest fit to Equation 7, as described in Section IV-B. The dominant contribution\nto the x-error comes from the uncertainty in the breakdown voltage.\n\nnumber of avalanches in a burst event is much greater than the\nlikelihood-weighted contribution for two or more avalanches\ninduced by the luminescence to occur within the amplifier’s\nshaping time.\nThe voltage dependence of the effective DCR was initially\nmodeled using the probability of thermally created electronhole pairs, modulated by the avalanche triggering probability\n\n[7]. However, this approach failed to reproduce the observed\ntrend due to the burst events. While burst events can, in\nprinciple, be tagged and modeled separately from dark events,\ndoing so would introduce several new floating parameters,\nincluding the burst event rate, the number of detections per\nburst, and the spectral dependence on avalanche triggering\nprobability. Since such modeling is beyond the scope of this\npaper, we use a simplified model with a single parameter to\naccount for the mean detection rate of burst events, assuming\nthe same avalanche triggering probability for all events,\n\n8\n\nDCR _eff_ = ( _R_ exp ( _βV_ _OV_ ) + _B_ ) (1 _−_ exp ( _−αV_ _OV_ )) _,_ (7)\n\nwhere _R_ is the dark count rate at breakdown, _β_ is the rate\nparameter, _B_ is the mean detection rate for burst events, _α_ is\nthe breakdown parameter, _V_ _OV_ is the overvoltage ( _V −_ _V_ _BD_ ).\nA plot showing the effective DCR and the fit of Equation 7 to\nthe data is shown in Figure 10. The error in the effective DCR\nis estimated by assigning Poisson fluctuations to each data\npoint and then uniformly scaling each erro",
+        "score": -4.097410831572135,
+        "dense_score": null,
+        "bm25_score": 13.552786297608009,
+        "graph_score": 0.0,
+        "rerank_score": -6.310524940490723,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8373,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3100118__2601.05985__Novel_high-radiopurity_doped_amorphous_silicon_resistors_for_low-background_detectors.md",
+        "title": "2026__recid_3100118__2601.05985__Novel_high-radiopurity_doped_amorphous_silicon_resistors_for_low-background_detectors",
+        "text": "photon interactions appears as ionization of the medium, producing free electrons and excited xenon atoms (excimers) and ions. Scintillation\nlight is then produced by excimers de-excitation and electron/ion recombination primarily at a wavelength of 175 nm in the VUV. The collection of both\nthe ionization electrons and the scintillation light is essential for high-quality\nenergy resolution and positional reconstruction.\nA 4” witness wafer from our spacer/resistor run at SNF (aSi deposited\nat 550°C) was sent to our colleagues at UMASS who have a dedicated LXe\nreflectivity testing setup for a reflectivity measurement [23]. The results they\nobtained are given in Table 10, which indicate useful reflectivity at 175 nm\nand in principle improves light collection. Additional data and analysis will\nbe required before both the reflectance and the specular and diffuse components can be determined [24]. As one can see from the TPC rendering\nin Figure 1, for the case of the nEXO design the spacers represent a small\n\n18\n\nsolid angle for light reflection compared to other surfaces. However, for some\napplications of this aSi technique to a larger surface area, the importance of\nreflectivity might be more significant.\n\nTable 10: Total reflectivity [%] at 175 nm at normal incidence.\n\n|Sample|Total Reflectivity [%]|\n|---|---|\n|aSi(550°C)|48_ ±_ 15|\n\n**8. Conclusions and General Applications**\n\nThis paper has described an initial R&D program at SLAC, supported by\nStanford and Berkeley nanofabrication labs, that has demonstrated the production, with low statistics, of high-radiopurity resistors suitable for use in\nhigh-voltage systems for low-background liquid xenon cryogenic experiments.\nThe prototype resistors met our specifications for ppt-level U and Th contamination, and demonstrated the desired resistance with satisfactory variance\nin a small production run. Our experience with less successful runs than the\nones described in this article does reveal the need for improvements before\nmass production is optimized. We identified a few straightforward engineering improvements to our fixturing, both for the furnace Si deposition and the\nmetallization steps, that would be appropriate for a future publication. In\naddition, there are outstanding general questions for further study:\n\n More extensive HV testing is needed including tests to failure.\n\n Mechanical testing of the assembly of the voltage-divider within a realistic prototype field cage is needed, in particular to determi",
+        "score": -4.748757286071777,
+        "dense_score": null,
+        "bm25_score": 14.09226916006676,
+        "graph_score": 0.0,
+        "rerank_score": -7.313472747802734,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4194,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS.md",
+        "title": "2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS",
+        "text": "In addition, given the large pixel size, RSDs are an enabling technology for\n\nconstructing 4D silicon trackers [2] with limited power consumption as they\n\nreduce the number of readout amplifiers by more than an order of magnitude.\n\nThe benefits of resistive readout are maximized when the electrode metal is\n\nminimised and shaped to limit the spread of the signal, as reported in a study\n\nusing a high-precision Transient Current Technique (TCT) setup [3] to mimic\n\nthe passage of particles in the sensor.\n\n**2. RSD principles of operation**\n\nA short description of the RSD principle of operation is provided in this\n\nparagraph; refer to the literature [3, 4, 5] for a complete explanation. RSDs\n\nare thin silicon sensors that combine built-in signal sharing and internal gain.\n\nThe signal splits among the readout electrodes as a current in an impedance\n\ndivider, where the impedance is that of the paths connecting the impact point\n\nto each electrode, as sketched in Figure 1 assuming a 4-way split. The input\n\nimpedance of the front-end electronics must be considerably lower than the path\n\nimpedances (Z 1,2,3,4 ) so that the signal split is governed by Z 1,2,3,4 .\n\n**3. The DESY test beam facility**\n\nThe test beam facility in the DESY site at Hamburg-Bahrenfel comprises\n\nthree distinct beam lines providing electrons or positrons with momenta se\n\nlectable in the range from 1 up to 6 GeV [6].\n\n2\n\nFigure 1: Left: the signal splits among the readout electrodes. Right: the split can be\n\ncomputed using the equivalent circuit of a current divider.\n\nThe test beam campaign reported in this paper was performed in the T24 ex\n\nperimental area. This area is instrumented with an EUDET2-type telescope [7]\n\nwith six planes of 54 _µ_ m-thick MIMOSA-26 Monolithic Active Pixel Sensors [8].\n\nThe EUDET2 performance depends on the six planes’ relative positions, the\n\nbeam energy, and the DUT material budget. With a distance of 38 mm be\n\ntween the planes and a beam momentum of 5.6 GeV/c, a resolution of _σ_ x =\n\n2.89 _µ_ m was achieved. An EUDET Trigger Logic Unit [9] provides the trigger\n\nto the telescopes. The data acquisition is performed in the EUDAQ framework.\n\n**4. The experimental setup**\n\nIn this paragraph, the key elements of the experimental setup are presented.\n\nThe system comprises the FAST2 ASIC, an RSD2 sensor, a readout board, and\n\nthe data acquisition system.\n\n_4.1. The FAST2 ASIC_\n\nThe FAST2 ASIC [10, 11] is designed using standard 110 nm CMOS tech\n\nnology; the power rail i",
+        "score": -4.888820327929596,
+        "dense_score": null,
+        "bm25_score": 14.435005404898831,
+        "graph_score": 0.0,
+        "rerank_score": -7.529298782348633,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 8407,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_.md",
+        "title": "2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_",
+        "text": "_µ_ vis ) on the luminosity counter _µ_ vis is found to be empirically well described\nby a square-root law, with _σ_ ( _µ_ vis ) _≈_ (1 _−_ _λ_ ) ~~�~~ _µ_ vis _/N_ .\n\nThe luminosity counters presented in this paper are implemented in firmware and\nsoftware, and come thus with a flexibility not normally available for readout-level counters\nbased on currents or other detector quantities. By tuning their position, shape, size\nand integration parameters, the accumulation regions can be optimised to fit occupancy\nrequirements, bandwidth, and constraints due to the usage of FPGA resources. In\nparticular, the counters can be tuned to handle a wide dynamic range, from very low to\nvery high luminosities. This currently requires recompiling the VELO DAQ firmware;\nhowever, dedicated registers can also be implemented, to dynamically set the counter\nshapes and integration windows. The overall FPGA resource usage for the current\nimplementation amounts to 0.62% of the 1 _._ 15 _×_ 10 [6] logic elements, 2.4% of the 2713 M20K\nmemory blocks and 2.8% of the 1518 digital signal processors (DSP). The M20K memory\n\n7\n\nblocks are used for the per-BXID measurement, and the DSPs for the running-mean\ncomputation.\n\n### **5 Calibration**\n\nThe instantaneous luminosity is calculated from _µ_ vis and _σ_ vis as shown in Eq. 1. Each\nof the time-integrated luminosity counters is independently calibrated by measuring the\nassociated visible cross-section _σ_ vis ; each counter thus in principle provides an independent\nluminosity measurement. [3] Two calibration techniques are used at LHCb. One of these,\nused in Run 1 and Run 2 and also capable of assessing the rate of beam background [24],\nis the beam-gas imaging technique [25, 26], based on the measurement of the overlap\nintegral of the two beams from their shapes. The other one, historically used at hadron\ncolliders, relies on dedicated data-taking periods called van der Meer (vdM) scans [27, 28].\nThe work presented in this paper uses the latter method.\nDuring a vdM scan, _σ_ vis is measured by displacing the two beams with respect to\none another in the plane transverse to the beam direction, recording the rate of visible\ninteractions at each (∆ _x,_ ∆ _y_ ) step, and integrating its two-dimensional profile as\n\n_σ_ vis = _µ_ _[′]_ vis [(∆] _[x,]_ [ ∆] _[y]_ [) d∆] _[x]_ [ d∆] _[y,]_ (4)\n��\n\nwhere _µ_ _[′]_ vis _[≡]_ _[µ]_ [vis] _[/n]_ [1] _[n]_ [2] [, and] _[ n]_ [1] _[,]_ [2] [are the populations of the colliding bunches measured at]\nea",
+        "score": -5.060445947031821,
+        "dense_score": null,
+        "bm25_score": 15.234226017170261,
+        "graph_score": 0.0,
+        "rerank_score": -7.7939863204956055,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6872,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+        "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+        "text": "* **4**\n\n4.1 Experimental Setup 4\n\n4.2 Data Samples 5\n\n4.3 Detection Efficiency 7\n\n4.4 Time Resolution 10\n\n**5** **Conclusions** **14**\n\n**1** **Introduction**\n\nMonolithic Active Pixel Sensors (MAPS [1]), which integrate the sensor and electronics within\n\nthe same CMOS substrate, are becoming more and more common in particle physics. Despite\n\ntheir relatively complex design phase, MAPS provide all the benefits of standard CMOS processing\n\nwhile avoiding the production challenges and high costs associated with bump-bonded hybrid pixel\n\nsensors. A large surface of MAPS was recently installed in the ALICE experiment at the LHC [2]\n\nand is operated successfully.\n\nIn the framework of the MONOLITH H2020 ERC Advanced project [3], this group is de\nveloping very fast MAPS. Prototypes were produced using the commercial SG13G2 130 nm\n\nsilicon-germanium (SiGe) BiCMOS process [4] by IHP Microelectronics, which includes a very\n\nfast and low-noise SiGe Heterojunction Bipolar Transistor (HBT) with a peak transition frequency\n\n_𝑓_ _𝑡_ = 350 GHz. In a testbeam experiment with minimum-ionizing particles (MIPs), a prototype\n\nwith a standard PN junction sensor without an internal gain layer produced with this technology\n\nprovided full efficiency and time resolution of 20 ps [5]. Several of these prototypes were irradiated\nwith 70 MeV protons up to a fluence 1 × 10 [16] n eq /cm [2] and tested with radioactive sources [6] and\nin a testbeam experiment with MIPs [7]. The SiGe HBT front-end electronics not only survived\n\nsuch large proton fluence but was still able to recover full efficiency and provide a time resolution\n\nof 45 ps with only a modest increase in sensor bias voltage. This performance underscores SiGe\n\nHBT radiation tolerance, meeting the stringent requirements of the challenging High-Luminosity\n\nLHC environment.\n\nIn parallel to the development of front-end electronics, the MONOLITH ERC project is also\n\nexploiting the picosecond avalanche detector (PicoAD) [8], a novel detector that implements a\n\ncontinuous deep gain layer to boost the timing performance. A proof-of-concept monolithic PicoAD\n\n– 1 –\n\nwas produced in 2022 using the photolithography masks of a prototype able to provide 36 ps [9]\n\nwith a sensor without internal gain layer. The proof-of-concept PicoAD was operated at a gain of\n\napproximately 20 [10], obtaining full efficiency and an average time resolution of 17 ps [11]. The\n\ntime resolution was found to depend strongly on the hit position on the pixel ar",
+        "score": -5.120654651201688,
+        "dense_score": 0.31968778371810913,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.886214256286621,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8420,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_.md",
+        "title": "2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_",
+        "text": "ents due to the physical\noverlap of particle tracks on the VELO sensors. In principle, the log0 method is expected\nto be better suited for its robustness against saturation effects. However, due to the very\nlow interaction rate of PbPb collisions ( _µ_ PbPb _∼_ 10 _[−]_ [3] ), it can be demonstrated that also\nthe average-method counters are still linear with respect to the instantaneous luminosity.\nThe probability of more than one PbPb collision occurring in the same bunch-crossing\nis extremely low, of the order of 10 _[−]_ [6] . Therefore, saturation in nonempty events only\ndepends on the intrinsic hit distribution of PbPb collisions, which is itself independent\nof the luminosity. Any saturation effect in the hit distribution is accounted for in the\ncalibration phase, resulting in an average method-based estimator that is with good\napproximation linear with respect to the instantaneous luminosity. [6] As in the _pp_ case, the\naverage method is preferred over log0 due to the nonuniformity of the bunch populations,\nwhich is clearly visible in the right-hand side panel of Fig. 11. The left-hand side panel of\nFig. 11 shows the trend of the VELO-hit based instantaneous luminosity estimator during\n\n6\nSpecifically, _µ_ vis can be expressed as an expansion where terms beyond the linear one are suppressed by\na factor _µ_, which in PbPb collisions is _O_ (10 _[−]_ [3] ).\n\n17\n\na PbPb fill without gas injection. The ratio between the VELO-hit based measurement\nand the LHCb online one is stable in time throughout the fill, within 2%. A quantitative\nstudy of the PbPb luminosity requires further work both on these counters and on a\nreference measurement, and it is beyond the scope of the present work, but the potential\nof this new method is clear.\n\n#### **6.7 Sensitivity to systematic effects**\n\nThe distribution of hits on the VELO detector, and thus the related luminosity measurement, can be affected by several factors, that can be grouped in two main categories.\n\n Sensor-related effects: local inefficiencies, “hot” pixels and noisy regions of the silicon\nsubstrate. Ageing of the VELO sensors is not taken into account for the results\npresented in this paper, which are based on only one year of operation, during\nwhich the local inefficiencies have been very low. However, in the long term, it may\nhave a non-negligible impact in the determination of the luminosity [21]. Effects of\nradiation damage on the silicon bulk are monitored during special scans in which\nthe hit eff",
+        "score": -5.545782279968262,
+        "dense_score": null,
+        "bm25_score": 14.781831210587194,
+        "graph_score": 0.0,
+        "rerank_score": -8.540386199951172,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1798,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2657413__2305.03457__Parallelization_of_frequency_domain_quantum_gates_manipulation_and_distribution_of_frequen.md",
+        "title": "2024__recid_2657413__2305.03457__Parallelization_of_frequency_domain_quantum_gates_manipulation_and_distribution_of_frequen",
+        "text": "educe these\nparameters from our coincidence measurements, using the method proposed in [33]. We use the\ncoincidences in the Z basis ( _𝐶_ 0 _,_ 0, _𝐶_ 0 _,_ 1, _𝐶_ 1 _,_ 0, _𝐶_ 1 _,_ 1 ) and the X basis ( _𝐶_ + _,_ +, _𝐶_ + _,_ −, _𝐶_ − _,_ + and _𝐶_ − _,_ − ) to\ncompute the raw coincidence rate, QBER and sifted key rate (see appendix B).\nFig. 5.a shows, for each accessible pair, the number of raw coincidences _𝑅_ _𝑟𝑎𝑤_ and the qubit\n\n1.0\n\n0.8\n\n0.6\n\n0.4\n\n0.2\n\n0.0\n\n10 22 34 46 58 70\n\ndetuning from pump in FSR unit\n\nFig. 4. Fidelity to a maximally entangled state for several frequency-bin entangled\nphoton pairs. The x axis correspond to the distance of the frequency qubit to the pump\nfrequency\n\na.\n\n40\n\n20\n\n0\n\nb.\n\n20\n\n15\n\n10\n\n10 22 34 46 58 70 10 22 34 46 58 70\n\ndetuning from pump in FSR unit\n\n2\n\n1\n\n0\n\nFig. 5. a.: Raw coincidences (bars) and qubit error rate (QBER) (dots) between two\nusers, and b.: sifted key rate, calculated using the method in [29] as a function of _𝑛_,\nspectral detuning from the pump\n\nerror rate QBER. By comparing it with Fig. 4, we see that as expected, the qubits with a lower\nraw key rate (and higher QBER) are also the ones with the lower fidelity to an entangled state. A\ngiven pair achieves secure quantum communication only if the corresponding QBER is lower\nthan the positive key rate threshold of 11% [34]. Among the 17 accessible pairs, only 12 satisfy\nthis condition. A sifted key rate in bit/s can also be derived from the raw rate _𝑅_ _𝑟𝑎𝑤_ using the\nmethod in [29] as depicted in Fig. 5.b. The inset in Fig. 5.b. shows how the distribution of 10\nphoton pairs is used to create a node-free quantum network of 5 users.\nIn this proof of principle experiment, the achieved key rates (0.5 to 2.5 bits/second) are limited\nby the performances of the source, as well as the insertion loss of the devices (14 dB for the\n3 PFs and the 2 EOMs). Integrating these components on the same chip would help to limit\nlosses and improve the overall insertion loss of the [EOM-PF-EOM] configuration to 73% [35].\nSeveral methods are proposed to achieve the integration of elements allowing the manipulation\nof frequency-bin qubits [36,37]. It is also worth noting that the number of accessible pairs could\nbe increased by setting the pump frequency at the center of the PF bandwidth.\n\n**5.** **Conclusion**\n\nIn this paper, we introduce a SOI micro-resonator for producing photon pairs at telecom\nwavelengths through SFWM and encoding frequency-bin qubits on adjacent pairs",
+        "score": -5.693522406847049,
+        "dense_score": null,
+        "bm25_score": 13.558944493425207,
+        "graph_score": 0.0,
+        "rerank_score": -8.766168594360352,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_.md",
+        "title": "2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_",
+        "text": "**\n\nThe upcoming Mu3e experiment at PSI aims to find or exclude the cLFV decay\n_µ_ [+] _→_ _e_ [+] _e_ _[−]_ _e_ [+] with an unprecedented sensitivity to branching ratios as low as 10 _[−]_ [16] . In\na first phase, branching ratios of 10 _[−]_ [14] to a few 10 _[−]_ [15] can be studied. In addition, dark\nphotons emitted in muon decays can be investigated with competitive sensitivity, and\ncurrent limits on _µ_ [+] _→_ _e_ [+] _X_ decays can be surpassed by two orders of magnitude already\nwith the phase I Mu3e experiment.\nCurrently, the design and prototyping phase of the phase I Mu3e experiment is\nfinishing and the experiment is transitioning to the production and construction phase.\nDemonstrator detector modules have been successfully operated in an integration run in\n2021 and a cosmics run in 2022. Commissioning and first physics data taking are expected\nfor 2024.\n\n**Funding:** The author’s work is funded by the Federal Ministry of Education and Research (BMBF)\nand the Baden-Württemberg Ministry of Science as part of the Excellence Strategy of the German\nFederal and State Governments. The author further acknowledges the support by the German\nResearch Foundation (DFG) funded Research Training Group “Particle Physics beyond the Standard\nModel” (GK 1994) on previous works on this subject.\n\n**Institutional Review Board Statement:** Not applicable\n\n**Informed Consent Statement:** Not applicable\n\n**Data Availability Statement:** Data sharing not applicable\n\n**Conflicts of Interest:** The author declares no conflict of interest.\n\n**Abbreviations**\n\nThe following abbreviations are used in this manuscript:\n\nSM Standard Model\n\nBSM Beyond the Standard Model\n(c)LFV (charged) Lepton Flavour Violation\nPSI Paul Scherrer Institute\n\nCL Confidence Level\nDAQ Data Acquisition\nASIC Application-Specific Integrated Circuit\nMuTRiG Muon Timing Resolver including Gigabit-Link\nHV-MAPS High-Voltage Monolithic Active Pixel Sensors\n\n_Phys. Sci. Forum_ **2023**, _8_, 30 6 of 6\n\n**References**\n\n1. Arndt, K.; Augustin, H.; Baesso, P.; Berger, N.; Berg, F.; Betancourt, C.; Bortoletto, D.; Bravar, A.; Briggl, K.; vom Bruch, D.; et al.\nTechnical Design of the Phase I Mu3e Experiment. _Nucl. Instrum. Meth. A_ **2021**, _1014_ [, 165679. https://doi.org/10.1016/j.nima.20](https://doi.org/10.1016/j.nima.2021.165679)\n[21.165679.](https://doi.org/10.1016/j.nima.2021.165679)\n\n2. Bellgardt, U.; Otter, G.; Eichler, R.; Felawka, L.; Niebuhr, C.; Walter, H.K.; Bertl, W.; Lordong, N.; Martino, J.; Egl",
+        "score": -5.699695043876523,
+        "dense_score": null,
+        "bm25_score": 15.879550300658252,
+        "graph_score": 0.0,
+        "rerank_score": -8.777588844299316,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1619,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2709840__2310.07963__Observing_cosmic-ray_extensive_air_showers_with_a_silicon_imaging_detector.md",
+        "title": "2023__recid_2709840__2310.07963__Observing_cosmic-ray_extensive_air_showers_with_a_silicon_imaging_detector",
+        "text": "0 75\n\nTelescope elevation ψ tel [deg]\n\n**Fig. 2** A simplified example of fitting equation 3 to track numbers from different visits. The horizontal axis shows the telescope elevation angle. The vertical axis shows the number of detected tracks\nin a visit. The purple squares and green circles show data that was taken with the telescope pointing\nwest and east respectively. There are several points above the main group of events. These points are\nlikely to be EASs and are removed when applying the 2 _σ_ threshold (see text). The red line shows the\nmodel fit results, with _ϕ_ tel = 0 and _B_ sky = 1000.\n\nlarger background level than HSC-r2. This may be because B270 contains potassium,\na natural radio isotope.\n\n### **4 EAS search results**\n\nBy using the model defined in the previous section, we search for visits in the data-set\nwith a significant excess of tracks compared to our model prediction. For demonstration purposes, we have defined a significant excess to be more than 20 _σ_ of each filter.\nTable 3 shows the significant visits. The telescope elevation angles for these visits, primarily between 50 _[◦]_ – 70 _[◦]_, is simply a consequence of those elevations being the most\ncommonly observed.\nTo determine whether these visits actually observed an EAS, we checked for clustering in the particle arrival directions. Unfortunately, the true 3D trajectories of each\nparticle are impossible to determine with the CCD image alone. This is because there\nis no method for determining which end of a track corresponds to the top face/bottom\nface of the CCD. Furthermore, we cannot tell which end corresponds to the particle\nentering/exiting the CCD. In other words, for a single track there are four possible\ntrajectories, each of which is shown in Figure 3. If up-going particles are excluded (A\nand C in Figure 3), then each measured track has two possible directions (B and D\nin Figure 3). These directions differ by 180 _[◦]_ in azimuth in the frame of the camera\n\n7\n\n**Fig. 3** A schematic view of the four possible incident directions of a charged particle penetrating\nthe depletion layer of a CCD. The open arrows indicate the direction of charge transfer inside the\ndepletion layer of the CCD. All four incident directions result in the same track being recorded. The\nup-going directions (A) and (C) are unlikely for cosmic rays (and hence their associated secondary\nparticles).\n\nVisit Date UT Filter _ψ_ tel _ϕ_ tel _B_ sky _N_ track _N_ model _N_ excess\n\n034298 2015-07-14 09:17",
+        "score": -5.784828745109448,
+        "dense_score": null,
+        "bm25_score": 14.09800030002711,
+        "graph_score": 0.0,
+        "rerank_score": -8.907540321350098,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.952835690230131,
+    "generation_latency_s": 3.3993273973464966e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.952835690230131,
+    "generation_latency_s": 3.3993273973464966e-07
+  }
+}

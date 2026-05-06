@@ -1,0 +1,411 @@
+{
+  "benchmark": {
+    "query_id": "neg003",
+    "query_type": "negative",
+    "query": "What is the exact private LHCb Upgrade II internal schedule?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "LHC"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the exact private LHCb Upgrade II internal schedule?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1836,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "system was identified as a significant source of scattering\nin the experiment and was redesigned as part of the upgrade programme for the LHCb\nvacuum system. The improved support system was installed in 2014 during the LHC long\nshutdown 1 (LS1).\nIn the new support system, the volume of the collars has been reduced and materials\nwith longer radiation length have been selected for all components. Carbon fibre reinforced\nplastic tubes and synthetic ropes have replaced the stainless steel rods and cables. This led\nto a remarkable increase of more than 90% in material transparency for these components,\nwhile retaining sufficient stiffness. The aluminium collars were redesigned and remade\n\n4 TM\nVespel .\n\n8\n\nwith beryllium, which has led to a material transparency improvement of more than\n85% [22]. [5] A range of innovative materials was selected: aramid [6] for the ropes; thermoset\ncarbon high-modulus fibres [7] for the tubes; and polybenzimidazole [8] for interface rings.\nA thorough qualification process of these materials has been carried out by the CERN\nvacuum group considering mechanical strength, creep and radiation tolerance.\n\n##### **2.6 Background and luminosity monitors**\n\nA set of detectors has been developed to monitor the machine-induced background\nconditions around the interaction point. To reduce systematic uncertainties and facilitate\nthe reconstruction, the instantaneous luminosity delivered to LHCb is kept constant\nthroughout a fill using a procedure known as _luminosity levelling_ [23]. [9] Every few seconds\nduring nominal operation, LHCb publishes a measurement of the average number of\nvisible _pp_ interactions per beam-beam crossing, denoted by _µ_ vis, which is used by the\nLHC control system to adjust the offset of the two beams in the direction perpendicular\nto the nominal crossing plane. As the number of visible _pp_ collisions per beam crossing\nfollows a Poisson distribution, the average of the distribution (i.e. _µ_ vis ) can be determined\nby measuring the probability that a beam crossing has no observable activity in the\ndetector, _P_ 0 = exp ( _−µ_ vis ) ; this is the _logZero_ method [24]. During Run 1 and Run 2, the\nreal-time luminosity measurement was based on information available in the L0 hardware\ntrigger. For the upgraded experiment, a dedicated luminosity subdetector, dubbed probe\nfor luminosity measurement (PLUME), has been installed, see section 2.6.1.\nExcursions in luminosity or elevated machine-induced background are not o",
+        "score": -3.0443989623911416,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8848207475209764,
+        "rerank_score": -4.78850793838501,
+        "matched_nodes": [
+          "The",
+          "In",
+          "LHC",
+          "For",
+          "To",
+          "CERN",
+          "Run",
+          "As"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4913,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter.md",
+        "title": "2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter",
+        "text": "plied to the data. The time resolution at _𝑃_ _density_ = 0.9 W/cm [2]\n\nand HV = 200 V was measured to be (20.0 ± 1.0) ps before proton irradiation. At the highest proton\nfluence studied of 1 × 10 [16] n eq /cm [2], the time resolution became (53.1 ± 3.4) ps. An increase of the\nsensor bias voltage to HV = 300 V improved the result to (45.3 ± 1.6) ps.\nThe scan in sensor bias voltage of the board exposed to 1 × 10 [16] n eq /cm [2], showed that the\nplateau in detection efficiency was just reached at 300 V, while the time resolution did not yet reach\n\nits plateau value. These observations, supported by an estimation of the change in resistivity after\n1 × 10 [16] n eq /cm [2], imply that the sensor was not yet fully depleted at 300 V and suggest that the\nnominal working point at that proton fluence is beyond 300 V.\n\nIn conclusion, this study gives first hints that an amplifier using SiGe HBT is not affected\ngreatly by doses up to 1 × 10 [16] n eq /cm [2] . The data show that very high efficiency, very high time\nresolution and radiation tolerance can be obtained by monolithic pixelated silicon detectors without\n\ninternal gain layer that exploit low noise, low power and fast response SiGe HBTs. Commercial\n\nSiGe BiCMOS foundry processes therefore represent a very strong candidate to build monolithic\n\nsilicon detectors for 4D tracking systems at future colliders at a contained cost.\n\n**Acknowledgments**\n\nThis research is supported by the Horizon 2020 MONOLITH ERC Advanced Grant ID: 884447.\n\nThe authors wish to thank Coralie Husi, Javier Mesa, Gabriel Pelleriti, and the technical staff\n\nof the University of Geneva and IHP Microelectronics. The authors acknowledge the support of\n\nEUROPRACTICE in providing design tools and MPW fabrication services, as well as the CERN\n\nSPS testbeam team.\n\n– 13 –\n\n**References**\n\n[1] ATLAS Collaboration. Technical Design Report: A High-Granularity Timing Detector for the\nATLAS Phase-II Upgrade. _CERN-LHCC-2020-007; ATLAS-TDR-031_, June 2020.\n\n[2] CMS Collaboration. A MIP Timing Detector for the CMS Phase-2 Upgrade.\n\n_CERN-LHCC-2019-003; CMS-TDR-020_, March 2019.\n\n[3] G. Pellegrini et al. Technology developments and first measurements of Low Gain Avalanche\nDetectors (LGAD) for high energy physics applications. _Nuclear Instruments and Methods Section A_,\n765:12–16, 2014. Proceedings of the HSTD-9 2013 \"Hiroshima\" Symposium.\n\n[4] Hartmut F-W Sadrozinski, Abraham Seiden, and Nicolò Cartiglia. 4D tracking with ultra-fast silicon\ndetectors",
+        "score": -3.0905516419799888,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8611746758199847,
+        "rerank_score": -4.856710910797119,
+        "matched_nodes": [
+          "II",
+          "The",
+          "In",
+          "At",
+          "CERN",
+          "CMS",
+          "SPS",
+          "ATLAS"
+        ],
+        "path_nodes": [
+          "II"
+        ],
+        "community_id": "II",
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5127,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "ss article\n\ndistributed under the terms and\n\nconditions of the Creative Commons\n\n[Attribution (CC BY) license (https://](https://creativecommons.org/licenses/by/4.0/)\n\n[creativecommons.org/licenses/by/](https://creativecommons.org/licenses/by/4.0/)\n\n4.0/).\n\n**1. Introduction**\n\nSilicon radiation detectors are at the core of experiments conducted at high-energy\ncolliders, such as the CERN Large Hadron Collider (LHC) [ 1 ]. Multiple layers of pixel and\nstrip detectors are utilized to accurately measure the momentum and vertices of charged\nparticles. Examples of such detector systems are part of the CMS [ 2 ] Silicon Tracker [ 3 ] and\nthe ATLAS [4] Inner Detector [5].\nHybrid pixel detectors, positioned close to the beam’s interaction point, offer fine\nsegmentation of a few tens of micrometers, ensuring spatial resolution on a single point\ndown to 10 µm . Precision measurements and the discovery potential heavily rely on the\nperformance of tracking devices, particularly for energy/momentum resolution and flavor\nidentification. Notably, both ATLAS [ 6, 7 ] and CMS [ 8 ] pixel detectors are equipped with\nthin planar n [+] -on-n silicon sensors (ATLAS Innermost B-Layer includes sensors made in\n3D n [+] -on-p technology in the forward region).\nThe LHC is scheduled for an upgrade to a high-luminosity machine (HL-LHC) [ 9 ],\nwith the goal of integrating a dataset of 4000 fb _[−]_ [1] ; this is twenty times larger than its current\ncapacity, allowing for the full exploitation of the physics reach of the LHC machine. To\nintegrate such a large dataset within a reasonable time, the instantaneous luminosity will\nneed to increase by a factor of 5–7 beyond the nominal value, reaching 7 _×_ 10 [34] cm _[−]_ [2] s _[−]_ [1] .\nThis increase in instantaneous luminosity will lead to a corresponding rise in particle flux,\ntrack densities, and hit rates. Consequently, the current inner tracking systems will need to\nbe replaced to cope with this challenging environment, as radiation levels affecting both\nsensors and electronics will also increase by a similar amount.\n\n_Sensors_ **2024**, _1_ [, 0. https://doi.org/10.3390/s1010000](https://doi.org/10.3390/s1010000) [https://www.mdpi.com/journal/sensors](https://www.mdpi.com/journal/sensors)\n\n_Sensors_ **2024**, _1_, 0 2 of 19\n\nThe effects of radiation damage are already measurable at the fluences of LHC Run 2\nand Run 3. For instance, the charge collection efficiency (CCE) of the innermost ATLAS\nPixel layer has now reduced to approxi",
+        "score": -3.7807766408978485,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8390541571319604,
+        "rerank_score": -5.915975093841553,
+        "matched_nodes": [
+          "The",
+          "LHC",
+          "For",
+          "To",
+          "CERN",
+          "Run",
+          "CMS",
+          "ATLAS"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2028,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "n tape archive.\nIn the streaming scheme described above each user typically analyses a small fraction\nof the whole data set. In order to avoid bottlenecks due to each user chaotically running\njobs on individual streams as desired, the data processing for user analysis is organised in\n\n174\n\nFigure 122: The LHCb offline data processing workflow. Reproduced from [194]. CC BY 4.0.\n\ncentrally-managed productions (analysis productions), further described in section 12.6.\nIn addition, users are allowed to submit jobs to offline resources, using the Ganga\nframework [266,267], for analysis prototyping and testing purposes and other cases, such\nas running parametrised pseudo-experiment simulations, and performing fits or other\nfurther stages of the analysis.\nThe production of Monte Carlo events is described in detail in section 12.5. The\nsimulated events are produced by two applications, Gauss [101] and Boole [268], taking\ncare of the event generation and propagation through the detector, and of the digitisation,\nrespectively. Various Monte Carlo simulation techniques that are faster than the standard,\ndetailed Geant4-based simulation, are available, as described in section 12.5.\nThe simulation workflow in the LHCb Upgrade is very similar to the one used for\nRun 1 and Run 2 . A number of steps are run in sequence. The intermediate files created\nat the end of each step are transient and deleted when no longer necessary. The only\nnotable exception to this workflow is the fully parametric simulation where the data\nare saved directly in the form of high-level objects that are ready to be used in physics\nanalysis. In this case, the digitisation, trigger emulation and event reconstruction steps\nare skipped.\n\n**12.8.2** **Resource provisioning**\n\nThe provisioning of resources for the computing infrastructure provided by the Worldwide\nLHC Computing Grid (WLCG) follows a pledging scheme where computing sites provide\na dedicated amount of resources to the experiments. The pledged resources are based\non requests submitted by the experiments for the forthcoming years and accompanying\nresource usage reports. Both documents are provided twice a year to the relevant funding\nbodies. The WLCG infrastructure is setup in tier levels. The Tiers used by LHCb are\nthe Tier 0 at CERN, major Tier 1 sites in several countries and approximately ninety\nadditional Tier 2 sites both in countries with Tier 1 centres and in other countries. CPU\n\nresources are provided on all Tier levels. Tape stor",
+        "score": -4.856906430559188,
+        "dense_score": null,
+        "bm25_score": 18.00252643225567,
+        "graph_score": 0.7864225781845918,
+        "rerank_score": -7.56965446472168,
+        "matched_nodes": [
+          "The",
+          "In",
+          "LHC",
+          "Upgrade",
+          "CERN",
+          "Run"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 210,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 8399,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_.md",
+        "title": "2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_",
+        "text": "ormation is used to create higher-level objects. The process of reconstruction and data\nfiltering happens in two software-based trigger stages, HLT1 and HLT2, where high-level\nphysical quantities such as particle tracks and collision vertices are reconstructed and\nmade available for both real-time and offline analysis [6].\nBy design, LHCb operates at a levelled luminosity [3], kept at a lower value with\nrespect to ATLAS and CMS. To achieve this, the LHC beams colliding at LHCb are\nsteered based on real-time luminosity feedback from the experiment. In Run 3, the LHCb\nluminosity levelling strategy requires a precision of at least 5% on the measurement of\ninstantaneous luminosity [4]. In the Run 1 and Run 2 data-taking periods, the activity\nin the LHCb calorimeter was used to measure the instantaneous luminosity, using hence\ninformation available at the first stage of the trigger (L0), implemented in hardware. In\nRun 3, following the removal of the L0 trigger stage, new methods have been introduced to\nmonitor luminosity. A dedicated detector, Probe for LUminosity MEasurement (PLUME),\nhas been designed and installed for this purpose [4], and several other quantities, either\navailable at the detector readout level or computed in HLT1, are used as real-time\nluminometers. A method using hit counting in the muon system has been studied with\nRun 2 data [14]. A metal-foil based detector, the RMS-R3, is used to monitor beam and\nbackground conditions continuously during LHCb operation, and, when calibrated on\nPLUME, it can be used to monitor luminosity in real time [15]. The two ring-imaging\nCherenkov (RICH) detectors, used for particle identification, have also proved capable\nof providing real-time luminosity measurements using both MaPMT anode currents and\nhit counting [16]. The availability of independent luminosity measurements is important\nin order to maximise the reliability of the luminosity-levelling feedback, as well as to\nuse them for cross-calibration in measurements of both instantaneous and integrated\nluminosity. The possibility of using VELO hits reconstructed in real time to measure\nluminosity [17] has the additional potential of producing an accurate measurement with\na fast time response. This new method has been implemented, and it is described in\n\n2\n\nthis paper. The algorithm, presented in detail in Sect. 4, is developed around two core\ncomponents. The first one operates on the TELL40 boards, running in parallel with\nstandard data taking and leveragi",
+        "score": -5.305416155795777,
+        "dense_score": 0.4370409846305847,
+        "bm25_score": null,
+        "graph_score": 0.7780320366132724,
+        "rerank_score": -8.259064674377441,
+        "matched_nodes": [
+          "The",
+          "In",
+          "LHC",
+          "To",
+          "Run",
+          "CMS",
+          "ATLAS"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3804,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736716__2312.08279__Energy_spectra_of_elemental_groups_of_cosmic_rays_with_the_KASCADE_experiment_data_and_mac.md",
+        "title": "2024__recid_2736716__2312.08279__Energy_spectra_of_elemental_groups_of_cosmic_rays_with_the_KASCADE_experiment_data_and_mac",
+        "text": "erent\nexperiments. Error bars display the statistical uncertainties, solid bands represent the “basic” systematic uncertainties, hatched bands show the estimation of theoretical uncertainties\nrelated to hadronic models. Our CNN analysis for the “blind” part of the experimental data\nshown in orange, based on QGSJet-II.04. _Top panel:_ comparison with IceTop [13] (in brown)\nand TALE [14] (in green). IceTop results are obtained for Sibyll 2.1 model, TALE results\nare for EPOS-LHC model. _Bottom panel:_ comparison with LHAASO [15] (in purple), that\nis using QGSJet-II.04 model for basic systematic uncertainties. Theoretical uncertainties are\nnot computed for IceTop and TALE results. For LHAASO they are covering QGSJet-II.04,\nEPOS-LHC and Sibyll 2.3d models; for this work: QGSJet-II.04, EPOS-LHC and Sibyll 2.3c\nmodels.\n\n– 10 –\n\nWe should note that the results based on the QGSJet-II.04 hadronic interaction model\nare in the middle of the theoretical uncertainty band covered also by the EPOS-LHC and\nSibyll 2.3c models. The EPOS-LHC model predicts a lighter composition, while Sibyll 2.3c\nis predicting a heavier one. It is interesting to notice, that the result for each hadronic\nmodel tends towards the results of another experiment that uses the same model or at least\na model from the same family. Namely, the top edge of our theoretical uncertainties is closer\nto the results of IceTop that are based on Sibyll 2.1 model, while our bottom edge — to the\nTALE results that are based on EPOS-LHC model [4] . This indicates that at least a part\nof the discrepancy between the results of the different experiments can be explained by the\ndifference in the hadronic interaction models they use.\nLHAASO experiment provides the results of its analysis [15] separately for each hadronic\ninteraction model: QGSJet-II.04, EPOS-LHC, and Sibyll 2.3d [41]. We compare the results\nof LHAASO with our results directly, including the theoretical uncertainty due to hadronic\nmodels inherent to each result. One can see that the results exhibit good agreement within the\ntheoretical uncertainties, while the uncertainty itself is lower in the LHAASO measurement.\nThis level of agreement looks satisfactory, given the differences between the experiments.\nThe numerical tables of our results are presented in Appendix A.\n\n**5** **Discussion and conclusion**\n\nIn this research we have presented the cosmic-ray mass component spectra reconstructed\nwith the specific convolutional neural network method using the K",
+        "score": -5.9169292108694345,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7864225781845918,
+        "rerank_score": -9.196128845214844,
+        "matched_nodes": [
+          "II",
+          "The",
+          "In",
+          "LHC",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "II"
+        ],
+        "community_id": "II",
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5033,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec.md",
+        "title": "2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec",
+        "text": "ieved 100% accuracy compared to the\n\ngolden results. Future work will focus on the development of the FABulous framework, co-design\n\nof high-performance sensor processing algorithms, a larger eFPGA design with higher logic density\n\n– 14 –\n\nfor more complex processing, and dedicated radiation tolerance measures in order to accommodate\n\nrealistic future collider experiments readout scenarios.\n\n**Acknowledgments**\n\nThis work was supported by the U.S. Department of Energy under contract number DE-AC02\n76SF00515.\n\n**References**\n\n[[1] A. McCarn Deiana et al, “Applications and Techniques for Fast Machine Learning in Science\", Front.](https://doi.org/10.3389/fdata.2022.787421)\n[Big Data 5, 787421 (12 April 2022)](https://doi.org/10.3389/fdata.2022.787421)\n\n[2] ATLAS Collaboration, “The ATLAS Trigger System for LHC Run 3 and Trigger performance in\n[2022\", 10.48550/arXiv.2401.06630 (12 Jan 2024)](https://doi.org/10.48550/arXiv.2401.06630)\n\n[3] CMS Collaboration, “Development of the CMS detector for the CERN LHC Run 3\",\n\n[10.48550/arXiv.2309.05466 (11 Sept 2023)](https://doi.org/10.48550/arXiv.2309.05466)\n\n[[4] CMS Collaboration, “The Phase-2 Upgrade of the CMS Level-1 Trigger\", CMS-TDR-021 (7 Apr](https://cds.cern.ch/record/2714892?ln=en)\n2020)\n\n[5] E. Govorkova et al, \"Autoencoders on FPGAs for real-time, unsupervised new physics detection at 40\n[MHz at the Large Hadron Collider\", Nature Machine Intelligence 4, 154–161 (23 Feb 2022)](https://www.nature.com/articles/s42256-022-00441-3)\n\n[6] G. Di Guglielmo et al, “A reconfigurable neural network ASIC for detector front-end data\n[compression at the HL-LHC\", IEEE Trans. Nucl. Sci. 68, 2179 (7 June 2021)](https://doi.org/10.1109/TNS.2021.3087100)\n\n[7] S. Kulkarni et al, “On-Sensor Data Filtering using Neuromorphic Computing for High Energy\n[Physics Experiments\", 10.48550/arXiv.2307.11242 (20 July 2023)](https://arxiv.org/abs/2307.11242)\n\n[8] H. Murayama et al, \"Exploring the Quantum Universe: Pathways to Innovation and Discovery in\n[Particle Physics\", https://www.usparticlephysics.org/2023-p5-report/](https://www.usparticlephysics.org/2023-p5-report/)\n\n[9] B. Fleming et al, \"Basic Research Needs for High Energy Physics Detector Research &\n[Development\", 10.2172/1659761 (14 Dec 2019)](https://www.osti.gov/biblio/1659761)\n\n[10] A. Apresyan et al, \"Detector R&D needs for the next generation _𝑒_ + _𝑒_ − collider\",\n\n[10.48550/arXiv.2306.13567 (26 June 2023)](https://arxiv.org/abs/2306.13567)\n\n[11] Bea Healy, Jing Yu, Nguye",
+        "score": -6.003880657347352,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8154080854309688,
+        "rerank_score": -9.333333969116211,
+        "matched_nodes": [
+          "The",
+          "LHC",
+          "Upgrade",
+          "CERN",
+          "Run",
+          "CMS",
+          "ATLAS",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4419,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors.md",
+        "title": "2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors",
+        "text": "10.1088/1748-0221/16/07/p07023.](https://doi.org/10.1088/1748-0221/16/07/p07023)\n\n[9] The CMS Collaboration, “The Phase-2 Upgrade of the CMS\nEndcap Calorimeter,” CERN, Tech. Rep., 2017. [Online]. Available:\n[http://cds.cern.ch/record/2293646](http://cds.cern.ch/record/2293646)\n\n[10] B. Q. Le _et al._, “High-voltage CMOS level shifter,” 1998, US Patent\n5,821,800 (issued on October 13, 1998), expired.\n\n[11] G. Rincon-Mora _et al._, “Optimized frequency-shaping circuit topologies\nfor LDOs,” _IEEE Transactions on Circuits and Systems II: Analog_\n_and Digital Signal Processing_, vol. 45, no. 6, pp. 703–708, 1998, doi:\n[10.1109/82.686689.](https://doi.org/10.1109/82.686689)\n\n[12] P. Martin _et al._, “Radiation characterisation for new tantalum polymer capacitors,” in _16th European Conference on Radiation and Its_\n_Effects on Components and Systems (RADECS)_, 2016, pp. 1–5, doi:\n[10.1109/RADECS.2016.8093218.](https://doi.org/10.1109/RADECS.2016.8093218)\n\n[13] P. Carniti _et al._, “ALDO2, a multi-function rad-hard linear regulator for\nSiPM-based HEP detectors,” _Nucl. Instrum. Meth. A_, vol. 1039, p. 167028,\n[2022, doi: 10.1016/j.nima.2022.167028.](https://doi.org/10.1016/j.nima.2022.167028)\n\n[14] A.-J. Annema, “Low-power bandgap references featuring DTMOSTs,”\n_IEEE Journal of Solid-State Circuits_, vol. 34, no. 7, pp. 949–955, 1999,\n[doi: 10.1109/4.772409.](https://doi.org/10.1109/4.772409)\n\n[15] M. Pertijs _et al._, “A CMOS smart temperature sensor with a 3 _𝜎_ inaccuracy\nof ±0 _._ 1 [◦] C from −50 [◦] C to 125 [◦] C,” _IEEE Journal of Solid-State Circuits_,\n[vol. 40, no. 12, pp. 2805–2815, 2005, doi: 10.1109/JSSC.2005.858476.](https://doi.org/10.1109/JSSC.2005.858476)\n\n[16] M. Standke, “Characterization of the Joined ATLAS and CMS RD53A\nPixel Chip,” Master’s thesis, Bonn Univ., 2019, CERN-THESIS-2019-340.\n\n[[Online]. Available: https://cds.cern.ch/record/2717863](https://cds.cern.ch/record/2717863)\n\n[17] P. C. Crepaldi _et al._, “Low-Voltage, Low-Power Vt Independent Voltage\nReference for Bio-Implants,” in _Biomedical Engineering_, R. Hudak,\nM. Penhaker, and J. Majernik, Eds. Rijeka: IntechOpen, 2012, ch. 14,\n[doi: 10.5772/39231.](https://doi.org/10.5772/39231)\n\n[18] G. Anelli _et al._, “Radiation tolerant VLSI circuits in standard deep\nsubmicron CMOS technologies for the LHC experiments: practical design\naspects,” _IEEE Transactions on Nuclear Science_, vol. 46, no. 6, pp. 1690–\n[1696, 1999, doi: 10.1109/23.819140.](https://doi.org/10.1109/23.819140)\n\n[19] G.",
+        "score": -6.297397621992796,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8237986270022883,
+        "rerank_score": -9.785892486572266,
+        "matched_nodes": [
+          "II",
+          "The",
+          "LHC",
+          "Upgrade",
+          "CERN",
+          "CMS",
+          "ATLAS"
+        ],
+        "path_nodes": [
+          "II"
+        ],
+        "community_id": "II",
+        "metadata": {
+          "chunk_index": 22,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3795,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736716__2312.08279__Energy_spectra_of_elemental_groups_of_cosmic_rays_with_the_KASCADE_experiment_data_and_mac.md",
+        "title": "2024__recid_2736716__2312.08279__Energy_spectra_of_elemental_groups_of_cosmic_rays_with_the_KASCADE_experiment_data_and_mac",
+        "text": "[2] .\n\n2 The difference from the energy resolution shown in our methodological paper [22] is due to usage of\n\n– 2 –\n\n**Figure 1** : Confusion matrices of the CNN for the different reconstructed energy intervals.\nThe neural network is trained and tested using the QGSJet-II.04 hadronic interaction model.\n\nThe full efficiency of the trigger and reconstruction is reached at _E >_ 10 [15] eV. We use\nthe quality cuts recommended by KASCADE [5]: _θ <_ 18 _[◦]_, ~~�~~ _x_ [2] + _y_ [2] _<_ 91 m, log 10 _N_ _e_ _>_ 4 _._ 8,\n\nlog 10 _N_ _µ_ _>_ 3 _._ 6, and the cut on the shower age set by KCDC: 0 _._ 2 _< s <_ 1 _._ 48 [26], which is\nstricter than the original one (0 _._ 2 _< s <_ 2 _._ 1). We also impose the additional cut on the\nreconstructed event energy _E >_ 10 [15] _[.]_ [15] eV to ensure the stability of the unfolding procedure.\nOverall, we have _∼_ 3 _._ 5 _·_ 10 [6] experimental events in the studied energy range that passed\nthe quality cuts. The entire experimental dataset was divided into the so-called “blind” and\n“unblind” parts in an 80:20 ratio by random partitioning. The “unblind” part was used to\ncheck the correctness of the methods applied in our study [22]. The results for the “blind”\npart are disclosed in this paper. Also, we use a number of MC datasets provided by KCDC,\nthat were simulated with CORSIKA [28] and accounted for the detector response for three\ndifferent post-LHC hadronic interaction models: QGSJet-II.04 [23], EPOS-LHC [24], and\nSibyll 2.3c [25]. For low-energy hadronic interactions ( _E <_ 200 GeV), the FLUKA [29]\nmodel has been used. We have a total of _∼_ 1 _._ 3 _·_ 10 [5], 6 _._ 7 _·_ 10 [4], and 6 _._ 8 _·_ 10 [4] events that have\npassed the quality cuts in the studied energy range for the QGSJet-II.04, EPOS-LHC and\nSibyll 2.3c models, respectively. These MC sets include simulations for five primary particle\ntypes: protons ( _p_ ), helium ( _He_ ), carbon ( _C_ ), silicon ( _Si_ ), and iron ( _Fe_ ). In Ref. [22], we\nused MC based on the QGSJet-II.04 hadronic interaction model as a baseline, in line with\nthe original KASCADE research [7] based on the QGSJet-II.02 model [27]. The results for\nEPOS-LHC and Sibyll 2.3c are used for a calculation of the theoretical uncertainty.\n\n**3** **Method and uncertainties**\n\nAll details of our methods and their application are available in our methodological paper [22]. In summary, we built a number of machine learning models to classify primary\nCRs into five groups: _p_, _He_, _C_, _Si_ and",
+        "score": -6.31148811742461,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7864225781845918,
+        "rerank_score": -9.803142547607422,
+        "matched_nodes": [
+          "II",
+          "The",
+          "In",
+          "LHC",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "II"
+        ],
+        "community_id": "II",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3805,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736716__2312.08279__Energy_spectra_of_elemental_groups_of_cosmic_rays_with_the_KASCADE_experiment_data_and_mac.md",
+        "title": "2024__recid_2736716__2312.08279__Energy_spectra_of_elemental_groups_of_cosmic_rays_with_the_KASCADE_experiment_data_and_mac",
+        "text": "umerical tables of our results are presented in Appendix A.\n\n**5** **Discussion and conclusion**\n\nIn this research we have presented the cosmic-ray mass component spectra reconstructed\nwith the specific convolutional neural network method using the KASCADE experiment\narchival data. We have performed the full unfolding analysis and computed all uncertainties\naffecting the reconstruction and unfolding procedures. Also, we have estimated the theoretical uncertainty arising due to differences between post-LHC hadronic interaction models:\nQGSJet-II.04, EPOS-LHC and Sibyll 2.3c. We compared our mass component spectra with\nthe original KASCADE results [7] and with IceTop results [13]. Our all-particle spectrum\nis consistent with the original KASCADE one. However, the observed proton flux is higher\nthan that of the original KASCADE in almost all energy range studied, up to a factor of\n_∼_ 10 at _E_ = 10 PeV, in terms of differential flux. At the same time, the individual mass\ncomponents spectra are mostly in agreement with those of IceTop. We also converted our\nresults to a form of _⟨_ ln _A⟩_ and compared them with those obtained by IceTop [13], TALE [14],\nand LHAASO [15]. Our CNN results are generally in agreement with the three mentioned\nexperiments if we take into account the theoretical uncertainties related to the difference\nbetween the hadronic interaction models. The “basic” systematic uncertainties of our results\nare smaller than those of IceTop and TALE results, and comparable to those of LHAASO\nresults, over the most part of the energy range studied. Finally, we found that the theoretical\nuncertainty is the dominant one in our analysis. However, it is comparable to the uncertainties of the IceTop and TALE results, that do not take into account the difference between\n\nthe hadronic models.\n\nIn the case of the “basic” uncertainties, we have estimated that the significant contributions come from the energy resolution of the different MC mixtures and from the bias of the\nsequential energy and particle type unfoldings. This opens up the possibility of reducing the\n“basic” uncertainties of the analysis by using a more realistic (in terms of mass components)\n\n4 We do not show the estimates of the theoretical uncertainty for these two experiments because they were\nperformed with a different approach than ours and are therefore difficult to compare with our estimate.\n\n– 11 –\n\nand larger Monte Carlo set to accurately account for an energy resolution in different m",
+        "score": -6.759923413847713,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8321891685736079,
+        "rerank_score": -10.498464584350586,
+        "matched_nodes": [
+          "II",
+          "The",
+          "In",
+          "At",
+          "LHC",
+          "We"
+        ],
+        "path_nodes": [
+          "II"
+        ],
+        "community_id": "II",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "II": 1.0,
+      "The": 1.0,
+      "In": 1.0,
+      "IV": 1.0,
+      "At": 1.0,
+      "LHC": 1.0,
+      "Upgrade": 1.0,
+      "De": 1.0
+    },
+    "expanded_nodes": {
+      "II": 1.0,
+      "The": 1.0,
+      "In": 1.0,
+      "IV": 1.0,
+      "At": 1.0,
+      "LHC": 1.0,
+      "Upgrade": 1.0,
+      "De": 1.0,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "CERN": 0.7,
+      "Run": 0.7,
+      "CMS": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "SPS": 0.24499999999999997,
+      "As": 0.24499999999999997,
+      "ATLAS": 0.24499999999999997,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 25,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.924144632183015,
+    "generation_latency_s": 3.702007234096527e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 25.0,
+    "retrieval_latency_s": 4.924144632183015,
+    "generation_latency_s": 3.702007234096527e-07
+  }
+}

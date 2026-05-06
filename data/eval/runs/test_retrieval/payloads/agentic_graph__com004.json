@@ -1,0 +1,401 @@
+{
+  "benchmark": {
+    "query_id": "com004",
+    "query_type": "comparative",
+    "query": "Compare SPADs and linear silicon sensors for LiDAR-like detection.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "SPAD",
+      "LiDAR"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare SPADs and linear silicon sensors for LiDAR-like detection.",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5496,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "ed the most appropriate\nfor particle detector applications [19, 20, 21], and is characterized by an energy bandgap of 3.23\neV. An important characteristic of SiC detectors is the radiation hardness, i.e. the resistance to\ndamage caused by high doses of particle irradiation, where the traversing particles damages the\nlattice mainly by displacing a primary knock-on atom out of its lattice site. For 4H-SiC detectors\nthis process has a much larger energy threshold (≈ 25 eV) compared to the case of silicon (Si)\ndetectors (≈ 15 eV), which makes SiC a good alternative to Si.\n\n2\n\nFigure 1: A sectional view illustrating the internal structure of the prototype SiC device (not to scale).\n\nThe wide bandgap of SiC is also useful, as it significantly reduces the rate of thermal noise.\nSiC devices also present much smaller leakage current with respect to Si detectors [22]. In fact,\nthe reverse current density of SiC p-n junction is expected to be about 3 orders of magnitude\nsmaller than for Si. On the other hand, a particle with a certain energy, ideally converting all its\nenergy to the production of electron-hole pairs, generates about 3 times more charge carriers in Si\n(bandgap 1.12 eV) than in SiC. Detectors based on SiC, therefore, feature lower pulse amplitudes.\nHowever, if we consider applications for the heavy-ion detection, as in the case of the NUMEN\nproject, many primary charge carriers are generated, whose statistical fluctuations are not an\nissue. In addition, SiC detectors maintain a good signal-to-noise ratio at temperatures at which\nSi detectors require external cooling to keep the intrinsic carrier level sufficiently low [23].\nFor time resolution, SiC detectors can profit from the high saturation velocities of the charge\ncarriers (2 x 10 [7] cm/s), which is twice that in Si. Also it is possible to operate the devices at or\nclose to the carrier velocity saturation condition. This is because the breakdown field in SiC is\n3 MV/cm, ten times higher than in Si. The junctions on SiC can hence reach an extremely high\ninternal electric field in the depleted region. Values for the electric field as high as 10 [5] V/cm has\nbeen reached without any junction breakdown or significant increase of the reverse current [24].\nA timing resolution of hundreds of ps has been measured for SiC pixel detectors [25].\nThe radiation hardness of prototype SiC detectors constructed within the SiCILIA project [6]\nwere tested by irradiating them with 60 MeV H [+] at a maximum dose of 2",
+        "score": -2.963632630729675,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.85234375,
+        "rerank_score": -4.687942028045654,
+        "matched_nodes": [
+          "In",
+          "For",
+          "Si",
+          "On",
+          "An",
+          "The"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6754,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "enting a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter, lens height,\nand residual layer thickness. MLAs at the wafer level were\ndeposited on SiPM multichannel arrays with 41 _._ 7 _µm_ pixel\nsize from FBK and compared with bare and flat layer coated\ndevices. The performance was measured in the lab by injecting\nmonochromatic narrow normal incident light and in a fibre\ntracker module with high energetic particles. The results are\npresented in detail as a function of wavelength and ∆ _V_ for the\nlaboratory measurement and as a function of injection distance\nand ∆ _V_ for the SciFi measurement.\nIn summary, at ∆ _V_ = 2 _V_, an increase of 22% is observed\nfor the narrow normal light source and 17% at ∆ _V_ = 8 _V_ .\nFor the SciFi light source, the increase is 22 _._ 5% and 20 _._ 5%\nat ∆ _V_ = 2 _V_ and ∆ _V_ = 6 _V_, respectively. These values\ncorrespond to an overestimation of 10 _−_ 15% by simulation.\nAs the implementation depends on the precise alignment of\nthe MLA and the silicon structure as well as on the optical\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 8\n\nparameters of the implementation, the results of simulation\nand measurements can be considered in good agreement.\nIn addition to the higher PDE, MLA-enhanced detectors also\nshow a reduction of 40% of external cross-talk compared to\na flat coated detector. An improvement in timing performance\nin SPTR is expected due to the partial masking of the border\nregion (deflection of the photons towards the pixel centre by\nthe lens), which was reported in other works and seen in\npreliminary measurements in our lab.\nThe optical transparency of the less than 50 _µm_ thick\nMLA layer, in a wavelength range between 350 _nm_ and\n700 _nm_, was measured before and after irradiation. No\nmeasurable change was observed with a neutron equivalent\nfluence of the expected radiation level in the LHCb upgrade\n2 (3 _._ 0 _×_ 10 [12] 1 MeV n eq _/_ cm [2] ) and an ionising dose of\n1 _kGy_ . Further improvements by adding an anti-reflecting\ncoating (ARC) to the polymer surfaces of the MLA can\npotentially decrease the Fresnel reflection loss. A prototype\nwith optimised coating for the emission spectral range of\nthe SciFi light source is foreseen. For low ∆ _V_ = 2 _V_,\nthe prospects of MLA enhanced SiPMs with SciFi tr",
+        "score": -4.161408422088623,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.77265625,
+        "rerank_score": -6.518659591674805,
+        "matched_nodes": [
+          "In",
+          "For",
+          "On",
+          "An",
+          "The",
+          "SCIENCE",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "t detectors in CE _ν_ NS exper\n\nASN oscillation parameters.\n\n**B.** **With Different Masses of the Detector**\n\n9\n\niment exhibit a mass advantage of one order of magnitude,\nassuming that measurements of eV-scale recoil thresholds are\nfeasible and a signal-to-background ratio of about 1 can be\nachieved in the experiment [60]. Figure 5 shows the ASN\nmixing sensitivity in sin [2] 2 _θ_ 14 – ∆ _m_ [2] 41 [plane at 95][%][ C.L. for]\nan exposure of 1 yr for different mass of the detector. Figure 5(a) shows for Si detector and Fig. 5(b) for Ge detector,\nboth with masses 10 kg, 50 kg, and 100 kg. It can be noted\nhere that, sensitivities are extracted considering a threshold of\n100 eV and 20 eV for silicon and germanium detector, respectively. At a given detector mass at higher ∆ _m_ [2] 41 [the sensitivity]\nin sin [2] 2 _θ_ 14 is more as compared to lower ∆ _m_ [2] 41 [. The sensi-]\ntivity improves in all regions of sin [2] 2 _θ_ 14 with an increase in\ndetector mass as the number of expected events increases. It\nis evident that the Ge detector excludes both allowed regions\nof the GALLIUM experiment.\n\n**C.** **With Various Detector Thresholds**\n\nAs previously discussed, the recoil energy of nuclei decreases as the mass number of the detector increases. There\nfore, detectors with low thresholds, such as Ge and Si can\nperform nuclear recoil discrimination down to the eV scale\nenergy threshold. Such detectors will be more useful if we\ncan observe the recoil energies as low as a few tens of eV. In\nthe context of CE _ν_ NS cross-section, as given in Eq. 1, the nuclear recoil energy _T_ serves as the relevant observable. For\na given neutrino energy, there is a limit to the maximum recoil energy. The cross-section is maximum for lower values of\n_T_, therefore, the total number of observed event rate sensitivity dependent on the low-energy threshold for nuclear recoil\n_T_ _min_ . A comprehensive study has been performed to assess\nthe impact of detector threshold on ASN mixing sensitivity,\nconsidering both Si and Ge detectors with a mass of 10 kg\nplaced at a distance of 4 m from U-Apsara reactor core. Figure 6 shows the sensitivity in sin [2] 2 _θ_ 14 –∆ _m_ [2] 41 [plane at 95][ %]\nC.L for detector with different threshold energies. The sensitivity of the detector at lower ∆ _m_ [2] 41 [is better at the lower de-]\ntector threshold. However, for ∆ _m_ [2] 41 _[≥]_ [1] _[.]_ [0] _[ eV]_ [ 2] [, the detector]\nthreshold has minimal impact on ASN mixing sensitivity.\n\nFIG. 7: The",
+        "score": -4.299231954002381,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.80546875,
+        "rerank_score": -6.735642910003662,
+        "matched_nodes": [
+          "In",
+          "For",
+          "Si",
+          "NS",
+          "The",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2962,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2701118__2309.12243__Electrical_operation_of_hole_spin_qubits_in_planar_MOS_silicon_quantum_dots.md",
+        "title": "2024__recid_2701118__2309.12243__Electrical_operation_of_hole_spin_qubits_in_planar_MOS_silicon_quantum_dots",
+        "text": "ined**\n**germanium hole system** . The strained germanium quantum well is grown epitaxially on a strain-relaxed SiGe layer.\nThe portion of the silicon in SiGe can be tuned experimentally, therefore, the axial strain can be controlled. Gate B2\nand T1 can control the inter-dot tunneling. In this picture,\nwe set the growth direction to be along ˆ _z_ -direction.\n\n_H_ LKBP ) intermix the heavy-hole and light-hole states.\nFor silicon hole quantum dots based on metal-oxidesemiconductor platforms, strain naturally develops in\nthe device due to the differences in the thermal contraction between metal electrodes and the silicon substrate. While strain engineering is a common practice\nin the classical electronics industry, academic research\ninto quantum dots has not been focused on this aspect thus far, except for the occasional consideration on\nchoices of material stacks [229]. In the case of germanium\nhole spin qubits based on a homogeneous uni-axial strain\nstrained germanium quantum well in a SiGe/Ge/SiGe\nheterostructure, strain can be meticulously controlled.\nThe substrate includes a fully strain-relaxed SiGe layer.\nThe middle of the heterostructure comprises an epitaxially grown layer of strained germanium, hosting the hole\nqubit, and another layer of relaxed SiGe atop the Ge\nlayer. The concentration of Si atoms in Si _x_ Ge 1 _−x_, represented by the component fraction factor _x_, also determines the strain in the pure Ge layer via Vegard’s law.\nTo quantitatively compare the strain in the silicon and\nthe germanium hole spin qubit devices, we use typical\nparameters as listed in Ref. [156]. For instance, if the relaxed SiGe layer is Si 0 _._ 25 Ge 0 _._ 75, ( _x_ = 0.25) the axial compressive strain will be _ϵ_ _xx_ =- 0.001, which is _∼_ 5 times\nlarger than the strain present in the silicon metal-oxidesemiconductor quantum dot. In Table. II, we summarize\nvarious typical configurations, including strains, top gate\nfields, magnetic fields, and geometries to reach the optimal operation points in different materials. We notice\nthat the parameters used to fit experimental data, such\nas the dot geometry, shear strain, and axial strain, are\nestimates. It is crucial to include the non-uniform strain\nfrom the gate electrodes, as shown in Ref.[135]. For more\nprecise results, direct strain profilling as in Ref. [230], or\ndevice-specific modelling can be employed. Strain will be\nthoroughly investigated in future works. In this context,\nwe note that we do not anticipate str",
+        "score": -4.9601197399139405,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7585937500000001,
+        "rerank_score": -7.745326042175293,
+        "matched_nodes": [
+          "In",
+          "For",
+          "Si",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 20,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2228,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669055__2306.09220__Grating_Design_Methodology_for_Tailored_Free-Space_Beam-Forming.md",
+        "title": "2024__recid_2669055__2306.09220__Grating_Design_Methodology_for_Tailored_Free-Space_Beam-Forming",
+        "text": "t\nvisually indistinguishable. Predicted transverse focal positions are indicated as\nvertical red lines, and longitudinal emission from 2D simulation (blue, dotted)\nalso shows strong agreement with the final results. With 732 nm light, the\nSi 3 N 4 outcouplers were designed to focus emission at _θ_ 0 = 25 _[◦]_ to 1.5 μm\nwaists. Design/simulation included no silicon substrate and a minimum feature\nsize of 36 nm. Longitudinal truncation parameters set to _χ_ 1 = _χ_ 2 = 1 _._ 52, the\ntaper start _x_ t = _−_ 10 μm. Waists are extracted from Gaussian fits at slices of\nconstant height, with the longitudinal values corrected by a factor of cos( _θ_ 0 )\nto correspond to the _x_ _[′]_ axis orthogonal to the beam.\n\npresent results including micron-scale backward- and forwardfocusing and examine the influence of various design considerations such as fabrication limits, emission angles in the presence of substrate back-reflection, and truncation parameters.\nWe then describe and demonstrate the generation of HermiteGaussian modes and tightly focused Laguerre-Gaussian vortex\nbeams of different orders.\n\n_A. Focal shift and non-Gaussian profiles_\n\nFor simplicity in investigating the focal shift’s relationship\nto taper angle, we designed devices for an altered material\nstack (1) omitting the back-reflecting substrate and (2) including minimal fabrication limitations ( _DC >_ 0 _._ 1, or a minimum\nfeature size of 36 nm). An outcoupler was designed in Si 3 N 4 to\nfocus 732 nm light emitted at _θ_ 0 = 25 _[◦]_ to _w_ 0 _x_ _′_ = _w_ 0 _y_ _′_ = 1 _._ 5\nμm at a height of _z_ 0 = 76 _._ 5 μm (70 μm above the surface).\nThe designed focal position includes no offsets ( _z_ 0 _[′]_ _x/y_ [= 0][),]\nand the initial taper angle is set to _γ_ 0 _≈_ 22 _[◦]_ . In Fig. 7 we\ncompare the resulting emission from this outcoupler to that\nfrom variants with the taper further expanded by 3 _[◦]_ and 6 _[◦]_ .\nThe results confirm that the theory of the previous section\naccurately predicts both the transverse focal shift and its variation with the taper angle, decreasing as the effective transverse\naperture expands (Fig. 7). Increasing the taper angle had\nnegligible impact on the overall efficiency of the devices, while\nslight distortions in transverse profile explain the narrowing\nobserved in the focused waists in alignment with expectations\nfrom such non-Gaussian profiles [32]. Profile distortions limit\nthe extent to which taper angle can be increased to mitigate\nfocal shifts, so our designs",
+        "score": -5.121569271469117,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.80546875,
+        "rerank_score": -8.000777244567871,
+        "matched_nodes": [
+          "In",
+          "For",
+          "Si",
+          "An",
+          "The",
+          "We"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1588,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2705261__2310.00585__Quantum_generative_adversarial_learning_in_photonics.md",
+        "title": "2023__recid_2705261__2310.00585__Quantum_generative_adversarial_learning_in_photonics",
+        "text": "0\n\n0\n0.975 0.980 0.985 0.990 0.995 1.000\n\nFidelity\n\n300\n\n200\n\n100\n\n0\n0.975 0.980 0.985 0.990 0.995 1.000\n\nFidelity\n\n**Fig. S8.** Histograms of the measured classical fidelities for 1000 Haar-randomly generated 4-dimensional unitary operations implemented in universal linear optical circuits of (a) signal photon and (b) idler photon.\n\nAn arbitrary 4-mode unitary transformation can be implemented with the universal linear optical circuits as described in Fig. S2.\nTwo copies of the same universal linear optical circuits are fabricated on our chip. To showcase their performance, we programmed\neach universal linear optical circuit to implement 1000 Haar-randomly generated 4-dimensional unitary operations with the input\nstate as [ 0.5, 0.5, 0.5, 0.5 ] [T] . We measure the output optical intensity distribution for each circuit. The classical fidelity _F_ _c_ between the\nexperimentally obtained distribution and the theoretical result is defined as\n\n4\n_F_ _c_ [ _[⃗]_ _P_ th, _[⃗]_ _P_ exp ] = ∑\n_i_ = 1\n\n�\n\n_P_ th,i _P_ exp,i, (S16)\n\nwhere _[⃗]_ _P_ th and _[⃗]_ _P_ exp represent the theoretical and experimental output optical distribution vector, respectively. The statistical fidelities\nfor the signal photon circuit and the idler photon circuit are as high as 99.71 _±_ 0.22%, 99.51 _±_ 0.36%, respectively. The histograms of\nmeasured fidelities for each circuit are shown in Fig. S8.\n\n**5. NOISE IN CONTROL AND DETECTION OF PHOTONIC CHIPS**\n\n**A. Phase noise**\n\nOn-chip phase shifters are essential components in quantum photonic circuits, enabling precise control and manipulation of the on-chip\nphase of photons [ 15 ]. However, these phase shifters are susceptible to various noise sources that can degrade their performance and\nimpact the overall quantum operations of the chip. We will discuss some crucial noise sources that affect on-chip phase shifters.\n\n_**A.1. Thermal crosstalk**_\n\nOur on-chip phase shifters are implemented using thermo-optic effects, where the refractive index of the waveguide is modulated by\ntemperature. However, the heat crosstalk between adjacent thermo-optical phase shifters and thermal fluctuations inherently affects\nthese modulation mechanisms, leading to phase noise. Thermal noise arises due to random thermal energy fluctuations in the material,\ncausing variations in the refractive index and subsequently introducing phase errors. In our chip, the distance between parallel\nphase shifters is 120 _µ_ m, and the distance between cascaded phase s",
+        "score": -5.4800275005340575,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7585937500000001,
+        "rerank_score": -8.545184135437012,
+        "matched_nodes": [
+          "In",
+          "An",
+          "AND",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 22,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 396,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "ervations are found by detecting ~~_ν_~~ _e_ through the IBD\nprocess. There are several experiments currently proposed or\nplanned to investigate the mixing of active-sterile neutrinos\nusing CE _ν_ NS process [8, 31]. In pursuit of this goal, a feasibility study has been carried out to ascertain the ASN mixing\nsensitivity of various types of detectors by placing them at a\nshort baseline (L _≤_ 30m) through CE _ν_ NS channel.\nThe article is organized as follows. In the subsequent section, a comprehensive description of the detector setup is provided. Antineutrinos production and various types of reactors used in this study are presented in Sec.III. The CE _ν_ NS\nprocess and the underlying detection principle are expounded\nupon in Sec. IV. An estimation of the expected number of\nevents in the detector is presented in Section V. The phenomenon of ASN oscillation at short baseline considering the\n‘3+1’ mixing model is described in Sec. VI. The simulation\nprocedure for incorporation of detector response on coherent\nneutrino discussed in Sec. VII. The sensitivity of the proposed\nexperiment, statistical method on _χ_ [2] estimation considered in\nthis study is discussed in Sec. VIII. The sensitivity to sterile\nneutrino mixing at an exposure of one year is elaborated in\nSec. IX. Finally, in Sec. X, we summarize our observations\nand discuss the implication of this work.\n\n**II.** **DETECTOR SETUP AT CE** _ν_ **NS MEASUREMENT**\n\nFigure 1 shows the conceptual schematic of the detector\nsetup proposed for the measurement of CE _ν_ NS using antineutrinos produced from the reactor. The core detector volume is covered with various shielding materials for reducing\nbackgrounds. The active volume of the detector is placed at\nthe center within a cold copper box that is surrounded by 4\ncm thick plastic scintillator plates for vetoing cosmic muon.\nHigh-density polyethylene(HDPE) sheets of thickness 10 cm\nare placed next to the muon veto detectors for thermalizing the\nfast neutrons. A Lead shielding of 10 cm thickness is added\nto reduce the natural and reactor-generated gamma-rays background. Boronated polyethylene (BP) sheets with 15% boron\ncontent and thickness of 10 cm are positioned at the outer part\nof the setup to attenuate the thermal neutrons. The thickness\nof Lead and BP sheets are chosen considering the previous\nstudy performed for another reactor-based antineutrino experiment using the ISMRAN detector [32]. To maintain the required low temperature for detector operation,",
+        "score": -5.854547277832031,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7585937500000001,
+        "rerank_score": -9.121368408203125,
+        "matched_nodes": [
+          "In",
+          "An",
+          "NS",
+          "The",
+          "To",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4603,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter.md",
+        "title": "2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter",
+        "text": "the optical budget for the ASE-sourced transmitter and evolution of the rawkey rate and QBER when seeding Alice’ polarization encoder with (b) the ASE-sourced and (c) the Ge-on-Si PIN light source.\n\ndrive to suppress symbol transitions. Before transmitting the photons to Bob, we used an optical attenuator to set the signal\nlaunch power to a mean photon number of μ Q = 0.1 photons/symbol.\n\nAt Bob’s side we manually aligned the polarization of the incoming signal to the axes of our polarization analyzer with a\npolarization controller (PC). The outputs of the polarization analyzer were connected to a pair of free-running InGaAs SPADs\nwith dark count rates of 560 and 525 cts/s. We consecutively measured the received quantum signal in the **H** / **V** and **D** / **A** bases\nand recorded the detection events of the SPADs with a TTM. A real-time QBER evaluation was then performed, which included\n\n|12 0.1<br>10 [kb/s] = Q<br>µ<br>8<br>rate<br>6<br>key<br>4<br>Raw<br>2<br>0<br>-16 -12 -8 -4<br>(a) Relative optica|hν/pulse|\n|---|---|\n|<br>0<br>2<br>4<br>6<br>8<br>10<br>12<br>-16 -12 -8<br>-4<br><br>**Relative optica**<br>**Raw key rate [kb/s]**<br>(a)<br>µQ = 0.1|0<br>4<br>8<br>12 16<br>**l budget****_OB_ [dB]**|\n|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|\n\nframe synchronization with the pre-defined pseudo random bit sequence transmitted by Alice, as well as temporal filtering to\n50% of the symbol period to reduce the dark counts. Additionally, basis sifting was performed during this process.\n\nTo confirm the correct operation of our transmitter and receiver architectures we also performed a classical\n\ncharacterization. For this we replaced the attenuator by an additional EDFA and the SPADs and TTM with balanced receivers\nand a real-time oscilloscope. The carved optical output at Alice ( _Ξ_ ) and the characteristic three-level signals ( _ρ_ ) for the **H** / **V** and\n**D** / **A** bases under 4-state polarization encoding are included in Fig. 3(a).\n\nIn order to assess the performance as a function of the optical budget (OB) between Alice and Bob, defined as the difference\nof the transmitted power level at Alice and the received optical power (ROP) at Bob, we used the ASE seed light for Al",
+        "score": -5.9450329936981205,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7585937500000001,
+        "rerank_score": -9.260577201843262,
+        "matched_nodes": [
+          "In",
+          "For",
+          "Si",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3822,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": "tt criterion involving the transport\nmean free path being equal to lattice spacing, which plays no\nrole in doped semiconductors of interest to us. We also estimate the critical density by considering inhomogeneous density fluctuations induced by long-range Coulomb disorder in\nthe system and compare the result to the AIR critical density.\nSection VIII examines the effect of spin/valley degeneracy on\nthe mobility and the AIR critical density. Finally, we conclude\nand summarize in Section IX.\n\n3\n\nII. MOBILITY AND QUANTUM MOBILITY\n\nIn this section, we apply the Boltzmann transport theory to\ncalculate the mobility and quantum mobility at T = 0 [20, 37–\n42]. The transport mobility is given by µ = eτ/m [⋆], and the\nconductivity is en e µ, where n e is the 2DEG concentration,\nm [⋆] = 0.19 m 0 is the transverse effective mass of an electron\nin Si, m 0 is the free electron mass,\n\nfactor F c (qw) is given by\n\nF c (qw) =\n\n+∞\n\ndzdz [′] |ψ(z)| [2] |ψ(z [′] )| [2] exp(−q|z − z [′] |) . (6)\n\n��\n\n−∞\n\n2\n� �|U (q)| [2] [�], (1)\n\nτ1 [= 4] π [m] ℏ [3][⋆]\n\n2k F\n�\n\n0\n\ndq\n�4k F [2] [−] [q] [2]\n\ndq\n�4k F [2]\n\nq\n� 2k F\n\nq\n� 2k\n\nis the transport scattering rate, and U (q) is the screened potential of a given scattering source. k F = �4πn e /g is the Fermi\n\nwave vector. g = g s g v is the total degeneracy of electrons,\nwhere g s is the spin degeneracy and g v is the valley degeneracy. The quantum mobility is given by µ q = eτ q /m [⋆], where\nthe quantum (single particle) scattering rate reads\n\n1\n= [2][m] [⋆]\nτ q πℏ [3]\n\n2k F\n�\n\n0\n\ndq\n�4k F [2] [−] [q] [2]\n\n�|U (q)| [2] [�] . (2)\n\nIn Eq. (4) we ignore the screening from the top gate. To\ninclude the gate screening, we should add the Coulomb\npotential of the image charges and replace e [−][q] [|] [z][−][z] [′] [|] by\ne [−][q] [|] [z][−][z] [′] [| ] − e [−][q] [|] [2][d] [g] [−][z][−][z] [′] [|][�], where d g = d + d o + w/2 is\n�\nthe distance from the gate to the center of the 2DEG.\n\nIII. DELTA LAYER 2DEG APPROXIMATION\n\nFor simplicity, assuming that the gate is far away d g ≫ d\nand the wavefunction perpendicular to the quantum well has\na delta function profile |ψ(z)| [2] = δ(z), the form factors re2πe [2]\nduce to identities and U 1 (q, z) = κqǫ(q) [e] [−][q][|][z][|] [. In this sec-]\ntion, we disregard the local field correction, thus making the\ndielectric function the RPA form, ǫ(q) = 1 + q T F /q. We will\naddress the effect of form factors and local field correction in\nSection IV, and the effect of gate screening in Section VI. We\nuse",
+        "score": -5.981428854370118,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8679687500000001,
+        "rerank_score": -9.333061218261719,
+        "matched_nodes": [
+          "In",
+          "For",
+          "AND",
+          "The",
+          "We",
+          "To",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4577,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot.md",
+        "title": "2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot",
+        "text": "ltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\n1 [3]\n\n2 _[𝑉]_ [1PE] _[,]_ 2\n\npeak voltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\nbe obtained.\n\n**Figure 6** . An example of 200 waveforms, where the SiPM is operated at 60 V bias voltage, and its signal is\nprocessed by the pre-amplifier. For ease of observation, the amplitude of the synchronized signal from the\n\nlaser is scaled down to 1/40 and the timeline has been shifted.\n\nThe performance of the SiPM is closely related to the overvoltage, where a higher overvoltage\n\nleads to a higher gain but also results in a higher DCR and crosstalk rate, and more afterpulses. To\n\n– 7 –\n\n**Figure 7** . The distribution of the relative trigger time and the signal amplitude of a SiPM operating at 60 V\nbias voltage. The relative trigger time is the relative delay from when the laser signal is triggered, namely\nwhen the leading edge reaches the threshold, to when the SiPM signal is triggered.\n\ninvestigate the impact of overvoltage on SPTR and determine the appropriate operating voltage, we\n\ntest the SPTR of SiPMs at different operating voltages. The test result is shown in figure 8, where\n\nthe breakdown voltage can be obtained by linear fitting using the signal amplitudes at different bias\n\nvoltages. Since the SPTR measurement results vary at different threshold voltages, the best SPTR\n\nresults are obtained by scanning the threshold voltages. It can be observed from this graph that the\n\nSPTR measurement results stabilize at around 200 ps when the overvoltage exceeds 5 V.\n\n**Figure 8** . The signal amplitudes and SPTRs of a SiPM operating at different bias voltages. The breakdown\nvoltage can be found to be about 54 V by linear fitting.\n\nTo demonstrate the improvement of signal path differences by differential output, we conducted\n\nexperiments of a series-parallel SiPM array with two SiPMs in series, as shown in figure 9. We\n\n– 8 –\n\nextended the signal line length between the two SiPMs in series to about 10 cm, resulting in an\n\nexpected time delay of approximately 0.65 ns for the single-ended output signals of the two SiPMs.\n\nThe experiment result of single-ended output shows two distinct peaks for the single photon response\n\nin the relative trigger time, approximately 0.71 ns apart, consistent with expectations. In contrast,\n\nthe differential output result exhibits only one peak, indica",
+        "score": -6.223844496154785,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7585937500000001,
+        "rerank_score": -9.689517974853516,
+        "matched_nodes": [
+          "In",
+          "For",
+          "An",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "For": 1.0,
+      "Si": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "NS": 1.0,
+      "De": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "For": 1.0,
+      "Si": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "NS": 1.0,
+      "De": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "CE": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 20,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 10.405192372389138,
+    "generation_latency_s": 7.096678018569946e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 20.0,
+    "retrieval_latency_s": 10.405192372389138,
+    "generation_latency_s": 7.096678018569946e-07
+  }
+}

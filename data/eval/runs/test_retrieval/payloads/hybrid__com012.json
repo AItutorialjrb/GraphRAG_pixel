@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "com012",
+    "query_type": "comparative",
+    "query": "Compare reranking and graph expansion.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Compare",
+      "reranking",
+      "and",
+      "graph"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare reranking and graph expansion.",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 54,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "the corresponding bits in the status vector are set\nto 1. SP comparisons are not all performed in a single clock\ncycle. On each clock, the load block extracts two subsets of\n16 SPs each from the buffer (Fig. 13). For each SP in the two\nsubsets it also computes the set of coordinates to be matched\nby the neighbours by one-unit additions and subtractions of the\ncoordinates of the SP row and column. The two SP subsets,\ntogether with the coordinates of the neighbours, are passed to\nthe flag block that performs the 16 _×_ 16 comparisons on the two\nsubsets. For each SP of the first subset, the flag block checks\nif the SP row is equal to one of the rows of the SPs in the\nsecond subset or to the row above or below; the same check is\nperformed on columns. If both the row and the column checks\nyield a positive result, the two SPs are flagged as neighbours,\nand the corresponding bits in the status vector are set to 1.\nOn each clock cycle, the load block selects a different pair\nof SP subsets from the buffer sending them to the flag block,\nuntil all possible combinations of 16-SP subsets have been\nchecked. The described architecture allows reusing the same\nlogic resources while updating the SP subsets to be flagged\nat each clock cycle. To perform the comparisons between _n_\n16-SP blocks, _n_ ( _n_ + 1) _/_ 2 clock cycles are needed.\nThe number of parallel comparisons performed for every\nclock cycle is the result of a trade-off between resource usage\nand throughput, and is based on the constraints of its use\nwithin the LHCb experiment.\nAs soon as all comparisons have been completed, the\ncontents of the flagging registers and the status vector are\ncopied to the write block, thus decoupling the flag and write\nprocesses. The write block is responsible for adding the\nisolation flag to the SP words and for sending flagged data\nto the next component, the switch. The data exchange within\nthe read-buffer-load-flag-write pipeline is regulated by backpressure: if a component cannot accept the data of an event\nbecause it is still processing the previous event, the control\nunit keeps the previous component on hold.\nThe decoder block, including flagging and bypass, uses 7%\n\nFig. 14. Block diagram of a 4 to 4 switching unit.\n\nof the logic and 1% of the M20K memories available in an\nArria 10 FPGA.\n\n_F. Switch block_\n\nThe cluster processing chain receives SPs from both sensors\nof a VELO half-module. The switch, placed after the decoder,\narranges SPs by sensor and by isolation flag, f",
+        "score": -5.198885554978342,
+        "dense_score": 0.29849404096603394,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.006443977355957,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4822,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators.md",
+        "title": "2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators",
+        "text": "ts from XENON10 and XENON1T (S2only) as well as on the projections for a background-free 10 kg-yr and 100 kg-yr exposure experiment\nin Fig. 21. The only difference between the various lines labeled by “FF” is the choice of the xenon\nform factor that affects the direct-detection sensitivity, but SRDM flux simulations are the same. We\nsee that the constraints and projections agree generally within a factor of a few. Moreover, in Fig. 21\nwe compare our XENON1T (S2-only) constraint (black solid curve) for SRDM with the result from\nFig. 10 of [43] (blue solid curve with the label “Result 2108.10332”). Ref. [43] features an independent\nsimulation of the SRDM flux, a different xenon form factor (based on the FAC code [86] and also\nused in, e.g., [3, 87]), and an independent analysis of the detector response. We have confirmed that\nthe SRDM fluxes from both groups agree well with each other, and believe that the difference (less\nthan a factor of 3) most likely arises due to the use of a different xenon form factor and/or a different\ntreatment of the XENON1T data. Overall though, the agreement is good.\n\n**D** **Comparison with other silicon form factors**\n\nFor the constraints and projections from silicon-based detectors, we use `QCDark` [57, 58] and correct\nit with the Lindhard dielectric function [59–61] to account for in-medium screening and plasmon\nexcitations, as discussed in Section 2.5.3 and in [46]. We show in this section the impact of the collective\n\n– 33 –\n\n10 [-] [32]\n\n10 [-] [2] 10 [-] [1] 10 [0]\n\nDM mass m χ [MeV]\n\n**Figure 21** . Solar reflection exclusion limits and projections (90% CL) from xenon-based direct-detection\nexperiments for DM coupled to an ultralight dark photon. Using the simulations of the SRDM flux presented\nin this paper, we compare the constraints and projections for three different publicly-available xenon form\nfactors [5, 54, 55]. We also compare the XENON1T (S2-only) bound derived in this paper with the one\nderived in Ref. [43], which uses an independent simulation of the SRDM flux, an independent calculation\nof the xenon form factor (using the FAC package [86]), and an independent analysis of the bound from the\nXENON1T data. The excluded regions shaded in solar colors are from XENON10 [4, 5, 8], and XENON1T\n(S2-only) [14]. The region shaded in light blue on the left is the red giants cooling constraint [68]. For halo\nDM, the excluded region is the combined limit from SENSEI@SNOLAB [22] and SENSEI@MINOS [16]. The\nfreeze-in benchm",
+        "score": -5.23717303398328,
+        "dense_score": null,
+        "bm25_score": 10.203221876982427,
+        "graph_score": 0.0,
+        "rerank_score": -8.064092636108398,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 42,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6329,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes.md",
+        "title": "2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes",
+        "text": "P (Algo-_\n_rithm 2) realizes an exponentially weighted average of past_\n_horizontal message updates, specifically expressed as_\n\nloops, or global communication, thus not introducing any\nsignificant overhead. Therefore, the overall time complexity\nof the proposed algorithms remains _O_ ( _jτN_ ), where _j_ is the\naverage degree of the Tanner graph, and _τ_ is the number of\niterations.\n\nIn terms of space complexity, traditional BP requires storing messages and probability values, resulting in _O_ ( _N_ ) space\nrequirements. Our algorithms only add extra storage space\nto accumulate gradients or maintain exponential weighted\naverages which is proportional to the number of variable\nnodes and does not change the overall space complexity.\nThus, our improved algorithms maintain the same efficiency\nin both time and space as traditional BP, ensuring scalability\nand feasibility for practical implementation.\n\n**IV. SIMULATION RESULTS**\n\nIn all simulations, the criterion for successful decoding is that\nthe error estimate satisfies _E_ [ˆ] _∈_ _ES_, rather than _E_ [ˆ] = _E_\nas in classical information. All cases not meeting the above\ncondition are referred to as _logical errors_ in this article.\nHerein, a _detected error_ refers to _EE_ [ˆ] being anti-commutative\nwith any one stabilizer _EE_ ˆ commutes with all stabilizers, i.e., _S ∈S_ ; an _undetected error_ ˆ _EE ∈_ _N_ implies( _S_ ) _\\S_,\nwhere the result of error correction is a logical operator. Each\ndata point on the experimental curves represents the mean of\nat least 10 [4] simulations.\n\nWithout further specification, our simulations employ a\ndepolarizing channel, where each qubit has an equal probability _p/_ 3 of experiencing Pauli _X_, _Y_, or _Z_ errors, and a\nprobability of 1 _−_ _p_ of no error occurring. Additionally, for\nease of comparison, we adopt the simple noise model which\ndoes not consider measurement errors or error propagation in\nquantum circuits.\n\n_**A. BREAKING THE TRAPPING SETS**_\n\nWe first compare the performance of improved BP on the\ntrapping set shown in Fig. 2. In this example, qubit 1 and\nqubit 2 experience X errors, resulting in an error syndrome\nof [1 _,_ 0 _,_ 1 _,_ 0]. Fig. 3 shows the comparison between the\ntraditional LLR-BP 4 and AdaGrad-BP in Section III-A under\nparallel and serial scheduling, with the maximum iteration\nset to 50 and the _a priori_ probabilities set to 0.01. The hard\ndecision result of the traditional BP oscillates continuously\nbetween all _X_ and all _I_, where",
+        "score": -5.246344605344105,
+        "dense_score": 0.3126220107078552,
+        "bm25_score": 12.855797498323973,
+        "graph_score": 0.0,
+        "rerank_score": -8.088268280029297,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4481,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr.md",
+        "title": "2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr",
+        "text": "qubit p_ _log_ defined below is then plotted and\nused to compare the performance of various codes [7]:\n\n_p_ _log_ = 1 _−_ (1 _−_ _P_ _L_ ( _k, d_ )) [1] _[/kd]_ _._ (7)\n\nHere, _P_ _L_ ( _k, d_ ) is the probability that a logical error happens on at least one of the _k_ logical qubits of an [ _n, k, d_ ]\ncode running for _d_ rounds of stabiliser cycles.\n\n**A.** **Hypergraph product code with a repetition**\n**code**\n\nAs explained in Section II C, one class of codes that is\nparticularly suitable for our architecture are the hypergraph product (HGP) codes constructed with the repetition code as one of the seed codes. Indeed, let us\nsuppose that shuttling is performed in the vertical direction, and that a HGP code is built from a classical\nLDPC code placed in the direction of shuttling, and a\nrepetition code placed in the orthogonal direction. Let\nus first assume that both codes have distance _d_ . It follows that horizontal interactions have length at most 1 in\nthe 2D grid (length of the repetition code’s interactions),\nwhich translates into length _d_ in the linearised 2 _×_ N architecture. Therefore, any ancilla qubit has to interact\nwith data qubits that are at most _d_ increments away, and\ncompared to the surface code, the shuttling distance is\nnot increased. Rather, the only difference with the latter\nis that the data qubit row has to stop more often, as stabilisers may have higher weights, but also as it may not\nbe possible to synchronise the interactions as much as for\nthe surface code (adopting the framework of Section II,\nthe code’s check matrix has more non-zero diagonals).\nTherefore, implementing such HGP code comes at the\ncost of increased idling noise (but not increased shuttling\nnoise). This additional noise can be compensated for if\na _good_ classical code is chosen for the product with the\nrepetition code, as a higher-rate quantum code will be\ngenerated, thereby reducing the qubit overhead.\nIn the following, we study the example of a [234,3,8]\nHGP code. The code is obtained by taking the product of\na classical [17,3,8] LDPC code _H_ 1 (generated randomly\nuntil good parameters were obtained, see Appendix C)\nand a distance-8 repetition code _H_ 2 . To limit the number\nof two-qubit gates, which are expected to be the leading\nsource of noise, we generate _H_ 1 by enforcing two 1’s per\nrow on average, thereby guaranteeing that the stabilisers\nof the quantum code are weight-four on average. This\ncode is more compact than the surface code as it encode",
+        "score": -5.566692801989042,
+        "dense_score": 0.3050273656845093,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.572426795959473,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 32,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5585,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers.md",
+        "title": "2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers",
+        "text": "tiple non-local connections, which can be\ncarried out concurrently on a neutral atom platform.\nGiven a graph _G_ = ( _V, E_ ) that comprises a\nlist of vertices _V_ and edges _E_, the corresponding\ngraph state _|_ Ψ _G_ _⟩_ can be written as\n\n_deph_\n\n\n\n\n (28)\n\n _[,]_\n\n_K_ =\n\n\n\n\n\n\n\n\n1 0 0 0\n0 _√_ 1 _−_ _α_ 0 0\n0 0 _√_ 1 _−_ _α_ 0\n0 0 0 _√_ 1 _−_ _β_\n\nwhere _α_ and _β_ correspond to the probability of\ndecay to a state outside the computational basis\nduring the excitation time. Typically, _α_ and _β_\nhave different values, as they correspond to distinct paths in the process. Notice that _K_ _[†]_ _K ≤_ 1\nand the map is completely positive.\nFor multi-qubit gates, we implement a similar\nnoise model as for the two-qubit gates. Let _Q_ be\nthe set of qubits involved in multi-qubit gate operations, the error during the process is described\nwith a CPTN map that comprises the following\nsingle operator\n\n_,_ (29)\n\n�\n\n_M_ = � _M_ _j_ _M_ _j_ =\n\n_j∈Q_\n\n1 0\n0 _√_ 1 _−_ _α_\n�\n\nwhere _α_ is the leakage probability.\nThe passive qubits undergo free induction decay, characterised by _T_ 1 and _T_ 2 times. The _T_ 1\ntime is fundamentally limited by the vacuum lifetime of each atom, denoted as _T_ _vac_ . This can\nbe approximated using the relationship _T_ 1 =\n_T_ _vac_ _/N_, where _N_ signifies the number of atoms\npresent in the vacuum chamber. This estimation\ncharacterises the _collisional loss_ rate, which corresponds to the rate of collision with untrapped\nbackground atoms; hence, this rate serves as the\nupper bound for _T_ 1 [87]. The _T_ 1 decay is modelled using depolarising noise (Equation (13)),\nwhile the _T_ 2 decay is modelled with dephasing\nnoise (Equation (11)). Both types of noise account for energy loss and information loss resulting from collisions with background atoms.\n\nthat is stabilised by a set of stabilisers\n\n_S_ _G_ = _{X_ _j_ � _Z_ _k_ _| j ∈_ _V },_ (32)\n\n_k∈N_ _G_ ( _j_ )\n\nwhere _N_ _G_ ( _j_ ) is neighborhood of atom _j_ . In\nthe following, we emulate the preparation of two\n\n_|_ Ψ _G_ _⟩_ = �\n\n_CZ_\n\n� _i,j_ �\n\n_{i,j}∈E_ _v∈V_\n\n� _|_ + _⟩_ _v_ (31)\n\n_v∈V_\n\nAccepted in 2024-11-14, click title to verify. Published under CC-BY 4.0. 18\n\n0 ~~1~~ 1 ~~2~~ 2 ~~1~~ 3 ~~2~~ 4 ~~1~~ 5 ~~2~~ 6 ~~1~~ 7 ~~2~~ 8 ~~1~~ 9 ~~2~~ 10 ~~1~~ 11\n\n1\n\n1\n\n1\n\nillustrated in Figure 13b. Here, the logical state\n_|_ + _⟩_ _L_ _≡_ ( _|_ 0 _⟩_ _L_ + _|_ 1 _⟩_ _L_ ) _/√_ 2 is prepared by apply\ning the transversal Hadamard gate to the logical state _|_ 0 _⟩_ _L_, i.e., applying",
+        "score": -5.663949389891191,
+        "dense_score": null,
+        "bm25_score": 10.44970825417948,
+        "graph_score": 0.0,
+        "rerank_score": -8.7207612991333,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 37,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7859,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors.md",
+        "title": "2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors",
+        "text": "2018.\nTime-over-threshold (ToT) readouts measure the time difference between\nthe leading and trailing edges of a signal, typically the logic signal output of\na discriminator. This methodology significantly reduces the required buffer\nsize, circuit complexity, and power consumption, thereby improving circuit\nintegration and counting rates. The main drawbacks of ToT systems are\nthe degradation of energy resolution, dynamic range, and linearity [2]. ToT\nsystems for measuring particle energy have been implemented in ApplicationSpecific Integrated Circuits (ASICs) [3, 4, 5].\nThere are different approaches to implementing the analog signal discrimination required for ToT measurement. One approach is to compare the\ndetector pulse signal with a constant threshold and another one is to compare\nit a dynamic threshold [6]. A third approach is to hold the maximum pulse\namplitude and compare it with a dynamic threshold [4, 7], as shown in Fig.\n1. However, these approaches have drawbacks, such as implementation complexity, power consumption per channel, nonlinearities, and limited detection\n\n2\n\nrate capacity. Table 1 summarizes the characteristics of ToT methods.\n\na) b)\n\n|c)|Col2|Col3|\n|---|---|---|\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|S1<br>S2<br>ToT1<br>ToT2<br>c)||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n\nFigure 1: Different approaches to time-over-threshold measurement: (a) ToT based on\nconstant threshold comparison, (b) ToT based on dynamic threshold, (c) ToT based on\npeak holding/dynamic threshold, and (d) ToT based on pulse trailing edge linearization.\n\n**ToT method** **Linearity** **Range** **Power consumption** **Counting rate**\nconstant threshold low low low high\ndynamic threshold medium medium medium medium\nD&H + dynamic th. high high high low\nTrailing edge shaping high medium low high\n\nTable 1: Characteristics of different ToT methods.\n\nIn this work, we present a simple signal shaping method that improves the\nToT determination and features good linearity, a large bandwidth, low power\nconsumption, and high integrability. We characterized the ToT method was\nunder controlled conditions and tested it in the DiRICH readout system of\nthe Ring Cherenkov detector of the Compressed Baryonic Matter experiment\nat FAIR [8].\n\n**2. Pulse trailing edge linearization**\n\nThe fundamental problem with single-threshold ToT converters in photosensor r",
+        "score": -5.756359014631827,
+        "dense_score": null,
+        "bm25_score": 10.146629311615731,
+        "graph_score": 0.0,
+        "rerank_score": -8.862752914428711,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 553,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2649676__2304.02944__Design_and_performance_testing_of_a_T0_detector_for_the_CSR_External-target_Experiment.md",
+        "title": "2023__recid_2649676__2304.02944__Design_and_performance_testing_of_a_T0_detector_for_the_CSR_External-target_Experiment",
+        "text": "ill not be the best _T_ _ref_ estimation. For this reason, the weighted\nmean of timing is introduced to determine _T_ _ref_ . The weighting factor for each\n\n7\n\n(a) (b)\n\nFigure 6: Simulated single-channel time resolution and system time resolution of T0 detector\n\nSiPM was _w_ 1 = 1 _/σ_ 1 [2] [,] _[ w]_ [2] [= 1] _[/σ]_ 2 [2] [, ...,] _[ w]_ [32] [= 1] _[/σ]_ 32 [2] [respectively, where] _[ σ]_ [1] [,] _[ σ]_ [2] [,]\n..., _σ_ 32 represent the timing jitter of each SiPM. The timing of T0 system using\nthe weighted mean method can be calculated as\n\n32\n�\n\n32\n�\n\n� _w_ _i_ ) (4)\n\n_i_ =1\n\n_T_ _refcor_ 2 = (\n\n� _w_ _i_ _t_ _i_ ) _/_ (\n\n_i_ =1\n\n(a) (b) (c)\n\nFigure 7: The reference time of T0 using the weighted mean method\n\nFig. 7 shows the time distribution of the T0 system using the weighted mean\nmethod, where graph (a) and (b) represent the average time of 16 SiPMs on each\nside, respectively, while graph (c) represents _T_ _refcor_ 2 according to Equation 4.\nWhen the beam crosses the center of T0, the weighted mean method does not\nshow significant improvement in timing compared to the simple average method\n(Equation 3). The reason is that although the NPEs received by different SiPMs\nare different, they are large enough so that, the timing of SiPM does not change\n\n8\n\nmuch. Therefore, Equations 3 and 4 give similar results. However, if the beam\ncrossing point is far away from the center of the T0 detector, the results of\ndifferent algorithms will show distinct differences, which will be described in\nlater chapters.\n\n**4. Radiation resistance**\n\nWhen the heavy-ion beam passes through the plastic scintillator, a large\namount of energy is deposited, which inevitably causes radiation damage to\nthe plastic scintillator. Moreover, its performance decreases after long-term\nuse. Therefore, it is necessary to study the irradiation performance of the T0\ndetector and evaluate its service life. Chong et al. [14] studied the irradiation\nperformance of an EJ-200 plastic scintillator. It is shown that when the radiation\ndose exceeded 1 _._ 44 _×_ 10 [4] Gy, the transmission spectrum deteriorated, and the\nlight output decreased rapidly. The maximum service life of the scintillator\ncan be calculated using 1 _._ 44 _×_ 10 [4] Gy as the upper limit of the radiation dose.\nAccording to Geant4 simulation, when 600 MeV/u [12] C beam and 500 MeV/u\n238 U beam passed through the EJ-200 plastic scintillators with thicknesses of 5\nmm and 0.8 mm, the average energy depositions were 43.98 MeV a",
+        "score": -5.930235129908512,
+        "dense_score": null,
+        "bm25_score": 10.957298079789638,
+        "graph_score": 0.0,
+        "rerank_score": -9.130523681640625,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1225,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2680732__2307.13965__Towards_a_cosmic_ray_composition_measurement_with_the_IceAct_telescopes_at_the_IceCube_Neu.md",
+        "title": "2023__recid_2680732__2307.13965__Towards_a_cosmic_ray_composition_measurement_with_the_IceAct_telescopes_at_the_IceCube_Neu",
+        "text": "to\n\nbe cleaned. An overall threshold of 15 PE will cut away most of the noise signals, but pixels with\n\nat least two neighboring pixels above 15 PE will be kept if their peak height is higher than 10 PE\n\nand the peak times are within 5 ns. An event overall will be removed if it has less than 3 surviving\n\npixels, or if the ratio of the sum of charges of the inner pixels divided by the sum of charges of the\n\nouter pixels is larger than one, with inner/outer referring to the position on the camera board. This\n\ncleans out the showers which are not mostly contained in the camera.\n\n**4.** **Graph Neural Network reconstruction of air shower properties**\n\nA GNN has been implemented to reconstruct the air shower parameters. A GNN in general\n\nconsists of nodes that contain the event information and edges which define the relationship between\n\n3\n\n_IceAct composition measurement_\n\nthe nodes. Each graph can have a different number of nodes and relationships between the nodes,\n\nbut the structure is constant between events. The GNN has been chosen as machine learning method\n\nsince it can handle a different number of nodes for each event and it is easily expandable to more\n\ntelescopes and other detector types in future analysis. At this point, the GNN uses just a single\n\ntelescope for the reconstruction and reconstructs all values in relation to the telescope position.\n\nFive of the MC datasets (neon is kept for testing only) are used for training and validation of the\n\nGNN, with 50% used for training and the remaining percent ~~age split equally into a valida~~ tion and\n\ntest dataset. Input parameters into the GNN nodes are the h ~~eight and time of the signal p~~ eak in a\n\n**Figure 1:** Left: The average energy reconstruction between 10 [4] _[.]_ [5] GeV and 10 [6] _[.]_ [5] GeV shows a small constant\nbias of about 5% and has a resolution of about 50%. Right: The resolution for the shower maximum\nreconstruction in this energy range has a small constant bias of about 2% and resolution better than 20%.\nThe red dots are the mean values with the corresponding standard deviation.\n\npixel, and the x position and y position of the pixel. The edges of the GNN are constructed in such\n\na way that each pixel knows itself and its neighboring pixel. The GNN structure consists of two\n\nconvolutional layers which are followed by a pooling layer and 4 dense layers. It reconstructs the\nfollowing output variables: the cosmic ray primary energy log 10 ( _𝐺𝑒𝑉𝐸_ [)][, the position of the show",
+        "score": -6.064589267306857,
+        "dense_score": null,
+        "bm25_score": 11.402017736334528,
+        "graph_score": 0.0,
+        "rerank_score": -9.337615966796875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5090,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2784488__2405.04763__Room-temperature_photonic_quantum_computing_in_integrated_silicon_photonics_with_germanium.md",
+        "title": "2024__recid_2784488__2405.04763__Room-temperature_photonic_quantum_computing_in_integrated_silicon_photonics_with_germanium",
+        "text": "DC_ ~ _T_ _g_ 1 1 − _NR_ _DC_ _T_ _G_  1 − _SPDSPD_ \n\n1\n~ 1 − _NR_ _T_\n\n, **(6)**\n\n_F_ = _P_ _success_ ~ 1 − _NR_ _DC_ _T_\n_P_ _NR_ _DC_ _T_ _g_ 1\n\n_P_ _successclick_ _NR_ _DC_ ~ _T_ _g_ 1 1 − _NR_ _DC_ _T_ _G_   _SPDSPD_\n\n_DC_ _g_\n\n1\n\ngiven a good _η_ _SPD_ and negligible _NR_ _DC_ _T_ _G_ . Note that Eq. (6) is identical to Eq. (4). In the\nfollowing, we shall apply these figures of merit to compare the performance between GeSi\nSPAD and SNSPD for PQC.\n\n_4.3 Comparison between GeSi SPAD and SNSPD for PQC_\n\nThe following parameter values are used for comparing GeSi SPAD at 300 K and SNSPD at 4\nK. For the case of GeSi SPAD at 300 K, SPDE is assumed to be 95 % and DCR is assumed to\nbe 1.6 MHz based on the above simulations and calculations, considering 100 % avalanche\ntrigger probability at 2 V excess bias. For the case of SNSPD at 4 K, SPDE is assumed to be\n91 % and DCR is assumed to be 5886 Hz based on Ref. 12. In both cases _T_ _G_ is assumed to be\n1 ns, which can be easily generated by high-speed electronics and larger than the TJs of GeSi\nSPAD at 300 K and SNSPD at 4 K that are usually between tens to hundreds of picoseconds.\n\nFor the scheme of photon-based PQC, in Fig. 6(a) and 6(b), the success probability and the\nfidelity of photon detection considering 300 K GeSi SPAD are respectively plotted as a function\nof _M_ waveguides and _N_ photons. In Fig. 6(c) and 6(d), the difference in the success probabilities\nand the difference in the fidelities of photon detection considering 300 K GeSi SPAD and 4 K\nSNSPD are respectively plotted as a function of _M_ waveguides and _N_ photons. By inspecting\n6(c) and Fig. 6(d), it is observed that the success probability of 300 K GeSi SPAD is a few\npercents (e.g., 4 % when _N_ =1) higher than that of 4 K SNSPD due to the assumed SPDEs, and\nthe fidelity of 300 K GeSi SPAD is 0.0084 % lower than that of 4 K SNSPD. Note that it is\nexpected that the success probabilities shown in Fig. 6(a) go up when _M_ is much larger than _N_,\ndue to the reduced probability of finding more than one excitation in each waveguide SPD. For\n\nthe scheme of qubit-based PQC, in Fig. 7(a), the success probability and the fidelity of qubit\ndetection considering 300 K GeSi SPAD are respectively plotted as a function of _N_ qubits. In\nFig. 7(b), the difference in the success probabilities and the difference in the fidelities of qubit\ndetection considering 300 K GeSi SPAD and 4 K SNSPD are respectively plotted as a function\nof _N_ qubits.",
+        "score": -6.181959880237848,
+        "dense_score": 0.26076027750968933,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.518291473388672,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5584,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers.md",
+        "title": "2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers",
+        "text": "t-flip error. The parameter _α_ corresponds to the probability of a phase flip occurring during the gate\nduration _t_ . There is a finite bit-flip error probability which is typically asymmetric, i.e., probability of the event _|_ 0 _⟩�→|_ 1 _⟩_ is not equal to the\nevent _|_ 1 _⟩�→|_ 0 _⟩_ .\nThe realization of the two-qubit _CZ_ ( _ϕ_ ) gate\nutilises the blockade mechanism in highly excited\nRydberg states. The typical error in this mechanism arises from spontaneous emission from Rydberg states, associated with the possibility of the\nsystem decaying to states outside the computational basis. We model this error using a CPTN\nmap consisting of the following single operator:\n\nReconfiguring the atoms (a ‘move’) is accomplished through the manipulation of optical\ntweezers. The move operators constitute operations that modify the atoms’ locations such as\n_SWAPLoc_ and _ShiftLoc_ . The process typically requires a substantial duration in practice, on the\norder of hundreds of microseconds. Additionally,\natoms in motion acquire extra heat – especially\nwhen they are moving fast, resulting in an enhanced dephasing process. The errors acquired\nduring this process constitute the depolarising _T_ 1\ndecay (Equation (13)) and the enhanced dephasing _κT_ 2 -decay to account for the thermal effect,\nnamely,\n\n�\n\n1 _−_ _e_ _[−][κ]_ [∆] _[t]_ _/T_ 2\n\n2\n\n�\n\n_,_ (30)\n\nwhere the factor _κ ≥_ 1 intensifies the decay due\nto the presence of heat. Ideally, _κ_ is affected by\nthe speed and the distance of the moves; for simplicity, we set _κ_ to be a constant.\n\n6.4 Graph state construction and Steane code\npreparation on Neutral Atoms\n\nHere, we replicate a recent neutral atom experiment presented in [14] in our virtual neutral atom\ndevice. The experiment involves the preparation\nof a 1D linear cluster state and a seven-qubit\nSteane code logical state, followed by stabiliser\nmeasurements to benchmark the resulting states.\nBoth of these states are graph states [35], which\ncan be efficiently represented using graphs as illustrated in Figure 13. In these graphs, vertices\ncorrespond to plus states _|_ + _⟩_ := ( _|_ 0 _⟩_ + _|_ 1 _⟩_ ) _/√_ 2,\n\nand edges represent controlled- _Z_ gates. The\npreparation of such states requires the generation\nof multiple non-local connections, which can be\ncarried out concurrently on a neutral atom platform.\nGiven a graph _G_ = ( _V, E_ ) that comprises a\nlist of vertices _V_ and edges _E_, the corresponding\ngraph state _|_ Ψ _G_ _⟩_ can be written as\n\n_deph_",
+        "score": -6.205450057983398,
+        "dense_score": null,
+        "bm25_score": 12.95609693785805,
+        "graph_score": 0.0,
+        "rerank_score": -9.555259704589844,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 36,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.708643632009625,
+    "generation_latency_s": 3.1990930438041687e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.708643632009625,
+    "generation_latency_s": 3.1990930438041687e-07
+  }
+}

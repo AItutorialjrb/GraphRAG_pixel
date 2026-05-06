@@ -1,0 +1,277 @@
+{
+  "benchmark": {
+    "query_id": "neg007",
+    "query_type": "negative",
+    "query": "What is the clinical dose recommendation for a patient from this detector corpus?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "clinical"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the clinical dose recommendation for a patient from this detector corpus?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 3398,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science.md",
+        "title": "2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science",
+        "text": "_ [2] ). Many different methods are used traditionally for dose measurements in cancer treatment, starting from ion chambers\nused in hospitals. Many new methods exist that can measure the radiation dose\ninformation in vivo on patients with Cerenkov or radiation induced acoustic\n\n5\n\nimaging. We choose to concentrate on UFSDs since we want to use these detectors for flash beam therapy where the beam intensity is large. We thus need a\nfast detector that allows to count the number of particles (protons or electrons)\nthat go across and that is also radiation hard.\nWe put our LGAD silicon detectors and readout system in an ELEKTATM\nPrecise Linac electron beam, with a pulse length of about 3.2 _µ_ s long. This\nmachine was used in the past for photon therapy at St Luke Hospital, Dublin,\nIreland [7]. Each pulse sequence contains thousands of 30 ps sub-pulses separated by 350 ps (with a frequency of 2.858 GHz). The electron beam has an\nenergy between 4 and 18 MeV, with dose rates up to 600MU/min, and pulse\nrepetition frequency of 200 Hz. Our LGAD detector was mounted on a moving\nsupport to provide the monitoring of the beam as a function of its location. A\nNeodymium N40 permanent magnet was located 12 cm below the collimator\nto separate the charged and neutral particles from the beam. Using the good\ntiming resolution of LGADs and the short duration of the signal, we were able\nto trigger and count on the particles entering our detectors as shown in Fig. 6.\nWe can see that we can count with high precision the number of particles that\nare identified as spikes in the LGAD.\nThe measurement of the charge deposited in the LGAD detector compared\nto standard measurement using an ion chamber is shown in Fig. 7, left. A very\ngood correlation is found between both measurements. This shows that we are\nable to reproduce the dose measurement from the ion chamber. In Fig. 7, right,\nwe also display the comparison between the LGAD and ion chamber results as a\nfunction of distance from the center of the beam. We see a very good agreement\nexcept at low distances. This is due to the lower efficiencies of LGADs to photons\nthat represent the majority of particles going straight, whereas the electrons\nare bent by the magnet and thus appear at larger distances. In addition, the\nLGAD detectors allow to measure the beam structure as shown in Fig. 8 for\nthe first time at the Dublin hospital. The good timing resolution of LGADs of\n15 to 20 picoseconds allow to see the periodicity of the beam of",
+        "score": -2.524773590877408,
+        "dense_score": 0.5547298192977905,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.893094301223755,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7823,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2947501__2507.11593__Characterizing_the_delivered_spill_structure_of_medical_proton_and_carbon-ion_beams_at_Med.md",
+        "title": "2026__recid_2947501__2507.11593__Characterizing_the_delivered_spill_structure_of_medical_proton_and_carbon-ion_beams_at_Med",
+        "text": "her precision tumor targeting using ion imaging [3] as well as the adoption of microdosimetry [4] into clinical routines for improved\ndose control. Further, medical accelerators provide a testing platform for several research areas, including detector\ndevelopment for particle physics [5] and radiation studies on space electronics [6]. All these applications rely on\nthe effects of single particles and thus require precise knowledge of the exact spill characteristics at single-particle\nresolution.\n\nTraditionally, in medical accelerator facilities, dosimetry with single-particle precision is not required and challenging to implement at common clinical particle rates up to 10 [10] s [−][1] [7]. Since reliability and durability of the\nequipment are the highest priority, beam monitoring is typically performed using gas-filled ionization chambers to\nmeasure the beam intensity [8], while segmented ionization chambers are employed to monitor the beam spot position\nand lateral profile [9]. These systems are designed to measure the macroscopic dose delivered during treatment in\naccordance with medical specifications, but lack the precision and speed required for certain experiments. The limited\nsensitivity of ionization chambers—requiring a minimum charge deposition of several 100 fC [10]—combined with\nlong charge collection times on the order of 100 µs [11], makes them unsuitable for measurements with high temporal\n\n∗ Corresponding author\n_Email address:_ `matthias.knopf@tuwien.ac.at` (Matthias Knopf )\n\nresolution, single-particle detection, or low-intensity beam monitoring [12]. To meet the demand for higher timing\nand charge resolution, alternative systems based on solid-state detectors have been proposed [13, 14]. Solid-state\nparticle sensors offer single particle sensitivity paired with short charge collection times (< 1 ns) and can be finely\nsegmented into pixel or strip sensors. Traditionally, silicon is employed as a sensor material. However, concerns\nabout radiation damage and temperature stability warrant the search for novel detector materials. Silicon carbide\n(SiC) is a wide-bandgap semiconductor, which has recently gained renewed interest as a detector material for applications in future particle physics experiments, fusion research, and space applications [15]. With a bandgap of 3.26 eV,\nSiC devices exhibit very low dark currents compared to silicon detectors. This remains true even after exposure to\nhigh radiation fluences, hinting at a superior radiat",
+        "score": -2.8913160827424793,
+        "dense_score": 0.5379873514175415,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.456725597381592,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8294,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3073914__2510.21907__Evaluation_of_SiC_detector_performances_for_energy_and_timing_measurements.md",
+        "title": "2026__recid_3073914__2510.21907__Evaluation_of_SiC_detector_performances_for_energy_and_timing_measurements",
+        "text": "lley, addressing important topics such as probing of nuclear structure, clustering, isospin physics and collective modes, and\n\n2\n\nto explore the study of reactions cross-sections of astrophysical interest involving unstable nuclei (as the r- process) [5, 6, 7].\nAdditional interest stems from medical physics and the potential development of SiC-based dosimeters, micro-dosimeters, and beam monitors [8].\nThese devices enhance clinical radiation therapy by enabling precise dose\nmeasurements, crucial for effective treatment and patient safety. Additionally, their high radiation hardness makes them suitable for new techniqueslike the FLASH radiotherapy [8]. In this medical context, RIBs also offer\ninnovative possibilities for targeted cancer therapy [9, 10, 11]. Hadronterapy,\nas proton therapy, benefits from the Bragg peak effect, ensuring a favorable\ndepth-dose distribution in tissue [11], and even more, therapy with accelerated [12] C-ions, adds biological advantages. In contrast, particle therapy is\nmore sensitive to uncertainties in the beam range than conventional X-ray\ntherapy. To address this, techniques such as positron emission tomography\n(PET) detect _β_ [+] -emitted by isotopes like [11] C and [10] C, formed via [12] C beam\nfragmentation in the patient’s body. However, PET with [12] C ions remains\nlimited in reducing range uncertainties to the desired levels, due to the relatively low production rate of _β_ emitters. A promising alternative is the use\nof RIBs, such as [11] C, which could enhance the treatment efficacy [9]. Despite\ntheir potential, RIB-based therapies require advanced production facilities,\nspecialized detectors for event-by-event ion characterization, and further clinical studies to optimize therapeutic protocols.\nWithin this framework, new worldwide facilities are in construction or in\nupgrading to produce high-intensity RIBs [5, 6, 7, 12, 13, 14, 15, 16, 17],\ngiving an important boost to perform medical investigations as well as for\nthe future of nuclear physics.\nIn this context, many efforts have been made aiming at developing newgeneration SiC detection systems [2, 4, 5, 18]. The final goal of our project\nis to develop an array of SiC devices, able to operate in harsh environments\nwith RIBs and capable to measure energy and time, with a resolution of 1%\nand better than _σ_ _t_ _≈_ 100 ps, respectively. A high timing resolution for SiC\ndetectors (117 _±_ 11 ps FWHM) has been already measured in ref. [19], using\nsmall size pixel det",
+        "score": -3.521239262411039,
+        "dense_score": 0.4582955837249756,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.4246673583984375,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3399,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science.md",
+        "title": "2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science",
+        "text": "arger distances. In addition, the\nLGAD detectors allow to measure the beam structure as shown in Fig. 8 for\nthe first time at the Dublin hospital. The good timing resolution of LGADs of\n15 to 20 picoseconds allow to see the periodicity of the beam of about _∼_ 330 ps,\nwhich is not possible using an ion chamber with an integration time of a few\nseconds. This method allows to measure single particles from the beam, which is\nfundamental to measure instantaneous doses for high intensity proton/electron\ntherapy for instance and to check online the quality of the machine.\nWe recently got a project approved by NIH with the goals of designing and\nbuilding a UFSD dosimetry prototype using the fast sampling method, and of\ntesting this prototype in a proton/electron flash beam facility at the University\nof Kansas and the University of Washington in St Louis. The longer term goals\nwill be to move from a 8/16 channel readout board to a 100 or 1000 channel\nboard that could have direct commercial applications to measure the machine\nquality and doses received by patients in flash beam therapy treatments.\n\n**4. Conclusion**\n\nFast timing and LGAD detectors were originally developed for high energy\nphysics at CERN. We developed at KU a readout electronics card using stan\n\n6\n\nFigure 6: Signal from the UFSD allowing to measure doses almost instantaneously by counting\nthe spikes in signal due to the particles crossing the detector. The bottom plot shows the\nzoomed region in red from the top plot. The red triangles show the particles that lead to a\ntrigger of our detector.\n\nFigure 7: Left: Correlation between the LGAD signal and the ion chamber results that\nshow a good agreement between bothe measurements. The ion chamber can only perform\nmeasurements every few seconds while LGAD has a time resolution of about 20 to 25 ps.\nRight: Comparison between the measurement of LGAD and ion chamber as a function of\ndistance from the beam and we not again a good agreement between both measurements.\n\n7\n\nFigure 8: Beam structure analysis in Dublin hospital using the UFSD detector. It was possible\nto see the beam structure for the first time benefitting from the short signals of UFSDs.\n\ndard components for different applications, the idea being to reconstruct the\nfull spectrum of a given signal using the fast sampling technique. The first application that we discussed is to measure cosmic ray particles (both identify the\ntype of particles and measure their energies) in a cube satellite in coll",
+        "score": -3.9870173589507147,
+        "dense_score": 0.4908900260925293,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.141909599304199,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3393,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science.md",
+        "title": "2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science",
+        "text": "## Fast timing detectors with applications in cosmic ray physics and medical science\n\nC. Royon [a], F. Gautier [1]\n\n_a_ _University of Kansas, Lawrence, USA._\n\n**Abstract**\n\nWe discuss the use of Low Gain Avalanche (LGAD) silicon detectors for two\nspecific applications, namely measuring cosmic rays in space in collaboration\nwith NASA] and beam properties and received doses for patients undergoing\ncancer treatment in flash beam therapy.\n\n_Keywords:_ Time-of-flight, Time precision, Ultra Fast silicon Detectors,\nCharge Sensitive Amplifier, Picosecond Time Measurement\n\n**1. Introduction: LGAD silicon detectors**\n\nIn this report, we will discuss the use of Low Gain Avalanche (LGAD) silicon\ndetectors. These detectors were initially developed for particle timing measurements at the Large Hadron Collider at CERN. We will focus on two specific\napplications for LGAD detectors. The first application involves measuring cosmic rays in space, and this research is conducted in collaboration with NASA.\nThe second application pertains to the measurement of beam properties and\nreceived doses for patients undergoing cancer treatment. This is especially relevant in the context of flash beam therapy.\nIn order to obtain the largest possible signal from a silicon detector, we\nneed large velocity _v_ (which means a fast detector), large fields _E_ _W_ and large\npads to have a uniform field, and lots of charge _q_ following the Ramo’s theorem\n_I ∼_ _qvE_ _w_ . If we want to measure many particles entering in our detector as a\nfunction of time (for instance cosmic rays in space and electron/protons crossing\nour detector during flash beam cancer therapy), it is clear that we need a short\nsignal in order to avoid pile up between different particles. For this sake, we\nchose ultra fast silicon detectors (UFSDs) that seemed more adapted to our\nproblems that lead to typical signal of a few nanoseconds. These detectors are\nalready used at the LHC for instance in the TOTEM experiment in order to\nmeasure the proton time-of-flight with precisions close to 20 ps per layer. They\nwill also be used to measure time-of-flights of all particles (in the central and/or\n\n_Email addresses:_ `christophe.royon@cern.ch` (C. Royon),\n`florian.gautier.borrallo@gmail.com` (F. Gautier)\n\nthe forward parts of the detectors) in the ATLAS and CMS collaborations for\nthe high luminosity LHC [1, 2].\nIn order to measure the signal, the first step is usually to amplify the signal\nusing an amplifier designed at the Univ",
+        "score": -4.103588528951009,
+        "dense_score": 0.45320838689804077,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.320392608642578,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4117,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751331__2401.14300__Amorphous_silicon_detectors_for_proton_beam_monitoring_in_FLASH_radiotherapy.md",
+        "title": "2024__recid_2751331__2401.14300__Amorphous_silicon_detectors_for_proton_beam_monitoring_in_FLASH_radiotherapy",
+        "text": "ed at\nseveral total doses by using short exposure times (of a few seconds), thus\nby varying the average dose rate. After each exposure, a waiting time of\na few tens of seconds was applied to allow the sensor current to reach its\ninitial (beam off) value (within a few percent). The latter was checked\nbefore any new beam exposure. Between these linearity tests, detectors\nwere exposed to long exposure times (up to 30 min) with dose rates up to\na few kGy/s. The sensitivity of the detectors at various total doses and as\na function of time could then be evaluated. Note that, due to the indirect\ncontrol of the dose rate of the proton beam, the range and selected\nvalues for the dose rates were different for all samples and measurement\n\nseries.\n\nAs observed for several samples, the detector response tends to increase as a function of time when the beam is on at high dose rate. This\nobservation will be discussed in section 3.3. To minimize this effect on\nthe measurements, sensor current values were evaluated from a linear fit\nrecorded in a short time window after the beam activation, between 0.5\ns (to let the beam stabilize) and 1.5 s (to avoid a significant increase of\nthe signal – see Fig. 3b). Note that the sensor current saturates after a\nlong time, as observed in Fig. 3a.\n\n**3. Results**\n\n_3.1. Device current as a function of dose rate_\n\nFig. 4 shows the current of a 2 μ m thick n-i-p a-Si:H device on glass as\na function of the dose rate at three different reverse bias voltages. In\nthese plots, the crosses indicate the current measured just after switching on the proton beam (see also section 3.3). Especially at high dose\nrates, the successive measurements (while the beam is kept on) exhibit a\ndrift to higher current values or lower in the case of the measurements at\n0 V. This effect was observed for different samples and will be explored\nin more detail in section 3.3\n. Considering only the first measurement\npoints, a clear linear behaviour is observed at all bias voltages for this\ndevice. Moreover, the sensitivity (given by the slopes of the fitting line)\nis considerably reduced as the bias voltage is reduced, as a result of the\ndecrease of the depletion region thickness. At 0 V, the latter is considerably reduced and should be more sensitive to the creation of defects in\n\n**Fig. 3.** a) Schematic exposure profile (collimator current as a function of the time) of the sample 2 μ m n-i-p device on glass and the corresponding sample (sensor)\ncurrent. The total do",
+        "score": -4.135722970962524,
+        "dense_score": 0.523754358291626,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.371064186096191,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4118,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751331__2401.14300__Amorphous_silicon_detectors_for_proton_beam_monitoring_in_FLASH_radiotherapy.md",
+        "title": "2024__recid_2751331__2401.14300__Amorphous_silicon_detectors_for_proton_beam_monitoring_in_FLASH_radiotherapy",
+        "text": "and should be more sensitive to the creation of defects in\n\n**Fig. 3.** a) Schematic exposure profile (collimator current as a function of the time) of the sample 2 μ m n-i-p device on glass and the corresponding sample (sensor)\ncurrent. The total dose received by the sample is indicated by the colour scale. Black dots represent measurement points for the evaluation of the detector sensitivity.\nb) Zoom on the elapsed time during which the beam is activated (as illustration). The crosses indicate the three data points selected for the linear fit of the sensitivity,\n0.5–1.5 s after the beam was activated. Only three points were considered to avoid nonlinear increase observed at high dose rates.\n\n3\n\n_N. Wyrsch et al._\n\n_Radiation Measurements 177 (2024) 107230_\n\n**Fig. 4.** Current as a function of dose rate of a 2 μ m thick n-i-p a-Si:H device on glass at 3 different reverse bias voltages (a: 10 V, b: 5 V, c: unbiased – passive 0 V\ncondition). The fit equation indicates the sensor sensitivity in nC/Gy as well as fit quality (R-squared and p-value). Uncertainties are estimated to be less than 5% on\nthe dose rate and less than 2% on the sensor current.\n\nthe intrinsic region of the detector. This may explain the reduced linearity observed compared to measurements at higher bias voltages.\n\nFig. 5 shows the current as a function of the dose rate of 2 μ m thick aSi:H devices with selective contacts on glass and on PI as a function of\nthe dose rate at 10 V reverse bias voltages. As already observed for the ni-p configuration, these devices also exhibit excellent linearity over the\ntested range of dose rates but with a slightly lower sensitivity (when\ndeposited on the same type of substrate). As also observed in this figure,\nthe sensitivity values of samples deposited on PI are lower than those\ndeposited on glass. It is attributed to a lower device quality due to the\nroughness of the PI substrates resulting from the lamination process in\nthe fabrication of the PI foils.\n\nFig. 6 reports the measurements on 10 μ m thick devices. Only samples deposited on glass could be analysed due to the rather severe\ndelamination observed on samples deposited on PI. The measured\nsamples also exhibited large leakage currents that prevented the application of a sufficient high bias voltage to fully deplete the devices. At 10\n\nV reverse bias voltage, the sensitivity is, therefore, even lower (2.1 nC/\nGy, Fig. 6a) than on 2 μ m thick n-i-p devices (5.6 nc/Gy). By increasing\nthe bias vol",
+        "score": -4.256436557154502,
+        "dense_score": 0.5408125519752502,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.557048797607422,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4120,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751331__2401.14300__Amorphous_silicon_detectors_for_proton_beam_monitoring_in_FLASH_radiotherapy.md",
+        "title": "2024__recid_2751331__2401.14300__Amorphous_silicon_detectors_for_proton_beam_monitoring_in_FLASH_radiotherapy",
+        "text": "or a dose rate\n\n–\nrange between 0 and 12 18 kGy/s.\n\nSample Thickness Substrate Bias Sensitivity R- Initial/\ncontacts [ μ m] [V] [nC/Gy] squared final\ntotal\n\ndose\n\n[MGy]\n\nn-i-p 2 Glass 10 5.6 0.99 0/0.8\n\n5 2.2 0.99 0.8/1.6\n\n0 0.087 0.99 1.6/2.5\n\nSelective 2 Glass 10 3.0 1 0/1.0\n\n5 1.6 1.0 1.3/2.0\n\n0 0.17 1.0 2/2.8\n\nSelective 2 PI 10 1.4 1.0 4.5/5.5\n\n5 1.0 0.99 1.6-3.0\n\n0 0.018 1.0 3.2/4.4\n\nn-i-p 10 Glass 10 2.1 1 1.9/2.2\nSelective 10 Glass 20 2.7 1.0 0.6/1.5\n\n10 1.2 1.0 1.5/2.5\n\nbeen reduced considerably.\n\n_3.2. Device sensitivity as a function of total dose_\n\nSensitivity values as a function of the total dose rate of a 2 μ m thick ni-p a-Si:H device on glass are plotted in Fig. 7. We see that the sensitivity\ndecreases as a function of the total dose, but that a recovery is also\nobserved when the sample is let in the dark at room temperature. This\nmetastable effect will be discussed in more detail in section 4. The initial\n\nand subsequent sensitivities (40 days later) were determined in the same\nconfiguration and on the same device. The calibration of the proton\nbeam dose rate at the detector’s position with respect to the collimator\ncurrent was also checked separately for the two measurement\ncampaigns.\n\n_3.3. Device current drift_\n\nThe observed current drift, briefly mentioned above (circle points in\nthe plots of Figs. 4–6), is better seen in Fig. 8, which shows the magnitude of the drift scale as a function of the dose rate. We also observe that\n\nthis phenomenon is more evident for a wider proton beam, even though\nthe sample size is the same. The beam size is at least twice the size of the\nsample, which is fully irradiated. As the diode current is highly dependent on temperature, we believe that this drift originates in the heating\nof the sample. With a larger beam size, more energy is dissipated in the\nglass substrate and the drift is more evident. Such a hypothesis is also\nsupported by the comparison between a sample deposited on glass and\none deposited on PI, the latter exhibiting a reduced drift, as observed in\nFig. 9. This figure also shows that devices with selective contacts seem to\nbe less sensitive to such a thermal load. The observation that these de\nvices exhibit, in some cases, a less pronounced rectifying behaviour\n(lousy diode) could be the reason.\nExpanding the exposure time, especially at high doses, the sensor\ncurrent will increase until an equilibrium is achieved when heating is\ncompensated by heat dissipation. In these conditions, as ob",
+        "score": -4.595466201445636,
+        "dense_score": 0.49058470129966736,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.077866554260254,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2606,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera.md",
+        "title": "2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera",
+        "text": "ons of the detector where lower hadronic\nshower intensity results in low integrated radiation deposition. The entire\ncalorimeter will be enclosed in a cryostat to maintain a temperature of -30° C\nin order to reduce the dark current and the effects of radiation damage to the\nphotodetectors used in the parts of the calorimeter instrumented with scintillator. This low temperature operation has the added benefit of shielding the\nportions of the detector instrumented with silicon sensors from similar radiation\ndamage. The oxygen content in the encased atmosphere may be limited to 3%\nfor safety reasons. When the CMS detector has recorded its entire expected\nluminosity (3000 fb _[−]_ [1] ), the anticipated integrated dose experienced by portions\nof the scintillator-instrumented regions of HGCAL can be as much as 2.5 kGy.\nPeak radiation rates are expected to be as high as 0.15 Gy/hr. Predictions of\nthe permanent damage for HGCAL were parameterized as a function of dose\nrate [6] as\n\n2\n\n_D_ = 36 kGy\n\n�\n\n_R_\n(2)\n10 Gy _/_ hr\n\nwhere _R_ is the dose rate and _D_ is the dose constant. For a dose rate of 1.3 Gy/hr,\nthis corresponds to _D_ = 13 kGy.\nIn this paper, we report the results of measurements during irradiation of\nthe light loss of plastic scintillator tiles due to temporary damage relative to\nthat before irradiation. The tiles are in the form of small rectangles with a\nspherical cap dimple at the center of one face of each tile. The light output\nwas measured using a silicon photomultiplier (SiPM) placed in the center of the\ndimple. The tiles are similar to those that will be used for the HGCAL. The\nirradiation was done using a [60] Co source in the Radiation Effects Facility at\nthe Goddard Space Flight Center in Greenbelt, Maryland, at dose rates of 1.6,\n1.3, and 0.3 Gy/hr. The [60] Co source was used both to produce the tiles’ light\nsignal and as the source of ionizing irradiation. Measurements were performed\nat temperatures of -30, -15, -5, and 0° C, in atmospheres of 100% nitrogen, 97%\nnitrogen–3% oxygen, and in dry air. Tiles were studied encased in a variety of\nwrapping materials: 3M [TM] Enhanced Specular Reflector Film (ESR), Tyvek [®],\nESR punctured with openings to allow better gas diffusion, and optical black\npaper wrapped in aluminum tape.\nReference [3] presents a similar study for BCF-12 and SCSF81(Y7) wavelength-shifting fibers with polystyrene (PS) core and polymethyl methacrylate\n(PMMA) cladding, using a 100 keV X-ray source for dose rates of 7—42",
+        "score": -4.872200197196869,
+        "dense_score": 0.4410513639450073,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.502180099487305,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7825,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2947501__2507.11593__Characterizing_the_delivered_spill_structure_of_medical_proton_and_carbon-ion_beams_at_Med.md",
+        "title": "2026__recid_2947501__2507.11593__Characterizing_the_delivered_spill_structure_of_medical_proton_and_carbon-ion_beams_at_Med",
+        "text": "elopment of a spatially resolved readout covering the whole beam spot with a segmented detector.\n\n**2. Materials** & **Methods**\n\n_2.1. The MedAustron facility_\n\nMedAustron is an ion therapy center, located in Wiener Neustadt (Austria), featuring four clinical beamlines as\nwell as a dedicated research beamline. The facility is centered around a medical synchrotron, based on the proton-ion\nmedical machine study (PIMMS) [24], with 77.65 m circumference, which allows for the acceleration of protons\nfrom 62.4–800 MeV, [12] C [6][+] ions from 120–402.8 MeV u [−][1] [25] and [4] He [2][+] ions from 39.8–402.8 MeV u [−][1] [26]. The\nMedAustron design is optimized to fulfill medical requirements. In clinical operation, the accelerated ions are extracted via betatron core-driven third-order resonant extraction [27]. The particles are extracted in spills lasting\nseveral seconds, which corresponds to a large number of revolutions in the synchrotron. Particle rates obtained in the\nirradiation rooms are typically in the range from 10 [9] –10 [10] s [−][1] for protons and 10 [8] –10 [9] s [−][1] for carbon-ions [28, 29].\nDue to the influence of power converters on the magnetic fields in the synchrotron, the extracted spill exhibits significant fluctuations in intensity (ripples) in the kHz region [24]. To mitigate these ripples and ensure a constant\nparticle flux for treatment, MedAustron employs empty bucket channeling [30, 27]. While this technique achieves\na reduction of the intensity ripples, it modulates the spill structure at the timescale of the ion revolution frequency in\n\n∼\nthe synchrotron ( 1–3 MHz). In clinical treatment, this modulation can be neglected [31]. However, it proves to be\nrelevant for applications relying on single-particle precision.\n\n_2.2. SiC-based HF readout_\n\nThe sensor employed in the detector system was a 4H-SiC p-i-n diode designed by the authors and manufactured\nby IMB-CNM-CSIC [32]. In order to achieve readout at high bandwidth (> 1 GHz), the detector capacitance had\nto be kept at a minimum. Thus, a small-area circular sensor-design with 140 µm diameter and 50 µm thickness was\n\n2\n\nchosen for the experiment. At full depletion (> 150 V), the measured capacitance was 70 fF. The sensor consists of\nan n-doped active region epitaxially grown on a 350 µm substrate [16]. The small surface area of 0.015 mm [2] reduces\nthe average particle rate of the ion beams sufficiently to allow for a single-particle detection at medical intensities.\nWhile pi",
+        "score": -4.883319774040809,
+        "dense_score": 0.42580291628837585,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.518716812133789,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.276942823082209,
+    "generation_latency_s": 3.3993273973464966e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 5.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.276942823082209,
+    "generation_latency_s": 3.3993273973464966e-07
+  }
+}

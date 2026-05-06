@@ -1,0 +1,395 @@
+{
+  "benchmark": {
+    "query_id": "mul008",
+    "query_type": "multi_hop",
+    "query": "How can graph noise lead to hallucinated detector comparisons?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "graph",
+      "noise"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can graph noise lead to hallucinated detector comparisons?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 361,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646121__2303.15255__Cosmic_muons_as_PMT_and_SiPM_detector_background_signals.md",
+        "title": "2023__recid_2646121__2303.15255__Cosmic_muons_as_PMT_and_SiPM_detector_background_signals",
+        "text": "An example of the synchronous signal for the case where the bottom detector (blue line) has no light\nguide and no scintillation source except SiPM itself. The top detector (red line) contains a light guide\nand a BC-408 scintillator.\n\nvalue in the oscilloscope, the noise containing the thermal signals in the SiPM is less visible. The\nsimultaneity of the signals obtained by the two detectors confirms a coincidence between them when\nmuons pass through. These same signals confirm that detectors with SiPM, with and without a light\nguide, generate relatively strong signals compared to thermal noises due to the passage of cosmic\nmuons. A sample of synchronous signals for the case where the lower detector has a light guide is\nshown in Figure 4(left) and with no light guide in Figure 4(right). The size of the light guide in this\ndetector is equal to the size of the input window of PMT Hamamatsu R580 to make the entrance of\nthese two photodetectors in the same size.\nIt is expected that PMMA, epoxy resin, or glass scintillations due to cosmic muons be much lower\nthan the case with standard scintillators. The simulations of these materials confirmed the same as\n\n7\n\nFigure 5: The experiment of cosmic muon count in a tunnel. (Left) Muon count in a tunnel with\n550m long each count has done in 10 minutes separated by 10 meters. (Right) Curve of the height of\nmatter in the top of the tunnel.\n\nshown in Figure 2(right). For the SiPM, the scintillations due to the input window resin in comparison\nwith cosmic muons are shown in Figure 4. When using SiPM as detector, the number of cosmic muons\nbackground hits can be less but with higher effect (signal strength) compared to when PMT is used.\nThis is mostly due to the small dimensions for the former in term of the number of events. All these,\ntogether confirm that on the earth’s surface in detectors that include PMT or SiPM, the effect of the\nbackground signal caused by the passage of cosmic muons is significant, especially for SiPM in terms\nof height and especially for PMT in terms of number.\n\n## **5 Conclusion**\n\nWe have made simulations and experiments for investigating the effect of cosmic muons on PMT\nand SiPM detectors. We explicitly show the sensitivities of these to scintillations and interactions with\nthe light guide and input window materials. In comparison, the cosmic muons background signals for\nSiPM are usually more stronger than for the PMT. However, the smaller size of the SiPM input\nwindow will lead to lesser traj",
+        "score": -1.8419247128999054,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6567164179104478,
+        "rerank_score": -2.9115259647369385,
+        "matched_nodes": [
+          "In",
+          "All",
+          "An",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 2488,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "twin SET. **d), e)** Modulated\nreadout method using single SET 1 and single SET 2, respectively. _f_ mod = 25 kHz. **f)** Correlated readout method using\nthe twin SET modulated signal. _f_ mod = 25 kHz and the correlation function is given in Eq. 1. **g)** Square of the SNR\nas a function of integration time for the different techniques. Solid lines plot the fits to the function\nSNR [2] = _S_ 0 _τ/_ (1 + _A_ _f_ _τ_ _[α]_ ). **h)** Impact of the location of the charge transition on the charge readout infidelity for the\ndifferent techniques. _τ_ = 280 _µ_ s, _f_ mod = 25 kHz . Solid lines are used as guides to follow the trend of the points. The\ninset is a zoom-in to the region indicated by the box.\n\nwith integration time, consistent with signals affected by\n1 _/f_ _[α]_ (also known as “pink” or “flicker” for 0 _< α <_ 2)\nnoise [ 46, 47 ] (see Appendix F). In the regime where pink\nnoise is dominating, longer integration times will begin to\ncapture noise signals that are higher in amplitude, thus\nlosing the benefit of averaging over an increased number\nof samples. On the other hand, the modulation acts as a\nbandpass filter around _f_ mod, rendering the measurement\ninsensitive to pink noise. This result evidences the immunity to electrical noise provided by the modulation, and\nthe further improvement in readout sensitivity enabled\nby the correlation of the two signals.\n\nAn additional advantage of using a twin SET is that the\nreduction in signal that comes from moving the sensors\naway from the qubits can be compensated. In Fig. 2h),\nwe plot the charge readout infidelity obtained with the\ndifferent methods as a function of the double-dot pair,\nwhich is equivalent to changing the distance between\nthe center of the electric dipole and the sensors. For\ncomparison purposes, the total integration time in all\ncases is kept constant at 280 _µ_ s and the modulation\nfrequency is _f_ mod = 25 kHz . As expected, transitions\n\nbetween P1-P2 (P3-P4) are more weakly detected by\nSET 2 (SET 1 ) and the readout infidelity of the single SET\nmeasurement increases as the dipole is moved away from\nthe sensor. Notably, this monotonic trend is avoided by\nthe twin SET, with the correlation function providing\nbelow 0.3% readout infidelity ( _>_ 99 _._ 7% readout fidelity)\nthroughout the array.\n\n**IV.** **MODULATED SPIN READOUT**\n\nWe now study the impact that modulating the electron\nback and forth across a charge transition during readout\nhas on its spin degree of freedom. We load four el",
+        "score": -3.63466478371976,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6567164179104478,
+        "rerank_score": -5.6695876121521,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4009,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs.md",
+        "title": "2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs",
+        "text": "and taking\n_U_ / _U_ ch = 1 and _x_ ≪ 1, we found that a crosstalk probability of\n10% (irrespective of whether it is prompt or delayed crosstalk)\nleads to _c_ = 0.101, whereas _c_ = 0.059 is obtained for the same\nprobability of afterpulsing. Notice that _c_ can be slightly greater\nthan the probability of crosstalk, which is defined as the probability of inducing one or more secondary avalanches. This is\npartly compensated by the fact that pixels at the borders of the\nSiPM have a lower crosstalk probability. The higher the number of pixels, the smaller these border effects. On the other\nhand, cascades of secondary avalanches due to any component\nof correlated noise contribute to increasing _c_, this effect being\nrelevant when the probability of correlated noise is high, as discussed in [10]. Analytical expressions of _c_ for crosstalk are\navailable in [8, 9], but the accurate value of _c_ should be obtained by simulation when afterpulsing is not negligible.\nAt high photon rates, where nonlinearity is significant, the\nuncompleted recovery of pixels reduces the gain factor due to\ncorrelated noise. For exponential light pulses, prompt crosstalk\nwas found to be more mitigated than delayed crosstalk and afterpulsing for the same probability. This is because seeds due\nto prompt crosstalk are mainly produced at the beginning of the\nlight pulse, just when the photon rate is highest. In contrast,\nseeds due to delayed crosstalk and afterpulsing are produced\nlater, when the photon rate is lower and the recovery of pixels is more advanced. These effects are more noticeable when\nstudying the shape of the output signal rather than the integrated\ncharge. In Fig. 4, averaged simulated signals for a probability\nof correlated noise of 20% (assuming a sole noise component\nin each case) are compared with that obtained in the absence\nof correlated noise. We used the same simulation parameters\nas before, i.e., τ d = 5 ns and τ rec = τ bulk = 10 ns. Prompt\ncrosstalk gives rise to an almost constant scale factor to the signal at _x_ = 0.5, but the effect is much lower at _x_ = 5 as a conse\n\n5\n\nFigure 4: Averaged SiPM signals simulated for different situations of correlated\nnoise (i.e., no noise, 20% of prompt crosstalk, 20% of afterpulsing, or 20% of\ndelayed crosstalk) and different amounts of seeds per pixel (i.e., _x_ = 0.5 and 5).\n\n|Shape|Probability density function|Mean ph. rate|\n|---|---|---|\n|Exponential|1<br>τd _e_−_t_/τd (_t_ ≥0)|_n_<br>2τd|\n|Rectangular|1<br>τw (0 ≤_t_",
+        "score": -4.154163108113987,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6567164179104478,
+        "rerank_score": -6.468815803527832,
+        "matched_nodes": [
+          "In",
+          "On",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2749,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2692914__2309.00225__Rapid_single-shot_parity_spin_readout_in_a_silicon_double_quantum_dot_with_fidelity_exceed.md",
+        "title": "2024__recid_2692914__2309.00225__Rapid_single-shot_parity_spin_readout_in_a_silicon_double_quantum_dot_with_fidelity_exceed",
+        "text": "u-Zener\n\ntransition into the |↑↓⟩ state. To infer this, we perform a controlled-rotation experiment. Here, we\n\nmeasure the left qubit resonance peaks at a charge symmetry point with an exchange coupling of about\n\n25 MHz. Indeed, we see the peak position depends on the state of the control qubit (Q R )\n\n(Supplementary Fig. 2a). If we have imperfect initialization to the |↑↓⟩ state, there is a finite\n\npopulation of the |↓↑⟩ state. For the Z-CROT signal (red trace in Supplementary Fig. 2a), it results in\n\nan additional peak at the resonance condition for CROT. In our experiment, we do not see a clear peak\n\nstructure in our experiment (Supplementary Fig. 2b). For the number of samplings used in this\n\nexperiment (𝑁= 2,000), we are not able to distinguish a resonance peak from the noise expected from\n\nbinomial distribution (Supplementary Fig. 2c, standard deviation = 0.0017). Therefore, we expect the\n\nresidual population in |↓↑⟩ is at most comparable to this standard deviation. To measure it with higher\n\nprecision, it is necessary to increase 𝑁 significantly, but the limited stability of the device used in the\n\nexperiment did not allow for such a time-consuming experiment. Nonetheless, this initialization error\n\nwould not be a practical limitation since it can be suppressed by increasing the ramp time.\n\nSupplementary Fig. 2. Controlled rotation. **a**, EDSR spectra for two control qubit states Q R =|↓⟩ (red)\n\nand Q R =|↑⟩(blue). The imperfect visibility is mostly due to the miscalibration of microwave pulse\n\namplitude or length. We collect 2,000 single-shot data per one data point. **b**, Zoom up around the\n\nCROT resonance frequency 𝑓= 19162.5 MHz. The red points are measured data and the black line\n\nshows the average of the plotted data (0.004829). This average value is somewhat higher than the one\n\nmeasured in Fig.4 due to imperfect calibration. **c**, Comparison of the histogram of measured data (red\n\npoints) and the resampled data from a binomial distribution with an expectation value of 0.004829\n\n(black curve).\n\n**Inter-dot tunnel coupling dependence of** _**T**_ **1** **during spin readout**\n\nSupplementary Fig. 3 shows 𝑇 1 measured as a function of vB4 during spin readout. The direct\n\nmeasurement of 𝑡 c is difficult for the range of vB4 used in this measurement. As a reference,\n\nsupplementary Fig. 3b shows extrapolation from measurements where 𝑡 c is significantly larger than\n\nthe thermal broadening.\n\nSupplementary Fig. 3, **a**, 𝑇 1 of T - and T + measure",
+        "score": -4.542834935430271,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6567164179104478,
+        "rerank_score": -7.0667724609375,
+        "matched_nodes": [
+          "In",
+          "To",
+          "Comparison",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "t detectors in CE _ν_ NS exper\n\nASN oscillation parameters.\n\n**B.** **With Different Masses of the Detector**\n\n9\n\niment exhibit a mass advantage of one order of magnitude,\nassuming that measurements of eV-scale recoil thresholds are\nfeasible and a signal-to-background ratio of about 1 can be\nachieved in the experiment [60]. Figure 5 shows the ASN\nmixing sensitivity in sin [2] 2 _θ_ 14 – ∆ _m_ [2] 41 [plane at 95][%][ C.L. for]\nan exposure of 1 yr for different mass of the detector. Figure 5(a) shows for Si detector and Fig. 5(b) for Ge detector,\nboth with masses 10 kg, 50 kg, and 100 kg. It can be noted\nhere that, sensitivities are extracted considering a threshold of\n100 eV and 20 eV for silicon and germanium detector, respectively. At a given detector mass at higher ∆ _m_ [2] 41 [the sensitivity]\nin sin [2] 2 _θ_ 14 is more as compared to lower ∆ _m_ [2] 41 [. The sensi-]\ntivity improves in all regions of sin [2] 2 _θ_ 14 with an increase in\ndetector mass as the number of expected events increases. It\nis evident that the Ge detector excludes both allowed regions\nof the GALLIUM experiment.\n\n**C.** **With Various Detector Thresholds**\n\nAs previously discussed, the recoil energy of nuclei decreases as the mass number of the detector increases. There\nfore, detectors with low thresholds, such as Ge and Si can\nperform nuclear recoil discrimination down to the eV scale\nenergy threshold. Such detectors will be more useful if we\ncan observe the recoil energies as low as a few tens of eV. In\nthe context of CE _ν_ NS cross-section, as given in Eq. 1, the nuclear recoil energy _T_ serves as the relevant observable. For\na given neutrino energy, there is a limit to the maximum recoil energy. The cross-section is maximum for lower values of\n_T_, therefore, the total number of observed event rate sensitivity dependent on the low-energy threshold for nuclear recoil\n_T_ _min_ . A comprehensive study has been performed to assess\nthe impact of detector threshold on ASN mixing sensitivity,\nconsidering both Si and Ge detectors with a mass of 10 kg\nplaced at a distance of 4 m from U-Apsara reactor core. Figure 6 shows the sensitivity in sin [2] 2 _θ_ 14 –∆ _m_ [2] 41 [plane at 95][ %]\nC.L for detector with different threshold energies. The sensitivity of the detector at lower ∆ _m_ [2] 41 [is better at the lower de-]\ntector threshold. However, for ∆ _m_ [2] 41 _[≥]_ [1] _[.]_ [0] _[ eV]_ [ 2] [, the detector]\nthreshold has minimal impact on ASN mixing sensitivity.\n\nFIG. 7: The",
+        "score": -4.595177064183933,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6567164179104478,
+        "rerank_score": -7.147298812866211,
+        "matched_nodes": [
+          "In",
+          "NS",
+          "At",
+          "The",
+          "For",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 827,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi.md",
+        "title": "2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi",
+        "text": "e, before insertion inside a copper\nhousing, consisting of: 2 LYSO:Ce crystal arrays, 4 SiPM arrays including flex cable for signal routing to\nthe front-end board, 4 thermo-electric coolers (TECs) and one RTD temperature sensor on each array.\n\n**Figure 2** . Transverse section of a BTL detector module attached to the cooling plate.\n\nindicate the non-ionizing energy loss (NIEL) damage equivalent to a given flux of 1 MeV neutrons\n\nin silicon, which can produce bulk damage by displacing atoms out of their lattice site generating\n\ncrystal defects. To our knowledge no other large area experiment has ever used SiPMs in such\n\na harsh radiation environment. The effects of radiation damage on the SiPMs after these radia\ntion levels have been studied in detail on devices produced by two manufacturers: Hamamatsu\n\nPhotonics (HPK) and Fondazione Bruno Kessler (FBK). As described in [5, 6], the first order\n\neffect is an increase of the dark count rate (DCR), linearly with the neutron fluence up to about\n5 × 10 [13] n eq /cm [2] . Beyond this fluence, additional effects start to become sizable. For instance,\nafter a fluence of 2 × 10 [14] n eq /cm [2] an increase of the breakdown voltage by 0.6 and 2.0 V for\nFBK/HPK, respectively, occurs and a reduction of the signal amplitude of about 25% around 1 V\n\nover-voltage was measured, suggesting a possible reduction of the SiPM gain and photon detection\n\nefficiency (PDE). A change of the dark count rate dependence on over-voltage was also observed,\n\nsuggesting that a modification to the silicon doping structure could be happening [7] or that the\n\nafter-pulsing probability has increased. After such fluences, a dark count rate in the range 10-100\n\nGHz can be reached depending on the particular operating temperature, over-voltage and annealing\n\nhistory. All these effects have a direct impact on the time resolution of the BTL detector since they\n\n– 2 –\n\nintroduce additional noise (time jitter) and reduce the amplitude of the signal as described in [2].\n\nMeasurements presented in this paper were obtained with SiPMs having a cell size of 15 _𝜇_ m but\n\nsimilar results and arguments are valid for SiPMs of larger cell sizes (e.g. 20 _,_ 25 _,_ 30 _𝜇_ m).\n\nAnother major challenge of operating SiPMs under these conditions is the very large power\ndissipation (up to 50 mW for a 9 mm [2] SiPM) which, if not properly accounted for, can lead\n\nto undesired self-heating effects with impact on the operating over-voltage [8]. In particular,\n\nan in",
+        "score": -4.635657320264561,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6567164179104478,
+        "rerank_score": -7.20957612991333,
+        "matched_nodes": [
+          "In",
+          "All",
+          "To",
+          "The",
+          "For",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6753,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "with a low field region)\nand 21 _._ 11% at high ∆ _V_ (without a low field region). This can\nbe compared with the measurement result of 22% at low ∆ _V_\nand 17% at high ∆ _V_ .\n\n_D. Comparison with SciFi light source_\n\nThe microlens parameters were optimised for the SciFi as\na light source and represent one of the goals of the MLA\nproject. The test with the SciFi was performed at CERN\nSPS with pions at a momentum of _p_ = 180 _GeV/c_ . The\nSciFi module was arranged to perform a longitudinal scan.\nThe distance between the particle beam and the photodetector\nwas varied between 20 _cm −_ 230 _cm_ and the light intensity of\nthe normal incident particles was measured. With a Gaussian\nfit, the median is extracted from the characteristic Landau\ndistribution introduced by the energy deposit fluctuations. This\nvalue is called the light yield (LY) of the SciFi tracker. As a\nconsequence of the mirror placed at the far end of the SciFi\nmat at a distance of 245 _cm_ from the SiPM, the detected light\nis composed of a direct component and a mirrored component.\nAt a distance of 20 _cm_, the mirrored component is reduced to\nabout 20% due to attenuation. A fibre mat of 130 _mm_ width\nwas equipped with four flat layer dies and four microlens dies,\n256 channels each. In Fig. 11 the LY is plotted as a function\n\nof ∆ _V_ and given for two distances from the detector. The LY\nmeasurement has been performed after a gain calibration with\na light injection system for each acquisition channel.\nFor the SciFi light distribution for a propagation length of\n230 _cm_, the simulated LY enhancement is 24 _._ 57% for low ∆ _V_\nand 18 _._ 59% for high ∆ _V_, and the measured values with SciFi\nare 22 _._ 5% for low ∆ _V_ and 20 _._ 5% for high ∆ _V_ . Note that the\nsimulation was performed with a light exit angle distribution\ncorresponding to a 230 _cm_ long fibre.\n\nVII. C ONCLUSION\n\nIn this work, we present a novel implementation of MLA\nwith the objective of improving the PDE of SiPMs. The\nimplementation was guided by the technology limitation of\nthe MLA deposit by a mold and a UV-curable polymer.\nTo optimise the most important parameters, the geometry\nof the SiPM pixel was simulated with three regions: the\ndead region, the low field region representing a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter,",
+        "score": -4.73037817059702,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7014925373134329,
+        "rerank_score": -7.360604763031006,
+        "matched_nodes": [
+          "In",
+          "To",
+          "Comparison",
+          "At",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3965,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2745759__2401.06033__Novel_photon_detectors.md",
+        "title": "2024__recid_2745759__2401.06033__Novel_photon_detectors",
+        "text": "2 × 10 [12] n cm [−][2]\n\n5\n\nFigure 13: Microlenses in front of SiPM cells: principle (top), angular acceptance as a function of a geometrical parameter (height of the array) for a\n128x128 array of 6 µm diameter CMOS SPADs at 25 µm pitch and a 5% fill\nfactor [28].\n\nFigure 14: Dark count rate of irradiated SiPMs [33].\n\nreported promising results when annealing at elevated temperatures [32]. In Fig. 15, dark counts are shown for operation\n\nFigure 15: Annealing of irradiated SiPMs as a function of annealing time:\ncomparison non-irradiated (blue) and irradiated up to 10 [11] n cm [−][2] (yellow),\n10 [12] n cm [−][2] (green) and 10 [13] n cm [−][2] (orange) [32].\n\nat -30 [o] C of irradiated Hamamatsu S13360-1350CS SiPMs as a\n\nfunction of annealing time and temperature [32]. In the same\nstudy, it was also shown that annealing helps even when operating at 77 K [32].\nOne of the possible solutions could also be the use of\nnew wider band-gap materials with a possibly lower rate of\nthermally-generated dark counts, higher radiation resistance,\npossible operation at higher temperatures, and (V)UV sensitivity. The dark count rate is in this case dominated by trapassisted tunneling. An interesting material is 4H-SiC with a\ngap of _E_ _g_ = 3.26 eV. At present, a PDE of about 10% was\nachieved, with a dark count rate of above 1 MHz/mm [2] and a\nnonuniform response [34]. We note here that the early versions\nof SiPMs also had similar properties so it is expected that this\nwill improve with more experience in the production.\n\n**4. Gas based photon detectors**\n\nIn gas-based photon detectors, one of the electrodes of the\ngas chamber is covered by a solid photo-sensitive substance.\nThe most common material is CsI evaporated on one of the\ncathodes. The largest scale application of this concept is the\nALICE RICH with 11 m [2] of photosensitive multiwire chambers [35]. Instead of a multiwire chamber detectors with multiple GEM or thick GEM (THGEM) gas amplification stages\nwith transmissive or reflective photocathodes can be used. An\nexample of such a combination is the photon detector for the\nRICH counter of the COMPASS experiment with the amplification stage comprised of a pair of THGEM steps and a MicroMegas [36].\nFor operation in environments with high particle flux densities over extended periods of time, aging due to photocathode\ndamage by ions produced in avalanches can become a limiting\nfactor. One of the mitigation strategies is to block the drifting\nof ions towards the phot",
+        "score": -5.087476239446384,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6567164179104478,
+        "rerank_score": -7.904682159423828,
+        "matched_nodes": [
+          "In",
+          "An",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 4577,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot.md",
+        "title": "2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot",
+        "text": "ltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\n1 [3]\n\n2 _[𝑉]_ [1PE] _[,]_ 2\n\npeak voltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\nbe obtained.\n\n**Figure 6** . An example of 200 waveforms, where the SiPM is operated at 60 V bias voltage, and its signal is\nprocessed by the pre-amplifier. For ease of observation, the amplitude of the synchronized signal from the\n\nlaser is scaled down to 1/40 and the timeline has been shifted.\n\nThe performance of the SiPM is closely related to the overvoltage, where a higher overvoltage\n\nleads to a higher gain but also results in a higher DCR and crosstalk rate, and more afterpulses. To\n\n– 7 –\n\n**Figure 7** . The distribution of the relative trigger time and the signal amplitude of a SiPM operating at 60 V\nbias voltage. The relative trigger time is the relative delay from when the laser signal is triggered, namely\nwhen the leading edge reaches the threshold, to when the SiPM signal is triggered.\n\ninvestigate the impact of overvoltage on SPTR and determine the appropriate operating voltage, we\n\ntest the SPTR of SiPMs at different operating voltages. The test result is shown in figure 8, where\n\nthe breakdown voltage can be obtained by linear fitting using the signal amplitudes at different bias\n\nvoltages. Since the SPTR measurement results vary at different threshold voltages, the best SPTR\n\nresults are obtained by scanning the threshold voltages. It can be observed from this graph that the\n\nSPTR measurement results stabilize at around 200 ps when the overvoltage exceeds 5 V.\n\n**Figure 8** . The signal amplitudes and SPTRs of a SiPM operating at different bias voltages. The breakdown\nvoltage can be found to be about 54 V by linear fitting.\n\nTo demonstrate the improvement of signal path differences by differential output, we conducted\n\nexperiments of a series-parallel SiPM array with two SiPMs in series, as shown in figure 9. We\n\n– 8 –\n\nextended the signal line length between the two SiPMs in series to about 10 cm, resulting in an\n\nexpected time delay of approximately 0.65 ns for the single-ended output signals of the two SiPMs.\n\nThe experiment result of single-ended output shows two distinct peaks for the single photon response\n\nin the relative trigger time, approximately 0.71 ns apart, consistent with expectations. In contrast,\n\nthe differential output result exhibits only one peak, indica",
+        "score": -5.366999993566258,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6567164179104478,
+        "rerank_score": -8.334718704223633,
+        "matched_nodes": [
+          "In",
+          "To",
+          "An",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4924,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "ne SiPMs. This results in negligible systematic and statistical uncertainties for this measurement. The out\nput pulse full width at half maximum (FWHM) increases only\nslightly from 2.4 ns to 2.8 ns for Hamamatsu SiPM-based pixels and similarly from 3.1 ns to 3.4 ns for pixels based on SensL\nSiPMs. For the first generation SiPM-based pixels using Excelitas SiPMs, the FWHM increased from 5.1 ns to 5.9 ns [19].\n\n**5. Expected LoNS and Cherenkov light responses**\n\n_5.1. Spectra and integrals_\n\nTo estimate the expected performance of our SiPM proto\n type modules we compared the spectral photon detection effi\nciency PDE(λ) curves of light sensors with the spectra of the\nLoNS and the Cherenkov light from air showers reaching the\ntelescope camera. The spectra are shown in figure 7. In recent years, MAGIC observations’ mean zenith distance (ZD),\nwhich denotes the angular distance between the telescope pointing direction and zenith, has steadily increased to cover a larger\nsolid angle with more astrophysical sources and a wider energy range. For an example see [29]. Therefore, it is important\nto compare the detector’s PDE with the Cherenkov and LoNS\nspectra not only close to the zenith but also at large zenith dis\ntances.\n\n4\n\nFigure 6: Comparison of the pulse shape of a single SiPM chip with the active\nsum of nine Hamamatsu SiPM chips. The pulse FWHM widens only slightly\nfrom 2.4 ns to 2.8 ns. The amplitudes were normalized for better visualization.\n\nThe Cherenkov light spectrum of air showers at the telescope\ncamera peaks at around 320 nm for low zenith observations, at\n\n an observational altitude of 2.2 km. The peak quantum effi\nciency (QE) of PMTs makes a good match with the Cherenkov\nlight spectrum. All of the SiPMs we used have their peak sensitivity at longer wavelengths, thus detecting a lower number of\nCherenkov photons from the main peak in the near UV region.\nOn the other hand, these collect more photons from the longwavelength tail of the Cherenkov spectrum. At large and verylarge zenith distances the peak of the Cherenkov light spectrum\nshifts towards the blue-green region. This is due to the longer\ndistance to the shower maximum region, from where the majority of photons arrive at the telescope. The longer paths attenuate\nthe near-UV part of the spectrum, due to the Rayleigh scattering and absorption effects. The Cherenkov spectra were generated with CORSIKA [30] and the photon propagation to the\nIACT camera was modeled with an adapted version of MARS,",
+        "score": -5.402043340682984,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -8.42929744720459,
+        "matched_nodes": [
+          "In",
+          "All",
+          "On",
+          "To",
+          "Comparison",
+          "At",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "All": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "NS": 1.0,
+      "Comparison": 1.0,
+      "At": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "All": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "NS": 1.0,
+      "Comparison": 1.0,
+      "At": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "CE": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 12,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.612020725850016,
+    "generation_latency_s": 5.899928510189056e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 12.0,
+    "retrieval_latency_s": 6.612020725850016,
+    "generation_latency_s": 5.899928510189056e-07
+  }
+}

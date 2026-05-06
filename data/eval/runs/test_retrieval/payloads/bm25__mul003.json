@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "mul003",
+    "query_type": "multi_hop",
+    "query": "How does threshold tuning interact with noise and hit efficiency?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "does",
+      "threshold",
+      "tuning"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How does threshold tuning interact with noise and hit efficiency?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6880,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+        "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+        "text": "gure 7 shows the detection efficiency as a function of the threshold for the same dataset.\n\nRemarkably, even for a threshold 20 times the voltage noise _𝜎_ _𝑉_, the efficiency remains larger than\n\n99.6%. Figure 7 also reports the noise hit rate. The threshold of 7 _𝜎_ _𝑉_ utilized throughout this paper\nis well within the efficiency plateau and corresponds to a noise hit rate per pixel of 2 × 10 [−][2] Hz.\n\nVariation of the threshold by one unit of _𝜎_ _𝑉_ produces a change in noise hit rate of approximately\n\ntwo orders of magnitude.\n\nThe detection efficiency for all the datasets is reported in Table 1 and in Figure 8. As expected,\n\nefficiency increases with the preamplifier’s power density and with the sensor bias voltage. The\n\nformer is due to an increase in the front-end gain, and the latter is due to a larger charge multiplication\nin the gain layer. The measurements show that for _𝑃_ _density_ ≥ 0.1 W/cm [2] the detector reaches the\nplateau of efficiency at HV = 150 V. At _𝑃_ _density_ = 0.05 W/cm [2] a sensor bias voltage of 170 V is\nneeded to obtain a detection efficiency larger than 99%.\n\nFigure 9 shows the detection efficiency in bins of the distance from the pixel center for the\ndataset taken with the highest _𝑃_ _density_ = 2.6 W/cm [2] . The efficiency is well above 99.9% and does\nnot depend on the hit position for HV = 150 V and HV = 180 V. At HV = 120 V, the detection\n\nefficiency decreases to 99.5% near the pixel edge, likely due to charge sharing between adjacent\n\npixels.\n\n– 8 –\n\n10 2\n\n10\n\n1\n\n10 −1\n\n10 −2\n\n10 −3\n\n10 −4\n\n10 −5\n\n100\n\n99.8\n\n99.6\n\n99.4\n\n99.2\n\n99\n\n_**MONOLITH**_ prototype2 (2024) with gain layer\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|\n|---|---|---|---|---|---|---|---|---|\n|||=<br>density<br>P|2.6 W/c|, HV =<br>2<br>m|180 V,|C<br>°<br>T = -5|||\n||||CERN<br>Efficien|SPS Te<br>cy|stbeam|: 120 Ge|V/c pion|s|\n||||||||||\n||||Labora<br>Noise|tory Me<br>Hit Rate|asurem|ents|||\n||||||||||\n|||||Noise|Hit Rat|e Sensit|ivity Li|mit|\n||||||||||\n\n6 8 10 12 14 16 18 20\n\nThreshold [σ V ]\n\n**Figure 7** . Detection efficiency (red squares) and noise hit rate (blue dots) as a function of the threshold for\nthe dataset taken with HV = 180 V and _𝑃_ _density_ = 2.6 W/cm [2] . The threshold is given in units of the voltage\nnoise _𝜎_ _𝑉_ .\n\n_**MONOLITH**_ prototype2 (2024) with gain layer\n\n100\n\n90\n\n80\n\n70\n\n60\n\n50\n\n40\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|Col11|\n|---|---|---|---|---|---|---|---|---|---|---|\n||||||||||||\n||||||||||||",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 28.568490784331583,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8275,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "rection for the acceptance. (c) Hit detection efficiency\nwith and without the acceptance correction as a function of the bias\nvoltage in a module irradiated to 1.6 × 10 [16] n eq /cm [2] . The solid colors\nrepresent the efficiency while the lighter colors indicate the efficiency\n\n times the acceptance. The dashed line corresponds to the 97% effi\nciency requirement stated in Table 1.\n\n20\n\n(a)\n\n(b)\n\nFigure 31: Hit detection efficiency at normal incidence as a function\nof the average pixel threshold to which the modules irradiated at (a)\n1 × 10 [16] n eq /cm [2] and (b) 1.6 × 10 [16] n eq /cm [2] were tuned. These measurements were performed without a noise mask and at bias voltages\nof 120 and 110 V, respectively.\n\nFigure 32: Hit detection efficiency for modules irradiated to\n1 × 10 [16] n eq /cm [2] as a function of their angle with respect to the beam.\nThese measurements were performed at a bias voltage of 120 V and\nwithout a noise mask.\n\n(a)\n\n(b)\n\n(c)\n\n(d)\n\nFigure 33: Hit detection efficiency cell map of an FBK sensor irradiated to 1 × 10 [16] n eq /cm [2] and biased at (a) 40 V, (b) 80 V and (c) 120 V\nwith normal beam incidence. Their corresponding efficiency profiles\nalong the long pitch direction together with that of the module biased\nat 120 V and rotated by roughly 8 [◦] are shown in (d).\n\n21\n\n_8.2.2. Cluster size_\n\nThe dependence of the mean cluster size on the rotation angle and threshold was also studied for the irradiated CROC modules, given the importance of the cluster\nsize for the spatial resolution. Figure 34(a) presents the\nevolution of the average cluster size with increasing rotation angle. This scan was performed with the modules\nirradiated to 1 × 10 [16] n eq /cm [2] and biased at 120 V. In\ncomparison to non-irradiated modules, the increase in\ncluster size with the angle is substantially lower. Nevertheless, the mean cluster size increases by roughly\n25% when the module is rotated by about 14 [◦] . Maps\nof the mean cluster size for a pixel cell at four different angles are shown in Figs. 34(b) – 34(e), for module\nCROC_FBK_3.\n\nThe importance of tuning the sensors to a threshold as low as possible is evident not only from the\nhit detection efficiency but also from the cluster size.\nFigure 35 shows the average cluster size as a function of the average pixel threshold of modules irradiated to 1 × 10 [16] n eq /cm [2] and 1.6 × 10 [16] n eq /cm [2] . These\nmeasurements were performed at normal beam incidence, without noise mask and at bias vol",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 28.199282702856536,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 30,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4660,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "resulting\nin a lower leakage current and hence lower noise, and a lower charge losses for\nsmaller pitches under high radiation dose. For a voltage of -4.8 V and a 10 µm\npitch, an efficiency compatible with 99% can be reached even up to a radiation\nof 2 _×_ 10 [15] 1 MeV n eq cm _[−]_ [2] .\n\n_5.3. Spatial resolution and cluster size_\n\nIn Figure 16 the spatial resolution and cluster size of a 15 µm modified with\ngap sensor for different values of _V_ sub are reported as a function of the threshold\nin _e_ _[−]_ . The threshold was required to be greater than 3 times the noise RMS. As\nexpected, the cluster size decreases for higher thresholds and leads to a slight\ndeterioration of the spatial resolution. The average cluster size shows a small\ndecrease going to more negative _V_ sub . The largest difference is observed when\ngoing from _V_ sub = 0 V to -1.2 V, which is when most of the depletion process\n\n19\n\nFigure 16: Hit/no-hit resolution (solid lines), analogue resolution (dotted lines) and average\ncluster size (dashed lines) vs threshold at different _V_ sub values. The chiller temperature was\nset to _T_ = 15 °C. APTS with 15 µm pitch, modified with gap, split 4, reference variant.\n\nhappens. As expected from the small cluster size, the difference between the\nanalogue and hit/no-hit resolution is small and noticeable only at low thresholds.\nThe APTS versions listed in Table 2 have all been tested [5] . The follow\ning quantities have been extracted from the resolution plots and reported in\nFigure 17:\n\n - **Spatial resolution and average cluster size at a threshold of 100**\n**electrons** (second and third rows): if a value is not reported, it means\nthat 3 _×_ RMS noise - 100 electrons or that efficiency is smaller than 99%.\n\n - **Spatial resolution when the efficiency is equal to 99** % (first row):\nby definition, the corresponding threshold value is larger than 100 electrons\n(if reported). It indicates, in the range of operation (up to 99%), how much\nthe spatial resolution degrades.\n\nSeveral trends can be observed:\n\n - For all the DUTs, the spatial resolution degrades for higher thresholds, as\nexpected due to the decrease of the average cluster size. Operating the\nchips at lower thresholds improves spatial resolution and efficiency.\n\n - For all the DUTs, the resolution is better than the pixel pitch divided by\n_√_ 12.\n\n5 All the resolution plots are reported in the supplementary material.\n\n20\n\n|sub<br>7<br>m)<br>6<br>Hit/no-hit resolution<br>( 99%<br>Analogue",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 25.976845879136686,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 25,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5099,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors.md",
+        "title": "2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors",
+        "text": "*4. Results**\n\n_4.1. Total Hit Detection E_ ffi _ciency_\n\nThe data acquired in the two test beam campaigns described in section 3 is used to evaluate the hit detection\nefficiency of the measured samples. Additionally, this\nstudy investigates whether using the stitching technique\naffects hit detection efficiency before and after irradiation. Figure 3 shows the hit detection efficiency for\nthe Regular design of the unirradiated sample as a function of the threshold used in the clustering algorithm.\nThe sample is fully depleted at a bias voltage of 100 V.\nThe threshold dependency of the total hit detection efficiency for all three strip sensor layouts is published\nin [11]. In Figure 3, the threshold dependency is shown\nwith the SNR distribution comprised of a Gaussiandistributed noise and the Landau-shaped signal distribution for the Regular design. There is a high-efficiency\nregion for small seed cuts. The efficiency drops firmly\nfor medium seed cuts while gradually lowering to zero\nfor larger seed cuts, which matches the shape of the\nSNR distribution. With the seed cut value describing\na cut in the SNR distribution, low seed cuts mainly impact the Gaussian distributed noise. As the cut value\nincreases, the Landau-shaped signal distribution begins\nto be affected. Consequently, reconstructed telescope\ntracks do not have associated clusters on the DUT, and\nthe hit detection efficiency decreases.\n\nFigure 3: SNR distribution of the Regular design (red, solid), combined with the corresponding hit detection efficiency (blue, crosses)\nfor the unirradiated short strip sensor. The SNR distribution comprises the Gaussian noise distribution and the Landau-shaped signal\ndistribution. The Gaussian noise peak is depicted partially as it is significantly larger than the signal peak.\n\n_4.2. In-Strip Hit Detection E_ ffi _ciency_\n\nVisualising the hit detection efficiency within one\nstrip allows the investigation of any structures along or\nacross the strip, leading to potential inefficiencies. In\norder to investigate if the technique of stitching has any\n\n impact on the hit detection efficiency, the in-strip effi\nciency is studied for all three designs. The corresponding distribution for the fully depleted Regular and Low\nDose 55 design of the unirradiated sample is shown\nin Figure 4, based on the folded statistics of available\nstrips for the analysis of each design (see [11] for the\nresults concerning the Low Dose 30 design). Overall,\nthe Regular design is more efficient tha",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 24.300600577691792,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 8319,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "is a scan of\nthe parameter `dac` ~~`v`~~ `thr` in units of the DAC (THL DAC),\nreferred to as a threshold scan. This is performed while operating the chip in the dark, configured in counting mode,\nand acquiring data for a fixed duration at each threshold, without test-pulse injection. Since applying a masking pattern to avoid instabilities has not been found to\nimprove the results, the procedure is applied to the entire\nmatrix at once. Plotting the number of acquired counts\nas a function of the threshold for each pixel reveals the\nbaseline position of the pixels with respect to the threshold (see top of Figure 10). When the baseline and the\nthreshold are close, the baseline noise is sufficient to toggle the discriminator. Hence, an excess of counts indicates\nthe relative position of the baseline.\n\n6\n\n|×103 Tuning DAC 0, = 72.388 ± 0.002 THL DAC Tuning DAC 7, = 87.860 ± 0.003 THL DAC|Col2|\n|---|---|\n|Tuning DAC 7, = 87.860 ± 0.003 THL DAC<br>Tuning DAC 14, = 105.992 ± 0.004 THL DAC<br>Gaussian fits|Tuning DAC 7, = 87.860 ± 0.003 THL DAC<br>Tuning DAC 14, = 105.992 ± 0.004 THL DAC<br>Gaussian fits|\n||Linear fit|\n\nFigure 10: On the top: Occupancy as a function of the threshold for\na pixel operated at three different tuning DACs. The mean of the\nGaussian fit defines the measured baseline position. On the bottom:\nthe tuning DAC setting as a function of its baseline position. The\nsensor is biased at _−_ 1 _._ 2 V.\n\nFigure 11: Tuning DAC setting map after equalisation. The three\nmasked pixels are indicated in red, and the sensor is biased at _−_ 1 _._ 2 V.\n\nThis threshold scan is repeated for all possible settings\nof `tuning` ~~`d`~~ `ac` . The baseline of each pixel is determined\nfrom a Gaussian fit to the above-mentioned plot, as shown\nat the bottom of Figure 10. A linear fit is used to describe\nthe relation between the relative baseline position of each\npixel and the tuning DAC setting, in order to find the\nsetting closest to a trimming target. This trimming target\nis chosen such that it is reachable by the largest possible\nnumber of pixels. In particular, a pixel is masked when the\nGaussian fit does not converge or if the trimming target\ncannot be reached with any tuning DAC setting.\nThe distribution of the tuning DAC settings across the\nmatrix, as well as the masked pixels, is shown in Figure 11.\nThe uniform distribution, which makes full use of the available tuning range and results in fewer than 0 _._ 3 % of pixels\nbeing masked, indicates that no systemati",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 23.874152986025116,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8321,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "knesses. No significant\ndifferences are observed between samples. The combination of noise and threshold dispersion defines the rate of\nfake hits at a certain threshold level. Towards lower bias\nvoltages ( _<_ 2 V), the detector capacitance increases and\nnoise dominates the fake hit rate. At higher bias voltages,\n\n7\n\n|500|Col2|Col3|Col4|Col5|Col6|Col7|×|×105 ×103|\n|---|---|---|---|---|---|---|---|---|\n|100<br>200<br>300<br>400<br>500<br>|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|0.00<br>0.25<br>0.50<br>0.75<br>1.00<br>1.25<br>Counts<br>|= 140.4 ± 0.1 THL DAC<br> = 2.9 ± 0.1 THL DAC<br>Gaussian fit|\n|0|||||||||\n\nFigure 13: Single-pixel noise distribution of the pixel matrix.\n\n(a)\n\n(b)\n\nFigure 15: Occupancy (left axis) and its derivative (right axis) for\nthe full matrix as a function of the threshold for the [55] Fe source.\n\nFigure 14: Threshold dispersion (a) and mean single-pixel noise (b)\nas a function of the bias voltage for samples with different total chip\nthicknesses.\n\nthreshold dispersion among pixels [1], but the single-pixel\nnoise still dominates the fake hit rate. To overcome the\n\nincreased threshold dispersion at _−_ 4 _._ 2 V, a lower value for\nthe `dac` `itrim` is used at the cost of masking additional\npixels. This results in a smaller step size in the tuning\nprocess, covering a smaller threshold dynamic range. Consequently, 5 extra pixels (8 out of 1024) are masked compared to the other bias voltages. Operating the chip at\ndifferent sensor bias voltages changes the tuning DAC setting by one or two DACs for approximately 20% of the\npixels in the matrix.\n\n_3.3. Threshold Calibration_\n\nTo determine the applied threshold in electrons, the chip\nis calibrated using an iron ( [55] Fe) radioactive source. As a\ncross-check of the measurements, a 75 µm thick titanium\n( [48] Ti) layer is placed beneath the [55] Fe to produce X-ray\nfluorescence from [48] Ti. Assuming a mean energy of (3 _._ 66 _±_\n0 _._ 03) eV is required to produce an electron-hole pair in\n\n1 A higher reverse bias voltage reduces the drive current of the\nNMOS, slowing down digital gates, and reduces the active channel\nvolume, making the transistor more sensitive to dopant fluctuations\nand thus increasing the threshold dispersion.\n\n|Col1|Linear fit|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n||slope = 35.4 ± 1.1 e<br>/ THL DAC<br>Linear fit<br>Bas",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 23.388925832677486,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8320,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "DAC settings across the\nmatrix, as well as the masked pixels, is shown in Figure 11.\nThe uniform distribution, which makes full use of the available tuning range and results in fewer than 0 _._ 3 % of pixels\nbeing masked, indicates that no systematic effects are observed that would lead to localised variations of the pixel\nbaselines or discriminator thresholds.\n\nFigure 12: Baseline distribution for the equalised matrix, and the\nlowest and highest tuning DACs. The sensor is biased at _−_ 1 _._ 2 V.\n\nUsing the equalised matrix, with the pixels configured\nas in Figure 11, a new threshold scan in counting mode\nis performed. As before, the count distribution for each\npixel is fitted with a Gaussian, where the mean represents\nits baseline position and the width indicates its single-pixel\nnoise. Figure 12 shows the baseline distributions of the entire matrix when all pixels are set to the lowest and highest tuning DAC value, as well as after equalisation. The\nmean µ = (94 _._ 604 _±_ 0 _._ 018) THL DAC of the equalised\ndistribution corresponds to the chip baseline position, and\nthe width σ = (0 _._ 564 _±_ 0 _._ 015) THL DAC represents\nthe threshold dispersion between pixels. Additionally, the\nsingle-pixel noise, shown in Figure 13, is measured as the\nRMS of the curve obtained in the threshold scan (see Figure 10 top), and has a mean of (1 _._ 386 _±_ 0 _._ 004) THL DAC after equalisation. This threshold dispersion and single-pixel\nnoise can be converted into electrons after the threshold\n\ncalibration described in Section 3.3. It yields to a threshold dispersion of approximately 17 electrons and a mean\nsingle-pixel noise of 45 electrons RMS when the sensor\nis biased at _−_ 1 _._ 2 V. The measured single-pixel noise is\nslightly higher than the simulated one (see Section 2.4).\nAlthough the presented simulations rely on several assumptions, the differences are still under investigation. In\nparticular, the outliers in the single-pixel noise distribution\n(Figure 13), together with ongoing measurements, suggest\nthat Random Telegraph Noise [22] is a likely contributing\nfactor.\n\nFigure 14 shows the impact of the sensor bias voltages\non the threshold dispersion and single-pixel noise for samples with different total chip thicknesses. No significant\ndifferences are observed between samples. The combination of noise and threshold dispersion defines the rate of\nfake hits at a certain threshold level. Towards lower bias\nvoltages ( _<_ 2 V), the detector capacitance increases",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 22.570824461701672,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 8274,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "he efficiency, the acceptance with the definition\ngiven by Eq. 4 is used. The efficiency corrected for the\nacceptance is depicted in Figs. 30(b) and 30(c) for the\nlow and high fluences, respectively.\nThe efficiency also depends on the threshold to which\nthe modules are tuned. This was studied for modules\nirradiated to 1 × 10 [16] n eq /cm [2] and 1.6 × 10 [16] n eq /cm [2],\nand the outcome is summarized in Fig. 31. For these\nmeasurements, no noise mask was applied and the\nbeam was normally incident. The samples irradiated\nto 1 × 10 [16] n eq /cm [2] and 1.6 × 10 [16] n eq /cm [2] were biased\nat 120 V and 110 V, respectively. An efficiency loss of\naround 2% is seen when doubling the threshold in the\nless irradiated samples. This reduction becomes more\nsignificant as the fluence increases, reaching a drop of\naround 16% in the sample irradiated at the higher flu\nence.\nMeasurements of the efficiency as a function of the\nrotation angle, as defined in Section 6.3, were made.\nThe samples irradiated to 1 × 10 [16] n eq /cm [2] were biased\nat 120 V and no noise mask was applied. The FBK\nand CNM devices were tuned to thresholds of 1000 and\n\n1200 electrons, respectively. Figure 32 illustrates the recovery of the inefficiency with angle, which is attributed\nto the effect of the columnar electrodes discussed earlier.\nThe efficiency exceeds 99% from around 8 [◦] .\nThe efficiency cell maps for an FBK sensor irradiated\nto 1 × 10 [16] n eq /cm [2] at three bias voltages (40 V, 80 V,\n120 V) are shown in Fig. 33 to illustrate the progress in\nthe depletion of the sensor after irradiation. The change\nof the efficiency in the pixel cell with the bias voltage\ncan also be observed through the profiles of these maps\nalong the long pitch shown in Fig. 33(d). In addition,\nthe profile coming from the same sensor biased at 120 V\nand rotated by an angle of about 8 [◦] has been included\nfor comparison to those at normal beam incidence and\nas an example of the columnar inefficiency recovery.\n\n(a)\n\n(b)\n\n(c)\n\nFigure 30: (a) Hit detection efficiency as a function of the bias voltage\nin modules irradiated to 1 × 10 [16] n eq /cm [2] . (b) Hit detection efficiency\nfor the same devices on the approximate efficiency plateau, with and\nwithout the correction for the acceptance. (c) Hit detection efficiency\nwith and without the acceptance correction as a function of the bias\nvoltage in a module irradiated to 1.6 × 10 [16] n eq /cm [2] . The solid colors\nrepresent the efficiency while the lighter c",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 22.52263344151618,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1033,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "ence\nof Φ eq = 2.1 × 10 [16] cm [−][2], LDAC_LIN = 200 was used.\n\nThe global threshold, Vthreshold_LIN, is set for each module individually to achieve the lowest\n\npossible threshold while keeping the Equivalent Noise Charge (ENC) below 100 e and the number\n\nof noisy pixels below one percent after per-pixel adjustment. A pixel is considered noisy if it has\na noise hit probability _>_ 2 × 10 [−][5] in a 25 ns sensitive time window, which corresponds to 2 hits in\n1 × 10 [5] random triggers. Per-pixel threshold adjustment is performed in two steps, using the charge\n\ninjection system. First, the threshold of each pixel is adjusted using a series of iterative threshold\n\nscans at a high global threshold of approximately 2500 e. In each iteration, the threshold of each\n\npixel is compared to the mean of the thresholds of all pixels and its TDAC is adjusted in order to\n\nminimize the width of the threshold distribution. This results in a set of TDAC values for all pixels.\n\nNext, the ROC is configured using the TDAC values obtained in the first step and the trimming\n\nprocedure is performed again at a lower global threshold of around 1000 e. This step produces\n\na set of fine-tuned TDAC values for low-threshold operation. The other parameters remained the\n\nsame for all reported measurements except for the module irradiated to the highest fluence, where\n\na different set of parameters was necessary as mentioned above (Table 3).\n\nThe tuning results for a non-irradiated module with 50 µm × 50 µm pixel size at room tempera\nture and with a sensor bias voltage of 120 V are shown in Fig. 4. As visible in Fig. 4a, the distribution\n\n– 8 –\n\nof the TDAC values after the tuning procedure for all pixels has an apparent double-peak structure,\n\nwhile a Gaussian distribution is expected. This feature is not present anymore in the next version\n\nof the chip. The distribution has a mean of 7.9 and a standard deviation of 3.0. The threshold\n\nis determined using the charge injection system of the RD53A chip. A voltage step supplied to\n\nthe charge injection capacitors determines the quantity of the injected charge. The amplitude of\n\nthe voltage step, ΔVCAL, is controlled by the difference of two 12-bit voltage DAC outputs. The\n\ncorresponding difference in DAC units between the two DACs is referred to as ΔCAL. Following\n\nthe recommendation of the RD53A designers, the following conversion equation between ΔCAL\n\nand the charge Q in units of the elementary charge e is used:\n\nQ(e) = ΔCAL · 10 _._",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 22.249319340530352,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7750,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2925840__2505.20517__Performance_of_the_prototype_Silicon_Tracking_System_of_the_CBM_experiment_tested_with_hea.md",
+        "title": "2026__recid_2925840__2505.20517__Performance_of_the_prototype_Silicon_Tracking_System_of_the_CBM_experiment_tested_with_hea",
+        "text": "t\n\n: _Preprint submitted to Elsevier_ Page 12 of 14\n\nPerformance of the prototype Silicon Tracking System of the CBM experiment tested with heavy-ion beams at SIS18\n\nwas searched for hits using the fit results of the hit-track residual distribution. A hit is considered to belong to a track\nif its position is within 3 _𝜎_ from the extrapolated impact point, as from Fig. 5.\nThe efficiency was found to be very uniform across the sensor active area, while the missing hits are concentrated\nalong noisy or dead strips of the module. The particle loss is thus a direct consequence of the module production\ndefects. The efficiency of the module areas with nominal strip noise and absence of bonding defects is about 98%.\n\n**Figure 10:** Top: Signal amplitude distribution for n- and p-side. The overflow bin is filled at the upper end of the charge\ndigitization range. Bottom: correlation between the signal amplitude on both sides of a module. Clusters that include one\nor more signals in the overflow bin result in vertical and horizontal lines at multiples of the digitization range.\n\nFurthermore, the threshold dependence of the hit reconstruction efficiency was studied. If the signal amplitude\ndeposited in a given strip is below the digitization threshold, the signal in that channel is not recorded, resulting in a\nloss of information. If a major part of the energy deposited by the particle’s passage through the detector is recorded\nby neighboring strips, only the spatial resolution is worsened; however, increasingly high thresholds will result in a\nreduction of hit detection efficiency. For these studies, the entire data analysis was performed for discrete increments\nof the digitization thresholds of raw strip signals. Figure 9 shows the hit reconstruction efficiency for the modules in\nthe middle station as a function of the digitization threshold.\n\n**3.9. Amplitude measurement and signal-to-noise ratio**\nThe measured signal amplitude is compared to the noise measurements determined beforehand in the module\ncharacterization to evaluate the signal-to-noise ratio. The noise (N) is quantified as the average equivalent noise charge\nof the modules from the smearing of the discriminator response to a given pulse value. It amounts to around 1000 e\nENC, in agreement with the estimation based on the total detector capacitance [3]. The signal (S) is determined by the\nmost probable charge amplitude produced by minimum ionizing particles produced in the collision.\nFigure 10 shows the",
+        "score": 0.014084507042253521,
+        "dense_score": null,
+        "bm25_score": 22.05448593119351,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.050032615195959806,
+    "generation_latency_s": 3.203749656677246e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.050032615195959806,
+    "generation_latency_s": 3.203749656677246e-07
+  }
+}

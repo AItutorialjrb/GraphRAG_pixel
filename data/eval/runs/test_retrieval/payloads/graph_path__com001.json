@@ -1,0 +1,408 @@
+{
+  "benchmark": {
+    "query_id": "com001",
+    "query_type": "comparative",
+    "query": "Compare HV-MAPS and hybrid pixel detectors.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare HV-MAPS and hybrid pixel detectors.",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5127,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "ss article\n\ndistributed under the terms and\n\nconditions of the Creative Commons\n\n[Attribution (CC BY) license (https://](https://creativecommons.org/licenses/by/4.0/)\n\n[creativecommons.org/licenses/by/](https://creativecommons.org/licenses/by/4.0/)\n\n4.0/).\n\n**1. Introduction**\n\nSilicon radiation detectors are at the core of experiments conducted at high-energy\ncolliders, such as the CERN Large Hadron Collider (LHC) [ 1 ]. Multiple layers of pixel and\nstrip detectors are utilized to accurately measure the momentum and vertices of charged\nparticles. Examples of such detector systems are part of the CMS [ 2 ] Silicon Tracker [ 3 ] and\nthe ATLAS [4] Inner Detector [5].\nHybrid pixel detectors, positioned close to the beam’s interaction point, offer fine\nsegmentation of a few tens of micrometers, ensuring spatial resolution on a single point\ndown to 10 µm . Precision measurements and the discovery potential heavily rely on the\nperformance of tracking devices, particularly for energy/momentum resolution and flavor\nidentification. Notably, both ATLAS [ 6, 7 ] and CMS [ 8 ] pixel detectors are equipped with\nthin planar n [+] -on-n silicon sensors (ATLAS Innermost B-Layer includes sensors made in\n3D n [+] -on-p technology in the forward region).\nThe LHC is scheduled for an upgrade to a high-luminosity machine (HL-LHC) [ 9 ],\nwith the goal of integrating a dataset of 4000 fb _[−]_ [1] ; this is twenty times larger than its current\ncapacity, allowing for the full exploitation of the physics reach of the LHC machine. To\nintegrate such a large dataset within a reasonable time, the instantaneous luminosity will\nneed to increase by a factor of 5–7 beyond the nominal value, reaching 7 _×_ 10 [34] cm _[−]_ [2] s _[−]_ [1] .\nThis increase in instantaneous luminosity will lead to a corresponding rise in particle flux,\ntrack densities, and hit rates. Consequently, the current inner tracking systems will need to\nbe replaced to cope with this challenging environment, as radiation levels affecting both\nsensors and electronics will also increase by a similar amount.\n\n_Sensors_ **2024**, _1_ [, 0. https://doi.org/10.3390/s1010000](https://doi.org/10.3390/s1010000) [https://www.mdpi.com/journal/sensors](https://www.mdpi.com/journal/sensors)\n\n_Sensors_ **2024**, _1_, 0 2 of 19\n\nThe effects of radiation damage are already measurable at the fluences of LHC Run 2\nand Run 3. For instance, the charge collection efficiency (CCE) of the innermost ATLAS\nPixel layer has now reduced to approxi",
+        "score": -0.3683419895268431,
+        "dense_score": 0.5166521668434143,
+        "bm25_score": 11.472458615762527,
+        "graph_score": 0.7380738073807381,
+        "rerank_score": -0.6636979579925537,
+        "matched_nodes": [
+          "To",
+          "Pixel",
+          "The",
+          "For",
+          "CERN",
+          "LHC"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8253,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "ieved by exploiting the regions described above. This feature will not be used\nin 3D pixel modules, which will consist of two ROCs\nbump-bonded to two individual sensors. In this configuration, an uninstrumented gap of approximately 600 µm\nexists between the sensors. This decision is based on\n\nthe lack of a reliable process for producing large-area\n3D pixel sensors at the moment.\nTo match the readout chip pitch, a diagonal routing\nscheme is used for bump-bonding in 3D pixel sensors\nwith a 25 × 100 µm [2] cell size, as illustrated in Fig. 7.\n\nFigure 6: Schematic view of the CROCv1 and CROCv2 power distribution, highlighting the regions available for different tunings.\n\nFigure 7: Schematic top view of four adjacent 25 × 100 µm [2] pixel\ncells. One of the cells is delimited by a rectangle with dashed black\nlines for reference. The blue circles at the corners represent the _p_ [+]\n\ncolumns, while the light blue circle in the center represents the _n_ [+]\n\ncolumn. The orange elliptical pad on top of the _n_ [+] column represents\nthe metal contact for bump-bonding. Its counterpart on the readout\nchip is shown as a large orange circle. The two metal contacts are\nconnected by a diagonal orange rail.\n\n5\n\n**4. Irradiation and beam test setup**\n\n_4.1. Irradiation: facilities and setup_\n\nIrradiation campaigns of 3D pixel sensors for use in\nthe IT have been carried out at the Institut Pluridisci\nplinaire Hubert Curien (IPHC) [20], Zyklotron AG at\nthe Karlsruhe Institute of Technology (KIT) [21], the\nFermilab Irradiation Test Area (ITA), and the CERN\nPS [22]. The energy of the proton beam used at each\nirradiation facility and its corresponding hardness factor are provided in Table 2. The TID received by the\nmodules depends on the proton energy. For the IPHC\nand KIT facilities, a fluence of 1 × 10 [16] n eq /cm [2] corresponds to roughly 15 MGy, while for the ITA and\nCERN PS, it corresponds to about 5 MGy. For comparison, about 13.4 MGy is expected over the duration\nof the HL-LHC running period at the innermost layer of\nthe TBPX. Therefore, 6.7 MGy would be sufficient for\ntesting, considering the replacement of this layer after 6\nyears. Radiation damage studies using RD53 chips [23]\nconfirm their functionality up to a total ionizing dose of\n10 MGy. The requested target fluences for the devices\nin this paper were in the range 1–2 × 10 [16] n eq /cm [2] .\n\nTable 2: Proton energy of the beams used at the irradiation facilities\nand their corresponding hardness factor or k-fac",
+        "score": -1.6815935736174632,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.945994599459946,
+        "rerank_score": -2.6991310119628906,
+        "matched_nodes": [
+          "To",
+          "Ps",
+          "The",
+          "In",
+          "For",
+          "It",
+          "CERN"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4913,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter.md",
+        "title": "2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter",
+        "text": "plied to the data. The time resolution at _𝑃_ _density_ = 0.9 W/cm [2]\n\nand HV = 200 V was measured to be (20.0 ± 1.0) ps before proton irradiation. At the highest proton\nfluence studied of 1 × 10 [16] n eq /cm [2], the time resolution became (53.1 ± 3.4) ps. An increase of the\nsensor bias voltage to HV = 300 V improved the result to (45.3 ± 1.6) ps.\nThe scan in sensor bias voltage of the board exposed to 1 × 10 [16] n eq /cm [2], showed that the\nplateau in detection efficiency was just reached at 300 V, while the time resolution did not yet reach\n\nits plateau value. These observations, supported by an estimation of the change in resistivity after\n1 × 10 [16] n eq /cm [2], imply that the sensor was not yet fully depleted at 300 V and suggest that the\nnominal working point at that proton fluence is beyond 300 V.\n\nIn conclusion, this study gives first hints that an amplifier using SiGe HBT is not affected\ngreatly by doses up to 1 × 10 [16] n eq /cm [2] . The data show that very high efficiency, very high time\nresolution and radiation tolerance can be obtained by monolithic pixelated silicon detectors without\n\ninternal gain layer that exploit low noise, low power and fast response SiGe HBTs. Commercial\n\nSiGe BiCMOS foundry processes therefore represent a very strong candidate to build monolithic\n\nsilicon detectors for 4D tracking systems at future colliders at a contained cost.\n\n**Acknowledgments**\n\nThis research is supported by the Horizon 2020 MONOLITH ERC Advanced Grant ID: 884447.\n\nThe authors wish to thank Coralie Husi, Javier Mesa, Gabriel Pelleriti, and the technical staff\n\nof the University of Geneva and IHP Microelectronics. The authors acknowledge the support of\n\nEUROPRACTICE in providing design tools and MPW fabrication services, as well as the CERN\n\nSPS testbeam team.\n\n– 13 –\n\n**References**\n\n[1] ATLAS Collaboration. Technical Design Report: A High-Granularity Timing Detector for the\nATLAS Phase-II Upgrade. _CERN-LHCC-2020-007; ATLAS-TDR-031_, June 2020.\n\n[2] CMS Collaboration. A MIP Timing Detector for the CMS Phase-2 Upgrade.\n\n_CERN-LHCC-2019-003; CMS-TDR-020_, March 2019.\n\n[3] G. Pellegrini et al. Technology developments and first measurements of Low Gain Avalanche\nDetectors (LGAD) for high energy physics applications. _Nuclear Instruments and Methods Section A_,\n765:12–16, 2014. Proceedings of the HSTD-9 2013 \"Hiroshima\" Symposium.\n\n[4] Hartmut F-W Sadrozinski, Abraham Seiden, and Nicolò Cartiglia. 4D tracking with ultra-fast silicon\ndetectors",
+        "score": -1.864285177381912,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.918091809180918,
+        "rerank_score": -2.9768896102905273,
+        "matched_nodes": [
+          "An",
+          "ID",
+          "HV",
+          "The",
+          "In",
+          "CERN",
+          "SPS"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4146,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi.md",
+        "title": "2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi",
+        "text": "ompared to the average energy resolution. This is an indication that the electronic\nnoise of the detector and the readout electronics is com\nparable for the individual pixels.\n\n_Entrance window effects_\n\nThe detector S0-166-4 has been illuminated with elec\ntrons for the first time in the monitor spectrometer.\nThe energy resolution for electrons of the L-32 line\nmeasured with a [83m] Kr source is shown in figure 10b.\nIn the pixel map, two distinct areas can be observed:\none area has the shape of a semicircle with improved\nenergy resolution values, while the other area exhibits\nworse resolution values. This behavior can be related\n\nto a thicker entrance window in the region with worse\nenergy resolution values. When looking at the energy\nresolution pixel maps, it is only observed for electrons\nand not for x-rays. This is due to the fact that x-rays\nare negligibly affected by a slightly increased entrance\nwindow thickness. However, the effect can also be\nmade visible for x-rays by taking the ratio between\nthe measured count rate inside the main region of the\nMn-K _α_ line and the count rate in the lower energy\nregion (just below the peak), see figure 10c. It shows\nthe same pattern as the electron data in figure 10b. An\nexplanation of the entrance window effect for x-rays on\nthis region can be found in e.g. [52].\n\nTo pin down the origin of the effectively thicker\nentrance window, many tests have been performed.\nThe origin could be related to the deposition of an\nadditional water-soluble substance on the entrance\n\nwindow surface during the assembly procedure. This\nsubstance effectively increases the thickness of the\nentrance window. Fortunately, it can be removed using\na dedicated cleaning procedure, i.e. rinsing the detector\ncarefully with acetone, isopropyl alcohol and de-ionized\nwater. This results in a very homogeneous detector\nperformance compatible with the energy resolution\nvalues in the semicircle area.\n\n_Electron energy resolution_\n\nFor the following analyses of detector S0-166-4 in the\nmonitor spectrometer, only the pixels with improved\nenergy resolution values are taken into account,\ni.e. pixels with the increased entrance window thickness are neglected. An average energy resolution\n\nof 336 _._ 7 eV FWHM at 30 _._ 8 keV was obtained for\nthe L-32 line of [83m] Kr. The energy resolution of the\nindividual pixels varies by at most 9 eV or approximately 3 % when compared to the average energy\nresolution. For completeness, the average energy\nresolution of t",
+        "score": -2.1969856165234405,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.81998199819982,
+        "rerank_score": -3.477114200592041,
+        "matched_nodes": [
+          "To",
+          "An",
+          "The",
+          "In",
+          "For",
+          "It"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4148,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi.md",
+        "title": "2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi",
+        "text": "y resolution for\nelectrons at a given energy is slightly worse than the\none of x-rays. This can be related to entrance window\neffects leading to a low-energy tail as discussed above.\n\n11\n\nThe smaller the energy of the incident electrons, the\nhigher is the effect on the energy resolution. This behavior is particularly visible for electrons with energies\nof 5 keV. For energies above 10 keV, the energy resolution is comparable to the energy resolution of x-rays.\nIn general, for electrons with an energy of 20 keV, an\naverage energy resolution of 246 eV FWHM could be\nachieved. This result is compatible with the targeted\nenergy resolution of 300 eV FWHM at 20 keV for the\nkeV sterile neutrino search with KATRIN.\n\nFor the monitor spectrometer, the energy resolution analysis has been constrained to 29 pixels due to a\ncontamination of the detector entrance window surface\n\nas discussed in Section 4.3. The first measurements\nwere performed with monoenergetic electrons from the\nspectrometer walls. The measured energy resolution\nis slightly worse compared to the one of a detector\nwhose entrance window has been cleaned (S0-166-6).\nIn general, in the measurements with electrons from\nthe spectrometer walls, an energy resolution of 267 eV\nFWHM at 20 keV could be achieved.\n\nFor the electrons originating from the [83m] Kr source, the\nmeasured energy resolution is slightly worse compared\nto the one of the wall electrons. This particularly holds\nat smaller energies. The difference can be attributed\nto additional scattering of the electrons inside the\nradioactive source resulting in an energy loss. An\nenergy resolution of 292 eV FWHM could be achieved\nfor the electrons of the K-32 line at 18 _._ 2 keV.\n\n4.5 Noise performance\n\nWhen searching for keV-scale sterile neutrinos, the\nTRISTAN detector system will measure at high rates of\nup to 100 kcps per pixel. To limit the probability of pileup events, short energy filter rise times of _t_ rise _≤_ 2 µs\nare required. However, at shorter filter rise times the\nenergy resolution degrades, since the energy filter is\nmore susceptible to the electronic noise. By determining\nthe resolution at different filter rise times, the energy\nresolution can be optimized. To quantify it independent of the measured energy _E_, the equivalent noise\ncharge _n_ ENC (ENC) of the detector system was calculated. It describes the number of electrons that would\n\nbe created in the detector anode by a signal with the\nintensity of the root mean square (rms) of the",
+        "score": -3.0616882704083284,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.81998199819982,
+        "rerank_score": -4.8074259757995605,
+        "matched_nodes": [
+          "To",
+          "An",
+          "The",
+          "In",
+          "For",
+          "It"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4722,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2771003__2403.14577__Application_of_the_VMM_ASIC_for_SiPM-based_calorimetry.md",
+        "title": "2024__recid_2771003__2403.14577__Application_of_the_VMM_ASIC_for_SiPM-based_calorimetry",
+        "text": "ndles. The\n\nouter 8 modules of the prototype are split into 25 channels with ∼27 fibers per channel. The central\n\none which detects the most energy is split into 49 channels with ∼14 fibers per channel.\n\nSiPM ( FoCal-H Prototype ) VMM SiPM Adapter\nCAEN A5253 Header Adapter\n\n**Figure 1** . Schematic representation of the full readout setup.\n\nThe FoCal-H prototype equipped with 4 VMM Hybrids was tested at the SPS accelerator\n\ncomplex at CERN. The readout setup is presented in Figure 1. It consists of the following major\n\ncomponents:\n\n - The Focal-H prototype: It is represented by the Silicon Photomultipliers.\n\n - CAEN A5253 header adapter: For facilitation, and independently of the readout system, the\n\nSiPMs outputs from the FoCal-H back panel were connected to the CAEN A5253 64 channel\n\nheader adapter [9].\n\n - The VMM SiPM adapter board: To test the VMM readout solution with Silicon Photomulti\npliers, a dedicated SiPM adapter board was developed in collaboration with RD51 [10] which\n\ncan be plugged into the CAEN adapter. It acts as a 128 channel interface from the FoCal-H\n\ndetector to the RD51 VMM hybrid. A prototype was used in the FoCal test beam.\n\n - RD51 VMM hybrid: The VMM hybrid board, shown in figure 2, right, houses two VMM3a\n\nASICs, for a total of 128 electronics channels. A Xilinx Spartan-6 Field Programmable Gate\n\nArray (FPGA) ensures the ASIC configuration and the communication (including hit data\n\ntransfer) with the SRS system via micro HDMI connectors [11].\n\n– 2 –\n\n - SRS minicrate: The SRS back-end, as described in [4], is contained in the SRS minicrate.\n\nIt acts as a data aggregator and is able to serve up to 8 hybrid boards connected via HDMI\n\ninterface. The SRS system also adds coarse timing information for time stamp calculations,\n\nand pads then feeds the data to the readout PC.\n\n - PC Readout: A standard PC is used. The PC allows the configuration of the SRS readout by\n\nsetting various parameters such as thresholds, gains, etc. The data, which is sent by the SRS\n\nsystem via a UDP protocol, is recorded by filtering the incoming network stream, and further\n\nstoring it on disk for processing.\n\nThe SiPM Adapter board is shown in Figure 2. It transforms the SIPM signal risetime into\n\ncharge and houses 2 bias voltage generators which can provide between 0 V and 85 V (programmable\n\ntrough an I2C interface). The HV distribution is split into 2 regions of 32 SIPMs which in the\n\nprototype, have the same bias voltage. The adapter uses a precise DAC",
+        "score": -3.6369248001174173,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8640864086408642,
+        "rerank_score": -5.697629928588867,
+        "matched_nodes": [
+          "To",
+          "HV",
+          "The",
+          "For",
+          "It",
+          "CERN",
+          "SPS"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 3891,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2742847__2401.01229__Time_resolution_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_internal_gain_l.md",
+        "title": "2024__recid_2742847__2401.01229__Time_resolution_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_internal_gain_l",
+        "text": "||||**T**|**estbe**~~**am**~~|** Data**||\n|||||||~~**Las**~~**er**|** Data**||\n||||||||||\n\n0 20 40 60 80 100 120\n\nAmplitude [mV]\nDUT\n\n**Figure 6** . Difference in time of arrival between the reference timestamp and the DUT as a function of the\nDUT signal amplitude. Both test beam [2] (top of the plot) and laser measurements (bottom of the plot) were\nperformed at a power density of 2.7 W/cm [2] and a sensor bias voltage of 200 V. For this comparison, the laser\ndata were weighted according to a Landau distribution, and the Δ _TOA_ of the testbeam data were shifted by\n200 ps to avoid overlap with the laser data.\n\nsmaller for higher amplitudes, as already found in figure 5. In contrast, the width of the distribution\n\nof the testbeam data remains rather large at large amplitudes. This difference could be attributed\n\nto the presence in the MIP data of the noise coming from the charge-collection. To quantify this\n\ndifference, figure 7 shows the time resolution as a function of the signal amplitude obtained with\n\nthe testbeam data described in [2] (black squares) and with the laser (blue dots). In the case of the\n\ntestbeam data, the signal amplitudes were limited to 140 mV by the oscilloscope readout. In both\n\n1The laser beam profile was measured to have a radius of approximately 30 _𝜇_ m using an array of photodiodes. The\ntestbeam data were therefore restricted to tracks reconstructed by the testbeam-telescope that were crossing the sensor\nwithin 30 _𝜇_ m from the pixel center.\n\n– 7 –\n\ncases, for each bin of signal amplitude, the time resolution of the DUT was obtained by subtracting\nin quadrature the timestamp of the reference detector from the _𝜎_ Δ _TOA_ .\n\n45\n\n40\n\n35\n\n30\n\n25\n\n20\n\n15\n\n10\n\n5\n\n0\n\n|protot MONOLITH|Col2|type2 (2022) - no g|gain layer|\n|---|---|---|---|\n|2<br> = 2.70 W/cm<br>density<br>P|2<br> = 2.70 W/cm<br>density<br>P|**C**|**ERN SPS Testbeam**|\n|HV = 200 V|HV = 200 V|**L**|**aser Data**|\n|||(|2)<br>t, laser<br>DUT<br>σ<br>-(<br>2)<br>t, testbeam<br>DUT<br>σ<br>|\n|||||\n|||||\n|||||\n|||||\n|||||\n|||||\n|||||\n\n0 50 100 150\n\nAmplitude [mV]\n\n**Figure 7** . Comparison of the time resolutions as a function of the signal amplitude obtained with the\nfemtosecond laser (blue dots) and with MIPs (black squares) at the CERN SPS testbeam [2]. The data\nwere taken at a power density of 2.7 W/cm [2] and a sensor bias voltage of 200 V. The red triangles show the\ndifference in quadrature between the time resolutions for each bin in amplitude.\n\n**5.4** **Extraction o",
+        "score": -4.016518363197251,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8640864086408642,
+        "rerank_score": -6.281620025634766,
+        "matched_nodes": [
+          "To",
+          "HV",
+          "The",
+          "In",
+          "For",
+          "CERN",
+          "SPS"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6878,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+        "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+        "text": "_𝜇_ m and raising the active layer resistivity from 50 to 350 Ωcm\n\nin the current prototype.\n\n140\n\n120\n\n100\n\n80\n\n60\n\n40\n\n20\n\n_**MONOLITH**_ prototypes with gain layer\n\n0\n\n|CERN<br>P<br>density|SPS T<br>= 2.6 W|estbeam<br>/cm2, T|120 Ge<br>= -5°C|V/c pion|s|Col7|\n|---|---|---|---|---|---|---|\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n|(1<br>Ne<br>|m,<br>µ<br>5+5)<br>w Protot<br>|HV = 18<br>ype (202<br>|0 V<br>4)<br>||||\n|(1<br>Pr|m,<br>µ<br>0+5)<br>oof-of-C|HV = 12<br>oncept P|_ JINS_<br>5 V,<br>rototype|17 P1<br>_T_<br>(2022)|0040||\n\n0 10 20 30 40 50 60\n\nDistance from Pixel Center [µm]\n\n**Figure 5** . Comparison of the MPV of the signal amplitude as a function of the distance from the pixel\ncenter for the current prototype (red dots) and the proof-of-concept prototype (black squares).\n\n**4.3** **Detection Efficiency**\n\nThe detection efficiency was measured using the sample of all events that had the telescope track\n\ncrossing the DUT plane within the area of the four analog pixels. The tracks extrapolated within\n\n15 _𝜇_ m from the external edge of the surface of the four pixels were kept in the sample to account\n\nfor the telescope’s spatial resolution [13]. An event was defined as efficient if it had a signal in\n\nthe DUT with an amplitude larger than 7 times the voltage noise _𝜎_ _𝑉_ . The left panel of Figure 6\n\nshows the efficiency map for the four analog pixels. While the efficiency around the five internal\n\ninter-pixel regions remains constant and larger than 95%, the efficiency is found to degrade in the\n\n15 _𝜇_ m around the 14 external edges, confirming the influence of the telescope spatial resolution.\n\nTo obtain an unbiased measurement of the efficiency, the sample of telescope tracks was\n\nrestricted to those that crossed the DUT inside the two triangles obtained connecting the centers\n\nof the four analog pixels (shown by dashed red segments in Figure 6). The right panel of Figure 6\n\nshows the efficiency map of this unbiased sample with a colour scale palette starting at 96%. The\n\n– 7 –\n\ndataset shown in Figure 6, acquired with the DUT operated at HV = 180 V and _𝑃_ _density_ = 2.6\nW/cm [2], gives an efficiency of (99 _._ 99 ± 0 _._ 01)%. The Clopper-Pearson frequentist approach [14]\n\nwith a confidence level of 95% was used to estimate the uncertainties.\n\n0.4\n\n0.35\n\n0.3\n\n0.25\n\n0.2\n\n0.15\n\n0.1\n\n0.05\n\n|prototype MONOLITH|e2 (2024) with gain layer|Col3|\n|---|---|---|\n|CERN SPS Testbeam 12|0 GeV/c pions||\n|, HV =<br>2<br> = 2.6 W/cm",
+        "score": -4.018737216892809,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.792079207920792,
+        "rerank_score": -6.276503562927246,
+        "matched_nodes": [
+          "To",
+          "An",
+          "HV",
+          "The",
+          "CERN",
+          "SPS"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6022,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning.md",
+        "title": "2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning",
+        "text": "lies on the direct detection technique [5, 6]. These\nexperiments seek to observe rare interactions between\nDM particles from the Milky Way and detector materials placed deep underground in low-background envi\nronments.\nTraditionally, direct detection experiments have primarily focused on searching for nuclear recoil events induced by Weakly Interacting Massive Particles (WIMPs)\nscattering off target nuclei in crystals or liquid noble\ngases [7]. As a result, these experiments have mainly\nbeen sensitive to DM masses in the GeV – TeV range, as\nlighter particles would be unable to generate observable\nnuclear recoils.\n\n_∗_ [catena@chalmers.se](mailto:catena@chalmers.se)\n\n_†_ [urdshals@chalmers.se](mailto:urdshals@chalmers.se)\n\nWith the absence of direct evidence for WIMPs, efforts have been put in towards alternative experimental\napproaches better suited to probe DM particles with subGeV masses [8]. In this context, a crucial role is played\nby direct detection experiments designed to detect DMinduced electronic transitions or electron ejections in materials, offering a novel avenue for uncovering the nature\nof DM [9–20].\n\nTo interpret these experiments, a theoretical understanding of DM-electron interactions in detector materials is needed. In ref. [21–25], the interactions DM can\nhave with the electrons bound to silicon and germanium\ncrystals (as well as individual atoms and graphene targets) were classified and explored using a non-relativistic\neffective theory formalism. We implemented our formalism in QEdark-EFT [26], which interfaces with the planewave self-consistent field (PWscf) DFT code Quantum\nESPRESSO [27] and extends the QEdark code [28] to the\ncase of general DM-electron interactions. This allowed\nfor covering several DM models, although an extensive\nexploration was hindered by computational costs.\n\nThe deep neural network (DNN) developed in this paper is traned on the output of QEdark-EFT, and serves\nmainly two purposes. Firstly, it is easier to use and run\nthan QEdark-EFT. It takes less space on a hard drive\nand does not require computation of or access to material response functions. Secondly, it allows for evaluating a large number of DM-induced electronic transition\nrates cheaply on a laptop, and demonstrates the potential DNNs have for speeding up rate evaluations. Such a\nspeedup will be necessary to perform extensive parameter\nscans in the event of detection of a DM signal. For example, evaluating the rate of electron-hole pair creation\nin s",
+        "score": -4.762366750811586,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8919891989198919,
+        "rerank_score": -7.432384490966797,
+        "matched_nodes": [
+          "To",
+          "The",
+          "In",
+          "For",
+          "We",
+          "Quantum",
+          "It"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3609,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723198__2311.10061__Status_of_dual-readout_calorimetry_for_future_high-energy_physics_experiments.md",
+        "title": "2024__recid_2723198__2311.10061__Status_of_dual-readout_calorimetry_for_future_high-energy_physics_experiments",
+        "text": "al fibres sticking out from the back end of the absorber structure for the connection\n\nwith classic PMTs. SiPMs are fast photodetectors. Exploiting the time of arrival information, or\n\nother timing properties, with dedicated readout electronics will allow to obtain longitudinal position\n\ninformation which can be used to improve particle identification in the dual-readout calorimeter.\n\n– 3 –\n\n**Figure 1** . Sketch of the IDEA detector and Geant4 simulation of its dual-readout fibre calorimeter.\n\nIn order to demonstrate the viability of a highly-granular dual-readout calorimeter to be deployed\n\nat the IDEA detector, smaller-scale prototypes able to contain electromagnetic showers have been\n\nassembled and tested with particle beams. Another essential part of the project is the definition of\n\na construction technique, able to scale from a prototype to a full azimuthal coverage detector with a\n\nprojective geometry. For this reason the prototypes that are presented in chapters 4 and 5 feature a\n\nmodular design consisting of small dimension units, able to be adapted at more complicated layouts.\n\n**4** **Electromagnetic-shower size prototype**\n\nThe first prototype of a dual-readout calorimeter prototype combined with SiPM readout sufficiently\n\nlarge to contain electromagnetic showers was built in 2021. It was then characterised at the DESY\n\nlaboratories in Germany and at CERN’s SPS [8] with positron beams at different energies. The\n\nprototype geometry is shown in Figure 2: one module is made of 320 brass capillary tubes (63%\n\nCu, 37% Zn) with an outer diameter of 2 mm and an inner one of 1.1 mm, arranged in 20 rows of\n\n16 tubes each. Alternating rows of clear (Mitsubishi SK-40) and scintillating-doped (Saint-Gobain\n\nBCF-10) optical fibres, with an outer diameter of 1 mm, are inserted in the capillaries. The full\n\nprototypes consists of nine identical modules: the central one, called M0, is equipped with 320\n\nS141601315 PS Hamamatsu SiPMs. Bundled scintillating fibres in the external modules (M1-M8)\nare equipped with Hamamatsu R8900 PMTs, while the Čerenkov ones with the R8900-100 version\n\nfor extended UV light range. A yellow filter is inserted at the back end of scintillating fibres to cut\n\noff the shorter wavelength light component, such that the remaining signal (which is due to longer\n\nwavelengths) is less dependent on the shower starting point. The SiPM model was chosen for its\nwide dynamic range, using a 15 _𝜇_ m pitch and a sensitive area of 1 _._ 3 × 1 _._",
+        "score": -4.834939121491839,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.81008100810081,
+        "rerank_score": -7.534331321716309,
+        "matched_nodes": [
+          "Ps",
+          "The",
+          "In",
+          "For",
+          "It",
+          "CERN",
+          "SPS"
+        ],
+        "path_nodes": [
+          "Ps"
+        ],
+        "community_id": "Ps",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "To": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "De": 1.0,
+      "Pixel": 1.0,
+      "ID": 1.0,
+      "Ps": 1.0,
+      "HV": 1.0
+    },
+    "expanded_nodes": {
+      "To": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "De": 1.0,
+      "Pixel": 1.0,
+      "ID": 1.0,
+      "Ps": 1.0,
+      "HV": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "For": 0.7,
+      "We": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "It": 0.7,
+      "CERN": 0.7,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997,
+      "SPS": 0.24499999999999997,
+      "LHC": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 24,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.508605889976025,
+    "generation_latency_s": 6.700865924358368e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 24.0,
+    "retrieval_latency_s": 5.508605889976025,
+    "generation_latency_s": 6.700865924358368e-07
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con002",
+    "query_type": "conceptual",
+    "query": "Why does drift collection help timing?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "does",
+      "drift",
+      "collection"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why does drift collection help timing?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8082,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2966906__2509.04638__Time_Resolution_Characterization_of_4H-SiC_LGADs_With_a_sup90supSr_Source.md",
+        "title": "2026__recid_2966906__2509.04638__Time_Resolution_Characterization_of_4H-SiC_LGADs_With_a_sup90supSr_Source",
+        "text": "ng the bias voltage to enhance carrier drift velocity.\nUnder the same collected charge, 4H-SiC LGADs benefit from\nhigher voltage tolerance and faster carrier drift compared to\nSi LGADs. With higher charge collection, it is expected that\nthe timing resolution could be further improved, potentially\nreaching or even surpassing that of Si LGADs.\n\nV. C ONCLUSION\n\nIn this work, the timing performance of recently developed\n4H-SiC LGADs was evaluated using [90] Sr beta particles. The\nfabricated 4H-SiC LGADs exhibit fast response characteristics. Despite the relatively small collected charge under\nbeta irradiation, time resolutions of 61 ps were achieved,\ndemonstrating the potential of 4H-SiC LGADs for precision\ntiming applications in high energy physics experiments.\nComparative studies with standard Si LGADs indicate that\nthe time resolution of the 4H-SiC LGADs is currently limited\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2025 4\n\nFig. 10. Time resolution of the Si LGAD and 4H-SiC LGAD as a function\nof collected charges\n\nby the reduced signal charge due to the lower ionization energy deposition and small internal gain and partially depleted\ndrift layer. Charge-dependent timing analysis further indicates\nthat improving the collected charge is critical for enhancing\ntime resolution. These results highlight the importance of\nfurther device optimization—particularly in terms of gain\nlayer engineering and drift layer design—to maximize charge\nmultiplication and collection.\nOverall, this study provides the first validation of 4H-SiC\nLGAD with good timing performance for MIPs detection, and\nlays the groundwork for potential applications in high-timeresolution detectors for 4D tracking in extreme environments\nsuch as next-generation colliders.\n\nA CKNOWLEDGMENT\n\nWe gratefully acknowledge Gabriele Giacomini and\nAlessandro Tricoli from BNL for providing the Si LGAD\nsamples and for their valuable assistance in device characterization.\n\nR EFERENCES\n\n[1] ECFA Detector R&D Roadmap Process Group, “The\n2021 ECFA detector research and development road.”\n[doi: 10.17181/CERN.XDPL.W2EX.](https://cds.cern.ch/record/2784893?ln=en)\n\n[2] B. Fleming and I. Shipsey, “Basic research needs for high energy physics\n[detector research & development.” doi: 10.2172/1659761.](https://www.osti.gov/biblio/1659761)\n\n[3] S. Tudisco, C. Altana, S. Amaducci, C. Ciampi, G. Cosentino, S. De\nLuca, F. La Via, G. Lanzalone, A. Muoio, G. Pasquali, and A. Trifir`o,\n“Silicon carbide devices fo",
+        "score": 1.5850843006564725,
+        "dense_score": null,
+        "bm25_score": 14.41871275667301,
+        "graph_score": 0.0,
+        "rerank_score": 2.4299063682556152,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5994,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc.md",
+        "title": "2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc",
+        "text": "tector [2]. The sensor design,\ndecoupling charge-generating volume from the drift distance,\naccommodates shorter electrode spacing, consequently\ndecreasing the charge carrier trapping probability. Recent\nstudies using the Transient Current Technique (TCT) [3, 4],\nhave further substantiated the exceptional timing performance\nof such devices. For vertically incident events, the orthogonal\nrelationship between drift direction and particle trajectory\nresults in an absence of Landau fluctuations **,** key factor in\nextending theoretical timing performance of such devices,\nprimarily constrained only by the signal's drift time.\n\nThis excellent performance is nevertheless impacted by\nfield non-uniformities, intrinsic to the column geometry of the\ncollection electrodes. The resulting radially expanding field\nwithin the pixel volume increases signal time-jitter, degrading\n\ntime resolution. Such a geometry, though detrimental under\nnormal operation, can lead to high field densities near the\ncollection electrode (> 30 V/μm) at higher bias voltages\n(> 500 V) typically used after irradiation. In this operating\nmode, impact ionization and charge multiplication occur near\nthe collection electrode in a similar way as in Multi-Wire\nProportional Chambers (MWPCs) and can compensate for\ntrapping induced charge collection efficiency issues.\n\nIn this study, three different geometries are examined after\nproton and neutron irradiation, using 120 GeV SPS pion\nbeams [5]. Pixel sizes of 55 x 55 μm [2] [6], 25 x 100 μm [2] and\n50 x 50 μm [2] [7] in substrates of 230 μm (190 μm active depth)\nfor the first geometry and 150 μm (130 μm active depth) for\nthe second and third, are tested to establish the minimum\nactive thickness and pixel size still yielding sufficient charge\nand low enough jitter to achieve a 30 ps time resolution.\nQuestions of signal integrity, bandwidth and efficiency are\ntreated.\n\n**2.** **Timing and Signal Integrity**\n\nStudies under a [90] Sr source of the 50 x 50 μm variety single\npixel structure (Figure 1 top), yield collected charge of\n1.73 ± 0.02 fq (10,830 e [-] ), in agreement with the theoretically\npredicted value of ~ 82 e/μm for a MIP in fully depleted Si [8]\nat a bias voltage of 20 V at -20 [o] C. Signals are characterized\nby a fast rise time (10 % - 90 %) of 175 ± 4 ps, but present a\ntail at the slower end, characteristic of filed non-uniformities.\nAlthough charge per micrometer in the 3D device is reduced\nby a factor of 60 with respect to a typical LGAD [1]",
+        "score": 0.8619360727256331,
+        "dense_score": 0.42816781997680664,
+        "bm25_score": 15.21376838689747,
+        "graph_score": 0.0,
+        "rerank_score": 1.3086812496185303,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8331,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "yer due to the drift path of charge carriers (see Figure 1). In contrast to the n-well of the analog front-end, the n-wells of the digital logic are thin, as\nsketched in Figure 3, mitigating this effect.\nThis slow charge collection leads to a mismatch between\nthe charge collection time and the fast response of the\nCSA. As a result, the CSA begins to reset before the full\ncharge is collected, resulting in a reduced signal amplitude\n(ballistic deficit) and, consequently, a drop in the hit efficiency over a large part of the pixel cell.\nIn Figure 26a, the sensor is operated at low bias voltage,\n_−_ 1 _._ 2 V, with a high threshold of 330 electrons and high\n_ikrum_ to aggravate this effect. Increasing the bias voltage\nenhances the electric field within the sensor, and reducing\nthe feedback current effectively increases the integration\ntime of the CSA. Both factors contribute to reducing the\n\nFigure 27: Cluster size distributions for different thresholds. The\nsensor is biased at _−_ 1 _._ 2 V.\n\nballistic deficit, and improving the hit detection efficiency.\nFigure 26b shows a homogeneous in-pixel efficiency map\nat low _ikrum_, a threshold of 224 electrons, and a sensor\nbias of _−_ 3 _._ 6 V.\n\nTo fully understand this effect, detailed simulations of\nthe sensor and front-end have been performed, which are\npresented in Section 6.\n\n_5.2. Cluster Size_\n\nThe relatively large pixel pitch, thin epitaxial layer, and\nthe _modified with n-gap_ sensor layout minimize charge\nsharing between neighboring pixels. Lowering the threshold increases the probability of inducing a signal in adjacent pixels, making two-pixel clusters more frequent, as\nshown in Figure 27. For a threshold of 177 electrons, the\naverage cluster size is (1 _._ 19 _±_ 0 _._ 01), with 18% of events\nwith two-pixel clusters. Figure 28 shows the mean cluster\nsize as a function of the threshold. At lower bias voltages,\nthe electric field is reduced, leading to slower charge collection. This leaves more time for charge carrier diffusion,\nresulting in a slight increase in cluster size. Towards higher\ndetection thresholds (above 700 electrons), the mean cluster size increases due to the detection of delta-rays, which\nare more likely to deposit large amounts of energy.\nAlthough the right side of the pixel cell experiences\nslower charge collection as discussed in Section 5.1, this\ndoes not impact the charge sharing. As a result, the inpixel cluster-size maps remain symmetric, as shown in Figure 29. Near the collectio",
+        "score": -0.5769245402136846,
+        "dense_score": null,
+        "bm25_score": 10.739864346291014,
+        "graph_score": 0.0,
+        "rerank_score": -0.8956129550933838,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 8077,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2966906__2509.04638__Time_Resolution_Characterization_of_4H-SiC_LGADs_With_a_sup90supSr_Source.md",
+        "title": "2026__recid_2966906__2509.04638__Time_Resolution_Characterization_of_4H-SiC_LGADs_With_a_sup90supSr_Source",
+        "text": "IEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2025 1\n\n# Time Resolution Characterization of 4H-SiC LGADs with a [90] Sr Source\n\nTao Yang, Yashas Satapathy, Ben J. Sekely, Abraham Tishelman-Charny, Greg Allion, Gil Atar, Philip Barletta,\nCarl Haber, Steve Holland, John F. Muth, Spyridon Pavlidis, and Stefania Stucci\n\n_**Abstract**_ **—This work presents timing measurements of 4H-**\n**SiC Low Gain Avalanche Detectors (4H-SiC LGADs) using beta**\n**particles from a** [90] **Sr source. The 4H-SiC LGADs exhibit fast**\n**signal responses, and a time resolution of 61 ps was achieved,**\n**comparable to that of standard Si LGADs. The present limitation**\n**in the time resolution of 4H-SiC LGADs appears to stem from**\n**limited charge generation. Nevertheless, their higher voltage tol-**\n**erance and faster carrier drift suggest that, with increased charge**\n**collection, their timing performance could approach or even**\n**surpass that of Si LGADs. These results demonstrate the strong**\n**potential of 4H-SiC LGADs as a robust platform for precision**\n**timing in future 4D tracking detectors, while also highlighting**\n**that signal charge is the dominant factor currently limiting their**\n**performance, indicating that further optimization of gain and**\n**drift structures will be essential for future development.**\n\n_**Index Terms**_ **—4H-SiC, LGAD, time resolution, beta particle,**\n**MIPs**\n\nI. I NTRODUCTION\n\nAs a wide bandgap semiconductor, 4H-SiC has attracted\nincreasing attention in recent years for its potential application\nin collider detectors [1], [2], due to its low leakage current, fast\ncarrier saturation drift velocity, and excellent thermal stability\n\n[3]. However, the relatively small signal charge generated by\nminimum ionizing particles (MIPs) (only about 2/3 that of\nsilicon [4]), along with the technical challenges associated with\ngrowing high-quality, low-doped epitaxial SiC epitaxial layers,\nhave limited the widespread adoption of SiC detectors in highenergy physics experiments.\nPrevious experimental results have shown that conventional\nSiC PiN devices already achieve a time resolution with a\nhundred picoseconds [3], [5], [6]. However, the relatively small\ncharge signal imposes significant challenges in achieving fast\nsingle-MIP detection with time resolution better than 100 ps\nfor SiC devices. Inspired by the success of Si LGADs [7]–[12],\n\nThis work is supported by the U.S. Department of Energy, Office of\nScience, Office of High Energy",
+        "score": -1.2717212200164796,
+        "dense_score": null,
+        "bm25_score": 13.28374362889135,
+        "graph_score": 0.0,
+        "rerank_score": -1.9649076461791992,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5847,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2748892__2401.09920__On_the_determination_of_the_interaction_time_of_GeV_neutrinos_in_large_argon_gas_TPCs.md",
+        "title": "2025__recid_2748892__2401.09920__On_the_determination_of_the_interaction_time_of_GeV_neutrinos_in_large_argon_gas_TPCs",
+        "text": "through the addition of a small fraction of a molecular gas [ 14 ] (typically,\nat the few-percent level or above). This helps as well with the stabilization of the\navalanche process [ 15 ] by absorbing the very energetic scintillation photons emitted by\nrare gases, as well as quenching its emission [16].\nThe above creates an apparent technological dilemma: in a GArTPC, good tracking\ncapabilities and usable levels of scintillation seem to be incompatible. In the LArTPCs\nused as neutrino detectors, the primary-scintillation signal provides the absolute\ntiming of the recorded tracks, which is required to disambiguate their position along\nthe drift direction. In a GArTPC, although one could in principle rely on external\ninstrumentation to time those neutrino interactions through tracks escaping the TPC,\nthat would leave unreconstructed the 3D position of many reactions of interest. Even\n\n1 The subscripts T and L stand, respectively, for the charge spread _transverse_ (perpendicular) or\n_longitudinal_ (colinear) to the drift field.\n\n2\n\n**Fig. 1** Escape probability (estimated using Geant4 [ 17 – 19 ]) of protons from a cylindrical TPC, 5 m\nin diameter and 5 m long, housed in a high-pressure steel vessel filled with Ar/CF 4 (99/1) at 10 bar.\nThe blue data correspond to a 1-cm-thick vessel; the orange data to a 3-cm-thick one. Protons were\ngenerated isotropically from the center of the detector.\n\nin the gaseous phase, tracks of up to 100–200 MeV may range-out inside the TPC\ndepending on the conditions (see figure 1). In other words, the main advantage of a\nGArTPC, its ability to reconstruct low-energy interactions, would be hindered by its\ninability to time-tag them.\nAn appealing path forward is to induce wavelength-shifting of the argon scintillation\ndirectly in the gas, as this process can simultaneously remove the avalanche-destabilizing\nvacuum-ultraviolet (VUV) photons from argon, while preserving a significant fraction\nof the scintillation yield. One can anticipate additional advantages like easier light\ncollection and detection away from the VUV, or a faster time response (given the\nvery long time constant of 3.2 µs from the Ar _[∗]_ 2 [triplet state [] [20] [], responsible for about]\n80–90% of the argon scintillation emission [ 21 ]). If gaseous wavelength-shifting can\nbe accomplished through a molecular species, then the suppression of diffusion to\nmanageable levels as well as the enhancement of the avalanche multiplication factor\ncan be expected too.\nRec",
+        "score": -1.2787051917894718,
+        "dense_score": 0.3780893087387085,
+        "bm25_score": 10.455414332860764,
+        "graph_score": 0.0,
+        "rerank_score": -1.9823013544082642,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5634,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "vely being developed for HEP applications. Decades of\n\nR&D have made CMOS-based detector systems easy and cheap to manufacture and sensor can\n\nbe integrated into a single chip for easier assembly. Additionally, radiation damage in CMOS is\n\nwell understood due to decades of R&D and therefore the system can be optimized to be radiation\n\ntolerant. CMOS technology can be employed for 4D tracking by optimizing for spatial and temporal\n\nresolution. For example, FASTPIX is a monolithic CMOS sensor with pixel pitches tested from\n\n8.66 um to 20 um and its design is optimized for timing through the application of a doping implant\n\nin the sensor to shape the electric field uniformly to improve the drift path of charges[10, 11].\n\nFurthermore, in contrast to traditional pixel sensors, FASTPIX uses a hexagonal sensor grid that\n\nshortens drift time and reduces charge sharing at the edges[10, 11]. The demonstrator device has\n\nbeen experimentally measured to have a good timing resolution of 120 – 180 ps[11]. While CMOS\n\ntechnology shows promise, the current limitation is its trailing time resolution compared to 3D\n\nsilicon sensors and the associated high power consumption due to small pixel sizes.\n\nFinally, another attractive option developed in the last decade is Low Gain Avalanche Detectors\n\n(LGADs) which is the paper’s main focus of study. LGADs are silicon pixel detectors optimised\n\nfor timing performance[12] and a schematic is shown in figure 1. Particularly, LGADs have a\n\nlow internal gain of about 10 − 20 that is achieved by modifying the doping profile of a standard\n\np-n junction[2]. LGADs have excellent temporal and spatial resolution that are designed to fulfil\n\nthe requirements of 4D tracking. Optimising the gain and thickness parameters allow a sensor\n\nwith a fast charge collection time that could improve the time resolution in the order of 10 ps[2].\n\nExcellent spatial resolution can be achieved through innovative designs such as AC-LGADs that\n\nutilise charge sharing between multiple electrodes and therefore surpasses the spatial resolution\n\nlimitation of single pad detectors[13, 14]. In the context of radiation tolerance, LGADs can fulfil\n\nthis requirement by utilising carbon as a dopant for the gain layer and through the use of a narrower\n\ngain layer[15]. Last but not least, an internal gain layer reduces the need for amplifier electronics\n\nand hence reduces power consumption for the operation of HL-LHC[4].\n\nLGADs are an excellent candidate for 4D tracking an",
+        "score": -1.6589395490059486,
+        "dense_score": null,
+        "bm25_score": 12.02401788378381,
+        "graph_score": 0.0,
+        "rerank_score": -2.5604987144470215,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7528,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F.md",
+        "title": "2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F",
+        "text": "_Article_\n\n## **Extraction of Electron and Hole Drift Velocities in thin** **4H-SiC PIN Detectors using High-Frequency Readout** **Electronics**\n\n**Andreas Gsponer** **[1,2]** ***** **, Sebastian Onder** **[1,2]** **, Stefan Gundacker** **[1]** **, Jürgen Burin** **[1]** **, Matthias**\n**Knopf** **[2]** **, Daniel Radmanovac** **[1,2]** **, Simon Waid** **[1]** **and Thomas Bergauer** **[1]**\n\n1 Marietta Blau Institute for Particle Physics, Austrian Academy of Sciences, Dominikanerbastei 16, 1010 Vienna, Austria\n2 Institute of Atomic and Subatomic Physics, TU Wien, Stadionallee 2, 1020 Vienna, Austria\n***** Correspondence: andreas.gsponer@oeaw.ac.at\n\n**Abstract:** Silicon carbide (SiC) has been widely adopted in the semiconductor industry, particularly in\npower electronics, because of its high temperature stability, high breakdown field, and fast switching\nspeeds. Its wide bandgap makes it an interesting candidate for radiation-hard particle detectors\nin high-energy physics and medical applications. Furthermore, the high electron and hole drift\nvelocities in 4H-SiC enable devices suitable for ultra-fast particle detection and timing applications.\nHowever, currently, the front-end readout electronics used for 4H-SiC detectors constitute a bottleneck\nin investigations of the charge carrier drift. To address these limitations, a high-frequency readout\nboard with an intrinsic bandwidth of 10 GHz was developed. With this readout, the transient current\nsignals of a 4H-SiC diode with a diameter of 141 µm and a thickness of 50 µm upon UV-laser, alpha\nparticle, and high-energy proton beam excitation were recorded. In all three cases, the electron and\nhole drift can clearly be separated, which enables the extraction of the charge carrier drift velocities as\na function of the electric field. These velocities, for the first time directly measured, provide a valuable\ncomparison to Monte-Carlo simulated literature values and constitute an essential input for TCAD\nsimulations. Finally, a complete simulation environment combining TCAD, the Allpix [2] framework,\nand SPICE simulations is presented, in good agreement with the measured data.\n\n**Keywords:** Silicon Carbide (SiC); high-frequency; drift velocity; transient-current-technique\n\n**1. Introduction**\n\nSilicon carbide (SiC) is an attractive candidate for future detectors in particle physics experiments\ndue to its wide bandgap and, therefore, extremely low dark currents, even after irradiation and at\nroom temperature [",
+        "score": -1.9229046988487244,
+        "dense_score": null,
+        "bm25_score": 9.660390487256745,
+        "graph_score": 0.0,
+        "rerank_score": -2.965045690536499,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 7530,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F.md",
+        "title": "2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F",
+        "text": "ynchrotron (MedAustron), and the transient currents are compared.\n\n**2. Materials and Methods**\n\nIn solid-state detector applications, the quest for higher readout bandwidths has been driven\nmainly by timing applications, such as silicon low-gain avalanche diodes (LGADs) [ 13, 14 ] or silicon\nphotomultipliers (SiPMs) [ 15, 16 ]. However, timing applications do not necessarily call for the highest\npossible bandwidth, but instead limit the bandwidth to the frequency content of the detector signal in\norder to achieve the best slope-to-noise ratio and time resolution. If, however, the signal-to-noise ratio\n(SNR) is sufficiently high, for example, when a large amount of charge is deposited (greater than that\nof a minimum ionizing particle) or when waveform averaging is used, the readout bandwidth can be\nfurther increased and the transient charge carrier drift can be resolved in detail.\nTypical silicon-based timing detectors in high-energy physics applications have capacitances of\n1-2 pF and a readout bandwidth below 2 GHz, in accordance with the length of the detector signal [ 14 ].\nTo increase the bandwidth (and decrease signal rise-times), either the detector capacitance or the input\nimpedance of the amplifier has to be reduced. For the latter, approaches using shunt-resistors exist,\nreducing the input impedance to 10 Ω [ 17 ]. However, resistances smaller than this are not practically\nfeasible at GHz frequencies, and most of the signal is lost through the shunt. Another way to reduce\nthe input impedance is to use active feedback. Nevertheless, the bandwidths that can be achieved in\nthis approach are limited due to signal transfer delays. The detector capacitance is a result of the sensor\ngeometry and, in general, for 50 µm thick semiconductor detectors, the electrically active area should\nbe below 0.5 mm [2] to achieve capacitances of below 1 pF, which corresponds to signal bandwidths\nabove 3 GHz for an input impedance of 50 Ω.\nThe following sections describe the 4H-SiC sensor used in the measurements, the high-frequency\nreadout design, and a Monte-Carlo simulation framework based on technology computer-aided design\n(TCAD), Allpix [2], and SPICE simulations to model the measured transient signals.\n\n**Figure 1.** Diode cross-section showing the p-n junction, low-doped epitaxial layer, highly-doped substrate, pad\n(contact), and guard rings.\n\n3 of 13\n\n_2.1. Silicon Carbide Sensors_\n\nThe silicon carbide sensors used for this study were manufactured by IMB-CNM, B",
+        "score": -1.980814009025449,
+        "dense_score": 0.44442105293273926,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.0562334060668945,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5521,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico.md",
+        "title": "2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico",
+        "text": "and holes have the same drift time. The position of the minimum depends on the selected\namplitude’s fraction [9].\nFurthermore, a decrease of the ToT is observed when the focal point is located outside of\nthe active volume ( _z_ Si _<_ 0 µm or _z_ Si _>_ 286 µm ) but still close enough so that light can enter\nthe active volume due to the extension of the focal region ( _z_ R ). In principle, the position\nof the focal point represents the position of the dominant contribution to the induced\ncurrent. From this argumentation one would expect that the ToT should be constant after\nthe focal point exited the active volume. However, at the device’s boundaries the median\nof the excess charge carrier density shifts so that the dominant contribution is no longer at\nthe focal point’s position. The median moves back inside the active volume and the ToT\ndecreases.\n\nThe ToT for a charge generation directly at the top or back side could be found by a\nlinear fit that extrapolates the linear trend in the bulk towards the boundaries. Following\nthis procedure yields an ToT of about 14.5 ns at the top and about 7.4 ns at the back side,\ncompared to the 14 ns and 7 ns extracted from the current transients, respectively. Hence,\ndata recorded at the device’s boundaries needs to be taken with care, because the median\nexcess charge, i.e. the dominant contribution to the current transient, does not coincide with\nfocal point position. Meaning that the TPA-TCT can yield less satisfactory sampling at the\ndevice boundaries. This effect is described in more detail in the appendix of reference [ 9 ].\nThe effect does not affect the CC, as it becomes only apparent in intensity independent\nquantities that depend on the temporal shape of the current transient.\n\n6 of 12\n\n**(a)** **(b)**\n\n**Figure 4.** (a) Simulated collected charge profile overlapped with the simulated time over threshold\nprofile along the device depth. The regions where holes or electrons dominate the collection time in\nthe current transients are indicated. (b) Comparison between the simulated and measured time over\nthreshold profile along the device depth. The experimental time over threshold profile is affected by\nreflection, which mirrors the region 0 µm _<_ _z_ Si _<_ 286 µm at the back side to _z_ Si _>_ 286 µm.\n\nFigure 4b presents the comparison between the simulated and the measured ToT. Both\nToT profiles show the same features and the agreement in absolute values is best at the\nmiddle and back side of the DUT. A disag",
+        "score": -2.124284573034807,
+        "dense_score": null,
+        "bm25_score": 9.923595199295479,
+        "graph_score": 0.0,
+        "rerank_score": -3.275123119354248,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5520,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico.md",
+        "title": "2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico",
+        "text": "simulation. The reflection overshadows the falling edge\nin the measured CC and leads to a tail with the length of about the device thickness. In\nthe reflection region, approximately 10 % of excess charge is generated and collected with\nrespect to the non-reflection region. Besides the neglected reflection, an excellent agreement\nbetween the simulated and measured CC is found, which demonstrates that the depth\nresolution of the TPA-TCT can be simulated using TCAD.\nThe prompt current (PC) is a quantity to extract an approximate for the drift velocity\nof silicon detectors from current transient [ 6 ]. It examines the current transients at a short\ntime after light injection, here 600 ps, to draw conclusions on the electric field at the position\n\n5 of 12\n\n**(a)** **(b)**\n\n**Figure 3.** Simulated and measured charge collection within 20 ns (a) and prompt current at 600 ps (b)\nalong the device depth.\n\nof excess charge generation. Figure 3b shows the simulated and measured prompt current.\nThe higher measured prompt current at the back side is again an effect of the reflection\nthat is not considered in the simulation. Simulation and experiment are in good agreement,\nwhich gives confidence in the simulated model of the DUT.\n\n_4.3. Time over threshold_\n\nThe time over threshold (ToT) is here defined as the time the current transient is above\na given fraction of its amplitude. The ToT can be used as a measure for the collection\ntime of the charge. Low amplitude fractions thresholds can result in higher noise in the\nexperimental data, compared to too high thresholds that can result in less satisfactory\nconclusions on the collection time [ 9 ]. Here a fraction 20 % of the current transient’s\namplitude is used for the ToT. Figure 4a shows the simulated CC overlapped with the ToT\nas a function of the device depth. Current transients from excess charge generation at or\nclose to the top side are dominated by the contribution of holes. Therefore, the ToT is longer\ncompared to current transients, where electrons have the dominant contribution, because\nholes have only a third of the electrons mobility and thus require a longer drift time to be\ncollected. At about _z_ Si = 200 µm the ToT has a minimum, at the position where electrons\nand holes have the same drift time. The position of the minimum depends on the selected\namplitude’s fraction [9].\nFurthermore, a decrease of the ToT is observed when the focal point is located outside of\nthe active volume ( _z_ Si _<_ 0 µm or _z_ Si",
+        "score": -2.8548109950246037,
+        "dense_score": null,
+        "bm25_score": 10.181398093122421,
+        "graph_score": 0.0,
+        "rerank_score": -4.399293422698975,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.326074327342212,
+    "generation_latency_s": 2.300366759300232e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.326074327342212,
+    "generation_latency_s": 2.300366759300232e-07
+  }
+}

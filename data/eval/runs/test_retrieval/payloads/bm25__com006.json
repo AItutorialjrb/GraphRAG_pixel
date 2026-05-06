@@ -1,0 +1,275 @@
+{
+  "benchmark": {
+    "query_id": "com006",
+    "query_type": "comparative",
+    "query": "Compare BM25 and dense retrieval for detector papers.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "BM25"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare BM25 and dense retrieval for detector papers.",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 137,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit.md",
+        "title": "2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit",
+        "text": "t observable for charge transport under an applied electric field is drift speed. Comparison of simulated\nand measured drift speeds is thus a good test that the G4CMP\ncharge-transport processes are working as intended. For different values of the electric field, a maximum drift speed of the\ncharge carrier is reached, at which point energy from the electric field goes into emission of NTL phonons. Figure 7 shows\nthe average speeds of electrons and holes drifted through a Ge\ncrystal with O(V/cm) electric fields. The intervalley scattering\nrates for the G4CMP simulations are estimated using the theoretical model in Ref. [61]. The simulated results incorporate\nthe effects of all the charge transport processes described in this\nsection, yielding good agreement with experimental data [60].\nFor Si, G4CMP’s intervalley scattering rates are based on the\nmeasurements in Refs. [49, 57], including the option to select\neither of the two modeling methods reported in those papers.\n\n_2.4. Superconducting quasiparticle processes_\n\nGeometry surfaces may be configured in G4CMP to include modeling of phonon absorption by superconducting films\nand associated sensor response (see Sec. 3.2). To model\nquasiparticles in superconducting films, we have implemented\na “lumped” version [17] of Kaplan’s model for phononquasiparticle behavior [62] in a class named `G4CMPKaplanQP` .\nOur model traces the energy flow from a substrate phonon incident on the film to the amount of energy recorded by a sensor, including quasiparticle production, quasiparticle decay, and\n\nphonons re-emitted into the substrate, without tracking individual particles directly in the film. As implemented, energy\nexchange between phonons and quasiparticles is evaluated iteratively and the process effectively occurs instantaneously –\nany phonons re-emitted into the substrate are assigned the same\ntracking timestamp as the incident phonon. Consequently, energy delocalization via quasiparticle diffusion is not yet captured by this package. Future extensions of G4CMP will include modeling of quasiparticle recombination and concomitant phonon emission in order to improve the generality of the\ntoolkit beyond the originally intended dense arrays of athermal\nphonon sensors.\nIncluded in the model is the possibility for the initial incident phonon to be reflected back into the substrate without absorption ( _i.e._, no quasiparticles are produced), with a probability [17]\n\n_P_ escape ( _E_ _ph_ ) = exp �− λ [2] ( [ ·] _E_ [ 2]",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 20.587245285486247,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8109,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3062964__2510.02971__Millimeter-Wavelength_Lens-Absorber-Coupled_TiAl_Kinetic_Inductance_Detectors.md",
+        "title": "2026__recid_3062964__2510.02971__Millimeter-Wavelength_Lens-Absorber-Coupled_TiAl_Kinetic_Inductance_Detectors",
+        "text": "de Astrobiolog´ıa (CSIC-INTA) in Spain, where she is in\ncharge of the development of superconducting Kinetic Inductance Detectors\nfor space and ground based instrumentation. She is member of international\ncollaborations such as the NIKA2 camera, installed at the IRAM 30 m\ntelescope in Granada, and the KISS camera, for the Canary Island telescope.\nShe was also part of the CORE proposal submitted to the call for the M5\nmission of the ESA Cosmic Vision. She has authored or co-authored more\nthan 40 peer-reviewed papers. Her experience spans from the design and\nfabrication of superconducting electronics in cleanroom to the electronic\ncharacterization of superconducting devices at cryogenic temperatures with\nand without magnetic fields.\nDr. Gomez was awarded with a Spanish MICINN Juan de la CiervaIncorporaci´on postdoctoral fellowship in 2018 to lead the development of\nKinetic Inductance Detectors at Centro de Astrobiolog´ıa (CSIC-INTA), Spain\nfor two years.",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 18.832011434182206,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4733,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2771906__2403.16927__Enabling_pulse_shape_discrimination_with_commercial_ASICs.md",
+        "title": "2024__recid_2771906__2403.16927__Enabling_pulse_shape_discrimination_with_commercial_ASICs",
+        "text": "ty detector arrays using advanced on-board signal processing. Therefore,\nthe method we propose grants the capability to perform PSD on a compact detection system with a high number of channels for a broad range of applications,\nincluding nonproliferation, nuclear physics, and radiation protection.\nWe developed and implemented an on-board PSD method for the commercially available Citiroc1A ASIC [12]. In Section 2, we introduce the ASIC-based\nmethod, which we will call Digital Shaper (DS) PSD, to discriminate between\nneutron and gamma-ray pulses and calculate the circuit response function for\noptimizing the PSD parameter using template pulses. In Section 3, we apply\nthe optimized PSD method on measured gamma-ray and neutron pulses. A\ncomparison between the traditional charge-integration (CI) PSD and DS PSD\nis given. The discussion and conclusions are presented in Section 4\n\n2\n\n**2. Methods**\n\nIn this section, we describe the implementation of PSD using electronics\navailable in the Citiroc1A ASIC. The DS PSD method will be demonstrated on\n\nsynthetic pulses and experimentally measured data, and its performance will be\ncompared with the traditional PSD method.\n\n_2.1. Imaging System Design_\n\nFigure 1: Schematic of a multi-particle spectroscopic imager based on an ASIC-based electronic readout.\n\nWe built a compact imaging system encompassing a 4 _×_ 7 array of LYSO\ncrystals (3 mm _×_ 3 mm _×_ 5 cm) coupled to 56 Onsemi MicroFJ 30020 SiPMs [13]\nthat are read out by four Citiroc1A ASICs. In the future the LYSO will be\nreplaced by PSD-capable scintillators such as stilbene. This detector can be\nused as an imager for nuclear security and non-proliferation applications or as a\nparticle tracker for nuclear physics experiments. Figure 1 shows the schematic\nof the imager. The system includes two custom printed circuit boards (PCBs),\neach powering and controlling the readout of a 4 _×_ 7 array of SiPMs. The SiPM\narrays are used for light readout of the top and bottom sides of a 4 _×_ 7 scintillator\nmatrix. The dual-end readout enables the retrieval of depth of interaction information [14, 15]. The SiPM pulses are fed to an A55CIT4-DT5550W readout\nsystem by CAEN Technologies [9]. The system is controlled via computer using the DT5550W Readout Software (Sci Digitizer Family, Version 2022.1.1.0,\ndistributed by CAEN Technologies). This software allows us to control the\nDT5550W and program some of the board settings, including the gain, the\n\n3\n\nthreshold, and the shaping const",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 17.57752733149263,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7962,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2963378__2508.16005__Demonstrating_a_broadband_Photon_Detection_Efficiency_model_on_VUV_sensitive_Silicon_Photo.md",
+        "title": "2026__recid_2963378__2508.16005__Demonstrating_a_broadband_Photon_Detection_Efficiency_model_on_VUV_sensitive_Silicon_Photo",
+        "text": "## Demonstrating a broadband Photon Detection Efficiency model on VUV sensitive Silicon Photomultipliers\n\nAustin de St Croix a, _∗_, Harry Lewis b,1, Kurtis Raymond b, Fabrice Retière b, Maia\nHenriksson-Ward [b], Giacomo Gallina [d], Nicholas Morrison [b,1], Aileen Zhang [b]\n\n_a_ _Department of Physics, Engineering Physics and Astronomy, Queen’s University, 64 Bader Lane, Kingston, K7L_\n_3N6, Ontario, Canada_\n_b_ _TRIUMF, 4004 Wesbrook Mall, Vancouver, V6T 2A3, British Columbia, Canada_\n_c_ _Department of Physics, Simon Fraser University, 8888 University Drive, Burnaby, V5A 1S6, British_\n_Columbia, Canada_\n_d_ _Department of Physics, Princeton University, Jadwin Hall, Washington Road, Princeton, 08544, New Jersey, USA_\n\n**Abstract**\n\nWe present a versatile analytic model describing Photon Detection Efficiency (PDE) for P-on-N\nsilicon photomultipliers, with possible applications for device characterization, PDE extrapolation\nfrom limited data, simulation and design optimization. Using device specific parameters, SiPM\nPDE is modeled as a function of wavelength, angle of incidence, voltage, and limited temperature\nrange. By factoring the PDE into transmission and internal efficiency, the performance in liquid\nnobles and other dense media can be predicted. We present the measurement of the absolute PDE\nfrom 350 to 830 nm at 163 K for two VUV sensitive SiPMs: a Hamamatsu VUV4 and Fondazione\n\nBruno Kessler VUV-HD Technology. Additional measurements of relative PDE versus angle are\nalso included. We successfully fit the model to the data, compare with literature and show the\nmodel’s predictive power by extrapolating PDE to new wavelengths and operation in liquid xenon\nand argon, which is useful for estimating performance and the impact of external cross-talk in future\nlarge-scale experiments. Lastly we use the model to investigate optimizing efficiency for specific\napplications in astroparticle physics and quantum computing.\n\n_Keywords:_ SiPM, silicon photomultiplier, photodetection efficiency, PDE, liquid nobles, argon,\nxenon, external crosstalk\n\n**1. Introduction**\n\nThis work develops a versatile model for the photon detection efficiency (PDE) of silicon photomultipliers (SiPMs), which can be applied across their full range of detectable wavelengths and\nvaried operating conditions. SiPMs have superseded the photomultiplier tube in many physics\napplications due to benefits including lower operating voltage, radiopurity and compact size. Devices consist of a pixe",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 16.883714875820772,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2396,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "ons, uncertainties from production cross sections\ndominate compared to uncertainties from inelastic cross\nsections, and we fix the parameterization of the latter to\nthat of [97]; we refer readers to [98] for a recent discussion of the inelastic cross-sections models [2] used in GCR\nphysics.\nThe existing models for the isotopic production cross\nsections were discussed at length in Paper I [3] . To encompass the typical uncertainties on these models, as in Paper I, we consider two parameterizations available from\nthe GALPROP code [4] [98], namely its options OPT12\nand OPT22. Both are based on a careful inspection\nof the quality and systematics of all available nuclear\ndatasets for each reaction in MeV/n–GeV/n range, and\nthe use of specifically designed approximations, semiempirical formulas, and nuclear codes normalized to data\nwhen available [99–104]: _for marginally important re-_\n_actions,_ OPT12 uses the WNEW code [105–108] and\nOPT22–the YIELDX code [109, 110], providing a representative dispersion for cross sections where no data\nare available. For more details on the nuclear package in GALPROP see [66] and references therein. For\nmost of our rankings, we actually use a third parameterization, based on a mixture of GALPROP-OPT12 and\nGALPROP-OPT22 [12, 76]. This parameterization is\nbased on GALPROP-OPT12 and renormalizes, for the\nmost important reaction involved in the production of\nLiBeB [76] and F [12], GALPROP-OPT22 cross sections\nto nuclear data, which became available after the GALPROP nuclear cross-section package was developed. Indeed, with these new nuclear data, the fragmentation of\nFe appears to be very important [76], compared to how\nit was ranked in Paper I. This parameterization can be\nseen as a partial update of the original GALPROP routines, which is used here to update the ranking for the\nLiBeB elements provided in Paper I.\nA full update of the GALPROP parameterizations,\nbased on a comprehensive survey of the literature for\nnuclear data relevant for the production of all elements\nconsidered here would be ideal. However, this is an extremely time-consuming task yet to be completed. While\nworking to achieve this goal, we provide the best rankings\navailable at this time. As new data becomes available,\nour results will be updated in the follow-up papers.\n\n**II.3.** **Primary vs. secondary origin of F to Si**\n\nBefore defining which rankings are performed and what\nthey are, it is important to briefly introduce the most\n\n2 Note that there are ma",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 16.239696696263366,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2271,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2672286__2306.14944__Fully_ab-initio_all-electron_calculation_of_dark_matter-electron_scattering_in_crystals_wi.md",
+        "title": "2024__recid_2672286__2306.14944__Fully_ab-initio_all-electron_calculation_of_dark_matter-electron_scattering_in_crystals_wi",
+        "text": "0 [2]\n\n10 [1]\n\n10 [0]\n\n10 _[−]_ [1]\n\n10 _[−]_ [2]\n\n10 _[−]_ [3]\n\nFIG. 1. Panels (a) and (b) show the calculated crystal form factor _|f_ crystal ( _q, E_ _e_ ) _|_ [2] (see Eq. (14)) for silicon and germanium,\nrespectively. The details of the calculation are described in §III A. The region beneath the black line is kinematically inaccessible\nfor halo DM, as it would require _v_ min ( _q, E_ _e_ ) _> v_ Escape + _v_ Earth (see Appendix B for more details).\n\nin the calculation, where _N_ _T_ is the number of unit cells\nin this crystal, with _N_ _T_ ≳ _O_ �10 [23] [�] for a 10 g crystal.\nHowever, such a dense mesh is impractical. Since we\nneed to calculate rates for transition from each **k** to each\n**k** _[′]_, the computational complexity scales as _n_ [2] _k_ [, and the]\ncalculation quickly becomes unfeasible.\nWe generally model the grid in reciprocal space as a Γcentered Monkhorst-Pack grid, with _n_ _k,i_ points along the\n_b_ _i_ reciprocal lattice vector. We use the shorthand _n_ _k,_ 1 _×_\n_n_ _k,_ 2 _× n_ _k,_ 3 to denote the mesh in the reciprocal space,\nwhich has _n_ _k_ = [�] [3] _i_ =1 _[n]_ _[k,i]_ **[ k]** _[−]_ [points. Because both Si and]\nGe crystallize in FCC cells, it is reasonable to set _n_ _k,_ 1 =\n_n_ _k,_ 2 = _n_ _k,_ 3 . We choose _n_ _k,i_ = 4 and 6 for Si and Ge,\nrespectively, but check the dependence of DM–electron\nscattering rates on our choice of **k** _−_ grid in §III C 3.\nIn addition, it becomes computationally expensive to\ninclude a large number of **K** vectors, and so in practice,\nwe must limit the vectors to some _q_ max . The choice of\n_q_ max is another source of systematic error. We choose\n_q_ max = 25 _αm_ _e_ and _q_ max = 20 _αm_ _e_ for Si and Ge, respectively, and further show the dependence of DM–electron\nscattering rates on _q_ max in §III C 5.\n\n**III.** **RESULTS & DISCUSSION**\n\nIn this section, we describe the results from our calculation of the crystal form factors (Eq. (14)) and the\nDM–electron scattering rates (Eq. (10)) for Si and Ge\nperformed with `QCDark` . We evaluate the various systematic uncertainties, and compare our results to those\nfrom other available codes. Finally, we look at the annual\nmodulation rate as a function of the DM mass, _m_ _χ_ and\nthe DM form factor, _F_ _χ_ .\nTable II lists the values of crystal parameters used for\nour calculation of DM–electron scattering rates in both\n\nSi and Ge, including the experimental bandgap used for\nthe scissor correction procedure.\n\n**A.** **Crystal Form",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 16.016720978223375,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2397,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "able,\nour results will be updated in the follow-up papers.\n\n**II.3.** **Primary vs. secondary origin of F to Si**\n\nBefore defining which rankings are performed and what\nthey are, it is important to briefly introduce the most\n\n2 Note that there are many typos in the original paper [97], which\nare fixed in [98].\n3 Note that, among the approaches described, the accuracy of\nMonte Carlo transport codes is still questionable and we prefer\nto rely on parameterization based both on data and dedicated\nnuclear codes.\n4 `[http://galprop.stanford.edu](http://galprop.stanford.edu)`\n\nsalient properties, production-wise, of the CR elements\nunder scrutiny. For an advanced discussion on the origin\nof these elements in GCRs, see [111].\nGCRs are broadly separated in two categories, namely\n_primary_ species, accelerated in sources (e.g., [1] H, [4] He,\nO, Si, Fe), and _secondary_ species, resulting from the nuclear fragmentation of heavier species in the ISM (e.g.,\n2 H, 3 He, LiBeB, F, Sc, Ti, and V). Most species are\nformed from an energy-dependent mixture of these two\ncategories. Schematically, for each secondary component,\nits spectrum appears to be steeper than the spectrum\nof its progenitor by the value of the index of the diffusion coefficient. Given the shape of _D_ ( _R_ ), see Eq. (2),\nwhich is minimum at a few GeV/n and increases otherwise, the maximum of secondary content in CRs peaks\nat a few GeV/n. Moreover, in case of consequent nuclear interactions, the energy dependence of the spectrum\nof the daughter nucleus will suffer such steepening each\ntime, resulting in an even steeper spectrum (see also Paper I). Obviously, secondary-dominated species will be\nmuch more sensitive to uncertainties in the cross sections than primary-dominated ones, but the maximum\nof uncertainties will arise at this peak, where the direct\nand multistep contributions maximized. Showing calculations at a few GeV/n thus highlights the role of nuclear\nuncertainties on CR fluxes for the most unfavorable case.\nWe show in Table I the different origins of the elemental\nfluxes (and their isotopes) calculated at 10 GeV/n. To\navoid any possible ambiguity, we denote the contributing fractions shown as _f_ prim (for primary), _f_ sec (for secondary, including direct and multistep production), and\n_f_ rad (for radioactive, a rare case of a CR species receiving\na contribution from the _β_ or EC capture decay of another\nCR progenitor [5] ), whose sum makes up 100% of the total\nflux. We further separate _",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 15.762561304767846,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4822,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators.md",
+        "title": "2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators",
+        "text": "ts from XENON10 and XENON1T (S2only) as well as on the projections for a background-free 10 kg-yr and 100 kg-yr exposure experiment\nin Fig. 21. The only difference between the various lines labeled by “FF” is the choice of the xenon\nform factor that affects the direct-detection sensitivity, but SRDM flux simulations are the same. We\nsee that the constraints and projections agree generally within a factor of a few. Moreover, in Fig. 21\nwe compare our XENON1T (S2-only) constraint (black solid curve) for SRDM with the result from\nFig. 10 of [43] (blue solid curve with the label “Result 2108.10332”). Ref. [43] features an independent\nsimulation of the SRDM flux, a different xenon form factor (based on the FAC code [86] and also\nused in, e.g., [3, 87]), and an independent analysis of the detector response. We have confirmed that\nthe SRDM fluxes from both groups agree well with each other, and believe that the difference (less\nthan a factor of 3) most likely arises due to the use of a different xenon form factor and/or a different\ntreatment of the XENON1T data. Overall though, the agreement is good.\n\n**D** **Comparison with other silicon form factors**\n\nFor the constraints and projections from silicon-based detectors, we use `QCDark` [57, 58] and correct\nit with the Lindhard dielectric function [59–61] to account for in-medium screening and plasmon\nexcitations, as discussed in Section 2.5.3 and in [46]. We show in this section the impact of the collective\n\n– 33 –\n\n10 [-] [32]\n\n10 [-] [2] 10 [-] [1] 10 [0]\n\nDM mass m χ [MeV]\n\n**Figure 21** . Solar reflection exclusion limits and projections (90% CL) from xenon-based direct-detection\nexperiments for DM coupled to an ultralight dark photon. Using the simulations of the SRDM flux presented\nin this paper, we compare the constraints and projections for three different publicly-available xenon form\nfactors [5, 54, 55]. We also compare the XENON1T (S2-only) bound derived in this paper with the one\nderived in Ref. [43], which uses an independent simulation of the SRDM flux, an independent calculation\nof the xenon form factor (using the FAC package [86]), and an independent analysis of the bound from the\nXENON1T data. The excluded regions shaded in solar colors are from XENON10 [4, 5, 8], and XENON1T\n(S2-only) [14]. The region shaded in light blue on the left is the red giants cooling constraint [68]. For halo\nDM, the excluded region is the combined limit from SENSEI@SNOLAB [22] and SENSEI@MINOS [16]. The\nfreeze-in benchm",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 15.318811980207023,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 42,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3503,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2721878__2311.07340__Performance_of_a_first_full-size_WOM-based_liquid_scintillator_detector_cell_as_prototype_.md",
+        "title": "2024__recid_2721878__2311.07340__Performance_of_a_first_full-size_WOM-based_liquid_scintillator_detector_cell_as_prototype_",
+        "text": "likely be achieved as well in the case of minimum ionizing particles.\n\n**7.6** **Light collection and detector response uniformity**\n\nAs mentioned in Section 7.5 we do not have a measurement of a single photoelectron signal in\n\nour SiPMs, which mean that we cannot convert the number of photons detected in simulation to\n\nthe measured integrated yields, or vice-versa. Here we compare simulated results to measurement\n\nin a qualitative way. The simulation described in Section 7.4 was used to produce a dataset with\n\nthe same incoming beam angles and energies as those measured at the test beam. As discussed in\n\nSection 3.2, the detector’s inner walls showed rust stains. Hence, the reflectivity of the detector\n\ncell was assumed to be below that of the measured samples. To account for this, simulated datasets\n\n– 30 –\n\n**Figure 26** : Total efficiency for the detector as a function of distance _𝑅_ _𝑐_ between the particle crossing\n\npoint and the centre of the detector cell, requiring that at least one of the summed WOM signals has\n\npassed the threshold of 800 mV × ns.\n\nwith reflectivities of 100 %, 90 %, 80 %, 70 %, 65 %, 60 %, and 50 % of the measured reflectivity\n\nwere produced for all particle crossing points at 0 [◦] and compared to data. All simulations assume\n\nthat the reflectivity within the detector cell is uniform for all surfaces, which may not be the case,\n\nbut in the absence of measurements from the detector cell we make this approximation. To find the\nreflectivity value that brings the simulation in best agreement with the data, we define a _𝜒_ [2] function\n\nwhich compares the average photon yield in the simulation ( _𝑠𝑖𝑚𝑢𝑙𝑎𝑡𝑖𝑜𝑛_ _𝑖_ ) and the measured average\n\nintegrated yield ( _𝑑𝑎𝑡𝑎_ _𝑖_ ) for all particle crossing points ( _𝑖_ = 1 _, ..., 𝑁_ ). In order to directly compare\n\nthe simulation to data, a scale parameter _𝜆_ was applied to the simulated photon yields, depending\non the reflectivity _𝛼_ . The _𝜒_ [2] between these distributions was then summed over all particle crossing\n\npoints _𝑖_ for a given reflectivity, and this number is minimised:\n\n_𝜒_ _𝑇𝑜𝑡_ [2] [(] _[𝜆]_ [(] _[𝛼]_ [)] _[, 𝛼]_ [)][ =] ∑︁\n\n_𝑖_\n\n( _𝜆_ ( _𝛼_ ) · _𝑠𝑖𝑚𝑢𝑙𝑎𝑡𝑖𝑜𝑛_ _𝑖_ ( _𝛼_ ) − _𝑑𝑎𝑡𝑎_ _𝑖_ ) [2]\n\n_,_ (7.3)\n_𝜎_ [2]\n_𝑖_\n\nwhere _𝜎_ _𝑖_ is the standard deviation of the simulated photon yield distribution divided by ~~[√]~~ _𝑁_ _𝑒𝑣𝑒𝑛𝑡𝑠_,\n\nand _𝜆_ is a variable fit parameter. It was found that the high-reflectivity samples relatively overes\ntimated the amount of light collection for",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 15.219387674948887,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 35,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2346,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "mm, respectively.\nAll spatial resolutions and three-dimensional deviations\ndetermined in this work can also be looked up in Table 2 and\nTable 3.\n\n**4. Conclusion and outlook**\n\nThis work is the second part of a simulation study investigating the performance of an envisaged cost-effective PET-like\ndetector system capable of tracking tracer particle movement\nin dense and optically opaque granular assemblies. Following\non from the work done in Oppotsch et al. (2024) (and therefore\nreferred to as the previous studies for the rest of this section),\nwhich investigated the performance of the detector system for\na stationary source within the detector system filled with\nair only (referred to as the empty detector), the generic\n\n_This is the accepted manuscript version of an article accepted for publication in Particuology. The final version is available online at_\n_https://doi.org/10.1016/j.partic.2023.09.003_ _Page 10 of 13_\n\n**Table 3**\n\nThree-dimensional deviations for all scenarios.\n\nScenario Deviation Δr (mm)\n\nStationary source 2.1 ± 0.8\nModel path (buffer size = 6,000) 4.0 ± 1.6\nDEM path 2.3 ± 0.9\nModel path (buffer size = 36,000) 6.5 ± 1.5\n\ngrate system and the detector system completely filled with\nparticles, the goal of this work was to improve the existing\nreconstruction software (by extending it to oversampling\n(calculating a moving average for the position determination\nof the tracer particle) and iteration) and extend both the\nreconstruction and simulation software to a tracer sphere\nmoving along a selected model path and a path given by a\nDEM simulation. Moreover, the PET-like detector system was\nscaled down to a total of 88 cost-effective plastic scintillator\nbars to better fit the size of the generic grate system and to\nfurther reduce cost.\n\nThus, for a stationary source within the GGS, spatial\nresolutions of 0.6 mm in the x- and y-direction and 1.1 mm\nin the z-direction, as well as an average three-dimensional\ndeviation of the reconstructed tracer sphere positions from\nthe simulated position of (2.1 ± 0.8) mm were determined.\nFurthermore, it could be shown that the iteration leads to an\nimprovement of the resolution by a factor of about 170 in x\nand y and by a factor of 110 in the z-direction. By measuring\nthe position dependency of the reconstruction, it was found\nthat the efficiency is nearly constant throughout the detector\nsystem (due to the small size of the generic grate system), so\nboundary effects can be neglected.\nTo investigate the spat",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 15.1950033103838,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.6558256172575057,
+    "generation_latency_s": 3.497116267681122e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.6558256172575057,
+    "generation_latency_s": 3.497116267681122e-07
+  }
+}

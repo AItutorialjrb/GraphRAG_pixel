@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "mul011",
+    "query_type": "multi_hop",
+    "query": "How can detector geometry affect electric field and charge collection?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "detector",
+      "geometry"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can detector geometry affect electric field and charge collection?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4144,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi.md",
+        "title": "2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi",
+        "text": "the readout anode. This reduces the charge collection efficiency which is therefore a function of the\ninteraction depth [52]. Since a fraction of the energy\nis lost in the region of the entrance window, the measured energy is shifted to lower values. In addition, the\nfull energy peak becomes asymmetric featuring a pronounced low-energy tail. This effectively decreases the\nenergy resolution of the detection system. The effect\nof the entrance window on the detector response decreases with higher electron energies and smaller en\n\ntrance window thicknesses, since then a smaller fraction\nof the total energy is lost. For previous TRISTAN detectors consisting of 7 pixels, the energy shift has been\ndetermined to be (29 _±_ 2) eV for electrons with an energy of 30 _._ 4 keV (using the M-line of a [83m] Kr source).\nAssuming a simplified step-like dead layer model for\nthe entrance window charge collection efficiency, an\nentrance window thickness of (49 _±_ 3) nm was determined [51]. This value can only be considered as a rough\nestimation; a more realistic model can be found in [53].\n\n_Backscattering tail_\n\nAnother effect of incomplete charge collection is due\nto the backscattering of electrons. The incoming electrons as well as the secondary electrons undergo scattering inside the detector material which changes their\nmomenta. As a result, the electrons can change their\ndirections such that they eventually leave the detector\nbefore having deposited their entire energy in the sensitive volume. In the energy spectrum, this gives rise\nto a backscattering tail, i.e. an extended continuum\ntowards lower energies. For low-energetic electrons in\nthe keV range, the probability of backscattering is on\nthe order of 20 % [54]. The amount of backscattering decreases with higher electron energies and with smaller\nincidence angles (the incident angle of an electron beam\nperpendicular to the detector surface is 0 _[◦]_ ).\n\n10\n\n_Electron response in the monitor spectrometer_\n\nTo test the electron response of the TRISTAN detector\nmodule in an environment that closely resembles the\nKATRIN experiment, in particular the MAC-E filter,\na detector module (S0-166-4) has been installed in the\nmonitor spectrometer. As described in Section 3.3,\nthe apparatus provides different quasi-monoenergetic\nelectron sources. Typical energy spectra for the individual pixels measured in the presence of a [83m] Kr\nsource are shown in figure 9c. To increase the rate\nof electrons hitting the detector, the sou",
+        "score": 1.2230363661243069,
+        "dense_score": 0.565237283706665,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 1.8729095458984375,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6447,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "d\nin order to improve the charge collection efficiency of the\n\nFigure 6: Simulated hexagonal pixel cell in TCAD. The colours correspond to doping level, and the plane marked C1 is a cut for display\npurposes. The electric field magnitude for this cut is shown in Figure 7.\n\nsensor in incident positions further from the readout implant [13, 14]. In Figure 9 the signals for the centre and\ncorner incident positions for the _n-gap_ layout are shown.\nThe duration of the signal is dependent on the MIP incident position; the faster charge collection is observed in\nthe centre of the pixel, due to the immediate proximity\nto the readout implant. The charges are deposited 0.5 ns\nafter the start of the simulation, leading to the rising edge\nof the pulse.\nFigure 10 shows the signals for corner incident positions,\nfor all three layouts. The _n-blanket_ has a larger depletion\nregion compared to the _standard_ layout, and the _n-gap_ has\nan additional area with a stronger lateral electric field component, which improves the charge collection far from the\npixel centre. As the _standard_ layout is undepleted in the\npixel corners, charges formed there move slowly by diffusion, and the charge collection thus takes a comparatively\nlong time.\n\n_3.7. Generating weighting potentials_\n\nTransient simulations using TCAD are computationally\nintensive, and it can thus be beneficial to perform transient simulations using e.g. Allpix [2] instead. A weighting\npotential is required to be able to perform transient simulations using the Shockley-Ramo theorem [21, 22]. The\npotential can be calculated by taking the difference of the\nelectrostatic potentials arising from applying two slightly\ndifferent bias voltages to one collection electrode in a sensor, keeping the other collection electrodes at a constant\nbias voltage. The two required electrostatic potentials can\nbe simulated using TCAD, using the same sensor geometry with a difference of 0.01 V in the bias voltage of a\nsingle collection electrode. By calculating the difference\nbetween the two potentials in each mesh point, and dividing the difference by the difference in collection electrode\nbias voltage, the weighting potential is acquired. Before\n\n7\n\n(a) _Standard_ layout\n\n(b) _N-gap_ layout\n\nFigure 7: Electric field magnitude as output from a TCAD simulation\nfor a hexagonal pixel in the _standard_ and _n-gap_ layouts. The white\nlines denote depletion boundaries, and the colour scale denotes the\nmagnitude of the electric field.\n\nare show",
+        "score": 1.106725616314832,
+        "dense_score": 0.5189937949180603,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 1.6947362422943115,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6959,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement.md",
+        "title": "2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement",
+        "text": "ackage, to simulate the charge carrier transport in a solid state detector together with the corresponding induced charge on each electrode. Physical quantities\nin the solid state detector are calculated in 2D or 3D us\ning an SOR (Successive Over Relaxation) method computed\nover an adaptive grid.\nThe simulation procedure can be divided into three main\nparts [21]: 1) The construction of the detector geometry and\nthe definition of the simulation conditions. 2) The calculation of the electric potential and electric field as well as the\nweighting potential of each electrode for the defined geometry. 3) The simulation of the charge carrier drift and the\ncalculation of the induced charge on each electrode.\n\n_v_ _=_ _µ_ _E_, (4)\n\nUsing Equations 3 and 4, the drift time _t_ is derived as follows:\n\n_t_ _=_ _[d]_\n\n(5)\n_µ_ _E_ [.]\n\n_[d]_ _[d]_\n\n_v_ _[=]_\n\n_3.1.1. Geometry and physical parameters_\n\nFigure 7 shows the geometry assuming the TimePix3 detector with a 500 _µ_ m silicon sensor. The geometry consisted\nof a 500 µ m silicon bulk (gray box), a common electrode\n(red plate), pixel electrodes (blue plate). The volumes and\nmaterials associated to each geometry component are summarized in Table 1. The TimePix3 detector used in the\n\nexperiment is comprised of a n-type silicon bulk together\nwith a p-type silicon implant divided into 256 _×_ 256 pixels\n\n[9]. However, a simplified structure with a 500 µ m silicon\nbulk sensor and 25 _×_ 25 pixels was used in the simulation.\nThe number of pixels are decreased to reduce the calculation time for the electric potential, the electric field, and\nthe weighting potential. From the experimental results,\nthe cluster image measured in the experiment extends to\n\n4\n\napproximately 10 _×_ 10 pixels at most; thus, the geometry\nwith 25 _×_ 25 pixels is sufficiently large for estimating the\ncluster size.\n\nMoreover, we set several physical parameters related to\nthe charge carrier drifts to reproduce the conditions of operation of the TimePix3 detector. These parameters are\nsummarized in the Table 2 and include the mobility of the\nelectrons/holes _µ_ e / _µ_ h [20], the diffusion constant for the\nrandom thermal motion of the electrons/holes _D_ e / _D_ h calculated by Einstein’s equation, the electron-hole pair creation\nenergy _E_ ion [22], the Fano factor _f_ fano [23], the supply voltage between the common electrode and the pixel electrodes,\nand the temperature of the silicon bulk _T_ .\nFigure 7 shows the geometry schematic diagram. The\ne",
+        "score": 0.6140467675832602,
+        "dense_score": 0.4818812608718872,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.9387701749801636,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1597,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2706661__2406.01839__Simulation_of_DAMPE_silicon_microstrip_detectors_in_the_Allpixmath_altimgsi3.svg_displayin.md",
+        "title": "2023__recid_2706661__2406.01839__Simulation_of_DAMPE_silicon_microstrip_detectors_in_the_Allpixmath_altimgsi3.svg_displayin",
+        "text": "h on-orbit data, Fig. 1a shows that the energy\ndeposition of particles in individual strips generally matches well between the\nsimulated and on-orbit data. However, challenges arise when it comes to charge\nreconstruction using the charge sharing algorithm in [8] due to differences in cluster size (the number of strips firing in an event), as shown in Fig. 1b. These differences can be attributed to the complex internal electric fields present in silicon\nstrip detectors, which are difficult to accurately consider in Geant4 simulations.\nEven when considering a simple linear electric field, there is still a significant discrepancy between the simulated results and the data [9]. The limitations of Geant4\nin capturing the intricate behavior of silicon strip detectors necessitate alternative\napproaches.\n\n-3\n×10\n\n25\n\n20\n\n15\n\n0.5\n\n0.4\n\n0.3\n\n0.2\n\n0.1\n\n10\n\n5\n\n0\n\n0 100 200 300 400 500 600 700 800\nTotal ADC count\n\n(a)\n\n0\n\n0 1 2 3 4 5 6 7 8\nCluster size\n\n(b)\n\nFigure 1: The comparison between on-orbit data and simulated data for vertically incident helium\nMIP (Minimum Ionizing Particle) entries. The left figure represents the total ADC count of the\nreadout strips, while the right figure depicts the difference in cluster size. The normalization\nmethod used in this study is area normalization.\n\nOne alternative approach is to employ the TCAD software in simulation and\nmodeling. TCAD takes into account the influence of electric fields and provides\nmore accurate results, making it valuable for radiation damage studies and new\ndetector designs [10, 11]. However, TCAD has limitations in simulating the large\nnumber of readout strips present in detectors like DAMPE (which consists of\n73,728 readout strips). Integrating TCAD simulations with Geant4 to assess the\noverall performance, including geometric acceptance and trigger efficiency of the\n\n2\n\ndetector, becomes challenging due to these limitations. To address these challenges, we require software capable of considering the effects of internal electric\nfields, doping concentration, implantation depth, pitch width, and other material\nproperties of the silicon strip detector. Additionally, the software should facilitate\nlarge-scale simulations incorporating various detector materials. In this context,\nthe highly successful application of the Allpix [2] [12] framework becomes relevant\n\n[13, 14].\nAllpix [2] is a user-friendly software package designed to simulate semiconductor detector performance [12]. It covers the entire simulati",
+        "score": 0.25767373864587984,
+        "dense_score": 0.47619783878326416,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.3907531201839447,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4511,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology.md",
+        "title": "2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology",
+        "text": "i _ciency_\nThe _detection e_ ffi _ciency_ of the detector is calculated\nas the ratio of the associated clusters in the DUT and\n\nthe reconstructed tracks within the acceptance window\naround the cluster center.\nFigure 3 compares the efficiency performance as a\nfunction of the threshold for the n-gap design at different bias voltages. The results are very similar since the\ndepleted volume and the charge sharing in this layout\nare almost unchanged with the bias voltage. In the operating threshold range (above 3σ _noise_ ), the efficiency for\nthe n-gap design starts at 99.9% and falls to 86%, and\nremains above 99% until a threshold of 220 electrons.\n\n**6. Sensor Simulations**\n\nThe electric field distribution in sensors greatly depends on doping profiles. In particular, MAPS with a\nsmall collection electrode have highly complex electric\nfields. Hence, sensor simulations are necessary to understand the inner workings of the detector. This work\nuses a combination of TCAD and Monte Carlo simula\ntions to obtain precise electric fields and high statistic\nresults for detector performance evaluations [24].\n\nFigure 3: Efficiency as a function of the threshold for APTS in n-gap\nlayout at different bias voltages, from -1.2 to -4.8 V. Only statistical\nuncertainties are included.\n\n_6.1. TCAD Simulations_\n\nThe TCAD simulations carried out within the TAN\nGERINE project are based on fundamental principles\nof silicon detectors and employ generic doping profiles\nas described in the following. A 3D structure is created\nwith geometrical operations and analytic doping profiles\nfollowing the scheme shown in Figure 1.\n_Quasi-stationary simulations_ were performed to\nmodel the electric fields of the studied designs. These\nsimulations aim to understand the effect of design\nchanges and provide input for optimization of the design\nand the operational parameters. This was achieved by\nscanning over different geometrical and operational parameters of the sensor, such as p-well opening and bias\nvoltage, and observing the behavior of the electric field,\nthe lateral electric field strength, as well as the depleted\nvolume. Finally, the parameters that reproduce the expected physical behavior (similar to previous studies on\nother technologies [10, 11, 13]) are selected to derive\nelectric fields for subsequent Monte Carlo simulations.\nMore details on this simulation approach can be found\nin [4].\n\n_6.2. Monte Carlo Simulations_\n\nMonte Carlo simulations are employed to model the\nfull response of a",
+        "score": 0.06304926217898078,
+        "dense_score": 0.48066315054893494,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.09114602208137512,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4512,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology.md",
+        "title": "2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology",
+        "text": ", 13]) are selected to derive\nelectric fields for subsequent Monte Carlo simulations.\nMore details on this simulation approach can be found\nin [4].\n\n_6.2. Monte Carlo Simulations_\n\nMonte Carlo simulations are employed to model the\nfull response of a detector. This is achieved with the\nmodular framework Allpix [2] [25], developed for Monte\nCarlo simulations of semiconductor radiation detectors.\n\nThe results of these simulations allow for direct com\nparison with experimental data.\nThe simulated detector structure consists of a matrix\n\nof square pixels with a 25 µm pitch and a sensor thickness of 50 µm (including epitaxial layer and substrate).\n\n4\n\nThe electric field for each pixel cell is imported from\nthe TCAD simulation described above. A 4 GeV elec\ntron beam is used as a particle source to compare with\nthe test-beam results. The data processing is analog\nto the one described in Section 5 for test-beam data.\n\nThe most significant observables that can be obtained\nare detection efficiency, cluster size, spatial resolution,\nand charge collection. Initial results from Monte Carlo\nsimulations using generic TCAD fields have been reported in [2], and the most recent results on efficiency\nand charge collection are compared with test-beam data\nin the following section.\n\n**7. Comparing Data and Simulation**\n\nSimulations are compared to experimental data in order to validate the employed simulation approach. Figures 4 and 5 show, respectively, the comparison of the\nseed pixel charge distribution and the efficiency as a\nfunction of the threshold for a detector in the n-gap design. Both plots show a good agreement between simulation and experimental data.\nIn figure 4, both charge distributions follow the trend\nof a Landau distribution convolved with a Gaussian,\nrepresenting effects in the interaction of minimum ionizing particles traversing thin sensors, such as stochastic\nfluctuations of charge deposition and electronic noise.\nThis convolved function is fitted to extract the _most_\n_probable value_ (MPV) for the charge collection. The\nobtained MPVs are around 500 electrons.\n\nFigure 4: Comparison of experimental data and simulations of charge\ndistribution of the seed pixel for the n-gap layout at -4.8 V bias volt\nage.\n\nFigure 5 shows that the agreement between experimental data and simulations for the detector efficiency\nis within 1%, only considering statistical uncertainties.\n\n Figure 5: Comparison of experimental data and simulations of effi\nciency as a function of",
+        "score": 0.008404816592663107,
+        "dense_score": 0.510705828666687,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.005346521735191345,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5994,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc.md",
+        "title": "2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc",
+        "text": "tector [2]. The sensor design,\ndecoupling charge-generating volume from the drift distance,\naccommodates shorter electrode spacing, consequently\ndecreasing the charge carrier trapping probability. Recent\nstudies using the Transient Current Technique (TCT) [3, 4],\nhave further substantiated the exceptional timing performance\nof such devices. For vertically incident events, the orthogonal\nrelationship between drift direction and particle trajectory\nresults in an absence of Landau fluctuations **,** key factor in\nextending theoretical timing performance of such devices,\nprimarily constrained only by the signal's drift time.\n\nThis excellent performance is nevertheless impacted by\nfield non-uniformities, intrinsic to the column geometry of the\ncollection electrodes. The resulting radially expanding field\nwithin the pixel volume increases signal time-jitter, degrading\n\ntime resolution. Such a geometry, though detrimental under\nnormal operation, can lead to high field densities near the\ncollection electrode (> 30 V/μm) at higher bias voltages\n(> 500 V) typically used after irradiation. In this operating\nmode, impact ionization and charge multiplication occur near\nthe collection electrode in a similar way as in Multi-Wire\nProportional Chambers (MWPCs) and can compensate for\ntrapping induced charge collection efficiency issues.\n\nIn this study, three different geometries are examined after\nproton and neutron irradiation, using 120 GeV SPS pion\nbeams [5]. Pixel sizes of 55 x 55 μm [2] [6], 25 x 100 μm [2] and\n50 x 50 μm [2] [7] in substrates of 230 μm (190 μm active depth)\nfor the first geometry and 150 μm (130 μm active depth) for\nthe second and third, are tested to establish the minimum\nactive thickness and pixel size still yielding sufficient charge\nand low enough jitter to achieve a 30 ps time resolution.\nQuestions of signal integrity, bandwidth and efficiency are\ntreated.\n\n**2.** **Timing and Signal Integrity**\n\nStudies under a [90] Sr source of the 50 x 50 μm variety single\npixel structure (Figure 1 top), yield collected charge of\n1.73 ± 0.02 fq (10,830 e [-] ), in agreement with the theoretically\npredicted value of ~ 82 e/μm for a MIP in fully depleted Si [8]\nat a bias voltage of 20 V at -20 [o] C. Signals are characterized\nby a fast rise time (10 % - 90 %) of 175 ± 4 ps, but present a\ntail at the slower end, characteristic of filed non-uniformities.\nAlthough charge per micrometer in the 3D device is reduced\nby a factor of 60 with respect to a typical LGAD [1]",
+        "score": 0.007659461307856771,
+        "dense_score": 0.5518786907196045,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.0032367780804634094,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5136,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "m incident radiation to digitized detector response.\nAn extensible system of modules is responsible for executing the distinct simulation steps,\nsuch as realistic charge carrier deposition using the Geant4 toolkit and the propagation\nof charge carriers in silicon through a drift–diffusion model. Detailed electric field maps\nimported from TCAD simulations can be used to model the drift behavior of charge carriers\nwithin the silicon, introducing a higher level of realism to Monte Carlo-based simulations\nof particle detectors.\nIn this study, a planar n [+] -on-p pixel sensor with a thickness of 100 µm and a pitch\nof 50 _×_ 50 µm [2] is simulated. This type of sensor is representative of what will be used in\nthe second-to-innermost pixel layer (L1) of the ITk pixel detector. The sensor is simulated\n\n_Sensors_ **2024**, _1_, 0 7 of 19\n\nafter irradiation corresponding to a fluence of 4 _×_ 10 [15] n eq cm _[−]_ [2] and operated at a voltage\nof 600 V. These conditions are expected for the aforementioned pixel layer at the end\nof the HL-LHC phase of ATLAS data taking. Figure 4 illustrates the simulation chain\nimplemented for evaluating the LUTs, highlighting the use of electric field and Ramo\npotential maps from TCAD, along with the simulation of trapping effects.\n\n**Figure 4.** Modified Allpix [2] simulation chain with a single detector for radiation damage digitizer.\n\n3.2.1. Simulation Inputs\n\nThe electric field and Ramo potential maps calculated using TCAD tools can be\ninputted into Allpix [2] simulations to model the behavior of silicon radiation detectors, as\noutlined in Section 3.1. The following sections provide details of the TCAD simulations\nused for the calculation of LUTs in this study. All simulation results presented here have\n[been obtained using Silvaco TCAD (https://silvaco.com/tcad/, accessed on 17 June 2024)](https://silvaco.com/tcad/)\ntools.\n\nThe structure simulated in TCAD represents one-quarter of a 3 _×_ 3 pixels matrix from\na 100 µm n [+] -on-p planar pixel sensor with a pitch of 50 _×_ 50 µm [2] ; refer to Figure 5a,c. The\nsimulation of one pixel plus its neighbors is required to model charge sharing accurately\nvia Ramo potential calculation. However, due to the symmetry of the design, it is sufficient\nto simulate just one-quarter of a 3 _×_ 3 pixels matrix.\n\n_Sensors_ **2024**, _1_, 0 8 of 19\n\n( **a** )\n\n( **b** )\n\n( **c** )\n**Figure 5.** ( **a** ) Depicts one-quarter of a 3 _×_ 3 pixel matrix structure simulated in TCAD and ( **b** )\nillu",
+        "score": -0.010210764064756503,
+        "dense_score": 0.49142196774482727,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.02219635620713234,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8265,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "ring, driven by diffusion, which\nis most relevant at the corners of the pixels. The efficiency near the _n_ [+] columns at the pixel cell center is\nclose to 100% since they are the collecting electrodes\nand the charge sharing is strongly suppressed in this region. The _n_ [+] columns are also shorter than the active\nthickness (Fig. 3), and therefore charge can additionally\nbe generated underneath the column, which is not the\ncase for the _p_ [+] electrodes.\nFigure 15 again shows a 4 × 1 pixel grid with normal beam incidence, now presenting the average cluster size at two different bias voltages. As expected, the\ncluster size, mainly driven by diffusion, increases with\ndistance from the central electrode, reaching its maximum for particles passing near the pixel edges. As the\n\nbias voltage increases, the strength of the electric field\nis enhanced, which reduces the charge sharing due to\ndiffusion.\n\nFigure 14: Hit detection efficiency map at normal beam incidence for\na 4 × 1 pixel grid of a non-irradiated FBK sensor biased at 30 V. The\nred rectangle indicates a pixel cell for reference.\n\n(a)\n\n(b)\n\nFigure 15: Average cluster size maps at normal beam incidence for a\n4 × 1 pixel grid of a non-irradiated FBK sensor biased at (a) 5 V and\n(b) 30 V.\n\n12\n\nThe hit detection efficiency can be further increased\nby rotating the DUT relative to the beam, as described\nin Section 6.3, thereby shortening the path of the tracks\nthrough the electrodes. Figure 16 shows the hit detection efficiency map for a 4 × 1 pixel grid with the sensor fully depleted and the DUT rotated by 6°. In this\ncase, the inefficiencies corresponding to the _p_ [+] columns\ndisappear. Detector simulations have also demonstrated\nthat for a track angular distribution similar to that found\nin minimum bias events from proton-proton collisions,\nthe column inefficiency is negligible due to the tilted\ntrajectories of the tracks.\n\nFigure 17 shows the average cluster size map for the\nsame DUT configuration. The change in average cluster\nsize as a function of rotation angle at a bias voltage of\n30 V is shown in Fig. 18. The cluster size increases with\nangle, since particles are more likely to traverse two or\nmore pixels.\n\nFigure 16: Hit detection efficiency maps for a 4 × 1 pixel grid of a\nnon-irradiated FBK sensor rotated by 6 [◦] and biased at 30 V.\n\nFigure 17: Average cluster size maps for a 4 × 1 pixel grid of a nonirradiated FBK sensor rotated by 6 [◦] and biased at 30 V.\n\nFigure 18: Average cluster size o",
+        "score": -0.27900568754082977,
+        "dense_score": 0.47289353609085083,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.4346785247325897,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 20,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 8332,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "lthough the right side of the pixel cell experiences\nslower charge collection as discussed in Section 5.1, this\ndoes not impact the charge sharing. As a result, the inpixel cluster-size maps remain symmetric, as shown in Figure 29. Near the collection electrode, charge carriers are\ncollected by the nearest pixel. A slight increase in cluster\nsize is observed only at the boundaries of the pixel cell.\nFigure 30 shows the mean cluster size as a function of\nthe threshold for different total chip thicknesses. Similar\nto the hit detection efficiency results, there is no effect\nfrom thinning on the cluster size.\n\n13\n\n|Col1|-1.2 V<br>-2.4 V<br>-3.6 V<br>-4.2 V|Col3|\n|---|---|---|\n||||\n||||\n||||\n\nFigure 28: Cluster size as a function of the hit detection threshold\nfor different sensor bias voltages.\n\n|Col1|×104|Col3|Col4|Col5|Col6|Col7|Col8|\n|---|---|---|---|---|---|---|---|\n|0.0<br>0.5<br>1.0<br>1.5<br>2.0<br>2.5<br>Events<br>|Column, RMS99.7% = 10.17 ± 0.01 µm<br>Row, RMS99.7% = 10.13 ± 0.01 µm|Column, RMS99.7% = 10.17 ± 0.01 µm<br>Row, RMS99.7% = 10.13 ± 0.01 µm|Column, RMS99.7% = 10.17 ± 0.01 µm<br>Row, RMS99.7% = 10.13 ± 0.01 µm|Column, RMS99.7% = 10.17 ± 0.01 µm<br>Row, RMS99.7% = 10.13 ± 0.01 µm|Column, RMS99.7% = 10.17 ± 0.01 µm<br>Row, RMS99.7% = 10.13 ± 0.01 µm|Column, RMS99.7% = 10.17 ± 0.01 µm<br>Row, RMS99.7% = 10.13 ± 0.01 µm||\n|0.0<br>0.5<br>1.0<br>1.5<br>2.0<br>2.5<br>Events<br>||||||||\n\n|10 20 30 40 50 60 in-pixel xtrack [µm] 10 20 30 in-pixel yt 1.15 1.20 1.25 1.30 1.35 Cluster s|Col2|Col3|\n|---|---|---|\n|track<br>Figure 29: Cluster size map projected onto four pixels. The<br>is biased at_ −_1_._2 V and the threshold is 224 electrons. The pi<br>boundary is marked with a dashed red line.<br><br><br><br><br><br><br>0.95<br>1.00<br>1.05<br>1.10<br>1.15<br>1.20<br>1.25<br>1.30<br>1.35<br>Mean cluster size [px]<br>H2M~~-~~10 (21 µm)<br>H2M~~-~~8 (25 µm)<br>H2M~~-~~3 (50 µm)|track<br>Figure 29: Cluster size map projected onto four pixels. The<br>is biased at_ −_1_._2 V and the threshold is 224 electrons. The pi<br>boundary is marked with a dashed red line.<br><br><br><br><br><br><br>0.95<br>1.00<br>1.05<br>1.10<br>1.15<br>1.20<br>1.25<br>1.30<br>1.35<br>Mean cluster size [px]<br>H2M~~-~~10 (21 µm)<br>H2M~~-~~8 (25 µm)<br>H2M~~-~~3 (50 µm)|track<br>Figure 29: Cluster size map projected onto four pixels. The<br>is biased at_ −_1_._2 V and the threshold is 224 electrons. The pi<br>boundary is marked with a dashed red line.<br><br><br><br><br><br><br>0.95<b",
+        "score": -0.5573864068984986,
+        "dense_score": 0.4723854064941406,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.8629021644592285,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.6862091100774705,
+    "generation_latency_s": 3.497116267681122e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.6862091100774705,
+    "generation_latency_s": 3.497116267681122e-07
+  }
+}

@@ -1,0 +1,402 @@
+{
+  "benchmark": {
+    "query_id": "neg007",
+    "query_type": "negative",
+    "query": "What is the clinical dose recommendation for a patient from this detector corpus?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "clinical"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the clinical dose recommendation for a patient from this detector corpus?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4235,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2756306__2402.04473__Performance_of_a_phonon-mediated_kinetic_inductance_detector_at_the_NEXUS_cryogenic_facili.md",
+        "title": "2024__recid_2756306__2402.04473__Performance_of_a_phonon-mediated_kinetic_inductance_detector_at_the_NEXUS_cryogenic_facili",
+        "text": "n on energy deposited in the substrate is limited to _σ_ _E_ = 318 _±_ 29 eV. We further model\nboth the signal pulse shape as a function of device temperature to extract quasiparticle lifetimes,\nand the observed noise spectra.\n\n**Report Number:** FERMILAB-PUB-23-674-LDRD-PPD\n\n**I.** **INTRODUCTION**\n\nNull results from searches for particle dark matter\n(DM) with mass above 1 GeV _/c_ [2] [1] motivate the development of detector technologies that can probe the\nremainder of the thermal relic parameter space down to\nthe fermionic mass limit of a few keV. The average kinetic energy carried by DM with 1 MeV _/c_ [2] mass is about\n500 meV. As such, sensitivity to light DM requires the\nability to detect meV-scale quanta. Detectors employing\nsuperconducting thin films to sense athermal phonons are\na class of sensors that can achieve this requirement. [2].\nOne detector architecture in this class is the kinetic in\n\n_∗_ [dtemples@fnal.gov](mailto:dtemples@fnal.gov)\n\n_†_ Presently at 6\n\n_‡_ Presently at Department of Physics, University of California,\nBerkeley, CA, 94720, USA\n_§_ Presently at Department of Physics and Astronomy, Wellesley\nCollege, Wellesley, MA, 02481, USA\n\n_¶_ Presently at LPSC, National Centre for Scientific Research, Universit´e Grenoble Alpes, Grenoble, France\n_∗∗_ Presently at Department of Physics, University of Toronto,\nToronto, ON, Canada\n\n_††_ Presently at IRFU, Alternative Energies and Atomic Energy\nCommission, Universit´e Paris-Saclay, France\n\nductance phonon-mediated (KIPM) detector, which uses\nmicrowave kinetic inductance detectors (MKIDs) to read\nout phonon signals in the device substrate [3–8]. Phonons\nproduced by particle interactions in the substrate propagate to the superconducting films on the surface, where\nthey break Cooper pairs into quasiparticles, provided the\nphonon carries an energy larger than the Cooper pair\nbinding energy, 2∆. This transient increase in quasiparticle density increases the surface impedance (AC resistance and kinetic inductance) of the resonator, shifting its resonant frequency _f_ _r_ and quality factor _Q_ to\nlower values. This shift can be measured in both magnitude and phase by interrogating the resonator with a microwave/radiofrequency (RF) probe tone at the quiescent\nresonant frequency and measuring the complex forward\nscattering parameter _S_ 21 .\n\nKIPM detectors have a number of attractive features\n\nthat motivate their use to detect low-mass dark matter. The energy carried by a phonon quantum is 2–3",
+        "score": -6.6706515736814405,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9508196721311476,
+        "rerank_score": -10.405895233154297,
+        "matched_nodes": [
+          "The",
+          "On",
+          "CA",
+          "We",
+          "USA",
+          "University",
+          "Physics",
+          "Department"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 386,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "80 pixels in both directions. Only the whole images not selected using the\ndefault grid would then be evaluated with the additional secondary grid.\nThe anomaly detector tends to select patches at a guard ring _§_, cell numbers and\ncell borders as false positive, due to the increase in the AE reconstruction error in these\nareas. In addition, contact marks are a common source of false positives, see (e) in\nfigure 11. With the proposed approach, where the detection is invariant to the anomaly\nlocation on the sensor, these cannot be eliminated.\n\n_6.2. Efficiency_\n\nAverage inference times for a whole image are reported in table 4, with both the default\ngrid and the secondary grid. An average sensor scan consisted of 335 images, for which\nthe picture-taking time is 9.2 minutes. On average, an inspector inspects a whole image\nin two seconds, evaluating one scan in 11 minutes. On an RTX A2000, the inference time\nis less than 6 minutes for the scan with both grids. The GPU is necessary, as the short\nrun time allows parallel picture-taking and pre-selection. At variance, the evaluation of\na scan would take approximately 45 minutes on a regular CPU, significantly delaying\nthe subsequent electrical characterization.\n\n**Table 4.** Average inference times on a GPU or a CPU for whole images using the\ndefault and secondary grids.\n\nGrid Run time [s]\n\nRTX A2000 GPU Default 0.8\n\n+ secondary 1.0\n\nCPU Default 8.1\n\n+ secondary 13.8\n\n_6.3. Continuous learning_\n\nGiven that new data will be measured continuously, the PSA should be retrained\nto adapt to the new data. Using new normal images to train the AE would not\nimprove its task of poor anomaly reconstruction, so it does not require retraining. Also\nthe background detector is considered to be robust enough to not require immediate\nretraining. However, the accuracy of the anomaly detector could be improved via\ntraining with novel anomalous patches. For example, training instances such as the\nmissed anomaly (d) in figure 10 did not exist in the original training data set.\nAnomalous images acquired after the initial deployment were given ground truth\nlabels to extend the training data set. The anomaly detector was retrained starting from\n\n_§_ A guard ring is a structure at the periphery of a sensor designed to protect it from currents from the\ncutting edge, and shown in figure 11 (f) as the black line with false positives.\n\n14\n\nrandomly initialized weights with 2.1 times more anomalous patches than the original\nmodel. An independ",
+        "score": -6.68544653748059,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7795081967213114,
+        "rerank_score": -10.402828216552734,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "On",
+          "At"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -6.802820640495176,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8942622950819672,
+        "rerank_score": -10.60070514678955,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "At",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4924,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "ne SiPMs. This results in negligible systematic and statistical uncertainties for this measurement. The out\nput pulse full width at half maximum (FWHM) increases only\nslightly from 2.4 ns to 2.8 ns for Hamamatsu SiPM-based pixels and similarly from 3.1 ns to 3.4 ns for pixels based on SensL\nSiPMs. For the first generation SiPM-based pixels using Excelitas SiPMs, the FWHM increased from 5.1 ns to 5.9 ns [19].\n\n**5. Expected LoNS and Cherenkov light responses**\n\n_5.1. Spectra and integrals_\n\nTo estimate the expected performance of our SiPM proto\n type modules we compared the spectral photon detection effi\nciency PDE(λ) curves of light sensors with the spectra of the\nLoNS and the Cherenkov light from air showers reaching the\ntelescope camera. The spectra are shown in figure 7. In recent years, MAGIC observations’ mean zenith distance (ZD),\nwhich denotes the angular distance between the telescope pointing direction and zenith, has steadily increased to cover a larger\nsolid angle with more astrophysical sources and a wider energy range. For an example see [29]. Therefore, it is important\nto compare the detector’s PDE with the Cherenkov and LoNS\nspectra not only close to the zenith but also at large zenith dis\ntances.\n\n4\n\nFigure 6: Comparison of the pulse shape of a single SiPM chip with the active\nsum of nine Hamamatsu SiPM chips. The pulse FWHM widens only slightly\nfrom 2.4 ns to 2.8 ns. The amplitudes were normalized for better visualization.\n\nThe Cherenkov light spectrum of air showers at the telescope\ncamera peaks at around 320 nm for low zenith observations, at\n\n an observational altitude of 2.2 km. The peak quantum effi\nciency (QE) of PMTs makes a good match with the Cherenkov\nlight spectrum. All of the SiPMs we used have their peak sensitivity at longer wavelengths, thus detecting a lower number of\nCherenkov photons from the main peak in the near UV region.\nOn the other hand, these collect more photons from the longwavelength tail of the Cherenkov spectrum. At large and verylarge zenith distances the peak of the Cherenkov light spectrum\nshifts towards the blue-green region. This is due to the longer\ndistance to the shower maximum region, from where the majority of photons arrive at the telescope. The longer paths attenuate\nthe near-UV part of the spectrum, due to the Rayleigh scattering and absorption effects. The Cherenkov spectra were generated with CORSIKA [30] and the photon propagation to the\nIACT camera was modeled with an adapted version of MARS,",
+        "score": -6.8332360395462795,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9434426229508196,
+        "rerank_score": -10.654912948608398,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "On",
+          "To",
+          "At"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5241,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "em [6]–[8]. (1) If the secondary photon is absorbed by\nthe neighboring Single Photon Avalanche Diode (SPAD) and\ntriggers an additional avalanche within the same SiPM, it\nis referred to as internal optical crosstalk (iCT) [9]. More\nspecifically, iCT can further be divided into direct crosstalk\nand delayed crosstalk based on whether the electron is produced in the depleted region or in the undepleted region.\nMore information can be found in [10]. (2) Secondary photons\ncan pass through the SiPM window, escape, and be detected\nby external photo-sensors, such as another SiPM facing the\nfirst one, known as external crosstalk (eCT) [11]. (3)The final\ncorrelated effect is optically-induced afterpulsing (AP) [12],\nresulting from electrons in the undepleted region within the\nsame cell [10]. As the result, optical-induced AP usually appears behind the primary pulse after hundreds of nanoseconds\nto microseconds because of the recharge time of SPADs. As a\nresult, optically-induced AP typically occurs after the primary\npulse, ranging from hundreds of nanoseconds to microseconds,\ndue to the recharge time of SPADs\nThese correlated effects could significantly impact experiments aiming to achieve a large photon-sensitive area using\nSiPM readout, as detailed in the Darkside and nEXO references [13] [14]. First of all, the light yield of the detector\nis probably overestimated since single incident photons would\ngenerate a signal with the integral area larger than 1 PE (photoelectron), because of the presence of iCT, eCT or AP. To\nestimate the corrected light yield, the knowledge of the probability of the three correlated effects is important. In addition\nto light yield overestimation, other negative effects need to\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 2\n\nbe considered. For instance, the presence of AP can impede\nthe n/ _γ_ pulse shape discrimination in the background rejection\nanalysis when using the prompt fraction method. Moreover, a\nhigh percentage of iCT and eCT would degrade the energy\nresolution. Additionally, eCT also generates unavoidable coincidental background in low threshold experiments, as eCT\nsignals always occur simultaneously.\nOverall, for any experiment employing large area SiPM\narrays, the understanding of SiPM correlated noises is mandatory. The iCT probability is calculated by _P_ _iCT_ = _N_ _[N]_ (0 [(][1] _._ _[.]_ 5 [5] _P E_ _[ P E]_ ) [)]\n\n[15], where _N_ (1 _._ 5 _PE_ ) is the dark count rate (DCR) with\n1.5 PE threshold",
+        "score": -6.8794565302801916,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8598360655737705,
+        "rerank_score": -10.71341609954834,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "On",
+          "To",
+          "SCIENCE",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1465,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2693470__2309.00818__Beam_Test_of_the_First_Prototype_of_SiPM-on-Tile_Calorimeter_Insert_for_the_EIC_Using_4_Ge.md",
+        "title": "2023__recid_2693470__2309.00818__Beam_Test_of_the_First_Prototype_of_SiPM-on-Tile_Calorimeter_Insert_for_the_EIC_Using_4_Ge",
+        "text": "## **Beam Test of the First Prototype of SiPM-on-Tile** **Calorimeter Insert for the Electron-Ion Collider** **Using 4 GeV Positrons at Jefferson Laboratory**\n\n**Miguel Arratia** _[𝑎,𝑏]_ **Bruce Bagby** _[𝑎]_ **Peter Carney** _[𝑎]_ **Jiajun Huang** _[𝑎]_ **Ryan Milton** _[𝑎]_ **Sebouh J.**\n\n**Paul** _[𝑎]_ **Sean Preins** _[𝑎]_ **Miguel Rodriguez** _[𝑎]_ **Weibin Zhang** _[𝑎]_\n\n_𝑎_ _Department of Physics and Astronomy, University of California, Riverside, CA 92521, USA_\n\n_𝑏_ _Thomas Jefferson National Accelerator Facility, Newport News, Virginia 23606, USA_\n\n_E-mail:_ [miguel.arratia@ucr.edu](mailto:miguel.arratia@ucr.edu)\n\nAbstract: We recently proposed a high-granularity calorimeter insert for the Electron-Ion Collider\n\n(EIC) that uses plastic scintillator tiles read out by SiPMs. Among its innovative features are an\n\nASIC-away-of-SiPM strategy for reducing cooling requirements and minimizing space use, along\n\nwith employing 3D-printed frames to reduce optical crosstalk and dead areas. To evaluate these\n\nfeatures, we built a 40-channel prototype and tested it using a 4 GeV positron beam at Jefferson\n\nLaboratory. The measured energy spectra and 3D shower shapes are well described by simulations,\n\nconfirming the effectiveness of the design, construction techniques, and calibration strategy. This\n\nconstitutes the first use of SiPM-on-tile technology in EIC detector designs.\n\nKeywords: Calorimeters; Detector design and construction technologies and materials;\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Prototype** **2**\n\n**3** **Experimental Setup and Data Acquisition System** **3**\n\n**4** **Data Analysis** **4**\n\n**5** **Results** **5**\n\n**6** **Summary and Outlook** **10**\n\n**1** **Introduction**\n\nThe future Electron-Ion Collider (EIC) [1] aims to explore nuclear structure and dynamics across a\n\nbroad range of kinematics. In order to achieve this goal, a large acceptance detector called ePIC is\n\nbeing developed, following the designs outlined in Refs. [2, 3]. Maximizing acceptance in the ePIC\n\ncentral detector, which nominally spans the range −4 _._ 0 _< 𝜂<_ 4 _._ 0 to fulfill the EIC Yellow Report\n\nrequirement [4], poses challenges due to the EIC’s 25 mrad beam-crossing angle. This angle leads\n\nto a complex beampipe geometry, particularly in the vicinity of the ePIC forward calorimeter.\n\nThis challenge motivated the development of the high-granularity calorimeter insert (CALI) [5],\n\nespecially designed to cover the range 3 _._ 2 _< 𝜂<_ 4 _._ 0. Th",
+        "score": -6.892527857758569,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7959016393442623,
+        "rerank_score": -10.723886489868164,
+        "matched_nodes": [
+          "The",
+          "To",
+          "CA",
+          "We",
+          "University",
+          "Physics"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7778,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco.md",
+        "title": "2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco",
+        "text": "esponding ratio of simulation to\n\nmeasurement.\n\nValidation results obtained with the 650 µm sensor at\n150 V bias voltage, using 15 keV, 20 keV, and 25 keV X-ray\nphotons, are presented in Fig. 3. For all tested configurations,\nthe ratio of the simulated to experimental energy spectra\ncenters remained close to 100% typically within a ±10%\nmargin, demonstrating satisfactory agreement. Specifically,\nthe mean absolute deviations between simulation and mea\nsurement from 1 keV up to the beam energy are less than\n4% and the _𝜒_ [2] ∕NDF values were under 25. For the 320\nµm sensor, as shown in Fig. 4, similarly high consistency\nis obtained for 15 keV and 25 keV X-ray photons at 150\nV bias voltage, and for 25 keV X-ray photons at 90 V bias\nvoltage, with the mean absolute deviations remaining below\n3%, with _𝜒_ [2] ∕NDF values under 20. A comparison using the\nsimplified spherical model is shown in Fig. 5. This model\ndemonstrates comparable consistency but with significantly\nreduced simulation time, highlighting its efficiency and practical utility.\n\n**5. Discussion and conclusion**\n\n**5.1. Quantitative understanding of the repulsion**\n**effect**\nWe quantitatively investigated the influence of the repulsion effect on charge transport using the comprehensive\nsimulation method applied to a 320 µm-thick sensor biased\nat 150 V, a commonly employed configuration for hybrid\npixel detectors. Fig. 6 illustrates the root mean square (RMS)\nof the collected hole distribution as a function of photon\nabsorption depth for different photon energies. To examine\nthe theoretical limiting case of zero photon energy (0 keV),\nwe conducted additional simulations with a zero standard\n\ndeviation of the initial Gaussian distribution and the repulsion effect removed. This scenario is indicated in Fig. 6 by\na dashed line for reference. In the shallow absorption region\nof the plot, the repulsion effect rapidly broadens the charge\ncloud, with the extent of broadening strongly dependent on\n\n**Table 1**\nRoot mean square (RMS) of holes after transport simulation\nof 320 µm sensor at 150 V bias voltage for different photon\nenergies. The RMS is weighted by the attenuation probability\nat different absorption depths.\n\nWeighted RMS 5 keV 15 keV 25 keV\n\nWithout repulsion 5.7 µm 4.3 µm 4.3 µm\nWith repulsion 6.2 µm 5.3 µm 5.6 µm\n\nphoton energy. At longer drift distances, where the repulsion\neffect diminishes toward the end of the transport, the differences in RMS among different photon energies become\nstable",
+        "score": -6.900280099799986,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8942622950819672,
+        "rerank_score": -10.750642776489258,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "At",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1287,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides.md",
+        "title": "2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides",
+        "text": "ection. The waveguide consists of crystalline silicon (black) on top of a silicon\ndioxide layer (blue). It supports a single guided TE-like mode\n(the color gradient shows the flux density). Erbium was implanted into the waveguides at three different combinations of\nimplantation dose and energy, resulting in an approximately\nhomogeneous vertical erbium distribution (right side, light\nred).\n\n2\n\nuide, and on the implantation and annealing conditions\n\n[20]. Here, one expects a trade-off: At higher temperatures, the crystal damage caused by the implantation\nwill be reduced, leading to a lower waveguide loss. In\naddition, a narrower inhomogeneous broadening of the\noptical transition frequency of the preferred erbium sites\nmay be observed in case the strain inhomogeneity is reduced by the annealing. However, the mobility of both\nerbium and other impurities in the crystal also increases\nwith temperature. They may thus form clusters, yielding\nmany possible other site configurations.\nTo investigate the integration into sites A and B in\nthe commercially-fabricated chips studied in this work,\nwe use the same techniques as in our earlier work [20].\nSpecifically, we measure pulsed fluorescence, i.e. the signal emitted after exciting the dopant ensemble with resonant laser pulses of 0 _._ 1 ms to 0 _._ 25 ms duration. The\npulses have a rectangular temporal profile, generated\nwith acousto-optical modulators with a rise time on the\norder of 10 ns. This is more than four orders of magnitude shorter than the emitter lifetime, which allows\nseparating the emission from the excitation. We first\nperform a broad scan of the excitation laser frequency,\nwhich is slightly modulated to avoid effects of persistent\nhole burning. The result of this measurement for several implantation and annealing conditions is shown in\nFig. 2A. For comparison, we also include a spectrum\nobtained in our earlier measurements [20] on high-purity\nfloat-zone (FZ) silicon waveguides, implanted at room\ntemperature and then annealed at 500 _[◦]_ C for approximately one minute, on which waveguides were fabricated\nby our group. These chips will be referred to as ‘homemade’ in this work.\n\nWe find that at 400 _[◦]_ C erbium is efficiently integrated\ninto the preferred sites A and B (marked blue and red, respectively), but also into pair- or precipitate sites (green)\nobserved previously. In addition, we observe several\nother peaks and a broadband background. A very similar\nspectrum is obtained in the samples that",
+        "score": -6.926003604820127,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8942622950819672,
+        "rerank_score": -10.790217399597168,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "At",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6022,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning.md",
+        "title": "2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning",
+        "text": "lies on the direct detection technique [5, 6]. These\nexperiments seek to observe rare interactions between\nDM particles from the Milky Way and detector materials placed deep underground in low-background envi\nronments.\nTraditionally, direct detection experiments have primarily focused on searching for nuclear recoil events induced by Weakly Interacting Massive Particles (WIMPs)\nscattering off target nuclei in crystals or liquid noble\ngases [7]. As a result, these experiments have mainly\nbeen sensitive to DM masses in the GeV – TeV range, as\nlighter particles would be unable to generate observable\nnuclear recoils.\n\n_∗_ [catena@chalmers.se](mailto:catena@chalmers.se)\n\n_†_ [urdshals@chalmers.se](mailto:urdshals@chalmers.se)\n\nWith the absence of direct evidence for WIMPs, efforts have been put in towards alternative experimental\napproaches better suited to probe DM particles with subGeV masses [8]. In this context, a crucial role is played\nby direct detection experiments designed to detect DMinduced electronic transitions or electron ejections in materials, offering a novel avenue for uncovering the nature\nof DM [9–20].\n\nTo interpret these experiments, a theoretical understanding of DM-electron interactions in detector materials is needed. In ref. [21–25], the interactions DM can\nhave with the electrons bound to silicon and germanium\ncrystals (as well as individual atoms and graphene targets) were classified and explored using a non-relativistic\neffective theory formalism. We implemented our formalism in QEdark-EFT [26], which interfaces with the planewave self-consistent field (PWscf) DFT code Quantum\nESPRESSO [27] and extends the QEdark code [28] to the\ncase of general DM-electron interactions. This allowed\nfor covering several DM models, although an extensive\nexploration was hindered by computational costs.\n\nThe deep neural network (DNN) developed in this paper is traned on the output of QEdark-EFT, and serves\nmainly two purposes. Firstly, it is easier to use and run\nthan QEdark-EFT. It takes less space on a hard drive\nand does not require computation of or access to material response functions. Secondly, it allows for evaluating a large number of DM-induced electronic transition\nrates cheaply on a laptop, and demonstrates the potential DNNs have for speeding up rate evaluations. Such a\nspeedup will be necessary to perform extensive parameter\nscans in the event of detection of a DM signal. For example, evaluating the rate of electron-hole pair creation\nin s",
+        "score": -6.964005278065166,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8450819672131147,
+        "rerank_score": -10.841266632080078,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "We",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6750,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "technology was measured to\n\n1 Generated by photons from a primary avalanche exiting the silicon,\nreflected on the entrance window and producing a sub-sequent avalanche.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 6\n\nFig. 9. (a) _V_ _bd_ is calculated by the extrapolation of the linear fit to the\nintercept with zero gain allowing all measurements to be presented at equal\n∆ _V_ . The gain is calculated from the slope of the linear fit and is given for\nbare, flat and microlens coated samples. Note that due to the coating, the\ngain is slightly increased. (b) a large increase of the cross-talk is seen for the\ncoated samples. The bare sample is expected to have no external cross-talk\nbut only internal. The error bars show the error of four measured identical\nchannels.\n\nFig. 8. (a) SEM image of two smaller size microlenses placed on top of the\nalignment marker. (b) Close view of the alignment markers filled with the\nmicrolenses. (c) Coated region with microlenses with coaxial illumination.\n(d) With a segmented diffuse light source, the reflection on each microlens\nis visible and illustrates the curved surface. In this mode, the flat regions\nbetween lenses appear black and the pixel structure (routing lines) is made\ninvisible due to the lenses.\n\nbe 32 _mV/K_ at room temperature. An integrated Pt1000\ntemperature sensor on the detector module gives access to\nprecise temperature monitoring. With the temperature in the\nlab stabilised by air conditioning, the variations were smaller\nthan _±_ 1 _K_ . To determine _V_ _BD_ and the gain (G), the bias\nvoltage was increased in steps of 1 _V_ and the current _I_ _Bias_\nrecorded. At the same time, pulse rates at thresholds of 0.5 and\n1.5 photo-electron amplitude (PE) ( _R_ 0 _._ 5, _R_ 1 _._ 5 ) were recorded\nwith a high-speed oscilloscope. The gain at every _V_ _BD_ point\nis calculated as the ratio between the current and the sum of\n\n_R_ 0 _._ 5 _P E_ and _R_ 1 _._ 5 _P E_ and is divided by the elementary charge\n(e) such that _G_ = _I_ _Bias_ _/_ ( _R_ 0 _._ 5 _P E_ + _R_ 1 _._ 5 _P E_ ) _/e_ . A linear fit is\nused to extrapolate _V_ _BD_ and the slope is extracted from the\nfit to determine the gain. The results are shown in Fig. 9. The\nmeasurement is performed with light illuminating the detector\nto enhance the precision of the current measurement but with\na sufficiently low pulse rate such that the random overlap of\npulses in time is negligible. The measurement is repeated for\nevery wavelength, and t",
+        "score": -6.983474407858926,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8598360655737705,
+        "rerank_score": -10.873443603515625,
+        "matched_nodes": [
+          "The",
+          "In",
+          "On",
+          "To",
+          "At",
+          "SCIENCE",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "The": 1.0,
+      "In": 1.0,
+      "For": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "De": 1.0
+    },
+    "expanded_nodes": {
+      "The": 1.0,
+      "In": 1.0,
+      "For": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "De": 1.0,
+      "We": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "Department": 0.24499999999999997,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 20,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 9.430020452011377,
+    "generation_latency_s": 3.702007234096527e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 20.0,
+    "retrieval_latency_s": 9.430020452011377,
+    "generation_latency_s": 3.702007234096527e-07
+  }
+}

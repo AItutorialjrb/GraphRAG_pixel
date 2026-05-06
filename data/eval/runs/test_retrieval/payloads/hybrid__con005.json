@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con005",
+    "query_type": "conceptual",
+    "query": "Why can monolithic integration reduce detector complexity?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "can",
+      "monolithic",
+      "integration"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why can monolithic integration reduce detector complexity?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 666,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656077__2305.01374__On-chip_lateral_SiTe_PIN_photodiodes_for_room-temperature_detection_in_the_telecom_optical.md",
+        "title": "2023__recid_2656077__2305.01374__On-chip_lateral_SiTe_PIN_photodiodes_for_room-temperature_detection_in_the_telecom_optical",
+        "text": "spectral ranges remains a challenging task [1–4] . Currently, Ge and InGaAs are the materials of\nchoice for photodetection in this range due to their high absorption coefficients, but they require\nheterogeneous integration on Si substrates which can be complex and costly [5–7] . Alternatively,\nthe monolithic integration offers a simpler and more scalable approach that involves fabricating\nboth the Si photodetector and other integrated Si components on the Si substrate using standard\n\nsemiconductor processing techniques. This approach circumvents the need for complex\nassembly and alignment processes. Moreover, it offers good compatibility with complementary\nmetal-oxide-semiconductor (CMOS) technology, enabling the integration of photodetectors with\nelectronic circuits on the same Si chip at a lower cost. However, the performance of monolithically\nintegrated silicon photodetectors at the telecom bands is limited by the properties of intrinsic Si,\nwhich has a low absorption coefficient (10 [-8] cm [-1] ) in the aforementioned spectral ranges. To\naddress this limitation, the intentional introduction of deep-level impurities like transition metals\n(Ti, Au, Ag) and chalcogens (S, Se, and Te) at concentrations above the solid-solubility limit has\nbeen proposed to create an impurity band within the Si bandgap [8–15] . This leads to roomtemperature absorption in the O- and C-telecom bands (0.9 eV, 1.3 µm and 0.8 eV, 1.5 µm),\nmaking it a promising approach for Si-based photodetection. Hyperdoped or supersaturated Si is\na new type of Si created through this approach.\n\nThe fabrication of PN photodiodes is widely used to evaluate the potential of hyperdoped silicon\nfor infrared applications [16–20] . Hyperdoped Si is typically used as an absorption medium for photons\nwith lower energy and simultaneously as an n-type doped region that is deliberately created atop\na p-type doped silicon substrate to form the PN junction. Several experimental demonstrations\nleading to room-temperature vertical hyperdoped Si PN photodetectors with an extended\nphotoresponse up to 5.9 µm have been reported [16–20] . Yet, they may not be compatible with\npassive photonic components like waveguides, attenuators, and modulators that are required for\nmonolithic integration on a very large scale. To address this, a conceptual planar design of an\narray of lateral PIN photodiodes based on hyperdoped Si has been proposed, which is compatible\nwith the VLSI Si technology [19] .\n\nIn this work, we presen",
+        "score": 1.0677184692570862,
+        "dense_score": null,
+        "bm25_score": 10.8110719973767,
+        "graph_score": 0.0,
+        "rerank_score": 1.6350598335266113,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6819,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution.md",
+        "title": "2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution",
+        "text": "cryptography provides a promising solution:\nquantum key distribution (QKD). QKD protocols allow two distant parties to share a\ncryptographic secret key through a public channel with information-theoretic security (ITS),\npreventing eavesdroppers from gaining access to the key without being detected [1,2].\n\nCommercial QKD systems are already available, although they remain expensive, bulky,\nand relatively challenging to operate. Consequently, QKD is difficult to use on a large scale. To\novercome these issues, the photonic integration of QKD systems can significantly reduce their\ncost, size, weight, and power consumption, and facilitate mass production, making QKD\naccessible to a wider range of users [3,4]. For photonic integrated QKD implementations,\ncontinuous-variable QKD (CV-QKD) is a suitable choice due to all components can potentially\nbe integrated into the same chip, including coherent detectors. Moreover, CV-QKD is\ncompatible with classical coherent optical communication networks (a prevailing standard in\nmetro and long-haul optical networking) and can coexist with classical light dataflows in the\nsame fiber [5]. A well-known protocol for the implementation of CV-QKD systems is\nGaussian-modulated coherent-state (GMCS), where the quadrature components of coherent\nstates are randomly modulated following a zero-center Gaussian distribution [6,7]. GMCS has\nbeen proven to be secure against the most general attacks, including in the finite-size setting [8–\n10].\n\nRecently, various research groups have endeavored to downsize QKD systems using\ndifferent photonic integrated circuit (PIC) platforms, such as silicon, III-V compound\nsemiconductors, and lithium niobate (LiNbO3) [3,11–13]. Among these, several on-chip CVQKD systems have been investigated by combining external lasers and integrated components\non a silicon photonics platform [14–22]. Although silicon photonics offers numerous\nadvantages, telecom lasers cannot be monolithically integrated, requiring non-standard hybrid\nintegration procedures. In a recent work [23], low-linewidth lasers based on an InP reflective\nsemiconductor optical amplifier (RSOA) butt-coupled to a low-loss silicon nitride cavity were\nused in a bulky CV-QKD system showing promising results. InP has therefore the inherent\nadvantage of allowing the monolithic integration of a range of components necessary for CVQKD systems, such as lasers, detectors, and high-speed modulators.\n\nIn this paper, we propose an InP-based PIC transmitter",
+        "score": 0.58399634692404,
+        "dense_score": null,
+        "bm25_score": 12.17073650216765,
+        "graph_score": 0.0,
+        "rerank_score": 0.8899089097976685,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8195,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "r and the performance of the pixel matrix to\nbe within the ITS3 requirements. The MOSS chip demonstrates the feasibility\nof the ITS3 detector concept and provides insights for further optimisation and\ndevelopment.\n\n_Keywords:_ Monolithic Active Pixel Sensors, Solid state detectors, Silicon\nsensors, CMOS stitching\n\n**1. Introduction**\n\nMonolithic Active Pixel Sensors (MAPS) are used in high-energy physics\nexperiments as they enable the construction of ultra-thin, large-scale detectors.\nThey were first used in a collider environment in the STAR pixel detector [1].\nThe ALPIDE sensor implemented in a 180 nm CMOS imaging process [2, 3, 4]\nwas used on a much larger scale in the Inner Tracking System 2 (ITS2) of the\nALICE experiment at the CERN Large Hadron Collider (LHC) [5]. Since 2020,\nthe ALICE Collaboration [6], in synergy with CERN EP R&D [7], has been\ncarrying out extensive R&D for its ITS3 upgrade [8], which will replace the\nthree inner layers of the ITS2 and which is scheduled for installation during\nthe LHC Long Shutdown 3 (LS3, 2026–2030). The main objective of the ITS3\ndetector is to reduce the material budget from the current 0 _._ 36% X 0 per layer\ndown to about 0 _._ 09% X 0 per layer, coming mostly from the sensors themselves.\nFurthermore, a new beam pipe with an inner radius of 16 mm and wall-thickness\nof 500 µm is foreseen, which allows the innermost layer to be installed as close as\npossible to the beam axis. The required [1] radiation tolerance of the detector is\n4 kGy of Total Ionising Dose (TID) and 4 _×_ 10 [12] 1 MeV n eq cm _[−]_ [2] of Non-Ionising\nEnergy Loss (NIEL).\nTo meet these constraints, the ALICE Collaboration has adopted the 65 nm\nCMOS imaging technology developed by Tower Partners Semiconductor Co. [9].\nThis technology was validated for ALICE applications and beyond with a set\nof test structures [10, 11, 12, 13]. The 300 mm wafer size and the stitching\ntechnique [14, 15] allow the fabrication of sensors substantially larger than\nthe typical reticle size (about 3 cm _×_ 2 cm), with sensor dimensions reaching\n10 cm _×_ 27 cm. Thinning to 50 µm thickness allows these wafer-scale sensors\nto be bent and form a self-supporting, truly cylindrical structure. Dedicated\nstudies have demonstrated that MAPS maintain their performance after bending [16, 17]. Due to a relatively low power consumption of about 40 mW _/_ cm [2],\n\n1 Radiation tolerance requirement has been updated w.r.t. Ref. [8], while the corresponding\nmeasurements presented",
+        "score": 0.24935073607720248,
+        "dense_score": 0.4769895672798157,
+        "bm25_score": 9.871110268579404,
+        "graph_score": 0.0,
+        "rerank_score": 0.3696938455104828,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6830,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution.md",
+        "title": "2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution",
+        "text": "in this regime to a few km for a parameter\nestimation security parameter 𝜖 = 10 [−10] . This limitation is not related to the PIC, and could be\novercome with more suitable acquisition devices. Also, different values of the security\nparameter could be considered, as discussed in the Supplementary material.\n\nFig. 6. Comparison of the expected SKR as a function of the channel attenuation using asymptotic (green line)\nand finite size (dashed lines) analysis calculated at _β_ =0.95, _ϵ_ =10 [-10], and different values of _m_ . The experimental\n\nresult obtained using an ULL fiber is marked with a green dot.\n\n**4. Conclusions and outlook**\n\nWe have reported on the performance of an InP-based PIC operating as a coherent encoder in a\nrealistic CV-QKD setup. In the first part of our study, we showed the design and electro-optical\ncharacterization of the PIC TX. The device exhibited good performance in terms of extinction\nratio, making it well-suited for the pulsed GMCS CV-QKD protocol, but the flexible\ncharacteristics of this research-grade PIC where detrimental in terms of the insertion loss of the\nentire chain. In the second part, we conducted experimental demonstrations showcasing the\nviability of our PIC TX in CV-QKD systems. Using a GMCS protocol over a distance of 11 km\noptical fiber and a TLO scheme, we achieved a potential SKR of 78 kbps in the asymptotic\nregime. These results are promising and serve as a proof of concept for applying an InP PIC TX\nin CV-QKD systems. Although they could be improved by increasing, for instance, the symbol\nrepetition rate and expanding the acquisition device memory size to cover finite size regimes,\nour results open up the possibility for the use of the InP platform for the monolithic integration\nof CV-QKD systems, offering cost savings, reduced complexity, compact size, and lower power\nconsumption.\n\nBuilding upon the proposed PIC TX, future advancements in this field could focus on the\nmonolithic integration with other components, such as integrated laser and power meter\n(photodiode for feedback). Furthermore, there are PIC areas that require improvement, such as\nreducing losses introduced by certain components (e.g., EAM and IQ modulators), and\naddressing distortions in IQ modulation. Additionally, pulse shaping modulation should be\nexplored in order to optimize the use of the available dynamic range. Optical and electronic\npackaging is another relevant factor that would facilitate the testing of these devices. In terms\nof",
+        "score": -0.4919345846918763,
+        "dense_score": null,
+        "bm25_score": 13.926545157275427,
+        "graph_score": 0.0,
+        "rerank_score": -0.765649676322937,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6611,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835439__2409.19030__Initial_performance_assessment_and_calibration_techniques_of_the_production_monolithic_sil.md",
+        "title": "2025__recid_2835439__2409.19030__Initial_performance_assessment_and_calibration_techniques_of_the_production_monolithic_sil",
+        "text": "llowing the preshower detector to effectively sample and reconstruct two\n\nelectromagnetic showers and accurately determine their cores. The first two tungsten layers will be\n\nthicker to allow early photon conversion. The detector planes will consist of 12 modules, distributed\n\nacross 2 columns 6 rows per plane. The modules will be placed on cooling plates, with a 2 mm\n\noverlap between adjacent modules to reduce inactive areas. Each module will house six monolithic\n\nsilicon pixel detector ASICs, organized in a 2×3 grid (Figure 2). The preshower installation is\n\nplanned to start in December 2024, with data acquisition extending through the end of LHC Run\n\n3 [1] and continuing during the High Luminosity LHC program (HL-LHC) [1].\n\n**Figure 2** . The left side presents the side view of the upgraded preshower detector in the Allpix Squared [4]\nsimulation [4]. The Geant4 visualization uses distinct colors to represent the tungsten, aluminum cooling\nplate, and aluminum module base. The ASICs on top of the modules are shown in black, along with the rows\nof elevated modules. The right side features a sketch illustrating the number of ASICs per plane, with each\nmodule containing 6 ASICs, totaling 72 ASICs per plane. The figure also shows the rotation of the ASICs\nwithin each module, optimized to maximize the active area. These design details are fully implemented in\nthe Allpix Squared [4] simulation on the right. The ASIC for making this illustration is from Cadence [5]\nand taken by [6].\n\n– 2 –\n\n**2** **The FASER ASIC**\n\nThe silicon monolithic ASIC for the new FASER preshower detector was developed through a\n\ncollaboration between University of Geneva, CERN, and Karlsruhe Institute for Technology, and is\n\nmanufactured using 130 nm SiGe BiCMOS technology by IHP Microelectronics on high-resistivity\n\nwafers [1]. Figure 4 presents the layouts of the preproduction ASIC (left), received in 2022, and\nthe production ASIC (right), received in 2024. The production ASIC, measuring 2 _._ 2 × 1 _._ 5 cm [2],\n\nconsists of 208 × 128 hexagonal pixels, with 65 µm side [1]. The pixel matrix is organized into 13\n\nindividual readout blocks known as supercolumns. The front-end electronics are integrated within\n\nthe pixels and it uses SiGe Heterojunction Bipolar Transistors, aiming for a time resolution of 300 ps\n\n[1]. The power consumption is maintained below 150 mW/cm [2] [1]. Simulations conducted with\n\n**Figure 3** . Left side: The preproduction prototype ASIC. It consists of three su",
+        "score": -0.7367654728889466,
+        "dense_score": null,
+        "bm25_score": 10.186654816514633,
+        "graph_score": 0.0,
+        "rerank_score": -1.1402161121368408,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4134,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi.md",
+        "title": "2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi",
+        "text": "nics PCBs (FR4) with a\nvalue of about 3 _×_ 10 _[−]_ [7] mbar L s _[−]_ [1] for each detector\nmodule [28]. Since the width of the electronics PCBs is\nlimited by the SDD chip size, a high-density 12-layer\ndesign is necessary to accommodate all required\nconnections. Due to the complexity of the electronics\nPCBs, no other low-outgassing material could be\nused. This includes for example the polyimide Kapton\nwhich is used for the other electronic components. To\ncompensate for the additional gas load stemming from\nthe electronics PCBs, the conductance between the\ndetector section and the main spectrometer has to be\nreduced. This is realized via a stainless steel grid which\ncovers the gaps between the SDD chips. In addition,\nthe pumping speed inside the detector section will be\nincreased.\n\n2.2 SDD chip and readout electronics\n\nThe monolithic SDD chip consists of 166 hexagonal\npixels. It is manufactured by the Semiconductor Laboratory (HLL) of the Max Planck Society from a silicon\nwafer with a thickness of about 450 µm. SDDs are\nsemiconductor detectors that use the principle of sideward depletion [29, 30]. The detector bulk is depleted\nby applying a bias voltage to the entrance window\nside, i.e. the side on which the radiation enters the\ndetector. Several drift rings on the opposite side, the\nreadout side, form the electric field within the detector.\nAs soon as radiation enters the detector, electron hole\npairs are created. The electrons are collected at a small\nanode (diameter of 82 µm) on the readout side. In order\n\n4\n\nto minimize detector-related effects such as charge\nsharing, backscattering, and back-reflection, a pixel\nsize with a circumscribed diameter of 3 _._ 298 mm has\nbeen chosen [31]. The area of the hexagon corresponds\nto a circle with a diameter of 3 mm. The pixels are\narranged in a gapless and continuous way, resulting in\na sensitive area of about 37 x 37 mm [2] and a total chip\nsize of 38 x 40 mm [2] .\n\nTo take full advantage of the small anode with a\ndetector capacitance of only 180 fF, an n-channel\njunction-gate field-effect transistor (nJFET) is directly\nintegrated into each pixel. This configuration reduces\nthe stray capacitance between the sensor and the\ncharge sensitive amplifier (CSA) and makes it possible\nto place the readout electronics several centimeters\naway from the detector. The signals are amplified by a\nreadout application-specific integrated circuit (ASIC)\ncalled ETTORE, that was specifically developed for\nthe TRISTAN project [32].",
+        "score": -0.7860870611973299,
+        "dense_score": null,
+        "bm25_score": 10.261884834518678,
+        "graph_score": 0.0,
+        "rerank_score": -1.2162680625915527,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7859,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors.md",
+        "title": "2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors",
+        "text": "2018.\nTime-over-threshold (ToT) readouts measure the time difference between\nthe leading and trailing edges of a signal, typically the logic signal output of\na discriminator. This methodology significantly reduces the required buffer\nsize, circuit complexity, and power consumption, thereby improving circuit\nintegration and counting rates. The main drawbacks of ToT systems are\nthe degradation of energy resolution, dynamic range, and linearity [2]. ToT\nsystems for measuring particle energy have been implemented in ApplicationSpecific Integrated Circuits (ASICs) [3, 4, 5].\nThere are different approaches to implementing the analog signal discrimination required for ToT measurement. One approach is to compare the\ndetector pulse signal with a constant threshold and another one is to compare\nit a dynamic threshold [6]. A third approach is to hold the maximum pulse\namplitude and compare it with a dynamic threshold [4, 7], as shown in Fig.\n1. However, these approaches have drawbacks, such as implementation complexity, power consumption per channel, nonlinearities, and limited detection\n\n2\n\nrate capacity. Table 1 summarizes the characteristics of ToT methods.\n\na) b)\n\n|c)|Col2|Col3|\n|---|---|---|\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|S1<br>S2<br>ToT1<br>ToT2<br>c)||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n\nFigure 1: Different approaches to time-over-threshold measurement: (a) ToT based on\nconstant threshold comparison, (b) ToT based on dynamic threshold, (c) ToT based on\npeak holding/dynamic threshold, and (d) ToT based on pulse trailing edge linearization.\n\n**ToT method** **Linearity** **Range** **Power consumption** **Counting rate**\nconstant threshold low low low high\ndynamic threshold medium medium medium medium\nD&H + dynamic th. high high high low\nTrailing edge shaping high medium low high\n\nTable 1: Characteristics of different ToT methods.\n\nIn this work, we present a simple signal shaping method that improves the\nToT determination and features good linearity, a large bandwidth, low power\nconsumption, and high integrability. We characterized the ToT method was\nunder controlled conditions and tested it in the DiRICH readout system of\nthe Ring Cherenkov detector of the Compressed Baryonic Matter experiment\nat FAIR [8].\n\n**2. Pulse trailing edge linearization**\n\nThe fundamental problem with single-threshold ToT converters in photosensor r",
+        "score": -1.237184034726199,
+        "dense_score": null,
+        "bm25_score": 10.976746403194172,
+        "graph_score": 0.0,
+        "rerank_score": -1.9112786054611206,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4778,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "ic-field strength in the edgeregion, that comes with longer drift times into the multiplication region, a similar effect due to diffusion, or a\ncombination thereof.\n\n**5. Conclusion and Outlook**\n\nThe shown results represent a first assessment of the\nMIP-detection capabilities of a digital silicon photomultiplier. The DESY dSiPM chip combines a CMOS\nSPAD design with integrated readout circuitry. It is successfully operated in synchronization with a system of\nreference detectors at the DESY II Test Team Facility,\ndemonstrating the possibility of integration into complex detector systems. Temporal, and spatial resolution\n\n5\n\n[6] N. Cartiglia, R. Arcidiacono, M. Costa, et al., 4D tracking:\npresent status and perspectives, Nucl. Instrum. Methods Phys.\nRes. A 1040 (2022) 167228. `[doi:10.1016/j.nima.2022.](https://doi.org/10.1016/j.nima.2022.167228)`\n\n`[167228](https://doi.org/10.1016/j.nima.2022.167228)` .\n\n[7] I. Diehl, K. Hansen, T. Vanat, et al., Monolithic MHz-frame\nrate digital SiPM-IC with sub-100 ps precision and 70 µm pixel\npitch, J. Instrum. 19 (01) (2024) P01020. `[doi:10.1088/](https://doi.org/10.1088/1748-0221/19/01/P01020)`\n`[1748-0221/19/01/P01020](https://doi.org/10.1088/1748-0221/19/01/P01020)` .\n\n[8] T. Vanat, Caribou – A versatile data acquisition system, PoS\nTWEPP2019 (2020) 100. `[doi:10.22323/1.370.0100](https://doi.org/10.22323/1.370.0100)` .\n\n[[9] Peary Caribou DAQ software, accessed: 2024-01-05.](https://peary-caribou.web.cern.ch)\nURL `[https://peary-caribou.web.cern.ch](https://peary-caribou.web.cern.ch)`\n\n[10] R. Diener, J. Dreyling-Eschweiler, H. Ehrlichmann, et al., The\nDESY II test beam facility, Nucl. Instrum. Methods Phys. Res.\nA 922 (2019) 265–286. `[doi:10.1016/j.nima.2018.11.](https://doi.org/10.1016/j.nima.2018.11.133)`\n\n`[133](https://doi.org/10.1016/j.nima.2018.11.133)` .\n\n[11] H. Jansen, S. Spannagel, J. Behr, et al., Performance of the\nEUDET-type beam telescopes, EPJ Techn Instrum 3 (7) (2006)\n1–20. `[doi:10.1140/epjti/s40485-016-0033-2](https://doi.org/10.1140/epjti/s40485-016-0033-2)` .\n\n[12] C. Hu-Guo, J. Baudot, G. Bertolone, et al., First reticule size\nMAPS with digital output and integrated zero suppression for\nthe EUDET-JRA1 beam telescope, Nucl. Instrum. Methods\nPhys. Res. A 623 (1) (2010) 480–482, 1st International Conference on Technology and Instrumentation in Particle Physics.\n`[doi:10.1016/j.nima.2010.03.043](https://doi.org/10.1016/j.nima.2010.03.043)` .\n\n[13] P. Baesso, D. Cussans, J. Goldstein, The AIDA-20",
+        "score": -1.4482204393907026,
+        "dense_score": 0.4639936685562134,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.2350244522094727,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7646,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2877792__2502.04941__Detection_efficiency_and_spatial_resolution_of_Monolithic_Active_Pixel_Sensors_bent_to_dif.md",
+        "title": "2026__recid_2877792__2502.04941__Detection_efficiency_and_spatial_resolution_of_Monolithic_Active_Pixel_Sensors_bent_to_dif",
+        "text": "s are the basis for the planned fully cylindrical ultra low material budget tracking detector ITS3 of the ALICE experiment. This paper presents results from testbeam campaigns using high-energy\nparticles to verify the performance of 50 µm thick bent ALPIDE chips in terms\nof efficiency and spatial resolution. The sensors were bent to radii of 18, 24\n\n_∗_ Corresponding author\n_Email address:_ `lukas.lautner@tum.de` (Lukas Lautner)\n\n1\n\nand 30 mm, slightly smaller than the foreseen bending radii of the future ALICE ITS3 layers. An efficiency larger than 99 _._ 9% and a spatial resolution of\napproximately 5 µm, in line with the nominal operation of flat ALPIDE sensors,\nis obtained at nominal operating conditions. These values are found to be independent of the bending radius and thus constitute an additional milestone in\nthe demonstration of the feasibility of the planned ITS3 detector. In addition,\na special geometry in which the beam particles graze the chip and traverse it\nlaterally over distances of up to 3 mm is investigated.\n\n_Keywords:_ Monolithic Active Pixel Sensors, Solid state detectors, Bent\nsensors, Silicon, CMOS, Particle detection, Test beam\n\n**1. Introduction**\n\nOver the last decades, silicon-based detectors have become the main tracking\ndevices close to the interaction point in many high-energy and nuclear physics\nexperiments. In order to minimise the distance between the sensors and the\nprimary vertex, and to reduce the overall material budget of the detector, truly\ncylindrical, bent, wafer-size Monolithic Active Pixel Sensors (MAPS) are employed. These sensors form the basis of the ITS3 (Inner Tracking System 3) [1, 2]\nupgrade of the vertex detector of the ALICE collaboration, which is scheduled\nfor installation during Long Shutdown 3 (2026–2029) at the LHC. For the ITS3,\nit is planned to employ large area sensors that are bent to half-cylinders with\nradii of 19, 25.2 and 31 _._ 5 mm. In this context, the performance of MAPS in\nterms of detection efficiency and space point resolution for small bending radii\nneeds to be assessed. The studies presented in this article constitute an important R&D step with respect to the first ever performance study of bent monolithic active pixel sensors in which it was shown that the bent chips preserve\ntheir full electrical functionality and particle detection capability. The results\nshown here complement and extend the prior findings [3] by investigating the\nthree radii compatible with the values foreseen fo",
+        "score": -1.4793426942825318,
+        "dense_score": null,
+        "bm25_score": 10.832613694376642,
+        "graph_score": 0.0,
+        "rerank_score": -2.283604145050049,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4899,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter.md",
+        "title": "2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter",
+        "text": "[12] were used to produce a\n\nproof-of-concept picosecond avalanche detector (PicoAD) [13], a novel detector that implements a\ncontinuous deep gain layer [14]. At a power density of 2.7 W/cm [2], this proof-of-concept monolithic\n\nASIC provided full efficiency and an average time resolution of 17 ps, varying between 13 ps at the\n\ncenter of the pixel and 25 ps in the inter-pixel region [15].\n\nA second prototype of the MONOLITH project containing an improved electronics [16] was\n\nproduced in 2022. As for the first prototype, the new device contains four pixels where the amplifier\n\nwas connected to an analog driver and could be read directly by an oscilloscope. Figure 1 shows\n\n– 1 –\n\nthe layout of the 2022 prototype ASIC with the analog pixels highlighted in red. Figure 2 shows a\n\nschematic view of the front-end electronics and analog driver.\n\n**Figure 1** . Layout view of the 2022 prototype ASIC. The analog pixels, in red, have the output of the\namplifier directly connected to an analog driver with differential output.\n\n**Figure 2** . Schematic view of the front-end and driver configuration of the analog pixels.\n\n– 2 –\n\nBefore the production of the next generation PicoAD prototypes using special wafers with\n\ndeep gain-layer implant, the foundry masks of this second prototype were used to realise a detector\n\nwithout internal gain layer, implementing the sensor on a 50 _𝜇_ m thick epilayer of 350 Ωcm resistivity.\n\nThe detection efficiency and time resolution of this prototype was measured [16] at the CERN SPS\n\nteastbeam facility with minimum ionising particles, and the time resolution as a function of the\n\ndeposited charge was measured [17] with a femtosecond laser. Several samples of this ASIC were\nirradiated at the CYRIC facility [18] in Japan with 70 MeV protons up to a fluence of 1 × 10 [16]\n\nn eq /cm [2] . The time jitter of the single-ended output of the analog pixels was measured using a [90] Sr\nradioactive source [19]. In this paper, we present the efficiency and time resolution before and after\n\nproton irradiation measured with this prototype without gain layer using a beam of pions of 120\n\nGeV/c at the CERN SPS.\n\n**2** **Data samples and experimental set-up**\n\nGiven the limited time availability during the testbeam experiment, data were taken only with four\n\nirradiated boards out of the seven characterised in [19]. In addition, data were taken also with the\n\nboard not irradiated previously characterised in [16]. Table 1 gives a summary of the power de",
+        "score": -2.1673458631724527,
+        "dense_score": 0.4675021171569824,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.34175443649292,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.5488720098510385,
+    "generation_latency_s": 3.8975849747657776e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.5488720098510385,
+    "generation_latency_s": 3.8975849747657776e-07
+  }
+}

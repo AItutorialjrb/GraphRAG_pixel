@@ -1,0 +1,428 @@
+{
+  "benchmark": {
+    "query_id": "fac011",
+    "query_type": "factoid",
+    "query": "What is bump bonding?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "bump",
+      "bonding"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is bump bonding?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8090,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3062964__2510.02971__Millimeter-Wavelength_Lens-Absorber-Coupled_TiAl_Kinetic_Inductance_Detectors.md",
+        "title": "2026__recid_3062964__2510.02971__Millimeter-Wavelength_Lens-Absorber-Coupled_TiAl_Kinetic_Inductance_Detectors",
+        "text": "and for the ground plane\nof the microstrip microwave readout line.\n\nFig. 2 shows each spiral absorber placed at the lower focus\nof an extended hemispherical Si lens with a clear aperture\ndiameter of 5 mm and a radius-normalized extension length of\n_L/R_ = 0 _._ 39 to synthesize an ellipsoidal shape [27]. The single\nspiral absorber in (a) was coupled to an _f_ # = 0 _._ 63 lens to\nmaximize the power collection while avoiding the deepest lens\nconfiguration at _f_ # = 0 _._ 54, where the lens radius coincides\nwith the clear aperture diameter. This results in a focal field\nsampling of 1 _λ_ Si _f_ #, where _λ_ Si is the wavelength in silicon.\nOn the other hand, the 4 _×_ 4 spiral-array in (b) was coupled\nto an _f_ # = 1 _._ 2 lens to maximize the power coupling with the\nabsorber lateral dimension being 2 _λ_ Si _f_ # .\nTo avoid reflections at the silicon-vacuum interface, the\nlens top is shaped with vertical (non-conformal) frustras to\n\ncreate a broadband anti-reflection (AR) coating suitable for\ncryogenic temperatures [28]. The design and performance of\nthe AR-coating is reported in Fig. 3 for a broadside plane-wave\nincidence. The performance of the two lens-coupled absorber\ndesigns was simulated with CST Studio Suite [29] in terms\nof their broadside plane-wave response for two orthogonal\npolarizations. In order to restrict the plane wave to the lens\nclear aperture we added a perfectly absorbing sheet with\nthe free-space impedance. The results of both designs are\nshown in Fig. 2 indicating a lens-aperture efficiency _η_ ap for\nboth polarizations of more than 70% for about 10% relative\nbandwidth for the single spiral absorber in (a), and for an\noctave for the spiral array in (b).\n\nIII. F ABRICATION\n\nWe have fabricated two lens-less MKID devices: a small\n\n3 _×_ 3 cm chip for testing the new designs, comprising 5 spiral\narray detectors and 4 single spiral detectors; and a �4” largeformat demonstrator with 253 spiral array detectors. Both\ndevices were made from high-resistivity ( _ρ >_ 1000 µΩ _·_ cm)\ndouble-side-polished float-zone silicon wafers, with a thickness of about 280 µm to realize a quarter-wavelength backing\nreflector. The recipe is the same for both devices. We first\nsputter-deposit on the wafer 10 nm of Ti and then, without\n\nTRANSACTIONS IN APPLIED SUPERCONDUCTIVITY, VOL. XX, NO. YY, MONTH YYYY 3\n\n1 _._ 00\n\n0 _._ 96\n\n10 _[−]_ [1]\n\n10 _[−]_ [2]\n\n10 _[−]_ [3]\n\n|Col1|Col2|0|λ 1 .1|\n|---|---|---|---|\n||0.25_λ_|8˚<br>||\n|8˚|8˚|8˚|8˚|\n|||||\n|||||\n\n80 90 1",
+        "score": -6.130673822263537,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7560215789073779,
+        "rerank_score": -9.545790672302246,
+        "matched_nodes": [
+          "In",
+          "On",
+          "The",
+          "We",
+          "To",
+          "Col2",
+          "Transactions",
+          "Col1"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1067,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2675246__2307.03455__Path-integral_simulation_of_exchange_interactions_in_CMOS_spin_qubits.md",
+        "title": "2023__recid_2675246__2307.03455__Path-integral_simulation_of_exchange_interactions_in_CMOS_spin_qubits",
+        "text": "to 15 nm which contributes to a strong enhancement of the exchange coupling at a rate of 0.25 decades/nm. In particular, note\nthat when the dots are more separated from each other,\nthe exchange is as low as 10 kHz. At this scale, the\nexchange is usually not visible in a standard qubit spec\n\n6\n\n10\n\n0\n\n-10\n\n10\n\n0\n\n-10\n\n10\n\n0\n\n-10\n\n**a**\n\n|- - - - - - - - - - -|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n||||||\n\n**b**\n\n**c**\n\n1THz\n\n1GHz\n\n1MHz\n\n1kHz\n\n1Hz\n\n0.5\n\n0.25\n\n0\n\n-20 0 20\n\n0 0.5 1 1.5 2 2.5\n\nElectron path density [1/nm [%] ]\n\n**d**\n\n**e**\n\n**f**\n\n0 20 40 60\nx [nm]\n\n0 20 40 60\n\nTrap location, 𝑥 ! [nm]\n\n×10 [#$]\n\nFIG. 4. **a**, Schematic view of the position of the negative trap charges that are analyzed in these simulations. **b**, Exchange\ncoupling _vs_ trap position. **c**, Impact of trap location on the rate of exchange control ( [d lo] d [g] _d_ [10] _J_ [(] _[J]_ [)] ) in decades per volt. **d-e**,\n\nElectron densities at _xc_ = 35 nm and _xc_ = 0 nm for PIMC paths that exchange 10 times between both quantum dots. _d_ _J_ = 20\nnm. **f**, Cut of the electron trap density at the interdot channel for _x_ _c_ = 35 nm and _x_ _c_ = 0nm.\n\n_e_ [2]\n\n(19)\n_|⃗r_ _i_ _−_ _⃗r_ _c_ _|_ _[,]_\n\ntroscopy experiment as other effects such as disorder or\nspin-orbit coupling become dominant [22] . An important\nchallenge for this architecture is to fabricate devices in\nwhich it is always possible to turn ON and OFF the\nexchange coupling consistently. And here we see that\nCMOS devices rely on this high tunability of the interdot distance to perform this operation.\nA final concern in this algorithm is the role of temperature which is inversely related to the variable _β_ . In Fig. 3\nwe show that the exchange simulations converge for _β_ ℏ _>_\n2 ps. At this point, the simulated temperature is lower\nthan 2 Kelvin. As qubit measurements occur at temperatures ranging from tens of mK and up to 1 K, we can\nassume that the temperature will not have a significant\nrole in the value of the exchange coupling.\n\n**V.** **IMPACT OF STATIC TRAPPED CHARGE**\n\n**ON THE SYSTEM**\n\nTo test additional applications of this PIMC algorithm\nwe make an initial approach to describe the impact of\ndisorder on exchange interactions. Here we calculate the\neffect of a static charge trap by adding a Coulomb interaction term to our Hamiltonian, that describes the\nrepulsion between the charge trap and the dot electrons\nas previously described in [39] . For each electron _i ∈_ 1 _,_ 2,\n\nwe include in equation",
+        "score": -6.413202402491526,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7537421168604208,
+        "rerank_score": -9.980106353759766,
+        "matched_nodes": [
+          "In",
+          "On",
+          "At",
+          "The",
+          "Col2",
+          "Col3",
+          "Col4"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6667,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments.md",
+        "title": "2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments",
+        "text": "pump that maintains a vacuum below 2×10 [−][4] torr, a cryocooler\nto cool down the sensors through the cold finger indicated\nin the picture, and a PID temperature controller to guarantee\nan operating temperature of 160 K. The readout electronics\nconsisted of a multiplexing prototype [18], with 16 analog\ncorrelated double sampling channels [19], and a low-threshold\nacquisition board [17] connected to the multi-chip module\nthrough a vacuum interface board.\n\nV. R ESULTS FOR FIRST PROTOTYPES\n\nThe first four wafers showed multiple scratches and short circuits between traces caused by incomplete aluminum etching\nand did not pass the warm test. The electrical test of the fifth\nwafer showed that the resistance of the aluminum traces and\n\ncapacitance between traces are significantly higher than in the\nceramic prototype [18]. In addition, during the nominal voltage\ntest of the n-type wafer, we found that the current-voltage\nratio in the bias voltage line followed a nonlinear behavior.\nWe attribute this behavior to an unintentional n-type-siliconaluminum non-ohmic contact similar to a diode, created during\nwire-bonding: since the SiO 2 layer between the silicon and the\naluminum is < 1 μm, the impedance of this contact depends on\nthe applied voltage [20], [21]. Furthermore, the non-negligible\nconductivity of the silicon substrate produces a significant\ncoupling between the clock and video output tracks.\nWe present in Fig. 6 the video output signals in multi-chip\nmodules fabricated with three different substrates: ceramic\n(solid black), high-resistivity n-type silicon with a 0.4 μm SiO 2\nlayer between silicon and aluminum (dotted blue), and lowresistivity p [++] silicon with a 3 μm (dashed red) SiO 2 layer.\nBoth panels show the same data with different scales obtained\nusing modules with no CCDs connected, so the signals result\nonly from the coupling between clocks and the video output.\nThe peaks at about 20 μs correspond to the horizontal clocks\nthat move the charge through the readout stage, at 70 μs to the\n\nIEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024 5\n\n|Horizontal Summing well Reset<br>clocks|Col2|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n||||||||\n||||||||\n\nFig. 6. Video output signal for ceramic and silicon multi-chip modules with no\nCCDs connected. The signal shape is the result of the coupling from different\nclocks. Both panels show the same data with different y-axis scales.\n\nso-called summing well clock, the gate used to move the data\nto the",
+        "score": -6.471670532417862,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8753134260314565,
+        "rerank_score": -10.088386535644531,
+        "matched_nodes": [
+          "In",
+          "The",
+          "We",
+          "For",
+          "IEEE",
+          "Journal",
+          "Col2",
+          "Col3",
+          "Col4"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 496,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648847__2304.01261__Novel_prediction_for_secondary_positrons_and_electrons_in_the_Galaxy.md",
+        "title": "2023__recid_2648847__2304.01261__Novel_prediction_for_secondary_positrons_and_electrons_in_the_Galaxy",
+        "text": "matter searches\nwith CR antiprotons [8, 62, 74].\nWhen fitting the model to AMS-02 data, we distinguish between two type of free parameters. The parameters _**θ**_ CR in Eq. (6) are connected to the physics of CR\npropagation as introduced in Sec. II. Instead, the _**θ**_ XS\nare related to uncertainties in the nuclear fragmentation\ncross sections which are considered in the fit as nuisance\nparameters. This strategy permits marginalizing over the\nuncertainties in the fragmentation and production crosssections, as introduced in Refs. [36, 37]. In particular, we\nparametrize the cross sections for the production of secondaries CRs with a re-normalization factor, which for\nboron production is labeled as _A_ XS _→_ Be, and a change\nof slope, which for B is _δ_ XS _→_ Be. In particular, we use\npriors for the re-normalization and change of slope of the\nnuclear cross sections values of 0 _._ 8 _,_ 1 _._ 2 for the former,\nwhich means a variation of 20%, and _−_ 0 _._ 1 _,_ 0 _._ 1 for the\nlatter.\nWe provide a summary of the fit parameters and priors\nfor each model tested in Appendix A. We assume linear\npriors for all the parameters.\n\n**C.** **Secondary lepton prediction**\n\nThe predictions for the secondary _e_ [+] and _e_ _[−]_ is computed once the propagation parameters best-fit and uncertainties have been found by fitting CR data as explained above. In particular, we take the local CR flux\nfound by fitting the data and then we compute, within\nthe same propagation setup, the secondary _e_ _[±]_ fluxes due\nto the collision of CRs with the atoms of the ISM as\nin Eq. (4). For each propagation model, the mean and\nthe 1 _σ_ Bayesian uncertainty are computed. This represents the statistical uncertainty connected to the fit to\nthe CR propagation parameters only. This procedure is\nrepeated for each propagation model benchmark. Additional uncertainty coming from the _e_ _[±]_ production cross\nsection is considered separately as obtained in Ref. [40]\nand summed in quadrature to build the final uncertainty\nbands for the predictions. We believe this choice to\n\n|= 4 kpc|Col2|Col3|Col4|\n|---|---|---|---|\n|||||\n||`C`<br>`C`<br>`R`<br>`R`|`onv`_ v_0_,c_<br>`onv`_ dvc/dz_<br>`eacc`0<br>`eacc`10<br>`Reacc`30<br>TOA<br>IS<br>AMS-02|` Inj`<br>|\n\nare discussed separately, and are found to be the domi\nnant ones.\n\n**IV.** **RESULTS**\n\nIn this section we report the results for the prediction\nof secondary electrons and positrons (Sec. IV A), primary\nand secondary nuclei fluxes (Sec. IV B) a",
+        "score": -6.6610840905168285,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8145277714459387,
+        "rerank_score": -10.370627403259277,
+        "matched_nodes": [
+          "In",
+          "IS",
+          "The",
+          "We",
+          "For",
+          "Col2",
+          "Col3",
+          "Col4"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1287,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides.md",
+        "title": "2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides",
+        "text": "ection. The waveguide consists of crystalline silicon (black) on top of a silicon\ndioxide layer (blue). It supports a single guided TE-like mode\n(the color gradient shows the flux density). Erbium was implanted into the waveguides at three different combinations of\nimplantation dose and energy, resulting in an approximately\nhomogeneous vertical erbium distribution (right side, light\nred).\n\n2\n\nuide, and on the implantation and annealing conditions\n\n[20]. Here, one expects a trade-off: At higher temperatures, the crystal damage caused by the implantation\nwill be reduced, leading to a lower waveguide loss. In\naddition, a narrower inhomogeneous broadening of the\noptical transition frequency of the preferred erbium sites\nmay be observed in case the strain inhomogeneity is reduced by the annealing. However, the mobility of both\nerbium and other impurities in the crystal also increases\nwith temperature. They may thus form clusters, yielding\nmany possible other site configurations.\nTo investigate the integration into sites A and B in\nthe commercially-fabricated chips studied in this work,\nwe use the same techniques as in our earlier work [20].\nSpecifically, we measure pulsed fluorescence, i.e. the signal emitted after exciting the dopant ensemble with resonant laser pulses of 0 _._ 1 ms to 0 _._ 25 ms duration. The\npulses have a rectangular temporal profile, generated\nwith acousto-optical modulators with a rise time on the\norder of 10 ns. This is more than four orders of magnitude shorter than the emitter lifetime, which allows\nseparating the emission from the excitation. We first\nperform a broad scan of the excitation laser frequency,\nwhich is slightly modulated to avoid effects of persistent\nhole burning. The result of this measurement for several implantation and annealing conditions is shown in\nFig. 2A. For comparison, we also include a spectrum\nobtained in our earlier measurements [20] on high-purity\nfloat-zone (FZ) silicon waveguides, implanted at room\ntemperature and then annealed at 500 _[◦]_ C for approximately one minute, on which waveguides were fabricated\nby our group. These chips will be referred to as ‘homemade’ in this work.\n\nWe find that at 400 _[◦]_ C erbium is efficiently integrated\ninto the preferred sites A and B (marked blue and red, respectively), but also into pair- or precipitate sites (green)\nobserved previously. In addition, we observe several\nother peaks and a broadband background. A very similar\nspectrum is obtained in the samples that",
+        "score": -6.754007808178502,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8022946584606033,
+        "rerank_score": -10.51174259185791,
+        "matched_nodes": [
+          "In",
+          "At",
+          "The",
+          "We",
+          "For",
+          "To",
+          "It"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6669,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments.md",
+        "title": "2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments",
+        "text": "s are produced by muons, curly-like by electrons,\nand point-like by photons.\n\nof 30 μV (after converting from digital units). In the bottom\npanel of Fig. 8, we present the readout noise as a function of\nthe number of analog samples. The red line corresponds to the\nexpected noise behaviour of skipper-CCDs [5] as a function of\nthe number of samples: _𝜎_ _𝑁_ = _𝜎_ N=1 /√ _N_, where _𝜎_ N=1 = 4 _._ 4 is\n\ncalculated from the noise at 100 ANSAMP. The noise follows\n\nthe expectation in the range between 80 and 500 ANSAMP.\nFor ANSAMP < 80, the signal gain is outside the dynamic\nrange of the integrator capacitor of the pile-up circuit [19],\nand its noise dominates the output. For ANSAMP = 800, the\ncorrelated noise from the testing system produces a deviation\nfrom the _𝜎_ _𝑁_ = _𝜎_ N=1 /√ _N_ expectation. We corroborated that\n\nthis noise level is related to the testing system and not to the\npackage itself by deploying the silicon module in the system\nused to test the ceramic wafers, where we achieved a noise of\n\nabout 0.17 e [−] with 400 ANSAMP.\n\nDue to the signal coupling in the multi-chip module, the\nrecovery time after the summing-well clock produces an offset\nbetween the baseline and the signal. Since the integrator capacitor accumulates each sample during the analog correlated\ndouble sample, the amplitude of the output signal depends on\nthe number of samples. Despite having no electrons in the\npixel, each sample adds the offset value to this output signal,\nwhich will eventually saturate the ADC in the readout electronics. In the top panel of Fig. 9, we present the mean empty\npixel signal as a function of the number of analog samples\n(and integration time) for different CCDs (different markerscolors) in the multi-chip module. Dashed lines correspond to\nthe extrapolation of a linear fit using the data obtained with\nANSAMP < 100, and the black dashed line at about -4 V\nto the saturation point of the ADC. The legend indicates the\nlength of the video output traces. The offset introduced in each\nsample is different depending on this length since the coupling\nbetween the clocks and output signals, and in turn, the recovery\n\nIEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024 6\n\n|ANSAMP = 80<br>- - -<br>1e 2e 4e|Col2|Col3|Col4|\n|---|---|---|---|\n|||||\n\n|120 140 160 180 200 220 240|Col2|Col3|\n|---|---|---|\n||||\n||||\n\nFig. 9. (Top) Signal output of empty pixels for different video channels in the\nsame multi-chip module as a function of ANSAMP. (Bottom) Signal amplitude,\ntime",
+        "score": -6.81338210125026,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8753134260314565,
+        "rerank_score": -10.614096641540527,
+        "matched_nodes": [
+          "In",
+          "The",
+          "We",
+          "For",
+          "IEEE",
+          "Journal",
+          "Col2",
+          "Col3",
+          "Col4"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5116,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L.md",
+        "title": "2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L",
+        "text": "uences.\n\n_**5.5.**_ _**Gain, Crosstalk and Afterpulse**_\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|+06<br>1E+|07<br>1E+|08<br>1E|+09<br>1E|+10<br>1E|+11<br>1E|\n\nIn Fig. 9 are reported the gain, crosstalk probability and afterpulse\n\nprobability measured at 4 V of excess bias before and after irradiation. Gain\n\nand AP were measured on SPADs at room temperature, CT measurement\n\nwas performed on 1x1 mm² at room temperature and on 0.2x0.2 mm²\n\nSiPMs at -20°C after irradiation, to discriminate single events in high DCR\n\nconditions.\n\nNo significant change in gain is observed after irradiation, apart from\n\nsome fluctuation caused by the uncertainty of the measurement on samples\n\nwith high noise level. For CT measurements, time constraints and\n\ninstability of the amplifiers operated at low temperatures limited the\n\nnumber of tested devices, but the results do not show a link between\n\nradiation damage and a change in crosstalk probability.\n\nIn the case of AP measurements, it is observed a significant increase for\n\nalmost all devices after irradiation. This effect is related to the defects\n\ngenerated in the silicon by NIEL. The defects act as a trapping centres for\n\ncharges, thus increasing the AP probability for irradiated samples. A few\n\nsamples do not show this increase, but this is mainly attributed to\n\nlimitations in the measurement setup and software, which is not able to\n\ndetect AP events below a certain amplitude and will underestimate their\n\nnumber in case of cells with long recharge time.\n\nDespite the increase in AP, its contribution to the total ECF is limited\n\nas its probability remains relatively low. Moreover, the gain and the CT do\n\nnot show a significant variation in samples measured before and after\n\nirradiation. This proves the validity of the hypothesis used in the calculation\n\nof the DCR, where it was assumed that the Gain current, i.e. the gain\n\nmultiplied by the excess charge factor, do not change with proton\n\nirradiation.\n\nFig. 9: Top to bottom: gain, crosstalk probability and afterpulse\nprobability measured before and after proton irradiation at 4 V of excess\nbias.\n\n_**5.6.**_ _**Activation energy**_\n\nTo calculate the activation energy (Ea) of the SiPMs it was taken the IV\n\nmeasurements at different temperatures. At the same time, it was measured\n\nalso the temperature dependence of the breakdown voltage with\n\ntemperature. For irradiated samples the IVs were taken at temperatures\n\nbetween -30°C and 20, with 2°C steps, to avoid",
+        "score": -6.830677227728798,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8480358635362055,
+        "rerank_score": -10.636591911315918,
+        "matched_nodes": [
+          "In",
+          "At",
+          "The",
+          "For",
+          "To",
+          "Col2",
+          "Col3",
+          "Col4",
+          "Col1"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5241,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "em [6]–[8]. (1) If the secondary photon is absorbed by\nthe neighboring Single Photon Avalanche Diode (SPAD) and\ntriggers an additional avalanche within the same SiPM, it\nis referred to as internal optical crosstalk (iCT) [9]. More\nspecifically, iCT can further be divided into direct crosstalk\nand delayed crosstalk based on whether the electron is produced in the depleted region or in the undepleted region.\nMore information can be found in [10]. (2) Secondary photons\ncan pass through the SiPM window, escape, and be detected\nby external photo-sensors, such as another SiPM facing the\nfirst one, known as external crosstalk (eCT) [11]. (3)The final\ncorrelated effect is optically-induced afterpulsing (AP) [12],\nresulting from electrons in the undepleted region within the\nsame cell [10]. As the result, optical-induced AP usually appears behind the primary pulse after hundreds of nanoseconds\nto microseconds because of the recharge time of SPADs. As a\nresult, optically-induced AP typically occurs after the primary\npulse, ranging from hundreds of nanoseconds to microseconds,\ndue to the recharge time of SPADs\nThese correlated effects could significantly impact experiments aiming to achieve a large photon-sensitive area using\nSiPM readout, as detailed in the Darkside and nEXO references [13] [14]. First of all, the light yield of the detector\nis probably overestimated since single incident photons would\ngenerate a signal with the integral area larger than 1 PE (photoelectron), because of the presence of iCT, eCT or AP. To\nestimate the corrected light yield, the knowledge of the probability of the three correlated effects is important. In addition\nto light yield overestimation, other negative effects need to\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 2\n\nbe considered. For instance, the presence of AP can impede\nthe n/ _γ_ pulse shape discrimination in the background rejection\nanalysis when using the prompt fraction method. Moreover, a\nhigh percentage of iCT and eCT would degrade the energy\nresolution. Additionally, eCT also generates unavoidable coincidental background in low threshold experiments, as eCT\nsignals always occur simultaneously.\nOverall, for any experiment employing large area SiPM\narrays, the understanding of SiPM correlated noises is mandatory. The iCT probability is calculated by _P_ _iCT_ = _N_ _[N]_ (0 [(][1] _._ _[.]_ 5 [5] _P E_ _[ P E]_ ) [)]\n\n[15], where _N_ (1 _._ 5 _PE_ ) is the dark count rate (DCR) with\n1.5 PE threshold",
+        "score": -6.9065995989271185,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7703821898032065,
+        "rerank_score": -10.741687774658203,
+        "matched_nodes": [
+          "In",
+          "On",
+          "The",
+          "For",
+          "To",
+          "IEEE",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -6.913460133383642,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9544107590608617,
+        "rerank_score": -10.779988288879395,
+        "matched_nodes": [
+          "In",
+          "At",
+          "The",
+          "We",
+          "For",
+          "To",
+          "Col2",
+          "Col3",
+          "Col4",
+          "Col1"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6750,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "technology was measured to\n\n1 Generated by photons from a primary avalanche exiting the silicon,\nreflected on the entrance window and producing a sub-sequent avalanche.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 6\n\nFig. 9. (a) _V_ _bd_ is calculated by the extrapolation of the linear fit to the\nintercept with zero gain allowing all measurements to be presented at equal\n∆ _V_ . The gain is calculated from the slope of the linear fit and is given for\nbare, flat and microlens coated samples. Note that due to the coating, the\ngain is slightly increased. (b) a large increase of the cross-talk is seen for the\ncoated samples. The bare sample is expected to have no external cross-talk\nbut only internal. The error bars show the error of four measured identical\nchannels.\n\nFig. 8. (a) SEM image of two smaller size microlenses placed on top of the\nalignment marker. (b) Close view of the alignment markers filled with the\nmicrolenses. (c) Coated region with microlenses with coaxial illumination.\n(d) With a segmented diffuse light source, the reflection on each microlens\nis visible and illustrates the curved surface. In this mode, the flat regions\nbetween lenses appear black and the pixel structure (routing lines) is made\ninvisible due to the lenses.\n\nbe 32 _mV/K_ at room temperature. An integrated Pt1000\ntemperature sensor on the detector module gives access to\nprecise temperature monitoring. With the temperature in the\nlab stabilised by air conditioning, the variations were smaller\nthan _±_ 1 _K_ . To determine _V_ _BD_ and the gain (G), the bias\nvoltage was increased in steps of 1 _V_ and the current _I_ _Bias_\nrecorded. At the same time, pulse rates at thresholds of 0.5 and\n1.5 photo-electron amplitude (PE) ( _R_ 0 _._ 5, _R_ 1 _._ 5 ) were recorded\nwith a high-speed oscilloscope. The gain at every _V_ _BD_ point\nis calculated as the ratio between the current and the sum of\n\n_R_ 0 _._ 5 _P E_ and _R_ 1 _._ 5 _P E_ and is divided by the elementary charge\n(e) such that _G_ = _I_ _Bias_ _/_ ( _R_ 0 _._ 5 _P E_ + _R_ 1 _._ 5 _P E_ ) _/e_ . A linear fit is\nused to extrapolate _V_ _BD_ and the slope is extracted from the\nfit to determine the gain. The results are shown in Fig. 9. The\nmeasurement is performed with light illuminating the detector\nto enhance the precision of the current measurement but with\na sufficiently low pulse rate such that the random overlap of\npulses in time is negligible. The measurement is repeated for\nevery wavelength, and t",
+        "score": -6.923230371686664,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8159714307423448,
+        "rerank_score": -10.774147033691406,
+        "matched_nodes": [
+          "In",
+          "On",
+          "At",
+          "The",
+          "To",
+          "IEEE",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "At": 1.0,
+      "IS": 1.0,
+      "Di": 1.0,
+      "ND": 1.0,
+      "BO": 1.0,
+      "What": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "At": 1.0,
+      "IS": 1.0,
+      "Di": 1.0,
+      "ND": 1.0,
+      "BO": 1.0,
+      "What": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "HE": 0.7,
+      "IEEE": 0.7,
+      "Journal": 0.7,
+      "Col2": 0.63,
+      "Col3": 0.63,
+      "It": 0.7,
+      "Transactions": 0.24499999999999997,
+      "Nuclear": 0.24499999999999997,
+      "Physics": 0.24499999999999997,
+      "URL": 0.24499999999999997,
+      "Col4": 0.22049999999999997,
+      "Col1": 0.22049999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 24,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.88374751387164,
+    "generation_latency_s": 3.80445271730423e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 24.0,
+    "retrieval_latency_s": 6.88374751387164,
+    "generation_latency_s": 3.80445271730423e-07
+  }
+}

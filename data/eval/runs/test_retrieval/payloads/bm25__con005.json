@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "con005",
+    "query_type": "conceptual",
+    "query": "Why can monolithic integration reduce detector complexity?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "can",
+      "monolithic",
+      "integration"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why can monolithic integration reduce detector complexity?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6830,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution.md",
+        "title": "2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution",
+        "text": "in this regime to a few km for a parameter\nestimation security parameter 𝜖 = 10 [−10] . This limitation is not related to the PIC, and could be\novercome with more suitable acquisition devices. Also, different values of the security\nparameter could be considered, as discussed in the Supplementary material.\n\nFig. 6. Comparison of the expected SKR as a function of the channel attenuation using asymptotic (green line)\nand finite size (dashed lines) analysis calculated at _β_ =0.95, _ϵ_ =10 [-10], and different values of _m_ . The experimental\n\nresult obtained using an ULL fiber is marked with a green dot.\n\n**4. Conclusions and outlook**\n\nWe have reported on the performance of an InP-based PIC operating as a coherent encoder in a\nrealistic CV-QKD setup. In the first part of our study, we showed the design and electro-optical\ncharacterization of the PIC TX. The device exhibited good performance in terms of extinction\nratio, making it well-suited for the pulsed GMCS CV-QKD protocol, but the flexible\ncharacteristics of this research-grade PIC where detrimental in terms of the insertion loss of the\nentire chain. In the second part, we conducted experimental demonstrations showcasing the\nviability of our PIC TX in CV-QKD systems. Using a GMCS protocol over a distance of 11 km\noptical fiber and a TLO scheme, we achieved a potential SKR of 78 kbps in the asymptotic\nregime. These results are promising and serve as a proof of concept for applying an InP PIC TX\nin CV-QKD systems. Although they could be improved by increasing, for instance, the symbol\nrepetition rate and expanding the acquisition device memory size to cover finite size regimes,\nour results open up the possibility for the use of the InP platform for the monolithic integration\nof CV-QKD systems, offering cost savings, reduced complexity, compact size, and lower power\nconsumption.\n\nBuilding upon the proposed PIC TX, future advancements in this field could focus on the\nmonolithic integration with other components, such as integrated laser and power meter\n(photodiode for feedback). Furthermore, there are PIC areas that require improvement, such as\nreducing losses introduced by certain components (e.g., EAM and IQ modulators), and\naddressing distortions in IQ modulation. Additionally, pulse shaping modulation should be\nexplored in order to optimize the use of the available dynamic range. Optical and electronic\npackaging is another relevant factor that would facilitate the testing of these devices. In terms\nof",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 13.926545157275427,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5523,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico.md",
+        "title": "2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico",
+        "text": "ted\nhere, because all WPC profiles are normalised to the value at _z_ _Si_ = 150 µm, to ease the\ncomparability between the different _t_ pc values. The simulated and measured WPC profiles\nshow the same features. Valleys are found at the top and back side and the depth of\nthe valleys at the top side increase with increasing _t_ pc . The valleys are caused by charge\ncollection within _t_ pc . The longer _t_ pc is selected the more excess charge carriers are collected\nand the less prompt current is extracted at _t_ pc, which leads to a decreasing WPC. Increasing\nbias voltages exacerbate this effect as the charge is than even faster collected. Hence, the _t_ pc\nshould be selected as small as possible, while maintaining sufficient signal-to-noise ratio\n(SNR) and obeying the maximum possible probing band width. Band width limitations of\nthe readout electronics are the reason why the valley depth is not significantly changing\nbetween _t_ pc = 200 ps and _t_ pc = 300 ps . The appearance of the valleys indicates that the\nWPC needs to be taken with care, when it is evaluated at the device’s boundaries. Further,\nthe symmetry around the top and back side interface are caused by the shifting median of\nthe excess charge distribution, as discussed for the ToT in section 4.3.\n\n**5. Gain reduction on a Low Gain Avalanche Diodes**\n\nTo further validate the TPA-TCT TCAD simulation approach, the complex problem\nof gain reduction in Low Gain Avalanche Diodes (LGADs) was targeted. LGADs are\nsensors with an intrinsic signal amplification that is originating from a moderate signal gain\nthrough impact ionization in an embedded high field region called gain layer. Deposition\nof excess charge carriers in the sensor with subsequent multiplication in the gain layer can\nlead to a high concentration of free charges in the gain layer. The electric field produced by\nthese charges can reduce the high electric field strength in the gain layer and consequently\nsuppress further impact ionization processes and thus the gain. Such effect on LGADs\nhas been first observed by comparing measurements with a beta source to pulsed laser\nmeasurements [ 18 ] and later evaluated in more detail in experiments using ion beams [ 19 ],\nand pulsed lasers [20] for the charge generation.\nThe complexity in simulating this effect is lying in the fact that the charge generated\nin the avalanche process is impacting on the electric field in the gain layer and thus, for\nthe simulation process, has a feedback-loop to t",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 12.77537702499799,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6819,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution.md",
+        "title": "2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution",
+        "text": "cryptography provides a promising solution:\nquantum key distribution (QKD). QKD protocols allow two distant parties to share a\ncryptographic secret key through a public channel with information-theoretic security (ITS),\npreventing eavesdroppers from gaining access to the key without being detected [1,2].\n\nCommercial QKD systems are already available, although they remain expensive, bulky,\nand relatively challenging to operate. Consequently, QKD is difficult to use on a large scale. To\novercome these issues, the photonic integration of QKD systems can significantly reduce their\ncost, size, weight, and power consumption, and facilitate mass production, making QKD\naccessible to a wider range of users [3,4]. For photonic integrated QKD implementations,\ncontinuous-variable QKD (CV-QKD) is a suitable choice due to all components can potentially\nbe integrated into the same chip, including coherent detectors. Moreover, CV-QKD is\ncompatible with classical coherent optical communication networks (a prevailing standard in\nmetro and long-haul optical networking) and can coexist with classical light dataflows in the\nsame fiber [5]. A well-known protocol for the implementation of CV-QKD systems is\nGaussian-modulated coherent-state (GMCS), where the quadrature components of coherent\nstates are randomly modulated following a zero-center Gaussian distribution [6,7]. GMCS has\nbeen proven to be secure against the most general attacks, including in the finite-size setting [8–\n10].\n\nRecently, various research groups have endeavored to downsize QKD systems using\ndifferent photonic integrated circuit (PIC) platforms, such as silicon, III-V compound\nsemiconductors, and lithium niobate (LiNbO3) [3,11–13]. Among these, several on-chip CVQKD systems have been investigated by combining external lasers and integrated components\non a silicon photonics platform [14–22]. Although silicon photonics offers numerous\nadvantages, telecom lasers cannot be monolithically integrated, requiring non-standard hybrid\nintegration procedures. In a recent work [23], low-linewidth lasers based on an InP reflective\nsemiconductor optical amplifier (RSOA) butt-coupled to a low-loss silicon nitride cavity were\nused in a bulky CV-QKD system showing promising results. InP has therefore the inherent\nadvantage of allowing the monolithic integration of a range of components necessary for CVQKD systems, such as lasers, detectors, and high-speed modulators.\n\nIn this paper, we propose an InP-based PIC transmitter",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 12.17073650216765,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 420,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648337__2304.00283__Multiple_silicon_dangling-bond_charge_qubits_for_quantum_computing_a_Hilbert-space_analysi.md",
+        "title": "2023__recid_2648337__2304.00283__Multiple_silicon_dangling-bond_charge_qubits_for_quantum_computing_a_Hilbert-space_analysi",
+        "text": "complicated heterostructures QDs. Further research on the qubit dynamic model [11],\ncharacterizing the coherence rate [13], and characterization of coupling strength [14] in DBP [-] qubits have already been\ninvestigated.\n\nAs the number of DB qubits grows for the purpose of universal quantum computing, it is crucial to investigate and\ncharacterize the computational Hilbert space associated with the system and to reduce the complexity and size of the\ncomputational space. Here we recognize and tackle this problem to understand the complexity and characteristics of the desired\nand undesired Hilbert space in our DBP [-] qubit model. By taking into account the assumptions regarding the qubit loss, the size\nof the desired Hilbert space can prominently be reduced. Moreover, the dimensionality of the desired subsets in the space shrinks\nby a factor of two due to the spin preservation property. Finally, the required classical memory for storage of the qubit\ninformation is analyzed when the number of qubits grows.\n\nOur paper is organized as follows. Section 2 describes the basics and physical description of the DBP [- ] qubit. Additionally,\nthe quantum dynamics and Hamiltonian of the qubit are represented using the extended Hubbard model. Finally, the origins of\nqubit losses are introduced and discussed. Section 3, analyzes the size and complexity of the Hilbert space and utilizes the\nassumptions regarding the qubit loss and spin preservation to reduce the size of the desired Hilbert space. The required memory\nfor storage of the qubit information is calculated for various assumptions. Finally, Section 4 concludes the paper and discusses\nfuture works.\n\n**2. Dangling-Bond Pair Charge Qubits**\n\nThe silicon surface of interest is the hydrogen-terminated Si(100)–2×1. This surface is known as an attractive platform for\nnanoscale patterning. Each silicon atom of the surface is capped by a hydrogen atom and it shares one bond with another surface\nsilicon; it also contributes two bonds with the silicon atoms located within the Si bulk. A dangling bond is created when a\nhydrogen atom is abolished from a Si atom of the surface by a scanning probe [15–17]. The energy state of the resulted DB is\nlocated within the Si crystal bandgap and possesses one confined electron. Accordingly, DB is a truly atomic scale quantum\ndot [12], as its energy state is separated from the crystal conduction and valence bands; hence it displays localized features.\nDepending on the doping type and the t",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 11.904454162339906,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6117,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2778476__2404.11451__Method_for_Efficient_Large-Scale_Cryogenic_Characterization_of_CMOS_Technologies.md",
+        "title": "2025__recid_2778476__2404.11451__Method_for_Efficient_Large-Scale_Cryogenic_Characterization_of_CMOS_Technologies",
+        "text": "em, a combination\nof on-die multiplexers and a modular daughter board/socket\nconfiguration for bonded samples grants a large degree of\nflexibility. Thus, the same core set-up can be used across\nstandard research-focused cryogenic systems such as a dilution\nfridge or a dipping probe in a helium dewar, and bonded\nsamples can be rapidly swapped out limited only by the time\nneeded for thermal cycling of the system.\n\nII. R EQUIREMENTS\n\nHere, we briefly outline the requirements for the test system.\n_Temperature:_ Positioning of the various elements of control\nand readout circuity in a quantum computing system is based\non a compromise between the benefits of compact integration\nwith the quantum device layer and cooling power requirements\n\n[18]. It would be more convenient to operate quantum devices\nand all classical control/readout electronics at the same stage;\nprogress on the operation of spin qubits at elevated temperatures [19]–[21] may permit a single common cryogenic stage\noperating in the few-Kelvin regime. Low-power multiplexer\ncircuits and their associated digital control circuitry are well\nsuited for monolithic integration with quantum devices to\nreduce the off-die wiring requirements without raising the ondie temperature to the point of significant detrimental effects\non spin qubits [19]. Some control circuitry such as simple\nsignal generators may not exceed the cooling power limitations\nof the mixing chamber plate of a dilution fridge but may\nbe better suited to heterogeneous integration in which these\nelectronics are on a separate die from the quantum devices\nand are largely thermally isolated to avoid degrading qubit\nfidelities [3]. More power-hungry signal chain components\nsuch as amplifiers, mixers, and analog-to-digital converters\n(ADCs) typically must be operated at higher-temperature\nstages (e.g. the second stage of the pulse tube cooler of a\ndry dilution fridge sometimes referred to as the PT2 stage,\ntypically _T ≈_ 3 _._ 5 K) where cooling power is much greater\nbut latency and wiring are still minimized, and cryogenic\nperformance benefits can be realized. In any case, one must\nperform characterization measurements in a system with very\nsimilar temperature and thermalization profile to that of the\nintended end application to ensure applicability and accuracy\nof any derived models. Local on-die thermometry is also\nrequired to fully understand the effects of self-heating and\nheating among devices on the same die.\n_Bias/power lines_ : Standard in",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 11.81866601635686,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6630,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835987__2410.00837__Fast_timing_silicon_RD_for_the_future_Electron-Ion_Collider.md",
+        "title": "2025__recid_2835987__2410.00837__Fast_timing_silicon_RD_for_the_future_Electron-Ion_Collider",
+        "text": "le to carry out physics measurements for\nindividual collisions at the EIC, which can significantly reject pileup events. A PYTHIA8 [9]\nbased simulation framework has been setup to evaluate the impact on forward heavy flavor\nhadron reconstruction using different readout time windows. Figure 4 compares the invariant\nmass of reconstructed _D_ [0] ( _D_ [0] ) ( _D_ [0] / _D_ [0] → _K_ [∓] π [±] ) with the projected FMT spatial resolutions\nin the 2.5 < η ≤ 3.5 region using two different readout timing windows: 2 ns (left) and 10 µs\n\n(right). The proposed FMT with around 2 ns readout can significantly reduce the combinatorial background contributions to the forward heavy flavor reconstruction at the EIC, which\nhas a great sensitivity in exploring the heavy quark hadronization process under different\nmedium conditions [8].\n\n**Figure 4.** Invariant mass spectrum of reconstructed _D_ [0] ( _D_ [0] ) in the pseudorapidity regions of\n2.5 < η ≤ 3.5 with 2 ns readout window (left) and with 10 µs readout window (right).\n\n**5 Summary and Outlook**\n\nLatest bench and beam tests have demonstrated good spatial and timing resolutions for\nMALTA2 sensors. As evaluated in recent simulation studies, the proposed MALTA2 based\nFMT will help reduce pileup and combinatorial background contributions for forward heavy\nflavor reconstruction at the EIC. Further ongoing R&D for the FMT, which includes design\nand production of a MALTA2 quad-sensor prototype module, will provide more technical\ndetails to validate the overall detector performance.\n\n**References**\n\n[1] R. Abdul Khalek et al., _Science Requirements and Detector Concepts for the Electron-Ion_\n_Collider: EIC Yellow Report_, Nucl. Phys. A 1026 (2022) 122447.\n\n[2] ALICE collaboration, _Letter of intent for an ALICE ITS upgrade in LS3_, CERN-LHCC2019-018, LHCC-I-034 (2019).\n\n[3] L. Shekhtman _Micro-pattern gaseous detectors_, Nuclear Instruments and Methods in\nPhysics Research Section A: Accelerators, Spectrometers, Detectors and Associated\nEquipment 494 (2002) 1-3.\n\n[4] G. Giacomini et al., _Fabrication and performance of AC-coupled LGADs_, JINST **14**\n(2019) P09004.\n\n[5] F. Piro et al., _A 1-_ µ _W Radiation-Hard Front-End in a 0.18-_ µ _m CMOS Process for the_\n_MALTA2 Monolithic Sensor_ IEEE Trans. Nucl. Sci., vol. 69, no. 6, pp. 1299-1309, 2022.\n\n[6] M. van Rijnback et al., _Performance of the MALTA telescope_, Eur. Phys. J. C **83** (2023)\n581.\n\n[7] M. van Rijnback et al., _Radiation hardness of MALTA2 monolithic CMOS imaging",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 11.452106274875883,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 833,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi.md",
+        "title": "2023__recid_2664560__2306.00818__Integration_of_thermo-electric_coolers_into_the_CMS_MTD_SiPM_arrays_for_operation_under_hi",
+        "text": "oolers (TECs) based on Bismuth Sesquitelluride (Bi 2 Te 3 ) have also been included\n\nas an integrated component of the SiPM package. The TECs are re-flow soldered at 220 [◦] C to the\n\nrear side of the SiPM package on dedicated solder pads. The TECs specifications can be found on\n\nthe manufacturer (Phononic) website [13]. In the presence of TECs the heat produced by the SiPM\n\ncan flow only through the TEC surfaces (rather than through the entire substrate). It is therefore\n\nimportant to use a high conductivity thermal gap filler to maximize the heat flow between the TEC\n\nside coupled to the SiPM substrate and the side coupled to the copper housing. A THERMFLOW\n\nPhase-Change Thermal Interface Pad (T558) [14] with thickness of about 50-150 _𝜇_ m was found as a\n\ngood compromise between high thermal conductivity and capability to absorb potential ruggedness\n\nor non-planarity of the TEC and copper housing surfaces.\n\n– 6 –\n\nTEC mechanical specifications\n\n**Figure 6** . Top: Technical drawing of the back side of a BTL SiPM array where the location of the temperature\nsensor (RTD) and of the four TECs is visible, including dimensions of the thermo-electric coolers. Bottom:\npicture of BTL SiPM arrays (back side) from different manufacturers with TECs and RTDs (left) and picture\nof a batch of TECs as received from the supplier.\n\nBesides cost and integration implications another key parameter to consider is the additional\n\npower required by the TECs to provide an additional temperature gradient of about 10 [◦] C . This is\n\nbecause the total heat produced by a detector module ultimately needs to be extracted by the CO 2\n\ncooling system which has a finite capacity [2]. The reason why TECs represent a very attractive\n\nsolution for integration with irradiated SiPMs is that the power required to cool down the SiPMs by\n\nadditional 10 [◦] C compared to the cooling plate is almost entirely compensated by the decrease of\n\nSiPM leakage current.\n\nTo achieve a first proof-of-principle of this power compensation mechanism, a set of four\noff-the-shelf TEC prototypes of 2 × 2 mm [2] area were mounted on SiPM arrays, irradiated to\n2 × 10 [14] n eq /cm [2], annealed for 80 minutes at 60 [◦] C and then glued to a LYSO crystal array to gauge\nthe actual performance in cooling down a BTL module operated at around 1.0 V. The TEC hot sides\n\nwere thermally coupled to a large heat sink (emulating the detector cooling plate) and placed inside\n\na climate chamber at a temperature of −35 [◦] C . T",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 10.980053334279892,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 7859,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors.md",
+        "title": "2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors",
+        "text": "2018.\nTime-over-threshold (ToT) readouts measure the time difference between\nthe leading and trailing edges of a signal, typically the logic signal output of\na discriminator. This methodology significantly reduces the required buffer\nsize, circuit complexity, and power consumption, thereby improving circuit\nintegration and counting rates. The main drawbacks of ToT systems are\nthe degradation of energy resolution, dynamic range, and linearity [2]. ToT\nsystems for measuring particle energy have been implemented in ApplicationSpecific Integrated Circuits (ASICs) [3, 4, 5].\nThere are different approaches to implementing the analog signal discrimination required for ToT measurement. One approach is to compare the\ndetector pulse signal with a constant threshold and another one is to compare\nit a dynamic threshold [6]. A third approach is to hold the maximum pulse\namplitude and compare it with a dynamic threshold [4, 7], as shown in Fig.\n1. However, these approaches have drawbacks, such as implementation complexity, power consumption per channel, nonlinearities, and limited detection\n\n2\n\nrate capacity. Table 1 summarizes the characteristics of ToT methods.\n\na) b)\n\n|c)|Col2|Col3|\n|---|---|---|\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|S1<br>S2<br>ToT1<br>ToT2<br>c)||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n\nFigure 1: Different approaches to time-over-threshold measurement: (a) ToT based on\nconstant threshold comparison, (b) ToT based on dynamic threshold, (c) ToT based on\npeak holding/dynamic threshold, and (d) ToT based on pulse trailing edge linearization.\n\n**ToT method** **Linearity** **Range** **Power consumption** **Counting rate**\nconstant threshold low low low high\ndynamic threshold medium medium medium medium\nD&H + dynamic th. high high high low\nTrailing edge shaping high medium low high\n\nTable 1: Characteristics of different ToT methods.\n\nIn this work, we present a simple signal shaping method that improves the\nToT determination and features good linearity, a large bandwidth, low power\nconsumption, and high integrability. We characterized the ToT method was\nunder controlled conditions and tested it in the DiRICH readout system of\nthe Ring Cherenkov detector of the Compressed Baryonic Matter experiment\nat FAIR [8].\n\n**2. Pulse trailing edge linearization**\n\nThe fundamental problem with single-threshold ToT converters in photosensor r",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 10.976746403194172,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6818,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution.md",
+        "title": "2025__recid_2855955__2412.03208__Integrated_InP-based_transmitter_for_continuous-variable_quantum_key_distribution",
+        "text": "# **Integrated InP-based transmitter for** **continuous-variable quantum key distribution**\n\n**J.** **A** **LDAMA** **,** **[1,*]** **S.** **S** **ARMIENTO** **,** **[1]** **L.** **T** **RIGO** **V** **IDARTE** **,** **[1]** **S.** **E** **TCHEVERRY** **,** **[1]** **I.**\n**L** **ÓPEZ** **G** **RANDE** **,** **[1]** **L.** **C** **ASTELVERO** **,** **[1]** **A.** **H** **INOJOSA** **,** **[2]** **T.** **B** **ECKERWERTH** **,** **[3]** **Y.**\n**P** **IÉTRI** **,** **[4]** **A.** **R** **HOUNI** **,** **[4]** **E.** **D** **IAMANTI** **,** **[4]** **AND** **V.** **P** **RUNERI** **[1,5,6 ]**\n\n_1_ _ICFO-Institut de Ciencies Fotoniques, The Barcelona Institute of Science and Technology, Castelldefels_\n_(Barcelona) 08860, Spain_\n_2_ _VLC Photonics S.L–Ed. 9B–D2, UPV, Camino de Vera s/n, 46022 Valencia, Spain_\n_3_ _Fraunhofer Heinrich Hertz Institute (HHI), Einsteinufer 37, 10587 Berlin, Germany_\n_4_ _Sorbonne Université, CNRS, LIP6, 4 Place Jussieu, F-75005 Paris, France_\n_5_ _ICREA-Institució Catalana de Recerca i Estudis Avançats, Barcelona, 08010, Spain_\n_6_ _valerio.pruneri@icfo.eu_\n_*jennifer.aldama@icfo.eu_\n\n**Abstract:** Developing quantum key distribution (QKD) systems using monolithic photonic\nintegrated circuits (PICs) can accelerate their adoption by a wide range of markets, thanks to\nthe potential reduction in size, complexity of the overall system, power consumption, and\nproduction cost. In this work, we design, fabricate and characterize an InP-based PIC transmitter\nfor continuous-variable (CV) QKD applications. In a proof-of-principle experiment\nimplementing a pulsed Gaussian-modulated coherent state (GMCS) CV-QKD protocol over an\noptical fiber channel of 11 km, the system showed a performance compatible with a secret key\nrate of 78 kbps in the asymptotic regime. These results show the potential of InP technologies\nto integrate CV-QKD systems onto a monolithic platform.\n\n**1. Introduction**\n\nCurrent cryptographic protocols employed to safeguard digital data rely on highly complex\ncomputational methods. However, computational-based cryptography is susceptible to attacks\nperformed by quantum computers, undetected eavesdropping, and “store-now-decrypt-later”\nattacks. To address these challenges, quantum cryptography provides a promising solution:\nquantum key distribution (QKD). QKD protocols allow two distant parties to share a\ncryptographic secret key through a public channel with information-theoretic security (ITS),\npreventing eavesdroppers from",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 10.890672154274771,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7646,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2877792__2502.04941__Detection_efficiency_and_spatial_resolution_of_Monolithic_Active_Pixel_Sensors_bent_to_dif.md",
+        "title": "2026__recid_2877792__2502.04941__Detection_efficiency_and_spatial_resolution_of_Monolithic_Active_Pixel_Sensors_bent_to_dif",
+        "text": "s are the basis for the planned fully cylindrical ultra low material budget tracking detector ITS3 of the ALICE experiment. This paper presents results from testbeam campaigns using high-energy\nparticles to verify the performance of 50 µm thick bent ALPIDE chips in terms\nof efficiency and spatial resolution. The sensors were bent to radii of 18, 24\n\n_∗_ Corresponding author\n_Email address:_ `lukas.lautner@tum.de` (Lukas Lautner)\n\n1\n\nand 30 mm, slightly smaller than the foreseen bending radii of the future ALICE ITS3 layers. An efficiency larger than 99 _._ 9% and a spatial resolution of\napproximately 5 µm, in line with the nominal operation of flat ALPIDE sensors,\nis obtained at nominal operating conditions. These values are found to be independent of the bending radius and thus constitute an additional milestone in\nthe demonstration of the feasibility of the planned ITS3 detector. In addition,\na special geometry in which the beam particles graze the chip and traverse it\nlaterally over distances of up to 3 mm is investigated.\n\n_Keywords:_ Monolithic Active Pixel Sensors, Solid state detectors, Bent\nsensors, Silicon, CMOS, Particle detection, Test beam\n\n**1. Introduction**\n\nOver the last decades, silicon-based detectors have become the main tracking\ndevices close to the interaction point in many high-energy and nuclear physics\nexperiments. In order to minimise the distance between the sensors and the\nprimary vertex, and to reduce the overall material budget of the detector, truly\ncylindrical, bent, wafer-size Monolithic Active Pixel Sensors (MAPS) are employed. These sensors form the basis of the ITS3 (Inner Tracking System 3) [1, 2]\nupgrade of the vertex detector of the ALICE collaboration, which is scheduled\nfor installation during Long Shutdown 3 (2026–2029) at the LHC. For the ITS3,\nit is planned to employ large area sensors that are bent to half-cylinders with\nradii of 19, 25.2 and 31 _._ 5 mm. In this context, the performance of MAPS in\nterms of detection efficiency and space point resolution for small bending radii\nneeds to be assessed. The studies presented in this article constitute an important R&D step with respect to the first ever performance study of bent monolithic active pixel sensors in which it was shown that the bent chips preserve\ntheir full electrical functionality and particle detection capability. The results\nshown here complement and extend the prior findings [3] by investigating the\nthree radii compatible with the values foreseen fo",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 10.832613694376642,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.752500438131392,
+    "generation_latency_s": 2.50060111284256e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.752500438131392,
+    "generation_latency_s": 2.50060111284256e-07
+  }
+}

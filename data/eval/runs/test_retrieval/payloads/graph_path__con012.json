@@ -1,0 +1,413 @@
+{
+  "benchmark": {
+    "query_id": "con012",
+    "query_type": "conceptual",
+    "query": "Why does graph-path evidence improve inspectability?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "does",
+      "graph-path",
+      "evidence"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why does graph-path evidence improve inspectability?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6022,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning.md",
+        "title": "2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning",
+        "text": "lies on the direct detection technique [5, 6]. These\nexperiments seek to observe rare interactions between\nDM particles from the Milky Way and detector materials placed deep underground in low-background envi\nronments.\nTraditionally, direct detection experiments have primarily focused on searching for nuclear recoil events induced by Weakly Interacting Massive Particles (WIMPs)\nscattering off target nuclei in crystals or liquid noble\ngases [7]. As a result, these experiments have mainly\nbeen sensitive to DM masses in the GeV – TeV range, as\nlighter particles would be unable to generate observable\nnuclear recoils.\n\n_∗_ [catena@chalmers.se](mailto:catena@chalmers.se)\n\n_†_ [urdshals@chalmers.se](mailto:urdshals@chalmers.se)\n\nWith the absence of direct evidence for WIMPs, efforts have been put in towards alternative experimental\napproaches better suited to probe DM particles with subGeV masses [8]. In this context, a crucial role is played\nby direct detection experiments designed to detect DMinduced electronic transitions or electron ejections in materials, offering a novel avenue for uncovering the nature\nof DM [9–20].\n\nTo interpret these experiments, a theoretical understanding of DM-electron interactions in detector materials is needed. In ref. [21–25], the interactions DM can\nhave with the electrons bound to silicon and germanium\ncrystals (as well as individual atoms and graphene targets) were classified and explored using a non-relativistic\neffective theory formalism. We implemented our formalism in QEdark-EFT [26], which interfaces with the planewave self-consistent field (PWscf) DFT code Quantum\nESPRESSO [27] and extends the QEdark code [28] to the\ncase of general DM-electron interactions. This allowed\nfor covering several DM models, although an extensive\nexploration was hindered by computational costs.\n\nThe deep neural network (DNN) developed in this paper is traned on the output of QEdark-EFT, and serves\nmainly two purposes. Firstly, it is easier to use and run\nthan QEdark-EFT. It takes less space on a hard drive\nand does not require computation of or access to material response functions. Secondly, it allows for evaluating a large number of DM-induced electronic transition\nrates cheaply on a laptop, and demonstrates the potential DNNs have for speeding up rate evaluations. Such a\nspeedup will be necessary to perform extensive parameter\nscans in the event of detection of a DM signal. For example, evaluating the rate of electron-hole pair creation\nin s",
+        "score": -5.050164632930267,
+        "dense_score": null,
+        "bm25_score": 7.53896244101289,
+        "graph_score": 0.8084615384615385,
+        "rerank_score": -7.871088981628418,
+        "matched_nodes": [
+          "In",
+          "It",
+          "The",
+          "We",
+          "For",
+          "To",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5800,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2736533__2312.07957__Scintillation_characteristics_of_an_undoped_CsI_crystal_at_low-temperature_for_dark_matter.md",
+        "title": "2025__recid_2736533__2312.07957__Scintillation_characteristics_of_an_undoped_CsI_crystal_at_low-temperature_for_dark_matter",
+        "text": "attering\n(CE _ν_ NS) [7, 8]. Since event rates are larger at low energy,\nlow threshold detectors are essential for dark matter or\n\nCE _ν_ NS detection. In the case of scintillators, higher light\nyields are strongly associated with lower energy thresholds.\nThe introduction of dopants during crystal growth, such\nas thallium in halide crystals (i.e., CsI(Tl) and NaI(Tl)),\nenhances radiative recombination and improves light emission efficiency. These doped crystals have been widely\nutilized at room temperature, coupled with photomultipliers, for dark matter and CE _ν_ NS detection experiments [7, 8, 9, 10, 11, 12, 13, 14]. The highest reported\nlight yields from doped NaI(Tl) crystals were 22 photoelectrons (PE) per keV [8] with a novel crystal encapsulation\ntechnique [15]. There have been reports suggesting that\nundoped CsI and NaI crystals exhibit higher light yields\nat low temperatures with PMTs [16, 17, 18, 19, 20, 21, 22]\nor silicom photomultipliers (SiPMs) [23]. At the liquid\n\n_Email addresses:_ `hylee@ibs.re.kr` (H. Y. Lee),\n`kwkim@ibs.re.kr` (K. W. Kim), `hyunsulee@ibs.re.kr` (H. S. Lee)\n\nnitrogen temperature of 77 K, the undoped CsI crystal,\ncoupled with SiPMs and a wavelength shifter, achieved a\nlight yield of 30.1 PE/keV [24].\n\nWe investigate the scintillation characteristics of an undoped CsI crystal to assess their temperature-dependent\nbehavior. To maximize the light collection efficiency of the\nundoped CsI crystal, two SiPMs are directly attached to\nthe crystal. In a temperature range between 86 K and\n293 K, we measured the light yield, scintillation decay\ntime, and energy resolution. Due to the exhibition of high\ndark count rates and crosstalks [25, 26], we have carefully\nanalyzed and corrected effects of them on the analysis of\n\nmeasurements.\n\nThe technique for radiopure CsI crystal growth [27,\n28, 29] has been developed for the KIMS experiment,\nwhich used CsI(Tl) crystals coupled with photomultipliers (PMTs) for WIMP dark matter search [30, 31, 32].\nThe production of 200 kg undoped CsI crystals can be performed at the Institute for Basic Science (IBS), Korea,\nwhich offers a powder purification facility [33, 34, 35] and\nKyropoulos crystal growers [36], installed and employed\nfor the growth of radiopure NaI(Tl) crystals [37, 38]. Additionally, about 400 kg of purified CsI powder remnants\nfrom the KIMS CsI(Tl) crystal growing have been stored\nat the Yangyang underground laboratory. We conducted\n\n_Preprint submitted to Astroparticle Physics_ _Augu",
+        "score": -5.340911248227632,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8546153846153846,
+        "rerank_score": -8.318025588989258,
+        "matched_nodes": [
+          "In",
+          "NS",
+          "At",
+          "The",
+          "We",
+          "To",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "t detectors in CE _ν_ NS exper\n\nASN oscillation parameters.\n\n**B.** **With Different Masses of the Detector**\n\n9\n\niment exhibit a mass advantage of one order of magnitude,\nassuming that measurements of eV-scale recoil thresholds are\nfeasible and a signal-to-background ratio of about 1 can be\nachieved in the experiment [60]. Figure 5 shows the ASN\nmixing sensitivity in sin [2] 2 _θ_ 14 – ∆ _m_ [2] 41 [plane at 95][%][ C.L. for]\nan exposure of 1 yr for different mass of the detector. Figure 5(a) shows for Si detector and Fig. 5(b) for Ge detector,\nboth with masses 10 kg, 50 kg, and 100 kg. It can be noted\nhere that, sensitivities are extracted considering a threshold of\n100 eV and 20 eV for silicon and germanium detector, respectively. At a given detector mass at higher ∆ _m_ [2] 41 [the sensitivity]\nin sin [2] 2 _θ_ 14 is more as compared to lower ∆ _m_ [2] 41 [. The sensi-]\ntivity improves in all regions of sin [2] 2 _θ_ 14 with an increase in\ndetector mass as the number of expected events increases. It\nis evident that the Ge detector excludes both allowed regions\nof the GALLIUM experiment.\n\n**C.** **With Various Detector Thresholds**\n\nAs previously discussed, the recoil energy of nuclei decreases as the mass number of the detector increases. There\nfore, detectors with low thresholds, such as Ge and Si can\nperform nuclear recoil discrimination down to the eV scale\nenergy threshold. Such detectors will be more useful if we\ncan observe the recoil energies as low as a few tens of eV. In\nthe context of CE _ν_ NS cross-section, as given in Eq. 1, the nuclear recoil energy _T_ serves as the relevant observable. For\na given neutrino energy, there is a limit to the maximum recoil energy. The cross-section is maximum for lower values of\n_T_, therefore, the total number of observed event rate sensitivity dependent on the low-energy threshold for nuclear recoil\n_T_ _min_ . A comprehensive study has been performed to assess\nthe impact of detector threshold on ASN mixing sensitivity,\nconsidering both Si and Ge detectors with a mass of 10 kg\nplaced at a distance of 4 m from U-Apsara reactor core. Figure 6 shows the sensitivity in sin [2] 2 _θ_ 14 –∆ _m_ [2] 41 [plane at 95][ %]\nC.L for detector with different threshold energies. The sensitivity of the detector at lower ∆ _m_ [2] 41 [is better at the lower de-]\ntector threshold. However, for ∆ _m_ [2] 41 _[≥]_ [1] _[.]_ [0] _[ eV]_ [ 2] [, the detector]\nthreshold has minimal impact on ASN mixing sensitivity.\n\nFIG. 7: The",
+        "score": -6.017052531468318,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9007692307692308,
+        "rerank_score": -9.363710403442383,
+        "matched_nodes": [
+          "In",
+          "It",
+          "NS",
+          "At",
+          "The",
+          "For",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1375,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2684621__2308.00767__Membrane-in-the-middle_optomechanics_with_a_soft-clamped_membrane_at_milliKelvin_temperatu.md",
+        "title": "2023__recid_2684621__2308.00767__Membrane-in-the-middle_optomechanics_with_a_soft-clamped_membrane_at_milliKelvin_temperatu",
+        "text": "e and off the flat cavity mirror\nbehind the membrane (Fig. 3(c)). With 2D scans of the\nmembrane plane, we can calculate the tilt between the\nmembrane and cavity mirror from the interference fringe.\nIn the example shown in Fig. 3(c), this leads to an angle of approx. 1 mrad for one interference fringe across\n0.8 mm with a 830 nm laser beam. For all test assemblies, the angle is kept _<_ 1 mrad to ensure tilt is not a\ndominant source of cavity loss.\nThe same scan method is then used to find the center\nof the membrane defect with the laser beam. In the example shown in Fig. 3(d), it occurs at a position around\n7.93 mm. Once we have found the center position in the\nmembrane plane, we position and fix the curved mirror in\nthe assembly, forming the membrane-in-the-middle cavity.\nThe longitudinal position of the membrane with respect to the standing wave of the optical cavity determines the optomechanical coupling, among other factors.\nTo identify positions of high coupling, we measure a series of subsequent fundamental cavity resonance frequencies. The position-dependent perturbation of the intracavity field through the dielectric SiN material causes a\ndeviation of the cavity spectrum from equidistant modes\n\n3\n\nseparated by a constant free spectral range (FSR). This\ndeviation ∆ _ω_ FSR can be converted into a coupling point\nusing the model provided in [26]. It shows a periodicity of\n2 _kz_ = 2 _πNz/L_, where _N_ is the mode number, _z_ the distance to the closest cavity mirror (here 1 mm), and _L_ is\nthe cavity length (here 24 mm). We therefore record the\nresonance frequency of 24 subsequent cavity modes, in\norder to observe all coupling points and obtain the graph\nin Fig. 3(e). Then we perform cavity loss measurements\nvia cavity ringdowns at various coupling points, yielding\nthe data presented in Fig. 3(f). The findings demonstrate that the defect size does impact the cavity loss.\nWe find that sufficiently small defects lead to significant\nenough cavity losses that sideband resolution becomes\nunattainable. Based on these results, we use Lotus-class\ndefects with an innermost diameter of 230 µm for relevant\noptical cavities.\n\n**NOISE THERMOMETRY**\n\nFor the optomechanical measurements at millikelvin\ntemperatures, we clamp the cavity assembly to the vibration isolation platform described in Fig. 2(b). We\nshine laser light towards the cavity, through the cryostat’s windows, from fiber couplers mounted on a breadboard, which is itself clamped to the outer shield of t",
+        "score": -6.208241696965144,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7007692307692308,
+        "rerank_score": -9.6341552734375,
+        "matched_nodes": [
+          "In",
+          "It",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1292,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides.md",
+        "title": "2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides",
+        "text": "l decrease with two Lorentzian curves. In home-made\nsamples at zero magnetic field, homogeneous linewidths\nbelow 10 kHz have been observed using this approach.\nWhen performed on commercially fabricated silicon\nwaveguides, the same measurement shows a different result, see Fig. 4A (dark red) measured on site B: In addition to a narrow feature with a Lorentzian linewidth\nof 0 _._ 11(1) MHz FWHM, a second increase of the fluorescence with a FWHM of 9(1) MHz is found. The fact\nthat two timescales are observed indicates that an additional decoherence mechanism is present for some of the\ndopants in the commercial chips. It can be seen in all\ninvestigated samples, independently of the exact implantation and annealing conditions. It also originates from\nthe same site as the narrow feature, which was tested by\ninserting a narrow-band filter in the detection path that\nonly transmits light on a transition to a higher-lying crystal field level.\nWe attribute the additional decoherence that is not observed in home-made chips to paramagnetic impurities,\nwhich may already be present in the starting wafer or\nbe added during the commercial fabrication process. To\nfurther investigate this, we apply a large magnetic field of\nup to 9 T. At the chip temperature of _<_ 2 K, the spin of\n\n5\n\nboth the erbium dopants and all paramagnetic impurities\nwill then be frozen to the ground state, such that magnetic field fluctuations and the resulting decoherence can\nbe strongly reduced [31]. In our samples, the second line\nis slightly reduced at 1 T, and almost fully disappears at\n≳ 4 T, where the paramagnetic spins are frozen, as shown\nin Fig. 4A for a field of 9 T (light red). This supports our\nhypothesis that paramagnetic impurities are the origin of\nthe added decoherence.\n\nWe further investigate the scaling of the homogeneous\nlinewidths of erbium in both sites with the applied laser\npower in Fig. 4B. As expected, we observe a drop of\nthe homogeneous linewidth down to the lowest power\nthat gives a sufficient signal, both without magnetic field\n(dark red) and at 9 T (light red). With the field applied,\nwe extract a value of 0 _._ 028(10) MHz as an upper bound to\nthe homogeneous linewidth. Thus, we can almost recover\nthe narrow homogeneous linewidths observed in homemade samples [20] by applying a magnetic field of sufficient strength. The obtained linewidth, still limited by\npower broadening, is within an order of magnitude from\nthe lifetime limit that stems from the exponential decay\nof",
+        "score": -6.215672271587666,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7469230769230769,
+        "rerank_score": -9.651054382324219,
+        "matched_nodes": [
+          "In",
+          "It",
+          "At",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5263,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2797508__2406.08208__Fluorescence_Enhancement_of_Single_V2_Centers_in_a_4H-SiC_Cavity_Antenna.md",
+        "title": "2024__recid_2797508__2406.08208__Fluorescence_Enhancement_of_Single_V2_Centers_in_a_4H-SiC_Cavity_Antenna",
+        "text": "cavity mode, the enhancement is very robust to a displacement of the dipole from its optimal position in the middle of\nthe membrane. It stays in between _∼_ 20–34 for a relative\ndipole position in the membrane in between 0.2–0.8 from\nthe lower silver-SiC interface. The robustness of the en\nhancement on more parameters is shown in the Supporting Information.\n\nThe fabrication of the antenna structure starts with the\n\nsteps described in our previous work [36] in order to create sub-µm thin 4H-SiC membranes with integrated V2centers. With this, we create a sample with a total thickness of 40 µm containing several subregions with a thickness below 1 µm, which we refer to as membranes in the\nfollowing. In the last step of this process, we etch our sample down to a thickness of _∼_ 135 nm in the central part of\none membrane (see Supporting Information for details on\nthe membrane thickness), measured by a home-built white\nlight interferometer (WLI). The membrane is subsequently\ncoated using electron beam evaporation with a target silver\nthickness of 200 nm for the thick silver layer (full-reflective\nmirror) and 25 nm for the thin silver layer (leaky mirror). In\nthe final step, the SiO 2 layer is sputtered on top of the thin\nsilver layer. To check the resonance of the fabricated structure, we measure its reflectivity spectrum after the coating\nsteps using the WLI. The result, normalised by a reference spectrum from a mirror, is depicted in Figure 1(d)\nand shows a reflection dip at 950 nm that covers a big part\nof the phonon side band of the V2 center. We can model\nthe measured data using a transfer matrix model and find\na good agreement for an upper silver layer of 22 nm and a\nSiC thickness of 137 nm, confirming the earlier WLI measurement.\n\n**Fluorescence enhancement at room temperature**\n\nTo test the enhancement of V2 fluorescence in our structure, we investigate the sample in a confocal laser scanning setup at room temperature (details in the Supporting Information). At first, we measure fluorescence from\nthe central part of the antenna and find a region with a\ndiameter of _∼_ 40 µm around the membrane center that\nshows bright fluorescence, depicted as the black circle in\nFigure 2(a). The diameter of the enhanced region is determined by the thickness variation of the SiC membrane in\nthis region. We measured this variation to be _∼_ 20 nm (see\nSupporting Information for details), shown as white dashed\nlines in Figures 1(c) and 1(e), and see the corresponding\nenha",
+        "score": -6.226271121837909,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7469230769230769,
+        "rerank_score": -9.667360305786133,
+        "matched_nodes": [
+          "In",
+          "It",
+          "At",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 410,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "ies. The sensitivity of the detector at lower ∆ _m_ [2] 41 [is better at the lower de-]\ntector threshold. However, for ∆ _m_ [2] 41 _[≥]_ [1] _[.]_ [0] _[ eV]_ [ 2] [, the detector]\nthreshold has minimal impact on ASN mixing sensitivity.\n\nFIG. 7: The comparison of ASN mixing sensitivity at 95 % C.L. for\ndifferent resolution of Ge detector placed at 4 m from the U-Apsara\nreactor facility.\n\n**D.** **With Different Resolution of Detector**\n\nThe sensitivity of the detector to the neutrino mixing parameters such as angle and squared mass difference depends\non its resolution and efficiency. To investigate the effect of\nenergy resolution, we have considered a 10 kg Ge detector positioned at a distance of 4m from the U-Apsara reactor core.\nThe detector resolution varies from _σ/E_ = 3%–10%/ _√E_ for\n\nextracting its sensitivity to the upper limit for the ASN mixing\nangle _θ_ 14 . Figure 7 shows the sensitivity to ASN mixing parameters in the ∆ _m_ [2] 41 [-][ sin] [2] [ 2] _[θ]_ [14] [plane. It is observed that, the]\ndetector exhibits better sensitivity to the ASN mixing with a\nresolution of _σ/E_ = 3% _/√E_ . Interestingly, for ∆ _m_ [2] 41 _[<]_ [ 1] _[.]_ [0]\n\neV [2], ASN mixing sensitivity remains unaffected by the detector resolution. However, for higher ∆ _m_ [2] 41 _[≥]_ [1] _[.]_ [0][ eV] [2] [, the]\n\nFIG. 8: The comparison of ASN mixing sensitivity at 95 % C.L.\nof Ge detector in presence of background placed at 4m from the UApsara reactor facility. The signal to background ratio is one considered here.\n\ndetector’s resolution improves the ASN mixing sensitivity. At\nhigher ∆ _m_ [2] 41 [, the oscillation frequency is more, and hence to]\nhave better sensitivity a detector with very good energy resolution is necessary.\n\n**E.** **Sensitivity of Detector in Presence of Background**\n\nMeasuring the low energy of recoil nuclei from the CE _ν_ NS\nprocess poses a significant challenge due to the presences of\nbackground. The background affects the detector sensitivity\nwhile extracting the various physics parameters of interest.\n\n10\n\nThe ASN mixing sensitivity has been obtained by incorporating backgrounds, particularly in the context of Ge detector\nwhich will be placed in the above-ground conditions at 4.0m\ndistance from U-Apsara reactor. At the experimental site, the\nreactor-related background (neutron and gamma) and cosmogenic background (muon-induced neutrons) that can not be\neliminated even with the shielding and will contaminate the\nactual signal. It is not only",
+        "score": -6.298868720867451,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7469230769230769,
+        "rerank_score": -9.779048919677734,
+        "matched_nodes": [
+          "It",
+          "NS",
+          "At",
+          "The",
+          "To",
+          "CE"
+        ],
+        "path_nodes": [
+          "It"
+        ],
+        "community_id": "It",
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3896,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2743705__2401.02900__New_detailed_characterization_of_the_residual_luminescence_emitted_by_the_GAGGCe_scintilla.md",
+        "title": "2024__recid_2743705__2401.02900__New_detailed_characterization_of_the_residual_luminescence_emitted_by_the_GAGGCe_scintilla",
+        "text": "early 2024, are being\ndeveloped in the context of the pathfinder mission HERMESTP/SP (Technological/Scientific Pathfinder). With this initial\nfleet the objective is to demonstrate the potential of the HERMES Pathfinder approach for the study of gamma-ray bursts.\nThe detector installed onboard the nanosatellites exploits the\n“siswich” architecture [2], consisting in coupling a silicon detector with a scintillation crystal. To fulfill the requirements of\nthe mission, the choice for the silicon detector fell on the silicon drift detector (SDD), while for the scintillation crystal the\nbest candidate is the GAGG:Ce (Gd 3 Al 2 Ga 3 O 12 :Ce, Ceriumdoped Gadolinium Aluminium Gallium Garnet), a novel inorganic scintillator. This combination allows the wide energy\nband observed, from ∼ 2 keV to a few MeV. The SDD plays a\ndual role: on one side it directly detects the incoming X-rays,\non the other side it absorbs the optical scintillation light emitted\nby the GAGG:Ce when illuminated by _𝛾_ -rays.\nThe GAGG:Ce crystal produces an unusually intense\nand long-lasting (even for several days) residual emission\n\n∗ Corresponding author: giovanni.dellacasa@inaf.it\n1 `[https://www.hermes-sp.eu](https://www.hermes-sp.eu)`\n\n(afterglow), following its exposure to ionizing radiation [3]. It\nis essential to characterize this phenomenon to comprehend\nthe effects on the orbiting nanosatellite detection chain, whose\nscintillation crystals interact with the charged particles trapped\nin the Van Allen belts [4]. This was studied a first time in\n\n[5]. The analysis of the data acquired in the first campaign\ndrew attention to some limitations that could have affected its\nresults: there was no precise knowledge of the temperature\nand its variations during the measurements, the timing of the\nmeasurements with respect to the end of an irradiation step\nwas not very accurate, the PMT bias voltage differed somewhat\nfrom a measurement set to the next, and there were no means\nto take account of the scintillation light due to the decay of\nactivated nuclei within the crystal.\n\nTo address these issues a new measurement campaign was\norganised in two distinct phases: first a set of irradiation steps\nusing an LED light, then a second one using protons like in\nthe previous study. In this article we briefly present the setup\nassembled to perform this experiment, then we describe the tests\nexecuted and the resulting characterization of the afterglow, and\nfinally we discuss the consequences for the detectio",
+        "score": -6.425810067989643,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7469230769230769,
+        "rerank_score": -9.974343299865723,
+        "matched_nodes": [
+          "In",
+          "It",
+          "SP",
+          "The",
+          "To",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6749,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "nlike the optical parameter of\nthe lens, these properties are not fixed for a given replication\nmould but depend on the replication process. It is therefore\nuseful to measure for every chip the _RLT_ and validate the\nalignment at several points on the surface. The extracted\noptical parameters match the nominal values very well. As the\n\nThe MLA replication is performed with a mold that requires\na precise alignment with respect to the structures on the silicon. Markers were added to the silicon not only for the alignment process during replication but also for quality assurance\nafter MLA deposition. Microlenses with reduced diameter\nand height were integrated into the mold and placed within\nthe cross corners of the alignment marker. The misalignment\nwas measured with an optical microscope in every corner\nof the MLA through an automated process. The precision is\ntypically better than 1 _µm_ in both the horizontal and vertical\ndirections. A maximum misalignment of 2 _µm_ in diagonal was\nobserved, but for many samples the misalignment was of the\norder of 1 _µm_ in diagonal. In Fig. 8 the relative position of\nthe microlens implementation with respect to the alignment\nmarkers is illustrated.\n\nVI. C OMPARISON WITH MEASUREMENTS\n\nThe evaluation of the MLA is based on a relative com\nparison between MLA enhanced and flat layer samples. The\nexpected differences are a change in PDE and external optical\ncross-talk [1] due to the different surface structures, although also\nthe SPTR is expected to change. To extend the variation of\nsamples, we also measured bare silicon from the identical fabrication process. The detectors are 128-channel arrays which\nyield data from many channels. This reduces the systematic\nuncertainties caused by manufacturing differences and small\ndefects in the microlens surface. However, the alignment is\nlinked to a 64-channel die and is expected to affect all channels\non the same die.\n\n_A. Breakdown voltage and gain measurement_\n\nThe breakdown voltage is measured for every channel and,\nalthough they are integrated on the same silicon die, a spread\nis seen due to manufacturing differences. Over 128 channels,\nit is typically in the range of 100 _−_ 300 _mV_ . The temperature\ndependence of _V_ _BD_ for this technology was measured to\n\n1 Generated by photons from a primary avalanche exiting the silicon,\nreflected on the entrance window and producing a sub-sequent avalanche.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 6\n\nFig. 9. (a)",
+        "score": -6.458778908063449,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7146153846153845,
+        "rerank_score": -10.02123737335205,
+        "matched_nodes": [
+          "In",
+          "It",
+          "VI",
+          "The",
+          "To",
+          "SCIENCE",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3822,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": "tt criterion involving the transport\nmean free path being equal to lattice spacing, which plays no\nrole in doped semiconductors of interest to us. We also estimate the critical density by considering inhomogeneous density fluctuations induced by long-range Coulomb disorder in\nthe system and compare the result to the AIR critical density.\nSection VIII examines the effect of spin/valley degeneracy on\nthe mobility and the AIR critical density. Finally, we conclude\nand summarize in Section IX.\n\n3\n\nII. MOBILITY AND QUANTUM MOBILITY\n\nIn this section, we apply the Boltzmann transport theory to\ncalculate the mobility and quantum mobility at T = 0 [20, 37–\n42]. The transport mobility is given by µ = eτ/m [⋆], and the\nconductivity is en e µ, where n e is the 2DEG concentration,\nm [⋆] = 0.19 m 0 is the transverse effective mass of an electron\nin Si, m 0 is the free electron mass,\n\nfactor F c (qw) is given by\n\nF c (qw) =\n\n+∞\n\ndzdz [′] |ψ(z)| [2] |ψ(z [′] )| [2] exp(−q|z − z [′] |) . (6)\n\n��\n\n−∞\n\n2\n� �|U (q)| [2] [�], (1)\n\nτ1 [= 4] π [m] ℏ [3][⋆]\n\n2k F\n�\n\n0\n\ndq\n�4k F [2] [−] [q] [2]\n\ndq\n�4k F [2]\n\nq\n� 2k F\n\nq\n� 2k\n\nis the transport scattering rate, and U (q) is the screened potential of a given scattering source. k F = �4πn e /g is the Fermi\n\nwave vector. g = g s g v is the total degeneracy of electrons,\nwhere g s is the spin degeneracy and g v is the valley degeneracy. The quantum mobility is given by µ q = eτ q /m [⋆], where\nthe quantum (single particle) scattering rate reads\n\n1\n= [2][m] [⋆]\nτ q πℏ [3]\n\n2k F\n�\n\n0\n\ndq\n�4k F [2] [−] [q] [2]\n\n�|U (q)| [2] [�] . (2)\n\nIn Eq. (4) we ignore the screening from the top gate. To\ninclude the gate screening, we should add the Coulomb\npotential of the image charges and replace e [−][q] [|] [z][−][z] [′] [|] by\ne [−][q] [|] [z][−][z] [′] [| ] − e [−][q] [|] [2][d] [g] [−][z][−][z] [′] [|][�], where d g = d + d o + w/2 is\n�\nthe distance from the gate to the center of the 2DEG.\n\nIII. DELTA LAYER 2DEG APPROXIMATION\n\nFor simplicity, assuming that the gate is far away d g ≫ d\nand the wavefunction perpendicular to the quantum well has\na delta function profile |ψ(z)| [2] = δ(z), the form factors re2πe [2]\nduce to identities and U 1 (q, z) = κqǫ(q) [e] [−][q][|][z][|] [. In this sec-]\ntion, we disregard the local field correction, thus making the\ndielectric function the RPA form, ǫ(q) = 1 + q T F /q. We will\naddress the effect of form factors and local field correction in\nSection IV, and the effect of gate screening in Section VI. We\nuse",
+        "score": -6.499449044042734,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8084615384615385,
+        "rerank_score": -10.094923973083496,
+        "matched_nodes": [
+          "In",
+          "VI",
+          "The",
+          "We",
+          "For",
+          "To",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "It": 1.0,
+      "NS": 1.0,
+      "VI": 1.0,
+      "DOE": 1.0,
+      "At": 1.0,
+      "De": 1.0,
+      "SP": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "It": 1.0,
+      "NS": 1.0,
+      "VI": 1.0,
+      "DOE": 1.0,
+      "At": 1.0,
+      "De": 1.0,
+      "SP": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "CE": 0.7,
+      "Office": 0.7,
+      "Department": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "VELO": 0.7,
+      "Energy": 0.24499999999999997,
+      "University": 0.24499999999999997,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997,
+      "LHC": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 27,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.237003683112562,
+    "generation_latency_s": 3.6973506212234497e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 27.0,
+    "retrieval_latency_s": 5.237003683112562,
+    "generation_latency_s": 3.6973506212234497e-07
+  }
+}

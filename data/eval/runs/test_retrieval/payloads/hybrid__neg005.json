@@ -1,0 +1,277 @@
+{
+  "benchmark": {
+    "query_id": "neg005",
+    "query_type": "negative",
+    "query": "What is the best stock to buy based on these detector papers?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "best"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the best stock to buy based on these detector papers?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4849,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2778403__2404.10866__Spectroscopic_Measurements_and_Models_of_Energy_Deposition_in_the_Substrate_of_Quantum_Cir.md",
+        "title": "2024__recid_2778403__2404.10866__Spectroscopic_Measurements_and_Models_of_Energy_Deposition_in_the_Substrate_of_Quantum_Cir",
+        "text": "substrate of a quantum circuit, over a suitably wide\nrange of energies.\nThe microcalorimeters used in this study are based on\nthe microwave kinetic inductance detector (MKID) [6,\n28]. The MKID is a cryogenic detector technology that\nexploits the exceptionally high kinetic inductance of a\nsuperconductor to measure the energy of incident radiation events. In an MKID, a thin superconducting film is\nfabricated into a microresonator circuit. When energy is\ndeposited in the superconducting resonator, Cooper pairs\nare broken. With fewer pairs to carry the supercurrent,\nthe kinetic inductance grows and the resonant frequency\nfalls. The magnitude of the frequency shift depends on\nthe energy absorbed in the radiation interaction event,\nenabling spectroscopic measurements.\nA thermal kinetic inductance detector (TKID)\ncalorimeter [29–31] incorporates a structure to absorb\nand thermalize energy. The absorber can be co-located\nwith the superconducting resonator and semi-isolated on\na micromachined island to confine thermal energy long\nenough for accurate measurement. In this work, no separate absorbing structure is used; the micromachined island itself is the radiation absorber. The TKID is similar\nin many ways to the more mature transition-edge sensor\n(TES) calorimeter [32–34], but its silicon absorber and\nwell-defined interaction volume made it especially suited\nfor this work.\n\nBeing a less mature detector technology, however,\nTKIDs are not without their disadvantages. In particular, the device physics is less thoroughly understood, and\nthe energy resolution of current devices for photon detection is significantly worse than that achieved in the best\nTESs. For the current measurement, the broad dynamic\n\n7\n\nFIG. 5. Micrograph of the 500 µm thick TKID. The TiNTi resonator structure consists of a meandered inductor on\nthe square island and an interdigitated capacitor (IDC) on\nthe bulk, “frame” substrate. The IDC is capacitively coupled to the microstrip transmission line running horizontally\nacross the top of the image. The 5 mm _×_ 5 mm island is thermally coupled to the substrate frame only through its four,\n-shaped legs and is thus “semi-isolated” from the rest of\nthe substrate. The legs are approximately 200 µm wide and\n1500 µm long. Gold films and gold wire bonds on the outer,\nframe regions of the chip (not pictured) are used to thermalize the entire substrate.\n\nrange is far more important than the energy resolution.\n\nWe have fabricated a pair of TKID calorimeters",
+        "score": -4.613251109556718,
+        "dense_score": null,
+        "bm25_score": 23.99420463033874,
+        "graph_score": 0.0,
+        "rerank_score": -7.104302406311035,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1004,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system.md",
+        "title": "2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system",
+        "text": "## Development of the front-end electronics for a cost-effective PET-like detector system\n\nJosephine Oppotsch _[a]_ [,][∗], Nadia Böhle _[a]_, Thomas Held _[a]_, Mario Fink _[a]_, Miriam Fritsch _[a]_,\nFritz-Herbert Heinsius _[a]_, Matthias Steinke _[a]_ and Ulrich Wiedner _[a]_\n\n_a_ _Ruhr-Universität Bochum, Institut für Experimentalphysik I, 44801 Bochum, Germany_\n\nA R T I C L E I N F O\n\n_Keywords_ :\nPlastic scintillators\n\nPositron emission particle tracking\nPreamplifier\nSilicon photomultiplier arrays\nTime-of-flight\n\nLicense:\n\n© 2023. This manuscript version is\nmade available under the CC-BY-NC\nND 4.0 license\n\nhttps://creativecommons.org/licenses/bync-nd/4.0/\n\n**1. Introduction**\n\nAbstract\n\nMost detector systems used for positron emission particle tracking (PEPT) are very expensive due to\nthe use of inorganic plastic scintillators combined with a high number of readout electronic channels.\nThis work aims to reduce the overall cost of a PEPT-capable detector system by using large and\ncost-effective plastic scintillators and developing custom 2 × 2 silicon photomultiplier (SiPM) arrays,\npreamplifiers, and discriminators. The use of long (20 mm × 20 mm × 1000 mm) plastic scintillator\nbars read out with photodetectors only at their respective ends allows an overall smaller number\nof photodetectors and associated readout electronics, which in turn reduces the overall cost of the\nsystem. In addition, the development of a custom SiPM array and preamplifier allows a free selection of\ninterconnection and readout, as most commercial producers only offer specific types of interconnections\nand therefore lack other connections such as serial or hybrid. Thus, several common circuit types\nfor SiPMs and preamplifiers were tested and compared in this work, and it was found that a serial\nconnection implemented in a hybrid interconnection for the SiPMs and an inverting preamplifier based\non a high-frequency operational amplifier provided the best results for the proposed detector system.\nMeasured with a [22] Na source, the combination of SiPM array and preamplifier led to a rise time of\n3.7 ns and a signal amplitude of 175 mV.\n\nLarge industrial processes have a significant influence on the\nenvironment. However, even if most people’s environmental\nawareness has already changed and improved significantly,\nthere are still areas where a change proves to be very difficult.\nTypical examples of such areas are large-scale industrial\nprocesses that deal with the processing of dense",
+        "score": -5.3058050685458715,
+        "dense_score": 0.4324107766151428,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.170255661010742,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5641,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ution from the data. In this procedure, the time of arrival of a particle incident\n\non the detector is defined to be at a threshold on the rising edge of the signal that is a certain\n\nfraction of the signal’s maximum height[2]. Particularly, the time of arrival at thresholds from\n\n10% to 90% at an increment of 10% were extracted for both signals. The time difference can then\n\nbe defined, where it is the difference between the time of arrival extracted from the front and rear\n\ndetectors. Using the same time difference thresholds, the time difference values were extracted for\n\neach set of events and subsequently binned into a histogram. The number of bins in the histogram\n\ncould be manually set to some reasonable value. However, the optimal bin size was dynamically\n\nselected based on a method used to minimise the mean integrated squared error associated with\n\nthe statistics. The resulting histogram is a Gaussian distribution and its sigma is what is known as\n\nthe time resolution of the detectors. This calculated value is the system’s average timing resolution\n\nand to calculate the individual devices’ timing resolution, an important assumption was made in\n\n– 7 –\n\n**Figure 5** . An illustration of the setup to measure time resolution. A Sr-90 source generates a beam of\n_𝛽_ -particles that passes through both detectors and the signal registered by the devices mounted on the PCBs,\nwhere they serve as 1st stage amplifiers. The PCBs are connected to 2nd stage amplifiers and then the signals\nare displayed by the oscilloscope. The entire setup is placed on top of a breadboard purchased at Thorlabs,\n\nInc.\n\nthe analysis: it is assumed that the detectors have similar time resolution. This comes from the\n\nfact that identical detectors from the same region of the wafer were selected. As there are two\nplanes of detectors, the calculated timing resolution was divided by a factor of ~~√~~ 2. Furthermore,\n\nas part of the analysis, different combinations of constant fractions from both detectors were used.\n\nFor example, the front detector’s 50% to the rear detector’s 30%. As such, a total of 81 timing\n\nresolution values were calculated and the best timing resolution from the combinations was extracted\n\nfrom each measurement run. Finally, the uncertainty from the measurements was extracted by the\n\nfollowing procedure: the measurement was repeated 5 times for a certain bias voltage value with the\n\nentire setup being turned off for an hour between each measurement. The measureme",
+        "score": -5.368359088897705,
+        "dense_score": null,
+        "bm25_score": 27.241102974365575,
+        "graph_score": 0.0,
+        "rerank_score": -8.267427444458008,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1543,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2705225__2310.00577__Conceptual_study_of_a_two-layer_silicon_pixel_detector_to_tag_the_passage_of_muons_from_co.md",
+        "title": "2023__recid_2705225__2310.00577__Conceptual_study_of_a_two-layer_silicon_pixel_detector_to_tag_the_passage_of_muons_from_co",
+        "text": "arge support structure cannot\n\nbe used when installing the detector layers under two separate flanges, one would most likely need\n\nto accumulate more muon interactions to be able to perform alignments at the pixel level in these\n\nconfigurations.\n\n– 12 –\n\n**4** **Discussion**\n\nAs the physical qubit density increases, the contribution of high-energy particles to errors in quantum\n\ncomputations will become more relevant. Depending on the particular details of the physical setup\n\nof the quantum system, muons from cosmic sources may constitute a significant fraction of these\n\ncontributions. We have envisioned in this paper the possibility to tag the qubits that are hit by these\n\nmuons using a two-layer silicon pixel detector and to provide this tagging information as input to a\n\nfuture QEC algorithm that may be able to veto the affected qubits for the duration of their recovery.\n\nThe development and implementation of phonon and quasiparticle traps, or membrane struc\ntures are necessary to localize upsets over multiple qubits; without such localization, a large portion\n\nof the qubit chip is practically disabled, and determining the hit position would not be very useful.\n\nStricter localization of the upsets is expected to set tighter resolution requirements for hit position\n\npredictions over the qubit chip. We find that for resolution requirements within the size of a sin\ngle qubit, the best muon detection efficiencies are achieved when both detector layers are placed\n\nbetween the cold plate and the qubit chip in a telescopic arrangement with adapted pixel sizes.\n\nAngular acceptance imposed by the dilution refrigerator geometry makes the cold plate and the still\n\nflange the only viable candidates to attach the top detector layer for target efficiencies above 50%.\n\nLoosening the hit position resolution requirement leaves room for the possibility to maintain high\n\ndetection efficiencies while placing the detector layers on either side of the qubit chip and freeing\n\nthe bottom layer from the constraints of the dilution refrigerator. As for the timing resolution of\n\nthis detector, a reasonable design target would be ≲ 100 ns based on the current QEC round times\n\nof ∼ 1 _𝜇_ s.\n\nThe still flange and the cold plate are kept at sub-Kelvin temperatures, so the different detector\n\ncomponents need to be designed with these low temperatures in mind. Because cooling power at\n\nthese temperatures is limited, low power consumption is one of the requirements. Examples to\n\nmaintai",
+        "score": -5.476977027302057,
+        "dense_score": null,
+        "bm25_score": 24.59436137798687,
+        "graph_score": 0.0,
+        "rerank_score": -8.43370246887207,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 8280,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "13th Pisa Meeting on Advanced Detectors. `[doi:https://doi.org/10.](https://doi.org/https://doi.org/10.1016/j.nima.2015.08.074)`\n`[1016/j.nima.2015.08.074](https://doi.org/https://doi.org/10.1016/j.nima.2015.08.074)` .\n\n[13] H. Bichsel, Straggling in Thin Silicon Detectors,\nRev. Mod. Phys. 60 (1988) 663. `[doi:10.1103/](https://doi.org/10.1103/RevModPhys.60.663)`\n`[RevModPhys.60.663](https://doi.org/10.1103/RevModPhys.60.663)` .\n\n[14] G.-F. Dalla Betta, M. Boscardin, G. Darbo,\nR. Mendicino, M. Meschini, A. Messineo,\nS. Ronchin, D. Sultan, N. Zorzi, Development of\na new generation of 3D pixel sensors for HL–\nLHC, Nucl. Instrum. Meth. A 824 (2016) 386,\nProceedings of the 13th Pisa Meeting on Advanced Detectors. `[doi:https://doi.org/10.](https://doi.org/https://doi.org/10.1016/j.nima.2015.08.032)`\n`[1016/j.nima.2015.08.032](https://doi.org/https://doi.org/10.1016/j.nima.2015.08.032)` .\n\n[15] M. Boscardin, S. Ferrari, F. Ficorella, A. Lai,\nR. Mendicino, M. Meschini, S. Ronchin, M. A. A.\nSamy, G.-F. Dalla Betta, Advances in 3d sensor\ntechnology by using stepper lithography, Frontiers\nin Physics 8 (2021). `[doi:10.3389/fphy.2020.](https://doi.org/10.3389/fphy.2020.625275)`\n\n`[625275](https://doi.org/10.3389/fphy.2020.625275)` .\n\n[16] The Tracker Group of the CMS Collaboration,\nComparative evaluation of analogue front-end designs for the CMS Inner Tracker at the High Luminosity LHC, JINST 16 (12) (2021) P12014. `[doi:](https://doi.org/10.1088/1748-0221/16/12/P12014)`\n`[10.1088/1748-0221/16/12/P12014](https://doi.org/10.1088/1748-0221/16/12/P12014)` .\n\n24\n\n[17] L. Gaioni, M. Manghisoni, L. Ratti, V. Re, E. Riceputi, G. Traversi, G. Dellacasa, N. Demaria,\nS. Garbolino, F. Rotondo, Optimization of the 65nm CMOS Linear Front-End Circuit for the CMS\n\nPixel Readout at the HL-LHC, IEEE Trans. Nucl.\nSci. 68 (11) (2021) 2682. `[doi:10.1109/TNS.](https://doi.org/10.1109/TNS.2021.3117666)`\n\n`[2021.3117666](https://doi.org/10.1109/TNS.2021.3117666)` .\n\n[18] M. Garcia-Sciveres, The [RD53A](https://cds.cern.ch/record/2287593) Integrated\n[Circuit, Tech. rep., CERN, Geneva (2017).](https://cds.cern.ch/record/2287593)\nURL `[https://cds.cern.ch/record/](https://cds.cern.ch/record/2287593)`\n\n```\n 2287593\n\n```\n\n[19] M. Garcia-Sciveres, F. Loddo, J. Christiansen,\n\n[RD53B Manual,](https://cds.cern.ch/record/2665301) Tech. rep., CERN, Geneva\n(2019).\nURL `[https://cds.cern.ch/record/](https://cds.cern.ch/record/2665301)`\n\n```\n 2665301\n\n```\n\n[[20] Strasbourg Irradiation Facility.](http",
+        "score": -5.4824654784569375,
+        "dense_score": 0.4730628728866577,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.442846298217773,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 35,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4895,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2778430__2404.11192__A_beam-driven_proton_irradiation_setup_for_precision_radiation_damage_tests_of_silicon_det.md",
+        "title": "2024__recid_2778430__2404.11192__A_beam-driven_proton_irradiation_setup_for_precision_radiation_damage_tests_of_silicon_det",
+        "text": "each sensor is determined via CV measurements at different frequencies. The expected increase of\n\n6\n\nis assumed, in accordance to the expected increase due\nto energy loss by ionization.\n\n**7. Conclusion**\n\nIn this work, a modern proton irradiation site at the\nBonn Isochronous Cyclotron (BIC) of Bonn University\nis described. DUTs are irradiated with 13.6 MeV protons inside a cool box at ≤−20 [◦] C which is moved\n\ntrough the stationary beam along a scan grid. Custom\nbeam diagnostics facilitate online beam parameter monitoring at the extraction to the setup, enabling a beamdriven irradiation routine as well as a purely beam-based\non- and offline dosimetry. Test irradiations of titanium\nfoils verify that the beam-based and standard dosimetry\nvia foil activation yield comparable results whereas the\nbeam-based methods provide a lower uncertainty. Performing electrical characterization of thin sensors before and after irradiation allows to extract a proton hardness of κ p = 3.71±0.11, in agreement with expectations.\nDue to the low proton energy at the BIC, DUTs with a\nthickness ≤ 300 µm silicon are preferable to ensure accurate NIEL scaling.\n\n**References**\n\n[1] D. Sauerland, P. Wolf, P.-D. Eversheim, R. Beck, J. Dingfelder,\nProton irradiation site for si-detectors at the bonn isochronous\n\ncyclotron, in: 13th Int. Particle Acc. Conf., no. 13 in\nInternational Particle Accelerator Conference, JACoW Publishing, 2022, pp. 130–132. doi:10.18429/JACoW-IPAC2022MOPOST030.\n\nURL `https://ipac2022.vrws.de/papers/mopost030.`\n```\n pdf\n```\n\n[2] H. Garnir, P. Dumont, Y. Baudinet-Robinet, Secondary electron\nemission from thin foils under fast ion bombardment, Nuclear\nInstruments and Methods in Physics Research 202 (1) (1982)\n187–192. doi:https://doi.org/10.1016/0167-5087(82)90394-5.\nURL `https://www.sciencedirect.com/science/`\n```\n article/pii/0167508782903945\n```\n\n[3] C. Peterson, R. Laubert, Carbon accumulation on target surfaces\nirradiated by protons, IEEE Transactions on Nuclear Science\n24 (3) (1977) 1542–1544. doi:10.1109/TNS.1977.4329004.\n\n[4] D. Sauerland, P. Wolf, P.-D. Eversheim, R. Beck, J. Dingfelder,\nProton irradiation site for high-uniformity radiation hardness\ntests of silicon detectors at the bonn isochronous cyclotron, in:\n23rd Int. Conf. on Cyclotrons and their Applications, no. 23 in\nInternational Conference on Cyclotron and their Applications,\nJACoW Publishing, 2022, pp. 130–132. doi:10.18429/JACoWIPAC2022-MOPOST030.\n\nURL `https://ipac2022.vrws.de/papers/mopos",
+        "score": -5.488730917097648,
+        "dense_score": null,
+        "bm25_score": 23.94490444897405,
+        "graph_score": 0.0,
+        "rerank_score": -8.451017379760742,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5637,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ns has shown that devices with a thickness of 50 µm\n\nwith a gain in the magnitude of 10 − 20 provide the best time resolution. Therefore, LGAD\n\nwafers fulfilling these technical requirements were fabricated by Micron Semiconductor Ltd and\n\nsubsequently characterised at the University of Glasgow.\n\n**2.2** **LGAD Samples**\n\nTiming studies were performed on the 50 µm LGAD wafer fabricated from Micron Semiconductor\n\nLtd. The wafer 3331-19 contains devices with varying pixel sizes, doping concentrations, and\n\njunction termination extension (JTE) width. For devices 1 - 7 in the wafer, the devices are single\npixel devices with pixel sizes varying from 0 _._ 22 mm to 2 mm and JTE widths ranging from 10 µm to\n\n50 µm. Device 7 from the northern section of the wafer with a pixel size of 0 _._ 5 mm and JTE width\n\nof 10 µm was tested as part of the timing studies. As part of the timing measurement experiment,\n\nanother device from the same region was used to ensure that the devices have similar geometry and\n\ncharacteristic parameters.\n\nIt is vital to understand what parameters affect timing resolution and make sure performance is\n\non-par with other manufacturers of LGADs. Therefore, devices manufactured by CNM Barcelona\n\nwere also measured. Particularly, 50 µm LGAD devices W7-LGB-52 and W7-LGB-31 from run\n9088 were studied. The two devices are single-pad LGADs with an active area of 3 _._ 3 × 3 _._ 3 mm [2] .\n\n**2.3** **IV and CV: Setup**\n\nThe characterisation of the IV and CV curves of LGADs was done within the Glasgow Laboratory\n\nfor Advanced Detector Development using a dedicated probe station setup.\n\nThe main setup for characterising the IV curve consists of a power supply, a dark box, the\n\nprobe, and the chuck. The setup is depicted in figure 2. In this setup, devices are mounted on top\n\nof a chuck that is held in place by a vacuum pump. A probe composed of a tungsten filament of\n\n20 microns is then lowered into contact with the device and a Keithley-273 DC power supply is\n\nconnected to the probe through the positive terminal. For current to flow, the chuck is connected to\n\nthe power supply at the negative terminal and is grounded. Finally, the entire setup apart from the\n\npower supply is placed inside the dark box from Wentworth to shield it from external interferences\n\nsuch as light and vibrations. During the IV measurements, the setup is connected to a computer\n\nand data is displayed through a dedicated LabView user interface.\n\nThe CV measurement setup is more c",
+        "score": -5.5240354728698735,
+        "dense_score": null,
+        "bm25_score": 24.871689118833775,
+        "graph_score": 0.0,
+        "rerank_score": -8.506208419799805,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1938,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "n the 90–180 mrad and 40–90 mrad\nfor RICH1 and RICH2, respectively. The results are summarised in table 9. Consistent\n\n99\n\nFigure 74: Left: average quantum efficiency of the MaPMTs used in the RICH detectors.\nRight: a typical PID performance of the kaon identification obtained from the LHCb software\nfor the configuration described in the text (red). A corresponding curve for the Run 2 conditions\n(prepared using the simulation with LHCb Run 2 geometry and luminosity, as reported in\nref. [124]) is shown for reference (black).\n\nFigure 75: Average expected occupancy per channel for different MaPMTs in the (left) RICH1\nand (right) RICH2 detector.\n\nTable 9: Simulated performance of the upgraded RICH detectors. For RICH2, the values are\ngiven for the inner detector regions populated with the 1-inch MaPMTs.\n\n**Photoelectron yield** **Cherenkov angle resolution [mrad]**\n_N_ ph [optimal] _N_ ph [typical] chromatic emission point pixel _σ_ _θ_ ∆ _θ_ C\nRICH1 63 59 0.52 0.36 0.50 0.81 0.18\n\nRICH2 34 30 0.34 0.32 0.22 0.52 0.17\n\n100\n\nresults are found when using _B_ _s_ [0] _[→]_ _[ϕϕ]_ [ events provided that the selected tracks fulfil the]\nconstraints described above for the single particle simulation. The photoelectron yield\ndecreases when the optimal track requirements are relaxed. This is shown in table 9\nwhere a typical photoelectron yield, _N_ ph [typical], is reported. The typical photoelectron yield\nvalues are lower than the optimal ones, mainly due to the limitations in the acceptance\ndue to the beam pipe region. As it can be extracted from table 9, the contributions\nto the total Cherenkov angle resolution from the RICH and tracking systems at high\nmomentum are of similar magnitude, and slightly dominated by the _C_ tracking term. The\n_C_ tracking contribution used here is the asymptotic limit of approximately 0.15 mrad at high\nmomentum, dominated by the intrinsic resolution of the tracking detectors.\n\n### **8 Calorimeters**\n\nTo cope with the new LHCb readout scheme, the FE and readout electronics of the\nelectromagnetic and hadronic calorimeters have been entirely redesigned and replaced.\nMoreover, two subdetectors of the previous calorimeter system, namely the Scintillating\nPad Detector (SPD) and the PreShower (PS) [125], have been removed, given their reduced\nrole in the new LHCb all-software trigger.\nThe layout of both the electromagnetic calorimeter (ECAL) and hadronic calorimeter\n(HCAL) remains unchanged for the upgrade. A complete description of the geome",
+        "score": -5.574063501478751,
+        "dense_score": 0.4187397360801697,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.582298278808594,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 120,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 629,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker.md",
+        "title": "2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker",
+        "text": "s to verify that the detector is\nperforming as expected and to predict the detector performance using the flight readout system. Third, we will use these\nmeasurements to determine the placement of detectors within\nthe tracker, with higher-quality detectors being placed in the\nupper layers (where more anti-nuclei events are expected).\nIn Sec. II we describe the custom low-noise, lowtemperature testing system that was developed to allow fast\ncharacterization of this large sample of detectors. In Sec. III,\nwe describe our procedures for detector processing, testing,\nand data acquisition. In Sec. IV, we characterize this large\nsample of detectors using a physically-motivated noise model.\nWe conclude in Sec. V, demonstrating that large-area and lownoise Si(Li) detectors can be economically mass-produced and\ntested.\n\nII. D ETECTOR T ESTING S YSTEM\n\n_A. GAPS Detector Module_\n\nThe basic functional unit of the GAPS Si(Li) tracker is the\n_detector module_ (hereafter simply _module_ ) shown in Fig. 1.\nEach module contains four Si(Li) detectors mounted into\nan aluminum frame, to which the detectors are grounded\nvia their guard rings. Each detector is rigidly mounted into\nplace using several fluorosilicone O-rings and G10 clamps.\nThese clamps also secure a gold tab to the bottom ohmic\ncontact of each detector to supply the bias voltage. Finally, we\nsecure polypropylene windows on the top and bottom of each\ndetector module, providing a sealed volume for the detectors.\nThese windows (aluminized on their exterior surface to prevent\nmetal flakes within the detector volume) allow us to shield\nthe detectors from stray light, environmental contamination,\nand electromagnetic interference, and to flush the modules\nwith dry N 2 gas during payload assembly and testing to\nsuppress humidity. Each module also carries a _front-end board_\n(FEB) with several major roles. First, each FEB carries a\ncustom ASIC chip to which the Si(Li) strips are wirebonded,\nand which is responsible for processing and digitizing Si(Li)\nenergy deposits over a large dynamic range of tens of keV\nto ≳100 MeV [30]–[33]. Second, the FEBs also provide the\n250-V reverse-bias voltage to each detector. Lastly, the FEBs\nfacilitate a power and communication link between the flight\ncomputer and the ASICs.\nAs the FEBs and ASICs were being developed simultaneously with the Si(Li) detector testing, we require a different\nmethod of detector readout for the lab testing described in this\nwork. To that end, we replace the FE",
+        "score": -5.597612359788683,
+        "dense_score": 0.49841105937957764,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.620258331298828,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5512,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "EEE\nTransactions on Nuclear Science 60 (2013) 2352–2356.\n\n[26] S. Tudisco, Others, Silicon carbide for future intense luminosity nuclear physics investigations, Il Nuovo Cimento\nC 42 (2019). doi: `[10.1393/ncc/i2019-19074-1](http://dx.doi.org/10.1393/ncc/i2019-19074-1)` .\n\n[27] D. Puglisi, G. Bertuccio, Silicon carbide microstrip radiation detectors, Micromachines 10 (2019). URL: `[https:](https://www.mdpi.com/2072-666X/10/12/835)`\n`[//www.mdpi.com/2072-666X/10/12/835](https://www.mdpi.com/2072-666X/10/12/835)` . doi: `[10.3390/mi10120835](http://dx.doi.org/10.3390/mi10120835)` .\n\n[28] D. K. Schroder, Semiconductor Material and Device Characterization, John Wiley & Sons, Ltd, 2005. doi: `[10.](http://dx.doi.org/10.1002/0471749095)`\n\n[16](http://dx.doi.org/10.1002/0471749095)\n\n`[1002/0471749095](http://dx.doi.org/10.1002/0471749095)` .\n\n[29] J. Hilibrand, R. D. Gold, Determination of the impurity distribution in junction diodes from capacitance-voltage\nmeasurements, 1960, pp. 191–198. doi: `[10.1142/9789814503464\\_0019](http://dx.doi.org/10.1142/9789814503464_0019)` .\n\n[30] M. Petek, Automatic method for extracting depletion voltage from CV measurements (2018). URL: `[https:](https://cds.cern.ch/record/2639974)`\n`[//cds.cern.ch/record/2639974](https://cds.cern.ch/record/2639974)` .\n\n[31] A. Artna-Cohen, Nuclear data sheets for a = 224, Nuclear Data Sheets 80 (1997) 227–262. doi: `[https://doi.](http://dx.doi.org/https://doi.org/10.1006/ndsh.1997.0003)`\n`[org/10.1006/ndsh.1997.0003](http://dx.doi.org/https://doi.org/10.1006/ndsh.1997.0003)` .\n\n[32] A. Artna-Cohen, Nuclear data sheets for a = 228, Nuclear Data Sheets 80 (1997) 723–786. doi: `[https://doi.](http://dx.doi.org/https://doi.org/10.1006/ndsh.1997.0007)`\n`[org/10.1006/ndsh.1997.0007](http://dx.doi.org/https://doi.org/10.1006/ndsh.1997.0007)` .\n\n[33] K. C. Mandal, S. K. Chaudhuri, F. H. Ruddy, High-resolution alpha spectrometry using 4h-sic detectors: A review of the state-of-the-art, IEEE Transactions on Nuclear Science 70 (2023) 823–830. doi: `[10.1109/TNS.2023.](http://dx.doi.org/10.1109/TNS.2023.3267996)`\n\n`[3267996](http://dx.doi.org/10.1109/TNS.2023.3267996)` .\n\n[34] A. Artna-Cohen, Nuclear data sheets for a = 212, Nuclear Data Sheets 66 (1992) 171–235. doi: `[https://doi.](http://dx.doi.org/https://doi.org/10.1016/S0090-3752(05)80030-4)`\n`[org/10.1016/S0090-3752(05)80030-4](http://dx.doi.org/https://doi.org/10.1016/S0090-3752(05)80030-4)` .\n\n[35] A. Artna-Cohen, Nuclear data sheets for a = 216",
+        "score": -5.6818065123124555,
+        "dense_score": 0.42217183113098145,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.748233795166016,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.892954277805984,
+    "generation_latency_s": 4.898756742477417e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.892954277805984,
+    "generation_latency_s": 4.898756742477417e-07
+  }
+}

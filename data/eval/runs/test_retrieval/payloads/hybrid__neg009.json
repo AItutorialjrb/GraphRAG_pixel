@@ -1,0 +1,277 @@
+{
+  "benchmark": {
+    "query_id": "neg009",
+    "query_type": "negative",
+    "query": "What is the home address of the lead author?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "home"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the home address of the lead author?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7666,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2898921__2503.07845__Characterization_of_the_SiPiC_payload_for_photon_detection_from_space.md",
+        "title": "2026__recid_2898921__2503.07845__Characterization_of_the_SiPiC_payload_for_photon_detection_from_space",
+        "text": "ion with gravitational wave events [14].\n\n∗ Lead author, corresponding author: lfinazzi@unsam.edu.ar\n\n - Corresponding author: gsanca@unsam.edu.ar\n\n1\n\nIn recent years, we have studied the performance of SiPMs under controlled light stimuli\nin Low Earth Orbit (LEO) [15, 16, 17, 18]. We have also developed a new generation of\nLabOSat instruments: the first one is an Onboard Computer to control Payloads in CubeSats\n(LabOSat-02) [19] and the second one is a PC104 compliant Payload called LabOSat-0104,\nwhich is an update on the LabOSat-01 Payload [20]. This will be the first space mission for\nthese new LabOSat instruments.\nIn this work, we introduce the SiPiC (SiPM Pinhole Camera) Payload. This Payload\nhas two distinct objectives: to perform an in-orbit validation (IOV) of new generation of\nLabOSat instruments, and to use SiPM technology to detect visible light originating from\nEarth. In this regard, this instrument serves as a pathfinder for Visual Light Communications between Earth and a satellite for different altitudes. We will also present and discuss\npreliminary measurements to assess performance of each of the Payload subsystems. In Section 2, the Payload description is presented, which includes its hardware and subsystems and\nits software. In Section 3, the characterization setup for the Payload pre-flight preliminary\nmeasurements is detailed. In Section 4, these measurements are presented and analysed. In\nSection 5, the conclusions are outlined and the outlook is briefly discussed.\n\n### **2 Payload Description**\n\n##### **2.1 Hardware and subsystems**\n\nIn Figure 1, an overview of each subsystem of the SiPiC Payload is shown with its corresponding electrical connections. In addition, a 3D CAD with a detail of all subsystems is\nshown in Figure 2.\nThe instrument is comprised of various electrical subsystems, including a Power Adapter\nBoard (PAB) and LabOSat-02 (LSO) (Control Subsystem, or CS), LabOSat-01 (LSS) with its\ncorresponding adapter board (LSB) (Imaging Subsystem, or IS) and LabOSat-0104 (LMB),\nwith its corresponding daughter board (LDB) (Validation Subsystem, or VS). The IS was\ndesigned to host two SiPM sensors. One of them is exposed to external light through a\npinhole, and the other is encapsulated in opaque epoxy to serve as a dark control.\nThe SiPM optics has a length of 60 mm and the corresponding pinhole has 0.3 mm\ndiameter. This results in a theoretical Field-of-View (FOV) on the Earth’s surface of 4000 km\nat 40000 km altitude or 50 km at 5",
+        "score": -3.522163393762377,
+        "dense_score": null,
+        "bm25_score": 27.45365891387423,
+        "graph_score": 0.0,
+        "rerank_score": -5.427259922027588,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5353,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2806578__2407.07722__Characterization_of_SiPM_performance_in_a_small_satellite_in_low_earth_orbit_using_LabOSat.md",
+        "title": "2024__recid_2806578__2407.07722__Characterization_of_SiPM_performance_in_a_small_satellite_in_low_earth_orbit_using_LabOSat",
+        "text": "s are used in terrestrial applications,\nsuch as communications [6], astrophysics [7], and quantum optics [8].\n\n∗ Lead author: lfinazzi@unsam.edu.ar\n\n - Corresponding author: gsanca@unsam.edu.ar\n\n1\n\nThe use of these sensors in space, in particular in Low Earth Orbit (LEO), requires\na thorough understanding on radiation in the satellite’s environment. These sensors can\nsuffer major degradation in radiation-prone orbits. Nevertheless, SiPMs can continue to\nwork (albeit at reduced performance) even after degradation from ionizing or non-ionizing\nradiation [9, 10, 11]. SiPM damage with medium fluences ( _∼_ 10 [10] n/cm [2] for 1 MeV equivalent\nneutrons) results mainly in an increase in their Dark Count Rate and their dark current,\nwhile maintaining other intrinsic characteristics (like Gain, Photon Detection Efficiency, and\nothers) intact [9].\nFour SiPMs were integrated into the NuSat-7 satellite (COSPAR-ID 2020-003B) on Jan- [˜]\nuary 2020 and put in orbit using two LabOSat-01 (LS-01) Payloads, along with dedicated\ndaughter boards (DBs) specifically designed for this mission (See [12, 13] and the references\ntherein). The integration of various SiPMs allowed us to have redundancies in case of electronics or SiPM malfunction. We aimed to measure the degradation of these devices after\nalmost 4 years of mission time and show that they continue to operate, albeit with reduced\nperformance, to controlled light stimuli.\nIn Section 2, a description of the electronics of the LS-01 platform is presented and the\ntests performed on the devices of interest are also detailed. In Section 3, particle radiation in\nthe satellite’s orbit is discussed. In Section 4, results from 1460 days in LEO are presented.\nIn Section 5, the conclusions of the work are outlined.\n\n### **2 The LabOSat Payload**\n\n#### **2.1 Electronics**\n\nThe LS-01 platform and a dedicated DB were used to perform measurements on SiPMs under\ncontrolled light stimuli. SensL MicroFC-60035 SiPMs were bundled together with an LED\nand placed together inside a light-tight housing (SiLH, for SiPM Light-tight Housing). This\nallowed for the characterization of SiPMs under controlled illumination during the mission.\nA schematic drawing of the SiLHs, which represent the DUTs of the present study, is shown\nin Figure 1.\n\nFigure 1: Schematic diagram of the SiLH design, in a cutout view (not to scale). Image\ntaken from [12].\n\nThe SiPM was attached to the LED using a transparent epoxy, placing the active sides of\neach component fa",
+        "score": -4.005576902219694,
+        "dense_score": null,
+        "bm25_score": 25.64726622078227,
+        "graph_score": 0.0,
+        "rerank_score": -6.169802188873291,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3871,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures.md",
+        "title": "2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures",
+        "text": "e has two distinct sources: crosstalk and afterpulsing. Crosstalk\nevents occur when a primary dark or photon count produces a prompt secondary avalanche\n\n∗ Lead author: lfinazzi@unsam.edu.ar\n\n - Corresponding author: fhi@unsam.edu.ar\n\n1\n\nin the Silicon. Such events have an amplitude of two detected photons. In turn, afterpulsing\nare events in which, after a primary dark or photon count, a delayed avalanche is generated,\nproducing two distinct events. These effects are called correlated noise because they require\na primary count to appear and they degrade the sensor performance. Recently, the impact\nof these features in the field of quantum optics has been studied [13].\nOne of the landmark experiments that gave rise to the field of quantum optics was the\nmeasurement of intensity fluctuations of light detected from thermal sources, first done by\nHanbury-Brown and Twiss [14]. They observed photon correlations by measuring the arrival\ntime difference between them at two separate detectors. These correlations are referred to\nas HBT effect or photon bunching. The name “photon bunching” alludes to the fact that\na fraction of the detected photon events have an increased probability of arriving together.\nBesides opening a new field of research and giving an insight into the nature of light, HanburyBrown and Twiss applied this technique to astronomy and used it to measure the angular\ndiameters of several stars [15].\nNowadays, photon correlation measurements are applied to several fields, like timecorrelated photon detection in time-domain diffuse optics [16], quantum version of Timeof-Flight LIDAR [17] and quantum image scanning microscopy [18]. In addition, advances in\ninstrumentation technology have given new life to the application of the HBT technique in\nastrophysics. For example, the VERITAS [19] and MAGIC [20] collaborations have measured\nthe angular diameter of various stars, and prospects for Cherenkov Telescope Array (CTA)\nwere studied [21]. Moreover, the use of the technique was recently proposed for measuring\ngravitational waves [22].\nIn this work we demonstrate a practical use of SiPMs for Quantum Optics. We measured\nphoton bunching from a thermal source with these novel sensors for the first time.\n\n### **2 Signal-to-Noise Ratio**\n\nThe usual sensors used in Quantum Optics are the avalanche photodiodes (APDs). The\ntraditional way to measure photon bunching is to use a beamsplitter and two sensors that\nare triggered in coincidence [23, 24] and then measure",
+        "score": -4.673963265419007,
+        "dense_score": null,
+        "bm25_score": 25.316554646278412,
+        "graph_score": 0.0,
+        "rerank_score": -7.19744348526001,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 815,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2664241__2305.19681__A_2D_quantum_dot_array_in_planar_28SiSiGe.md",
+        "title": "2023__recid_2664241__2305.19681__A_2D_quantum_dot_array_in_planar_28SiSiGe",
+        "text": "tual barrier gate voltages. The\nphysical gate voltages used at ∆vB = 0 mV varies between data sets, as the voltages were slightly adjusted. As in c) uninvolved barrier gates\nremained in the residual tunnel coupling regime. Note also that in c) and d) the charge states vary between scans, depending on which dots\neach polarization line connects.\n\nVandersypen Lab.\n\n**CONFLICT OF INTEREST**\n\nThe authors have no conflicts to disclose.\n\n**AUTHOR CONTRIBUTIONS**\n\n**F.K.** **Unseld** : Conceptualization (lead), Data curation (equal), Formal analysis (equal), Investigation (lead),\nMethodology (equal), Resources (equal), Validation (equal),\nVisualization (equal), Writing – original draft (lead), Writing – review & editing (lead). **M. Meyer** : Conceptualiza\n\ntion (lead), Data curation (lead), Formal analysis (lead), Investigation (lead), Methodology (equal), Validation (equal),\nVisualization (lead), Writing – original draft (equal), Writing\n– review & editing (equal). **M.T. M ˛adzik** : Formal analysis (supporting), Investigation (supporting), Supervision (supporting), Validation (supporting), Writing – review & editing\n(supporting). **F. Borsoi** : Formal analysis (supporting), Investigation (supporting), Methodology (supporting), Software\n(equal), Validation (supporting), Writing – review & editing\n(supporting). **S.L. de Snoo** : Software (lead), Writing – review\n& editing (supporting). **S.V. Amitonov** : Resources (equal),\nWriting – review & editing (supporting). **A. Sammak** : Resources (equal), Writing – review & editing (supporting). **G.**\n**Scappucci** : Resources (equal), Writing – review & editing\n(supporting). **M. Veldhorst** : Conceptualization (lead), Fund\n\ning acquisition (lead), Project administration (lead), Supervision (lead), Validation (equal), Writing – review & editing (equal). **L.M.K. Vandersypen** : Conceptualization (lead),\nFunding acquisition (lead), Project administration (lead), Supervision (lead), Validation (equal), Writing – review & editing (lead).\n\n**DATA AVAILABILITY STATEMENT**\n\nThe data and analysis scripts that support the findings of\nthis study are openly available in the Zenodo repository at\n[http://doi.org/10.5281/zenodo.7957631, reference number](http://doi.org/10.5281/zenodo.7957631) [26]\n\n**Appendix A: Device fabrication and screening**\n\nThis device is fabricated on a [28] Si/Si 70 Ge 30 heterostructure.\nA 2 _._ 5 _µ_ m strain relaxed Si 70 Ge 30 buffer layer makes the foundation. On top of it the isotopically enriche",
+        "score": -5.076524222736627,
+        "dense_score": null,
+        "bm25_score": 26.16006413244609,
+        "graph_score": 0.0,
+        "rerank_score": -7.817621231079102,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6600,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2833880__2409.17558__Entanglement_distribution_over_155_km_metropolitan_fiber_using_a_CMOS-compatible_silicon_c.md",
+        "title": "2025__recid_2833880__2409.17558__Entanglement_distribution_over_155_km_metropolitan_fiber_using_a_CMOS-compatible_silicon_c",
+        "text": "k information 324\n\nA measurement of polarization stability of deployed fibers over a continuous period of 8 hours is 325\nconducted and the polarization state rotates 10 _._ 75 _[◦]_ (93 km link) and 12 _._ 63 _[◦]_ (62 km link) on the 326\nPoincar´e sphere. The results in Fig. 7. (a, b) indicate a relatively stable polarization behavior. 327\nAdditionally, signal crosstalk from other channels in metropolitan fiber networks can introduce 328\nbackground noise, which also affects the quantum state fidelity. The NUS-SUTD-NUS (or NUS- 329\nNTU-NUS) fiber loop experiences approximately 4 Mcps (2 kcps) of background noise without 330\nspectral filtering. This noise is broadband and can be effectively mitigated using a 0.8 nm band- 331\nwidth DWDM filter. After inserting the filter, the background noise in both channels is reduced to 332\nless than 200 cps. 333\n\n13\n\n## RESOURCE AVAILABILITY 334\n\n### Lead contact 335\n\nRequests for further information and resources should be directed to and will be fulfilled by the 336\nlead contact Alexander Ling (alexander.ling@nus.edu.sg). 337\n\n338\n### **Materials Availability**\n\nThis study did not generate new unique materials. 339\n\n340\n### **Data and code availability**\n\n - The data reported in this study are available from the lead author upon reasonable request. 341\n\n - This paper does not report any original code. 342\n\n - Any additional information required to reanalyze the data reported in this paper is available 343\nfrom the lead contact upon request. 344\n\n## ACKNOWLEDGMENTS 345\n\nThis research is supported by the National Research Foundation, Singapore, and A*STAR under 346\nits CQT Bridging Grant and Quantum Engineering Programme (Award No. NRF2021-QEP2-01- 347\nP02), QEP2 grant: NRF2021-QEP2-01-P01, and US Air Force grant (FA2386-21-1-0076). D. Tan 348\nacknowledges funding from the National Research Foundation, Singapore, and A*STAR under 349\nits QEP 2.0 Programme (Award No. NRF2022-QEP2-01-P08), the National Research Foun- 350\ndation Investigatorship (NRF-NRFI08-2022-0003) and the Ministry of Education Tier 2 Grant 351\n(Award No. MOE2019-T2-2-178). We acknowledge funding support from the National Re- 352\nsearch Foundation, Singapore and A*STAR under its Quantum Engineering Programme (Na- 353\ntional Quantum-Safe Network, NRF2021-QEP2-04-P01) and Netlink Trust for the provisioning 354\nof the fiber network. The authors acknowledge the assistance of setup alignment and litera- 355\nture review from Arya Chowdhury, and En Teng Lim, an",
+        "score": -5.483010980165922,
+        "dense_score": null,
+        "bm25_score": 26.921023826875494,
+        "graph_score": 0.0,
+        "rerank_score": -8.443685531616211,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2677,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2690605__2308.12464__The_Compton_Pair_telescope_A_prototype_for_a_next-generation_MeV_gamma-ray_observatory.md",
+        "title": "2024__recid_2690605__2308.12464__The_Compton_Pair_telescope_A_prototype_for_a_next-generation_MeV_gamma-ray_observatory",
+        "text": "Calorimeter, all of which are surrounded by a plastic scintillator anti-coincidence detector. These\n\nsubsystems together detect and characterize photons via Compton scattering and pair production,\n\nenable a veto of cosmic rays, and are a proof-of-concept for a space telescope with the same\n\narchitecture. A future medium-energy gamma-ray mission enabled through ComPair will address\n\nmany questions posed in the Astro2020 Decadal survey in both the New Messengers and New\n\nPhysics and the Cosmic Ecosystems themes. In this contribution, we will give an overview of the\n\nComPair project and steps forward to the balloon flight.\n\n38th International Cosmic Ray Conference (ICRC2023)\n26 July - 3 August, 2023\nNagoya, Japan\n\n∗ Speaker\n\n© Copyright owned by the author(s) under the terms of the Creative Commons\nAttribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). https://pos.sissa.it/\n\n_The ComPair MeV_ _𝛾-ray telescope_ Janeth Valverde\n\n**1.** **Introduction**\n\nGamma-ray astronomy is the study of the most energetic form of light and has been yielding\n\nimportant discoveries about our universe since the 1960s, and more recently in multi-messenger\n\nastrophysics. For instance, the combined detection of gamma rays with neutrinos from supernova\n\nSN1987A [1], most recently, gravitational waves (GWs) from the binary neutron star merger GW\n\n170817 [2], and the spatial correlation with the neutrino-producing blazar TXS 0506+056 [3].\n\nHowever, the MeV domain remains largely under explored, with the last major instrument sensitive\n\nto that energy range (0.8 – 30 MeV), the Imaging Compton Telescope [COMPTEL; 4], de-orbited\n\nin 2000. The Compton Pair Telescope (ComPair) team is developing the necessary technologies to\n\nenable a future MeV mission, like the All-sky Medium Energy Gamma-ray Observatory [AMEGO;\n\n5], which is a mission concept designed to address the MeV gap in sensitivity.\n\nComPair is lead out of NASA Goddard Space Flight Center (GSFC), with collaborators at the\n\nNaval Research Laboratory (NRL), Los Alamos National Laboratory (LANL), and Brookhaven\n\nNational Laboratory (BNL). The team has designed, built and tested a prototype of AMEGO in a\n\nbeam test and is currently preparing for its first balloon flight in August 2023. In the following, we\n\nprovide an overview of the motivation, mission concept, and current status of ComPair.\n\n**2.** **Motivation and mission concept**\n\nAMEGO1 targets the study of astrophysical objects that produce GWs an",
+        "score": -5.636380272224301,
+        "dense_score": null,
+        "bm25_score": 30.352715242936284,
+        "graph_score": 0.0,
+        "rerank_score": -8.680181503295898,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6805,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment.md",
+        "title": "2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment",
+        "text": "ortant for astrophysics because the mass and size of neutron stars and how they\n\n_∗_ Corresponding author\n_Email address:_ `morozovs@inr.ru` (S. Morozov)\n\n_Preprint submitted to Elsevier_ _December 3, 2024_\n\nmerge depend on the symmetry energy term in the EoS of high-density neutron matter.\nThe only existing contraints on the symmetry energy comes from the ratio of neutron to\nproton anisotropic flow measured at FOPI/LAND experiment at 400 MeV per nucleon [6,\n7]. One of the main problem of the symmetry energy study is the lack of experimental\ndata in the high baryon density region (i.e. at beam energies higher than 1 GeV per\nnucleon). Model study and comparison with the available experimental data suggests\nhigh sensitivity of the observables such as neutron to proton yields and ratios of neutron\nto proton anisotropic flow to the symmetry energy [8].\nThe BM@N (The Baryonic Matter at Nuclotron) provides excellent opportunities\nto study both terms of the EoS at high nuclear densities and obtain new experimental\nresults [9]. First Xe+CsI data to study syimmetric term of EoS was already collected\nat 3.8A GeV in 2023. A new highly granular time-of-flight neutron detector is being\ndeveloped to measure neutron yields and flow at the BM@N for heavier colliding systems\nwith ions up to 4A GeV. The expected neutron flux consists of primary neutrons from\nthe nucleus-nucleus interaction and background secondary neutrons. The neutrons which\nare produced in inelastic nucleus-nucleus collisions have a continuous spectra of energy,\nrapidity and transverse momentum. The estimated neutron flux at the BM@N is about\n500 neutrons per second in the neutron detector acceptance (the details are discussed in\nSection 3). The neutron detector energy coverage ranges from 300 MeV to 4 GeV and\nthe detector design requires a good detection efficiency in this range. The time resolution\nof neutron detector cells is required to be at the level of 100-150 ps which is essential\nfor robust neutron reconstruction. In this article the simulations of Bi+Bi at 3A GeV\nreaction at the BM@N are used for the neutron detector performance studies.\n\n**2. The BM@N experiment at the NICA ion-accelerating complex**\n\nThe BM@N (Baryonic Matter at Nuclotron) is the first experiment operational at\nthe Nuclotron/NICA ion-accelerating complex, dedicated to studying interactions of relativistic beams of heavy ions with fixed targets [10] in the energy range that allows\nreaching high densities of baryonic matter [11]",
+        "score": -5.843892432481814,
+        "dense_score": null,
+        "bm25_score": 25.3270770078497,
+        "graph_score": 0.0,
+        "rerank_score": -8.997507095336914,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6360,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2811353__2407.18415__Modeling_of_surface-state_induced_inter-electrode_isolation_of_math_altimgsi219.svg_displa.md",
+        "title": "2025__recid_2811353__2407.18415__Modeling_of_surface-state_induced_inter-electrode_isolation_of_math_altimgsi219.svg_displa",
+        "text": "for future HEP-experiments where the radiation is largely due to hadrons.\n\n_∗_ Corresponding author\n_Email address:_ `timo.peltola@ttu.edu` (T. Peltola)\n\n_Preprint submitted to Journal of Instrumentation_ _February 20, 2025_\n\n**1. Introduction**\n\nIn the position sensitive _n_ -on- _p_ particle detectors that will be utilized in the experiments of the High\n\nLuminosity Large Hadron Collider (HL-LHC) like ATLAS and CMS, a parameter of particular concern is\n\nthe preservation of position resolution in extreme radiation environments. This is due to the disadvantage\n\nof the _n_ -on- _p_ sensors where the segmented _n_ [+] -electrodes can become shorted even when operated at high\n\nreverse bias voltages. The issue is caused by the radiation-induced accumulation of positive charge inside\n\nthe passivation SiO 2 and close to the Si/SiO 2 -interface that can attract electrons to the interface in the inter\n\nelectrode gap to the extent that creates a conduction channel and compromises the inter-electrode isolation\n\nof the sensor. This is typically alleviated by placing an additional highly _p_ -doped implant between the _n_ [+] \n\nelectrodes that breaks the conduction channel, due to its negative space charge, by suppressing the electron\n\ndensity at the vicinity of Si/SiO 2 -interface. The two solutions commonly utilized to produce the isolation im\n\nplants involve localized ( _p_ -stop) and uniformly distributed ( _p_ -spray) doping concentrations along the surface\n\nin the inter-electrode gap [1, 2, 3, 4, 5, 6, 7]. The _p_ -spray approach adds one and _p_ -stop two more lithography\n\nsteps and additional ion implantations [8, 9] to the processing steps of a conventional _p_ -on- _n_ sensor, increas\n\ning the production cost of _n_ -on- _p_ sensors. Additionally, since high doping concentrations in the isolation\n\nimplants have been observed to increase the probability of discharges or avalanche effects due to excessive\n\nlocalized electric fields [10, 7, 11], careful tuning of the processing parameters is required.\n\nIt should be noted that due to the positive oxide charge of SiO 2 at the Si/SiO 2 -interface ( _N_ ox ), the _n_ [+] \n\nelectrodes without isolation implants are shorted by default already before irradiation, but as shown in [12],\n\nbecome isolated by the application of reverse bias voltage above the _threshold voltage of inter-electrode_\n\n_isolation_ ( _V_ th,iso ) (e.g., _V_ th,iso _≤_ 100 V for _N_ ox _≤_ 7 _×_ 10 [10] cm _[−]_ [2] ).\n\nSurface damage in SiO 2 -",
+        "score": -5.941807899595816,
+        "dense_score": null,
+        "bm25_score": 25.325181020854,
+        "graph_score": 0.0,
+        "rerank_score": -9.148058891296387,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2303,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2672417__2306.15336__Investigation_of_high_resistivity_math_altimgsi57.svg_displayinline_idd1e1353mipmimath-typ.md",
+        "title": "2024__recid_2672417__2306.15336__Investigation_of_high_resistivity_math_altimgsi57.svg_displayinline_idd1e1353mipmimath-typ",
+        "text": "; C i O i ; TSC; Surface current\n\n**1. Introduction**\n\nIn High Luminosity Large Hadron Collider (HL-LHC) experiments, strip and pixel silicon sensors in the inner tracking\ndetectors have to cope with extraordinarily high particle rates\nof up to 200 p–p collisions per bunch crossing. New types of\nsensors to be used for this purpose, started to be developed.\nThey are manufactured on boron doped ( _p_ -type) silicon and\nhave different structures, from the simplest p-i-n diode to devices which amplifies the signals and have better time resolution, as e.g. the Low Gain Avalanche Detectors (LGADs) [1, 2].\nThe degradation in the performance of these sensors is caused\nby the generation of electrically active radiation-induced defects. For instance, the charged defects at room temperature\n(e.g. E30K, B i O i, H140K, H152K and I P ) [3–6] cause changes\nof the space charge density ( _N_ eff ). Vacancy related traps such as\nV 2 and V 3 [7] lead to the degradation of charge collection efficiency (CCE) and an increase of dark current. In general, the\nradiation-induced defects can be classified according to their\n\n∼\nsize: point defects, up to 2 3 atoms size, or more extended\nones, also known as cluster-related defects. All the radiationinduced defects contribute to the degradation of silicon sensors\nand can be characterized using spectroscopic techniques such\n\n⋆ [Work performed in the frame of the CERN-RD50 collaboration.](https://rd50.web.cern.ch/)\n∗ Corresponding author\n_Email address:_ `chuan.liao@desy.de` (C. Liao)\n\nas Deep Level Transient Spectroscopy (DLTS), for low defect\nconcentration, and Thermally Stimulated Current (TSC) after\nhigh levels of irradiation when DLTS does not work anymore.\nDuring a temperature scan, both, point and cluster-related defects are contributing to the signals observed in TSC and DLTS\nmeasurements. Detecting and analyzing the combined effects\nof these defects pose a challenge for these techniques.\nThe main radiation damage effect seen in _p_ -type silicon sensors is the deactivation of the boron dopant. Thus, the atoms\nof substitutional Boron (B s ) may switch the sites with interstitial silicon (Si i ) created during radiation via a Watkins replacement mechanism [8] and transform in Boron interstitial\n(B i ), losing its acceptor character. The B i atoms migrate in\nthe crystal and react with interstitial Oxygen, found in abundance in silicon, leading to the formation of B i O i complex. Another possible acceptor removal mechanism in _p_",
+        "score": -6.5089678287506105,
+        "dense_score": null,
+        "bm25_score": 27.451043391413474,
+        "graph_score": 0.0,
+        "rerank_score": -10.022210121154785,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2465,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "R. A. Mewaldt,\nE. C. Stone, P. L. Hink, M. H. Israel, M. Lijowski, E. R.\n[Christian, and T. T. von Rosenvinge, Space Sci. Rev.](https://doi.org/10.1023/A:1013816209004)\n**99** [, 15 (2001).](https://doi.org/10.1023/A:1013816209004)\n\n[78] W. R. Binns, M. E. Wiedenbeck, M. Arnould, A. C.\nCummings, J. S. George, S. Goriely, M. H. Israel, R. A.\nLeske, R. A. Mewaldt, G. Meynet, L. M. Scott, E. C.\n[Stone, and T. T. von Rosenvinge, New A Rev.](https://doi.org/10.1016/j.newar.2006.06.058) **50**, 516\n[(2006).](https://doi.org/10.1016/j.newar.2006.06.058)\n\n[79] W. R. Binns, M. H. Israel, E. R. Christian, A. C. Cummings, G. A. de Nolfo, K. A. Lave, R. A. Leske, R. A.\nMewaldt, E. C. Stone, T. T. von Rosenvinge, and M. E.\nWiedenbeck, Science **[352](https://doi.org/10.1126/science.aad6004)**, 677 (2016).\n\n[80] M. Su, T. R. Slatyer, and D. P. Finkbeiner, ApJ **[724](https://doi.org/10.1088/0004-637X/724/2/1044)**,\n[1044 (2010), arXiv:1005.5480 [astro-ph.HE].](https://doi.org/10.1088/0004-637X/724/2/1044)\n\n[81] Fermi-LAT Collaboration, M. Ackermann, A. Albert,\n_et al._, ApJ **793** [, 64 (2014), arXiv:1407.7905 [astro-](https://doi.org/10.1088/0004-637X/793/1/64)\n[ph.HE].](https://arxiv.org/abs/1407.7905)\n\n[82] P. Predehl, R. A. Sunyaev, W. Becker, _et al._ [, Nature](https://doi.org/10.1038/s41586-020-2979-0)\n**588** [, 227 (2020), arXiv:2012.05840 [astro-ph.GA].](https://doi.org/10.1038/s41586-020-2979-0)\n\n[83] See Supplemental Material in the source files for the\nplots of the most important reaction channels (parameterizations and available data) discussed in the paper.\n\n[[84] A. W. Strong, I. V. Moskalenko, and V. S. Ptuskin, Ann.](https://doi.org/10.1146/annurev.nucl.57.090506.123011)\n[Rev. Nucl. Part. Sci.](https://doi.org/10.1146/annurev.nucl.57.090506.123011) **57** [, 285 (2007), astro-ph/0701517.](https://arxiv.org/abs/astro-ph/0701517)\n\n[85] F. C. Jones, A. Lukasiak, V. Ptuskin, and W. Webber,\n\nApJ **547** [, 264 (2001), astro-ph/0007293.](https://doi.org/10.1086/318358)\n\n[[86] D. Maurin, Computer Physics Communications](https://doi.org/10.1016/j.cpc.2019.106942) **247**,\n[106942 (2020), arXiv:1807.02968 [astro-ph.IM].](https://doi.org/10.1016/j.cpc.2019.106942)\n\n[87] Y. G´enolini, M. Boudaud, P. I. Batista, S. Caroff,\nL. Derome, J. Lavalle, A. Marcowith, D. Maurin,\nV. Poireau, V. Poulin, S. Rosier, P. Salati, P. D. Serpico, and M. Vecchi, Phys. Rev. D **[99](https://doi.org/10.1103/PhysRevD.99.123028)**, 123028 (2019),\n[arXiv:1904.08917 [astro-ph.HE].](https",
+        "score": -6.727863407135009,
+        "dense_score": 0.21604517102241516,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -10.358972549438477,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 78,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.613639700692147,
+    "generation_latency_s": 7.501803338527679e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.613639700692147,
+    "generation_latency_s": 7.501803338527679e-07
+  }
+}

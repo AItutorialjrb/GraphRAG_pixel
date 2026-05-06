@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "com008",
+    "query_type": "comparative",
+    "query": "Compare front-side and back-side illumination.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Compare",
+      "front-side",
+      "and",
+      "back-side"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare front-side and back-side illumination.",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4291,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2756402__2402.04365__A_method_to_observe_field-region_oxide_charge_and_inter-electrode_isolation_from_CV-charac.md",
+        "title": "2024__recid_2756402__2402.04365__A_method_to_observe_field-region_oxide_charge_and_inter-electrode_isolation_from_CV-charac",
+        "text": "nel HGCAL sensors, two\n\nmeasurement setups were utilized at Texas Tech University (TTU). The capacitance-voltage ( _CV_ ) charac\n\nterizations of the test structures were carried out with a single-channel custom probe station. The reverse\n\n4 Metal-Oxide-Semiconductor\n5 Early prototype wafer for the HGCAL.\n6 Consecutive advanced HPK production stages towards the final HGCAL sensor production parameters.\n7 For shortness, the prototypes will be referred to as ‘HGCAL sensors’ in the following sections.\n\n4\n\n(a) (b)\n\nFigure 1: Test structure samples. (a) ‘Half-moon’ samples with test structures diced from a 6-inch wafer [21]. Top:\n\nthree test diodes, two MOS-capacitors (second and third from left) and other test structures. Bottom: nine test diodes.\n\n(b) Close-up of a test-structure sample diced from an 8-inch HGCAL wafer with the MOS-capacitor connected to the\n\nmeasurement circuit by a probe needle. A test diode enclosed by its guard-ring is visible on the left-side of the MOS\n\ncapacitor.\n\nbias voltage of the test diode (or the gate voltage of the MOS-capacitor) was supplied by a Keithley 2410\n\nsource measure unit (SMU) while the capacitance was read out by a Keysight E4980AL LCR-meter. The\n\n_−_\nnegative high voltage ( HV) was provided to the backplane of the test structure by a vacuum chuck, and the\n\nconnection to the measurement circuit was realized with a probe needle on the segmented front surface, as\n\nshown in Figure 1b. A second probe needle was applied for the grounding of the test-diode’s guard-ring. The\n\nsetup is described in detail in refs. [10, 21].\n\nThe corresponding _CV_ -characterizations of the HGCAL sensors were carried out with a multi-channel\n\nsetup utilizing an automated ARRAY dual-card setup [23] that enables the electrical characterizations of the\n\n8-inch sensors containing several hundred individual cells. For the connection to the measurement circuit a\n\ndedicated probe card for each sensor type in Figure 2 was required. Probe cards for full sensors in Figures 2a\n\nand 2b and for HD-partial sensor in Figure 2c utilized front-side and back-side biasing, respectively. The\n\nguard-ring next to the HV-ring in Figure 3 is left floating in all probe-card types. The remote control and data\n\nacquisition functions were realized with a LabVIEW™-based custom program (HexDAQ version 1.7 [8] ). The\n\nsame SMU and LCR-meter units were used for both single-channel and multi-channel circuit measurements.\n\nThe 2D device-simulations were carried out using the S",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 18.747981558430684,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4292,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2756402__2402.04365__A_method_to_observe_field-region_oxide_charge_and_inter-electrode_isolation_from_CV-charac.md",
+        "title": "2024__recid_2756402__2402.04365__A_method_to_observe_field-region_oxide_charge_and_inter-electrode_isolation_from_CV-charac",
+        "text": "unctions were realized with a LabVIEW™-based custom program (HexDAQ version 1.7 [8] ). The\n\nsame SMU and LCR-meter units were used for both single-channel and multi-channel circuit measurements.\n\nThe 2D device-simulations were carried out using the Synopsys Sentaurus [9] finite-element Technology\n\n8 https://gitlab.cern.ch/CLICdp/HGCAL/\n9 http://www.synopsys.com\n\n5\n\n(a) (b)\n\n(c)\n\nFigure 2: HGCAL 8-inch multi-channel sensor designs included in the study. (a) Full low-density (LD) float-zone Si\n\nsensor with 198 channels (pre-series). (b) Full high-density (HD) epitaxial Si-sensor with 444 channels (pre-series). The\n\ncell area of the HD sensors is less than half of the area of the LD-sensor cells to control the cell capacitance. (c) Multi\n\nGeometry Wafer (MGW) HD epitaxial Si-sensor (version 2 prototype). Boundary of the ‘bottom-cut’ partial sensor with\n\n288 channels is shown by the horizontal blue line in the middle part of the sensor. The channels of the full sensors are\n\nenclosed by a single biased guard-ring (channels 199 and 445 in Figures 2a and 2b, respectively), while the channels of\n\nthe ‘bottom-cut’ partial HD-sensor are divided into three regions by three biased guard-rings (channels 472, 473 and 474\n\nin Figure 2c).\n\n6\n\nFigure 3: Cross-sectional sketch of the front-side of the periphery region of an HGCAL sensor. The horizontal dimensions\n\nare in µm. Gray: 1-µm-thick Al-layer for DC-coupled electrical contacts, dark yellow: 700-nm-thick SiO 2 layer. The\n\nbackplane of the sensor has the _p_ [+] -blocking contact with 1-µm-thick uniform Al-layer. The biased guard-ring (bias-GR)\n\nis grounded during the measurements of the cells of the multi-channel sensor, while the high voltage (HV)-ring is used for\n\nthe front-side biasing scheme [22], where the applied _−_ HV connects to the backplane via the low-resistivity edge-region\n\nunder the HV-ring (with a _p_ [+] / _p_ _[−]_ / _p_ [+] configuration). The _CV_ -characterizations in this study were done on the bias-GR.\n\nComputer-Aided Design (TCAD) software framework. For the test-diode and MOS-capacitor simulations, a\n\nstructure consisting of a DC-coupled _n_ [+] -pad between two _n_ [+] guard-rings (GR) (either grounded or floating),\n\nand a metal-oxide-silicon structure, respectively, were implemented. The backplane doping profile and oxide\n\nthickness were set to match the real test structures as described in Section 2 and in [21].\n\nFor the HGCAL sensor simulations of the three active thicknesses, the periphe",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 13.968239682596458,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1189,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "he absence of excess\nspectral diffusion, i.e. spectral wandering [33] is completely\neliminated when performing PLE without a charge repump\nlaser, which enables long-time measurements without loss of\noptical coherence. Lastly, in order to further compare the two\nprotocols, for each SiV _[−]_ we extracted the center frequency\nstandard deviation _σ_ ( _ν_ 0 ) and the average power normalized\npeak intensity I PLE from all single sweep crf-PLE spectra, and\nplot them against the corresponding values for the same SiV _[−]_\n\nunder 515 nm cr-PLE (Fig. 3(e) and (f)).\nWe consistently find that in crf-PLE, SiV _[−]_ exhibit higher peak\nPLE intensities, less background fluorescence, and display\nstrikingly reduced linewidths and spectral diffusion. However,\nit is noteworthy that for some SiV _[−]_ initially in population 1,\nillumination with 445 nm light slightly decreases their brightness and stability [SI Sec. VI]. We confirmed that this beneficial effect of prolonged 445 nm laser illumination is persistent\nand neither specific to a diamond sample nor the Si implantation dose. Specifically, we confirmed the same behaviour\nas presented in Fig. 3 for SiV _[−]_ in a second sample B, which\nwas prepared in the same way as the first sample, but with\na [28] Si implantation dose five times higher (as a sole, slight\ndifference between the two, we found that in the second sample, Population 3 made up for a smaller percentage than in the\nlow-dose sample A). For both samples, the beneficial effect of\n445 nm laser exposure persisted throughout the timescale of\nthis study (several months) and was neither affected by continuous, high-power laser illumination (be it resonant or offresonant), by long idle times in the dark, nor by thermal cycling of the samples. These combined findings suggest that\nillumination of 445 nm laser light is a generally applicable\nmeans for permanently stabilizing the charge-environment of\nshallow SiV _[−]_ centers, such that coherent optical addressing\ncan be performed without any further charge repumping.\n\nOnly in the case where such continuous crf-PLE measurements can be conducted on a given SiV _[−]_ from the beginning\n(population 1), 445 nm laser illumination might slightly\ndeteriorate the SiV _[−]_ optical properties and calls for cautious\nuse of blue laser illumination.\n\n**Addressing spectrally distinct individual SiV** _[−]_ **in multi-**\n**SiV nanostructures**\n\nThe narrow and stable SiV _[−]_ linewidths we demonstrated en\nable the addressing of ind",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 13.869769232573194,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5359,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2806578__2407.07722__Characterization_of_SiPM_performance_in_a_small_satellite_in_low_earth_orbit_using_LabOSat.md",
+        "title": "2024__recid_2806578__2407.07722__Characterization_of_SiPM_performance_in_a_small_satellite_in_low_earth_orbit_using_LabOSat",
+        "text": "mum\nillumination. The increase in dark current can clearly be seen again in this plot. What is\nmore interesting is that the SiPM responsivity remains almost unchanged even after 4 years\nof mission time. For the same amount of LED current, the photocurrent generated by the\nSiPMs over the dark counts remained almost constant during the whole mission.\n\nin a standard test. When this parameter approaches a value of 1, it means that no signal\ncan be detected from the SiPMs for a given LED illumination (i.e. the I-I curve is constant).\nThe performance parameter vs. days since launch for various LED illuminations can be seen\nin Figure 7.\nThe decrease in the performance parameter is mainly due to the increase of SiPM dark\n\n8\n\nFigure 7: SiPM performance parameter vs. days since launch for different LED illuminations.\nThe performance parameter is the ratio between SiPM current at a given LED illumination\nand the SiPM dark current. It can be seen that lowest illumination currents on the LED\n\nresult in a current performance parameter of one, which means the SiPM no longer operates\nas a photo-detector for those illuminations. However, for maximum illumination, the SiPM\nretains a performance of 1.6. Nevertheless, this performance parameter is much lower than\nthe performance value of 323 measured for the same LED illumination on Earth (at _−_ 3 [o] C).\n\ncurrent, which turns comparable with generated photocurrent for those LED illuminations.\nFor the maximum illumination, the SiPM retains a performance of 1.6. For 85 % illumination,\nperformance is very close to 1. Nevertheless, a performance parameter of 1.6 for maximum\nillumination is much lower than the performance of 323 measured (at _−_ 3 [o] C) for the same\nLED illumination on Earth.\n\nSimilar SiPM devices have been tested in radiation facilities by other authors. Table 1\nshows SiPM model and radiation source for each work.\n\n|SiPM Model|Source|\n|---|---|\n|SensL MicroFC-60035<br>SensL MicroFC-60035<br>SensL MicroFC-10050<br>FBKVUV-HD 2019|8 MeV electrons<br>64 MeV protons<br>White neutrons [<br>75 MeV protons|\n\nTable 1: SiPM models and radiation sources of several references that can be used to compare\nto this work.\n\nFrom each of these articles, measurements of dark current vs. 1 MeV equivalent fluence\nwere extracted and can be compared to the measurements in this work. This comparison\nplot can be seen in Figure 8.\n\n9\n\n10 [3]\n\n10 [2]\n\n10 [1]\n\n10 [0]\n\n10 [−1]\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n||||",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 12.977778135492345,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4310,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2756402__2402.04365__A_method_to_observe_field-region_oxide_charge_and_inter-electrode_isolation_from_CV-charac.md",
+        "title": "2024__recid_2756402__2402.04365__A_method_to_observe_field-region_oxide_charge_and_inter-electrode_isolation_from_CV-charac",
+        "text": "ip sensors and irradiation, Nucl. Instr. & Meth. A 579 (2007)\n\n614–622. `[doi:10.1016/j.nima.2007.05.256](http://dx.doi.org/10.1016/j.nima.2007.05.256)` .\n\n[20] J-O. Müller-Gosewisch and A. Dierlamm and A. Nürnberg, Influence of surface damage and bulk\n\ndefects on the interstrip isolation of p-type silicon strip sensors, JINST 16 (2021) P07004. `[doi:](http://dx.doi.org/10.1088/1748-0221/16/07/P07004)`\n\n`[10.1088/1748-0221/16/07/P07004](http://dx.doi.org/10.1088/1748-0221/16/07/P07004)` .\n\n[21] N. Akchurin, et al., Charge Collection and Electrical Characterization of Neutron Irradiated Silicon\n\nPad Detectors for the CMS High Granularity Calorimeter, JINST 15 (2020) P09031. `[doi:10.1088/](http://dx.doi.org/10.1088/1748-0221/15/09/P09031)`\n\n`[1748-0221/15/09/P09031](http://dx.doi.org/10.1088/1748-0221/15/09/P09031)` .\n\n[22] M. Baselga, et al., Front-side biasing of n-in-p silicon strip detectors, JINST 13 (2018) P11007. `[doi:](http://dx.doi.org/10.1088/1748-0221/13/11/P11007)`\n\n`[10.1088/1748-0221/13/11/P11007](http://dx.doi.org/10.1088/1748-0221/13/11/P11007)` .\n\n[23] E. Brondolin, et al., ARRAY: An open source, modular and probe-card based system with integrated\n\nswitching matrix for characterisation of large area silicon pad sensors, Nucl. Instr. & Meth. A 940 (2019)\n\n168–173. `[doi:10.1016/j.nima.2019.06.007](http://dx.doi.org/10.1016/j.nima.2019.06.007)` .\n\n[24] L. Stauffer, Fundamentals of semiconductor C-V measurements, EE-Evaluation Engineering 47 (2008)\n\n[1–4, Gale Academic OneFile.](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj-rpO7toOEAxVul2oFHUpbAYoQFnoECBgQAQ&url=https%3A%2F%2Fwww.scientific-devices.com.au%2Fpdfs%2FWeTransfer-NZvJB6Cw%2FCapacitance%2FFundamentals%2520of%2520CV%2520Measurement.pdf&usg=AOvVaw1I07HdHEwUIra_jzjcZ9cr&opi=89978449)\n\n[25] S. M. Sze, Physics of Semiconductor Devices, 2nd Edition, John Wiley & Sons, Hoboken New Jersey\n\nU.S.A., 1981.\n\n[26] T. Peltola, V. Eremin, E. Verbitskaya, J. Härkönen, Simulation study of signal formation in position\n\nsensitive planar p-on-n silicon detectors after short range charge injection, JINST 12 (2017) P09032.\n\n`[doi:10.1088/1748-0221/12/09/P09032](http://dx.doi.org/10.1088/1748-0221/12/09/P09032)` .\n\n24\n\n**Appendix A.** _**V**_ **fd** **and bulk doping of the HGCAL sensors**\n\nData analysis in Figures A.15 and A.16 was realized by HGCAL Analysis Workflow software [10] .\n\n(a) (b)\n\n(c)\n\nFigure A.15: Measured _CV_ -characteristics for one representa",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 11.341003106050035,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6755,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "rfaces of the MLA can\npotentially decrease the Fresnel reflection loss. A prototype\nwith optimised coating for the emission spectral range of\nthe SciFi light source is foreseen. For low ∆ _V_ = 2 _V_,\nthe prospects of MLA enhanced SiPMs with SciFi tracker\ntechnology are excellent. With the latest implementation\nof HPK 41 _._ 7 _µm_ pixel size, a simulated improvement of\n39% is expected. The smaller 31 _._ 3 _µm_ pixel size from FBK\n28% is predicted to improve. The smallest pixel size for the\nreplication method used is currently 16 _µm_ and is limited by\nthe precision of alignment and the thickness of the residual\nlayer. These two configurations are currently in preparation\nfor MLA deposition, and new results will be available by the\nend of 2024.\n\nR EFERENCES\n\n[1] The LHCb collaboration, ”The LHCb Upgrade 1,” in _Journal Of_\n_Instrumentation_, vol. 19, pp. P05065, May 2024.\n\n[2] Nussbaum, P., V¨olkel, R., Herzig, H., Eisner, M. & Haselbeck, S.,\n”Design, fabrication and testing of microlens arrays for sensors and\nmicrosystems,” in _Pure And Applied Optics: Journal Of The European_\n_Optical Society Part A_, vol. 6, pp. 617, Nov. 1997.\n\n[3] Intermite, G., McCarthy, A., Warburton, R., Ren, X., Villa, F., Lussana,\nR., Waddie, A., Taghizadeh, M., Tosi, A., Zappa, F. & Buller, G., ”Fillfactor improvement of Si CMOS single-photon avalanche diode detector\narrays by integration of diffractive microlens arrays,” in _Opt. Express_,\nvol. 23, pp. 33777-33791, Dec. 2015.\n\n[4] Bruschini, C., Antolovic, I., Zanella, F., Ulku, A., Lindner, S., Kalyanov,\nA., Milanese, T., Bernasconi, E., Peˇsi´c, V. & Charbon, E., ”Challenges\nand prospects for multi-chip microlens imprints on front-side illuminated\nSPAD imagers,” in _Opt. Express_, vol. 31, pp. 21935-21953, June 2023.\n\n[5] Pavia, J., Wolf, M. & Charbon, E., ”Measurement and modeling of\nmicrolenses fabricated on single-photon avalanche diode arrays for fill\nfactor recovery,” in _Opt. Express_, vol. 22, pp. 4202-4213, Feb. 2014.\n\n[Online] https://opg.optica.org/oe/abstract.cfm?URI=oe-22-4-4202. Accessed on: Jan. 31, 2025.\n\n[6] Ottevaere, H., Cox, R., Herzig, H., Miyashita, T., Naessens, K.,\nTaghizadeh, M., V¨olkel, R., Woo, H. & Thienpont, H., ”Comparing glass\nand plastic refractive microlenses fabricated with different technologies,”\nin _Journal Of Optics A: Pure And Applied Optics_, vol. 8, pp. S407, June\n2006.\n\n[7] Lee, J., Ho, Y., Chen, K., Lin, H., Fang, J., Hsu, S., Lin, J. & Wei, M.,\n”Efficiency improvement and image qua",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 11.157405198675137,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2822,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2694196__2309.03131__Demonstration_of_particle_tracking_with_scintillating_fibres_read_out_by_a_SPAD_array_sens.md",
+        "title": "2024__recid_2694196__2309.03131__Demonstration_of_particle_tracking_with_scintillating_fibres_read_out_by_a_SPAD_array_sens",
+        "text": "M. McEwen. A system for the measurement of electron stopping powers: proof of principle using a pure _β_ -emitting source.\n_Radiation Physics and Chemistry_, 149:134–141, 2018. ISSN 0969-806X.\n[doi:https://doi.org/10.1016/j.radphyschem.2018.03.006.](https://doi.org/https://doi.org/10.1016/j.radphyschem.2018.03.006)\n\n23\n\n[33] C. Bruschini et al. Challenges and prospects for multi-chip microlens imprints\non front-side illuminated SPAD imagers. _Opt. Express_, 31(13):21935–21953,\n[2023. doi:https://doi.org/10.1364/OE.488177.](https://doi.org/https://doi.org/10.1364/OE.488177)\n\n[34] _MPPCs_ _(SiPMs)_ _/_ _MPPC_ _arrays_ . Hamamatsu. URL `[https:](https://www.hamamatsu.com/eu/en/product/optical-sensors/mppc/mppc_mppc-array.html)`\n```\n //www.hamamatsu.com/eu/en/product/optical-sensors/mppc/mppc_\n```\n\n`[mppc-array.html](https://www.hamamatsu.com/eu/en/product/optical-sensors/mppc/mppc_mppc-array.html)` .\n\n[35] A. C. Ulku. _Large-Format Time-Gated SPAD Cameras for Real-Time Phasor-_\n_Based FLIM_ . PhD thesis, Ecole Polytechnique F´ed´erale de Lausanne, 2021. [´]\n\n[36] CAEN. DT5702. URL `[https://www.caen.it/products/dt5702/](https://www.caen.it/products/dt5702/)` .\n\n[37] Luxium Solutions. Plastic Fiber. URL `[https://luxiumsolutions.com/](https://luxiumsolutions.com/radiation-detection-scintillators/fibers)`\n`[radiation-detection-scintillators/fibers](https://luxiumsolutions.com/radiation-detection-scintillators/fibers)` .\n\n[38] E. A. Webster et al. A Single-Photon Avalanche Diode in 90nm CMOS Imaging Technology With 44% Photon Detection Efficiency\nat 690 nm. _IEEE_ _Electron_ _Device_ _Letters_, 33(5):694–696, 2012.\n[doi:https://doi.org/10.1109/LED.2012.2187420.](https://doi.org/https://doi.org/10.1109/LED.2012.2187420)\n\n[39] X. Hesong et al. Design and characterization of a p+/n-well SPAD array in 150nm CMOS process. _Opt. Express_, 25(11):12765–12778, 2017.\n[doi:https://doi.org/10.1364/OE.25.012765.](https://doi.org/https://doi.org/10.1364/OE.25.012765)\n\n[40] F. Gramuglia et al. A Low-Noise CMOS SPAD Pixel With 12.1\nPs SPTR and 3 Ns Dead Time. _IEEE Journal of Selected Top-_\n_ics_ _in_ _Quantum_ _Electronics_, 28(2: Optical Detectors):1–9, 2022.\n[doi:https://doi.org/10.1109/JSTQE.2021.3088216.](https://doi.org/https://doi.org/10.1109/JSTQE.2021.3088216)\n\n[41] K. Kodama et al. Observation of tau neutrino interactions. _Physics Letters_\n_B_ [, 504(3):218–224, 2001. ISSN 0370-2693. doi:https://doi.org/10.1016/S0370-](https://doi.org/https://doi.org/10.1016/S0370-2",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 11.092709878525808,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3289,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2713911__2310.15717__Breakdown_performance_of_guard_ring_designs_for_pixel_detectors_in_150_nm_CMOS_technology.md",
+        "title": "2024__recid_2713911__2310.15717__Breakdown_performance_of_guard_ring_designs_for_pixel_detectors_in_150_nm_CMOS_technology",
+        "text": "±_ 3<br>_−_308_ ±_ 5<br>_−_329_ ±_ 5<br>E<br>_−_235_ ±_ 4<br>_−_367_ ±_ 18|0<br>_−_400_ ±_ 25<br>_−_50<br>_−_450_ ±_ 25<br>_−_100<br>_−_505_ ±_ 25<br>_−_150<br>_−_208_ ±_ 6|\n\nTable 3: Breakdown voltages of the 200 µm test structures with\nfloating n-ring. Sample S1 and S4 were used for extracting _V_ BD of\nstructure E. The same set of samples presented in Figure 8 are used\nfor extracting _V_ BD of the rest of structures.\n\nilar leakage current level, this discrepancy is attributed\nto variations between samples after dicing and back-side\nprocessing. Comparing with the results from 4.1, the consistent relation between guard ring designs (or _V_ poly ) and\n_V_ BD of structures are independent of the thickness of samples. Therefore, the comparison concerning the control\ngroups in Table 4 still applies.\n\n_4.3._ 200 µm _Thick Structures with Grounded N-ring_\n\nThe same set of samples was tested with grounded nring for structures A, B, C, D, and F, as illustrated and\nsummarised in Figure 8 and Table 5. Both structures D\nand F on sample S1 showed a distinct breakdown performance, with respect to the other samples. These two\nspecific measurements were neglected since they are likely\ncaused by production errors unable to be confirmed by the\nmeasurements within this work. An abnormal increase of\n\nthe leakage current of bias voltage above 100 V is observed\n\n10 [4]\n\n10 [3]\n\n10 [2]\n\n10 [1]\n\n10 [0]\n\n10 _[−]_ [1]\n\n10 _[−]_ [2]\n\n|Col1|Col2|\n|---|---|\n|||\n|||\n|Structure - Sample<br>A - S2<br>~~A - S3~~<br>A - S6<br>B - S1<br>B - S2<br><br>C - S1<br>~~C - S2~~<br>C - S4<br>D - S1<br>D - S2<br>D - S5<br>~~F - S1~~<br>F - S3<br>F - S6<br>F - S7||\n|~~B - S5~~||\n|||\n\n_−_ 600 _−_ 500 _−_ 400 _−_ 300 _−_ 200 _−_ 100 0\nBias Voltage (V)\n\nFigure 8: I-V Curves for various sets of test structures with a\ngrounded n-ring. The relation between the breakdown voltages of\nguard ring test structures: _V_ BD _,_ F _> V_ BD _,_ C _> V_ BD _,_ B _> V_ BD _,_ D _>_\n_V_ BD _,_ A .\n\nfor structure F from sample S3 and S7. The same effect has\noccurred in the measurements with floating n-ring. This\nmay be caused by imperfection of the production or the\nbackside processing of the wafer [11, 33]. Nevertheless, the\ncurrent increase tends to saturate at a certain level, and\nthe breakdown voltage is in accordance with the other samples.\nWith the exception of test structure A, the breakdown voltages measured for all samples with grounded nring (Table 5) varied with respect to the measurements\nwith floating n-r",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 10.945236594329039,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6233,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope.md",
+        "title": "2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope",
+        "text": "ivity and low energy threshold.\nIn building and bench testing the cameras, we verified their\nfunctionality and characterized and calibrated the photon detection efficiency, the response of the signal chain, the trigger system, and the current monitor. These characterizations provide\nthe necessary parameters to model our cameras in the Monte\n\n16\n\nFigure 45: SiPM current monitor measurement. The SiPM is exposed to different amounts of background illumination.\n\nCarlo simulation of both experiments and evaluate their sensitivity to Earth-skimming neutrinos.\nOur instruments meet the requirements of the _Trinity_ Demonstrator and EUSO-SPB2 discussed in Section 2 and have been\n\nsuccessfully integrated into their telescopes. The EUSO-SPB2\nproject had its flight in May 2023, and despite an unexpectedly short flight of only 36 hours and 52 min before the balloon plunged into the South Pacific, we could demonstrate that\nthe camera performed as expected [11]. The _Trinity_ Demonstrator camera had been integrated into its telescope in October 2023, with regular observations starting shortly thereafter.\nThe camera and readout are performing as expected and have\nbeen operating without technical issues since. Figure 46 shows\nan air-shower image of a cosmic ray recorded with the _Trinity_\nDemonstrator during the commissioning phase.\nThe development of this first-generation SiPM camera for\nEarth-skimming neutrino detection is only the first step toward\na mature design, particularly for _Trinity_ . Operating the _Trinity_\nDemonstrator camera for an extended period will give us the\nexperience of observing Earth-skimming neutrinos from mountaintops and maybe even yield the detection of the first VHE\nneutrino. With the experience gained by operating the _Trin-_\n_ity_ Demonstrator, we will design the next-generation camera,\nwhich we plan for the _Trinity_ Prototype telescope, which has a\n60 [◦] horizontal field of view and will need to be instrumented\nwith a 3,300-pixel SiPM camera.\n\n_Acknowledgments_\n\nWe acknowledge the excellent work done by the Georgia\nTech Montgomery Machining Mall staff and are grateful for\nthe many collegial and inspiring discussions with our EUSOSPB2 and _Trinity_ collaborators over the past five years. This\nwork was funded with NASA APRA awards 80NSSC19K0627\n\nand 80NSSC22K0426 and funding from the National Science\nFoundation with award PHY-2112769.\n\nFigure 46: Uncalibrated air-shower image of a cosmic ray recorded with our\ncamera installed in the _Trinit",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 10.944655465409387,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7466,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2954331__2507.18172__Silicon_Single-Photon_Detector_Achieving_Over_84_Photon_Detection_Efficiency_With_Flexible.md",
+        "title": "2025__recid_2954331__2507.18172__Silicon_Single-Photon_Detector_Achieving_Over_84_Photon_Detection_Efficiency_With_Flexible",
+        "text": "n that for hole\ninjection. Therefore, the backside-illumination design enables\nhigher detection efficiency.\n\nThe fabrication begins with a 6-inch _p_ _[−]_ / _p_ [+] epitaxial silicon\nwafer. An n-type guard ring is first formed around the p-type\navalanche region via phosphorus implantation to suppress edge\neffects and prevent edge prebreakdown. The avalanche region\nis then created through a two-step implantation diffusion process. Initially, low-energy boron implantation minimizes lattice\ndamage, followed by high-temperature diffusion at 1200 _[◦]_ C to\ndrive boron into the epitaxial layer. Phosphorus implantation\nand diffusion follow, further redistributing boron to establish\nthe desired doping profile. After the avalanche region is\nformed, an _n_ [+] contact layer is diffused. Subsequently, a\ncontact hole is etched, and the cathode is sputtered. After\ncompleting the front-side process, the silicon wafer is flipped\nand bonded to the supporting silicon wafer. Then, the substrate\nis completely removed. After that, a _p_ [+] layer is injected onto\nthe backside, followed by the growth of an anti-reflection\ncoating, the opening of contact holes, and the growth of the\nbackside metal electrode. Finally, deep silicon etching is used\n\n3\n\nFig. 2. (a) Schematic diagram of the readout circuit. (b) The idle state working point estimation of the quenching circuit.\n\nV on V Zener\n\nV GS\n\nto create a through-hole in the silicon wafer, exposing the\nfront electrode for wire bonding. The completed SPAD has\nan depletion layer thickness of _∼_ 28 µm and an active area\ndiameter of _∼_ 100 µm.\nA butterfly package is employed to assemble the device,\nas schematically illustrated in Fig. 1(b). The Si SPAD chip\nis bonded to a metallized aluminum nitride (AlN) carrier\nsubstrate, which is vertically mounted on a thermoelectric\ncooler (TEC). The TEC regulates control the device’s operation temperature, with a thermistor placed on the top to\nprovide temperature feedback. For efficient photon coupling,\na multi-mode fiber is precisely aligned with the center of the\nSPAD chip. The final device package is shown in Fig. 1(c).\nThe packaged SPAD is characterized at 273 K, and its currentvoltage (I-V) characteristics are presented in Fig. 1(d). The\nbreakdown voltage ( _V_ _br_ ) is measured to be 170 V, and the\ndark current is approximately 70 pA when the bias voltage is\n1 V below _V_ _br_ .\n\nIII. R EADOUT CIRCUIT\n\nFig. 2 (a) shows the schematic of the readout circuit, which\ncomprises a quenchin",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 10.878694725689215,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.8910276610404253,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.8910276610404253,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

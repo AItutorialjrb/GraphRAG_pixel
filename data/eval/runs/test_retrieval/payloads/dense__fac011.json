@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "fac011",
+    "query_type": "factoid",
+    "query": "What is bump bonding?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "bump",
+      "bonding"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is bump bonding?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8253,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "ieved by exploiting the regions described above. This feature will not be used\nin 3D pixel modules, which will consist of two ROCs\nbump-bonded to two individual sensors. In this configuration, an uninstrumented gap of approximately 600 µm\nexists between the sensors. This decision is based on\n\nthe lack of a reliable process for producing large-area\n3D pixel sensors at the moment.\nTo match the readout chip pitch, a diagonal routing\nscheme is used for bump-bonding in 3D pixel sensors\nwith a 25 × 100 µm [2] cell size, as illustrated in Fig. 7.\n\nFigure 6: Schematic view of the CROCv1 and CROCv2 power distribution, highlighting the regions available for different tunings.\n\nFigure 7: Schematic top view of four adjacent 25 × 100 µm [2] pixel\ncells. One of the cells is delimited by a rectangle with dashed black\nlines for reference. The blue circles at the corners represent the _p_ [+]\n\ncolumns, while the light blue circle in the center represents the _n_ [+]\n\ncolumn. The orange elliptical pad on top of the _n_ [+] column represents\nthe metal contact for bump-bonding. Its counterpart on the readout\nchip is shown as a large orange circle. The two metal contacts are\nconnected by a diagonal orange rail.\n\n5\n\n**4. Irradiation and beam test setup**\n\n_4.1. Irradiation: facilities and setup_\n\nIrradiation campaigns of 3D pixel sensors for use in\nthe IT have been carried out at the Institut Pluridisci\nplinaire Hubert Curien (IPHC) [20], Zyklotron AG at\nthe Karlsruhe Institute of Technology (KIT) [21], the\nFermilab Irradiation Test Area (ITA), and the CERN\nPS [22]. The energy of the proton beam used at each\nirradiation facility and its corresponding hardness factor are provided in Table 2. The TID received by the\nmodules depends on the proton energy. For the IPHC\nand KIT facilities, a fluence of 1 × 10 [16] n eq /cm [2] corresponds to roughly 15 MGy, while for the ITA and\nCERN PS, it corresponds to about 5 MGy. For comparison, about 13.4 MGy is expected over the duration\nof the HL-LHC running period at the innermost layer of\nthe TBPX. Therefore, 6.7 MGy would be sufficient for\ntesting, considering the replacement of this layer after 6\nyears. Radiation damage studies using RD53 chips [23]\nconfirm their functionality up to a total ionizing dose of\n10 MGy. The requested target fluences for the devices\nin this paper were in the range 1–2 × 10 [16] n eq /cm [2] .\n\nTable 2: Proton energy of the beams used at the irradiation facilities\nand their corresponding hardness factor or k-fac",
+        "score": -0.7562946167358985,
+        "dense_score": 0.3064146041870117,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.171814203262329,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1035,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "r of pixels have TDAC values of 0 or 15, a sign that the dynamic range\n\nof the TDAC circuit is not sufficient to compensate for the threshold dispersion after irradiation.\n\nThe mean threshold has increased significantly to 1230 e, and the threshold and ENC distributions\n\nhave larger spreads after irradiation: 144 e and 11 e, respectively. The number of failed fits has\n\nincreased to 97, which is in the range of 0.4% of all pixels in the _Linear front-end_ .\n\n**4** **Crosstalk**\n\nTo be able to bump bond a sensor with a pixel pitch of 100 µm × 25 µm to the RD53A chip, which\n\nhas a bump bond pattern of 50 µm × 50 µm, the bump bonding pads on the sensor are placed\n\n– 9 –\n\n(a) TDAC (b) S-curves\n\n(c) Threshold (d) ENC\n\n**Figure 4** . (a) Distribution of TDAC, (b) S-curves for all pixels, (c) distribution of trimmed thresholds with\nGaussian fit, and (d) ENC distribution with Gaussian fit after tuning the ROC for a non-irradiated module\nwith 50 µm × 50 µm pixel size at room temperature and with a sensor bias voltage of 120 V.\n\non the boundary between two neighboring pixels, as shown in Fig. 2c. These pads overlap with\n\nthe implant layer of the neighboring pixels, and as a result crosstalk between the two pixels via\n\ncapacitive coupling is observed. The amount of crosstalk is determined from S-curve scans using\n\nthe charge injection system of the RD53A chip as described in Sec. 3. In the absence of crosstalk,\n\nthe maximum pixel occupancy should remain at 100% regardless of the injection amplitude. In\n\ncase of crosstalk, a charge injected into a single pixel leads to a charge above threshold also in the\n\nneighbor pixel, provided that the injected charge is large enough. The plot of occupancy versus\n\nΔCAL therefore shows a second S-curve leading to an occupancy of up to 200%. The point where\n\nthe mean occupancy is 150%, ΔCAL 150, is the amount of charge injected in units of ΔCAL that\n\nleads to half of the injections resulting in the signal of a neighbor pixel going above threshold. As\n\nseen in Fig. 6a for a sensor with 100 µm × 25 µm pixel size, this kind of double S-curve is present.\n\nIn sensors with 50 µm × 50 µm pixel size the occupancy remains at 100% even at very high injection\n\namplitudes.\n\n– 10 –\n\n(a) TDAC (b) S-curves\n\n(c) Threshold (d) ENC\n\n**Figure 5** . (a) Distribution of TDAC, (b) S-curves for all pixels, (c) distribution of trimmed thresholds with\nGaussian fit, and (d) ENC distribution with Gaussian fit after tuning the ROC for a module with 50 µm × 50 µ",
+        "score": -2.0140156285086674,
+        "dense_score": 0.29351896047592163,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.10652232170105,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4136,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi.md",
+        "title": "2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi",
+        "text": "an aligner, the Cesic interposer is positioned on top of the SDD chip as illustrated\nin figures 4c and 4f. Curing is performed in an oven under nitrogen atmosphere at a temperature of 60 _[◦]_ C for\nabout 5 _._ 5 h.\n\n_Wire bonding_\n\nIn the next step, the detector is electrically connected to\nthe readout electronics using ultrasonic wire bonding.\nIn particular, 361 aluminum wire bonds with a diameter\nof 25 µm connect the readout side of the SDD chip with\nthe two rigid flex cables, see figure 4d. Two additional\nbond wires from the rigid-flex PCB to the entrance window side are required for the depletion voltages of the\nSDD chip. To this end, one small corner of the SDD\nchip is cut away as can be seen in the photograph in\nfigure 4e.\n\n_Electronics assembly_\n\nIn the last step, the Cesic interposer holding the SDD\nis screwed onto the copper cooling block. Thereupon,\nthe two electronics PCBs, called ASIC boards, are\nmounted on each side of the copper block. The rigid\nflex cables are connected to the ASIC boards via dedicated Z-ray compression connectors. Finally, the ASIC\nboards are connected to the bias system and the data\nacquisition (DAQ) system using dedicated cables and\nfeedthrough flanges.\n\n2 In the first iteration of the procedure, a glue containing\nspherical spacer balls with a diameter of 70 µm was used to\ncreate a well defined spacing between the Cesic interposer and\nthe detector. However, it turned out that the spacer balls\ndamaged several detector pixels. As a result, the glue has\nbeen replaced and the PET stripes have been included in the\nassembly to better define the spacing.\n\n5\n\n(a) Glue on Cesic (b) SDD in PEEK jig (c) Gluing (d) Wire bonding\n\nPTFE Spacer\n\nAl Plate\n\n(e) Completed detector\n\n(f) Cross-section of the assembly\n\nFig. 4: Photographs and schematic of the detector module assembly procedure. (a) Cesic interposer with white\nglue just before the assembly on the SDD chip. (b) SDD chip with the readout side facing up in the PEEK\njig. (c) Assembly of the Cesic interposer on top of the SDD. (d) Wire bonding of the SDD to the rigid-flex PCB.\n(e) Detector module after gluing and bonding. (f) Cross-section of all parts involved in the assembly of the detector\nmodule.\n\n**3 Experimental setups**\n\nThree experimental setups were used to characterize\nthe TRISTAN detector module: 1) a bench test setup\nfor the characterization with x-rays, 2) a vacuum\nchamber with an electron gun for the characterization\nwith electrons, and 3) the KATRIN monitor spectrom",
+        "score": -4.352770919184531,
+        "dense_score": 0.34759142994880676,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.705255508422852,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 422,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648337__2304.00283__Multiple_silicon_dangling-bond_charge_qubits_for_quantum_computing_a_Hilbert-space_analysi.md",
+        "title": "2023__recid_2648337__2304.00283__Multiple_silicon_dangling-bond_charge_qubits_for_quantum_computing_a_Hilbert-space_analysi",
+        "text": "x1 surface. Bubbles represent dangling bonds that are coupled with each other by an extra charge\n\nprovided by a Phosphorus dopant (P). Each DB possesses an electron; arrows show the spin up/down of the electron.\n\nFor one DB, a Hamiltonian applied to the Hilbert space spanning zero, one, or two electrons per lattice site on the silicon\nsurface, can express the charge qubit dynamics. The Hamiltonian model includes the tunneling of electrons, Coulomb repulsion\nbetween electrons (on-site and inter-DB), on-site energy (𝐸 𝑜𝑠 ) and potential diffrences (𝑉 [̂] ) across the surface [11]. For an\narbitrary number of qubits (dangling bond at position i), the system's Hamiltonian on a two-dimensional surface can be\ndescribed as:\n\n𝐻 [̂ ] 𝑜𝑠 𝑛̂ 𝑖,𝜎 −\n= ∑𝐸\n\n𝑖,𝜎\n\n〈𝑖,𝑗〉,𝜎\n\n𝑖𝑗 (𝑐̂ 𝑖,𝜎†\n∑𝑇\n\n𝑛̂ 𝑛̂ + 𝑊 ′ 𝑛̂ 𝑛̂ ′\n𝑖,↑ 𝑖,↓ 𝑖𝜎𝑗𝜎 𝑖,𝜎 𝑗,𝜎\n∑\n\n〈𝑖,𝑗〉,𝜎,𝜎 [′]\n\n- 𝑐̂ + 𝑐̂ \n𝑖,𝜎 𝑗,𝜎 𝑗,𝜎\n\n- 𝑐̂ 𝑖,𝜎 )\n\n𝑖\n+ ∑𝑈\n\n𝑖\n\n+ 𝑉 [̂]\n\n(1)\n\nWhere 〈𝑖, 𝑗〉 denote the nearest-neighbor interactions at the lattice sites 𝑖 and 𝑗, and {𝜎, 𝜎 [′] } ∈{↑, ↓} are the up and down\nelectron spins. Furthermore, 𝑐̂ 𝑖,𝜎†, 𝑐̂ 𝑖,𝜎 and 𝑛̂ 𝑖,𝜎 are creation, annihilation, and number operators, respectively, that act on electrons\n\nwith spin 𝜎 at lattice-site 𝑖. The tunneling between positions 𝑖 and 𝑗 are given by 𝑇 𝑖𝑗 . The on-site Coulomb interaction 𝑈 𝑖\nindicates the energy cost of placing two electrons with opposite spin to the same position 𝑖. The inter-site Coulomb effect\ndenoted by 𝑊 𝑖𝜎𝑗𝜎 ′ is the cost of placing another spin 𝜎 [′] electron at site 𝑗 while simultaneously placing a spin 𝜎 electron at site\n\n𝑖. Finally, 𝑉 [̂ ] =\n\n1\n\n2 [∑] 𝑖<𝑗,𝜎 𝑉 𝑖𝑗 (𝑛̂ 𝑖,𝜎 −𝑛̂ 𝑗,𝜎 ) is the potential difference across the surface of the Silicon.\n\nIn DBP [-] s, qubit loss occurs due to different mechanisms. One of the crucial causes of qubit loss is tunneling of excess\n\nelectrons to other neighboring dangling bonds. This loss can be reduced by placing all of the DBP [-] s in appropriate positions\n\nfrom each other. As an example, for 3.84Å of distance between DBs in a DBP [-], the tunneling rate and Coulomb repulsion\n\nbetween electrons are 0.308eV and 0.583eV, respectively. Nevertheless, when two DBP [-] s are placed about 17.92Å from each\n\nother, the tunneling rate drops to 0.128 × 10 [−4] eV which is negligible. Thus, one can tune the tunneling rate and qubit loss by\n\nplacing the DBP [-] s at appropriate positions.\n\nAdditionally, qubit loss also happens when the excess charge of the DBP [-] transfers to higher energy levels that are located\n\nin t",
+        "score": -4.51728777885437,
+        "dense_score": 0.3241227865219116,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.958086967468262,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1812,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2658575__2305.05756__Noncentrosymmetric_two-dimensional_Weyl_semimetals_in_porous_SiGe_structures.md",
+        "title": "2024__recid_2658575__2305.05756__Noncentrosymmetric_two-dimensional_Weyl_semimetals_in_porous_SiGe_structures",
+        "text": "ls is the bulk-boundary correspondence. Topological states of a TI connect the valence to conduction\n\nband, while in WSMs, this correspondence is expressed\nby surface states that connect Weyl points with opposite chiralities, the Fermi-arcs. In 2D materials, the\ntopological states of a TI are massless states at the\nedges, while the presence of Weyl nodes inside the 2D\nbulk induces open curves restricted to just one momentum direction. These edge Fermi-arcs can be visualized by performing a band structure calculation\nof a ribbon. Using Wannier basis functions obtained\nfrom the first-principles bulk calculation, we show in\nFigs. 5(a) and 5(b) the edge bands projected from Γ to\n\nΓ + 2 _π/a_, connecting Weyl nodes with opposite chiralities for SiGe and Ge porous structures, respectively.\nThere are two edge states connecting two pairs of Weyl\nnodes, projected along a k-line perpendicular to the ΓK direction (see Fig. 3(b)). It is worth to note that\nthe arcs are not degenerate at the time-reversal invariant momentum _M_ point. As the ribbon edge is\na rigid cut of the bulk, dangling bonds emerge leading to local magnetic moments due to unpaired electrons, opening up the Kramers degeneracy of the edge\nstates. It is known that the Fermi-arcs are not topologically protected against weak disorder, as well they\nare affected by different types of perturbations, such as\nbulk-boundary hybridization and dangling bonds [55–\n\n**Figure 5.** Projected 1D edge states connecting Weyl points\nwith opposite chirality for porous SiGe (a) and Ge (b) ribbons,\nusing a Wannier basis scheme. In (c) and (d) are the same\nprojections with hydrogen saturated edge states, using firstprinciples calculations. The edge X _−_ M _−_ X _[′]_ path is from 0\nto +2 _π/a_, as ilustrated in Fig. 3(b).\n\n_REFERENCES_ 5\n\n**4. Conclusion**\n\nIn summary, based on first-principles results and\ntopological invariant calculations, we propose a family\nof noncentrosymmetric 2D WSMs. It is a porous\nstructure, similar to the graphenylene, but composed\nby Ge or SiGe. The structure presents a buckling,\nspontaneously breaking the inversion symmetry. By\ncomputing the Weyl chirality in both systems, we\nidentify six pairs of Weyl nodes protected by _C_ 3 crystal\nsymmetry. The computed 1D edge Fermi-arc shows\nlarge energy dispersion connecting Weyl points with\nopposite chiralities. Our findings complete the family\nof Weyls in condensed-matter physics, by predicting\nthe first noncentrosymmetric class of 2D WSMs.\n\n**Note**",
+        "score": -5.0519157250722255,
+        "dense_score": 0.2514224648475647,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.77858829498291,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 920,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu.md",
+        "title": "2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu",
+        "text": "#### **Dangling bonds as possible contributors to** **charge noise in silicon and silicon-germanium** **quantum dot qubits**\n\nJoel B. Varley, _[∗]_ Keith G. Ray, and Vincenzo Lordi _[∗]_\n\n_Materials Science Division, Lawrence Livermore National Laboratory, Livermore, CA_\n\n_94550, USA_\n\nE-mail: varley2@llnl.gov; lordi2@llnl.gov\n\n**Abstract**\n\nSpin qubits based on Si and Si 1 _−x_ Ge _x_ quantum dot architectures exhibit among the\n\nbest coherence times of competing quantum computing technologies, yet they still suffer\n\nfrom charge noise that limit their qubit gate fidelities. Identifying the origins of these\n\ncharge fluctuations is therefore a critical step toward improving Si quantum-dot-based\n\nqubits. Here we use hybrid functional calculations to investigate possible atomistic\n\nsources of charge noise, focusing on charge trapping at Si and Ge dangling bonds (DBs).\n\nWe evaluate the role of global and local environment in the defect levels associated\n\nwith DBs in Si, Ge, and Si 1 _−x_ Ge _x_ alloys, and consider their trapping and excitation\n\nenergies within the framework of configuration coordinate diagrams. We additionally\n\nconsider the influence of strain and oxidation in charge-trapping energetics by analyzing\n\nSi and Ge Si DBs in SiO 2 and strained Si layers in typical Si 1 _−x_ Ge _x_ quantum dot\n\nheterostructures. Our results identify that Ge dangling bonds are more problematic\n\ncharge-trapping centers both in typical Si 1 _−x_ Ge _x_ alloys and associated oxidation layers,\n\nand they may be exacerbated by compositional inhomogeneities. These results suggest\n\n1\n\nthe importance of alloy homogeneity and possible passivation schemes for DBs in Si\n\nbased quantum dot qubits and are of general relevance to mitigating possible trap levels\n\nin other Si, Ge, and Si 1 _−x_ Ge _x_ -based metal-oxide-semiconductor stacks and related\n\ndevices.\n\n**Introduction**\n\nOf the many candidates for spin-based qubits, quantum dot architectures using Si-based\n\nmaterials are attractive owing to their long-coherence times, scalability, and well estab\n\nlished fabrication technologies. [1–5] These devices typically involve laterally-patterned gates on\n\nSi/Si 1 _−x_ Ge _x_ or Si/SiO 2 (metal-oxide-semiconductor, or MOS) heterostructures that further\n\ncan be isotopically purified to improve the already favorably-weak spin-orbit and hyperfine\n\ncouplings that enable longer coherence times compared to other material choices. [3,5,6] Designs\n\nbased on Si/Si 1 _−x_ Ge _x_ quantum wells h",
+        "score": -5.071790863306094,
+        "dense_score": 0.2598312497138977,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.809658527374268,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6299,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker.md",
+        "title": "2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker",
+        "text": "lacement and quality\nof soldering. Finally, the open connection test is performed and the\nsurface is cleaned.\n\n2. **Guide pins Installation** : Since the position of the detector module\nis crucial, the two precision guide pins are designed. To install the\nguide pins in the correct position, the guide pins are installed by the\npin installation jig to make sure the length of the pin exceeds the\nsensor side of MS is 9.0 mm as shown in Figure 9.\n\nFigure 9: The positions of guide pins after installation.\n\n3. **Bonding the outer Flexible Hybrid PCB to outer wedge** : To\nbond the outer Flexible Hybrid PCB to the outer wedge, the first step\nis to place the pickup tool and two trays for the other wedge and PCB\non the assembly table. The outer Flexible Hybrid PCB is picked up by\nthe gantry with a special jig as shown in Figure 10, and the locations\nare determined by the camera on the gantry using two guide points\non the outer Hybrid PCB. Note that “Araldite 2011” [6] is used for\nbonding.\n4. **Assembling the inner wedge to the outer wedge** : Before assembling the inner and outer wedge together, the cooling tube and tube\nholder need to be installed on the outer wedge. Then, the inner and\nthe outer wedge (with Hybrid PCB and cooling tube assembled) are\nplaced on the jig. The robotic gantry picks up the inner wedge and\nassembles it onto the outer one, as shown in Figure 11.\n5. **Bonding Inner Hybrid PCB on the inner wedge** : Similarly to\nstep 4, the inner Hybrid PCB is bonded on the inner wedge with the\ngantry. However, in this step, the Hybrid PCB is picked up and glued\non the inner wedge, instead of the outer wedge, as shown in Figure 12.\n6. **Soldering the electronic components on the Hybrid PCB** : All\n\n11\n\nFigure 10: The gantry picks up the outer wedge and places it onto the Hybrid PCB.\n\nFigure 11: The robotic gantry picks up the inner wedge and assembles it onto the outer\nwedge.\n\nthe electronic components are carefully soldered on the Hybrid PCB\nwith a clean surface. Then, the flux is removed and the visual inspection is also performed. Finally, the open/short connection test is\nconducted to ensure the module is ready.\n\n_5.3. Quality assurance_\n\nAfter assembling the hybrid PCB and MS together, we perform similar\nmeasurements for flatness on the chip and sensor areas and positioning for\nthe inner hybrid and outer hybrid (the distance from the center of the guide\npins to reference points) using the Optical Gauging Products (OGP) at\nTIDC, as shown in Figure 13.\n\n12",
+        "score": -5.0988588978262515,
+        "dense_score": 0.2916419208049774,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.852316856384277,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 419,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648337__2304.00283__Multiple_silicon_dangling-bond_charge_qubits_for_quantum_computing_a_Hilbert-space_analysi.md",
+        "title": "2023__recid_2648337__2304.00283__Multiple_silicon_dangling-bond_charge_qubits_for_quantum_computing_a_Hilbert-space_analysi",
+        "text": "using superconducting cooper-pairs, but they are hard to implement and suffer from serious decoherence effects [8, 9]. Electronspin qubits, which are based on the spin of charge carriers in semiconductors, have less decoherence challenge, but they are\nhard to control and measure. An approach to read out spin qubits is to initially convert them into charge qubits [10]. Quantum\nstate of a charge qubit can be encoded in a pair of coupled quantum dots (QDs), possessing an extra electron. The electron\nlocated on the left (and right) QD can be considered as the logical state |0〉 (and |1〉). Superposition of the logical states that is\ngenerally of the form 𝛼|0〉+ 𝛽|1〉, occurs by coherent tunneling between the two QDs.\nOne type of QD charge qubit, which was realized in recent years, is the silicon-based coupled dangling-bond pair, also\nknown as DBP [-] [11]. Coupling between dangling bonds was first observed experimentally in 2009 [12]. Later, coupled danglingbond pairs were proposed as charge qubit and their characterization showed that they are promising qubit families for solid\n\nxxxx-xxxx/xx/xxxxxx 1 © xxxx Publishing Ltd\n\nJournal **XX** (XXXX) XXXXXX Author _et al_\n\nstate quantum computing [11, 14]. A Si-based dangling bond (DB) is generated by selectively removing a hydrogen atom from\na hydrogen-terminated silicon surface, by means of a scanning tunneling microscope. A dangling-bond charge qubit is\ncomprised of two closely-spaced DBs sharing an excess electron that tunnels back and forth between the two DBs, and\nconsequently coupling them with each other.\nDangling bond is known as a truly-atomic size quantum dot, due to its structural and electronic features [12]. Reducing the\nsize of quantum dots to atomic scale helps in detracting the separation distance between them, thus increasing significantly the\namount of tunneling rate, while the decoherence rate scales weakly. It is shown that for coupled DB pairs, the ratio of tunneling\nrate and decoherence rate is enormously large and overpass the fault-tolerance threshold [11]. Therefore, the DB charge-qubit\nmodel is a promising candidate for fault-tolerant quantum computation. Moreover, such configuration establishes DB quantum\ndots on H-terminated surface instead of complicated heterostructures QDs. Further research on the qubit dynamic model [11],\ncharacterizing the coherence rate [13], and characterization of coupling strength [14] in DBP [-] qubits have already been\ninvestigated.\n\nAs the number of DB qubits g",
+        "score": -5.143521750812799,
+        "dense_score": 0.2802938222885132,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.920694351196289,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5498,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "[◦] C. The deposition of an isolation oxide and the opening of the contacts with a further\nphotolithographic process are then performed. The front of the device is metallized by a Nickel\nSilicide (Ni 2 Si) deposition (thickness ≈ 100 nm) and annealed in order to form a good ohmic\ncontact on the p [+] and the n [+] regions. A selective etch removes the unreacted Ni 2 Si on the oxide\nand a thicker layer of Ti, and Al is deposited on the periphery of the detector for the bonding [6].\nFinally, front side passivation is performed by deposition of a thick polyamide layer, and the\nactive area of the detector is opened by a further lithography. On the back side of the device a\nmechanical thinning procedure is performed to reduce the total thickness of the device to ≈ 110\nµm, which corresponds to a dead layer of ≈ 10 µm. Then, the ohmic contact is formed by an\naluminum deposition (≈ 1 µm).\nThe epitaxial wafers, coming from the same bulk material, used for producing the SiC detectors characterized in this work, are 6” diameter wafers named TT0012-11 and RA0089-27. The\nn [-] epi-layer of TT0012-11 wafer was doped with the standard and well established concentration\nof ≈ 9 × 10 [13] atoms/cm [3] corresponding to a Full Depletion Voltage (FDV) of ≈ 800 V for a ≈\n100 µm thick device. The RA0089-27 wafer n [-] epi-layer was instead doped with lower concentration (≈ 3 × 10 [13] atoms/cm [3] ) as a case study for reducing the sensors FDV to a few hundred\nVolts. It is important to note that the reactor used to perform the epitaxy was pushed beyond its\ntechnical specifications in order to perform such low doping concentration. For this reason, we\ncould expect worse performance from sensors produced from the RA0089-27 wafer. The device\narea is 15.4 × 15.4 mm [2] . The total thickness of the sensors was measured by a micrometer to\nbe 110 ± 1 µm. An edge structure ≈ 400 µm wide runs along the whole perimeter of the sensor.\nThe frontside is equipped with a small pad (0.150 × 0.300 mm [2] ) for wire bonding, located in\nthe center of one of its sides. The mask used to produce the devices from the 6” wafers made it\npossible to obtain 42 sensors from each one. The layout of the two wafers is shown in Figure 2.\nThe two wafers were provided with datasheets from the company, in which the leakage current value for each sensor is reported. This first characterization performed by the company\nallowed for the subdivision of the 84 sensors in 3 main categories, based on the order of magnit",
+        "score": -5.297036128573947,
+        "dense_score": 0.2767067551612854,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.15676498413086,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6561,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2829308__2409.10746__Design_for_Telecom-Wavelength_Quantum_Emitters_in_Silicon_Based_on_Alkali-Metal-Saturated_.md",
+        "title": "2025__recid_2829308__2409.10746__Design_for_Telecom-Wavelength_Quantum_Emitters_in_Silicon_Based_on_Alkali-Metal-Saturated_",
+        "text": "CBM)\n\nand high-spin charged states of the defect are expected to show weak correlation effects.\n\nWe conclude this qualitative analysis that the level position of the highest occupied defect\n\norbital in the system is determined by the hopping integral which is strongly affected by the\n\nlocalization of the defect orbitals.\n\nMaximum delocalization is energetically preferred for lone-pair orbitals in contrast to the\n\nlocalized dangling bonds. Their resulting defect level is repelled out from the band gap into\n\nthe valance band. However, owing to the very compact structure of the defect, the ELF\n\nof the lone pairs show deformation away from the Li ions. This deformation is commonly\n\nobserved for the anions in ionic bonds as a result of the Pauli repulsion. Furthermore, this\n\n6\n\ndeformation effect from the nearby Li ions makes the lone pair relatively strongly localized\n\ncomparable to a defect orbital [compare bonding and lone pair localization in Fig. 1(b)]. As\n\nwe discussed above, the increased localization can be directly connected to the position of\n\nthe defect level inside the band gap. As the strongly localized lone pair is an intermediate\n\ncase between the delocalized lone pair and the localized dangling bond, we can expect its\n\nlevel position to lie between the isolated neutral vacancy level position and the lone-pair level\n\ninside the valance band near the valance band maximum (VBM), e.g., at a shallow acceptor\n\nlevel position. Our calculations confirm that this is the case for the Li 4 V defect, where a fully\n\noccupied _t_ 2 defect level emerges 0 _._ 08 eV above the pristine VBM (see left panel in Fig. 2).\n\nThis level originates from the saturation of the in-gap _t_ 2 level of the vacancy. The VBM is\n\nstrongly resonant with the defect level in our calculation leading to its renormalization from\n\nthe pristine case.\n\nDissociation of the neutral Li 4 V defect is modeled by relocating one Li atom from the\n\noptimized structure to the nearest neighbor tetrahedral interstitial position and further re\n\nlaxing the Li i +Li 3 V structure in the neutral spin-polarized singlet state of the whole system.\n\nThis gives us a lower estimate of 1 _._ 24 eV for the dissociation energy. The dissociation is\n\nendothermic proving the stability of the initial structure. Upon dissociation, the remaining\n\nLi 3 V aggregate retains its structure close to the original tetrahedral one with the missing\n\nLi site. This suggests that the aggregate is formed via one-by-one Li occupation",
+        "score": -5.629515629127377,
+        "dense_score": 0.3686114251613617,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.669620513916016,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.21656689606607,
+    "generation_latency_s": 3.203749656677246e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.21656689606607,
+    "generation_latency_s": 3.203749656677246e-07
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "benchmark": {
+    "query_id": "fac010",
+    "query_type": "factoid",
+    "query": "What is equivalent noise charge?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "equivalent",
+      "noise"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is equivalent noise charge?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5299,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2798272__2405.03187__LURAD_Design_study_of_a_comprehensive_radiation_monitor_package_for_the_gateway_and_the_lu.md",
+        "title": "2024__recid_2798272__2405.03187__LURAD_Design_study_of_a_comprehensive_radiation_monitor_package_for_the_gateway_and_the_lu",
+        "text": "started to penetrate in space\n\nPage 8 of 28\n\ndosimetry. HardPix, a device using Timepix3 bump bonded to Si pixel sensors is included in the ERSA\n\npackage. The introduction of fully depleted Si monolithic active pixel sensors in space instrumentation\n\ncould enable high field of view with low mass footprint, deliberate granularity selection, and very low\n\ncost. The problems to be solved for measuring GCR and SEP events are the dynamic range of the charge\n\nsignal which exceeds 80 dB, the event rates starting from 2 to 4 per cm [2] ∙s [-1] and reaching 55∙10 [7] per\n\ncm [2] ∙s [-1] (for a 4π sr field of view), and, most importantly, the fact that limited power is available from\n\nsolar or other sources while the heat generated requires material (i.e., extra weight) to manage. With\n\nthese considerations, we have selected a semiconductor fabrication technology which has been\n\nsuccessfully used for high energy physics detectors (Barbero,2020). We developed two kinds of pixel\n\narchitecture: The low gain pixel can process high energy (charge) depositions up to 8 pC in a 200 x 200 x\n\n50 μm [3] volume and the high gain can process low energy depositions by fast charged particles down to\n\n0.5 fC in a 100 x 100 x 100 μm [3] . The prototype sensors have a lower number of pixels than foreseen. The\n\npixel design specifications are collected in Table 2.\n\nTable 2: Fully depleted monolithic active pixel sensor specifications\n\n|Col1|Low gain pixel|High gain pixel|\n|---|---|---|\n|pixel size|100 x 100 μm2|200 x 200 μm2|\n|Charge (Qin) range|40 fC – 9 pC|0.5 fC – 50 fC|\n|Gain|109 mV/pC|17.5 mV/fC (Qin>3fC)<br>120 mV/fC (Qin<3fC)|\n|Idle pixel current|35 nA@1.8V|7.5 μA@1.8V|\n|Equivalent Noise Charge (ENC)|1.5 fC|200 aC|\n\nIn both sensor array versions, the voltage proportional to the charge collected is transferred to the array\n\nbottom and digitized. The digitized data are sent outside the chip using the Serial Peripheral Interface\n\n(SPI) protocol. The wired OR of the hit flags informs the external controller that a chip has received\n\nsignal above threshold in one or more pixels. The chip readout is performed sequentially for the pixels\n\nwhich have raised their hit flags.\n\nThe low gain sensor has been fabricated and currently is experimentally evaluated. The high gain sensor\n\nhas been submitted to the semiconductor foundry for fabrication.\n\nPage 9 of 28\n\n# - - 2.5 T HE TIME OF FLIGHT MEASUREMENT SYSTEM\n\nA block diagram of the time-of-flight measuring system is presented in Figure _5_",
+        "score": -2.141296036154598,
+        "dense_score": null,
+        "bm25_score": 11.551331688915553,
+        "graph_score": 0.8808947496002032,
+        "rerank_score": -3.403169870376587,
+        "matched_nodes": [
+          "Equivalent Noise Charge",
+          "Charge",
+          "The",
+          "ENC",
+          "In",
+          "We",
+          "Si"
+        ],
+        "path_nodes": [
+          "Equivalent Noise Charge"
+        ],
+        "community_id": "Equivalent Noise Charge",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6660,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments.md",
+        "title": "2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments",
+        "text": "ple technique in which\nthe baseline and signals are integrated into a time window\nand then subtracted [9]. Then, to reduce the low-frequency\ncontribution, we take multiple non-disruptive measurements of\nthe same charge package and then average these measurements.\nThis approach allows us to decrease the readout noise from\na few electrons, as in traditional CCDs, to as low as 0.04\n\nelectrons.\n\nSkipper-CCD deep sub-electron resolution opens the door\nfor detecting processes with O(eV) energy, such as that expected from light-dark-matter interacting electrons in a silicon\ntarget [10], [11]. However, to explore the parameter space\nregion of most interest given the cosmological milestone\nscenarios, we need a total exposure of about 30 kg year;\nefforts to scale skipper-CCD detectors in mass are ongoing\nwithin the SENSEI (100 g), DAMIC-M (1 kg), and OSCURA\nexperiments (10 kg) [12]–[14].\nThe transition to a multi-kilogram detector poses new\nchallenges for skipper-CCDs, mainly due to a two-order-ofmagnitude increase in the number of readout channels and\ndata volume compared to current instruments. This shift necessitates a new paradigm for readout electronics, sensor packaging, infrastructure, and processing tools. Additionally, the\nOSCURA design goals require a two-order-of-magnitude reduction in radiogenic backgrounds, which calls for innovative\nmethods in the production, storage, and materials for the sensor\npackaging. To address these challenges, we developed a novel\nhigh-density packaging solution that enables low background,\n\n©2025 IEEE. Personal use of this material is permitted. Permission from IEEE must be obtained for all other uses,\nincluding reprinting/republishing this material for advertising or promotional purposes, collecting new collected works\nfor resale or redistribution to servers or lists, or reuse of any copyrighted component of this work in other works.\n\nIEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024 2\n\nsynchronized readout, and uniform operating conditions for the\n24,000 CCDs in the 10 kg detector.\nIn this work, we introduce the basic unit of this package,\nwhich consists of an aluminum circuit on a silicon substrate\n\ncapable of accommodating up to 16 devices. In section II, we\ndiscuss the requirements for the design, while in section III,\nwe detail the fabrication and assembly process of the siliconbased package. In sections IV and V, we present the warm and\ncold electrical tests and the CCD signal characterization, and\nin section VI, the si",
+        "score": -3.9910105848158635,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.888745010872894,
+        "rerank_score": -6.245298385620117,
+        "matched_nodes": [
+          "IV",
+          "NO",
+          "The",
+          "In",
+          "To",
+          "VOL",
+          "IEEE",
+          "CCD"
+        ],
+        "path_nodes": [
+          "IV"
+        ],
+        "community_id": "IV",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6669,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments.md",
+        "title": "2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments",
+        "text": "s are produced by muons, curly-like by electrons,\nand point-like by photons.\n\nof 30 μV (after converting from digital units). In the bottom\npanel of Fig. 8, we present the readout noise as a function of\nthe number of analog samples. The red line corresponds to the\nexpected noise behaviour of skipper-CCDs [5] as a function of\nthe number of samples: _𝜎_ _𝑁_ = _𝜎_ N=1 /√ _N_, where _𝜎_ N=1 = 4 _._ 4 is\n\ncalculated from the noise at 100 ANSAMP. The noise follows\n\nthe expectation in the range between 80 and 500 ANSAMP.\nFor ANSAMP < 80, the signal gain is outside the dynamic\nrange of the integrator capacitor of the pile-up circuit [19],\nand its noise dominates the output. For ANSAMP = 800, the\ncorrelated noise from the testing system produces a deviation\nfrom the _𝜎_ _𝑁_ = _𝜎_ N=1 /√ _N_ expectation. We corroborated that\n\nthis noise level is related to the testing system and not to the\npackage itself by deploying the silicon module in the system\nused to test the ceramic wafers, where we achieved a noise of\n\nabout 0.17 e [−] with 400 ANSAMP.\n\nDue to the signal coupling in the multi-chip module, the\nrecovery time after the summing-well clock produces an offset\nbetween the baseline and the signal. Since the integrator capacitor accumulates each sample during the analog correlated\ndouble sample, the amplitude of the output signal depends on\nthe number of samples. Despite having no electrons in the\npixel, each sample adds the offset value to this output signal,\nwhich will eventually saturate the ADC in the readout electronics. In the top panel of Fig. 9, we present the mean empty\npixel signal as a function of the number of analog samples\n(and integration time) for different CCDs (different markerscolors) in the multi-chip module. Dashed lines correspond to\nthe extrapolation of a linear fit using the data obtained with\nANSAMP < 100, and the black dashed line at about -4 V\nto the saturation point of the ADC. The legend indicates the\nlength of the video output traces. The offset introduced in each\nsample is different depending on this length since the coupling\nbetween the clocks and output signals, and in turn, the recovery\n\nIEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024 6\n\n|ANSAMP = 80<br>- - -<br>1e 2e 4e|Col2|Col3|Col4|\n|---|---|---|---|\n|||||\n\n|120 140 160 180 200 220 240|Col2|Col3|\n|---|---|---|\n||||\n||||\n\nFig. 9. (Top) Signal output of empty pixels for different video channels in the\nsame multi-chip module as a function of ANSAMP. (Bottom) Signal amplitude,\ntime",
+        "score": -4.143261615292467,
+        "dense_score": 0.38338708877563477,
+        "bm25_score": null,
+        "graph_score": 0.774429865827597,
+        "rerank_score": -6.470707893371582,
+        "matched_nodes": [
+          "NO",
+          "The",
+          "In",
+          "We",
+          "For",
+          "VOL",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "NO"
+        ],
+        "community_id": "NO",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5116,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L.md",
+        "title": "2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L",
+        "text": "uences.\n\n_**5.5.**_ _**Gain, Crosstalk and Afterpulse**_\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|+06<br>1E+|07<br>1E+|08<br>1E|+09<br>1E|+10<br>1E|+11<br>1E|\n\nIn Fig. 9 are reported the gain, crosstalk probability and afterpulse\n\nprobability measured at 4 V of excess bias before and after irradiation. Gain\n\nand AP were measured on SPADs at room temperature, CT measurement\n\nwas performed on 1x1 mm² at room temperature and on 0.2x0.2 mm²\n\nSiPMs at -20°C after irradiation, to discriminate single events in high DCR\n\nconditions.\n\nNo significant change in gain is observed after irradiation, apart from\n\nsome fluctuation caused by the uncertainty of the measurement on samples\n\nwith high noise level. For CT measurements, time constraints and\n\ninstability of the amplifiers operated at low temperatures limited the\n\nnumber of tested devices, but the results do not show a link between\n\nradiation damage and a change in crosstalk probability.\n\nIn the case of AP measurements, it is observed a significant increase for\n\nalmost all devices after irradiation. This effect is related to the defects\n\ngenerated in the silicon by NIEL. The defects act as a trapping centres for\n\ncharges, thus increasing the AP probability for irradiated samples. A few\n\nsamples do not show this increase, but this is mainly attributed to\n\nlimitations in the measurement setup and software, which is not able to\n\ndetect AP events below a certain amplitude and will underestimate their\n\nnumber in case of cells with long recharge time.\n\nDespite the increase in AP, its contribution to the total ECF is limited\n\nas its probability remains relatively low. Moreover, the gain and the CT do\n\nnot show a significant variation in samples measured before and after\n\nirradiation. This proves the validity of the hypothesis used in the calculation\n\nof the DCR, where it was assumed that the Gain current, i.e. the gain\n\nmultiplied by the excess charge factor, do not change with proton\n\nirradiation.\n\nFig. 9: Top to bottom: gain, crosstalk probability and afterpulse\nprobability measured before and after proton irradiation at 4 V of excess\nbias.\n\n_**5.6.**_ _**Activation energy**_\n\nTo calculate the activation energy (Ea) of the SiPMs it was taken the IV\n\nmeasurements at different temperatures. At the same time, it was measured\n\nalso the temperature dependence of the breakdown voltage with\n\ntemperature. For irradiated samples the IVs were taken at temperatures\n\nbetween -30°C and 20, with 2°C steps, to avoid",
+        "score": -4.359064699761422,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8581319212352106,
+        "rerank_score": -6.80790901184082,
+        "matched_nodes": [
+          "IV",
+          "At",
+          "NO",
+          "The",
+          "In",
+          "To",
+          "For"
+        ],
+        "path_nodes": [
+          "IV"
+        ],
+        "community_id": "IV",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 732,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2658264__2305.05571__Dispersive_readout_of_a_silicon_quantum_device_using_an_atomic_force_microscope-based_rf_g.md",
+        "title": "2023__recid_2658264__2305.05571__Dispersive_readout_of_a_silicon_quantum_device_using_an_atomic_force_microscope-based_rf_g",
+        "text": "ned histogram\nof the _I_ and _Q_ components obtained with a sampling rate of 240 kHz and _τ ∼_ 16 _._ 7 ms. (c) SNR as a function of _P_ applied\nat the resonator. The arrow indicates the optimal power _P_ = _−_ 87 dBm. (d) Phase response around the charge transition as\na function of _V_ P for increasing _P_ . Curves are color-matched to the SNR data in (c). Inset: Evolution of the corresponding\nCoulomb blockade peak as measured in the transport current _I_ D as a function of _P_ . Arrows are color-matched to the phase\nresponse curves and highlight the corresponding drive powers. (e) SNR as a function of _τ_ with _P_ = _−_ 87 dBm. The expected\nsquare-root dependence is depicted by the red curve and the 1 _/f_ noise saturation value is marked by the dashed line.\n\nelsewhere. Line cuts along the plunger voltage axis, _V_ P,\nclearly show that dispersive sensing provides information\nabout the charge state of the QD even when the dc current through the device is too small to be measured.\nWe demonstrate dispersive charge sensing down to the\nlast electron in Fig. 2(c). Here, the phase shift is shown\nas a function of plunger _V_ P and combined barrier gate\n_V_ D2 = _V_ S2 voltages. The latter are used to control the\ntunneling rates to the leads. The lowest feature in the\ndata corresponds to the _N_ = 0 _↔_ 1 charge transition in\nthe QD. As the voltage of the barrier gates decreases, the\ntransition lines fade and eventually disappear when the\ntunneling rate becomes much slower than the rf modulation frequency and no effective electron exchange with\nthe reservoir is possible. At high barrier voltages, the\ntunneling rate becomes large and the dispersive peaks\nsmear due to lifetime broadening. It should be noted,\nthat owing to our compact floating gate design, we do\nnot observe parasitic background fluctuations in the dispersive signal [24, 25].\n\n**IV.** **CHARGE SENSING SNR**\n\nWe optimize the performance of our system as a function of rf drive power _P_ and integration time _τ_ . To evaluate the signal-to-noise ratio (SNR), we sample the _I_\nand _Q_ quadrature signals at the bottom of the phase\n\ndip (on-state) and deep in Coulomb blockade (off-state),\nas illustrated by the red and blue dots in Fig. 2(b). A\ntypical time trace of the _Q_ quadrature acquired with a\nsampling rate of 240 kHz and _τ_ = 16 _._ 7 ms is shown in\nFig. 3(a). We estimate the SNR as the separation of the\non- and off-states divided by the standard deviation [25]:\n\n_IQ_ -histograms acquired in the on",
+        "score": -4.405709636107134,
+        "dense_score": 0.40902236104011536,
+        "bm25_score": null,
+        "graph_score": 0.7453468541490091,
+        "rerank_score": -6.87198543548584,
+        "matched_nodes": [
+          "IV",
+          "At",
+          "Charge",
+          "The",
+          "To",
+          "We"
+        ],
+        "path_nodes": [
+          "IV"
+        ],
+        "community_id": "IV",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5243,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "r with the same overvoltage. In\nthis scenario, the photo-electron distribution of SiPM2 should\nbe free of pedestal due to the deployment of the 0.5 PE height\ntrigger. Subsequently, a software algorithm was used to search\nfor coincidence signals in SiPM1 within a time gate T 0 +dT,\nwhere dT=50ns and T 0 is the trigger time for SiPM2. If there\nis a PE signal in the time window, we integrate over the area\nof the PE signal (Fig. 1(a)) of SiPM1. On the contrary, if there\nis nothing but baseline in the gate, we integrate over the same\n\nregion of SiPM2 in SiPM1(Fig. 1(b)). In this trigger mode,\nthe PE distribution of SiPM1 has a majority of pedestal. For\nexample, Fig 2 displays the PE distributions of two SensL\nSiPMs in a dark environment at 4.5V overvoltage and liquid\nnitrogen temperature.\n\n(a)\n\n(b)\n\nFig. 1: Illustrations of the software selection for two SiPM\nsamples (SiPM1 and SiPM2)\n\n.\n\nThe coincidence probability _P_ _coin_ is defined as the ratio\nof PE events on SiPM1 in coincidence with PE events on\n\nSiPM2 to triggered PE events on SiPM2, resulting in _P_ _coin_\n= 2834/30000 = 9.45%, as shown in Fig 2. Initially, _P_ _coin_\nreflects the eCT level of both SiPM1 and SiPM2, as eCT\nphotons emitted from the dark noise of SiPM2 are then\nreceived by SiPM1, and vice versa, both contributing to the\ncoincidence probability. If this is accurate, an increase in the\novervoltage of SiPM2 would be expected to lead to a higher\n_P_ _coin_, as the overvoltage enhances the SiPM gain, resulting\nin more charge carriers in avalanches. Theoretically, a higher\nnumber of charge carriers in a single avalanche corresponds to\na higher eCT probability. In other words, _P_ _coin_ as a function of\nthe SiPM overvoltage _V_ _over_ is expected to be a monotonically\nincreasing function. However, our measurement indicates that\n_P_ _coin_ does not increase consistently with _V_ _over_ for SiPM2.\nFig 3 shows _P_ _coin_ as a function of _V_ _over_ for SiPM2. It is\nworth noting that accidental coincidences of dark signals are\ndisregarded, as the DCR of the SiPM is approximately 0.2\nHz/mm [2] at liquid nitrogen temperature. At this dark noise\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 3\n\nSiPM 1\n\nSiPM 2\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n-1 0 1 2 3 4 5 6\n\nPE\n\n-1 0 1 2 3 4 5 6\n\nPE\n\nFig. 2: PE distributions of two Sensl J-60035 SiPMs facing\neach other. Both graphs present 30000 dark signals in the trigger mode where only SiPM2 was triggered with the threshold\no",
+        "score": -4.634437848509044,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9355513902364563,
+        "rerank_score": -7.240731239318848,
+        "matched_nodes": [
+          "At",
+          "NO",
+          "The",
+          "In",
+          "For",
+          "VOL",
+          "IEEE",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6708,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2841990__2410.16913__Industrially_Fabricated_Single-Electron_Quantum_Dots_in_SiSiGe_Heterostructures.md",
+        "title": "2025__recid_2841990__2410.16913__Industrially_Fabricated_Single-Electron_Quantum_Dots_in_SiSiGe_Heterostructures",
+        "text": "ld and device\nquality.\n\nKeywords: Quantum computing, Quantum well devices, Single electron devices, Fabrication\n\n**I.** **INTRODUCTION**\n\nUniversal quantum computers with error correction\nwill require orders of magnitude more qubits than available today. Semiconductor qubits offer the perspective\nto take advantage of very large scale integration (VLSI)\ntechnology that can easily achieve such a complexity for\nclassical electronics. Using devices fabricated in academic\nlabs, all required qubit operations [ 1 – 3 ], few-qubit devices\n\n[ 4, 5 ] and qubit shuttling as a scalability element [ 6 – 8 ]\nhave been demonstrated. Now, the transfer to industrial\nfabrication techniques is required to achieve a sufficient\nyield for proposed quantum processor architectures [ 9 – 11 ].\nThe platforms on which industrial progress has recently\nbeen made include fully depleted silicon on insulator (FDSOI) nanowires [ 12 ], FinFET devices [ 13 ] and Si/Si–Ge\nheterostructures [ 14 ] using CMOS pilot lines. While the\nfirst two types are compatible with planar CMOS processing techniques, heterostructures impose a restricted\nthermal budget to avoid excessive inter-diffusion at the\ninterfaces [ 15 ]. It limits the options for oxide formation\nto temperatures below _≈_ 750 _[◦]_ C which raises concerns\n\n_∗_ This work has been submitted to the IEEE for possible publication.\nCopyright may be transferred without notice, after which this\nversion may no longer be accessible.\n\n_†_ [till.huckemann@rwth-aachen.de](mailto:till.huckemann@rwth-aachen.de)\n\n_‡_ [pascal.muster@infineon.com](mailto:pascal.muster@infineon.com)\n\nregarding oxide quality and thus charge noise. On the\nother hand, a heterostructure-based quantum well has the\nadvantage of an all-crystalline environment and therefore\nlower disorder, provided that the dislocation density in\nthe crystalline material is sufficiently low. As a result,\nmulti-quantum-dot and multi-qubit devices have already\nbeen realized [4, 5].\nBesides yield and qubit quality, as recently demonstrated in Si/Si–Ge [ 4, 16 ] using a high- _κ_ gate stack process, the proposed quantum processor architectures also\nrequire a Back-End of Line (BEoL) processes for multilayer wiring schemes.\nWe report the realization of quantum dot (QD) devices\nin Si/Si–Ge heterostructures in a 200 mm CMOS production line including a BEoL. Charge sensing and charge\nnoise measurements at _≈_ 20 mK reveal state-of-the-art\n\ncharacteristics.\n\n**II.** **DEVICE**\n\nAs substrate a Si/Si–Ge heter",
+        "score": -5.287577360781174,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8002093097330143,
+        "rerank_score": -8.229528427124023,
+        "matched_nodes": [
+          "Ge",
+          "Charge",
+          "The",
+          "We",
+          "IEEE",
+          "Quantum",
+          "CMOS"
+        ],
+        "path_nodes": [
+          "Ge"
+        ],
+        "community_id": "Ge",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5425,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2823334__2408.16921__Rapid_in_Situ_Neutralization_of_Nitrogen-_and_Silicon-Vacancy_Centers_in_Diamond_Using_Abo.md",
+        "title": "2024__recid_2823334__2408.16921__Rapid_in_Situ_Neutralization_of_Nitrogen-_and_Silicon-Vacancy_Centers_in_Diamond_Using_Abo",
+        "text": "nal is dominated by NV _[−]_ with a small\namount of NV [0] due to charge cycling induced by the 532nm probe [33]. With the DUV on (bottom panel), the\nsignal is dominated by the NV [0] contribution, demonstrating the DUV neutralizing effect.\n\n**III.** **NV CENTER CHARGE DYNAMICS**\n\nWe first examine the quasi-steady-state neutralization\nof bulk NV centers in sample A under simultaneous exposure to the pulsed DUV pump and a 532-nm green probe.\nThe dominant charge states of the NV center, NV [0] and\n\nNV _[−]_, both emit in the visible/NIR wavelength range\n(with zero-phonon line (ZPL) at 575 nm and 637 nm respectively) and can be optically excited into the phonon\nsideband (PSB) by 532 nm excitation making the center\nan ideal probe for studying neutralization.\n\nFigs. 2a,b show the quasi-steady-state spectra of the\nNV center under varying DUV laser repetition rates,\nat both 300 K and 12 K respectively. In the absence of\nDUV pumping (0 Hz), the spectrum exhibits characteristic overlapping NV [0] and NV _[−]_ contributions at roughly\nthe same order of magnitude. When the DUV is turned\non at even the lowest repetition rate (1 Hz), the spectrum exhibits a dramatic decrease in the NV _[−]_ contribution, indicating significant neutralization of the defect.\nIncreasing the DUV repetition rate further results in increased NV [0] contribution, limited by the probe-induced\ncharge cycling from NV [0] to NV _[−]_ . At the 5 Hz DUV rate,\nthe probe-only time is 2000 _×_ longer than the DUV pulse\ntime.\n\nTo quantitatively study the effect of the DUV pulse, we\nperform a fitting procedure to determine the relative contributions of NV _[−]_ and NV [0] . At low temperatures this is\nachieved by fitting of the respective ZPLs to a Voigt lineshape to remove the background and then integrating. At\n\nroom temperature, extracting the relative contributions\nof the two charge states is complicated by the overlap of\nthe NV [0] and NV _[−]_ signals. While several techniques exist\nfor decomposing composite spectra of this type [34], we\ninstead assume that the spectrum corresponding to the\nlowest probe power (1.5 µW) and highest DUV repetition\nrate (5 Hz) constitutes a pure NV [0] signal. This assumption is consistent with the lack of a detectable NV _[−]_ ZPL\nat 637 nm up to a relative contribution of NV _[−]_ of less\nthan 0.1% (SI.3). Utilizing this assumption, we are able\nto decompose the measured spectra into the corresponding NV _[−]_ and NV [0] “basis” spectra (normalized to have\nequal inte",
+        "score": -5.347290734477708,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8097954639125529,
+        "rerank_score": -8.322530746459961,
+        "matched_nodes": [
+          "At",
+          "Charge",
+          "The",
+          "In",
+          "To",
+          "We",
+          "Si"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1185,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "panel]. An exponential fit to the photon decay trace yields a radiative lifetime\n_τ_ _r_ = 1 _._ 69 _±_ 0 _._ 04 ns that corresponds to a lifetime-limited op\n\n3\n\ntical linewidth of ∆ _ν_ = (2 _πτ_ _r_ ) _[−]_ [1] = 93 _._ 9 _±_ 2 _._ 2 MHz.\nTo our knowledge, this is the first record of a lifetime-limited\nlinewidth reported for ≲ 50 nm shallow SiV _[−]_ embedded in\na diamond nanostructure, as required for nanoscale quantum\nsensing. In addition, we find resonant saturation powers of\nthis SiV _[−]_ of _P_ sat = 23 _._ 0 _±_ 3 _._ 1 nW and a saturation count rate\nof 9 _._ 7 _±_ 0 _._ 7 kcounts/s [Fig. 2(e), left panel], typical for our\ndevices.\n\n**Charge repump-free photoluminescence excitation of**\n**SiV** _[−]_ **centers in diamond**\nPLE experiments with solid state emitters often require\nregular application of optical charge-resetting pulses using\noff-resonant laser light [22, 24, 25, 30]. Such charge resetting\npulses are usually applied at wavelengths between 510 to\n532 nm, to undo de-ionization events the emitter can undergo\nunder resonant excitation. Importantly, such repumping\nperturbs the charge environment of the emitter and thus induces inhomogeneous broadening [22, 26, 31], precluding the\nobservation of lifetime-limited optical linewidths. We refer to\nthis measurement scheme as charge-repumped PLE (cr-PLE).\nRecently, Görlitz et al. [32] have shown that exposing SnV _[−]_\n\ncenters in diamond to 445 nm laser light enables crf-PLE,\nreduces spectral diffusion and increases the brightness of\nSnV _[−]_ . Their charge-state lifetime (i.e. effective measurement\ntime in crf-PLE) is, however, limited to about an hour under\nresonant excitation. They suggest that the same approach\ncould also be beneficial to other group-IV vacancies, such as\nSiV _[−]_ .\n\nOur experiments on charge stabilization of SiV _[−]_ with blue\nillumination revealed a similar, long-lasting effect. Prolonged\n(>1 h) and high-intensity (>5 mW) illumination of a PR with\na 445 nm laser led to persistently bright and stable PLE\nemission with narrow linewidths in crf-PLE, completely\nremoving the need of charge resetting laser pulses, which is\nusually necessary for our samples. An exemplary crf-PLE\ndata set is depicted in Fig. 3(a), where the bottom (top) panel\nshows a sequence of 500 single crf-PLE sweeps (c.f. SI\nSec. VI) and the corresponding average, respectively. The\ndata were continuously recorded over 14 h, using exclusively\nnear-resonant laser excitation. The PLE resonance line re\ntains it",
+        "score": -5.662602500148484,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8097954639125529,
+        "rerank_score": -8.807625770568848,
+        "matched_nodes": [
+          "IV",
+          "Charge",
+          "The",
+          "In",
+          "To",
+          "We",
+          "Si"
+        ],
+        "path_nodes": [
+          "IV"
+        ],
+        "community_id": "IV",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6739,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "IEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 1\n\n# Microlens-enhanced SiPMs\n\nG. Haefeli, F. Blanc, E. Curr´as-Rivera, R. Marchevski, F. Ronchetti, O. Schneider, L. Shchutska,\n\nC. Trippl, E. Zaffaroni and G. Zunica\n\n_**Abstract**_ **—A novel concept to enhance the photo-detection**\n**efficiency (PDE) of silicon photomultipliers (SiPMs) has been**\n**applied and remarkable positive results can be reported. This**\n**concept uses arrays of microlenses to cover every second SiPM**\n**pixel in a chequerboard arrangement and aims to deflect the**\n**light from the dead region of the pixelised structure towards the**\n**active region in the centre of the pixel. The PDE is improved up**\n**to 24%, external cross-talk is reduced by 40% compared to a flat**\n**epoxy layer, and single photon time resolution is improved. This**\n**detector development is conducted in the context of the next**\n**generation LHCb scintillating fibre tracker located in a high**\n**radiation environment with a total of 700’000 detector channels.**\n**The simulation and measurement results are in good agreement**\n**and will be discussed in this work.**\n\n_**Index Terms**_ **—Cross-talk, Microlens, MLA, PDE, SciFi, SiPM,**\n**SPTR**\n\nI. I NTRODUCTION\n\nIn the context of the scintillating fibre tracker (SciFi\nTracker) [1], our group, the High Energy Physics Laboratory\n(LPHE) at EPFL, is working to improve the silicon photomultiplier (SiPM) photodetectors in order to overcome the\nchallenges imposed by radiation, detector size, and the low\nmaterial budget requirement for the next upgrade in 2034. The\nultimate goal of this development is to improve the signalto-noise ratio. We found that the enhancement of the SiPM\n\nwith microlenses not only significantly increases the signal\nbut also reduces external cross-talk and has the potential to\nreduce noise.\n\nThe choice of the ideal size of the SiPM pixel for a custom\ndesign is typically guided by the compromise between the\nhigh geometrical fill factor (GFF) and the resulting high photodetection efficiency (PDE) for large pixels and the manifold\ndisadvantages resulting from higher gain and therefore higher\ncorrelated noise, longer recovery time, lower dynamic range,\nand higher bias current. Adding the radiation environment\nas an additional criterion, small pixel size and low excess\nbias voltage (over-voltage, ∆ _V_ ) are also preferred to reduce\nthe effect of increasing the dark count rate (DCR) (heat\ndissipation and self-heating), as well as redu",
+        "score": -5.722814712556617,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.774429865827597,
+        "rerank_score": -8.89607048034668,
+        "matched_nodes": [
+          "NO",
+          "The",
+          "In",
+          "We",
+          "VOL",
+          "IEEE",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "NO"
+        ],
+        "community_id": "NO",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "Equivalent Noise Charge": 1.2642784118652344,
+      "IV": 1.0,
+      "At": 1.0,
+      "NO": 1.0,
+      "LE": 1.0,
+      "RG": 1.0,
+      "Ge": 1.0,
+      "Charge": 1.0
+    },
+    "expanded_nodes": {
+      "Equivalent Noise Charge": 1.2642784118652344,
+      "IV": 1.0,
+      "At": 1.0,
+      "NO": 1.0,
+      "LE": 1.0,
+      "RG": 1.0,
+      "Ge": 1.0,
+      "Charge": 1.0,
+      "The": 0.7964953994750976,
+      "ENC": 0.7964953994750976,
+      "In": 0.7,
+      "To": 0.6194964218139647,
+      "We": 0.7,
+      "For": 0.7,
+      "VOL": 0.7,
+      "IEEE": 0.7,
+      "Transactions": 0.7,
+      "Quantum": 0.7,
+      "CMOS": 0.5599999999999999,
+      "All": 0.48999999999999994,
+      "CCD": 0.48999999999999994,
+      "Si": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 22,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 2.015120412223041,
+    "generation_latency_s": 4.00003045797348e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 22.0,
+    "retrieval_latency_s": 2.015120412223041,
+    "generation_latency_s": 4.00003045797348e-07
+  }
+}

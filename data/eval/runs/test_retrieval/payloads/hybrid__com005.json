@@ -1,0 +1,277 @@
+{
+  "benchmark": {
+    "query_id": "com005",
+    "query_type": "comparative",
+    "query": "Compare ToA and ToT.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "ToT",
+      "ToA"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare ToA and ToT.",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8314,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": ".\nToA records the time at which the signal exceeds the\nthreshold during charge collection, while ToT measures\nhow long the signal stays above that threshold. More\nspecifically, the ToA is defined as the number of clock\ncycles from the moment the signal crosses the threshold\nuntil the shutter closes, and the ToT as the number of\nclock cycles between the rising and falling edges of the\nsignal crossing the threshold within a single shutter. If\n\n3\n\nFigure 4: Schematic layout of the four acquisition modes. On top,\nthe CSA output signal is represented with a triangular shape, whose\nreturn-to-baseline slope depends on the _ikrum_ setting. In the middle,\nfor the high _ikrum_, the signal is compared to a reference voltage\nthreshold, and the corresponding measured counts in ToT, ToA, and\nphoton counting modes are indicated. At the bottom, a readout\nin triggered mode is depicted, using as an example, a configurable\npreset of 253 counts and a strobe duration of 2 clock cycles.\n\nmultiple signals cross the threshold within the same shutter window, their respective ToT values are accumulated\nfor each pixel. The acquisition runs at an externally generated 100 MHz, corresponding to 10 ns per clock cycle,\nand setting a lower limit on the time/energy resolution in\nToA/ToT modes of 10 ns _/√_ 12 _≈_ 2 _._ 9 ns. A time walk cor\nrection cannot be applied since a simultaneous ToT and\nToA measurement is not possible with the chip.\nIn the photon counting mode, each pixel registers the\nnumber of times that the signal crosses the threshold\nwithin a shutter window.\n\nIn triggered mode, an external trigger signal is used to\nvalidate hits before readout. The in-pixel 8-bit counter is\npreset with a value corresponding to the expected fixed delay of the trigger latency. When a pixel fires, the counter\nstarts incrementing from this preset value and generates\na carry signal once it reaches its maximum. This carry\nsignal lasts for one clock cycle. A strobe signal, provided\nexternally after the trigger signal arrives, is distributed\nto the pixels using the same line as the shutter in other\n\nFigure 5: Simulated amplitude response of the CSA as a function of\nthe injected signal `vtpulse`, for three different _ikrum_ settings.\n\nacquisition modes. This signal defines an adjustable coincidence window, accommodating for the H2M time walk.\nIf the carry and strobe signals coincide, a binary readout\nis issued. In this way, shorter shutter durations can be\nutilized in test beam measurements compared to",
+        "score": 3.2152640838862157,
+        "dense_score": 0.3716822862625122,
+        "bm25_score": 14.137730592953055,
+        "graph_score": 0.0,
+        "rerank_score": 4.929814338684082,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7859,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors.md",
+        "title": "2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors",
+        "text": "2018.\nTime-over-threshold (ToT) readouts measure the time difference between\nthe leading and trailing edges of a signal, typically the logic signal output of\na discriminator. This methodology significantly reduces the required buffer\nsize, circuit complexity, and power consumption, thereby improving circuit\nintegration and counting rates. The main drawbacks of ToT systems are\nthe degradation of energy resolution, dynamic range, and linearity [2]. ToT\nsystems for measuring particle energy have been implemented in ApplicationSpecific Integrated Circuits (ASICs) [3, 4, 5].\nThere are different approaches to implementing the analog signal discrimination required for ToT measurement. One approach is to compare the\ndetector pulse signal with a constant threshold and another one is to compare\nit a dynamic threshold [6]. A third approach is to hold the maximum pulse\namplitude and compare it with a dynamic threshold [4, 7], as shown in Fig.\n1. However, these approaches have drawbacks, such as implementation complexity, power consumption per channel, nonlinearities, and limited detection\n\n2\n\nrate capacity. Table 1 summarizes the characteristics of ToT methods.\n\na) b)\n\n|c)|Col2|Col3|\n|---|---|---|\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|S1<br>S2<br>ToT1<br>ToT2<br>c)||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n\nFigure 1: Different approaches to time-over-threshold measurement: (a) ToT based on\nconstant threshold comparison, (b) ToT based on dynamic threshold, (c) ToT based on\npeak holding/dynamic threshold, and (d) ToT based on pulse trailing edge linearization.\n\n**ToT method** **Linearity** **Range** **Power consumption** **Counting rate**\nconstant threshold low low low high\ndynamic threshold medium medium medium medium\nD&H + dynamic th. high high high low\nTrailing edge shaping high medium low high\n\nTable 1: Characteristics of different ToT methods.\n\nIn this work, we present a simple signal shaping method that improves the\nToT determination and features good linearity, a large bandwidth, low power\nconsumption, and high integrability. We characterized the ToT method was\nunder controlled conditions and tested it in the DiRICH readout system of\nthe Ring Cherenkov detector of the Compressed Baryonic Matter experiment\nat FAIR [8].\n\n**2. Pulse trailing edge linearization**\n\nThe fundamental problem with single-threshold ToT converters in photosensor r",
+        "score": 0.6527844350870853,
+        "dense_score": 0.3157174587249756,
+        "bm25_score": 10.146629311615731,
+        "graph_score": 0.0,
+        "rerank_score": 0.9901043772697449,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3584,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "r of injections and the granularity of the injection steps. For the calibration procedure,\n\nthe voltage is incremented step-wise in steps of 10 DAC units starting from zero, and per step\n\n2000 injections are released. The custom DAQ software records the per-channel response of ADC,\n\nToT, and ToA per charge injection, and the mean response per step is calculated, as displayed in\n\nFig. 37. The ToT and ToA units can be translated directly into the time-over-threshold and time\nof-arrival of the charge pulse where 1 ToT unit = 50 ps, and 1 ToA unit = 25 ps. We optimized\n\nthe threshold setting for ToA and ToT by performing a scan of their response as a function of the\n\napplied thresholds.\n\nFor that, a few parameters of the pre-amplifier of the HGCROC have to be previously adjusted\n\nfor characterizing the gain of the chip and optimize the dynamic range of the readout circuit. In\n\nparticular, a few combinations of feedback resistors and capacitors values can be explored modifying\n\nthe parameters of the configuration files in the acquisition software. The chip dynamic range and\n\nMIP response were initially tested at the PS test beam facility with a comprehensive scan of these\n\npre-amplification parameters. Selected results are shown in Sec. 5.1; details can be found in [32].\n\nAfter introducing the use of the ADC phase selection through the trigger board (described\n\nin Sec. 4), the optimal working point of the detector underwent slight modifications and the pre\namplification circuit needed additional tuning. The parameters selected for the FoCal-E 2023 data\n\nacquisitions were chosen to achieve the best compromise between a broad dynamic range, and\n\noptimal MIP separation in the ToT and ADC domains. The results relative to the 2023 MIP studies\n\nare reported in Sec. 5.1, and an example is provided in Fig. 19. The total HGCROC pre-amplifier\n\nfeedback resistance is defined by the parallel of two resistors. Similarly, the total capacitance is\n\nobtained by the parallel of the two feedback capacitors. The values set for the FoCal-E setup are:\n\n - _𝑅_ _𝐹_ = 100 kΩ || 66 kΩ = 39.8 kΩ\n\n - _𝐶_ _𝑓_ = 100 fF || 400 fF = 500 fF\n\nOnce the circuit’s gain was characterized, the best ToT and ToA thresholds were found to\n\namount to, respectively, 300 and 400 units. These settings results in a gap of 100 fCbetween the\n\n– 52 –\n\n**Figure 37** . Top: Response of the ADC, ToA, and ToT as a function of the injected charge for a single channel\nof ASIC 7. The calibration is operated over the",
+        "score": 0.5407856395750334,
+        "dense_score": null,
+        "bm25_score": 14.845510859641198,
+        "graph_score": 0.0,
+        "rerank_score": 0.8238193988800049,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 63,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3585,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "tively, 300 and 400 units. These settings results in a gap of 100 fCbetween the\n\n– 52 –\n\n**Figure 37** . Top: Response of the ADC, ToA, and ToT as a function of the injected charge for a single channel\nof ASIC 7. The calibration is operated over the full high-range injection range spanning from 0–8.0 pC.\nBottom: The response for the low-range injection region going from 0–0.5 pC. The TOT response is fitted in\nthe range from 2 to 8 pC in the high-range injection mode (top), and the ADC amplitude from 0 pC to 200 fC\nin the low-range injection mode (bottom).\n\ndynamic range of the ADC and the turn-on region of the ToT. However, it significantly reduced the\n\nnoise of ToT and ToA, leading to an overall more stable detector operation.\n\nWhile the chip’s performance shows a good linearity (about ± 0.1% of the full dynamic range)\n\nin the tests performed by the development team [16], a design error in the grounding routing of the\n\nASIC produces an irreducible voltage offset, Δ _𝑈_ 0 = 30 mV, in the charge injection schematic. This\neffectively limits the minimum injection to about Δ _𝑄_ [LG] min [=][ 0] _[.]_ [5 pF][ ×][ 30 mV][ =][ 15 fC. Similarly,]\nthis contribution results in an offset of Δ _𝑄_ [HG] max [=][ 8] _[.]_ [0 pF][ ×][ 30 mV][ =][ 240 fC in the high-range]\nregime. This effect is shown in Fig. 38, where the ToT is reported as a function of the injected\n\ncharge. For our detector, we determine Δ _𝑈_ 0 from data by evaluating per channel the discrepancy\n\nin the turn-on position of the ToT between low-range and high-range injection. A simple computer\n\nprogram was written which coarsely finds the position (expressed in units of charge according to\n\nEq. A.1) where the first ToT values _>_ 0 are measured, as depicted in Fig. 38 (left). The distribution\n\n– 53 –\n\n**Figure 38** . Left: ToT response as a function of the injected charge for high-range and low-range injection\nregimes. Right: the difference, Δ _𝑄_ [HG][−][LG], of the ToT turn-on position between high-range and low-range\ninj\ninjection, fitted with a Gaussian curve in order to extract the mean.\n\nof evaluated offsets between the two ranges is shown in Fig. 38 (right). We evaluate an offset of\nΔ _𝑄_ [HG][−][LG] = 150 fC from a Gaussian fit to the main peak.\ninj\n\nΔ _𝑄_ [HG] inj [−][LG] 150 fC\nΔ _𝑈_ 0 = = (A.2)\n_𝐶_ inj _,_ high − _𝐶_ inj _,_ low 8 _._ 0 pF − 0 _._ 5 pF [=][ 20 mV] _[,]_\n\nwhich is in reasonable agreement with the expectation of 30 mV. The channel-wise calibration\nparameters are obtained from",
+        "score": 0.315606606520132,
+        "dense_score": 0.2368445098400116,
+        "bm25_score": 17.37970021842365,
+        "graph_score": 0.0,
+        "rerank_score": 0.4702971577644348,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 64,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5522,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico.md",
+        "title": "2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico",
+        "text": "t the back side to _z_ Si _>_ 286 µm.\n\nFigure 4b presents the comparison between the simulated and the measured ToT. Both\nToT profiles show the same features and the agreement in absolute values is best at the\nmiddle and back side of the DUT. A disagreement of about 1 ns is found at the top and the\nreason for the disagreement could be multifold, as discussed in section 4.1. The back side in\nthe measured ToT is again affected by the reflection, which leads in this case to a mirroring\nof the focal point, i.e. the excess charge distribution, and thus leads to a peak at the back\nside [ 16 ]. However, the features are present in both ToT profiles and the before discussed\nshift of the median at the top side is experimentally found as well. Applying the linear\nfitting procedure in order to compensate for the shifting median to the experimental ToT\nat the top side yields a ToT of 13.6 ns, compared to the 13 ns extracted from the measured\ncurrent transients. The fitting procedure can not be applied to the experimental back side\nToT, because it is dominated by reflection. Anyhow the influence of the shifting median is\nexpected to be smaller when the focal point is reflected back into the active volume, as such\nreflection folds back part of the excess charge carrier volume, which reduces the influence\nof a shifting median.\n\n_4.4. Weighted prompt current_\n\n**(a)** **(b)**\n\n**Figure 5.** Simulated (a) and measured (b) weighted prompt current for different prompt current times\nalong the device depth. The valleys at the device boundaries are an effect of a shifting median of the\nexcess charge (see text in section 4.3).\n\n7 of 12\n\nThe weighted prompt current (WPC) method was introduced in order to correct for\na position dependent charge carrier generation [ 17 ]. Similar to the prompt current, it is\nan approximation to the drift velocity and weighting is obtained by dividing the prompt\ncurrent by the CC. Figure 5 shows the simulated (a) and measured (b) WPC for different\nprompt current times _t_ pc along the DUT depth. The absolute values of the simulated and\nmeasured WPC profiles are in good agreement, as the absolute values of the prompt current\nand CC are in good agreement. Absolute values for the WPC profiles are not presented\nhere, because all WPC profiles are normalised to the value at _z_ _Si_ = 150 µm, to ease the\ncomparability between the different _t_ pc values. The simulated and measured WPC profiles\nshow the same features. Valleys are found at the top and back",
+        "score": 0.30625571171111154,
+        "dense_score": 0.2480238974094391,
+        "bm25_score": 10.64572682599997,
+        "graph_score": 0.0,
+        "rerank_score": 0.4582277834415436,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6882,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+        "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+        "text": "99%.\n\nThe oscilloscope samplings were interpolated linearly to measure the time of arrival (ToA) of\n\nthe signals. In the case of the two MCPs, the ToA was taken as the time at which the interpolated\n\nsignal crossed 50% of the maximum value of the amplitude, thus correcting most of the time walk.\n\nIn the case of the DUT, the ToA was taken as the time at which the interpolated signal crossed a\n\nfixed voltage threshold. The threshold value V ToA was set at the integer value in mV closest to\n\nseven times the voltage noise _𝜎_ _𝑉_ measured in that dataset. As reported in Table 1, the threshold\n\nranged from 3 to 9 mV, depending on the front-end electronics working point. Finally, for each\n\nDUT signal, the ToA value was determined by linearly interpolating between the two oscilloscope\n\nsamplings with amplitudes just below and above the threshold.\n\nThe dataset with the largest statistics was used to compute the time resolution of the MCP0 using\n\nthe method adopted in [5]: the time resolution for each of the three ToA differences, constructed\n\nfrom pairs among DUT, MCP0, and MCP1, was measured by fitting the distribution with a Gaussian\n\nfunctional form, and the resulting system of three equations with three unknowns was solved. This\nmethod yielded a time resolution for MCP0 of _𝜎_ _𝑡,_ MCP0 = (5 _._ 4 ± 0 _._ 4) ps.\n\n– 10 –\n\nOnce this value was established, the time resolution of the DUT at each operating point was\n\ndetermined by performing a Gaussian fit on the ToA DUT - ToA MCP0 distribution and then subtracting\nthe measured _𝜎_ _𝑡,_ MCP0 in quadrature.\n\nThe two panels on the left of Figure 10 show the ToA DUT - ToA MCP0 distributions before the\ntime-walk correction of the DUT signals for the datasets acquired at HV = 180 V with _𝑃_ _density_ = 0.3\nW/cm [2] (top) and 2.6 W/cm [2] (bottom). After subtraction of _𝜎_ _𝑡,_ MCP0, the time resolution results to\nbe (33.2 ± 0.7) ps and (24.3 ± 0.2) ps, respectively. Table 2 reports the time resolution before time\nwalk correction for all datasets with efficiency larger than 99%. As expected, the time resolution is\n\nmeasured to improve with increasing preamplifier power density and increasing sensor bias voltage.\n\n|MONOLITH prototype2 (2024) with gain layer<br>CERN SPS Testbeam 120 GeV/c pions Entries<br>300 P T d=en s-i5ty° = C 0.3 W/cm2, HV = 180 V Entries 3269<br>FWHM/2.355 [ps]27.2 ± 3.0<br>250 χ2/NDF 45/17<br>200 Threshold at 7σ V σ TaGailuss s[ %[p ]s] 34.2 ± 4 0 .4.7 1<br>No Time Walk<br>Correction<br>150<br>100<br",
+        "score": 0.27781423346292455,
+        "dense_score": 0.25683164596557617,
+        "bm25_score": 15.13420101452071,
+        "graph_score": 0.0,
+        "rerank_score": 0.41184598207473755,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 693,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+        "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+        "text": "_ _𝐶𝐹𝐷_ ) of its total amplitude. For the analysis of\n\nthe DESY beam test data, the TOA value at _𝑓_ _𝐶𝐹𝐷_ = 20% was used for the SiPM whereas for the\n\nDUTs, the TOA value was chosen to be _𝑓_ _𝐶𝐹𝐷_ = 50%.\n\nThe last step was to produce a merged file containing the oscilloscope and telescope data\n\ntogether. In this way, for each event and for each DUT, both the information extracted from the\n\noscilloscope waveforms and the position of the hit of the beam particle in the sensor plane are\n\navailable for a common analysis.\n\n**5** **Sensors performance results**\n\nThe studies presented in this paper aim to evaluate the performance of carbon-enriched LGAD\nsensors at two irradiation levels, 1.5 and 2.5×10 [15] n _𝑒𝑞_ /cm [2], with particle beams using the reconstructed position of the tracks in the sensor planes. The following LGAD properties have been\n\ninvestigated: the collected charge, the time resolution and the hit reconstruction efficiency.\n\n**5.1** **Data selection**\n\nIn all subsequent analyses, background events were removed with a timing cut using a 2 ns window\n\nfrom the maximum point of the distribution of the difference between the TOA of the DUT and that\n\nof the SiPM. Additionally, the signal amplitude in the SiPM was required to be three times higher\n\nthan the noise level.\n\nThe value of the discriminator of the future ALTIROC chip corresponds to a collected charge\n\nof 2 fC, as explained in section 1. The efficiency and the time resolution were computed using this\n\nthreshold in the analysis.\n\nTo measure the global efficiency and the collected charge of the sensors, another condition was\n\nadded: only the fiducial region of 0.5x0.5 mm2 in the center of the DUTs was used.\n\n**5.2** **Collected charge**\n\nAfter the background removal, for each DUT, the distribution of the charge (defined in section 4.3)\n\nwas fitted with a Landau-Gaussian convoluted function. The collected charge reported for each\n\nsensor was defined as the most probable value (MPV) from this fit. Figure 3 shows an example\n\ndistribution for sensor USTC-1.5.\n\nFigures 4 and 5 show the collected charge as a function of bias voltage for different single-pad\nsensors irradiated at fluences of 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] and 2 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2], respectively. Bias\nvoltages were kept lower than the single event burnout (SEB) voltage at which the sensor dies due to\n\na large amount of energy deposited by a highly energetic particle in the active zone [28]. All sensors\n\ncharacteristics",
+        "score": -0.17963783158497376,
+        "dense_score": null,
+        "bm25_score": 12.796794002997768,
+        "graph_score": 0.0,
+        "rerank_score": -0.2833589017391205,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3550,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "ibration of the ADC, and the high-range\n\ncharge injection for the calibration of the ToT. The calibration measurement is performed by step\nwise increment of the voltage at the capacitor, using steps of 5 mV, and releasing 2000 charge\n\ninjections at each voltage step. The software records the response of ADC, ToT, and ToA per\n\ninjection.\n\nFor low-range injections, the dependence of the ADC on the injection charge is well described\n\nby a linear function. We determine the proportionality factor of the ADC with respect to the signal\n\ncharge from a linear fit whereas the channel-wise pedestal is obtained from dedicated pedestal runs.\n\nFor high-range injections above ≈ 2 pC, we observe a linear response of the ToT, and use a linear\n\nfit function to calibrate the ToT. For lower charge values (in particular in the turn-on region), the\n\nresponse of the ToT does not show the same linear behavior as for the higher charges, and we derive\n\na calibration in this range by linearly interpolating between the ToT response at 0 and 2 pC (where\n\nthe former one is always zero). The successful channel-by-channel calibrations were then used to\n\nconvert the response of the HGCROC channels to actual charge deposit in the individual sensor\n\npads.\n\nThe ToT and ToA units can be translated directly into the time-over-threshold and time-of\narrival of the charge pulse where 1 ToT unit = 50 ps, and 1 ToA unit = 25 ps. For the chosen\n\npreamplifier settings, 1 ADC unit is on average equivalent to 0.28 fC. Further details regarding the\n\ncalibration procedure can be found in Sec. A.\n\nIn the Geant4 simulation model, the energy deposition per pad (i.e. per channel) is recorded.\n\nThe energy signal is converted to charge by using the average ionization energy per electron-hole\npair in silicon of 3.65 eV/e-h-pair. A charge collection efficiency of 100 % is assumed, and noise\n\n(e.g. from the sensor or the electronics) is not implemented.\n\n**5.6** **Electron selection for pad-layer analysis**\n\nFor the electron analysis using the FoCal-E pad layers, both the November, 2022 and the May, 2023\n\ndata required a proper event selection. While for November data, events which were recorded with\n\nthe correct timing with respect to the HGCROC clocks had to be enhanced, the event selection for\n\nthe May, 2023 data needed to focus on a clean electron sample without hadronic contamination.\n\nIn both cases, the datasets were pre-processed based on the HGCROC trigger sum word, which\n\nis measured per bunch crossing (",
+        "score": -0.6124597004202545,
+        "dense_score": null,
+        "bm25_score": 22.15153349670017,
+        "graph_score": 0.0,
+        "rerank_score": -0.9510729312896729,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7869,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors.md",
+        "title": "2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors",
+        "text": "rd ToT channels is around 1.1 V (29 250 UDAC). The baseline for the modified\n31 [st] channel drops to 0.38 V (9 950 UDAC). The 24 [th] channel is a broken and does not\nparticipate in the test.\n\nshows a comparison of the ToT spectrum of a common DIRICH channel and\nthe modified one.\nThe standard DIRICH channel cannot distinguish between the different\nlevels of photoelectrons in the SiPM signal due to the exponential trailing\nedge. However, the modified channel can distinguish among the levels. The\nToT equivalent to one photoelectron is _∼_ 4 ns.\n\n**Conclusions**\n\nWe present a new shaping circuit that improves the linearity, bandwidth,\nand dynamic range of single-threshold ToT systems. Composed of three passive elements – a fast diode, a capacitor, and a resistor – the circuit provides\nlow power consumption and high integrability, favoring its implementation\nin ASIC technology.\nWe performed Spice simulations of the shaping circuit using two diodes\n(1N5817 and SMS7621) and a BFU760 transistor connected in diode mode.\nWe observed that junction capacitance ( _C_ _JO_ ) and parasitic resistance ( _R_ _S_ )\n\n18\n\n3.5\n\n× 10 [7]\n\n−200 −150 −100 −50 0 50 100 150 200\n\nDACU\n\nFigure 20: Baseline distribution of a normal (circles) and modified (stars) channel. In\nboth cases, the baseline standard deviation is around 40 UDAC.\n\nplay a crucial role in shaping performance. The characteristic amplitude vs.\nToT of the 1N5817 ( _C_ _JO_ = 190 pF and _R_ = 0 _._ 05 Ω) showed a linear trend.\nIn contrast, the characteristics of the SMS7621 ( _C_ _JO_ = 0 _._ 1 pF and _R_ = 12 Ω)\nwas nonlinear when using a shaping capacitance of 1 nF and a resistive load\nof 50 Ω. The shaper linearity of the SMS7621 and BFU760 improved after\nbandwidth broadening by decreasing the shaping capacitance and increasing\nthe resistive load to 47 pF and 1 kΩ.\nImplementing the circuit revealed that increasing the shaping capacitance\n_C_ worsened the ToT resolution. We evaluated three capacitance values:\n330 pF, 100 pF, and 47 pF, achieving ToT resolutions of 10%, 4.1%, and 4%\nrespectively. The circuit was tested under real conditions by feeding it with\nsignals from an AFBR-S4N66P024M SiPM. This showed a linear relationship\nbetween the photoelectron level and the ToT of 5 ns/pe.\nThe shaping circuit was also tested in a ToT channel of the DIRICH electronics readout of the CBM RICH detector. We compared the baseline and\nToT spectra of standard and modified DIRICH channels and found that the\nbaseline of the modif",
+        "score": -0.7327496402793461,
+        "dense_score": 0.26155465841293335,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.134785771369934,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 8336,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "the ballistic deficit, as explained in\nSection 5.1. In contrast to the efficiency pattern, the ToA\nasymmetry remains visible even at the lowest thresholds\nand high sensor bias voltages.\nThis non-uniform in-pixel response results in nonGaussian time residuals. An example is shown in Figure 36\nfor a threshold of 224 electrons and a sensor bias voltage\nof _−_ 3 _._ 6 V, where a long left-side tail, more pronounced\nthan what would be expected from time walk, is visible.\nThe truncated RMS (σ t trigger _−_ t hit ), computed within the\nhistogram range shown, is (28 _._ 4 _±_ 0 _._ 2) ns. Since the time\nresolution of the reference detector is negligible compared\nto that of the DUT resolution, the measured σ t trigger _−_ t hit\nis attributed directly to the DUT time resolution.\nFigure 37 shows the σ t trigger _−_ t hit as a function of the\nin-pixel position. Regions with slower charge collection\nexhibit worse time resolution, whereas a faster and more\nuniform charge collection is observed near the pixel center.\nThe opening in the n-well hosting the analog front-end\n(see Figure 2) affects the time resolution locally, and an\nimprovement in the time resolution is visible in that region.\nFigure 38 shows the time resolution of H2M as a function\nof the threshold, for two different total chip thicknesses\nand sensor bias voltages. While no significant difference\nis observed between samples, increasing the sensor bias\nvoltages improves the time resolution by enhancing the\ncharge collection speed.\n\n**6. Simulation**\n\nTo gain a better understanding of the sensor and its\nbehaviour when combined with the circuit of the H2M,\nsimulations were performed. A simulation flow combining\ntechnology computer-aided design (TCAD), Monte Carlo\nand circuit simulations is employed.\n\nFigure 36: Time residuals distribution. The sensor is biased at\n_−_ 3 _._ 6 V, the threshold is 224 electrons, and a low _ikrum_ is set.\n\nFigure 37: Time residuals RMS map projected onto four pixels. The\nsensor is biased at _−_ 3 _._ 6 V, the threshold is 224 electrons and a low\n_ikrum_ is set. The pixel cell boundary is marked with a dashed red\nline.\n\n|ure 3|7|\n|---|---|\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n\n|Col1|H2M-10 (21 µm), -1.2 V H2M-10 (21 µm), -3.6 V<br>H2M-3 (50 µm), -1.2 V H2M-3 (50 µm), -3.6 V|Col3|\n|---|---|---|\n||||\n||||\n||||\n||||\n\nFigure 38: Time resolution as a function of the threshold for two\ndifferent total chip thicknesses and sensor bias voltages.\n\n16\n\nThis simulation procedure focuses on",
+        "score": -2.0790697526931763,
+        "dense_score": 0.27390432357788086,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.206261157989502,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 28,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.066160446964204,
+    "generation_latency_s": 5.201436579227448e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 6.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.066160446964204,
+    "generation_latency_s": 5.201436579227448e-07
+  }
+}

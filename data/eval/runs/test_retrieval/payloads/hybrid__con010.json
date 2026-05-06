@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con010",
+    "query_type": "conceptual",
+    "query": "Why should retrieval and generation be evaluated separately?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "should",
+      "retrieval",
+      "and"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why should retrieval and generation be evaluated separately?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7342,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2931804__2506.06684__A_Concise_Primer_on_Solid-State_Quantum_Emitters.md",
+        "title": "2025__recid_2931804__2506.06684__A_Concise_Primer_on_Solid-State_Quantum_Emitters",
+        "text": "the ZPL _linewidth_ reveals information about\nother noise processes. Ideally, the ZPL portion should\napproach unity, and the linewidth should be narrow.\nHowever, there is a fundamental limit to how narrow\nthe linewidth can be: in the absence of decoherence,\nthe minimal linewidth is the inverse of the radiative\nlifetime, known as the Fourier limit or transform limit.\nThe ratio between the measured linewidth and this\nlimit serves as a key parameter for assessing the impact of decoherence on the emitter [12, 13].\n\n- **Quantum efficiency:** Quantum efficiency (intrinsic)\nrefers to the ratio of the radiative rate to the total decay rate (comprising both radiative and non-radiative\nrates). For an ideal quantum emitter, the photon creation process (i.e., excited-state preparation and radiative relaxation) should be _deterministic_, requiring a\nquantum efficiency of unity.\n\n- **Single-photon purity:** This metric is quantified by\nthe second-order correlation function at zero time delay, _g_ [(2)] (0), measured in a Hanbury Brown and Twiss\n(HBT) experiment[19](see Fig. 2a). The purity is defined as 1 - _g_ [(2)] (0), and is particularly important for\nsingle-photon sources. Ideally, a single-photon emitter\nshould produce no more than one photon at a time,\ncorresponding to _g_ [(2)] (0) = 0.\n\n- **Indistinguishability:** Indistinguishability reflects\nthe coherence of the generated photons and determines\nwhether they are quantum-mechanically identical in\n\n2\n\nproperties such as frequency, polarisation, and emission time. It is evaluated via Hong-Ou-Mandel (HOM)\ninterference[20]: when two identical photons interfere\nat a beamsplitter, they bunch and exit the same output\nport, whereas completely distinct photons have a 50%\nchance of exiting opposite outputs. Ideally, indistinguishable photons exhibit unit interference contrast[21]\n(see Fig. 2b).\n\n- **Entanglement fidelity:** This is a key metric for entangled photon sources, quantifying how closely the\ngenerated state matches the ideal entangled state.\nHigh fidelity indicates minimal decoherence and noise,\nwhile lower fidelity points to imperfections in the entangled state. A common approach for characterising\nentanglement fidelity is quantum state tomography[22],\nas illustrated in Fig. 2c for polarisation entanglement.\nHowever, quantum state tomography scales poorly\nwith the qubit number. For larger systems, fidelity\nwitnesses offer a practical alternative: GHZ states\nare assessed via parity measurements in the computati",
+        "score": -5.085393829345703,
+        "dense_score": null,
+        "bm25_score": 15.944623729520927,
+        "graph_score": 0.0,
+        "rerank_score": -7.8313751220703125,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 143,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit.md",
+        "title": "2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit",
+        "text": "differing choices of down-sampling parameters.\nDown-sampling is specified using a sampling threshold\n_E_ sampling ( `/g4cmp/samplingEnergy` ), or via fixed fractions\nfor charges ( `/g4cmp/produceCharges` ) and prompt phonons\n( `/g4cmp/producePhonons` ). The former is used with each energy deposit to compute a sampling fraction _E_ sampling / _E_ deposit\nto use if _E_ deposit - _E_ sampling . In either case, a weight _W_ =\n1/fraction is assigned to each created track (and its subsequent\ninteractions).\nFor NTL phonons, a “soft maximum” number per\nevent _N_ NTL [max] [can be specified with the macro command]\n`/g4cmp/maxLukePhonons` . The number of e [−] /h [+] pairs and the\ndetector bias are used to estimate how many NTL phonons may\nbe generated, assuming an average of 2 meV per phonon. This\nestimate is combined with _N_ NTL [max] [to set a fraction and weight]\nfor NTL emission. A default value of _N_ NTL [max] [=][ 10000 is set in]\nG4CMP.\n\nThe computational resources needed for G4CMP physics\nsimulations are nontrivial. As presented in Fig. 8, processing\ntimes are on the order of an hour per event, and simulation jobs\noften entail processing of tens of thousands to many millions\nof events. Thus, users should consider investigation of downsampling and validation of simulation results as part of the application development process.\n\n**4. Applications of G4CMP**\n\nThere are several reports of the application of G4CMP toward understanding charge and phonon transport in chip-based,\n\n11\n\nsuperconducting devices. These reports extend the application of G4CMP beyond the original intent of modeling the response of solid-state cryogenic dark-matter detectors [63] and\nthe charge-transport results in Refs. [49, 57] (see Sec. 2.3.1).\nAn initial example explored the utility of modeling phonon\ntransport in a silicon chip instrumented with kinetic-inductance\ndetectors (KIDs) [16]. This study evaluated interfacial phononenergy-absorption efficiencies in comparison to response data\ncollected from two KID-containing devices. A second modeling application evaluated the use of normal-metal pads or chiptrenching to mitigate transport of phonons (produced by cosmic rays) into TESs and KIDs [65]. This work focused on\nthe planned LiteBIRD satellite mission that would be located\nat Earth’s L2 Lagrange point to study B-mode polarization of\nthe cosmic microwave background radiation. More recently,\nG4CMP was employed to understand charge diffusion in devices hosting charge-sensitive trans",
+        "score": -5.60828416902725,
+        "dense_score": null,
+        "bm25_score": 15.271987383860619,
+        "graph_score": 0.0,
+        "rerank_score": -8.635505676269531,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 22,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1358,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2684575__2308.01148__Beam_test_simulation_and_performance_evaluation_of_PbF2_and_PWO-UF_crystals_with_SiPM_read.md",
+        "title": "2023__recid_2684575__2308.01148__Beam_test_simulation_and_performance_evaluation_of_PbF2_and_PWO-UF_crystals_with_SiPM_read",
+        "text": "gains and optical couplings. For the PbF 2 runs, events with signal of at least 50 pC on both readout channels\n(80 pC for PWO-UF) were selected, and fiducial cuts were made on the extrapolated position of the beam\nparticle at the crystal face.\n\nThe pulse timing was evaluated using a waveform template fit procedure. SiPM pulse templates are sets\nof nodes with polynomial interpolation and fixed proportions, which can be fit to each waveform using\na three-parameter optimisation. For each channel, waveform templates were generated by aligning and\naveraging signals from a large dataset of hits: for each sampled waveform, a pseudo-timing was extracted by\napplying a polynomial spline interpolation to the rising edge and peak, using a constant fraction technique\n(CF) applied to the spline function (Figure 4, left). The CF value employed for reconstruction was 12% of\nthe peak amplitude, optimised by minimising the timing resolution, as shown in Figure 5 (top left). Finally,\nusing the pseudo-timing information, all processed waveforms were aligned and, after proper normalisation,\naveraged into wave templates. A comparison between the waveform templates for PbF 2 and PWO-UF\ncrystals is shown in the right panel of Figure 4: a sharper rising edge and narrower pulse shape is observed\nfor PbF 2 due to different light generation and transport dynamics, as discussed later.\n\nTo reconstruct the pulse timing, templates were fitted to the rising edge using a three-parameter\nminimisation (scale, baseline and time offset) over the range [ _)_ peak − 20 ns; _)_ peak − 2 ns]. An example of the\n4\napplication of the template fit is shown in Figure, left. The fit range bounds were optimised by minimising\nthe timing resolution, as before. It should be noted that this reconstruction procedure does not introduce\nany significant time-amplitude slewing, so that no correction was necessary in data. The fitting procedure\nresulted in the normalised _j_ [2] distribution for the fitted waveforms shown in Figure 5, bottom right. Pulses\nused for the analysis were required to have _j_ [2] _<_ 30. It was verified that the cut on _j_ [2] and choice of fit\nrange did not introduce any significant bias with respect to particle hit position, as seen in Figure 5, bottom\n\n**Frontiers** **5**\n\n_**D. Paesani et al.**_\n\n**Figure 4.** Left panel: Example of signal fitted using a template generated from corresponding dataset;\nthe marker shows the constant fraction time. Right panel: Comparison between the pul",
+        "score": -5.675458132011303,
+        "dense_score": null,
+        "bm25_score": 15.949007975754743,
+        "graph_score": 0.0,
+        "rerank_score": -8.739277839660645,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3410,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720277__2311.04858__Scalable_Fault-Tolerant_Quantum_Technologies_with_Silicon_Color_Centers.md",
+        "title": "2024__recid_2720277__2311.04858__Scalable_Fault-Tolerant_Quantum_Technologies_with_Silicon_Color_Centers",
+        "text": "ement generation, and the architecture proposed here\ncould be applied to each, practical details which impact\nthe rate and quality of a qubit’s nonlocal entanglement\ngeneration capabilities can have truly dramatic consequences on the final system performance, and any given\nphysical qubit type should be selected for further development with this long-term requirement in mind.\n\n**III.** **BUILDING BLOCKS: SILICON, TELECOM,**\n**MEMORY, ENTANGLEMENT**\n\n**A.** **Silicon**\n\nSilicon is a pinnacle material for both quantum and\nclassical applications. It is the industrial standard for\nhigh-performance integrated electronics, as well as for\nlow-loss, high-density, photonic integrated circuits both\nactive and passive. Spin qubits within silicon have also\nproven to be exceptional quantum memories—they have\nset performance records for fidelity [78] and lifetimes [79].\nThe industrial dominance and extensive development of\nsilicon offers such incomparable competitive advantages\nthat, historically, if a solution is found using silicon, the\nsilicon solution usually wins.\n\n**B.** **Telecom photons**\n\nTelecommunications-band (telecom) photonic flying\nqubits will be the backbone of any highly connected\nglobal quantum network and the backbone of modular quantum computers. Telecom photons can be flexibly routed with arbitrary connectivity to connect matter qubits both locally and remotely, with low loss in\ncryogenic-compatible waveguides and at room temperature using modern telecommunications infrastructure.\nAlthough a number of research efforts are now advancing the transduction of other qubits into telecom photons [80–84], the overhead of transduction processes can\nbe avoided entirely by working with quantum systems\nthat interact with telecom photons directly—such as the\nsilicon T centre. In this Perspective, the claim is made\nthat telecom photons are essential for high-connectivity\nquantum technologies at scale but are likely not practically sufficient on their own without a quantum memory.\n\n**C.** **Quantum memory**\n\nThe central challenge with photonic qubits of all wavelengths, across quantum computing and quantum networking, is that they suffer from unavoidable loss. Each\n\n5\n\nphotonic process over optical links succeeds only a fraction of the time, and this is true even for telecom photons\nwhich have the lowest loss photonic components available by far (e.g. switches) [85]. In large-scale, highconnectivity settings, each switch layer introduces yet\nfurther loss. Quantum m",
+        "score": -5.737391143374973,
+        "dense_score": null,
+        "bm25_score": 15.277164415965093,
+        "graph_score": 0.0,
+        "rerank_score": -8.834234237670898,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4927,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "bservations can allow one to access sources in a wider solid\n\nangle as well as to extend the energy range of MAGIC towards\nhigher energies, from multiple tens of TeV to above 100 TeV.\nTo further motivate the necessity of larger zenith distance observations we compute the number of observable point sources\nfrom the Third Catalog of Hard _Fermi_ -LAT Sources (3FHL)\n\n[36] from the MAGIC telescopes’ site. This evaluation gives an\neven better estimate than just calculating the observable fraction of the celestial sphere because it takes into account the distribution of high-energy gamma-ray sources, which leads to a\nsteeper rise in mid-zenith range. For the sake of simplicity, we\nignore the potential existence of a spectral cut-off. By increasing the maximum zenith distance for observations from 50 [◦] to\n85 [◦], the fraction of observable 3FHL sources more than dou\n\nFigure 8: Fraction of the detectable Cherenkov photons in the range of 250 nm\nto 900 nm with a given photosensor after atmospheric absorption, mirror reflectivity, and camera entrance window. Effects like the pixel fill factor or possible\ntotal reflection at the sensor’s surface for photons with low incident angles are\nnot included here.\n\nbles from 21% to 46%. Similar numbers can be obtained us\ning the more recent fourth _Fermi_ Large Area Telescope (LAT)\ncatalog of γ-ray sources (4FGL-DR3) [37]. Here we ignored\npossibly curved spectra of the sources, the reason as to why\nmany sources are not detectable or only detectable below a\ngiven zenith distance in the IACT energy range. Further assumptions on the flux levels and spectral shapes, necessary for\naccurate calculations, are beyond the scope of this paper. The\nnumber of observable 3FHL sources is shown in figure 9 for all\npossible zenith distances at which MAGIC can observe while\ntaking into account the surrounding landscape.\nAfter taking into account the pixel fill factors in the imaging camera, the spectral responses can be integrated and allow\na direct comparison between different sensors. For low zenith\ndistance observations this yields that with the first generation\npixels based on the 10-year-old Excelitas SiPMs one will detect about 25 % less Cherenkov photons than with the MAGIC\nPMTs. On the contrary, with the Hamamatsu and SensL SiPMs,\nthe telescope will detect about 70 % and 60 % more Cherenkov\nphotons than with the MAGIC PMTs used.\nThe emission spectrum of LoNS increases towards longer\nwavelengths and shows strong emission lines. For ex",
+        "score": -5.937561044813712,
+        "dense_score": null,
+        "bm25_score": 14.855318033644211,
+        "graph_score": 0.0,
+        "rerank_score": -9.141525268554688,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3359,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2719913__2311.03978__Experimental_demonstration_of_continuous-variable_quantum_key_distribution_with_a_silicon_.md",
+        "title": "2024__recid_2719913__2311.03978__Experimental_demonstration_of_continuous-variable_quantum_key_distribution_with_a_silicon_",
+        "text": ". In the working frequency\nrange, the clearance has therefore been improved.\n\n**III.** **PERFORMANCE OF THE CV-QKD**\n**RECEIVER PLATFORM**\n\nThe performance of the receiver platform was first\nevaluated as a standalone device checking that it is linear and shot noise limited. We also measured the clearance and efficiency, which are necessary for calculating\nthe secret key rate (SKR) of the CV-QKD exchange.\nFinally, we measured the frequency bandwidth of the\nsystem, which is required to bound the symbol rate and\nthe parameters of the Digital Signal Processing (DSP),\nwhich is, as we will see later, crucial for the optimisation\nof the system performance.\nA laser at a wavelength of 1550 nm was used to characterize the receiver. The injected power to the chip\nwas manually controlled with an external VOA and a\n1-to-2 50/50 beam splitter, with one output to the chip\nand the other to an optical power meter. A two channel\nvoltage power was used to reverse bias and to monitor\nthe photocurrent of each photodiode. The reverse bias\nvoltage was set to 0 _._ 5 V. A second low noise power supply source was used to power the amplification circuit\nthrough adapted on-board filters with +5 V and _−_ 5 V.\nThe two on-chip VOAs were driven with individual variable voltages that can be tuned between 0 V and +5 V.\nThe output of the receiver wass connected to a spectrum\nanalyser (Rohde&Schwarz FPL1003).\nWe fist determined the receiver’s efficiency by measuring its responsivity as follows:\n\n4\n\nthis is why we will present part of these results as Power\nSpectral Densities (PSDs), and these equations are then\ntrue when we integrate over the frequency spectrum.\nFor the CV-QKD protocol, the considered spectrum is\nthe bandwidth where the signal lies.\n\nTo estimate the three characteristics, the on-chip\nVOAs were tuned to reach the best common mode suppression (and prevent saturation of the receiver) and\nthe noise power density was acquired for different input\npowers (including no input power for electronic noise).\nThose noise densities are plotted in Fig. 5.\nAs expected, the noise power increases with respect\nto the input optical power and should increase linearly.\nThe linearity can be checked by plotting the integration\nof this noise as a function of the input power, as shown\nin Fig. 6. Here we see that the noise varies linearly\nuntil we reach an input power of about 8 mW. Knowing\nthe global efficiency, we can estimate that the saturation\nhappens at approximately 1 _._ 1 mW of received powe",
+        "score": -5.994332196977403,
+        "dense_score": null,
+        "bm25_score": 18.119213144005354,
+        "graph_score": 0.0,
+        "rerank_score": -9.230596542358398,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 3170,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2709160__2310.05864__Helium_identification_with_LHCb.md",
+        "title": "2024__recid_2709160__2310.05864__Helium_identification_with_LHCb",
+        "text": "downstream of the magnet have two\ndifferent strip lengths, 108 mm and 216 mm, with 198 µm pitch, and two different sensor\nthicknesses, 320 µm and 400 µm . The thicker sensors produce larger signals. To account\nfor different sensor geometries, VELO _R_ and VELO _ϕ_ sensors are considered separately, as\nare the thin and thick IT sensors; no significant improvement is found when considering\nTT sensors of different strip length.\nFigure 3 shows the distribution of the cluster amplitude in VELO _R_ sensors, separately\nfor each cluster size, as obtained from simulated helium tracks, and _Z_ = 1 particles from\ndata. It can be seen that helium is characterised by larger CLS, higher average ADC\nvalues, and more frequent saturation. The sharp features at ADC = 127, 254, 381 and 508\ncorrespond to saturation of 1, 2, 3 and 4 strips, respectively.\n\n0.1\n\n10 [4]\n\n10 [7]\n\n10 [10]\n\n0 100 200 300 400 500\n\nVELO R ADC\n\n0 100 200 300 400 500\n\nVELO R ADC\n\n0.1\n\n10 [4]\n\n10 [7]\n\n10 [10]\n\nFigure 3: Distributions of the cluster amplitudes, for different cluster sizes, in the VELO _R_\nsensors for (left) simulated helium signal and (right) calibration data.\n\n**4.1** **Likelihood estimators from silicon detectors**\n\nEach cluster is a separate independent measurement of the energy deposit. This information is combined into a likelihood estimator for each type of sensor. To construct this\nlikelihood estimator, two-dimensional probability density distributions (PDD) are derived\nfrom the ADC distributions, as exemplified in Fig. 3 for VELO _R_ sensors. One dimension\nof the PDD is the cluster size and the other is the ADC. To derive the likelihoods of the\nhelium (He) and background (bkg) particle hypotheses, the PDDs are used as look-up\n\n4\n\ntables:\n\n1\n\n_n_\n\n�\n\n_n_\n_,_ (1)\n\n_L_ _[X]_ =\n\n_n_\n�\n� _i_ =1\n\n� PDD _[X]_ _i_ [(CLS] _[,]_ [ ADC)]\n\n_i_ =1\n\nwhere _X ∈{_ He _,_ bkg _}_, and _n_ is the number of clusters on the track. Helium and\nbackground tracks are separated using the log-likelihood ratio\n\nΛ _[L]_ [He]\nLD = log _L_ [bkg] [= log] _[ L]_ [He] _[ −]_ [log] _[ L]_ [bkg] _[.]_ (2)\n\nThe likelihoods are evaluated for VELO _R_, VELO _ϕ_, TT, IT thick and IT thin sensors.\nThe likelihood for the former is shown as an example in Fig. 4 on the left-hand side, where\nthe [3] He simulation is compared to the calibration data described in Sect. 3. Significant\nseparation power between helium and _Z_ = 1 particles is observed in the likelihood\nestimators from all subdetectors. However, none of them woul",
+        "score": -6.074669756106476,
+        "dense_score": null,
+        "bm25_score": 16.387374811811643,
+        "graph_score": 0.0,
+        "rerank_score": -9.353682518005371,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 7009,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2874836__2502.01305__Generation_of_photon_pairs_through_spontaneous_four-wave_mixing_in_subwavelength_nonlinear.md",
+        "title": "2025__recid_2874836__2502.01305__Generation_of_photon_pairs_through_spontaneous_four-wave_mixing_in_subwavelength_nonlinear",
+        "text": "is low.\nFor the substrate contribution, we can similarly write\n\n_𝐴_ _𝑠𝑢𝑏_ ∝ _𝜒_ _𝐹𝑆_ [(][3][)] - _𝑃_ _𝑐_ - _𝐿_ - sinc(Δ _𝑘_ _𝑠𝑢𝑏_ _𝐿_ /2) · _𝑇_ _𝑝_ _,_ (4)\n_𝑛_ _𝑝_\n\nwhere _𝜒_ _𝐹𝑆_ [(][3][)] [is the third-order susceptibility for fused silica and] _[ 𝑇]_ _[𝑝]_ [the power transmission]\ncoefficient for the pump due to the etalon effect in the film. For SFWM from the substrate alone,\nthere should be no _𝑇_ _𝑝_ factor.\nFinally, from Eqs. (3,4), knowing the third-order susceptibility for fused silica, we obtain its\nvalues for the SiN films (Fig. 4 (d)). For samples C and D, the low contribution of the films\ncompared to that of the substrate leads to large uncertainty; as a result, only the upper limit for\n_𝜒_ [(][3][)] can be found. The values agree reasonably well with the ones predicted by Miller’s rule\n(dashed bars) but they are considerably lower than for THG because all frequencies involved in\nSFWM are below the bandgap.\n\n**4.** **Conclusion**\n\nIn conclusion, we have generated photon pairs through SFWM in sub-wavelength SiN films. Out\nof the broad SFWM spectrum, we picked two pairs of wavelengths for signal and idler photons by\nfiltering them with band-pass filters. Although most of the detected photons were from the PL,\nphoton pairs were evidenced through the coincidence measurement. For all samples, values of\n_𝑔_ [(][2][)] (0) exceeded 2 and decreased with the pump power. As the nitrogen concentration increases,\nthe _𝜒_ [(][3][)] reduces and so does the rate of photon pairs generated through SFWM. Additionally,\nmodification of the nitrogen content can dramatically suppress the PL.\nBecause SFWM has a large coherence length, it inevitably occurs in the substrate as well. We\nshow that this can lead to an interference between pair generation in the film and the substrate.\nThis fact, not considered so far in the literature, can strongly affect experiments on entangled\nphoton generation via SFWM in ‘flat’ sources. In particular, destructive interference can be\nturned into constructive interference by changing the thicknesses of the film and the substrate or\nby passing to different wavelengths.\n\nWe believe this study demonstrates the possibility of using thin dielectric platforms with\nthird-order nonlinearity for generating entangled photons. The pair generation rates in our\nexperiments are very low, and future work will be focused on enhancing the generation rate by\nstructuring the material to obtain nonlinear metasurfaces and using their geometric resonances.",
+        "score": -6.093330353659553,
+        "dense_score": null,
+        "bm25_score": 15.26952004709252,
+        "graph_score": 0.0,
+        "rerank_score": -9.381630897521973,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3798,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736716__2312.08279__Energy_spectra_of_elemental_groups_of_cosmic_rays_with_the_KASCADE_experiment_data_and_mac.md",
+        "title": "2024__recid_2736716__2312.08279__Energy_spectra_of_elemental_groups_of_cosmic_rays_with_the_KASCADE_experiment_data_and_mac",
+        "text": "GSJet-II.04 model as our baseline, following the usage of the\nprevious version of this model (QGSJet-II.02) in the original KASCADE mass composition\nstudy [7]. For each mass component spectrum in each energy bin, we estimate the theoretical\nuncertainty as a range between the minimum and the maximum edges of the “basic” systematic uncertainty bands among all the hadronic models used. In any case, we should note\nthat all the considered hadronic models may be incorrect, so that true values of the mass\ncomponent’s fluxes may not be covered even by the theoretical uncertainties considered.\n\n– 4 –\n\n|Col1|p Si<br>He Fe<br>C|Col3|Col4|\n|---|---|---|---|\n|||||\n|||||\n\n**Figure 2** : Mass component spectra reconstructed with our CNN method for the “blind”\npart of the experimental data using QGSJet-II.04 hadronic interaction model and the full\nunfolding procedure. Error bars display the statistical uncertainties, while bands represent\nthe “basic” systematic uncertainties.\n\n**Mean logarithmic mass representation.** The results of two other modern experiments,\nIceTop [13] and TALE [14], on the CR mass composition were presented in the form of\n_⟨_ ln _A⟩_ depending on the energy. Therefore, to make a reasonable comparison, we compute\nthis quantity in the present paper too. We derive _⟨_ ln _A⟩_ by taking the weighted sum of the\nfluxes of the mass component spectra in each energy bin. To estimate the “basic” systematic\nuncertainty for _⟨_ ln _A⟩_, we first calculate separately each uncertainty contribution of those\ndiscussed above. The calculation is performed using the propagation of uncertainty method.\nThe contributions of the unfolding biases are calculated as the direct weighted sum of the\nbiases. For the “basic” systematic uncertainty, we combine all the contributions in quadrature, considering them to be uncorrelated. To account for the theoretical uncertainty of the\nhadronic models, we use the same method as for the spectra of individual mass components,\nnamely we calculate _⟨_ ln _A⟩_ for each hadronic interaction model separately, including the “basic” systematic uncertainties. We take the result for the QGSJet-II.04 model as a baseline\nand estimate the theoretical uncertainty as a range between the lowest and highest edges of\nthe “basic” uncertainty bands among all the hadronic models used.\n\n**4** **Analysis and results**\n\nIn this section, we show the energy spectra for elementary groups of cosmic rays obtained\nwith the “blind” part of the KASCADE experimental d",
+        "score": -6.150481671997996,
+        "dense_score": null,
+        "bm25_score": 16.57016266782833,
+        "graph_score": 0.0,
+        "rerank_score": -9.470438003540039,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5030,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec.md",
+        "title": "2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec",
+        "text": "ed to any other algorithmic operation, suggesting a potential\n\nfor further advancement with an eFPGA-based approach.\n\nThe 28nm eFPGA was used as a proof-of-concept for reconfigurable logic in pixel readout, via\n\nthe application of small ML-based methods for pileup classification using the smart pixel dataset.\n\nThe specific task was to output a probability that a particle passing through the detector/tracker has\n\na transverse momentum _𝑝_ _𝑇_ _>_ 2 GeV, indicating it is likely to be pileup and thus should not be\n\nretained for further offline analysis.\n\nAn initial attempt was to design a simple Neural Network (NN) with two or three fully\n\nconnected layers. Despite utilizing a few nodes per layer, this shallow NN required over 6,000\n\nLUTs, significantly exceeding the capacity of the 28nm eFPGA ASIC. As an alternative, a Boosted\n\nDecision Tree (BDT) model was considered, known for its fast training, robust performance, and\n\nresource efficiency. Since a BDT primarily relies on comparison operations and thresholds, which\n\ncan be directly embedded into the LUT logic and flip-flop registers, it does not require any block\n\nRAM or DSP resources, making it better suited to the resource-constrained hardware scenario.\n\nThe BDT models each track as a 1D array of 14 values, 13 of which are the _𝑦_ -profile for each\n\n– 12 –\n\npixel summed over time, and the distance of the pixel from the interaction point _𝑦_ 0, and outputs a\n\nprobability that the track has _𝑝_ _𝑇_ _<_ 2 GeV. The full smart pixel dataset is split into orthogonal train\n\nand test sets with a ratio of 80%:20%. As described in Section 4, the current 28nm eFPGA has a\n\nvery small logical capacity, with only 448 LUTs. Given these stringent resource constraints, this\n\nmodel consists of a single tree with a depth of 5 and uses gradient boosting with the scikit-learn\n\npackage [27], as shown in Figure 12.\n\nThe performance of the BDT for the pileup classification task is evaluated using the test dataset.\n\nThe background rejection, defined as the fraction of pileup tracks (with truth _𝑝_ _𝑇_ _<_ 2 GeV) that\n\nare correctly classified as background and thus rejected, is evaluated for a given signal efficiency,\n\ndefined as the fraction of tracks with truth _𝑝_ _𝑇_ _>_ 2 GeV that are correctly classified as signal.\n\nThe performance of the classifier is determined by setting a threshold for the BDT output above\n\nor below which a track is classified as signal or background, respectively. Before quantization, a\n\nbackground re",
+        "score": -6.165017490386964,
+        "dense_score": null,
+        "bm25_score": 14.810243124518141,
+        "graph_score": 0.0,
+        "rerank_score": -9.491373062133789,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.245501453988254,
+    "generation_latency_s": 5.00120222568512e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.245501453988254,
+    "generation_latency_s": 5.00120222568512e-07
+  }
+}

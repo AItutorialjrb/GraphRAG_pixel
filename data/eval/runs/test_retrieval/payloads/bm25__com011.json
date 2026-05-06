@@ -1,0 +1,275 @@
+{
+  "benchmark": {
+    "query_id": "com011",
+    "query_type": "comparative",
+    "query": "Compare citation coverage and faithfulness.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "RAG"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare citation coverage and faithfulness.",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5232,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers.md",
+        "title": "2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers",
+        "text": "tatistics term. This is\n\nattributed to the low photon collection efficiency of the NEXT-White SiPMs due to their\n\n_∼_\nlow coverage ( 1%). The expected energy resolution as a function of SiPM coverage for\ndetectors like NEXT-White can be estimated by considering how each factor in Eq. 4.3\nwill change as a function of the coverage. The total number of photons collected by the\nSiPMs will be linearly proportional to the coverage, while the Fano contribution will not\nchange. The variance in the noise due to SiPMs will also increase linearly with coverage\nas the number of SiPMs increases. Using these relations and the results from NEXTWhite SiPMs, the estimated energy resolution as a function of coverage is calculated and\n\nshown in Figure 15. The colored blue region represents the estimated error based on the\nenergy resolution with krypton, which includes the systematic error found with the partial\nvolume, and the statistical error based on the number of photons collected (propagated to\nthe given coverage). An additional uncertainty is included to account for the uncertainty\nin the 1 _/√E_ scaling of the energy resolution of [83] _[m]_ Kr events to higher energy events and\n\nis shown as the gray dashed lines. This uncertainty is based on previous NEXT-White\nenergy resolution measurements with PMTs extrapolated from [83] _[m]_ Kr energies to higher\nenergies [6] compared with the measured energy resolution at higher energies [5]. This\nscaling uncertainty is likely an overestimate, as it is based on the PMTs, which have a\n\npoorer spatial uniformity than the SiPMs.\n\nWith this extrapolation, for a high enough coverage, the contribution to the energy\nresolution from the photostatisics, as well as the SiPM noise, will be small, resulting in an\n\nexcellent energy resolution, similar to that seen using PMTs in NEXT-White. With these\n\nconditions, the corrections will also be easier, as the issues with the response at low _z_ due\n\nto low coverage would be resolved.\n\n**8** **Discussion**\n\nBy using the full SiPM waveforms of run 8088, a new method for measuring the energy in the NEXT-White detector is demonstrated. This new method allows for studying the energy resolution and response throughout the detector. An energy resolution of\n(10.9 _±_ 0.6) % (FWHM) at 41 _._ 5 keV, with a mean of (731.4 _±_ 0 _._ 3) PE and a standard deviation of (33.9 _±_ 0 _._ 3) PE is obtained using an optimized region of the detector. This was\nslightly larger than the expected resolution, given the",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 13.640338983284511,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 537,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648915__2304.01362__Low-Loss_Si-Based_Dielectrics_for_High_Frequency_Components_of_Superconducting_Detectors.md",
+        "title": "2023__recid_2648915__2304.01362__Low-Loss_Si-Based_Dielectrics_for_High_Frequency_Components_of_Superconducting_Detectors",
+        "text": ". For example, the widely used magnetron sputtering (MS) proved to be a promising approach for fabricating\nmany devices with relatively low losses and applied temperatures in the range of 200-400 _[◦]_ C. This method improves\nfilm quality by increasing atom mobility with RF bias and\nhigher temperature on the substrate during film growth [6].\n\n( _Corresponding author: Marharyta Lisovenko)_\nM. Lisovenko is with the Argonne National Laboratory, 9700 South Cass\nAvenue, Lemont, IL, 60439, USA (email: mlisovenko@anl.gov)\nP. Barry is with Cardiff University, Cardiff CF10 3AT, UK (email: barryp2@cardiff.ac.uk)\nZ. Pan, T. Cecil, R. Gualtieri, J. Li, V. Novosad, G. Wang, and V.\nYefremenko are with the Argonne National Laboratory, 9700 South Cass\nAvenue, Lemont, IL, 60439, USA (emails: zpan@anl.gov; cecil@anl.gov;\nrgualtieri@anl.gov; juliang.li@anl.gov; novosad@anl.gov; gwang@anl.gov;\nyefremenko@anl.gov)\nC. L. Chang is with the Argonne National Laboratory, Argonne, IL 60439\nUSA, and the University of Chicago, 5640 South Ellis Avenue, Chicago, IL\n60637 USA (email: clchang@kicp.uchicago.edu)\n\nHowever, high temperatures can degrade the characteristics of\nother microwave circuit components and exclude the use of\nthe lift-off technique. We need to reduce the dielectric loss\nfrom two-level systems without complicating fabrication steps\nwith high temperatures, which can cause topical problems in\nsuperconducting detector development [7], [8], [9].\nFor this purpose, we consider two enhanced approaches of\nIBAS and PECVD. Ion-beam-assisted sputtering utilizes an\nion source, which provides additional energy on the outermost\ngrowing atomic layer and allows control over film density and\nmicrostructure at room temperature. The same time the flux\nand the energy of ions can be changed independently of the\nflux of the depositing atoms, thus allowing easy control of the\nstoichiometry of compound films [10], [11].\nThe applied plasma in the CVD process enhances film\nuniformity and step coverage while improving adhesion and\ncontrol over film growth. In PECVD, the precursors do not\nrequire high temperatures for the chemical reaction, which\nallows utilizing a temperature below 200 _[◦]_ C with better uniformity, adhesion and deposition rate compared to magnetron\nsputtering [12].\nThis paper aims to outline the typical dielectrics and related properties and the factors controlling their quality. We\ncompare several silicon-based dielectric films grown under\ndifferent conditions, which result i",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 12.869533641034621,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5869,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2748892__2401.09920__On_the_determination_of_the_interaction_time_of_GeV_neutrinos_in_large_argon_gas_TPCs.md",
+        "title": "2025__recid_2748892__2401.09920__On_the_determination_of_the_interaction_time_of_GeV_neutrinos_in_large_argon_gas_TPCs",
+        "text": "5 MeV protons, which provides a reasonable proxy for the\nshortest track that can be reconstructed at the anode (tracking) plane under the\ndiscussed gas conditions (see, e.g., [ 52 ]). We conclude that, upon lining the TPC\nfield cage with PTFE/Teflon: (i) neutral-current neutrino interactions with visible\nenergy in the range of 5–200 MeV, (ii) charged-current neutrino interactions where\nthe associated lepton would not be time-tagged externally, or (iii) stranded neutrons\nscattering off protons in the gas and transferring more than 5 MeV, would show a\nsignificant scintillation counterpart. This allows for spill and vertex assignment, and\nns-level time-of-flight determination. In general, any low-energy process (e.g., beyond\nthe Standard Model phenomena such as milli-charged particles) could similarly benefit\nfrom the TPC’s ability to perform stand-alone time-tagging.\nAdditional technical requirements to achieve the aforementioned performance\ninclude: (i) a photosensor coverage of the cathode plane of at least 38% (7.5 m [2] ), (ii) use\nof a SiPM-array, (iii) operation at _−_ 25 ℃, and (iv) read-out grouped by at least a factor\nof 16. Despite the general academic interest in neutrino generators for understanding\nhadro-production down to nuclear binding energies, current knowledge of neutrinonucleus interactions suggests a more modest energy scale, around 20 MeV, as being of\nimmediate interest. Two physical cases identified in ref. [ 8 ] are: (i) reconstruction of\nthe energy spectrum of protons modified due to final state interactions [ 56 – 58 ], and\n(ii) multi-pion production [ 59 ]. Given this, and considering the evolving understanding\nof neutrino interactions with nuclei, we briefly discuss the response to a 20 MeV\nhadron. In such a scenario, the Teflon reflector around the field cage might not be\nnecessary, as this energy would be above threshold for almost the entire chamber, with\na time resolution below 2 ns. With Teflon lining, a modest 10% photosensor coverage\nwould suffice to provide similar performance. If maintaining the Teflon lining and the\nproposed 38% coverage, operation of the photosensor plane close to 0 ℃would be\npossible. Approaching an _O_ (MeV) threshold, however, will certainly require all three\nassets (coverage, lining, and cooling) simultaneously.\nFinally, given the importance of reconstructing leptons from charged-current interactions for neutrino-oscillation experiments, we summarize the detector performance\nfor ‘internal’ and ‘ext",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 12.86417128857078,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4718,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2770334__2403.13034__Study_of_silicon_photomultipliers_for_the_readout_of_a_leadscintillating-fiber_calorimeter.md",
+        "title": "2024__recid_2770334__2403.13034__Study_of_silicon_photomultipliers_for_the_readout_of_a_leadscintillating-fiber_calorimeter",
+        "text": "(profile). Left: SiPM. Right: PMT.\n\n**6** **Conclusions**\n\nA cut-out of the KLOE calorimeter has been equipped with SiPMs and PMTs in order to compare\n\ntheir performance for a potential application in an element (SAND) of the Near Detector complex\n\nof the future DUNE experiment. The PMT coupling was optimized in the KLOE calorimeter and\n\nit was kept unchanged for this study. Various optical couplings have been tested for adapting the\n\nSiPMs with the KLOE light guides and it was verified that the partial coverage of the light guide\n\ndoes not prevent reaching a proper readout of the signal. Efficiency and timing resolution have been\n\nmeasured and compared for both detectors. It was found that the SiPM noise cannot be neglected\n\nin the efficiency estimate. Specifically, the noise rejection implies a non-negligible reduction of the\n\npossible SiPM efficiency making it lower by a few percent with respect to that of the PMTs. For the\n\ntiming resolution, it was observed that PMTs reach a value lower than 220 ps for the scintillation\n\nsignal, while SiPMs exhibit a resolution above 240 ps. Even if the difference is small, PMTs seem\n\nto perform better.\n\nIn conclusion, the difficulties in coupling SiPMs to ECAL without major mechanical changes,\n\nthe lack of improvement, the cost, and the necessary commissioning time, advise against the\n\nsubstitution of the 4880 available and tested PMTs with new SiPMs in the KLOE calorimeter to\n\nbe reused in the Near Detector complex in DUNE. Nonetheless, the results from this study do not\n\nexclude the possible use of SiPMs for other calorimetry applications.\n\n**Acknowledgments**\n\nWe would like to thank Stefano Miscetti (INFN, Laboratori Nazionali di Frascati) who delivered\n\nus the stack of lead foils and scintillating fibers. We thank also Antonio Di Domenico (Sapienza,\n\nRome) and Alessandro Montanari (INFN, Sezione di Bologna) for their fruitful comments and\n\nsuggestions.\n\n– 14 –\n\n**References**\n\n[1] F. Acerbi and S. Gundacker, _Understanding and simulating SiPMs_, Nucl. Instr. and Meth. A 926\n(2019) 16.\n\n[2] S. Gundacker and A. Heering, _The silicon photomultiplier: fundamentals and applications of a_\n_modern solid-state photon detector_, Phys. Med. Biol. 65 (2020) TR01.\n\n[3] M. Adinolfi et al., _The KLOE electromagnetic calorimeter_, Nucl. Instr. and Meth. A 482 (2002) 364.\n\n[4] A. Abed Abud et al. (DUNE Collaboration), _Deep Underground Neutrino Experiment (DUNE) Near_\n_Detector Conceptual Design Report_, Instruments 5 (2021) 31.",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 12.799728598029503,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3624,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2726713__2311.14833__Surface_Scattering_Expansion_of_the_CasimirPolder_Interaction_for_Magneto-Dielectric_Bodie.md",
+        "title": "2024__recid_2726713__2311.14833__Surface_Scattering_Expansion_of_the_CasimirPolder_Interaction_for_Magneto-Dielectric_Bodie",
+        "text": "_Article_\n## **Surface Scattering Expansion of the Casimir-Polder Interaction** **for Magneto-dielectric Bodies: Convergence Properties for** **Insulators, Conductors and Semiconductors**\n\n**Giuseppe Bimonte** **[1,†]** **and Thorsten Emig** **[2]**\n\n1 Dipartimento di Fisica E. Pancini, Università di Napoli Federico II, Complesso Universitario di Monte S.\nAngelo, Via Cintia, I-80126 Napoli, Italy; giuseppe.bimonte@na.infn.it\n\n - INFN Sezione di Napoli, I-80126 Napoli, Italy\n2 Laboratoire de Physique Théorique et Modèles Statistiques, CNRS UMR 8626, Université Paris-Saclay, 91405\nOrsay cedex, France\n***** Correspondence: giuseppe.bimonte@na.infn.it\n\n**Abstract:** Fluctuation induced forces are a hallmark of the interplay of fluctuations and geometry. We\nrecently proved the existence of a multi-parametric family of exact representations of Casimir and\nCasimir-Polder interactions between bodies of arbitrary shape and material composition, admitting a\nmultiple scattering expansion (MSE) as a sequence of inter- and intra-body multiple wave scatterings\n\n[G. Bimonte, T. Emig, Phys. Rev. A 108, 052807 (2023)]. The approach requires no knowledge of the\nscattering amplitude (T-matrix) of the bodies. Here we investigate the convergence properties of the\nMSE for the Casimir-Polder interaction of a polarizable particle with a macroscopic body. We consider\nrepresentative materials from different classes, such as insulators, conductors and semiconductors.\nUsing a sphere and a cylinder as benchmarks, we demonstrate that the MSE can be used to efficiently\nand accurately compute the Casimir-Polder interaction for bodies with smooth surfaces.\n\n**Keywords:** Casimir-Polder force, scattering expansion, surface integral equation, Silicon, Gold,\nPolystyrene\n\n**1. Introduction**\n\n**Citation:** Title. _Physics_ **2023**, _1_, 1–13.\n\n[https://doi.org/](https://doi.org/10.3390/physics1010000)\n\nReceived:\n\nRevised:\n\nAccepted:\n\nPublished:\n\n**Copyright:** © 2023 by the authors.\n\nSubmitted to _Physics_ for possible open\n\naccess publication under the terms and\n\nconditions of the Creative Commons\n\n[Attri- bution (CC BY) license (https://](https://creativecommons.org/licenses/by/4.0/)\n\n[creativecommons.org/licenses/by/](https://creativecommons.org/licenses/by/4.0/)\n\n4.0/).\n\nFollowing the seminal work of Casimir, who discovered that two discharged perfectly\nconducting parallel plates at zero temperature attract each other with a force originating\nfrom quantum fluctuations of the electromagne",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 12.692131606749975,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5126,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "# **_sensors_**\n\n_Article_\n### **A Lightweight Algorithm to Model Radiation Damage Effects in** **Monte Carlo Events for High-Luminosity Large Hadron Collider** **Experiments**\n\n**Keerthi Nakkalil** **and Marco Bomben ***\n\nAPC, Université Paris Cité, CNRS/IN2P3, 75013 Paris, France; keerthi.nakkalil@cern.ch\n***** Correspondence: marco.bomben@cern.ch\n\n**Abstract:** Radiation damage significantly impacts the performance of silicon tracking detectors in\nLarge Hadron Collider (LHC) experiments such as ATLAS and CMS, with signal reduction being\nthe most critical effect; adjusting sensor bias voltage and detection thresholds can help mitigate\nthese effects, generating simulated data that accurately mirror the performance evolution with the\naccumulation of luminosity, hence fluence, is crucial. The ATLAS and CMS collaborations have\ndeveloped and implemented algorithms to correct simulated Monte Carlo (MC) events for radiation\ndamage effects, achieving impressive agreement between collision data and simulated events. In\npreparation for the high-luminosity phase (HL-LHC), the demand for a faster ATLAS MC production\nalgorithm becomes imperative due to escalating collision, events, tracks, and particle hit rates,\nimposing stringent constraints on available computing resources. This article outlines the philosophy\nbehind the new algorithm, its implementation strategy, and the essential components involved. The\nresults from closure tests indicate that the events simulated using the new algorithm agree with fully\nsimulated events at the level of few %. The first tests on computing performance show that the new\nalgorithm is as fast as it is when no radiation damage corrections are applied.\n\n**Keywords:** silicon radiation detectors; simulations; radiation damage\n\n**Citation:** Nakkalil, K.; Bomben, M. A\n\nLightweight Algorithm to Model\n\nRadiation Damage Effects in Monte\n\nCarlo Events for High-Luminosity\n\nLarge Hadron Collider Experiments.\n\n_Sensors_ **2024**, _1_ [, 0. https://doi.org/](https://doi.org/10.3390/s1010000)\n\nAcademic Editor: Firstname\n\nLastname\n\nReceived: 23 May 2024\n\nRevised: 6 June 2024\n\nAccepted:\n\nPublished:\n\n**Copyright:** © 2024 by the authors.\n\nLicensee MDPI, Basel, Switzerland.\n\nThis article is an open access article\n\ndistributed under the terms and\n\nconditions of the Creative Commons\n\n[Attribution (CC BY) license (https://](https://creativecommons.org/licenses/by/4.0/)\n\n[creativecommons.org/licenses/by/](https://creativecommons.org/licenses/by/4.0/)",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 12.604639105643061,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5231,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers.md",
+        "title": "2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers",
+        "text": "on to the energy resolution can be measured by estimating the\nresidual noise in each event after noise subtraction, as described in Section 5.2.1. Using\n\nthe same events as used in the partial volume after cuts, the distribution of this residual\nnoise is shown in Figure 14. This noise distribution has a mean of (-1.3 _±_ 0.1) PE, close\nto zero as expected after noise subtraction, and a standard deviation of (11.44 _±_ 0.09) PE.\nThis standard deviation directly contributes to the total shown in the energy distribution\nof the partial volume in Figure 13 (b) of (33 _._ 9 _±_ 0 _._ 3) PE.\n\n**7.2** **Estimation and extrapolation of energy resolution for higher coverage**\n\nThe expected energy resolution, using the signal achieved by the SiPMs, can be calculated based on Eq. 4.3. In the case of the partial detector volume, a mean energy of\n_N_ _PE_ = (731 _._ 4 _±_ 0 _._ 3) PE, and a standard deviation of the noise of _σ_ _n_ = (11 _._ 44 _±_ 0 _._ 09) PE\nare obtained. By applying these numbers to Eq. 4.3, an energy resolution of (9.68 _±_ 0.01) %\n(FWHM) is calculated. There is a small difference between this estimate and the bestachieved resolution in data (10.9 _±_ 0.6) %. This discrepancy is most likely due to the\n\n– 14 –\n\n(a) (b)\n\n**Figure 13** : The energy distribution using SiPMs using the (a) full detector, with a\nfiducial cut of _r <_ 198 mm and 10 mm _< z <_ 520 mm and (b) partial detector, with cuts\n_r <_ 185 mm, 50 mm _< z <_ 520 mm, and excluding quadrant QI. The energy resolution is\ncalculated using Eq. 4.1 and a Gaussian fit of the distribution is used to extract _µ_ and _σ_ .\nThe _χ_ [2] shown is the reduced chi-squared.\n\n**Figure 14** : The distribution of measured photoelectrons of the same events used in the\npartial volume distribution in Figure 13(b), using the samples outside S2. By fitting this\ndistribution to a Gaussian, the fitted variance represents the expected noise contribution\nto the energy resolution of the partial volume distribution. _χ_ [2] is the reduced chi-squared.\n\n– 15 –\n\nlimited non-zero suppressed data available, and the difficulties correcting geometric effects\nwith the low coverage of the NEXT-White tracking plane.\n\nThe main contribution to the energy resolution is the photon statistics term. This is\n\nattributed to the low photon collection efficiency of the NEXT-White SiPMs due to their\n\n_∼_\nlow coverage ( 1%). The expected energy resolution as a function of SiPM coverage for\ndetectors like NEXT-White can be estimated by",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 12.53970402565782,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5218,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers.md",
+        "title": "2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers",
+        "text": "the energy\nresolution and may be negligible when noise subtraction is applied appropriately, for highenergy events or larger SiPM coverage detectors. These results, which are extrapolated to\nestimate the response of large coverage SiPM planes, are promising for the development\nof future, SiPM-only, readout planes that can offer imaging and achieve similar energy\n\nresolution to that previously demonstrated with PMTs.\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **The NEXT-White detector** **2**\n\n**3** **Data acquisition** **3**\n\n**4** **Definition and contributions to the energy resolution** **4**\n\n**5** **PMT and SiPM data processing** **5**\n\n5.1 PMT data processing 6\n5.2 SiPM data processing 6\n\n5.2.1 SiPM noise subtraction 6\n\n5.2.2 Event energy and tracking measurements with SiPMs 7\n\n5.3 Correction Maps 8\n\n**6** **Results for energy resolution with SiPMs** **11**\n\n6.1 Study of the radial dependence 11\n\n6.2 Study of longitudinal dependence 11\n\n**7** **Energy resolution in quadrants** **11**\n\n7.1 Final Energy Resolution 13\n7.2 Estimation and extrapolation of energy resolution for higher coverage 14\n\n**8** **Discussion** **16**\n\n**A Energy resolution with PMT signal** **18**\n\n**1** **Introduction**\n\nThe nature of neutrinos, whether Majorana or Dirac, is still unknown. Neutrinoless double\nbeta decay (0 _νββ_ ) is the most promising method of determining if neutrinos are their own\nantiparticle, and many experiments have produced lower limits on the half-lives of this\nprocess for various isotopes [1–3]. The goal of the next generation of experiments is to\nreach a sensitivity to the half-life of 0 _νββ_ decay ( _T_ 1 [0] _/_ _[ν]_ 2 [) covering the inverted neutrino mass]\nordering, which requires ultra low-background tonne-scale detectors with excellent energy\nresolution [4].\nThe Neutrino Experiment with a Xenon TPC (NEXT) program searches for 0 _νββ_\ndecay with a high-pressure gaseous xenon time projection chamber (TPC), using the double beta decay isotope [136] Xe. In the current generation of NEXT detectors, photomultiplier tubes (PMTs) are used to measure the primary scintillation light and total energy\n\n– 1 –\n\nof events, while silicon photomultipliers (SiPMs), located behind an electroluminescence\n(EL) amplification region, are used to track the position and reconstruct the topology of\nevents. NEXT-White demonstrated excellent energy resolution, with less than 1% FWHM\nat 2 _._ 5 MeV [5] (the region of interest) and 4 _._ 5% FWHM at 41 _._ 5 keV [6] (t",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 12.182662414703188,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1403,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_.md",
+        "title": "2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_",
+        "text": "_Proceeding Paper_\n## **Searching for Charged Lepton Flavour Violation with Mu3e [†]**\n\n**Ann-Kathrin Perrevoort** **on behalf of the Mu3e Collaboration**\n\nKarlsruhe Institute of Technology, 76131 Karlsruhe, Germany; ann-kathrin.perrevoort@kit.edu\n\n - Presented at the 23rd International Workshop on Neutrinos from Accelerators, Salt Lake City, UT, USA, 30–31\nJuly 2022.\n\n**Abstract:** The observation of lepton flavour violation (LFV) in the charged lepton sector would be an\nunambiguous sign of physics beyond the Standard Model (BSM), and thus, it is the channel of choice\nfor many BSM searches. LFV searches in muon decays in particular benefit from the fact that muons\ncan be easily produced at high rates. There is a global effort to search for LFV at high-intensity muon\nsources to which the upcoming Mu3e experiment at the Paul Scherrer Institute (PSI) will contribute.\nThe Mu3e Collaboration aims to perform a background-free search for the LFV decay _µ_ [+] _→_ _e_ [+] _e_ _[−]_ _e_ [+]\n\nwith an unprecedented sensitivity in the order of 10 _[−]_ [15] in the first phase of operation and 10 _[−]_ [16] in the\nfinal phase—an improvement over the preceding SINDRUM experiment by four orders of magnitude.\nThe high muon stopping rates and low momenta of the decay electrons make high demands on\nmomentum and time resolution and on the data acquisition. The innovative experimental concept is\nbased on a tracking detector built from novel ultra-thin silicon pixel sensors and scintillating fibres\nand tiles as well as online event reconstruction and filtering in real time.\n\n**Keywords:** muon decay; lepton flavour violation; physics beyond the Standard Model\n\n**1. Introduction**\n\n**Citation:** Perrevoort, A.-K. Searching\n\nfor Charged Lepton Flavour Violation\n\nwith Mu3e. _Phys. Sci. Forum_ **2023**, _8_,\n\n[30. https://doi.org/](https://doi.org/psf2023008030)\n\n[10.3390/psf2023008030](https://doi.org/psf2023008030)\n\nAcademic Editor: Yue Zhao\n\nPublished:\n\n**Copyright:** © 2023 by the author.\n\nLicensee MDPI, Basel, Switzerland.\n\nThis article is an open access article\n\ndistributed under the terms and\n\nconditions of the Creative Commons\n\n[Attribution (CC BY) license (https://](https://creativecommons.org/licenses/by/4.0/)\n\n[creativecommons.org/licenses/by/](https://creativecommons.org/licenses/by/4.0/)\n\n4.0/).\n\nIn the original formulation of the Standard Model (SM) of particle physics, lepton\nflavour is a conserved quantity, although, this is only due to an accidental symmetry. Wit",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 12.137249371810626,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5435,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2823334__2408.16921__Rapid_in_Situ_Neutralization_of_Nitrogen-_and_Silicon-Vacancy_Centers_in_Diamond_Using_Abo.md",
+        "title": "2024__recid_2823334__2408.16921__Rapid_in_Situ_Neutralization_of_Nitrogen-_and_Silicon-Vacancy_Centers_in_Diamond_Using_Abo",
+        "text": "s, P. M. Martineau,\nR. U. A. Khan, and D. J. Twitchen, “Optical properties\nof the neutral silicon split-vacancy center in diamond,”\n_Phys. Rev. B_, vol. 84, p. 245208, Dec 2011.\n\n[30] Z.-H. Zhang, P. Stevenson, G. m. H. Thiering, B. C. Rose,\nD. Huang, A. M. Edmonds, M. L. Markham, S. A. Lyon,\nA. Gali, and N. P. de Leon, “Optically detected magnetic\nresonance in neutral silicon vacancy centers in diamond\nvia bound exciton states,” _Phys. Rev. Lett._, vol. 125,\np. 237402, Nov 2020.\n\n[31] K. Takiyama, M. Abd-Elrahman, T. Fujita, and T. Oda,\n“Photoluminescence and decay kinetics of indirect free\nexcitons in diamonds under the near-resonant laser ex\ncitation,” _Solid State Communications_, vol. 99, no. 11,\npp. 793–797, 1996.\n\n[32] K. Saeedi, S. Simmons, J. Z. Salvail, P. Dluhy, H. Riemann, N. V. Abrosimov, P. Becker, H.-J. Pohl, J. J. L.\nMorton, and M. L. W. Thewalt, “Room-temperature\nquantum bit storage exceeding 39 minutes using ionized\ndonors in silicon-28,” _Science_, vol. 342, no. 6160, pp. 830–\n833, 2013.\n\n[33] E. Bourgeois, E. Londero, K. Buczak, J. Hruby,\nM. Gulka, Y. Balasubramaniam, G. Wachter, J. Stursa,\nK. Dobes, F. Aumayr, M. Trupke, A. Gali, and M. Nesladek, “Enhanced photoelectric detection of nv magnetic resonances in diamond under dual-beam excita\ntion,” _Phys. Rev. B_, vol. 95, p. 041402, Jan 2017.\n\n[34] S. T. Alsid, J. F. Barry, L. M. Pham, J. M. Schloss,\nM. F. O’Keeffe, P. Cappellaro, and D. A. Braje, “Photoluminescence decomposition analysis: A technique to\ncharacterize N- _v_ creation in diamond,” _Phys. Rev. Appl._,\nvol. 12, p. 044003, Oct 2019.\n\n[35] B. G. Breeze, C. J. Meara, X. X. Wu, C. P. Michaels,\nR. Gupta, P. L. Diggle, M. W. Dale, B. L. Cann,\nT. Ardon, U. F. S. D’Haenens-Johansson, I. Friel, M. J.\nRayson, P. R. Briddon, J. P. Goss, M. E. Newton, and\nB. L. Green, “Doubly charged silicon vacancy center, sin complexes, and photochromism in n and si codoped\ndiamond,” _Phys. Rev. B_, vol. 101, p. 184115, May 2020.\n\n[36] B. L. Green, M. W. Doherty, E. Nako, N. B. Manson,\nU. F. S. D’Haenens-Johansson, S. D. Williams, D. J.\nTwitchen, and M. E. Newton, “Electronic structure of\nthe neutral silicon-vacancy center in diamond,” _Phys._\n_Rev. B_, vol. 99, p. 161112, Apr 2019.\n\n[37] P. Tamarat, T. Gaebel, J. R. Rabeau, M. Khan, A. D.\nGreentree, H. Wilson, L. C. L. Hollenberg, S. Prawer,\nP. Hemmer, F. Jelezko, and J. Wrachtrup, “Stark shift\ncontrol of single optical centers in diamond,” _Phys. Rev._\n_Lett._, vol. 97, p. 083002, Aug 2006.\n\n**Suppl",
+        "score": 0.013888888888888888,
+        "dense_score": null,
+        "bm25_score": 11.743773123222176,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 6.729108327999711,
+    "generation_latency_s": 2.798624336719513e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 6.729108327999711,
+    "generation_latency_s": 2.798624336719513e-07
+  }
+}

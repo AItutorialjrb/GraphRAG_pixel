@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "com010",
+    "query_type": "comparative",
+    "query": "Compare precision@k and recall@k.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Compare",
+      "precision@k",
+      "and",
+      "recall@k"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare precision@k and recall@k.",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 387,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "ry of a sensor designed to protect it from currents from the\ncutting edge, and shown in figure 11 (f) as the black line with false positives.\n\n14\n\nrandomly initialized weights with 2.1 times more anomalous patches than the original\nmodel. An independent test data set was used to compare the original and retrained\nmodels. The test data consists of 136 anomalous whole images and 754 normal whole\nimages, for which the test metrics are presented in table 5. The retrained model performs\nsignificantly better on the test set.\n\n**Table 5.** The performance of the pre-selection algorithm using the original and\nretrained anomaly detectors. Metrics are calculated for whole images using an\nindependent test set.\n\nMetric Value [%]\nOriginal Retrained\n\nRecall 94.9 **96.3**\n\nSpecificity 85.0 **87.8**\n\nPrecision 53.3 **58.7**\n\nFalse negative rate 5.2 **3.7**\nFalse positive rate 15.0 **12.2**\n\nF1-score 68.0 **72.9**\n\nBalanced accuracy 90.0 **92.1**\n\n**7. Conclusion**\n\nA deep learning-based pre-selection algorithm (PSA) that fully automates the visual\ninspection (VI) of the silicon sensors produced for the construction of the CMS HGCAL\ndetector was developed. An ensemble of a deep convolutional autoencoder and a neural\nnetwork for classification is used, with a patching applied before the classification to\nallow the general localization of the anomalies in the images of the sensors. The\nautomated VI is a vital part of the quality control (QC) of the analyzed sensors.\nThe performance of the PSA was evaluated using fifteen full sensor scans acquired\nin production in a clean room dedicated to sensor testing at CERN. The recall, which\nmeasures the fraction of anomalous images that are found, was 97.46%, with an\nacceptable FPR of 6.25%. The images are evaluated in real-time, and approximately\n85% of all images can be discarded as normal, thus removing the need for human labor to\ninspect them. The developed automated VI is standardized, and therefore also believed\nto be less biased by the subjectivity of a human inspector. On average, it saves 10\nminutes of resources per sensor, and for each batch of hundred sensors, this corresponds\nto 17 person-hours less required to manually inspect the images.\nThe accuracy is considered sufficient for deployment, even though the PSA was\nshown to fail to select a small fraction of images with light and small scratches and\ndust particles, in addition to novel types of anomalies. It was demonstrated that as\n\n15\n\nmore anomalous images are acquired",
+        "score": -2.1318505508000736,
+        "dense_score": 0.44286423921585083,
+        "bm25_score": 19.43957603992535,
+        "graph_score": 0.0,
+        "rerank_score": -3.297424554824829,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7031,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2876744__2502.03222__Luminescence_thermometry_based_on_photon_emitters_in_nanophotonic_silicon_waveguides.md",
+        "title": "2025__recid_2876744__2502.03222__Luminescence_thermometry_based_on_photon_emitters_in_nanophotonic_silicon_waveguides",
+        "text": "s of magnitude at 5 K compared\nto 300 K [26].\n\nBoth difficulties can be avoided when using luminescence thermometry [27, 28] of light emitters such as color\ncenters, lanthanide-based materials, and quantum dots\n\n[29]. In particular, this approach provides a way to directly implement the thermal probes within nanophotonic devices. Still, previous experiments were often\nlimited to specific temperature regimes and incompatible with silicon nanophotonic structures [30–36]. Yet,\nsensing across temperature ranges from 4 K to room\ntemperature has been reported for lanthanide-containing\ncrystalline powders [37–43] with sensitivities of up to\n31 % K _[−]_ [1] [37] and maximum precision of 0 _._ 02 K [41].\nIn principle, these sensors can be reduced to the single\nnano- or microparticle level [44] thus yielding high spa\n\ntial resolution for the characterization of nanophotonic\nstructures. However, their integration into nanophotonic silicon devices is challenging: Due to their operating principle, the required wavelengths for operation\nare in the absorption band of silicon, which entails heating and hinders direct integration into photonic devices.\nFurthermore, it necessitates free-space optical read-out,\nwhich would limit the compactness and footprint of such\nthermometers. Similarly, the recent approach of using erbium-chloride-silicate nanowires that operate above\n1500 nm [45] would exhibit significant drawbacks in robustness, positioning, and thermal coupling to nanophotonic silicon structures.\n\nIn this manuscript, we overcome these limitations\nby directly integrating erbium dopants into nanophotonic silicon waveguides, implementing temperaturedependent spectroscopy and using it to assess the performance of derived observables for thermometry. Using\nmultiple temperature-dependent effects such as activation of non-radiative decays, depopulation of crystal field\nlevels and electronic spin levels, we demonstrate precise\nthermal probes for the entire temperature range from\n2 K to 300 K. Combined with the high degree of spatial\ncontrol achievable in the erbium integration process, our\nmethod provides a reliable local temperature probe for\nsilicon nanostructures.\n\n**II.** **EXPERIMENTAL SETUP**\n\nThe experimental setup is sketched in Figure 1A. A\nrib waveguide with 500 nm etch depth is fabricated using\nelectron beam lithography on a silicon-on-insulator chip\nthat has been homogeneously implanted with erbium ions\nand then annealed using the procedure described in earlier w",
+        "score": -3.154550920707592,
+        "dense_score": null,
+        "bm25_score": 13.614117348533423,
+        "graph_score": 0.0,
+        "rerank_score": -4.860959053039551,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 7040,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2876744__2502.03222__Luminescence_thermometry_based_on_photon_emitters_in_nanophotonic_silicon_waveguides.md",
+        "title": "2025__recid_2876744__2502.03222__Luminescence_thermometry_based_on_photon_emitters_in_nanophotonic_silicon_waveguides",
+        "text": "umption of equal transitions strengths for the spin-preserving lines [53], Equation (1) can be used for a calibration-free temperature\nmeasurement. The extracted values are compared to the\ntemperature of the external sensor in Figure 4C for three\nmagnetic field strengths, together with the optimum sensitivity region according to Equation (2) (shaded colors).\nOne observes excellent agreement with the expected temperature (grey diagonal line) in the optimum range at\ntemperatures between 3 K and 10 K for the measurements at 1.5 T and 3 T.\n\nHowever, if the magnetic field is decreased to resolve\nlower temperatures, the increased spin lifetime [55] prevents that thermalization is faster than the spin pumping\n\nBelow and above this range, _T_ _r_ quickly saturates as either\nthe population in the energetically higher spin state or\nthe population change vanishes, such that the signal is\ngoverned by background and noise.\nFor Er:Si, one finds effective g-factors of up to _g_ eff =\n_h_\n_µ_ _B_ _[×]_ [ 230 GHz] _[/]_ [T, where] _[ µ]_ _[B]_ [ is the Bohr magneton and]\n_h_ is the Planck constant [47]. Given an inhomogeneous\nbroadening of about 1 GHz [18], ratiometric thermometry\n\n6\n\na larger range can be used with a calibration of the systematic shifts.\n\n**D.** **Comparison of the different thermometry**\n**methods**\n\nIn this section, we assess and compare the performance\nof the presented thermometric probes _y_ ( _T_ ) using the relative thermal sensitivity _S_ _r_ and temperature precision\n_δT_ [28],\n\n1\n_, δT_ = _±_\n���� _S_ _r_\n\n_δy_\n���� _y_\n\n_,_ (3)\n����\n\n1\n_S_ _r_ = _y_ ( _T_ )\n\n_∂y_\n���� _∂T_\n\nFIG. 4. Boltzmann thermometry. (A) The resonant photoluminescence spectra for site A show a clear temperature\ndependence at a magnetic field strength of 3 T. (B) Because\nof the difference of the Zeeman splittings of ground and excited state (∆ _g_ _,_ ∆ _e_ ), the _Z_ 1 _→_ _Y_ 1 transition (at energy _hν_ 0 )\nsplits symmetrically into several spin-preserving transitions.\nA pair of these peaks (teal arrows in A and B) is considered\nfor thermometry. (C) The ratio of the peak amplitudes reflects the thermal population of the spin states according to\nthe Boltzmann factor. The temperature extracted using this\nratiometric technique deviates from the set value at low temperatures, where the increased spin lifetime impedes thermalization, and at high temperature, where higher-lying CF levels\nstart to be populated. In between, the extracted temperature\nmatches well with the expectati",
+        "score": -3.2168371335784003,
+        "dense_score": null,
+        "bm25_score": 13.78829172931162,
+        "graph_score": 0.0,
+        "rerank_score": -4.957016944885254,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7043,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2876744__2502.03222__Luminescence_thermometry_based_on_photon_emitters_in_nanophotonic_silicon_waveguides.md",
+        "title": "2025__recid_2876744__2502.03222__Luminescence_thermometry_based_on_photon_emitters_in_nanophotonic_silicon_waveguides",
+        "text": "ed) obtained from a Lorentzian fit to the\nisolated _Z_ 1 - _Y_ 6 transition response of site A. The pink data\n(”Ratiometric”) shows the results of Boltzmann thermometry on split Kramers doublets for magnetic field strengths of\n3 T (solid, circles) and 1.5 T (dashed). In panel B, we present\nthe precisions _δT_ of a subset of the methods presented in A.\nTeal data shows wavelength-averaged, purple the fitted amplitude, and pink data taken at 3 T. The shaded area in (A)\nand error bars in (B) represent the uncertainty of the fits.\n\nbest precision over the full temperature range and is thus\ndepicted in Figure 5B.\nFinally, the method of measuring the population imbalance of the Kramers doublet (”Ratiometric”) is shown\nin pink for the two magnetic field strengths _B_ = 3 T\n(solid lines) and _B_ = 1 _._ 5 T (dashed line). As mentioned,\nthis method exhibits a calibration-free temperature measurement, but is limited to low temperatures. Still, it\nprovides the highest sensitivity range. Its precision is\nsimilar for both magnetic field strengths and is represented in Figure 5B by the _B_ = 3 T data achieving values\nbelow 100 mK. For the extraction of the population ratio,\nwe use 1 _._ 6 _×_ 10 [5] data points per measured temperature,\nresulting in an integration time of about 11 minutes.\nAcross the methods presented in Fig. 5A, we extract\n\n7\n\na maximum of the relative sensitivity of 420(50) % K _[−]_ [1]\n\nfor the ratiometric method at the coldest temperature.\nThe sensitivity then decreases towards room temperature, where we extract a value of 0 _._ 22(4) % K _[−]_ [1] . The\ntemperature precisions plotted in Fig. 5B are extracted\nwith integration times between three and eleven minutes,\nwith a minimum value of 0 _._ 04(1) K for the fitted amplitude method at low temperatures and a maximum value\nof 6(1) K at room temperature.\n\n**IV.** **CONCLUSION**\n\nWe have measured temperature-dependent resonant\nphotoluminescence spectra for an erbium ensemble integrated into a nanophotonic silicon waveguide in a wide\nrange of temperatures. We find that different thermometric probes give the best precision depending on the\ntemperature regime: From 300 K to 200 K, the observed quench of the fluorescence renders amplitudebased probes as the most sensitive. However, the\nsmall signal strength requires longer integration times to\nachieve high precision close to room temperature, and\nheating caused by the large non-radiative decay might\ndistort the measurement in thermally isolated samples.\nA",
+        "score": -3.3000867095360387,
+        "dense_score": null,
+        "bm25_score": 13.915012143140698,
+        "graph_score": 0.0,
+        "rerank_score": -5.08534049987793,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5090,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2784488__2405.04763__Room-temperature_photonic_quantum_computing_in_integrated_silicon_photonics_with_germanium.md",
+        "title": "2024__recid_2784488__2405.04763__Room-temperature_photonic_quantum_computing_in_integrated_silicon_photonics_with_germanium",
+        "text": "DC_ ~ _T_ _g_ 1 1 − _NR_ _DC_ _T_ _G_  1 − _SPDSPD_ \n\n1\n~ 1 − _NR_ _T_\n\n, **(6)**\n\n_F_ = _P_ _success_ ~ 1 − _NR_ _DC_ _T_\n_P_ _NR_ _DC_ _T_ _g_ 1\n\n_P_ _successclick_ _NR_ _DC_ ~ _T_ _g_ 1 1 − _NR_ _DC_ _T_ _G_   _SPDSPD_\n\n_DC_ _g_\n\n1\n\ngiven a good _η_ _SPD_ and negligible _NR_ _DC_ _T_ _G_ . Note that Eq. (6) is identical to Eq. (4). In the\nfollowing, we shall apply these figures of merit to compare the performance between GeSi\nSPAD and SNSPD for PQC.\n\n_4.3 Comparison between GeSi SPAD and SNSPD for PQC_\n\nThe following parameter values are used for comparing GeSi SPAD at 300 K and SNSPD at 4\nK. For the case of GeSi SPAD at 300 K, SPDE is assumed to be 95 % and DCR is assumed to\nbe 1.6 MHz based on the above simulations and calculations, considering 100 % avalanche\ntrigger probability at 2 V excess bias. For the case of SNSPD at 4 K, SPDE is assumed to be\n91 % and DCR is assumed to be 5886 Hz based on Ref. 12. In both cases _T_ _G_ is assumed to be\n1 ns, which can be easily generated by high-speed electronics and larger than the TJs of GeSi\nSPAD at 300 K and SNSPD at 4 K that are usually between tens to hundreds of picoseconds.\n\nFor the scheme of photon-based PQC, in Fig. 6(a) and 6(b), the success probability and the\nfidelity of photon detection considering 300 K GeSi SPAD are respectively plotted as a function\nof _M_ waveguides and _N_ photons. In Fig. 6(c) and 6(d), the difference in the success probabilities\nand the difference in the fidelities of photon detection considering 300 K GeSi SPAD and 4 K\nSNSPD are respectively plotted as a function of _M_ waveguides and _N_ photons. By inspecting\n6(c) and Fig. 6(d), it is observed that the success probability of 300 K GeSi SPAD is a few\npercents (e.g., 4 % when _N_ =1) higher than that of 4 K SNSPD due to the assumed SPDEs, and\nthe fidelity of 300 K GeSi SPAD is 0.0084 % lower than that of 4 K SNSPD. Note that it is\nexpected that the success probabilities shown in Fig. 6(a) go up when _M_ is much larger than _N_,\ndue to the reduced probability of finding more than one excitation in each waveguide SPD. For\n\nthe scheme of qubit-based PQC, in Fig. 7(a), the success probability and the fidelity of qubit\ndetection considering 300 K GeSi SPAD are respectively plotted as a function of _N_ qubits. In\nFig. 7(b), the difference in the success probabilities and the difference in the fidelities of qubit\ndetection considering 300 K GeSi SPAD and 4 K SNSPD are respectively plotted as a function\nof _N_ qubits.",
+        "score": -3.7061013665566076,
+        "dense_score": 0.35155969858169556,
+        "bm25_score": 14.105622849318387,
+        "graph_score": 0.0,
+        "rerank_score": -5.7183918952941895,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3639,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2726713__2311.14833__Surface_Scattering_Expansion_of_the_CasimirPolder_Interaction_for_Magneto-Dielectric_Bodie.md",
+        "title": "2024__recid_2726713__2311.14833__Surface_Scattering_Expansion_of_the_CasimirPolder_Interaction_for_Magneto-Dielectric_Bodie",
+        "text": "al term _n_ = 0 of the Matsubara sum resembles that\nof a perfect conductor. We had shown that for a cylinder the SSO K, for the choice (C1),\nin the partial wave channel _m_ = 0 has an eigenvalue that approaches unity when _κ_ _→_ 0\nand _ϵ_ _→_ ∞ [ 48 ]. For the choice (C2) the situation is even worse as there is an eigenvalue\napproaching unity in all partial wave channels. We expect this property to persist for all\nquasi-2D shapes with a compact cross section. Hence, for such metallic shapes the classical\nterm _n_ = 0 cannot be obtained from a MSE. However, our surface scattering approach\nis also useful for zero frequency _κ_ = 0 as the inverse of M = I _−_ K can be computed\ndirectly, without resorting to a MSE. We note that for _κ_ = 0 the expression for K simplifies\nconsiderably, in particular in the perfect conductor limit [48].\nTo conclude, we have demonstrated that the MSE provides an excellent device to\ncompute Casimir-Polder interactions with high precision for a wide range of materials.\nWe stress that this conclusion is not specific to the shapes considered here but is expected\nto hold generically for any compact 3D shape or quasi-2D shape. Here we considered a\nsphere and a cylinder only for the reason that for those shapes exact results are known\nand hence the convergence of our MSE can be tested. Most importantly, for general shapes\nwhere the T-matrix is not known, the SSO K can be computed and the MSE implemented\nto obtain high precision results for the interaction.\n\nVersion November 28, 2023 submitted to _Physics_ 11\n\n(a) Si T=300K R=30μm\n\n1.1\n\n1.0\n\n0.9\n\n0.8\n\n0.7\n\n0.6\n\n0.5\n\n0.4\n\n0.05 0.10 0.50 1\n\nd/R\n\n(b) Polystyrene T=300K R=30μm\n\n0.05 0.10 0.50 1\n\nd/R\n\n1.1\n\n1.0\n\n0.9\n\n0.8\n\n0.7\n\n0.6\n\n0.5\n\n0.4\n\n**Figure 5.** MSE of the CP energy for (a) a Silicon cylinder and (b) a polystyrene cylinder of radius\n_R_ = 30 _µ_ m at room temperature _T_ = 300 _K_, for the formulation (C1).\n\n1. Casimir, H.B.G. On the attraction between two perfectly conducting plates. _Proc. K. Ned Akad._\n_Wet_ **1948**, _51_, 793.\n2. Lifshitz, E.M. The theory of molecular attractive force between solids. _Sov. Phys. J. Exp Theoret._\n_Phys_ **1956**, _2_, 73.\n3. Derjaguin, B.V.; Abrikosova, I.I. Direct measurement of the molecular attraction of solid bodies.\n1. Statement of the problem and method of measuring forces by using negative feedback. _Sov._\n_Phys. J. Exp. Theoret. Phys_ **1957**, _3_, 819–829.\n4. Parsegian, V.A. _Van der Waals forces: a handbook for biologists, chemists, e",
+        "score": -3.793448348045349,
+        "dense_score": null,
+        "bm25_score": 13.52865288106052,
+        "graph_score": 0.0,
+        "rerank_score": -5.843766689300537,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5151,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2791032__2405.18403__Batch_VUV4_characterization_for_the_SBC-LAr10_scintillating_bubble_chamber.md",
+        "title": "2024__recid_2791032__2405.18403__Batch_VUV4_characterization_for_the_SBC-LAr10_scintillating_bubble_chamber",
+        "text": "acterization technique, which avoids the use of a single-photon source,\n\nwas used at two temperatures to measure the VUV4 SiPMs breakdown voltage ( _𝑉_ BD ), the SiPM\n\ngain ( _𝑔_ SiPM ), the rate of change of _𝑔_ SiPM with respect to voltage ( _𝑚_ ), the dark count rate (DCR),\n\nand the probability of a correlated avalanche (P CA ) as well as the temperature coefficients of these\n\nparameters. A Peltier-based chilled vacuum chamber was developed at Queen’s University to cool\n\ndown the Quads to 233 _._ 15 ± 0 _._ 2 K and 255 _._ 15 ± 0 _._ 2 K with average stability of ±20 mK. An analysis\n\nframework was developed to estimate _𝑉_ BD to tens of mV precision and DCR close to Poissonian\nerror. The temperature dependence of _𝑉_ BD was found to be 56 ± 2 mV K [−][1], and _𝑚_ on average\nacross all Quads was found to be (459 ± 3(stat _._ ) ± 23(sys _._ )) × 10 [3] e [−] PE [−][1] V [−][1] . The average DCR\ntemperature coefficient was estimated to be 0 _._ 099 ± 0 _._ 008 K [−][1] corresponding to a reduction factor\n\nof 7 for every 20 K drop in temperature. The average temperature dependence of P CA was estimated\nto be 4000 ± 1000 ppm K [−][1] . P CA estimated from the average across all SiPMs is a better estimator\n\nthan the P CA calculated from individual SiPMs, for all of the other parameters, the opposite is\n\ntrue. All the estimated parameters were measured to the precision required for SBC-LAr10, and\n\nthe Quads will be used in conditions to optimize the signal-to-noise ratio.\n\nKeywords: Photon detectors for UV, visible and IR photons (solid-state) (PIN diodes, APDs,\n\nSi-PMTs, G-APDs, CCDs, EBCCDs, EMCCDs, CMOS imagers, etc); Analysis and statistical\n\nmethods; Detector cooling and thermo-stabilization\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Experimental Setup** **3**\n\n2.1 Temperature system 4\n\n2.2 Readout electronics 6\n\n2.3 Measurement procedure 8\n\n**3** **Analysis** **9**\n\n**4** **Results** **14**\n\n4.1 SiPM-to-SiPM parameters spread 14\n\n4.2 Quad-to-Quad _𝑉_ BD and _𝑚_ dispersion 18\n\n**5** **Conclusions** **19**\n\n**A MC SiPM results** **20**\n\n**B** **Glossary** **23**\n\n**1** **Introduction**\n\nThe goal of the Scintillating Bubble Chamber (SBC) collaboration is to detect GeV-scale dark\n\nmatter and MeV-scale reactor antineutrinos. As a first step, the SBC collaboration is constructing a\n\ndetector called SBC-LAr10 at Fermilab containing 10 kg of liquid argon (LAr) doped with xenon\n\nfor engineering and calibration studies. The xenon doping shifts the LAr sc",
+        "score": -4.171091920451115,
+        "dense_score": null,
+        "bm25_score": 12.859346132199198,
+        "graph_score": 0.0,
+        "rerank_score": -6.424149513244629,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2262,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2672286__2306.14944__Fully_ab-initio_all-electron_calculation_of_dark_matter-electron_scattering_in_crystals_wi.md",
+        "title": "2024__recid_2672286__2306.14944__Fully_ab-initio_all-electron_calculation_of_dark_matter-electron_scattering_in_crystals_wi",
+        "text": "discuss how to include all–electron effects, and describe\nthe DM–electron scattering rate calculations with quantum chemistry basis sets. In §III, we describe the results for Si and Ge, including the systematic uncertainties and the effects of the secondary ionization modeling; we also calculate the annual modulation rates, and\ncompare our results with those of previous works. We\nconclude in §IV. Two appendices contain technical information, including the properties of Cartesian Gaussians\n(Appendix A) and a derivation of the scattering rate formulae (Appendix B).\n\n**II.** **CALCULATING DARK**\n\n**MATTER-ELECTRON SCATTERING RATES**\n\nIn this section, we introduce the computational approach that underlies `QCDark`, comparing the all-electron\nlocalized basis set approach used in this work with previous implementations based on plane waves and pseudopotentials.\n\n**A.** **Electronic structure**\n\nThe electronic structure of the material is described\nby Kohn-Sham (KS) [30] DFT, in which the equations\nthat describe the system of many interacting electrons\nare mapped onto a set of single-particle equations in an\neffective potential constructed to reproduce the groundstate electron density and total energy. The energy functional of the density _n_ is given by (Gaussian units are\n\n1 [The code is available at https://github.com/asingal14/QCDark.](https://github.com/asingal14/QCDark)\n\nassumed throughout)\n\nwhere **K** is a reciprocal lattice vector, _e_ _[i]_ [(] **[k]** [+] **[K]** [)] _[·]_ **[r]** are the\nbasis functions, _u_ _i_ ( **k** + **K** ) are the coefficients, and _V_ is\nthe volume of the crystal. The accuracy of the PW-basis\nfor describing _ψ_ is governed by the number of reciprocal lattice vectors included in the basis, which is usually\n\n_E_ [ _n_ ] = _T_ S [ _n_ ] + d **r** _v_ ext ( **r** ) _n_ ( **r** )\n�\n\n+ [1]\n\n2\n\nd **r** d **r** _[′]_ _[ n]_ [(] **[r]** [)] _[n]_ [(] **[r]** _[′]_ [)]\n� � _|_ **r** _−_ **r** _[′]_ _|_\n\n(1)\n\n[(] **[r]** [)] _[n]_ [(] **[r]** _[′]_ [)]\n\n+ _E_ xc [ _n_ ] _,_\n_|_ **r** _−_ **r** _[′]_ _|_\n\nwhere _T_ S is the sum of the kinetic energies of the noninteracting orbitals; _v_ ext is the external potential given\nby, e.g., the atomic nuclei in an all-electron calculation\nor the ions if pseudopotentials are used; and _E_ xc is the\nso-called exchange-correlation energy, which accounts for\nthe many-body and quantum effects that are neglected\nin _T_ S and the Hartree electron-electron interaction (third\nterm in Eq. (1)) [27]. Writing",
+        "score": -4.334347315532406,
+        "dense_score": null,
+        "bm25_score": 11.861284598749279,
+        "graph_score": 0.0,
+        "rerank_score": -6.674793243408203,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 4186,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2755056__2402.01584__Measurement_of_the_photon_detection_efficiency_of_Hamamatsu_VUV4_SiPMS_at_cryogenic_temper.md",
+        "title": "2024__recid_2755056__2402.01584__Measurement_of_the_photon_detection_efficiency_of_Hamamatsu_VUV4_SiPMS_at_cryogenic_temper",
+        "text": "able 3\n\nand shown in Figure 13 for one SiPM.\n\n17\n\nλ (nm) PDE RT (%) PDE CT (%) Ratio\n\n270 19.10 8.05 ± 0.36 0.42 ± 0.02\n\n280 21.00 8.66 ± 0.25 0.41 ± 0.01\n\n317 26.45 10.67 ± 0.41 0.40 ± 0.02\n\n355 25.05 11.00 ± 0.49 0.44 ± 0.02\n\n385 29.35 15.52 ± 0.83 0.53 ± 0.03\n\n405 32.10 17.27 ± 0.36 0.54 ± 0.01\n\n420 33.50 21.02 ± 0.44 0.63 ± 0.01\n\n470 34.80 27.76 ± 0.53 0.80 ± 0.02\n\n570 28.40 20.11 ± 0.51 0.71 ± 0.02\n\nTable 3: PDE for both temperature regimes. The RT one is given by the manufacturer, while the CT one is\nthe obtained after the analysis described in this document.\n\nFigure 13: PDEs values at RT (grey diamonds) and at CT for vacuum setup (green circles).\n\nWe can see that the PDE at CT shows a clear decrease compared to its value at\n\nRT. Not only that, but there is a dependence with the wavelength that is presented in\n\nFigure 14.\n\n18\n\nFigure 14: Ratio between the PE measured at CT and RT for the studied range of wavelengths.\n\nWe can clearly notice a minimum at ∼300 nm and a maximum at ∼500 nm.\n\nThe same procedure is followed for the GAr setup, where in order to ensure that\n\nthe light reaching the SiPMs is independent of the temperature of the setup, we allocate\n\nthe optical fiber close enough to the sensors and additionally we use a diffuser so that\n\nthe light is emitted homogeneously.\n\nAdditionally, as we have increased the number of temperature sensors from one to\n\nfour, we have a better determination of the setup temperature. This allows us to do\n\nmeasurements at intermediate temperatures during cooling. In Figure 15 we can see\n\nthe results obtained in GAr for two cryogenic temperatures, 86 K (equilibrium) and\n\n(128±2) K (during thermalization).\n\n19\n\nFigure 15: PDEs values at RT (grey diamonds), for GAr setup at 128 K (pink down triangles) and at 86 K\n(orange squares) and for vacuum setup at 77 K (green circles).\n\nWe can clearly notice the same decrease of PDE with temperature, validating our\n\nresults at 77 K. The measurement at 128 K gives additional information on the temperature–\n\ndependence of the PDE.\n\n_5.3.2. PDE measurement for 127 nm light_\n\nAs introduced in section 3, we have performed another measurement by submerg\n\ning the SiPMs in LAr together with an [241] Am source to measure the PDE at CT and\n\nat 127 nm. For this computation, we compare the light collected by the SiPM with\n\nthe expected number of PEs taking into account the position of the SiPMs relative to\n\nthe source and the scintillation light–yield of an α particle of 5.48 MeV in LAr. T",
+        "score": -4.638311541919977,
+        "dense_score": null,
+        "bm25_score": 13.375520681189245,
+        "graph_score": 0.0,
+        "rerank_score": -7.1434478759765625,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3123,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2703632__2309.15463__Tomography_of_entangling_two-qubit_logic_operations_in_exchange-coupled_donor_electron_spi.md",
+        "title": "2024__recid_2703632__2309.15463__Tomography_of_entangling_two-qubit_logic_operations_in_exchange-coupled_donor_electron_spi",
+        "text": "alable cmos architectures, Nature Communications **15**, 4299\n(2024).\n\n[6] E. Nielsen, J. K. Gamble, K. Rudinger, T. Scholten, K. Young, and R. Blume-Kohout, Gate set tomography, Quantum **5**,\n557 (2021).\n\n[7] M. T. Mądzik, S. Asaad, A. Youssry, B. Joecker, K. M. Rudinger, E. Nielsen, K. C. Young, T. J. Proctor, A. D. Baczewski,\nA. Laucht, _et al._, Precision tomography of a three-qubit donor quantum processor in silicon, Nature **601**, 348 (2022).\n\n[8] R. Blume-Kohout, M. P. da Silva, E. Nielsen, T. Proctor, K. Rudinger, M. Sarovar, and K. Young, A taxonomy of small\nmarkovian errors, PRX Quantum **3**, 020335 (2022).\n\n[9] W. K. Wootters, Entanglement of formation and concurrence., Quantum Inf. Comput. **1**, 27 (2001).\n\n[10] M. T. Mądzik, T. D. Ladd, F. E. Hudson, K. M. Itoh, A. M. Jakob, B. C. Johnson, J. C. McCallum, D. N. Jamieson, A. S.\nDzurak, A. Laucht, and A. Morello, Controllable freezing of the nuclear spin bath in a single-atom spin qubit, Science\nAdvances **6** (2020).",
+        "score": -4.873760185362418,
+        "dense_score": null,
+        "bm25_score": 12.1393338259443,
+        "graph_score": 0.0,
+        "rerank_score": -7.504908561706543,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 68,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.760963425971568,
+    "generation_latency_s": 3.1013041734695435e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.760963425971568,
+    "generation_latency_s": 3.1013041734695435e-07
+  }
+}

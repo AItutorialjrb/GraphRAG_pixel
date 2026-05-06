@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "fac002",
+    "query_type": "factoid",
+    "query": "What does LGAD stand for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "LGAD"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What does LGAD stand for?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2246,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device.md",
+        "title": "2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device",
+        "text": ", the emphasis was placed on the design of a 4H-SiC Low Gain\nAvalanche Detector (LGAD), especially the epitaxial structure and technical process which played the main roles. In addition, a simulation tool–\nRASER(RAdiation SEmiconductoR) was developed to simulate the performances including the electrical properties and time resolution of the\n4H-SiC LGAD we proposed. The working voltage and gain effectiveness\nof the LGAD were verified by the simulation of electrical performances.\nThe time resolution of the LGAD is (35.0 ± 0.2) ps under the electrical\nfield of -800 V, which is better than that of the 4H-SiC PIN detector.\n\n**Keywords:** Silicon carbide, LGAD, Radiation-resistant, Time resolution\n\n### **1 Introduction**\n\nLow gain avalanche detector (LGAD), as a novel detector technology,\nhas attracted extensive attention in recent years. By adding a gain layer\nunder the cathode of the PIN detector, a collision-ionization multiplication\nof the electron-hole pair occurs in the gain layer, resulting in excellent timing resolution[1]. In particular, for the requirements of the High Granularity\nTiming Detector (HGTD) in ATLAS and the End-cap Timing Layer (ETL)\nin CMS experiments, silicon-based LGAD with 50 ps time resolution has been\ndeveloped which can resist the radiation of 2×10 [15] _n_ _eq_ /cm [2] [2–5]. However, it\nhas been reported[6] that the charge collection efficiency (CCE) and time resolution of silicon-based LGAD will deteriorate with increasing irradiation flux\nand will not work normally under irradiation above 2×10 [15] _n_ _eq_ /cm [2] . In addition, in order to reduce power and improve the signal-to-noise ratio (SNR)\nof semiconductor detectors, silicon-based LGAD devices need to operate at a\nlow temperature of -30 ℃[7, 8], which greatly increases the operation cost of\ndetectors. Moreover, the low temperature cooling system not only increases\nvolume of the detector system, but also increases the difficulty of maintaining the stability of the detector system. Therefore, there is a high demand for\nresearch into a semiconductor detector with strong radiation resistance, excellent time resolution and stable operation at room temperature or even high\ntemperature.\nSilicon carbide (SiC), as the third generation semiconductor, has been\ninvestigated as a detector material for nearly 20 years[9]. In recent years, SiC\nhas received more attention due to the interest of semiconductor industries\n\nSpringer Nature 2021 L [A] TEX template\n\n_Design and simulation of",
+        "score": 2.228951687956472,
+        "dense_score": 0.3432161509990692,
+        "bm25_score": 11.791785703391374,
+        "graph_score": 0.0,
+        "rerank_score": 3.416254997253418,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5037,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2782083__2405.02550__Gain_suppression_study_on_LGADs_at_the_CENPA_tandem_accelerator.md",
+        "title": "2024__recid_2782083__2405.02550__Gain_suppression_study_on_LGADs_at_the_CENPA_tandem_accelerator",
+        "text": "are suitable for high repetition rate\nmeasurements in photon science and other fields. LGADs are the chosen\ntechnology for near-future large-scale applications like the timing layer upgrade for HL-LHC of the ATLAS [3] and CMS [4] experiments at CERN, the\nEPIC detector at the Electron-Ion Collider at BNL [5] and the PIONEER\nexperiment [6]. This study was of primary interest to the PIONEER collaboration since LGAD energy linearity is particularly important for particle\nidentification in the inner active target detector (ATAR) [6].\nThe mechanism underlying gain suppression or saturation, i.e., the loss\nof gain with increasing signal charge, has been studied in recent years by\nseveral research groups [7, 8]. The saturation is triggered by the shielding of\nthe electric field in the gain layer caused by the multiplication of the charge\ncarriers in the bulk, and increases with the density of the deposited charge.\nIt depends on the total amount of initial deposited charge, the sensor gain\n(which, in LGADs, is proportional to the applied bias voltage), and the angle\nof incidence with respect to the charge drift direction towards the gain layer.\nThis is because the charge carrier drift is more distributed across the gain\nlayer for an angled track, reducing the saturation effect. This effect also\ndepends on the initial gain (which is the device gain for charge deposition of\n1 MIP) of the device; running the device at a higher gain will increase the\nsaturation effect.\n\n**2. Experimental setup**\n\nThe Center for Experimental Nuclear Physics and Astrophysics (CENPA)\nat the University of Washington has a High Voltage Engineering Corporation\nModel FN tandem Van de Graaff accelerator [9] that is used to perform various accelerator-based experiments. Protons of 1.8 MeV and 3 MeV momenta\nwere used for this measurement campaign. The momentum resolution of the\nproton beam is around 300 ppm, and the beam size is around 2 mm.\nThe tested LGAD sensors are mounted on a fast analog single channel\nelectronic board (around 2 GHz bandwidth) designed at SCIPP [10] with\n\n2\n\nan additional external box amplifier [1], the signal is digitized by a 1 GHz\nbandwidth digital scope [2] . Appropriate power supplies provide the amplifiers\nwith the Low Voltages and the sensor with High Voltage bias. The setup sits\nin a vacuum chamber directly connected to the beamline, as shown in Fig. 1.\nThe board is fixed on a rotating support that can be controlled remotely.\nTo control the particle incidence rates",
+        "score": 1.7629932827419705,
+        "dense_score": 0.36416590213775635,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 2.7048187255859375,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5635,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ugh the use of a narrower\n\ngain layer[15]. Last but not least, an internal gain layer reduces the need for amplifier electronics\n\nand hence reduces power consumption for the operation of HL-LHC[4].\n\nLGADs are an excellent candidate for 4D tracking and to understand their performance, LGADs\n\nwere fabricated by Micron Semiconductor Ltd. The first timing measurement of LGADs by the\n\nvendor will be presented and compared to devices manufactured by the Institut de Microelectrònica\n\nde Barcelona (IMB-CNM) for reference. Moreover, the study will seek to understand how different\n\nphysical parameters affect devices’ timing resolution. The study will first focus on LGAD samples\n\nmanufactured by both vendors and uncertainty factors affecting timing resolution will be eluci\ndated in section 2. Furthermore, the experimental setup for measuring the Current-Voltage (IV),\n\nCapacitance-Voltage (CV), gain, and timing resolution will be explored. Section 3 will present the\n\nexperimental results obtained from the setup described in section 2 and subsequently interpreted to\n\nput into context. Finally, section 4 will present potential issues encountered during the experiment\n\nand the outlook of the work.\n\n– 2 –\n\n**Figure 1** . Schematic representation of LGAD (not to scale). The n++ and p+ layers are typically about\n1 − 3 µm thick and the established electric field profile is depicted on the left.\n\n**2** **Materials and Methods**\n\n**2.1** **Detector Design**\n\nLGADs have been proposed as a new detector technology for use within a system that requires\n\nexcellent time resolution. LGADs are based on the traditional Avalanche Photodiode (APD),\n\nhowever, the doping profiles are modified in such a way as to create the optimal electric field and\n\nhence low gain required for these detectors. As the gain of the LGAD is low, the device can be\n\noperated in avalanche mode and within the linear region with a large bias voltage working range\n\nand a gain that is loosely dependent on the bias voltage. The internal gain increases the sensor\n\nnoise, but since electronic noise dominates the total noise, this contributes to an overall increase in\n\nthe detector system’s signal-to-noise ratio.\n\nThe effective timing resolution of LGADs depends on four independent factors summed to\ngether: time walk, Landau noise, jitter, and time-to-digital converter (TDC). That is,\n\n_𝜎_ _𝑇𝑜𝑡𝑎𝑙_ [2] [=] _[ 𝜎]_ _𝑇𝑖𝑚𝑒𝑊𝑎𝑙𝑘_ [2] [+] _[ 𝜎]_ _𝐿𝑎𝑛𝑑𝑎𝑢𝑁𝑜𝑖𝑠𝑒_ [2] [+] _[ 𝜎]_ _𝐷𝑖𝑠𝑡𝑜𝑟𝑡𝑖𝑜𝑛_ [2] [+] _[ 𝜎]_ _𝐽𝑖𝑡𝑡𝑒𝑟_ [2] [+] _[ 𝜎]_ _𝑇",
+        "score": 1.4819656881919274,
+        "dense_score": 0.4278298616409302,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 2.271663188934326,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5045,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2782682__2508.10392__Measurements_and_TCAD_simulations_of_innovative_RSD_and_DC-RSD_LGAD_devices_for_future_4D_.md",
+        "title": "2024__recid_2782682__2508.10392__Measurements_and_TCAD_simulations_of_innovative_RSD_and_DC-RSD_LGAD_devices_for_future_4D_",
+        "text": "uction of two innovations in the design of silicon sensors, (i) Low-Gain\nAvalanche Diode (LGAD) [1, 2] and (ii) Resistive readout, has significantly improved the performance capabilities of silicon sensors in both spatial and temporal\nresolutions. Resistive Silicon Detector (RSD) [3] is\nan LGAD (Fig. 1 left) optimized for both spatial and\ntime measurements (4D-tracking), which make use of\nan AC-coupled read-out electronic chip and a continuous gain implant without any segmentation. It combines\nthe excellent timing capabilities of LGAD with remarkable spatial resolution, making it an emerging technology for 4D tracking. The major peculiarity of the RSD\n\n∗ Corresponding author\n_Email address:_ `moscatelli@iom.cnr.it` (F. Moscatelli)\n\nparadigm is the use of a continuous n [+] -resistive electrode and a continuous p [+] -gain layer, allowing a fill factor of 100%, in contrast to the standard LGAD, which is\naffected by the lack of gain in the inter-pad region [4].\nOn the other hand, different drawbacks are linked to the\nnature of RSD paradigm, e.g. the bipolar behavior of\nthe signals due to the use of the AC-coupled read-out,\nthe baseline fluctuation due to the collection of the leakage current at the edge of the sensor, and the positiondependent resolution. The DC-coupled RSD – or DCRSD (Fig. 1 right), enables to cope with these issues\nby eliminating the dielectric and using a DC-coupling\nto the electronics, while maintaining the advantage of\n100% fill factor.\n\nSilicon sensors based on resistive read-out [3, 5, 6]\ncombine many of the features needed by future experiments: (i) excellent spatial and temporal resolutions,\n(ii) low material budget (the active part can be a few\n\n_Preprint submitted to Nuclear Inst. and Methods in Physics Research, A_ _August 15, 2025_\n\nFigure 1: Schematics of a AC-LGAD on the left and of a DC-RSD\nLGAD on the right.\n\ntens of µ _m_ thick), (iii) 100% fill factor, and (iv) good radiation resistance (presently, up to 1−2×10 [15] _n_ _eq_ / _cm_ [2] ).\nIn addition, given the large pixel size, RSDs are an\nenabling technology for constructing 4D silicon trackers [7] with limited power consumption as they reduce\nthe number of read-out amplifiers by more than an order of magnitude. The benefits of resistive read-out\nare maximized when the electrode metal area is min\nimized and shaped to limit the spread of the signal,\nas reported in a study using a high-precision Transient\nCurrent Technique (TCT) set-up [8] to mimic the passage of particles",
+        "score": 1.2340605363051096,
+        "dense_score": 0.3603149354457855,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 1.891375184059143,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5645,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ion for LGADs can be achieved\n\nby optimising the geometry and gain of the devices. To fulfil these requirements, LGADs were\n\nproduced by Micron Semiconductor Ltd. and their timing performance was characterised for the\n\nfirst time. In addition, available LGAD devices from CNM were measured in parallel to understand\n\nif the devices were on par with other manufacturers and to understand parameters affecting timing\n\nresolution. Basic IV and CV measurements were taken for the devices. Then, a dedicated TCT\n\nsetup was used to measure the gain of the devices. An experiment involving Sr-90 was set up\n\nand the measurements were analysed using CFD to quantify the time resolution of the LGADs.\n\nResults indicate timing resolution is strongly dependent on bias voltage and temperature due to\n\ntheir influence on the gain of the devices. Importantly, the time resolution of LGAD devices from\n\nMicron Semiconductor Ltd. was measured to be between the lower 30 ps and upper 20 ps and hence\n\nthe produced LGAD devices are in line with other manufacturers.\n\nDuring the measurements, several issues were present. The IV and CV measurements in\n\nfigure 6 were found to be satisfactory. A clear breakdown voltage was observed for both devices,\n\nwith a slight kink present in the IV measurements for the Micron device. The results for the gain\n\n° °\nmeasurement in figure 7 show that gain from 50V − 120V is higher for 0 C compared to −24 C.\n\nThis indicates a miscalibration in the TCT setup that systematically affected the normalisation of\n\nthe data points. Nevertheless, the temperature dependence of the gain is observed. There are several\n\nlimitations present in the analysis. First is the analysis method itself. CFD is a relatively simple\n\nmethod using the rising edge of the signal to quantify the signal and calculate the time resolution.\n\nHowever, it may not yield the most accurate and better time resolution compared to an alternative\n\nbut more complicated procedure known as multiple sampling that makes full use of the signal.\n\nAnother issue is with the devices. The measurements for IV, CV, and gain for the CNM device W7\nLGB-31 were omitted due to the inability to characterise the device due to high leakage current and\n\nmade time resolution measurements for bias voltage closer to breakdown voltage difficult. Another\n\nlimitation is the assumption made during the analysis. Specifically, the devices’ time resolution can\n\nbe calculated by dividing but this only holds if the devices’ parameters a",
+        "score": 0.6195144542905151,
+        "dense_score": 0.43901532888412476,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.9442719221115112,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7706,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2902801__2503.16658__Performance_of_neutron_and_proton_irradiated_AC-LGAD_sensors.md",
+        "title": "2026__recid_2902801__2503.16658__Performance_of_neutron_and_proton_irradiated_AC-LGAD_sensors",
+        "text": "ch\n\nnology, aka Resistive Silicon Detector (RSD) [5, 6], which is based on a complete\n\nintegration of four of the sensor layers in common sheets of the P-type bulk,\n\nthe P [++] gain layer, the N [+] layer, and a dielectric sheet, separating the first\n\nthree from the segmented metal readout contacts (Fig. 1). A signal originat\n\ning in the bulk and amplified in the gain layer is then shared between several\n\nelectronic channels, allowing signal location reconstruction with a resolution of\n\na small ( _<_ 5% [7]) fraction of the readout pitch, also allowing an acceptable\n\npower density for high position and time resolution.\n\nAC-LGADs are the chosen sensor technology for the ePIC detector [8] time\n\nof flight layer, which is composed of strips in the barrel region and pixels in\n\nthe end-cap region. Over the lifetime of ePIC, a fluence up to 1e13 _n_ _eq_ _/cm_ [2]\n\nwill be accumulated in the hottest regions of the sub-detector. Strip and pixel\n\nAC _−_ LGADs produced by Hamamatsu Photonics K.K. (HPK) [9] were tested\n\nbefore and after neutron and proton irradiation with 1 MeV reactor neutrons at\n\nJSI/Ljubljana and with 400 MeV protons at FNAL ITA to fluences on the order\n\nof 1e13 _n_ _eq_ _/cm_ [2] to a few times 1e15 _n_ _eq_ _/cm_ [2] . The sensors were characterized\n\nwith a probe station for current versus voltage (IV) and capacitance over voltage\n\n(CV) to probe the breakdown and degradation of the gain layer with irradiation.\n\nThen, a selection of sensors was tested with a focused laser TCT station to test\n\nthe change of behavior after irradiation in terms of charge-sharing response,\n\ntime of arrival, and rise time.\n\n**2. Experimental**\n\n_2.1. Sensors_\n\nThe tested sensors were fabricated by HPK with funds from the eRD112\n\nproject to develop AC-LGAD detectors for the EIC [8]. Fig. 2 shows the layout\n\n2\n\nFigure 1: Cross section of an AC-LGAD showing common sensor layers and the signals shared\n\nby neighboring metal contacts. Red: direct, induced signal, yellow: pick-up from the N [+] layer\n\nand the signal traveling in the N [+] layer and collected in the ground contact (green). Schematic\n\nfrom [5].\n\nof the approximately 5 mm wide AC-LGAD strip sensor with 5 mm and 10 mm\n\nlong strips with 500 µm pitch and 50 µm strip width.\n\nFigure 2: HPK AC-LGAD with 5 mm and 10 mm long strips on 500 µm pitch and 50 µm\n\nstrip width.\n\nThe wafers were fabricated with properties summarized in Tab. 1; each wafer\n\nincluded several pixel and strip sensors. Two values for the N [+] sheet",
+        "score": 0.271567055006181,
+        "dense_score": 0.43514543771743774,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.4091106057167053,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8080,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2966906__2509.04638__Time_Resolution_Characterization_of_4H-SiC_LGADs_With_a_sup90supSr_Source.md",
+        "title": "2026__recid_2966906__2509.04638__Time_Resolution_Characterization_of_4H-SiC_LGADs_With_a_sup90supSr_Source",
+        "text": "lanche multiplication to produce additional\ncharge carriers.\n\nFig. 6. Charge collection distribution of the [90] Sr source and Landau-Gaussian\nconvolution fit results: (a) Si LGAD at 250 V; (b) 4H-SiC LGAD at 500 V.\n\nIII. T EST S ETUP\n\nTo measure the time resolution of the 4H-SiC LGAD, a\n50 _µm_ thick Si LGAD with a gain of 10-20 from Brookhaven\nNational Laboratory (BNL) [10] was used as the timing\nreference device in the [90] Sr source setup. The time resolution\nof the BNL Si LGAD has been previously determined using\na [90] Sr source with a value about 41 ps. Fig. 3 shows the\n90 Sr source test system. As illustrated in Fig. 4, two highspeed readout boards, each equipped with a 2 GHz bandwidth\ntransimpedance amplifier (TIA), were stacked together. The\nfront board was mounted with a Si LGAD, while the rear board\nhoused the 4H-SiC LGAD. To minimize scattering and attenuation of the incident beta particles by the PCB, each board\nfeatured a 2 mm diameter through-hole at the center of the\ndevice mounting pad. The [90] Sr source emits a continuous beta\nspectrum with a maximum energy of 0.546 MeV; a portion of\nthe particles can penetrate both the Si LGAD and the 4H-SiC\nLGAD, inducing current pulses in each detector. These signals\nwere amplified by the transimpedance amplifier followed by\nsecondary broadband amplifiers, and then captured by a highspeed oscilloscope. Since both the TIA on the readout board\nand the external wide-band amplifier are inverted, the polarity\nof the final output pulse signal remains unchanged.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2025 3\n\nFig. 7. (a) Collected charge of the Si LGAD as a function of bias voltage,\nwith the dotted line indicating the theoretical collected charge for MIPs in a Si\nPiN detector of the same thickness; (b) Collected charge of the 4H-SiC LGAD\nas a function of bias voltage, with the dotted line indicating the theoretical\ncollected charge for MIPs in a 4H-SiC PiN detector of the same thickness.\n\n(a) ΔT (b)\n\n|Col1|Col2|Δ T (b)<br>F i t<br>𝜇= 0.17 ± 0.002 ns|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|||𝜎= 76 ± 2 ps|𝜎= 76 ± 2 ps|𝜎= 76 ± 2 ps|𝜎= 76 ± 2 ps|\n|||||||\n\nFig. 8. 4H-SiC LGAD at a bias voltage of 500 V: (a) _σ_ ∆ _T_ obtained using a\n10%–90% fraction; (b) ∆ _T_ distribution at a 40% fraction with Gaussian fit.\n\nIV. T IMING P ERFORMANCE\n\nTo measure the time resolution, the same method described\nin [6] was employed. Using the constant fraction discrimination (CFD) technique, the timing poin",
+        "score": 0.20205702633225128,
+        "dense_score": 0.3753398656845093,
+        "bm25_score": 11.334910141789841,
+        "graph_score": 0.0,
+        "rerank_score": 0.29721009731292725,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4559,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD.md",
+        "title": "2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD",
+        "text": "1\n\n# Long-Distance Signal Propagation in AC-LGAD\n\nC. Bishop, A. Das, J. Ding, M. Gignac, F. Martinez-McKinney, S. M. Mazza, A. Molnar,\nN. Nagel, M. Nizam, J. Ott, H. F.-W. Sadrozinski, B. Schumm, A. Seiden, T. Shin,\n\nA. Summerell, M. Wilder, Y. Zhao\n\n_SCIPP, Univ. of California Santa Cruz, CA 95064, USA_\n\n_Abstract–_ We investigate the signal propagation in AC-LGAD (aka RSD), which are LGAD with a\ncommon N [+] layer and segmented AC-coupled readout contacts, by measuring the response to IR laser TCT\non a large selection of AC-LGAD with strip readout. The interest for this topic derives from the realization\nthat while large charge sharing between neighboring strips is essential for good position resolution, large\nsharing beyond the next neighbor generates background signals which in general are detrimental to the\nsensor goal of low occupancy. Using AC-LGAD with strip readout produced by Hamamatsu Photonics\n(HPK), we evaluate the effects of a variety of sensor properties, including geometrical parameters (strip\nlength, width), process parameters like the N [+] layer resistivity, the coupling capacitance, and the thickness\nof the bulk on the signal sharing and the position resolution.\n\nPACS: 29.40.Gx, 29.40.Wk, 78.47jc\n\nKeywords: fast silicon sensors; charge multiplication; AC-LGAD strips; charge sharing.\n\n**1.** **Introduction**\n\nLow-gain Avalanche Detectors (LGAD) have been recently introduced as fast semiconductor timing\nsensors [1,2]. In their large-scale experimental applications, the High Granularity Timing Detector (HGTD)\nin ATLAS [3] and the MIP Timing Detector (MTD) in CMS [4], their segmentation is limited to pads with\nabout 1 mm pitch by consideration of power, fill-factor, and field uniformity. While the fill-factor and\nuniformity problems could be solved for small-scale applications with Trench-Isolated LGAD [5], an\nacceptable power density will limit the spatial resolution unless charge sharing between distant contacts is\nemployed. This is the principle of the AC-LGAD technology (aka Resistive Silicon Detector RSD) [6-8]\nwhich is based on a complete integration of four of the sensor layers in common sheets of the P-type bulk,\nthe P [+] gain layer, the N [+] layer and a dielectric sheet, separating the first three from the segmented metal\nreadout contacts (Fig. 1). A signal originating in the bulk and amplified in the gain layer is then shared\nbetween several electronics channels, allowing reconstruction of signal location with a resolution which",
+        "score": 0.11372019912894457,
+        "dense_score": 0.3634645938873291,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.16757796704769135,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5637,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ns has shown that devices with a thickness of 50 µm\n\nwith a gain in the magnitude of 10 − 20 provide the best time resolution. Therefore, LGAD\n\nwafers fulfilling these technical requirements were fabricated by Micron Semiconductor Ltd and\n\nsubsequently characterised at the University of Glasgow.\n\n**2.2** **LGAD Samples**\n\nTiming studies were performed on the 50 µm LGAD wafer fabricated from Micron Semiconductor\n\nLtd. The wafer 3331-19 contains devices with varying pixel sizes, doping concentrations, and\n\njunction termination extension (JTE) width. For devices 1 - 7 in the wafer, the devices are single\npixel devices with pixel sizes varying from 0 _._ 22 mm to 2 mm and JTE widths ranging from 10 µm to\n\n50 µm. Device 7 from the northern section of the wafer with a pixel size of 0 _._ 5 mm and JTE width\n\nof 10 µm was tested as part of the timing studies. As part of the timing measurement experiment,\n\nanother device from the same region was used to ensure that the devices have similar geometry and\n\ncharacteristic parameters.\n\nIt is vital to understand what parameters affect timing resolution and make sure performance is\n\non-par with other manufacturers of LGADs. Therefore, devices manufactured by CNM Barcelona\n\nwere also measured. Particularly, 50 µm LGAD devices W7-LGB-52 and W7-LGB-31 from run\n9088 were studied. The two devices are single-pad LGADs with an active area of 3 _._ 3 × 3 _._ 3 mm [2] .\n\n**2.3** **IV and CV: Setup**\n\nThe characterisation of the IV and CV curves of LGADs was done within the Glasgow Laboratory\n\nfor Advanced Detector Development using a dedicated probe station setup.\n\nThe main setup for characterising the IV curve consists of a power supply, a dark box, the\n\nprobe, and the chuck. The setup is depicted in figure 2. In this setup, devices are mounted on top\n\nof a chuck that is held in place by a vacuum pump. A probe composed of a tungsten filament of\n\n20 microns is then lowered into contact with the device and a Keithley-273 DC power supply is\n\nconnected to the probe through the positive terminal. For current to flow, the chuck is connected to\n\nthe power supply at the negative terminal and is grounded. Finally, the entire setup apart from the\n\npower supply is placed inside the dark box from Wentworth to shield it from external interferences\n\nsuch as light and vibrations. During the IV measurements, the setup is connected to a computer\n\nand data is displayed through a dedicated LabView user interface.\n\nThe CV measurement setup is more c",
+        "score": 0.05979699562240379,
+        "dense_score": 0.34094175696372986,
+        "bm25_score": 14.566315234534924,
+        "graph_score": 0.0,
+        "rerank_score": 0.07682302594184875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 686,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+        "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+        "text": "2] at the TRIGA reactor in Ljubljana, Slovenia with fast neutrons. Table 1 lists\nthe LGAD sensors measured in the beam tests, including the vendor, the sensor IDs, the implant of\n\nthe multiplication layer as well as the irradiation type and fluence. It also includes the device name\n\nassigned to each sensor for easier reference in the text: a concatenation of the sensor vendor (CNM,\nFBK, USTC, IHEP) and the irradiation level in units of 10 [15] n _𝑒𝑞_ /cm [2] . For instance, CNM-0 refers\nto an unirradiated CNM LGAD, which was used in all beam tests as a time reference.\n\nFigure 1 shows the leakage current-voltage (I-V) characteristics for several tested sensors. The\n\nI-V measurements for all sensors revealed a leakage current below 5 µA at about 500 V.\n\n– 2 –\n\n**Table 1** : List of CNM, FBK, USTC-IME and IHEP-IME LGAD sensors studied in the 2021 and\n\n2022 beam test periods including the information on the implant of the multiplication layer, the\n\nirradiation level and type and the facility where they were tested.\n\n|Device name|Vendor|Sensor ID|Implant|Irradiation type|Fluence<br>[n /cm2]<br>𝑒𝑞|Tested at|\n|---|---|---|---|---|---|---|\n|CNM-0|CNM|W9LGA35|boron|unirradiated|–|DESY/CERN|\n|FBK-1.5<br>FBK-2.5|FBK<br>FBK|UFSD3.2 W19<br>UFSD3.2 W19|boron + carbon<br>boron + carbon|neutrons<br>neutrons|1.5×10~~15~~<br>2.5×1015|DESY/CERN<br>DESY/CERN|\n|USTC-1.5<br>USTC-2.5|USTC-IME<br>USTC-IME|v2.1 W17<br>v2.1 W17|boron + carbon<br>boron + carbon|neutrons<br>neutrons|1.5×10~~15~~<br>2.5×1015|DESY<br>DESY|\n|IHEP-1.5<br>IHEP-2.5|IHEP-IME<br>IHEP-IME|v2 W7 Q2<br>v2 W7 Q2|boron + carbon<br>boron + carbon|neutrons<br>neutrons|1.5×10~~15~~<br>2.5×1015|DESY/CERN<br>CERN|\n\n**Figure 1** : Leakage current-voltage dependence for all sensors performed at −30 °C.\n\n**2.1** **FBK devices**\n\nThese samples are LGAD sensors optimized for timing, also known as Ultra-Fast Silicon Detectors\n\n(UFSDs) [14–16] which combine an optimized sensor geometry with a moderate internal gain to\n\nachieve a time resolution of 30 to 40 ps for minimum ionizing particles (MIPs).\n\nThis production run is called UFSD3.2 and aimed to investigate different gain layer designs\n\nwhere two different gain depths were considered: shallow and deep. The gain layer depth is 2 µm\n\nand the active thickness in most of the wafers is 45 µm. In particular, with respect to the previous\n\nproduction run UFSD3, this one has an optimization of the carbon level and a different array inter\npad gap. Devices in W19 have a thinner bulk",
+        "score": 0.037313671898681414,
+        "dense_score": 0.4348944425582886,
+        "bm25_score": 11.071813230765446,
+        "graph_score": 0.0,
+        "rerank_score": 0.04330749064683914,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.435743221081793,
+    "generation_latency_s": 3.296881914138794e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.435743221081793,
+    "generation_latency_s": 3.296881914138794e-07
+  }
+}

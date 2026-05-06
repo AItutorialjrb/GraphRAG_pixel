@@ -1,0 +1,277 @@
+{
+  "benchmark": {
+    "query_id": "neg010",
+    "query_type": "negative",
+    "query": "What exact password should I use to access CERN GitLab?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "exact",
+      "password",
+      "should"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What exact password should I use to access CERN GitLab?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2008,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "in 2017.\nThe Conditions Database is stored in a Git repository hosted on the CERN GitLab\ninstance. Conditions data are accessed by a library, which also adds the time dimension\n(i.e. the interval of validity for a given condition) to the filename and versioning dimensions\nprovided by a Git repository. The `YAML` standard is used to persist condition data.\nConditions values in the Conditions Database are used in different contexts and have to\nsupport different use cases, in particular simulation and real data processing. In simulation,\nthe response of the detector for fixed sets of conditions is exploited. In real data processing,\nthe time evolution of conditions is followed, with the Git versioning of data used to\ntrack the evolution of the response of subdetectors, or improved alignment algorithms.\nConditions data can be generated automatically in the online environment, for example\ncalibration and alignment parameters or temperature and pressure values retrieved from\nprobes, or produced manually for example in offline workflows that require expert analysis\nbefore inclusion in the database. In the former case, conditions are automatically pushed\n\n–\nto the GitLab project and published to the CERNVM file system (CVMFS) [204 206],\nwhile the offline conditions have to be proposed in the form of GitLab merge requests,\nto undergo a review before being integrated and published.\n\n##### **12.3 Detector geometry description**\n\nThe description of the geometry of the LHCb detector serves a wide range of applications, from simulation to detector alignment, visualisation, and computation of material\nbudget. It must fulfil the LHCb needs in terms of flexibility, management, integration\nwith the conditions database, and speed of navigation between detector elements. The\nDetector Description for HEP (or DD4HEP ) toolkit [207] is used for the LHCb detector\ndescription. It replaces an XML-based framework [208], designed and implemented within\nthe collaboration, but not optimised for modern computing architectures and no longer\nmaintained. The DD4HEP toolkit builds on the experience gathered by LHC experiments\nand aims to bind the existing tools for detector description, simulation and visualisation to\nproduce a consistent toolkit. Its structure is modular, with a generic detector description\nmodel as its core, and a set of nonmandatory extensions or plugins that can be used when\nneeded. The object model and visualisation are provided by the ROOT framework. For\nsimulations,",
+        "score": -1.9012857300336243,
+        "dense_score": 0.3185357451438904,
+        "bm25_score": 20.813404051491602,
+        "graph_score": 0.0,
+        "rerank_score": -2.942709445953369,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 190,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 2009,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "it. Its structure is modular, with a generic detector description\nmodel as its core, and a set of nonmandatory extensions or plugins that can be used when\nneeded. The object model and visualisation are provided by the ROOT framework. For\nsimulations, the Geant4 toolkit is used.\n\n##### **12.4 Software infrastructure**\n\nThe LHCb software stack depends on many software packages developed at CERN, in\nother scientific institutions, or in industry. Many of these packages are open source.\nExternal packages must be tracked, versioned, compiled and distributed. LHCb uses the\n_LCG releases_ [209], which are prepared by the EP-SFT groups at CERN, for packages\nthat are common among the LHC experiments. These releases are prepared using the\nLCGCmake [210] tool.\nAs many developers are involved in the development of the millions of lines needed\nfor the experiment framework, a strong version control system and good practices are\ncrucial to ensure the quality of the software. The LHCb code base is split into several\nprojects, versioned and managed independently, each having a distinct goal. Each of these\nprojects is managed using the Git [211] version control system. This allows keeping the\n\n161\n\nfull history of all code changes. Code reviews are prevalent in the software industry, as a\nway to improve code quality and harmonise development practices across organisations.\nLHCb Git projects are hosted on the CERN GitLab server, which also provides features\nallowing better collaboration between the members of the teams. New features to the code\nare peer-reviewed before being merged into the main code base. The projects are organised\naround the Jira [212] task management and the GitLab issue management systems,\nas deployed by the CERN IT department. This allows the developers within the LHCb\ncollaboration to follow the evolution of the projects and collaborate in a constructive\n\nmanner.\n\nA Software Configuration Database has been built to track all projects and their\ndependencies [213] using the Neo4j graph database [214]. This information is crucial to\nthe management of the software in the short term, but is also necessary to identify the\nsoftware needed to continue analysing the LHCb experiment data in the long term.\nIn order to ensure the quality of the software produced by the developers, automatic\nbuilds of the software are performed, as described in ref. [215]. This infrastructure relies\non the industry-tested Jenkins [216] automation server as deployed in the CERN IT\nOp",
+        "score": -2.4756211282508436,
+        "dense_score": 0.24363164603710175,
+        "bm25_score": 19.974998155597792,
+        "graph_score": 0.0,
+        "rerank_score": -3.824708938598633,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 191,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2024,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "reativity in the end-user analysis, implementing a statistical\ninterpretation of the filtered data, only minimal constraints are placed on the necessary\nanalysis code. While commonly used libraries, such as RooFit, ScikitHEP [252], etc.\nare available through CVMFS and can be managed using the Conda package manager,\nanalysts can write custom scripts and custom routines to best answer their specific analysis\ntasks. For each publication the respective code is preserved in the respective physics\nworking group GitLab repositories. Intermediate files, in particular filtered ntuples, are\nusually stored on the EOS storage system at CERN.\n\n##### **12.7 Distributed computing**\n\nThe distributed computing of LHCb is based on the Dirac interware [253], and its\nLHCb Dirac extension. The Dirac project is developing interware to build and operate\ndistributed computing systems. It provides a development framework and a rich set of\nservices for both workload and data management tasks of large scientific communities.\nThe LHCb Dirac infrastructure relies on database backends and services. The databases\nare provided by the CERN/IT database infrastructure ( _database on demand_ [254]). [89] The\nservices run on a dedicated computing infrastructure also provided by CERN/IT.\nDirac was started by LHCb as a project for accessing computing grid resources. In\n2009, following interest of other communities, the project has been open sourced. Now, it\nis a truly open source project hosted on GitHub and released under the `GPLv3` license.\nWithin the following years, Dirac has been adopted by several experimental communities\nboth inside and outside high energy physics, with different goals, intents, resources and\nworkflows.\n\n89 TM\nThe CERN/IT database infrastructure is provided by Oracle .\n\n172\n\nIn order to accommodate different requirements, Dirac has been designed with\nextensibility in mind. The core project ( Dirac ) can be _horizontally_ extended by adding\nprojects that are independently versioned but nevertheless strongly interdependent,\nas they concur to form a Dirac release. All projects are hosted together on GitHub,\nshare the same license, and are maintained by the same set of users. The Dirac core\nproject is the glue that keeps the satellite projects together. It also depends on software\nnot maintained by the Dirac consortium, which is collected in _externals_ . Horizontal\nextensions include: WebAppDirac, the Dirac web portal [255]; RESTDirac [256],\nwhich extends some Dirac servic",
+        "score": -2.521195547720965,
+        "dense_score": 0.2820347249507904,
+        "bm25_score": 15.938845298744571,
+        "graph_score": 0.0,
+        "rerank_score": -3.895094394683838,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 206,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7058,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2877168__2502.03903__Caribou__A_versatile_data_acquisition_system_for_silicon_pixel_detector_prototyping.md",
+        "title": "2025__recid_2877168__2502.03903__Caribou__A_versatile_data_acquisition_system_for_silicon_pixel_detector_prototyping",
+        "text": "d recent extensions of the Caribou DAQ system for picosecond timing_\n_with an FPGA TDC_, JINST 18 C02005, TWEPP2022 (2022)\n\n[5] CLICdp Collaboration (eds. D. Dannheim et al), _Detector technologies for CLIC_, CERN Yellow\nReports: Monographs, CERN-2019-001 (2019)\n\n[[6] Peary software GitLab repository, https://gitlab.cern.ch/Caribou/peary](https://gitlab.cern.ch/Caribou/peary)\n\n[[7] CaR board GitLab repository, https://gitlab.cern.ch/Caribou/hardware/carboard](https://gitlab.cern.ch/Caribou/hardware/carboard)\n\n[[8] Boreal firmware GitLab repository, https://gitlab.cern.ch/Caribou/boreal](https://gitlab.cern.ch/Caribou/boreal)\n\n[9] S. Ruiz Daza et al., _H2M: Porting a hybrid readout architecture into a monolithic 65 nm CIS_, JINST,\nPIXEL2024 (2025)\n\n[[10] PetaCaribou Gitlab repository, https://gitlab.cern.ch/Caribou/peta-caribou](https://gitlab.cern.ch/Caribou/peta-caribou)\n\n[[11] Caribou project website, https://caribou-project.docs.cern.ch](https://caribou-project.docs.cern.ch)\n\n– 5 –",
+        "score": -2.950556760910314,
+        "dense_score": 0.2131119966506958,
+        "bm25_score": 18.805018722317023,
+        "graph_score": 0.0,
+        "rerank_score": -4.5534162521362305,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4213,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS.md",
+        "title": "2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS",
+        "text": "ations.](https://www.caen.it/products/dt5742/)\n\nURL `[https://www.caen.it/products/dt5742/](https://www.caen.it/products/dt5742/)`\n\n[[18] CAEN DT1471LET HV supply specifications.](https://www.caen.it/products/dt1471et/)\n\nURL `[https://www.caen.it/products/dt1471et/](https://www.caen.it/products/dt1471et/)`\n\n32\n\n[[19] Corrivreckan gitlab project page.](https://gitlab.cern.ch/corryvreckan/corryvreckan.)\n\nURL `[https://gitlab.cern.ch/corryvreckan/corryvreckan.](https://gitlab.cern.ch/corryvreckan/corryvreckan.)`\n\n[20] S. Siegel, R. Silverman, Y. Shao, S. Cherry, Simple charge division\n\nreadouts for imaging scintillator arrays using a multi-channel pmt,\n\nIEEE Transactions on Nuclear Science 43 (3) (1996) 1634–1641. `[doi:](https://doi.org/10.1109/23.507162)`\n\n`[10.1109/23.507162](https://doi.org/10.1109/23.507162)` .\n\n[21] A. Apresyan, et al., Measurements of an AC-LGAD strip sensor with a 120\n\nGeV proton beam, J. Instrum. 15 (2020) P09038.\n\n[22] S. Spannagel, et al., GBL Track Resolution Calculator v2.0 (2016). `[doi:](https://doi.org/https://doi.org/10.5281/zenodo.48795)`\n\n`[https://doi.org/10.5281/zenodo.48795](https://doi.org/https://doi.org/10.5281/zenodo.48795)` .\n\n33",
+        "score": -3.154890078883017,
+        "dense_score": 0.3081657290458679,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.862361907958984,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 20,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8281,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "F. Loddo, J. Christiansen,\n\n[RD53B Manual,](https://cds.cern.ch/record/2665301) Tech. rep., CERN, Geneva\n(2019).\nURL `[https://cds.cern.ch/record/](https://cds.cern.ch/record/2665301)`\n\n```\n 2665301\n\n```\n\n[[20] Strasbourg Irradiation Facility.](https://cyrce.fr/en/irradiation-2/)\nURL `[https://cyrce.fr/en/](https://cyrce.fr/en/irradiation-2/)`\n```\n irradiation-2/\n\n```\n\n[[21] Karlsruhe Irradiation Facility.](https://www.etp.kit.edu/english/irradiation_center.php)\nURL `[https://www.etp.kit.edu/english/](https://www.etp.kit.edu/english/irradiation_center.php)`\n```\n irradiation_center.php\n\n```\n\n[[22] Cern Irradiation Facility.](https://ps-irrad.web.cern.ch/ps-irrad/)\nURL `[https://ps-irrad.web.cern.ch/](https://ps-irrad.web.cern.ch/ps-irrad/)`\n```\n ps-irrad/\n\n```\n\n[23] A. Papadopoulos, on behalf of the CMS\nTracker Group, Analog performance of the\nCROCv1 pixel readout chip for the CMS Phase-2\nTracker Upgrade, JINST 18 (01) (2023) C01068.\n`[doi:10.1088/1748-0221/18/01/C01068](https://doi.org/10.1088/1748-0221/18/01/C01068)` .\n\n[24] P. Allport, F. Bögelspacher, K. Bruce, R. Canavan, A. Dierlamm, L. Gonella, P. Knights, I. Mateu, M. Moll, K. Nikolopoulos, B. Phoenix,\nT. Price, L. Ram, F. Ravotti, C. Simpson-Allsop,\nC. Wood, Experimental determination of proton\nhardness factors at several irradiation facilities,\nJINST 14 (12) (2019) P12004. `[doi:10.1088/](https://doi.org/10.1088/1748-0221/14/12/P12004)`\n`[1748-0221/14/12/P12004](https://doi.org/10.1088/1748-0221/14/12/P12004)` .\n\n[25] R. Diener, J. Dreyling-Eschweiler, H. Ehrlichmann, I. Gregor, U. Kötz, U. Krämer, N. Meyners,\nN. Potylitsina-Kube, A. Schütz, P. Schütze,\nM. Stanitzki, The DESY II test beam facility, Nucl. Instrum. Meth. A 922 (2019) 265.\n```\n doi:https://doi.org/10.1016/j.nima.\n\n```\n\n`[2018.11.133](https://doi.org/https://doi.org/10.1016/j.nima.2018.11.133)` .\n\n[[26] Fermilab Test Beam Facility.](https://ftbf.fnal.gov/)\nURL `[https://ftbf.fnal.gov/](https://ftbf.fnal.gov/)`\n\n[[27] Cern Test Beam Facility.](https://ps-sps-coordination.web.cern.ch/ps-sps-coordination/)\nURL `[https://ps-sps-coordination.web.](https://ps-sps-coordination.web.cern.ch/ps-sps-coordination/)`\n```\n cern.ch/ps-sps-coordination/\n\n```\n\n[28] H. Jansen, S. Spannagel, J. Behr, A. Bulgheroni,\nG. Claus, E. Corrin, D. Cussans, J. DreylingEschweiler, D. Eckstein, T. Eichhorn, M. Goffe,\nI. M. Gregor, D. Haas, C. Muhl, H. Perrey,\nR. Peschke, P. Roloff, I. Rubinskiy, M. Winter,\nPerformance of the EUDET-type beam telescopes,\nEPJ Techniq",
+        "score": -4.035518039874177,
+        "dense_score": 0.25290924310684204,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.216526031494141,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 36,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6408,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2811383__2407.18528__Time_performance_of_Analog_Pixel_Test_Structures_with_in-chip_operational_amplifier_implem.md",
+        "title": "2025__recid_2811383__2407.18528__Time_performance_of_Analog_Pixel_Test_Structures_with_in-chip_operational_amplifier_implem",
+        "text": "ma.2022.166632)\n\n[3] O. Aberle, _et al._, _[High-Luminosity Large Hadron Collider (HL-LHC):](http://dx.doi.org/10.23731/CYRM-2020-0010)_\n_[Technical design report](http://dx.doi.org/10.23731/CYRM-2020-0010)_ . CERN Yellow Reports: Monographs. CERN,\nGeneva, 2020. `[https://cds.cern.ch/record/2749422](https://cds.cern.ch/record/2749422)` .\n\n[4] G. Aglieri Rinella, _et al._ [, “Strategic R&D Programme on Technologies for](http://dx.doi.org/10.17181/CERN-EP-RDET-2022-006)\n[Future Experiments - Annual Report 2021”, tech. rep.](http://dx.doi.org/10.17181/CERN-EP-RDET-2022-006)\n\n[5] W. Snoeys, _et al._, “A process modification for CMOS monolithic active\npixel sensors for enhanced depletion, timing performance and radiation\ntolerance”, _NIMA_ **871** [(2017) 90–96.](http://dx.doi.org/https://doi.org/10.1016/j.nima.2017.07.046)\n\n[6] M. Munker, M. Benoit, D. Dannheim, A. Fenigstein, T. Kugathasan,\nT. Leitner, H. Pernegger, P. Riedler, and W. Snoeys, “Simulations of\nCMOS pixel sensors with a small collection electrode, improved for a\nfaster charge collection and increased radiation tolerance”, _JINST_ **[14](http://dx.doi.org/10.1088/1748-0221/14/05/C05013)**\n[(May, 2019) C05013.](http://dx.doi.org/10.1088/1748-0221/14/05/C05013)\n\n19\n\n[7] T. Kugathasan, T. Ando, D. Dannheim, T. G. Etoh, M. Munker,\nH. Pernegger, A. Rivetti, K. Shimonomura, and W. Snoeys, “Monolithic\nCMOS sensors for sub-nanosecond timing”, _NIMA_ **979** [(2020) 164461.](http://dx.doi.org/https://doi.org/10.1016/j.nima.2020.164461)\n\n[8] J. Braach, E. Buschmann, D. Dannheim, K. Dort, T. Kugathasan,\nM. Munker, W. Snoeys, P. Švihra, and M. Vicente, “Test-beam\nperformance results of the FASTPIX sub-nanosecond CMOS pixel sensor\ndemonstrator”, _NIMA_ **1056** [(Nov., 2023) 168641.](http://dx.doi.org/10.1016/j.nima.2023.168641)\n\n[9] CERN-EP-R&D, “MONOLITHIC PIXEL DETECTORS.”\n`[https://ep-rnd.web.cern.ch/topic/monolithic-pixel-detectors](https://ep-rnd.web.cern.ch/topic/monolithic-pixel-detectors)` .\n\n[10] ALICE Collaboration, “Letter of Intent for an ALICE ITS Upgrade in\nLS3”, Tech. Rep. CERN-LHCC-2019-018. LHCC-I-034, CERN, Geneva,\nDec, 2019. `[https://cds.cern.ch/record/2703140](https://cds.cern.ch/record/2703140)` .\n\n[11] M. Šuljić, _The Novel ALICE Inner Tracking System (ITS3) Based on_\n_Truly Cylindrical, Wafer-Scale Monolithic Active Pixel Sensors_ .\n`[https://journals.jps.jp/doi/pdf/10.7566/JPSCP.34.010011](http://arxiv.org/abs/https://journals.jps.jp/doi/pdf/10.7566/JPSCP.34.010011)` .\n\n[12] TowerJaz",
+        "score": -5.50815393447876,
+        "dense_score": 0.2449626326560974,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.481775283813477,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 25,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 704,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+        "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+        "text": "e-II Upgrade_ **CERN-LHCC-2020-007**, CERN, (2020) ATLAS-TDR-031.\n\n[https://cds.cern.ch/record/2719855.](https://cds.cern.ch/record/2719855)\n\n[3] ATLAS Collaboration, _The ATLAS Experiment at the CERN Large Hadron Collider_, _JINST_ **3** (2008)\n\nS08003.\n\n[4] O. Brüning, L. Rossi et al., _High Luminosity Large Hadron Collider: A description for the European_\n_Strategy Preparatory Group, Tech. Rep._ **CERN-ATS-2012-236** (2012).\n\n[5] A. G. et al., _High-Luminosity Large Hadron Collider (HL-LHC): Technical Design Report V.0.1_,\n_CERN Yellow Reports: Monographs_ [, CERN, (2017) http://cds.cern.ch/record/2284929.](http://cds.cern.ch/record/2284929)\n\n[6] G. Pellegrini et al., _Technology developments and first measurements of Low Gain Avalanche_\n_Detectors (LGAD) for high energy physics applications_, _Nucl. Instrum. Meth. A_ **765** (2014) 12,\n\n[https://doi.org/10.1016/j.nima.2014.06.008.](https://doi.org/10.1016/j.nima.2014.06.008)\n\n[7] C. De La Taille et al., _ALTIROC0, a 20 pico-second time resolution ASIC for the ATLAS High_\n_Granularity Timing Detector (HGTD)_ in _Proceedings of the Topical Workshop on Electronics for_\n_Particle Physics (TWEPP-17)_, Santa Cruz, California, U.S.A, September 2017, _PoS_ **TWEPP-17**\n(2018) 006.\n\n[8] L. Masetti et al., _Beam test measurements of Low Gain Avalanche Detector single pads and arrays for_\n_the ATLAS High Granularity Timing Detector_, _JINST_ **13** (2018) P06017, arXiv:1804.00622.\n\n[9] C. Agapopoulou et al., _Performance of a Front End prototype ASIC for picosecond precision time_\n_measurements with LGAD sensors_, _JINST_ **15** (2020) P07007, arXiv:2002.06089.\n\n[10] J. Lange et al., _Gain and time resolution of 45 µm thin Low Gain Avalanche Detectors before and after_\n_irradiation up to a fluence of 10_ [15] _n_ _𝑒𝑞_ _/cm_ [2], _JINST_ **12** (2017) P05003, arXiv:1703.09004.\n\n[11] C. Agapoupoulou et al., _Performance in beam tests of irradiated Low Gain Avalanche Detectors for_\n_the ATLAS High Granularity Timing Detector_, _JINST_ **17** (2022) P09026,\n\n[https://dx.doi.org/10.1088/1748-0221/17/09/P09026.](https://dx.doi.org/10.1088/1748-0221/17/09/P09026)\n\n[12] L. Castillo García, E. L. Gkougkousis, C. Grieco, S. Grinstein, _Characterization of Irradiated Boron,_\n_Carbon-Enriched and Gallium Si-on-Si Wafer Low Gain Avalanche Detectors_, _Instruments_ **6** (2022)\n\n[1-2, https://doi.org/10.3390/instruments6010002.](https://doi.org/10.3390/instruments6010002)\n\n[13] M. Ferrero et al., _Radiation resistant LGAD desi",
+        "score": -5.543044966620369,
+        "dense_score": 0.2425602376461029,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.535037994384766,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 22,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7803,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+        "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+        "text": ". Hiti, G. Kramberger, M. Mikuz,\nM. Zavrtanik, P. Skomina, S. Hidalgo, G. Pellegrini, Erratum: Measurements with silicon detectors at extreme neutron fluences[work performed\nin the framework of the cern-rd50 collaboration.], Journal of Instrumentation 16 (03) (2021) E03001. doi:10.1088/1748-0221/16/03/E03001.\nURL `https://dx.doi.org/10.1088/1748-0221/16/03/E03001`\n\n18",
+        "score": -5.903053613026937,
+        "dense_score": 0.23921161890029907,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.088800430297852,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2623,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera.md",
+        "title": "2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera",
+        "text": "tp://cds.cern.ch/record/2301237](http://cds.cern.ch/record/2301237)`\n\n[9] C. C. Cowles, T. C. Kaspar, R. T. Kouzes, D. Li, Z. W. Bell, I. N. Ivanov,\nE. D. Sword, Temperature-dependent properties of BC-412 polyvinyl\ntoluene scintillator, IEEE Trans. Nucl. Sci. 69 (4) (2022) 942. `[doi:](https://doi.org/10.1109/TNS.2022.3154645)`\n`[10.1109/TNS.2022.3154645](https://doi.org/10.1109/TNS.2022.3154645)` .\n\n[10] J. Spinks, R. Woods, An Introduction to radiation chemistry, WileyInterscience, 1990. `[doi:10.1002/bbpc.19910950346](https://doi.org/10.1002/bbpc.19910950346)` .\n\n[11] J. E. Mark (Ed.), Physical Properties of Polymers Handbook, Springer,\nCincinnati, Ohio, 2007, Second Edition.\n\n[12] A. V. Cunliffe, A. Davis, Photo-oxidation of thick polymer samples —\nPart II: The influence of oxygen diffusion on the natural and artificial weathering of polyolefins, Polym. Degrad. Stab. 4 (1982) 17. `[doi:](https://doi.org/10.1016/0141-3910(82)90003-9)`\n`[10.1016/0141-3910(82)90003-9](https://doi.org/10.1016/0141-3910(82)90003-9)` .\n\n[13] T. Seguchi, S. Hashimoto, K. Arakawa, N. Hayakawa, W. Kawakami,\nI. Kuriyama, Radiation induced oxidative degradation of polymers—I: Oxidation region in polymer films irradiated in oxygen under pressure, Radiat.\nPhys. Chem. 17 (1981) 195. `[doi:10.1016/0146-5724(81)90331-9](https://doi.org/10.1016/0146-5724(81)90331-9)` .\n\n[14] W. R. Vieth, Diffusion in and through polymers: principles and applications, Hanser, Munchen Germany, 1991.\n\n[15] B. Wang, P. R. Ogilby, Activation barriers for oxygen diffusion in\npolystyrene and polycarbonate glasses: effects of codissolved argon, helium,\nand nitrogen, Can. J. Chem. 73 (11) (1995) 1831. `[doi:10.1139/v95-226](https://doi.org/10.1139/v95-226)` .\n\n[16] K. Gillen, J. Wallace, R. Clough, Dose-rate dependence of the radiationinduced discoloration of polystyrene, Radiat. Phys. Chem. 41 (1993) 101.\n`[doi:10.1016/0969-806X(93)90046-W](https://doi.org/10.1016/0969-806X(93)90046-W)` .\n\n[17] I. Dumanoglu, N. Akchurin, U. Akgun, S. Ayan, P. Bruecken, E. Eskut, A. Fenyvesi, A. Kayis Topkasu, N. Koca, K. Makonyi, J.-P. Merlo,\nD. Novak, Y. Onel, G. Onengut, A. Polatoz, I. Schmidt, M. Serin,\nM. Zeyrek, Radiation-hardness studies of high oh- content quartz fibres\nirradiated with 500mev electrons, Nucl. Instrum. Meth. A 490 (2002) 444.\n`[doi:10.1016/S0168-9002(02)01067-7](https://doi.org/10.1016/S0168-9002(02)01067-7)` .\n\n[18] R. D. Thomas, Study of radiation hardness of plastic fibers, Master’s thesis,\nTexas Tech",
+        "score": -6.006048456239112,
+        "dense_score": 0.2301502823829651,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.246722221374512,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.989456201903522,
+    "generation_latency_s": 3.296881914138794e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.989456201903522,
+    "generation_latency_s": 3.296881914138794e-07
+  }
+}

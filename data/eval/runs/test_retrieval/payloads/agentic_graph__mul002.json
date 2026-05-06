@@ -1,0 +1,396 @@
+{
+  "benchmark": {
+    "query_id": "mul002",
+    "query_type": "multi_hop",
+    "query": "How can irradiation degrade both efficiency and timing?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "irradiation",
+      "degrade"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can irradiation degrade both efficiency and timing?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1487,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "in Fig. 4\n\nFig. 7. Energy (Left) and time (Right) resolution obtained with the electron\nbeam test performed at BTF.\n\nperformed to study the performance expected with CE; due to\nlonger clusters and higher transversal leakage the linear and\nconstant term increased. An energy resolution better than 5\n(7.5)% was achieved at 100 MeV for runs at normal (at 50 _[◦]_ )\nincidence.\n\nTime resolution was evaluated as the difference between the\n\ntime of the two SiPM coupled to the same crystal, obtaining\na timing resolution better than 200 ps at 100 MeV. The fit\nfunction used for the time resolution is:\n\n_a_\n_σ_ _T_ = (2)\n_E_ [ _GeV_ ] _[⊕]_ _[b]_\n\nFig. 6. Left : Energy spectrum for a crystal irradiated with 6.13 MeV photons\nfrom the [16] _O_ . Right: primary and secondary distribution laser system.\n\nIII. C ALORIMETER PERFORMANCE\n\nTo verify the selected design before starting the massive\nproduction of the whole calorimeter components, a large size\nprototype was build and exposed to an electron beam at the\nBeam Test Facility of the National Laboratories of Frascati.\nThe Module-0 is composed of 52 undoped CsI crystals read\nout by 102 SiPM connected to FEE boards. Its mechanics\nwas designed to resemble as much as possible that of the\nfinal calorimeter, allowing the test assembly procedures and\ncooling. A detailed description of the setup and the main\nresults (reported in Fig. 7) obtained during the beam test can\nbe found in [13]. For what concerns the energy resolution, the\nfunction used to fit the data is:\n\n_σ_ _E_ _a_ _b_\n\n_a_ _b_\n\n_⊕_ (1)\n_E_ [ _GeV_ ] _E_ [ _GeV_ ] _[⊕]_ _[c]_\n\nwhere _a_ is proportional to the emission time constant of\nthe undoped CsI and _b_ represents the additional contribution\ndue to the readout electronics. In the years following the\ntest beam, the Module-0 has continuously operated to study\nthe behaviour in vacuum, at low temperature as well as for\ncarrying out vertical slice tests of increasing complexity, at a\nCosmic Ray test stand where the timing calibration algorithms\nwere improved. The timing resolution obtained subtracting\ntime of two SiPMs reading the same crystal is reported in\nFig. 8.\n\nFig. 8. Timing resolution of a single crystal of the large area prototype\n\nIV. C ALORIMETER PRODUCTION STATUS\n\n_A. Crystal and SiPMs characterization_\n\nThe physics requirements previously discussed were used\nto define a set of technical specifications for the undoped CsI\ncrystals and SiPMs. The selection criteria to accept crystals\nwere: _(i)_ a Light Y",
+        "score": -4.844880407425453,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8370689655172413,
+        "rerank_score": -7.579866409301758,
+        "matched_nodes": [
+          "In",
+          "An",
+          "Timing",
+          "The",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8331,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "yer due to the drift path of charge carriers (see Figure 1). In contrast to the n-well of the analog front-end, the n-wells of the digital logic are thin, as\nsketched in Figure 3, mitigating this effect.\nThis slow charge collection leads to a mismatch between\nthe charge collection time and the fast response of the\nCSA. As a result, the CSA begins to reset before the full\ncharge is collected, resulting in a reduced signal amplitude\n(ballistic deficit) and, consequently, a drop in the hit efficiency over a large part of the pixel cell.\nIn Figure 26a, the sensor is operated at low bias voltage,\n_−_ 1 _._ 2 V, with a high threshold of 330 electrons and high\n_ikrum_ to aggravate this effect. Increasing the bias voltage\nenhances the electric field within the sensor, and reducing\nthe feedback current effectively increases the integration\ntime of the CSA. Both factors contribute to reducing the\n\nFigure 27: Cluster size distributions for different thresholds. The\nsensor is biased at _−_ 1 _._ 2 V.\n\nballistic deficit, and improving the hit detection efficiency.\nFigure 26b shows a homogeneous in-pixel efficiency map\nat low _ikrum_, a threshold of 224 electrons, and a sensor\nbias of _−_ 3 _._ 6 V.\n\nTo fully understand this effect, detailed simulations of\nthe sensor and front-end have been performed, which are\npresented in Section 6.\n\n_5.2. Cluster Size_\n\nThe relatively large pixel pitch, thin epitaxial layer, and\nthe _modified with n-gap_ sensor layout minimize charge\nsharing between neighboring pixels. Lowering the threshold increases the probability of inducing a signal in adjacent pixels, making two-pixel clusters more frequent, as\nshown in Figure 27. For a threshold of 177 electrons, the\naverage cluster size is (1 _._ 19 _±_ 0 _._ 01), with 18% of events\nwith two-pixel clusters. Figure 28 shows the mean cluster\nsize as a function of the threshold. At lower bias voltages,\nthe electric field is reduced, leading to slower charge collection. This leaves more time for charge carrier diffusion,\nresulting in a slight increase in cluster size. Towards higher\ndetection thresholds (above 700 electrons), the mean cluster size increases due to the detection of delta-rays, which\nare more likely to deposit large amounts of energy.\nAlthough the right side of the pixel cell experiences\nslower charge collection as discussed in Section 5.1, this\ndoes not impact the charge sharing. As a result, the inpixel cluster-size maps remain symmetric, as shown in Figure 29. Near the collectio",
+        "score": -4.865342920395424,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8370689655172413,
+        "rerank_score": -7.611347198486328,
+        "matched_nodes": [
+          "In",
+          "At",
+          "Both",
+          "The",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3965,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2745759__2401.06033__Novel_photon_detectors.md",
+        "title": "2024__recid_2745759__2401.06033__Novel_photon_detectors",
+        "text": "2 × 10 [12] n cm [−][2]\n\n5\n\nFigure 13: Microlenses in front of SiPM cells: principle (top), angular acceptance as a function of a geometrical parameter (height of the array) for a\n128x128 array of 6 µm diameter CMOS SPADs at 25 µm pitch and a 5% fill\nfactor [28].\n\nFigure 14: Dark count rate of irradiated SiPMs [33].\n\nreported promising results when annealing at elevated temperatures [32]. In Fig. 15, dark counts are shown for operation\n\nFigure 15: Annealing of irradiated SiPMs as a function of annealing time:\ncomparison non-irradiated (blue) and irradiated up to 10 [11] n cm [−][2] (yellow),\n10 [12] n cm [−][2] (green) and 10 [13] n cm [−][2] (orange) [32].\n\nat -30 [o] C of irradiated Hamamatsu S13360-1350CS SiPMs as a\n\nfunction of annealing time and temperature [32]. In the same\nstudy, it was also shown that annealing helps even when operating at 77 K [32].\nOne of the possible solutions could also be the use of\nnew wider band-gap materials with a possibly lower rate of\nthermally-generated dark counts, higher radiation resistance,\npossible operation at higher temperatures, and (V)UV sensitivity. The dark count rate is in this case dominated by trapassisted tunneling. An interesting material is 4H-SiC with a\ngap of _E_ _g_ = 3.26 eV. At present, a PDE of about 10% was\nachieved, with a dark count rate of above 1 MHz/mm [2] and a\nnonuniform response [34]. We note here that the early versions\nof SiPMs also had similar properties so it is expected that this\nwill improve with more experience in the production.\n\n**4. Gas based photon detectors**\n\nIn gas-based photon detectors, one of the electrodes of the\ngas chamber is covered by a solid photo-sensitive substance.\nThe most common material is CsI evaporated on one of the\ncathodes. The largest scale application of this concept is the\nALICE RICH with 11 m [2] of photosensitive multiwire chambers [35]. Instead of a multiwire chamber detectors with multiple GEM or thick GEM (THGEM) gas amplification stages\nwith transmissive or reflective photocathodes can be used. An\nexample of such a combination is the photon detector for the\nRICH counter of the COMPASS experiment with the amplification stage comprised of a pair of THGEM steps and a MicroMegas [36].\nFor operation in environments with high particle flux densities over extended periods of time, aging due to photocathode\ndamage by ions produced in avalanches can become a limiting\nfactor. One of the mitigation strategies is to block the drifting\nof ions towards the phot",
+        "score": -5.148292424900928,
+        "dense_score": 0.46031612157821655,
+        "bm25_score": null,
+        "graph_score": 0.8370689655172413,
+        "rerank_score": -8.05105972290039,
+        "matched_nodes": [
+          "In",
+          "An",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7033,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2876744__2502.03222__Luminescence_thermometry_based_on_photon_emitters_in_nanophotonic_silicon_waveguides.md",
+        "title": "2025__recid_2876744__2502.03222__Luminescence_thermometry_based_on_photon_emitters_in_nanophotonic_silicon_waveguides",
+        "text": "ferent crystal field levels is expected to happen on a nanosecond timescale. Thus, both the groundand optically excited states thermalize on a much shorter\ntimescale than the optical decay, which exceeds 10 µs up\nto room temperature.\nThe erbium ensemble is probed via resonant photoluminescence excitation (PLE) with a narrowband laser\nusing excitation pulses of 200 µs duration and a typical\npower of around 10 µW in the waveguide. Subsequently,\nfluorescence photons are detected using a superconducting nanowire single photon detector with photon counts\nper repetition of up to 130. Probe and fluorescent light\nare coupled via the glued fiber that maintains its coupling efficiency of _≈_ 4 % over the entire studied temperature range. The sample is glued to a mount made of\noxygen-free copper and inserted into a closed-cycle helium cryostat to achieve temperature tuning in the range\n295 K to 1.2 K. A calibrated resistive temperature sensor\n(Lake Shore Cernox) is thermally connected to the sample mount and used as a reference temperature probe.\nThe optical transitions of sites A and B are distributed\nbetween 1475 nm and 1640 nm. We are mainly interested in the ground state transitions, which appear below\n1538 nm. For some measurements, we thus use an optical long-pass filter with a 1.5 nm wide step centered at\na wavelength of 1551.3 nm to increase the signal-to-noise\nratio for sites A and B by blocking the emission from\nother sites with more narrow CF manifolds [18].\n\n**III.** **RESULTS AND DISCUSSION**\n\nThe PLE spectra obtained after pulsed excitation exhibit a strong temperature dependence, as shown in Figure 1C for representative datasets from cryogenic to room\ntemperature. In these spectra, the mentioned long-pass\nfilter is used to filter out background fluorescence. At\nroom temperature, only a small signal is detected around\nthe ground-to-ground-state transition ( _Z_ 1 - _Y_ 1 ), showing\nseveral features with a width of several nanometers. In\nthis regime, the fluorescence is strongly reduced as nonradiative decays can occur via close-by impurities or defects [50–52]. Since this process relies on phononic coupling, an exponential increase of the signal is observed\nwhen lowering the temperature until about 200 K, where\nthe optical decay starts to dominate.\n\nFIG. 1. Erbium-based thermometry in nanophotonic silicon\nwaveguides. (A) A cleaved single-mode fiber is glued to a rib\nwaveguide fabricated on an erbium-doped silicon-on-insulator\nchip. The inset depicts the",
+        "score": -5.240923946472694,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8370689655172413,
+        "rerank_score": -8.189164161682129,
+        "matched_nodes": [
+          "In",
+          "AND",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7794,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+        "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+        "text": "iation;\nresults on cluster charge distribution will be discussed in the following. The\ncluster charge distribution has been fitted with a Landau function convoluted\nwith a Gaussian; the same choice was made for simulated events, both for\nunirradiated and irradiated devices. The fitted most probable value (MPV)\nwas reported as a function of the bias voltage by The CMS tracker group.\n\n6\n\nAll simulations were carried out using the setup described in Section 2,\nunless different choices are explicitly mentioned. In the following the validation of simulations on unirradiated and irradiated devices will be discussed.\n\n_3.1. Unirradiated devices_\n\nTo define a proper normalisation for the collected charge an unirradiated\ndevice was simulated and results compared to data. Both TCAD and Allpix [2]\n\nsimulations were carried out at 20 _[◦]_ C. An example of the fitted cluster charge\ndistribution is shown in Figure 2 for simulated events at zero fluence and 50 V\nbias voltage.\n\nFigure 2: Cluster charge distribution from simulated events. The sensor was simulated\nbefore irradiation and at a bias voltage of 50 V. Points are simulated events and the blue\nline is the result of the fit.\n\nIn simulation the MPV of cluster charge is calculated as the average\nof MPV of the Landau function after the fit and the MPV of the fitted\nconvoluted function; the semi-difference of the two is an estimate of the fit\nuncertainty.\nCMS tracker group reported an MPV of the cluster charge of (10.8 _±_ 0.6) ke\nat 50 V; the result from simulation is of (10.91 _±_ 0.13) ke. The agreement between data and simulations is better than 1%. For this reason in all the rest\nof the paper simulation results on collected charge will be presented and not\nrescaled to unirradiated values, and compared directly to results from data.\n\n7\n\n_3.2. Irradiated devices_\n\nThe validation of the simulations of irradiated devices has been carried\n\nout comparing the results to the performance of a device irradiated at Φ =\n2 _._ 1 _×_ 10 [15] n eq _/_ cm [2] reported by the CMS tracker group. A hit threshold of\n1.24 ke was used in both data and simulations. All four trapping models\npresented in Section 2.2.1 were considered in simulations.\nIn Figure 3 results from simulated events after a fluence Φ = 2 _._ 1 _×_\n10 [15] n eq _/_ cm [2] are reported when the device was at 500 V bias voltage; the\nMPV of the cluster charge in data at the same conditions is indicated too.\n\nFigure 3: Cluster charge distribution from simulated events",
+        "score": -5.377027862640907,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8370689655172413,
+        "rerank_score": -8.398554801940918,
+        "matched_nodes": [
+          "In",
+          "An",
+          "Both",
+          "The",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7956,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie.md",
+        "title": "2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie",
+        "text": "nts of the _γ_ -irradiated diode for\ndifferent bias voltages are displayed in Figure 10\nand 11 (crosses). A shift of the X-Defect’s peak to\nlower temperatures with increasing bias is clearly\nvisible. Superimposed on these measurements are\nthe simulated spectra (solid lines), using the zerofield activation energy from Figure 7 and the capture\ncross-section obtained from DLTS measurements on\nthe same sample [ 19 ]. For this simulation the PAT\nenhancement model is used. A good, but not perfect match between measurement and simulation is\n\nfound. At the lower bias voltages, nearly perfect\nmatches are found. At higher biases, i.e. stronger\nelectric fields, the rising edge of the simulated peak\nis faster compared to the measured one, while the\n\n9\n\neffective doping concentration. The identification\nof PAT as an emission mechanism implies that the\nX-Defect is electrically neutral in the space charge\nregion, and therefore does not affect _N_ eff at ambient temperatures. Furthermore, the measured\ncharacteristics of the X-Defect, including apparent\nactivation energy, capture cross-section and emission mechanism, are in good agreement with literature values for the donor charge state of the singly\ncharged di-vacancy, V 2 (+ _/_ 0). The zero-field activation energy of the X-Defect is determined to be\n_E_ A,0 = (0 _._ 1962 _±_ 0 _._ 0007) eV.\nIn conclusion, the defect previously introduced\nas the X-Defect is indeed the singly charged Silicon\ndi-vacancy, V 2 (+ _/_ 0).\n\n**Appendix A. Validation of the PF model**\n\nTo validate the PF model implementation in the\nsimulation code, TSC measurements for the B i O i\ndefect were carried out on the _γ_ -irradiated diode at\ndifferent bias voltages, as the B i O i defect is known\nto be subject to the PF effect. The measurements\nalongside the simulation are shown in Figure A.12\nand A.13. An activation energy of 0 _._ 27 eV and a\ncapture-cross section of 1 _._ 05 _·_ 10 _[−]_ [14] cm [2] were used as\ninput parameters, taken from Ref. [ 14 ]. To obtain\nthe simulated spectra shown in Figure A.12, the\nemission enhancement factor Γ PF had to be modified by a factor of 0 _._ 97, a modification of 3 %. This\nadjustment is justified by the requirement formulated in Ref. [ 39 ]. Hartke states that the PF effect\narises from the electrostatic attraction between a\n\nsingly charged positive ion and an electron under the\ninfluence of a uniform electric field. The requirement\nof a uniform field might not be satisfied for a highly\ndoped, irradiated dio",
+        "score": -5.734298008057167,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8370689655172413,
+        "rerank_score": -8.948201179504395,
+        "matched_nodes": [
+          "In",
+          "An",
+          "At",
+          "The",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 23,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630139__2302.03646__Studies_of_time_resolution_light_yield_and_crosstalk_using_SiPM-on-tile_calorimetry_for_th.md",
+        "title": "2023__recid_2630139__2302.03646__Studies_of_time_resolution_light_yield_and_crosstalk_using_SiPM-on-tile_calorimetry_for_th",
+        "text": "ached to 6 mm [2] SiPMs, were aligned with each other 10 cm apart\n\nvertically to act as the trigger. We placed two hexagonal tiles with SiPMs at the halfway point\n\nbetween the two trigger tiles, pressed back-to-back with each other, as shown in Fig. 3.\n\nThis setup allowed a measurement of the light yield from minimum-ionizing particles (MIPs),\n\nas well as the timing resolution. For the timing-resolution measurement, we ensured that the cable\n\ndistance between the SiPMs and the DRS4 were identical.\n\nIn this setup, as well as the other two setups, the scintillator tiles, the SiPM-carrying boards,\n\nand their support structure were placed inside a dark box in order to prevent light leakage into the\n\nscintillators from outside light sources.\n\n**3.4** **LED setup**\n\nTo measure the level of optical crosstalk2 between the scintillator cells, we developed the following\n\nsystem using a UV LED as our source. The UV light was generated from a CAEN SP5601 LED\n\nDriver, and fed through a UV fiber-optic cable. The end of the cable was placed directly above either\n\none of the cells in the megatile or one of the tiles in a 3D-printed frame. A SiPM was placed under\n\nthis cell (called the “main” tile) and another was placed under a neighboring cell. A pinhole in the\n\nreflective foil directly under the end of the fiber-optic cable allowed light to enter the tile. Both the\n\nSiPM output and the LED driver trigger signal were connected to a DRS4 digitizer connected to a\n\ncomputer. This setup is illustrated in Fig. 4.\n\nIn order to determine the level of optical crosstalk we manually adjusted the LED intensity,\n\nin order to sweep from zero to ≈150 photoelectrons in the main cell, at which point the limit of\n\nthe DRS4 dynamic range was reached. We define the level of optical crosstalk as the slope of the\n\n2This is not to be confused with SiPM crosstalk.\n\n– 5 –\n\n**Figure 3** . Block diagram (left) and a 3D rendering (right) of the cosmic-ray setup used for timing and\nlight-yield measurements.\n\n**Figure 4** . Block diagram (left) and a 3D rendering (right) of the UV-LED setup. In the latter, the reflective\nfoil is rendered as translucent, in order to show the 3D-printed frame, tiles, SiPMs and boards underneath.\n\ncorrelation between the number of photoelectrons per event in the neighboring cell and that of the\n\nmain cell.\n\nWe tested three different methods of reducing the optical crosstalk between the cells. In the\n\nfirst method, the inside of the grooves were painted with reflective",
+        "score": -6.187868560488472,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7853448275862069,
+        "rerank_score": -9.638203620910645,
+        "matched_nodes": [
+          "In",
+          "Both",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 386,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "80 pixels in both directions. Only the whole images not selected using the\ndefault grid would then be evaluated with the additional secondary grid.\nThe anomaly detector tends to select patches at a guard ring _§_, cell numbers and\ncell borders as false positive, due to the increase in the AE reconstruction error in these\nareas. In addition, contact marks are a common source of false positives, see (e) in\nfigure 11. With the proposed approach, where the detection is invariant to the anomaly\nlocation on the sensor, these cannot be eliminated.\n\n_6.2. Efficiency_\n\nAverage inference times for a whole image are reported in table 4, with both the default\ngrid and the secondary grid. An average sensor scan consisted of 335 images, for which\nthe picture-taking time is 9.2 minutes. On average, an inspector inspects a whole image\nin two seconds, evaluating one scan in 11 minutes. On an RTX A2000, the inference time\nis less than 6 minutes for the scan with both grids. The GPU is necessary, as the short\nrun time allows parallel picture-taking and pre-selection. At variance, the evaluation of\na scan would take approximately 45 minutes on a regular CPU, significantly delaying\nthe subsequent electrical characterization.\n\n**Table 4.** Average inference times on a GPU or a CPU for whole images using the\ndefault and secondary grids.\n\nGrid Run time [s]\n\nRTX A2000 GPU Default 0.8\n\n+ secondary 1.0\n\nCPU Default 8.1\n\n+ secondary 13.8\n\n_6.3. Continuous learning_\n\nGiven that new data will be measured continuously, the PSA should be retrained\nto adapt to the new data. Using new normal images to train the AE would not\nimprove its task of poor anomaly reconstruction, so it does not require retraining. Also\nthe background detector is considered to be robust enough to not require immediate\nretraining. However, the accuracy of the anomaly detector could be improved via\ntraining with novel anomalous patches. For example, training instances such as the\nmissed anomaly (d) in figure 10 did not exist in the original training data set.\nAnomalous images acquired after the initial deployment were given ground truth\nlabels to extend the training data set. The anomaly detector was retrained starting from\n\n_§_ A guard ring is a structure at the periphery of a sensor designed to protect it from currents from the\ncutting edge, and shown in figure 11 (f) as the black line with false positives.\n\n14\n\nrandomly initialized weights with 2.1 times more anomalous patches than the original\nmodel. An independ",
+        "score": -6.259180233488412,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8887931034482758,
+        "rerank_score": -9.763510704040527,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "At",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 548,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2649676__2304.02944__Design_and_performance_testing_of_a_T0_detector_for_the_CSR_External-target_Experiment.md",
+        "title": "2023__recid_2649676__2304.02944__Design_and_performance_testing_of_a_T0_detector_for_the_CSR_External-target_Experiment",
+        "text": "odule design**\n\nThe T0 detector adopted a thin plastic scintillator coupled with the SiPMs\nreadout. When the heavy-ion beam passed through the scintillator plate, energy\nwas deposited through ionization, and fluorescence was emitted. The fluorescent\nphotons reached the SiPMs after being transmitted through the scintillator and\nthe light guide. Finally, time information was obtained by measuring the output\nsignals of the SiPMs. Fig2 shows a schematic of the T0 structure. The central\npart of the T0 was a thin plastic scintillator plate with an active area of 200\nmm (X) _×_ 100 mm (Y) and the thickness was 0.8–5 mm according to different\ntypes of beam nuclei. Both sides along the X (horizontal) direction of the\nscintillator were light guides with dimensions of 10 mm (X) _×_ 100 mm (Y) _×_\n10 mm (Z), and a 5 mm groove was opened on each of the light guides to fix\nthe central thin plastic scintillator plate. Optical glue was used to couple the\nscintillator plate and the light guide. On each side, 16 SiPMs were arranged\nevenly with a spacing of 6 mm. There was a 0.5 mm air gap between the\nSiPM window and the light guide. To achieve the required high-precision timing\nperformance, no wrapping is applied to the outer surfaces of the scintillator,\nallowing only photons that satisfy the total internal reflection restriction to\nreach the SiPMs. In our design, the scintillator and light guide were both EJ-200\nplastic scintillators because of their excellent properties, such as high light yield\n\n_∼_\n(10000/MeV), fast timing (decay time 2.1 ns), long light attenuation length\n\n_∼_\n( 380 cm), and good radiation tolerance. For the SiPMs, we chose Hamamatsu\nS13360-3025PE because of its high gain, excellent time resolution, and immunity\nto the effects of the magnetic field.\n\nFigure 2: Schematic diagram of the structure of the T0 detector.\n\n**3. Simulation study of T0 performance**\n\nTo study the performance of the T0 detector, we built a Monte Carlo simulation program based on GEANT4 [8] to evaluate the entire physical process,\n\n3\n\nfrom energy deposition to final signal formation. In our simulations, the geometric parameters of the detector were set as described in the previous section, and\nthe related parameters of the plastic scintillator and SiPM were set according to\nthe official manual [9]. The heavy-ion beam was incident from the centre of the\nscintillator along the Z direction (Fig 2), and the beam spot was set as a circle\nwith a diameter of 5 mm. The influence of dispe",
+        "score": -6.283791177841713,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8370689655172413,
+        "rerank_score": -9.793575286865234,
+        "matched_nodes": [
+          "In",
+          "On",
+          "Both",
+          "The",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3363,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2719913__2311.03978__Experimental_demonstration_of_continuous-variable_quantum_key_distribution_with_a_silicon_.md",
+        "title": "2024__recid_2719913__2311.03978__Experimental_demonstration_of_continuous-variable_quantum_key_distribution_with_a_silicon_",
+        "text": "e, another continuous wave laser of the\nsame type as the one at Alice’s setup is used to generate the powerful LO, in a so-called true local oscillator\nconfiguration. The LO is mixed with the signal on chip\nin a 50/50 beam splitter and detected by the coherent\ndetector. Bob’s ADC works at up to 1 _._ 25 GHz and at a\nmaximal sample rate of 2 _._ 5 GSa _/_ s (Teledyne ADQ32).\nWe recall here that in CV-QKD one usually works\nin Shot Noise Units (SNU) [26], where the quantum\nnoise has unit variance, which corresponds to choosing\n¯ _h_ = 2. This means that we normalize all measurements\nat Bob’s side by the shot noise, and every noise variance\nwill thus be given in SNU. At Alice’s side, the normalisation is done through the average number of photons\n_⟨n⟩_, as explained above, so that Alice and Bob evaluate\ntheir quantities in the same units.\n\n6\n\nFigure 8. **Experimental scheme of our CV-QKD system.** In our experiment, the classical channel is a local ethernet\nlink. The quantum channel is emulated by an electronic VOA. ADC and DAC are PCIe cards. An electronic VOA is used\nto tune the output power at Alice’s site. In our experiment, steps 1 to 5 of the CV-QKD protocol are implemented.\n\nCalibration is an important part of the CV-QKD protocol implementation since parameters typically vary. A\nfirst category of calibrations are made only once (or each\ntime the optical setup is changed). This is the case for\nthe calibration of the power ratio between the monitoring photodiode and the output of Alice (this will later\nallow us to estimate _⟨n⟩_ ), the efficiency of the detector _η_\nand the value of the electronic noise, which is assumed\nto be constant. A second category of calibrations are\nmade between each CV-QKD frame. This concerns the\nestimation of the shot noise, which allows us to take\npossible power fluctuations of Bob’s laser into account.\nThe average number of photons _⟨n⟩_ is also computed\nfor each frame. Both the electronic noise and shot noise\nacquisitions are then processed using the same DSP as\nfor the quantum signal before being used to compute _σ_ 0 [2]\nand _σ_ _el_ [2] [(whose value can then slightly change at each]\nround).\n\n**B.** **Digital Signal Processing**\n\nDigital Signal Processing is the ensemble of the actions of generating the symbols and preparing them for\nphysical transmission at Alice’s side and receiving and\nrecovering the symbols at Bob’s side making use of digital filters and operations. We implemented a specifically\ndesigned DSP for CV-QK",
+        "score": -6.300674936781259,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8887931034482758,
+        "rerank_score": -9.827348709106445,
+        "matched_nodes": [
+          "In",
+          "An",
+          "At",
+          "Both",
+          "The",
+          "We"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "Both": 1.0,
+      "Timing": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "Both": 1.0,
+      "Timing": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "Department": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 15,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 9.529628404881805,
+    "generation_latency_s": 3.7997961044311523e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 15.0,
+    "retrieval_latency_s": 9.529628404881805,
+    "generation_latency_s": 3.7997961044311523e-07
+  }
+}

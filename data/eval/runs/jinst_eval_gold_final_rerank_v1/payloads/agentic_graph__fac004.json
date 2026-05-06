@@ -1,0 +1,1955 @@
+{
+  "query": "What is Time-of-Arrival used for?",
+  "expanded_query": "What is Time-of-Arrival used for? Time of Arrival Time-of-Arrival ToA timing",
+  "mode": "agentic_graph+light_rerank",
+  "retrieved": [
+    {
+      "rank": 1,
+      "chunk_id": "7153",
+      "doc_id": "318",
+      "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+      "score": 13.152935389913013,
+      "retriever": "graph+light_rerank",
+      "text": "Hit-OR is gauged\nby comparing it with a scintillator signal coupled to a PMT and\nread out via an oscilloscope. The result is depicted in figure 9b\nexemplarily for a quasi noise-free threshold of 16. A Gaussian\nfit to the distributions’ core yields a σ of 2.28(1) ns, sufficient\nfor precise triggering at test beams. The absolute delay of the\n\n4\n\n(a) Hitmap of a telescope plane with TelePix2 as trigger. A DESY logo is programmed to\nthe fast Hit-OR.\n\nFigure 8: Time difference between reference trigger and TelePix2 cluster time\nversus the row number.\n\ntrigger compared to the scintillator is 15.32(1) ns, which is an\nacceptable latency for test beam operation.\n\n**5. User Stories**\n\nTelePix2 is in user operation and utilized by multiple groups\nto enhance data taking efficiency and suppress ambiguities. In\nthe following three examples using the different operating modes\nare discussed and the improvement due to TelePix2 is highlighted.\n\n_H2M - region of interest trigger mode_\n\nThe H2M (Hybrid-to-Monolithic) is implemented in a 65 nm\nCMOS imaging process as proof of concept for a digital-on-top\ndesign workflow. It ports a hybrid pixel-detector architecture,\nwith digital pulse processing in each pixel, into a monolithic\nchip. The chip matrix consists of 64×16 square pixels, each\nwith a size of 35×35 µm [2], and a total active area of approximately 1.25 mm [2] . A 100 MHz clock is used for non-simultaneous\nTime-over-Threshold (ToT) or Time-of-Arrival (ToA) measure\nments.\n\nH2M has been tested in the DESY II test beam test beam\n\nfacility using the ADENIUM telescope. TelePix2 is used as\nregion of interest trigger plane. A region of interest of approximately 3 mm [2] is left unmasked in TelePix2 matching the H2M\narea with a safety margin.\nFigure 10a compares the correlations in X between H2M\nand the reference plane with data taken from a small region of\ninterest and the entire TelePix2. While a one order of magnitude higher background of uncorrelated events is observed for\nthe full region, for the small region, most of the events are correlated. The latter reduces the number of empty readout frames\nof H2M and highly improves the data taking efficiency. Moreover, time studies have been performed based on TelePix2. Figure 10b shows the time residuals between the TelePix2 fast\n\nHit-OR and H2M time stamps. The tail to the left is caused by\ntime-walk of H2M.\n\n5\n\n(b) Time difference between reference trigger and TelePix2 hit-or at a threshold of 16.\n\nFigure 9: The fast Hit-OR of",
+      "_rerank_score": 13.152935389913013,
+      "score_original": 11.187155254387296
+    },
+    {
+      "rank": 2,
+      "chunk_id": "1847",
+      "doc_id": "87",
+      "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+      "score": 11.614066335982535,
+      "retriever": "graph+light_rerank",
+      "text": "a pixel-hit is recorded, it is time-stamped, labelled with the pixel\naddress and sent from the ASIC immediately, without the need for a trigger signal. One of\nthe main differences between Timepix3 and the VeloPix is the hit rate capability. Timepix3\nis limited to a maximum hit rate of 80 million hits/s while the VeloPix can handle 900\nmillion hits/s. Several modifications have been necessary to achieve this capability. The\ntime-of-arrival information is removed so VeloPix records only the occurrence of the hit\n( _binary_ readout). The time-stamp granularity increases from 1.56 to 25 ns, the FE is\noptimised for a negative input charge and the power budget of the VeloPix is raised to\n\n_∼_\nfacilitate an increased throughput. An additional data reduction ( 30%) comes from\ngrouping 2 _×_ 4 neighbouring pixels into a SPP, thereby removing duplication of the time\nstamp and address fields.\nWith a 40 MHz acquisition rate, up to 20.48 Gbit/s can flow from one ASIC [45] via\nfour, highly optimised serial links each running at 5.12 Gbit/s . A custom serialiser, gigabit\nwireline transmitter (GWT), has been designed for this purpose [46]. This bandwidth is\nsignificantly greater than the 15.1 Gbit/s anticipated from the busiest ASIC. A notable\nachievement of the VeloPix development is the power consumption: 1.2 W typical, 1.9 W\nmaximum, which is 65% of the original expectation. Table 2 lists the key VeloPix features.\n\n**3.3.2** **Sensors**\n\nThe 208 silicon pixel sensors are each 200 µm thick and 43 _._ 470 mm _×_ 14 _._ 980 mm large,\nincluding 450 µm wide inactive edges in which lie the guard rings. They are manufactured [14]\n\nusing a float-zone p-bulk with n-type implants insulated between pixels by p-stops. The\nquoted bulk resistivity is 3–8 kΩcm . The sensors are designed to provide charge collection\n\n13 By TSMC TM Taiwan Semiconductor Manufacturing Company.\n14 Hamamatsu Photonics K.K. TM, Hamamatsu, Shizuoka 435-8558, Japan.\n\n17\n\nTable 2: Summary of the VeloPix capabilities.\n\nTechnology TSMC 130 nm CMOS\nRadiation hardness _>_ 4 MGy, SEU tolerant\nPixel size (analogue part) 55 µm _×_ 55 µm (55 µm _×_ 14 _._ 5 µm)\nPeak rate per ASIC (per pixel) 9 _×_ 10 [8] hits _/_ s (5 _×_ 10 [4] hits _/_ s)\nMaximum of charge distribution 16 000 _e_ _[−]_\n\nMinimum threshold 500 _e_ _[−]_\n\nTiming resolution (range) 25 ns (9 bits)\nSuper-pixel data size 30 bits\nMaximum data rate per ASIC 20 _._ 48 Gbit/s\nPower consumption per ASIC _∼_ 1 _._ 2 W (spec. 3 W)\n\nefficiency greater than 99% an",
+      "_rerank_score": 11.614066335982535,
+      "score_original": 12.02557515633188
+    },
+    {
+      "rank": 3,
+      "chunk_id": "3888",
+      "doc_id": "166",
+      "title": "2024__recid_2742847__2401.01229__Time_resolution_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_internal_gain_l",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2742847__2401.01229__Time_resolution_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_internal_gain_l.md",
+      "score": 10.235163475420013,
+      "retriever": "graph+light_rerank",
+      "text": "es/s oscilloscope, that shows the signals\nproduced by five consecutive laser bursts. Each waveform consisted of a train of 40 signals spaced by 12.5\nns. The red line shows the laser sync-out signal used to trigger. The signals of the reference ASIC are shown\nby the black lines, while the signals of the DUT ASIC by the blue lines. This waveform was obtained with\nthe optical attenuator in front of the DUT ASIC regulated to produce signals with an amplitude of 130 mV.\nThe much larger laser intensity sent to the reference ASIC produced 230 mV signals that show effects of\nsaturation of the preamplifier.\n\n– 4 –\n\n**5** **Results**\n\nThe time resolution of the DUT with the femtosecond laser was measured starting from the distribu\ntion of the difference in time of arrival (Δ _TOA_ ) of the reference and DUT ASICs. The time of arrival\n\nwas computed as the time at which the signal amplitude reached a constant-fraction threshold of\n\n50% of the maximum amplitude, calculated offline using a linear interpolation between consecutive\n\nsignal samplings acquired by the oscilloscope every 25 ps. No time-walk correction was applied to\n\nthe ToA of the signals.\n\n**5.1** **Time Resolution of the Reference ASIC with a large laser power**\n\nFigure 4 shows the distribution of the difference between the ToA of two consecutive signals\n\nmeasured by the reference ASIC. The standard deviation of the Gaussian fit of the Δ _TOA_ distribution\nis _𝜎_ Δ _TOA_ = (3 _._ 81 ± 0 _._ 03) ps. This is the convolution of the time resolution of the reference chip\ntaken two times; hence, the time resolution of the reference chip is _𝜎_ _𝑡_ _[ref]_ = (2 _._ 69 ± 0 _._ 04) ps.\n\n_**MONOLITH**_ prototype2 (2022) - no gain layer\n\n600\n\n500\n\n400\n\n300\n\n200\n\n100\n\n0\n\n|Col1|Laser Data<br>P = 2.70 W/cm2<br>density|Col3|Col4|\n|---|---|---|---|\n||HV = 200 V|Entries<br>/NDF<br>2<br>χ|998~~1~~<br>66/57|\n|||[ps]<br>ToA<br>∆<br>σ|0.03<br>±<br>3.81|\n|||||\n|||||\n|||||\n\n12460 12480 12500\n\n∆ TOA for Two Consecutive Reference Signals [ps]\n\n**Figure 4** . Difference between the ToA of two consecutive signals measured by the reference chip operated\nat a sensor bias voltage of 200 V and power density of 2.7 W/cm [2] . The red line superposed to the data shows\nthe result of a fit using a Gaussian functional form.\n\n**5.2** **Time Resolution of the DUT vs. Signal Amplitude Produced by the Laser**\n\nThe intensity of the laser on the DUT was varied to acquire signals of different amplitude and\n\ntherefore different time resolution, whil",
+      "_rerank_score": 10.235163475420013,
+      "score_original": 11.336660864400022
+    },
+    {
+      "rank": 4,
+      "chunk_id": "6953",
+      "doc_id": "307",
+      "title": "2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement.md",
+      "score": 10.208348021907849,
+      "retriever": "graph+light_rerank",
+      "text": "arges, allowing even pixels that do not collect the charge carriers\nto trigger. We conclude that the cluster size measurement is a promising method for evaluating the energy deposited by a\ncharged particle in the TimePix3 detector.\n\n_Keywords:_ Charged particle, Silicon pixel detector, TimePix3, Detector simulation\n\n**1. Introduction**\n\nPixelated silicon semiconductor detectors can measure\n\ncharged particles and are used in various fields, including\nnuclear and particle physics experiments [1, 2, 3, 4]. The\nTimePix3 detector [5] is one of these detectors, developed\nby the MediPix Collaboration3 [6], CERN, Nikhef and the\nUniversity of Bonn as a successor to the TimePix detector [7]. A TimePix3 detector consists of a silicon sensor\nand a TimePix3 readout chip, divided into 256 _×_ 256 pixels\nwith a 55 µ m pitch. The detector collects holes to the pixel\nelectrodes. It employs ToT (Time over Threshold) and ToA\n(Time of Arrival) methods to determine the energy and arrival time of radiation. By using the data-driven mode of\nTimePix3, we can obtain the arrival time of the radiation\nwith a 1.56 ns temporal resolution and the energy deposition in each pixel, simultaneously.\nThe ToT method provides a wide dynamic range for\nthe energy measurements. Therefore, this instrumental\nmethod can be used to evaluate the energy of various types\nof charged particles across extended energy ranges, from\nlight ions to heavy ions, in addition to X-ray and _γ_ -ray\n\n[1]. However, there are two issues affecting high energy\nmeasurements using TimePix3 detectors. The first one\nis the difficulty to calibrate ToT values corresponding to\nhigh energies. The detection efficiency of a silicon sensor\nwith a thickness of several hundred µ m is low for highenergy photons. For example, the detection efficiency of\na 500 µ m silicon sensor is less than 4 % for 60 keV photons, according to calculations performed with the Geant4\ntoolkit [8]. In addition, charge clouds generated by the incidence of high-energy radiations spread across multiple\npixels. These physical effects make the calibration of ToT\nvalues corresponding to energies above 60 keV inefficient,\nas the calibration function of the TimePix3 detector cannot\n\nbe expressed by a monotonically increasing linear function.\nThe second issue is that high energy deposition leads to a\nsaturation or a decrease of ToT values [9, 10, 11]. The ToT\nvalue is measured using a 10-bit clock signal for each pixel\nand the range of the ToT value is 0 to 1022 [5",
+      "_rerank_score": 10.208348021907849,
+      "score_original": 11.287905494377904
+    },
+    {
+      "rank": 5,
+      "chunk_id": "695",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 10.176038700123572,
+      "retriever": "graph+light_rerank",
+      "text": "* **Time resolution**\n\nThe time resolution is one of the key parameters when assessing LGAD sensor performance and\n\nhas been explained in detail in [11]. To extract the DUTs’ time resolutions, the distributions of the\n\ndifference between the TOA of the DUTs and that of the time reference device (SiPM at DESY and\n\nCNM-0 at CERN) was used.\n\nDuring the DESY beam test campaign, there were two DUTs (labelled as 1 and 2 in equation 5.1)\n\nand one SiPM connected to the oscilloscope. Hence, it was possible to compute three time\n\n– 9 –\n\n0.0\n\n|Col1|ATLAS HGTD Preliminary Test Beam|\n|---|---|\n|5.0<br>7.5<br>0.0<br>2.5<br>5.0<br>7.5<br>0.0<br>|FBK-1.5 (-40 to -30oC, DESY 2022)<br>FBK-1.5 (-20oC, CERN 2021)<br>IHEP-1.5 (-43 to -30oC, DESY 2022)<br>IHEP-1.5 (-20oC, CERN 2021)<br>USTC-1.5 (-39 to -24oC, DESY 2022)|\n|.0<br>2.5|**ϕeq = 1.5x1015neqcm−2**|\n\n200 250 300 350 400 450 500 550\nBias Voltage[V]\n\n**Figure 4** : Collected charge as a function of bias voltage for different single-pad sensors: FBK-1.5,\n\nUSTC-1.5 and IHEP-1.5. Sensors FBK-1.5 and IHEP-1.5 were tested both at DESY with a 5 GeV\n\nelectron beam and at CERN with a 120 GeV pion beam, whereas sensor USTC-1.5 was tested only\n\nat DESY. The dashed line corresponds to the minimum required charge of 4 fC for a good timing\n\nmeasurement with the future HGTD.\n\ndifferences on an event-by-event basis between all these devices:\n\n\n\n\n\n_𝑡_ 1 − _𝑡_ 2\n\n_𝑡_ 1 − _𝑡_ _𝑆𝑖𝑃𝑀_\n\n_𝑡_ 2 − _𝑡_ _𝑆𝑖𝑃𝑀_\n\n(5.1)\n\nThe three distributions were fitted with a gaussian function, each of them giving a width _𝜎_ _𝑖𝑗_\nwhere _𝑖_ and _𝑗_ are the names of the devices used for each distribution. Assuming that the time\nresolution of the devices are independent, each of measured resolution _𝜎_ _𝑖𝑗_ corresponds to\n\n_𝜎_ _𝑖𝑗_ = _𝜎_ _𝑖_ ⊕ _𝜎_ _𝑗_ (5.2)\n\nwhere _𝜎_ _𝑖_ and _𝜎_ _𝑗_ are the resolutions of each device. This gives a system of three equations and three\nunknowns which can be solved analytically.\n\nNo matter which DUTs are tested, the SiPM time resolution should have the same value.\n\nOverall, during the DESY beam test campaign, the SiPM time resolution was measured 17 times\n\nwith this method and its average resolution was found to be _𝜎_ _𝑆𝑖𝑃𝑀_ = 62 _._ 6 ± 0 _._ 6 ps with variations\n\nup to 7 % due to differences in running conditions (e.g. bias voltage settings).\n\n– 10 –\n\n0\n\n### ATLAS HGTD Preliminary Test Beam\n\n|14|ATLAS HGTD Preliminary Test Beam|\n|---|---|\n|~~4~~<br>6<br>8<br>10<br>12<br><br>|**ϕeq = 2.5x1015neqcm−2**<br><br>FBK-2.5 (-46 t",
+      "_rerank_score": 10.176038700123572,
+      "score_original": 14.865524909315583
+    },
+    {
+      "rank": 6,
+      "chunk_id": "694",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 9.452823466541268,
+      "retriever": "graph+light_rerank",
+      "text": "/cm [2], respectively. Bias\nvoltages were kept lower than the single event burnout (SEB) voltage at which the sensor dies due to\n\na large amount of energy deposited by a highly energetic particle in the active zone [28]. All sensors\n\ncharacteristics are given in section 2. In both figures, the results come either from sensors tested at\n\nDESY with 5 GeV electrons or from sensors tested at CERN with 120 GeV pions. The methods to\n\nanalyse these two types of data from different tracking devices are described in sections 4.1 and 4.2.\n\n– 8 –\n\n**Figure 3** : Charge distribution for the sensor USTC-1.5 operated at 350 V. The distribution was\n\nfitted with a Landau-Gaussian convoluted function. The collected charge, defined as the most\n\nprobable value, is 6 _._ 3 ± 0 _._ 03 fC.\n\nFigure 4 shows that after an irradiation at a fluence of 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2], the collected charge\nis above the minimum required charge of 4 fC needed for a good timing measurement with the\n\nfuture HGTD detector. This minimum is reached at around 270 V for all sensors, however the\n\nsensor FBK-1.5 was tested at higher bias voltages. For sensor IHEP-1.5, the same performances\n\nwere found whether measurements were performed with a 5 GeV electron beam at DESY or with a\n\n120 GeV pion beam at CERN. For sensor FBK-1.5, at the same bias voltage, the collected charge\n\nwas slightly higher for measurements at DESY than for those at CERN. Between 350 V and 400 V,\n\nwhich is the range with common bias voltage, the sensors manufactured by IHEP and USTC showed\n\nbetter performances than those from FBK.\n\nThe comparison between figures 4 and 5 shows that the higher the fluence, the worse the\n\ncollected charge at the same bias voltage. Indeed, figure 5 shows that after an irradiation at a\nfluence of 2 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2], the minimum required collected charge of 4 fC is reached for a bias\nvoltage around 370 V for sensor IHEP-2.5, around 500 V for sensor FBK-1.5 and 470 V for sensor\n\nUSTC-2.5. Comparing the different sensors at this fluence, those manufactured by IHEP show\n\nbetter performance than sensors from FBK and USTC at the same bias voltage. This discrepancy\nis less significant at a fluence of 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] .\n\n**5.3** **Time resolution**\n\nThe time resolution is one of the key parameters when assessing LGAD sensor performance and\n\nhas been explained in detail in [11]. To extract the DUTs’ time resolutions, the distributions of the\n\ndifference between the TOA of t",
+      "_rerank_score": 9.452823466541268,
+      "score_original": 13.550588120984125
+    },
+    {
+      "rank": 7,
+      "chunk_id": "2246",
+      "doc_id": "93",
+      "title": "2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device.md",
+      "score": 8.928683016707657,
+      "retriever": "graph+light_rerank",
+      "text": ", the emphasis was placed on the design of a 4H-SiC Low Gain\nAvalanche Detector (LGAD), especially the epitaxial structure and technical process which played the main roles. In addition, a simulation tool–\nRASER(RAdiation SEmiconductoR) was developed to simulate the performances including the electrical properties and time resolution of the\n4H-SiC LGAD we proposed. The working voltage and gain effectiveness\nof the LGAD were verified by the simulation of electrical performances.\nThe time resolution of the LGAD is (35.0 ± 0.2) ps under the electrical\nfield of -800 V, which is better than that of the 4H-SiC PIN detector.\n\n**Keywords:** Silicon carbide, LGAD, Radiation-resistant, Time resolution\n\n### **1 Introduction**\n\nLow gain avalanche detector (LGAD), as a novel detector technology,\nhas attracted extensive attention in recent years. By adding a gain layer\nunder the cathode of the PIN detector, a collision-ionization multiplication\nof the electron-hole pair occurs in the gain layer, resulting in excellent timing resolution[1]. In particular, for the requirements of the High Granularity\nTiming Detector (HGTD) in ATLAS and the End-cap Timing Layer (ETL)\nin CMS experiments, silicon-based LGAD with 50 ps time resolution has been\ndeveloped which can resist the radiation of 2×10 [15] _n_ _eq_ /cm [2] [2–5]. However, it\nhas been reported[6] that the charge collection efficiency (CCE) and time resolution of silicon-based LGAD will deteriorate with increasing irradiation flux\nand will not work normally under irradiation above 2×10 [15] _n_ _eq_ /cm [2] . In addition, in order to reduce power and improve the signal-to-noise ratio (SNR)\nof semiconductor detectors, silicon-based LGAD devices need to operate at a\nlow temperature of -30 ℃[7, 8], which greatly increases the operation cost of\ndetectors. Moreover, the low temperature cooling system not only increases\nvolume of the detector system, but also increases the difficulty of maintaining the stability of the detector system. Therefore, there is a high demand for\nresearch into a semiconductor detector with strong radiation resistance, excellent time resolution and stable operation at room temperature or even high\ntemperature.\nSilicon carbide (SiC), as the third generation semiconductor, has been\ninvestigated as a detector material for nearly 20 years[9]. In recent years, SiC\nhas received more attention due to the interest of semiconductor industries\n\nSpringer Nature 2021 L [A] TEX template\n\n_Design and simulation of",
+      "_rerank_score": 8.928683016707657,
+      "score_original": 16.23396912128665
+    },
+    {
+      "rank": 8,
+      "chunk_id": "4559",
+      "doc_id": "197",
+      "title": "2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD.md",
+      "score": 8.824384466116078,
+      "retriever": "graph+light_rerank",
+      "text": "1\n\n# Long-Distance Signal Propagation in AC-LGAD\n\nC. Bishop, A. Das, J. Ding, M. Gignac, F. Martinez-McKinney, S. M. Mazza, A. Molnar,\nN. Nagel, M. Nizam, J. Ott, H. F.-W. Sadrozinski, B. Schumm, A. Seiden, T. Shin,\n\nA. Summerell, M. Wilder, Y. Zhao\n\n_SCIPP, Univ. of California Santa Cruz, CA 95064, USA_\n\n_Abstract–_ We investigate the signal propagation in AC-LGAD (aka RSD), which are LGAD with a\ncommon N [+] layer and segmented AC-coupled readout contacts, by measuring the response to IR laser TCT\non a large selection of AC-LGAD with strip readout. The interest for this topic derives from the realization\nthat while large charge sharing between neighboring strips is essential for good position resolution, large\nsharing beyond the next neighbor generates background signals which in general are detrimental to the\nsensor goal of low occupancy. Using AC-LGAD with strip readout produced by Hamamatsu Photonics\n(HPK), we evaluate the effects of a variety of sensor properties, including geometrical parameters (strip\nlength, width), process parameters like the N [+] layer resistivity, the coupling capacitance, and the thickness\nof the bulk on the signal sharing and the position resolution.\n\nPACS: 29.40.Gx, 29.40.Wk, 78.47jc\n\nKeywords: fast silicon sensors; charge multiplication; AC-LGAD strips; charge sharing.\n\n**1.** **Introduction**\n\nLow-gain Avalanche Detectors (LGAD) have been recently introduced as fast semiconductor timing\nsensors [1,2]. In their large-scale experimental applications, the High Granularity Timing Detector (HGTD)\nin ATLAS [3] and the MIP Timing Detector (MTD) in CMS [4], their segmentation is limited to pads with\nabout 1 mm pitch by consideration of power, fill-factor, and field uniformity. While the fill-factor and\nuniformity problems could be solved for small-scale applications with Trench-Isolated LGAD [5], an\nacceptable power density will limit the spatial resolution unless charge sharing between distant contacts is\nemployed. This is the principle of the AC-LGAD technology (aka Resistive Silicon Detector RSD) [6-8]\nwhich is based on a complete integration of four of the sensor layers in common sheets of the P-type bulk,\nthe P [+] gain layer, the N [+] layer and a dielectric sheet, separating the first three from the segmented metal\nreadout contacts (Fig. 1). A signal originating in the bulk and amplified in the gain layer is then shared\nbetween several electronics channels, allowing reconstruction of signal location with a resolution which",
+      "_rerank_score": 8.824384466116078,
+      "score_original": 16.044335392938322
+    }
+  ],
+  "seed_nodes": [
+    "Time",
+    "Timing",
+    "ToA",
+    "Arrival",
+    "Timepix3",
+    "time resolution",
+    "Timing Detector",
+    "High Granularity Timing Detector"
+  ],
+  "expanded_nodes": [
+    "AC-LGAD",
+    "ADC",
+    "ALICE",
+    "ASIC",
+    "ATLAS",
+    "Alpha Magnetic Spectrometer",
+    "Arrival",
+    "Associated Equipment",
+    "Bias",
+    "Broadcom",
+    "CMOS",
+    "CMS",
+    "CMS+",
+    "Cambridge University",
+    "Charge",
+    "DAC",
+    "Dark Matter Candidates",
+    "Data Acquisition",
+    "Efficiency",
+    "Endcap Timing Layer",
+    "Experimental Setup",
+    "Fe",
+    "Geant4",
+    "General Broken Lines",
+    "Grant Number",
+    "HGTD",
+    "Hamamatsu Photonics",
+    "Heavy Ion",
+    "High Energy Physics",
+    "High Granularity Timing Detector",
+    "High Luminosity",
+    "ITS3",
+    "In Figure",
+    "Internal Gain Layer",
+    "LGAD",
+    "Large Hadron",
+    "Large Hadron Collider",
+    "Let",
+    "MAPS",
+    "Monte Carlo",
+    "Nature Communications",
+    "Not Irradiated",
+    "Nuclear Instruments",
+    "Nuclotron Experiment",
+    "Parameter Prior",
+    "Particle Physics",
+    "Physical Review",
+    "Physics Research Section",
+    "Pixel",
+    "Preprint The",
+    "RD53A",
+    "Radiation",
+    "Russian Academy",
+    "SPAD",
+    "Sensors",
+    "Signal Amplitude Produced",
+    "Silicon",
+    "Springer Nature",
+    "Standard Model",
+    "Std Dev",
+    "SwissSPAD2",
+    "TCAD",
+    "TDC",
+    "TOTEM",
+    "Technical Design",
+    "Technical Design Report",
+    "Threshold",
+    "Time",
+    "Timepix3",
+    "Timing",
+    "Timing Detector",
+    "ToA",
+    "Topical Workshop",
+    "Total",
+    "Track",
+    "Tracker",
+    "VELO",
+    "pixel detector",
+    "time resolution"
+  ],
+  "paths": [
+    [
+      "Time",
+      "LGAD"
+    ],
+    [
+      "Time",
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "Time",
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "Time",
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "Time",
+      "Threshold"
+    ],
+    [
+      "Time",
+      "Threshold",
+      "Time"
+    ],
+    [
+      "Time",
+      "Threshold",
+      "DAC"
+    ],
+    [
+      "Time",
+      "Threshold",
+      "Efficiency"
+    ],
+    [
+      "Time",
+      "ASIC"
+    ],
+    [
+      "Time",
+      "ASIC",
+      "ADC"
+    ],
+    [
+      "Time",
+      "ASIC",
+      "CMOS"
+    ],
+    [
+      "Time",
+      "ASIC",
+      "Fe"
+    ],
+    [
+      "Time",
+      "Geant4"
+    ],
+    [
+      "Time",
+      "Geant4",
+      "Monte Carlo"
+    ],
+    [
+      "Time",
+      "Geant4",
+      "ALICE"
+    ],
+    [
+      "Time",
+      "Geant4",
+      "TCAD"
+    ],
+    [
+      "Time",
+      "Timing"
+    ],
+    [
+      "Time",
+      "Timing",
+      "LGAD"
+    ],
+    [
+      "Time",
+      "Timing",
+      "Time"
+    ],
+    [
+      "Time",
+      "Timing",
+      "Geant4"
+    ],
+    [
+      "Time",
+      "ATLAS"
+    ],
+    [
+      "Time",
+      "ATLAS",
+      "CMS"
+    ],
+    [
+      "Time",
+      "ATLAS",
+      "LGAD"
+    ],
+    [
+      "Time",
+      "ATLAS",
+      "pixel detector"
+    ],
+    [
+      "Time",
+      "Charge"
+    ],
+    [
+      "Time",
+      "Charge",
+      "TCAD"
+    ],
+    [
+      "Time",
+      "Charge",
+      "CMOS"
+    ],
+    [
+      "Time",
+      "Charge",
+      "Time"
+    ],
+    [
+      "Time",
+      "CMOS"
+    ],
+    [
+      "Time",
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "Time",
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "Time",
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "Time",
+      "TDC"
+    ],
+    [
+      "Time",
+      "TDC",
+      "SPAD"
+    ],
+    [
+      "Time",
+      "TDC",
+      "ASIC"
+    ],
+    [
+      "Time",
+      "TDC",
+      "ADC"
+    ],
+    [
+      "Time",
+      "ADC"
+    ],
+    [
+      "Time",
+      "ADC",
+      "ASIC"
+    ],
+    [
+      "Time",
+      "ADC",
+      "DAC"
+    ],
+    [
+      "Time",
+      "ADC",
+      "Fe"
+    ],
+    [
+      "Time",
+      "TCAD"
+    ],
+    [
+      "Time",
+      "TCAD",
+      "LGAD"
+    ],
+    [
+      "Time",
+      "TCAD",
+      "CMOS"
+    ],
+    [
+      "Time",
+      "TCAD",
+      "Monte Carlo"
+    ],
+    [
+      "Time",
+      "CMS"
+    ],
+    [
+      "Time",
+      "CMS",
+      "ATLAS"
+    ],
+    [
+      "Time",
+      "CMS",
+      "RD53A"
+    ],
+    [
+      "Time",
+      "CMS",
+      "pixel detector"
+    ],
+    [
+      "Timing",
+      "LGAD"
+    ],
+    [
+      "Timing",
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "Timing",
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "Timing",
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "Timing",
+      "Time"
+    ],
+    [
+      "Timing",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "Timing",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "Timing",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "Timing",
+      "Geant4"
+    ],
+    [
+      "Timing",
+      "Geant4",
+      "Monte Carlo"
+    ],
+    [
+      "Timing",
+      "Geant4",
+      "ALICE"
+    ],
+    [
+      "Timing",
+      "Geant4",
+      "TCAD"
+    ],
+    [
+      "Timing",
+      "Silicon"
+    ],
+    [
+      "Timing",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Timing",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Timing",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timing",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timing",
+      "Nuclear Instruments",
+      "Physics Research Section"
+    ],
+    [
+      "Timing",
+      "Nuclear Instruments",
+      "Associated Equipment"
+    ],
+    [
+      "Timing",
+      "Nuclear Instruments",
+      "Silicon"
+    ],
+    [
+      "Timing",
+      "ASIC"
+    ],
+    [
+      "Timing",
+      "ASIC",
+      "ADC"
+    ],
+    [
+      "Timing",
+      "ASIC",
+      "CMOS"
+    ],
+    [
+      "Timing",
+      "ASIC",
+      "Fe"
+    ],
+    [
+      "Timing",
+      "SPAD"
+    ],
+    [
+      "Timing",
+      "SPAD",
+      "CMOS"
+    ],
+    [
+      "Timing",
+      "SPAD",
+      "SwissSPAD2"
+    ],
+    [
+      "Timing",
+      "SPAD",
+      "TDC"
+    ],
+    [
+      "Timing",
+      "CMS"
+    ],
+    [
+      "Timing",
+      "CMS",
+      "ATLAS"
+    ],
+    [
+      "Timing",
+      "CMS",
+      "RD53A"
+    ],
+    [
+      "Timing",
+      "CMS",
+      "pixel detector"
+    ],
+    [
+      "Timing",
+      "Physics Research Section"
+    ],
+    [
+      "Timing",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timing",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Timing",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Timing",
+      "ATLAS"
+    ],
+    [
+      "Timing",
+      "ATLAS",
+      "CMS"
+    ],
+    [
+      "Timing",
+      "ATLAS",
+      "LGAD"
+    ],
+    [
+      "Timing",
+      "ATLAS",
+      "pixel detector"
+    ],
+    [
+      "Timing",
+      "Sensors"
+    ],
+    [
+      "Timing",
+      "Sensors",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timing",
+      "Sensors",
+      "Physics Research Section"
+    ],
+    [
+      "Timing",
+      "Sensors",
+      "Silicon"
+    ],
+    [
+      "Timing",
+      "Radiation"
+    ],
+    [
+      "Timing",
+      "Radiation",
+      "Physics Research Section"
+    ],
+    [
+      "Timing",
+      "Radiation",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timing",
+      "Radiation",
+      "Silicon"
+    ],
+    [
+      "ToA",
+      "Time"
+    ],
+    [
+      "ToA",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "ToA",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "ToA",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "ToA",
+      "LGAD"
+    ],
+    [
+      "ToA",
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "ToA",
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "ToA",
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "ToA",
+      "Bias"
+    ],
+    [
+      "ToA",
+      "Bias",
+      "LGAD"
+    ],
+    [
+      "ToA",
+      "Bias",
+      "HGTD"
+    ],
+    [
+      "ToA",
+      "Bias",
+      "ATLAS"
+    ],
+    [
+      "ToA",
+      "Sensors"
+    ],
+    [
+      "ToA",
+      "Sensors",
+      "Nuclear Instruments"
+    ],
+    [
+      "ToA",
+      "Sensors",
+      "Physics Research Section"
+    ],
+    [
+      "ToA",
+      "Sensors",
+      "Silicon"
+    ],
+    [
+      "ToA",
+      "HGTD"
+    ],
+    [
+      "ToA",
+      "HGTD",
+      "LGAD"
+    ],
+    [
+      "ToA",
+      "HGTD",
+      "ATLAS"
+    ],
+    [
+      "ToA",
+      "HGTD",
+      "CMS"
+    ],
+    [
+      "ToA",
+      "Not Irradiated"
+    ],
+    [
+      "ToA",
+      "Not Irradiated",
+      "ToA"
+    ],
+    [
+      "ToA",
+      "ATLAS"
+    ],
+    [
+      "ToA",
+      "ATLAS",
+      "CMS"
+    ],
+    [
+      "ToA",
+      "ATLAS",
+      "LGAD"
+    ],
+    [
+      "ToA",
+      "ATLAS",
+      "pixel detector"
+    ],
+    [
+      "ToA",
+      "Track"
+    ],
+    [
+      "ToA",
+      "Track",
+      "Monte Carlo"
+    ],
+    [
+      "ToA",
+      "Track",
+      "LGAD"
+    ],
+    [
+      "ToA",
+      "Track",
+      "VELO"
+    ],
+    [
+      "ToA",
+      "ASIC"
+    ],
+    [
+      "ToA",
+      "ASIC",
+      "ADC"
+    ],
+    [
+      "ToA",
+      "ASIC",
+      "CMOS"
+    ],
+    [
+      "ToA",
+      "ASIC",
+      "Fe"
+    ],
+    [
+      "ToA",
+      "Charge"
+    ],
+    [
+      "ToA",
+      "Charge",
+      "TCAD"
+    ],
+    [
+      "ToA",
+      "Charge",
+      "CMOS"
+    ],
+    [
+      "ToA",
+      "Charge",
+      "Time"
+    ],
+    [
+      "ToA",
+      "General Broken Lines"
+    ],
+    [
+      "ToA",
+      "General Broken Lines",
+      "Alpha Magnetic Spectrometer"
+    ],
+    [
+      "ToA",
+      "General Broken Lines",
+      "Preprint The"
+    ],
+    [
+      "ToA",
+      "General Broken Lines",
+      "Monte Carlo"
+    ],
+    [
+      "ToA",
+      "Parameter Prior"
+    ],
+    [
+      "ToA",
+      "Parameter Prior",
+      "ToA"
+    ],
+    [
+      "Arrival",
+      "Time"
+    ],
+    [
+      "Arrival",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "Arrival",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "Arrival",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "Arrival",
+      "CMS"
+    ],
+    [
+      "Arrival",
+      "CMS",
+      "ATLAS"
+    ],
+    [
+      "Arrival",
+      "CMS",
+      "RD53A"
+    ],
+    [
+      "Arrival",
+      "CMS",
+      "pixel detector"
+    ],
+    [
+      "Arrival",
+      "ADC"
+    ],
+    [
+      "Arrival",
+      "ADC",
+      "ASIC"
+    ],
+    [
+      "Arrival",
+      "ADC",
+      "DAC"
+    ],
+    [
+      "Arrival",
+      "ADC",
+      "Fe"
+    ],
+    [
+      "Arrival",
+      "Threshold"
+    ],
+    [
+      "Arrival",
+      "Threshold",
+      "Time"
+    ],
+    [
+      "Arrival",
+      "Threshold",
+      "DAC"
+    ],
+    [
+      "Arrival",
+      "Threshold",
+      "Efficiency"
+    ],
+    [
+      "Arrival",
+      "Grant Number"
+    ],
+    [
+      "Arrival",
+      "Grant Number",
+      "Nature Communications"
+    ],
+    [
+      "Arrival",
+      "Grant Number",
+      "Physical Review"
+    ],
+    [
+      "Arrival",
+      "Grant Number",
+      "Cambridge University"
+    ],
+    [
+      "Arrival",
+      "Broadcom"
+    ],
+    [
+      "Arrival",
+      "Broadcom",
+      "Geant4"
+    ],
+    [
+      "Arrival",
+      "Broadcom",
+      "Time"
+    ],
+    [
+      "Arrival",
+      "Broadcom",
+      "Physics Research Section"
+    ],
+    [
+      "Arrival",
+      "TOTEM"
+    ],
+    [
+      "Arrival",
+      "TOTEM",
+      "CMS"
+    ],
+    [
+      "Arrival",
+      "TOTEM",
+      "CMS+"
+    ],
+    [
+      "Arrival",
+      "TOTEM",
+      "High Energy Physics"
+    ],
+    [
+      "Arrival",
+      "Std Dev"
+    ],
+    [
+      "Arrival",
+      "Std Dev",
+      "CMS"
+    ],
+    [
+      "Arrival",
+      "Std Dev",
+      "Total"
+    ],
+    [
+      "Arrival",
+      "Std Dev",
+      "Threshold"
+    ],
+    [
+      "Arrival",
+      "CMOS"
+    ],
+    [
+      "Arrival",
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "Arrival",
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "Arrival",
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "Timepix3",
+      "ASIC"
+    ],
+    [
+      "Timepix3",
+      "ASIC",
+      "ADC"
+    ],
+    [
+      "Timepix3",
+      "ASIC",
+      "CMOS"
+    ],
+    [
+      "Timepix3",
+      "ASIC",
+      "Fe"
+    ],
+    [
+      "Timepix3",
+      "Geant4"
+    ],
+    [
+      "Timepix3",
+      "Geant4",
+      "Monte Carlo"
+    ],
+    [
+      "Timepix3",
+      "Geant4",
+      "ALICE"
+    ],
+    [
+      "Timepix3",
+      "Geant4",
+      "TCAD"
+    ],
+    [
+      "Timepix3",
+      "Pixel"
+    ],
+    [
+      "Timepix3",
+      "Pixel",
+      "CMOS"
+    ],
+    [
+      "Timepix3",
+      "Pixel",
+      "CMS"
+    ],
+    [
+      "Timepix3",
+      "Pixel",
+      "ATLAS"
+    ],
+    [
+      "Timepix3",
+      "Fe"
+    ],
+    [
+      "Timepix3",
+      "Fe",
+      "ASIC"
+    ],
+    [
+      "Timepix3",
+      "Fe",
+      "VELO"
+    ],
+    [
+      "Timepix3",
+      "Fe",
+      "ADC"
+    ],
+    [
+      "Timepix3",
+      "CMOS"
+    ],
+    [
+      "Timepix3",
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "Timepix3",
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "Timepix3",
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "Timepix3",
+      "Time"
+    ],
+    [
+      "Timepix3",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "Timepix3",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "Timepix3",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "Timepix3",
+      "VELO"
+    ],
+    [
+      "Timepix3",
+      "VELO",
+      "ASIC"
+    ],
+    [
+      "Timepix3",
+      "VELO",
+      "Fe"
+    ],
+    [
+      "Timepix3",
+      "VELO",
+      "Tracker"
+    ],
+    [
+      "Timepix3",
+      "Let"
+    ],
+    [
+      "Timepix3",
+      "Let",
+      "CMOS"
+    ],
+    [
+      "Timepix3",
+      "Let",
+      "Radiation"
+    ],
+    [
+      "Timepix3",
+      "Let",
+      "Sensors"
+    ],
+    [
+      "Timepix3",
+      "Physics Research Section"
+    ],
+    [
+      "Timepix3",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timepix3",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Timepix3",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Timepix3",
+      "Silicon"
+    ],
+    [
+      "Timepix3",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Timepix3",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Timepix3",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timepix3",
+      "Charge"
+    ],
+    [
+      "Timepix3",
+      "Charge",
+      "TCAD"
+    ],
+    [
+      "Timepix3",
+      "Charge",
+      "CMOS"
+    ],
+    [
+      "Timepix3",
+      "Charge",
+      "Time"
+    ],
+    [
+      "Timepix3",
+      "pixel detector"
+    ],
+    [
+      "Timepix3",
+      "pixel detector",
+      "ATLAS"
+    ],
+    [
+      "Timepix3",
+      "pixel detector",
+      "CMS"
+    ],
+    [
+      "Timepix3",
+      "pixel detector",
+      "Pixel"
+    ],
+    [
+      "time resolution",
+      "ASIC"
+    ],
+    [
+      "time resolution",
+      "ASIC",
+      "ADC"
+    ],
+    [
+      "time resolution",
+      "ASIC",
+      "CMOS"
+    ],
+    [
+      "time resolution",
+      "ASIC",
+      "Fe"
+    ],
+    [
+      "time resolution",
+      "MAPS"
+    ],
+    [
+      "time resolution",
+      "MAPS",
+      "CMOS"
+    ],
+    [
+      "time resolution",
+      "MAPS",
+      "ALICE"
+    ],
+    [
+      "time resolution",
+      "MAPS",
+      "ITS3"
+    ],
+    [
+      "time resolution",
+      "Signal Amplitude Produced"
+    ],
+    [
+      "time resolution",
+      "Signal Amplitude Produced",
+      "ASIC"
+    ],
+    [
+      "time resolution",
+      "Signal Amplitude Produced",
+      "time resolution"
+    ],
+    [
+      "time resolution",
+      "Signal Amplitude Produced",
+      "Experimental Setup"
+    ],
+    [
+      "time resolution",
+      "Experimental Setup"
+    ],
+    [
+      "time resolution",
+      "Experimental Setup",
+      "ASIC"
+    ],
+    [
+      "time resolution",
+      "Experimental Setup",
+      "Data Acquisition"
+    ],
+    [
+      "time resolution",
+      "Experimental Setup",
+      "MAPS"
+    ],
+    [
+      "time resolution",
+      "Time"
+    ],
+    [
+      "time resolution",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "time resolution",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "time resolution",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "time resolution",
+      "ALICE"
+    ],
+    [
+      "time resolution",
+      "ALICE",
+      "MAPS"
+    ],
+    [
+      "time resolution",
+      "ALICE",
+      "CMOS"
+    ],
+    [
+      "time resolution",
+      "ALICE",
+      "ITS3"
+    ],
+    [
+      "time resolution",
+      "CMOS"
+    ],
+    [
+      "time resolution",
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "time resolution",
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "time resolution",
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "time resolution",
+      "LGAD"
+    ],
+    [
+      "time resolution",
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "time resolution",
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "time resolution",
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "time resolution",
+      "Heavy Ion"
+    ],
+    [
+      "time resolution",
+      "Heavy Ion",
+      "Nuclotron Experiment"
+    ],
+    [
+      "time resolution",
+      "Heavy Ion",
+      "time resolution"
+    ],
+    [
+      "time resolution",
+      "Heavy Ion",
+      "CMS"
+    ],
+    [
+      "time resolution",
+      "Nuclotron Experiment"
+    ],
+    [
+      "time resolution",
+      "Nuclotron Experiment",
+      "Heavy Ion"
+    ],
+    [
+      "time resolution",
+      "Nuclotron Experiment",
+      "time resolution"
+    ],
+    [
+      "time resolution",
+      "Nuclotron Experiment",
+      "Russian Academy"
+    ],
+    [
+      "time resolution",
+      "Internal Gain Layer"
+    ],
+    [
+      "time resolution",
+      "Internal Gain Layer",
+      "time resolution"
+    ],
+    [
+      "time resolution",
+      "Internal Gain Layer",
+      "Efficiency"
+    ],
+    [
+      "time resolution",
+      "Internal Gain Layer",
+      "ASIC"
+    ],
+    [
+      "time resolution",
+      "Particle Physics"
+    ],
+    [
+      "time resolution",
+      "Particle Physics",
+      "Technical Design"
+    ],
+    [
+      "time resolution",
+      "Particle Physics",
+      "Topical Workshop"
+    ],
+    [
+      "time resolution",
+      "Particle Physics",
+      "Dark Matter Candidates"
+    ],
+    [
+      "Timing Detector",
+      "LGAD"
+    ],
+    [
+      "Timing Detector",
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "Timing Detector",
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "Timing Detector",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "CMS",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "CMS",
+      "RD53A"
+    ],
+    [
+      "Timing Detector",
+      "CMS",
+      "pixel detector"
+    ],
+    [
+      "Timing Detector",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "ATLAS",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "ATLAS",
+      "LGAD"
+    ],
+    [
+      "Timing Detector",
+      "ATLAS",
+      "pixel detector"
+    ],
+    [
+      "Timing Detector",
+      "HGTD"
+    ],
+    [
+      "Timing Detector",
+      "HGTD",
+      "LGAD"
+    ],
+    [
+      "Timing Detector",
+      "HGTD",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "HGTD",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "ASIC"
+    ],
+    [
+      "Timing Detector",
+      "ASIC",
+      "ADC"
+    ],
+    [
+      "Timing Detector",
+      "ASIC",
+      "CMOS"
+    ],
+    [
+      "Timing Detector",
+      "ASIC",
+      "Fe"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design Report"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design Report",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design Report",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design Report",
+      "Technical Design"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design",
+      "ASIC"
+    ],
+    [
+      "Timing Detector",
+      "Particle Physics"
+    ],
+    [
+      "Timing Detector",
+      "Particle Physics",
+      "Technical Design"
+    ],
+    [
+      "Timing Detector",
+      "Particle Physics",
+      "Topical Workshop"
+    ],
+    [
+      "Timing Detector",
+      "Particle Physics",
+      "Dark Matter Candidates"
+    ],
+    [
+      "Timing Detector",
+      "Hamamatsu Photonics"
+    ],
+    [
+      "Timing Detector",
+      "Hamamatsu Photonics",
+      "Silicon"
+    ],
+    [
+      "Timing Detector",
+      "Hamamatsu Photonics",
+      "LGAD"
+    ],
+    [
+      "Timing Detector",
+      "Hamamatsu Photonics",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "High Luminosity"
+    ],
+    [
+      "Timing Detector",
+      "High Luminosity",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "High Luminosity",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "High Luminosity",
+      "Large Hadron Collider"
+    ],
+    [
+      "Timing Detector",
+      "Large Hadron Collider"
+    ],
+    [
+      "Timing Detector",
+      "Large Hadron Collider",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "Large Hadron Collider",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "Large Hadron Collider",
+      "ALICE"
+    ],
+    [
+      "Timing Detector",
+      "Large Hadron"
+    ],
+    [
+      "Timing Detector",
+      "Large Hadron",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "Large Hadron",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "Large Hadron",
+      "ASIC"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "CMS",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "CMS",
+      "RD53A"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "CMS",
+      "pixel detector"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "ATLAS",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "ATLAS",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "ATLAS",
+      "pixel detector"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "HGTD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "HGTD",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "HGTD",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "HGTD",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Endcap Timing Layer"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Endcap Timing Layer",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Endcap Timing Layer",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Endcap Timing Layer",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "AC-LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "AC-LGAD",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "AC-LGAD",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "AC-LGAD",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Time"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Silicon"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Standard Model"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Standard Model",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Standard Model",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Standard Model",
+      "Large Hadron Collider"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Hamamatsu Photonics"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Hamamatsu Photonics",
+      "Silicon"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Hamamatsu Photonics",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Hamamatsu Photonics",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Timing Detector"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Timing Detector",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Timing Detector",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Timing Detector",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Springer Nature"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Springer Nature",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Springer Nature",
+      "In Figure"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Springer Nature",
+      "Geant4"
+    ]
+  ],
+  "metrics": {
+    "retrieval_latency_s": 5.536396026611328,
+    "generation_latency_s": 0.0,
+    "unique_sources": 14,
+    "seed_node_count": 8,
+    "expanded_node_count": 79,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0
+  },
+  "answer": "",
+  "abstained": false,
+  "answer_abstained": false
+}

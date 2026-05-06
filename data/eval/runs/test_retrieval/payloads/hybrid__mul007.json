@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "mul007",
+    "query_type": "multi_hop",
+    "query": "How are leakage current, cooling, and noise linked after irradiation?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "are",
+      "leakage",
+      "current,"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How are leakage current, cooling, and noise linked after irradiation?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6309,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker.md",
+        "title": "2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker",
+        "text": "d and controlled by an input-output controller (IOC) software\nbased on the MODBUS. The status of the pump and chiller (on or off),\nand the coolant temperature can be controlled remotely through a logic\n\n26\n\ncontroller. All the necessary information like input/output flow speed and\nreservoir level are monitored simultaneously.\nThe temperature of the coolant is set at 22.2 [0] C during the run. Because\nNOVEC is a volatile liquid, minor leaking of the NOVEC is inevitable. The\nleak rate of the whole cooling system increased from 0.6% to 0.9% per day\nat the end of Run-22.\n\n**10. Operational Experience**\n\nThe installation of FST was completed in August 2021 and the first\n_p_ + _p_ 510 GeV collision data was recorded in December 2021. Figure 28\n(left) shows the FST installed in STAR and (right) the cumulative event\ndisplay for one of the FST planes. The FST ran smoothly through the\nwhole of Run-22 and Run-23. The detector operation was performed via\nslow control software, which requires minimal interaction by the shift crew.\n\nFigure 28: Left: FST after installation; Right: cumulative event display for p+p 510 GeV\ncollisions.\n\nTo find the optimal operational high voltage, a voltage scan was performed with low luminosity runs in December 2021. It was decided to set\nthe high voltage to 140V and 160V for inner and outer silicon sensors, respectively. The FST was running with 9 time bins initially for the detector\ncommissioning and tuned to 3 time bins in December 2021 to increase the\nmaximum DAQ rates of FST to 4.5kHz.\nThe noise level of FST silicon sensors (shown in Figure 29) is 10 to 20\nADC counts depending on the position of the silicon strip and the average\nsignal-to-noise ratio is about 25. The common mode noise for all channels is\nshown in figure 30 and is generally below 15 ADC counts. Both random and\ncommon mode noise are extracted on an event-by-event basis. Due to irradiation damage, the leakage current of silicon sensors (shown in Figure 31)\n\n27\n\nFigure 29: Noise levels for FST silicon sensor channels. FST disks 1, 2, and 3 correspond\nto the left, center, and right figures, respectively.\n\nincreased from 2 _µ_ A to around 13 _µ_ A (inner silicon sensor) and 17 _µ_ A (outer\nsilicon sensor) after 4 months of p+p 510 GeV data taking due to irradiation damage. This increase is consistent with expectations. At the end of\nRun-23, the leakage currents of the sensors were roughly the same level as\nthe end of Run-22, about 13 _µ_ A and 17 _µ_ A for inner and outer",
+        "score": 1.7232939455244276,
+        "dense_score": null,
+        "bm25_score": 26.820032700766006,
+        "graph_score": 0.0,
+        "rerank_score": 2.642674446105957,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4893,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2778430__2404.11192__A_beam-driven_proton_irradiation_setup_for_precision_radiation_damage_tests_of_silicon_det.md",
+        "title": "2024__recid_2778430__2404.11192__A_beam-driven_proton_irradiation_setup_for_precision_radiation_damage_tests_of_silicon_det",
+        "text": "16 × 10 [13] p/cm [2] and electrically characterized. After irradiation, the sensors were\nannealed for 80 min at 60 [◦] C and their leakage currents\nmeasured in a temperature-controlled environment between −10 [◦] C to −25 [◦] C with an error of 1 [◦] C. Their\n\nIV behavior, scaled to 20 [◦] C via eq. (5), pre- and postirradiation is depicted in fig. 11. Using the method de\n\n|Linear fit: Ileak/ V = ( p80/60) p<br>( p80/60)= (1.481E 16 ± 4.246E 18) cA<br>m 2 = 0.20 cm3<br>red Irradiated, passive LF sensors /<br>V<br>10 2<br>increase<br>current<br>leakage<br>Volume<br>10 3<br>1013 1014<br>Proton fluence / cm 2|Linear fit:<br>(80/60<br>p<br>2 =<br>red<br>Irradiated,|Ileak/ V = ( p80/60) p<br>)= (1.481E 16 ± 4.24<br>0.20<br>passive LF sensors|6E 18) cA<br>m|Col5|\n|---|---|---|---|---|\n|1013<br>1014<br>Proton fluence<br>/ cm<br>2<br>10<br>3<br>10<br>2<br>Volume leakage current increase <br><br>V / <br>cm3<br>Linear fit: Ileak/ V =<br>(80/60)<br>p<br>p<br> <br>(80/60)<br>p<br>= (1.481E<br>16 ± 4.246E<br>18) A<br>~~cm~~<br> <br>2<br>red = 0.20<br>Irradiated, passive LF sensors|||||\n|1013<br>1014<br>Proton fluence<br>/ cm<br>2<br>10<br>3<br>10<br>2<br>Volume leakage current increase <br><br>V / <br>cm3<br>Linear fit: Ileak/ V =<br>(80/60)<br>p<br>p<br> <br>(80/60)<br>p<br>= (1.481E<br>16 ± 4.246E<br>18) A<br>~~cm~~<br> <br>2<br>red = 0.20<br>Irradiated, passive LF sensors|||||\n\nFigure 12: Leakage current increase per depleted volume versus applied proton fluence.\n\n**6. Limitations**\n\nThe low proton energy of 12.3 MeV on the DUT\nconstrains the NIEL scaling accuracy for thick silicon\ndevices. As indicated in fig. 9, the hardness factor\nstrongly-depends on the proton energy in this regime.\nThe energy loss due to ionization while traversing the\nDUT increases the hardness factor gradually. Here, for\na silicon thickness of 300 µm, an energy loss of 2.2 MeV\n(see fig. 10) corresponds to an expected increase of the\nhardness factor of approximately 10 % between entry\nand exit. Therefore, the stated proton hardness factor of\nκ p = 3.71 ± 0.11 is only accurate for DUTs ≤ 150 µm\nsilicon and generally a thickness ≤ 300 µm is preferable. For thicker devices up to 300 µm, an increased\nhardness factor as well as uncertainty of κ p = 4.0 ± 0.4\n\n|irradiated<br>10 3<br>10 4<br>10 5 Vde<br>re<br>10 6<br>unirradiated<br>10 7<br>10 8<br>10 9 Vdep + 50V<br>region<br>10 10<br>0 100<br>B|irradiated|Col3|\n|---|---|---|\n|10<br>6<br>10<br>5<br>10<br>4<br>10<br>3<br>~~Vde~~<br> re<br>irradiate",
+        "score": 1.6789660523919498,
+        "dense_score": 0.4604650139808655,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 2.575106143951416,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6310,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker.md",
+        "title": "2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker",
+        "text": "510 GeV data taking due to irradiation damage. This increase is consistent with expectations. At the end of\nRun-23, the leakage currents of the sensors were roughly the same level as\nthe end of Run-22, about 13 _µ_ A and 17 _µ_ A for inner and outer silicon sensors\nas the beam luminosities were low in 2023. There were 2 inner sectors and 3\n\nouter sectors operating at lower bias voltages due to abnormal bias current\nbehavior.\n\nFigure 30: Common mode noise for FST silicon sensor channels. FST disks 1, 2, and 3\ncorrespond to the left, center, and right figures, respectively.\n\nThe FST readout chips are kept at room temperature by the cooling\ncrate (same crate also used by Intermediate Silicon Tracker) running 3M\nNOVEC. The coolant tank was refilled every 6 weeks by experts.\nIn January 2023, the entire FST was removed from the TPC cone and\nreinstalled. After this procedure, the leak rate was recorded at an acceptable\nvalue of 0.5% per day. This reduction in leak rate was possibly due to more\nsecure cooling line connections when the FST was reinstalled.\n\n28\n\nFigure 31: The current of FST silicon sensors vs. time.\n\n**11. Summary**\n\nSince its installation in 2021 and operation during the _p_ + _p_ run in 2022\nand the Au+Au collision run in 2023, the FST has been an integral part of\nforward rapidity physics program. The FST’s compact design, equipped\nwith segmented silicon strip sensors and AVP front-ends, supported by\nKapton-based flexible hybrids to DAQ system, has adeptly handled the high\noccupancy and data acquisition rates up to 4.5 kHz. Even with the expected\nincrease in leakage currents due to irradiation damage, the FST has proven\nto be resilient. The system’s performance along with the NOVEC 7200\ncooling system has been consistently optimal. The initial higher leak rate of\nthe cooling system, attributed to potential air entrapment, has stabilized,\naffirming the system’s robustness after post-installation adjustments. The\n\n29\n\nsuccessful data acquisition over the past two years bolsters our confidence\nin the ongoing _p_ + _p_ run in 2024 and the forthcoming final RHIC run of\nAu+Au collisions in 2025. The FST is poised to function effectively until\nthe projected end of the RHIC program in 2025.\n\n**12. Acknowledgement**\n\nThe following people B.H., T.H., X.S., G.W., G.X., Z.Y., S.Z. and Z.Z.\nare supported under DOE contract DE-FG02-94ER40865. Y.H., R.S., P.T.,\nand F.V. are supported under DOE contract DE-SC0012704. J.D.B is supported under DOE contract DE-SC00",
+        "score": 1.4387020417901335,
+        "dense_score": null,
+        "bm25_score": 29.854402059021044,
+        "graph_score": 0.0,
+        "rerank_score": 2.2045605182647705,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4643,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "on the environment.\nA direct evaluation of the leakage current can be done by fitting the return to the baseline of the waveform [15]. The leakage current values obtained\nare plotted in Figure 7 at different temperatures and irradiation levels. For an\nunirradiated APTS pixel, a leakage current of around 2 pA has been obtained.\nThe leakage current increases with temperature and irradiation becoming appreciable beyond 10 [14] 1 MeV n eq cm _[−]_ [2] . Therefore all the measurements on the\nirradiated chips reported in Section 3.3 were taken at a temperature of 14 _[◦]_ C\nand, for a level of irradiation higher than 10 [15] 1 MeV n eq cm _[−]_ [2], with _I_ reset =\n250 pA.\n\n2 Higher values of _I_ reset are not supported by the present test system so this is the best\noptimization achievable with the present setup.\n\n8\n\nFigure 6: Comparison at different temperatures of the signal waveform pulsed with _V_ H =\n1.2 V, averaged over 1000 events, for chips at different irradiation levels, using an optimized\nworking point with increased _I_ reset of 250 pA in order to compensate for leakage current: (a)\nNot irradiated, (b) 10 [13] 1 MeV n eq cm _[−]_ [2], (c) 10 [14] 1 MeV n eq cm _[−]_ [2], (d) 10 [15] 1 MeV n eq cm _[−]_ [2],\n(e) 2 _×_ 10 [15] 1 MeV n eq cm _[−]_ [2] and (f) 10 [16] 1 MeV n eq cm _[−]_ [2] . APTS with 15 µm pitch, modified\nwith gap, split 4, reference variant, _V_ sub = -1.2 V.\n\nFigure 7: Leakage current versus temperature for different irradiation levels at a reverse\nsubstrate bias of 1.2 V. APTS with 15 µm pitch, modified with gap, split 4, reference variant.\n\n_3.3._ [55] _Fe measurements_\n\nAn extensive measurement campaign was performed using a [55] Fe source, to\nevaluate the performance of the chip in terms of charge collection and energy\nresolution, and to compare the performance of all the available versions.\nAn example of an [55] Fe spectrum for the seed signal with a cluster size of 1 is\nshown in Figure 8(a). The cluster is defined as a set of adjacent pixels inside a\n3 _×_ 3 matrix centered around the pixel with the largest amplitude (called seed)\n\n9\n\n(a) (b)\n\nFigure 8: (a) [55] Fe spectrum for events with cluster size 1. The seed distribution is filled with\nthe seed signals of the 4 central pixels of the matrix. (b) Energy calibration was obtained\nusing the peak means from the Gaussian fits on (a). Data are fitted with a linear function,\nwhere _m_ is the slope parameter. The errors refer to the ones obtained from the fits. All these\nmeasurem",
+        "score": 0.8124809818679025,
+        "dense_score": 0.5027402639389038,
+        "bm25_score": 23.200574672694902,
+        "graph_score": 0.0,
+        "rerank_score": 1.2333869934082031,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1491,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "(FNG) [19], using a 14 MeV neutron gun based on\nT(d,n) _α_ fusion with neutron fluences ranging from 5 _×_ 10 [10]\n\nup to 1 _×_ 10 [12] .\nAfter the irradiation, the measurement of I-V curves was\nperformed at different temperatures (+15 _[◦]_ C, +10 _[◦]_ C, +5 _[◦]_ C,\n0 _[◦]_ C and _−_ 5 _[◦]_ C) to evaluate the SiPM operational voltage and\nthe dark current at _V_ _op_ . In Fig. 15, some of the results obtained\nwith the SiPMs irradiated at FNG are reported. Among all\nthe sample, we conservatively selected only samples with\nhigher leakage current. In Fig. 15 (Left) the leakage currents\n\nFig. 15. Left: Mean value of the leakage current as a function of the SiPMs\ntemperature for SiPM irradiated at different neutron fluences (red curve: 10 [12]\nn 1 _MeV_ _eq_, blue curve: 5 _×_ 10 [11] n 1 _MeV_ _eq_, green curve: 10 [11] n 1 _MeV_ _eq_, black\ncurve: 5 _×_ 10 [11] n 1 _MeV_ _eq_ ). Right: _I_ _dark_ dependence on SiPM temperature\nfor different overvoltages.\n\nmeasured at _V_ _op_ at different temperatures and fluences are\nreported: the dependence of _I_ _dark_ to the sensor temperature\nappears to be linear and a factor of _∼_ 2 decrease in leakage\ncurrent is observed when reducing the temperature by +10 _[◦]_\n\nC. Looking at Fig. 15 (Right), that represents the leakage\ncurrent dependence on temperature at fluence compatible to\nthe lifetime of the experiment, for different bias voltages\n( _V_ _br_ + 3, _V_ _br_ + 6, _V_ _br_ + 9), it is clear that the calorimeter\nwill need to operate the SiPMs down to _−_ 10 _[◦]_ C, in order to\nmeet the 2 mA limit on each channel, assuming only a small\ndecrease in _V_ _bias_ .\n\n_D. Calorimeter assembly at Fermilab_\n\nAccording to the current schedule, it is planned that the\ncalorimeter will be installed in the experimental hall by\nsummer 2024 and all the service lines will be completed by\nthe autumn of that same year. Soon after, a commissioning\ndata-taking with cosmic rays will start, while waiting for the\ntracker to be installed. To respect this schedule, the disks have\nto be assembled by the spring of 2023.\nWithin the last two years, all large mechanical parts (see\nFig. 16) have been produced. Before shipping them to Fermilab, a dry-fit was carried out in a clean room at LNF to check\nthat all pieces were well fitting as shown in Fig. 16. A careful\nvacuum leak test was performed both on the crate manifolds\nand on the elbow joints between crates and manifolds: a\nmaximum leak rate of 10 _[−]_ [10] atm _×_ cc/s was achieved,\nsati",
+        "score": 0.7396914363852833,
+        "dense_score": 0.45157626271247864,
+        "bm25_score": 21.732387695584492,
+        "graph_score": 0.0,
+        "rerank_score": 1.123525619506836,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4642,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "the signal. The baseline value is evaluated as the\noutput in the 4 [th] sampling before the minimum. This is because a significant\nshort-range auto-correlation was observed among close samples, progressively\ndecreasing for more distant ones (up to 24% degradation on the energy resolution\ndepending on the frames chosen for the baseline definition). The 4 [th] sample has\nbeen defined to be as close as possible to the minimum, without being influenced\nby the signal edge itself.\nThe pixels have different baselines, but similar signal amplitudes and shapes.\nThe return to the baseline of the output signal depends on _I_ reset, and it takes\naround 10 µs in these conditions at the nominal operating point.\nIn order to evaluate the noise of the chip, the baseline fluctuations have\nbeen studied. They were compatible among all the pixels. The average noise\nranges from 23 to 36 electrons (for the conversion to electrons, see Sect. 3.3),\ndepending on the design and the reverse substrate voltage applied. A detailed\nstudy is reported in Figure 14.\nThe front-end settings were tuned for signal-to-noise (S/N), gain and linearity. The standard settings used in this paper are _I_ biasn =5 µA, _I_ biasp =0.5 µA,\n_I_ bias3 =200 µA, _I_ bias4 =150 µA, _I_ reset =100 pA, _V_ reset =500 mV, unless stated differently. The resulting gain between the IN and _V_ OUT nodes shown in Figure\n4, is around 0.6 for an input signal range from 200 mV to 600 mV.\n\n_3.2. Leakage current_\n\nThe leakage current of the chip is expected to increase with reverse substrate voltage, irradiation level and temperature. The increased leakage current\neffectively reduces the fraction of _I_ reset available as reset current, and influences\nthe baseline. Therefore a higher leakage current has to be compensated by increasing _I_ reset . Larger _I_ reset values lead to increased noise (approximately 15%\nfor _I_ reset = 250 pA w.r.t. the standard value). In Figure 6, the waveforms for\nseveral NIEL irradiation doses are reported at different temperatures, with _I_ reset\n= 250 pA [2] .\nAll the temperature values reported in this paper refer to the cooling water\ntemperature set to the chiller; the actual temperature on the chip can be higher\nby about 1–3 _[◦]_ C depending on the environment.\nA direct evaluation of the leakage current can be done by fitting the return to the baseline of the waveform [15]. The leakage current values obtained\nare plotted in Figure 7 at different temperatures and irradiation levels. For a",
+        "score": 0.5887009436084378,
+        "dense_score": null,
+        "bm25_score": 29.299497782483826,
+        "graph_score": 0.0,
+        "rerank_score": 0.8970088958740234,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5116,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L.md",
+        "title": "2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L",
+        "text": "uences.\n\n_**5.5.**_ _**Gain, Crosstalk and Afterpulse**_\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|+06<br>1E+|07<br>1E+|08<br>1E|+09<br>1E|+10<br>1E|+11<br>1E|\n\nIn Fig. 9 are reported the gain, crosstalk probability and afterpulse\n\nprobability measured at 4 V of excess bias before and after irradiation. Gain\n\nand AP were measured on SPADs at room temperature, CT measurement\n\nwas performed on 1x1 mm² at room temperature and on 0.2x0.2 mm²\n\nSiPMs at -20°C after irradiation, to discriminate single events in high DCR\n\nconditions.\n\nNo significant change in gain is observed after irradiation, apart from\n\nsome fluctuation caused by the uncertainty of the measurement on samples\n\nwith high noise level. For CT measurements, time constraints and\n\ninstability of the amplifiers operated at low temperatures limited the\n\nnumber of tested devices, but the results do not show a link between\n\nradiation damage and a change in crosstalk probability.\n\nIn the case of AP measurements, it is observed a significant increase for\n\nalmost all devices after irradiation. This effect is related to the defects\n\ngenerated in the silicon by NIEL. The defects act as a trapping centres for\n\ncharges, thus increasing the AP probability for irradiated samples. A few\n\nsamples do not show this increase, but this is mainly attributed to\n\nlimitations in the measurement setup and software, which is not able to\n\ndetect AP events below a certain amplitude and will underestimate their\n\nnumber in case of cells with long recharge time.\n\nDespite the increase in AP, its contribution to the total ECF is limited\n\nas its probability remains relatively low. Moreover, the gain and the CT do\n\nnot show a significant variation in samples measured before and after\n\nirradiation. This proves the validity of the hypothesis used in the calculation\n\nof the DCR, where it was assumed that the Gain current, i.e. the gain\n\nmultiplied by the excess charge factor, do not change with proton\n\nirradiation.\n\nFig. 9: Top to bottom: gain, crosstalk probability and afterpulse\nprobability measured before and after proton irradiation at 4 V of excess\nbias.\n\n_**5.6.**_ _**Activation energy**_\n\nTo calculate the activation energy (Ea) of the SiPMs it was taken the IV\n\nmeasurements at different temperatures. At the same time, it was measured\n\nalso the temperature dependence of the breakdown voltage with\n\ntemperature. For irradiated samples the IVs were taken at temperatures\n\nbetween -30°C and 20, with 2°C steps, to avoid",
+        "score": 0.29631832838058475,
+        "dense_score": 0.4937577247619629,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.4474608898162842,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 965,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2669039__2306.08716__Radiation-Induced_Degradation_Mechanism_of_X-Ray_SOI_Pixel_Sensors_With_Pinned_Depleted_Di.md",
+        "title": "2023__recid_2669039__2306.08716__Radiation-Induced_Degradation_Mechanism_of_X-Ray_SOI_Pixel_Sensors_With_Pinned_Depleted_Di",
+        "text": "with experimental data (red triangle and filled circle). In the experimental data\nshown here, the shot noise of the dark current is subtracted from the original\nplot presented in Hayashida et al. [18].\n\ndence on ( _C_ D + _C_ I + _C_ FB ) _/C_ FB because its contribution\nis negligible. Since the proportional coefficient of this formula includes unknown parameters such as the flicker noise\ncoefficient of the transistor, this work focused only on the\nproportional relation depending on the sense-node capacitance\nunder the above assumptions.\nFigure 10 shows the increase in the readout noise calculated\nwith Eq. 3 based on the simulated sense-node capacitance.\nHere, the proportional coefficient of Eq. 3 was chosen to\nmatch the experimental value at pre-irradiation. Similar to\nthe gain degradation, the readout noise calculated with the\nsimulated sense-node capacitance successfully reproduces the\nnoise degradation in the experiment. Thus, this result indicates\nthe increase in the sense-node capacitance is also dominant\nin the radiation-induced degradation of the readout noise of\nXRPIX.\n\nThe above discussions exhibit the importance of the increase in the sense-node capacitance for spectral performance,\nparticularly for degradations of gain and readout noise. Thus,\n\nIt should be noted that this formula omits logarithmic depen\n\nfor radiation tolerance, it is important to keep the sense-node\ncapacitance as low as possible after the irradiation. We are now\ninvestigating new device structures for more improvement of\nthe performance of XRPIX. The results of such studies will\nbe presented in future work.\n\nV. C ONCLUSIONS\n\nThis paper investigated the radiation-induced degradation\nmechanism of the X-ray SOI pixel sensor “XRPIX” using\n3-dimensional device simulations. The simulations roughly\nmatched the measured dark current degradation, and the gain\nand readout noise calculated from the simulated sense-node ca\npacitance successfully reproduced those obtained in the experiments. These device simulations also revealed the radiation\ninduced degradation mechanism of XRPIX, especially for the\ndark current, gain, and readout noise. The dramatic increase\nin the dark current of XRPIX induced by the irradiation was\nprimarily due to the depletion of the buried p-well formed at\nthe Si-SiO 2 interface. In the degradation of gain and readout\nnoise, the sense-node capacitance played an important role.\nThe sense-node capacitance increased due to the enlargement\nof the buried n-well around",
+        "score": -0.04567973360419274,
+        "dense_score": 0.45659950375556946,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.07796882092952728,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 994,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2671943__2306.14736__Investigation_of_the_Boron_removal_effect_induced_by_5.5MeV_electrons_on_highly_doped_EPI-.md",
+        "title": "2023__recid_2671943__2306.14736__Investigation_of_the_Boron_removal_effect_induced_by_5.5MeV_electrons_on_highly_doped_EPI-",
+        "text": "imulation of the TS-Cap signal, shown in Fig. 10(a), is in excellent agreement with the\nmeasured data. In this case, the parameters from the measured _C_ ( _T_ ) curve, by using the same procedure as for the\nelectron irradiated diode, are ξ = 0.85, _E_ _a_ 0 = 0.265 eV and\n\n[B i O i ] = 3.5 × 10 [13] cm [−][3] . In Fig. 10(b) the corresponding\nTSC data and simulated spectra are given. Also in this case\nthe simulation reproduces the data very well, but compared\nwith the TS-Cap simulations, the best agreement is found for\nslightly different _E_ _a_ 0 and [B i O i ] values, of _E_ _a_ 0 = 0.273 eV and\n\n[B i O i ] = 3.3 × 10 [13] cm [−][3] . The ξ value is the same for both\nsimulations. The distributions of the electric field and the N eff\nprofiles are plotted in Fig. 10(c) and (d) for temperatures between 80 K and 110 K in steps of 5 K. In this case, the maximal\nelectric field _E_ ( _T_ _k_, _x_ = 0) also decreases with increasing the\ntemperature while the depleted region depth increases. The\nmain difference to the electron irradiated device is the lower\n\n12\n\nleakage current density _J_ _d_ and _N_ eff, were obtained from I-V and\nC-V measurements. The microscopic properties of the B i O i and\nC i O i defects were studied using the TSC and TS-Cap methods\nand the results are discussed in connection with Boron removal\n\nprocess observed in macroscopic measurements.\nThe main results obtained in this study are:\n\na) The density of leakage current _J_ _d_ increases linearly with\nthe achieved fluence and the corresponding current related damage parameter is determined to be α = 3.2 ×\n10 [−][19] A/cm. Such a small value was also reported for\nn-type silicon diodes after irradiation with 5.5 MeV electrons [26]. Compared with hadron irradiation, the obtained α parameter is much smaller, indicating that the increase of the leakage current caused by low energy electrons is substantially less than that caused by hadrons.\nAlso, the change of _J_ _d_ with annealing time at 80 _[o]_ C is\nstrongly suppressed compared with hadron irradiated devices indicating that the irradiation with low energy electrons creates less current generation centers and more stable defects.\n\nb) The _N_ eff decreases nearly linear with increasing fluence\nand remains stable during the isothermal annealing at\n80 [o] C, in agreement with the thermal stability of the B i O i\ndefect [28].\n\nc) The development of B i O i and C i O i defects with fluence is\nlinear, however, with different introduction rates fo",
+        "score": -0.5248327165842056,
+        "dense_score": null,
+        "bm25_score": 23.999259903924653,
+        "graph_score": 0.0,
+        "rerank_score": -0.8158484101295471,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 25,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4647,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "t 4 was the most optimized [13], it was used for\nall studies reported from this point onwards, with the benefit of a slightly\nsmaller capacitance at _V_ sub = 0 V.\n\n- In the fourth column the performance of the different geometric variants\nare compared. All of them show similar behaviour, with the exception\nof energy resolution and capacitance slightly worse for the larger n-well\ncollection electrode driven by the larger geometry itself.\n\n- In the last column, different levels of NIEL irradiation are compared with\na non-irradiated chip and with a TID irradiated chip. For NIEL irradiation levels of 2 _×_ 10 [15] 1 MeV n eq cm _[−]_ [2] and higher, the measurements\nhave been taken with _I_ reset = 250 pA to accommodate the larger sensor\nleakage (see Section 3.2). The different _I_ reset setting, together with the\nlimited sampling frequency of the readout, might have an influence on the\nextracted values, further discussed in Appendix A.\n\nRemarkably, for all the irradiation levels, the DUT continues to work. No\nmajor difference is observed between the performance of an unirradiated\nand a 10 [13] 1 MeV n eq cm _[−]_ [2] chip, satisfying the ALICE ITS3 radiation\nhardness requirement.\n\n13\n\nFor higher levels of NIEL irradiation, the capacitance reduces, mainly due\nto a reduction of the radiation-induced effective active doping. For TID\non the contrary a larger capacitance is observed. As expected, for higher\nlevels of NIEL irradiation, the energy resolution degrades, due to increase\nof noise from leakage current and to charge losses from an increase of the\nradiation-induced trapping centers. These losses also cause a decrease in\nCCE and average cluster size. It has to be noted that for high levels of\nirradiation the uncertainty on the CCE calculation method is larger due\nto the signal distribution deterioration.\n\n - In the last column the comparison of different pixel pitches for a fixed\nNIEL irradiation of 10 [15] 1 MeV n eq cm _[−]_ [2] is also shown. The energy\nresolution is more affected by irradiation for larger pixel pitches, again\ndue to a larger shot noise contribution as leakage is collected from a larger\nvolume, and larger charge losses due to the longer collection path, also\nreflected in the CCE and cluster size.\n\n**4. Testbeam setup**\n\nThe APTS chips were also tested with a particle beam of 120 GeV/ _c_ positive\nhadrons, at the CERN–SPS H6 [16], to study the detector charge distribution,\ndetection efficiency and spatial resolution. This was made possib",
+        "score": -0.6277114179501166,
+        "dense_score": null,
+        "bm25_score": 23.349427863572902,
+        "graph_score": 0.0,
+        "rerank_score": -0.9739938974380493,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": true,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.2994039030745625,
+    "generation_latency_s": 3.296881914138794e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.2994039030745625,
+    "generation_latency_s": 3.296881914138794e-07
+  }
+}

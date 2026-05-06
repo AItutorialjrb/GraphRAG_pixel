@@ -1,0 +1,398 @@
+{
+  "benchmark": {
+    "query_id": "con006",
+    "query_type": "conceptual",
+    "query": "Why is in-time efficiency important at the LHC?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "LHC"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why is in-time efficiency important at the LHC?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 257,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC.md",
+        "title": "2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC",
+        "text": "_ [7]. SiT can provide the\ntrigger signal with a dead-time of about 400 ns.\nDuring Run 2 data-taking SiT detectors showed very good\nefficiency. As discussed in Ref. [8], NEAR stations had an\noverall efficiency over 98% whereas FAR stations performed\nslightly worse, 95% – 98%. A possible explanation is the radiation degradation of the silicon tracker, as the FAR stations\nare inserted slightly closer (by about 1 mm) to the beam and are\n\n more exposed to the beam halo. In addition, FAR station effi\nciency is affected by the showers created by interactions with\ndetector material in the NEAR stations.\n\n**3. Time-of-Flight Detectors**\n\nThe purpose of the ToF is to reduce the combinatorial background coming from the pile-up, denoted as µ – multiple, independent proton-proton collisions during a single bunch crossing. The idea is to measure difference in the time of flight\nof scattered protons on both sides obtaining a “proton vertex”\nand compare it to the vertex position reconstructed by ATLAS.\nAFP ToF uses 16 L-shaped quartz bars (LQBars) to produce\nCherenkov light and guide it into a Micro-Channel Plate Photo\nMultiplier (MCP-PMT). During LHC Run 2 the measured time\nresolution was 35 ± 6 ps and 37 ± 6 ps per train, depending on\nside [9]. This translates to a spatial resolution of 5.2 ± 0.9 mm\nfor the vertex _z_ -position. AFP ToF is equipped with radiationhard readout and provides a trigger signal with a dead-time\nsmaller than 25 ns (< 1 bunch-crossing). Unfortunately, as described in Ref. [9], during the Run 2 data-taking ToF system\nsuffered from very low efficiency (a few percent).\n\n**4. Readiness for Run 3 Data-taking**\n\nDuring Run 2 data-taking AFP collected 32 fb [−][1] during highµ runs and took part in few low-µ runs. Afterward, AFP underwent a significant refurbishment. In order to address the major\nissue of ToF system – the very low efficiency and repeated failures of MCP-PMTs in vacuum – the new design of the detector\nflange (Out-of-Vacuum solution) was made. In addition, a new\ndesign of the MCP-PMT back-end electronics was developed.\nIn Run 3 ToF system is also equipped with a set of new, glueless LQBars. The AFP tracker system was equipped with newly\nproduced SiT modules. In addition, new heat exchangers were\ninstalled to improve cooling capabilities. Finally, developments\nof a new trigger module and picosecond Time to Digital Converter (TDC) readout are ongoing.\n\n_Preprint submitted to Nuclear Physics B_ _October 19, 2023_\n\n**5. High Luminosity LHC",
+        "score": -1.3932315738656635,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8241406874500399,
+        "rerank_score": -2.2410621643066406,
+        "matched_nodes": [
+          "The",
+          "In",
+          "LHC",
+          "Time",
+          "Run",
+          "As"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 258,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC.md",
+        "title": "2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC",
+        "text": "were\ninstalled to improve cooling capabilities. Finally, developments\nof a new trigger module and picosecond Time to Digital Converter (TDC) readout are ongoing.\n\n_Preprint submitted to Nuclear Physics B_ _October 19, 2023_\n\n**5. High Luminosity LHC Consideration**\n\nAt the HL-LHC high pile-up environment the key focus is on\nphoton-induced processes and Beyond Standard Model (BSM)\nsearches. The presence of RPs during Run 4 may improve the\nmeasure/search capabilities of “central” detectors. The discussion about HL-LHC physics case with use of RPs is held in [10]\nand references within [11]. Below only an idea is described.\nProcesses which are particularly interesting to be studied are\n_pp_ → _pXp_, where _p_ denotes a proton staying intact and _X_\ndenotes a “central” system, _e.g._ photon-induced WW (γγ →\n_WW_ ) production, axion-like particles γγ → _a_ → γγ, supersymmetry and dark matter particles (γγ → _l_ [˜] _l_ [˜] ). The information from the forward protons, combined with that of the central\ndetector where particles are produced out of the energy lost by\nthe protons, allows full kinematic reconstruction of the events\nusing the difference and sum of the energy lost by the two protons, respectively.\nThe presence of pileup makes things more complicated, because the association between the central and forward systems\nis not obvious, and the two protons tagged by the forward detectors are likely originating from different collisions. For this\nreason, and especially in the extreme pile-up scenarios foreseen\nat the HL-LHC, it is essential that the position measurements\nfrom the pixel detectors is complemented by a high-resolution\nToF detectors.\n\nAs there are significant constraints on using RPs due to the\nHL-LHC layout, a discussion of project feasibility is ongoing\nwithin the ATLAS community [1] . According to the newest available HL-LHC machine layout only a few locations are possible for the RP installation: 195.5 m (RP1A), 198.0 m (RP1B),\n217.0 m (RP2A), 219.5 m (RP2B), 234.0 m (RP3A), 237.0 m\n(RP3B) and 245.0 m (RP3C). Depending on the number of stations and their location, the mass acceptance was estimated –\nsee Fig. 1. The legend should be interpreted as:\n\n - “RP **X** ” means combination two stations RP **X** A and RP **X** B\n\non both sides of IP when proton is tagged in all of them;\n\n - “RP **X** +RP **Y** ” means tagged proton in [(RP **X** A and RP **X** B\non side A) or (RP **Y** A and RP **Y** B on side A)] and [(RP **X** A\nand RP **X** B on side C",
+        "score": -1.8938238865768098,
+        "dense_score": 0.5236120820045471,
+        "bm25_score": null,
+        "graph_score": 0.9360511590727417,
+        "rerank_score": -3.030637741088867,
+        "matched_nodes": [
+          "The",
+          "At",
+          "LHC",
+          "Time",
+          "For",
+          "Run",
+          "As"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4898,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter.md",
+        "title": "2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter",
+        "text": "e to 300 V provides an efficiency to 99.7% at that proton fluence. The timing resolution of\n20 ps measured before irradiation rises for a proton fluence of 1 × 10 [16] n eq /cm [2] to 53 and 45 ps at\nHV = 200 and 300 V, respectively.\n\n1Corresponding author.\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Data samples and experimental set-up** **3**\n\n**3** **Detection efficiency** **4**\n\n**4** **Time resolution** **8**\n\n**5** **Summary and Conclusions** **13**\n\n**1** **Introduction**\n\nTo cope with the large event pile up foreseen during the CERN LHC High-Luminosity data-taking\n\nperiod, the experiments showed evidence for the need to upgrade the present detectors with layers\n\nwith timing capability of the order of tens of picoseconds. The major LHC Collaborations foresee\n\nthe addition of timing layers [1, 2] to match the required performance. One choice is to build these\ntiming layers with mm [2] silicon pads based on the low-gain avalanche detectors (LGAD) [3], which\n\nfeature an internal gain layer under the pixel.\n\nThe particle-physics community is presently attempting to develop a new generation of silicon\n\nsensors able to achieve both high spatial granularity and excellent timing capabilities [4, 5], although\n\nthe radiation tolerance of the gain layer still constitutes a problem to place these sensors at small\n\nradii in present and future high-energy hadron colliders, where radiation will be very high. Studies\n\nto overcome the limited radiation tolerance of the gain layer are ongoing [6–8]. A particularly\n\ninteresting approach is to use a resistive layer that spreads the signal among four adjacent pixels\n\nand, by reconstructing the hit position from those signals, reduces drastically the number of detection\n\nchannels needed to have spatial resolutions at the level of 10 _𝜇_ m, at the price of a reduction of the\n\ntiming performance by approximately a factor of two [9–11].\n\nThe MONOLITH Horizon 2020 ERC Advanced project utilises the SG13G2 130 nm SiGe\n\nBiCMOS process by IHP to produce low noise, low power and very fast frontend electronics,\n\nimplemented in a fully sensitive high granularity monolithic sensor able to provide excellent timing.\n\nThe foundry masks of the first prototype of the MONOLITH project [12] were used to produce a\n\nproof-of-concept picosecond avalanche detector (PicoAD) [13], a novel detector that implements a\ncontinuous deep gain layer [14]. At a power density of 2.7 W/cm [2], this proof-of-concept monolithic\n\nASIC provided full e",
+        "score": -1.9294543536685058,
+        "dense_score": 0.510508120059967,
+        "bm25_score": 19.779545392608703,
+        "graph_score": 0.8241406874500399,
+        "rerank_score": -3.07747483253479,
+        "matched_nodes": [
+          "The",
+          "At",
+          "LHC",
+          "Time",
+          "To",
+          "CERN"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7755,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2932557__2506.08203__Response_to_cosmic_muons_of_scintillator-SiPM_assemblies_measured_at_different_temperature.md",
+        "title": "2026__recid_2932557__2506.08203__Response_to_cosmic_muons_of_scintillator-SiPM_assemblies_measured_at_different_temperature",
+        "text": "n, construction and tests of highly segmented electromagnetic and hadronic\n\ncalorimeters based on different technologies and material combinations [6]. An example of experimentally tested solution is the 1 m [3] CALICE AHCAL – a sampling calorimeter assembled from 22\n\nthousand 3M-wrapped plastic scintillator tiles as active elements readout by silicon photomultipliers\n\n(SiPM) [7]. The combined silicon-scintillator technology has been also chosen for the CMS endcap\n\ncalorimeter upgrade for the High-Luminosity LHC and the recently developed High Granularity\n\nCALorimeter (HGCAL) is now under construction [8].\n\nThe usage of silicon photomultipliers in highly granular systems brings many advantages\n\ncompared to vacuum devices – low operating voltage and therefore low power consumption, small\n\nsize allowing incorporation inside active elements without additional light guides and relatively\n\nhigh quantum efficiency. A typical detector element for high granularity option is a scintillator\n\nplate (tile) wrapped in reflective film and having a dimple for light to be directly readout by a SiPM.\n\nThe wrapping helps to increase the light collection efficiency. However, the remaining problem is\n\nthe SiPM noise, which is the most important factor affecting the performance especially in hard\n\nirradiation conditions [9]. Operation at low temperatures helps to solve this problem, resulting\n\ntypically in one order of magnitude dark count rate reduction per 40°C at the same overvoltage. For\n\n°\ninstance, the aforementioned HGCAL will be operated at −35 C.\n\n– 1 –\n\nDifferent tests and calibrations of detector modules are done with minimum ionising particles\n\nincluding cosmic muons. For reliable projections of the performance estimates from the tests\n\nand calibrations at room temperature to operating conditions, the information about temperature\n\ndependencies of detector components would be very helpful. The temperature dependencies of\n\nbreakdown voltages and other parameters of silicon photomultipliers are typically provided by the\n\nmanufacturers. There are few published results describing the behaviour of several scintillator\n\nmaterials in different temperature ranges, where dependencies are observed to be quite weak\n\n[10, 11]. As for reflective films, the manufacturers state the independence of film strength and\n\n° °\nreflection quality of temperature in the range from −60 C up to +60 C. In this work, the temperature\n\n°\ndependence of response to cosmic muons has been experiment",
+        "score": -2.1829770114877336,
+        "dense_score": null,
+        "bm25_score": 18.999842845311335,
+        "graph_score": 0.8241406874500399,
+        "rerank_score": -3.460430145263672,
+        "matched_nodes": [
+          "The",
+          "In",
+          "An",
+          "LHC",
+          "For",
+          "As"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1836,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "system was identified as a significant source of scattering\nin the experiment and was redesigned as part of the upgrade programme for the LHCb\nvacuum system. The improved support system was installed in 2014 during the LHC long\nshutdown 1 (LS1).\nIn the new support system, the volume of the collars has been reduced and materials\nwith longer radiation length have been selected for all components. Carbon fibre reinforced\nplastic tubes and synthetic ropes have replaced the stainless steel rods and cables. This led\nto a remarkable increase of more than 90% in material transparency for these components,\nwhile retaining sufficient stiffness. The aluminium collars were redesigned and remade\n\n4 TM\nVespel .\n\n8\n\nwith beryllium, which has led to a material transparency improvement of more than\n85% [22]. [5] A range of innovative materials was selected: aramid [6] for the ropes; thermoset\ncarbon high-modulus fibres [7] for the tubes; and polybenzimidazole [8] for interface rings.\nA thorough qualification process of these materials has been carried out by the CERN\nvacuum group considering mechanical strength, creep and radiation tolerance.\n\n##### **2.6 Background and luminosity monitors**\n\nA set of detectors has been developed to monitor the machine-induced background\nconditions around the interaction point. To reduce systematic uncertainties and facilitate\nthe reconstruction, the instantaneous luminosity delivered to LHCb is kept constant\nthroughout a fill using a procedure known as _luminosity levelling_ [23]. [9] Every few seconds\nduring nominal operation, LHCb publishes a measurement of the average number of\nvisible _pp_ interactions per beam-beam crossing, denoted by _µ_ vis, which is used by the\nLHC control system to adjust the offset of the two beams in the direction perpendicular\nto the nominal crossing plane. As the number of visible _pp_ collisions per beam crossing\nfollows a Poisson distribution, the average of the distribution (i.e. _µ_ vis ) can be determined\nby measuring the probability that a beam crossing has no observable activity in the\ndetector, _P_ 0 = exp ( _−µ_ vis ) ; this is the _logZero_ method [24]. During Run 1 and Run 2, the\nreal-time luminosity measurement was based on information available in the L0 hardware\ntrigger. For the upgraded experiment, a dedicated luminosity subdetector, dubbed probe\nfor luminosity measurement (PLUME), has been installed, see section 2.6.1.\nExcursions in luminosity or elevated machine-induced background are not o",
+        "score": -2.3962466340065003,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -3.804994821548462,
+        "matched_nodes": [
+          "The",
+          "In",
+          "LHC",
+          "For",
+          "To",
+          "CERN",
+          "Run",
+          "As"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5995,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc.md",
+        "title": "2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc",
+        "text": "acterized\nby a fast rise time (10 % - 90 %) of 175 ± 4 ps, but present a\ntail at the slower end, characteristic of filed non-uniformities.\nAlthough charge per micrometer in the 3D device is reduced\nby a factor of 60 with respect to a typical LGAD [1]\n(34.3 ± 0.4 fq for 50 μm thick HPK [2] device), an almost factor\nof 6 gain in rise time is noted (980 ± 1.4 ps for LGADs Figure 1 bottom).\n\nAnalog time resolution of the LGAD-3D system can be\napproximated as the sum of a Landau fluctuations term, field\nrelated distortion effects and the noise-induced jitter [9].\nThrough a Constant Fraction Discriminator (CFD) time walk\ncorrection approach, a 2D time resolution map is established\nwith respect to the CFD of each of the components (Figure 2).\nFor LGADs, selecting higher CFDs to profit from increased\n\n1\nLow Gain Avalanche Diode.\n\n2\nHamamatsu Photonics LTd.\n\n1\n\nsignal to noise ratio incurs a penalty in slew rate, deteriorating\ntime resolution, thus resulting in the characteristic S curve\nalong the x-axis. The plateau at ~ 40 % of peak amplitude\ncorresponds to a time when all primary charges have reached\nthe gain layer. In the case of 3Ds, due to the decoupling of\ndrift and charge generation volumes and reduced electrode\ndistances, the slew rate remains practically constant. Absence\nof gain under normal operation can be partially addressed by\nselecting higher CFDs, without degradation on time\nresolution.\n\nFig. 1. Charge and rise time disitributions of a 150 _μm_, 50 x 50 _μm_ _[2]_ pitch, 3D\n\nsingle pixel devince (top) and a 50 _μm_ thick LGAD (bottom).\n\nFig. 2. Time resolution map of an LGAD - 3D (50 x 50 _μm_ _[2]_ single pixel)\n\nsystem with respect to CFD thresholds. Constant slew-rate and abence\nof Landau fluctuations in the 3D case result in a flat dependence.\n\nTo mitigate statistical biases and efficiency issues at the\ndynamic range limit, a high bandwidth readout system\n(> 3 GHz) is crucial. Such effects can be studied by leveraging\nthe Poissonian distribution of radioactive decays. Using a twoobject coincidence system, a DUT bias scan is performed\nrequesting identical number of events at each step. The\nreference device (LGAD) is set to a known bias, yielding\n100 % efficiency. An event frequency distribution is\nconstructed at each step exploiting timestamp differences of\n\nconsecutive events. The per bias rate is determined through\nBayesian inference of a Poison fit, using the Gamma function\nas a conjugate prior [10]. The maximum achievable rate\ncorresponds to",
+        "score": -3.1906336696603415,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8241406874500399,
+        "rerank_score": -5.006296157836914,
+        "matched_nodes": [
+          "The",
+          "In",
+          "An",
+          "Time",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2031,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "(GB/s) fraction (GB/s) fraction\n`FULL` 26% 5.9 59% 0.8 22%\n`Turbo` 68% 2.5 25% 2.5 72%\n`TurCal` 6% 1.6 16% 0.2 6%\n\nTotal 100% 10.0 100% 3.5 100%\n\nrequirement is mitigated by exploiting faster simulation options. The storage needs are\ninstead dominated by data and crucially depend on the HLT output bandwidth of 10 GB\nper live second of LHC. While the associated tape needs are not compressible, a mitigation\nis achieved for disk. A fraction of about 70% of triggered events are saved in the `Turbo`\nformat. However, the majority (6.5 GB/s out of 10 GB/s ) of the bandwidth is taken by\nthe remaining 30% of events in the `FULL` and `TurCal` streams, where the entire event is\npersisted. The events in these two streams are therefore slimmed and filtered offline by\nthe `sprucing` process, such that the total (logical) bandwidth to be saved on disk is only\n\n_∼_\n30% of the original. The extrapolated throughput to tape and disk for the three data\nstreams are reported in table 13.\nThe impact of simulated events on storage requests is small, since all data produced\nduring the intermediate production steps are not saved and the simulation output is\npersisted in a compressed format, thus achieving a size reduction per event of a factor up\nto twenty. In addition, analysis-dependent filtering criteria are also applied to reduce the\nnumber of events written on storage. The offline reprocessing of the `FULL` and `TurCal`\nstreams requires a significant reading throughput from tape. The needed throughput\nis estimated by considering that reprocessing is done over a two-months period, with a\nprovisional buffering space corresponding to two weeks of data staging. Half of data is\nstaged at Tier 1 sites, the other half at CERN, 50% of which is then transferred at the\nTier 1 sites for processing. For safety reasons, in general two copies of all data that are\nimpossible to be regenerated are saved on tape. Therefore, two copies of the primary data\nsets, i.e. those originating from the online system, are stored on tape. An archive copy of\nthe offline processed data for each of the three streams is also saved on tape. After the\noffline processing, two copies of the `Turbo` stream and up to three replicas of the `FULL`\nand `TurCal` streams will be saved on disk. A single copy of all the simulated events is\n\n_∼_\nkept on tape, while two copies of the most used simulated data sets ( 30% of the total)\nis stored on disk.\n\nA summary of the computing model parameters and an indicative estimation",
+        "score": -3.461658334539186,
+        "dense_score": 0.4853662848472595,
+        "bm25_score": null,
+        "graph_score": 0.8241406874500399,
+        "rerank_score": -5.4286417961120605,
+        "matched_nodes": [
+          "The",
+          "In",
+          "An",
+          "LHC",
+          "For",
+          "CERN"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 213,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6620,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance.md",
+        "title": "2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance",
+        "text": "m | _𝑡_ | = 0 [3]. The two sets of measurements, total cross section and _𝜌_, lead to the\n\nfirst evidence of the Odderon [4], C-odd counterpart of the Pomeron, the latter being the main actor\n\nin the Regge theory for diffractive forward physics. Combing TOTEM and D0 data, collected at\nFermilab in _𝑝_ ~~_𝑝_~~ collisions at ~~[√]~~ ~~_𝑠_~~ = 1 _._ 96 TeV, the discovery was claimed [5].\n\nDifferently from the other LHC experiments, TOTEM requires a special configuration of the\n\nmachine optics to be able to detect elastic protons scattered at a few microradians. Such optics,\n\ncharacterized by a very high value of the beta function at the IP _𝛽_ [∗] (from 90 m up to 6 km), requires\n\ndedicated LHC fills, referred to as _special run_ . To better constrain the theoretical models on the\nOdderon, additional special runs were approved by the LHC, in particular one at ~~[√]~~ ~~_𝑠_~~ = 13 _._ 6 TeV\n\nwith _𝛽_ [∗] =90 m, aiming to determine the total cross section, scheduled for June 2023.\n\nThe precise measurement of the total cross section with the _luminosity-independent_ method [6]\n\nrequires the simultaneous determination of the differential elastic cross section and the inelastic\n\nevent rate. The detection of very forward protons originating from elastic collisions is performed\n\nin the Roman Pots (RP), movable pipe insertions with a secondary vacuum, symmetrically located\n\nat around 200–220 m from the LHC IP5. The RPs can be moved into the primary vacuum\n\nof the machine through vacuum bellows, allowing the equipped detector to approach the LHC\n\nbeam down to few millimetres. In TOTEM, they are instrumented with silicon strip detectors [1].\n\nInelastic events are instead detected by dedicated detectors, called forward telescopes, symmetrically\n\nintegrated with the CMS structure at few meters from the IP, instrumenting the forward pseudorapity\n\n_𝜂_ region. For the previous measurements of TOTEM, two inelastic telescopes were in use, T1 and\n\nT2 [1]. However, after having successfully sustained a radiation damage 10 times above the\n\ndesign requirements, they have been dismounted. An R&D was hence initiate to replace the\n\ninelastic detector T2 with a new inelastic telescope, called nT2 [7]. The nT2 is designed to cover a\npseudorapidity region 5.3 < | _𝜂_ | < 6.5, allowing to detect more than 90% of the inelastic events.\n\n**2.** **The nT2 detector for inelastic event tagging**\n\nTo cope with the project budget, requirements and R&D schedule, scintillators coupled to\n\nSilicon",
+        "score": -3.8524527700402853,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8241406874500399,
+        "rerank_score": -6.024479389190674,
+        "matched_nodes": [
+          "The",
+          "In",
+          "An",
+          "LHC",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3393,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science.md",
+        "title": "2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science",
+        "text": "## Fast timing detectors with applications in cosmic ray physics and medical science\n\nC. Royon [a], F. Gautier [1]\n\n_a_ _University of Kansas, Lawrence, USA._\n\n**Abstract**\n\nWe discuss the use of Low Gain Avalanche (LGAD) silicon detectors for two\nspecific applications, namely measuring cosmic rays in space in collaboration\nwith NASA] and beam properties and received doses for patients undergoing\ncancer treatment in flash beam therapy.\n\n_Keywords:_ Time-of-flight, Time precision, Ultra Fast silicon Detectors,\nCharge Sensitive Amplifier, Picosecond Time Measurement\n\n**1. Introduction: LGAD silicon detectors**\n\nIn this report, we will discuss the use of Low Gain Avalanche (LGAD) silicon\ndetectors. These detectors were initially developed for particle timing measurements at the Large Hadron Collider at CERN. We will focus on two specific\napplications for LGAD detectors. The first application involves measuring cosmic rays in space, and this research is conducted in collaboration with NASA.\nThe second application pertains to the measurement of beam properties and\nreceived doses for patients undergoing cancer treatment. This is especially relevant in the context of flash beam therapy.\nIn order to obtain the largest possible signal from a silicon detector, we\nneed large velocity _v_ (which means a fast detector), large fields _E_ _W_ and large\npads to have a uniform field, and lots of charge _q_ following the Ramo’s theorem\n_I ∼_ _qvE_ _w_ . If we want to measure many particles entering in our detector as a\nfunction of time (for instance cosmic rays in space and electron/protons crossing\nour detector during flash beam cancer therapy), it is clear that we need a short\nsignal in order to avoid pile up between different particles. For this sake, we\nchose ultra fast silicon detectors (UFSDs) that seemed more adapted to our\nproblems that lead to typical signal of a few nanoseconds. These detectors are\nalready used at the LHC for instance in the TOTEM experiment in order to\nmeasure the proton time-of-flight with precisions close to 20 ps per layer. They\nwill also be used to measure time-of-flights of all particles (in the central and/or\n\n_Email addresses:_ `christophe.royon@cern.ch` (C. Royon),\n`florian.gautier.borrallo@gmail.com` (F. Gautier)\n\nthe forward parts of the detectors) in the ATLAS and CMS collaborations for\nthe high luminosity LHC [1, 2].\nIn order to measure the signal, the first step is usually to amplify the signal\nusing an amplifier designed at the Univ",
+        "score": -3.995465612341365,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9360511590727417,
+        "rerank_score": -6.257756233215332,
+        "matched_nodes": [
+          "The",
+          "In",
+          "LHC",
+          "Time",
+          "For",
+          "We",
+          "CERN"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4775,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "ed pixels within the trigger acceptance. Compare to figure 1\nfor pixel layout.\n\nAn in-pixel efficiency map is obtained by projecting the reconstructed particle intercepts with the DESY\ndSiPM ( _x_ _track_, _y_ _track_ ) into a single pixel and averaging\nthe efficiency for the binned in-pixel positions. Such\na map is shown in figure 5, the displayed area corresponds to the one shown in figure 1. As can be seen, the\nDESY dSiPM is highly efficient when the electrons hit\nthe SPADs, but inefficient in the area in-between. The\ngeometric setup, due to an inhomogeneous distribution\nof material, does not allow estimating the track resolution at the position of the dSiPM. However, assuming a\ntrack resolution of about 6.1 µm, the results are in agreement with the hypothesis of smeared-out position information and a fully efficient SPAD of the nominal area.\nThis is supported by the fact that the measured total efficiency of about 32 % agrees with the fill factor of the\nsensor. Systematic effects due to dead time and fake hits\nare estimated to be on the order of a few percent.\nIn figure 6, the distribution of the residuals between\n_x_ _track_ and the position measurement provided by the\nDESY dSiPM itself ( _x_ _hit_ ) is shown. For a fully efficient\nsensor with the same pitch, the core of the distribution\nwould be expected to resemble a box, convolved with a\nGaussian to account for the finite track resolution. Due\nto the inefficiency between SPADs, shown in figure 5, a\ntwo-peaked structure appears instead. The background,\nvisible for values below −40 µm and above 40 µm, is\n\n60\n\n50\n\n40\n\n30\n\n20\n\n10\n0 −0.4 −0.2 0 0.2 0.4\nt dSiPM2 -t dSiPM1 [ns]\n\nFigure 7: Time residual between the time stamps provided by the two\ninstalled DESY dSiPMs, operated at a temperature of about 0 [◦] C and\nan over voltage of 2 V.\n\ndue to an association of noise hits. The standard devia\ntion of the distribution of about 21 µm is within expectations for a sensor of the given pitch and confirms a\nspatial resolution on the level of a single pixel.\n\nTo study the time resolution of the DESY dSiPM,\nthe residual between the time stamps provided by the\ntwo installed DESY dSiPMs is calculated. The sec\nond DESY dSiPM is operated at a similar temperature\nand over voltage, and referred to as dSiPM2. The time\nstamps are corrected for differential non-linearity in the\nTDCs. Corrections for propagation delays are expected\nto be small, due to the symmetry of the setup, and are\nnot applied. The corresponding distri",
+        "score": -4.280218124319514,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9360511590727417,
+        "rerank_score": -6.695837020874023,
+        "matched_nodes": [
+          "The",
+          "In",
+          "An",
+          "Time",
+          "For",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "The": 1.0,
+      "In": 1.0,
+      "An": 1.0,
+      "At": 1.0,
+      "LHC": 1.0,
+      "Time": 1.0,
+      "HE": 1.0,
+      "Fi": 1.0
+    },
+    "expanded_nodes": {
+      "The": 1.0,
+      "In": 1.0,
+      "An": 1.0,
+      "At": 1.0,
+      "LHC": 1.0,
+      "Time": 1.0,
+      "HE": 1.0,
+      "Fi": 1.0,
+      "For": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "CERN": 0.7,
+      "Run": 0.7,
+      "As": 0.7,
+      "SPS": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 15,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 1.5845079058781266,
+    "generation_latency_s": 3.7997961044311523e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 15.0,
+    "retrieval_latency_s": 1.5845079058781266,
+    "generation_latency_s": 3.7997961044311523e-07
+  }
+}

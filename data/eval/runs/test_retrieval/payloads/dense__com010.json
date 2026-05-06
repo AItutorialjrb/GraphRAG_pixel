@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "com010",
+    "query_type": "comparative",
+    "query": "Compare precision@k and recall@k.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Compare",
+      "precision@k",
+      "and",
+      "recall@k"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare precision@k and recall@k.",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 387,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "ry of a sensor designed to protect it from currents from the\ncutting edge, and shown in figure 11 (f) as the black line with false positives.\n\n14\n\nrandomly initialized weights with 2.1 times more anomalous patches than the original\nmodel. An independent test data set was used to compare the original and retrained\nmodels. The test data consists of 136 anomalous whole images and 754 normal whole\nimages, for which the test metrics are presented in table 5. The retrained model performs\nsignificantly better on the test set.\n\n**Table 5.** The performance of the pre-selection algorithm using the original and\nretrained anomaly detectors. Metrics are calculated for whole images using an\nindependent test set.\n\nMetric Value [%]\nOriginal Retrained\n\nRecall 94.9 **96.3**\n\nSpecificity 85.0 **87.8**\n\nPrecision 53.3 **58.7**\n\nFalse negative rate 5.2 **3.7**\nFalse positive rate 15.0 **12.2**\n\nF1-score 68.0 **72.9**\n\nBalanced accuracy 90.0 **92.1**\n\n**7. Conclusion**\n\nA deep learning-based pre-selection algorithm (PSA) that fully automates the visual\ninspection (VI) of the silicon sensors produced for the construction of the CMS HGCAL\ndetector was developed. An ensemble of a deep convolutional autoencoder and a neural\nnetwork for classification is used, with a patching applied before the classification to\nallow the general localization of the anomalies in the images of the sensors. The\nautomated VI is a vital part of the quality control (QC) of the analyzed sensors.\nThe performance of the PSA was evaluated using fifteen full sensor scans acquired\nin production in a clean room dedicated to sensor testing at CERN. The recall, which\nmeasures the fraction of anomalous images that are found, was 97.46%, with an\nacceptable FPR of 6.25%. The images are evaluated in real-time, and approximately\n85% of all images can be discarded as normal, thus removing the need for human labor to\ninspect them. The developed automated VI is standardized, and therefore also believed\nto be less biased by the subjectivity of a human inspector. On average, it saves 10\nminutes of resources per sensor, and for each batch of hundred sensors, this corresponds\nto 17 person-hours less required to manually inspect the images.\nThe accuracy is considered sufficient for deployment, even though the PSA was\nshown to fail to select a small fraction of images with light and small scratches and\ndust particles, in addition to novel types of anomalies. It was demonstrated that as\n\n15\n\nmore anomalous images are acquired",
+        "score": -2.1375882557181063,
+        "dense_score": 0.44286423921585083,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.297424554824829,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6727,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848135__2411.08408__A_High_Precision_Time_Measurement_Method_Based_on_Frequency-Domain_Phase-Fitting_for_Nucle.md",
+        "title": "2025__recid_2848135__2411.08408__A_High_Precision_Time_Measurement_Method_Based_on_Frequency-Domain_Phase-Fitting_for_Nucle",
+        "text": "s, without the loss of\nthe generality. The value A can be approximated as 7.00 in\nthis simulation.\n\nFig. 3. The trend of the theoretical precision and the Monte Carlo simulation\nprecision under a pulse with of 117.750 ns, an SNR ranging from 30 dB to 100\ndB, and with sampling rates of 20 MSPS, 40 MSPS, and 80 MSPS.\n\nT ABLE I\n\nDFPF-B ASED T IME M EASUREMENT P RECISION U NDER D IFFERENT\n\nS IMULATION C ONDITIONS\n\nSNR\n\n(dB)\n\n80 MSPS 40 MSPS 20 MSPS\n\n64 24 35 48\n\n50 120 168 213\n\n40 370 523 633\n\n30 1300 1652 1910\n\n500 MSPS 250 MSPS 100 MSPS\n\n64 5.5 7.8 13\n\n50 29 47 52\n\n40 98 146 163\n\n30 312 456 523\n\n1500 MSPS 1000 MSPS 500 MSPS\n\n64 1.1 1.4 1.8\n\n50 6.3 7.6 9.4\n\n40 19 23 31\n\n30 65 84 100\n\nPrecision (ps rms)\n\nADC0 ADC1 ADC2\n\n|3A|Col2|\n|---|---|\n|_B_<br>_f_<br><br><br>|_o_<br>_SNR_|\n\nPulse Width\n\n(ns)\n\n117.750\n\n10.127\n\n2.826\n\nFig. 2. The process of the theoretical calculation and simulation. P 1 refers to\nthe output power of the cross-correlation function (CCF) for the ideal pulse\nsignals. P 2 refers to the output power of the CCF for signals with noise. The\nnoise power P noise is obtained by subtracting P 1 from P 2 . Then, the SNR o can\nbe calculated and used to determine theoretical precision.\n\nIn this simulation, the nuclear pulse was modeled as a\nGaussian pulse signal with certain parameters. Firstly, a\nGaussian pulse with a standard deviation (𝜎) of 50 ns,\ncorresponding to a full width at half maximum (FWHM) of\n117.750 ns, and an SNR of 100 dB was selected as the ideal\nsignal. These pulses are sampled at a rate of 40 MSPS, a set\nof 512 samples was collected in one simulating turn. By\ncomparing the signal power of the cross-correlation\nfunction of these input pulses with that of ideal Gaussian\npulses, the _SNR_ _o_ was calculated to be 111.35 dB. The\n\ntheoretical STD using (20) was 0.196 _A_ ps RMS.\n\nAdditionally, STD was found to be 0.52 ps RMS following\n10,000 statistical results from Monte Carlo simulations\nunder the same input conditions. Therefore, coefficient A\n\nThen, we introduced more Gaussian white noise into the\ninput signals to further analyze the impact of _SNR_ on time\nprecision. Theoretical calculations and simulation were\nperformed for input signals with SNR conditions ranging from\n30 dB to 100 dB. Meanwhile, the consistency between Monte\nCarlo simulation results and theoretical precision was\nobserved at sampling rates of 20 MSPS, 40 MSPS, and 80\nMSPS, as shown in Fig. 3. Subsequently, Gaussian pulses with\nthe 𝜎 of 4.3 ns and 1.2 ns, correspo",
+        "score": -3.6825941356187015,
+        "dense_score": 0.2963574528694153,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.671080589294434,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5090,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2784488__2405.04763__Room-temperature_photonic_quantum_computing_in_integrated_silicon_photonics_with_germanium.md",
+        "title": "2024__recid_2784488__2405.04763__Room-temperature_photonic_quantum_computing_in_integrated_silicon_photonics_with_germanium",
+        "text": "DC_ ~ _T_ _g_ 1 1 − _NR_ _DC_ _T_ _G_  1 − _SPDSPD_ \n\n1\n~ 1 − _NR_ _T_\n\n, **(6)**\n\n_F_ = _P_ _success_ ~ 1 − _NR_ _DC_ _T_\n_P_ _NR_ _DC_ _T_ _g_ 1\n\n_P_ _successclick_ _NR_ _DC_ ~ _T_ _g_ 1 1 − _NR_ _DC_ _T_ _G_   _SPDSPD_\n\n_DC_ _g_\n\n1\n\ngiven a good _η_ _SPD_ and negligible _NR_ _DC_ _T_ _G_ . Note that Eq. (6) is identical to Eq. (4). In the\nfollowing, we shall apply these figures of merit to compare the performance between GeSi\nSPAD and SNSPD for PQC.\n\n_4.3 Comparison between GeSi SPAD and SNSPD for PQC_\n\nThe following parameter values are used for comparing GeSi SPAD at 300 K and SNSPD at 4\nK. For the case of GeSi SPAD at 300 K, SPDE is assumed to be 95 % and DCR is assumed to\nbe 1.6 MHz based on the above simulations and calculations, considering 100 % avalanche\ntrigger probability at 2 V excess bias. For the case of SNSPD at 4 K, SPDE is assumed to be\n91 % and DCR is assumed to be 5886 Hz based on Ref. 12. In both cases _T_ _G_ is assumed to be\n1 ns, which can be easily generated by high-speed electronics and larger than the TJs of GeSi\nSPAD at 300 K and SNSPD at 4 K that are usually between tens to hundreds of picoseconds.\n\nFor the scheme of photon-based PQC, in Fig. 6(a) and 6(b), the success probability and the\nfidelity of photon detection considering 300 K GeSi SPAD are respectively plotted as a function\nof _M_ waveguides and _N_ photons. In Fig. 6(c) and 6(d), the difference in the success probabilities\nand the difference in the fidelities of photon detection considering 300 K GeSi SPAD and 4 K\nSNSPD are respectively plotted as a function of _M_ waveguides and _N_ photons. By inspecting\n6(c) and Fig. 6(d), it is observed that the success probability of 300 K GeSi SPAD is a few\npercents (e.g., 4 % when _N_ =1) higher than that of 4 K SNSPD due to the assumed SPDEs, and\nthe fidelity of 300 K GeSi SPAD is 0.0084 % lower than that of 4 K SNSPD. Note that it is\nexpected that the success probabilities shown in Fig. 6(a) go up when _M_ is much larger than _N_,\ndue to the reduced probability of finding more than one excitation in each waveguide SPD. For\n\nthe scheme of qubit-based PQC, in Fig. 7(a), the success probability and the fidelity of qubit\ndetection considering 300 K GeSi SPAD are respectively plotted as a function of _N_ qubits. In\nFig. 7(b), the difference in the success probabilities and the difference in the fidelities of qubit\ndetection considering 300 K GeSi SPAD and 4 K SNSPD are respectively plotted as a function\nof _N_ qubits.",
+        "score": -3.7115701165566075,
+        "dense_score": 0.35155969858169556,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.7183918952941895,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 8401,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_.md",
+        "title": "2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_",
+        "text": "−_ ln _P_ (0) _,_ (2)\n\n_k_ !\n\nwhere _P_ (0) is the fraction of empty events recorded for the given luminosity counter.\nThis method of measuring _µ_ vis, hereinafter referred to as the _log0 method_, also known as\n_zero-counting_ in the literature [19, 20], is better suited for small-acceptance luminometers,\nbut can become biased and lose statistical precision if the number of empty events becomes\ntoo small.\n\n### **4 VELO-hit luminosity counters**\n\nQuantities measured by silicon vertex detectors have been shown to provide precise,\nreliable and stable luminosity measurements. In Run 1, the best LHCb luminosity monitor\nwas found to be the number of VELO tracks per event [20]. Counting the number of\n\n3\n\nOutput Register\n\n32 bit\n\nOutput Valid\n\nAverage counters\n\n|Cluster Data|Col2|Bunch-crossing type|A|Average counters|\n|---|---|---|---|---|\n|256 bit<br>Data Valid|DECODER|||Running mean|\n|Start-of-Event|Start-of-Event|Start-of-Event|Start-of-Event|Start-of-Event|\n|End-of-Event|End-of-Event|End-of-Event|End-of-Event|End-of-Event|\n|TFC word<br>64 bit|TFC word<br>64 bit|TFC word<br>64 bit|TFC word<br>64 bit|TFC word<br>64 bit|\n\n|Col1|RAM|\n|---|---|\n|||\n\nPer-BXID counters\n\nBunch-crossing identifier\n\nFigure 1: (Left) Accumulation regions over the VELO sensors, where each square corresponds to\none ASIC, and three ASICs read out one sensor. (Right) Schematics of the FPGA implementation\nof the luminosity accumulators. The input data are the reconstructed clusters for each event\nand the TFC word carrying the bunch-crossing type and identifier. The central block selects the\nclusters located within the accumulation regions, and performs the counting. The counts are\nthen either averaged in a running mean, or simply stored, as explained in the text.\n\nreconstructed collision vertices, the total number of VELO hits, or the total number of\nactive pixels are also viable methods. Similarly, the CMS collaboration has successfully\nperformed a precise measurement of the integrated luminosity using offline-reconstructed\npixel-cluster counters from the CMS inner tracker [21].\nCounting particle hits, reconstructed as clusters of neighbouring pixels, offers a better\nproxy for luminosity than counting raw pixels, being more directly related to the physics\nprocesses and more robust with respect to variations of the detector response due to\nradiation damage or changes of operational settings. However, clustering neighbouring\nactive pixels into particle hits may potentially lead to a saturat",
+        "score": -4.507378069559733,
+        "dense_score": 0.2983740568161011,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.940036773681641,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6514,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2827312__2409.06838__An_Integrated_Deep-Cryogenic_Temperature_Sensor_in_CMOS_Technology_for_Quantum_Computing_A.md",
+        "title": "2025__recid_2827312__2409.06838__An_Integrated_Deep-Cryogenic_Temperature_Sensor_in_CMOS_Technology_for_Quantum_Computing_A",
+        "text": "ween codes 11 and 12. This high\nDNL results in a sudden drop in the accuracy of the measured\n_I_ RT since intermediate currents cannot be sourced to determine\n_I_ RT more precisely. Additionally, during this code transition\nthe larger current step change causes a larger overshoot and\nundershoot, with the latter making more likely a false trigger\nof the retrapping event. Similarly high DNL occurs in the\ntransition between codes 3 and 4. However, this code transition\nis only used at higher temperatures at which the temperature\nsensitivity of _I_ RT (in A/K) is very low and hence its effect on\nthe degradation of _I_ RT measurement accuracy is less apparent.\n\nTo determine the temperature resolution of the sensor, we\nrecord at several temperatures the DAC code that triggers\nthe retrapping event and compare to the local temperature as\nmeasured by the on-chip diode (see inset of Fig. 6b). For codes\nthat do not trigger a retrapping event in the temperatures of our\ntest set, we interpolate between codes for which data exists.\nThe magnitude of the slope of this mapping represents the\nimplied temperature difference between two adjacent codes\n(the minimum resolvable temperature difference) as plotted\nacross temperature in the main plot of Fig. 6b. The resulting\ntemperature resolution varies from _∼_ 150 mK at 0.6 K to\n_∼_ 7 mK at 1 K.\n\n4\n\nFig. 6. Thermometry results. (a) External and integrated measurements of\n_I_ RT of _R_ SNS across temperature. (b) Approximate resolution of integrated\ntemperature measurement with inset code-temperature map.\n\nIV. C ONCLUSION\n\nThe sensor is effective within the 0.6-1 K range, which\naligns with the temperature range at which spin qubit fidelity\nbegins to degrade. In addition to its use for sub-1 K thermometry of cryo-CMOS systems, the presented thermometry\nsolution could be deployed in future quantum systems that\nmonolithically integrate electronics and qubits. Proposals for\nsuch systems offer scalability benefits but risk thermally\ninduced degradation of qubits’ quantum states due to crossheating from the integrated electronics [16]. In a hypothetical\nmonolithically integrated system located on the MXC plate\nof a dilution refrigerator, the electronics can dissipate at\nleast a few tens of µW RMS power while keeping the qubit\ntemperatures on the same chip below 1 K [9]. The presented\ntemperature sensing circuit dissipates _∼_ 1.5 µW and hence\ncould be accommodated within the power budget of such\nsystem, providing a way to monitor any l",
+        "score": -4.941137041262727,
+        "dense_score": 0.3351723849773407,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.609786033630371,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3950,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2745344__2401.05087__Lowering_the_energy_threshold_using_a_plastic_scintillator_and_radiation-damaged_SiPMs.md",
+        "title": "2024__recid_2745344__2401.05087__Lowering_the_energy_threshold_using_a_plastic_scintillator_and_radiation-damaged_SiPMs",
+        "text": "dence\n\nwidth was set to 4 ns, the fraction of the acquired signal events was greatly\nreduced, and thus we determined that the optimal coincidence width using\nthis setup was 8 ns, where the energy threshold was low and the fraction of\nthe acquired signal events was approximately 90% (Figure 7 [Middle]). This\nresult demonstrates that the energy threshold can be lowered to 108 keV\n(approximately 82%) using the coincidence measurement setup, compared\nto the case without coincidence. However, when inorganic scintillators with\nlonger decay times than plastic scintillators are used, such as CsI, then a\ncoincidence width of approximately 50-100 ns is required; and the energy\nthreshold may increase compared to the present measurement. Therefore we\nconsider that the proposed method is suitable for use of a plastic scintillator.\n\n**130**\n\n**125**\n\n**120**\n\n**115**\n\n**110**\n\n**105**\n\n**100**\n\n**95**\n\n**1.00**\n\n**0.95**\n\n**0.90**\n\n**0.85**\n\n**0.80**\n\n**0.75**\n\n**0.70**\n\n**0.65**\n\n**0.60**\n\n**Coincidence width (ns)**\n\nFigure 8: Variation of the energy threshold and fraction of detected signals with the\ncoincidence width\n\nSince the energy threshold can be lowered using the previous method, the\nsame setup could allow us to detect gamma-ray signals that are difficult to\ndetect without coincidence measurements. Here, we measured the gammaray signal of a [57] Co source and set the coincidence width to 8 ns as described\n\n14\n\nabove. As seen in Figure 9, we can find excess events around the ADC\nchannel of 60-70, which are otherwise hidden under the noise events if we do\nnot use coincidence measurements. Based on the energy calibration of Figure\nA.12 in Appendix A, we confirmed that this excess corresponds to 122 keV\nfrom the gamma-ray signal of a [57] Co source.\nThis coincidence method decreases the number of photons detected in our\nSiPM and thus we summed the signals from the two SiPMs attached to the\nsame scintillator. In this case, the noise of SiPMs are also summed, making\nthe signal-to-noise ratio worse. But this demerit is not important compared\nto eliminating the SiPM noise events.\n\n#### **10 [6]** **10 [5]** **10 [4]** **10 [3]** **10 [2]** **10**\n\n#### **1**\n\n#### **0 20 40 60 80 100** **ADC channel**\n\nFigure 9: Spectra of [57] Co (blue), background (black) with coincidence, and background\nwithout coincidence (gray), measured using setup in Figure 2.\n\n4.2. Pulse Heights for Each SiPM Signal\n\nAs mentioned above, we obtained almost the same spectra for the two\nSiPM outpu",
+        "score": -5.779328045003555,
+        "dense_score": 0.30676913261413574,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.897608757019043,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5033,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec.md",
+        "title": "2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec",
+        "text": "ieved 100% accuracy compared to the\n\ngolden results. Future work will focus on the development of the FABulous framework, co-design\n\nof high-performance sensor processing algorithms, a larger eFPGA design with higher logic density\n\n– 14 –\n\nfor more complex processing, and dedicated radiation tolerance measures in order to accommodate\n\nrealistic future collider experiments readout scenarios.\n\n**Acknowledgments**\n\nThis work was supported by the U.S. Department of Energy under contract number DE-AC02\n76SF00515.\n\n**References**\n\n[[1] A. McCarn Deiana et al, “Applications and Techniques for Fast Machine Learning in Science\", Front.](https://doi.org/10.3389/fdata.2022.787421)\n[Big Data 5, 787421 (12 April 2022)](https://doi.org/10.3389/fdata.2022.787421)\n\n[2] ATLAS Collaboration, “The ATLAS Trigger System for LHC Run 3 and Trigger performance in\n[2022\", 10.48550/arXiv.2401.06630 (12 Jan 2024)](https://doi.org/10.48550/arXiv.2401.06630)\n\n[3] CMS Collaboration, “Development of the CMS detector for the CERN LHC Run 3\",\n\n[10.48550/arXiv.2309.05466 (11 Sept 2023)](https://doi.org/10.48550/arXiv.2309.05466)\n\n[[4] CMS Collaboration, “The Phase-2 Upgrade of the CMS Level-1 Trigger\", CMS-TDR-021 (7 Apr](https://cds.cern.ch/record/2714892?ln=en)\n2020)\n\n[5] E. Govorkova et al, \"Autoencoders on FPGAs for real-time, unsupervised new physics detection at 40\n[MHz at the Large Hadron Collider\", Nature Machine Intelligence 4, 154–161 (23 Feb 2022)](https://www.nature.com/articles/s42256-022-00441-3)\n\n[6] G. Di Guglielmo et al, “A reconfigurable neural network ASIC for detector front-end data\n[compression at the HL-LHC\", IEEE Trans. Nucl. Sci. 68, 2179 (7 June 2021)](https://doi.org/10.1109/TNS.2021.3087100)\n\n[7] S. Kulkarni et al, “On-Sensor Data Filtering using Neuromorphic Computing for High Energy\n[Physics Experiments\", 10.48550/arXiv.2307.11242 (20 July 2023)](https://arxiv.org/abs/2307.11242)\n\n[8] H. Murayama et al, \"Exploring the Quantum Universe: Pathways to Innovation and Discovery in\n[Particle Physics\", https://www.usparticlephysics.org/2023-p5-report/](https://www.usparticlephysics.org/2023-p5-report/)\n\n[9] B. Fleming et al, \"Basic Research Needs for High Energy Physics Detector Research &\n[Development\", 10.2172/1659761 (14 Dec 2019)](https://www.osti.gov/biblio/1659761)\n\n[10] A. Apresyan et al, \"Detector R&D needs for the next generation _𝑒_ + _𝑒_ − collider\",\n\n[10.48550/arXiv.2306.13567 (26 June 2023)](https://arxiv.org/abs/2306.13567)\n\n[11] Bea Healy, Jing Yu, Nguye",
+        "score": -5.90240957035738,
+        "dense_score": 0.3344002664089203,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.08854866027832,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4203,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS.md",
+        "title": "2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS",
+        "text": "the positions of the 6 telescope planes and the material budget of the\n\nDUT (10 mm thick PCB board, and 500 _µ_ m of silicon) to estimate the spatial\n\nresolution. Taking into consideration possible plane misalignments and errors\n\nin the evaluation of the material budget, the resolution has been measured to\n\nbe _σ_ telescope = 8 _±_ 1.5 _µ_ m in the x and y directions.\n\n**7. Data taking and selection**\n\nThe events recorded at the test beam were triggered by the MCP. The ratio\n\nbetween the MCP and the active pixels areas suggests _∼_ 5% of good events,\n\n15\n\nhowever, since the position of the DUT was shifted with respect to the beam\n\nspot center, the percentage of good events is about 1.8%. One run, taken at\n\n130 V, has fewer events since the DUT position was shifted in y by _∼_ -1200 _µ_ m.\n\nIn 2-3 % of good events, none of the 14 electrodes has a signal amplitude above\n\nA el–min . Given the very high efficiency of silicon sensors, the most likely cause\n\nof these events is a poor track reconstruction due to noisy pixels. Table 2 lists\n\nthe properties of the runs used in this work.\n\n|Bias [V]|MCP<br>Triggers [k]|Good<br>events [k]|MPV<br>all<br>[mV]|MPVmax<br>pixel<br>[mV]|Gain|\n|---|---|---|---|---|---|\n|130|401|6.4|122|77|24|\n|150|440|8.3|136|93|28|\n|170|480|8.9|164|118|33|\n|190|475|8.5|209|157|42|\n|200|665|11.1|236|175|47|\n\nTable 2: List of runs used in this work\n\nThe event selection is based on three requirements:\n\n - A track pointing to any of the 7 pixels\n\n - A signal on any of the active electrodes above A el–min _>_ = 6.5 mV\n\n - t [rec] i of the highest signal within 1 ns of t trigger .\n\nFigure 10 illustrates a few important properties of the events recorded by\n\nthe DUT:\n\n1. The signal amplitude on a given electrode (el = 5 in the plot) is visible\n\nfor a distance of about _√_\n\n2 _×_ pitch _∼_ 675 _µ_ m, i.e. one pixel.\n\n2. The signal rise time remains constant for about the arm length, 200 _µ_ m,\n\nand then increases with distance.\n\n3. The mean value of A pixel is constant at the center of the pixel, increasing\n\nby _∼_ 10% at the edge (here, the projection on the x axis is shown).\n\n16\n\n4. A pixel follows a Landau distribution as a standard LGAD\n\nFigure 10: (a) Signal amplitude as a function of the hit distance from the electrode. (b) Signal\n\nrise time as a function of distance. (c) Projection on the x axis of A pixel over the pixel area.\n\n(d) A pixel distribution for all the events in a pixel.\n\n**8. Calibration and alignment**\n\n_8.1. FAST2 calibration",
+        "score": -5.918722229003907,
+        "dense_score": 0.3127966821193695,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.112457275390625,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2056,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "e high precision alignment of track_\n_detectors_, in _Conference on Advanced Statistical Techniques in Particle Physics_,\nno. DESY-02-077, 2002, `[arXiv:hep-ex/0208021](http://arxiv.org/abs/hep-ex/0208021)` .\n\n[105] M. Adinolfi _et al._, _Performance of the_ _LHCb_ _RICH detector at the LHC_ [, Eur. Phys.](https://doi.org/10.1140/epjc/s10052-013-2431-9)\nJ. **C73** [(2013) 2431,](https://doi.org/10.1140/epjc/s10052-013-2431-9) `[arXiv:1211.6759](http://arxiv.org/abs/1211.6759)` .\n\n[106] R. Calabrese _et al._, _Performance of the LHCb RICH detectors during LHC Run 2_,\nJINST **17** [(2022) P07013.](https://doi.org/10.1088/1748-0221/17/07/P07013)\n\n[107] C. D’Ambrosio, S. Easo, C. Frei, and A. Petrolini, _RICH2019: a proposal for the_\n_LHCb RICH upgrade_ [, LHCb-PUB-2013-011, CERN-LHCb-PUB-2013-011, CERN,](https://cds.cern.ch/record/1560529)\nGeneva, 2013.\n\n[108] LHCb collaboration, _LHCb PID upgrade: Technical Design Report_ CERN-LHCC2013-022, CERN, Geneva, 2013.\n\n[109] S. Okamura and on behalf of LHCb collaboration, _Commissioning of the upgraded_\n_RICH system at the LHCb experiment_ [, Journal of Instrumentation](https://doi.org/10.1088/1748-0221/17/11/C11006) **17** (2022) C11006.\n\n[110] M. Alemi _et al._, _First operation of a hybrid photon detector prototype with electrostatic_\n_cross-focussing and integrated silicon pixel readout_ [, Nucl. Instrum. Meth.](https://doi.org/https://doi.org/10.1016/S0168-9002(99)01448-5) **A449**\n[(2000) 48.](https://doi.org/https://doi.org/10.1016/S0168-9002(99)01448-5)\n\n[111] LHCb, M. Andreotti _et al._, _Characterisation of signal-induced noise in Hama-_\n_matsu R11265 Multianode Photomultiplier Tubes_, JINST **16** [(2021) P11030,](https://doi.org/10.1088/1748-0221/16/11/P11030)\n\n`[arXiv:2110.00831](http://arxiv.org/abs/2110.00831)` .\n\n207\n\n[112] C. Giugliano, _Quality assurance for the LHCb RICH upgrade Photon-Detection chain_,\n[Nuclear Instruments and Methods in Physics Research Section A: Accelerators,](https://doi.org/https://doi.org/10.1016/j.nima.2023.168436)\n[Spectrometers, Detectors and Associated Equipment](https://doi.org/https://doi.org/10.1016/j.nima.2023.168436) **1055** (2023) 168436.\n\n[113] M. Andreotti _et al._, _A fast and radiation-hard single-photon counting ASIC for the_\n_upgrade of the LHCb RICH detector at CERN_, in _2017 IEEE Radiation Effects_\n_Data Workshop (REDW)_ [, 1–4, 2017.](https://doi.org/10.1109/NSREC.2017.8115435)\n\n[114] M. Baszczyk _et al._, _CLARO: an ASIC for high rate single photon cou",
+        "score": -6.0319466775463475,
+        "dense_score": 0.3947646915912628,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.288602828979492,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 238,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7141,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2897994__2503.05450__Quantitative_determination_of_spatial_resolution_and_linearity_of_position-sensitive_LG-Si.md",
+        "title": "2025__recid_2897994__2503.05450__Quantitative_determination_of_spatial_resolution_and_linearity_of_position-sensitive_LG-Si",
+        "text": "f Physics (DPNC) and the PET Instrumentation and Neuroscience Lab\n(PINLab) of Universit´e de Gen`eve and the Fondazione Bruno Kessler (FBK).\nThe position-sensitive LG-SiPM is based on patented technology (EP3063559)\ndeveloped by FBK.\n\n**References**\n\n[1] P. Schaefer, R. D. Williams, G. K. Davis, R. A. Ross, Accuracy of position detection using a position-sensitive detector, IEEE Transactions\non Instrumentation and Measurement 47 (1998).\n\n[2] A. D. Guerra, N. Belcari, M. G. Bisogni, G. Llos´a, S. Marcatili,\nS. Moehrs, Advances in position-sensitive photodetectors for pet applications, Nuclear Instruments and Methods in Physics Research, Section\nA: Accelerators, Spectrometers, Detectors and Associated Equipment\n604 (2009) 319–322. doi: `[10.1016/j.nima.2009.01.034](http://dx.doi.org/10.1016/j.nima.2009.01.034)` .\n\n[3] F. Acerbi, S. Merzi, A. Gola, Position-sensitive silicon photomultiplier\narrays with large-area and sub-millimeter resolution, Sensors 24 (2024).\ndoi: `[10.3390/s24144507](http://dx.doi.org/10.3390/s24144507)` .\n\n[4] X. Zhang, Y. Liu, Y. Shao, Y. Yan, R. Yang, K. Liang, D. Han,\nOne-dimensional position-sensitive lgad with a dc coupled and resistive\ncharge division mechanism, IEEE Transactions on Nuclear Science 70\n(2023) 853–858. doi: `[10.1109/TNS.2023.3264661](http://dx.doi.org/10.1109/TNS.2023.3264661)` .\n\n15\n\n[5] J. Du, J. P. Schmall, Y. Yang, K. Di, E. Roncali, G. S. Mitchell, S. Buckley, C. Jackson, S. R. Cherry, Evaluation of matrix9 silicon photomultiplier array for small-animal pet, Medical Physics 42 (2015) 585–599.\ndoi: `[10.1118/1.4905088](http://dx.doi.org/10.1118/1.4905088)` .\n\n[6] V. Schulz, Y. Berker, A. Berneking, N. Omidvari, F. Kiessling, A. Gola,\nC. Piemonte, Sensitivity encoded silicon photomultiplier - a new sensor\nfor high-resolution pet-mri, Physics in Medicine and Biology 58 (2013)\n4733–4748. doi: `[10.1088/0031-9155/58/14/4733](http://dx.doi.org/10.1088/0031-9155/58/14/4733)` .\n\n[7] M. Ay, H. Arabi, M. Farahani, N. Zeraatkar, S. Sarkar, S. Sajedi, N. N.\nRastgar, P. Ghafaian, Surgeosight (tm): An intraoprative hand held\ngamma camera for precise localization of sentine lymph nodes, in: EUROPEAN JOURNAL OF NUCLEAR MEDICINE AND MOLECULAR\n\nIMAGING, volume 39, SPRINGER 233 SPRING ST, NEW YORK, NY\n10013 USA, 2012, pp. S385–S385.\n\n[8] M. McClish, P. Dokhale, J. Christian, C. Stapels, E. Johnson, R. Robertson, K. S. Shah, Performance measurements of cmos position sensitive\nsolid-state photomultipliers, IEEE Transactions on Nucl",
+        "score": -6.1972867509593135,
+        "dense_score": 0.30035457015037537,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.540140151977539,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.0710755730979145,
+    "generation_latency_s": 3.3993273973464966e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.0710755730979145,
+    "generation_latency_s": 3.3993273973464966e-07
+  }
+}

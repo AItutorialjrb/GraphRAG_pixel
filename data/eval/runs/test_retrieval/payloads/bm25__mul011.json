@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "mul011",
+    "query_type": "multi_hop",
+    "query": "How can detector geometry affect electric field and charge collection?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "detector",
+      "geometry"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can detector geometry affect electric field and charge collection?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6444,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "ntrations of the p-well, for a 10 µm pitch sensor. Close-up to the corner\nof the p-well. The brown line indicates the location of a pn-junction\nand the white line delimits the depleted volume. The electric field\nmagnitude is given by the colour scale, where a dark blue colour indicates an electric field magnitude of zero.\n\nbetween the edge of the collection implant and the edge of\nthe p-well, and on the gap size in the _n-gap_ layout. These\npurely geometrical features are defined by the mask design used in sensor production. The effects are studied by\nobserving plots of the electric field magnitude, the lateral\nelectric field strength, and the depleted volume. In the figures, the former two are represented in colour scale, while\nthe latter one is delimited by a white line.\n\n_3.4.1. P-well opening_\nThe p-well opening extent was varied from 1 µm to 4 µm,\nat a pixel size of 20 _×_ 20 µm [2] . It was observed that increasing the p-well opening creates a stronger lateral electric field and increases the depleted volume in the _standard_\nlayout, on the order of µm in both width and depth. A\nlarger depleted volume allows for more charge collection\nthrough drift, while a stronger lateral electric field provides\na higher drift velocity for the free charge carriers produced\nin the edges of the pixels. However, increasing the p-well\nopening means decreasing the p-well size and hence the\navailable space for front-end electronics. The study was\nalso performed using the _n-blanket_ layout. Here, it was\nobserved that the increase in lateral electric field strength\nand depleted volume was not as significant as in the _stan-_\n_dard_ layout case. A large p-well opening here leads to a\nlarger undepleted region around the collection electrode,\nhowever, which has a negative impact on the sensor capacitance and charge collection behaviour.\nA comparison between the lateral electric field and depletion boundary for p-well openings of 1 µm and 4 µm\nis shown in Figure 4 for both the _standard_ and the _n-_\n_blanket_ layouts. The region with a strong lateral electric\nfield visibly increases in both layouts as the p-well opening increases. A larger p-well opening is expected to also\ndirectly affect the sensor capacitance, but studies of this\nhave not been carried out. An opening size of 2 µm is selected for use in further studies, as a balance between the\nincreased depleted region and the total p-well size.\n\n_3.4.2. Gap size in the n-gap layout_\nA lateral electric field is observed t",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 24.966991373868677,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6447,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "d\nin order to improve the charge collection efficiency of the\n\nFigure 6: Simulated hexagonal pixel cell in TCAD. The colours correspond to doping level, and the plane marked C1 is a cut for display\npurposes. The electric field magnitude for this cut is shown in Figure 7.\n\nsensor in incident positions further from the readout implant [13, 14]. In Figure 9 the signals for the centre and\ncorner incident positions for the _n-gap_ layout are shown.\nThe duration of the signal is dependent on the MIP incident position; the faster charge collection is observed in\nthe centre of the pixel, due to the immediate proximity\nto the readout implant. The charges are deposited 0.5 ns\nafter the start of the simulation, leading to the rising edge\nof the pulse.\nFigure 10 shows the signals for corner incident positions,\nfor all three layouts. The _n-blanket_ has a larger depletion\nregion compared to the _standard_ layout, and the _n-gap_ has\nan additional area with a stronger lateral electric field component, which improves the charge collection far from the\npixel centre. As the _standard_ layout is undepleted in the\npixel corners, charges formed there move slowly by diffusion, and the charge collection thus takes a comparatively\nlong time.\n\n_3.7. Generating weighting potentials_\n\nTransient simulations using TCAD are computationally\nintensive, and it can thus be beneficial to perform transient simulations using e.g. Allpix [2] instead. A weighting\npotential is required to be able to perform transient simulations using the Shockley-Ramo theorem [21, 22]. The\npotential can be calculated by taking the difference of the\nelectrostatic potentials arising from applying two slightly\ndifferent bias voltages to one collection electrode in a sensor, keeping the other collection electrodes at a constant\nbias voltage. The two required electrostatic potentials can\nbe simulated using TCAD, using the same sensor geometry with a difference of 0.01 V in the bias voltage of a\nsingle collection electrode. By calculating the difference\nbetween the two potentials in each mesh point, and dividing the difference by the difference in collection electrode\nbias voltage, the weighting potential is acquired. Before\n\n7\n\n(a) _Standard_ layout\n\n(b) _N-gap_ layout\n\nFigure 7: Electric field magnitude as output from a TCAD simulation\nfor a hexagonal pixel in the _standard_ and _n-gap_ layouts. The white\nlines denote depletion boundaries, and the colour scale denotes the\nmagnitude of the electric field.\n\nare show",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 23.887291478668843,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6959,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement.md",
+        "title": "2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement",
+        "text": "ackage, to simulate the charge carrier transport in a solid state detector together with the corresponding induced charge on each electrode. Physical quantities\nin the solid state detector are calculated in 2D or 3D us\ning an SOR (Successive Over Relaxation) method computed\nover an adaptive grid.\nThe simulation procedure can be divided into three main\nparts [21]: 1) The construction of the detector geometry and\nthe definition of the simulation conditions. 2) The calculation of the electric potential and electric field as well as the\nweighting potential of each electrode for the defined geometry. 3) The simulation of the charge carrier drift and the\ncalculation of the induced charge on each electrode.\n\n_v_ _=_ _µ_ _E_, (4)\n\nUsing Equations 3 and 4, the drift time _t_ is derived as follows:\n\n_t_ _=_ _[d]_\n\n(5)\n_µ_ _E_ [.]\n\n_[d]_ _[d]_\n\n_v_ _[=]_\n\n_3.1.1. Geometry and physical parameters_\n\nFigure 7 shows the geometry assuming the TimePix3 detector with a 500 _µ_ m silicon sensor. The geometry consisted\nof a 500 µ m silicon bulk (gray box), a common electrode\n(red plate), pixel electrodes (blue plate). The volumes and\nmaterials associated to each geometry component are summarized in Table 1. The TimePix3 detector used in the\n\nexperiment is comprised of a n-type silicon bulk together\nwith a p-type silicon implant divided into 256 _×_ 256 pixels\n\n[9]. However, a simplified structure with a 500 µ m silicon\nbulk sensor and 25 _×_ 25 pixels was used in the simulation.\nThe number of pixels are decreased to reduce the calculation time for the electric potential, the electric field, and\nthe weighting potential. From the experimental results,\nthe cluster image measured in the experiment extends to\n\n4\n\napproximately 10 _×_ 10 pixels at most; thus, the geometry\nwith 25 _×_ 25 pixels is sufficiently large for estimating the\ncluster size.\n\nMoreover, we set several physical parameters related to\nthe charge carrier drifts to reproduce the conditions of operation of the TimePix3 detector. These parameters are\nsummarized in the Table 2 and include the mobility of the\nelectrons/holes _µ_ e / _µ_ h [20], the diffusion constant for the\nrandom thermal motion of the electrons/holes _D_ e / _D_ h calculated by Einstein’s equation, the electron-hole pair creation\nenergy _E_ ion [22], the Fano factor _f_ fano [23], the supply voltage between the common electrode and the pixel electrodes,\nand the temperature of the silicon bulk _T_ .\nFigure 7 shows the geometry schematic diagram. The\ne",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 22.987642795704648,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6445,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "his\nhave not been carried out. An opening size of 2 µm is selected for use in further studies, as a balance between the\nincreased depleted region and the total p-well size.\n\n_3.4.2. Gap size in the n-gap layout_\nA lateral electric field is observed to appear under the\np-well once the vertical junctions of the _n-gap_ layout are\nadded to the sensor, as can be seen in Figure 5. The gap\n\n(a) _Standard_ layout, 1 µm\nopening\n\n(c) _N-blanket_ layout, 1 µm\nopening\n\n(b) _Standard_ layout, 4 µm\nopening\n\n(d) _N-blanket_ layout, 4 µm\nopening\n\nFigure 4: Lateral electric field of two p-well openings for 20 µm\npitch sensors in the _standard_ and _n-blanket_ layouts. The brown\nline indicates the location of a pn-junction and the white line the\nboundaries of the depleted volume.\n\nsize was varied from 1 µm to 4 µm, and it was found that\nthe strength of the lateral electric field is increased with\nincreasing gap size, as the two vertical junctions move further apart. When the junctions are close, the regions of\ndopant diffusion will overlap, leading to a smaller lateral\nfield. As can be seen in Figure 5 the lateral field directions\nof the two vertical junctions are opposite, implying that\nthey cancel out in the centre when the distance is small,\nso at sufficiently large gap size the lateral field strength\nreaches a maximum. However, when the gap is increased,\nthe vertical pn-junction as well as the lateral electric fields\nare shifted away from the pixel edges, thus reducing their\nusefulness in improving charge collection far from the collection electrode and leaving an electric field minimum in\nthe gap. A gap size of 2.5 µm is sufficiently large to maximise the lateral field strength, while keeping the junction\nclose to the pixel edge.\n\n_3.5. Hexagonal pixel geometry simulation_\n\nDetailed investigations of hexagonal pixel designs require custom field maps from TCAD for hexagonal geometries. One full pixel cell with the collection electrode in the\ncentre is used in these simulations, and the p-well and substrate are biased with a voltage of _−_ 1 _._ 2 V. In Figure 6, a\npixel cell for a simulation of a sensor in the _standard_ layout is shown, with the colour indicating the doping level.\nThe plane indicated as C1 represents a cross-section, along\nwhich the electric field magnitude is shown in Figure 7 for\nboth the _standard_ and _n-gap_ layouts. The regions sticking out from the top of the sensor are the metal biasing\ncontacts for the collection electrode and the p-well.\n\n6",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 22.9222715564238,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2731,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2692561__2308.16433__Effect_of_large-angle_incidence_on_particle_identification_performance_for_light-charged_m.md",
+        "title": "2024__recid_2692561__2308.16433__Effect_of_large-angle_incidence_on_particle_identification_performance_for_light-charged_m",
+        "text": "ferent incident energies. Each symbol and error bar\nrepresents the mean and standard error of the _I_ max distribution.\nFor all energy regions, _I_ max is slightly smaller when particles\nare incident at the center. The reason for this is not clear, but it\nwill not be discussed in this paper because this decrese does not\naffect the particle identification performance that is of interest\nhere.\n\n_3.4. Incident angle dependence_\n\nFigure 10 depicts the PID plots for incident angles of 0 [◦], 15 [◦],\n30 [◦], and 45 [◦] . For the incident angle at which the measurements\nwere made, it was found that particle discrimination was possible even at large angles of 45 [◦] if the incident angle distribution\nwas sufficiently restricted. The maximum energy of stopped\nparticles increases as the incident angle increases because the\neffective thickness increases by a factor of 1/ cos θ. In general,\nfor particles with the same kinetic energy, _I_ max decreases as the\nincident angle increases. Figure 11 depicts the variation of _I_ max\nfor each energy range and for each hydrogen ion as a function\nof the incident angle. The higher the neutron number and the\nlower the energy, the higher the rate of the reduction of _I_ max .\nFrom these figures, we can conclude that hydrogen ions can be\nwell discriminated by _I_ max if the incident angle is limited between 0 [◦] and 30 [◦] . For example, assuming a point source of\ncharged particles, sufficient PID can be achieved if the detector\nis at least 5 cm away from the source.\nIn order to understand how increasing the incident angle reduces _I_ max, the relationship between the depth of penetration of\nthe charged particle into the detector and the maximum current\nis discussed. _I_ max is considered to be approximately proportional to the charge collection rate. The charge collection rate\nis affected by the magnitude of the electric field in the silicon\ndetector and the drift distance to the electrode, both of which\nare functions of the penetration depth of the detector by the\n\n|(a.u.)<br>(a) no collimator<br>400<br>max<br>I<br>300<br>200<br>100<br>0<br>(b) center (c) left edge<br>400<br>4He<br>300<br>t<br>d<br>6He<br>200 p<br>3He<br>6Li<br>100<br>7Li<br>0<br>(d) top edge (e) corner<br>400<br>300<br>200<br>100<br>0<br>0 5 10 15 20 0 5 10 15 20<br>E (MeV)|Col2|Col3|\n|---|---|---|\n|0<br>100<br>200<br>300<br>400<br> (a.u.)<br>max<br>_I_<br>(a) no collimator<br>0<br>100<br>200<br>300<br>400 (b) center<br>_p_<br>_d_<br>_t_<br>He<br>3 <br>He<br>4",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 22.76035316576356,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1599,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2706661__2406.01839__Simulation_of_DAMPE_silicon_microstrip_detectors_in_the_Allpixmath_altimgsi3.svg_displayin.md",
+        "title": "2023__recid_2706661__2406.01839__Simulation_of_DAMPE_silicon_microstrip_detectors_in_the_Allpixmath_altimgsi3.svg_displayin",
+        "text": "ufactured by IDEAS [18], which\n\n3\n\nFigure 2: A schematic of the STK.\n\nare responsible for signal shaping and amplification. To optimize the readout process, every other strip is read out, reducing the number of readout channels while\npreserving a high level of spatial resolution.\n\nFigure 3: A schematic of the ladder.\n\n4\n\n**3. Simulation progress**\n\n_3.1. Geometry and Geant4 configuration_\n\nThe geometry of the simulated STK is constructed in detail according to the\nconfiguration of DAMPE. The GDML files of the other two important sub-detectors\nof DAMPE, the PSD (plastic scintillator strip detector), and the BGO (bismuth\ngermanium oxide) imaging calorimeter, are also imported to achieve good simulation performance. The detector geometry, together with some generated proton\nevents, is shown in Fig. 4. The detector readout modules are set to a ladder configuration in the simulation, which has the same size and position as the STK. The\nladder has a length of 380 mm and a width of 768×121 µm, with 200 µm of PCB\nmaterial at the bottom.\n\nFigure 4: The detector geometry with some generated proton events.\n\nProton and helium MIP events in on-orbit data are selected as the two most\nabundant particles in cosmic-rays to ensure sufficient statistics for the validation\nanalysis. These two types of particles are generated in the Geant4 simulation.\nThe input energy spectra of proton and helium are obtained from measurements\nconducted by DAMPE and AMS-02 [19].\nThe particle source is a spherical source centered at the origin of the detector coordinate system with a radius of 1 meter. The angular distribution of the\n\n5\n\nparticles is isotropic. Geant4 utilizes the FTFP ~~B~~ ERT ~~E~~ MZ physics list for the\nsimulation. In Allpix [2], the software generates the corresponding charge carriers\nbased on the energy deposited by the particles. The number of electron-hole pairs\nproduced is determined by the material properties of the detector itself. Fluctuations in the charge production are modeled using a Fano factor, assuming Gaussian\nstatistics [20].\n\n_3.2. TCAD Electric field_\nThe Geant4 toolkit is not equipped to handle charge drift in an external electric field, thereby preventing a precise simulation of the charge distribution in\neach readout strip. To overcome this challenge, we applied the Allpix [2] simulation\nframework to simulate the charge drift process [9] by importing a user-defined\nelectric field.\nIn this work, the electric fields of three pitches are obtained via the",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 21.429671473069288,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4639,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "ell, which shields n-wells within the circuitry from the epitaxial layer, preventing them from collecting charge and thus enabling full\nCMOS circuitry. The depletion zone is balloon-shaped extending from\nthe junction at the collection electrode without reaching the pixel edges.\nThe charge generated outside the depletion region is collected primarily\nby diffusion, but this collection is relatively slow and subject to charge\ntrapping in defects generated by exposure to non-ionizing radiation.\n\n - **Modified**, Figure 2(b): a deep low-dose n-type implant is added under the\nfull pixel area and creates a planar junction deep in the sensor, separated\nfrom the collection electrode extending over the full pixel area. With some\nreverse substrate bias, this allows full depletion of the epitaxial layer and\nsignal charge collection by drift.\n\n - **Modified with gap**, Figure 2(c): a gap of 2.5 µm is introduced in the\nlow-dose n-type implant at the pixel boundaries. This creates a vertical\njunction to increase the lateral electric field pushing the charge from the\n\n4\n\npixel boundary towards the collection electrode, thus reducing the charge\nsharing among neighbouring pixels.\n\nMoving from the pixel design 2(a) to 2(c), charge collection by drift becomes largely dominant, reducing charge sharing among pixels. This results in\na larger fraction of the charge collected by a single pixel and, consequently, in\nan increased signal to noise ratio (S/N) providing greater operational margins.\nTo optimise the sensor for ionizing-particle detection, where signal charge is\ngenerated over the full depth, the modified with gap design has been produced\nin four so-called _splits_ (named 1, 2, 3, 4), gradually modifying the doping levels\nof various implants [13].\nIn addition, to explore the influence on capacitance and charge collection,\nthe geometry and size of both n-well collection electrode and the p-well were\nimplemented in four different _variants_ :\n\n - **Reference** : n-well collection electrode size of 1.14 µm and a square p-well\nenclosure of 4.14 µm, see Figure 3(a) for the top view.\n\n - **Smaller p-well enclosure** : p-well enclosure of 3.14 µm.\n\n - **Larger n-well collection electrode** : n-well collection electrode of 2.28 µm.\n\n - **Finger-shaped p-well enclosure** : the shape of the p-well enclosure\nis changed as sketched in Figure 3(b) resulting in p-well fingers further\napproaching the collection electrode.\n\n(a) (b)\n\nFigure 3: Top view of half a pitch of a modified with g",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 21.221325774548887,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5994,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc.md",
+        "title": "2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc",
+        "text": "tector [2]. The sensor design,\ndecoupling charge-generating volume from the drift distance,\naccommodates shorter electrode spacing, consequently\ndecreasing the charge carrier trapping probability. Recent\nstudies using the Transient Current Technique (TCT) [3, 4],\nhave further substantiated the exceptional timing performance\nof such devices. For vertically incident events, the orthogonal\nrelationship between drift direction and particle trajectory\nresults in an absence of Landau fluctuations **,** key factor in\nextending theoretical timing performance of such devices,\nprimarily constrained only by the signal's drift time.\n\nThis excellent performance is nevertheless impacted by\nfield non-uniformities, intrinsic to the column geometry of the\ncollection electrodes. The resulting radially expanding field\nwithin the pixel volume increases signal time-jitter, degrading\n\ntime resolution. Such a geometry, though detrimental under\nnormal operation, can lead to high field densities near the\ncollection electrode (> 30 V/μm) at higher bias voltages\n(> 500 V) typically used after irradiation. In this operating\nmode, impact ionization and charge multiplication occur near\nthe collection electrode in a similar way as in Multi-Wire\nProportional Chambers (MWPCs) and can compensate for\ntrapping induced charge collection efficiency issues.\n\nIn this study, three different geometries are examined after\nproton and neutron irradiation, using 120 GeV SPS pion\nbeams [5]. Pixel sizes of 55 x 55 μm [2] [6], 25 x 100 μm [2] and\n50 x 50 μm [2] [7] in substrates of 230 μm (190 μm active depth)\nfor the first geometry and 150 μm (130 μm active depth) for\nthe second and third, are tested to establish the minimum\nactive thickness and pixel size still yielding sufficient charge\nand low enough jitter to achieve a 30 ps time resolution.\nQuestions of signal integrity, bandwidth and efficiency are\ntreated.\n\n**2.** **Timing and Signal Integrity**\n\nStudies under a [90] Sr source of the 50 x 50 μm variety single\npixel structure (Figure 1 top), yield collected charge of\n1.73 ± 0.02 fq (10,830 e [-] ), in agreement with the theoretically\npredicted value of ~ 82 e/μm for a MIP in fully depleted Si [8]\nat a bias voltage of 20 V at -20 [o] C. Signals are characterized\nby a fast rise time (10 % - 90 %) of 175 ± 4 ps, but present a\ntail at the slower end, characteristic of filed non-uniformities.\nAlthough charge per micrometer in the 3D device is reduced\nby a factor of 60 with respect to a typical LGAD [1]",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 20.935413814434796,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7534,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F.md",
+        "title": "2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F",
+        "text": "<br>1.|0.75<br>1.00<br>1.25<br>1.|\n|0.50<br>0.2<br>0<br>0<br>0<br>0<br>0<br>0<br>0|||Time [|Time [|Time [|Time [|Time [|Time [|Time [|Time [|\n\n**Figure 4.** Measured triangle-like transient current induced by electron and hole drift in a pulsed UV-laser\nmeasurement together with linear fits used to extract charge carrier drift velocities in 4H-SiC.\n\n5 of 13\n\n_2.3. Simulation Framework_\n\nIn order to verify the results and compare the measured transient currents with theoretical\nmodels, electric field simulations in Sentaurus TCAD, Monte-Carlo simulations in Allpix [2], and SPICE\nsimulations using QUCS-S have been performed.\n\n2.3.1. TCAD Simulations\n\nIn a first step, the 4H-SiC diode was simulated using Synopsis Sentaurus TCAD in order to extract\nelectrostatic potentials and electric field profiles intended for import into the Allpix [2] simulations.\nThe electric fields were simulated using a quasi 1-D geometry using the device depth and a width\nof 1 µm, as depicted in Figure 5(a). By omitting edge termination structures, which have a negligible\neffect on the electric field in the center of the diode, computation time could be significantly reduced.\nThe p [++] implant was specified using measurements performed by the manufacturer, and the doping\nconcentration of the intrinsic epitaxial layer was extracted from the C-V measurements (see Figure 2(b)).\nAt the bottom of the geometry, a 1 µm thick buffer layer with a doping concentration of 1 _×_ 10 [18] cm _[−]_ [3]\n\nwas added in the form of a box profile. The simulation setup, including material parameters, material\nanisotropy, and solving criteria, matches previously published simulation work done by the authors\n\n[ 24, 25 ]. From the simulations, the electrostatic potentials and corresponding electric fields at bias\nvoltages from 0 V up to 1100 V were calculated. Selected electric field distributions along a cut across\nthe detector thickness are shown in Figure 5, showing non-linear electric fields due to the non-constant\nepitaxial doping profiles.\n\n|250|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|0<br>50<br>00<br>50<br>00<br>||||||\n|0<br>50<br>00<br>50<br>00<br>||||||\n|0<br>50<br>00<br>50<br>00<br>||||||\n|0<br>50<br>00<br>50<br>00<br>||||||\n|0<br>50<br>00<br>50<br>00<br>||||||\n|0<br>50<br>00<br>50<br>00<br>||10<br>20<br>30<br>|10<br>20<br>30<br>|10<br>20<br>30<br>|0<br>|\n\n(a)\n\n(b)\n\n**Figure 5. (a)** : TCAD simulation geometry, with the color representing the effective doping concentration. **(b)** :",
+        "score": 0.013888888888888888,
+        "dense_score": null,
+        "bm25_score": 20.24048293551767,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5635,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ugh the use of a narrower\n\ngain layer[15]. Last but not least, an internal gain layer reduces the need for amplifier electronics\n\nand hence reduces power consumption for the operation of HL-LHC[4].\n\nLGADs are an excellent candidate for 4D tracking and to understand their performance, LGADs\n\nwere fabricated by Micron Semiconductor Ltd. The first timing measurement of LGADs by the\n\nvendor will be presented and compared to devices manufactured by the Institut de Microelectrònica\n\nde Barcelona (IMB-CNM) for reference. Moreover, the study will seek to understand how different\n\nphysical parameters affect devices’ timing resolution. The study will first focus on LGAD samples\n\nmanufactured by both vendors and uncertainty factors affecting timing resolution will be eluci\ndated in section 2. Furthermore, the experimental setup for measuring the Current-Voltage (IV),\n\nCapacitance-Voltage (CV), gain, and timing resolution will be explored. Section 3 will present the\n\nexperimental results obtained from the setup described in section 2 and subsequently interpreted to\n\nput into context. Finally, section 4 will present potential issues encountered during the experiment\n\nand the outlook of the work.\n\n– 2 –\n\n**Figure 1** . Schematic representation of LGAD (not to scale). The n++ and p+ layers are typically about\n1 − 3 µm thick and the established electric field profile is depicted on the left.\n\n**2** **Materials and Methods**\n\n**2.1** **Detector Design**\n\nLGADs have been proposed as a new detector technology for use within a system that requires\n\nexcellent time resolution. LGADs are based on the traditional Avalanche Photodiode (APD),\n\nhowever, the doping profiles are modified in such a way as to create the optimal electric field and\n\nhence low gain required for these detectors. As the gain of the LGAD is low, the device can be\n\noperated in avalanche mode and within the linear region with a large bias voltage working range\n\nand a gain that is loosely dependent on the bias voltage. The internal gain increases the sensor\n\nnoise, but since electronic noise dominates the total noise, this contributes to an overall increase in\n\nthe detector system’s signal-to-noise ratio.\n\nThe effective timing resolution of LGADs depends on four independent factors summed to\ngether: time walk, Landau noise, jitter, and time-to-digital converter (TDC). That is,\n\n_𝜎_ _𝑇𝑜𝑡𝑎𝑙_ [2] [=] _[ 𝜎]_ _𝑇𝑖𝑚𝑒𝑊𝑎𝑙𝑘_ [2] [+] _[ 𝜎]_ _𝐿𝑎𝑛𝑑𝑎𝑢𝑁𝑜𝑖𝑠𝑒_ [2] [+] _[ 𝜎]_ _𝐷𝑖𝑠𝑡𝑜𝑟𝑡𝑖𝑜𝑛_ [2] [+] _[ 𝜎]_ _𝐽𝑖𝑡𝑡𝑒𝑟_ [2] [+] _[ 𝜎]_ _𝑇",
+        "score": 0.013333333333333334,
+        "dense_score": null,
+        "bm25_score": 19.927548437991298,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.07087719533592463,
+    "generation_latency_s": 2.4028122425079346e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.07087719533592463,
+    "generation_latency_s": 2.4028122425079346e-07
+  }
+}

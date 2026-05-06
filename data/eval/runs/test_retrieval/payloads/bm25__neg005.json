@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "neg005",
+    "query_type": "negative",
+    "query": "What is the best stock to buy based on these detector papers?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "best"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the best stock to buy based on these detector papers?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7799,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+        "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+        "text": "ollected charge is reduced by 40% or more. In this report it was shown\nthat a combination of TCAD and Allpix [2] simulations deliver predictions on\ncollected charge that match quite well the value of saturated charge extracted\nfrom data. It was also shown that the voltage at which the saturation starts\ncan be correctly reproduced.\n\n13\n\nUsing this validated combined model predictions on collected charge at\nexpected fluences for the future ATLAS Inner Tracker were prepared. It was\nshown that the collected charge should always be well above the threshold,\nassuring a large signal-to-threshold ratio. The results also indicate that it\nwill not be necessary to run at the maximal voltage but a few hundreds of\nvolts less should anyhow assure full efficiency.\nSimilar studies are in preparation for 3D sensors which will be used in\nthe innermost layer of the ATLAS Inner Tracker; these sensors are expected\nto integrate fluences as high as Φ = 1 _._ 6 _×_ 10 [16] n eq _/_ cm [2] which is almost a\nfactor of 3 larger of what tested in this report. Given the different sensor\ngeometry and fluence range a dedicated study is needed.\nThe validated simulation model will be used to prepare look-up tables\nwhich will be input to the new algorithm [13] to include radiation damage\neffects in the ATLAS Monte Carlo event generator. It will be then possible\nto complete the assessment of the robustness of tracking and vertexing algorithms for ITk [10] exploring conditions close to those expected during data\ntaking.\n\n**Acknowledgements**\n\nThe author wants to thank Anna Macchiolo of Universität Zürich for\n\nsharing the CMS tracker group papers on passive CMOS pixels productions.\nThe author is thankful to the Allpix [2] developers and to Igor Mandić of Jožef\nStefan Institute of Ljubljana for the useful suggestions and discussions.\n\n**References**\n\n[1] I. Dawson, Radiation effects in the LHC experiments: Impact on detector performance and operation, CERN Yellow Reports: Monographs,\nCERN, Geneva, 2021. doi:10.23731/CYRM-2021-001.\nURL `https://cds.cern.ch/record/2764325`\n\n[2] M. Moll, Displacement damage in silicon detectors for high energy\nphysics, IEEE Transactions on Nuclear Science 65 (8) (2018) 1561–1582.\ndoi:10.1109/TNS.2018.2819506.\n\n[3] Performance of ATLAS Pixel Detector and Track Reconstruction at the\nstart of Run 3 in LHC Collisions at _[√]_ ~~_s_~~ = 900 _GeV_, Tech. rep., CERN,\n\n14\n\nGeneva (2022).\nURL `https://cds.cern.ch/record/2814766`\n\n[4] M. Aaboud, et al., Modelling radiation",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 28.151259788518175,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 2396,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "ons, uncertainties from production cross sections\ndominate compared to uncertainties from inelastic cross\nsections, and we fix the parameterization of the latter to\nthat of [97]; we refer readers to [98] for a recent discussion of the inelastic cross-sections models [2] used in GCR\nphysics.\nThe existing models for the isotopic production cross\nsections were discussed at length in Paper I [3] . To encompass the typical uncertainties on these models, as in Paper I, we consider two parameterizations available from\nthe GALPROP code [4] [98], namely its options OPT12\nand OPT22. Both are based on a careful inspection\nof the quality and systematics of all available nuclear\ndatasets for each reaction in MeV/n–GeV/n range, and\nthe use of specifically designed approximations, semiempirical formulas, and nuclear codes normalized to data\nwhen available [99–104]: _for marginally important re-_\n_actions,_ OPT12 uses the WNEW code [105–108] and\nOPT22–the YIELDX code [109, 110], providing a representative dispersion for cross sections where no data\nare available. For more details on the nuclear package in GALPROP see [66] and references therein. For\nmost of our rankings, we actually use a third parameterization, based on a mixture of GALPROP-OPT12 and\nGALPROP-OPT22 [12, 76]. This parameterization is\nbased on GALPROP-OPT12 and renormalizes, for the\nmost important reaction involved in the production of\nLiBeB [76] and F [12], GALPROP-OPT22 cross sections\nto nuclear data, which became available after the GALPROP nuclear cross-section package was developed. Indeed, with these new nuclear data, the fragmentation of\nFe appears to be very important [76], compared to how\nit was ranked in Paper I. This parameterization can be\nseen as a partial update of the original GALPROP routines, which is used here to update the ranking for the\nLiBeB elements provided in Paper I.\nA full update of the GALPROP parameterizations,\nbased on a comprehensive survey of the literature for\nnuclear data relevant for the production of all elements\nconsidered here would be ideal. However, this is an extremely time-consuming task yet to be completed. While\nworking to achieve this goal, we provide the best rankings\navailable at this time. As new data becomes available,\nour results will be updated in the follow-up papers.\n\n**II.3.** **Primary vs. secondary origin of F to Si**\n\nBefore defining which rankings are performed and what\nthey are, it is important to briefly introduce the most\n\n2 Note that there are ma",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 27.59617069559502,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 75,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630827__2302.04281__The_impact_of_the_Large_Magellanic_Cloud_on_dark_matter_direct_detection_signals.md",
+        "title": "2023__recid_2630827__2302.04281__The_impact_of_the_Large_Magellanic_Cloud_on_dark_matter_direct_detection_signals",
+        "text": ", we summarize the description of these four snapshots, specify their times\nrelative to the present day snapshot, and list the distance of the LMC analogue from host at\neach snapshot. The distance and speed of the LMC analogue with respect to its host at the\npresent day snapshot are _∼_ 50 kpc and 317 km/s, respectively, which are remarkably close\nmatches to the observed values [3] . Notice that when we refer to the “present day” snapshot\nfor the re-simulated halo 13 throughout this work, we are referring to the _Pres._ snapshot.\nIn the rest of this paper we present some general results for the 15 selected MW-LMC\nanalogues at the snapshot closest to the LMC’s first pericenter approach, and then focus on\nhalo 13 to study how the LMC impacts the local DM distribution during its orbit around\nthe MW.\n\n**2.2** **Matching the Sun-LMC geometry**\n\nThe geometry of the observed Sun-LMC system is such that the LMC is predominantly\nmoving in the opposite direction of the Solar motion. This leads to large relative speeds of\nthe particles originating from the LMC with respect to the Sun, and results in a boost in\nthe DM velocity distribution in the Solar region [30]. Ref. [30] showed that matching the\nSun-LMC geometry in their idealized simulations to the observed geometry is crucial for an\naccurate understanding of LMC’s impact on the local DM distribution.\nIn the simulations, the position of the Sun is not specified a priori and the LMC analogues have different phase-space coordinates compared to the real MW-LMC system. Therefore, we need to choose a position for the Sun in each MW analogue based on a set of criteria\nfor obtaining a match to the observed Sun-LMC geometry. We would also like to explore\nto what extent it is critical to match the exact Sun-LMC geometry in the simulations in\norder to have a significant effect on the local DM velocity distribution. In this section, we\nfirst discuss our procedure for obtaining all possible positions for the Sun in the simulations\nthat approximately match the Sun-LMC geometry in observations. We next discuss how we\nspecify the “best fit” Sun’s position in the simulations that provides the best match to the\nobserved Sun-LMC geometry.\nFigure 1 shows the observed geometry of the Sun-LMC system in the Galactocentric\nreference frame defined in the following way. The origin of the reference frame is on the\nGalactic center, the _x_ _g_ and _y_ _g_ axes are aligned with the Sun’s orbital plane, the _x_ _g_ -axis\npoints from the Sun",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 27.42356370685024,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5641,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ution from the data. In this procedure, the time of arrival of a particle incident\n\non the detector is defined to be at a threshold on the rising edge of the signal that is a certain\n\nfraction of the signal’s maximum height[2]. Particularly, the time of arrival at thresholds from\n\n10% to 90% at an increment of 10% were extracted for both signals. The time difference can then\n\nbe defined, where it is the difference between the time of arrival extracted from the front and rear\n\ndetectors. Using the same time difference thresholds, the time difference values were extracted for\n\neach set of events and subsequently binned into a histogram. The number of bins in the histogram\n\ncould be manually set to some reasonable value. However, the optimal bin size was dynamically\n\nselected based on a method used to minimise the mean integrated squared error associated with\n\nthe statistics. The resulting histogram is a Gaussian distribution and its sigma is what is known as\n\nthe time resolution of the detectors. This calculated value is the system’s average timing resolution\n\nand to calculate the individual devices’ timing resolution, an important assumption was made in\n\n– 7 –\n\n**Figure 5** . An illustration of the setup to measure time resolution. A Sr-90 source generates a beam of\n_𝛽_ -particles that passes through both detectors and the signal registered by the devices mounted on the PCBs,\nwhere they serve as 1st stage amplifiers. The PCBs are connected to 2nd stage amplifiers and then the signals\nare displayed by the oscilloscope. The entire setup is placed on top of a breadboard purchased at Thorlabs,\n\nInc.\n\nthe analysis: it is assumed that the detectors have similar time resolution. This comes from the\n\nfact that identical detectors from the same region of the wafer were selected. As there are two\nplanes of detectors, the calculated timing resolution was divided by a factor of ~~√~~ 2. Furthermore,\n\nas part of the analysis, different combinations of constant fractions from both detectors were used.\n\nFor example, the front detector’s 50% to the rear detector’s 30%. As such, a total of 81 timing\n\nresolution values were calculated and the best timing resolution from the combinations was extracted\n\nfrom each measurement run. Finally, the uncertainty from the measurements was extracted by the\n\nfollowing procedure: the measurement was repeated 5 times for a certain bias voltage value with the\n\nentire setup being turned off for an hour between each measurement. The measureme",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 27.241102974365575,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1431,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i.md",
+        "title": "2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i",
+        "text": "TLS, assuming that all the\nTLS contribute to the specific heat. _P_ is the subset of\nTLS that flip fast enough to scatter phonons and affect\nthermal conductivity and ultrasonic attenuation. (Heat\ntransport in amorphous insulators is due phonons [56].)\nTypically _n_ _o_ is about an order of magnitude larger than\n_P_ . The relation between _n_ _o_ and _P_ is given by [57, 58]:\n\nwhere _c_ ( _T, t_ ) is the time dependent specific heat and _τ_ is\nthe minimum relaxation time for TLS. The specific heat\nincreases logarithmically with time due to slowly relaxing\nTLS that have large tunneling barriers.\n\nWe note that some papers [19, 24] that attribute charge\nnoise at the quantum dot to a 2D layer of noninteracting\nTLS use a TLS density _ρ ∼_ 10 [11] /cm [2] which corresponds\nto a TLS separation of about 30 nm, while other papers\n\n[26, 27] use _ρ ∼_ 10 [10] /cm [2] corresponding to a TLS separation of 100 nm. These estimates are based on _P_ obtained\n\nfrom thermal relaxation measurements of vitreous silica\n\n_∼_\nat low temperatures ( 200 mK) [58]. The TLS involved\nin those experiments tunnel on the time scale ( _∼_ 10 [3] s) of\nthe measurements. We have used _n_ _o_ because we are interested in TLS interacting with one another over a wide\nrange of time scales.\n\n_c_ ( _T, t_ ) = _[π]_ [2]\n\n_[π]_ [2] 4 _t_\n\n12 _[k]_ _[B]_ _[TP]_ [ ln] � _τ_\n\n_τ_\n\n(A2)\n�\n\n**Appendix B: Equilibration**\n\n**1.** **Equilibration and Recording Times**\n\nThe Ising spin glass systems are equilibrated for\n10 [5] MCS at _T_ = 10. As the system is cooled, the equilibration and recording times are increased if the system\nis not in equilibrium. These times as a function of temperature are shown in Table I.\n\n|Temperature|Equilibration and<br>Recording Times (MCS)|\n|---|---|\n|1_ ≤T ≤_10|10~~5~~|\n|0_._8_ ≤T ≤_0_._95|3_ ×_ 10~~5~~|\n|_T_ = 0_._75|10~~6~~|\n|0_._65_ ≤T ≤_0_._7|3_ ×_ 10~~6~~|\n|_T_ = 0_._6|10~~7~~|\n\nTABLE I. Equilibration and recording times for the 2D (16 _×_\n16) Ising spin glass with random electric dipole orientations\nfor 0 _._ 6 _≤_ _T ≤_ 10.\n\n**2.** **Spin Glass Susceptibility**\n\nThe test for equilibration follows Bhatt and Young’s\nprocedure for the equilibration of Ising spin glasses [47].\nTwo independent replicas of each system with the same\nexchange couplings are created and run in parallel. The\ninitial spin configurations for the two replicas are different and random. For the set of spins _{_ s _i_ _}_ with _N_ lattice\nsites, the spin autocorrelation function for the replica _n_,\naf",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 25.390640520486794,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5542,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2869508__2405.07797__Silicon_Drift_Detectors_for_the_Measurement_and_Reconstruction_of_Beta_Spectra.md",
+        "title": "2024__recid_2869508__2405.07797__Silicon_Drift_Detectors_for_the_Measurement_and_Reconstruction_of_Beta_Spectra",
+        "text": "escribes the\ndata for all values of the only free parameter (the\n\n_∼_\nMylar thickness), with a ∆ _χ_ [2] 150 in the minimum,\nindicating that Fermi theory is preferred and sufficient\nto explain the [14] C spectrum. The best fit, without any\nexperimental shape factor, is shown in Figure 8.\nWe then tested the robustness of the model’s pre\n\n|Data (vacuum)<br>Background<br>Fermi theory<br>+ experimental shape-factor|Col2|\n|---|---|\n|||\n|Data (vacuum)<br>Background<br>|Data (vacuum)<br>Background<br>|\n|~~Fermi theory~~<br>+ experimental shape~~-~~factor||\n|||\n|||\n|||\n|||\n\n|Reduced 2 = 1.09 (428 dof)<br>Data + cut<br>Best fit MC<br>Theoretical input|Col2|Col3|Col4|\n|---|---|---|---|\n|Data<br>~~Best~~|Data<br>~~Best~~|Data<br>~~Best~~|Data<br>~~Best~~|\n|Data<br>~~Best~~|Data<br>~~Best~~|+ cut<br>~~it MC~~|+ cut<br>~~it MC~~|\n||Theor|etical inpu|t|\n|||||\n|||||\n|||||\n|||||\n|||||\n\nFIG. 7. Data acquired with an SDD in a 6 h measurement using a [14] C source (top). _χ_ [2] as a function of the effective Mylar\nthickness for the two models: the Fermi theory prediction and\nthe one including the experimental shape factor (bottom).\n\nbe obtained using software such as Betashape [22]. In\nparticular, two spectra are available: a purely theoretical prediction based on _β_ kinematics and the Fermi\nfactor, and a prediction including an energy-dependent\nexperimental shape factor measured in [23]. The shapes\nof the two predictions, normalized to the integral above\n15 keV, are shown in Figure 7. These spectra were used\nas input for the GEANT4 simulations.\nIt is clear how the response of the system changes the\nshape of the spectrum, again highlighting the need for\nan accurate and reliable simulation to interpret the\nexperimental measurement.\nWe performed the same analysis as for the [109] Cd case for\nthese two models, varying the effective Mylar thickness\n\nFIG. 8. Fit to the data set acquired with the [14] C source in\nvacuum using the MC prediction. The fit is performed only\nin the non-shaded area. The theoretical input is also shown.\n\ndiction by comparing the results obtained by varying\nthe parameters of the detector response, namely the\n_λ_ parameter related to the depth-dependent charge\ncollection efficiency (default: _λ_ = 55 nm [17]), the\nbaseline energy resolution (default: _σ_ = 150 eV), and\nthe charge cloud width in Silicon, which mimics the\npartial charge collection at the SSD border (default: ccw\n= 15 _µ_ m). The results are shown in figure 9.\nThe effect on the fit quality",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 25.117325659063997,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 86,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630827__2302.04281__The_impact_of_the_Large_Magellanic_Cloud_on_dark_matter_direct_detection_signals.md",
+        "title": "2023__recid_2630827__2302.04281__The_impact_of_the_Large_Magellanic_Cloud_on_dark_matter_direct_detection_signals",
+        "text": "four snapshots\nrepresenting different times in the LMC’s orbit of the MW analogue (given in table 2). The\nlocal speed distributions of the DM particles originating from the MW only (red), the LMC\nonly (blue), and the MW+LMC (black) are shown. The distributions are presented in the\nSolar region for the best fit Sun’s position for all snapshots except for the isolated MW, for\nwhich there is no LMC analogue and the best fit Sun’s position cannot be defined. Hence, for\nthe isolated MW the DM distribution is extracted in a spherical shell with radii between 6 to\n10 kpc from the Galactic center. _κ_ LMC is also specified in each panel. The panels below the\nspeed distribution plots show the ratio of the MW+LMC and the MW-only distributions,\nfor all snapshots other than the isolated MW snapshot.\n\nFigure 5 demonstrates that the LMC impacts the high speed tail of the local DM speed\ndistribution, not only at its pericenter approach and at the present day, but also _∼_ 175 Myr\nafter the present day. The value of _κ_ LMC is largest at pericenter and decreases as the LMC\nmoves further from the host galaxy. Similarly, the ratio of the MW+LMC and the MW-only\nspeed distributions in the high speed tail is largest at pericenter and decreases for the present\nday and future snapshots. For all snapshots other than the isolated MW (where _κ_ LMC = 0),\nthe DM originating from the LMC has a speed distribution that peaks at the high speed\ntail of the native DM distribution of the MW, having a modest yet important impact on the\ntotal DM speed distribution. This is similar to what we find in general for the 15 MW-LMC\nanalogues at pericenter, as shown in figure 4.\n\nNotice that when halo 13 is re-simulated with finer snapshots, the phase-space distribution of the DM particles is not the same as in the original halo 13, as we are not comparing\nthe two simulations at exactly the same time. As mentioned in section 2.1, the average time\nbetween snapshots is _∼_ 150 Myr in the original simulation, and it is difficult to precisely\nobtain the snapshot for the present day or LMC’s pericenter approach. Furthermore, the\nSolar region for the best fit Sun’s position is different in the original and the re-simulated\nhalo 13, and this has a significant impact on the local DM velocity distribution. In particular, for the original halo 13, the cosine angles (eq. (2.1)) for the best fit Sun’s position are\ncos _α_ = _−_ 0 _._ 796 and cos _β_ = _−_ 0 _._ 090. Although these particular angles minimize th",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 25.017989900387878,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1990,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "sociate each particle to the _pp_\ncollision where it was produced and measure its displacement from that _pp_ collision, and\nidentify the particle as a muon or non-muon.\nThe reconstruction sequence is shown schematically in figure 109. It is preceded by a\nGlobal Event Cut (GEC) which removes a fraction of the events with a very large number\nof tracks, which cost a disproportionate amount of computing time to reconstruct while\nhaving a worse detector performance. The cut can in principle be applied based on the\noccupancy of any combination of subdetectors. The baseline criterion is to reject the 7%\nof busiest minimum bias events based on UT and SciFi Tracker occupancies. This will be\nrevisited during detector commissioning to make sure that the cut uses information from\nthose subdetectors whose data occupancies best match simulation. As necessary, special\nreconstruction and selection sequences can be deployed which bypass this GEC, e.g. for\nelectroweak physics or very forward high transverse momentum exotic signatures. These\nare not discussed further here for brevity.\nFrom the algorithmic point of view, the reconstruction sequence is straightforward:\n\n1. tracks are reconstructed in the VELO and are used to locate the positions of the\nprimary vertices where the beam collisions occurred;\n\n147\n\n|Col1|Col2|\n|---|---|\n|UT decoding|UT decoding|\n|||\n|UT tracking|UT tracking|\n|||\n|SciFi Tracker<br>decoding|SciFi Tracker<br>decoding|\n|||\n|SciFi Tracker<br>tracking|SciFi Tracker<br>tracking|\n|||\n|Parameterised<br>Kalman flter|Parameterised<br>Kalman flter|\n|||\n\nFigure 109: Baseline HLT1 sequence. Reproduced with permission from [186]. Rhombi represent\nalgorithms reducing the event rate, while rectangles represent algorithms processing data.\n\n2. tracks are extrapolated to the UT, and subsequently to the SciFi Tracker detector,\nbased on a minimum allowed momentum and/or transverse momentum. A magnetic field parametrisation is used to predict the track position and speed up the\nreconstruction. In the baseline configuration, the minimum _p_ T threshold is set to\n500 MeV, but this value will be updated once the performance is evaluated with real\ndata. Reducing this threshold requires improved computational performance but\nincreases the number of tracks available to physics selections and consequently the\nsignal efficiency. This is particularly important for signatures typical of strange and\ncharm quark physics;\n\n3. above the _p_ T threshold, the track momentum is known wi",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 24.967221594910914,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 172,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6332,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes.md",
+        "title": "2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes",
+        "text": "ategy as described in Section\nIV-A. The two methods for optimizing message update rules,\nMomentum-BP and AdaGrad-BP, exhibit improvements over\ntraditional LLR-BP 4 at physical error rates lower than 10%,\nproviding evidence for the validity of the gradient perspective of BP. The prior-probability-based method, EWAInitBP, demonstrates improvements ranging from 1 to 3 orders\nof magnitude over traditional BP and effectively eliminates\nthe error floor. Compared to other algorithms, EWAInit-BP\nachieves performance between serial MBP and serial AMBP\nwhile using hardware-friendly parallel scheduling, and in this\ncase, performs nearly identically to BP 2 -OSD-0 [49], despite\nthe latter having a time complexity of _O_ ( _n_ [3] ).\n\n8 VOLUME 4, 2016\n\nAuthor _et al._ : Preparation of Papers for IEEE Transactions on Quantum Engineering\n\n|Rate|AMBP (serial) BP2-OSD|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|Col11|Col12|\n|---|---|---|---|---|---|---|---|---|---|---|---|\n|1<br>10<br>4<br>10<br>3<br>10<br>2<br>|~~EWAInit-BP, =~~|~~0.5~~|~~0.5~~|||||||||\n|1<br>10<br>4<br>10<br>3<br>10<br>2<br>|0<br>3|10<br>2<br>Physical|Error|Rate|10<br>1<br>|10<br>1<br>|10<br>1<br>|10<br>1<br>|10<br>1<br>|10<br>1<br>|10<br>1<br>|\n\n**FIGURE 4.** Overall Performance of proposed BP algorithms with existing\nalgorithms on a [[85 _,_ 1 _,_ 7]] planar surface code. Momentum-BP, AdaGrad-BP,\nMBP and AMBP are evaluated under both parallel and serial scheduling.\nEWAInit-BP performs between serial MBP and serial AMBP and is almost\nidentical to BP 2 -OSD-0 in this case.\n\nThe enhancements observed with Momentum-BP and\n\nAdaGrad-BP support the validity of the gradient perspective,\nproviding a foundation for further research in this direction.\nNext, we will provide detailed comparisons between our\nbest enhancement, EWAInit-BP and algorithms with similar time overheads (excluding post-processing and external\nloops). Although AMBP [21] has an asymptotic complexity\nof _O_ ( _N_ ), its actual runtime overhead is high, as detailed in\nAppendix VI-C, which also includes the results for Adaptive\nEWA-BP.\n\n2) Toric code\nWe construct the [[2 _n_ [2] _,_ 1 _, n_ ]] toric code based on its properties as a hypergraph product of an [ _n,_ 1] repetition code.\nThe toric code features periodic boundaries, hence all its\nstabilizers have a weight of four, and any error syndromes on\nit exhibit translational symmetry [17], which is particularly\nconducive to BP and neural network decoding. We compare\nthe performance of our EWAInit",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 24.908064125000813,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5637,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ns has shown that devices with a thickness of 50 µm\n\nwith a gain in the magnitude of 10 − 20 provide the best time resolution. Therefore, LGAD\n\nwafers fulfilling these technical requirements were fabricated by Micron Semiconductor Ltd and\n\nsubsequently characterised at the University of Glasgow.\n\n**2.2** **LGAD Samples**\n\nTiming studies were performed on the 50 µm LGAD wafer fabricated from Micron Semiconductor\n\nLtd. The wafer 3331-19 contains devices with varying pixel sizes, doping concentrations, and\n\njunction termination extension (JTE) width. For devices 1 - 7 in the wafer, the devices are single\npixel devices with pixel sizes varying from 0 _._ 22 mm to 2 mm and JTE widths ranging from 10 µm to\n\n50 µm. Device 7 from the northern section of the wafer with a pixel size of 0 _._ 5 mm and JTE width\n\nof 10 µm was tested as part of the timing studies. As part of the timing measurement experiment,\n\nanother device from the same region was used to ensure that the devices have similar geometry and\n\ncharacteristic parameters.\n\nIt is vital to understand what parameters affect timing resolution and make sure performance is\n\non-par with other manufacturers of LGADs. Therefore, devices manufactured by CNM Barcelona\n\nwere also measured. Particularly, 50 µm LGAD devices W7-LGB-52 and W7-LGB-31 from run\n9088 were studied. The two devices are single-pad LGADs with an active area of 3 _._ 3 × 3 _._ 3 mm [2] .\n\n**2.3** **IV and CV: Setup**\n\nThe characterisation of the IV and CV curves of LGADs was done within the Glasgow Laboratory\n\nfor Advanced Detector Development using a dedicated probe station setup.\n\nThe main setup for characterising the IV curve consists of a power supply, a dark box, the\n\nprobe, and the chuck. The setup is depicted in figure 2. In this setup, devices are mounted on top\n\nof a chuck that is held in place by a vacuum pump. A probe composed of a tungsten filament of\n\n20 microns is then lowered into contact with the device and a Keithley-273 DC power supply is\n\nconnected to the probe through the positive terminal. For current to flow, the chuck is connected to\n\nthe power supply at the negative terminal and is grounded. Finally, the entire setup apart from the\n\npower supply is placed inside the dark box from Wentworth to shield it from external interferences\n\nsuch as light and vibrations. During the IV measurements, the setup is connected to a computer\n\nand data is displayed through a dedicated LabView user interface.\n\nThe CV measurement setup is more c",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 24.871689118833775,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.09821158181875944,
+    "generation_latency_s": 5.098991096019745e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.09821158181875944,
+    "generation_latency_s": 5.098991096019745e-07
+  }
+}

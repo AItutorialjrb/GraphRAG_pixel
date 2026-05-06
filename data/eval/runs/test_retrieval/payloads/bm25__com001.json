@@ -1,0 +1,275 @@
+{
+  "benchmark": {
+    "query_id": "com001",
+    "query_type": "comparative",
+    "query": "Compare HV-MAPS and hybrid pixel detectors.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare HV-MAPS and hybrid pixel detectors.",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5129,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "e paper concludes (Section\n5) with a discussion on the results and an outlook for the project.\n\n**2. The ATLAS IBL and Pixel Radiation Damage Digitizer**\n\nThe ATLAS Collaboration developed and implemented an algorithm to include the\neffects of radiation damage to silicon pixel sensors in the Monte Carlo-simulated events.\nIn the following (Section 2.1), the ATLAS Pixel and IBL detectors will be briefly discussed.\nThe radiation damage digitizer for these detectors will be presented in Section 2.2.\n\n_2.1. The ATLAS IBL and Pixel Detector_\n\nThe ATLAS Pixel detector [ 7 ] has been in operation since the beginning of LHC Run1.\nIt comprises three barrel layers and three disks on each side. The barrel layer closest to\nthe interaction point (IP) is called the B-Layer and is positioned at a radius _R_ = 50.5 mm\nfrom the IP. All layers are composed of hybrid pixel modules, with sensors that are planar\nn [+] -on-n, 250 µm thick, and have a pitch of 50 _×_ 400 µm [2] (bending and transverse planes,\nrespectively).\nFor Run 2 of the LHC, which started in 2015, a new pixel layer was added: the\nInsertable B-Layer (IBL) [ 6 ], positioned 33 mm from the IP. The IBL is also composed of\nhybrid pixel modules. Compared to those in the Pixel detector, IBL modules feature thinner\nsensors, 200 µm instead of 250 µm, and a finer pitch of 50 _×_ 250 µm [2] . Planar n [+] -on-n\ntechnology is used for IBL sensors, except in the forward region, where novel 3D n [+] -on-p\nsensors are employed.\nBy the end of 2023, the IBL (B-Layer) planar sensors had integrated a fluence of\napproximately 1.2 (1.0) _×_ 10 [15] n eq cm _[−]_ [2] . These fluence levels led to a signal loss of about\n30% for both detectors.\n\n_Sensors_ **2024**, _1_, 0 3 of 19\n\n_2.2. The Radiation Damage Digitizer for Pixel and IBL Detectors_\n\nSignal reduction is the most important radiation damage effect for the performance\nof silicon pixel tracking detectors in ATLAS. It is important to have simulated data that\nreproduce the evolution of performance with the increase in radiation fluence. ATLAS\ncollaboration developed and implemented an algorithm that reproduces signal loss and\nchanges in Lorentz angle due to radiation damage [ 15 ]. This algorithm is now the default\nfor Run 3-simulated events [16].\nThe algorithm uses electric field profiles produced using TCAD tools to evaluate the\ntime carriers will take to reach the collecting electrode. The electric field is deformed by\nthe presence of defects due to radiation damage; in pa",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 16.881154924278295,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1395,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip.md",
+        "title": "2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip",
+        "text": "ver PIC\nwe can reduce this down to a single chip assembly, whilst allowing both transmitter and receiver\ncircuits to access the best properties from two\ndifferent material platforms.\n\nSimilarly, we can compare our edge-coupling\nhybrid approach to alternative hybrid or heterogeneous solutions, such as flip-chip or photonic\nwire bonding. For our purposes we believe that\nedge-coupling currently has two key strengths:\nlow optical coupling losses and sufficiently mature\nmanufacturing that is accessible in low volumes.\nAs parts of our chip are used as a receiver, the optical loss is critical. The fact that we find this can\nbe repeatably achieved with currently available\ncommercial manufacturing techniques is important and should be of interest to those working on\nother applications of quantum photonic integration. However, we do not discount the potential\nadvantages of alternative hybrid and heterogeneous integration approaches. For large circuits,\nas will likely be required for photonic quantum\ncomputing for example, the inherent scalability\nof some of the alternatives becomes a significant\nadvantage. Indeed, even for smaller circuits, such\nas used in QKD, wafer-scale approaches may prove\nto have more economical manufacturing. Recent\nwork has shown Si-InP photonic wire bonding\ncoupling losses as low as 0.4 dB [34] and repeatable sub-1dB losses resilient to thermal cycling\n\n[44].The ongoing development of various hybrid\nand heterogeneous integration methods and their\npermeation into industry offers exciting avenues\nfor future work.\n\nIn comparison to previous on-chip time-bin\nQKD demonstrations, we find the low minimum\n\n9\n\nQBER of the system notable. Sub-1% QBER, as\nwe measure, is more commonly associated with\ntime-of-arrival measurements due to the higher\nextinction ratio [9, 45]. In contrast, qubits encoded\nin differential phase, like in the present work,\nare more vulnerable to intensity imbalance and\ndelay-line mismatch between Alice and Bob. Here,\nwe find that the precise manufacturability of SiN\nyields excellently matched interferometers, which\nproduces high contrast interference. Further, the\navailability of heaters on SiN allows the AMZI\nstructures to be finely adjusted and offset manufacturing errors further. This stands favourably in\ncomparison to other material platforms used for\nQKD receivers, such as planar light-wave circuits\non silica.\n\nWe can also compare alternative material platforms for the modulator component. For example,\nthin film lithium-nio",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 16.067821224210363,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 7781,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco.md",
+        "title": "2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco",
+        "text": "ation as a function of the absorption depth for\na 320 µm sensor at 150 V bias voltage, shown for different\nphoton energies. The dashed line represents the limiting case\nwhere the repulsion effect is removed and the initial Gaussian\ndistribution width _𝜎_ is set to zero, approximating the behavior\nat 0 keV photon energy.\n\n**5.3. Potential applications of the simulation**\n**methods**\n\nThe two charge transport simulation methods, along\nwith the refined parameterization scheme, enable efficient\nand accurate generation of X-ray simulation events. In Xray interpolation tasks, the interpolation mapping can be\nderived from simulation events, eliminating the need for\ntime-consuming flat-field data acquisition. Moreover, simulation inherently provides access to ground truth information, which is challenging or even impossible to obtain\nexperimentally. For example, in deep learning-based position reconstruction tasks [3], labeling experimental training\nsamples with the true incident position required substantial\neffort and relied on the specific alignment of the electron\nmicroscope beam. In contract, accurate simulation events\nwith access to ground truth information can significantly\nfacilitate deep learning studies.\nWith appropriate extensions, the two simulation methods also have broad applicability across a range of detector\ntechnologies. The comprehensive simulation method, which\ntracks individual charge carriers, can be adapted for detectors with complex geometries and electric field distributions,\nsuch as monolithic active pixel sensors (MAPS) and 3D sensor designs. Incorporating the weighting field would further\nenable this approach to simulate transient signal responses.\nAdditionally, this method holds the potential for studying\nsignal formation in high-Z sensors and low-gain avalanche\nsensors (LGAD), where additional processes such as charge\ntrapping, detrapping, and multiplication processes must be\nconsidered.\nOn the other hand, the simplified spherical model, which\nassumes spherical symmetry of the charge cloud, achieves\n\ncomparable accuracy with significantly reduced computational cost in the case of silicon hybrid pixel detectors. This\nmethod can be extended for the more detectors where the\n\nspherical symmetry of charge cloud is also generally valid,\nsuch as microstrip detectors. Provided adequate computational resources (e.g., a high-performance computing cluster) this model enables the generation of simulation events\nacross arbitrary photon energies an",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 15.901915749229355,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5414,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2822608__2409.07543__Characterisation_of_analogue_MAPS_fabricated_in_65_nm_technology_for_the_ALICE_ITS3.md",
+        "title": "2024__recid_2822608__2409.07543__Characterisation_of_analogue_MAPS_fabricated_in_65_nm_technology_for_the_ALICE_ITS3",
+        "text": "## NIMA POST-PROCESS BANNER TO BE REMOVED AFTER FINAL ACCEPTANCE Characterisation of analogue MAPS fabricated in 65 nm technology for the ALICE ITS3\n\nKunal Gautam [a,b,1,][∗], Ajit Kumar [c]\n\n_a_ _Vrije Universiteit Brussel, Pleinlaan 2, 1050, Brussels, BE_\n_b_ _Universit¨at Z¨urich, Winterthurerstr. 190, 8057, Z¨urich, CH_\n_c_ _Universit´e de Strasbourg, CNRS, IPHC UMR 7178, F-67000, Strasbourg, FR_\n\n**Abstract**\n\nThe ALICE ITS3 project foresees the use of ultra-light MAPS, developed in the 65 nm imaging process, for the vertex detector in\nthe ALICE experiment at the LHC to drastically improve the vertexing performance. This new development, initiated by an international consortium of the ALICE ITS3 collaboration and the CERN EP R&D project, enhances the overall MAPS performance.\nSmall-scale prototypes are designed to study the analogue properties of the TPSCo 65 nm technology and compare the charge\ncollection performance in different processes, pitches, pixel geometries, and irradiation levels. Recent results from lab and testbeam characterisation detailing the efficiency and the spatial resolution of the APTS with different pixel geometries and pitches\nsatisfy the ALICE ITS3 requirements. A quantitative evolution of the charge collection and sharing among pixels is evident in the\nCE-65 with different in-pixel readouts. Attaining a spatial resolution better than 3 µm with a 10 µm pitch and over 99% efficiency\nin the moderate irradiation environment of ALICE also supports the viability of using 65 nm MAPS for FCC-ee vertex detectors.\n\n_Keywords:_ ALICE, MAPS, ITS3, TPSCo, APTS, CE-65, Vertex Detector, Silicon Sensor\n\n**1. ALICE ITS3 and the Small-Scale Prototypes**\n\nThe Inner Tracking System upgrade (ITS3) [1] of the ALICE\ndetector foresees the use of Monolithic Active Pixel Sensors\n\n(MAPS) developed in the 65 nm imaging process. The ITS3 upgrade is expected to drastically reduce the material budget and\nimprove the pointing resolution by a factor of 2 over the entire\nmomentum range of interest. Process modifications in the form\nof a blanket low-dose n-type implant and gaps at the edges of\npixel boundaries are introduced to achieve full depletion of the\nsensor and a more uniform electric field while keeping the effective pixel capacitance low [2, 3]. These modifications speed\nup charge collection and reduce charge sharing among neighbouring pixels. Two small-scale analogue prototypes were designed to characterise the charge-collection properties of the 65",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 15.176320702004926,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_.md",
+        "title": "2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_",
+        "text": "**\n\nThe upcoming Mu3e experiment at PSI aims to find or exclude the cLFV decay\n_µ_ [+] _→_ _e_ [+] _e_ _[−]_ _e_ [+] with an unprecedented sensitivity to branching ratios as low as 10 _[−]_ [16] . In\na first phase, branching ratios of 10 _[−]_ [14] to a few 10 _[−]_ [15] can be studied. In addition, dark\nphotons emitted in muon decays can be investigated with competitive sensitivity, and\ncurrent limits on _µ_ [+] _→_ _e_ [+] _X_ decays can be surpassed by two orders of magnitude already\nwith the phase I Mu3e experiment.\nCurrently, the design and prototyping phase of the phase I Mu3e experiment is\nfinishing and the experiment is transitioning to the production and construction phase.\nDemonstrator detector modules have been successfully operated in an integration run in\n2021 and a cosmics run in 2022. Commissioning and first physics data taking are expected\nfor 2024.\n\n**Funding:** The author’s work is funded by the Federal Ministry of Education and Research (BMBF)\nand the Baden-Württemberg Ministry of Science as part of the Excellence Strategy of the German\nFederal and State Governments. The author further acknowledges the support by the German\nResearch Foundation (DFG) funded Research Training Group “Particle Physics beyond the Standard\nModel” (GK 1994) on previous works on this subject.\n\n**Institutional Review Board Statement:** Not applicable\n\n**Informed Consent Statement:** Not applicable\n\n**Data Availability Statement:** Data sharing not applicable\n\n**Conflicts of Interest:** The author declares no conflict of interest.\n\n**Abbreviations**\n\nThe following abbreviations are used in this manuscript:\n\nSM Standard Model\n\nBSM Beyond the Standard Model\n(c)LFV (charged) Lepton Flavour Violation\nPSI Paul Scherrer Institute\n\nCL Confidence Level\nDAQ Data Acquisition\nASIC Application-Specific Integrated Circuit\nMuTRiG Muon Timing Resolver including Gigabit-Link\nHV-MAPS High-Voltage Monolithic Active Pixel Sensors\n\n_Phys. Sci. Forum_ **2023**, _8_, 30 6 of 6\n\n**References**\n\n1. Arndt, K.; Augustin, H.; Baesso, P.; Berger, N.; Berg, F.; Betancourt, C.; Bortoletto, D.; Bravar, A.; Briggl, K.; vom Bruch, D.; et al.\nTechnical Design of the Phase I Mu3e Experiment. _Nucl. Instrum. Meth. A_ **2021**, _1014_ [, 165679. https://doi.org/10.1016/j.nima.20](https://doi.org/10.1016/j.nima.2021.165679)\n[21.165679.](https://doi.org/10.1016/j.nima.2021.165679)\n\n2. Bellgardt, U.; Otter, G.; Eichler, R.; Felawka, L.; Niebuhr, C.; Walter, H.K.; Bertl, W.; Lordong, N.; Martino, J.; Egl",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 15.138654625729355,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1388,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip.md",
+        "title": "2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip",
+        "text": "em over real fibre spools, recording positive\nsecure key rates over 250 km of low-loss fibre in\nthe finite key regime. Long-term testing of the system is used to demonstrate the intrinsic stability\nof the PIC platform. These results underline the\npotential of hybrid integration to expand the capabilities of QKD-PICs, as well as the wider field of\nquantum integrated photonics.\n\n### **2 Results**\n\n**2.1 Hybrid Integrated Transceivers**\n\nA schematic containing two of the hybrid QKD\ntransceiver chips is shown in Figure 1.a. The\nhybrid chip consists of two parts, a SiN asymmetric Mach-Zehnder interferometer (AMZI) and\n\n3\n\n**Fig. 1** An overview of the hybrid transceiver experiment. **(a)** A schematic diagram of the experimental setup including\nhybrid chip circuits. Two hybrid PICs are shown connected via a duplex fibre channel of either emulated loss or real fibre\nspools. The visible on-chip components include EOPMs, mach-Zehnder interferometers (MZIs), TOPMs and delay lines\n(DLs). Variable optical attenuators (VOAs) are used to bring the photon flux down to single photon levels. Polarisation\ncontrollers (PC) are used to align the axis of polarisation between PICs. Each hybrid PIC is connected to an externally\nmodulated laser (EML) chip and two single photon detectors. **(b)** Example output from the EML chips. Short gain-switched\npulses are variably attenuated to produce three different intensities; signal, decoy and vacuum. **(c)** The four quantum states\nutilised by the system, as projected onto the time-bin Bloch sphere. **(d)** The operating principle of the transmitter. On top\nof the figure is the required phase states. The red line shows the applied Tx EOPM signal, whilst the blue pulses show the\nresulting phase relationship applied. **(e)** The operating principle of the receiver. The red line shows the applied Rx EOPM\nsignal, whilst the blue pulses show the resulting phase relationship applied, which thus determines the measurement basis.\n\nan InP EOPM, permanently bonded via an edgecoupled interface. Efficient coupling of light across\nthe interface requires three things: smooth facets,\nmode-size matching and precise alignment. In our\ndevices, spot-size converter structures on both\nPICs provide the mode-size matching (both to\n10 _µ_ m mode field diameter) and also increase the\ntolerance to misalignment. Index-matched epoxy\nwas used for bonding. Transmitted optical power\nthrough multiple interface structures is monitored\nthroughout the bonding process t",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 15.037370966110235,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6297,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker.md",
+        "title": "2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker",
+        "text": "ensor has inner and outer sensor parts, thus the hybrid is\ndivided into inner and outer parts accordingly. For inner sensors, 512 silicon\nstrips are designed for signal readout, whereas each outer sensor utilizes 256\nsilicon strips. To better optimize the geometry, the inner hybrid carries\nsignals from 1 sensor and the outer hybrid carries signals from 2 sensors\nfor each module. Thus 512 readout channels are required for both inner\nand outer hybrids. The APV25-S1 chip [4] is chosen to read out the sensor\nsignals as it is an analogue pipeline ASIC intended for the read-out of silicon\nstrip detectors. Each APV25 chip features 128 channels, making 4 APV25\nchips sufficient for the inner and outer sensor requirements. To meet the\npower supply demands of these sensors, we have configured 14 evenly spaced\nhigh-voltage lines in the inner hybrid and 16 in the outer hybrid.\n\n6\n\nshow the layouts of inner and outer hybrids, and (c) and (d) are the corresponding photos. The hybrids share the same sector angle of 32 degrees,\nand the inner and outer hybrids have tail lengths of 12.6 cm and 2cm, respectively. Each hybrid is made of Kapton substrate with 3 copper layers\nand a thickness of roughly 0.3mm to reduce interactions with passing particles in the sensor area. Both inner and outer hybrids have 4 APV25 chip\nplacement sites, and provide the electrical connection from the APV25 chips\nto the connector site on the end of each hybrid. The silicon strip sensors\nand APV25 chips are wire-bonded and glued onto hybrids. Thus, power and\nsignal connectivity from the hybrid to APV25 chips are provided by wire\nbonds. All hybrids are finished with ENEPIG plating for compatibility with\nboth wire bonding and conventional soldering.\n\n7\n\n|(nA)<br>180 I<br>160<br>140<br>120<br>100<br>80 InnerSensor Chip2 Hamamatsu<br>InnerSensor Chip3 Hamamatsu<br>60<br>InnerSensor Chip4 Hamamatsu<br>InnerSensor Chip5 Hamamatsu<br>40<br>20<br>0 20 40 60 80 100 120 140 160 180 200<br>V (volt)|Col2|\n|---|---|\n|||\n|0<br>20<br>40<br>60<br>80<br>100<br>120<br>140<br>160<br>180<br>200<br>V (volt)<br>0.05<br>0.1<br>0.15<br>0.2<br>0.25<br>0.3<br>0.35<br>6<br>−<br>10<br>×<br>)<br>2<br> (1/nF<br>2<br>1/C<br>InnerSensor Chip2 Hamamatsu<br>InnerSensor Chip3 Hamamatsu<br>InnerSensor Chip4 Hamamatsu<br>InnerSensor Chip5 Hamamatsu||\n\nFigure 5: Leakage current _I_ (top) and inverse capacitance squared 1 _/C_ [2] (bottom) as a\nfunction of reverse bias voltage _V_ for inner sensors.\n\n**5. Module Mechanics**\n\n_5.1. Main s",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 14.825462234601883,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4512,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology.md",
+        "title": "2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology",
+        "text": ", 13]) are selected to derive\nelectric fields for subsequent Monte Carlo simulations.\nMore details on this simulation approach can be found\nin [4].\n\n_6.2. Monte Carlo Simulations_\n\nMonte Carlo simulations are employed to model the\nfull response of a detector. This is achieved with the\nmodular framework Allpix [2] [25], developed for Monte\nCarlo simulations of semiconductor radiation detectors.\n\nThe results of these simulations allow for direct com\nparison with experimental data.\nThe simulated detector structure consists of a matrix\n\nof square pixels with a 25 µm pitch and a sensor thickness of 50 µm (including epitaxial layer and substrate).\n\n4\n\nThe electric field for each pixel cell is imported from\nthe TCAD simulation described above. A 4 GeV elec\ntron beam is used as a particle source to compare with\nthe test-beam results. The data processing is analog\nto the one described in Section 5 for test-beam data.\n\nThe most significant observables that can be obtained\nare detection efficiency, cluster size, spatial resolution,\nand charge collection. Initial results from Monte Carlo\nsimulations using generic TCAD fields have been reported in [2], and the most recent results on efficiency\nand charge collection are compared with test-beam data\nin the following section.\n\n**7. Comparing Data and Simulation**\n\nSimulations are compared to experimental data in order to validate the employed simulation approach. Figures 4 and 5 show, respectively, the comparison of the\nseed pixel charge distribution and the efficiency as a\nfunction of the threshold for a detector in the n-gap design. Both plots show a good agreement between simulation and experimental data.\nIn figure 4, both charge distributions follow the trend\nof a Landau distribution convolved with a Gaussian,\nrepresenting effects in the interaction of minimum ionizing particles traversing thin sensors, such as stochastic\nfluctuations of charge deposition and electronic noise.\nThis convolved function is fitted to extract the _most_\n_probable value_ (MPV) for the charge collection. The\nobtained MPVs are around 500 electrons.\n\nFigure 4: Comparison of experimental data and simulations of charge\ndistribution of the seed pixel for the n-gap layout at -4.8 V bias volt\nage.\n\nFigure 5 shows that the agreement between experimental data and simulations for the detector efficiency\nis within 1%, only considering statistical uncertainties.\n\n Figure 5: Comparison of experimental data and simulations of effi\nciency as a function of",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 14.642223684341166,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5105,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L.md",
+        "title": "2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L",
+        "text": "Preprint May-2024\n\n# Radiation damage on Silicon Photomultipliers from ionizing and non-ionizing radiation of low-earth orbit operations\n\nStefano Merzi [a,] *, F. Acerbi [ a,b], C. Aicardi [ c], D. Fiore [ d], V. Goiffon [ e], A. Gola [ a,b], O. Marcelot [ e],\nA. Materne [ c], O. Saint-Pe [ d ]\n\n_a_ _Fondazione Bruno Kessler (FBK), Center for Sensors and Devices, Via Sommarive 18, Trento, Italy._\n\n_b_ _TIFPA Trento Institute for Fundamental Physics and Applications, Via Sommarive, 14, Trento, Italy._\n\n_c_ _Centre National d'Études Spatiales (CNES), 18, avenue Edouard Belin, Toulouse, France._\n\n_d_ _AIRBUS Defence and Space, 31, Rue des Cosmonautes Toulouse, France._\n\n_e_ _Institut Supérieur de l'Aéronautique et de l'Espace (ISAE-SUPAERO), 10, avenue Édouard Belin, Toulouse, France._\n\nA B S T R A C T\n\nSilicon Photomultipliers (SiPMs) are single photon detectors that gained increasing interest in many applications as an alternative to photomultiplier tubes.\nIn particular in the field of space experiments, where volume, weight and power consumption are a major constraint, their advantages like compactness,\nruggedness, and their potential to achieve high quantum efficiency from UV to NIR, makes them ideal candidates for spaceborne, low photon flux detectors.\nDuring space missions however, SiPMs are usually exposed to high levels of radiation, both ionizing and non-ionizing, which can deteriorate the performance\nof these detectors over time.\n\nThe goal of this work is to compare process and layout variation of SiPMs in terms of their radiation damage effects to identify the features that helps\nreducing the deterioration of the performance and develop the next generation of more radiation tolerant detectors. To do this we irradiated with protons and\nX-rays several NUV-HD SiPMs with small area (single microcell, 0.2x0.2 mm² and 1x1 mm²) produced in FBK. We performed online current-voltage\nmeasurements right after each irradiation step and a complete functional characterization before and after irradiation. We compare the results and show the\nmost promising variations for future production of SiPMs for space applications.\n\n**1.** **Introduction**\n\nSilicon photomultipliers (SiPMs) are solid state photon detectors\n\ncomposed of arrays of passively-quenched Single-Photon Avalanche\n\nDiodes (SPADs), also referred to as “microcell”, all connected in parallel\n\nand working above breakdown condition, in Geiger mode [1]. These\n\ndetectors have gained increasing interest in the",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 14.530740514426181,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7780,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco.md",
+        "title": "2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco",
+        "text": "width is 0.1 keV, and the error bars represent the statistical uncertainties. The bottom panel displays the corresponding\nratio of simulation to measurement.\n\npairs per µm across the sensor thickness. In the _𝑥_ and _𝑦_\ndirections, the initial distribution followed a Gaussian profile\nwith a standard deviation of 1 nm. The RMS of the collected\nelectron distribution was 1.27 µm with the repulsion effect\nincluded, 2.4% larger than the 1.24 µm RMS obtained when\nrepulsion was neglected. This difference becomes even less\nsignificant when the incident MIP trajectory is not perpendicular to the sensor surface or when the MAPS sensor is\n\nnot fully depleted. These results support the conventional\nassumption that repulsion effects can be neglected for MIPs,\nand that the Gaussian approximation remains valid.\n\n**5.2. Limitations of the simulation methods**\n\nComparing the results in Fig. 5 with our previous work\n\n[12], we observed substantial improvements in the agreement between simulations and measurements, primarily due\nto the use of monochromatic X-ray beam. Additionally, the\n\ncomprehensive simulation method eliminates other previously identified sources of discrepancies, such as the spherical symmetry assumption and the boundary condition. However, the comparable performance of the simplified spherical model suggests that the dominant remaining source\nof discrepancy is the intrinsic uncertainty—up to 10%—in\nthe Jacoboni-Canali mobility model [16]. Other potential\nsources of discrepancy include non-uniformities of the electric field distribution due to the pixel structure as well as the\nnon-uniform doping concentration in the sensor bulk.\nIt is important to note that the semi-empirical Gaussian\nmodel employed for the initial charge carrier distribution has\nbeen validated within the photon energy range of 5-25 keV,\nwhich adequately covers typical operational conditions for\nhybrid pixel detectors. For photon energies exceeding this\nrange, the extended Bethe range of photoelectrons leads to\nbroader charge cloud spreads, which are not well described\nby a simple Gaussian distribution.\n\nX. Xie et al.: _Preprint submitted to Elsevier_ Page 6 of 8\n\n**Figure 6:** Root mean square (RMS) of hole distributions after\ntransport simulation as a function of the absorption depth for\na 320 µm sensor at 150 V bias voltage, shown for different\nphoton energies. The dashed line represents the limiting case\nwhere the repulsion effect is removed and the initial Gaussian\ndistribution width",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 13.988219574492144,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.864200774114579,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.864200774114579,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

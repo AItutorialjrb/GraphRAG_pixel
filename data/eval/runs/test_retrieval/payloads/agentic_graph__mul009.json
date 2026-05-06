@@ -1,0 +1,397 @@
+{
+  "benchmark": {
+    "query_id": "mul009",
+    "query_type": "multi_hop",
+    "query": "How can negative questions reveal hidden weakness in answer generation?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "negative",
+      "questions"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can negative questions reveal hidden weakness in answer generation?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6920,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "## Search for long-lived charged particles using the CMS detector in Run-2\n\nTamas Almos Vami _[∗]_\n\n_a_ _University of California Santa Barbara,, Santa Barbara, 93117, CA, USA_\n\n**Abstract**\n\nLong-lived charged particles are predicted by various theories beyond the\nStandard Model, leading to unique signatures that could reveal new physics.\nAt the LHC, the CMS detector enables searches for these massive particles,\nidentifiable by their characteristic ionization patterns. Using data collected\nduring 2017-2018, we search for signals of anomalous ionization in the silicon\ntracker. We present a novel approach to background prediction, utilizing\nthe distinct ionization measurements of the silicon pixel and strip detectors\nas independent variables. We interpret the results within several models\nincluding those with staus, stops, gluinos, and multiply charged particles as\nwell as a new model with decays from a Z _[′]_ boson.\n\n_Keywords:_ Long-lived, exotic physics, energy loss in silicon, CMS\n\n_∗_ On behalf of the CMS Collaboration\n\n_Preprint submitted to Nuclear Physics B_ _December 18, 2024_\n\n**1. Introduction**\n\nThe Standard Model (SM) is a quantum field theory that explains the\nuniverse at its fundamental level. Often we describe it by its particle content.\nThe force-carrying particles, known as bosons, mediate fundamental interactions: the photon for electromagnetic interaction, gluons for the strong\ninteraction, and the W and Z bosons for the weak interaction. The Higgs\nboson, a scalar particle, gives mass to elementary particles through the Higgs\nmechanism. The remaining particles, called fermions, make up matter and\nare divided into quarks and leptons. The quarks interact with all the three\nforces, while the (charged) leptons interact with (electromagnetic and) weak\ninteraction(s). There are three fermion families in the SM.\nDespite its many successes, the Standard Model cannot be the ultimate\ntheory of the universe, as it leaves several fundamental questions unanswered.\nFor example, according to the Big Bang theory, equal amounts of matter and\nantimatter should have been created, yet the observable universe consists\nalmost entirely of matter. What causes this matter-antimatter asymmetry?\nThere is strong evidence of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been seve",
+        "score": -6.519350213890716,
+        "dense_score": null,
+        "bm25_score": 14.597765601813371,
+        "graph_score": 0.7520058351568198,
+        "rerank_score": -10.148687362670898,
+        "matched_nodes": [
+          "We",
+          "On",
+          "At",
+          "CA",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "We"
+        ],
+        "community_id": "We",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7098,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2893262__2502.15494__Measuring_Dark_Currents_in_Multiple_Cryogenic_SiPMs_With_Sub-pA_Sensitivity_Using_an_Autom.md",
+        "title": "2025__recid_2893262__2502.15494__Measuring_Dark_Currents_in_Multiple_Cryogenic_SiPMs_With_Sub-pA_Sensitivity_Using_an_Autom",
+        "text": "n of defective SPADs can be spatially correlated, which\ncan result in clusters of defects within a device [18], [19].\nAt moderate temperatures, identifying SiPMs with defective\nSPADs through IV measurements can be challenging because\nthe summed DCR from normally functioning SPADs obscures\nthe contribution from defective SPADs. However, at cryogenic\ntemperature, the DCR contribution from defective SPADs may\nremain disproportionately high, as structural or contaminationrelated defects are less affected by cooling. Identifying and\nrejecting defective or poorly operating devices prior to detector\nassembly is crucial to ensure that the dark noise contribution\nremains below design specifications.\nCryogenic testing of SiPMs is more efficient when large\nbatches are processed in a single cooldown phase, mostly due\nto the time required to cycle the cryostat. The dark current in\nan SiPM at cryogenic temperature is very small and requires\na sensitive ammeter and specialized coaxial/triaxial vacuum\nfeedthroughs. The high cost per channel for measuring the\ndark current in cryogenic SiPMs motivated the development\nof a vacuum-compatible IV multiplexer (IV-MUX) capable of\nrouting the signals for up to 105 SiPMs through a single\ntriaxial vacuum feedthrough to an ammeter with minimal\nleakage current. This is particularly challenging, as recent\nwork by researchers at FBK [20] demonstrates that measuring\nlow currents at cryogenic temperatures is difficult; their resolution, on the order of 1 pA, limits their ability to detect\ndark current above the noise from leakage currents when\ntesting a single SiPM. In contrast, our IV-MUX achieves sub\n\npA resolution while multiplexing multiple SiPMs, all while\nmanaging the added complexity of measuring low currents\nacross multiple devices with vacuum compatible materials. We\ndescribe the design of the IV-MUX and present results from\ntwo sets of performance tests: (1) measurements in vacuum\nto validate multi-channel operation with a single feedthrough,\nand (2) precision measurements in liquid nitrogen (LN) to\nassess sub-pA sensitivity. In the latter case, dynamic pulsecounting measurements are compared to IV measurements to\nbenchmark low-current SiPM behavior and validate the IV\nMUX in regimes where conventional systems lack sufficient\nresolution. Together, these results demonstrate that the IVMUX is a reliable and efficient tool for high-throughput\ncharacterization of cryogenic SiPMs.\n\nII. D ESIGN\n\nTo facilitate high-throughput IV testin",
+        "score": -6.716966575127288,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7520058351568198,
+        "rerank_score": -10.447174072265625,
+        "matched_nodes": [
+          "We",
+          "In",
+          "IV",
+          "At",
+          "The",
+          "To"
+        ],
+        "path_nodes": [
+          "We"
+        ],
+        "community_id": "We",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2616,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera.md",
+        "title": "2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera",
+        "text": "perature wrapping holes current\n(Gy/hr) ( _µ_ A)\nBC-412 0.3 3% O 2 ESR - 10.13\nBC-412 0.3 3% O 2 ESR - 10.52\nBC-412 0.3 N 2 ESR - 10.63\nBC-412 0.3 Air ESR - 7.49\nFNAL 0.3 3% O 2 ESR - 5.70\nBC-412 0.3 3% O 2 ESR A 7.28\nBC-412 0.3 3% O 2 ESR B 7.89\nBC-412 0.3 3% O 2 Black - 0.45\nBC-412 0.3 3% O 2 - - 0.44\nBC-412 0.3 N 2 - - 0.45\nBC-412 0.3 Air - - 0.40\nFNAL 0.3 3% O 2 - - 0.49\nFNAL 0.3 N 2 - - 0.58\nBC-412 1.3 3% O 2 ESR - 38.14\nBC-412 1.3 Air ESR - 29.77\nEJ-208 1.3 3% O 2 ESR - 38.94\nEJ-208 1.3 Air ESR - 30.79\nBC-412 1.3 Air Tyvek [®] - 15.13\nBC-412 1.6 Air, 22° C ESR - 23.9\n\nBecause we acquired data from a given channel only once every several sec\n_∼_\nonds, from these data we cannot rule out the possibility of a rapid ( seconds)\ninitial decline in scintillator signals upon irradiation. To test for a rapid initial decline, we employed a second, lower dose rate irradiator that contributed\nwith a dose rate 10 _[−]_ [3] that of the main irradiator, and thus would have caused\nminimal radiation damage. We measured SiPM signals using this low dose rate\nirradiator both before and after a one minute exposure to the primary irradiator\n(which was the first irradiation the tiles received). A decrease in the ratio of\nafter/before SiPM signals would indicate radiation damage in the first minute\nof irradiation. We determined this ratio independently for tiles at -30° C in air\nand in 3% O 2 . For each gas, we computed the weighted average of the ratio\nfor two similar tiles, EJ-208 and BC-412, both wrapped in ESR. We find the\n\n12\n\nweighted mean for air is 1 _._ 003 _±_ 0 _._ 004, and for 3% O 2 is 0 _._ 999 _±_ 0 _._ 004; both are\nconsistent with no damage from one minute of irradiation, so the values from\nTable 1 are accurate measurements of the initial signal.\nFigure 7 shows the effect of temperature on signal loss during irradiation,\npresumably due to increasing radical density. The dataset shows the relative\nlight yield as a function of dose for a BC-412 tile wrapped in Tyvek [®] in air.\nInitially the temperature was -30° C. At the dose corresponding to the left vertical line, the temperature was changed to -15° C. At the right vertical line, the\ntemperature was changed to 0° C. During the first period at -30° C, there is a\nrapid light loss. When the temperature is changed to -15° C, the slope changes\nand the rate of decrease of light loss slows. When the temperature is changed to\n0° C, the light yield increases. An increase is expected if the higher temperature\nallows",
+        "score": -6.740510385940407,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7082421590080233,
+        "rerank_score": -10.476797103881836,
+        "matched_nodes": [
+          "We",
+          "An",
+          "At",
+          "The",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "We"
+        ],
+        "community_id": "We",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 386,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "80 pixels in both directions. Only the whole images not selected using the\ndefault grid would then be evaluated with the additional secondary grid.\nThe anomaly detector tends to select patches at a guard ring _§_, cell numbers and\ncell borders as false positive, due to the increase in the AE reconstruction error in these\nareas. In addition, contact marks are a common source of false positives, see (e) in\nfigure 11. With the proposed approach, where the detection is invariant to the anomaly\nlocation on the sensor, these cannot be eliminated.\n\n_6.2. Efficiency_\n\nAverage inference times for a whole image are reported in table 4, with both the default\ngrid and the secondary grid. An average sensor scan consisted of 335 images, for which\nthe picture-taking time is 9.2 minutes. On average, an inspector inspects a whole image\nin two seconds, evaluating one scan in 11 minutes. On an RTX A2000, the inference time\nis less than 6 minutes for the scan with both grids. The GPU is necessary, as the short\nrun time allows parallel picture-taking and pre-selection. At variance, the evaluation of\na scan would take approximately 45 minutes on a regular CPU, significantly delaying\nthe subsequent electrical characterization.\n\n**Table 4.** Average inference times on a GPU or a CPU for whole images using the\ndefault and secondary grids.\n\nGrid Run time [s]\n\nRTX A2000 GPU Default 0.8\n\n+ secondary 1.0\n\nCPU Default 8.1\n\n+ secondary 13.8\n\n_6.3. Continuous learning_\n\nGiven that new data will be measured continuously, the PSA should be retrained\nto adapt to the new data. Using new normal images to train the AE would not\nimprove its task of poor anomaly reconstruction, so it does not require retraining. Also\nthe background detector is considered to be robust enough to not require immediate\nretraining. However, the accuracy of the anomaly detector could be improved via\ntraining with novel anomalous patches. For example, training instances such as the\nmissed anomaly (d) in figure 10 did not exist in the original training data set.\nAnomalous images acquired after the initial deployment were given ground truth\nlabels to extend the training data set. The anomaly detector was retrained starting from\n\n_§_ A guard ring is a structure at the periphery of a sensor designed to protect it from currents from the\ncutting edge, and shown in figure 11 (f) as the black line with false positives.\n\n14\n\nrandomly initialized weights with 2.1 times more anomalous patches than the original\nmodel. An independ",
+        "score": -6.7494065699393,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7520058351568198,
+        "rerank_score": -10.497081756591797,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "At",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7097,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2893262__2502.15494__Measuring_Dark_Currents_in_Multiple_Cryogenic_SiPMs_With_Sub-pA_Sensitivity_Using_an_Autom.md",
+        "title": "2025__recid_2893262__2502.15494__Measuring_Dark_Currents_in_Multiple_Cryogenic_SiPMs_With_Sub-pA_Sensitivity_Using_an_Autom",
+        "text": "generation particle physics\nexperiments are implementing large arrays of SiPMs, totaling\nseveral square-meters in size, immersed in noble liquids as\nthe photosensors of choice [4]–[6]. This necessitates accurate\nmethods to efficiently test thousands of individual SiPMs.\nCurrent-voltage (IV) measurements are commonly used to\ncharacterize the electrical properties of semiconductors, such\nas diodes, transistors, and solar cells. The process involves\napplying a voltage across the device and measuring the resulting current. In SiPMs, IV characteristics are valuable for\nverifying compliance with specification requirements. The IV\n\n1 Department of Physics, McGill University, Montreal, QC H3A 2T8,\nCanada.\nLucas Darroch’s current affiliation: is with the Wright Laboratory, Yale\nUniversity, New Haven, USA (e-mail: lucas.darroch@yale.edu).\nMarc-Antoine Leclerc’s current affiliation: Medical Physics Unit, McGill\nUniversity, Montreal, Canada.\nThomas McElroy’s current affiliation: PulseMedica, Edmonton, Canada.\n\nresponse of SiPMs can alternatively be reconstructed through\ndynamic measurements [3], using models that predict how\nthese measurements vary with voltage [7]–[9]. Hence, the IV\nresponse of an SiPM encodes information about the optical,\nelectrical, and nuisance parameters that describe its dynamic\nresponse. Measuring the IV response may be the most practical\nmethod for bulk SiPM characterization in experiments that\napply them at large scale.\nThe photodetection efficiency (PDE), single photoelectron\n(SPE) charge, correlated avalanche (CA) noise, and dark\ncount rate (DCR) all contribute to determining the incident\nlight flux on an SiPM. In SiPM technologies designed for\nnoble liquid detectors, the PDE, SPE charge, and CA noise\nexhibit a weak temperature dependence [10]–[13], whereas the\ndark count rate (DCR) strongly depends on temperature [14].\nAlthough there is a general understanding of how temperature\naffects these parameters, cryogenic testing is often necessary\nto sufficiently characterize SiPMs for cryogenic applications,\nsuch as noble liquid detectors. Additionally, there is a random\nprobability for SPADs to contain structural or contaminationrelated defects that cause a high DCR [15]–[17]. Moreover, the\nlocation of defective SPADs can be spatially correlated, which\ncan result in clusters of defects within a device [18], [19].\nAt moderate temperatures, identifying SiPMs with defective\nSPADs through IV measurements can be challenging because\nthe summed DCR f",
+        "score": -6.75427360332597,
+        "dense_score": null,
+        "bm25_score": 12.208349892038447,
+        "graph_score": 0.787746170678337,
+        "rerank_score": -10.514126777648926,
+        "matched_nodes": [
+          "In",
+          "IV",
+          "At",
+          "CA",
+          "The",
+          "USA",
+          "Department"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4009,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs.md",
+        "title": "2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs",
+        "text": "and taking\n_U_ / _U_ ch = 1 and _x_ ≪ 1, we found that a crosstalk probability of\n10% (irrespective of whether it is prompt or delayed crosstalk)\nleads to _c_ = 0.101, whereas _c_ = 0.059 is obtained for the same\nprobability of afterpulsing. Notice that _c_ can be slightly greater\nthan the probability of crosstalk, which is defined as the probability of inducing one or more secondary avalanches. This is\npartly compensated by the fact that pixels at the borders of the\nSiPM have a lower crosstalk probability. The higher the number of pixels, the smaller these border effects. On the other\nhand, cascades of secondary avalanches due to any component\nof correlated noise contribute to increasing _c_, this effect being\nrelevant when the probability of correlated noise is high, as discussed in [10]. Analytical expressions of _c_ for crosstalk are\navailable in [8, 9], but the accurate value of _c_ should be obtained by simulation when afterpulsing is not negligible.\nAt high photon rates, where nonlinearity is significant, the\nuncompleted recovery of pixels reduces the gain factor due to\ncorrelated noise. For exponential light pulses, prompt crosstalk\nwas found to be more mitigated than delayed crosstalk and afterpulsing for the same probability. This is because seeds due\nto prompt crosstalk are mainly produced at the beginning of the\nlight pulse, just when the photon rate is highest. In contrast,\nseeds due to delayed crosstalk and afterpulsing are produced\nlater, when the photon rate is lower and the recovery of pixels is more advanced. These effects are more noticeable when\nstudying the shape of the output signal rather than the integrated\ncharge. In Fig. 4, averaged simulated signals for a probability\nof correlated noise of 20% (assuming a sole noise component\nin each case) are compared with that obtained in the absence\nof correlated noise. We used the same simulation parameters\nas before, i.e., τ d = 5 ns and τ rec = τ bulk = 10 ns. Prompt\ncrosstalk gives rise to an almost constant scale factor to the signal at _x_ = 0.5, but the effect is much lower at _x_ = 5 as a conse\n\n5\n\nFigure 4: Averaged SiPM signals simulated for different situations of correlated\nnoise (i.e., no noise, 20% of prompt crosstalk, 20% of afterpulsing, or 20% of\ndelayed crosstalk) and different amounts of seeds per pixel (i.e., _x_ = 0.5 and 5).\n\n|Shape|Probability density function|Mean ph. rate|\n|---|---|---|\n|Exponential|1<br>τd _e_−_t_/τd (_t_ ≥0)|_n_<br>2τd|\n|Rectangular|1<br>τw (0 ≤_t_",
+        "score": -6.885661118965789,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7520058351568198,
+        "rerank_score": -10.706704139709473,
+        "matched_nodes": [
+          "We",
+          "In",
+          "On",
+          "At",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "We"
+        ],
+        "community_id": "We",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5794,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices.md",
+        "title": "2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices",
+        "text": "rs that show non-physical parameters (e.g. lever arm > 1) are filtered out. We also discard pairs with\nlever arm < 0.5, as these are deemed highly unlikely in this architecture\n\n8. Scores are standardised and weighted and the line pairs are ranked according to the sum of scores, with the\nhighest scoring pair used to extract dot parameters as shown in Fig. 4i\n\n**III.** **ASSESSING LAYOUT DEPENDENT EFFECTS VIA QUANTUM DOT QUALITY**\n\nAs stated in the main text, during the design and layout of the farm devices known sources of variation in the\nsemiconductor manufacturing process were taken into account to minimise any bias in the device statistics. To\nminimise layout-dependent effects, identical device designs were placed in the farm using a semi-random algorithm.\n\n5\n\nWe find that the device design is a stronger indicator of its measured quality than its location within the farm,\nas evidenced by the nearly uniform histograms of quality as organised by row or column. We calculate the mean\nKullback-Liebler divergence (KLD) of these histograms from a uniform distribution to be 0 _._ 031(17), while the mean\nKLD of the histograms organised by device type is 0 _._ 45.\n\nFIG. 5. A map of all devices in the farm and their neural network classification, with corresponding row and column histograms\nfor each classification. The red dashed lines indicates the probability density of a uniform distribution with the same weight as\neach histogram.\n\n6\n\n**IV.** **QD LEVER ARM - ASYMMETRY RELATIONSHIP**\n\nFor an SET with 3 device contacts, source (S), drain (D) and gate (G), the lever arm of each contact to the QD\nmust sum to unity,\n\n_α_ S + _α_ D + _α_ G = 1 _._ (1)\n\nIn the main text two parameters we have extracted from our Coulomb diamonds are _α_ G and _α_ D _−_ _α_ S . One important\naspect of any automated fitting process is that it returns physical results, so we now consider how Eq. 1 constrains\nthese two parameters. Our results reveal (Fig. 6) that a large absolute asymmetry _|α_ D _−_ _α_ S _|_ implies that the gate\nlever arm must be less markedly less than 1.\nThis can be understood by considering how the difference of lever arms relates to the sum of the lever arms. Since\nthe lever arms are positive, it follows that _|α_ D _−_ _α_ S _| ≤_ _α_ S + _α_ D . By substituting into Eq. 1 we can define a physical\n\n|, it follows that |αD −αS| ≤αS + αD. By substituting into Eq. 1 ted in Fig. 6 by the red line) on our extracted parameters αD −α |αD −αS| + αG ≤1, αG −1 ≤αD −αS ≤1 −α",
+        "score": -6.900659432578203,
+        "dense_score": null,
+        "bm25_score": 13.44440362482923,
+        "graph_score": 0.7082421590080233,
+        "rerank_score": -10.728215217590332,
+        "matched_nodes": [
+          "We",
+          "In",
+          "IV",
+          "The",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "We"
+        ],
+        "community_id": "We",
+        "metadata": {
+          "chunk_index": 27,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1765,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2655375__2304.14435__Classical_chaos_in_quantum_computers.md",
+        "title": "2024__recid_2655375__2304.14435__Classical_chaos_in_quantum_computers",
+        "text": "the state energy on the dynamics.** (a) Lyapunov exponents for computational states of increasing energy. (b)\nLyapunov exponents for configurations including transmons initialized in states _E_ 0 _,_ 1 _,_ 2 _,_ 3 including values outside the computational sector. Values given are from a 10 qubit transmon chain with _E_ _C_ = 250\nMHz, _E_ _J_ = 10 GHz, and _δE_ _J_ = 559 MHz. Each point is the mean\nvalue of 20 _,_ 000 disorder realizations. For discussion, see text.\n\nsector [43].) Two features stand out: The Lyapunov exponents reach (i) larger values, however, these maximal values\nare attained (ii) only for larger values of the coupling. We reason that the relatively higher inertia to changes in _T_ has to do\nwith the fact that for larger energies of individual transmons\nthe coupling represents a relatively weaker perturbation. We\nnote that these findings are consistent with a recent study [44]\nof a (quantum) Bose-Hubbard model, that finds a suppression\nof the effective interaction between states with large occupation numbers on individual transmon sites.\n\n**IV.** **PREDICTIVE POWER OF CLASSICAL SIMULATIONS**\n\nAt this point, we have discussed key signatures of the classical dynamics of small scale transmon arrays. The big question\nnow of course is what bearings these findings have for our actual subject of interest, the quantum processor. In this section,\nwe formulate an answer in a succession of steps. First, as a\nwarmup, we show that several of the observations of the previous section afford a quantum interpretation. We then compare our results above with those of quantum simulations for\nthe ten transmon array, and for identical material parameters\n(except that now ℏ = 0 _̸_, of course), to observe a high level of\nagreement: classical chaos implies quantum chaos, and vice\nversa. We finally turn to the trump card of the classical approach, namely the option to reliably simulate arrays of thousands of transmons. Assuming that the quantum-to-classical\nfidelity extends to large numbers, we thus have a tool to obtain stability measures for realistic quantum hardware outside\nthe reach of quantum simulation on classical computers. In\nsection V, we substantiate this point by simulating large scale\ntwo-dimensional transmon arrays of current IBM design.\n\nQuantum mechanically, the passage from integrable to\nchaotic dynamics upon increasing _T_ is a manifestation of\na Fock space (de)localization transition: In the transmon\nregime, _E_ _J_ _≫_ _E_ _C_, Eq. (3) is wel",
+        "score": -6.9022598681265555,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7520058351568198,
+        "rerank_score": -10.732240676879883,
+        "matched_nodes": [
+          "We",
+          "In",
+          "IV",
+          "At",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "We"
+        ],
+        "community_id": "We",
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 394,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "timization to meet\nthis need.\n\nThe measurement of CE _ν_ NS cross-section by the COHERENT group has opened up an avenue for exploring various\naspects related to physics beyond the SM at low energy.\nAt present, several experiments are going on and some are\nproposed to measure the CE _ν_ NS cross-section with the required threshold by using charge-coupled devices (CCDs),\nmetallic superconducting bolometers, Ge-based semiconductor detectors, and the Scintillating Bubble Chamber [6] employing reactor ~~_ν_~~ _e_ as a source [4, 7–13]. The measurement of the CE _ν_ NS process can shed light on several fundamental SM physics aspects such as non-standard interactions [14, 15], neutron density distribution [16], neutrino magnetic moment [17], and the weak mixing angle [18, 19]. The\nCE _ν_ NS is a flavor-blind process, hence flavor-independent astronomy with supernova neutrinos becomes feasible, which\nallows us to investigate the interior of dense objects as well as\nstellar evolution in details [20, 21].\n\nIn this context, we propose to measure the CE _ν_ NS process\nusing the reactor ~~_ν_~~ _e_ s in India, to address various fundamental\nphysics aspects of neutrino as mentioned earlier. The present\nstudy focused on investigating the possible explanation for\nan anomalous behavior found in several SBL reactor exper\n\n2\n\nFIG. 1: Schematic representation of experimental setup for CE _ν_ NS\nmeasurement. BP: boronated polyethylene, thickness: 10 cm,\nHDPE: high density polyethylene,thickness: 10 cm\n\niments that measure the ~~_ν_~~ _e_ s through the IBD process [22].\nThe precise recalculation of the ~~_ν_~~ _e_ flux by Mueller _et al._ [23]\nand Huber [24] shows about 6% deficit in the observed-topredicted ratio of events at a short distance through the IBD\nprocess, which is known as the “reactor antineutrino anomaly”\n(RAA) [22]. There are two distinct explanations proposed for\nthis discrepancy. One of them is the disappearance of ~~_ν_~~ _e_ while\npropagating from the source to detector due to Active-Sterile\nNeutrino (ASN) oscillations with the mass square difference\n∆m [2] _∼_ 1 eV [2] . On the other hand, the observed discrepancy is likely to be related to the inaccuracies in predicting\nantineutrino flux, stemming from incomplete reactor models\nor uncertainties in nuclear data. The Huber-Muller model utilizes the cumulative _β_ _[−]_ -spectra measured at ILL for conversion to antineutrino spectra [23, 24]. This suggests that experimental biases, possibly related to these m",
+        "score": -6.94503588054721,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7520058351568198,
+        "rerank_score": -10.798049926757812,
+        "matched_nodes": [
+          "In",
+          "On",
+          "NS",
+          "At",
+          "The",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1184,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "I Fig. S2] and off-resonant\nsecond order correlation functions _g_ [(][2][)] ( _τ_ ) for each pillar in\nthe array. An exemplary data set of a background corrected\n_g_ [(][2][)] ( _τ_ ) recorded from a PR is shown in Fig. 2(c) with a fit\nrevealing _g_ [(][2][)] (0) = 0 _._ 00 _±_ 0 _._ 16, indicating the presence of\na single emitter in the PR. For background correction, we\nsubtract from the raw autocorrelation data the uncorrelated\n\nbackground signal stemming from background photons,\nwhose intensity we determined by recording photoluminescence saturation curves [see SI Fig. S2] – a procedure\nproposed earlier by Brouri et al. [29] [SI Sec. IV]. Subsequently, we estimate the number of emitters in a PR using\nthe relationship _g_ [(][2][)] (0) = 1 _−_ [1] _n_ [, where] _[ n]_ [ is the number of]\n\nemitters [29], while in the absence of a SiV _[−]_ ZPL, we assign\n_n_ = 0 to the PR. Using such data collected over 220 PRs, we\nproduce a SiV _[−]_ number distribution, which closely follows\na Poisson distribution with a mean ¯ _n_ = 0 _._ 53 emitters per\npillar [Fig. 2(d)]. A certain discrepancy between the data\nand the Poissonian fit can be assigned to uncertainties in the\nexperimental determination of the background signal.\n\nIn the following, we present a detailed characterization of the\noptical properties of individual SiV _[−]_ at cryogenic conditions.\nWe employ a closed-cycle cold-finger cryostat to cool the diamond sample to _∼_ 7 K, where we conduct photoluminescence\nexcitation (PLE) experiments. For this, we tune a narrowlinewidth diode laser near resonance with the C transition of\n\nthe SiV _[−]_ [Fig. 1(d)] and collect phonon sideband (PSB) emission as a function of excitation laser frequency.\nIn Fig. 1(e), we present the PLE spectrum of the narrowest\nlinewidth that we observed and that exhibits a Lorentzian\n\nFWHM of ∆ _ν_ = 100 _._ 4 _±_ 6 _._ 9 MHz. These data were obtained\nby averaging PLE spectra of fourteen successive laser sweeps\nacross the C transition, followed by a Lorentzian fit (for details, see next section). To benchmark the linewidth, we measure the optical lifetime of this SiV _[−]_ by pulsed laser excitation at a wavelength of 515 nm, followed by time-tagged\nZPL photon collection [Fig. 2(e), right panel]. An exponential fit to the photon decay trace yields a radiative lifetime\n_τ_ _r_ = 1 _._ 69 _±_ 0 _._ 04 ns that corresponds to a lifetime-limited op\n\n3\n\ntical linewidth of ∆ _ν_ = (2 _πτ_ _r_ ) _[−]_ [1] = 93 _._ 9 _±_ 2 _._ 2 MHz.\nTo our kn",
+        "score": -6.999188703041717,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7520058351568198,
+        "rerank_score": -10.881361961364746,
+        "matched_nodes": [
+          "We",
+          "In",
+          "An",
+          "IV",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "We"
+        ],
+        "community_id": "We",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "We": 1.0,
+      "In": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "IV": 1.0,
+      "NS": 1.0,
+      "At": 1.0,
+      "CA": 1.0
+    },
+    "expanded_nodes": {
+      "We": 1.0,
+      "In": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "IV": 1.0,
+      "NS": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "The": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "CE": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "Department": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 15,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 10.58378876792267,
+    "generation_latency_s": 5.797483026981354e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 15.0,
+    "retrieval_latency_s": 10.58378876792267,
+    "generation_latency_s": 5.797483026981354e-07
+  }
+}

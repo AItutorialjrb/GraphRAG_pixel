@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "fac006",
+    "query_type": "factoid",
+    "query": "What is a discriminator in a pixel front-end?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "a",
+      "discriminator"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is a discriminator in a pixel front-end?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8212,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "alyses presented in this work.\n\n_4.4. Time-over-Threshold measurement_\nThe Time-over-Threshold (ToT) quantifies the duration for which the signal\nat the discriminator input exceeds the threshold, thereby encoding the charge\ninformation in time. The ToT of a MOSS front-end signal can be assessed in a\nspecific readout configuration. Here, the strobe signal is set to last much longer\nthan a typical front-end pulse. When charge is collected, the discriminator output activates, leading the hit to be stored in the corresponding in-pixel latch\n(see Sec. 2.2). This triggers a global signal indicating data presence in the pixel\n\n17\n\n|102<br>101<br>100<br>0 1<br>0 2<br>0<br>102<br>101<br>0|V (mV) V<br>casn shif<br>160<br>330|\n|---|---|\n|0<br>0<br>2<br>0<br>1<br>100<br>101<br>102<br>0<br>101<br>102|~~630~~<br>780<br>Ireset (pA)<br>~~ 5~~<br>10<br>~~20~~<br>30<br><br>Ibias/Ibias<br>~~12~~<br>25<br>~~50~~|\n|0<br>0<br>2<br>0<br>1<br>0|0<br>100<br>150<br>200<br>~~40~~<br>50<br>100<br>150<br>|\n\nFigure 13: Fake-hit rate as a function of the threshold average per region (set via _V_ casb ) for\ndifferent front-end parameter variations. The plots, arranged from top left to bottom right,\nshow the effect of varying _V_ casn, _V_ shift, _I_ reset, _I_ bias (together with _I_ biasn at a ratio 10:1), and\n_I_ db . The error bars indicate the statistical uncertainty of the fake-hit rate measurement. The\nnominal operating point extracted from simulations (red dashed lines) was confirmed to yield\noptimal fake-hit rate performance for a given threshold.\n\nmatrix. As soon as this signal is propagated to the test system, a readout command is sent. This initiates the readout of the pixel address(es) by the region\nperiphery and resets the in-pixel latch. As long as the strobe and discriminator output remain active, the pixel-hit latch will immediately reassert and the\nregion readout will read out the same pixel address repeatedly. The number of\ngenerated pixel addresses is then proportional to the duration of the front-end\nsignal, thereby providing ToT measurement.\nThe ToT response, similar to the threshold (see Sec. 4.1), exhibits pixel-topixel variations due to fabrication-related non-uniformities. Figure 14 presents\nthe ToT measured across a number of pixels within a selected region as a function of the pulsing voltage _V_ pulseh, modulating the injected charge. For each\npixel, the ToT response increases linearly with _V_ pulseh, but the slope and intercept of this relationship vary acro",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 33.269849546921144,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 20,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1330,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2682873__2310.07561__Commissioning_Calibration_and_Performance_of_the_Cherenkov_Telescope_on_EUSO-SPB2.md",
+        "title": "2023__recid_2682873__2310.07561__Commissioning_Calibration_and_Performance_of_the_Cherenkov_Telescope_on_EUSO-SPB2",
+        "text": "as recorded along with the amplitude in mV for each light intensity. Thus, a direct relation could\nbe drawn from pe to mV and then from mV to ADC. Since the flashed laser is a picosecond laser,\nit is safe to assume that all the photons are bunched up and arrive at the same time at the SiPM.\n\nA sample of a digitized signal is shown in Figure 5. This setup would allow us to calibrate the\n\nobserved ADC amplitudes and directly relate them to the number of photo-electrons. The result of\n\nthis measurement is shown in Figure 6.\n\nFrom this result, it is possible to infer the number of photo-electrons in a signal from the\n\namplitude of the digitized signal.\n\n**2.4 Discriminator Linearity**\n\n3\n\n**Figure 3:** PDE of Hamamatsu S14521\ncompared to a 1 [◦] Earth emergence shower\nand the measured NSB. Both spectra have\nbeen amplitude normalized. Oscillations in\nthe PDE are from diffraction patterns in the\n\nSilicon substrate of the SiPM.\n\nOscar Fernando Romero Matamala\n\n**Figure 4:** Dispersion of the relative difference between each\ncharacteristic spectral response. The distribution of the spectral\nresponses has a standard deviation of around 18%\n\n**Figure 5:** Oversampled digitized pulse. Cherenkov\nphotons are emitted in times shorter than 10 ns,\nwhich would create a signal similar to what is shown.\n\n**Figure 6:** Linearity of a single pixel and dispersion of the whole system. The fitted line and points\nplotted correspond to a single pixel in the camera.\nThe shaded blue region corresponds to the average\n\ncalibration of the whole camera and its standard de\nviation.\n\nThe discriminator used for triggering was the\n\none packaged with the MUSICs [14]. To be able to\n\nrelate this to the number of photo-electrons in the\n\nSiPM, the linearity of the discriminator had to be\n\ncharacterized. The same setup as for determining\n\nthe linearity of the digitizing system was used. The\n\ntrigger threshold of the discriminators was changed\n\nmonotonically from a high threshold to a low one.\nAt each LED amplitude a trigger efficiency curve\nwas obtained. It is expected that at 50% efficiency\n\nthe threshold is set at the middle of the Poisson oscil\n\n4\n\n**Figure 7:** Linearity profile of the MUSIC discriminator. After about 200 pe the discriminator\nsaturates and the trigger threshold is always ex\nceeded.\n\nOscar Fernando Romero Matamala\n\n**Figure 8:** Average of 100 flashed events. The dark\npixels had bad connections with the digitizer and the\n**Figure 9:** Dispersion of the mean of each of the\nconne",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 32.171920331792315,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8206,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "cal conditions,\nthe performance of the two sensor sizes was indistinguishable within the sensorto-sensor variations, as expected given that they differ only in the number of\nRepeated Sensor Units (see Sec. 2). The performance of all front-end variants\nwas studied in detail. However, since the differences are minimal and consistent\nwith expectations (see Sec. 2.1), only the standard (baseline design) front-end\nvariant will be discussed in the following.\n\n_4.1. Threshold, noise, and fake-hit rate_\n\nThe effective discrimination threshold applied to the charge-collection diode\nsignal is determined by the in-pixel front-end operating point, primarily by the\namplifier output baseline and the discriminator current, adjusted via _V_ casb and\n_I_ db, respectively (see Sec. 2.1). To measure the charge threshold, injection capacitance _C_ inj (see Fig. 4) is used. The injected charge is incrementally increased\nby adjusting _V_ pulseh, and the pixel output state is recorded for each charge level\nover multiple repeated injections. The hit probability as a function of the injected charge follows the characteristic S-curve response which can be described\nby a Gaussian error function [11]. The two parameters of this function, the\nmean and standard deviation, correspond to the pixel threshold and noise.\nFigure 9 shows the distributions of threshold and noise values measured for\nall pixels in a region under typical operating conditions (see Sec. 4.3). The\nthreshold dispersion, originating from fabrication-induced variations in the inpixel circuitry, is significant, with an RMS of about 10% of the mean threshold\nvalue, yet it remains consistent with the earlier prototypes [11]. The measured\nnoise includes contributions from the in-pixel front-end and the sensing node,\nand its average is comparable to the threshold dispersion.\nThe threshold dispersion is mostly uncorrelated with pixel position, as seen\nin Fig. 10a where the threshold data is mapped to pixel positions in the matrix. Eleven distinct vertical lines are observed in Fig. 10a and Fig. 10b, and\ncorrespond to columns in which the front-end input is coupled to the digital\nsignals steering the charge-injection circuit [23]. Therefore, this is an artefact\nof the threshold measurement, and is not affecting the sensing performance of\nthe pixels.\nThe threshold exhibits a temperature dependence. In measurements with a\nnon-irradiated sensor, a linear decrease of approximately 2 e [−] _[◦]_ C _[−]_ [1] was observed\nover the r",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 31.4280791237179,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 8211,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "uted to a higher resistance in the reset and\nfeedback branch, and with a lower shot noise from a reduced current injected\ninto the collection electrode. is further supported by the expectation that a lower\n_I_ reset reduces shot noise at the collection electrode. Since _I_ reset also influences\nthe diode biasing, it can be adjusted to compensate for the increased leakage\ncurrent in sensors exposed to non-ionising radiation. To maintain uniformity in\nthe biasing conditions across different irradiation levels, without compromising\nthe noise performance, a nominal setting of 10 pA is adopted.\nAn increase in the front-end bias current, _I_ bias, reduces the fake-hit rate at\na given threshold. This is consistent with an increase in the overall front-end\nvoltage gain, and a reduction in the thermal noise of the input transistor M1.\nSince _I_ bias is the primary contributor to the power consumption of the in-pixel\nfront-end, a value of 25 nA is chosen as a trade-off between the ITS3 power\nbudget constraints [8] and fake-hit rate performance.\nVariations of discriminator current _I_ db, cascode voltage _V_ casn, and levelshifting voltage _V_ shift around their nominal values (100 nA, 330 mV, and 460 mV,\nrespectively) do not lead to significant changes in the observed performance.\nHowever, at elevated values of _V_ shift, the M0 transistor in the front-end circuit\n(see Fig. 4) enters the ohmic region, reducing the front-end gain. Consequently,\nthe fake-hit rate increases for a given threshold. A similar effect is observed for\nlow values of _V_ casn, where the M9 transistor also transitions into the ohmic region, again leading to degraded performance. While choosing a lower _I_ db current\ncan reduce dynamic power consumption, it requires a corresponding decrease in\n_V_ casb to compensate for the associated threshold reduction (see Sec. 2.1). However, this limits the available adjustment range of _V_ casb, particularly for sensors\naffected by threshold shifts due to ionising radiation, hence, the nominal value\nwas kept at 100 nA.\nOverall, the nominal operating point extracted from simulations was confirmed to yield optimal fake-hit rate performance for a given threshold and is\nadopted for all subsequent measurements and analyses presented in this work.\n\n_4.4. Time-over-Threshold measurement_\nThe Time-over-Threshold (ToT) quantifies the duration for which the signal\nat the discriminator input exceeds the threshold, thereby encoding the charge\ninformation in time. The T",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 30.564715608727248,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6231,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope.md",
+        "title": "2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope",
+        "text": "kdown voltage. The discriminator threshold is adjustable in\n512 steps, where 512 is the lowest and 0 is the highest threshold. We scanned the discriminator threshold for a given laser\n\nFigure 41: Crosstalk distribution between pixels connected to the same AGET.\n\nFigure 42: Trigger rate scan for a laser intensity of 88 photoelectrons.\n\nintensity and recorded the trigger rate for each discriminator\nsetting. Figure 42 shows the trigger rate versus discriminator\nsetting for one such measurement when the laser intensity was\nset to 88 photoelectrons. The trigger rate is normalized to the\npulse rate of the laser. As the discriminator threshold goes from\na small value to a high value (high to low threshold), the trigger\nrate increases until the discriminator triggers on all laser pulses.\nWe define as threshold the discriminator setting where 50% of\nthe laser pulses are registered.\nFigure 43 shows the thus-determined discriminator thresholds versus different laser intensities for one camera pixel.\n\n15\n\nFigure 43: Calibration curve of the eMUSIC discriminator. After about 200 pe\nthe discriminator saturates and the trigger threshold is always exceeded.\n\nFrom 0 to 200 photoelectrons amplitudes, the discriminator responds linearly before it reaches its highest threshold. We fit\nthe linear range and obtain a calibration factor of −1.4 ± 0.1\ndiscriminator threshold steps per photoelectron with a positive\noffset of 303. The discriminators of all camera pixels are calibrated in this way.\n\n**8. Flatfielding**\n\nA uniform camera response simplifies its operation and data\nanalysis. It is achieved by adjusting the SiPM bias such that the\nproduct of PDE, SiPM gain, and signal-chain gains and losses\nis the same for all pixels in the camera. Flat-fielding is the procedure of adjusting the SiPM bias to achieve a uniform camera\n\nresponse.\nIn the flat-fielding procedure, the camera is uniformly illuminated with a pulsed light source. For the first round of light\nflashes, all SiPMs are biased 4.5 V above their respective breakdown voltage, the bias voltage where the PDE reaches 90% of\nits maximum value. From the recorded signals, an average amplitude is calculated per pixel _A_ _p_, and then the average pixel\nvalues are averaged across the entire camera _A_ _c_ . The SiPM bias\ncorrection ∆ _U_ bias for a pixel is then obtained by multiplying\nthe nominal 4.5 V overvoltage with the relative deviation of the\npixel average from the camera average.\n\n∆ _U_ bias = 4.5 V · _[A]_ _[c]_ [ −] _[",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 30.103369457680675,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 22,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7180,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2901769__2503.11864__Commissioning_and_performance_of_the_Trinity_Demonstrator.md",
+        "title": "2025__recid_2901769__2503.11864__Commissioning_and_performance_of_the_Trinity_Demonstrator",
+        "text": "d changes from high to\nlow with increasing digital-to-analog converter (DAC) value.\nThe trigger rate in each scan changes from zero to a plateau at\n100 Hz, which is when a pixel triggers on all flasher signals.\nDecreasing the discriminator threshold further (higher DAC),\nthe discriminator eventually triggers in the noise, resulting in a\nsharp increase of the trigger rate at about 350 DAC.\nThe trigger rate scans vary from pixel to pixel because the\ndiscriminator thresholds are not calibrated. We flatfielded the\ntrigger response by determining for each pixel the DAC value\n\n9\n\n(a)\n\n(b)\n\nFigure 21: (a) Optical crosstalk from dark count signals of the calibration SiPM.\nThe oscilloscope trigger is set slightly below 6 photoelectrons, and the horizontal yellow line is centered at the average 7 photoelectron signal. (b) Averaged\nsignal (256 traces) of the calibration flasher recorded with the the calibration\nSiPM.\n\nfor which the discriminator triggers on 50% of the flasher signals. We subtracted the camera median DAC value from the\n50% trigger-rate threshold setting and added the difference to\nthe DAC setting of the corresponding pixel. Figure 22b shows\nthe thus calibrated trigger rate scans for 32 pixels. The trigger\nflatfielding reduces the dispersion in the trigger response from\n31.0 DAC to 4.0 DAC.\n\nIn the final step, we calibrated the trigger threshold in photoelectrons using a) the known intensity of the flasher of 48 PE\nper flash, b) the camera averaged threshold values where the\nefficiency triggering on flasher signals reaches 50% (22 DAC),\nand c) the threshold value where the trigger rates diverge due to\nnoise, _i.e._ 242 DAC = 0 PE.\n\nFor observing, we found that a trigger threshold of 150 DAC\n\n(a) Uncalibrated trigger rate scan curves for 32 camera pixels.\n\n(b) Calibrated trigger rate scan curve for the same 32 camera pixels.\n\nFigure 22: Example trigger rate scans of 32 camera pixels before and after discriminator threshold calibration. The trigger flat-fielding procedure is described\nin section 3.3.\n\ncorresponding to 20 PE provides stable operations during dark\nand moonless nights with a trigger rate of less than 0.5 Hz.\n\n**4. Performance Measurements**\n\n_4.1. Direct Muon Hits in the Camera SiPMs_\n\nOne source of background events for the Demonstrator is direct muon hits in the camera’s SiPMs. When a muon traverses\n\na SiPM, its ionization trail fires one or more SiPM cells due to\na combination of the diffusing charge cloud from the ionization\nand optical",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 29.008052191103584,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6230,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope.md",
+        "title": "2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope",
+        "text": "e same AGET chip.\nUnlike in the acceptance testing, where we illuminated the entire SiPM, we placed an adjustable pinhole in front of the SiPM\nto ensure light does not spill over into neighboring channels.\nWith the pinhole in place and the SiPM biased 4.5 V above\nbreakdown, we typically detected 150 photoelectrons per laser\npulse.\nWe recorded 1,000 laser pulses for each crosstalk measurement and shifted the recorded traces in time as we did above\n\nto obtain one average trace for each pixel. Figure 39 shows the\naverage traces of all 63 pixels excluding the pixel we flashed\nwith the laser. We observe that the crosstalk signals in all 63\npixels are 30 ns delayed relative to the laser signal. We quantify\nthe crosstalk in a pixel by recording the maximum amplitude\nin its average trace and normalizing it to the signal amplitude\nin the flashed pixel. Figure 40 gives one example measurement\nwhere the white pixel has been flashed. The sixteen pixels in\nthe lower left quadrant belong to the same SIAB and show the\nhighest crosstalk of 7%. The crosstalk in the remaining channels amounts to 5% and is due to crosstalk in the low-pass filter\nboards attached to the digitizer.\nRepeating the measurement by successively flashing all 64\npixels, we arrive at the crosstalk distribution in Figure 41. The\nmajority of the crosstalk is below 5%. The average is 5%, and\nin a handful of cases, we observe a crosstalk of almost 20%.\n\n14\n\nFigure 39: Superposition of average traces of 63 pixels each in a different color.\nThe trace amplitudes are normalized to the amplitude of the signal observed in\nthe pixel flashed with the picosecond laser. The maximum amplitude for each\npixel is shown in Figure 40.\n\nFigure 40: One example crosstalk measurement where the white pixel is illuminated with a picosecond laser. The pixels with the highest crosstalk are\nconnected to the same SIAB as the flashed pixel. All 64 pixels in the figure are\nconnected to the same AGET chip.\n\n_7.3. Linearity of the Discriminator_\n\nWe characterized the linearity of the discriminator and calibrated the discriminator threshold in units of photoelectrons\nwith the same setup we used to measure the linearity of the\nsignal chain. The SiPM bias voltage is set to 4.5 V above the\nbreakdown voltage. The discriminator threshold is adjustable in\n512 steps, where 512 is the lowest and 0 is the highest threshold. We scanned the discriminator threshold for a given laser\n\nFigure 41: Crosstalk distribution between pixels connected to the",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 28.564110249112698,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 21,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1092,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2676183__2307.05177__Development_of_a_SiPM_Pixel_prototype_for_the_Large-Sized_Telescope_of_the_Cherenkov_Teles.md",
+        "title": "2023__recid_2676183__2307.05177__Development_of_a_SiPM_Pixel_prototype_for_the_Large-Sized_Telescope_of_the_Cherenkov_Teles",
+        "text": "T electronics; waveforms of the same line style refer to the acquisition of the same light pulse intensity.\n\n6\n\n_4.3. Waveform acquisition_\n\nThe SiPM Pixel signal acquisition is based on the LST readout electronics. The High Gain and Low Gain signals are acquired with the control computer connected via Ethernet to the\nDRS4 readout board. The signal processing relies on the _cta-_\n_lstchain_ software package. Examples of High Gain (a) and\nLow Gain (b) waveforms at different pulsed LED intensities\nare shown in Figure 11. Waveforms of the same line style refer\nto the acquisition of the same photon pulse intensity; the number of photoelectrons reported in the labels is obtained from the\ncalibration factors that will be discussed later.\n\nAlthough the High Gain signal has a longer tail than the Low\nGain one due to the different amplifiers in the two channels on\nthe LST electronics board, this has no effect on the measured\n\nFWHMs:\n\n_FWHM_ _HG_ ≃ _FWHM_ _LG_ ≃ 4.3 ns (7)\n\nThis result is similar to what we measured for the PMT\n\n(∼3 ns for the High Gain and ∼3.5 ns for the Low Gain), so\nwe expect similar performance, which should be confirmed by\na detailed Monte Carlo simulation.\n\n_4.4. Pixel Calibration_\n\nThe twelve SiPMs constituting one camera pixel are connected two by two in parallel to six MUSIC ASIC channels,\nwhich sums and shapes their signals. It is impossible to distinguish single photoelectron signals in the sum signal, neither in\nHigh Gain nor Low Gain. It is therefore necessary to find another solution to calibrate the pixel. We connected one of the\nunused MUSIC channels to one of the four SiPMs at the corners\n\nof the array, normally disconnected, since we are able to see single photoelectron signals on this channel and we can use it to\ncross-calibrate the whole pixel. The signal from this SiPM can\nbe accessed from the corresponding single-ended (SE) MUSIC\noutput and it is not shaped by the pole-zero cancellation circuit,\nthus preserving its amplitude. The Differential Leading Edge\nDiscriminator (DLED) technique [16] is used to deal with the\nlong SiPM tails in the recorded signal traces.\nThe SE signal from the reference pixel is digitized with an\noscilloscope.\nDuring the calibration procedure, the SiPM pixel (without\nthe Winston cones) is illuminated with a uniform pulsed light.\nThe light uniformity is obtained by means of an optical diffuser,\nand has been evaluated to be on the order of 7 %. The pulsed\nLED triggers the acquisition of the SE reference s",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 27.560535189262016,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8336,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "the ballistic deficit, as explained in\nSection 5.1. In contrast to the efficiency pattern, the ToA\nasymmetry remains visible even at the lowest thresholds\nand high sensor bias voltages.\nThis non-uniform in-pixel response results in nonGaussian time residuals. An example is shown in Figure 36\nfor a threshold of 224 electrons and a sensor bias voltage\nof _−_ 3 _._ 6 V, where a long left-side tail, more pronounced\nthan what would be expected from time walk, is visible.\nThe truncated RMS (σ t trigger _−_ t hit ), computed within the\nhistogram range shown, is (28 _._ 4 _±_ 0 _._ 2) ns. Since the time\nresolution of the reference detector is negligible compared\nto that of the DUT resolution, the measured σ t trigger _−_ t hit\nis attributed directly to the DUT time resolution.\nFigure 37 shows the σ t trigger _−_ t hit as a function of the\nin-pixel position. Regions with slower charge collection\nexhibit worse time resolution, whereas a faster and more\nuniform charge collection is observed near the pixel center.\nThe opening in the n-well hosting the analog front-end\n(see Figure 2) affects the time resolution locally, and an\nimprovement in the time resolution is visible in that region.\nFigure 38 shows the time resolution of H2M as a function\nof the threshold, for two different total chip thicknesses\nand sensor bias voltages. While no significant difference\nis observed between samples, increasing the sensor bias\nvoltages improves the time resolution by enhancing the\ncharge collection speed.\n\n**6. Simulation**\n\nTo gain a better understanding of the sensor and its\nbehaviour when combined with the circuit of the H2M,\nsimulations were performed. A simulation flow combining\ntechnology computer-aided design (TCAD), Monte Carlo\nand circuit simulations is employed.\n\nFigure 36: Time residuals distribution. The sensor is biased at\n_−_ 3 _._ 6 V, the threshold is 224 electrons, and a low _ikrum_ is set.\n\nFigure 37: Time residuals RMS map projected onto four pixels. The\nsensor is biased at _−_ 3 _._ 6 V, the threshold is 224 electrons and a low\n_ikrum_ is set. The pixel cell boundary is marked with a dashed red\nline.\n\n|ure 3|7|\n|---|---|\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n\n|Col1|H2M-10 (21 µm), -1.2 V H2M-10 (21 µm), -3.6 V<br>H2M-3 (50 µm), -1.2 V H2M-3 (50 µm), -3.6 V|Col3|\n|---|---|---|\n||||\n||||\n||||\n||||\n\nFigure 38: Time resolution as a function of the threshold for two\ndifferent total chip thicknesses and sensor bias voltages.\n\n16\n\nThis simulation procedure focuses on",
+        "score": 0.014084507042253521,
+        "dense_score": null,
+        "bm25_score": 27.353730079102355,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 28,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7647,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2877792__2502.04941__Detection_efficiency_and_spatial_resolution_of_Monolithic_Active_Pixel_Sensors_bent_to_dif.md",
+        "title": "2026__recid_2877792__2502.04941__Detection_efficiency_and_spatial_resolution_of_Monolithic_Active_Pixel_Sensors_bent_to_dif",
+        "text": "was shown that the bent chips preserve\ntheir full electrical functionality and particle detection capability. The results\nshown here complement and extend the prior findings [3] by investigating the\nthree radii compatible with the values foreseen for the ITS3 project as well as\nby studying a different bending axis and a setup in which also the periphery\nof the chip is bent. This was possible thanks to a new assembly method which\nleaves no tape or other material in the relevant region in front or behind the\nchip. Following up on the track to hit residuals presented in Ref. [3], the actual\nspatial resolution for bent MAPS as a function of threshold is determined for the\nfirst time. For reference, the findings for the bent chips are directly compared\nto those of flat chips obtained with similar setups. The experimental setup used\nto study the bent sensors also allows for an unique geometry where the beam\nparticles graze the chip. In this configuration, which is studied for the first time\nin ALPIDEs, the particles traverse the sensitive area of the chip over distances\nof several millimeters.\n\n2\n\n**2. The bent ALPIDE chip**\n\nAs in the previous study, readily available ALPIDE chips are used in the\npresent work. The ALPIDE sensor was developed by the ALICE Collaboration\nfor its first upgrade of the Inner Tracking System (ITS2) [4–7]. The chip measures 30 _×_ 15 mm and is produced in the TowerJazz 180 nm CMOS imaging process [8]. For this study, chips thinned down to 50 µm that have a 25 µm-thick epitaxial layer were used. The sensor features a matrix of 1024 _×_ 512 (column _×_ row)\npixels with binary output. The pixels of size 29 _._ 24 _×_ 26 _._ 88 µm contain the sensing\ndiode connected to its individual and continuously active front-end amplifier,\nshaper, discriminator and multiple-event buffer, which is not continuously active. They also contain analog and digital testing circuitry, e.g. for adjusting the\ncharge threshold of the pixel by injecting a programmable test charge into the\nsensing node. The charge threshold can be changed for all pixels simultaneously\nby adjusting the front-end parameters [5–7, 9]. The priority encoding circuits,\nlocated in-between the column pairs, propagate the addresses of the hit pixels\nto the digital circuitry on the chip periphery. The digital periphery occupies an\narea of 1 _._ 2 _×_ 30 mm along the edge of the chip. A series of aluminum pads at\nthe periphery are used to electrically interface to the sensor via wire bonds (",
+        "score": 0.013888888888888888,
+        "dense_score": null,
+        "bm25_score": 27.312819110404973,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 2.1117468760348856,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 2.1117468760348856,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

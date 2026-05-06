@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "fac001",
+    "query_type": "factoid",
+    "query": "What does HV-MAPS stand for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What does HV-MAPS stand for?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6872,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+        "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+        "text": "* **4**\n\n4.1 Experimental Setup 4\n\n4.2 Data Samples 5\n\n4.3 Detection Efficiency 7\n\n4.4 Time Resolution 10\n\n**5** **Conclusions** **14**\n\n**1** **Introduction**\n\nMonolithic Active Pixel Sensors (MAPS [1]), which integrate the sensor and electronics within\n\nthe same CMOS substrate, are becoming more and more common in particle physics. Despite\n\ntheir relatively complex design phase, MAPS provide all the benefits of standard CMOS processing\n\nwhile avoiding the production challenges and high costs associated with bump-bonded hybrid pixel\n\nsensors. A large surface of MAPS was recently installed in the ALICE experiment at the LHC [2]\n\nand is operated successfully.\n\nIn the framework of the MONOLITH H2020 ERC Advanced project [3], this group is de\nveloping very fast MAPS. Prototypes were produced using the commercial SG13G2 130 nm\n\nsilicon-germanium (SiGe) BiCMOS process [4] by IHP Microelectronics, which includes a very\n\nfast and low-noise SiGe Heterojunction Bipolar Transistor (HBT) with a peak transition frequency\n\n_𝑓_ _𝑡_ = 350 GHz. In a testbeam experiment with minimum-ionizing particles (MIPs), a prototype\n\nwith a standard PN junction sensor without an internal gain layer produced with this technology\n\nprovided full efficiency and time resolution of 20 ps [5]. Several of these prototypes were irradiated\nwith 70 MeV protons up to a fluence 1 × 10 [16] n eq /cm [2] and tested with radioactive sources [6] and\nin a testbeam experiment with MIPs [7]. The SiGe HBT front-end electronics not only survived\n\nsuch large proton fluence but was still able to recover full efficiency and provide a time resolution\n\nof 45 ps with only a modest increase in sensor bias voltage. This performance underscores SiGe\n\nHBT radiation tolerance, meeting the stringent requirements of the challenging High-Luminosity\n\nLHC environment.\n\nIn parallel to the development of front-end electronics, the MONOLITH ERC project is also\n\nexploiting the picosecond avalanche detector (PicoAD) [8], a novel detector that implements a\n\ncontinuous deep gain layer to boost the timing performance. A proof-of-concept monolithic PicoAD\n\n– 1 –\n\nwas produced in 2022 using the photolithography masks of a prototype able to provide 36 ps [9]\n\nwith a sensor without internal gain layer. The proof-of-concept PicoAD was operated at a gain of\n\napproximately 20 [10], obtaining full efficiency and an average time resolution of 17 ps [11]. The\n\ntime resolution was found to depend strongly on the hit position on the pixel ar",
+        "score": -2.181322362687853,
+        "dense_score": 0.34955641627311707,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.3644275665283203,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8310,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "e a promising sensor type for future\nhigh-energy physics (HEP) experiments. This includes\ntracking or vertexing applications at a lepton collider like\nCLIC [1] or FCC-ee [2]. MAPS come with the benefit of\nintegrating the readout electronics and sensitive volume in\nthe same die, which inherently reduces the material budget\nbut also removes the necessity of the costly bump bonding\nprocess. A small collection electrode layout results in a\nsmall input capacitance to the first amplifier stage (order\nof fF), which reduces power consumption for a given signal\ncharge [3]. The TPSCo 65 nm ISC (Image Sensor CMOS)\nprocess [4] is a promising technology in that regard. It\nallows for a higher density of circuit elements than larger\nfeature size processes, and technology demonstrators such\nas APTS [5] or DPTS [6] have qualified it for applications\nin HEP.\nThe hybrid-to-monolithic (H2M) test chip is a MAPS\nproduced in this 65 nm ISC process. It explores complex\nper-pixel pulse processing functionality for time and amplitude measurements, at the cost of a pitch of 35 µm, which\nis 40 % larger than other prototypes developed for High\nEnergy Physics in this process. The architecture of the\nchip is based on readout concepts from earlier hybrid readout ASICs [7, 8, 9], with a clock distributed over the matrix\nand pulse-processing counters in every pixel. This porting\nprocess is interesting to explore, as the large set of hybrid\nchips for HEP applications may speed up the development\nof future monolithic sensors. The design applied a digitalon-top workflow, which is a contemporary strategy for the\ndesign of complex integrated circuitry. The digital logic is\nsynthesized around the analog building blocks such that\ncertain constraints (e.g. on timing) are fulfilled. The design effort included the composition of a compact digital\ncell library comprising a set of standard circuit elements\nwith a footprint reduced by about 25 % compared to the\nstandard cells.\n\nPreliminary results from the characterization and simulation of H2M are presented in [10, 11], respectively. Section 2 of this article describes the H2M chip design, its\nfeatures, and the data acquisition system utilised for the\npresented measurements. Laboratory characterization and\ncalibration are presented in Section 3, while the methodology for test-beam measurements and the resulting performance in the detection of minimum-ionizing particles\n(MIPs) are detailed in Section 4 and Section 5. Section 6\nsummarizes the employed s",
+        "score": -3.212933474370878,
+        "dense_score": 0.3106189966201782,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.950350761413574,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 377,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "rs\ninvolved a visual inspection (VI) in addition to quantification of several electrical\nproperties [4]. Similarly, a major part of the QC of the HGCAL sensors is the electrical\n\n2\n\n**Figure 1.** (left) An HGCAL silicon sensor wafer, with a pad zoomed in. The diameter\nof the sensor is 8”. (right) An example of a scan map.\n\ncharacterization of the sensors, during which the sensors are biased up to 1000 V [5].\nDefects and dust on a sensor surface can potentially lead to an electrical failure of the\nsensor. Examples of a typical defect, a scratch, and a dust particle are shown in figure 2.\nGiven that these defects are rare and unwanted, they are referred to as anomalies. The\nanomalies can occur during manufacturing, packaging, delivery, or associated handling\nof the sensors. In an effort to prevent failures, the sensor surface is visually inspected\n\nis presented in the context of HGCAL sensor QC, the same approach could be applied\nto similar use cases of automating the VI of images.\n\n3\n\nThe PSA proposed in this work detects anomalous scan images via an ensemble\nof a deep convolutional autoencoder (AE) and a deep convolutional classifier neural\nnetwork. The AE acts on each scan image, and the classifier acts on patches of the\nimage, allowing for localization of anomalous areas (annotation). The PSA has been\ndeployed in a clean room at CERN, and data gathered in production are used to evaluate\nthe performance of the anomaly detection. The performance is mainly measured using\ntwo metrics: First, the False Negative Rate (FNR), defined as\n\nFalse Negative\nFNR = (1)\nFalse Negative + True Positive\n\nshould be minimized for a reliable PSA. Second, a relatively large False Positive Rate\n(FPR), defined as\n\nFalse Positive\nFPR = (2)\nFalse Positive + True Negative\n\nis allowed, but an upper limit of 10% is set to sufficiently automate the VI.\nThis paper is structured as follows. The data acquisition and characteristics are\ndescribed in section 2. An introduction to automated VI is given in section 3, followed\nby a description of the proposed architecture and the model training process in section\n4. The results of the deployment at CERN are presented in section 5. In section 6,\nthe efficiency and causes of incorrect predictions are discussed, and the proposal for\ncontinuous improvement of the anomaly detection capabilities is presented. Finally,\nconclusions are provided in section 7.\n\n**2. Setup and data set**\n\nA custom semi-automated VI system has been implemented in the cle",
+        "score": -3.3234631468268,
+        "dense_score": 0.3204604685306549,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.120938777923584,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1915,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "ed by the RICH collaboration and quality-assured to verify the requested technical\nspecifications, among which are a gain larger than 10 [6] and a dark-count rate less than\n_<_ 2 _._ 5 kHz _/_ cm [2] . A full set of quality assurance (QA) tests was implemented to qualify the\nwhole MaPMT production. Two of the typical QA parameter scans, the signal amplitude\n\n51 The fill factor is the fraction of active area with respect to the total detector area.\n52 Hamamatsu TM R13742 (1-inch) and R13743 (2-inch). The R13742 and R13743 models are custom\nvariants of the commercial models R11265 and R12699, respectively. The difference between the custom\nand commercial units stands on the requested technical specifications described in the text.\n\n78\n\nFigure 58: Left: the MaPMTs selected for the upgraded RICH detectors with the 2-inch model\non the left and the 1-inch model on the right. Right: scheme of the internal structure of the\nMaPMT. Reproduced from [111]. CC BY 4.0.\n\nas a function of the HV and the quantum efficiency (QE) as a function of the wavelength,\nare shown in figure 59.\n\nFigure 59: Left: typical signal amplitude spectra for a pixel as a function of the HV value.\nReprinted from [112], Copyright (2023), with permission from Elsevier. Right: QE curves for a\nbatch of 1-inch MaPMTs from the production: the ultra bi-alkali photocathode allows to reach\nexcellent QE values.\n\n**7.1.2** **Front-end electronics and elementary cell**\n\nThe average hit rate in the high occupancy regions of RICH1 can exceed 10 [7] hits/s per pixel\non average. Furthermore, the estimated total integrated dose over the detector lifetime,\nin the regions closer to the beam pipe is estimated to be about 2 kGy for RICH1 [113].\nRadiation-hard fast readout electronics is therefore needed, with low power consumption\nto minimise heating. This motivated the design of a custom 8-channel front-end ASIC\nnamed CLARO [114]. CLARO, shown in figure 60, is designed in 350 nm CMOS Austria\nMicro Systems (AMS) technology, with the exception of configuration registers as will be\ndiscussed in section 7.1.5.\n\n79\n\nFigure 60: Left: CLARO ASIC with its packaging. Reproduced from [114]. © 2017 IOP\nPublishing Ltd and Sissa Medialab. All rights reserved. Right: block schematic of a CLARO\nchannel. The purpose of the dummy amplifier is to give each channel a differential structure,\nimproving the power supply rejection ratio and allowing DC-coupled input to the discriminator.\nReproduced from [115]. © 2022 IOP Publishing Ltd",
+        "score": -3.6127148389816286,
+        "dense_score": 0.34930428862571716,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.566436290740967,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 97,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6219,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope.md",
+        "title": "2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope",
+        "text": "he LVPS/HVPS boards comes from\nan external 18-30 V source, which is an array of batteries in the\ncase of EUSO-SPB2 and a programmable SL32-46/U power\nsupply from MAGNA Power in the case of the _Trinity_ Demon\nstrator.\n\nThe LVPS board integrates multiple DC-DC converters that\ngenerate the +3.3V, +5V, and +12V needed for the different\ncomponents of the camera and the readout. In EUSO-SPB2,\nthe LVPS also powers the camera computer and the CoBo module of the AGET digitizer. The voltages and currents on the\nLVPS board are monitored with four 24-bit 16-channel Analogto-Digital (ADC) converters (AD7173-8BCPZ).\nThe HVPS board generates the SiPM bias voltages in eight\nindependent high-voltage (HV) channels, each channel powering 64 SiPMs. The voltage of each channel is adjustable with\n16-bit Digital-to-Analog (DAC) converters (AD5686R) up to\n50 V, with a resolution of 1 mV. The current of each HV channel\nis limited to 20 mA to protect the eMUSICs, which are damaged\nif the SiPM currents are too high.\nThe EUSO-SPB2 system also included a power distribution\nunit, which was commanded by the camera computer via CAN\nbus and controlled the power to several auxiliary systems.\n\n_4.6. Camera Computer_\n\nThe camera computer for EUSO-SPB2 was a dual-core\nsingle-board computer from RTD Embedded Technologies\n(CMA24CRD1700HR). The camera computer for the _Trinity_\nDemonstrator is a Sintrones EBOX-7000 edge computing device designed for industrial automation that is passively cooled\nand operates over a wide temperature range of −40 [◦] C - 70 [◦] C. Its\nCPU is an Intel Gen9 Core i7-9700TE (12MB Cache 1.8GHz\nup to 3.8GHz). It has 8GB of RAM and a 10-minute backup\nUPS. The EBOX includes two PCIe 3.0 x 8 slots, with one slot\ncurrently housing a 10 GB SFP network card.\nThe camera computers receive the digitized waveforms from\nthe AGET system and perform several management and monitoring tasks. They send commands to the Trigger board and\n\n6\n\nthe AGET digitizer via an Ethernet connection and to the SIAB\nmicrocontrollers and LVPS/HVPS boards via a System Management Bus (SMBus or I2C).\nThe camera computer’s control software is programmed in\nC++ and relays commands to the corresponding processes running on the camera computer using POSIX message queues.\nReplies are sent back in a separate message queue.\n\n**5. Cooling System and Thermal Vacuum Testing**\n\nFigure 12: Exploded view of the EUSO-SPB2 camera showing the heat pipes\n(purple), the copper blocks (brown) coupled to the eMUSICs, and the",
+        "score": -3.766071443557739,
+        "dense_score": 0.292061448097229,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.800686836242676,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3047,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2703270__2309.14515__High_efficiency_muon_registration_system_based_on_scintillator_strips.md",
+        "title": "2024__recid_2703270__2309.14515__High_efficiency_muon_registration_system_based_on_scintillator_strips",
+        "text": "And angle “0” is the vertical to the strips. An\n\narea of “-40 to +40” mm (shown by red line on a figure) mm were studied with\n\nstep of 0.1 mm. In each step, the angles were varied within a cone from -75 to\n\n+75 degree with 1 degree step (orange lines on Figure 10 represent the borders\n\nfor the cone). The simulations of the muon registration probability for the CRV\n\nmodule with different pattern of shifts layers to each other were done. The\n\naverage light yield set to 21 ph.e. and the threshold (level of discrimination) set\n\nto 5 ph.e.\n\nFigure 10: Layout to create the registration probability map for CRV module\n\n16\n\nThe registration probability maps (2D distribution by the angle and by point\n\nof entrance) were created for more than 60000 patterns of CRV modules, and,\n\noverall, calculations took about 1 month. The examples of registration proba\n\nbility maps for various shift patterns for CRV modules based on 7x40 _mm_ [2] in\n\ncross-section strips were illustrated on Figure 11. White areas on plots represent\n\nthe areas with registration probability less than 99.5%. One can see that it is\n\ndifficult to achieve 99.99% efficiency for the module with current configuration\n\nof the 7-mm-thick strip.\n\n(a) ”20-20-20” (b) ”10-10-10”\n\n(c) ”8-8-8” (d) ”8-10-8”\n\n(e) ”8-10-10” (f) ”8-10-18”\n\nFigure 11: Examples of registration probability maps for various CRV modules shift\n\npatterns: an original ”20-20-20” shift pattern by TDR2020 (a)\n\nTable 2 presents the overall efficiency with no angular distribution for cosmic\n\n17\n\nmuons included for the best shift patterns with the average light yield set to 21\n\nph.e. and the threshold (level of discrimination) set to 5 ph.e.\n\n|Shift pattern|Overall efficiency|\n|---|---|\n|20-20-20 mm|0.99902|\n|10-10-10 mm|0.99976|\n|8-8-8 mm|0.99988|\n|8-10-6 mm|0.99983|\n|8-10-8 mm|0.99985|\n|8-10-10 mm|0.99981|\n|8-10-12 mm|0.99976|\n|8-10-14 mm|0.99968|\n|8-10-16 mm|0.99963|\n|8-10-18 mm|0.99958|\n\nTable 2: Best shift patterns for CRV modules based on 7x40 _mm_ [2] strips. The average\n\nlight yield set from the strip to 21 ph.e. and the threshold set to 5 ph.e.\n\nWe also did similar simulation for CRV modules based on 10x40 _mm_ [2] in\n\ncross-section strips. In this case, gaps, way to change particle propagation, etc.\n\nleft same, but the average light yield set to 30 ph.e. but the threshold (level of\n\ndiscrimination) remained same: 5 ph.e.. The results for 10-mm-thick case shows\n\nthat the charged particles registration probability was better than 99.99%. The",
+        "score": -3.8301858609722506,
+        "dense_score": 0.355518639087677,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.901278495788574,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4399,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors.md",
+        "title": "2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors",
+        "text": "target radiation levels.\nI3T80 includes lateral and vertical double-diffused MOSFETs\n\n(DMOSFET) that can operate with V ds up to 70 V, as well as\nfloating wells, diodes, matched resistor arrays and bipolars. Both\nLV and HV n-type devices require specific custom layout modifications to attain the target radiation tolerance, as detailed in\nSec. VI. It is also known that DMOSFETs experience an increase\nin on-resistance as a result of displacement damage in the drift\nregions, although this effect is expected to become significant\nfor I3T80 only beyond the specified radiation levels [4].\nThe chip consists of two completely independent sections,\nHV and LV, as illustrated in the general block schematic in\nFig. 1. A photograph of the chip is also shown.\nThe HV section comprises two identical low drop-out (LDO)\nlinear regulators. Each one can regulate an input voltage of\n\nFig. 1. General block schematic of ALDO2 (left). Photograph of a decapsulated\nALDO2 in QFN64 package (right). Die dimensions are 2 _._ 5 × 2 mm [2] .\n\nPREPRINT SUBMITTED TO ARXIV – A MULTI-FUNCTION RADIATION-HARDENED HV AND LV LINEAR REGULATOR FOR SIPM-BASED HEP DETECTORS 2\n\nDAC\n\n|AD HV supply|HV supply|AD|Col4|\n|---|---|---|---|\n|Error<br>amplifier<br>Enable<br>C<br>SiP<br>AD<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|Error<br>amplifier<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|SiP<br>AD|SiP<br>AD|\n|Error<br>amplifier<br>Enable<br>C<br>SiP<br>AD<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|Error<br>amplifier<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|SiP<br>AD|SiP|\n|Error<br>amplifier<br>Enable<br>C<br>SiP<br>AD<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|Error<br>amplifier<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|||\n\nFig. 2. Simplified block schematic of the HV regulator (two identical ones are\nincluded in each ALDO2). Devices with thick drain are HV DMOSFETs.\n\nAux\noutput\n\nMain\n\n|LV supply|Col2|Col3|\n|---|---|---|\n|Error<br>amplifier<br>able<br>M<br>out<br>A<br>out<br><br>0.5 A<br>20 mA<br>Over-curr.<br>protection<br>Over-temp.<br>protection<br>Bandgap MOS<br>Bandgap PNP<br>Bandgap NPN|Error<br",
+        "score": -3.891992183910903,
+        "dense_score": 0.26683107018470764,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.993470191955566,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4397,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors.md",
+        "title": "2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors",
+        "text": "PREPRINT SUBMITTED TO ARXIV – A MULTI-FUNCTION RADIATION-HARDENED HV AND LV LINEAR REGULATOR FOR SIPM-BASED HEP DETECTORS 1\n\n## A Multi-Function Radiation-Hardened HV and LV Linear Regulator for SiPM-based HEP Detectors\n\nPaolo Carniti, Claudio Gotti, and Gianluigi Pessina\n\n_**Abstract**_ **—The use of silicon photomultipliers (SiPMs) to detect**\n**light signals in highly radioactive environments presents several**\n**challenges, particularly due to their sensitivity on radiation,**\n**temperature, and overvoltage, requiring a proper management**\n**of their bias supply. This article presents the design and perfor-**\n**mance of ALDO2, an application-specific integrated circuit and**\n**power management solution tailored for SiPM-based high-energy**\n**physics detectors. The chip’s functions include adjustable and**\n**point-of-load linear regulation of the SiPM bias voltage (10-70 V,**\n**50 mA), monitoring of SiPM current, shutdown, over-current**\n**and over-temperature protection. The same functions are also**\n**available for the low-voltage regulator (1.6-3.3 V, 800 mA), used**\n**to generate the power supply of SiPM readout chips that often**\n**demand stable and well-filtered input voltages while consuming**\n**currents of up to several hundred milliamperes. The chip is**\n**intended to operate in radioactive environments typical of particle**\n**physics experiments, where it must withstand significant levels**\n**of radiation (total ionizing dose and 1-MeV-equivalent neutron**\n**fluence in the range of Mrad and 10** **[14]** **n** **eq** / **cm** **[2]** **, respectively). The**\n**article provides a comprehensive description of the chip design,**\n**as well as experimental measurements, offering insights into the**\n**chip’s performance under various conditions. Finally, radiation**\n**hardening, radiation qualification and reliability are discussed.**\n\nI. Introduction\n\nILICON photomultipliers (SiPMs, also known as multi# S pixel photon counters or MPPCs) [1] have gained wide\nspread use in various high-energy physics (HEP) experiments,\nprimarily due to their excellent photon counting performance,\ncompactness, and immunity to magnetic fields. Despite being\nmore practical and durable than vacuum-based photosensors,\nintegrating SiPMs into experiments still presents several challenges, particularly concerning their power supply. Radiation\ndamage, in fact, leads to a significant increase in the dark\ncurrent, reaching up to a few milliamperes per device, and a\nshift in the",
+        "score": -3.941497052317918,
+        "dense_score": 0.25873029232025146,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.069280624389648,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 4505,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology.md",
+        "title": "2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology",
+        "text": "## Simulations and Performance Studies of a MAPS in 65 nm CMOS Imaging Technology\n\nAdriana Simancas [a,b,][∗], Justus Braach [c,d], Eric Buschmann [c], Ankur Chauhan [a], Dominik Dannheim [c], Manuel Del Rio\nViera [a,b], Katharina Dort [c,e], Doris Eckstein [a], Finn Feindt [a], Ingrid-Maria Gregor [a], Karsten Hansen [a], Lennart Huth [a],\nLarissa Mendes [a,b], Budi Mulyanto [a], Daniil Rastorguev [a,f], Christian Reckleben [a], Sara Ruiz Daza [a,b], Judith\nSchlaadt [a,g], Paul Sch¨utze [a], Walter Snoeys [c], Simon Spannagel [a], Marcel Stanitzki [a], Anastasiia Velyka [a], Gianpiero\nVignola [a,b], Håkan Wennl¨of [a]\n\n_a_ _Deutsches Elektronen-Synchrotron, Notkestraße 85, 22607 Hamburg,, Germany_\n_b_ _University of Bonn, Regina-Pacis-Weg 3, 53113 Bonn,, Germany_\n_c_ _Conseil Europ´een pour la Recherche Nucl´eaire, Esplanade des Particules 1, 1211 Geneva 23,, Switzerland_\n_d_ _University of Hamburg, Mittelweg 177, 20148 Hamburg,, Germany_\n_e_ _University of Giessen, Ludwigstraße 23, 35390 Gießen,, Germany_\n_f_ _University of Wuppertal, Gaußstraße 20, 42119 Wuppertal,, Germany_\n_g_ _Johannes Gutenberg University of Mainz, Saarstraße 21, 55122 Mainz,, Germany_\n\n**Abstract**\n\nMonolithic active pixel sensors (MAPS) produced in a 65 nm CMOS imaging technology are being investigated for\napplications in particle physics. The MAPS design has a small collection electrode characterized by an input capacitance of ∼fF, granting a high signal-to-noise ratio and low power consumption. Additionally, the 65 nm CMOS\nimaging technology brings a reduction in material budget and improved logic density of the readout circuitry, compared to previously studied technologies. Given these features, this technology was chosen by the TANGERINE\nproject to develop the next generation of silicon pixel sensors. The sensor design targets temporal and spatial resolutions compatible with the requirements for a vertex detector at future lepton colliders. Simulations and test-beam\ncharacterization of technology demonstrators have been carried out in close collaboration with the CERN EP R&D\nprogram and the ALICE ITS3 upgrade. TCAD device simulations using generic doping profiles and Monte Carlo\nsimulations have been used to build an understanding of the technology and predict the performance parameters of the\nsensor. Technology demonstrators of a 65 nm CMOS MAPS with a small collection electrode have been characterized\nin laboratory and test-beam facilities by studying performance parameters",
+        "score": -3.973228626563901,
+        "dense_score": 0.36034947633743286,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.121486663818359,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2033,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "modern CPU server which is relevant for running\nHLT1 in simulation on the grid where GPU resources are not necessarily available. The\ncomputational performance of HLT2 is shown in figure 124 for a reference CPU server\nwhich will be used for Run 3 data taking. [91] In both cases the computational performance,\nalbeit evaluated on simulation, is comfortably adequate for the foreseen nominal Run 3\ndata taking conditions.\n\n90 NVIDIA RTX A5000 graphics card.\n91 About 3500 HLT2 nodes are installed in the LHCb data centre.\n\n178\n\nFigure 123: Throughput of the HLT1 application on a selected subset of current generation\nGPU cards and a representative modern CPU server. Reproduced with permission from [189].\n\n##### **13.2 Reconstruction performance**\n\nIn the upgraded LHCb the event reconstruction is performed in real-time at the trigger\nlevel. The reconstruction efficiencies in HLT1 and HLT2 have been studied in great detail\nwhile designing the trigger algorithms. The main results are shown in the next sections.\n\n**13.2.1** **Tracking performance**\n\nPerformance figures are produced with simulated event samples of _B_ _s_ [0] _[→]_ _[J/ψϕ]_ [,] _[ B]_ _s_ [0] _[→]_ _[ϕϕ]_ [,]\n_B_ [0] _→_ _K_ _[∗]_ [0] _e_ [+] _e_ _[−]_ and _D_ [+] _→_ _K_ [0]\nS _[π]_ [+] [ (5000 events per magnet polarity), including the effect of]\nVELO and SciFi Tracker radiation damage after 5 fb _[−]_ [1], as well as a sample of _D_ [+] _→_ _K_ S [0] _[π]_ [+]\n\ndecays enriched in tracks originating outside the vertex detector.\nThe tracking performance in the baseline HLT2 reconstruction is shown in terms of\nreconstruction efficiency and corresponding fake-track reconstruction rate ( _ghost rate_ )\nfor long and downstream tracks as a function of momentum _p_, transverse momentum\n_p_ T, pseudo-rapidity _η_, and number of primary vertices. Figures 125 and 126 show\nthe track reconstruction efficiency for long tracks originating from _B_ -meson decays\nwhile the corresponding fake-track rate is shown in figure 127. The downstream-track\nreconstruction efficiency for particles originating in strange and _B_ or _D_ decays is shown in\nFigs 128 and 129, respectively; the corresponding fake-track rate is reported in figure 130.\nFinally the seeding reconstruction efficiency for particles originating in _B_ decays and\nreconstructible [92] as long tracks is shown in figures 131 and 132, and the corresponding\n\n92 In the context of this section _reconstructible_ means an object (track, vertex) or an event with visib",
+        "score": -4.089560491160343,
+        "dense_score": 0.3028565049171448,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.2987165451049805,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 215,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.65962203219533,
+    "generation_latency_s": 3.6973506212234497e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 6.65962203219533,
+    "generation_latency_s": 3.6973506212234497e-07
+  }
+}

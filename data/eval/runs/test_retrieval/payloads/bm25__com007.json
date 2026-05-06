@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "com007",
+    "query_type": "comparative",
+    "query": "Compare hybrid RAG and GraphRAG.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "GraphRAG",
+      "RAG"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare hybrid RAG and GraphRAG.",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1395,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip.md",
+        "title": "2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip",
+        "text": "ver PIC\nwe can reduce this down to a single chip assembly, whilst allowing both transmitter and receiver\ncircuits to access the best properties from two\ndifferent material platforms.\n\nSimilarly, we can compare our edge-coupling\nhybrid approach to alternative hybrid or heterogeneous solutions, such as flip-chip or photonic\nwire bonding. For our purposes we believe that\nedge-coupling currently has two key strengths:\nlow optical coupling losses and sufficiently mature\nmanufacturing that is accessible in low volumes.\nAs parts of our chip are used as a receiver, the optical loss is critical. The fact that we find this can\nbe repeatably achieved with currently available\ncommercial manufacturing techniques is important and should be of interest to those working on\nother applications of quantum photonic integration. However, we do not discount the potential\nadvantages of alternative hybrid and heterogeneous integration approaches. For large circuits,\nas will likely be required for photonic quantum\ncomputing for example, the inherent scalability\nof some of the alternatives becomes a significant\nadvantage. Indeed, even for smaller circuits, such\nas used in QKD, wafer-scale approaches may prove\nto have more economical manufacturing. Recent\nwork has shown Si-InP photonic wire bonding\ncoupling losses as low as 0.4 dB [34] and repeatable sub-1dB losses resilient to thermal cycling\n\n[44].The ongoing development of various hybrid\nand heterogeneous integration methods and their\npermeation into industry offers exciting avenues\nfor future work.\n\nIn comparison to previous on-chip time-bin\nQKD demonstrations, we find the low minimum\n\n9\n\nQBER of the system notable. Sub-1% QBER, as\nwe measure, is more commonly associated with\ntime-of-arrival measurements due to the higher\nextinction ratio [9, 45]. In contrast, qubits encoded\nin differential phase, like in the present work,\nare more vulnerable to intensity imbalance and\ndelay-line mismatch between Alice and Bob. Here,\nwe find that the precise manufacturability of SiN\nyields excellently matched interferometers, which\nproduces high contrast interference. Further, the\navailability of heaters on SiN allows the AMZI\nstructures to be finely adjusted and offset manufacturing errors further. This stands favourably in\ncomparison to other material platforms used for\nQKD receivers, such as planar light-wave circuits\non silica.\n\nWe can also compare alternative material platforms for the modulator component. For example,\nthin film lithium-nio",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 16.06782122421036,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1394,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip.md",
+        "title": "2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip",
+        "text": "ERs for\nforward (top) and backward (bottom) circuits. At 58s, the complementary circuit is powered-on causing a small increase in\nQBER due to predominantly electrical cross-talk between the EOPMs.\n\n**Fig. 5** 250km real fibre unidirectional operation. Raw bit rate, QBER and secure bit rate are shown averaged over 1 minute\nperiods. Instantaneous secure bit rate is estimated in the asymptotic regime.\n\n**Table 1** A summary of measured system performances. Measurements are taken during simultaneous bidirectional\noperation.\n\nChannel Circuit QBER Raw Bit Rate SKR (Asymptotic)\n\n10 dB Combined 0.85% 4.25 Mbps 1.82 Mbps\nForwards 0.70% 2.09 Mbps 904 kbps\nBackwards 0.99% 2.16 Mbps 916 kbps\n\n50 km fibre Combined 0.89% 5.13 Mbps 2.37 Mbps\n(9.3 dB) Forwards 0.80% 2.61 Mbps 1.21 Mbps\nBackwards 0.98% 2.52 Mbps 1.16 Mbps\n\n180 km fibre Combined 1.11% 34.2 kbps 14.1 kbps\n(31.3 dB) Forwards 0.98% 17.3 kbps 7.1 kbps\nBackwards 1.23% 16.9 kbps 6.9 kbps\n\n250 km fibre Forwards 3.89% 1.12 kbps 186 bps\n(44.0 dB) (67 bps finite-key)\n\n### **3 Discussion**\n\nA QKD transceiver system has two advantages over independent transmitters and receivers.\nFirstly, it simplistically doubles the secure key\nrate over a given link. Whilst our system operates\nover two separate fibres in these experiments, it\nwould be feasible to wavelength multiplex the two\ncounter-propagating channels onto a single fibre.\nSecondly, as QKD research increasingly turns\ntowards the development of larger networks, using\ntransceiver nodes significantly increases the flexibility of a network. A transceiver can talk to\nany other transceiver (rather than communicating only with nodes of a complementary type) or\ncan form a connection with two separate nodes,\nthereby flexibly forming structures such as ring\nnetworks.\n\nWhen comparing our edge-coupling hybrid\napproach to conventional monolithic chips, our\ncost-benefit analysis must take into account the\npackaging costs of the edge-coupling process. The\nrequired multiple optical alignment steps add cost\nand complexity. However, we must also consider\nthe fact that due to the realities of the material\n\nplatforms, non-hybrid chip-based transceiver systems are likely to require at least two monolithic\nPICs per node. With a hybrid transceiver PIC\nwe can reduce this down to a single chip assembly, whilst allowing both transmitter and receiver\ncircuits to access the best properties from two\ndifferent material platforms.\n\nSimilarly, we can compare our edge-coupling\nhybrid approach to alt",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 13.48781675784368,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1014,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system.md",
+        "title": "2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system",
+        "text": ". and Methods in Physics Research A. The final_\n_version is available online at https://doi.org/10.1016/j.nima.2023.168767_ _Page 5 of 9_\n\n**Fig. 8:** Circuit diagram of the 2 × 2 - hybrid connection.\n\nwhere only one needs to be passed. It had previously been\nanticipated that the 2 × 2-hybrid configuration would achieve\na smaller _𝑡_ _𝑟𝑖𝑠𝑒_ compared to the 4-hybrid configuration by\nimplementing a series connection. All in all, the 2 × 2-hybrid\nconnection clearly shows the best performance, not only in\nterms of a low rise time but also in a high amplitude. Nevertheless, the 4-hybrid connection was further considered because,\ncompared to the other circuits, the performance of hybrid\nones are strongly dependent on the value of the capacitors\nand resistors. Therefore, a variation of those components was\nnecessary to compare both hybrid connections.\nTo cover a wide range, resistors of 1 k Ω and 47 Ω, as well\nas capacitors of various magnitudes (10 pF, 1 nF, 100 nF)\nwere chosen for the 4-hybrid circuit (Table 2). While the\nrise time clearly increases with capacitance, the amplitude\nincreases with smaller resistors and increasing capacitance.\nThe lowest _𝑡_ _𝑟𝑖𝑠𝑒_ of 3.26 ns is obtained for _𝐶_ 4− _ℎ_ = 10 pF\nand _𝑅_ 4− _ℎ_ = 1 k Ω . However, the corresponding amplitude\ndecreases to 0.44 ⋅ _𝐴_ . Similar results were also achieved\n_𝑟𝑒𝑓_\nwith the 2 × 2-hybrid configuration at 4.7 pF [(] _𝑡_ _𝑟𝑖𝑠𝑒_ = 3.1 ns\nand _𝐴_ = 0.5 ⋅ _𝐴_ _𝑟𝑒𝑓_ ) . Since all amplitudes of the 4-hybrid\nconnection are smaller than those of the 2 × 2-hybrid arrays\nand also the smallest rise times were achieved with the\n2 × 2-hybrid configuration, a 4-hybrid connection was not\nconsidered further.\n\n_4.4. Final 2_ × _2-hybrid circuit_\n\nIn order to determine the proper component sizes, the\nresistances (R3 = R4) and the capacitor ( _𝐶_ 3 ) from Fig. 8 were\nvaried from 50 Ω to 10 k Ω, and 4.7 pF to 300 nF, respectively.\nFor the resistor variation, a clear peak in amplitude was\nobserved at _𝑅_ 2 _𝑥_ 2 = 1 k Ω . As expected, a steeper signal edge\n\n**Table 2**\n\nAmplitude and rise time for the 4-hybrid connections.\n\nR 4− _ℎ_ (Ω) C 4− _ℎ_ (F) _𝐴_ 4− _ℎ_ ∕ _𝐴_ _𝑟𝑒𝑓_ _𝑡_ _𝑟𝑖𝑠𝑒_ (ns)\n\n1k 10 p 0.44 ± 0.09 3.26 ± 0.72\n1k 1 n 0.66 ± 0.12 4.79 ± 0.79\n\n47 1 n 0.84 ± 0.18 5.22 ± 0.96\n\n47 100 n 0.90 ± 0.18 7.28 ± 1.46\n\n**Table 3**\nDirect comparison of the 2 × 2 onsemi ArrayJ-60035-4P with\nthe 2 × 2-hybrid array (1 k Ω, 270 pF) without _𝐶_ _𝑜𝑢𝑡_ and without\npreamplifier.\n\nArray _𝐴_ 2 _𝑥_ 2 ∕ _𝐴_ _𝑟𝑒𝑓_ _𝑡_ _𝑟𝑖𝑠𝑒_ (ns) J",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 13.330414130129821,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6299,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker.md",
+        "title": "2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker",
+        "text": "lacement and quality\nof soldering. Finally, the open connection test is performed and the\nsurface is cleaned.\n\n2. **Guide pins Installation** : Since the position of the detector module\nis crucial, the two precision guide pins are designed. To install the\nguide pins in the correct position, the guide pins are installed by the\npin installation jig to make sure the length of the pin exceeds the\nsensor side of MS is 9.0 mm as shown in Figure 9.\n\nFigure 9: The positions of guide pins after installation.\n\n3. **Bonding the outer Flexible Hybrid PCB to outer wedge** : To\nbond the outer Flexible Hybrid PCB to the outer wedge, the first step\nis to place the pickup tool and two trays for the other wedge and PCB\non the assembly table. The outer Flexible Hybrid PCB is picked up by\nthe gantry with a special jig as shown in Figure 10, and the locations\nare determined by the camera on the gantry using two guide points\non the outer Hybrid PCB. Note that “Araldite 2011” [6] is used for\nbonding.\n4. **Assembling the inner wedge to the outer wedge** : Before assembling the inner and outer wedge together, the cooling tube and tube\nholder need to be installed on the outer wedge. Then, the inner and\nthe outer wedge (with Hybrid PCB and cooling tube assembled) are\nplaced on the jig. The robotic gantry picks up the inner wedge and\nassembles it onto the outer one, as shown in Figure 11.\n5. **Bonding Inner Hybrid PCB on the inner wedge** : Similarly to\nstep 4, the inner Hybrid PCB is bonded on the inner wedge with the\ngantry. However, in this step, the Hybrid PCB is picked up and glued\non the inner wedge, instead of the outer wedge, as shown in Figure 12.\n6. **Soldering the electronic components on the Hybrid PCB** : All\n\n11\n\nFigure 10: The gantry picks up the outer wedge and places it onto the Hybrid PCB.\n\nFigure 11: The robotic gantry picks up the inner wedge and assembles it onto the outer\nwedge.\n\nthe electronic components are carefully soldered on the Hybrid PCB\nwith a clean surface. Then, the flux is removed and the visual inspection is also performed. Finally, the open/short connection test is\nconducted to ensure the module is ready.\n\n_5.3. Quality assurance_\n\nAfter assembling the hybrid PCB and MS together, we perform similar\nmeasurements for flatness on the chip and sensor areas and positioning for\nthe inner hybrid and outer hybrid (the distance from the center of the guide\npins to reference points) using the Optical Gauging Products (OGP) at\nTIDC, as shown in Figure 13.\n\n12",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 12.562894557796655,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6297,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker.md",
+        "title": "2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker",
+        "text": "ensor has inner and outer sensor parts, thus the hybrid is\ndivided into inner and outer parts accordingly. For inner sensors, 512 silicon\nstrips are designed for signal readout, whereas each outer sensor utilizes 256\nsilicon strips. To better optimize the geometry, the inner hybrid carries\nsignals from 1 sensor and the outer hybrid carries signals from 2 sensors\nfor each module. Thus 512 readout channels are required for both inner\nand outer hybrids. The APV25-S1 chip [4] is chosen to read out the sensor\nsignals as it is an analogue pipeline ASIC intended for the read-out of silicon\nstrip detectors. Each APV25 chip features 128 channels, making 4 APV25\nchips sufficient for the inner and outer sensor requirements. To meet the\npower supply demands of these sensors, we have configured 14 evenly spaced\nhigh-voltage lines in the inner hybrid and 16 in the outer hybrid.\n\n6\n\nshow the layouts of inner and outer hybrids, and (c) and (d) are the corresponding photos. The hybrids share the same sector angle of 32 degrees,\nand the inner and outer hybrids have tail lengths of 12.6 cm and 2cm, respectively. Each hybrid is made of Kapton substrate with 3 copper layers\nand a thickness of roughly 0.3mm to reduce interactions with passing particles in the sensor area. Both inner and outer hybrids have 4 APV25 chip\nplacement sites, and provide the electrical connection from the APV25 chips\nto the connector site on the end of each hybrid. The silicon strip sensors\nand APV25 chips are wire-bonded and glued onto hybrids. Thus, power and\nsignal connectivity from the hybrid to APV25 chips are provided by wire\nbonds. All hybrids are finished with ENEPIG plating for compatibility with\nboth wire bonding and conventional soldering.\n\n7\n\n|(nA)<br>180 I<br>160<br>140<br>120<br>100<br>80 InnerSensor Chip2 Hamamatsu<br>InnerSensor Chip3 Hamamatsu<br>60<br>InnerSensor Chip4 Hamamatsu<br>InnerSensor Chip5 Hamamatsu<br>40<br>20<br>0 20 40 60 80 100 120 140 160 180 200<br>V (volt)|Col2|\n|---|---|\n|||\n|0<br>20<br>40<br>60<br>80<br>100<br>120<br>140<br>160<br>180<br>200<br>V (volt)<br>0.05<br>0.1<br>0.15<br>0.2<br>0.25<br>0.3<br>0.35<br>6<br>−<br>10<br>×<br>)<br>2<br> (1/nF<br>2<br>1/C<br>InnerSensor Chip2 Hamamatsu<br>InnerSensor Chip3 Hamamatsu<br>InnerSensor Chip4 Hamamatsu<br>InnerSensor Chip5 Hamamatsu||\n\nFigure 5: Leakage current _I_ (top) and inverse capacitance squared 1 _/C_ [2] (bottom) as a\nfunction of reverse bias voltage _V_ for inner sensors.\n\n**5. Module Mechanics**\n\n_5.1. Main s",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 11.6262900271984,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1387,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip.md",
+        "title": "2023__recid_2685640__2308.02238__A_hybrid_integrated_quantum_key_distribution_transceiver_chip",
+        "text": "ors (CDMs). In\nrecent years work on CDMs has increased the\nachievable bandwidths above 50 GHz [27], but\nthey still exhibit comparatively poor performance\nwith regards to baseline loss, phase-dependent loss\n\n[10] and phase-modulation efficiency when compared to EOPMs [28, 29]. To-date, the majority of\non-chip QKD demonstrations have opted for passive receivers, with no examples of active on-chip\nreceivers operating above 10 MHz.\nAs a solution to the limitations of the avail\nable PIC platforms we identify hybrid integration,\nwhere two different materials are combined in one\nphotonic circuit. Others have already identified\nhybrid integration as an important next step for\n\nquantum integrated photonics [30, 31]. Indeed, for\nclassical integrated photonics, hybrid integration\nhas already emerged as an important capability.\nThis has usually come in the context of integrating III/V lasers onto silicon photonics, which does\nnot possess a native lasing ability. A number of\ndifferent hybrid integration approaches have been\ndeveloped, including flip-chip[32], edge-coupling\n(also called butt-coupling) [33], and photonic wire\nbonding [34], as well as heterogeneous methods\n\n[35, 36]. However, to date the application of\nhybrid integration to quantum integrated photonics has been notably limited [37, 38], with no full\ndemonstrations of QKD.\nIn this work, we present the results from a\nprototype edge-coupled hybrid QKD transceiver.\nBy combining an ultra-low-loss SiN interferometer with the superior modulation characteristics\nof an InP EOPM, we demonstrate actively modulated transmitter and receiver circuits with low\ninsertion loss ( _<_ 8 dB), low operating voltage (4\nV) and high clock rate (1 GHz). We measure reliably _<_ 1 dB interface loss between the SiN and\nInP PICs, a value that compares well to other\nhybrid integration approaches and supports the\nuse of edge-coupling when low insertion loss is\nimportant. In order to benchmark performance,\nwe exchange quantum signals between two of our\ntransceivers and thus estimate achievable secure\n\nkey rates for a complete real time QKD system.\nWe demonstrate simultaneous and bidirectional\n\noperation, achieving 1.82 Mbps secure key rate\nover a 10 dB channel loss. Further, we test our\nsystem over real fibre spools, recording positive\nsecure key rates over 250 km of low-loss fibre in\nthe finite key regime. Long-term testing of the system is used to demonstrate the intrinsic stability\nof the PIC platform. These results underline the\npot",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 11.59858460585886,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6296,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker.md",
+        "title": "2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker",
+        "text": "nnections to each strip for testing purposes.\nA polysilicon resistor connects the p+ implant strip to a p+ bias line\n(see Figure 4). The backside of the silicon sensor at a positive electric\npotential and the p+ bias line at the ground potential provide the needed\nreverse bias to the silicon sensor. Figure 5 shows the leakage current and\ninverse capacitance squared as a function of reverse bias voltage for some\ninner sensors with 100 kHz test frequency. As can be seen, the capacitance\n\n4\n\n## FST Material Budget\n\n1\n\n10 −1\n\n10 −2\n\n10 −3\n\n|Col1|One FST disk|Col3|material budget|\n|---|---|---|---|\n|||**sili**|**con sensor**|\n|||**AP**|**V chips**|\n|||**hyb**|**rid**|\n||**inn**<br>**out**<br>**coo**|**inn**<br>**out**<br>**coo**|**er mechanical structure**<br>**er mechanical structure**<br>**ling**|\n||y2021<br> <br>π<br>-|y2021<br> <br>π<br>-|geometry<br>π<br> <<br>φ<br><|\n|||||\n|||||\n|||||\n\n2 2.5 3 3.5 4 4.5 5\nη\n\n1\n\n10 −1\n\n10 −2\n\n10 −3\n\n|Col1|One FST disk m<br>silicon|Col3|aterial budget<br>sensor|Col5|\n|---|---|---|---|---|\n|||**APV c**|**hips**||\n|||**hybrid**|||\n|||**inner**<br>**outer**|**mechanical structure**<br>**mechanical structure**||\n|||**coolin**|**g**||\n||||||\n||||||\n||||||\n||||||\n||||||\n||||||\n||||||\n||||||\n||||||\n||2.5|2.5|< 4<br>η<br>||\n||||||\n||||||\n||||||\n||||||\n\n−3 −2 −1 0 1 2 3 4 5\n\nφ\n\nFigure 2: FST material budget in radiation length ( _X_ 0 ) as a function of _η_ (top) and _ϕ_\n(bottom) with contributions from different components shown separately.\n\nreaches a minimum plateau of around 110-130 _V_, while the leakage current\nis below 0.2 _µA_ before radiation.\n\n5\n\nFigure 3: Resolution of the forward tracking system vs. _p_ _T_ with and without the FST\nused in tracking for a sample of PYTHIA p+p 500 GeV/c events in the STAR simulation\nenvironment.\n\n**4. Hybrid**\n\nFlexible substrates hold electronics to form a circuit board known as a\n\n”hybrid”. To meet the requirement of a low material budget, the flexible\nhybrid was utilized. The hybrid is one of the key components of the front-end\nreadout system, designed for the placement of silicon strip sensors and analog\nfront-end chips. The transfer board, T-Board, was designed to transfer the\nhybrid signals and voltages to the readout system.\nThe silicon sensor has inner and outer sensor parts, thus the hybrid is\ndivided into inner and outer parts accordingly. For inner sensors, 512 silicon\nstrips are designed for signal readout, whereas each outer sensor utilizes 256\nsilicon strips. To better optimiz",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 11.537311211339315,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2267,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2672286__2306.14944__Fully_ab-initio_all-electron_calculation_of_dark_matter-electron_scattering_in_crystals_wi.md",
+        "title": "2024__recid_2672286__2306.14944__Fully_ab-initio_all-electron_calculation_of_dark_matter-electron_scattering_in_crystals_wi",
+        "text": "ich are only present in\nthe all-electron valence and conduction bands due to the\nrapid oscillations near the core. In [34], the all-electron\nwavefunctions were recovered after a plane-wave calculation via the PAWs. In §III, we benchmark this methodology against the full all-electron calculation allowed by\nour Gaussian basis set.\n\n_3._ _Exchange–correlation functional_\n\nIn practice, the exact form of the exchange and correlation energy in Eq. (1) is not known; however, there\nare many well-motivated approximations (see [49]). The\nchoice of exchange and correlation functionals presents\na major source of systematic uncertainty in the calculation. This systematic uncertainty can be estimated by\ncalculating the electronic structure with different functionals, and comparing the results. The broad categories\nof functionals are\n\n4\n\n1. Local Density Approximation (LDA) – _E_ _xc_ is a\nfunctional of only _n_, _E_ _xc_ _−→_ _E_ _xc_ [ _n_ ] _._\n\n2. Generalized Gradient Approximation (GGA) – _E_ _xc_\nis a functional of _n_ and _**∇**_ _n_, _E_ _xc_ _−→_ _E_ _xc_ [ _n,_ _**∇**_ _n_ ].\n\n3. Meta-GGAs (mGGA) contain higher order derivatives of _n_, including terms like _∂_ _· ∂n_ and _∇_ [2] _n_ .\n\n4. Hybrid functional are GGA and mGGA functionals\nwith added exact Hartree-Fock exchange.\n\n5. Double hybrid functionals add Møller-Plesset perturbation theory at second order (“MP2 level”) to\nhybrid functionals in an effort to better model correlations.\n\nWe use the well tested PBE0 hybrid exchangecorrelation functional. We further test several GGAs,\nmGGAs, and other hybrid functionals to show the dependence of DM–electron scattering rates on the choice\nof exchange-correlation functionals. Moreover, the choice\nof _E_ xc affects the calculated bandgap _E_ gap of the material, and so we apply a scissor correction to match the\nexperimental bandgap.\n\n**B.** **Excitation rates in atom-centered bases**\n\n_1._ _Theory_\n\nAs described in §II A, we self-consistently solve the\nKohn-Sham equations to obtain the coefficients _C_ _iα_ ( **k** )\nin Eq. (7). The key quantity required from the DFT\ncalculation for calculating DM–electron scattering is the\ncrystal form factor (equivalent to Eq. (3.17) of [5]),\n\n_E_ _e_ _δ_ ( _E_ _e_ _−_ ( _E_ _j_ **k** _′_ _−_ _E_ _i_ **k** )) _×_\n(2 _π_ ) [3]\n\n_|f_ crystal ( _q, E_ _e_ ) _|_ [2] = [2] _[π]_ [2]\n\n_E_ _e_\n\n1\n\n_αm_ [2] _e_ _V_ cell\n\n_V_ cell _d_ [3] _k_\n\ncell _d_ [3] _k_ _V_ cell _d_ [3] _k_ _[′]_\n\n(2 _π_ ) [3] (2 _π_ ) [3]\n\n�\n\n_ij_\n\n� BZ\n\n(8)\n\n(9)\n\nw",
+        "score": 0.013513513513513514,
+        "dense_score": null,
+        "bm25_score": 11.06421946185578,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8125,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3065173__2510.05301__Switchable_spinphoton_coupling_with_hole_spins_in_single-quantum_dots.md",
+        "title": "2026__recid_3065173__2510.05301__Switchable_spinphoton_coupling_with_hole_spins_in_single-quantum_dots",
+        "text": "ility. In particular, naturally arising strain\nfields due to the gate stack introduce spatial gradients\nof the ˆ _g_ -matrix and inhomogeneous SOC [58], strongly\nenhancing manipulability.\n\nHere we develop a comprehensive theory of single-dot\nhole spin-photon coupling that incorporates these effects\nin Si, biaxially strained Ge, and the recently proposed\nunstrained Ge heterostructures [66, 67]. We find new\nterms arising from inhomogeneous strain fields which enable spin-photon couplings of a few tens of MHz, more\neffectively in unstrained Ge. We also analyze strategies to\nswitch the interaction on and off and find that detuning\nthe qubit from the cavity via gate-controlled confinement\nis the most practical and coherence-preserving approach.\n\n2\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n||**(b)**|||||\n|||||||\n|||||||\n|||||||\n\n_−_ 50 _−_ 25 0 25 50\n_x_ (nm)\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n||**(c)**|||||\n|||||||\n|||||||\n|||||||\n\n_−_ 50 _−_ 25 0 25 50\n_x_ (nm)\n\n_×_ 10 _[−]_ [3]\n\n6\n\n3\n\n0\n\n-3\n\n-6\n\n50\n\n25\n\n0\n\n_−_ 25\n\n_−_ 50\n\n0.3\n\n0.2\n\n0.1\n\n0.0\n\n-0.1\n\n-0.2\n\n-0.3\n\n50\n\n25\n\n0\n\n_−_ 25\n\n_−_ 50\n\nFIG. 1. Hybrid spin-photon system. (a) Anisotropic 2D harmonic quantum dot with lengths _ℓ_ _x,y_ = ~~�~~ ℏ _/_ ( _m_ _∥_ _ω_ _x,y_ ). The cavity\n\nfield displaces the hole wave function along _x_ by _eF_ zpf ( _a_ + _a_ _[†]_ ), where _a_ _[†]_ ( _a_ ) creates (annihilates) a cavity photon. A magnetic\nfield **B** = _B_ (sin _θ_ cos _ϕ,_ sin _θ_ sin _ϕ,_ cos _θ_ ) sets the Zeeman splitting of the ground-state spin doublet. (b) Shear-strain component\n_ε_ _xz_ ( _x, y_ ) at _z_ = 0 for the strained Ge/GeSi device of Ref. 58 with a well thickness of 16 nm, a circular Al gate of 50 nm radius\n(grey circle) separated from the quantum well by 5 nm of insulating Al 2 O 3 and 50 nm thick upper GeSi barrier. (c) Inverse\ninhomogeneous spin-orbit length 1 _/ℓ_ so [(] _[x]_ [)] [(] _[x, y]_ [)][ at] _[ z]_ [ = 0][ for motion along] _[ x]_ [ in the same device.]\n\nThe manuscript is organized as follows. Sec. II introduces the effective model including inhomogeneous spinorbit mechanisms. Sec. III evaluates spin-photon coupling across material platforms, benchmarking to tightbinding simulations, and finding unstrained Ge as the\noptimal material for spin-photon interactions. We then\ncompare different coupling control strategies for the optimal unstrained Ge in Sec. IV. Finally, in Sec. V we\npresent resonant and dispersive two-qubit gate protocols\nand their",
+        "score": 0.013333333333333334,
+        "dense_score": null,
+        "bm25_score": 11.035462278455865,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1888,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "5.10 Slice test**\n\nA full electronics read-out test on a prototype stave, dubbed _slice test_, was set up to\nvalidate the detector design with realistic power distribution and grounding. To read out\na complete stave, two partially routed backplanes were used together with four DCBs and\nassociated power distribution break-out boards. The LHCb MiniDAQ system was used to\ncontrol the system, distribute the timing signals and send trigger commands to the FE\nelectronics, and to process the data from the FE electronics. The stave was cooled using\na bi-phase CO 2 cooling system (a reduced size version of the one installed in the LHCb\ncavern). The stave was operated in a light-tight box at temperatures between _−_ 30 and\n15 _[◦]_ C.\n\nData were collected with different numbers of hybrids powered and configured to\nnominal settings, in order to study possible correlated noise effects. ASICs on each hybrid\nwere configured individually, or all at the same time. Finally, tests with all hybrids\npowered and configured simultaneously were carried out. An example result of the noise\nbefore and after mean common mode suppression is shown in figure 39 for the innermost\nmodule on a Medium dataflex cable. The raw and common mode subtracted noise were\naround 1.1 and 0.9 ADC counts, respectively, when only that particular single module\n\n54\n\nFigure 39: The raw and common mode subtracted noise measured in a single hybrid with only\nthat hybrid powered and configured (blue and red curves, respectively) compared with the noise\nmeasured in the same hybrid when all hybrids in the stave were operating (black and cyan).\n\nwas configured. When all modules were operating, the raw noise increased by around\n10% while the difference in the noise after common mode subtraction was negligible.\n\n##### **5.11 Simulation and reconstruction software**\n\nUnlike for the TT detector in the original LHCb experiment, the UT DAQ electronics\ndoes not cluster adjacent strip hits. All strip hits are saved with their ADC pulse\nheights. In spite of somewhat complicated UT raw bank organisation, driven by the\nreadout granularity and limited computing resources available in the TELL40 boards,\nfast raw data processing is achieved via a smart iterator with the knowledge of the raw\ndata structure, pointing directly to the raw bank in computer memory. In the simplest\nimplementation, a strip hit in the raw bank is promoted directly to a hit with a space\nlocation used by the LHCb tracking software. Since only, 10% of trac",
+        "score": 0.013157894736842105,
+        "dense_score": null,
+        "bm25_score": 11.01060051530107,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 70,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.10006460221484303,
+    "generation_latency_s": 1.2014061212539673e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 6.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.10006460221484303,
+    "generation_latency_s": 1.2014061212539673e-07
+  }
+}

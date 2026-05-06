@@ -1,0 +1,396 @@
+{
+  "benchmark": {
+    "query_id": "mul001",
+    "query_type": "multi_hop",
+    "query": "How are depletion depth, electric field, and timing resolution connected in HV-MAPS?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How are depletion depth, electric field, and timing resolution connected in HV-MAPS?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1487,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "in Fig. 4\n\nFig. 7. Energy (Left) and time (Right) resolution obtained with the electron\nbeam test performed at BTF.\n\nperformed to study the performance expected with CE; due to\nlonger clusters and higher transversal leakage the linear and\nconstant term increased. An energy resolution better than 5\n(7.5)% was achieved at 100 MeV for runs at normal (at 50 _[◦]_ )\nincidence.\n\nTime resolution was evaluated as the difference between the\n\ntime of the two SiPM coupled to the same crystal, obtaining\na timing resolution better than 200 ps at 100 MeV. The fit\nfunction used for the time resolution is:\n\n_a_\n_σ_ _T_ = (2)\n_E_ [ _GeV_ ] _[⊕]_ _[b]_\n\nFig. 6. Left : Energy spectrum for a crystal irradiated with 6.13 MeV photons\nfrom the [16] _O_ . Right: primary and secondary distribution laser system.\n\nIII. C ALORIMETER PERFORMANCE\n\nTo verify the selected design before starting the massive\nproduction of the whole calorimeter components, a large size\nprototype was build and exposed to an electron beam at the\nBeam Test Facility of the National Laboratories of Frascati.\nThe Module-0 is composed of 52 undoped CsI crystals read\nout by 102 SiPM connected to FEE boards. Its mechanics\nwas designed to resemble as much as possible that of the\nfinal calorimeter, allowing the test assembly procedures and\ncooling. A detailed description of the setup and the main\nresults (reported in Fig. 7) obtained during the beam test can\nbe found in [13]. For what concerns the energy resolution, the\nfunction used to fit the data is:\n\n_σ_ _E_ _a_ _b_\n\n_a_ _b_\n\n_⊕_ (1)\n_E_ [ _GeV_ ] _E_ [ _GeV_ ] _[⊕]_ _[c]_\n\nwhere _a_ is proportional to the emission time constant of\nthe undoped CsI and _b_ represents the additional contribution\ndue to the readout electronics. In the years following the\ntest beam, the Module-0 has continuously operated to study\nthe behaviour in vacuum, at low temperature as well as for\ncarrying out vertical slice tests of increasing complexity, at a\nCosmic Ray test stand where the timing calibration algorithms\nwere improved. The timing resolution obtained subtracting\ntime of two SiPMs reading the same crystal is reported in\nFig. 8.\n\nFig. 8. Timing resolution of a single crystal of the large area prototype\n\nIV. C ALORIMETER PRODUCTION STATUS\n\n_A. Crystal and SiPMs characterization_\n\nThe physics requirements previously discussed were used\nto define a set of technical specifications for the undoped CsI\ncrystals and SiPMs. The selection criteria to accept crystals\nwere: _(i)_ a Light Y",
+        "score": -2.9750727320070625,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8148148148148149,
+        "rerank_score": -4.673559188842773,
+        "matched_nodes": [
+          "In",
+          "An",
+          "Timing",
+          "The",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 960,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2669039__2306.08716__Radiation-Induced_Degradation_Mechanism_of_X-Ray_SOI_Pixel_Sensors_With_Pinned_Depleted_Di.md",
+        "title": "2023__recid_2669039__2306.08716__Radiation-Induced_Degradation_Mechanism_of_X-Ray_SOI_Pixel_Sensors_With_Pinned_Depleted_Di",
+        "text": "while the sense-node capacitance depends only on _Q_ BOX .\nThus, the BOX charge at 40 krad(SiO 2 ) was first determined\nto be _Q_ BOX = 2 _._ 4 _×_ 10 [12] cm _[−]_ [2] . As shown in Fig. 3, this value\nwas chosen to reproduce the experimental results of gain and\nreadout noise, which depend on the sense-node capacitance.\nThen, by comparing with the experimental results of dark\ncurrent, the surface recombination velocity at 40 krad(SiO 2 )\nwas determined to be _S_ = 5 _._ 0 _×_ 10 [5] cm _/_ s.\nThe chosen values of _Q_ BOX and _S_ at 40 krad(SiO 2 ) are\nreasonable compared with the previous works and literature.\nAccording to Schwank et al. [15], the BOX charge is written\n\nas\n\n_D_\n_Q_ BOX = 8 _._ 1 _×_ 10 [12] _× f ×_\n� rad\n\n_t_ BOX\n_×_\n� � cm\n\ncm _[−]_ [2]\n�\n\n= 6 _._ 5 _×_ 10 [12] _× f_ cm _[−]_ [2] _,_ (1)\n\nwhere _D_ = 40 krad(SiO 2 ) is total dose, _t_ BOX = 0 _._ 2 _µ_ m\nis the thickness of BOX, and _f_ is the fraction of unrecombined holes (charge yield). The charge yield _f_ depends\non the electric field strength in BOX and the linear energy\ntransfer (LET) of the ionizing particle. According to Oldham\n& McGarrity [29] and Paillet et al. [30], a charge yield of\n_f_ = 0 _._ 2–0 _._ 4 is reasonable for 100-MeV protons with a\nLET of 6 _._ 0 MeV cm [2] _/_ g and an electric field strength of\n_∼_ 0 _._ 1 MV _/_ cm. Thus, the determined value of BOX charge\nof _Q_ BOX = 2 _._ 4 _×_ 10 [12] cm _[−]_ [2] is acceptable. On the other\nhand, the surface recombination velocity _S_ = 5 _._ 0 _×_ 10 [5] cm _/_ s\nat 40 krad(SiO 2 ) determined in this work roughly matches that\nof _S_ = 1 _._ 7 _×_ 10 [5] cm _/_ s at 10 krad(SiO 2 ) determined in the\nprevious work [19].\nIn addition to the simulations for the 100-MeV proton experiment described above, simulations with a slightly smaller\n\nFig. 4. Simulated dark current as a function of total dose (blue solid\nline and blue dotted line), compared with experimental data (red triangle\nand filled circle). The experimental data is the same as that presented in\nHayashida et al. [18]. For discriminating the effects of the increases in BOX\ncharge _Q_ BOX and surface recombination velocity _S_, the simulated dark\ncurrent with a constant BOX charge _Q_ BOX = 2 _._ 0 _×_ 10 [11] cm _[−]_ [2] was also\nshown in a blue dashed line.\n\nBOX charge _Q_ BOX were also performed to mimic the 6MeV proton experiment. Although the literature does not\nprovide actual measurements of the charge yield for 6-MeV\nprotons [29], [30], it should be smaller th",
+        "score": -5.048997082745588,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8148148148148149,
+        "rerank_score": -7.8642120361328125,
+        "matched_nodes": [
+          "In",
+          "On",
+          "Let",
+          "The",
+          "For",
+          "As"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5774,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices.md",
+        "title": "2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices",
+        "text": "p, we perform a fitting routine which\nfinds the best pair of lines, with higher weight given to\n_V_ 1e at lower voltages, and intercept close to _V_ DS = 0.\n\n**VARIABILITY OF INDUSTRIALLY**\n\n**FABRICATED QUANTUM DOTS**\n\nTo assess inherent process variability, considerable effort was placed in the design stage to suppress known\nsources of semiconductor process variability, e.g. layout\neffects (see Methods), so the variability we measure is\nprimarily inherent to each DUT. As shown in Fig 4b, in\ndevices with greater gate lengths, multiple dots are generated, resulting in complex multi-dot structures. On the\nother hand, devices with shorter gate lengths yield single\nquantum dots, however in some devices the small gate\nlength leads to an early transistor turn-on, resulting in\n‘bad’ dots. Overall, the device designs with the highest\nproportion of good QD features have shorter gate lengths,\n28 nm and 40 nm. The two channel widths do not impart\nsignificant differences across the farm. The extracted parameters for these good devices are shown in Fig. 4ce. With decreasing gate length we see a lower threshold\nvoltage due to the increasing effect of the electric field\nproduced by the source and drain, a well-known short\nchannel transistor effect, likely caused by drain-induced\nbarrier lowering (DIBL) [40]. The gate lever arm and\nlever arm asymmetry remain fairly constant, indicating\nthat dots remain well controlled by the gate even at the\nsmallest dimensions.\nFor the _L_ = 28 nm case, we find the first-electron\nvoltages ( _V_ 1e = 387(22) mV) and the gate lever arms\n~~(~~ ~~_α_~~ G = 0 _._ 741(82)) are narrowly distributed. We find the\nstandard deviation of _V_ 1e ( _≈_ 22 mV) is comparable to\nthe spacing (25(4) mV) between the first and second observed electron ( _V_ 2e ) loading voltages, measured from a\nsubset of devices where a second transition is clearly visible. This suggests that the tight requirements for shared\nvoltage control [23] are within reach, but need further\nreduction. Alternatively, small variations may be compensated with independent voltage trimming of each of\nthe QD back-gates, however this comes at the cost of a\ngreater number of control lines per QD. We note that the\nlarge gate lever arm will be beneficial when implementing\ngate-based dispersive readout[35].\nThe mean dot asymmetry ~~_α_~~ D ~~_−_~~ ~~_α_~~ S = _−_ 0 _._ 040(150)\nshow that on average the QDs are well-centered in the\nchannel. We note that, since all lever arms must add\nto 1, a la",
+        "score": -5.42592742284139,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8333333333333333,
+        "rerank_score": -8.446298599243164,
+        "matched_nodes": [
+          "On",
+          "The",
+          "We",
+          "For",
+          "To",
+          "Quantum",
+          "As"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4775,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "ed pixels within the trigger acceptance. Compare to figure 1\nfor pixel layout.\n\nAn in-pixel efficiency map is obtained by projecting the reconstructed particle intercepts with the DESY\ndSiPM ( _x_ _track_, _y_ _track_ ) into a single pixel and averaging\nthe efficiency for the binned in-pixel positions. Such\na map is shown in figure 5, the displayed area corresponds to the one shown in figure 1. As can be seen, the\nDESY dSiPM is highly efficient when the electrons hit\nthe SPADs, but inefficient in the area in-between. The\ngeometric setup, due to an inhomogeneous distribution\nof material, does not allow estimating the track resolution at the position of the dSiPM. However, assuming a\ntrack resolution of about 6.1 µm, the results are in agreement with the hypothesis of smeared-out position information and a fully efficient SPAD of the nominal area.\nThis is supported by the fact that the measured total efficiency of about 32 % agrees with the fill factor of the\nsensor. Systematic effects due to dead time and fake hits\nare estimated to be on the order of a few percent.\nIn figure 6, the distribution of the residuals between\n_x_ _track_ and the position measurement provided by the\nDESY dSiPM itself ( _x_ _hit_ ) is shown. For a fully efficient\nsensor with the same pitch, the core of the distribution\nwould be expected to resemble a box, convolved with a\nGaussian to account for the finite track resolution. Due\nto the inefficiency between SPADs, shown in figure 5, a\ntwo-peaked structure appears instead. The background,\nvisible for values below −40 µm and above 40 µm, is\n\n60\n\n50\n\n40\n\n30\n\n20\n\n10\n0 −0.4 −0.2 0 0.2 0.4\nt dSiPM2 -t dSiPM1 [ns]\n\nFigure 7: Time residual between the time stamps provided by the two\ninstalled DESY dSiPMs, operated at a temperature of about 0 [◦] C and\nan over voltage of 2 V.\n\ndue to an association of noise hits. The standard devia\ntion of the distribution of about 21 µm is within expectations for a sensor of the given pitch and confirms a\nspatial resolution on the level of a single pixel.\n\nTo study the time resolution of the DESY dSiPM,\nthe residual between the time stamps provided by the\ntwo installed DESY dSiPMs is calculated. The sec\nond DESY dSiPM is operated at a similar temperature\nand over voltage, and referred to as dSiPM2. The time\nstamps are corrected for differential non-linearity in the\nTDCs. Corrections for propagation delays are expected\nto be small, due to the symmetry of the setup, and are\nnot applied. The corresponding distri",
+        "score": -5.523650520465993,
+        "dense_score": 0.4039120376110077,
+        "bm25_score": null,
+        "graph_score": 0.7592592592592593,
+        "rerank_score": -8.592866897583008,
+        "matched_nodes": [
+          "In",
+          "An",
+          "The",
+          "For",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6754,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "enting a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter, lens height,\nand residual layer thickness. MLAs at the wafer level were\ndeposited on SiPM multichannel arrays with 41 _._ 7 _µm_ pixel\nsize from FBK and compared with bare and flat layer coated\ndevices. The performance was measured in the lab by injecting\nmonochromatic narrow normal incident light and in a fibre\ntracker module with high energetic particles. The results are\npresented in detail as a function of wavelength and ∆ _V_ for the\nlaboratory measurement and as a function of injection distance\nand ∆ _V_ for the SciFi measurement.\nIn summary, at ∆ _V_ = 2 _V_, an increase of 22% is observed\nfor the narrow normal light source and 17% at ∆ _V_ = 8 _V_ .\nFor the SciFi light source, the increase is 22 _._ 5% and 20 _._ 5%\nat ∆ _V_ = 2 _V_ and ∆ _V_ = 6 _V_, respectively. These values\ncorrespond to an overestimation of 10 _−_ 15% by simulation.\nAs the implementation depends on the precise alignment of\nthe MLA and the silicon structure as well as on the optical\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 8\n\nparameters of the implementation, the results of simulation\nand measurements can be considered in good agreement.\nIn addition to the higher PDE, MLA-enhanced detectors also\nshow a reduction of 40% of external cross-talk compared to\na flat coated detector. An improvement in timing performance\nin SPTR is expected due to the partial masking of the border\nregion (deflection of the photons towards the pixel centre by\nthe lens), which was reported in other works and seen in\npreliminary measurements in our lab.\nThe optical transparency of the less than 50 _µm_ thick\nMLA layer, in a wavelength range between 350 _nm_ and\n700 _nm_, was measured before and after irradiation. No\nmeasurable change was observed with a neutron equivalent\nfluence of the expected radiation level in the LHCb upgrade\n2 (3 _._ 0 _×_ 10 [12] 1 MeV n eq _/_ cm [2] ) and an ionising dose of\n1 _kGy_ . Further improvements by adding an anti-reflecting\ncoating (ARC) to the polymer surfaces of the MLA can\npotentially decrease the Fresnel reflection loss. A prototype\nwith optimised coating for the emission spectral range of\nthe SciFi light source is foreseen. For low ∆ _V_ = 2 _V_,\nthe prospects of MLA enhanced SiPMs with SciFi tr",
+        "score": -5.711196484601056,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8148148148148149,
+        "rerank_score": -8.882980346679688,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "The",
+          "For",
+          "As"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1359,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2684575__2308.01148__Beam_test_simulation_and_performance_evaluation_of_PbF2_and_PWO-UF_crystals_with_SiPM_read.md",
+        "title": "2023__recid_2684575__2308.01148__Beam_test_simulation_and_performance_evaluation_of_PbF2_and_PWO-UF_crystals_with_SiPM_read",
+        "text": "re 5, bottom\n\n**Frontiers** **5**\n\n_**D. Paesani et al.**_\n\n**Figure 4.** Left panel: Example of signal fitted using a template generated from corresponding dataset;\nthe marker shows the constant fraction time. Right panel: Comparison between the pulse shapes for two\ndifferent types of crystal. PbF 2 shows a sharper rising edge than PWO-UF.\n\nleft; such a bias might be expected due to the variation of the waveform shape as a function of particle hit\nposition, which will be discussed in Section 4. Similarly, it was verified that the aforementioned selection\ncuts did not result in any bias with respect to pulse amplitude and timing. To ensure that the reconstructed\n\n**Figure 5.** Timing reconstruction diagnostics. Top left: Example of constant fraction optimisation by\nminimisation of the timing resolution. Top right: Plot of reconstructed time modulo the digitiser sampling\nperiod of 200 ps, showing no significant bias from the timing algorithm. Bottom left: Example of _j_ [2]\ndistributions resulting from template fits applied to PbF 2 waveforms for CH0 (black) and CH1 (red). Bottom\nright: _j_ [2] distribution as a function of the particle hit position on the crystal.\n\n**Frontiers** **6**\n\n_**D. Paesani et al.**_\n\ntiming information was free of any significant bias with respect to the digitiser sampling frequency, the plot\nin Figure 5, top right, was produced, which shows that the distribution of the reconstructed time modulo the\ndigitiser sampling period is flat.\n\n### **3 TEST BEAM SIMULATION**\n\nDetailed Geant4 [ 8 ] simulations of the beam, crystal, wrapping, and SiPM readout were developed for both\ntypes of crystals. A sensitive detector attached to the crystal volume was used to score energy deposits,\n6\nwhile different beam sources were used to reproduce the test beam scenarios, as discussed below. Figure\nshows the reference geometry, containing a single crystal and its wrapping, along with the four SiPM\npackages and active silicon regions.\n\n**3.1** **Optical transport**\n\nFor PbF 2 crystals, which represent the baseline choice for the Crilin design, a detailed simulation was\nalso implemented to study the optical transport of Cherenkov photons. The relevant optical properties and\nsurfaces were simulated. In particular, a dielectric-dielectric optical boundary between the PbF 2 crystal\nand Mylar wrapping was implemented, based on the LUT model [ 9 ]. The interface between the crystal\nand the four SiPM packages, made of silicone resin, was simulated using a p",
+        "score": -5.740489926373518,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8148148148148149,
+        "rerank_score": -8.928047180175781,
+        "matched_nodes": [
+          "In",
+          "Timing",
+          "LUT",
+          "The",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5796,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices.md",
+        "title": "2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices",
+        "text": "D formed through sequential tunnelling of electrons from the source to the drain via\nthe dot can be described by a gross tunnelling rate Γ. This rate is the average number of electrons that flow from\nthe source to the drain, and is the harmonic mean of the individual tunnel rates from the dot to the source (Γ S ) and\ndrain (Γ D )\n\nΓ _[−]_ [1] = Γ _[−]_ D [1] [+ Γ] _[−]_ S [1] _[.]_ (4)\n\nSince the gross tunnel rate can be directly measured in our devices in dc transport Γ = _I_ D _/|e|_, we can use this to\ndefine a lower-bound for the individual tunnel rates. From our measurements, we extract the dc drain current _I_ D\nunder the bias conditions _V_ GS = _V_ 1e and _V_ DS = 1 mV, giving _I_ D = 1 _._ 2(9) nA across all devices. This gives a mean\ngross tunnel rate of Γ = 7 _._ 4 _×_ 10 [9] s _[−]_ [1] .\n\n**VII.** **OUTLOOK ON DEVICE YIELD**\n\nWe now address the imperfect yield of good QD features in the devices tested here. Good QD features require two\nmain ingredients:\n\n - A potential well that can confine at least one electron\n\n - Potential barriers between the potential well and the device leads of sufficient length and height to ensure the\ntunnelling resistance is greater than the resistance quantum _R_ _Q_ = _h/e_ [2] .\n\nSpecific to our measurements using rf reflectometry, we also require that the tunnel rate is larger than the probe\nfrequency to observe a signal, i.e. Γ _/_ 2 _π >_ 407 MHz, which corresponds to a current of _∼_ 60 pA.\nFor devices where two ohmic leads are gated by a single electrode, as in a typical field-effect transistor (FET),\ncharge confinement is only possible in a narrow operating range due to the lack of control over the tunnel barriers\nbetween the leads and the formed QD [11, 12]. Outside of this region the device is either pinched-off (no QD formed\nand no conductance between the leads) or the device exhibits either direct tunnelling or co-tunnelling from one lead\nto the other, resulting in a background flow of electrons which obscures charge confinement. With a single electrode it\nis impossible to independently control QD formation and the tunnel barriers. To circumvent this, multiple electrodes\nare typically used which define QD gates and barrier gates, or confinement gates, to enable this independent control.\nAn alternative approach is to create larger intrinsic sections between the leads and the gated region. In a self-aligned\nlithography process, after depositing the gate electrode, the leads are defined by implanting dopan",
+        "score": -5.77581054214195,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8148148148148149,
+        "rerank_score": -8.982386589050293,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2253,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device.md",
+        "title": "2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device",
+        "text": "of IV simulation results\nand accurate CV simulation results indicates that RASER is capable of basic\ndevice simulation and has a certain reliability.\n\nSpringer Nature 2021 L [A] TEX template\n\n8 _Design and simulation of a novel 4H-SiC LGAD timing device_\n\n#### (a) (b)\n\n**Fig. 3** Comparison between DEVSIM simulations and experimental results (a) C-V performance of DEVSIM simulation and experimental result (b) I-V performance of DEVSIM\nsimulation and experimental result\n\nIn addition, the influence mechanism of some deep level defects on the leakage current was also studied. Two kinds of deep level defects, Z 1 _/_ 2 and EH 6 _/_ 7,\nin 4H-SiC materials were mainly investigated[23]. For Z 1 _/_ 2, the defect concentration ranges from 1×10 [13] cm _[−]_ [3] to 1×10 [15] cm _[−]_ [3], and the capture cross\nsection ranges from 1×10 [12] cm [2] _∼_ 1×10 [16] cm [2] . However, there is no significant\neffect on the leakage current from Z 1 _/_ 2, which may be due to its relatively low\nenergy level. On the other hand, for EH 6 _/_ 7 with an energy level of 1.25 eV to\n1.73 eV, the leakage current increases slightly with the increase of defect concentration shown as Figure 4(a). And the change of the capture cross section\nhas little effect on the leakage current shown as Figure 4(b). From the simulation, the deep energy level defect has a slight effect on the leakage current of\n4H-SiC PIN device, demonstrating it is not the dominant factor. Furthermore,\nit has been reported that macroscopic defects would greatly affect the carrier\nlifetime of the SiC devices, thus affecting the leakage current[24, 25]. Therefore,\nit is particularly important to avoid macroscopic defects in the preparation\nprocess of SiC detectors.\n\nSpringer Nature 2021 L [A] TEX template\n\n_Design and simulation of a novel 4H-SiC LGAD timing device_ 9\n\n#### (a) (b)\n\n**Fig. 4** (a) Effect of different _EH_ 6 _/_ 7 defect concentrations on leakage current. (b) Effect of\ncapture cross-section on leakage current.\n\n**3.2 The simulation of 4H-SiC LGAD detector**\n\nRASER was used to simulate the I-V and C-V curves of the 4H-SiC LGAD.\nAs shown in Figure 5(a), the breakdown voltage of this device can be obtained\nfrom the I-V curve, which is approximately 3700 V of the 4H-SiC LGAD. The\nC-V curve, shown as the Figure 5(b), demonstrates the depletion voltage of\ngain layer V _GL_ and the full depletion voltage V _F D_ . In detail, different from the\nPIN device, the C-V curve of the LGAD device shows a platform at a",
+        "score": -5.809349598919904,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8148148148148149,
+        "rerank_score": -9.033985137939453,
+        "matched_nodes": [
+          "In",
+          "On",
+          "AND",
+          "The",
+          "For",
+          "As"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1421,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i.md",
+        "title": "2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i",
+        "text": "step (MCS).\nThe Ising spin glass is cooled from its initial infinite\ntemperature spin configuration at _T_ = 10 to _T_ = 0 _._ 6.\nAt each temperature, after an initial equilibration time\nof 10 [5] MCS, we check to see if the system is equilibrated\nusing the method of Bhatt and Young [47]. Details of\nthe equilibration are given in Appendix B.\nEach TLS has an electric dipole moment. These\nelectric dipoles are initialized with random orientations.\nSince the electric dipole-dipole interaction is an order of\nmagnitude smaller than the elastic dipole-dipole interaction, it is the elastic interactions between TLS that\ngoverns their dynamics. We represent these dynamics by\nthe Ising spin glass described above. Thus, each electric\ndipole has a corresponding Ising spin. If the Ising spin\nflips, then the corresponding electric dipole and its image\ndipole flip 180 _[o]_ . We consider two cases of electric dipole\norientations. In both cases, the magnitude of the dipole\nmoment is unity. In the first case, the dipoles are randomly oriented with random x, y, and z components. To\nbetter understand the contribution of each component,\nwe also consider a second case where the dipoles all lie\nparallel to one another along the x, y, or z axis, though\nthey are randomly oriented in the positive or negative\ndirection.\nLet us take a moment to describe the device geometry\nthat we have in mind. TLS that have both an electric\nand an elastic dipole moment are located on every site\n\nnoise power spectral density can be determined from\nthe Fourier transform of the autocorrelation function\n_C_ _i_ ( _τ_ ) = � _−∞∞_ _[δV]_ _[i]_ [(] _[t]_ [)] _[δV]_ _[i]_ [(] _[t]_ [ +] _[ τ]_ [)] _[dt]_ [.] For a time series of\n1 _∞_\nlength _t_ total : _S_ ( _f_ ) = _t_ total � _−∞_ _[C]_ _[i]_ [(] _[τ]_ [)] _[e]_ _[−]_ [2] _[πifτ]_ _[dτ]_ [. A useful]\nmethod for computing the power spectrum is the periodogram estimate [48]:\n\n1\n_S_ _i_ ( _f_ ) = _|δV_ _i_ ( _f_ ) _|_ [2] _,_ (14)\n_t_ total\n\nwhere _t_ total is the length of the potential time series, and\n_δV_ ( _f_ ) is the Fourier transform of the electric potential\ntime series. The Fourier transform is computed using\nthe C subroutine library FFTW [49]. At a given temperature, the time series _V_ _i_ ( _t_ ) is split into ten segments\nof equal length. The power spectrum is found for each\nsegment and is averaged over these segments to give a\nsmoother power spectrum. The power spectrum is normalized so that\n\n5\n\nFIG. 2. Plots of the electric dipole potential",
+        "score": -5.878405704639576,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7592592592592593,
+        "rerank_score": -9.133644104003906,
+        "matched_nodes": [
+          "In",
+          "Let",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2488,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "twin SET. **d), e)** Modulated\nreadout method using single SET 1 and single SET 2, respectively. _f_ mod = 25 kHz. **f)** Correlated readout method using\nthe twin SET modulated signal. _f_ mod = 25 kHz and the correlation function is given in Eq. 1. **g)** Square of the SNR\nas a function of integration time for the different techniques. Solid lines plot the fits to the function\nSNR [2] = _S_ 0 _τ/_ (1 + _A_ _f_ _τ_ _[α]_ ). **h)** Impact of the location of the charge transition on the charge readout infidelity for the\ndifferent techniques. _τ_ = 280 _µ_ s, _f_ mod = 25 kHz . Solid lines are used as guides to follow the trend of the points. The\ninset is a zoom-in to the region indicated by the box.\n\nwith integration time, consistent with signals affected by\n1 _/f_ _[α]_ (also known as “pink” or “flicker” for 0 _< α <_ 2)\nnoise [ 46, 47 ] (see Appendix F). In the regime where pink\nnoise is dominating, longer integration times will begin to\ncapture noise signals that are higher in amplitude, thus\nlosing the benefit of averaging over an increased number\nof samples. On the other hand, the modulation acts as a\nbandpass filter around _f_ mod, rendering the measurement\ninsensitive to pink noise. This result evidences the immunity to electrical noise provided by the modulation, and\nthe further improvement in readout sensitivity enabled\nby the correlation of the two signals.\n\nAn additional advantage of using a twin SET is that the\nreduction in signal that comes from moving the sensors\naway from the qubits can be compensated. In Fig. 2h),\nwe plot the charge readout infidelity obtained with the\ndifferent methods as a function of the double-dot pair,\nwhich is equivalent to changing the distance between\nthe center of the electric dipole and the sensors. For\ncomparison purposes, the total integration time in all\ncases is kept constant at 280 _µ_ s and the modulation\nfrequency is _f_ mod = 25 kHz . As expected, transitions\n\nbetween P1-P2 (P3-P4) are more weakly detected by\nSET 2 (SET 1 ) and the readout infidelity of the single SET\nmeasurement increases as the dipole is moved away from\nthe sensor. Notably, this monotonic trend is avoided by\nthe twin SET, with the correlation function providing\nbelow 0.3% readout infidelity ( _>_ 99 _._ 7% readout fidelity)\nthroughout the array.\n\n**IV.** **MODULATED SPIN READOUT**\n\nWe now study the impact that modulating the electron\nback and forth across a charge transition during readout\nhas on its spin degree of freedom. We load four el",
+        "score": -6.000789664374457,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9444444444444445,
+        "rerank_score": -9.343864440917969,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "The",
+          "We",
+          "For",
+          "As"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "Let": 1.0,
+      "Timing": 1.0,
+      "De": 1.0,
+      "LUT": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "Let": 1.0,
+      "Timing": 1.0,
+      "De": 1.0,
+      "LUT": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "As": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 16,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.83137969719246,
+    "generation_latency_s": 3.3015385270118713e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 16.0,
+    "retrieval_latency_s": 5.83137969719246,
+    "generation_latency_s": 3.3015385270118713e-07
+  }
+}

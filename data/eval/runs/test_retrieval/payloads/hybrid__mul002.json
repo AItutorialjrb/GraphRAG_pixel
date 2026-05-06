@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "mul002",
+    "query_type": "multi_hop",
+    "query": "How can irradiation degrade both efficiency and timing?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "irradiation",
+      "degrade"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can irradiation degrade both efficiency and timing?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6355,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2808343__2407.11776__TCAD_modeling_of_radiation-induced_defects_in_4H-SiC_diodes.md",
+        "title": "2025__recid_2808343__2407.11776__TCAD_modeling_of_radiation-induced_defects_in_4H-SiC_diodes",
+        "text": "collection efficiency (CCE),\nobtained by scaling signal areas to that of the unirradiated counterpart, are shown in Figure 3. The radiation-induced performance degradation can be reproduced well at low irradiation,\nwhile deviations increase towards higher fluences.\n\nFigure 3: Reverse bias CCE measurements [5] vs. simulation.\n\n2\n\n**4. Conclusions and Outlook**\n\nA first step towards a comprehensive TCAD model for\nradiation-induced bulk defects in 4H-SiC has been developed.\nSimulated data agrees well with measurements on neutronirradiated 4H-SiC diodes. While absolute I-V values devi\nate with increasing irradiation fluence, the loss of rectification\nproperties after irradiation can be reproduced. Suggested to be\noriginating from major shifts within the internal electric field\nstructure due to charge separation, the deep-level defects EH 4\nand EH 6,7 are identified as driving forces behind this process.\nFurthermore, the model reinforces recent and still discussed\nproposals of the EH 6,7 center being of donor type while also\nintroducing the EH 4 defect as a significant lifetime killer in 4HSiC, next to the established Z 1,2 center. Other trends, such as a\nflattening detector capacitance and a degradation in charge collection efficiency after irradiation, are recreated and agree well\nwith experimental results at lower fluences, increasingly deviating at higher fluences. Further and more extensive irradiation\nstudies on various types of 4H-SiC devices are needed to confirm and improve the presented simulation model, as well as to\nexpand it towards interface defects and oxide charges. Additional 4H-SiC samples, currently under production, are scheduled for an extensive irradiation campaign, which will include\nvarious irradiation sources and is planned to cover a wide fluence range of 10 [13] n eq /cm [2] to 10 [18] n eq /cm [2] .\n\n**Acknowledgements**\n\nThis project has received funding from the Austrian Research\nPromotion Agency FFG, grant numbers 883652 and 895291.\nProduction and development of the 4H-SiC samples was supported by the Spanish State Research Agency (AEI) and the European Regional Development Fund (ERDF), ref. RTC-20176369-3.\n\n**References**\n\n[1] M. Moll, Radiation Damage in Silicon Particle Detectors: Microscopic\ndefects and macroscopic properties, Ph.D. thesis, Hamburg U., 1999.\n\n[2] J. Coutinho, et al., Silicon carbide diodes for neutron detection, NIM-A\n986 (2021) 164793.\n\n[3] F. Nava, et al., Silicon carbide and its use as a radiation detector",
+        "score": 0.11842378174408397,
+        "dense_score": 0.47978371381759644,
+        "bm25_score": 13.746756988406748,
+        "graph_score": 0.0,
+        "rerank_score": 0.16834528744220734,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4898,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter.md",
+        "title": "2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter",
+        "text": "e to 300 V provides an efficiency to 99.7% at that proton fluence. The timing resolution of\n20 ps measured before irradiation rises for a proton fluence of 1 × 10 [16] n eq /cm [2] to 53 and 45 ps at\nHV = 200 and 300 V, respectively.\n\n1Corresponding author.\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Data samples and experimental set-up** **3**\n\n**3** **Detection efficiency** **4**\n\n**4** **Time resolution** **8**\n\n**5** **Summary and Conclusions** **13**\n\n**1** **Introduction**\n\nTo cope with the large event pile up foreseen during the CERN LHC High-Luminosity data-taking\n\nperiod, the experiments showed evidence for the need to upgrade the present detectors with layers\n\nwith timing capability of the order of tens of picoseconds. The major LHC Collaborations foresee\n\nthe addition of timing layers [1, 2] to match the required performance. One choice is to build these\ntiming layers with mm [2] silicon pads based on the low-gain avalanche detectors (LGAD) [3], which\n\nfeature an internal gain layer under the pixel.\n\nThe particle-physics community is presently attempting to develop a new generation of silicon\n\nsensors able to achieve both high spatial granularity and excellent timing capabilities [4, 5], although\n\nthe radiation tolerance of the gain layer still constitutes a problem to place these sensors at small\n\nradii in present and future high-energy hadron colliders, where radiation will be very high. Studies\n\nto overcome the limited radiation tolerance of the gain layer are ongoing [6–8]. A particularly\n\ninteresting approach is to use a resistive layer that spreads the signal among four adjacent pixels\n\nand, by reconstructing the hit position from those signals, reduces drastically the number of detection\n\nchannels needed to have spatial resolutions at the level of 10 _𝜇_ m, at the price of a reduction of the\n\ntiming performance by approximately a factor of two [9–11].\n\nThe MONOLITH Horizon 2020 ERC Advanced project utilises the SG13G2 130 nm SiGe\n\nBiCMOS process by IHP to produce low noise, low power and very fast frontend electronics,\n\nimplemented in a fully sensitive high granularity monolithic sensor able to provide excellent timing.\n\nThe foundry masks of the first prototype of the MONOLITH project [12] were used to produce a\n\nproof-of-concept picosecond avalanche detector (PicoAD) [13], a novel detector that implements a\ncontinuous deep gain layer [14]. At a power density of 2.7 W/cm [2], this proof-of-concept monolithic\n\nASIC provided full e",
+        "score": 0.006213047676361524,
+        "dense_score": null,
+        "bm25_score": 16.30377331279336,
+        "graph_score": 0.0,
+        "rerank_score": 0.0012745112180709839,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8274,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "he efficiency, the acceptance with the definition\ngiven by Eq. 4 is used. The efficiency corrected for the\nacceptance is depicted in Figs. 30(b) and 30(c) for the\nlow and high fluences, respectively.\nThe efficiency also depends on the threshold to which\nthe modules are tuned. This was studied for modules\nirradiated to 1 × 10 [16] n eq /cm [2] and 1.6 × 10 [16] n eq /cm [2],\nand the outcome is summarized in Fig. 31. For these\nmeasurements, no noise mask was applied and the\nbeam was normally incident. The samples irradiated\nto 1 × 10 [16] n eq /cm [2] and 1.6 × 10 [16] n eq /cm [2] were biased\nat 120 V and 110 V, respectively. An efficiency loss of\naround 2% is seen when doubling the threshold in the\nless irradiated samples. This reduction becomes more\nsignificant as the fluence increases, reaching a drop of\naround 16% in the sample irradiated at the higher flu\nence.\nMeasurements of the efficiency as a function of the\nrotation angle, as defined in Section 6.3, were made.\nThe samples irradiated to 1 × 10 [16] n eq /cm [2] were biased\nat 120 V and no noise mask was applied. The FBK\nand CNM devices were tuned to thresholds of 1000 and\n\n1200 electrons, respectively. Figure 32 illustrates the recovery of the inefficiency with angle, which is attributed\nto the effect of the columnar electrodes discussed earlier.\nThe efficiency exceeds 99% from around 8 [◦] .\nThe efficiency cell maps for an FBK sensor irradiated\nto 1 × 10 [16] n eq /cm [2] at three bias voltages (40 V, 80 V,\n120 V) are shown in Fig. 33 to illustrate the progress in\nthe depletion of the sensor after irradiation. The change\nof the efficiency in the pixel cell with the bias voltage\ncan also be observed through the profiles of these maps\nalong the long pitch shown in Fig. 33(d). In addition,\nthe profile coming from the same sensor biased at 120 V\nand rotated by an angle of about 8 [◦] has been included\nfor comparison to those at normal beam incidence and\nas an example of the columnar inefficiency recovery.\n\n(a)\n\n(b)\n\n(c)\n\nFigure 30: (a) Hit detection efficiency as a function of the bias voltage\nin modules irradiated to 1 × 10 [16] n eq /cm [2] . (b) Hit detection efficiency\nfor the same devices on the approximate efficiency plateau, with and\nwithout the correction for the acceptance. (c) Hit detection efficiency\nwith and without the acceptance correction as a function of the bias\nvoltage in a module irradiated to 1.6 × 10 [16] n eq /cm [2] . The solid colors\nrepresent the efficiency while the lighter c",
+        "score": -0.5388303747919739,
+        "dense_score": 0.5910118818283081,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.8377970457077026,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5994,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc.md",
+        "title": "2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc",
+        "text": "tector [2]. The sensor design,\ndecoupling charge-generating volume from the drift distance,\naccommodates shorter electrode spacing, consequently\ndecreasing the charge carrier trapping probability. Recent\nstudies using the Transient Current Technique (TCT) [3, 4],\nhave further substantiated the exceptional timing performance\nof such devices. For vertically incident events, the orthogonal\nrelationship between drift direction and particle trajectory\nresults in an absence of Landau fluctuations **,** key factor in\nextending theoretical timing performance of such devices,\nprimarily constrained only by the signal's drift time.\n\nThis excellent performance is nevertheless impacted by\nfield non-uniformities, intrinsic to the column geometry of the\ncollection electrodes. The resulting radially expanding field\nwithin the pixel volume increases signal time-jitter, degrading\n\ntime resolution. Such a geometry, though detrimental under\nnormal operation, can lead to high field densities near the\ncollection electrode (> 30 V/μm) at higher bias voltages\n(> 500 V) typically used after irradiation. In this operating\nmode, impact ionization and charge multiplication occur near\nthe collection electrode in a similar way as in Multi-Wire\nProportional Chambers (MWPCs) and can compensate for\ntrapping induced charge collection efficiency issues.\n\nIn this study, three different geometries are examined after\nproton and neutron irradiation, using 120 GeV SPS pion\nbeams [5]. Pixel sizes of 55 x 55 μm [2] [6], 25 x 100 μm [2] and\n50 x 50 μm [2] [7] in substrates of 230 μm (190 μm active depth)\nfor the first geometry and 150 μm (130 μm active depth) for\nthe second and third, are tested to establish the minimum\nactive thickness and pixel size still yielding sufficient charge\nand low enough jitter to achieve a 30 ps time resolution.\nQuestions of signal integrity, bandwidth and efficiency are\ntreated.\n\n**2.** **Timing and Signal Integrity**\n\nStudies under a [90] Sr source of the 50 x 50 μm variety single\npixel structure (Figure 1 top), yield collected charge of\n1.73 ± 0.02 fq (10,830 e [-] ), in agreement with the theoretically\npredicted value of ~ 82 e/μm for a MIP in fully depleted Si [8]\nat a bias voltage of 20 V at -20 [o] C. Signals are characterized\nby a fast rise time (10 % - 90 %) of 175 ± 4 ps, but present a\ntail at the slower end, characteristic of filed non-uniformities.\nAlthough charge per micrometer in the 3D device is reduced\nby a factor of 60 with respect to a typical LGAD [1]",
+        "score": -0.6769860816001892,
+        "dense_score": null,
+        "bm25_score": 14.805802053196523,
+        "graph_score": 0.0,
+        "rerank_score": -1.0492093563079834,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 698,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+        "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+        "text": "s,\n\nthe results come either from sensors tested at DESY with 5 GeV electrons or from sensors tested at\n\nCERN with 120 GeV pions.\n\nBoth figures show that a higher efficiency can be reached by increasing the bias voltage.\nFigure 8 shows that all DUTs irradiated at a fluence of 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] can achieve an efficiency\nof more than 98.9%. Figure 9 shows that at a higher fluence of 2 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2], the bias voltage\nneeds to be higher than at 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] to reach almost similar performances or just below.\nIndeed, at a fluence of 2 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2], the sensors tested at DESY reach an efficiency of 99%\nfor FBK-2.5 and 98.1% for USTC-2.5. This is well beyond the efficiency of 95% required for\n\ngood operation of the future HGTD after irradiation. As for the time resolution, the effects of the\n\ntemperature can also be seen in the efficiency: the sensors tested at CERN at a higher temperature\n\nof −20 °C reach a lower efficiency of 95%.\n\n– 13 –\n\n50\n\n|Col1|ATLAS HGTD Preliminary Test Beam|\n|---|---|\n|100<br>||\n|50<br>60<br>70<br>80<br>90|**ϕeq = 1.5x1015neqcm−2**<br>FBK-1.5 (-40 to -30oC, DESY 2022)<br>FBK-1.5 (-20oC, CERN 2021)<br>IHEP-1.5 (-43 to -30oC, DESY 2022)<br>IHEP-1.5 (-20oC, CERN 2021)<br>USTC-1.5 (-39 to -24oC, DESY 2022)|\n\n200 250 300 350 400 450 500 550\nBias Voltage[V]\n\n**Figure 8** : Efficiency as a function of bias voltage for different single-pad sensors: FBK-1.5, USTC\n1.5 and IHEP-1.5. The measurements were performed in the conditions described in figure 4. The\n\ndashed line at 95% corresponds to the efficiency needed for required operation of the future HGTD\n\nafter irradiation.\n\n**5.4.2** **Efficiency uniformity**\n\nFigures 10 (a) and 10 (b) show the two-dimesional (2D) map of the efficiency as a function of the\n\nhit position for the IHEP-1.5 sensor (figure (a)) and the FBK-2.5 sensor (figure (b)). Both sensors\n\nwere tested at DESY with a 5 GeV electron beam. They were enclosed in a styrofoam box, filled\n\nwith dry ice, which was moving upwards during data taking due to the evaporation of the dry ice.\n\nMovements, temperature variation, and other factors may contribute to the smeared figures.\n\nFor more details, figure 11 shows the uniformity of the efficiency along the y-axis for the sensors\nirradiated at a fluence of 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] and tested at DESY with a 5 GeV electron beam. The\nefficiency of the sensor USTC-1.5 shows some variation up to 1.5% of the mean efficien",
+        "score": -0.7289674758911133,
+        "dense_score": 0.5247753858566284,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.1299018859863281,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5100,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors.md",
+        "title": "2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors",
+        "text": "design of the unirradiated sample is shown\nin Figure 4, based on the folded statistics of available\nstrips for the analysis of each design (see [11] for the\nresults concerning the Low Dose 30 design). Overall,\nthe Regular design is more efficient than the Low Dose\n55 design. The Low Dose 55 design shows a slight\ndecrease in efficiency across the strip towards the strip\nedge. Apart from statistical fluctuations, however, the\nefficiency is distributed homogeneously along the strip\nfor both designs. Therefore, the stitching does not impact the efficiency of the sensor, as the stitching lines\n\n highlighted in Figure 2 do not show in the in-strip effi\nciency.\nFigure 5 shows the in-strip efficiency distribution for\nthe Regular and Low Dose 55 design of the irradiated\nsample to evaluate if the same finding holds after irradiation. The irradiated sample is depleted at 250 V. Overall, the efficiency decreases after irradiation for both designs. In particular, the Regular design shows a substantial decline in efficiency towards the inter-strip region after irradiation. However, the in-strip efficiency\nshows no sign of the stitching lines along the sensor. In\naddition, no performance differences regarding the hit\ndetection efficiency have been observed between long\n\n3\n\n|1<br>[cm]<br>Y<br>0 n|Col2|1.0<br>0.8<br>0.6 ciency|\n|---|---|---|\n|0.5<br>1.0<br>1<br>−<br>Positio||0.0<br>0.2<br>0.4<br>Effi<br>1.0|\n|0.5<br>1.0<br>1<br>−<br>Positio|20<br>−<br>0<br>20<br>m]<br>µ<br>Position X [<br>0.5|20<br>−<br>0<br>20<br>m]<br>µ<br>Position X [<br>0.5|\n\n|Col1|0.8 ency|\n|---|---|\n||0.5<br>0.6<br>0.7<br>Effici<br><br>1.0|\n|20<br>−<br>0<br>20<br>m]<br>µ<br>Position X [<br>0.5|20<br>−<br>0<br>20<br>m]<br>µ<br>Position X [<br>0.5|\n\n|Col1|1 1.0<br>0.8 [cm]<br>0.6 Y ciency<br>0 n|Col3|\n|---|---|---|\n|0.8<br>0.9<br>1.0<br>ency<br><br>1<br> Y [cm]|||\n|0.5<br>0.6<br>0.7<br>Effici<br>0.5<br>1.0<br>1<br>−<br>0<br>Position<br>20<br>−<br>0<br>20<br>m]<br>µ<br>Position X [<br>0.5<br>1.0<br>(a) Regular<br>0.8<br>0.9<br>1.0<br>ency<br><br>1<br> Y [cm]||0.0<br>0.2<br>0.4<br>Effi<br>0.5<br>1.0<br>1<br>−<br>Positio<br>20<br>−<br>0<br>20<br>m]<br>µ<br>Position X [<br>0.5<br>1.0<br>(a) Regular<br>0.6<br>0.8<br>1.0<br>iency<br>0<br>1<br>n Y [cm]|\n|0.5<br>0.6<br>0.7<br>Effici<br>0.5<br>1.0<br>1<br>−<br>0<br>Position<br>20<br>−<br>0<br>20<br>m]<br>µ<br>Position X [<br>0.5<br>1.0<br>(b) Low Dose 55||0.0<br>0.2<br>0.4<br>Effic<br>0.5<br>1.0<br>1<br>−<br><br>Positio<br>20<br>−<br>0<br>20<br>m]<br>µ<br>Posit",
+        "score": -1.1297515955338113,
+        "dense_score": 0.5246970653533936,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.7463634014129639,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4650,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "arge distribution for modified with gap sensors. For the Caribou\nmeasurement, an _I_ bias4 = 546 µA has been set. (Bottom) Comparison between different NIEL\nirradiation doses of the seed pixel signal charge distribution for a modified with gap sensor\nwith a pitch 15 µm. APTS with split 4, reference variant, _V_ sub = -1.2 V.\n\nincreasing irradiation levels, due to the worse charge collection which becomes\nevident from 10 [14] 1 MeV n eq cm _[−]_ [2] onwards. As expected from [55] Fe measurements (see Figure 10), at 10 [13] 1 MeV n eq cm _[−]_ [2] no degradation is observed.\n\n_5.2. Detection efficiency_\n\nFigure 13 shows the detection efficiency of the 15 µm modified with gap\nsensor for different values of _V_ sub as a function of the threshold in electrons\n( _e_ _[−]_ ), for threshold values larger than 3 times the noise RMS. The detection\nefficiency is found to nearly entirely depend on the charge threshold, with only\na weak dependence on the reverse substrate voltage. However, a more negative\n_V_ sub yields lower input capacitance and hence a lower noise level, allowing lower\nthresholds. The dotted, vertical lines in Figure 13 (the starting point for each\ncurve) illustrate how for more negative voltage the operational region can be\nextended to lower signal thresholds, increasing the operating margin.\n\n16\n\n|0<br>9|Col2|Col3|Col4|Col5|Col6|Col7|Col8|\n|---|---|---|---|---|---|---|---|\n|0<br>9||||||||\n|0<br>5||||||||\n|0<br>5||||||||\n|0<br>5|||||n efficiency<br>e<br>|n efficiency<br>e<br>||\n|0<br>5||||Detecti<br>3RMSnois<br>|n efficiency<br>e<br>|n efficiency<br>e<br>|n efficiency<br>e<br>|\n|0<br>5||||Vsub~~ = 0~~<br>Vsub =~~-~~1<br>~~V = -~~|~~.0 V~~<br>.2 V<br>~~.4 V~~|||\n|0<br>5||||~~sub~~<br>Vsub =~~-~~3<br>Vsub =~~-~~4|.6 V<br>.8 V|||\n|0<br>5||||||||\n\nFigure 13: Efficiency comparison between different reverse substrate voltages as a function of\nthe applied seed threshold. The dotted lines indicate the threshold corresponding to 3 times\nthe RMS noise value. APTS with 15 µm pitch, modified with gap, split 4, reference variant.\n\nAll APTS versions reported in Table 2 have been tested [4] . The following\nquantities have been extracted from the efficiency plots and reported in Figure 14:\n\n - **Efficiency at a threshold of 100 electrons** (first row): if no value is\nreported in the plot, it means that 3 RMS noise - 100 electrons.\n\n - **Thresholds** (second row): threshold at which the chip achieves 99% detection efficiency.\n\n - **Noise RMS** (third row): is the n",
+        "score": -1.1720466926892599,
+        "dense_score": null,
+        "bm25_score": 14.200392289935603,
+        "graph_score": 0.0,
+        "rerank_score": -1.8103282451629639,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4905,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter.md",
+        "title": "2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter",
+        "text": "le not irradiated (black empty\nsquares) are presented with those of the four samples irradiated with fluences between 9 × 10 [13] n eq /cm [2] and\n1 × 10 [16] n eq /cm [2], all operated with a sensor bias voltage of HV = 200 V. In the case of the board irradiated at\n1 × 10 [16] n eq /cm [2] the data taken at sensor bias voltage of 250 and 300 V are also shown. The marker relative\nto the data point at HV = 300 V (red star) is displayed with a small horizontal offset to avoid overlapping\n\nwith other markers.\n\nFigure 5 shows the impact on the detection efficiency of the power density at which the frontend\n\nwas operated. At a sensor bias voltage HV= 200 V, a steady increase of the efficiency is measured\nas _𝑃_ _density_ increases. This effect is more pronounced at the highest proton fluences.\n\nIn the case of the board irradiated to 1 × 10 [16] n eq /cm [2], at HV = 200 V data were taken only at\n_𝑃_ _density_ = 0.9 W/cm [2], which result in a detection efficiency of (96.2 ± 0.3)% (red circle in the figure).\nFor this board the scan in _𝑃_ _density_ was performed at HV = 250 V, and the results are displayed in\nfigure 5 by the red crosses. At HV = 300 V, only a dataset at _𝑃_ _density_ = 0.9 W/cm [2] was acquired (red\nstar in the figure), which provides a detection efficiency of (99.69 − [+] 0 [0] _._ _[.]_ 07 [06] [)%.]\n\nFinally, the detection efficiency is shown as a function of the distance from the centre of the\n\npixel in figure 6. All the data points shown refer to a sensor bias voltage of 200 V, with the exception\nof the dataset at 1 × 10 [16] n eq /cm [2], which was obtained at 300 V. While at no or small irradiation\nvalues the efficiency does not depend on the position within the pixel area, starting from a fluence\nof 6 × 10 [14] n eq /cm [2] the efficiency was measured to drop in the inter-pixel area, although an increase\nof the sensor bias voltage allows recovering of the efficiency far from the pixel center, as the data at\n\nHV = 300 V (red stars) show.\n\n– 7 –\n\n_**MONOLITH**_ prototype 2 - no gain layer\n\n100\n\n99\n\n98\n\n97\n\n96\n\n95\n\n94\n\n93\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n||||||||\n||||||||\n||||||||\n|CER<br>HV<br>|N SPS Tes<br>= 200 V<br>|tbeam: 12|0 GeV/c pi|ons|||\n|Not<br> =<br>Φ|Irradiated<br> <br>13<br> 10<br>×<br> 9|2<br>/cm<br>eq<br>n|HV = 300 V||||\n|=<br>Φ<br> =<br>Φ|<br>14<br> 10<br>×<br> 6<br> <br>15<br> 10<br>×<br> 3|2<br>/cm<br>eq<br>n<br>2<br>/cm<br>eq<br>|10<br>×<br> = 1<br>Φ|2<br>/cm<br>eq<br> n<br>16<br>|||\n||",
+        "score": -1.3627875986852145,
+        "dense_score": 0.4707070589065552,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.1036813259124756,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 4668,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "h\nthe increasing NIEL dose due to the deterioration of the charge collection\nefficiency, in agreement with the [55] Fe measurement (see Figure 10). Due\nto the lower average cluster size, there is a slight worsening in the resolution for higher irradiation levels, for all pitches. Due to the decrease\nin the average cluster size, the difference in the hit/no-hit and analogue\nresolution is even less visible.\n\n**6. Conclusions**\n\nThe performance of several versions of the first production of analogue MAPS\nfor high energy physics implemented in the TPSCo 65 nm ISC process has been\nstudied. Various designs (standard, modified and modified with gap), splits,\nn-well/p-well geometry (variants) and pitches (10 to 25 µm), have been tested\nat different reverse substrate bias and NIEL and TID irradiation levels, both\nwith an [55] Fe source and in a beam test setup.\nCompared to other designs, the modified with gap design demonstrated a\nhigh CCE and little charge sharing, leading to a smaller average cluster size and\na higher signal-to-noise ratio, and hence a larger operation margin in terms of\nefficiency. As expected the spatial resolution instead is better for the standard\nthan for the modified with gap designs, reaching _∼_ 2 µm, due to the increase\nof charge sharing. An energy resolution of 4% for the Mn-K _α_ peak from [55] Fe\nhas also been obtained for the modified with gap design. The modified with\ngap design always reached a detection efficiency higher than 99%, regardless\nof substrate bias and pitch. Larger pitches provide a slight improvement in\noperating margin but only up to moderate NIEL levels.\nBoth [55] Fe and test-beam measurements showed a deterioration of charge collection of the modified with gap design with increasing NIEL or TID irradiation\ndoses. Nevertheless, a signal peak was still visible after 10 [16] 1 MeV n eq cm _[−]_ [2] .\nThe detection efficiency still reached 99% after 3 _×_ 10 [6] Gy, thus meeting the TID\nrequirements for ALICE ITS3 as well as for the ALICE 3 vertex detector. The\nefficiency also reached 99% or higher for all pitches, at a temperature of _∼_ 15 _[◦]_ C,\nup to a NIEL of 10 [14] 1 MeV n eq cm _[−]_ [2], above the ALICE ITS3 requirements.\nThis remained the case up to 1 _×_ 10 [15] 1 MeV n eq cm _[−]_ [2] for a pixel pitch of\n15 µm, and up to 2 _×_ 10 [15] 1 MeV n eq cm _[−]_ [2] for a pixel pitch of 10 µm.\nAfter process modifications and pixel designs based on general principles\nalready explored in the 180 nm technology, thi",
+        "score": -1.4641880728021452,
+        "dense_score": null,
+        "bm25_score": 14.041557830587289,
+        "graph_score": 0.0,
+        "rerank_score": -2.259413003921509,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 33,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 8273,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "approximately half the charge observed before irradiation (Fig. 21). The MPVs of the cluster\ncharge distributions as a function of the bias voltage\nare shown in Figs. 29(b) and 29(c) for modules irradiated to 1 × 10 [16] n eq /cm [2] and 1.6 × 10 [16] n eq /cm [2], respectively. The MPV as a function of bias voltage exhibits an increasing trend for both fluences, with a feeble\nsaturation observed in the devices irradiated at the lower\n\nfluence. The MPV values themselves are also comparable between the two fluences, which seems compatible with TCAD simulations based on the “CERN\" ra\ndiation damage model reported in [37], where minimal\nchanges in charge collection efficiency are predicted between 1 × 10 [16] n eq /cm [2] and 1.5 × 10 [16] n eq /cm [2] . An important caveat to this comparison is that the device irradiated to the higher fluence was exposed to 23 MeV protons at KIT, while the lower-fluence irradiations were\nperformed at CERN using 23 GeV protons. Hence, the\nradiation damage conditions may differ between the devices. This can affect the observed charge collection and\nshould be considered when interpreting the results.\n\n(a)\n\n(b)\n\n(c)\n\nFigure 29: (a) Cluster charge distribution measured for a module irradiated to 1 × 10 [16] n eq /cm [2] and biased at 130 V, under normal incidence of a pion beam at 120 GeV/c. It is fitted to a Landau distribution with most probable value MPV and width σ L, convoluted with\na Gaussian distribution with width σ G . The cluster charge is shown\nas a function of the bias voltage applied to modules irradiated to (b)\n1 × 10 [16] n eq /cm [2] and (c) 1.6 × 10 [16] n eq /cm [2], under normal incidence\nof a pion beam at 120 GeV/c and an electron beam at 5.2 GeV/c, respectively.\n\n19\n\nThe hit detection efficiency after irradiation at normal incidence is more than 97% for all modules, as illustrated in Fig. 30. At a fluence of 1 × 10 [16] n eq /cm [2],\nthe efficiency plateau is reached from around 80–90 V,\nwhile at 1.6 × 10 [16] n eq /cm [2], about 100 V are needed.\nThis corresponds to an operational range of 30–50 V in\nwhich the modules can be operated with excellent performance and low noise, meeting the CMS requirements\nshown in Table 1. To assess the impact of masked pixels on the efficiency, the acceptance with the definition\ngiven by Eq. 4 is used. The efficiency corrected for the\nacceptance is depicted in Figs. 30(b) and 30(c) for the\nlow and high fluences, respectively.\nThe efficiency also depends on the threshold to wh",
+        "score": -1.471026653481513,
+        "dense_score": 0.44454437494277954,
+        "bm25_score": 13.413551131522894,
+        "graph_score": 0.0,
+        "rerank_score": -2.2742202281951904,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 28,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.347455365583301,
+    "generation_latency_s": 3.3015385270118713e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.347455365583301,
+    "generation_latency_s": 3.3015385270118713e-07
+  }
+}

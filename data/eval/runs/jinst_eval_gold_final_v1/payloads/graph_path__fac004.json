@@ -1,0 +1,409 @@
+{
+  "query": "What is Time-of-Arrival used for?",
+  "expanded_query": "What is Time-of-Arrival used for? Time of Arrival Time-of-Arrival ToA timing",
+  "mode": "graph_path",
+  "retrieved": [
+    {
+      "rank": 1,
+      "chunk_id": "2246",
+      "doc_id": "93",
+      "title": "2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device.md",
+      "score": 15.026024967118666,
+      "retriever": "graph",
+      "text": ", the emphasis was placed on the design of a 4H-SiC Low Gain\nAvalanche Detector (LGAD), especially the epitaxial structure and technical process which played the main roles. In addition, a simulation tool–\nRASER(RAdiation SEmiconductoR) was developed to simulate the performances including the electrical properties and time resolution of the\n4H-SiC LGAD we proposed. The working voltage and gain effectiveness\nof the LGAD were verified by the simulation of electrical performances.\nThe time resolution of the LGAD is (35.0 ± 0.2) ps under the electrical\nfield of -800 V, which is better than that of the 4H-SiC PIN detector.\n\n**Keywords:** Silicon carbide, LGAD, Radiation-resistant, Time resolution\n\n### **1 Introduction**\n\nLow gain avalanche detector (LGAD), as a novel detector technology,\nhas attracted extensive attention in recent years. By adding a gain layer\nunder the cathode of the PIN detector, a collision-ionization multiplication\nof the electron-hole pair occurs in the gain layer, resulting in excellent timing resolution[1]. In particular, for the requirements of the High Granularity\nTiming Detector (HGTD) in ATLAS and the End-cap Timing Layer (ETL)\nin CMS experiments, silicon-based LGAD with 50 ps time resolution has been\ndeveloped which can resist the radiation of 2×10 [15] _n_ _eq_ /cm [2] [2–5]. However, it\nhas been reported[6] that the charge collection efficiency (CCE) and time resolution of silicon-based LGAD will deteriorate with increasing irradiation flux\nand will not work normally under irradiation above 2×10 [15] _n_ _eq_ /cm [2] . In addition, in order to reduce power and improve the signal-to-noise ratio (SNR)\nof semiconductor detectors, silicon-based LGAD devices need to operate at a\nlow temperature of -30 ℃[7, 8], which greatly increases the operation cost of\ndetectors. Moreover, the low temperature cooling system not only increases\nvolume of the detector system, but also increases the difficulty of maintaining the stability of the detector system. Therefore, there is a high demand for\nresearch into a semiconductor detector with strong radiation resistance, excellent time resolution and stable operation at room temperature or even high\ntemperature.\nSilicon carbide (SiC), as the third generation semiconductor, has been\ninvestigated as a detector material for nearly 20 years[9]. In recent years, SiC\nhas received more attention due to the interest of semiconductor industries\n\nSpringer Nature 2021 L [A] TEX template\n\n_Design and simulation of"
+    },
+    {
+      "rank": 2,
+      "chunk_id": "695",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 14.84665698478728,
+      "retriever": "graph",
+      "text": "* **Time resolution**\n\nThe time resolution is one of the key parameters when assessing LGAD sensor performance and\n\nhas been explained in detail in [11]. To extract the DUTs’ time resolutions, the distributions of the\n\ndifference between the TOA of the DUTs and that of the time reference device (SiPM at DESY and\n\nCNM-0 at CERN) was used.\n\nDuring the DESY beam test campaign, there were two DUTs (labelled as 1 and 2 in equation 5.1)\n\nand one SiPM connected to the oscilloscope. Hence, it was possible to compute three time\n\n– 9 –\n\n0.0\n\n|Col1|ATLAS HGTD Preliminary Test Beam|\n|---|---|\n|5.0<br>7.5<br>0.0<br>2.5<br>5.0<br>7.5<br>0.0<br>|FBK-1.5 (-40 to -30oC, DESY 2022)<br>FBK-1.5 (-20oC, CERN 2021)<br>IHEP-1.5 (-43 to -30oC, DESY 2022)<br>IHEP-1.5 (-20oC, CERN 2021)<br>USTC-1.5 (-39 to -24oC, DESY 2022)|\n|.0<br>2.5|**ϕeq = 1.5x1015neqcm−2**|\n\n200 250 300 350 400 450 500 550\nBias Voltage[V]\n\n**Figure 4** : Collected charge as a function of bias voltage for different single-pad sensors: FBK-1.5,\n\nUSTC-1.5 and IHEP-1.5. Sensors FBK-1.5 and IHEP-1.5 were tested both at DESY with a 5 GeV\n\nelectron beam and at CERN with a 120 GeV pion beam, whereas sensor USTC-1.5 was tested only\n\nat DESY. The dashed line corresponds to the minimum required charge of 4 fC for a good timing\n\nmeasurement with the future HGTD.\n\ndifferences on an event-by-event basis between all these devices:\n\n\n\n\n\n_𝑡_ 1 − _𝑡_ 2\n\n_𝑡_ 1 − _𝑡_ _𝑆𝑖𝑃𝑀_\n\n_𝑡_ 2 − _𝑡_ _𝑆𝑖𝑃𝑀_\n\n(5.1)\n\nThe three distributions were fitted with a gaussian function, each of them giving a width _𝜎_ _𝑖𝑗_\nwhere _𝑖_ and _𝑗_ are the names of the devices used for each distribution. Assuming that the time\nresolution of the devices are independent, each of measured resolution _𝜎_ _𝑖𝑗_ corresponds to\n\n_𝜎_ _𝑖𝑗_ = _𝜎_ _𝑖_ ⊕ _𝜎_ _𝑗_ (5.2)\n\nwhere _𝜎_ _𝑖_ and _𝜎_ _𝑗_ are the resolutions of each device. This gives a system of three equations and three\nunknowns which can be solved analytically.\n\nNo matter which DUTs are tested, the SiPM time resolution should have the same value.\n\nOverall, during the DESY beam test campaign, the SiPM time resolution was measured 17 times\n\nwith this method and its average resolution was found to be _𝜎_ _𝑆𝑖𝑃𝑀_ = 62 _._ 6 ± 0 _._ 6 ps with variations\n\nup to 7 % due to differences in running conditions (e.g. bias voltage settings).\n\n– 10 –\n\n0\n\n### ATLAS HGTD Preliminary Test Beam\n\n|14|ATLAS HGTD Preliminary Test Beam|\n|---|---|\n|~~4~~<br>6<br>8<br>10<br>12<br><br>|**ϕeq = 2.5x1015neqcm−2**<br><br>FBK-2.5 (-46 t"
+    },
+    {
+      "rank": 3,
+      "chunk_id": "4559",
+      "doc_id": "197",
+      "title": "2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD.md",
+      "score": 14.806226696198433,
+      "retriever": "graph",
+      "text": "1\n\n# Long-Distance Signal Propagation in AC-LGAD\n\nC. Bishop, A. Das, J. Ding, M. Gignac, F. Martinez-McKinney, S. M. Mazza, A. Molnar,\nN. Nagel, M. Nizam, J. Ott, H. F.-W. Sadrozinski, B. Schumm, A. Seiden, T. Shin,\n\nA. Summerell, M. Wilder, Y. Zhao\n\n_SCIPP, Univ. of California Santa Cruz, CA 95064, USA_\n\n_Abstract–_ We investigate the signal propagation in AC-LGAD (aka RSD), which are LGAD with a\ncommon N [+] layer and segmented AC-coupled readout contacts, by measuring the response to IR laser TCT\non a large selection of AC-LGAD with strip readout. The interest for this topic derives from the realization\nthat while large charge sharing between neighboring strips is essential for good position resolution, large\nsharing beyond the next neighbor generates background signals which in general are detrimental to the\nsensor goal of low occupancy. Using AC-LGAD with strip readout produced by Hamamatsu Photonics\n(HPK), we evaluate the effects of a variety of sensor properties, including geometrical parameters (strip\nlength, width), process parameters like the N [+] layer resistivity, the coupling capacitance, and the thickness\nof the bulk on the signal sharing and the position resolution.\n\nPACS: 29.40.Gx, 29.40.Wk, 78.47jc\n\nKeywords: fast silicon sensors; charge multiplication; AC-LGAD strips; charge sharing.\n\n**1.** **Introduction**\n\nLow-gain Avalanche Detectors (LGAD) have been recently introduced as fast semiconductor timing\nsensors [1,2]. In their large-scale experimental applications, the High Granularity Timing Detector (HGTD)\nin ATLAS [3] and the MIP Timing Detector (MTD) in CMS [4], their segmentation is limited to pads with\nabout 1 mm pitch by consideration of power, fill-factor, and field uniformity. While the fill-factor and\nuniformity problems could be solved for small-scale applications with Trench-Isolated LGAD [5], an\nacceptable power density will limit the spatial resolution unless charge sharing between distant contacts is\nemployed. This is the principle of the AC-LGAD technology (aka Resistive Silicon Detector RSD) [6-8]\nwhich is based on a complete integration of four of the sensor layers in common sheets of the P-type bulk,\nthe P [+] gain layer, the N [+] layer and a dielectric sheet, separating the first three from the segmented metal\nreadout contacts (Fig. 1). A signal originating in the bulk and amplified in the gain layer is then shared\nbetween several electronics channels, allowing reconstruction of signal location with a resolution which"
+    },
+    {
+      "rank": 4,
+      "chunk_id": "694",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 13.535882238631181,
+      "retriever": "graph",
+      "text": "/cm [2], respectively. Bias\nvoltages were kept lower than the single event burnout (SEB) voltage at which the sensor dies due to\n\na large amount of energy deposited by a highly energetic particle in the active zone [28]. All sensors\n\ncharacteristics are given in section 2. In both figures, the results come either from sensors tested at\n\nDESY with 5 GeV electrons or from sensors tested at CERN with 120 GeV pions. The methods to\n\nanalyse these two types of data from different tracking devices are described in sections 4.1 and 4.2.\n\n– 8 –\n\n**Figure 3** : Charge distribution for the sensor USTC-1.5 operated at 350 V. The distribution was\n\nfitted with a Landau-Gaussian convoluted function. The collected charge, defined as the most\n\nprobable value, is 6 _._ 3 ± 0 _._ 03 fC.\n\nFigure 4 shows that after an irradiation at a fluence of 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2], the collected charge\nis above the minimum required charge of 4 fC needed for a good timing measurement with the\n\nfuture HGTD detector. This minimum is reached at around 270 V for all sensors, however the\n\nsensor FBK-1.5 was tested at higher bias voltages. For sensor IHEP-1.5, the same performances\n\nwere found whether measurements were performed with a 5 GeV electron beam at DESY or with a\n\n120 GeV pion beam at CERN. For sensor FBK-1.5, at the same bias voltage, the collected charge\n\nwas slightly higher for measurements at DESY than for those at CERN. Between 350 V and 400 V,\n\nwhich is the range with common bias voltage, the sensors manufactured by IHEP and USTC showed\n\nbetter performances than those from FBK.\n\nThe comparison between figures 4 and 5 shows that the higher the fluence, the worse the\n\ncollected charge at the same bias voltage. Indeed, figure 5 shows that after an irradiation at a\nfluence of 2 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2], the minimum required collected charge of 4 fC is reached for a bias\nvoltage around 370 V for sensor IHEP-2.5, around 500 V for sensor FBK-1.5 and 470 V for sensor\n\nUSTC-2.5. Comparing the different sensors at this fluence, those manufactured by IHEP show\n\nbetter performance than sensors from FBK and USTC at the same bias voltage. This discrepancy\nis less significant at a fluence of 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] .\n\n**5.3** **Time resolution**\n\nThe time resolution is one of the key parameters when assessing LGAD sensor performance and\n\nhas been explained in detail in [11]. To extract the DUTs’ time resolutions, the distributions of the\n\ndifference between the TOA of t"
+    },
+    {
+      "rank": 5,
+      "chunk_id": "684",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 13.271014683175618,
+      "retriever": "graph",
+      "text": "ity is also studied as a function of the position of\n\nthe incident particle inside the sensor pad.\n\nKeywords: LGAD, Silicon sensors, Timing detectors, HL-LHC, ATLAS, HGTD\n\n[ArXiv ePrint: 2303.07728](http://arxiv.org/abs/2303.07728)\n\n### **Contents**\n\n**1** **Introduction** **1**\n\n**2** **Sensors** **2**\n\n2.1 FBK devices 3\n\n2.2 IHEP-IME devices 4\n\n2.3 USTC-IME devices 4\n\n**3** **Test beam set-up** **4**\n\n3.1 Set-up at DESY 5\n\n3.2 Set-up at CERN 5\n\n**4** **Data analysis** **6**\n\n4.1 Track reconstruction for data taken during DESY beam tests with EUDET-type\n\ntelescope 6\n\n4.2 Track reconstruction for data taken during CERN SPS beam tests with MALTA\n\ntelescope 7\n\n4.3 Oscilloscope data processing 7\n\n**5** **Sensors performance results** **8**\n\n5.1 Data selection 8\n\n5.2 Collected charge 8\n\n5.3 Time resolution 9\n\n5.4 Hit reconstruction efficiency 12\n\n5.4.1 Efficiency as a function of the bias voltage 13\n\n5.4.2 Efficiency uniformity 14\n\n**6** **Conclusion and outlook** **18**\n\n**1** **Introduction**\n\nThe High Granularity Timing Detector (HGTD) [1, 2] will be added to the ATLAS experiment [3]\n\nduring the so-called Phase-II upgrade preceding the high-luminosity phase of the LHC (HL\nLHC) [4, 5]. Low Gain Avalanche Detector (LGAD) sensors [6] have been extensively studied\n\nduring the R&D phase of the HGTD project. These sensors must meet performance targets\n\nregarding time resolution of 50 ps (70 ps) per hit, collected charge _>_ 4 fC and hit efficiencies of 97%\n(95%) at the start (end) of their lifetime. The expected maximum fluence is 2 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] [2].\nThese requirements should be achieved taking into account a discriminator of about 2 fC of the\n\nfront-end ASIC foreseen for HGTD, ALTIROC [7].\n\n– 1 –\n\nMany previous beam test campaigns were devoted to quantifying LGAD performances be\nfore [8, 9] and after [10, 11] irradiation. A variety of pad structures, such as single-pad diodes\n\nand segmented arrays of pad diodes with various granularities, from several vendors were tested\n\nto prove they meet the requirements to be operated over the entire HL-LHC lifetime. Irradiated\ndevices met the required performance up to 10 [15] n _𝑒𝑞_ /cm [2], however, some optimization was still\nrequired.\n\nIn beam tests [11] as well as in laboratory measurements [12], it was observed that the addition\n\nof carbon in the gain layer helps reducing the operating voltage needed to collect the same charge by a\n\nreduction of the acceptor removal rate after irradiation, hence impr"
+    },
+    {
+      "rank": 6,
+      "chunk_id": "5298",
+      "doc_id": "230",
+      "title": "2024__recid_2798272__2405.03187__LURAD_Design_study_of_a_comprehensive_radiation_monitor_package_for_the_gateway_and_the_lu",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2798272__2405.03187__LURAD_Design_study_of_a_comprehensive_radiation_monitor_package_for_the_gateway_and_the_lu.md",
+      "score": 12.013463981372322,
+      "retriever": "graph",
+      "text": "MeV/μm (20 μm height), 0.2 keV/μm to 5.8 MeV/μm (50 μm height). One sensor named PBS_Strip\n\n( _Figure 4_ c) is tailored to measure high flux SEP events, because it is divided to 5 readout channels for 1,\n\n5, 10, 15 and 20 SV respectively. The last sensor is named SPACEPAD ( _Figure 4_ d) and consists of 200 x\n\n200 SV with segments of 100, 200, 400, 500, 600, 700 and 5000 SV read separately in 7 channels.\n\nSPACEPAD is intended to measure the GCR field. Consequently, a readout application specific integrated\n\ncircuit (ASIC) with 32 channels is used. Each sensor type has different number of SVs to cover different\n\nranges of proton flux. The total proton flux which can be measured is up to 1.8∙10 [9] cm [-2] ∙ s [-1] . The worst 5\n\nmin average flux of protons with energy > 10 MeV for the 19 Oct 1989 SEP event calculated using\n\nCRÈME-96 is 4,35∙10 [11] m [-2] ∙sr [-1] ∙s [-1] . It would induce a mean count rate of 800 Hz in a single SV. This count\n\nrate can be easily handled by the electronic readout channels connected to the PBS_Strip sensor. On the\n\nother hand, SPACEPAD will provide about 480 counts in one min for a flux of 10 protons/cm [2] ∙s [-1] ∙sr [-1] (63\n\nprotons/cm [-2] ∙ s [-1] ) with energy > 10 MeV (LET< 8keV/μm(Si)). This will enable the system to provide early\n\nwarning for a possible SEP event.\n\n# 2.4 A CTIVE SILICON PIXEL SENSORS\n\nFollowing the initial study (Peric, 2007), fully depleted Si monolithic active pixel sensors (called HVCMOS\n\nor DMAPS) have been introduced in high energy physics experiments for measuring the tracks of\n\nminimum ionizing particles. Fully depleted Si pixels enable fast and less prone to radiation damage\n\ncharge collection. Today, research on achieving full integration of sensing and microelectronics in\n\nmonolithic CMOS pixel sensors has been identified by the European Committee for Future Accelerators\n\n(ECFA) as one of the themes of its global Detector R&D Roadmap (ECFA, 2021). Coarsely segmented Si\n\ndiode detectors are used in almost all instruments measuring the mixed radiation fields of the space\n\nenvironment. With starting event the installation of 5 Timepix units onboard the International Space\n\nStation in 2012 (Pinsky L., et al.,2014), hybrid Si pixel detectors have started to penetrate in space\n\nPage 8 of 28\n\ndosimetry. HardPix, a device using Timepix3 bump bonded to Si pixel sensors is included in the ERSA\n\npackage. The introduction of fully depleted Si monolithic active pixel sensors in space instrumentation"
+    },
+    {
+      "rank": 7,
+      "chunk_id": "3888",
+      "doc_id": "166",
+      "title": "2024__recid_2742847__2401.01229__Time_resolution_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_internal_gain_l",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2742847__2401.01229__Time_resolution_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_internal_gain_l.md",
+      "score": 11.336660864400024,
+      "retriever": "graph",
+      "text": "es/s oscilloscope, that shows the signals\nproduced by five consecutive laser bursts. Each waveform consisted of a train of 40 signals spaced by 12.5\nns. The red line shows the laser sync-out signal used to trigger. The signals of the reference ASIC are shown\nby the black lines, while the signals of the DUT ASIC by the blue lines. This waveform was obtained with\nthe optical attenuator in front of the DUT ASIC regulated to produce signals with an amplitude of 130 mV.\nThe much larger laser intensity sent to the reference ASIC produced 230 mV signals that show effects of\nsaturation of the preamplifier.\n\n– 4 –\n\n**5** **Results**\n\nThe time resolution of the DUT with the femtosecond laser was measured starting from the distribu\ntion of the difference in time of arrival (Δ _TOA_ ) of the reference and DUT ASICs. The time of arrival\n\nwas computed as the time at which the signal amplitude reached a constant-fraction threshold of\n\n50% of the maximum amplitude, calculated offline using a linear interpolation between consecutive\n\nsignal samplings acquired by the oscilloscope every 25 ps. No time-walk correction was applied to\n\nthe ToA of the signals.\n\n**5.1** **Time Resolution of the Reference ASIC with a large laser power**\n\nFigure 4 shows the distribution of the difference between the ToA of two consecutive signals\n\nmeasured by the reference ASIC. The standard deviation of the Gaussian fit of the Δ _TOA_ distribution\nis _𝜎_ Δ _TOA_ = (3 _._ 81 ± 0 _._ 03) ps. This is the convolution of the time resolution of the reference chip\ntaken two times; hence, the time resolution of the reference chip is _𝜎_ _𝑡_ _[ref]_ = (2 _._ 69 ± 0 _._ 04) ps.\n\n_**MONOLITH**_ prototype2 (2022) - no gain layer\n\n600\n\n500\n\n400\n\n300\n\n200\n\n100\n\n0\n\n|Col1|Laser Data<br>P = 2.70 W/cm2<br>density|Col3|Col4|\n|---|---|---|---|\n||HV = 200 V|Entries<br>/NDF<br>2<br>χ|998~~1~~<br>66/57|\n|||[ps]<br>ToA<br>∆<br>σ|0.03<br>±<br>3.81|\n|||||\n|||||\n|||||\n\n12460 12480 12500\n\n∆ TOA for Two Consecutive Reference Signals [ps]\n\n**Figure 4** . Difference between the ToA of two consecutive signals measured by the reference chip operated\nat a sensor bias voltage of 200 V and power density of 2.7 W/cm [2] . The red line superposed to the data shows\nthe result of a fit using a Gaussian functional form.\n\n**5.2** **Time Resolution of the DUT vs. Signal Amplitude Produced by the Laser**\n\nThe intensity of the laser on the DUT was varied to acquire signals of different amplitude and\n\ntherefore different time resolution, whil"
+    },
+    {
+      "rank": 8,
+      "chunk_id": "6953",
+      "doc_id": "307",
+      "title": "2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement.md",
+      "score": 11.287905494377904,
+      "retriever": "graph",
+      "text": "arges, allowing even pixels that do not collect the charge carriers\nto trigger. We conclude that the cluster size measurement is a promising method for evaluating the energy deposited by a\ncharged particle in the TimePix3 detector.\n\n_Keywords:_ Charged particle, Silicon pixel detector, TimePix3, Detector simulation\n\n**1. Introduction**\n\nPixelated silicon semiconductor detectors can measure\n\ncharged particles and are used in various fields, including\nnuclear and particle physics experiments [1, 2, 3, 4]. The\nTimePix3 detector [5] is one of these detectors, developed\nby the MediPix Collaboration3 [6], CERN, Nikhef and the\nUniversity of Bonn as a successor to the TimePix detector [7]. A TimePix3 detector consists of a silicon sensor\nand a TimePix3 readout chip, divided into 256 _×_ 256 pixels\nwith a 55 µ m pitch. The detector collects holes to the pixel\nelectrodes. It employs ToT (Time over Threshold) and ToA\n(Time of Arrival) methods to determine the energy and arrival time of radiation. By using the data-driven mode of\nTimePix3, we can obtain the arrival time of the radiation\nwith a 1.56 ns temporal resolution and the energy deposition in each pixel, simultaneously.\nThe ToT method provides a wide dynamic range for\nthe energy measurements. Therefore, this instrumental\nmethod can be used to evaluate the energy of various types\nof charged particles across extended energy ranges, from\nlight ions to heavy ions, in addition to X-ray and _γ_ -ray\n\n[1]. However, there are two issues affecting high energy\nmeasurements using TimePix3 detectors. The first one\nis the difficulty to calibrate ToT values corresponding to\nhigh energies. The detection efficiency of a silicon sensor\nwith a thickness of several hundred µ m is low for highenergy photons. For example, the detection efficiency of\na 500 µ m silicon sensor is less than 4 % for 60 keV photons, according to calculations performed with the Geant4\ntoolkit [8]. In addition, charge clouds generated by the incidence of high-energy radiations spread across multiple\npixels. These physical effects make the calibration of ToT\nvalues corresponding to energies above 60 keV inefficient,\nas the calibration function of the TimePix3 detector cannot\n\nbe expressed by a monotonically increasing linear function.\nThe second issue is that high energy deposition leads to a\nsaturation or a decrease of ToT values [9, 10, 11]. The ToT\nvalue is measured using a 10-bit clock signal for each pixel\nand the range of the ToT value is 0 to 1022 [5"
+    }
+  ],
+  "seed_nodes": [
+    "Time",
+    "Timing",
+    "ToA",
+    "Arrival",
+    "Timepix3",
+    "time resolution",
+    "Timing Detector",
+    "High Granularity Timing Detector"
+  ],
+  "expanded_nodes": [
+    "AC-LGAD",
+    "ADC",
+    "ALICE",
+    "ASIC",
+    "ATLAS",
+    "Arrival",
+    "Bias",
+    "Broadcom",
+    "CMOS",
+    "CMS",
+    "Charge",
+    "Endcap Timing Layer",
+    "Experimental Setup",
+    "Fe",
+    "Geant4",
+    "Grant Number",
+    "HGTD",
+    "High Granularity Timing Detector",
+    "LGAD",
+    "Let",
+    "MAPS",
+    "Not Irradiated",
+    "Nuclear Instruments",
+    "Particle Physics",
+    "Pixel",
+    "SPAD",
+    "Sensors",
+    "Signal Amplitude Produced",
+    "Silicon",
+    "Std Dev",
+    "TOTEM",
+    "Technical Design",
+    "Technical Design Report",
+    "Threshold",
+    "Time",
+    "Timepix3",
+    "Timing",
+    "Timing Detector",
+    "ToA",
+    "Track",
+    "VELO",
+    "time resolution"
+  ],
+  "paths": [
+    [
+      "Time",
+      "LGAD"
+    ],
+    [
+      "Time",
+      "Threshold"
+    ],
+    [
+      "Time",
+      "ASIC"
+    ],
+    [
+      "Time",
+      "Geant4"
+    ],
+    [
+      "Time",
+      "Timing"
+    ],
+    [
+      "Time",
+      "ATLAS"
+    ],
+    [
+      "Time",
+      "Charge"
+    ],
+    [
+      "Time",
+      "CMOS"
+    ],
+    [
+      "Timing",
+      "LGAD"
+    ],
+    [
+      "Timing",
+      "Time"
+    ],
+    [
+      "Timing",
+      "Geant4"
+    ],
+    [
+      "Timing",
+      "Silicon"
+    ],
+    [
+      "Timing",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timing",
+      "ASIC"
+    ],
+    [
+      "Timing",
+      "SPAD"
+    ],
+    [
+      "Timing",
+      "CMS"
+    ],
+    [
+      "ToA",
+      "Time"
+    ],
+    [
+      "ToA",
+      "LGAD"
+    ],
+    [
+      "ToA",
+      "Bias"
+    ],
+    [
+      "ToA",
+      "Sensors"
+    ],
+    [
+      "ToA",
+      "HGTD"
+    ],
+    [
+      "ToA",
+      "Not Irradiated"
+    ],
+    [
+      "ToA",
+      "ATLAS"
+    ],
+    [
+      "ToA",
+      "Track"
+    ],
+    [
+      "Arrival",
+      "Time"
+    ],
+    [
+      "Arrival",
+      "CMS"
+    ],
+    [
+      "Arrival",
+      "ADC"
+    ],
+    [
+      "Arrival",
+      "Threshold"
+    ],
+    [
+      "Arrival",
+      "Grant Number"
+    ],
+    [
+      "Arrival",
+      "Broadcom"
+    ],
+    [
+      "Arrival",
+      "TOTEM"
+    ],
+    [
+      "Arrival",
+      "Std Dev"
+    ],
+    [
+      "Timepix3",
+      "ASIC"
+    ],
+    [
+      "Timepix3",
+      "Geant4"
+    ],
+    [
+      "Timepix3",
+      "Pixel"
+    ],
+    [
+      "Timepix3",
+      "Fe"
+    ],
+    [
+      "Timepix3",
+      "CMOS"
+    ],
+    [
+      "Timepix3",
+      "Time"
+    ],
+    [
+      "Timepix3",
+      "VELO"
+    ],
+    [
+      "Timepix3",
+      "Let"
+    ],
+    [
+      "time resolution",
+      "ASIC"
+    ],
+    [
+      "time resolution",
+      "MAPS"
+    ],
+    [
+      "time resolution",
+      "Signal Amplitude Produced"
+    ],
+    [
+      "time resolution",
+      "Experimental Setup"
+    ],
+    [
+      "time resolution",
+      "Time"
+    ],
+    [
+      "time resolution",
+      "ALICE"
+    ],
+    [
+      "time resolution",
+      "CMOS"
+    ],
+    [
+      "time resolution",
+      "LGAD"
+    ],
+    [
+      "Timing Detector",
+      "LGAD"
+    ],
+    [
+      "Timing Detector",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "HGTD"
+    ],
+    [
+      "Timing Detector",
+      "ASIC"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design Report"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design"
+    ],
+    [
+      "Timing Detector",
+      "Particle Physics"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "HGTD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Endcap Timing Layer"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "AC-LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Time"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Silicon"
+    ]
+  ],
+  "metrics": {
+    "retrieval_latency_s": 7.58379602432251,
+    "generation_latency_s": 0.0,
+    "unique_sources": 6,
+    "seed_node_count": 8,
+    "expanded_node_count": 42,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0
+  },
+  "answer": ""
+}

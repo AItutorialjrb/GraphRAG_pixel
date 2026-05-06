@@ -1,0 +1,857 @@
+{
+  "query": "Compare reranking and graph expansion.",
+  "expanded_query": "Compare reranking and graph expansion.",
+  "mode": "agentic_graph+light_rerank",
+  "retrieved": [
+    {
+      "rank": 1,
+      "chunk_id": "1222",
+      "doc_id": "55",
+      "title": "2023__recid_2680732__2307.13965__Towards_a_cosmic_ray_composition_measurement_with_the_IceAct_telescopes_at_the_IceCube_Neu",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2680732__2307.13965__Towards_a_cosmic_ray_composition_measurement_with_the_IceAct_telescopes_at_the_IceCube_Neu.md",
+      "score": 10.515909110465845,
+      "retriever": "graph+light_rerank",
+      "text": "thor(s) under the terms of the Creative Commons\nAttribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). https://pos.sissa.it/\n\n_IceAct composition measurement_\n\n**1.** **Introduction**\n\nThe two IceAct telescopes have been continuously taking data since 2019 during the Austral\n\nwinter. One – the \"roof telescope\" – is positioned in the center of the IceCube Neutrino Observatory\n\n(IceCube) [1, 2] on top of the IceCube Laboratory building. The other – the \"field telescope\" – is\n\nroughly 220 m west from the roof telescope. The telescopes measure the Cherenkov light which is\n\nemitted by the high energy particles of air showers produced in the collision of cosmic ray particles\n\nwith the Earth’s atmosphere. The photons collected by the telescopes are mainly emitted by the\n\nelectromagnetic part of the extensive air shower. This is a complementary measurement to the\n\nstandard detectors of IceCube which measure the high energy muon component in the deep ice and\n\nthe electromagnetic plus low energy muon footprint at the surface with the IceTop detector [2].\n\nThe idea of this analysis is to use a Graph Neural Network (GNN) to reconstruct air shower\n\nparameters, described in section 4. The results of the GNN reconstruction are then used for a mass\n\ncomposition analysis performed with a Random Forest Regression (RF) described in section 6. The\n\ninput parameters into the RF include the air shower parameters and the parameters of the IceCube\n\nand IceTop detectors. In this proceeding, two mass composition studies will be discussed: one\n\nusing only input parameters from the IceAct telescopes, and the other one using input parameters\n\nfrom the IceAct telescope and the IceCube detector. Each analysis has their own energy range due\n\nto the different detector thresholds. For the final analysis step, a template analysis similar to the\n\npreviously published three year mass composition analysis from IceCube [3] is performed, which\n\nis described in section 7.\n\n**2.** **Data preparation**\n\nIn 2020, the data acquisition system (DAQ) of both telescopes was unified using the TARGET\n\nDAQ which was developed for the Cherenkov Telescope Array [4]. In preparation for the analysis,\n\nboth telescopes have been calibrated. A detailed description of the calibration runs for the telescopes\n\ncan be found in [5]. The muon runs and dark count run data described there are used for the\n\ncalibration of each individual pixel. To perform the calibration, a peak extraction is",
+      "_rerank_score": 10.515909110465845,
+      "score_original": 10.028925655392444
+    },
+    {
+      "rank": 2,
+      "chunk_id": "1221",
+      "doc_id": "55",
+      "title": "2023__recid_2680732__2307.13965__Towards_a_cosmic_ray_composition_measurement_with_the_IceAct_telescopes_at_the_IceCube_Neu",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2680732__2307.13965__Towards_a_cosmic_ray_composition_measurement_with_the_IceAct_telescopes_at_the_IceCube_Neu.md",
+      "score": 10.486013044888303,
+      "retriever": "graph+light_rerank",
+      "text": "## **Towards a cosmic ray composition measurement with** **the IceAct telescopes at the IceCube Neutrino** **Observatory**\n\n**The IceCube Collaboration**\n\n(a complete list of authors can be found at the end of the proceedings)\n\n_E-mail:_ [larissa.paul@icecube.wisc.edu](mailto:larissa.paul@icecube.wisc.edu)\n\nThe IceCube Neutrino Observatory is equipped with the unique possibility to measure cosmic\nray induced air showers simultaneously by their particle footprint on the surface with the IceTop\ndetector and by the high-energy muonic shower component at a depth of more than 1.5 km.\nSince 2019 additionally two Imaging Air Cherenkov Telescopes, called IceAct, measure the\nelectromagnetic component of air showers in the atmosphere above the IceCube detector. This\nopens the possibility to measure air shower parameters in three independent detectors and allows\nto improve mass composition studies with the IceCube data. One IceAct camera consists of 61\nSiPM pixels in a hexagonal grid. Each pixel has a field of view of 1.5 degree resulting in an\napproximately 12-degree field of view per camera. A single telescope tube has a diameter of\n50 cm, is built robust enough to withstand the harsh Antarctic conditions, and is able to detect\ncosmic ray particles with energies above approximately 10 TeV. A Graph Neural Network (GNN)\nis trained to determine the air shower properties from IceAct data. The composition analysis is\nthen performed using Random Forest Regression (RF). Since all three detectors have a different\nenergy threshold, we train several RFs with different inputs, combining the different detectors\nand taking advantage of the lower energy threshold of the IceAct telescopes. This will result in\ncomposition measurements for different detector combinations and enables cross-checks of the\nresults in overlapping energy bands. We present the method, parameters for data selection, and\nthe status of this analysis.\n\n**Corresponding authors:** Larissa Paul [1] _[,]_ [2][∗]\n\n1 _Marquette University, Milwaukee, Wisconsin_\n2 _South Dakota School of Mines and Technology, Rapid City, South Dakota_\n\n∗ Presenter\n\nThe 38th International Cosmic Ray Conference (ICRC2023)\n26 July – 3 August, 2023\n\nNagoya, Japan\n\n© Copyright owned by the author(s) under the terms of the Creative Commons\nAttribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). https://pos.sissa.it/\n\n_IceAct composition measurement_\n\n**1.** **Introduction**\n\nThe two IceAct telescopes have been",
+      "_rerank_score": 10.486013044888303,
+      "score_original": 9.974569172524184
+    },
+    {
+      "rank": 3,
+      "chunk_id": "7940",
+      "doc_id": "359",
+      "title": "2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie.md",
+      "score": 8.814451429611049,
+      "retriever": "graph+light_rerank",
+      "text": "### Graphical Abstract\n\n**On the nature and charge state of the X-Defect, a radiation-induced Silicon defect with**\n**field-enhanced charge carrier emission**\n\n[Niels G. Sorgenfrei, Yana Gurimskaya, Anja Himmerlich, Michael Moll, Ulrich Parzefall, Ioana Pintilie,](https://orcid.org/0000-0002-5729-6004)\nJoern Schwandt\n\n## 0 . 4 0 . 3\n\n## 0 . 2 0 . 1 0 . 0\n\n## 0 50 100 150 E [kV / cm]\n\nThis figure shows the electric field dependence of the activation energy for the X-Defect. The red dashed\nline indicates a _E_ [2] fit, which is the dependence expected for a phonon-assisted tunnelling process. This was\nthe last missing property needed to match the X-Defect’s properties with those of the Silicon di-vacancy\nV 2 (+ _/_ 0).\n\n### Highlights\n\n**On the nature and charge state of the X-Defect, a radiation-induced Silicon defect with**\n**field-enhanced charge carrier emission**\n\n[Niels G. Sorgenfrei, Yana Gurimskaya, Anja Himmerlich, Michael Moll, Ulrich Parzefall, Ioana Pintilie,](https://orcid.org/0000-0002-5729-6004)\nJoern Schwandt\n\n - Research highlight 1\nX-Defect is the Silicon di-vacancy in the donor\nstate V 2 (+ _/_ 0)\n\n - Research highlight 2\nX-Defect does not impact _N_ eff\n\n### On the nature and charge state of the X-Defect, a radiation-induced Silicon defect with field-enhanced charge carrier emission\n\nNiels G. Sorgenfrei a,b, _∗_, Yana Gurimskaya a, Anja Himmerlich a, Michael Moll a, Ulrich Parzefall b, Ioana\nPintilie c, Joern Schwandt d\n\n_a_ _CERN, European Organization for Nuclear Research, Esplanade des Particules 1, Geneva, 1211, Switzerland_\n_b_ _Institute of Physics, Albert-Ludwigs-Universitaet Freiburg, Hermann-Herder-Strasse 3, Freiburg im Breisgau, 79104, Germany_\n_c_ _National Institute of Materials Physics, Atomistilor 405A, Magurele, 077125, Romania_\n_d_ _Institute for Experimental Physics, University of Hamburg, Luruper Chaussee 149, Hamburg, 22761, Germany_\n\n**Abstract**\n\nThe elusive X-Defect, a defect found in low-resistivity _p_ -type Silicon after irradiation, observed as a\nlow-temperature shoulder of the B i O i defect (Boron-interstitial-Oxygen-interstitial complex) in Thermally\nStimulated Current (TSC) measurements, was investigated to determine its properties, matching them with\nthose of a previously identified defect. Through a combination of TSC, Deep-Level Transient Spectroscopy\n(DLTS), Difference-DLTS (DDLTS), numerical simulations of field-enhanced charge carrier emissions in TSC\nmeasurements and a comparison to literature, the X-",
+      "_rerank_score": 8.814451429611049,
+      "score_original": 12.389911690201906
+    },
+    {
+      "rank": 4,
+      "chunk_id": "7857",
+      "doc_id": "356",
+      "title": "2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors.md",
+      "score": 6.793193259448236,
+      "retriever": "graph+light_rerank",
+      "text": "## Graphical Abstract\n\n**Shaping circuit for improving linearity, bandwidth, and dynamic**\n**range in ToT-based detectors**\n\nJ. Pe˜na-Rodr´ıguez, J. F¨ortsch, C. Pauly, K.-H. Kampert\n\n## Highlights\n\n**Shaping circuit for improving linearity, bandwidth, and dynamic**\n**range in ToT-based detectors**\n\nJ. Pe˜na-Rodr´ıguez, J. F¨ortsch, C. Pauly, K.-H. Kampert\n\n A conditioning circuit to improve the bandwidth, linearity, and dynamic range of particle detector readouts based on Time-over-Threshold.\n\n Validation of the proposed concept by implementing it in the readout\nelectronics of the Ring Imaging Cherenkov detector of the Compressed\nBaryonic Matter experiment.\n\n The simplicity of the proposed concept reduces power consumption\nand improves the integrability of the circuit per channel, enhancing its\nimplementation in Application Specific Integrated Circuits (ASICs) for\nparticle detectors.\n\n## Shaping circuit for improving linearity, bandwidth, and dynamic range in ToT-based detectors\n\nJ. Pe˜na-Rodr´ıguez [a], J. F¨ortsch [a], C. Pauly [a], K.-H. Kampert [a]\n\n_a_ _Bergische Universit¨at Wuppertal, Fakult¨at f¨ur Mathematik und Naturwissenschaften,_\n_Gaußstraße 20, 42119 Wuppertal, Germany,_\n\n**Abstract**\n\nThe quantitative measurement of energy deposits in particle detectors, particularly in calorimeters, is usually accomplished with the help of Analog-toDigital converters (ADCs) due to their precision, wide measurement range,\nand good linearity. However, drawbacks such as power consumption, data\nvolume, and bandwidth limit their use in the next generation of high-energy\nphysics experiments. Time-over-threshold (ToT) systems offer simplicity, low\npower consumption, easy integrability, and wide bandwidth, but they lack\nprecision, linearity, and dynamic range. In this work, we propose a shaper\ncircuit that improves the weaknesses of ToT systems without sacrificing performance. We simulated and implemented the concept in the readout system\nof the Ring Imaging Cherenkov detector of the Compressed Baryonic Matter\nexperiment at FAIR.\n\n_Keywords:_ Time-over-Threshold, linearity, dynamic range, bandwidth,\nPhotomultiplier Tube, Silicon Photomultiplier\n\n**1. Introduction**\n\nMost particle detectors use photosensors, such as silicon photomultipliers\n(SiPMs) or photomultiplier tubes (PMTs) to record the photons produced\nby the interaction of particles with the detector bulk material ionization,\nCherenkov radiation, or scintillation processes. SiPMs comprise thousands\nof aval",
+      "_rerank_score": 6.793193259448236,
+      "score_original": 8.714896835360427
+    },
+    {
+      "rank": 5,
+      "chunk_id": "7278",
+      "doc_id": "325",
+      "title": "2025__recid_2911760__2504.09264__Exploring_the_design_and_measurements_of_next-generation_4H-SiC_LGADs",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2911760__2504.09264__Exploring_the_design_and_measurements_of_next-generation_4H-SiC_LGADs.md",
+      "score": 6.3447209633157,
+      "retriever": "graph+light_rerank",
+      "text": "## Graphical Abstract\n\n**Exploring the Design and Measurements of Next-Generation 4H-SiC LGADs**\n\nPeter Švihra, Jan Chochol, Vladimír Kafka, Adam Klimsza, Adam Kozelsky, Jiˇrí Kroll, Roman Malousek, Mária Marˇcišovská,\nMichal Marˇcišovský, Marcela Mikeštíková, Michael Moll, David Novák, Radek Novotný, Peter Slovák, Radim Špetík, Moritz\nWiehe\n\n**Introduction**\n\nRe-emerging as a strong candidate for the next-generation semiconductor detectors, 4H-SiC promises an excellent performance\ndue to its inherent advantages, including high radiation tolerance and the ability to operate across a broad temperature range\nwithout significant annealing effects. However, the potential disadvantage for particle detection comes from its wider bandgap\nwhere signals generated in 4H-SiC detectors are inherently lower than those produced by traditional silicon detectors. This is also\nmore pronounced due to the difficulty of processing thick sensors which stably reach thicknesses only up to 50 µm.\nTo address this, a charge multiplication layer can be implemented, compensating for the lower signal generation. The 4HSiC LGADs discussed here, fabricated by onsemi, are designed specifically on an N-type substrate/epi wafer, with the gain layer\nimplanted approximately 1 µm below the surface. These first-generation LGADs with dimensions of 3x3 mm [2] were produced in\nearly 2024 and have since undergone extensive laboratory testing.\n\nVoltage dependencies of TCT response of 4H-SiC PN diode W19_PN_21 (left) and of calculated gain as a ratio of total signal\nmeasured by LGADs and PN (right).\n\n**Characterisation**\n\nAs the first step, wafers with different ranges of doping concentrations were produced and evaluated with IV and CV scans. Each\nof the wafers contained three types of devices - two LGAD diodes with varied gain and reference diode with no gain. Preliminary\nelectrical performance results from one wafer indicate excellent uniformity.\nAfterwards, initial TCT and beta-source measurements were performed which revealed fast charge collection times and provided\ndetails on charge multiplication across the active area. The results align well with predictions from TCAD simulations.\n\n**Outlook**\n\nFurther testing of the devices is planned, along with the evaluation of an already performed proton irradiation campaign targeting\nproton fluences up to 1 × 10 [16] 1 MeV n eq.\n\n## Highlights\n\n**Exploring the Design and Measurements of Next-Generation 4H-SiC LGADs**\n\nPeter Švihra, Jan Chochol, Vladimí",
+      "_rerank_score": 6.3447209633157,
+      "score_original": 7.8994926605739995
+    },
+    {
+      "rank": 6,
+      "chunk_id": "6991",
+      "doc_id": "308",
+      "title": "2025__recid_2873914__2501.17339__Multiplexed_color_centers_in_a_silicon_photonic_cavity_array",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2873914__2501.17339__Multiplexed_color_centers_in_a_silicon_photonic_cavity_array.md",
+      "score": 5.723307417941274,
+      "retriever": "graph+light_rerank",
+      "text": "tion. Finally, we anneal the device at 410 _[◦]_ C\nfor 3 minutes to form T centers. Device fabrication and\nT center creation steps are shown in Fig. S2.\n\n9\n\n|Col1|λ (nm)<br>T|γ /2π (GHz)<br>tot|κ /2π (GHz)<br>tot|τ (ns)|P|\n|---|---|---|---|---|---|\n|_C_1<br>_C_1<br>_C_1|1325_._749<br>1325_._755<br>1325_._878|3_._3<br>3_._1<br>7_._6|14_._6<br>16_._9<br>5_._1|300_._5<br>352_._3<br>62_._1|9_._5<br>7_._5<br>62_._8|\n|_C_2|1325_._879|-|12_._0|135_._8|26_._4|\n|_C_3<br>_C_3<br>_C_3<br>_C_3|1325_._706<br>1325_._758<br>1325_._767<br>1325_._770|4_._1<br>2_._3<br>4_._1<br>-|9_._7<br>9_._6<br>16_._9<br>4_._5|372_._5<br>329_._8<br>162_._9<br>50_._8|6_._9<br>8_._3<br>21_._3<br>77_._8|\n|_C_4<br>_C_4<br>_C_4|1325_._736<br>1325_._737<br>1325_._758|6_._2<br>2_._9<br>3_._7|14_._4<br>13_._9<br>16_._8|318_._4<br>231_._0<br>361_._0|8_._8<br>13_._7<br>7_._2|\n|_C_5<br>_C_5<br>_C_5|1325_._770<br>1325_._777<br>1325_._779|4_._1<br>5_._4<br>5_._9|17_._4<br>4_._4<br>20_._1|301_._8<br>488_._0<br>225_._8|9_._5<br>4_._2<br>14_._1|\n|_C_6<br>_C_6|1325_._762<br>1325_._849|3_._6<br>5_._4|5_._5<br>7_._0|238_._2<br>89_._3|13_._2<br>42_._4|\n|_C_7|1325_._712|1_._6|1_._6|153_._0|22_._9|\n\nTABLE I. **Summary of measured T centers in cavities.** Optical linewidths are power-broadened and are an upper bound.\n\n12 C\n\nSilicon device layer\n\nBuried oxide layer\n\nSilicon handle layer\n\n(a) Ion implantation\n\n900°C\n\n(b) Rapid thermal annealing\n\nH [+]\n\n(c) Proton irradiation (d) HSQ spin\n\n(e) HSQ exposure (f) HSQ development (g) MIR700 spin (h) MIR700 exposure\n\nO 2\n\n(i) MIR700 development (j) Silicon etch (k) Resist removal\n\n90°\n\n(l) Oxygen descumming\n\n(m) MIR900 spin (n) MIR900 exposure (o) MIR900 development (p) Oxide etch\n\n90°\n\n410°C\n\n(q) Deep silicon etch (r) Resist removal (s) T center formation (t) Vapor HF release\n\nFIG. S2. **Device fabrication steps.** (a-l) Front views of\nthe electron-beam and optical lithography steps to create T\ncenters in photonic devices. (m-r) Side views of the facet etch\nfor fiber coupling. (s-t) Front views of the released device\ncontaining T centers formed by annealing.\n\nThe photonic crystal cavities (PCCs) in this device\nconsist of arrays of circular holes in a 400 nm-wide waveguide which are linearly tapered towards the center of\nthe array to form the cavity. The mirror regions of\n\nthe PCC consist of _N_ _m_ unit cells, and the hole dimensions are determined by a filling fraction _f_ and lattice\nconstant _a_ _m_ . The defect region of the PCC consists\nof _N_ _t_ tapering unit",
+      "_rerank_score": 5.723307417941274,
+      "score_original": 6.769649850802315
+    },
+    {
+      "rank": 7,
+      "chunk_id": "5051",
+      "doc_id": "219",
+      "title": "2024__recid_2782682__2508.10392__Measurements_and_TCAD_simulations_of_innovative_RSD_and_DC-RSD_LGAD_devices_for_future_4D_",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2782682__2508.10392__Measurements_and_TCAD_simulations_of_innovative_RSD_and_DC-RSD_LGAD_devices_for_future_4D_.md",
+      "score": 4.2566661776374,
+      "retriever": "graph+light_rerank",
+      "text": "related to different dimensions of the pads.\n\n4\n\nTo obtain a very good confinement of the signal,\navoiding the distortion of the hit position reconstruction, two different solutions have been analyzed. The\nfirst one (Fig. 10a) is the use of inter-pad resistors.\nWe investigated different values of the strip resistance\nby varying both the geometry and the material. Considering that this resistance must be sufficiently high\nto prevent to short-circuiting the front-end electronics,\nwe obtained a very good signal confinement across a\nbroad range of values (2-40% of the n [+] sheet resistance). A second strategy is the use of pixels with isolating trenches. Trenches have been well manufactured\nand characterized for the production of Silicon Photomultiplier (SiPM) or Trench-isolated LGAD [15]. As\nshown in Fig. 10a and 10b in both cases the charge is,\nin turn, collected almost entirely by the four pads of the\naffected pixel.\n\nFigure 10: Spatial distribution of electron current over the detector\nsurface of a 20 µ _m_ -pitch 5×5 matrix structure DC-RSD detector with\nstrip resistors (a) and with trenches (b).\n\n**4. Conclusion**\n\nThis paper reports on the spatial resolution of an RSD\n450 µ _m_ pitch pixel array, demonstrating the effectiveness of RSD sensors in achieving concurrent excellent\nposition resolution. The sensor matrix used in this study\nis part of the second Fondazione Bruno Kessler (FBK)\nRSD production (RSD2), consisting of seven 450 µ _m_\npitch pixels with cross-shaped electrodes, covering an\narea of about 1.5 mm [2] . The electrodes were read out\n\nby the FAST2 ASIC, a 16-channel amplifier fully custom ASIC developed by INFN Torino using 110 _nm_\nCMOS technology. The study was performed at the\nDESY beam test facility with a 5 GeV/c electron beam.\nKey findings include achieving a position resolution of\nσ _x_ = 15 µ _m_, approximately 3.5% of the pitch. The\nexisting resistive read-out LGAD sensors (AC-coupled\nRSD) demonstrate unprecedented performance in terms\n\nof spatial resolution. This innovative sensor concept\nlooks very promising for the future 4D-tracking detectors. The DC-coupled version of the RSD should provide improved performance and scalability to larger devices. Detailed 3D TCAD simulations allowed for the\n\nidentification of a set of sensor design parameters for the\nfirst production, optimizing the layout, avoiding devices\nthat would not perform well. To avoid introducing distortions in the reconstruction of the impact position, the\nuse of sm",
+      "_rerank_score": 4.2566661776374,
+      "score_original": 7.739393050249817
+    },
+    {
+      "rank": 8,
+      "chunk_id": "5508",
+      "doc_id": "242",
+      "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+      "score": 3.9448623537674656,
+      "retriever": "graph+light_rerank",
+      "text": "much lower FDV (≈ 200-300 V), more suitable for the NUMEN purposes. However, from the analyses reported in this paper, their performance is worse,\nespecially in terms of the doping profile and depletion depth. Moreover, looking at the production yield in the two wafers, we obtain about 31% of good SiC detectors from the TT0012-11\nwafer, in agreement with the expected one, and only 21% from the RA0089-27 one. This could\nbe connected to the worse doping profile obtained during epitaxy phase.\nWe can conclude that the reduction of the doping concentration to values around ≈ 3 × 10 [13]\n\natoms/cm [3] is mandatory for the purpose of the NUMEN project. It is crucial that the technology\nfor such concentrations are improved in order to obtain good doping profiles and consequently\ngood SiC detector performance as well as production yield. To this aim, a new reactor was\ndeveloped, able to perform uniform layer growths at ≈ 3 × 10 [13] atoms/cm [3] . Motivated by the\nresults shown in this paper, new wafers were recently doped by the new reactor and the obtained\ndoping profiles seem to comply with the required standards of uniformity. They will be tested\nthrough the techniques reported in this paper, once the detector production is accomplished.\nIn order to guide further R&D activities on SiC sensors, investigations on the charge collection efficiency behaviour in the full active volume and near the edges of the detectors are of\nfundamental importance. This can be studied using 3D microscopic characterization techniques\nas the Ion beam-induced charge (IBIC) that utilizes focused MeV range accelerated ions, with\nbeam spot as low as ≈ 1 µm, to probe charge transport [38].\n\n**8. Acknowledgements**\n\nThis project received funding from the European Union ”Next Generation EU” (PNRR M4 C2 – Inv. 1.1 - DD n. 104 del 02-02-2022 - PRIN 20227Z4HB8). The authors wish to thank Dr.\nRetief Neveling for helping the upgrade of the manuscript readability.\n\n**References**\n\n[1] M. He, et al., Investigation of the synergistic effects on 4h-sic junction barrier schottky diodes after multiple\nirradiation, Nuclear Instruments and Methods in Physics Research Section B: Beam Interactions with Materials\nand Atoms 549 (2024) 165288. doi: `[https://doi.org/10.1016/j.nimb.2024.165288](http://dx.doi.org/https://doi.org/10.1016/j.nimb.2024.165288)` .\n\n[2] C. Altana, et al., Radiation damage by heavy ions in silicon and silicon carbide detectors, Sensors 23 (2023).\ndoi: `[10.3390/s23146522](http://dx.",
+      "_rerank_score": 3.9448623537674656,
+      "score_original": 8.081567915940846
+    }
+  ],
+  "seed_nodes": [
+    "Ion",
+    "Graphical Abstract",
+    "Graph Neural Network",
+    "King",
+    "Nippon Graphite Fiber"
+  ],
+  "expanded_nodes": [
+    "AC-LGAD",
+    "ADC",
+    "ALICE",
+    "ASIC",
+    "ATLAS",
+    "Anja Himmerlich",
+    "Application Specific Integrated Circuits",
+    "Applied Physics",
+    "Applied Physics Letters",
+    "Associated Equipment",
+    "Beam Interactions",
+    "CMOS",
+    "Charge",
+    "Cherenkov Telescope Array",
+    "Compressed Baryonic Matter",
+    "Creative Commons",
+    "Deep Reactive Ion Etching",
+    "Electron Devices",
+    "European Organization",
+    "Fondazione Bruno Kessler",
+    "Geant4",
+    "Graph Neural Network",
+    "Graphical Abstract",
+    "Hamamatsu Photonics",
+    "High Energy Physics",
+    "International Cosmic Ray Conference",
+    "International License",
+    "Ioana Pintilie",
+    "Ion",
+    "Isidre Mateu",
+    "Item Specification Dimensions",
+    "King",
+    "LGAD",
+    "Large-Sized Telescopes",
+    "Let",
+    "MAPS",
+    "Michael Moll",
+    "Monte Carlo",
+    "Moritz Wiehe",
+    "Nature Communications",
+    "Neutrino Observatory",
+    "Neutron",
+    "Nippon Graphite Fiber",
+    "Nuclear Instruments",
+    "Nuclear Research",
+    "Particle Physics",
+    "Paul Scherrer",
+    "Physical Review",
+    "Physics Research",
+    "Physics Research Section",
+    "Presenter The",
+    "Proton",
+    "Quantum Information",
+    "Radiation",
+    "Random Forest Regression",
+    "Ring Cherenkov",
+    "Ring Imaging Cherenkov",
+    "Science Advances",
+    "Sensors",
+    "Silicon",
+    "Silicon Ladder",
+    "Silicon Photomultiplier",
+    "TCAD",
+    "Total",
+    "Ulrich Parzefall",
+    "Yana Gurimskaya"
+  ],
+  "paths": [
+    [
+      "Ion",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Ion",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Let"
+    ],
+    [
+      "Ion",
+      "Let",
+      "CMOS"
+    ],
+    [
+      "Ion",
+      "Let",
+      "Radiation"
+    ],
+    [
+      "Ion",
+      "Let",
+      "Sensors"
+    ],
+    [
+      "Ion",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Ion",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Applied Physics"
+    ],
+    [
+      "Ion",
+      "Applied Physics",
+      "Physical Review"
+    ],
+    [
+      "Ion",
+      "Applied Physics",
+      "Applied Physics Letters"
+    ],
+    [
+      "Ion",
+      "Applied Physics",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Beam Interactions"
+    ],
+    [
+      "Ion",
+      "Beam Interactions",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Beam Interactions",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Beam Interactions",
+      "Associated Equipment"
+    ],
+    [
+      "Ion",
+      "CMOS"
+    ],
+    [
+      "Ion",
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "Ion",
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "Ion",
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "Ion",
+      "Electron Devices"
+    ],
+    [
+      "Ion",
+      "Electron Devices",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Electron Devices",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Electron Devices",
+      "Associated Equipment"
+    ],
+    [
+      "Ion",
+      "Proton"
+    ],
+    [
+      "Ion",
+      "Proton",
+      "Radiation"
+    ],
+    [
+      "Ion",
+      "Proton",
+      "ASIC"
+    ],
+    [
+      "Ion",
+      "Proton",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Neutron"
+    ],
+    [
+      "Ion",
+      "Neutron",
+      "Charge"
+    ],
+    [
+      "Ion",
+      "Neutron",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Neutron",
+      "TCAD"
+    ],
+    [
+      "Ion",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Nuclear Instruments",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Nuclear Instruments",
+      "Associated Equipment"
+    ],
+    [
+      "Ion",
+      "Nuclear Instruments",
+      "Silicon"
+    ],
+    [
+      "Ion",
+      "Quantum Information"
+    ],
+    [
+      "Ion",
+      "Quantum Information",
+      "Physical Review"
+    ],
+    [
+      "Ion",
+      "Quantum Information",
+      "Nature Communications"
+    ],
+    [
+      "Ion",
+      "Quantum Information",
+      "Science Advances"
+    ],
+    [
+      "Ion",
+      "Physics Research"
+    ],
+    [
+      "Ion",
+      "Physics Research",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ion",
+      "Physics Research",
+      "Physics Research Section"
+    ],
+    [
+      "Ion",
+      "Physics Research",
+      "Silicon"
+    ],
+    [
+      "Graphical Abstract",
+      "Silicon"
+    ],
+    [
+      "Graphical Abstract",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Graphical Abstract",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Graphical Abstract",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Graphical Abstract",
+      "Application Specific Integrated Circuits"
+    ],
+    [
+      "Graphical Abstract",
+      "Application Specific Integrated Circuits",
+      "ASIC"
+    ],
+    [
+      "Graphical Abstract",
+      "Application Specific Integrated Circuits",
+      "Hamamatsu Photonics"
+    ],
+    [
+      "Graphical Abstract",
+      "Application Specific Integrated Circuits",
+      "Fondazione Bruno Kessler"
+    ],
+    [
+      "Graphical Abstract",
+      "LGAD"
+    ],
+    [
+      "Graphical Abstract",
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "Graphical Abstract",
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "Graphical Abstract",
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "Graphical Abstract",
+      "European Organization"
+    ],
+    [
+      "Graphical Abstract",
+      "European Organization",
+      "Silicon"
+    ],
+    [
+      "Graphical Abstract",
+      "European Organization",
+      "Nuclear Research"
+    ],
+    [
+      "Graphical Abstract",
+      "European Organization",
+      "Radiation"
+    ],
+    [
+      "Graphical Abstract",
+      "TCAD"
+    ],
+    [
+      "Graphical Abstract",
+      "TCAD",
+      "LGAD"
+    ],
+    [
+      "Graphical Abstract",
+      "TCAD",
+      "CMOS"
+    ],
+    [
+      "Graphical Abstract",
+      "TCAD",
+      "Monte Carlo"
+    ],
+    [
+      "Graphical Abstract",
+      "Silicon Photomultiplier"
+    ],
+    [
+      "Graphical Abstract",
+      "Silicon Photomultiplier",
+      "Geant4"
+    ],
+    [
+      "Graphical Abstract",
+      "Silicon Photomultiplier",
+      "Silicon"
+    ],
+    [
+      "Graphical Abstract",
+      "Silicon Photomultiplier",
+      "CMOS"
+    ],
+    [
+      "Graphical Abstract",
+      "Ring Imaging Cherenkov"
+    ],
+    [
+      "Graphical Abstract",
+      "Ring Imaging Cherenkov",
+      "Compressed Baryonic Matter"
+    ],
+    [
+      "Graphical Abstract",
+      "Ring Imaging Cherenkov",
+      "Particle Physics"
+    ],
+    [
+      "Graphical Abstract",
+      "Ring Imaging Cherenkov",
+      "Associated Equipment"
+    ],
+    [
+      "Graphical Abstract",
+      "Ulrich Parzefall"
+    ],
+    [
+      "Graphical Abstract",
+      "Ulrich Parzefall",
+      "Silicon"
+    ],
+    [
+      "Graphical Abstract",
+      "Ulrich Parzefall",
+      "Sensors"
+    ],
+    [
+      "Graphical Abstract",
+      "Ulrich Parzefall",
+      "CMOS"
+    ],
+    [
+      "Graphical Abstract",
+      "Compressed Baryonic Matter"
+    ],
+    [
+      "Graphical Abstract",
+      "Compressed Baryonic Matter",
+      "Ring Imaging Cherenkov"
+    ],
+    [
+      "Graphical Abstract",
+      "Compressed Baryonic Matter",
+      "Ring Cherenkov"
+    ],
+    [
+      "Graphical Abstract",
+      "Compressed Baryonic Matter",
+      "Application Specific Integrated Circuits"
+    ],
+    [
+      "Graphical Abstract",
+      "Moritz Wiehe"
+    ],
+    [
+      "Graphical Abstract",
+      "Moritz Wiehe",
+      "LGAD"
+    ],
+    [
+      "Graphical Abstract",
+      "Moritz Wiehe",
+      "TCAD"
+    ],
+    [
+      "Graphical Abstract",
+      "Moritz Wiehe",
+      "Isidre Mateu"
+    ],
+    [
+      "Graphical Abstract",
+      "Yana Gurimskaya"
+    ],
+    [
+      "Graphical Abstract",
+      "Yana Gurimskaya",
+      "Anja Himmerlich"
+    ],
+    [
+      "Graphical Abstract",
+      "Yana Gurimskaya",
+      "Michael Moll"
+    ],
+    [
+      "Graphical Abstract",
+      "Yana Gurimskaya",
+      "Ioana Pintilie"
+    ],
+    [
+      "Graphical Abstract",
+      "Anja Himmerlich"
+    ],
+    [
+      "Graphical Abstract",
+      "Anja Himmerlich",
+      "Ioana Pintilie"
+    ],
+    [
+      "Graphical Abstract",
+      "Anja Himmerlich",
+      "Yana Gurimskaya"
+    ],
+    [
+      "Graphical Abstract",
+      "Anja Himmerlich",
+      "Michael Moll"
+    ],
+    [
+      "Graph Neural Network",
+      "Creative Commons"
+    ],
+    [
+      "Graph Neural Network",
+      "Creative Commons",
+      "International License"
+    ],
+    [
+      "Graph Neural Network",
+      "Creative Commons",
+      "International Cosmic Ray Conference"
+    ],
+    [
+      "Graph Neural Network",
+      "Creative Commons",
+      "High Energy Physics"
+    ],
+    [
+      "Graph Neural Network",
+      "Neutrino Observatory"
+    ],
+    [
+      "Graph Neural Network",
+      "Neutrino Observatory",
+      "Creative Commons"
+    ],
+    [
+      "Graph Neural Network",
+      "Neutrino Observatory",
+      "International License"
+    ],
+    [
+      "Graph Neural Network",
+      "Neutrino Observatory",
+      "International Cosmic Ray Conference"
+    ],
+    [
+      "Graph Neural Network",
+      "Random Forest Regression"
+    ],
+    [
+      "Graph Neural Network",
+      "Random Forest Regression",
+      "Creative Commons"
+    ],
+    [
+      "Graph Neural Network",
+      "Random Forest Regression",
+      "Neutrino Observatory"
+    ],
+    [
+      "Graph Neural Network",
+      "Random Forest Regression",
+      "Graph Neural Network"
+    ],
+    [
+      "Graph Neural Network",
+      "International License"
+    ],
+    [
+      "Graph Neural Network",
+      "International License",
+      "Creative Commons"
+    ],
+    [
+      "Graph Neural Network",
+      "International License",
+      "International Cosmic Ray Conference"
+    ],
+    [
+      "Graph Neural Network",
+      "International License",
+      "High Energy Physics"
+    ],
+    [
+      "Graph Neural Network",
+      "Cherenkov Telescope Array"
+    ],
+    [
+      "Graph Neural Network",
+      "Cherenkov Telescope Array",
+      "Large-Sized Telescopes"
+    ],
+    [
+      "Graph Neural Network",
+      "Cherenkov Telescope Array",
+      "Nuclear Instruments"
+    ],
+    [
+      "Graph Neural Network",
+      "Cherenkov Telescope Array",
+      "Physics Research Section"
+    ],
+    [
+      "Graph Neural Network",
+      "International Cosmic Ray Conference"
+    ],
+    [
+      "Graph Neural Network",
+      "International Cosmic Ray Conference",
+      "Creative Commons"
+    ],
+    [
+      "Graph Neural Network",
+      "International Cosmic Ray Conference",
+      "Nuclear Instruments"
+    ],
+    [
+      "Graph Neural Network",
+      "International Cosmic Ray Conference",
+      "International License"
+    ],
+    [
+      "Graph Neural Network",
+      "Presenter The"
+    ],
+    [
+      "Graph Neural Network",
+      "Presenter The",
+      "Creative Commons"
+    ],
+    [
+      "Graph Neural Network",
+      "Presenter The",
+      "International Cosmic Ray Conference"
+    ],
+    [
+      "Graph Neural Network",
+      "Presenter The",
+      "Neutrino Observatory"
+    ],
+    [
+      "King",
+      "Monte Carlo"
+    ],
+    [
+      "King",
+      "Monte Carlo",
+      "Geant4"
+    ],
+    [
+      "King",
+      "Monte Carlo",
+      "TCAD"
+    ],
+    [
+      "King",
+      "Monte Carlo",
+      "Silicon"
+    ],
+    [
+      "King",
+      "Paul Scherrer"
+    ],
+    [
+      "King",
+      "Paul Scherrer",
+      "Monte Carlo"
+    ],
+    [
+      "King",
+      "Paul Scherrer",
+      "Particle Physics"
+    ],
+    [
+      "King",
+      "Paul Scherrer",
+      "Deep Reactive Ion Etching"
+    ],
+    [
+      "Nippon Graphite Fiber",
+      "Silicon Ladder"
+    ],
+    [
+      "Nippon Graphite Fiber",
+      "Silicon Ladder",
+      "Total"
+    ],
+    [
+      "Nippon Graphite Fiber",
+      "Silicon Ladder",
+      "Silicon"
+    ],
+    [
+      "Nippon Graphite Fiber",
+      "Silicon Ladder",
+      "ADC"
+    ],
+    [
+      "Nippon Graphite Fiber",
+      "Item Specification Dimensions"
+    ],
+    [
+      "Nippon Graphite Fiber",
+      "Item Specification Dimensions",
+      "Silicon Ladder"
+    ],
+    [
+      "Nippon Graphite Fiber",
+      "Item Specification Dimensions",
+      "ASIC"
+    ],
+    [
+      "Nippon Graphite Fiber",
+      "Item Specification Dimensions",
+      "Silicon"
+    ]
+  ],
+  "metrics": {
+    "retrieval_latency_s": 5.121359348297119,
+    "generation_latency_s": 0.0,
+    "unique_sources": 16,
+    "seed_node_count": 5,
+    "expanded_node_count": 66,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0
+  },
+  "answer": "",
+  "abstained": false,
+  "answer_abstained": false
+}

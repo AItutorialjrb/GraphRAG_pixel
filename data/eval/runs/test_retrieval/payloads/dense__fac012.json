@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "fac012",
+    "query_type": "factoid",
+    "query": "What is a threshold scan?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "a",
+      "threshold"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is a threshold scan?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8319,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "is a scan of\nthe parameter `dac` ~~`v`~~ `thr` in units of the DAC (THL DAC),\nreferred to as a threshold scan. This is performed while operating the chip in the dark, configured in counting mode,\nand acquiring data for a fixed duration at each threshold, without test-pulse injection. Since applying a masking pattern to avoid instabilities has not been found to\nimprove the results, the procedure is applied to the entire\nmatrix at once. Plotting the number of acquired counts\nas a function of the threshold for each pixel reveals the\nbaseline position of the pixels with respect to the threshold (see top of Figure 10). When the baseline and the\nthreshold are close, the baseline noise is sufficient to toggle the discriminator. Hence, an excess of counts indicates\nthe relative position of the baseline.\n\n6\n\n|×103 Tuning DAC 0, = 72.388 ± 0.002 THL DAC Tuning DAC 7, = 87.860 ± 0.003 THL DAC|Col2|\n|---|---|\n|Tuning DAC 7, = 87.860 ± 0.003 THL DAC<br>Tuning DAC 14, = 105.992 ± 0.004 THL DAC<br>Gaussian fits|Tuning DAC 7, = 87.860 ± 0.003 THL DAC<br>Tuning DAC 14, = 105.992 ± 0.004 THL DAC<br>Gaussian fits|\n||Linear fit|\n\nFigure 10: On the top: Occupancy as a function of the threshold for\na pixel operated at three different tuning DACs. The mean of the\nGaussian fit defines the measured baseline position. On the bottom:\nthe tuning DAC setting as a function of its baseline position. The\nsensor is biased at _−_ 1 _._ 2 V.\n\nFigure 11: Tuning DAC setting map after equalisation. The three\nmasked pixels are indicated in red, and the sensor is biased at _−_ 1 _._ 2 V.\n\nThis threshold scan is repeated for all possible settings\nof `tuning` ~~`d`~~ `ac` . The baseline of each pixel is determined\nfrom a Gaussian fit to the above-mentioned plot, as shown\nat the bottom of Figure 10. A linear fit is used to describe\nthe relation between the relative baseline position of each\npixel and the tuning DAC setting, in order to find the\nsetting closest to a trimming target. This trimming target\nis chosen such that it is reachable by the largest possible\nnumber of pixels. In particular, a pixel is masked when the\nGaussian fit does not converge or if the trimming target\ncannot be reached with any tuning DAC setting.\nThe distribution of the tuning DAC settings across the\nmatrix, as well as the masked pixels, is shown in Figure 11.\nThe uniform distribution, which makes full use of the available tuning range and results in fewer than 0 _._ 3 % of pixels\nbeing masked, indicates that no systemati",
+        "score": 2.6426834875537506,
+        "dense_score": 0.5033091306686401,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 4.056982040405273,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6231,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope.md",
+        "title": "2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope",
+        "text": "kdown voltage. The discriminator threshold is adjustable in\n512 steps, where 512 is the lowest and 0 is the highest threshold. We scanned the discriminator threshold for a given laser\n\nFigure 41: Crosstalk distribution between pixels connected to the same AGET.\n\nFigure 42: Trigger rate scan for a laser intensity of 88 photoelectrons.\n\nintensity and recorded the trigger rate for each discriminator\nsetting. Figure 42 shows the trigger rate versus discriminator\nsetting for one such measurement when the laser intensity was\nset to 88 photoelectrons. The trigger rate is normalized to the\npulse rate of the laser. As the discriminator threshold goes from\na small value to a high value (high to low threshold), the trigger\nrate increases until the discriminator triggers on all laser pulses.\nWe define as threshold the discriminator setting where 50% of\nthe laser pulses are registered.\nFigure 43 shows the thus-determined discriminator thresholds versus different laser intensities for one camera pixel.\n\n15\n\nFigure 43: Calibration curve of the eMUSIC discriminator. After about 200 pe\nthe discriminator saturates and the trigger threshold is always exceeded.\n\nFrom 0 to 200 photoelectrons amplitudes, the discriminator responds linearly before it reaches its highest threshold. We fit\nthe linear range and obtain a calibration factor of −1.4 ± 0.1\ndiscriminator threshold steps per photoelectron with a positive\noffset of 303. The discriminators of all camera pixels are calibrated in this way.\n\n**8. Flatfielding**\n\nA uniform camera response simplifies its operation and data\nanalysis. It is achieved by adjusting the SiPM bias such that the\nproduct of PDE, SiPM gain, and signal-chain gains and losses\nis the same for all pixels in the camera. Flat-fielding is the procedure of adjusting the SiPM bias to achieve a uniform camera\n\nresponse.\nIn the flat-fielding procedure, the camera is uniformly illuminated with a pulsed light source. For the first round of light\nflashes, all SiPMs are biased 4.5 V above their respective breakdown voltage, the bias voltage where the PDE reaches 90% of\nits maximum value. From the recorded signals, an average amplitude is calculated per pixel _A_ _p_, and then the average pixel\nvalues are averaged across the entire camera _A_ _c_ . The SiPM bias\ncorrection ∆ _U_ bias for a pixel is then obtained by multiplying\nthe nominal 4.5 V overvoltage with the relative deviation of the\npixel average from the camera average.\n\n∆ _U_ bias = 4.5 V · _[A]_ _[c]_ [ −] _[",
+        "score": -0.08627184743924839,
+        "dense_score": 0.4101773500442505,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.13929252326488495,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 22,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8320,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "DAC settings across the\nmatrix, as well as the masked pixels, is shown in Figure 11.\nThe uniform distribution, which makes full use of the available tuning range and results in fewer than 0 _._ 3 % of pixels\nbeing masked, indicates that no systematic effects are observed that would lead to localised variations of the pixel\nbaselines or discriminator thresholds.\n\nFigure 12: Baseline distribution for the equalised matrix, and the\nlowest and highest tuning DACs. The sensor is biased at _−_ 1 _._ 2 V.\n\nUsing the equalised matrix, with the pixels configured\nas in Figure 11, a new threshold scan in counting mode\nis performed. As before, the count distribution for each\npixel is fitted with a Gaussian, where the mean represents\nits baseline position and the width indicates its single-pixel\nnoise. Figure 12 shows the baseline distributions of the entire matrix when all pixels are set to the lowest and highest tuning DAC value, as well as after equalisation. The\nmean µ = (94 _._ 604 _±_ 0 _._ 018) THL DAC of the equalised\ndistribution corresponds to the chip baseline position, and\nthe width σ = (0 _._ 564 _±_ 0 _._ 015) THL DAC represents\nthe threshold dispersion between pixels. Additionally, the\nsingle-pixel noise, shown in Figure 13, is measured as the\nRMS of the curve obtained in the threshold scan (see Figure 10 top), and has a mean of (1 _._ 386 _±_ 0 _._ 004) THL DAC after equalisation. This threshold dispersion and single-pixel\nnoise can be converted into electrons after the threshold\n\ncalibration described in Section 3.3. It yields to a threshold dispersion of approximately 17 electrons and a mean\nsingle-pixel noise of 45 electrons RMS when the sensor\nis biased at _−_ 1 _._ 2 V. The measured single-pixel noise is\nslightly higher than the simulated one (see Section 2.4).\nAlthough the presented simulations rely on several assumptions, the differences are still under investigation. In\nparticular, the outliers in the single-pixel noise distribution\n(Figure 13), together with ongoing measurements, suggest\nthat Random Telegraph Noise [22] is a likely contributing\nfactor.\n\nFigure 14 shows the impact of the sensor bias voltages\non the threshold dispersion and single-pixel noise for samples with different total chip thicknesses. No significant\ndifferences are observed between samples. The combination of noise and threshold dispersion defines the rate of\nfake hits at a certain threshold level. Towards lower bias\nvoltages ( _<_ 2 V), the detector capacitance increases",
+        "score": -0.5635098591645559,
+        "dense_score": 0.41888073086738586,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.8741177320480347,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1211,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2680731__2307.13969__Three-year_performance_of_the_IceAct_telescopes_at_the_IceCube_Neutrino_Observatory.md",
+        "title": "2023__recid_2680731__2307.13969__Three-year_performance_of_the_IceAct_telescopes_at_the_IceCube_Neutrino_Observatory",
+        "text": "er scan. The resulting delay in SADC readout and\n\ntrigger scan results in an additional variation between the set threshold and the measured SADC.\n\nE.g., if the trigger scan is done shortly before an upcoming aurora, the result will be a low threshold\n\nand a delayed high SADC readout.\n\n6\n\n_IceAct: Three-year performance_\n\n**(a)** Low lightlevel\n\n**(b)** High lightlevel\n\n**Figure 4:** Measurement of an Aurora with the telescope and the all-sky cam. On the left and right is a\nsnapshot of the SADC values for each pixel of the field and roof telescope, respectively. The middle row\nshows a picture of the all-sky cam during the telescope measurements. For each pixel of the telescope, a\nmedian SADC value is subtracted, calculated from the first ten (aurora-free) minutes of the day. During\nlow light levels, the upcoming aurora is visible at the border of the telescope. The missing pixels were not\npowered during data-taking. The SADC readout for pixel 53 of the field telescope is broken and therefore\nequal to 0.\n\nTo achieve a mean conversion\n\nfrom SADC to trigger threshold, a IceCube Work in Progress\nB-spline was fitted to the data with Data (roof, trigger group 12)\n\nfitted B spline\n\nan outlier-robust regressor. The re\nsulting spline is planned to be used\n\n250\n\nin the upcoming seasons to improve\n\nthe trigger scan algorithm. Instead of 200\n\nscanning the whole range, the thresh\n150\n\nold is set to the value yielded by the\n\nB-Spline at a measured SADC. If the 100\n\nresulting rate for the trigger group is\n\n500 1000 1500 2000 2500 3000\n\ntoo high, the trigger threshold can\n\nAvg. SADC [Counts]\n\nthen be increased until the wanted\n\nrate is achieved and vice-versa. This\n\n**Figure 5:** Trigger threshold in dependence of the SADC readout.\n\nwill reduce the amount of time dur\nA B-spline was fitted to the data. The spline is planned to be used\n\ning a trigger scan massively, enabling in future operations, to estimate the trigger threshold\nquick adjustment of the threshold dur\ning auroras, and shorter intervals between trigger scans while increasing the uptime of the telescopes.\n\nIceCube Work in Progress\n\nData (roof, trigger group 12)\n\nfitted B spline\n\n250\n\n200\n\n150\n\n100\n\n500 1000 1500 2000 2500 3000\n\nAvg. SADC [Counts]\n\n**Figure 5:** Trigger threshold in dependence of the SADC readout.\nA B-spline was fitted to the data. The spline is planned to be used\nin future operations, to estimate the trigger threshold\n\n7\n\n_IceAct: Three-year performance_\n\n**6.** **Outlook and Summary**\n\nThe tw",
+        "score": -0.6719350789064242,
+        "dense_score": 0.41151517629623413,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.0403939485549927,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6615,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835439__2409.19030__Initial_performance_assessment_and_calibration_techniques_of_the_production_monolithic_sil.md",
+        "title": "2025__recid_2835439__2409.19030__Initial_performance_assessment_and_calibration_techniques_of_the_production_monolithic_sil",
+        "text": "ixels are identified and masked to prevent interference\n\nwith data collection. A subsequent noise scan confirms the threshold’s effectiveness by running the\n\nASIC at the selected level, further masking any additional noisy pixels. The final step is the charge\n\ncalibration, where the response of each pixel to different charge injections, through the testpulse\n\ncircuit, acquired. Using a rolling mask pattern, different charges are injected into selected pixels,\n\nand the resulting ADC values are recorded. In the Figure 8, the flowchart of the calibration methods\n\nis depicted. Two potential methods are under consideration for charge calibration of the preshower\n\ndetector. The first method, referred to as the \"fitting\" method, is depicted at the top of Figure 8,\n\nwhile the second method, the \"averaging\" method, is illustrated in the bottom part of the flowchart.\n\nBoth methods involve the calibration of individual pixels, meaning each pixel is calibrated based\n\non its own behavior. Up to this point, both methods follow the same initial three steps, including\n\nthe acquisition of calibration data, which are the Q-ADC values mentioned earlier. These Q-ADC\n\nvalues are used to create a \"calibration curve\" for each pixel, mapping the relationship between the\n\ninjected charge and the output ADC value. As shown in the beggining of the flowchart of Figure\n\n8, this process is identical for both methods. In the fitting method, the next step involves fitting the\nQ-ADC data to generate a function _𝑄_ = _𝑓_ ( _𝐴𝐷𝐶_ ) that describes the individual behavior of each\n\npixel. This function is then dynamically adjusted to find its limits, and upon inversion, it is ready\n\n– 6 –\n\n**Figure 8** . Flowchart illustrating the two charge calibration methods for the preshower detector. The top row\n(1) represents the \"fitting\" method, where the working point and ADC versus injected charge (Q) relationship\nare established, followed by fitting the data to create an inverse function _𝑓_ [−][1] . This function is then used in the\ndata reconstruction phase to convert measured ADC values into reconstructed charge values. The bottom row\n(2) depicts the \"averaging\" method, which involves creating ADC-Q maps and dynamically finding averages.\nIn the data reconstruction phase, measured ADC values are interpolated to obtain the reconstructed charge.\nBoth methods start with the same preprocessing steps but differ in their approach to data reconstruction. The\nsimulation in the beginning of the data recons",
+        "score": -0.9078230198115519,
+        "dense_score": 0.4212428331375122,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.404026985168457,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1033,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "ence\nof Φ eq = 2.1 × 10 [16] cm [−][2], LDAC_LIN = 200 was used.\n\nThe global threshold, Vthreshold_LIN, is set for each module individually to achieve the lowest\n\npossible threshold while keeping the Equivalent Noise Charge (ENC) below 100 e and the number\n\nof noisy pixels below one percent after per-pixel adjustment. A pixel is considered noisy if it has\na noise hit probability _>_ 2 × 10 [−][5] in a 25 ns sensitive time window, which corresponds to 2 hits in\n1 × 10 [5] random triggers. Per-pixel threshold adjustment is performed in two steps, using the charge\n\ninjection system. First, the threshold of each pixel is adjusted using a series of iterative threshold\n\nscans at a high global threshold of approximately 2500 e. In each iteration, the threshold of each\n\npixel is compared to the mean of the thresholds of all pixels and its TDAC is adjusted in order to\n\nminimize the width of the threshold distribution. This results in a set of TDAC values for all pixels.\n\nNext, the ROC is configured using the TDAC values obtained in the first step and the trimming\n\nprocedure is performed again at a lower global threshold of around 1000 e. This step produces\n\na set of fine-tuned TDAC values for low-threshold operation. The other parameters remained the\n\nsame for all reported measurements except for the module irradiated to the highest fluence, where\n\na different set of parameters was necessary as mentioned above (Table 3).\n\nThe tuning results for a non-irradiated module with 50 µm × 50 µm pixel size at room tempera\nture and with a sensor bias voltage of 120 V are shown in Fig. 4. As visible in Fig. 4a, the distribution\n\n– 8 –\n\nof the TDAC values after the tuning procedure for all pixels has an apparent double-peak structure,\n\nwhile a Gaussian distribution is expected. This feature is not present anymore in the next version\n\nof the chip. The distribution has a mean of 7.9 and a standard deviation of 3.0. The threshold\n\nis determined using the charge injection system of the RD53A chip. A voltage step supplied to\n\nthe charge injection capacitors determines the quantity of the injected charge. The amplitude of\n\nthe voltage step, ΔVCAL, is controlled by the difference of two 12-bit voltage DAC outputs. The\n\ncorresponding difference in DAC units between the two DACs is referred to as ΔCAL. Following\n\nthe recommendation of the RD53A designers, the following conversion equation between ΔCAL\n\nand the charge Q in units of the elementary charge e is used:\n\nQ(e) = ΔCAL · 10 _._",
+        "score": -1.0206619620323183,
+        "dense_score": 0.4558725357055664,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.578662633895874,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 1902,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "ciency for separate\nsignals with the same number of photoelectrons occurring at different times with respect\nto the clock phase of the integrator. Dark-noise signals will arrive randomly in time and\nbe added on top of any signal pulse and charge spillover across bunch crossing windows.\n\n**6.5.4** **Threshold calibration**\n\nThe setting of the thresholds has a large impact on the single hit efficiency and dark-count\nrate. The calibration of the comparators which are used to set the signal thresholds\nconsists of two parts: (a) determining the ratio of events over threshold for each DAC\n\n_×_\nsetting for each of the three comparators of each channel (3 524 thousand) and (b) an\noffline fit to the data to extract the calibration constants. The threshold DAC scan is\nperformed under pulsed illumination provided by the light injection system (LIS). An\nexample of the results for one threshold is shown in figure 52 (left). The fit to the data is\nbased on an analytical description of the Poisson-like SiPM spectrum described in ref. [94],\nwhich includes contributions from cross-talk. It not only allows one to determine the\nthreshold DAC values corresponding to the discrete photoelectron amplitudes, nominally\n1.5, 2.5, and 4.5 photoelectrons, but also gives access to other important parameters\nsuch as the mean light intensity of the LIS. A more detailed discussion of the calibration\nprocedure can be found in ref. [95].\n\nFigure 51: Left: the simulated shaper amplitude as a function of time for a single 10 photoelectron\nsignal at 4 V above breakdown. Right: the track-and-hold output values as a function of signal\narrival time. The dashed lines indicate the nominal threshold value with respect to the maximum\nvalue for two settings (pz5 and pz6, see text).\n\n68\n\nth3\n\nth2\nth1\n\n|Amplitude|clustered channels<br>a large cluster fragment<br>(a)<br>(d)<br>(b)<br>t<br>(c) (e)<br>t<br>t|\n|---|---|\n|Amplitude|SiPM Channels|\n\n|Col1|Col2|Col3|Col4|(b)|Col6|Col7|Col8|Col9|Col10|Col11|Col12|\n|---|---|---|---|---|---|---|---|---|---|---|---|\n|||||(c)|(c)|(c)|(c)|||||\n|||||||||||||\n\nFigure 52: Left: an example threshold calibration for one comparator of one channel, showing\nthe ratio (number of data above threshold to the total number of data) as a function of the\nthreshold value. The red curve is the result of a fit. The vertical dashed lines through the steps\nhighlight the discrete photoelectron amplitudes. Reproduced with permission from [95]. Right:\na diagram of the clustering algorithm",
+        "score": -1.490135743882921,
+        "dense_score": 0.48585784435272217,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.3010635375976562,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 84,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4950,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "ors, same as in figure 21 but with an additional UV-pass\nfilter on top of the Hamamatsu SiPM module. The generally lower thresholds\nare caused by different atmospheric conditions and a different pointing direction.\n\nstep. To understand the telescope threshold for gamma rays,\none needs to take into account the trigger, the image reconstruction, its parameterization, and the analysis pipeline; usually, the\nthreshold after the analysis is higher than that just after the trigger [47]. The study of these is beyond the scope of the current\nwork. However, the SNR of the photosensors is the fundamental parameter for assessing the performance of an imaging cam\nera.\n\nFigure 21: Dependence of the threshold on the next neighbor trigger configuration for the sensors under study. The threshold value in phe was normalized to\nthe value that the MAGIC PMTs would detect so that the curves can be directly\ncompared with each other.\n\nA comparison of SiPM and PMT trigger rates can also be\nfound in [15].\nWe would like to emphasize that the comparison of the\nthresholds determined by rate scans should not be confused\nwith an equivalent improvement (or lack thereof) in the performance of the entire telescope. Rate scans are only a first\n\n**9. Simulation of bandpass filters**\n\nTo reduce the effect of the LoNS for SiPM-based imaging\ncameras one can use UV/blue-pass filters (see [12, 84]). Alternatively, the telescope mirrors could be coated by a dielectric coating [85], the light guides of the pixels could be coated\n\n[86], or the pixel could be constructed as a so-called LightTrap, consisting of a SiPM coupled to a polymethylmethacrylate (PMMA) disk doped with a wavelength-shifter [59]. The\nUV/blue pass filter can alternatively be placed directly on the\nSiPM chips but will increase the crosstalk[87]. The filter can\nalso be mounted above the surface of the light guides, potentially replacing the ”usual” MAGIC protective camera entrance\nwindow. In MAGIC, such a setup for attenuating the moonlight\nwas tested several years ago [51]. [21] discusses the technical aspects of such a camera window with a dichroic filter and\nconcludes the financial affordability. Also, the MAGIC light\ndetection and ranging (LIDAR) atmospheric monitoring system uses a narrow interference filter for LoNS rejection [46].\nWe repeated our LoNS and Cherenkov light simulations from\nsection 5.2 with an additional bandpass filter installed in front\nof the detector modules. For the simulations in this section,\nwe again",
+        "score": -1.5247864911050508,
+        "dense_score": 0.45243242383003235,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.3539838790893555,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 34,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8324,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "de, the\npulse is not detected (no threshold crossing), and no count\nis added. When the threshold is close to the baseline level,\nnoise (or other perturbations such as undershoot in the\nreturn to baseline) can cause a higher number of threshold\ncrossings, similar to what is shown in Figure 10.\nFigure 18 shows the occupancy as a function of\nthe threshold for 100 test pulses per threshold, using\n`dac` ~~`v`~~ `tpulse` equals 20 DACs (approximate most probable value for a MIP, about 700 electrons), injected into a\nsingle pixel. Above the Gaussian part (baseline), an occupancy of 100 is expected until the maximum pulse height\nis reached, after which the occupancy drops to zero. In\nthis region, an S-curve function is fitted, with the mean\nµ = (118 _._ 5 _±_ 0 _._ 1) THL DAC representing the test pulse\n\n9\n\n|Surrogate func<br>A = 0.018 ± 0.001<br>B = -6 ± 1 c.c.<br>C = 290 ± 30 c.c.<br>D = 650 ± 20 e|tion fit<br>c.c./e<br>e|Col3|\n|---|---|---|\n||||\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|||||||\n\nFigure 20: Calibrated ToT response for a single pixel.\n\nFigure 22: ToT spectrum of the [55] Fe source before calibration.\n\n|Gaussian fit<br>1640 ± 40 e<br>107 ± 3 e|Col2|\n|---|---|\n|||\n\nFigure 21: ToT response for the full matrix as a function of the\namplitude of the injected test pulses. The threshold is approximately\n600 electrons. The mean ToT is shown in red.\n\namplitude and the width σ = (0 _._ 2 _±_ 0 _._ 1) THL DAC reflecting the pixel noise and the amplitude variations across\nthe 100 injected pulses. This procedure is repeated for each\npixel and all possible `dac` ~~`v`~~ `tpulse` values, as shown in Figure 19. A linear regression in the region from `dac` ~~`v`~~ `tpulse`\nbetween 25 and 100 DAC is used to extract the conver\nsion factor between electrons and DACs. All pixels have\na similar linear gain, with maximum measured amplitude\nreaching the 8-bit `dac` ~~`v`~~ `thr` limit.\n\nThe ToT value for each test pulse amplitude is calculated from the average of 100 test pulse measurements at\na fixed threshold. This procedure is repeated for each pixel\nand all possible `dac` ~~`v`~~ `tpulse` values, as shown in Figure 21\nfor a threshold of approximately 600 electrons. At higher\ntest pulse amplitudes, far from the expected MIP value,\nthe measured ToT values vary between pixels, and the\nmaximum mean value is reached at 1 µs, coinciding with\n\nFigure 23: Amplitude spectrum of the [55] Fe source after calibration.\n\nthe acquisition frame duration. This large",
+        "score": -1.7975699496269228,
+        "dense_score": 0.43234580755233765,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.7731845378875732,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 8207,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "asurement, and is not affecting the sensing performance of\nthe pixels.\nThe threshold exhibits a temperature dependence. In measurements with a\nnon-irradiated sensor, a linear decrease of approximately 2 e [−] _[◦]_ C _[−]_ [1] was observed\nover the range 20–35 _[◦]_ C, consistent with simulations of the in-pixel front-end.\nAs a result of in-pixel discrimination, noise ultimately manifests as fake hits.\nThe fake-hit rate quantifies how often the sensor registers hits in the absence\nof particles or charge injection. It accounts for all previously discussed noise\nsources, including random telegraph noise, as well as systematic effects such\n\n13\n\n(a) Threshold\n\n(b) Noise\n\nFigure 9: Threshold and noise distributions of a reference region (22 _._ 5 µm pixel pitch,\n2 _._ 5 µm gap) under typical operating conditions. Both distributions are well described by\na Gaussian fit. The threshold dispersion is comparable to the average pixel noise.\n\n(a) Threshold map\n\n(b) Threshold map profiles\n\nFigure 10: Threshold map of a reference region (22 _._ 5 µm pixel pitch, 2 _._ 5 µm gap) and its profiles\nalong column and row direction. The threshold dispersion is uniform across the matrix, except\nof the eleven columns where front-end input is coupled to digital signals steering the chargeinjection circuit [23].\n\nas coupling to signal distribution nets (see Sec. 4.2). The measurement of the\nfake-hit rate is performed by issuing several tens of thousands of triggers and\nrecording the number of hits per pixel per unit time. Pixels registering a fake\nhit in more than 1% of issued triggers are classified as noisy, excluded from the\nfake-hit rate calculation, and masked from further analysis. In all but a small\nfraction of cases (see Sec. 5.5), there are fewer than three such pixels per region,\ncomprising 65 536 and 102 400 pixels in top and bottom half-units, respectively.\nThe numbers of pixels that require masking increases after exposing sensors to\nionising or non-ionising radiation (see Sec. 4.7).\n\n14\n\n_4.2. Strobe effect on threshold and fake-hit rate_\n\nA parasitic capacitive coupling was identified at the crossings of the analoguebias and strobe-distribution lines (see Fig. 5). Each crossing introduces a capacitance that was found to cumulatively have a measurable impact on the analogue\nfront-end performance. Consequently, the falling edge of the strobe signal (see\nSec. 2.2, active when low) introduces perturbation to all analogue biases. At\nfirst, the distributed biasing voltage",
+        "score": -1.938756762997488,
+        "dense_score": 0.3984947204589844,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.988752841949463,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 1.5080337608233094,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.5080337608233094,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

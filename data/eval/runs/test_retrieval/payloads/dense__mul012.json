@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "mul012",
+    "query_type": "multi_hop",
+    "query": "How can agentic routing improve multi-hop detector questions?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "agentic",
+      "routing"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can agentic routing improve multi-hop detector questions?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 3328,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector.md",
+        "title": "2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector",
+        "text": "roperties also suggest, that an e [+] e _[−]_ Higgs factory could be a good place for the LLP searches due to its\nclean experimental environment and trigger-less operation.\nThe International Large Detector (ILD) [2] is a multipurpose detector concept for an experiment at the\nHiggs factory, originally proposed for the International Linear Collider (ILC) [3]. Its design is optimised\nfor the particle-flow reconstruction and provides almost 4 _π_ angular coverage. The core of the ILD\ntracking systems is a time projection chamber (TPC) which allows for almost continuous tracking and\ndE/dx measurement for particle identification. As most of LLP signatures can be categorised as tracks\nthat do not point to, or do not originate from the interaction point (IP), ILD with its TPC provides very\ninteresting prospects for these measurements.\nAn experiment-focused approach is taken here. Benchmark scenarios are selected based on their\nexperimental/kinematic properties, and not as preferred points in a model parameter space. The signature\nof two tracks coming from a displaced vertex is studied as a generic case of an LLP search. For generality,\nno other assumptions about the final state are made.\n\n### **2 Analysis framework**\n\nTwo opposite extreme scenarios are considered as the benchmarks. The more challenging case involves the production of heavy scalars with small-boost and non-pointing, low- _p_ _T_ track pair in the final\nstate. This is provided by the Inert Doublet Model (IDM) [4], which introduces four additional scalars,\nincluding two neutral ones (one of them, H, being a stable dark matter candidate). The neutral scalars, A\nand H, can be produced in e [+] e _[−]_ _→_ AH process, with A _→_ Z [(] _[∗]_ [)] H as the main decay channel. If the mass\nsplitting, ∆ _m_ _AH_ = _m_ _A_ _−_ _m_ _H_, between the two scalars is sufficiently small, A could be long-lived. This\nalso makes the Z boson highly virtual, so for high masses of the scalars (small boost), the observed decay\nproducts will be soft and will not point to the IP. Four IDM benchmarks are selected for the analysis, with\n∆ _m_ _AH_ = 1 _,_ 2 _,_ 3 _,_ 5 GeV, decay length _cτ_ of A fixed to 1 m, and its mass _m_ _A_ = 155 GeV. Only Z _[∗]_ decays to\nmuons are considered.\n\nThe second type of scenario under study is a production of a very light pseudoscalar, the decay\nproducts of which have a very high boost and are almost colinear. This is the case for an axion-like\nparticle (ALP), which in many scenarios has a m",
+        "score": -4.7675239270733245,
+        "dense_score": 0.35572826862335205,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.343337059020996,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7289,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2913434__2504.13098__Irradiation_studies_of_the_Resistive_AC-coupled_Silicon_Detector_RSDAC-LGAD.md",
+        "title": "2025__recid_2913434__2504.13098__Irradiation_studies_of_the_Resistive_AC-coupled_Silicon_Detector_RSDAC-LGAD",
+        "text": "nts in Low Gain Avalanche\nDiodes (LGADs) has culminated in 1.3 × 1.3 mm [2] sensors capable of < 50 ps time resolutions in the high radiation environments expected at the HL-LHC [1, 2, 3]. These sensors are now\nbeing used in the phase-2 upgrade projects at CMS and ATLAS\nfor timing layers. The evolution of LGADs from simple R&D\nprojects to full scale production detectors has motivated an entirely new generation of detectors capable of high spatial and\ntemporal resolution.\nAs with timing layers, constructing a tracking layer with such\nsensors can further improve pile-up discrimination in high rate\nenvironments (e.g. HL-LHC, FCC-hh) or provide time-of-flight\ninformation used for particle identification (e.g. FCC-ee). Additionally, constructing a full tracking system with multiple layers of such sensors allows for the possibility of ’4D’ tracking.\n’4D’ tracking would allow for the inclusion of timing information while tracks are created, thus greatly reducing track finding\ncombinatorics.\n\nSeveral novel ideas for devices to enable ’4D’ tracking are\nunder study, one such idea is the Resistive AC-coupled Silicon\nDetector (RSD) [4, 5, 6]. The RSD sensors utilize a gain implant similar to LGADs, but the segmentation into ”pixels” is\n\n∗ corresponding author\n_email:_ brendan.regnery@kit.edu\n\nprovided by AC-coupled electrodes, to enable high spatial resolution of hit via charge sharing. This allows for precise position resolution providing a 100% fill factor and requiring fewer\nreadout channels than traditional pixel sensors. The key to controlling the charge sharing is a precisely tuned n+ resistive layer\nas shown in figure 1. This differs from a Standard LGAD which\nuses a much more conductive, highly doped, n++ layer [6, 4].\n\nFigure 1: An RSD utilizes charge sharing on AC pads to provide high spatial\nresolution. A key difference between the RSD and a standard LGAD is the\nn+ resistive layer which is significantly less doped than the n++ layer in a\nstandard LGAD in order to provide the high resistivity needed to allow for\ncharge sharing.\n\n_Preprint submitted to VCI Proceedings in NIM A_ _April 18, 2025_\n\nIn several applications, such as adding RSD in a future HLLHC tracker or tracking for a future collider, the RSD sensors\nwill need to be able to operate in high fluence environments.\nThe second RSD production at FBK [7] focused on preparing\nfunctional RSD sensors by optimizing readout pad shapes and\nimproving the n+ resistive layer. However, these RSD sensors\nhave not",
+        "score": -4.870934886643381,
+        "dense_score": 0.32617342472076416,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.501904487609863,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2867,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2698795__2309.09610__Development_of_a_High_Granular_TOF_Neutron_Detector_for_the_BMN_Experiment.md",
+        "title": "2024__recid_2698795__2309.09610__Development_of_a_High_Granular_TOF_Neutron_Detector_for_the_BMN_Experiment",
+        "text": "ding\nsystems and beam energies.\n\nParticle identification is performed by time-of-flight measurement using TOF-400 and TOF-700 placed at distances\nof 4 m and 7 m from the target, respectively. They are based on multi-gap resistive plate chambers (RPC) with\nstrip read-out and provide a time resolution of 80 ps for TOF-400 and 115 ps for TOF-700. These detector systems\nallow the identification of hadrons ( _π, K, p_ ) as well as light nuclei with momenta up to a few GeV/c produced in\nmulti-particle events. The tracking system consists of three planes of two-coordinate Silicon detectors (STS) and six\ntracking stations based on triple Gas-Electron-Multiplier (GEM) chambers installed in the magnet, as well as two\nCathode-Drift-Chambers (CDC) located behind the magnet. The STS + GEM system measures the momentum (p)\n\n2\n\nFigure 1: NICA facility complex at JINR, Dubna. The BM@N setup is placed on the extracted beam of the Nuclotron.\n\nof charged particles with a relative uncertainty that varies from 2.5% at a momentum of 0.5 GeV/c to 4.5% at 3.5\nGeV/c. This system also provides measurements of the multiplicity of the produced charged particles, which can be\nused as an additional estimator of the collision centrality. To measure centrality and the orientation of the reaction plane\nin nucleus-nucleus collisions, the Forward Hadron Calorimeter (FHCal) is used, together with the Forward Quartz\nHodoscope (FQH) and the multichannel Scintillation Wall (ScWall), which is also used to measure charged spectator\nfragments. There are also some beam and trigger detectors listed in Fig. 2.\n\nFigure 2: Schematic view of the BM@N setup in Xe+CsI run period.\n\n**3** **Conception of the New High Granular Neutron Detector (HGND) at the BM@N**\n\nTo measure neutron yields and the ratio of azimuthal flow of neutrons and protons, it is necessary to develop a new\ndetector for neutron identification and energy reconstruction. Up to now, only two neutron detectors exist to measure\nneutrons with energy up to 1 GeV: LAND [ 7 ] and NeuLAND [ 9 ], both developed and constructed at GSI. These neutron\ndetectors use the time-of-flight method to identify neutrons and measure their energy. The active part of these detectors\nconsists of long scintillator plates with PMT light readout from both ends. LAND provides a time resolution of about\n250 psec and an 80% detection efficiency for a single neutron with energy above 400 MeV. In contrast to LAND, which\nhas a structure with alternating layers of plastic s",
+        "score": -4.915771802902222,
+        "dense_score": 0.29425936937332153,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.568110466003418,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1881,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "ility to the pigtail for routing. The rightmost picture\nshows an example of bending when installed. Each subcable contains three copper layers\nof 35 µm thickness each, sandwiched between polyimide films and adhesive (adding up to\nabout 0.25 µm of polyimide and 75 µm of adhesive per subcable). The inner layer is used\nfor the differential pair signals and the outer layers for power lines. This provides good\nsignal integrity and low resistance for the power traces. The pigtails cross the detector\nbox walls through dedicated holes, which are sealed with foam to provide sufficient gas\nand light tightness.\n\n**5.6.3** **Peripheral electronics**\n\nThe periphery electronics processing interface (PEPI) units are responsible for readout\nand control of the detector. They connect to the staves via the pigtails. The full PEPI\nsystem comprises 24 backplanes, 24 pigtail power breakout boards (P2B2s), and 248\ndata and control boards (DCBs). The distribution of data, clock, and control signals is\nshown in figure 35. The GBTx, mounted on the DCBs, implements bidirectional links\nbetween the detector and the counting room with components that are radiation hard up\nto 1 MGy [52]. Each PEPI unit houses 3 backplanes that route power, data, and control\nsignals into and out of the detector volume and three P2B2s that route additional power.\nThe backplanes support up to 12 DCBs that connect to the counting room via optical\nlinks.\n\n48\n\nFigure 35: Schematic of LV, HV, data, fast and slow control signal distribution to UT FE\nelectronics.\n\n**5.6.4** **Backplanes and power breakout boards**\n\nThe routing of the backplanes balances the load carried by each DCB and organises the\ndata to minimise resources needed for event reconstruction. A fully utilised backplane\nsupports 6 half-staves read out by 12 DCBs. Due to space constraints in the area around\nthe staves the size of the backplane is limited. Matching the twelve 400-contact pigtail\nconnectors leads to a very high density of traces on the board. The signal routing is\nachieved by a 28-layer board with a PCB aspect ratio of 1:10 which is pushing the limits\nof manufacturability. There are two types of backplanes, referred to as true and mirror,\nwith different layouts to accommodate the geometry of pigtails from the detector. Each\ntype also has three variants: full, partial and depopulated. The full backplane is used for\nthe high-occupancy region of the detector, while the depopulated one is used for the outer\nregion of the detector planes,",
+        "score": -5.264948715380768,
+        "dense_score": 0.32445839047431946,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.10795783996582,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 63,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2346,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "mm, respectively.\nAll spatial resolutions and three-dimensional deviations\ndetermined in this work can also be looked up in Table 2 and\nTable 3.\n\n**4. Conclusion and outlook**\n\nThis work is the second part of a simulation study investigating the performance of an envisaged cost-effective PET-like\ndetector system capable of tracking tracer particle movement\nin dense and optically opaque granular assemblies. Following\non from the work done in Oppotsch et al. (2024) (and therefore\nreferred to as the previous studies for the rest of this section),\nwhich investigated the performance of the detector system for\na stationary source within the detector system filled with\nair only (referred to as the empty detector), the generic\n\n_This is the accepted manuscript version of an article accepted for publication in Particuology. The final version is available online at_\n_https://doi.org/10.1016/j.partic.2023.09.003_ _Page 10 of 13_\n\n**Table 3**\n\nThree-dimensional deviations for all scenarios.\n\nScenario Deviation Δr (mm)\n\nStationary source 2.1 ± 0.8\nModel path (buffer size = 6,000) 4.0 ± 1.6\nDEM path 2.3 ± 0.9\nModel path (buffer size = 36,000) 6.5 ± 1.5\n\ngrate system and the detector system completely filled with\nparticles, the goal of this work was to improve the existing\nreconstruction software (by extending it to oversampling\n(calculating a moving average for the position determination\nof the tracer particle) and iteration) and extend both the\nreconstruction and simulation software to a tracer sphere\nmoving along a selected model path and a path given by a\nDEM simulation. Moreover, the PET-like detector system was\nscaled down to a total of 88 cost-effective plastic scintillator\nbars to better fit the size of the generic grate system and to\nfurther reduce cost.\n\nThus, for a stationary source within the GGS, spatial\nresolutions of 0.6 mm in the x- and y-direction and 1.1 mm\nin the z-direction, as well as an average three-dimensional\ndeviation of the reconstructed tracer sphere positions from\nthe simulated position of (2.1 ± 0.8) mm were determined.\nFurthermore, it could be shown that the iteration leads to an\nimprovement of the resolution by a factor of about 170 in x\nand y and by a factor of 110 in the z-direction. By measuring\nthe position dependency of the reconstruction, it was found\nthat the efficiency is nearly constant throughout the detector\nsystem (due to the small size of the generic grate system), so\nboundary effects can be neglected.\nTo investigate the spat",
+        "score": -5.319573607811561,
+        "dense_score": 0.3013024926185608,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.189876556396484,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 386,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "80 pixels in both directions. Only the whole images not selected using the\ndefault grid would then be evaluated with the additional secondary grid.\nThe anomaly detector tends to select patches at a guard ring _§_, cell numbers and\ncell borders as false positive, due to the increase in the AE reconstruction error in these\nareas. In addition, contact marks are a common source of false positives, see (e) in\nfigure 11. With the proposed approach, where the detection is invariant to the anomaly\nlocation on the sensor, these cannot be eliminated.\n\n_6.2. Efficiency_\n\nAverage inference times for a whole image are reported in table 4, with both the default\ngrid and the secondary grid. An average sensor scan consisted of 335 images, for which\nthe picture-taking time is 9.2 minutes. On average, an inspector inspects a whole image\nin two seconds, evaluating one scan in 11 minutes. On an RTX A2000, the inference time\nis less than 6 minutes for the scan with both grids. The GPU is necessary, as the short\nrun time allows parallel picture-taking and pre-selection. At variance, the evaluation of\na scan would take approximately 45 minutes on a regular CPU, significantly delaying\nthe subsequent electrical characterization.\n\n**Table 4.** Average inference times on a GPU or a CPU for whole images using the\ndefault and secondary grids.\n\nGrid Run time [s]\n\nRTX A2000 GPU Default 0.8\n\n+ secondary 1.0\n\nCPU Default 8.1\n\n+ secondary 13.8\n\n_6.3. Continuous learning_\n\nGiven that new data will be measured continuously, the PSA should be retrained\nto adapt to the new data. Using new normal images to train the AE would not\nimprove its task of poor anomaly reconstruction, so it does not require retraining. Also\nthe background detector is considered to be robust enough to not require immediate\nretraining. However, the accuracy of the anomaly detector could be improved via\ntraining with novel anomalous patches. For example, training instances such as the\nmissed anomaly (d) in figure 10 did not exist in the original training data set.\nAnomalous images acquired after the initial deployment were given ground truth\nlabels to extend the training data set. The anomaly detector was retrained starting from\n\n_§_ A guard ring is a structure at the periphery of a sensor designed to protect it from currents from the\ncutting edge, and shown in figure 11 (f) as the black line with false positives.\n\n14\n\nrandomly initialized weights with 2.1 times more anomalous patches than the original\nmodel. An independ",
+        "score": -5.461975558598836,
+        "dense_score": 0.304759681224823,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.409449577331543,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 3616,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond.md",
+        "title": "2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond",
+        "text": "## **ALICE 3: a next-generation heavy-ion detector for LHC** **Run 5 and beyond**\n\n**Nicola Nicassio** [∗] **on behalf of the ALICE Collaboration**\n\n_Dipartimento Interateneo di Fisica ‘M. Merlin’ and Sezione INFN,_\n_Via Orabona 4, Bari, Italy_\n\n_E-mail:_ [Nicola.Nicassio@ba.infn.it](mailto:Nicola.Nicassio@ba.infn.it)\n\nThe ALICE Collaboration proposes a completely new apparatus, ALICE 3, for the LHC Runs\n\n5 and 6. The detector consists of a large pixel-based tracking system covering eight units of\n\npseudorapidity, complemented by multiple systems for particle identification, including silicon\n\ntime-of-flight layers, a ring-imaging Cherenkov detector, a muon identification system, an electro\nmagnetic calorimeter and a forward conversion tracker. Track pointing resolution of better than\n\n10 _𝜇_ m for _𝑝_ _𝑇_ >200 MeV/ _𝑐_ can be achieved by placing the vertex detector on a retractable structure\n\ninside the beam pipe. ALICE 3 will, on the one hand, enable novel studies of the quark-gluon\n\nplasma (QGP) and, on the other hand, open up important physics opportunities in other areas\n\nof QCD and beyond. The main new studies in the QGP sector focus on low- _𝑝_ _𝑇_ heavy-flavour\n\nproduction, including beauty hadrons, multi-charm baryons and charm-charm correlations, as well\n\nas on precise multi-differential measurements of dielectron emission to probe the mechanism of\n\nchiral-symmetry restoration and the time-evolution of the QGP temperature. Besides QGP studies,\n\nALICE 3 can uniquely contribute to hadronic physics, with femtoscopic studies of the interaction\n\npotentials between charm mesons and searches for nuclei with charm, and to fundamental physics,\n\nwith tests of the Low theorem for ultra-soft photon emission. This paper will cover the detector\n\nconcept, the status of novel sensor R&D and the resulting physics performance.\n\n_The European Physical Society Conference on High Energy Physics (EPS-HEP2023)_\n_21-25 August 2023_\n_Hamburg, Germany_\n\n∗ Speaker\n\n© Copyright owned by the author(s) under the terms of the Creative Commons\nAttribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0). https://pos.sissa.it/\n\n_ALICE 3: a next-generation heavy-ion detector for LHC Run 5 and beyond_ Nicola Nicassio\n\n**Figure 1:** Left: Schematic view of ALICE 3 state-pf-the-art detector concept. Right: Improvement in\npointing resolution and expected effective statistics in heavy-ion collisions from ALICE 1 to ALICE 3.\n\n**1.** **Introduction**\n\nALICE (A Lar",
+        "score": -5.686431293800228,
+        "dense_score": 0.38821351528167725,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.757183074951172,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6622,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance.md",
+        "title": "2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance",
+        "text": "rm of the\n\ndetector before the installation.\n\nsplicer connects, with a glue-less connection, the WLS fiber to a clear fiber of 2 m length to reduce\n\nthe light attenuation from the sensor to the light detector. This design ensures that both the tiles and\n\nthe external fibers can be independently and quickly replaced in case of failure. The nT2 is then\n\nassembled in quarters, two for each side of the interaction point (called _arm_ ), designed to be closed\n\naround the beam pipe (figure 1, center and right). The size of one arm of the detector, after being\n\nclosed around the beam pipe, is ∼ 25 cm in the direction along the beam axis, with an outer diameter\n\nof ∼ 50 cm, including the external support structure. Each quarter is made up of 4 detection layers,\n\neach one formed by 4 tiles arranged on a semi-circle with a partial overlap. A set of 4 aligned tiles\n\nis called a _wedge_ . Hence, each particle will traverse at least 4 aligned tiles in the wedge, providing\n\na good level of redundancy for particle detection and noise suppression. With such a design, the\n\ninstallation of the inner section of the detector on pre-installed rails can be done in few minutes\n\nand, after routing the fiber bundles through the available slot, the shields of CMS can be closed\n\nfor a much safer environment to work in, leaving only passive components inside (figure 2). The\n\nfibers are read out with an S13361-6050 16-channels SiPM matrix from Hamamatsu, one for each\n\nquarter, located outside the shields in the outer section of the detector together with the rest of the\n\nelectronics. The MPPC bias is generated by temperature-compensated voltage converters, one for\n\neach matrix, controlled through a serial interface. To digitize the signal the detector relies on a\n\nfast discriminator, the NINO chip [8], a differential amplifier and fixed threshold discriminator. An\n\nadditional feature of the chip is that the digital output signal has a Time Duration (TD) that depends\n\n3\n\n_The TOTEM nT2 detector: architecture, operation and performance_ E. Bossini\n\nshielding\n\nnT2\n\nOptical\nfibers\n\nNear-beam\n\nelectronics\n\n**Figure 2:** On the left, a drawing of the detector integrated in CMS. The beam pipe is perpendicular to the\npicture, in the center of the nT2 detector. On the center and right, two pictures taken during the installation\ntraining with a mock-up.\n\non the input charge Q, with higher charges generating longer TD.\n\nFor the read-out and control electronics, we benefit from the fruitful colla",
+        "score": -5.733601111334724,
+        "dense_score": 0.3145983815193176,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.828201293945312,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 629,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker.md",
+        "title": "2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker",
+        "text": "s to verify that the detector is\nperforming as expected and to predict the detector performance using the flight readout system. Third, we will use these\nmeasurements to determine the placement of detectors within\nthe tracker, with higher-quality detectors being placed in the\nupper layers (where more anti-nuclei events are expected).\nIn Sec. II we describe the custom low-noise, lowtemperature testing system that was developed to allow fast\ncharacterization of this large sample of detectors. In Sec. III,\nwe describe our procedures for detector processing, testing,\nand data acquisition. In Sec. IV, we characterize this large\nsample of detectors using a physically-motivated noise model.\nWe conclude in Sec. V, demonstrating that large-area and lownoise Si(Li) detectors can be economically mass-produced and\ntested.\n\nII. D ETECTOR T ESTING S YSTEM\n\n_A. GAPS Detector Module_\n\nThe basic functional unit of the GAPS Si(Li) tracker is the\n_detector module_ (hereafter simply _module_ ) shown in Fig. 1.\nEach module contains four Si(Li) detectors mounted into\nan aluminum frame, to which the detectors are grounded\nvia their guard rings. Each detector is rigidly mounted into\nplace using several fluorosilicone O-rings and G10 clamps.\nThese clamps also secure a gold tab to the bottom ohmic\ncontact of each detector to supply the bias voltage. Finally, we\nsecure polypropylene windows on the top and bottom of each\ndetector module, providing a sealed volume for the detectors.\nThese windows (aluminized on their exterior surface to prevent\nmetal flakes within the detector volume) allow us to shield\nthe detectors from stray light, environmental contamination,\nand electromagnetic interference, and to flush the modules\nwith dry N 2 gas during payload assembly and testing to\nsuppress humidity. Each module also carries a _front-end board_\n(FEB) with several major roles. First, each FEB carries a\ncustom ASIC chip to which the Si(Li) strips are wirebonded,\nand which is responsible for processing and digitizing Si(Li)\nenergy deposits over a large dynamic range of tens of keV\nto ≳100 MeV [30]–[33]. Second, the FEBs also provide the\n250-V reverse-bias voltage to each detector. Lastly, the FEBs\nfacilitate a power and communication link between the flight\ncomputer and the ASICs.\nAs the FEBs and ASICs were being developed simultaneously with the Si(Li) detector testing, we require a different\nmethod of detector readout for the lab testing described in this\nwork. To that end, we replace the FE",
+        "score": -6.037934524134586,
+        "dense_score": 0.3133813738822937,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.296215057373047,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3618,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond.md",
+        "title": "2024__recid_2723927__2311.10164__ALICE_3_a_next-generation_heavy-ion_detector_for_LHC_Run_5_and_beyond",
+        "text": "interaction potentials between charm\n\nmesons and searches for nuclei with charm, and to fundamental physics, with precision experimntal\n\ntests of Low’s theorem for ultra-soft photon emission and searches for axion-like particles (ALP)\n\nin ultra-peripheral heavy-ion collisions via light-by-light scattering measurements.\n\n2\n\n_ALICE 3: a next-generation heavy-ion detector for LHC Run 5 and beyond_ Nicola Nicassio\n\n**Figure 2:** Left: Sketch of the ALICE 3 vertex detector for stable beam (top) and at beam injection (bottom).\nCenter: Expected pointing resolution for electrons as a function of _𝑝_ _𝑇_ . Right: Expected relative _𝑝_ _𝑇_ resolution\nfor pions as a function of _𝑝_ _𝑇_ assuming B = 0.5T (red) and B = 2T (blue).\n\n**3.** **ALICE 3 detector concept and R&Ds**\n\nAll the measurements planned to address ALICE 3 physics goals set strong requirements\n\non vertexing, tracking, particle identification and rate capabilities. The combination of these\n\nrequirements led to the state-of-the-art detector concept shown in Fig. 1. The key requirements are\n\na retractable vertex detector with an unprecedented pointing resolution, a compact and lightweight\n\nall-silicon tracker combined with a superconducting magnet system, extensive identifications of\n_𝛾_, e [±], _𝜇_ [±], _𝜋_ [±], K [±] and p [±] with different dedicated subsystems, large pseudorapidity acceptance\n(| _𝜂_ | _<_ 4) and continuous read-out combined with online processing. The importance of the ALICE\n\n3 upgrade mostly relies on the combined progress in effective statistics (luminosity × acceptance)\n\nand pointing resolution. Fig. 1 shows the overall expected improvement by orders of magnitude in\n\nthe detector capabilities from ALICE 1 (Runs 1 and 2) to ALICE 2 (Run 3), ALICE 2.1 (Run 4) and\n\nALICE 3 (Runs 5 and 6). In the following, the main features of the different ALICE 3 subsystems\n\nare outlined and some of the corresponding ongoing R&D activities are presented.\n\n**3.1 Vertexing and tracking**\n\nThe heart of ALICE 3 is a silicon vertex detector designed to provide a pointing resolution\n\n_𝜎_ _𝐷𝐶𝐴_ better than 10 _𝜇_ m for _𝑝_ _𝑇_ larger than 200 MeV. The required _𝜎_ _𝐷𝐶𝐴_ can be only achieved\n\nby using ultra-thin silicon sensors, featuring an unprecedented low material budget of 0.1% of a\n\nradiation length, and with the first tracking layer placed at a radius of 5 mm from the beam axis at\n\ntop energy. However, a wider aperture of ≈15 mm is required at injection energy, demanding for\n\na retractable detector",
+        "score": -6.112272249714713,
+        "dense_score": 0.30141764879226685,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.4095458984375,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.806937513872981,
+    "generation_latency_s": 3.3015385270118713e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.806937513872981,
+    "generation_latency_s": 3.3015385270118713e-07
+  }
+}

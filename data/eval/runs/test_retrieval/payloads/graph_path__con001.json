@@ -1,0 +1,410 @@
+{
+  "benchmark": {
+    "query_id": "con001",
+    "query_type": "conceptual",
+    "query": "Why are HV-MAPS attractive for high-rate tracking?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why are HV-MAPS attractive for high-rate tracking?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1192,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "d tesla-range magnetic fields [36].\nFurthermore, our easy-to-implement charge-stabilization\nscheme will find immediate applications in other quantum\ntechnology applications of SiV _[−]_, including the development\nof quantum repeaters [37], quantum networks [13, 38] or\nindistinguishable single photon sources [39]. Lastly, it is\nconceivable that our approach for generating and stabilizing\nnear-surface color centers with high optical coherence extends\nto other color centers in diamond or in other wide-bandgap\nhosts such as hBN [40] or SiC [41].\n\n**METHODS**\n\n**Optical Setups**\nTo characterize our diamond samples at room temperature (RT),\nwe employ a home-built confocal microscopy setup. This setup is\nequipped with a continuous wave (cw) 515 nm diode laser (Cobolt\n06-MLD) for off-resonant excitation. At low temperature ( _∼_ 7 K),\nthe sample is housed in a variable-temperature closed-cycle cryostat\n(attocube attoDRY800) and we perform optical spectroscopy again\nwith a home-built confocal microscopy setup. For this setup, we\nput to use cw 445 nm and cw 515 nm diode lasers (Cobolt 06-MLD)\nfor off-resonant excitation as well as a narrow-linewidth (200 kHz)\ntunable (720-739 nm) diode laser (Sacher Lasertechnik LION) for\nresonant excitation. Frequency modulation and control of the LION\nis achieved through a PID loop of a HighFinesse WS-U wavelength\nmeter. Additionally, we stabilize the intensity of the resonant laser\nthrough the PID loop of a home-built optical intensity stabilization\n(OIS) module (Physics Basel SP 999). In case of the resonant laser\nand if applicable to the experiment in question, we carve pulses with\nan acousto-optical modulator (AOM, G&H R15210), whereas the\noff-resonant lasers can be electronically modulated out of the box.\nFor both RT and LT, we focus laser light onto the sample with a\n\n6\n\n0.8 NA objective (Olympus LMPLFLN 100X) thermalized at RT,\nthrough which we also collect the signal. Photons are detected by\nsilicon-based single-photon counting modules (SPCM, Excelitas\nAQRH-33-FC). We perform photon-correlation measurements\nusing a time-correlated single-photon counting (TCSPC) system\n(PicoQuant PicoHarp 300) connected to the SPCMs. For optical\nlifetime measurements we use a pulsed laser (NKT Photonics\nSuperK Extreme EXW-12) tuned to 515 nm and said TCSPC system. Optical spectra are recorded on the camera of a spectrograph\n(Princeton Instruments SP-2500).\n\n**Data availability**\nThe data that support the findings of this study are available",
+        "score": -5.028400475574362,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8370689655172413,
+        "rerank_score": -7.835161209106445,
+        "matched_nodes": [
+          "In",
+          "For",
+          "At",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -5.398759204706653,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9577586206896551,
+        "rerank_score": -8.419240951538086,
+        "matched_nodes": [
+          "In",
+          "For",
+          "At",
+          "The",
+          "We",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4699,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2769638__2508.16324__A_Two-Prong_Approach_to_the_Simulation_of_DC-RSD_TCAD_and_SPICE.md",
+        "title": "2024__recid_2769638__2508.16324__A_Two-Prong_Approach_to_the_Simulation_of_DC-RSD_TCAD_and_SPICE",
+        "text": "well documented in literature\n\n[12]. As suggested in [12], a proper electrical connection of\nneighbouring pads provides a low impedance path towards the\nfront-end amplifiers to a higher portion of the charge, allowing\nfor higher collection efficiency, especially for events that took\nplace close to the sensor edges. Moreover, the connection\nbetween neighbouring pads allows for insulating one pixel\n(i.e., a cluster of four pads) from its adjacent, thus improving\nthe signal confinement and the spatial resolution.\n\nFig. 8. Impact of two different values of the sheet resistance (200 Ω/sq and\n1 kΩ/sq) on the DC behavior of a 50 µm-pitch four-pad DC-RSD detector.\n\nFig. 9. Signals generated by a MIP in a 50 µm-pitch four-pad DC-RSD\ndetector, biased at 200 V at room temperature. The green, cyan, red and blue\ncurves are the signals read out by the four pads, and the magenta curve is the\ntotal signal read out by the contact on the back.\n\nIV. D ESIGN AND OPTIMIZATION OF DC-RSD\n\nAccording to the suggestions in [12], we have modeled\nwithin the TCAD environment the strip-connected DC-RSD\ndevice represented in Fig. 13. As shown in the inset, a direct\ncoupling of the strips to the resistive silicon layer has been\nrealized, as well as a fine-tuning of the strip resistance (i.e.,\ngeometry and material) such that it is lower than the resistive\nsheet, but not enough to short circuit the front-end electronics.\nAs shown in Fig. 14, the distortion is strongly reduced by\nadding the low-resistive strips between the collecting pads. In\nthe picture, it is represented the upper left quadrant of the\nmap of the injected and reconstructed impact positions. The\nsix red circles are the injection points, and the green crosses\nand blue diamonds are the reconstructed ones in the case of\n\nDC-RSD flavour without strips and with strips, respectively.\nThe accuracy of the position reconstruction improves when\ninter-pad resistive strips are used, because they help to confine\nthe signal spreading within the pixel (see Fig. 15).\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 6\n\nFig. 10. Spatial distribution of electron current over the detector surface (left)\nand within the bulk (right), immediately after the passage of the MIP (a) and\na few hundred picoseconds later (b).\n\nFig. 11. Map of the injected and reconstructed impact positions, which has\nbeen obtained by TCAD simulation of a 105 µm-pitch four-pad DC-RSD\ndetector. The red circles are the injection points, and the green cro",
+        "score": -5.428554503473743,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8577586206896551,
+        "rerank_score": -8.45323371887207,
+        "matched_nodes": [
+          "In",
+          "IV",
+          "The",
+          "As",
+          "IEEE",
+          "On",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6753,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "with a low field region)\nand 21 _._ 11% at high ∆ _V_ (without a low field region). This can\nbe compared with the measurement result of 22% at low ∆ _V_\nand 17% at high ∆ _V_ .\n\n_D. Comparison with SciFi light source_\n\nThe microlens parameters were optimised for the SciFi as\na light source and represent one of the goals of the MLA\nproject. The test with the SciFi was performed at CERN\nSPS with pions at a momentum of _p_ = 180 _GeV/c_ . The\nSciFi module was arranged to perform a longitudinal scan.\nThe distance between the particle beam and the photodetector\nwas varied between 20 _cm −_ 230 _cm_ and the light intensity of\nthe normal incident particles was measured. With a Gaussian\nfit, the median is extracted from the characteristic Landau\ndistribution introduced by the energy deposit fluctuations. This\nvalue is called the light yield (LY) of the SciFi tracker. As a\nconsequence of the mirror placed at the far end of the SciFi\nmat at a distance of 245 _cm_ from the SiPM, the detected light\nis composed of a direct component and a mirrored component.\nAt a distance of 20 _cm_, the mirrored component is reduced to\nabout 20% due to attenuation. A fibre mat of 130 _mm_ width\nwas equipped with four flat layer dies and four microlens dies,\n256 channels each. In Fig. 11 the LY is plotted as a function\n\nof ∆ _V_ and given for two distances from the detector. The LY\nmeasurement has been performed after a gain calibration with\na light injection system for each acquisition channel.\nFor the SciFi light distribution for a propagation length of\n230 _cm_, the simulated LY enhancement is 24 _._ 57% for low ∆ _V_\nand 18 _._ 59% for high ∆ _V_, and the measured values with SciFi\nare 22 _._ 5% for low ∆ _V_ and 20 _._ 5% for high ∆ _V_ . Note that the\nsimulation was performed with a light exit angle distribution\ncorresponding to a 230 _cm_ long fibre.\n\nVII. C ONCLUSION\n\nIn this work, we present a novel implementation of MLA\nwith the objective of improving the PDE of SiPMs. The\nimplementation was guided by the technology limitation of\nthe MLA deposit by a mold and a UV-curable polymer.\nTo optimise the most important parameters, the geometry\nof the SiPM pixel was simulated with three regions: the\ndead region, the low field region representing a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter,",
+        "score": -5.714807985305787,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -8.910473823547363,
+        "matched_nodes": [
+          "In",
+          "For",
+          "At",
+          "The",
+          "To",
+          "As",
+          "CERN",
+          "SPS"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6070,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2774168__2404.03236__Bright_Heralded_Single-Photon_Source_Saturating_Theoretical_Single-photon_Purity.md",
+        "title": "2025__recid_2774168__2404.03236__Bright_Heralded_Single-Photon_Source_Saturating_Theoretical_Single-photon_Purity",
+        "text": "shows the measured coincidence rates, together with a polynomial fitting. At a pump power\nof 7.10 mW, we obtain a coincidence rate of 1.51 MHz and a corresponding CAR of 16 _._ 77 _±_ 0 _._ 01. To our\nknowledge, this coincidence rate surpasses all previous SFWM results. Indeed, near-MHz coincidence rate\nwas only achieved with an SPDC source but at a lower CAR of 7.5 [23]. In **Figure 5**, we plot the measured\nCAR as a function of the coincidence rate denoted by hollow squares.\n\nTo explain the observed monotonic decrease CAR with the coincidence rate, we resort to Equation (4)\nand use the heralding relation _S_ _s_ ( _i_ ) = _C/η_ _i_ ( _s_ ) to derive the expression of CAR in terms of _C_ and _η_ _s_ ( _i_ ) for a\npulsed pump with a repetition rate _R_\n\nCAR = _[η]_ _[s]_ _[η]_ _[i]_ _[R]_ _._ (7)\n\n_C_\n\nAs expected from Equation (7), the CAR value decreases along with the increasing coincidence rate _C_, with\nthe highest CAR being 4630 _±_ 614. Note that our data reproduces excellently the theoretical dependence\nof CAR on _C_ in Equation (7) (the red solid curve). In the inset of Figure 5, we present an example of a\ncorrelation histogram, which is measured at an on-chip power of 0.35 mW. In extracting the CAR value,\nwe choose a time-bin width of _τ_ = 0 _._ 4 ns to cover the entire coincidence peak.\nTo compare against the theoretical limit for single-photon purity in Equation (5), we measure _g_ h [(2)] [(0)]\nunder the coherent condition using the heralded HBT setup, which involves the three-fold coincidence\nmeasurement. Note that a CAR value can be extracted from the time stamp data of the heralding and one\nof the heralded detectors. The results together with error bars (red symbols) are plotted in Figure 1(b).\nThe lowest _g_ h [(2)] [(0) is measured as 0] _[.]_ [00094] _[ ±]_ [ 0] _[.]_ [00002 with CAR equaling to 2220] _[ ±]_ [ 90, which is among the]\nbest _g_ h [(2)] [(0) values reported to date for an HSPS. We note that an even lower] _[ g]_ h [(2)] [(0) with a reasonably]\nsmall uncertainty can in principle be obtained with our source but at the cost of measurement time, as\nthis requires a lower pump power, which however is not the main pursuit of this work. For overall _g_ h [(2)] [(0)]\nversus CAR relation, the experimental data indeed reach the theoretical limit, suggesting that our source\nproduces the ideal single-photon purity permitted by a parametric heralded source. We attribute this\nachievement to both effective spectral filtering [24] and the",
+        "score": -6.0024436300606565,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9577586206896551,
+        "rerank_score": -9.347986221313477,
+        "matched_nodes": [
+          "In",
+          "For",
+          "At",
+          "The",
+          "We",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6750,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "technology was measured to\n\n1 Generated by photons from a primary avalanche exiting the silicon,\nreflected on the entrance window and producing a sub-sequent avalanche.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 6\n\nFig. 9. (a) _V_ _bd_ is calculated by the extrapolation of the linear fit to the\nintercept with zero gain allowing all measurements to be presented at equal\n∆ _V_ . The gain is calculated from the slope of the linear fit and is given for\nbare, flat and microlens coated samples. Note that due to the coating, the\ngain is slightly increased. (b) a large increase of the cross-talk is seen for the\ncoated samples. The bare sample is expected to have no external cross-talk\nbut only internal. The error bars show the error of four measured identical\nchannels.\n\nFig. 8. (a) SEM image of two smaller size microlenses placed on top of the\nalignment marker. (b) Close view of the alignment markers filled with the\nmicrolenses. (c) Coated region with microlenses with coaxial illumination.\n(d) With a segmented diffuse light source, the reflection on each microlens\nis visible and illustrates the curved surface. In this mode, the flat regions\nbetween lenses appear black and the pixel structure (routing lines) is made\ninvisible due to the lenses.\n\nbe 32 _mV/K_ at room temperature. An integrated Pt1000\ntemperature sensor on the detector module gives access to\nprecise temperature monitoring. With the temperature in the\nlab stabilised by air conditioning, the variations were smaller\nthan _±_ 1 _K_ . To determine _V_ _BD_ and the gain (G), the bias\nvoltage was increased in steps of 1 _V_ and the current _I_ _Bias_\nrecorded. At the same time, pulse rates at thresholds of 0.5 and\n1.5 photo-electron amplitude (PE) ( _R_ 0 _._ 5, _R_ 1 _._ 5 ) were recorded\nwith a high-speed oscilloscope. The gain at every _V_ _BD_ point\nis calculated as the ratio between the current and the sum of\n\n_R_ 0 _._ 5 _P E_ and _R_ 1 _._ 5 _P E_ and is divided by the elementary charge\n(e) such that _G_ = _I_ _Bias_ _/_ ( _R_ 0 _._ 5 _P E_ + _R_ 1 _._ 5 _P E_ ) _/e_ . A linear fit is\nused to extrapolate _V_ _BD_ and the slope is extracted from the\nfit to determine the gain. The results are shown in Fig. 9. The\nmeasurement is performed with light illuminating the detector\nto enhance the precision of the current measurement but with\na sufficiently low pulse rate such that the random overlap of\npulses in time is negligible. The measurement is repeated for\nevery wavelength, and t",
+        "score": -6.199226300272449,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8577586206896551,
+        "rerank_score": -9.638882637023926,
+        "matched_nodes": [
+          "In",
+          "At",
+          "The",
+          "To",
+          "IEEE",
+          "On",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5253,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "of the gain of SiPM\nsamples, which are 5.80 _×_ 10 [6] for HPK VUV4 13370-6050CN\nSiPM [23] and 1.93 _×_ 10 [6] for Sensl J-60035 SiPM [15] at\n_V_ _over_ =4V, the average number of photons per electron can be\n\nTABLE II:\n\nParameters defined in Fig. 4. _V_ _bd_ for SiPM samples was\nmeasured under 76 K dark environment.\n\nSiPM type _V_ _bd_ _PDE_ _max_ _α_\nHPK SiPM 42.25 11.1 _±_ 0.56 % 3.18 _±_ 0.37 _×_ 10 ~~_[−]_~~ ~~[2]~~\n\nSensL SiPM 20.58 5.51 _±_ 0.98 % 4.77 _±_ 1.17 _×_ 10 _[−]_ [2]\n\neasily calculated. The results are included in Table. III.\n\nTABLE III:\n\nNumber of eCT photons per electron.\n\nSiPM type eCT photon number per e ~~_[−]_~~\n\nHPK SiPM 7.66 _±_ 0.48 _×_ 10 ~~_[−]_~~ ~~[8]~~\n\nSensL SiPM 3.65 _±_ 0.64 _×_ 10 _[−]_ [7]\n\nV. D ISCUSSION\n\nIn Sec. IV, the probability of emitting a single photon per\navalanche has been estimated for two types of SiPMs in our\nexperimental setup. The eCT ratio calculated in the paper\nrepresents a statistical average and does not quantitatively\ndemonstrate the angular acceptance. In principle, the eCT\nprobability depends on the specific detector configuration,\nresulting that the refractive index of the coupling between the\nSiPM and the detector could significantly impact the probability. A similar refractive index could reduce the likelihood of\nsecondary photons reflecting back to the pixel that generated\nthem. Consequently, iCT photons would be converted into eCT\nphotons as a result of the change in the photon propagation\nmedium. For example, a specific face-to-face setup would\nsuggest a higher probability of photons emitted by a SiPM\nreflecting back onto the other SiPM, potentially resulting in a\nhigher iCT ratio and a lower eCT ratio. Utilizing probability as\nan approximation method is common practice. However, the\nexact number of photons emitted in each avalanche remains\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 8\n\n**0.6**\n\n**0.5**\n\n**0.4**\n\n**0.3**\n\n**0.2**\n\n**0.1**\n\n0.09\n\n0.08\n\n0.07\n\n0.06\n\n0.05\n\n**0.012**\n\n**0.01**\n\n**0.008**\n\n**0.006**\n\n**0.004**\n\n**0.002**\n\n**0**\n\n**0**\n\n3 4 5 6 7\nV over [V]\n\n(a) _P_ _coin_ versus _V_ _over_ for SensL SiPM samples.\n\n**300** **400** **500** **600** **700** **800** **900** **1000**\n\n**wavelength [nm]**\n\nFig. 11: The black curve represents the PDE versus wavelength for the SensL SiPM sample at 420 nm and _V_ _over_ 6V,\nobtained from the SensL J-series datasheet [18]. The blue\ncurve represents the normalized eCT spectrum data for the\nVUV4 SiPM sample, extracted fr",
+        "score": -6.372632638865504,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9094827586206896,
+        "rerank_score": -9.911788940429688,
+        "matched_nodes": [
+          "In",
+          "For",
+          "IV",
+          "The",
+          "IEEE",
+          "On",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 491,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648847__2304.01261__Novel_prediction_for_secondary_positrons_and_electrons_in_the_Galaxy.md",
+        "title": "2023__recid_2648847__2304.01261__Novel_prediction_for_secondary_positrons_and_electrons_in_the_Galaxy",
+        "text": "rameters _D_ 0, _δ_ _l_, _δ_, _δ_ _h_, _R_ _D,_ 0, _R_ _D,_ 1, _s_ _D,_ 0 and _s_ _D,_ 1,\n_v_ 0 _,c_ and the same solar modulation potential _ϕ_ for\nall the CR species.\n\n - `Conv` _dv_ _c_ _/dz_ : This model is very similar to\n`Conv` _v_ 0 _,c_, but instead of using a constant convection velocity _v_ 0 _,c_, here _v_ _c_ ( _z_ ) increases linearly\nas function of _z_ . The exact functional form is\n_v_ _c_ ( _z_ ) = _dv_ _c_ _/dz · |z|_, where _dv_ _c_ _/dz_ replaces _v_ 0 _,c_ as\nthe free parameter in the fit.\n\n - `Reacc` 0 : This model has no convection while the\nreacceleration is turned on and modulated through\nthe Alfv`en velocity _v_ _a_, which is a free parameter in\nthe fit. The diffusion coefficient and the injection\nspectra are modeled as in `Conv` _v_ 0 _,c_ . As we will\nsee in Sec. IV the best-fit value for _v_ _a_ is around\n0 km/s, this is why the label of the model reports\n0 as subscript.\n\n - `Reacc` 10 : This model is the same as the previous one except that the Alfv`en velocity is fixed to\n10 km/s.\n\n - `Reacc` 30 `-Inj` : In this model we replace the lowrigidity break in the diffusion coefficient with a lowrigidity break in the injection CR spectra. Therefore, we model the injection spectra of CRs with\nseparate spectral indexes for p ( _γ_ 1 _,p_ and _γ_ 2 _,p_ ), He\n( _γ_ 1 _,_ He and _γ_ 2 _,_ He ) and CNO ( _γ_ 1 _,_ CNO and _γ_ 2 _,_ CNO ),\nwhich have a common rigidity break _R_ inj and\nsmoothing _s_ inj . The diffusion coefficient is modeled with a single smooth broken power-law with\nfree parameters: _D_ 0, _δ_, _δ_ _h_, _R_ _D,_ 1 and _s_ _D,_ 1, and we\nleave free _v_ _a_ . This model has 30 as a subscript because the best-fit value for _v_ _a_ is found at 30 km/s.\n\nFor all the above mentioned models we also leave free\nthe abundance of primary CRs. Specifically, we leave free\nthe abundance of proton and helium using a renormalization factor with respect to the reference values used\nin Galprop. For this, we iteratively adjust the reference isotopic abundances in Galprop to ensure that the\n\n4\n\nrenormalizations converge to values close to 1. [1] We call\nthese parameters Ren Abd p and Ren Abd He for proton\nand helium, respectively. This procedure is equivalent of\nhaving as free parameters the normalization factors _Q_ 0\nof the source terms in Eq. (3) and allows a fast profiling\nover the parameters (see Sec. III). For the heavier nuclei,\nwe leave free to vary the isotopic abundance of carbon\n12 C, nitrogen 14 N and oxygen 16 O, which are all o",
+        "score": -6.394463212085593,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8370689655172413,
+        "rerank_score": -9.936796188354492,
+        "matched_nodes": [
+          "In",
+          "For",
+          "IV",
+          "The",
+          "We",
+          "As"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 4526,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2762357__2402.17271__Capacitive_Coupling_Study_of_the_HERD_SCD_Prototype_Preliminary_Results.md",
+        "title": "2024__recid_2762357__2402.17271__Capacitive_Coupling_Study_of_the_HERD_SCD_Prototype_Preliminary_Results",
+        "text": "Z = 1 _∼_ 28 cosmic rays. The large\ndynamic range is proposed to be covered by enhancing the\ncapacitive coupling effect. A HERD SCD prototype detector\nhas been designed to study the capacitive coupling effect\ndependence of the detector parameters. The detector is divided\nin several detector sets, and each set has various external\ncapacitors. The detector was illuminated by the ion beams\nin CERN SPS and the capacitive coupling fractions with\n\nFig. 12. The relationship between the reciprocal of capacitance values and the\ncapacitive coupling fractions of first neighboring channel with readout strip\n(a) and floating strip (b) incidences in SPICE simulation and in data.\n\nFig. 13. SPICE equivalent model of the microstrip detector.\n\nreadout strip and floating strip incidences were evaluated. The\ncapacitive coupling fractions were not sensitive to the species\nof ions, but were dependent on the impact position. As the\ndistance to the impact position increases, the capacitive coupling fractions decrease. In addition, the detector parameters\nand the external coupling capacitors also affect the capacitive\ncoupling fractions. A SPICE simulation has been implemented\nby modelling the SCD detector as a capacitor network, and the\nsimulation results were consistent with the measurements. The\n\nknowledge of the capacitive coupling effect dependence to the\ndetector parameters helps to optimize the design of the SCD\ndetector.\n\nR EFERENCES\n\n[1] S. N. Zhang, O. Adriani, S. Albergo, G. Ambrosi, Q. An, T. W. Bao,\n_et al._, “The high energy cosmic-radiation detection (HERD) facility onboard China’s Space Station,” in _Space Telescopes and Instrumentation_\n_2014: Ultraviolet to Gamma Ray_, Canada: Montr´eal, 2014.\n\n[2] J. R. H¨orandel, “Models of the knee in the energy spectrum of cosmic rays,” _Astropart. Phys._, vol. 21, no. 3, pp. 241-265, 2004, DOI.\n10.1016/j.astropartphys.2004.01.004.\n\n[3] Y. W. Dong, Z. Quan, J. J. Wang, M. Xu, S. Albergo, F. Ambroglini, _et_\n_al._, “Experimental verification of the HERD prototype at CERN SPS,” in\n_Space Telescopes and Instrumentation 2016_, UK: Ultraviolet to Gamma\nRay, Edinburgh, 2016.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 6\n\n[4] D. Kyratzis, “ Latest advancements of the HERD space mission,” _Nucl._\n_Instrum. Methods Phys. Res. A_, vol. 1048, pp. 167970, 2023, DOI.\n10.1016/j.nima.2022.167970.\n\n[5] R. Qiao, W. X. Peng, X. Z. Cui, G. Q. Dai, Y. F. Dong, R. R. Fan, _et al._,\n“A charge sharing study of silicon microstr",
+        "score": -6.429019459060143,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8482758620689654,
+        "rerank_score": -9.991287231445312,
+        "matched_nodes": [
+          "In",
+          "The",
+          "As",
+          "CERN",
+          "IEEE",
+          "On",
+          "SPS",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5116,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L.md",
+        "title": "2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L",
+        "text": "uences.\n\n_**5.5.**_ _**Gain, Crosstalk and Afterpulse**_\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|+06<br>1E+|07<br>1E+|08<br>1E|+09<br>1E|+10<br>1E|+11<br>1E|\n\nIn Fig. 9 are reported the gain, crosstalk probability and afterpulse\n\nprobability measured at 4 V of excess bias before and after irradiation. Gain\n\nand AP were measured on SPADs at room temperature, CT measurement\n\nwas performed on 1x1 mm² at room temperature and on 0.2x0.2 mm²\n\nSiPMs at -20°C after irradiation, to discriminate single events in high DCR\n\nconditions.\n\nNo significant change in gain is observed after irradiation, apart from\n\nsome fluctuation caused by the uncertainty of the measurement on samples\n\nwith high noise level. For CT measurements, time constraints and\n\ninstability of the amplifiers operated at low temperatures limited the\n\nnumber of tested devices, but the results do not show a link between\n\nradiation damage and a change in crosstalk probability.\n\nIn the case of AP measurements, it is observed a significant increase for\n\nalmost all devices after irradiation. This effect is related to the defects\n\ngenerated in the silicon by NIEL. The defects act as a trapping centres for\n\ncharges, thus increasing the AP probability for irradiated samples. A few\n\nsamples do not show this increase, but this is mainly attributed to\n\nlimitations in the measurement setup and software, which is not able to\n\ndetect AP events below a certain amplitude and will underestimate their\n\nnumber in case of cells with long recharge time.\n\nDespite the increase in AP, its contribution to the total ECF is limited\n\nas its probability remains relatively low. Moreover, the gain and the CT do\n\nnot show a significant variation in samples measured before and after\n\nirradiation. This proves the validity of the hypothesis used in the calculation\n\nof the DCR, where it was assumed that the Gain current, i.e. the gain\n\nmultiplied by the excess charge factor, do not change with proton\n\nirradiation.\n\nFig. 9: Top to bottom: gain, crosstalk probability and afterpulse\nprobability measured before and after proton irradiation at 4 V of excess\nbias.\n\n_**5.6.**_ _**Activation energy**_\n\nTo calculate the activation energy (Ea) of the SiPMs it was taken the IV\n\nmeasurements at different temperatures. At the same time, it was measured\n\nalso the temperature dependence of the breakdown voltage with\n\ntemperature. For irradiated samples the IVs were taken at temperatures\n\nbetween -30°C and 20, with 2°C steps, to avoid",
+        "score": -6.443842298481383,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8887931034482758,
+        "rerank_score": -10.018891334533691,
+        "matched_nodes": [
+          "In",
+          "For",
+          "IV",
+          "At",
+          "The",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "For": 1.0,
+      "IV": 1.0,
+      "At": 1.0,
+      "TRACKING": 1.0,
+      "Track": 1.0,
+      "Active": 1.0,
+      "Ps": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "For": 1.0,
+      "IV": 1.0,
+      "At": 1.0,
+      "TRACKING": 1.0,
+      "Track": 1.0,
+      "Active": 1.0,
+      "Ps": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "As": 0.7,
+      "CERN": 0.7,
+      "IEEE": 0.7,
+      "On": 0.63,
+      "SPS": 0.24499999999999997,
+      "LHC": 0.24499999999999997,
+      "Transactions": 0.24499999999999997,
+      "Nuclear": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 19,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.374173582997173,
+    "generation_latency_s": 7.199123501777649e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 19.0,
+    "retrieval_latency_s": 6.374173582997173,
+    "generation_latency_s": 7.199123501777649e-07
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "com006",
+    "query_type": "comparative",
+    "query": "Compare BM25 and dense retrieval for detector papers.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "BM25"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare BM25 and dense retrieval for detector papers.",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6804,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment.md",
+        "title": "2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment",
+        "text": "## The Highly-Granular Time-of-Flight Neutron Detector for the BM@N experiment\n\nS. Morozov [a,] _[∗]_, V. Bocharnikov [b], D. Finogeev [a], M. Golubeva [a], F. Guber [a], A. Izvestnyy [a],\nN. Karpushkin [a], A. Makhnev [a], P. Parfenov [a], D. Serebryakov [a], A. Shabanov [a], V. Volkov [a],\nA. Zubankov [a]\n\n_a_ _Institute for Nuclear Research of the Russian Academy of Sciences,_\n_60-letiya Oktyabrya prospekt 7a, Moscow 117312, Russia_\n_b_ _HSE University, Moscow_\n\n**Abstract**\n\nA new Highly-Granular time-of-flight Neutron Detector (HGND) is being developed and\nconstructed to measure azimuthal neutron flow and neutron yields in nucleus-nucleus\ninteractions in heavy-ion collisions with energies up to 4A GeV in the fixed target experiment BM@N at JINR. Details of the detector design and results of performance studies\nfor neutron identification and reconstruction are shown. Comparison of simulations for\ndifferent options of the HGND layout at the BM@N is presented. Several proposed\nmethods of neutron reconstruction including machine learning and cluster methods are\ndiscussed.\n\n_Keywords:_ Neutron detectors, Heavy-ion collisions, Silicon photodetectors,\nTime-of-flight methods\n\n**1. Introduction**\n\nThe study of the equation of state (EoS) of dense nuclear matter is a key topic\nin relativistic nuclear physics. The EoS that can be defined as a binding energy per\nnucleon relates the pressure, density, energy, temperature for symmetric matter and\nsymmetry energy components [1]. The symmetric matter term of the EoS describes the\nmatter in their ground state where protons and neutrons have equal contributions to the\nbinding energy. This term has been under extensive study and has the most stringent\nconstraints from the vast set of experiments using observables such as meson yields,\nanisotropic flow measurements, etc. [2, 3, 4, 5]. However the discrepancies in the existing\nresults introduces the significant systematic uncertainty in the EoS constraints [5]. New\nexperimental data and state-of-the-art analysis techniques are required in order to address\nthis issue. The symmetry energy term of the EoS is responsible for the difference in\nisospin between neutron and proton parts of nuclear matter [1]. Study of this term is\nimportant for astrophysics because the mass and size of neutron stars and how they\n\n_∗_ Corresponding author\n_Email address:_ `morozovs@inr.ru` (S. Morozov)\n\n_Preprint submitted to Elsevier_ _December 3, 2024_\n\nmerge depend on the symmetry energy term i",
+        "score": -2.049822945912679,
+        "dense_score": null,
+        "bm25_score": 14.91593516575842,
+        "graph_score": 0.0,
+        "rerank_score": -3.1607532501220703,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 2345,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "compared to 4.0 mm with more reconstructed\nevents/smaller buffer size). Therefore, attention should always\nbe paid to ensure an appropriate adaptation of the reconstruction to the scenario being reconstructed.\n\n_3.5. Comparison with data from previous paper_\n\nThis section is intended to provide a comparison to the\ndata obtained in the previous work (Oppotsch et al. (2024)),\nin which the reconstruction algorithm was tested in three\ndifferent geometries with a resting tracer sphere. This resulted\nin a spatial resolution of about 1.2 - 1.5 mm for the detector\nonly filled with air, a spatial resolution of a resting source\nplaced inside the generic grate system of about 4.7 - 5.9 mm,\nand a spatial resolution of the detector system completely\nfilled with particles of about 9.7 - 12.7 mm.\nAfter scaling down the detector, as well as adjusting\nand improving the reconstruction algorithm, it was possible\nto determine a stationary source within the GGS with a\nspatial resolution of 0.6 mm in the x- and y-directions and\n1.1 mm in the z-direction. Thus, the resolution was improved\nby about 5.2 mm in the x- and y-directions and 3.6 mm in\nthe z-direction. Even compared to the results obtained with\nthe detector system under ideal conditions (filled with air\nonly so that no scattering or absorption occurs), there is an\nimprovement in spatial resolution of about 0.6 mm in the\nx- and y-directions and an improvement of 0.4 mm in the\nz-direction.\n\nConsidering the case of a moving source (whether on the\nmodel curve or the DEM path), once more, a significantly\nbetter resolution within the GGS than before the abovementioned adjustments is seen. Looking specifically at the\nparticle motion resulting from a DEM simulation, the spatial\nresolution again exceeds the results obtained for the empty\n\n**Table 2**\n\nOverview of all spatial resolutions.\n\nScenario Spatial resolution (mm)\n\nStationary source Δx = 0.559\nΔy = 0.566\nΔz = 1.145\n\nModel path (buffer size = 6,000) Δx = 2.128\nΔy = 2.232\nΔz = 3.036\n\nDEM path Δx = 1.095\nΔy = 0.995\nΔz = 1.304\n\nModel path (buffer size = 36,000) Δx = 4.215\nΔy = 4.035\nΔz = 3.256\n\ndetector system (improvement of about 0.2 mm) and is thus\nbetter than the previous resolution in the GGS by about\n4.8 mm, 4.7 mm, and 3.4 mm, respectively.\nAll spatial resolutions and three-dimensional deviations\ndetermined in this work can also be looked up in Table 2 and\nTable 3.\n\n**4. Conclusion and outlook**\n\nThis work is the second part of a simulation study investigating the per",
+        "score": -2.7238177743324865,
+        "dense_score": 0.4793003797531128,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.19877290725708,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2341,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "cays.\nOverall, it was found that the efficiency and resolution were\nnearly constant throughout the detector system and did not\nchange significantly when the edges of the scintillator bars\n(i.e., the corners of the detector) were reached. This is due\nto the fact that the GGS is so small that the source is\n\nstill far enough away from the edges of the detector and\nnever touches them (compare Fig. 1(b)). Furthermore, decays\nthat lie slightly outside the detector are also allowed for\nreconstruction, which significantly increases efficiency.\n\nFig. 3 shows the three-dimensional distribution (Fig. 3(a))\nof the individual reconstructed tracer sphere positions without\nany averaging or iterating of a source that has been placed\nat (50 | 50 | -40) cm within the GGS volume, as well as\nexemplarily its projection in the x-direction (Fig. 3(b)). A\nvery present background is visible, and the spatial resolution\nreads 104.3 mm in the x-, 103.5 mm in the y-, and 124.8 mm\nin the z-direction. This is a very poor resolution since the\nsize of the largest tracer sphere is much smaller than the\nbest resolution obtained this way (103.5 mm _≫_ 20 mm). To\n\nimprove this resolution, the simulated data were now averaged\nand iterated (as described in Section 2.5), resulting in a\nspatial resolution of 0.6 mm in x and y, and 1.1 mm in z. This\ncorresponds to an improvement by a factor of about 170 in the\nx- and y-directions and a factor of 110 in the z-direction. The\nassociated three-dimensional distribution and its projection\non the x-axis can be found in Fig. 4.\n\n_3.2. Model path_\n\nTo extend the simulation and reconstruction to a moving\nsource and to investigate the behavior of the reconstruction\nalgorithm at the highest possible velocities, a model curve\nwas created on which the source moves circularly (r = 10 cm)\nat 17 cm/s in the xy-plane and linearly between -6 and 2 cm\nat 7 cm/s in the z-direction. On average, these velocities\napproximate the maximum tracer sphere velocities within\nthe GGS derived from corresponding DEM simulations. As\nmentioned in Section 2.5, the buffer size was set down to\n6,000 events instead of 36,000, with re-averaging every 3,000\nevents to achieve good resolution. The measurement time of\nthe whole curve was 4 s.\n\nA three-dimensional view of the model curve is shown\n\nin Fig. 5, with the reconstructed tracer sphere locations\nshown in green and the actual simulated path as a black\ntrajectory. The corresponding one-dimensional projections\non the x, y, and z axes ar",
+        "score": -3.3311035897996693,
+        "dense_score": 0.4808053970336914,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.133321762084961,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2346,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "mm, respectively.\nAll spatial resolutions and three-dimensional deviations\ndetermined in this work can also be looked up in Table 2 and\nTable 3.\n\n**4. Conclusion and outlook**\n\nThis work is the second part of a simulation study investigating the performance of an envisaged cost-effective PET-like\ndetector system capable of tracking tracer particle movement\nin dense and optically opaque granular assemblies. Following\non from the work done in Oppotsch et al. (2024) (and therefore\nreferred to as the previous studies for the rest of this section),\nwhich investigated the performance of the detector system for\na stationary source within the detector system filled with\nair only (referred to as the empty detector), the generic\n\n_This is the accepted manuscript version of an article accepted for publication in Particuology. The final version is available online at_\n_https://doi.org/10.1016/j.partic.2023.09.003_ _Page 10 of 13_\n\n**Table 3**\n\nThree-dimensional deviations for all scenarios.\n\nScenario Deviation Δr (mm)\n\nStationary source 2.1 ± 0.8\nModel path (buffer size = 6,000) 4.0 ± 1.6\nDEM path 2.3 ± 0.9\nModel path (buffer size = 36,000) 6.5 ± 1.5\n\ngrate system and the detector system completely filled with\nparticles, the goal of this work was to improve the existing\nreconstruction software (by extending it to oversampling\n(calculating a moving average for the position determination\nof the tracer particle) and iteration) and extend both the\nreconstruction and simulation software to a tracer sphere\nmoving along a selected model path and a path given by a\nDEM simulation. Moreover, the PET-like detector system was\nscaled down to a total of 88 cost-effective plastic scintillator\nbars to better fit the size of the generic grate system and to\nfurther reduce cost.\n\nThus, for a stationary source within the GGS, spatial\nresolutions of 0.6 mm in the x- and y-direction and 1.1 mm\nin the z-direction, as well as an average three-dimensional\ndeviation of the reconstructed tracer sphere positions from\nthe simulated position of (2.1 ± 0.8) mm were determined.\nFurthermore, it could be shown that the iteration leads to an\nimprovement of the resolution by a factor of about 170 in x\nand y and by a factor of 110 in the z-direction. By measuring\nthe position dependency of the reconstruction, it was found\nthat the efficiency is nearly constant throughout the detector\nsystem (due to the small size of the generic grate system), so\nboundary effects can be neglected.\nTo investigate the spat",
+        "score": -3.4286484193801883,
+        "dense_score": null,
+        "bm25_score": 15.1950033103838,
+        "graph_score": 0.0,
+        "rerank_score": -5.282536029815674,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4822,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators.md",
+        "title": "2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators",
+        "text": "ts from XENON10 and XENON1T (S2only) as well as on the projections for a background-free 10 kg-yr and 100 kg-yr exposure experiment\nin Fig. 21. The only difference between the various lines labeled by “FF” is the choice of the xenon\nform factor that affects the direct-detection sensitivity, but SRDM flux simulations are the same. We\nsee that the constraints and projections agree generally within a factor of a few. Moreover, in Fig. 21\nwe compare our XENON1T (S2-only) constraint (black solid curve) for SRDM with the result from\nFig. 10 of [43] (blue solid curve with the label “Result 2108.10332”). Ref. [43] features an independent\nsimulation of the SRDM flux, a different xenon form factor (based on the FAC code [86] and also\nused in, e.g., [3, 87]), and an independent analysis of the detector response. We have confirmed that\nthe SRDM fluxes from both groups agree well with each other, and believe that the difference (less\nthan a factor of 3) most likely arises due to the use of a different xenon form factor and/or a different\ntreatment of the XENON1T data. Overall though, the agreement is good.\n\n**D** **Comparison with other silicon form factors**\n\nFor the constraints and projections from silicon-based detectors, we use `QCDark` [57, 58] and correct\nit with the Lindhard dielectric function [59–61] to account for in-medium screening and plasmon\nexcitations, as discussed in Section 2.5.3 and in [46]. We show in this section the impact of the collective\n\n– 33 –\n\n10 [-] [32]\n\n10 [-] [2] 10 [-] [1] 10 [0]\n\nDM mass m χ [MeV]\n\n**Figure 21** . Solar reflection exclusion limits and projections (90% CL) from xenon-based direct-detection\nexperiments for DM coupled to an ultralight dark photon. Using the simulations of the SRDM flux presented\nin this paper, we compare the constraints and projections for three different publicly-available xenon form\nfactors [5, 54, 55]. We also compare the XENON1T (S2-only) bound derived in this paper with the one\nderived in Ref. [43], which uses an independent simulation of the SRDM flux, an independent calculation\nof the xenon form factor (using the FAC package [86]), and an independent analysis of the bound from the\nXENON1T data. The excluded regions shaded in solar colors are from XENON10 [4, 5, 8], and XENON1T\n(S2-only) [14]. The region shaded in light blue on the left is the red giants cooling constraint [68]. For halo\nDM, the excluded region is the combined limit from SENSEI@SNOLAB [22] and SENSEI@MINOS [16]. The\nfreeze-in benchm",
+        "score": -3.4496001888723935,
+        "dense_score": null,
+        "bm25_score": 15.318811980207023,
+        "graph_score": 0.0,
+        "rerank_score": -5.314995765686035,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 42,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7212,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2902407__2503.15721__Minimal_material_maximum_coverage_Silicon_Tracking_System_for_high-occupancy_conditions.md",
+        "title": "2025__recid_2902407__2503.15721__Minimal_material_maximum_coverage_Silicon_Tracking_System_for_high-occupancy_conditions",
+        "text": "xplore promising prospects in both scientific and medical fields.\n\n_Keywords:_ Silicon strip detectors, heavy-ion physics, high-occupancy detectors, free-streaming readout, detector integration,\nparticle tracking\n\n**1. Silicon Tracking System of the CBM experiment**\n\nThe Compressed Baryonic Matter (CBM) experiment at the\nupcoming FAIR facility in Darmstadt, Germany, is designed\nto investigate strongly interacting matter under extreme density\nconditions. Its primary objectives include analysing differential cross-sections and flows of multi-strange particles, studying higher-order fluctuations, and examining dilepton spectra\nto explore the caloric curve of dense nuclear matter. These\nand other observations require high statistics, requiring a beamtarget interaction rate of ≤ 10 MHz with kinetic energies of\nheavy-ion and proton beams up to 11 _A_ GeV and 29 GeV, respectively [1, 2].\nThe Silicon Tracking System (STS) is a key tracking detector in the CBM experiment, designed to tackle the unique challenges of heavy-ion physics. It operates in an extremely dense\nenvironment, handling about thousand charged particle tracks\nper typical Au-Au collision. The SIS-100 accelerator will deliver continuous high-intensity beams, requiring CBM detectors\n\n∗ Corresponding author\n_Email address:_ `m.teklishyn@gsi.de` (M. Teklishyn)\n\nto function in free-streaming mode. Therefore, the STS will\nprovide timing information to enable on-line event detection,\nreconstruction and selection [3].\n\nThe STS will be housed within a gas-tight thermal enclosure, positioned inside the aperture of the 1 Tm superconducting dipole magnet, at a distance of (0.3–1.0) m downstream of\nthe vacuum chamber, which hosts the target and the MicroVertex Detector (MVD) based on Monolithic Active Pixel Sensor (MAPS) technology featuring MIMOSIS chip [4]. These\ntwo silicon tracking detectors of CBM share a high degree of\nmechanical integration, as well as common services and cooling infrastructure [5]. Together with the MVD, the STS plays a\ncrucial role in momentum measurement and vertex reconstruc\ntion for complex cascade decays. In particular, CBM performance simulations have demonstrated the ability to reconstruct\ndecays with neutral products, _i. e._ Σ [±] → _n_ π [±] without direct\ndetection of the neutron by identifying the kink between the\nmother and daughter particle tracks [2]. Due to the necessity of\nreconstructing the soft-momentum reaction products, the spatial precision of the STS and MVD is pr",
+        "score": -3.7094971903056315,
+        "dense_score": 0.46520185470581055,
+        "bm25_score": 14.985247176456575,
+        "graph_score": 0.0,
+        "rerank_score": -5.721987247467041,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2831,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2694547__2309.03614__Measurement_of_Time_Resolution_of_Scintillation_Detectors_with_EQR-15_Silicon_Photodetecto.md",
+        "title": "2024__recid_2694547__2309.03614__Measurement_of_Time_Resolution_of_Scintillation_Detectors_with_EQR-15_Silicon_Photodetecto",
+        "text": "he BM@N experiment (9\n2023). `[arXiv:2309.09610](http://arxiv.org/abs/2309.09610)` .\n\n[6] F. F. Guber, A. P. Ivashkin, N. M. Karpushkin, A. I. Makhnev, S. V. Morozov, D. V. Serebryakov, Time Resolution\nand Light Yield of Scintillation Detector Samples for the Time-of-Flight Neutron Detector of the BM@N\nExperiment, Instrum. Exp. Tech. 66 (4) (2023) 553–557. `[doi:10.1134/S0020441223030065](https://doi.org/10.1134/S0020441223030065)` .\n\n[[7] Novel device laboratory beijing, eqr15 series sipms.](http://www.ndl-sipm.net/PDF/Datasheet-EQR15.pdf)\nURL `[http://www.ndl-sipm.net/PDF/Datasheet-EQR15.pdf](http://www.ndl-sipm.net/PDF/Datasheet-EQR15.pdf)`\n\n[8] V. I. Alekseev, V. A. Baskov, V. A. Dronov, A. I. L’vov, A. V. Koltsov, Y. F. Krechetov, E. I. Malinovsky, L. N.\nPavlyuchenko, V. V. Polyanskiy, S. S. Sidorin, A quasi-monochromatic electron beam of the accelerator “Pakhra”\nfor calibration of detectors, J. Phys. Conf. Ser. 1390 (1) (2019) 012127. `[doi:10.1088/1742-6596/1390/1/](https://doi.org/10.1088/1742-6596/1390/1/012127)`\n`[012127](https://doi.org/10.1088/1742-6596/1390/1/012127)` .\n\n[[9] Eljen technology.](https://eljentechnology.com/products/plastic-scintillators/ej-228-ej-230)\nURL `[https://eljentechnology.com/products/plastic-scintillators/ej-228-ej-230](https://eljentechnology.com/products/plastic-scintillators/ej-228-ej-230)`\n\n[10] [T. L. Karavicheva, on behalf of the ALICE Collaboration, The fast interaction trigger detector for the alice upgrade,](https://dx.doi.org/10.1088/1742-6596/798/1/012186)\nJournal of Physics: Conference Series 798 (1) (2017) 012186. `[doi:10.1088/1742-6596/798/1/012186](https://doi.org/10.1088/1742-6596/798/1/012186)` .\nURL `[https://dx.doi.org/10.1088/1742-6596/798/1/012186](https://dx.doi.org/10.1088/1742-6596/798/1/012186)`\n\n4",
+        "score": -3.81791346628372,
+        "dense_score": 0.4623163938522339,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.881089210510254,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 7550,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_3104786__2601.14767__A_SiPM-Based_RICH_Detector_with_Timing_Capabilities_for_Isotope_Identification.md",
+        "title": "2025__recid_3104786__2601.14767__A_SiPM-Based_RICH_Detector_with_Timing_Capabilities_for_Isotope_Identification",
+        "text": "## A SiPM-Based RICH Detector with Timing Capabilities for Isotope Identification\n\nM. N. Mazziotta a,1, L. Congedo a, G. De Robertis, [a],\nM. Giliberti a,b, F. Licciulli, [a], A. Liguori a,b, L. Lorusso, [a,b],\nN. Nicassio, [a,b], G. Panzarini, [a,b], and R. Pillera a,b\n\na _Istituto Nazionale di Fisica Nucleare (INFN), Sezione di Bari,, via Orabona 4,_\n_I-70126 Bari, Italy_\nb _Dipartimento di Fisica dell’Universit`a e del Politecnico di Bari,, via Amendola_\n_173, I-70126 Bari, Italy_\n1 _Corresponding author: mazziotta@ba.infn.it_\n\n**Abstract**\n\nIn this work, we present a novel compact particle identification\n(PID) detector concept based on Silicon Photomultipliers (SiPMs) optimized to perform combined Ring-Imaging Cherenkov (RICH) and\nTime-of-Flight (TOF) measurements using a common photodetector\nlayer. The system consists of a Cherenkov radiator layer separated\nfrom a photosensitive surface equipped with SiPMs by an expansion\ngap. A thin glass slab, acting as a second Cherenkov radiator, is coupled to the SiPMs to perform Cherenkov-based charged particle timing\nmeasurements. We assembled a small-scale prototype instrumented\nwith various Hamamatsu SiPM array sensors with pixel pitches ranging from 2 to 3 mm and coupled with 1 mm thick fused silica window.\nThe RICH radiator consisted of a 2 cm thick aerogel tile with a refractive index of 1.03 at 400 nm. The prototype was successfully tested\nin beam test campaigns at the CERN PS T10 beam line with pions\nand protons. We measured a single-hit angular resolution of about 4\nmrad at the Cherenkov angle saturation value and a time resolution\nbetter than 50 ps RMS for charged particles with Z = 1. The present\ntechnology makes the proposed SiPM-based PID system particularly\nattractive for space applications due to the limited detector volumes\navailable. In this work, we present beam test results obtained with the\ndetector prototype and we discuss possible configurations optimized\nfor the identification of ions in space applications.\n\n### **1 Introduction**\n\nA key strategy for charged particle identification (PID) involves combining\nTime-of-Flight (TOF) measurements with data from Cherenkov radiation\n\n1\n\nemitted by high-energy particles, typically using a Ring-Imaging Cherenkov\n(RICH) detector. Additionally, the identification of nuclei is achieved by\nexploiting the proportionality of the energy deposition to _Z_ [2], where _Z_ is the\ncharge in elementary charge units. Mass separation is performed through\nthe simult",
+        "score": -3.99733814759688,
+        "dense_score": 0.4514750838279724,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.156744003295898,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7962,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2963378__2508.16005__Demonstrating_a_broadband_Photon_Detection_Efficiency_model_on_VUV_sensitive_Silicon_Photo.md",
+        "title": "2026__recid_2963378__2508.16005__Demonstrating_a_broadband_Photon_Detection_Efficiency_model_on_VUV_sensitive_Silicon_Photo",
+        "text": "## Demonstrating a broadband Photon Detection Efficiency model on VUV sensitive Silicon Photomultipliers\n\nAustin de St Croix a, _∗_, Harry Lewis b,1, Kurtis Raymond b, Fabrice Retière b, Maia\nHenriksson-Ward [b], Giacomo Gallina [d], Nicholas Morrison [b,1], Aileen Zhang [b]\n\n_a_ _Department of Physics, Engineering Physics and Astronomy, Queen’s University, 64 Bader Lane, Kingston, K7L_\n_3N6, Ontario, Canada_\n_b_ _TRIUMF, 4004 Wesbrook Mall, Vancouver, V6T 2A3, British Columbia, Canada_\n_c_ _Department of Physics, Simon Fraser University, 8888 University Drive, Burnaby, V5A 1S6, British_\n_Columbia, Canada_\n_d_ _Department of Physics, Princeton University, Jadwin Hall, Washington Road, Princeton, 08544, New Jersey, USA_\n\n**Abstract**\n\nWe present a versatile analytic model describing Photon Detection Efficiency (PDE) for P-on-N\nsilicon photomultipliers, with possible applications for device characterization, PDE extrapolation\nfrom limited data, simulation and design optimization. Using device specific parameters, SiPM\nPDE is modeled as a function of wavelength, angle of incidence, voltage, and limited temperature\nrange. By factoring the PDE into transmission and internal efficiency, the performance in liquid\nnobles and other dense media can be predicted. We present the measurement of the absolute PDE\nfrom 350 to 830 nm at 163 K for two VUV sensitive SiPMs: a Hamamatsu VUV4 and Fondazione\n\nBruno Kessler VUV-HD Technology. Additional measurements of relative PDE versus angle are\nalso included. We successfully fit the model to the data, compare with literature and show the\nmodel’s predictive power by extrapolating PDE to new wavelengths and operation in liquid xenon\nand argon, which is useful for estimating performance and the impact of external cross-talk in future\nlarge-scale experiments. Lastly we use the model to investigate optimizing efficiency for specific\napplications in astroparticle physics and quantum computing.\n\n_Keywords:_ SiPM, silicon photomultiplier, photodetection efficiency, PDE, liquid nobles, argon,\nxenon, external crosstalk\n\n**1. Introduction**\n\nThis work develops a versatile model for the photon detection efficiency (PDE) of silicon photomultipliers (SiPMs), which can be applied across their full range of detectable wavelengths and\nvaried operating conditions. SiPMs have superseded the photomultiplier tube in many physics\napplications due to benefits including lower operating voltage, radiopurity and compact size. Devices consist of a pixe",
+        "score": -4.0542526006698605,
+        "dense_score": null,
+        "bm25_score": 16.883714875820772,
+        "graph_score": 0.0,
+        "rerank_score": -6.245725154876709,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 391,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "P. Kingma and Jimmy Ba. Adam: A Method for Stochastic Optimization. `[https:](https://arxiv.org/abs/1412.6980)`\n`[//arxiv.org/abs/1412.6980](https://arxiv.org/abs/1412.6980)`, 2014.\n\n[28] Tsung-Yi Lin, Priya Goyal, Ross Girshick, Kaiming He, and Piotr Doll´ar. Focal Loss for Dense\nObject Detection, 2018.\n\n[29] John D. Kelleher, Brian Mac Namee, and Aoife D’Arcy. _Fundamentals of Machine Learning for_\n_Predictive Data Analytics: Algorithms, Worked Examples and Case Studies_ . MIT Press, 2015.",
+        "score": -4.2109999069025825,
+        "dense_score": null,
+        "bm25_score": 15.170216367850882,
+        "graph_score": 0.0,
+        "rerank_score": -6.4860453605651855,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.046513895038515,
+    "generation_latency_s": 3.3993273973464966e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.046513895038515,
+    "generation_latency_s": 3.3993273973464966e-07
+  }
+}

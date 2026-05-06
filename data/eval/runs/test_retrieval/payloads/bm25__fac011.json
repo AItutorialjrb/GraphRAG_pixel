@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "fac011",
+    "query_type": "factoid",
+    "query": "What is bump bonding?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "bump",
+      "bonding"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is bump bonding?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1028,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "y. The full\ndepletion voltage and the hit efficiency are denoted by V depl and _𝜖_ hit, respectively.\n\nParameter Value Measured at\n\npolarity n [+] -p\n\nactive thickness 150 µm\n\nbulk resistivity 3 kΩcm to 20 kΩcm room temperature\n\npixel size 50 µm × 50 µm\n\n100 µm × 25 µm\n\nbreakdown voltage _>_ 300 V\n\nbefore irradiation\n\nbreakdown voltage _>_ 800 V\nafter Φ eq = 5 × 10 [15] cm [−][2]\n\nleakage current _<_ 0.75 µA cm [−][2] at V depl + 50 V\n\nbefore irradiation at 20 °C\nleakage current _<_ 45 µA cm [−][2] at 600 V\nafter Φ eq = 5 × 10 [15] cm [−][2] at −25 °C\nannealing at 60 °C for 1 hr\n_𝜖_ hit before irradiation >99% _𝑉_ depl + 50 V\n_𝜖_ hit for Φ eq = 5 × 10 [15] cm [−][2] >99% ≤800 V, −20 °C\n_𝜖_ hit for Φ eq = 1 × 10 [16] cm [−][2] >98% ≤800 V, −20 °C\n\nan active thickness of 150 µm. The layouts of the investigated sensor cells are displayed in Fig. 2\n\ntogether with the definition of the local _𝑥_ and _𝑦_ sensor coordinates used in this paper.\n\nSensors with and without a punch-through bias dot [10] are evaluated. The dot enables the\n\nbiasing of the sensor for testing before bump bonding to a readout chip. This makes it possible\n\nto identify sensors with low breakdown voltages through current-voltage measurements before the\n\nnon-reversible bump bonding process. The prototype sensors discussed in this paper were produced\n\n(a) (b) (c)\n\n**Figure 2** . The layout of a 50 µm × 50 µm pitch sensor (a) without and (b) with a bias dot. The corresponding\nlayouts for 100 µm × 25 µm pitch sensors are shown in (c). The color code indicates the various mask layers:\nn [+] implant (green), p-stop implant (red), metal contact via (filled orange squares), metallization (blue), and\nopening in the passivation for bump bonding (purple).\n\n– 4 –\n\nby Hamamatsu Photonics K.K. [11], one of the three vendors that were qualified by CMS for planar\n\npixel sensors. The details of the sensor design and production are described in Refs. [7, 12].\n\nThe sensors were bump bonded to RD53A readout chips with SnAg bumps at the Fraunhofer\n\nInstitute for Reliability and Microintegration (IZM) in Berlin, Germany [13]. The RD53A chip\n\nmeasures 20.0 mm × 11.6 mm and is produced in 65 nm CMOS technology at Taiwan Semiconduc\ntor Manufacturing Company, Ltd. (TSMC) [14]. The 50 µm × 50 µm cells of the chip are arranged\n\nin a matrix of 400 columns and 192 rows. To interconnect a sensor with 100 µm × 25 µm pixels\n\nto the RD53A chip, a metal routing from the implants to the bump bond pads on the sensors is\n\nrequire",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 21.445325544379678,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1035,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "r of pixels have TDAC values of 0 or 15, a sign that the dynamic range\n\nof the TDAC circuit is not sufficient to compensate for the threshold dispersion after irradiation.\n\nThe mean threshold has increased significantly to 1230 e, and the threshold and ENC distributions\n\nhave larger spreads after irradiation: 144 e and 11 e, respectively. The number of failed fits has\n\nincreased to 97, which is in the range of 0.4% of all pixels in the _Linear front-end_ .\n\n**4** **Crosstalk**\n\nTo be able to bump bond a sensor with a pixel pitch of 100 µm × 25 µm to the RD53A chip, which\n\nhas a bump bond pattern of 50 µm × 50 µm, the bump bonding pads on the sensor are placed\n\n– 9 –\n\n(a) TDAC (b) S-curves\n\n(c) Threshold (d) ENC\n\n**Figure 4** . (a) Distribution of TDAC, (b) S-curves for all pixels, (c) distribution of trimmed thresholds with\nGaussian fit, and (d) ENC distribution with Gaussian fit after tuning the ROC for a non-irradiated module\nwith 50 µm × 50 µm pixel size at room temperature and with a sensor bias voltage of 120 V.\n\non the boundary between two neighboring pixels, as shown in Fig. 2c. These pads overlap with\n\nthe implant layer of the neighboring pixels, and as a result crosstalk between the two pixels via\n\ncapacitive coupling is observed. The amount of crosstalk is determined from S-curve scans using\n\nthe charge injection system of the RD53A chip as described in Sec. 3. In the absence of crosstalk,\n\nthe maximum pixel occupancy should remain at 100% regardless of the injection amplitude. In\n\ncase of crosstalk, a charge injected into a single pixel leads to a charge above threshold also in the\n\nneighbor pixel, provided that the injected charge is large enough. The plot of occupancy versus\n\nΔCAL therefore shows a second S-curve leading to an occupancy of up to 200%. The point where\n\nthe mean occupancy is 150%, ΔCAL 150, is the amount of charge injected in units of ΔCAL that\n\nleads to half of the injections resulting in the signal of a neighbor pixel going above threshold. As\n\nseen in Fig. 6a for a sensor with 100 µm × 25 µm pixel size, this kind of double S-curve is present.\n\nIn sensors with 50 µm × 50 µm pixel size the occupancy remains at 100% even at very high injection\n\namplitudes.\n\n– 10 –\n\n(a) TDAC (b) S-curves\n\n(c) Threshold (d) ENC\n\n**Figure 5** . (a) Distribution of TDAC, (b) S-curves for all pixels, (c) distribution of trimmed thresholds with\nGaussian fit, and (d) ENC distribution with Gaussian fit after tuning the ROC for a module with 50 µm × 50 µ",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 18.353874404147945,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1027,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "rd and endcap discs. In the process of evaluating pixel tracking performance, sensors with\n\nboth pixel sizes were measured. Guided by tracking and physics simulations of the entire tracking\n\nsystem, CMS has decided to use 100 µm × 25 µm pitch sensors throughout the entire IT (including\n\nthe 3D modules in barrel layer 1).\n\nA variety of prototype pixel sensors have been designed and fabricated. These include 3D and\n\nplanar sensors of both pixel sizes with p-stop or p-spray isolation and with or without a biasing\n\nscheme for sensor tests before flip-chip bump bonding [7]. The sensors evaluated in this paper are\n\nplanar sensors designed to match the layout of the RD53A readout chip (ROC), which is a half-size\n\nprototype of the final ROC developed by the RD53 Collaboration, a joint effort by the ATLAS and\n\nCMS Collaborations [8]. The measurements are performed using the _Linear front-end_ [9] of the\n\nRD53A chip.\n\nThis paper describes studies for a variety of RD53A-sensor assemblies with the aim to evaluate\n\ntheir performance and to select sensor designs that meet CMS specifications. A list of selected\n\nspecifications for planar pixel sensors is shown in Table 1. Since tuning of the chip parameters is\n\ncritical for an optimal performance of the assemblies and to obtain reliable results, a significant part\n\nof the paper is devoted to this aspect.\n\nThe pixel modules studied in this paper are described in Section 2. In Section 3, the tuning pro\ncedure and performance of the RD53A-sensor assemblies are described. Laboratory measurements\n\nof crosstalk in these modules are reported in Section 4. Evaluation of the sensors with particle\n\nbeams and the results are discussed in Section 5.\n\n**2** **Pixel Modules**\n\nA pixel module consists of a silicon pixel sensor bump bonded to one or more readout chips to form\n\na hybrid pixel detector. In this study, only single-chip modules are tested. The baseline choice for\nthe three outer barrel layers and the discs of the IT are fine-pitch n [+] -p planar pixel sensors with\n\n– 3 –\n\n**Table 1** . Selected requirements for planar pixel sensors used for this measurement and vendor qualification\ncampaign. The requirements for the procurement of sensors for the final experiment differ slightly. The full\ndepletion voltage and the hit efficiency are denoted by V depl and _𝜖_ hit, respectively.\n\nParameter Value Measured at\n\npolarity n [+] -p\n\nactive thickness 150 µm\n\nbulk resistivity 3 kΩcm to 20 kΩcm room temperature\n\npixel size 50 µm × 50",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 16.70997906590773,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 8310,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "e a promising sensor type for future\nhigh-energy physics (HEP) experiments. This includes\ntracking or vertexing applications at a lepton collider like\nCLIC [1] or FCC-ee [2]. MAPS come with the benefit of\nintegrating the readout electronics and sensitive volume in\nthe same die, which inherently reduces the material budget\nbut also removes the necessity of the costly bump bonding\nprocess. A small collection electrode layout results in a\nsmall input capacitance to the first amplifier stage (order\nof fF), which reduces power consumption for a given signal\ncharge [3]. The TPSCo 65 nm ISC (Image Sensor CMOS)\nprocess [4] is a promising technology in that regard. It\nallows for a higher density of circuit elements than larger\nfeature size processes, and technology demonstrators such\nas APTS [5] or DPTS [6] have qualified it for applications\nin HEP.\nThe hybrid-to-monolithic (H2M) test chip is a MAPS\nproduced in this 65 nm ISC process. It explores complex\nper-pixel pulse processing functionality for time and amplitude measurements, at the cost of a pitch of 35 µm, which\nis 40 % larger than other prototypes developed for High\nEnergy Physics in this process. The architecture of the\nchip is based on readout concepts from earlier hybrid readout ASICs [7, 8, 9], with a clock distributed over the matrix\nand pulse-processing counters in every pixel. This porting\nprocess is interesting to explore, as the large set of hybrid\nchips for HEP applications may speed up the development\nof future monolithic sensors. The design applied a digitalon-top workflow, which is a contemporary strategy for the\ndesign of complex integrated circuitry. The digital logic is\nsynthesized around the analog building blocks such that\ncertain constraints (e.g. on timing) are fulfilled. The design effort included the composition of a compact digital\ncell library comprising a set of standard circuit elements\nwith a footprint reduced by about 25 % compared to the\nstandard cells.\n\nPreliminary results from the characterization and simulation of H2M are presented in [10, 11], respectively. Section 2 of this article describes the H2M chip design, its\nfeatures, and the data acquisition system utilised for the\npresented measurements. Laboratory characterization and\ncalibration are presented in Section 3, while the methodology for test-beam measurements and the resulting performance in the detection of minimum-ionizing particles\n(MIPs) are detailed in Section 4 and Section 5. Section 6\nsummarizes the employed s",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 14.9237551750783,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1897,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "of 12.4% of an _X_ 0, or a bit more depending on angle\nand exact location.\nResults from particle tracking simulations using a sample of _B_ _s_ [0] _[→]_ _[ϕϕ]_ [ decays, shown in]\nfigure 46, estimate the material budget for the three stations, averaged over pseudorapidities\nin the range 2 _._ 2 _< η <_ 4 _._ 5, to be 7.48% of a hadronic interaction length, and 13.7% of a\nradiation length.\n\n##### **6.4 Silicon photomultiplier assemblies**\n\nThe tracker will use a total of 524 288 SiPM channels implemented as 4096 128-channel\narrays to detect the light from the scintillating fibres. The production version of the array,\nmanufactured by Hamamatsu [TM], is here referred to as _H2017_ . Each channel comprises\n\n63\n\nFigure 47: An H2017 SiPM array bonded to a flex cable. The white stiffener is visible on the\nlower side of the flex cable.\n\n4 _×_ 26 pixels connected in parallel with a pixel size of 57 _._ 5 µm _×_ 62 _._ 5 µm resulting in\na single channel with dimensions of 230 µm _×_ 1625 µm . The channel pitch is 250 µm .\nThe array is composed of two 64-channel dies wire-bonded to a PCB with a 220 µm gap\nbetween the dies.\n\nA 100 µm thin transparent epoxy window protects the silicon and bonding wires, such\nthat the array can be pressed against the scintillating fibres. The PCB is also instrumented\nwith a Pt1000 temperature sensor on the back to monitor the temperature. The 32.6 mm\nwide PCB is bump bonded to a PCB flex cable which has been equipped with a connector\nand a stiffener, glued to the back side, as seen in figure 47.\n\n**6.4.1** **Bias and photon detection efficiency**\n\nThe pixel of the SiPM is a reverse-biased photodiode operated in Geiger mode. The\nbreakdown voltage, V BD, at which the avalanche process can occur has been measured to\nhave a mean value of 51 _._ 75 V and varies by up to _±_ 300 mV across the array [89]. The\nbreakdown voltage for every channel in every array has been measured and stored in a\ndatabase for use during operation. The nominal operating voltage in the SciFi Tracker is\n3 _._ 5 V above V BD ; details of the SiPM bias distribution system are reported in ref. [90]\nThe V BD is linearly dependent on the temperature with a coefficient of (60 _±_ 2) mV _/_ K\nrequiring a stable cooling system, as several parameters depend on the value of the bias\nover V BD . A signal multiplication (gain) value of (1 _._ 01 _±_ 0 _._ 01) _·_ 10 [6] V _[−]_ [1] was measured for\nthese devices.\nThe photon detection efficiency (PDE) for the H2017 SiPM was mea",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 14.14277656660325,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 79,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7699,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2899488__2503.09105__The_ladder_and_readout_cables_of_intermediate_silicon_strip_detector_for_sPHENIX.md",
+        "title": "2026__recid_2899488__2503.09105__The_ladder_and_readout_cables_of_intermediate_silicon_strip_detector_for_sPHENIX",
+        "text": "PC, the\nradiation hardness of the FPC with LCP has not been established as well as that of the polymide. The radiation hardness\nof the LCP material itself is proven to be as durable as polymide [22] although, the radiation hardness of the bonding\nsheet employed for the BEX was not known. The overall mechanical characteristics of the BEX after assembly was\nmeasured before and after a radiation exposure rather than investigating the radiation hardness of the bonding sheet\nitself. The primary concerns are the degradation in the flexibility of the BEX and the peel strength of the bonding sheet\ndue to radiation damage.\nA few samples of the BEX cable were exposed to [60] Co source for 7.2 kGy, 685 kGy, 1.45 MGy at National Institutes\nfor Quantum Science and Technology, Japan. The expected radiation dose at the location where the BEX is installed\nin sPHENIX is approximately 5 kGy for five years operation [4] . The mechanical performances were evaluated by the\nfollowing two tests: 1) stress test to evaluate the flexibility, and 2) peel strength test between the copper and the LCP\nlayers [14]. As the test item 1), the Young’s modulus was measured for the samples before and after the radiation\nexposure. Figure 19 shows the Young’s modulus of these samples based on natural frequency measurements. No\ndegradation of flexibility was observed within the accuracy of the measurements (7%) in any samples. The error was\nestimated by the standard deviation of multiple samples within the same radiation dose group.\n\nFigure 19: The Young’s modulus measurement results of samples exposed to various radiation dose. The vertical axis is\nthe natural frequency in the unit of Hz, while the horizontal axis is the radiation dose in the unit of kGy. The measurement\nof the sample with no radiation exposure is plotted purposely at 1 kGy.\n\nFor test item 2), approximately 50% and 70% degradations were observed in the peel strength for 685 kGy and\n1.45 MGy samples, respectively as shown in Fig. 20. However, the measured peel strength of 18 N/cm for the 7.2\nkGy sample proved to be sufficiently strong and is similar to the typical level of polymide-based FPC. Although the\nsafety margin to keep this peel strength for possible unexpected extra radiation dose may be marginal, it is unlikely\nthat FCCL layers would fall apart by gravity even if the peel strength were weakened by 50%. It was thus concluded\nthat the radiation hardness of the BEX is expected to be durable for the duration of sPHENIX ope",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 11.964835682429172,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 21,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6565,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2829308__2409.10746__Design_for_Telecom-Wavelength_Quantum_Emitters_in_Silicon_Based_on_Alkali-Metal-Saturated_.md",
+        "title": "2025__recid_2829308__2409.10746__Design_for_Telecom-Wavelength_Quantum_Emitters_in_Silicon_Based_on_Alkali-Metal-Saturated_",
+        "text": "ccuracy of such calculations before\n\nfinite-size corrections. The usual underestimation of the uncorrected ZPL stems from the\n\nlarger electrostatic potential binding the electron to the hole in the supercell calculation\n\ndue to confinement effects on the large radius Rydberg state of the electron. More accurate\n\nestimation of the ZPL energy requires size scaling correction, which is computationally too\n\nexpensive at the current level of methods. Furthermore, we calculate the triplet exciton state\n\nenergy 2 meV below the Q line, corresponding to the experimental _Q_ _L_ line energy separation\n\nof 1 meV. Based on the calculated ZPL energy and the symmetry of the optical transition,\n\nwe unambiguously identify the origin of the Q line in silicon as the Li 4 V defect.\n\n10\n\n#### **Defect design based on the Q center structure**\n\nThe in-depth identification of the Q center provided us insight into the elaborate connection\n\nof bonding properties to defect state localization and optical properties. Based on this deeper\n\nunderstanding, we aim to further investigate the possible Q center analog structures from a\n\ndefect design standpoint. We build our theory on the physical properties described above\n\nto engineer the defect charge state stability and level position inside the band gap. These\n\nare crucial for enabling a structure with a ground state spin for quantum sensing and tuning\n\nits emission wavelength to the favorable telecommunication wavelength bands for minimal\n\nsignal loss in quantum communication over great distances.\n\nFirstly, we limit our search to the elements with the smallest electronegativity possible,\n\ni.e., alkali metals. This is necessary to retain the non-bonding structure of the defect which\n\nwould be completely passivated otherwise. Next, we consider elements with larger atomic\n\nradius to force the localization of the defect orbital even further by the Pauli repulsion. This\n\neffect is further strengthened by the larger strain imposed on the vacancy site by the larger\n\nmetal atoms, leading to an outward relaxation of the nearest neighbor silicon atoms. This\n\nrelaxation distorts the Si-Si bonding even further from tetrahedral towards a more planar\n\nconfiguration than it would result from the strain field of the vacancy. This again leads to\n\nincreased localization of the defect orbital owing to the minimization of the lone-pair overlap\n\nwith bonding orbitals, which are now bent closer. With increased defect orbital localization,\n\nwe can expect th",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 11.337062618769384,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2608,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera.md",
+        "title": "2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera",
+        "text": "to neutralize (“second-order” termination), and the third term represents the\nbonding of a radical to oxygen (“first-order” termination). When _C_ 0 is zero (no\noxygen) and at short times, when the second term is small compared to the first,\nintegration yields a radical density that is proportional to the integrated dose\n_d_ : _Y_ = _gQd_ . The second term grows with time; a steady state is eventually\nreached when the creation and termination of radicals are equal. In this case,\nthe radical density becomes constant with time, and is no longer proportional\nto the integrated dose. For a very simple propagation and termination chain\nwith zero oxygen, the yield goes as the inverse of the square root of the dose\nrate [10].\nOxygen has a beneficial effect on radiation damage during irradiation, as it\ninteracts strongly with radicals and terminates them, preventing their buildup.\nIn the presence of oxygen, before irradiation, the surrounding oxygen diffuses\ninto plastic. The steady-state concentration is given by Henry’s law\n\n_C_ = _SP_ (4)\n\nwhere _C_ is the oxygen concentration in the sample, _S_ is the solubility and\n_P_ is the oxygen partial pressure. _S_ has an exponential (“van’t Hoff-type”)\ndependence on temperature [11]\n\n_−_ ∆ _Hs_\n_S_ = _S_ 0 _e_ _RT_ (5)\n\nwhere ∆ _H_ _s_ is the molar heat (enthalpy), _R_ is the universal gas constant, and\n_T_ is the temperature in degrees Kelvin.\nDuring irradiation at room temperature, oxygen present in the plastic interacts strongly with radicals created during the irradiation. Any initial oxygen\npresent in the plastic is quickly consumed by bonding to radicals. While it can\nbe replenished from outside, it is consumed by radicals, so that its penetration\ndepth at steady-state is a function of dose rate. The penetration depth _z_ 0 for\noxygen into a rectangular slab of plastic is [12, 13]\n\n_z_ 0 [2] [= 2] _[ M C]_ [0]\n\n_[ M C]_ [0] = [2] _[ M S P]_\n\nΥ _R_ Υ _R_\n\n= _[γ]_\nΥ _R_\n\n(6)\n_R_\n\nwhere _R_ is the dose rate, _M_ is the diffusion coefficient for oxygen, _C_ 0 is the oxygen concentration at the plastic’s surface, Υ (= _gQ_ ) is the specific rate constant\n\n4\n\nof active site formation, _S_ is the oxygen solubility, and _P_ is the external oxygen partial pressure. As with _S_, _M_ has an exponential (“Arrhenius equation”)\ndependence on temperature [14, 15, 16]. In general, plastic scintillators whose\nthickness is greater than the oxygen penetration depth show the strong discoloration that is the signature of radicals at",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 11.31157208263661,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2607,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera.md",
+        "title": "2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera",
+        "text": "ck\npaper wrapped in aluminum tape.\nReference [3] presents a similar study for BCF-12 and SCSF81(Y7) wavelength-shifting fibers with polystyrene (PS) core and polymethyl methacrylate\n(PMMA) cladding, using a 100 keV X-ray source for dose rates of 7—42 Gy/h\nin argon and in air, and at room temperature. In that paper, the authors were\nable to separately measure light production and absorption, while we only measure the combination for our tile geometry. A previous measurement of the\npermanent damage after irradiation in standard atmosphere at a dose rate of\n3 Gy/hr using a [60] Co irradiator for plastic rods at -20° C and annealed in an\nenvironment around -15 to -20° C is given in Ref. [8]. That measurement saw\nlittle sign of temporary damage. Another set of measurements, done during irradiation at room temperature, in standard atmosphere for tiles with embedded\nwavelength-shifting fiber, in the CMS detector at the LHC, is given in Ref. [5].\nThat paper saw a dose-rate effect and small temporary damage. Reference. [9]\npresents studies of the temperature dependence of the refractive index and light\nyield over a wide range of temperature. They find that a 10° C temperature rise\nwould correspond to a 2% light yield loss.\nThis paper is organized as follows. First, a brief reminder of the theory of\nradiation damage in plastic scintillators is given in Section 2. The materials\nand measuring circuit are described in Section 3. Details of the irradiations are\ndescribed in Section 4. The calibration of the SiPMs is described in Section 5.\n\nThe results are given in Section 6. Finally, concluding remarks are given in\nSection 7.\n\n3\n\n**2. Radiation damage of plastic scintillator**\n\nThe rate of radical production during irradiation goes as [3]\n\n_d_ [ _Y_ ] = _gQR −_ _k_ [ _Y_ ] [2] _−_ _s_ [ _Y_ ][ _C_ 0 ] (3)\n\n_dt_\n\nwhere [ _Y_ ] is the density of radicals, _g_ is the radiation-chemical yield, _Q_ is the\nscintillator density, _k_ is the reaction constant for the re-bonding of a radical with\nanother radical, _s_ is the reaction constant for the bonding of a radical to oxygen,\nand _C_ 0 is the oxygen concentration. The first term represents the creation\nof radicals, the second term represents two unterminated radicals recombining\nto neutralize (“second-order” termination), and the third term represents the\nbonding of a radical to oxygen (“first-order” termination). When _C_ 0 is zero (no\noxygen) and at short times, when the second term is small compared to the first,\nintegra",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 11.106440478207052,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6299,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker.md",
+        "title": "2025__recid_2807729__2407.09952__The_STAR_Forward_Silicon_Tracker",
+        "text": "lacement and quality\nof soldering. Finally, the open connection test is performed and the\nsurface is cleaned.\n\n2. **Guide pins Installation** : Since the position of the detector module\nis crucial, the two precision guide pins are designed. To install the\nguide pins in the correct position, the guide pins are installed by the\npin installation jig to make sure the length of the pin exceeds the\nsensor side of MS is 9.0 mm as shown in Figure 9.\n\nFigure 9: The positions of guide pins after installation.\n\n3. **Bonding the outer Flexible Hybrid PCB to outer wedge** : To\nbond the outer Flexible Hybrid PCB to the outer wedge, the first step\nis to place the pickup tool and two trays for the other wedge and PCB\non the assembly table. The outer Flexible Hybrid PCB is picked up by\nthe gantry with a special jig as shown in Figure 10, and the locations\nare determined by the camera on the gantry using two guide points\non the outer Hybrid PCB. Note that “Araldite 2011” [6] is used for\nbonding.\n4. **Assembling the inner wedge to the outer wedge** : Before assembling the inner and outer wedge together, the cooling tube and tube\nholder need to be installed on the outer wedge. Then, the inner and\nthe outer wedge (with Hybrid PCB and cooling tube assembled) are\nplaced on the jig. The robotic gantry picks up the inner wedge and\nassembles it onto the outer one, as shown in Figure 11.\n5. **Bonding Inner Hybrid PCB on the inner wedge** : Similarly to\nstep 4, the inner Hybrid PCB is bonded on the inner wedge with the\ngantry. However, in this step, the Hybrid PCB is picked up and glued\non the inner wedge, instead of the outer wedge, as shown in Figure 12.\n6. **Soldering the electronic components on the Hybrid PCB** : All\n\n11\n\nFigure 10: The gantry picks up the outer wedge and places it onto the Hybrid PCB.\n\nFigure 11: The robotic gantry picks up the inner wedge and assembles it onto the outer\nwedge.\n\nthe electronic components are carefully soldered on the Hybrid PCB\nwith a clean surface. Then, the flux is removed and the visual inspection is also performed. Finally, the open/short connection test is\nconducted to ensure the module is ready.\n\n_5.3. Quality assurance_\n\nAfter assembling the hybrid PCB and MS together, we perform similar\nmeasurements for flatness on the chip and sensor areas and positioning for\nthe inner hybrid and outer hybrid (the distance from the center of the guide\npins to reference points) using the Optical Gauging Products (OGP) at\nTIDC, as shown in Figure 13.\n\n12",
+        "score": 0.014084507042253521,
+        "dense_score": null,
+        "bm25_score": 10.952018541502609,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 1.531653556972742,
+    "generation_latency_s": 5.401670932769775e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.531653556972742,
+    "generation_latency_s": 5.401670932769775e-07
+  }
+}

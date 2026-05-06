@@ -1,0 +1,400 @@
+{
+  "benchmark": {
+    "query_id": "neg009",
+    "query_type": "negative",
+    "query": "What is the home address of the lead author?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "home"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the home address of the lead author?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -7.112122462831694,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7068965517241379,
+        "rerank_score": -11.025466918945312,
+        "matched_nodes": [
+          "The",
+          "At",
+          "In",
+          "For",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1192,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "d tesla-range magnetic fields [36].\nFurthermore, our easy-to-implement charge-stabilization\nscheme will find immediate applications in other quantum\ntechnology applications of SiV _[−]_, including the development\nof quantum repeaters [37], quantum networks [13, 38] or\nindistinguishable single photon sources [39]. Lastly, it is\nconceivable that our approach for generating and stabilizing\nnear-surface color centers with high optical coherence extends\nto other color centers in diamond or in other wide-bandgap\nhosts such as hBN [40] or SiC [41].\n\n**METHODS**\n\n**Optical Setups**\nTo characterize our diamond samples at room temperature (RT),\nwe employ a home-built confocal microscopy setup. This setup is\nequipped with a continuous wave (cw) 515 nm diode laser (Cobolt\n06-MLD) for off-resonant excitation. At low temperature ( _∼_ 7 K),\nthe sample is housed in a variable-temperature closed-cycle cryostat\n(attocube attoDRY800) and we perform optical spectroscopy again\nwith a home-built confocal microscopy setup. For this setup, we\nput to use cw 445 nm and cw 515 nm diode lasers (Cobolt 06-MLD)\nfor off-resonant excitation as well as a narrow-linewidth (200 kHz)\ntunable (720-739 nm) diode laser (Sacher Lasertechnik LION) for\nresonant excitation. Frequency modulation and control of the LION\nis achieved through a PID loop of a HighFinesse WS-U wavelength\nmeter. Additionally, we stabilize the intensity of the resonant laser\nthrough the PID loop of a home-built optical intensity stabilization\n(OIS) module (Physics Basel SP 999). In case of the resonant laser\nand if applicable to the experiment in question, we carve pulses with\nan acousto-optical modulator (AOM, G&H R15210), whereas the\noff-resonant lasers can be electronically modulated out of the box.\nFor both RT and LT, we focus laser light onto the sample with a\n\n6\n\n0.8 NA objective (Olympus LMPLFLN 100X) thermalized at RT,\nthrough which we also collect the signal. Photons are detected by\nsilicon-based single-photon counting modules (SPCM, Excelitas\nAQRH-33-FC). We perform photon-correlation measurements\nusing a time-correlated single-photon counting (TCSPC) system\n(PicoQuant PicoHarp 300) connected to the SPCMs. For optical\nlifetime measurements we use a pulsed laser (NKT Photonics\nSuperK Extreme EXW-12) tuned to 515 nm and said TCSPC system. Optical spectra are recorded on the camera of a spectrograph\n(Princeton Instruments SP-2500).\n\n**Data availability**\nThe data that support the findings of this study are available",
+        "score": -7.143176387392241,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7068965517241379,
+        "rerank_score": -11.0732421875,
+        "matched_nodes": [
+          "The",
+          "At",
+          "In",
+          "For",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3834,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": "w = 5 − 7 nm, it suggests that the bending of the\nconduction band bottom due to the electric field from the top\ngate should not substantially alter the results. This reasoning\njustifies the use of the infinite potential well approximation\nin our calculations. One shortcoming of both the strict 2D\nand the infinite square well potential is that they cannot incorporate the short-range alloy disorder scattering arising from\nthe SiGe alloy on the barrier outside the well. We address\nthis shortcoming in the next section by using a finite well confinement model where the carrier wavefunction is allowed to\ntunnel into the barrier regime.\n\n9\n\nFigure 5. Mobility (µ) versus electron density (n e ) for quantum wells with widths of 5 nm (red) and 7 nm (blue). The experimental data\nare depicted by red and blue curves, with corresponding error bars shown as shaded areas. The solid black curves represent the theoretical\ntransport mobility, while the dashed black curves denote the quantum mobility, both calculated using the infinite potential well approximation\nwith the local field correction. (a) and (b) assume only RI near the capping layer n r ̸= 0. (c) and (d) assume only BI outside the quantum\nwell N 1 ̸= 0 and no BI inside N 2 = 0, while (e) and (f) assume N 1 = 0 and N 2 ̸= 0. To fit the data, the impurity concentrations and\nroughness parameters are chosen as (a) n r = 2.5 × 10 [12] cm [−][2] ; (b) n r = 2.1 × 10 [12] cm [−][2] ; (c) N 1 = 9.7 × 10 [15] cm [−][3] and N 2 = 0; (d)\nN 1 = 8.7 × 10 [15] cm [−][3] and N 2 = 0; (e) N 1 = 0 and N 2 = 7.2 × 10 [15] cm [−][3] ; (f) N 1 = 0 and N 2 = 3.8 × 10 [15] cm [−][3] .\n\nV. FINITE POTENTIAL WELL\n\nIn this section, to calculate the short-range alloy disorder\nscattering rate, we employ the finite potential well approximation to determine the wavefunction tail extending outside the\nquantum well. Furthermore, we recalculate the RI, BI and IR\nscattering rates using the finite potential well wavefunction,\nwhich enters the expressions of the form factors Eqs. (5, 6)\nand the lowest subband energy in Eq. (33). The comprehensive results combining the scattering mechanisms of RI (BI),\nIR and AD are shown in Figs. 7 and 8. The finite potential\nwell Schr¨odinger equation reads\n\nwhere V 0 = 180 meV [3, 35] and E F = ℏ [2] k F [2] [/][2][m] [⋆] [is the]\nFermi energy of the 2DEG. In the following we use V to\nrepresent V 0 − E F for simplicity. The bound state solutions\n(E < V ) for the lowest subband are\n\nψ(z) =\n\nCe [−][η][|][z][|], |z",
+        "score": -7.143832133391808,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9482758620689655,
+        "rerank_score": -11.102845191955566,
+        "matched_nodes": [
+          "The",
+          "AD",
+          "In",
+          "We",
+          "To",
+          "RI",
+          "Bi",
+          "IR"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3847,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": ", whereas (c) and (d) consider BI, IR, and AD scattering. The corresponding disorder parameters are the same as in Fig. 10.\n\ncyclotron radius w ≪ cℏk F /eB [40, 79–81]. Such a reduced\ndegeneracy is also possible without any spin polarization if\nthe valley splitting happens to be larger than the Fermi energy\nso that g v = 1 in the system.\n\nIn the strong screening limit q T F /2k F ≫ 1 (for the density\nrange of interest to us n e ≪ g [3] /16πa [2] B [), mobility increases]\nmonotonically with increasing g for a given impurity configuration. This monotonic behavior of mobility versus g has\nbeen shown in a comprehensive analysis of valley-dependent\n2D transport in (100), (110), and (111) Si inversion layers\nwith the same bare Coulomb disorder [39, 40]. A similar\nphenomenon was observed in an ambipolar gate-controlled\nSi(111)-vacuum field effect transistor, where by tuning the external gate voltage the 2D electron and hole transport can be\nstudied within the same device against the same background\nCoulomb disorder [42]. For the ambipolar transistor discussed\nin Ref. [42], the effective valley degeneracy is 6 for a 2D electron system,, whereas it is 1 for a 2D hole system, resulting\nin the peak electron mobility being approximately 20 times\ngreater than the peak hole mobility at low temperatures. This\ncan be qualitatively understood from the expression of the\nThomas-Fermi screening wave vector q T F = g/a B, implying\nthat higher g leads to improved screening and consequently,\nhigher mobility. However, the relationship between mobility\nand g is generally nontrivial, as g influences both q T F ∝ g\nand k F ∝ g [−][1][/][2] . For remote impurity scattering, it is evident from Eqs. (15), (16), (58), and (59) that µ RI ∝ g [1][/][2] and\n\nµ qRI ∝ g [3][/][2] . On the other hand, for short-range impurity scattering, µ S = µ qS ∝ g [2], as indicated by Eq. (20). As discussed\nin Section III, the g-dependence of background impurity scattering crosses over from short-range to remote impurity scattering behavior with increasing electron density, as detailed in\nEqs. (25-27). The crossover density is at n e = g/16πw [2] . For\ninterface roughness scattering, the mobilities µ IR and µ qIR\nare proportional to g [3] at low densities n e < g/4πΛ [2], transitioning to a long-range behavior where µ IR ∝ g [1][/][2] and\nµ qIR ∝ g [3][/][2] at higher densities, as shown in Eqs. (34-38).\nHowever, IR scattering at low densities n e < g/4πΛ [2] is typically overshadowed by the dominant sca",
+        "score": -7.201277540535763,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8275862068965517,
+        "rerank_score": -11.176925659179688,
+        "matched_nodes": [
+          "The",
+          "AD",
+          "In",
+          "For",
+          "RI",
+          "Bi",
+          "IR"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 30,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3819,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": "background\nimpurities (BI), interface roughness (IR), and alloy disorder\n(AD). By analyzing experimental mobility data from 5 nm\nand 7 nm Si/SiGe quantum wells reported in Refs. [13, 14],\nwe find that RI predominantly limits µ at electron densities\nbelow 4 × 10 [11] cm [−][2], while IR becomes the limiting factor\nat higher densities ranging from 4 − 6 × 10 [11] cm [−][2] . Despite limited experimental data on quantum mobility (µ q =\n3.0 ± 0.5 × 10 [4] cm [2] /Vs at the highest density 6 × 10 [11]\n\ncm [−][2] [21]), our theoretical models indicate that µ q is likely\nconstrained by RI and distant BI scattering across all electron\ndensities. Since µ q is much more sensitive to RI and distant\nBI scattering compared to µ [22], we need more experimental\ndata on µ q across a wider range of densities to better understand the distribution for BI in SiGe barriers. We also show\n\nthat AD is quantitatively irrelevant in all experimental density\nranges for these high-mobility structures. We address the limitations of the Boltzmann-Born theory at low electron densities\nn e ≲ 2 × 10 [11] cm [−][2] with considerable disagreement between\nthe theory and experimental data, although our theory explains\nthe higher density data quantitatively. A possible explanation\nfor this discrepancy at low densities is that the 2DEG is broken\ninto inhomogeneous electron puddles separated by long-range\nCoulomb disorder potential barriers, so that both the perturbative Born approximation and linear screening are no longer applicable. The system eventually undergoes a metal-insulator\ntransition (MIT) at a critical density n e = n c, where transport in the low-density n e ≥ n c region should be described\n\nby percolation through charged puddles [23–30]. This MIT is,\nin fact, a crossover (happening sharply over a narrow density\nrange around n c because of the rapid failure of screening of\nthe long-range Coulomb disorder) and not a quantum phase\ntransition [26, 27]. We estimate n c in the experimental systems [13, 14] by using the Anderson-Ioffe-Regel (AIR) criterion [31, 32], although the failure of the Boltzmann-Born theory at low densities indicates that the critical density estimated\nfrom the AIR criterion should be smaller than the actual crit\nical density (percolation threshold) observed in experiments\nand should be used as a lower bound estimate of the percolation threshold. We also estimate n c by considering inhomogeneous density fluctuations induced by long-range Coulomb\ndisorder in the s",
+        "score": -7.255740045152861,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7068965517241379,
+        "rerank_score": -11.246417045593262,
+        "matched_nodes": [
+          "The",
+          "AD",
+          "We",
+          "RI",
+          "Bi",
+          "IR"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5774,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices.md",
+        "title": "2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices",
+        "text": "p, we perform a fitting routine which\nfinds the best pair of lines, with higher weight given to\n_V_ 1e at lower voltages, and intercept close to _V_ DS = 0.\n\n**VARIABILITY OF INDUSTRIALLY**\n\n**FABRICATED QUANTUM DOTS**\n\nTo assess inherent process variability, considerable effort was placed in the design stage to suppress known\nsources of semiconductor process variability, e.g. layout\neffects (see Methods), so the variability we measure is\nprimarily inherent to each DUT. As shown in Fig 4b, in\ndevices with greater gate lengths, multiple dots are generated, resulting in complex multi-dot structures. On the\nother hand, devices with shorter gate lengths yield single\nquantum dots, however in some devices the small gate\nlength leads to an early transistor turn-on, resulting in\n‘bad’ dots. Overall, the device designs with the highest\nproportion of good QD features have shorter gate lengths,\n28 nm and 40 nm. The two channel widths do not impart\nsignificant differences across the farm. The extracted parameters for these good devices are shown in Fig. 4ce. With decreasing gate length we see a lower threshold\nvoltage due to the increasing effect of the electric field\nproduced by the source and drain, a well-known short\nchannel transistor effect, likely caused by drain-induced\nbarrier lowering (DIBL) [40]. The gate lever arm and\nlever arm asymmetry remain fairly constant, indicating\nthat dots remain well controlled by the gate even at the\nsmallest dimensions.\nFor the _L_ = 28 nm case, we find the first-electron\nvoltages ( _V_ 1e = 387(22) mV) and the gate lever arms\n~~(~~ ~~_α_~~ G = 0 _._ 741(82)) are narrowly distributed. We find the\nstandard deviation of _V_ 1e ( _≈_ 22 mV) is comparable to\nthe spacing (25(4) mV) between the first and second observed electron ( _V_ 2e ) loading voltages, measured from a\nsubset of devices where a second transition is clearly visible. This suggests that the tight requirements for shared\nvoltage control [23] are within reach, but need further\nreduction. Alternatively, small variations may be compensated with independent voltage trimming of each of\nthe QD back-gates, however this comes at the cost of a\ngreater number of control lines per QD. We note that the\nlarge gate lever arm will be beneficial when implementing\ngate-based dispersive readout[35].\nThe mean dot asymmetry ~~_α_~~ D ~~_−_~~ ~~_α_~~ S = _−_ 0 _._ 040(150)\nshow that on average the QDs are well-centered in the\nchannel. We note that, since all lever arms must add\nto 1, a la",
+        "score": -7.2999244438039845,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7068965517241379,
+        "rerank_score": -11.314393043518066,
+        "matched_nodes": [
+          "The",
+          "OF",
+          "For",
+          "We",
+          "To",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 40,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "nt reconstruction. First, it finds track segments in\nthe VErtex LOcator detector (VELO), attaching to them hits\nfrom the further tracking stations upstream and downstream\nof the magnet to obtain complete tracks; then, the positions of\nthe primary vertices of the proton-proton ( _pp_ ) collisions are\nfound, as well as those of displaced vertices that constitute the\nmain signature of heavy-flavour particle decays.\nThe feasibility of implementing several parts of this sequence in a specialised architecture, using programmable\ndigital electronics co-processors (FPGAs), has been studied\nwith the aim of achieving a faster and cheaper reconstruction,\nespecially in view of future runs, moving parts of it before the\nevent-building stage [4].\nIn this article, we address the very first step in the HLT1\nevent reconstruction, that is the search for clusters of active\npixels in the VELO [5]. Grouping contiguous pixels in clusters\nis a conceptually simple but computationally demanding task,\ndue to the two-dimensional (2D) geometry and the large\nnumber of pixels of the VELO detector (approximately 40\nmillion). In the preliminary version of the HLT1, designed\nto run entirely on CPUs, this task alone consumed 17%\nof the time required by the complete HLT1 reconstruction\nsequence. We address here this issue and describe an efficient\narchitecture of this functionality, requiring a very modest\namount of FPGA resources, while providing the throughput\nand the performance required for its use within the LHCb\nDAQ system. The core ideas underlying the design of this\narchitecture are based on studies of an FPGA-based track\nfinding system, performed within the INFN-RETINA R&D\nproject [4]. The overall structure of our algorithm and its main\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2023 2\n\nFig. 1. Illustration of the basic constituents of a VELO layer [5]. Red dots\nmark the origin, pixel (0,0), of the local cartesian coordinate system of each\nsensor (see Sect. III). As an example, the axis orientation is displayed in both\nsensors of the upper module.\n\nbuilding blocks are rather general, and can be applied to any\npixel detector. A baseline version is available for download\nfrom a public code repository [6]. However, the LHCb version\ncontains specific features tailored to the VELO detector.\n\nII. F ORMAT AND FEATURES OF VELO DATA\n\nThe Run 3 VELO is a silicon pixel detector consisting of 26\nlayers both downstream (19) and upstream (7) of the nominal\npoint of _pp_ collisi",
+        "score": -7.313901065431792,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7068965517241379,
+        "rerank_score": -11.335895538330078,
+        "matched_nodes": [
+          "The",
+          "OF",
+          "In",
+          "We",
+          "VELO",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 720,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2657394__2305.03419__Silicon_photonics-integrated_time-domain_balanced_homodyne_detector_for_quantum_tomography.md",
+        "title": "2023__recid_2657394__2305.03419__Silicon_photonics-integrated_time-domain_balanced_homodyne_detector_for_quantum_tomography",
+        "text": "had good linearity, and a gain of 12.5\n\nμV/photoelectron. Using the TBHD, a quantum tomography of a coherent state  1.04 was\n\nconducted, and 99.97 % fidelity was achieved. To demonstrate the performance of the integrated\n\nTBHD in the CVQKD system, the CVQKD setup with both simple and multiplexing channels\n\nwas designed. When the transmission channel was 5 dB loss, 10 dB loss, and 50 km fiber, the\n\nexcess noise could be controlled to 0.029 ± 0.009, 0.077 ± 0.012, and 0.096 ± 0.049, respectively,\n\nand positive secret key rate can be achieved considering the finite-size effect. The stability of\n\nTBHD at different SENRs was measured, and the detector showed better stability if the SENR\n\nwas lower.\n\nOur results indicate that the silicon photonics-integrated TBHD could perform as well as the\n\nTBHD based on the commercial InGaAs photodiode. Because the two photodiodes were\n\nfabricated in the same wafer using the same procedures, their characters were considerably\n\nsimilar. Therefore, a high CMRR could be achieved, and there was no need to select PDs on\n\nchips. For further study, it was expected that the whole GG02 protocol based CVQKD system\n\ncould be integrated into the chip. In the receiver, the main challenge was integrating the TBHD\n\n20\n\non the chip, which has been verified in our work. At the sender, the main difficulty was\n\ngenerating high-extinction ratio pulses. For the whole system, time multiplexing was also a\n\nchallenging technology, as delaying hundreds of nanoseconds (tens of meters optical path) on the\n\nchip was difficult. One convenient method was connecting the delayed fibers to the chip through\n\nan arrayed edge coupler. The other method was shorting the pulse width to nanoseconds (tens of\n\ncentimeters optical path) or tens of picoseconds (tens of micrometers optical path). In this way,\n\ntime multiplexing could be realized on the chip.\n\nOverall, we designed and demonstrated silicon photonics-integrated TBHD, which performed\n\nwell in quantum tomography and CVQKD experiments. Our results will pave the way for\n\nintegrating the entire setup of a CVQKD system based on the GG02 protocol using TBHD into a\n\nsilicon photonics chip.\n\nAPPENDIX A: THE MZI STRUCTURES OF BALANCING THE FBHD DETECTORS\n\n21\n\nFigure 8. Two optical structures of BHD on a chip. (a) One 2 × 2 MZI structure. (b) The output\n\nintensity versus applied voltage. (c) Two 1 × 1 MZI structures. (d) The output intensity versus\n\napplied voltage.\n\nThe optical structure of FBHD which shown in Fig",
+        "score": -7.316929243548163,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7586206896551724,
+        "rerank_score": -11.346681594848633,
+        "matched_nodes": [
+          "The",
+          "At",
+          "OF",
+          "In",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6246,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797552__2406.07768__Selective_Undercut_of_Undoped_Optical_Membranes_for_Spin-Active_Color_Centers_in_4H-_Silic.md",
+        "title": "2025__recid_2797552__2406.07768__Selective_Undercut_of_Undoped_Optical_Membranes_for_Spin-Active_Color_Centers_in_4H-_Silic",
+        "text": "en the ITO and Ni junction contacts, the CV\n\ncurves converge (Figure 2a.ii). While closing the junction circuit may restore selectivity in highly\n\ndoped material, we must further increase the junction bias in our case of an undoped epilayer. The\n\njunction bias depletes the epilayer of carriers and creates selectivity between regions of different\n\ndoping where it is not possible to achieve rapid selective etching without diode biasing. As greater\n\nreverse bias is progressively applied, the quasi-Fermi level in the valence band of the p-type layer\n\nrises relative to that in the n-type layer and the dissolution potential into the electrolyte, and the\n\np-type CV curve shifts cathodic (Figure 2a.iii-v). At the same time, the characteristic oxidation and\n\nreduction peaks associated with controlled etching reappear, now at cell biases significantly different\n\nenough to support selective etching.\n\nTo assess doping selectivity in realistic structures, a series of 4 _µm_ wide mesas are undercut in\n\n40 _mM_ and 200 _mM_ KOH at different junction reverse biases (Figure 2), with a cell bias of 0 _._ 2 _V_,\n\nselected to ensure that the n-type electrode is not passivated.[29] Lateral etching rates and membrane\n\nmorphology are determined using focused-ion-beam (FIB) cross sectioning. In both electrolyte\n\n8SELECTIVE UNDERCUT OF UNDOPED OPTICAL MEMBRANES FOR SPIN-ACTIVE COLOR CENTERS IN 4H-SIC\n\nconcentrations, as the reverse bias increases, p-type etching is suppressed before becoming fully\n\npassivated, past a reverse bias of _−_ 1 _._ 3 _V_ (Figure 2b). Cross sectional images corroborate this finding,\n\nshowing partial undercutting of the p-type layer at moderate reverse biases ( _−_ 0 _._ 75 _V_ ), and full\n\npassivation at high reverse biases( _−_ 1 _._ 5 _V_ ) (Figure 2c). This result demonstrates that at sufficient\n\nreverse bias, diffusion of photo-generated carriers can be predominantly controlled not by differences\n\nin doping but by external biasing.\n\nSmoothly-etched surfaces are highly desirable for photonic and mechanical structures, as scat\n\ntering loss and surface damping are therefore reduced. We investigate the impact that electrolyte\n\nconcentration has on the surface roughness of the underside of our membranes. The membranes\n\nshown in Figure 2c are fully suspended and then lifted out using polydimethylsiloxane (PDMS)\n\nstamping (Figure 3a). The surface roughness of the membrane underside is then measured by tap\n\nping mode atomic force microscopy. We find that the",
+        "score": -7.321480463488348,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7586206896551724,
+        "rerank_score": -11.353683471679688,
+        "matched_nodes": [
+          "The",
+          "At",
+          "OF",
+          "In",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6070,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2774168__2404.03236__Bright_Heralded_Single-Photon_Source_Saturating_Theoretical_Single-photon_Purity.md",
+        "title": "2025__recid_2774168__2404.03236__Bright_Heralded_Single-Photon_Source_Saturating_Theoretical_Single-photon_Purity",
+        "text": "shows the measured coincidence rates, together with a polynomial fitting. At a pump power\nof 7.10 mW, we obtain a coincidence rate of 1.51 MHz and a corresponding CAR of 16 _._ 77 _±_ 0 _._ 01. To our\nknowledge, this coincidence rate surpasses all previous SFWM results. Indeed, near-MHz coincidence rate\nwas only achieved with an SPDC source but at a lower CAR of 7.5 [23]. In **Figure 5**, we plot the measured\nCAR as a function of the coincidence rate denoted by hollow squares.\n\nTo explain the observed monotonic decrease CAR with the coincidence rate, we resort to Equation (4)\nand use the heralding relation _S_ _s_ ( _i_ ) = _C/η_ _i_ ( _s_ ) to derive the expression of CAR in terms of _C_ and _η_ _s_ ( _i_ ) for a\npulsed pump with a repetition rate _R_\n\nCAR = _[η]_ _[s]_ _[η]_ _[i]_ _[R]_ _._ (7)\n\n_C_\n\nAs expected from Equation (7), the CAR value decreases along with the increasing coincidence rate _C_, with\nthe highest CAR being 4630 _±_ 614. Note that our data reproduces excellently the theoretical dependence\nof CAR on _C_ in Equation (7) (the red solid curve). In the inset of Figure 5, we present an example of a\ncorrelation histogram, which is measured at an on-chip power of 0.35 mW. In extracting the CAR value,\nwe choose a time-bin width of _τ_ = 0 _._ 4 ns to cover the entire coincidence peak.\nTo compare against the theoretical limit for single-photon purity in Equation (5), we measure _g_ h [(2)] [(0)]\nunder the coherent condition using the heralded HBT setup, which involves the three-fold coincidence\nmeasurement. Note that a CAR value can be extracted from the time stamp data of the heralding and one\nof the heralded detectors. The results together with error bars (red symbols) are plotted in Figure 1(b).\nThe lowest _g_ h [(2)] [(0) is measured as 0] _[.]_ [00094] _[ ±]_ [ 0] _[.]_ [00002 with CAR equaling to 2220] _[ ±]_ [ 90, which is among the]\nbest _g_ h [(2)] [(0) values reported to date for an HSPS. We note that an even lower] _[ g]_ h [(2)] [(0) with a reasonably]\nsmall uncertainty can in principle be obtained with our source but at the cost of measurement time, as\nthis requires a lower pump power, which however is not the main pursuit of this work. For overall _g_ h [(2)] [(0)]\nversus CAR relation, the experimental data indeed reach the theoretical limit, suggesting that our source\nproduces the ideal single-photon purity permitted by a parametric heralded source. We attribute this\nachievement to both effective spectral filtering [24] and the",
+        "score": -7.321866630159575,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7068965517241379,
+        "rerank_score": -11.348150253295898,
+        "matched_nodes": [
+          "The",
+          "At",
+          "In",
+          "For",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "The": 1.0,
+      "At": 1.0,
+      "HE": 1.0,
+      "OF": 1.0,
+      "UT": 1.0,
+      "LE": 1.0,
+      "AD": 1.0,
+      "OR": 1.0
+    },
+    "expanded_nodes": {
+      "The": 1.0,
+      "At": 1.0,
+      "HE": 1.0,
+      "OF": 1.0,
+      "UT": 1.0,
+      "LE": 1.0,
+      "AD": 1.0,
+      "OR": 1.0,
+      "In": 0.7,
+      "For": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "VELO": 0.7,
+      "IEEE": 0.7,
+      "Quantum": 0.7,
+      "RI": 0.7,
+      "Bi": 0.7,
+      "IR": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 18,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.649990999139845,
+    "generation_latency_s": 3.501772880554199e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 18.0,
+    "retrieval_latency_s": 6.649990999139845,
+    "generation_latency_s": 3.501772880554199e-07
+  }
+}

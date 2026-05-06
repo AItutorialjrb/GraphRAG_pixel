@@ -1,0 +1,433 @@
+{
+  "query": "How can graph noise lead to hallucinated detector comparisons?",
+  "expanded_query": "How can graph noise lead to hallucinated detector comparisons?",
+  "mode": "graph_path+light_rerank",
+  "retrieved": [
+    {
+      "rank": 1,
+      "chunk_id": "4559",
+      "doc_id": "197",
+      "title": "2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD.md",
+      "score": 8.643424682909139,
+      "retriever": "graph+light_rerank",
+      "text": "1\n\n# Long-Distance Signal Propagation in AC-LGAD\n\nC. Bishop, A. Das, J. Ding, M. Gignac, F. Martinez-McKinney, S. M. Mazza, A. Molnar,\nN. Nagel, M. Nizam, J. Ott, H. F.-W. Sadrozinski, B. Schumm, A. Seiden, T. Shin,\n\nA. Summerell, M. Wilder, Y. Zhao\n\n_SCIPP, Univ. of California Santa Cruz, CA 95064, USA_\n\n_Abstract–_ We investigate the signal propagation in AC-LGAD (aka RSD), which are LGAD with a\ncommon N [+] layer and segmented AC-coupled readout contacts, by measuring the response to IR laser TCT\non a large selection of AC-LGAD with strip readout. The interest for this topic derives from the realization\nthat while large charge sharing between neighboring strips is essential for good position resolution, large\nsharing beyond the next neighbor generates background signals which in general are detrimental to the\nsensor goal of low occupancy. Using AC-LGAD with strip readout produced by Hamamatsu Photonics\n(HPK), we evaluate the effects of a variety of sensor properties, including geometrical parameters (strip\nlength, width), process parameters like the N [+] layer resistivity, the coupling capacitance, and the thickness\nof the bulk on the signal sharing and the position resolution.\n\nPACS: 29.40.Gx, 29.40.Wk, 78.47jc\n\nKeywords: fast silicon sensors; charge multiplication; AC-LGAD strips; charge sharing.\n\n**1.** **Introduction**\n\nLow-gain Avalanche Detectors (LGAD) have been recently introduced as fast semiconductor timing\nsensors [1,2]. In their large-scale experimental applications, the High Granularity Timing Detector (HGTD)\nin ATLAS [3] and the MIP Timing Detector (MTD) in CMS [4], their segmentation is limited to pads with\nabout 1 mm pitch by consideration of power, fill-factor, and field uniformity. While the fill-factor and\nuniformity problems could be solved for small-scale applications with Trench-Isolated LGAD [5], an\nacceptable power density will limit the spatial resolution unless charge sharing between distant contacts is\nemployed. This is the principle of the AC-LGAD technology (aka Resistive Silicon Detector RSD) [6-8]\nwhich is based on a complete integration of four of the sensor layers in common sheets of the P-type bulk,\nthe P [+] gain layer, the N [+] layer and a dielectric sheet, separating the first three from the segmented metal\nreadout contacts (Fig. 1). A signal originating in the bulk and amplified in the gain layer is then shared\nbetween several electronics channels, allowing reconstruction of signal location with a resolution which",
+      "_rerank_score": 8.643424682909139,
+      "score_original": 14.806226696198433
+    },
+    {
+      "rank": 2,
+      "chunk_id": "3270",
+      "doc_id": "135",
+      "title": "2024__recid_2713370__2310.13926__Performance_of_AC-LGAD_strip_sensors_designed_for_the_DarkSHINE_experiment",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2713370__2310.13926__Performance_of_AC-LGAD_strip_sensors_designed_for_the_DarkSHINE_experiment.md",
+      "score": 8.287939908129927,
+      "retriever": "graph+light_rerank",
+      "text": "ng measurements of\n\nthe High Granularity Timing Detector of ATLAS[4] and the Endcap Timing Layer of CMS[5] for\n\n– 1 –\n\n(a) DarkSHINE experiment. (b) DarkSHINE tracking system.\n\n**Figure 1** . (a) Detector sketch of the DarkSHINE experiment[1]. Along the electron incident direction from\nleft to right in the picture, the red material with a blue brace is the dipole magnet. The tagging tracker is\nplaced at the center of it. The recoil tracker is located at the edge of the magnet. The target is caught in the\nmiddle. ECAL is placed after the recoil tracker, followed by HCAL. (b) Sketch of the DarkSHINE tracking\nsystem. From left to right: tagging tracker (with seven layers of tracking module), the tungsten target, and\nthe recoil tracker (with six layers of tracking module). For each layer, two strip sensors are shown in the\nsketch, placed at a small angle (100 mrad).\n\nthe High-Luminosity Large Hadron Collider. Figure 2-(a) shows a sketch of a LGAD sensor. The\n\nLGAD sensors are fabricated on high-resistivity _𝑝_ -type substrates with thickness of about 50 _𝜇_ m.\nBased on traditional _𝑛_ -in- _𝑝_ silicon sensor, the LGAD sensor has an additional highly-doped _𝑝_ [+]\n\nregion (namely “gain layer”) under the parallel _𝑛_ - _𝑝_ junction. When a bias voltage is applied across\nthe sensor, this _𝑝_ [+] layer will be depleted and create a strong local electric field, therefore introducing\n\nan internal gain.\n\n(a) LGAD sensor. (b) AC-LGAD sensor.\n\n**Figure 2** . (a) Sketch of a section of a single-pad standard LGAD and (b) a section of a segmented AC-LGAD\nsensor[6]. The sketches are not to actual scale.\n\nIn order to achieve better spatial resolution while maintaining similar gain and fast timing\n\nperformance, the AC-coupled LGAD (AC-LGAD) technology has been brought up where the\n\nsignal are capacitively induced and shared among the metal AC-pads. Figure 2-(b) shows a sketch\n\nof an AC-coupled LGAD sensor. The AC-pads of the sensor for signal readout are placed on a\nthin dielectric layer which is grown over the _𝑛_ [+] layer of the sensor. The AC-LGADs has much\n\n– 2 –\n\nless doped _𝑛_ [+] layer comparing to the _𝑛_ [++] layer in the standard LGADs. It results in an increased\ninter-pad resistance[6]. A highly-doped _𝑛_ [++] implant is still preserved at the edge of the active area\n\nof the sensor, in order to have DC-connection for electron current draining. The AC-LGAD design\n\ncan easily adapt to any detector geometry since the segmentation can be achieved by the AC-pads\n\nof a",
+      "_rerank_score": 8.287939908129927,
+      "score_original": 10.523527105690775
+    },
+    {
+      "rank": 3,
+      "chunk_id": "5131",
+      "doc_id": "224",
+      "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+      "score": 7.989654718295253,
+      "retriever": "graph+light_rerank",
+      "text": "nclude the estimated uncertainty affecting the input parameters of TCAD radiation\ndamage model and of the trapping constants.\n\nThe comparison covers almost two order of magnitude of fluence and the level of\nagreement is excellent, down to 1 %. More results can be found in [10].\nDespite the success of this algorithm, it cannot be used for the HL-LHC as it is\nexcessively time-consuming. Therefore, a new, faster, yet equally precise algorithm is\nrequired, which will be presented in the next section.\n\n**3. A Radiation Damage Digitizer Based on Look-Up Tables for Silicon Detectors at**\n**HL-LHC Experiments**\n\nStarting in 2025 and extending through 2028, the LHC will be upgraded to the highluminosity LHC (HL-LHC), making the expansion of experimental particle physics research\nand the exploration of fundamental physics of the LHC possible. The HL-LHC will\ndeliver an instantaneous luminosity of 7.5 _×_ 10 [34] cm _[−]_ [2] s _[−]_ [1], a 5–7 times increase from\nthe nominal value resulting in an average pileup of about 200 inelastic proton–proton\n\n_Sensors_ **2024**, _1_, 0 4 of 19\n\ncollisions per bunch crossing. The innermost parts of the pixel detector, situated closest\nto the interaction point, will be exposed to unprecedented levels of radiation, reaching a\nnon-ionizing radiation fluence of 1 _−_ 2 _×_ 10 [16] n eq cm _[−]_ [2] during the expected lifetime of the\nATLAS detector [19,20].\nThe actual ATLAS IBL, Pixel, and Strip detectors will not be able to cope with such\nharsh conditions. For this reason, the current detectors will be replaced by the ATLAS\nInner Tracker (ITk), a full-silicon vertexing and tracking detector [ 19, 20 ]. The ATLAS ITk\nwill have pixels detectors in its innermost part and strips at the outer radii. The layout of\nATLAS ITk and that of its pixels part are presented in Figure 2.\n\n( **a** ) ( **b** )\n**Figure 2.** ATLAS ITk layout. ( **a** ) Full detector; pixels/strips parts are in red/blue. ( **b** ) Pixel part. The\n_z_ coordinate is measured along the beam axis and _r_ is the radial distance from the center of ATLAS,\nfrom [21].\n\nThe ATLAS ITk pixels detector comprises five barrel layers (from L0 to L4) and a\nsystem of as many rings covering the forward region. The innermost pixel layer (L0) and\nring (R0) will be equipped with 3D n [+] -on-p sensors. All the rest of the detector will be\nequipped with planar n [+] -on-p sensors, with thicknesses of either 100 µm (in L1 and R1) or\n150 µm (in all other layers and rings).\nThe radiation dama",
+      "_rerank_score": 7.989654718295253,
+      "score_original": 13.617554033264096
+    },
+    {
+      "rank": 4,
+      "chunk_id": "7790",
+      "doc_id": "352",
+      "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+      "score": 7.897891085752326,
+      "retriever": "graph+light_rerank",
+      "text": "ten times larger\nthan the actual one in about ten years of operations [7]. Such an increase of\ncollisions rate and particles poses stringent constraints on the silicon detectors\nin terms of radiation damage - up to 10 times larger than today - to the\npoint that a new inner detector is needed in both experiments. ATLAS will\nimplement a new all silicon inner detector, the Inner Tracker (ITk) [8, 9].\nHybrid silicon n-on-p pixel modules will be used in the core part of ITk, with\nstrip detectors at larger radii. The innermost part of the ITk Pixel detector\nwill be instrumented with 3D sensors will all the rest will be equipped with\nplanar ones; more details on the ITk layout can be found in [10]. The largest\nfluence to be integrated by 3D and planar sensors is of about 1 _._ 6 _×_ 10 [16] and\n3 _._ 5 _×_ 10 [15] n eq _/_ cm [2] respectively.\nIt is extremely important to have predictions on charge collection performance after such large fluences and the combination of TCAD [1] and MC tools\nlike Allpix [2] [11] is perfect as with the first a precise simulation of the electric\nfield inside the sensor is possible while the latter is adapted for simulating\nparticles impinging on the detector under different conditions (temperature,\nthreshold, angle, etc.). This approach is being used for example in several\ncases in detector development for high energy physics [12, 13].\nAt the moment no data from irradiated modules equipped with the final\nversion of readout chip (ITkPixV2 [14]) for the ATLAS ITk pixel detector\nexist. In order to assess the expected collected charge existing data on similar\ndevices after HL-LHC like fluences have been identified; in particular the\nCMS tracker group investigated passive CMOS sensors [15, 16] bump bonded\nto an RD53A readout chip [17]. Results from testbeams for n-on-p sensors\nwith a thickness of 150 µm were reported. These results have been used to\nvalidate the predictions of TCAD and Allpix [2] .\nIn Section 2 the simulation setup will be presented, then its validation\nwill be discussed (Section 3). The expected charge collection performance of\nATLAS ITk planar pixel modules will be presented in Section 4; Section 5\n\n1 Technology Computer Aided Design\n\n2\n\nwill conclude the paper.\n\n**2. Simulation Setup**\n\nThe simulation of the irradiated silicon pixels sensors has been carried out\nusing the Geant4 [18, 19, 20] based Allpix [2] (v3.2.0) MC simulation framework, with precise electric field and weighting potential [21, 22] maps calculated",
+      "_rerank_score": 7.897891085752326,
+      "score_original": 13.450711065004228
+    },
+    {
+      "rank": 5,
+      "chunk_id": "7798",
+      "doc_id": "352",
+      "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+      "score": 7.717345932851267,
+      "retriever": "graph+light_rerank",
+      "text": "o run at the largest possible voltage\n\n11\n\nFigure 7: MPV of simulated cluster charge distribution as a function of the bias voltage\nfor a “thick” device after several fluences of irradiation. The simulation predictions are the\naverage of CMS and Mandić ones where the uncertainty is their semi-difference.\n\n(600 V for ITk Pixel detector). “Thin” sensors expected to collect in excess\nof 5 ke at 400 V event at the largest fluence; for “thick” sensors the expectation\nis always above 6 ke at the same voltage.\nIn Figure 8 a comparison of performance between the two sensor thicknesses is presented for two fluence values, Φ = 2 _._ 5 and 3 _._ 5 _×_ 10 [15] n eq _/_ cm [2]\n\nFigure 8: MPV of simulated cluster charge distribution as a function of the bias voltage\nafter irradiation and different thicknesses. The simulation predictions are the average of\nCMS and Mandić ones where the uncertainty is their semi-difference. (left) Φ = 2 _._ 5 _×_ 10 [15]\n\nn eq _/_ cm [2] ; (right) Φ = 3 _._ 5 _×_ 10 [15] n eq _/_ cm [2]\n\nIt is interesting to notice that for both fluences, apart at very low volt\n\n12\n\nage, the thicker sensors collect more charge than the thinner ones. This is\ndue to the fact that the average free path of carriers is still larger than the\nsensor thickness. Of course a thicker sensor draws more leakage current so\nit is not advisable to use “thick” sensors everywhere given the power budget\nconstraints [8].\nIn Figure 9 the results for a “thick” sensor at 200 V and 400 V are presented as a function of the different irradiation fluences.\n\nFigure 9: MPV of simulated cluster charge distribution as a function of irradiation fluence\nfor two values of bias voltage. The thickness of the sensors was 150 µm.\n\nThis Figure shows the loss of signal amplitude of a pixel module during\ndata taking period. These results confirm that it should be possible to run\nat moderate voltage even at the highest fluence.\n\n**5. Conclusions and Outlook**\n\nHybrid pixel detectors will be exposed to unprecedented fluences at the\nHL-LHC. Charge trapping will be the limiting factor of performance and\nit is important to have reliable predictions to make sure the tracking and\nvertexing algorithms can deliver the most precise measurements even when\nthe collected charge is reduced by 40% or more. In this report it was shown\nthat a combination of TCAD and Allpix [2] simulations deliver predictions on\ncollected charge that match quite well the value of saturated charge extracted\nfrom data. It was also",
+      "_rerank_score": 7.717345932851267,
+      "score_original": 9.48608351427503
+    },
+    {
+      "rank": 6,
+      "chunk_id": "5128",
+      "doc_id": "224",
+      "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+      "score": 7.18487722573643,
+      "retriever": "graph+light_rerank",
+      "text": "rs)\n\n_Sensors_ **2024**, _1_, 0 2 of 19\n\nThe effects of radiation damage are already measurable at the fluences of LHC Run 2\nand Run 3. For instance, the charge collection efficiency (CCE) of the innermost ATLAS\nPixel layer has now reduced to approximately _∼_ 70% at a fluence of about 1 _×_ 10 [15] n eq cm _[−]_ [2]\n\n[10].\nThe ATLAS, CMS, and LHCb collaborations have developed algorithms to incorporate\nradiation damage effects into their Monte Carlo (MC)-simulated events [ 11 ]. Thanks to these\nalgorithms, it is possible to track the evolution of pixel detector performance as radiation\ndamage accumulates. Despite the different approaches adopted by the three collaborations,\nthe level of agreement between data and Monte Carlo (MC) simulations is remarkable,\nachieving agreement at the _O_ ( % ) level [ 10 ]. These algorithms enable the prediction of\noperational parameters such as depletion voltage and make possible the generation of\nsamples for future detector conditions; these are essential for training reconstruction\nalgorithms.\nDespite the importance and success of these algorithms, some may not be viable for\nthe HL-LHC phase due to computing resource constraints. This is particularly true for the\nATLAS Pixel detectors. Therefore, there is a pressing need for faster yet equally precise\nalgorithms to meet the demands of the HL-LHC data-taking conditions.\nIn this paper, a new lightweight algorithm is presented which is able to address the\nchallenges posed by the HL-LHC on computing resources for the inclusion of radiation\ndamage effects in MC simulated events. The paper is organized as follows.\nIn Section 2, the ATLAS algorithm for simulating radiation damage effects to silicon\npixel sensors is presented along with some key results. Section 3 introduces the new\nalgorithm, which relies on Look-Up Tables (LUTs). This section also discusses the various\ntypes of simulations—TCAD (Technology–Computer-Aided Design) and Geant4 [ 12 – 14 ]\nbased—that serve as inputs to the new algorithm.\nIn order to validate the new algorithm, a series of closure tests were conducted,\ncomparing events simulated using the LUTs algorithm to fully simulated events. The\nresults of these closures tests are reported in Section 4. Finally, the paper concludes (Section\n5) with a discussion on the results and an outlook for the project.\n\n**2. The ATLAS IBL and Pixel Radiation Damage Digitizer**\n\nThe ATLAS Collaboration developed and implemented an algorithm to include the\neffects of radiat",
+      "_rerank_score": 7.18487722573643,
+      "score_original": 12.15432222861169
+    },
+    {
+      "rank": 7,
+      "chunk_id": "2246",
+      "doc_id": "93",
+      "title": "2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device.md",
+      "score": 7.1143137319152645,
+      "retriever": "graph+light_rerank",
+      "text": ", the emphasis was placed on the design of a 4H-SiC Low Gain\nAvalanche Detector (LGAD), especially the epitaxial structure and technical process which played the main roles. In addition, a simulation tool–\nRASER(RAdiation SEmiconductoR) was developed to simulate the performances including the electrical properties and time resolution of the\n4H-SiC LGAD we proposed. The working voltage and gain effectiveness\nof the LGAD were verified by the simulation of electrical performances.\nThe time resolution of the LGAD is (35.0 ± 0.2) ps under the electrical\nfield of -800 V, which is better than that of the 4H-SiC PIN detector.\n\n**Keywords:** Silicon carbide, LGAD, Radiation-resistant, Time resolution\n\n### **1 Introduction**\n\nLow gain avalanche detector (LGAD), as a novel detector technology,\nhas attracted extensive attention in recent years. By adding a gain layer\nunder the cathode of the PIN detector, a collision-ionization multiplication\nof the electron-hole pair occurs in the gain layer, resulting in excellent timing resolution[1]. In particular, for the requirements of the High Granularity\nTiming Detector (HGTD) in ATLAS and the End-cap Timing Layer (ETL)\nin CMS experiments, silicon-based LGAD with 50 ps time resolution has been\ndeveloped which can resist the radiation of 2×10 [15] _n_ _eq_ /cm [2] [2–5]. However, it\nhas been reported[6] that the charge collection efficiency (CCE) and time resolution of silicon-based LGAD will deteriorate with increasing irradiation flux\nand will not work normally under irradiation above 2×10 [15] _n_ _eq_ /cm [2] . In addition, in order to reduce power and improve the signal-to-noise ratio (SNR)\nof semiconductor detectors, silicon-based LGAD devices need to operate at a\nlow temperature of -30 ℃[7, 8], which greatly increases the operation cost of\ndetectors. Moreover, the low temperature cooling system not only increases\nvolume of the detector system, but also increases the difficulty of maintaining the stability of the detector system. Therefore, there is a high demand for\nresearch into a semiconductor detector with strong radiation resistance, excellent time resolution and stable operation at room temperature or even high\ntemperature.\nSilicon carbide (SiC), as the third generation semiconductor, has been\ninvestigated as a detector material for nearly 20 years[9]. In recent years, SiC\nhas received more attention due to the interest of semiconductor industries\n\nSpringer Nature 2021 L [A] TEX template\n\n_Design and simulation of",
+      "_rerank_score": 7.1143137319152645,
+      "score_original": 12.026024967118662
+    },
+    {
+      "rank": 8,
+      "chunk_id": "704",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 6.830454781503004,
+      "retriever": "graph+light_rerank",
+      "text": "e-II Upgrade_ **CERN-LHCC-2020-007**, CERN, (2020) ATLAS-TDR-031.\n\n[https://cds.cern.ch/record/2719855.](https://cds.cern.ch/record/2719855)\n\n[3] ATLAS Collaboration, _The ATLAS Experiment at the CERN Large Hadron Collider_, _JINST_ **3** (2008)\n\nS08003.\n\n[4] O. Brüning, L. Rossi et al., _High Luminosity Large Hadron Collider: A description for the European_\n_Strategy Preparatory Group, Tech. Rep._ **CERN-ATS-2012-236** (2012).\n\n[5] A. G. et al., _High-Luminosity Large Hadron Collider (HL-LHC): Technical Design Report V.0.1_,\n_CERN Yellow Reports: Monographs_ [, CERN, (2017) http://cds.cern.ch/record/2284929.](http://cds.cern.ch/record/2284929)\n\n[6] G. Pellegrini et al., _Technology developments and first measurements of Low Gain Avalanche_\n_Detectors (LGAD) for high energy physics applications_, _Nucl. Instrum. Meth. A_ **765** (2014) 12,\n\n[https://doi.org/10.1016/j.nima.2014.06.008.](https://doi.org/10.1016/j.nima.2014.06.008)\n\n[7] C. De La Taille et al., _ALTIROC0, a 20 pico-second time resolution ASIC for the ATLAS High_\n_Granularity Timing Detector (HGTD)_ in _Proceedings of the Topical Workshop on Electronics for_\n_Particle Physics (TWEPP-17)_, Santa Cruz, California, U.S.A, September 2017, _PoS_ **TWEPP-17**\n(2018) 006.\n\n[8] L. Masetti et al., _Beam test measurements of Low Gain Avalanche Detector single pads and arrays for_\n_the ATLAS High Granularity Timing Detector_, _JINST_ **13** (2018) P06017, arXiv:1804.00622.\n\n[9] C. Agapopoulou et al., _Performance of a Front End prototype ASIC for picosecond precision time_\n_measurements with LGAD sensors_, _JINST_ **15** (2020) P07007, arXiv:2002.06089.\n\n[10] J. Lange et al., _Gain and time resolution of 45 µm thin Low Gain Avalanche Detectors before and after_\n_irradiation up to a fluence of 10_ [15] _n_ _𝑒𝑞_ _/cm_ [2], _JINST_ **12** (2017) P05003, arXiv:1703.09004.\n\n[11] C. Agapoupoulou et al., _Performance in beam tests of irradiated Low Gain Avalanche Detectors for_\n_the ATLAS High Granularity Timing Detector_, _JINST_ **17** (2022) P09026,\n\n[https://dx.doi.org/10.1088/1748-0221/17/09/P09026.](https://dx.doi.org/10.1088/1748-0221/17/09/P09026)\n\n[12] L. Castillo García, E. L. Gkougkousis, C. Grieco, S. Grinstein, _Characterization of Irradiated Boron,_\n_Carbon-Enriched and Gallium Si-on-Si Wafer Low Gain Avalanche Detectors_, _Instruments_ **6** (2022)\n\n[1-2, https://doi.org/10.3390/instruments6010002.](https://doi.org/10.3390/instruments6010002)\n\n[13] M. Ferrero et al., _Radiation resistant LGAD desi",
+      "_rerank_score": 6.830454781503004,
+      "score_original": 10.600826875460008
+    }
+  ],
+  "seed_nodes": [
+    "Noise",
+    "pixel detector",
+    "Ted",
+    "Timing Detector",
+    "Charge Noise",
+    "Silicon Detectors",
+    "High Granularity Timing Detector",
+    "Detector Concepts"
+  ],
+  "expanded_nodes": [
+    "AC-LGAD",
+    "ADC",
+    "ASIC",
+    "ATLAS",
+    "Abdul Khalek",
+    "Applied Physics",
+    "Associated Equipment",
+    "CMOS",
+    "CMS",
+    "Charge",
+    "Charge Noise",
+    "Detector Concepts",
+    "Electron Devices",
+    "Endcap Timing Layer",
+    "Geant4",
+    "HGTD",
+    "High Granularity Timing Detector",
+    "Inner Tracker",
+    "Jefferson Science",
+    "LGAD",
+    "MPPC",
+    "Monte Carlo",
+    "Nat Commun",
+    "Nature Publishing",
+    "Noise",
+    "Nuclear Instruments",
+    "Nuclear Science Symposium",
+    "Particle Physics",
+    "Physical Review",
+    "Physics Research Section",
+    "Pixel",
+    "Quantum Dots",
+    "Radiation",
+    "Science Requirements",
+    "Semiconductor",
+    "Silicon",
+    "Silicon Detectors",
+    "TCAD",
+    "Technical Design",
+    "Technical Design Report",
+    "Ted",
+    "Thin Silicon Quantum",
+    "Thomas Jefferson National Accelerator",
+    "Threshold",
+    "Time",
+    "Timing Detector",
+    "pixel detector",
+    "silicon pixel"
+  ],
+  "paths": [
+    [
+      "Noise",
+      "Threshold"
+    ],
+    [
+      "Noise",
+      "CMOS"
+    ],
+    [
+      "Noise",
+      "Charge"
+    ],
+    [
+      "Noise",
+      "ADC"
+    ],
+    [
+      "Noise",
+      "Monte Carlo"
+    ],
+    [
+      "Noise",
+      "Time"
+    ],
+    [
+      "Noise",
+      "ASIC"
+    ],
+    [
+      "Noise",
+      "Silicon"
+    ],
+    [
+      "pixel detector",
+      "ATLAS"
+    ],
+    [
+      "pixel detector",
+      "CMS"
+    ],
+    [
+      "pixel detector",
+      "Pixel"
+    ],
+    [
+      "pixel detector",
+      "silicon pixel"
+    ],
+    [
+      "pixel detector",
+      "CMOS"
+    ],
+    [
+      "pixel detector",
+      "TCAD"
+    ],
+    [
+      "pixel detector",
+      "Geant4"
+    ],
+    [
+      "pixel detector",
+      "Inner Tracker"
+    ],
+    [
+      "Ted",
+      "Nuclear Instruments"
+    ],
+    [
+      "Ted",
+      "Silicon"
+    ],
+    [
+      "Ted",
+      "Physics Research Section"
+    ],
+    [
+      "Ted",
+      "Associated Equipment"
+    ],
+    [
+      "Ted",
+      "Electron Devices"
+    ],
+    [
+      "Ted",
+      "Physical Review"
+    ],
+    [
+      "Ted",
+      "Applied Physics"
+    ],
+    [
+      "Ted",
+      "Nature Publishing"
+    ],
+    [
+      "Timing Detector",
+      "LGAD"
+    ],
+    [
+      "Timing Detector",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "HGTD"
+    ],
+    [
+      "Timing Detector",
+      "ASIC"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design Report"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design"
+    ],
+    [
+      "Timing Detector",
+      "Particle Physics"
+    ],
+    [
+      "Charge Noise",
+      "Charge"
+    ],
+    [
+      "Charge Noise",
+      "Quantum Dots"
+    ],
+    [
+      "Charge Noise",
+      "Thin Silicon Quantum"
+    ],
+    [
+      "Charge Noise",
+      "Nat Commun"
+    ],
+    [
+      "Charge Noise",
+      "Monte Carlo"
+    ],
+    [
+      "Charge Noise",
+      "Semiconductor"
+    ],
+    [
+      "Charge Noise",
+      "Silicon"
+    ],
+    [
+      "Charge Noise",
+      "Physical Review"
+    ],
+    [
+      "Silicon Detectors",
+      "LGAD"
+    ],
+    [
+      "Silicon Detectors",
+      "Inner Tracker"
+    ],
+    [
+      "Silicon Detectors",
+      "TCAD"
+    ],
+    [
+      "Silicon Detectors",
+      "Radiation"
+    ],
+    [
+      "Silicon Detectors",
+      "ATLAS"
+    ],
+    [
+      "Silicon Detectors",
+      "Nuclear Science Symposium"
+    ],
+    [
+      "Silicon Detectors",
+      "Pixel"
+    ],
+    [
+      "Silicon Detectors",
+      "Silicon"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "HGTD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Endcap Timing Layer"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "AC-LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Time"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Silicon"
+    ],
+    [
+      "Detector Concepts",
+      "Abdul Khalek"
+    ],
+    [
+      "Detector Concepts",
+      "Science Requirements"
+    ],
+    [
+      "Detector Concepts",
+      "Jefferson Science"
+    ],
+    [
+      "Detector Concepts",
+      "Thomas Jefferson National Accelerator"
+    ],
+    [
+      "Detector Concepts",
+      "CMS"
+    ],
+    [
+      "Detector Concepts",
+      "MPPC"
+    ],
+    [
+      "Detector Concepts",
+      "Nuclear Instruments"
+    ],
+    [
+      "Detector Concepts",
+      "Radiation"
+    ]
+  ],
+  "metrics": {
+    "retrieval_latency_s": 5.22055196762085,
+    "generation_latency_s": 0.0,
+    "unique_sources": 16,
+    "seed_node_count": 8,
+    "expanded_node_count": 48,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0
+  },
+  "answer": "",
+  "abstained": false,
+  "answer_abstained": false
+}

@@ -1,0 +1,407 @@
+{
+  "benchmark": {
+    "query_id": "fac002",
+    "query_type": "factoid",
+    "query": "What does LGAD stand for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "LGAD"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What does LGAD stand for?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7415,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2939065__2510.14531__Design_and_simulation_of_a_4H-SiC_low_gain_avalanche_diode_with_trench-isolation.md",
+        "title": "2025__recid_2939065__2510.14531__Design_and_simulation_of_a_4H-SiC_low_gain_avalanche_diode_with_trench-isolation",
+        "text": "AD design versus trench width and depth for a fixed _p_ +-JTE implant with a width and depth of\n30 µm × 4 µm.\n\nimproved the breakdown voltage across the simulated range. The best performance was achieved at the largest trench\nwidth of 16 µm. Combined with the optimal JTE width and trench depth, a maximum breakdown voltage of 2450 V\ncould be obtained, demonstrating more than sufficient high-voltage stability. However, the final design, as given in\nTab.1, only features narrower variations of trenches. This is a result of restrictions by the manufacturer, as wider\ntrenches inhibit larger risks of large-area surface damage during etching.\n\n**4. Summary**\n\nIn this work, we presented the design and simulation process of a 30 µm thick 4H-SiC LGAD structure with trench\nisolation optimized for high-voltage stability. The 2.4 µm thick gain layer was realized through epitaxial growth\nrather than implantation, enabling a homogeneously doped profile that allows for full depletion below 500 V. Key\nelectrical characteristics, including I-V, C-V, and signal gain behavior, were simulated using a simplified quasi-1D\ndevice geometry, accounting for fabrication tolerances reported by the manufacturer.\nTo ensure robust edge termination, a guard structure employing 7 µm deep etched trenches was designed. For\nadditional high-voltage stability, high-energy implanted _p_ [+] JTEs with width and depth of 30 µm × 4 µm and a doping\n\n6\n\nconcentration of 1 × 10 [17] cm [−][3] were integrated adjacent to the trenches. A parametric sweep over trench and implant dimensions identified the reported optimal configuration, achieving a suggested simulated breakdown voltage\nexceeding 2.4 kV. Fabrication of the final design is currently underway at IMB-CNM in Barcelona.\n\n**Acknowledgements**\n\nThis work was supported by the Austrian Research Promotion Agency (FFG) in the project “HiBPM” (883652),\nby the Spanish Ministry of Science, Innovation and Universities (grant number CEX2023-001397-M), and by the\nEuropean Union’s ERDF program (MCIN/AEI/10.13039/501100011033/) “A way of making Europe” under grant\nreference PID2021-124660OB-C22.\n\n**References**\n\n[1] F. Nava, et al., Silicon carbide and its use as a radiation detector material, Measurement Science and Technology 19 (10) (2008) 102001.\n`[doi:10.1088/0957-0233/19/10/102001](https://doi.org/10.1088/0957-0233/19/10/102001)` .\n\n[2] M. De Napoli, SiC detectors: A review on the use of silicon carbide as radiation detection material, Frontiers in Phys",
+        "score": -3.9083730946128417,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7282174260591526,
+        "rerank_score": -6.122674465179443,
+        "matched_nodes": [
+          "For",
+          "AD",
+          "The",
+          "In",
+          "To",
+          "European"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1192,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "d tesla-range magnetic fields [36].\nFurthermore, our easy-to-implement charge-stabilization\nscheme will find immediate applications in other quantum\ntechnology applications of SiV _[−]_, including the development\nof quantum repeaters [37], quantum networks [13, 38] or\nindistinguishable single photon sources [39]. Lastly, it is\nconceivable that our approach for generating and stabilizing\nnear-surface color centers with high optical coherence extends\nto other color centers in diamond or in other wide-bandgap\nhosts such as hBN [40] or SiC [41].\n\n**METHODS**\n\n**Optical Setups**\nTo characterize our diamond samples at room temperature (RT),\nwe employ a home-built confocal microscopy setup. This setup is\nequipped with a continuous wave (cw) 515 nm diode laser (Cobolt\n06-MLD) for off-resonant excitation. At low temperature ( _∼_ 7 K),\nthe sample is housed in a variable-temperature closed-cycle cryostat\n(attocube attoDRY800) and we perform optical spectroscopy again\nwith a home-built confocal microscopy setup. For this setup, we\nput to use cw 445 nm and cw 515 nm diode lasers (Cobolt 06-MLD)\nfor off-resonant excitation as well as a narrow-linewidth (200 kHz)\ntunable (720-739 nm) diode laser (Sacher Lasertechnik LION) for\nresonant excitation. Frequency modulation and control of the LION\nis achieved through a PID loop of a HighFinesse WS-U wavelength\nmeter. Additionally, we stabilize the intensity of the resonant laser\nthrough the PID loop of a home-built optical intensity stabilization\n(OIS) module (Physics Basel SP 999). In case of the resonant laser\nand if applicable to the experiment in question, we carve pulses with\nan acousto-optical modulator (AOM, G&H R15210), whereas the\noff-resonant lasers can be electronically modulated out of the box.\nFor both RT and LT, we focus laser light onto the sample with a\n\n6\n\n0.8 NA objective (Olympus LMPLFLN 100X) thermalized at RT,\nthrough which we also collect the signal. Photons are detected by\nsilicon-based single-photon counting modules (SPCM, Excelitas\nAQRH-33-FC). We perform photon-correlation measurements\nusing a time-correlated single-photon counting (TCSPC) system\n(PicoQuant PicoHarp 300) connected to the SPCMs. For optical\nlifetime measurements we use a pulsed laser (NKT Photonics\nSuperK Extreme EXW-12) tuned to 515 nm and said TCSPC system. Optical spectra are recorded on the camera of a spectrograph\n(Princeton Instruments SP-2500).\n\n**Data availability**\nThe data that support the findings of this study are available",
+        "score": -4.2974903116767456,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7282174260591526,
+        "rerank_score": -6.721316337585449,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2361,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676075__2307.04897__Spin-EPR-pair_separation_by_conveyor-mode_single_electron_shuttling_in_SiSiGe.md",
+        "title": "2024__recid_2676075__2307.04897__Spin-EPR-pair_separation_by_conveyor-mode_single_electron_shuttling_in_SiSiGe",
+        "text": "ified motional narrowing\nfactor (Fig. 2g). Remarkably, we arrive at very similar\nfitting parameters (see supplementary material).\n\n**Long distance shuttling**\n\nIn order to increase the distance of shuttling, we always\nshuttle at a maximum velocity _v_ max and once the shuttled electron returns to the right QD of the DQD (stage\nS), we recorded the ST 0 oscillations by waiting between\nadditional 0 to 1 _µ_ s prior to measure the EPR spin-state.\nWe plot the spin-singlet probability _P_ _S_ of the EPR-pair\nas a function of the total time _τ_ S _,_ DQD of shuttling and\nwaiting (Fig. 2h). Due to the limited length of the shuttle zone, we increase the cumulative distance by shuttling\nin- and out for one period _λ_ multiple times. The total\nnumber of periods ( _D_ ) shuttled forward plus backward\nis indicated on the left as the accumulated shuttle distance. For example for the trace labelled _D_ = 2, the\nvoltage pulses applied to S1-S4 are designed to shuttle\nthe electron one period _λ_ = 280 nm forward and same\ndistance back towards the spin-detector. For _D_ = 1, the\nelectron is shuttled half a period forward, and the same\ndistance back towards the detector. Strikingly, we still\nobserve ST 0 oscillations for the trace labelled _D_ = 12, for\nwhich the electron shuttles alternating six times forward\nand backward by _λ_ being nominally equivalent to an accumulated distance of 3 _._ 36 µm. The appearance of ST 0\noscillations show that the EPR-pair remained entangled\nafter such long shuttling distance.\n\n**Mapping local** _ν_ **variations**\n\nCoherent shuttling of a spin qubit and EPR separation allows us to collect information about ∆ _g_ ( _x_ ) along\nthe SQS. Instead of shuttling the spin-qubit forward and\nbackward with a _τ_ S -dependent _v_ S, we shuttle it by a distance _x_ along the 1DEC at maximum _v_ max = 2 _._ 8 m s _[−]_ [1],\n\n� 2\n\n2\n_l_ _c_\n_._ (3)\n_d_ + _l_ _c_\n�\n\n1\n� _T_ 2 _[∗]_ _,_ L\n\n1\n� _T_ 2 _[∗]_\n\n2\n\n=\n�\n\n+\n\n1\n� _T_ 2 _[∗]_ _,_ R\n\nTo incorporate the dependence of Gaussian decay _T_ 2 _[∗]_ [of]\nthe EPR-pair on shuttle distance _d_, we use the quadratic\naddition of inverse _T_ 2 _[∗]_ [times for the left (L) and right (R)]\nelectron spin and include a factor for motional narrowing\ndephasing time of the electron-spin that remains staticfor the shuttled qubit, where _T_ 2 _[∗]_ _,_ L [is the ensemble spin]\n\nin the outermost left QD, and _T_ 2 _[∗]_ _,_ S [(] _[d]_ [)] _[ ≡]_ _[T]_ _[ ∗]_ 2 _,_ R �\n\n_d_ + _l_ _c_\n\n2 _,_ S _[ ≡]_ 2 _,_ R _l_ _c_ rep\nresen",
+        "score": -4.431454993302111,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7282174260591526,
+        "rerank_score": -6.92741584777832,
+        "matched_nodes": [
+          "For",
+          "ST",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6143,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2782384__2404.19592__Programmable_Activation_of_Quantum_Emitters_in_High-Purity_Silicon_with_Focused_Carbon_Ion.md",
+        "title": "2025__recid_2782384__2404.19592__Programmable_Activation_of_Quantum_Emitters_in_High-Purity_Silicon_with_Focused_Carbon_Ion",
+        "text": "rium, forms an eutectic alloy with a theoretical melting\npoint of 661 _[◦]_ C at the thermodynamic equilibrium [29].\nThis compound has a very low vapor pressure, an additional requirement for a good liquid metal alloy ion\nsource (LMAIS), of around 8 _×_ 10 _[−]_ [15] mbar [30]. To form\nand melt the alloy, it can be overheated for a short period of time to a vapor pressure of 10 _[−]_ [6] mbar at around\n1167 _[◦]_ C [30]. Tungsten emitter were electrochemically\n\nand C [+] 3 [(0.04%) are shown in brown. Ce ions are shown in]\npink (1.2% Ce [3+] ). Other contributions can be filtered and\nare indicated in gray. An image of the heated CeC emitter is\nshown in the inset.\n\netched as well as tantalum emitters were mechanically\nsharpened and could be wetted by the eutectic alloy.\nThe ion beam composition of multiple source has been\nanalyzed by measuring mass-to-charge ratio spectra using a Wien filter (Fig. 1) in a high resolution test-setup\nat HZDR as well as in a VELION FIB/SEM at Raith\nNanofabrication. The most abundant emitted ions are\nCe [2+] ions with 86.3%, followed by 2.9% Ce [+] and heavier\ncluster ions from Ce and C. Even thought 20 mol% of\ncarbon has been mixed into the alloy, the total intensity\nof atomic or cluster ions from carbon is only 0.28%. Carbon has a much higher first ionization energy of 11.1 eV\ncompared to 5.5 eV for Ce, resulting in a higher extraction field required to create carbon ions.\nWe measured a contribution of 0.18% of C [+] which\nis still more than sufficient beam current for color center creation. An total emission current of 10 _µ_ A was\nused which, after mass filtering and beam collimation\nby apertures, resulted in a C [+] beam current of around\n1 pA. Additional peaks from impurities found in the complete spectra (not shown) could be identified as Al, Fe,\nCu, Lu, Pt, Bi which probably originate from the raw\ncerium source material. These contributions can easily\nbe filtered using the Wien filter and do not contribute\nto the implantation itself. The observed Al contamination, likely originated from an ionic exchange of Ce\nand Al from the Al 2 O 3 crucible used in the preparation\nprocess. Consequently tantalum crucibles were used for\nsubsequent melting and source loading runs. The C [+] ion\nbeam could be focused into a spot size less than 50 nm,\nand a total source lifetime of around 80 hours has been\n\nachieved.\n\nIn order to demonstrate the advantage of our C-FIB,\nwe use a high-purity (100) p-type silicon wafer with resistivity of 35",
+        "score": -4.996475519670476,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7921662669864108,
+        "rerank_score": -7.806319713592529,
+        "matched_nodes": [
+          "An",
+          "The",
+          "In",
+          "We",
+          "To",
+          "Al",
+          "Bi"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1743,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2652339__2304.09111__Wafer-scale_uniformity_of_Dolan-bridge_and_bridgeless_Manhattan-style_Josephson_junctions_.md",
+        "title": "2024__recid_2652339__2304.09111__Wafer-scale_uniformity_of_Dolan-bridge_and_bridgeless_Manhattan-style_Josephson_junctions_",
+        "text": "d substrates, spanning yield, conductance CV and frequency\nRSD at wafer level, as well as average die-level RSD. For planar substrates, Dolan\nJJs perform best in all categories. In TSV-integrated substrates, Dolan JJs show\na marked increase in disorder and decrease in yield, most likely due to their higher\nsusceptibility to resist-height variation. Manhattan JJs are thus the preferred choice for\nTSV-integrated substrates, but their uniformity must be further improved. First, we\nmust pre-compensate the spatial variation of junction overlap area that arises from\nthe shadowing effect captured by the geometric model. Next, the contribution of\ncontact resistance between the Al electrodes and the NbTiN bays must be quantified and\npossibly diminished using bandaging layers. These improvements will allow to quantify\nthe intrinsic disorder of Manhattan JJs and approach the ∼50 MHz target that will\nsecure SQP yield by post-fabrication trimming using laser annealing.\n\n**7. Acknowledgements**\n\nWe thank Bas van Asten for experimental assistance and David Michalak for valuable\ndiscussions. This research is supported by Intel Corporation and by the Office of\nthe Director of National Intelligence (ODNI), Intelligence Advanced Research Projects\nActivity (IARPA), via the U.S. Army Research Office Grant No. W911NF-16-1-0071.\n\nThe views and conclusions contained herein are those of the authors and should not\n\nbe interpreted as necessarily representing the official policies or endorsements, either\nexpressed or implied, of the ODNI, IARPA, or the U.S. Government.\n\n**8. Additional information**\n\nThe data shown in all figures of the main text and Supplementary Information\nare available at `http://github.com/DiCarloLab-Delft/Wafer_Scale_Fab_Data` .\nCorrespondence and requests for additional materials should be addressed to L.D.C.\n(l.dicarlo@tudelft.nl).\n\n**9. References**\n\n[1] F. Arute, K. Arya, R. Babbush, D. Bacon, J.C. Bardin, R. Barends, et al. Quantum supremacy\nusing a programmable superconducting processor. _Nature_, 574(7779):505–510, 2019.\n\n[2] S. Krinner, N. Lacroix, A. Remm, A. Di Paolo, E. Genois, C. Leroux, et al. Realizing repeated\nquantum error correction in a distance-three surface code. _Nature_, 605(7911):669–674, 2022.\n\n[3] E. H. Chen, T. J. Yoder, Y. Kim, N. Sundaresan, S. Srinivasan, M. Li, et al. Calibrated decoders\nfor experimental quantum error correction. _Phys. Rev. Lett._, 128(11):110504, 2022.\n\n[4] R. Acharya, I. Aleiner, R. Allen, T.I. Andersen, M. Ansm",
+        "score": -5.608077010835485,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.680255795363709,
+        "rerank_score": -8.730372428894043,
+        "matched_nodes": [
+          "For",
+          "The",
+          "In",
+          "We",
+          "Office",
+          "Al"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 12,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2629741__2302.02044__Neutron_capture-induced_silicon_nuclear_recoils_for_dark_matter_and_CENS.md",
+        "title": "2023__recid_2629741__2302.02044__Neutron_capture-induced_silicon_nuclear_recoils_for_dark_matter_and_CENS",
+        "text": "pectra. The\ncapture cross section is assumed to be 0.171 barns, from\n2003 measurements at Brookhaven National Lab [23]\n(this value is also used in the EGAF (Evaluated Gamma\nActivation File) database [24]). This value is about 4%\nhigher than the value given by evaluations a few years\nearlier at Los Alamos National Lab that are used in\nENDF and the JENDL 5 database [25] and the cross\nsection measurements made by Raman [9].\n\n7\n\nFor a CEνNS experiment with a 1 MW reactor at a\ndistance of 8 m we arbitrarily compared a thermal neutron flux of 0.1% of the sea level value. We have used\nthe Mueller spectrum for the reactor anti-neutrinos [26].\nThe detector resolution function is assumed to have a\n10 eV baseline that rises to 30 eV at a recoil energy of\n25 eV. We use this form for the energy-varying resolution: � _σ_ 0 [2] [+] _[ AE]_ _[r]_ [;] _[ E]_ _[r]_ [ is the recoil energy and] _[ σ]_ [0] [ and] _[ A]_\n\nare constants.\nFor the dark matter comparisons in Fig. 9 we used a\n1 GeV mass dark matter particle with a cross section just\nbelow the limit produced in recent SuperCDMS work [21,\n27].\nFigure 9 shows that both for dark matter searches and\nCEνNS the spectral overlap of thermal neutron capture\ninduced NRs can interfere with measurements especially\nin cases where the detector baseline resolutions are larger\nthan 10 eV — true for all but the best modern detectors.\n\n**VI.** **CONCLUSION**\n\nWe have carefully derived and simulated the spectrum\nof NRs following thermal neutron captures in silicon. The\nspectra do not match the contemporary `Geant4` particle\ntransport code, indicating the details of decay-in-flight\nand atomic slowing-down are poorly modeled.\nThe level of thermal neutron fluxes that may be\npresent in underground laboratories (mostly from radiogenic sources in deep labs) is comparable to the contemporary rate limits on dark matter scattering. Furthermore, in the CEνNS venue the thermal neutron capture\nbackground could also play an important role due to the\nproximity of some experiments to neutron-generating reactors [28, 29]. In both of these situations the authors\nrecommend studies of the thermal neutron flux levels and\ntaking the thermal neutron capture background into account during data analysis.\n\n**ACKNOWLEDGMENTS**\n\nWe gratefully acknowledge support from the U.S. Department of Energy (DOE) Office of High Energy Physics\nand from the National Science Foundation (NSF). This\nwork was supported by DOE Grant No. DE-SC0021364\nand in part by NSF Grant No. 2",
+        "score": -5.626273242270441,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8792965627498002,
+        "rerank_score": -8.788375854492188,
+        "matched_nodes": [
+          "For",
+          "DOE",
+          "The",
+          "In",
+          "We",
+          "Office",
+          "Department",
+          "Energy"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 3846,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": "[(RI)] =\ncq [4] [3] [1] [3]\n\nd g\n\n� 2/3\n\n2/3\n, (63)\n�\n\n2 [4][/][3] π [1][/][3]\n\nEqs. (62) and (63) are applicable if n [(RI)] c and n [(RI)] cq exceed\ng/16πd [2] . This condition is met in high-mobility quantum\nwells [13, 14] where g/16πd [2] ≈ 10 [10] cm [−][2] . For BI scattering, substituting the rates from Eqs. (25) and (26) into the\nAIR criterion yields:\n\nN 1\nn [(BI)] c = g [1][/][5] 2 [−][8][/][5] π [−][3][/][5] � w [2]\n\n2/5\n, (64)\n�\n\nn [(BI)] cq = g [−][1][/][3] 2 [−][2][/][3] π [−][1][/][3] [ln(2d s /w)] [2][/][3] N 1 [2][/][3], (65)\n\nwhich are valid if n [(BI)] c and n [(BI)] cq are greater than g/16πw [2] .\nOtherwise, we use Eq. (27) and obtain\n\nn [(BI)] c = n [(BI)] cq = [π] g [N] [1] [(2][d] [s] [ −] [w][)][,] (66)\n\nwhich is applicable if n [(BI)] c < g/16πw [2] . Given that the\ncrossover density g/16πw [2] ≈ 2.4×10 [11] cm [−][2] is significantly\nhigher than the MIT critical density in high-mobility quantum\nwells [13, 14], we should use Eq. (66) for estimating n c in BIdominated scenarios. Using d = 30 nm, d s = d g /2 = 22 nm,\nand the impurity concentration n r ≈ 5.2 × 10 [12] cm [−][2] and\nN 1 ≈ 7.5 × 10 [15] cm [−][3] from Fig. 10, we obtain the critical\ndensities n [(RI)] c ≈ 5 × 10 [10] cm [−][2], n [(RI)] cq ≈ 7 × 10 [10] cm [−][2],\nn [(BI)] c = n [(BI)] cq ≈ 2 × 10 [10] cm [−][2] .\nNext, we estimate the critical density of MIT by solving\nthe AIR conditions k F l = (2/g)(hn e µ/e) = 1 and k F l q =\n(2/g)(hn e µ q /e) = 1 with µ and µ q numerically calculated\nfrom the best fits shown in Fig. 10. The complete numerical\nresults for n c and n cq are summarized in the first two rows\nof Table I. These values closely align with the analytical results from Eqs. (62), (63), and (66). Furthermore, Table I\nincludes results for various quantum degeneracies g = 4, 2,\n\n16\n\nFigure 11. Mobility (µ) versus electron density (n e ) for quantum wells with widths of 5 nm (red) and 7 nm (blue). The dashed, solid, and\ndot-dashed curves represent the theoretical mobility assuming the total quantum degeneracy g = 4, 2, and 1 respectively. The calculations are\ndone using the finite potential well approximation with gate screening and local field correction. Subfigures (a) and (b) incorporate RI, IR, and\nAD scattering, whereas (c) and (d) consider BI, IR, and AD scattering. The corresponding disorder parameters are the same as in Fig. 10.\n\ncyclotron radius w ≪ cℏk F /eB [40, 79–81]. Such a reduced\ndegeneracy is also possible without any spin polarization if\nthe v",
+        "score": -5.715355254227404,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7282174260591526,
+        "rerank_score": -8.902647018432617,
+        "matched_nodes": [
+          "For",
+          "AD",
+          "The",
+          "RI",
+          "Bi",
+          "IR"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3834,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": "w = 5 − 7 nm, it suggests that the bending of the\nconduction band bottom due to the electric field from the top\ngate should not substantially alter the results. This reasoning\njustifies the use of the infinite potential well approximation\nin our calculations. One shortcoming of both the strict 2D\nand the infinite square well potential is that they cannot incorporate the short-range alloy disorder scattering arising from\nthe SiGe alloy on the barrier outside the well. We address\nthis shortcoming in the next section by using a finite well confinement model where the carrier wavefunction is allowed to\ntunnel into the barrier regime.\n\n9\n\nFigure 5. Mobility (µ) versus electron density (n e ) for quantum wells with widths of 5 nm (red) and 7 nm (blue). The experimental data\nare depicted by red and blue curves, with corresponding error bars shown as shaded areas. The solid black curves represent the theoretical\ntransport mobility, while the dashed black curves denote the quantum mobility, both calculated using the infinite potential well approximation\nwith the local field correction. (a) and (b) assume only RI near the capping layer n r ̸= 0. (c) and (d) assume only BI outside the quantum\nwell N 1 ̸= 0 and no BI inside N 2 = 0, while (e) and (f) assume N 1 = 0 and N 2 ̸= 0. To fit the data, the impurity concentrations and\nroughness parameters are chosen as (a) n r = 2.5 × 10 [12] cm [−][2] ; (b) n r = 2.1 × 10 [12] cm [−][2] ; (c) N 1 = 9.7 × 10 [15] cm [−][3] and N 2 = 0; (d)\nN 1 = 8.7 × 10 [15] cm [−][3] and N 2 = 0; (e) N 1 = 0 and N 2 = 7.2 × 10 [15] cm [−][3] ; (f) N 1 = 0 and N 2 = 3.8 × 10 [15] cm [−][3] .\n\nV. FINITE POTENTIAL WELL\n\nIn this section, to calculate the short-range alloy disorder\nscattering rate, we employ the finite potential well approximation to determine the wavefunction tail extending outside the\nquantum well. Furthermore, we recalculate the RI, BI and IR\nscattering rates using the finite potential well wavefunction,\nwhich enters the expressions of the form factors Eqs. (5, 6)\nand the lowest subband energy in Eq. (33). The comprehensive results combining the scattering mechanisms of RI (BI),\nIR and AD are shown in Figs. 7 and 8. The finite potential\nwell Schr¨odinger equation reads\n\nwhere V 0 = 180 meV [3, 35] and E F = ℏ [2] k F [2] [/][2][m] [⋆] [is the]\nFermi energy of the 2DEG. In the following we use V to\nrepresent V 0 − E F for simplicity. The bound state solutions\n(E < V ) for the lowest subband are\n\nψ(z) =\n\nCe [−][η][|][z][|], |z",
+        "score": -5.811201066316746,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9040767386091126,
+        "rerank_score": -9.076616287231445,
+        "matched_nodes": [
+          "AD",
+          "The",
+          "In",
+          "We",
+          "To",
+          "RI",
+          "Bi",
+          "IR"
+        ],
+        "path_nodes": [
+          "AD"
+        ],
+        "community_id": "AD",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3847,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": ", whereas (c) and (d) consider BI, IR, and AD scattering. The corresponding disorder parameters are the same as in Fig. 10.\n\ncyclotron radius w ≪ cℏk F /eB [40, 79–81]. Such a reduced\ndegeneracy is also possible without any spin polarization if\nthe valley splitting happens to be larger than the Fermi energy\nso that g v = 1 in the system.\n\nIn the strong screening limit q T F /2k F ≫ 1 (for the density\nrange of interest to us n e ≪ g [3] /16πa [2] B [), mobility increases]\nmonotonically with increasing g for a given impurity configuration. This monotonic behavior of mobility versus g has\nbeen shown in a comprehensive analysis of valley-dependent\n2D transport in (100), (110), and (111) Si inversion layers\nwith the same bare Coulomb disorder [39, 40]. A similar\nphenomenon was observed in an ambipolar gate-controlled\nSi(111)-vacuum field effect transistor, where by tuning the external gate voltage the 2D electron and hole transport can be\nstudied within the same device against the same background\nCoulomb disorder [42]. For the ambipolar transistor discussed\nin Ref. [42], the effective valley degeneracy is 6 for a 2D electron system,, whereas it is 1 for a 2D hole system, resulting\nin the peak electron mobility being approximately 20 times\ngreater than the peak hole mobility at low temperatures. This\ncan be qualitatively understood from the expression of the\nThomas-Fermi screening wave vector q T F = g/a B, implying\nthat higher g leads to improved screening and consequently,\nhigher mobility. However, the relationship between mobility\nand g is generally nontrivial, as g influences both q T F ∝ g\nand k F ∝ g [−][1][/][2] . For remote impurity scattering, it is evident from Eqs. (15), (16), (58), and (59) that µ RI ∝ g [1][/][2] and\n\nµ qRI ∝ g [3][/][2] . On the other hand, for short-range impurity scattering, µ S = µ qS ∝ g [2], as indicated by Eq. (20). As discussed\nin Section III, the g-dependence of background impurity scattering crosses over from short-range to remote impurity scattering behavior with increasing electron density, as detailed in\nEqs. (25-27). The crossover density is at n e = g/16πw [2] . For\ninterface roughness scattering, the mobilities µ IR and µ qIR\nare proportional to g [3] at low densities n e < g/4πΛ [2], transitioning to a long-range behavior where µ IR ∝ g [1][/][2] and\nµ qIR ∝ g [3][/][2] at higher densities, as shown in Eqs. (34-38).\nHowever, IR scattering at low densities n e < g/4πΛ [2] is typically overshadowed by the dominant sca",
+        "score": -5.870766049248614,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8401278976818546,
+        "rerank_score": -9.158613204956055,
+        "matched_nodes": [
+          "For",
+          "AD",
+          "The",
+          "In",
+          "RI",
+          "Bi",
+          "IR"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 30,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2616,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera.md",
+        "title": "2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera",
+        "text": "perature wrapping holes current\n(Gy/hr) ( _µ_ A)\nBC-412 0.3 3% O 2 ESR - 10.13\nBC-412 0.3 3% O 2 ESR - 10.52\nBC-412 0.3 N 2 ESR - 10.63\nBC-412 0.3 Air ESR - 7.49\nFNAL 0.3 3% O 2 ESR - 5.70\nBC-412 0.3 3% O 2 ESR A 7.28\nBC-412 0.3 3% O 2 ESR B 7.89\nBC-412 0.3 3% O 2 Black - 0.45\nBC-412 0.3 3% O 2 - - 0.44\nBC-412 0.3 N 2 - - 0.45\nBC-412 0.3 Air - - 0.40\nFNAL 0.3 3% O 2 - - 0.49\nFNAL 0.3 N 2 - - 0.58\nBC-412 1.3 3% O 2 ESR - 38.14\nBC-412 1.3 Air ESR - 29.77\nEJ-208 1.3 3% O 2 ESR - 38.94\nEJ-208 1.3 Air ESR - 30.79\nBC-412 1.3 Air Tyvek [®] - 15.13\nBC-412 1.6 Air, 22° C ESR - 23.9\n\nBecause we acquired data from a given channel only once every several sec\n_∼_\nonds, from these data we cannot rule out the possibility of a rapid ( seconds)\ninitial decline in scintillator signals upon irradiation. To test for a rapid initial decline, we employed a second, lower dose rate irradiator that contributed\nwith a dose rate 10 _[−]_ [3] that of the main irradiator, and thus would have caused\nminimal radiation damage. We measured SiPM signals using this low dose rate\nirradiator both before and after a one minute exposure to the primary irradiator\n(which was the first irradiation the tiles received). A decrease in the ratio of\nafter/before SiPM signals would indicate radiation damage in the first minute\nof irradiation. We determined this ratio independently for tiles at -30° C in air\nand in 3% O 2 . For each gas, we computed the weighted average of the ratio\nfor two similar tiles, EJ-208 and BC-412, both wrapped in ESR. We find the\n\n12\n\nweighted mean for air is 1 _._ 003 _±_ 0 _._ 004, and for 3% O 2 is 0 _._ 999 _±_ 0 _._ 004; both are\nconsistent with no damage from one minute of irradiation, so the values from\nTable 1 are accurate measurements of the initial signal.\nFigure 7 shows the effect of temperature on signal loss during irradiation,\npresumably due to increasing radical density. The dataset shows the relative\nlight yield as a function of dose for a BC-412 tile wrapped in Tyvek [®] in air.\nInitially the temperature was -30° C. At the dose corresponding to the left vertical line, the temperature was changed to -15° C. At the right vertical line, the\ntemperature was changed to 0° C. During the first period at -30° C, there is a\nrapid light loss. When the temperature is changed to -15° C, the slope changes\nand the rate of decrease of light loss slows. When the temperature is changed to\n0° C, the light yield increases. An increase is expected if the higher temperature\nallows",
+        "score": -6.096351377868348,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7761790567545963,
+        "rerank_score": -9.496026039123535,
+        "matched_nodes": [
+          "For",
+          "An",
+          "At",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "For": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "DOE": 1.0,
+      "At": 1.0,
+      "GA": 1.0,
+      "ST": 1.0,
+      "AD": 1.0
+    },
+    "expanded_nodes": {
+      "For": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "DOE": 1.0,
+      "At": 1.0,
+      "GA": 1.0,
+      "ST": 1.0,
+      "AD": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "Office": 0.7,
+      "Department": 0.7,
+      "European": 0.7,
+      "Al": 0.7,
+      "RI": 0.7,
+      "Bi": 0.7,
+      "IR": 0.7,
+      "Energy": 0.24499999999999997,
+      "University": 0.24499999999999997,
+      "Horizon": 0.24499999999999997,
+      "Research": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 23,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.838359578046948,
+    "generation_latency_s": 3.6973506212234497e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 23.0,
+    "retrieval_latency_s": 6.838359578046948,
+    "generation_latency_s": 3.6973506212234497e-07
+  }
+}

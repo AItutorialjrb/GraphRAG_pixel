@@ -1,0 +1,412 @@
+{
+  "benchmark": {
+    "query_id": "neg011",
+    "query_type": "negative",
+    "query": "Which paper says HV-MAPS are impossible in principle?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "Which paper says HV-MAPS are impossible in principle?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8373,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3100118__2601.05985__Novel_high-radiopurity_doped_amorphous_silicon_resistors_for_low-background_detectors.md",
+        "title": "2026__recid_3100118__2601.05985__Novel_high-radiopurity_doped_amorphous_silicon_resistors_for_low-background_detectors",
+        "text": "photon interactions appears as ionization of the medium, producing free electrons and excited xenon atoms (excimers) and ions. Scintillation\nlight is then produced by excimers de-excitation and electron/ion recombination primarily at a wavelength of 175 nm in the VUV. The collection of both\nthe ionization electrons and the scintillation light is essential for high-quality\nenergy resolution and positional reconstruction.\nA 4” witness wafer from our spacer/resistor run at SNF (aSi deposited\nat 550°C) was sent to our colleagues at UMASS who have a dedicated LXe\nreflectivity testing setup for a reflectivity measurement [23]. The results they\nobtained are given in Table 10, which indicate useful reflectivity at 175 nm\nand in principle improves light collection. Additional data and analysis will\nbe required before both the reflectance and the specular and diffuse components can be determined [24]. As one can see from the TPC rendering\nin Figure 1, for the case of the nEXO design the spacers represent a small\n\n18\n\nsolid angle for light reflection compared to other surfaces. However, for some\napplications of this aSi technique to a larger surface area, the importance of\nreflectivity might be more significant.\n\nTable 10: Total reflectivity [%] at 175 nm at normal incidence.\n\n|Sample|Total Reflectivity [%]|\n|---|---|\n|aSi(550°C)|48_ ±_ 15|\n\n**8. Conclusions and General Applications**\n\nThis paper has described an initial R&D program at SLAC, supported by\nStanford and Berkeley nanofabrication labs, that has demonstrated the production, with low statistics, of high-radiopurity resistors suitable for use in\nhigh-voltage systems for low-background liquid xenon cryogenic experiments.\nThe prototype resistors met our specifications for ppt-level U and Th contamination, and demonstrated the desired resistance with satisfactory variance\nin a small production run. Our experience with less successful runs than the\nones described in this article does reveal the need for improvements before\nmass production is optimized. We identified a few straightforward engineering improvements to our fixturing, both for the furnace Si deposition and the\nmetallization steps, that would be appropriate for a future publication. In\naddition, there are outstanding general questions for further study:\n\n More extensive HV testing is needed including tests to failure.\n\n Mechanical testing of the assembly of the voltage-divider within a realistic prototype field cage is needed, in particular to determi",
+        "score": -4.676855755918762,
+        "dense_score": null,
+        "bm25_score": 14.09226916006676,
+        "graph_score": 0.7479747974797479,
+        "rerank_score": -7.313472747802734,
+        "matched_nodes": [
+          "In",
+          "Si",
+          "HV",
+          "The",
+          "We"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8371,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3100118__2601.05985__Novel_high-radiopurity_doped_amorphous_silicon_resistors_for_low-background_detectors.md",
+        "title": "2026__recid_3100118__2601.05985__Novel_high-radiopurity_doped_amorphous_silicon_resistors_for_low-background_detectors",
+        "text": "no breakdown\nwas observed. For the nEXO design, with a nominal operating voltage at the\ncathode of 50 kV, the expected potential drop across each spacer/resistor is\nexpected to be about 860 V. However, further HV testing to roughly 2 kV\nwould be prudent. In the event issues were to be observed, the standard\nsurface features for HV insulators designed to interrupt current paths such\nas circumferential ribs could be added. It has not yet been necessary to\ninvestigate this mitigation scheme by simulation or testing.\n\n**6. Radiopurity testing at PNNL**\n\nUltra-high radiopurity is an important requirement for most components\nof the nEXO detector, determined by simulation to warrant a target radiopurity at the approximately sub-10 ppt level for U and Th for the spacer/resistors.\nThe first prototypes made at SNF were sent to our radio-assay expert collaborators within the nEXO project, based at Pacific Northwest National\nLaboratory (PNNL). The PNNL team employs high-sensitivity inductively\ncoupled plasma mass spectrometry (ICPMS) techniques to measure the U\n\n16\n\nand Th content of some materials at the sub-ppt level [18, 19, 20]. We delivered a prototype completed spacer/resistor made at SNF along with an\nuntreated silica tube blank to PNNL for analysis.\nThe results of this test were encouraging, with U and Th levels close to or\nbelow the specified level without having taken any extraordinary measures in\nprocess cleanliness besides the usual nanofabrication procedures. These very\nfirst tests were compromised by differing sample cleaning and preparation\nprocedures used for the completed part and the blank intended as a control\nmeasurement (see Table 8).\nThis shortcoming was corrected in a test of prototypes produced at MBNL.\nThe second radiopurity measurement used the first prototypes produced at\nMBNL, and in this case care was taken to preclean all parts in the same way,\nincluding the control blank. In addition, a partially completed part with Si\ncoating but no metallization was provided for testing.\nThe silica parts were pre-cleaned with a sulfuric acid and hydrogen peroxide mixture, abbreviated as SPM. “Piranha Etch” is also a well-known name\n\n[21]. The bath (about 18 L volume) is initially 98% sulfuric acid H 2 SO 4 at\n120°C. The bath is then spiked with 200 cc of 30% hydrogen peroxide (H 2 O 2 )\nimmediately before use as the peroxide degrades fairly rapidly. The part is\nthen submerged for 10 minutes followed by a cycle of 4 quick dump rinses in\ndeionized water",
+        "score": -5.061762560233246,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.873987398739874,
+        "rerank_score": -7.919097423553467,
+        "matched_nodes": [
+          "In",
+          "Si",
+          "HV",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3577,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "h energies, and it is in line with the physics requirements, thus validating the\n\nchosen detector technology.\n\n**7** **Summary**\n\nWe constructed a full-length prototype of the FoCal, which is being developed for installation at\n\nLHC, CERN, and to take data in Run 4, starting from 2029. The final detector is designed to cover\n\na pseudorapidity acceptance between 3.2 and 5.8 units and provide unique capabilities in probing\nnon-linear QCD dynamics in unexplored regions at low Bjorken _𝑥_ and _𝑄_ [2] . The detector is composed\n\nof a silicon-tungsten electromagnetic sampling calorimeter with 20 layers (FoCal-E) and a hadronic\n\ncalorimeter (FoCal-H) in spaghetti design with copper tubes. In FoCal-E, 18 sampling layers are\nequipped with silicon pad sensors of pad sizes of 1 × 1 cm [2] and read out with the HGCROC, and\n\ntwo layers at position 5 and 10 are instrumented with ALPIDE chips with a pixel size of about\n30 × 30 _𝜇_ m [2] . The copper tubes in FoCal-H of an outer (inner) diameter of 2.5 (1.2) mm are filled\n\nwith scintillating fibers which are connected and read out with SiPMs at the rear detector side. The\n\ndata were taken in various test beam campaigns between 2021 and 2023 at the CERN PS and SPS\n\nbeam lines with hadron beams up to energies of 350 GeV, and electron beams up to 300 GeV.\n\nRegarding the FoCal-E pad sensors, a comprehensive study of the response to MIPs across\n\nall pad layers was presented, revealing very clean signals and good stability over various hadron\n\nenergies recorded (Fig. 19). Good agreement between data and simulations for longitudinal shower\n\nprofiles for 20–300 GeV electrons was demonstrated (Fig. 26). Correspondingly, the linearity of\n\nthe response was found to be in good agreement between data and simulations over the full range\n\nof available electron energies (Fig. 28). The relative energy resolution was found to be lower than\n\n3% at energies larger than 100 GeV (Fig. 29), and projections using data up to 300 GeV with 17\n\nfunctional pad-layers demonstrate that the energy resolution fulfills the requirements for the physics\n\nneeds. Due to the high granularity and good linearity of the pixel layers (left panel of Fig. 25),\n\nmeasured transverse shower widths, quantified by FWHM, on the scale of mm were obtained, with\n\ngood agreement to simulations (Fig. 33).\n\nThe response of FoCal-H was found to be linear (Fig. 34), albeit with a significant intercept that\n\nis about factor 2 larger than in simulations. The shape of the response i",
+        "score": -5.463632980271141,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7821782178217822,
+        "rerank_score": -8.523517608642578,
+        "matched_nodes": [
+          "In",
+          "Ps",
+          "The",
+          "We",
+          "CERN",
+          "SPS",
+          "LHC"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 56,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5491,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2833887__2409.17382__Sub-100_Hz_intrinsic_linewidth_852_nm_silicon_nitride_external_cavity_laser.md",
+        "title": "2024__recid_2833887__2409.17382__Sub-100_Hz_intrinsic_linewidth_852_nm_silicon_nitride_external_cavity_laser",
+        "text": "presented in this\npaper are not publicly available at this time but may be obtained\nfrom the authors upon reasonable request.\n\n**References**\n\n1. J.C. Saywell, et al., Nature Communications, 14(1), p.7626 (2023).\n2. M.J. Wright, L. Anastassiou, C. Mishra, Frontiers in Physics, 10,\n\np.994459 (2022).\n3. M.D. Lachmann, et al., Nature Communications, 12(1), p.1317 (2021).\n4. A.J. McCulloch, et al., Nature communications, 4(1), p.1692 (2013).\n5. S. Bize, et al., Journal of Physics B: Atomic, molecular and optical\n\nphysics, 38(9), p.S449 (2005).\n6. G.K. Campbell, and W.D. Phillips, Philosophical Transactions of the\n\nRoyal Society A: 369(1953), pp.4078-4089 (2011).\n7. B. Meyer-Hoppe, et al., Review of Scientific Instruments, 94(7) (2023).\n8. O. Morizot, D. Bellair, J. De Lapeyre, et al., arXiv preprint\n\narXiv:0704.1974 (2007).\n9. N. Pie, et al., Journal of Geophysical Research: Solid Earth, 126(12), p.\n\ne2021JB022392 (2021).\n10. B. Stray, et al., Nature, 602(7898), pp.590-594 (2022).\n11. N. Yu, J. Kohel, J. Kellogg, and L. Maleki, Appl. Phys. B 84, 647–652\n\n(2006).\n12. A. Peters, K. Y. Chung, and S. Chu, Nature 400, 849–852 (1999).\n\n13. V. Ménoret, P. Vermeulen, N. Le Moigne, et al., Sci. reports 8, 12300\n\n(2018).\n14. J. M. Mcguirk, G. Foster, J. Fixler, et al., Phys. Rev. A 65, 033608 (2002).\n15. E. R. Elliott, et al., npj Microgravity 4, 16 (2018).\n16. A. Isichenko, et al., In OFC Conference, pp. W3D-2. Optica Publishing\n\nGroup, (2024).\n17. N. Chauhan, et al., Nature Communications 12(1): 4685, (2021).\n18. A. Isichenko, et al., 10th IEEE International Symposium on Inertial\n\nSensors & Systems. Kauai, HI, (2023).\n19. F. Lienhart, et al., Applied Physics B, 89, pp.177-180, (2007).\n20. T. Komljenovic, et al., IEEE Journal of Selected Topics in Quantum\n\nElectronics, 21(6), pp.214-222 (2015).\n21. I. Ghannam, et al., IEEE Journal of Selected Topics in Quantum\n\nElectronics, vol. 28, no. 1: pp. 1-10, (2022).\n22. F. Youwen, v.R. Albert, J.M. Peter, et al., Opt. Express 28, 21713-21728\n\n(2020).\n23. Ultra-narrow linewidth tunable lasers. Briefings Lionix International.\n\n(n.d.).https://www.lionix-international.com/wpcontent/uploads/2022/01/Briefings-Ultra-Narrow-LinewidthTunable-Laser_three-wavelegths-with-specification.pdf\n24. C. Chen, F. Wei, X. Han, et al., Opt. Express 31, 26078-26091 (2023).\n25. D.A.S. Heim,Technical Digest Series, paper STh5C.7, CLEO (2024).\n26. M.A. Tran, D. Huang, J. Guo, et al., IEEE Journal of Selected Topics in\n\nQuantum Electronics”, 26(2), pp.1",
+        "score": -5.572815396256537,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8262826282628263,
+        "rerank_score": -8.698140144348145,
+        "matched_nodes": [
+          "In",
+          "LE",
+          "IEEE",
+          "Quantum",
+          "Physics",
+          "Nature",
+          "Journal",
+          "Review"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2435,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "btained from the original ASCII files, available to download from ZENODO\n\n[154].\n\nIn the first column, Tables VI to XVI list the reactions\nranked at 10 GeV/n for the production of secondary Li\nthrough Si species in CRs. The next 3-column block\nshows the flux impact (minimum, mean, and maximum\nvalue calculated from our three cross-section parameterizations), i.e. how much this reaction contributes, in fraction, to the calculated GCR fluxes. As discussed in Sec\n\ntion III.2 and contrarily to the _D_ and _P_ coefficients, we\nrecall that the sum of the _f_ _abc_ coefficients (for a given _c_ )\nis larger than one. The fifth column presents the minimal and maximal cross-section values for each reaction.\nThe next-to-last column (check symbol) indicates when\nat least one data point exists for the listed cross section.\nWhile there can be several data points available for some\nreactions, for some others only 1–2 points may exist, and\nyet in a limited energy range. This is for instance the\ncase for the reactions involved in the production of F\n(see Table XI): at the first glance, the cross sections are\nwell-constrained as the most important reactions have at\nleast one data point, but as discussed in [12], it appears\nthat all these data points are located in the rising portion\nof the cross sections, leaving the exact asymptotic values\nat high energy quite uncertain.\nThe last column shows the ratio of the reaction\ncross section to the cumulative one, _σ/σ_ [cumul] (see Section III.1); in Paper I, we showed instead _σ_ [cumul] _/σ_, but\nwe feel the inverse of this ratio is a natural choice. Reactions with _σ/σ_ [cumul] _<_ 1 indicate that the isotope produced comes from its direct production and the production of ghosts (highlighted in boldface); see also Section III.1 and Eq. 3). For instance, for F (see Table XI),\nthe contribution from the short-lived nucleus [19] Ne (see\nTable II) can reach half the cumulative production at\nmost. We stress that these coefficients and tables are relative to the secondary production. As shown in Table I,\nsome of these species are mostly primary (e.g., O and\nSi). Hence, the relative importance of the reactions for\nthe total flux is reduced. To illustrate this, we insert lines\n(in the tables) highlighting that coefficients above these\nlines make up some given fractions (25%, 50%, 75%; etc.)\nof the secondary or total fluxes. We also provide graphical views in Figs. C and 15 of the _f_ _aHc_ coefficients not\nshown in Section IV; we refer th",
+        "score": -5.902366669190456,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.81998199819982,
+        "rerank_score": -9.204192161560059,
+        "matched_nodes": [
+          "In",
+          "Si",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 48,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8253,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "ieved by exploiting the regions described above. This feature will not be used\nin 3D pixel modules, which will consist of two ROCs\nbump-bonded to two individual sensors. In this configuration, an uninstrumented gap of approximately 600 µm\nexists between the sensors. This decision is based on\n\nthe lack of a reliable process for producing large-area\n3D pixel sensors at the moment.\nTo match the readout chip pitch, a diagonal routing\nscheme is used for bump-bonding in 3D pixel sensors\nwith a 25 × 100 µm [2] cell size, as illustrated in Fig. 7.\n\nFigure 6: Schematic view of the CROCv1 and CROCv2 power distribution, highlighting the regions available for different tunings.\n\nFigure 7: Schematic top view of four adjacent 25 × 100 µm [2] pixel\ncells. One of the cells is delimited by a rectangle with dashed black\nlines for reference. The blue circles at the corners represent the _p_ [+]\n\ncolumns, while the light blue circle in the center represents the _n_ [+]\n\ncolumn. The orange elliptical pad on top of the _n_ [+] column represents\nthe metal contact for bump-bonding. Its counterpart on the readout\nchip is shown as a large orange circle. The two metal contacts are\nconnected by a diagonal orange rail.\n\n5\n\n**4. Irradiation and beam test setup**\n\n_4.1. Irradiation: facilities and setup_\n\nIrradiation campaigns of 3D pixel sensors for use in\nthe IT have been carried out at the Institut Pluridisci\nplinaire Hubert Curien (IPHC) [20], Zyklotron AG at\nthe Karlsruhe Institute of Technology (KIT) [21], the\nFermilab Irradiation Test Area (ITA), and the CERN\nPS [22]. The energy of the proton beam used at each\nirradiation facility and its corresponding hardness factor are provided in Table 2. The TID received by the\nmodules depends on the proton energy. For the IPHC\nand KIT facilities, a fluence of 1 × 10 [16] n eq /cm [2] corresponds to roughly 15 MGy, while for the ITA and\nCERN PS, it corresponds to about 5 MGy. For comparison, about 13.4 MGy is expected over the duration\nof the HL-LHC running period at the innermost layer of\nthe TBPX. Therefore, 6.7 MGy would be sufficient for\ntesting, considering the replacement of this layer after 6\nyears. Radiation damage studies using RD53 chips [23]\nconfirm their functionality up to a total ionizing dose of\n10 MGy. The requested target fluences for the devices\nin this paper were in the range 1–2 × 10 [16] n eq /cm [2] .\n\nTable 2: Proton energy of the beams used at the irradiation facilities\nand their corresponding hardness factor or k-fac",
+        "score": -6.131740219605495,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.81998199819982,
+        "rerank_score": -9.557074546813965,
+        "matched_nodes": [
+          "In",
+          "Ps",
+          "The",
+          "For",
+          "To",
+          "CERN"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 3551,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "nced, the event selection for\n\nthe May, 2023 data needed to focus on a clean electron sample without hadronic contamination.\n\nIn both cases, the datasets were pre-processed based on the HGCROC trigger sum word, which\n\nis measured per bunch crossing (i.e. every 25 ns). Each trigger sum word represents the signal sum\n\nof nine neighboring pad channels, in a primitive format (with reduced precision [16]). For every\n\nrecorded event, 8 trigger sums per layer were recorded for offline analysis within 10 bunch-crossing\n\nbins around the triggered event. In order to reject out-of-time events, an event is selected only if no\n\ncharge deposit before the signal bin was detected in any trigger sum word. In particular, this rejected\n\nevents which were recorded one bunch crossing too early. The decay of such signal charge pulses\n\nwould still be detected in the signal bin, and would hence distort the dataset. The black histogram\n\nin Fig. 22 shows the charge sum distribution of 80 GeV electrons, for all events which have passed\n\nthe trigger sum requirement. The charge sum is obtained by summing up the information around\n\nthe leading cell, in a 5x5 window over all layers.\n\nWhile — due to the high purity of the electron beams — a specific electron candidate selection\n\nwas not necessary for the November, 2022 data, hadronic events had to be rejected in the May,\n\n2023 data. Electron candidate events are obtained from the one-electron dataset in the pixel layers,\n\n– 26 –\n\n10 5\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n|Col1|ALICE FoC<br>May 2023,<br>80 GeV|al-E Pro<br>CERN S<br>electron|totype<br>PS H2<br>beam|Col5|\n|---|---|---|---|---|\n||All data<br> candid<br>−<br>1 e<br> cand<br>−<br> 2 e<br>≥<br>|ate (75.3<br>idate (19<br>|%)<br>.3 %)||\n||hadrons (5|.4 %)|||\n||||||\n||||||\n||||||\n\n0 10 20 30 40 50 60 70 80\nSignal sum Q sum (pC)\n\n**Figure 22** . Charge sum (5x5 around leading cell for all layers) of a) single-electron candidates, b) ≥ 2electron candidates, and c) hadron candidates measured using the pad layers after applying the selection\ncriteria defined by the ellipse cut, and the shower maximum criterion.\n\nas described in Sec. 5.3. The full red markers in Fig. 22 show the charge sum distribution after\n\nhaving applied the one-electron selection criteria. About 75 % of the events are selected with this\n\ncriterion, showing a prominent electron peak around 26 pC. The selected one-electron events still\n\nshow a peak from minimum ionizing particles slightly above zero. We attribute this to events",
+        "score": -6.371477062714626,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.81998199819982,
+        "rerank_score": -9.92590045928955,
+        "matched_nodes": [
+          "In",
+          "Ps",
+          "The",
+          "We",
+          "For",
+          "CERN"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 30,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5794,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices.md",
+        "title": "2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices",
+        "text": "rs that show non-physical parameters (e.g. lever arm > 1) are filtered out. We also discard pairs with\nlever arm < 0.5, as these are deemed highly unlikely in this architecture\n\n8. Scores are standardised and weighted and the line pairs are ranked according to the sum of scores, with the\nhighest scoring pair used to extract dot parameters as shown in Fig. 4i\n\n**III.** **ASSESSING LAYOUT DEPENDENT EFFECTS VIA QUANTUM DOT QUALITY**\n\nAs stated in the main text, during the design and layout of the farm devices known sources of variation in the\nsemiconductor manufacturing process were taken into account to minimise any bias in the device statistics. To\nminimise layout-dependent effects, identical device designs were placed in the farm using a semi-random algorithm.\n\n5\n\nWe find that the device design is a stronger indicator of its measured quality than its location within the farm,\nas evidenced by the nearly uniform histograms of quality as organised by row or column. We calculate the mean\nKullback-Liebler divergence (KLD) of these histograms from a uniform distribution to be 0 _._ 031(17), while the mean\nKLD of the histograms organised by device type is 0 _._ 45.\n\nFIG. 5. A map of all devices in the farm and their neural network classification, with corresponding row and column histograms\nfor each classification. The red dashed lines indicates the probability density of a uniform distribution with the same weight as\neach histogram.\n\n6\n\n**IV.** **QD LEVER ARM - ASYMMETRY RELATIONSHIP**\n\nFor an SET with 3 device contacts, source (S), drain (D) and gate (G), the lever arm of each contact to the QD\nmust sum to unity,\n\n_α_ S + _α_ D + _α_ G = 1 _._ (1)\n\nIn the main text two parameters we have extracted from our Coulomb diamonds are _α_ G and _α_ D _−_ _α_ S . One important\naspect of any automated fitting process is that it returns physical results, so we now consider how Eq. 1 constrains\nthese two parameters. Our results reveal (Fig. 6) that a large absolute asymmetry _|α_ D _−_ _α_ S _|_ implies that the gate\nlever arm must be less markedly less than 1.\nThis can be understood by considering how the difference of lever arms relates to the sum of the lever arms. Since\nthe lever arms are positive, it follows that _|α_ D _−_ _α_ S _| ≤_ _α_ S + _α_ D . By substituting into Eq. 1 we can define a physical\n\n|, it follows that |αD −αS| ≤αS + αD. By substituting into Eq. 1 ted in Fig. 6 by the red line) on our extracted parameters αD −α |αD −αS| + αG ≤1, αG −1 ≤αD −αS ≤1 −α",
+        "score": -6.389074994723288,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7659765976597659,
+        "rerank_score": -9.944831848144531,
+        "matched_nodes": [
+          "In",
+          "The",
+          "We",
+          "For",
+          "To",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 27,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1098,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2676761__2307.06433__Probing_NV_and_SiV_charge_state_dynamics_using_high-voltage_nanosecond_pulse_and_photolumi.md",
+        "title": "2023__recid_2676761__2307.06433__Probing_NV_and_SiV_charge_state_dynamics_using_high-voltage_nanosecond_pulse_and_photolumi",
+        "text": "## Probing NV and SiV charge state dynamics using high-voltage nanosecond pulse and photoluminescence spectral analysis\n\nArtur Pambukhchyan\n\nDepartment of Chemistry, University of Southern California, Los Angeles CA 90089, USA\n\nSizhe Weng\n\nDepartment of Electrical Engineering, University of Southern California, Los Angeles CA\n90089, USA\n\nIndu Aravind\n\nDepartment of Physics & Astronomy, University of Southern California, Los Angeles CA\n90089, USA\n\nStephen B. Cronin\n\nDepartment of Electrical Engineering, University of Southern California, Los Angeles CA\n90089, USA\n\nSusumu Takahashi\n\nE-mail: susumu.takahashi@usc.edu\n\nDepartment of Chemistry, University of Southern California, Los Angeles CA 90089, USA\nDepartment of Physics & Astronomy, University of Southern California, Los Angeles CA\n90089, USA\n\nJuly 2023\n\nAbstract. Nitrogen-vacancy (NV) and silicon-vacancy (SiV) color defects in diamond are\npromising systems for applications in quantum technology. The NV and SiV centers have\nmultiple charge states, and their charge states have different electronic, optical and spin\nproperties. For the NV centers, most investigations for quantum sensing applications are\ntargeted on the negatively charged NV (NV [−] ), and it is important for the NV centers to be in\nthe NV [−] state. However, it is known that the NV centers are converted to the neutrally charged\nstate (NV [0] ) under laser excitation. An energetically favorable charge state for the NV and SiV\ncenters depends on their local environments. It is essential to understand and control the\ncharge state dynamics for their quantum applications. In this work, we discuss the charge state\ndynamics of NV and SiV centers under high-voltage nanosecond pulse discharges. The NV\nand SiV centers coexist in the diamond crystal. The high-voltage pulses enable manipulating\nthe charge states efficiently. These voltage-induced changes in charge states are probed by\ntheir photoluminescence spectral analysis. The analysis result from the present experiment\nshows that the high-voltage nanosecond pulses cause shifts of the chemical potential and can\n\nProbing NV and SiV charge state dynamics ... 2\n\nconvert the charge states of NV and SiV centers with the transition rates of ∼ MHz. This\nresult also indicates that the major population of the SiV centers in the sample is the doubly\nnegatively charged state (SiV [2][−] ), which is often overlooked because of its non-fluorescent and\nnon-magnetic nature. This demonstration paves a path for a me",
+        "score": -6.44687139865453,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8541854185418541,
+        "rerank_score": -10.047048568725586,
+        "matched_nodes": [
+          "In",
+          "The",
+          "For",
+          "USA",
+          "CA",
+          "Physics",
+          "University",
+          "Department"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4235,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2756306__2402.04473__Performance_of_a_phonon-mediated_kinetic_inductance_detector_at_the_NEXUS_cryogenic_facili.md",
+        "title": "2024__recid_2756306__2402.04473__Performance_of_a_phonon-mediated_kinetic_inductance_detector_at_the_NEXUS_cryogenic_facili",
+        "text": "n on energy deposited in the substrate is limited to _σ_ _E_ = 318 _±_ 29 eV. We further model\nboth the signal pulse shape as a function of device temperature to extract quasiparticle lifetimes,\nand the observed noise spectra.\n\n**Report Number:** FERMILAB-PUB-23-674-LDRD-PPD\n\n**I.** **INTRODUCTION**\n\nNull results from searches for particle dark matter\n(DM) with mass above 1 GeV _/c_ [2] [1] motivate the development of detector technologies that can probe the\nremainder of the thermal relic parameter space down to\nthe fermionic mass limit of a few keV. The average kinetic energy carried by DM with 1 MeV _/c_ [2] mass is about\n500 meV. As such, sensitivity to light DM requires the\nability to detect meV-scale quanta. Detectors employing\nsuperconducting thin films to sense athermal phonons are\na class of sensors that can achieve this requirement. [2].\nOne detector architecture in this class is the kinetic in\n\n_∗_ [dtemples@fnal.gov](mailto:dtemples@fnal.gov)\n\n_†_ Presently at 6\n\n_‡_ Presently at Department of Physics, University of California,\nBerkeley, CA, 94720, USA\n_§_ Presently at Department of Physics and Astronomy, Wellesley\nCollege, Wellesley, MA, 02481, USA\n\n_¶_ Presently at LPSC, National Centre for Scientific Research, Universit´e Grenoble Alpes, Grenoble, France\n_∗∗_ Presently at Department of Physics, University of Toronto,\nToronto, ON, Canada\n\n_††_ Presently at IRFU, Alternative Energies and Atomic Energy\nCommission, Universit´e Paris-Saclay, France\n\nductance phonon-mediated (KIPM) detector, which uses\nmicrowave kinetic inductance detectors (MKIDs) to read\nout phonon signals in the device substrate [3–8]. Phonons\nproduced by particle interactions in the substrate propagate to the superconducting films on the surface, where\nthey break Cooper pairs into quasiparticles, provided the\nphonon carries an energy larger than the Cooper pair\nbinding energy, 2∆. This transient increase in quasiparticle density increases the surface impedance (AC resistance and kinetic inductance) of the resonator, shifting its resonant frequency _f_ _r_ and quality factor _Q_ to\nlower values. This shift can be measured in both magnitude and phase by interrogating the resonator with a microwave/radiofrequency (RF) probe tone at the quiescent\nresonant frequency and measuring the complex forward\nscattering parameter _S_ 21 .\n\nKIPM detectors have a number of attractive features\n\nthat motivate their use to detect low-mass dark matter. The energy carried by a phonon quantum is 2–3",
+        "score": -6.49599345659244,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8982898289828982,
+        "rerank_score": -10.129270553588867,
+        "matched_nodes": [
+          "MA",
+          "The",
+          "We",
+          "USA",
+          "CA",
+          "Physics",
+          "On",
+          "University",
+          "Department"
+        ],
+        "path_nodes": [
+          "MA"
+        ],
+        "community_id": "MA",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "Si": 1.0,
+      "LE": 1.0,
+      "Ps": 1.0,
+      "PO": 1.0,
+      "Im": 1.0,
+      "HV": 1.0,
+      "MA": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "Si": 1.0,
+      "LE": 1.0,
+      "Ps": 1.0,
+      "PO": 1.0,
+      "Im": 1.0,
+      "HV": 1.0,
+      "MA": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "IEEE": 0.7,
+      "Quantum": 0.7,
+      "CERN": 0.7,
+      "USA": 0.7,
+      "IL": 0.63,
+      "CA": 0.7,
+      "Physics": 0.7,
+      "Transactions": 0.24499999999999997,
+      "Nuclear": 0.24499999999999997,
+      "On": 0.24499999999999997,
+      "Nature": 0.24499999999999997,
+      "SPS": 0.24499999999999997,
+      "LHC": 0.24499999999999997,
+      "University": 0.24499999999999997,
+      "Department": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 29,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 9.893524438142776,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 29.0,
+    "retrieval_latency_s": 9.893524438142776,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

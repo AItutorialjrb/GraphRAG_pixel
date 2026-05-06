@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "con009",
+    "query_type": "conceptual",
+    "query": "Why is abstention important for scientific RAG?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "RAG"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why is abstention important for scientific RAG?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4434,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759954__2402.12516__Skipper-in-CMOS_Nondestructive_Readout_With_Subelectron_Noise_Performance_for_Pixel_Detect.md",
+        "title": "2024__recid_2759954__2402.12516__Skipper-in-CMOS_Nondestructive_Readout_With_Subelectron_Noise_Performance_for_Pixel_Detect",
+        "text": "le photons and motivating their use\nfor new physics searches [9].\nSkipper-CCDs are fabricated in a dedicated facility using a\ncustomized process for scientific CCDs [10]. This process is\nrequired to produce the overlapping of the gates structures\nneeded to achieve high charge transfer efficiency between\npixels. Due to the very low demand of scientific CCDs, compared to commercial CMOS imagers, the number of facilities\ndedicated to scientific CCDs has reduced to only a few in\nthe world today, and this number is expected to continue\ndropping [11]. On the other hand, imagers fabricated in CMOS\nprocess have dominated the market of high-demand consumer\ncameras, and therefore several fabrication facilities with many\nprocessing options are available.\nAdvances in the CMOS technology fabrication processes\nhave enabled the implementation of pixels with higher sensitivity. For example, the Jots have a very high charge-tovoltage conversion gain and a vertical PPD, resulting in the\nfirst demonstration of deep sub-electron read noise (DSERN)\nin CMOS sensors at room temperature [12], [13]. These\nsmall structures enabled single photon detection, reaching\n1000fps and many of them are grouped to form pixels with\nlarger photon collection capacity [14]. Other authors have\nreported low noise (0.22-2e [−] ) with rates in the order of 50100fps [15][16]. Another type of single quanta image sensor\nis based on the Single Photon Avalanche Diode (SPAD) [17],\n\n[18], which relies on the multiplication gain of the collected\nphotoelectron to create a high signal larger than the single\nelectron equivalent noise. They usually have a large pixel pitch\n\n2\n\nVDD\n\nReset gate (RG)\n\nV ref\n\nOUT\n\nas a need to separate the pixels due to the use of high electric\nfields to trigger avalanches. A different approach is presented\nin this paper, which is based on a PD connected to a floating\ngate readout structure, which allows the nondestructive readout\nused in Skipper-CCD to be implemented in each pixel. This\narchitecture allows the arbitrary reduction of the readout noise\nat the expense of extra readout time.\nThere are therefore a number of compelling reasons to\nimplement Skipper-CCDs in CMOS. The idea can be traced\nto [19][20], and was more recently revisited in [21][22].\nWhile previous works have successfully implemented CCDs in\ndifferent single-poly CMOS fabrication technologies achieving\nhigh charge transfer efficiencies [23][24][25][26], this article\ndemonstrates the operation of non-destructive ch",
+        "score": -6.634834346891959,
+        "dense_score": null,
+        "bm25_score": 13.622084080926808,
+        "graph_score": 0.0,
+        "rerank_score": -10.214253425598145,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1521,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2704998__2309.17413__Momentum-Space_Imaging_of_Ultra-Thin_Electron_Liquids_in_-Doped_Silicon.md",
+        "title": "2023__recid_2704998__2309.17413__Momentum-Space_Imaging_of_Ultra-Thin_Electron_Liquids_in_-Doped_Silicon",
+        "text": "converges through each MDC cut. This form was chosen as it combined the\nexperimental resolution and intrinsic broadening effects, whilst optimally fitting the data. The\nfitting algorithm starts at an MDC cut taken at −0.2 eV, and progressively moves upwards\nthrough the 𝛤𝛤-state fitting up to four Voigt functions (for 𝑛𝑛 = 2 states) until it hits the Fermilevel, after which it terminates. The results of this are overlaid on the ARPES images of Figure\nS6(a-d). To ensure consistency, all fits were performed using similar constraints. The FWHM\nis constrained to (0.06 ± 0.03)Å [−1] and the best fit parabola for all δ-layer samples yielded an\neffective mass of (0.12 ± 0.03)𝑚𝑚 𝑒𝑒, which lies close to the expected value of 0.19𝑚𝑚 𝑒𝑒 [S15].\nFurthermore, the EDC cut through the centre of mass of the Γ-band in Figure S6(a-d) (labelled\nas (4)) also shows a satisfactory fit when using two components. It is important to note that the\nmodel curve used to fit the EDC case is more complicated; it is the convolution of a Voigt\nfunction with a Gaussian broadened Fermi-Dirac distribution (the Gaussian broadening is a\nconsequence of the 60 meV energy resolution). Therefore, the EDC curve fits appear\nasymmetrical and drop to zero near 𝐸𝐸 𝐵𝐵 = 𝐸𝐸 𝐹𝐹 .\n\nFor the Δ-band fits shown in Figure S6(e-h), the fits are simpler as a single state was\nfound to yield satisfactory results. However, due to the higher effective mass of the Δ-band, its\nmuch smaller curvature makes it more difficult to track the peak locations, which is why the\nbest fit parabola has a larger uncertainty, relative to the Γ-band fits. Because of this, the fits\nwere made to each EDC cut from left to right, using the same algorithm discussed above. For\nthe arsenic δ-layer samples in Figure S6(e-f), the peak position appears to be constant when\nfitting the EDCs, however, this is due to the base of the Δ-band being very near the Fermi-edge\nand its very low curvature at the base of the parabola makes it seem flat. For phosphorous δlayer samples in Figure S6(g-h), the parabolic minimum is further away from the Fermi-edge\nand so the slight curvature of the Δ-band becomes apparent. To ensure consistency, all fits were\nperformed using similar constraints. The FWHM of the EDC fits were constrained to\n(0.16 ± 0.04) eV and the best fit parabola for all δ-layer samples yielded an effective mass of\n(0.90 ± 0.05)𝑚𝑚 𝑒𝑒, which lies close to the expected value of 0.98𝑚𝑚 𝑒𝑒 [S15].\n\n## **(G) Self-consistent Schrödinger-Poisson model of",
+        "score": -6.749118394236411,
+        "dense_score": null,
+        "bm25_score": 15.98970292986483,
+        "graph_score": 0.0,
+        "rerank_score": -10.39194393157959,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 25,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 7198,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2901769__2503.11864__Commissioning_and_performance_of_the_Trinity_Demonstrator.md",
+        "title": "2025__recid_2901769__2503.11864__Commissioning_and_performance_of_the_Trinity_Demonstrator",
+        "text": "95](http://dx.doi.org/10.1126/science.abg3395)`, doi: `[10.1126/science.abg3395](http://dx.doi.org/10.1126/science.abg3395)` .\n\nAbbasi, R., Ackermann, M., Adams, J., Aguilar, J.A., Ahlers,\nM., Ahrens, M., Alameddine, J.M., Alves, A.A., Amin,\nN.M., Andeen, K., Anderson, T., Anton, G., Argüelles,\nC., Ashida, Y., Athanasiadou, S., Axani, S., Bai, X., Balagopal V., A., Barwick, S.W., Basu, V., Baur, S., Bay, R.,\nBeatty, J.J., Becker, K.H., Tjus, J.B., Beise, J., Bellenghi, C.,\nBenda, S., BenZvi, S., Berley, D., Bernardini, E., Besson,\nD.Z., Binder, G., Bindig, D., Blaufuss, E., Blot, S., Boddenberg, M., Bontempo, F., Book, J.Y., Borowka, J., Böser, S.,\nBotner, O., Böttcher, J., Bourbeau, E., Bradascio, F., Braun,\nJ., Brinson, B., Bron, S., Brostean-Kaiser, J., Burley, R.T.,\nBusse, R.S., Campana, M.A., Carnie-Bronca, E.G., Chen,\nC., Chen, Z., Chirkin, D., Choi, K., Clark, B.A., Clark, K.,\nClassen, L., Coleman, A., Collin, G.H., Connolly, A., Conrad, J.M., Coppin, P., Correa, P., Cowen, D.F., Cross, R.,\nDappen, C., Dave, P., De Clercq, C., DeLaunay, J.J., López,\nD.D., Dembinski, H., Deoskar, K., Desai, A., Desiati, P.,\nde Vries, K.D., de Wasseige, G., DeYoung, T., Diaz, A.,\nDíaz-Vélez, J.C., Dittmer, M., Dujmovic, H., Dunkman, M.,\nDuVernois, M.A., Ehrhardt, T., Eller, P., Engel, R., Erpenbeck, H., Evans, J., Evenson, P.A., Fan, K.L., Fazely, A.R.,\nFedynitch, A., Feigl, N., Fiedlschuster, S., Fienberg, A.T.,\nFinley, C., Fischer, L., Fox, D., Franckowiak, A., Friedman, E., Fritz, A., Fürst, P., Gaisser, T.K., Gallagher, J.,\nGanster, E., Garcia, A., Garrappa, S., Gerhardt, L., Ghadimi,\nA., Glaser, C., Glauch, T., Glüsenkamp, T., Goehlke, N.,\n\nGoldschmidt, A., Gonzalez, J.G., Goswami, S., Grant, D.,\nGrégoire, T., Griswold, S., Günther, C., Gutjahr, P., Haack,\nC., Hallgren, A., Halliday, R., Halve, L., Halzen, F., Minh,\nM.H., Hanson, K., Hardin, J., Harnisch, A.A., Haungs, A.,\nHelbing, K., Henningsen, F., Hettinger, E.C., Hickford, S.,\nHignight, J., Hill, C., Hill, G.C., Hoffman, K.D., Hoshina,\nK., Hou, W., Huang, F., Huber, M., Huber, T., Hultqvist, K.,\nHünnefeld, M., Hussain, R., Hymon, K., In, S., Iovine, N.,\nIshihara, A., Jansson, M., Japaridze, G.S., Jeong, M., Jin,\nM., Jones, B.J.P., Kang, D., Kang, W., Kang, X., Kappes,\nA., Kappesser, D., Kardum, L., Karg, T., Karl, M., Karle, A.,\nKatz, U., Kauer, M., Kellermann, M., Kelley, J.L., Kheirandish, A., Kin, K., Kiryluk, J., Klein, S.R., Kochocki, A.,\nKoirala, R., Kolanoski, H., Kontrimas, T., Köpke, L., Kopper, C.,",
+        "score": -6.770141725852841,
+        "dense_score": 0.41447046399116516,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -10.424429893493652,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 32,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7292,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2913434__2504.13098__Irradiation_studies_of_the_Resistive_AC-coupled_Silicon_Detector_RSDAC-LGAD.md",
+        "title": "2025__recid_2913434__2504.13098__Irradiation_studies_of_the_Resistive_AC-coupled_Silicon_Detector_RSDAC-LGAD",
+        "text": "pF was recorded as a _V_ th, with the value for unirradiated\nsensors being _V_ GL = 25 V. The variation in depletion voltage\ncan be observed with the fraction _V_ th / _V_ GL —as shown versus\nfluence in figure 3.\n\n1 _._ 0\n\n0 _._ 8\n\n0 _._ 6\n\n2\n\nTable 2: _c_ values measured in the exponential fits per wafer.\n\n|c coe|efficient valu|ues [10−16 cm|m2]|\n|---|---|---|---|\n|Irradiation|W3+4|W6|W14|\n|Neutron<br>Proton|2.6 ± 0.1<br>8.1 ± 0.7|3.0 ± 0.3<br>9.5 ± 0.5|3.2 ± 0.2<br>9.9 ± 0.4|\n\n10 [−][16] cm [2] for neutron irradiation and ≈ 12 × 10 [−][16] cm [2] for\n23 MeV proton irradiation. The _c_ coefficient shown in table 2,\nwhen compared to the typical values, would seem to indicate a\ngain layer that is more radiation-resistant than expected. Thus,\nleading to the question: why are the observed _c_ values for RSD\nlower than for standard LGADs with similar gain layers?\nIt is important to note that the value _c_ is extracted from\nCV measurements, which follow the evolution of sensor\ndepletion—not just the gain layer. The depletion evolves from\nthe p-n junction created from the n+ resistive layer and the p\nbulk.\n\n**4. Working Hypothesis**\n\nSince the RSD features an n+ layer with a lower doping concentration compared to a standard LGAD, donor removal may\ninfluence the depletion voltage of the gain layer. The gain layer\ndepletion voltage can be expressed with the following expression [4]\n\nthe change in resistivity of the n+ layer with increasing fluence.\nDuring the campaign, ‘Van der Pauw’ test structures for each\nwafer were irradiated.\n\nThe ‘Van der Pauw‘ structures are directly connected to the\nn+ layer and allow for a four-point sheet resistance measure\nment.\n\nThe voltage drop in each structure was measured as the current was adjusted over a range of −200 µA to 200 µA in 5 µA\nsteps. The slope of the resulting line in voltage versus current is\nthe sheet resistance ( _R_ _s_ ). Donor removal can then be studied by\nplotting the sheet conductance (1/ _R_ _s_ ) versus fluence, as shown\nin figure 5. These measurements were performed both at KIT\nand at Perugia to eliminate possible biases from the measurement equipment.\n\n_V_ GL ∝ (1 + 2 _[d]_ (2)\n\n_w_ [)] _[N]_ _[A]_ _[w]_ [2] [,]\n\n|1.0|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|0.0<br>1.0<br>2.0<br>3.5<br>5.0<br>15 <br>2<br>0.0<br>0.2<br>0.4<br>0.6<br>0.8<br><br>W14<br>W6<br>~~W3~~<br>n irradiated<br>p irradiated<br>~~T = + 20 °C~~|||W14<br>W6<br>~~W3~~|n irradi<br>p irradi<br>~~T = + 2~~|ated<br>ated<br>~~0 °C~~",
+        "score": -6.784686721972565,
+        "dense_score": null,
+        "bm25_score": 15.009327407062116,
+        "graph_score": 0.0,
+        "rerank_score": -10.446016311645508,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1613,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2709840__2310.07963__Observing_cosmic-ray_extensive_air_showers_with_a_silicon_imaging_detector.md",
+        "title": "2023__recid_2709840__2310.07963__Observing_cosmic-ray_extensive_air_showers_with_a_silicon_imaging_detector",
+        "text": "ing detectors like Subaru HSC will be useful for studying the\nproperties of extensive air showers in detail. The following report outlines the\nfirst results of observing extensive air showers with Subaru HSC. The potential\nfor reconstructing the incident direction of primary cosmic rays is demonstrated\nand possible interdisciplinary applications are discussed.\n\n**Journal:** Published in Scientific Reports 13,16091(2023)\n**URL:** [https://www.nature.com/articles/s41598-023-42164-4](https://www.nature.com/articles/s41598-023-42164-4)\n**DOI:** 10.1038/s41598-023-42164-4\n\n**Keywords:** cosmic ray, high-energy physics, extensive air shower, silicon imaging\ndetector\n\n### **1 Cosmic-ray extensive air showers and surface** **detector arrays**\n\nCosmic rays are energetic particles from the universe discovered by V.F. Hess in 1912\n\n[1]. Their origin, acceleration mechanisms and mass composition at the highest energies\nare still largely unknown. In particular, determining the origin of high-energy cosmic\nrays is considered to be among the most important problems in modern astrophysics [2,\n3]. The flux of cosmic rays arriving at Earth follows a power-law function of roughly\n_E_ _[−]_ [3], where _E_ is the primary energy of the cosmic rays. As such, high-energy cosmic\nrays are extremely rare and are typically studied indirectly. This is accomplished by\nmeasuring the showers of secondary particles produced when primary cosmic rays\ninteract with atmospheric nuclei, called “extensive air showers” (EASs).\n\nSeveral methods are used to observe EASs, such as the detection of fluorescence\nlight [4, 5] and radio emission [6–8] from the electromagnetic component of an EAS.\nAnother method is the use of surface detector (SD) arrays - collections of ground\nbased particle detectors spread across several hundreds or thousands of square kilometers [5, 9, 10]. Such arrays measure the arrival times and densities of the secondary\nparticles from an EAS at ground level. This information is used to reconstruct the\narrival direction, primary energy and mass composition information of the initial cosmic ray. As an example, the Telescope Array experiment in Utah, USA, uses 507\nplastic scintillators, deployed with a spacing of 1.2 km, to form a detecting area of\n\n2\n\n**Fig. 1** An example of a cosmic-ray extensive air shower recorded by a CCD of Subaru HSC. Dimensions : 4176 _×_ 2048 pixels = 62.6 mm _×_ 30.7 mm. The high density of aligned tracks, indicative of an\nEAS, is clearly visible in the",
+        "score": -6.8284194902940225,
+        "dense_score": null,
+        "bm25_score": 13.898570908138243,
+        "graph_score": 0.0,
+        "rerank_score": -10.512253761291504,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4051,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2750105__2401.11438__Tensor_force_impact_on_shell_evolution_in_neutron-rich_Si_and_Ni_isotopes.md",
+        "title": "2024__recid_2750105__2401.11438__Tensor_force_impact_on_shell_evolution_in_neutron-rich_Si_and_Ni_isotopes",
+        "text": "general form of nucleon-nucleon forces\ninvolves the contribution of the tensor component\ncontained in all meson-exchange models. One of the\nmost important experimental evidences for the presence of off-center forces is the non-zero quadrupole\n\nmoment of the deuteron. Tensor interaction leads\n\nto an additional long-range spatial correlation of the\nwave functions of two nucleons in the triplet state\nand actually determines the existence of the deuteron\n\n[2]: the state in which the vector connecting the neutron with the proton is aligned with their spins is the\nmost energetically favorable. A simple account of the\nisospin dependence of nuclear forces shows that in the\ncase of an isovector state, the attraction arising due\n\nto tensor forces should be three times weaker than in\n\nthe state with zero isospin [1].\nDespite the crucial role of the tensor component\nin the structure of the deuteron, various models of\nmany-particle systems based on effective interactions,\nsuch as Skyrme or Gogny forces, have not explicitly\n\nconsidered the contribution of the tensor interaction\n\nfor a long time. On the one hand, the introduction\nof additional parameters complicates the computa\n\nReceived 14 March 2009\n\n∗ The study was supported by the Interdisciplinary Scientific and Educational School of Moscow University ”Fundamental and\nApplied Space Research”. Sidorov S.V. expresses his gratitude for the support provided by the Foundation for the Development\nof Theoretical Physics and Mathematics ”BASIS”.\n1) E-mail: sv.sidorov@physics.msu.ru\n\n© 2013 Chinese Physical Society and the Institute of High Energy Physics of the Chinese Academy of Sciences and the Institute\nof Modern Physics of the Chinese Academy of Sciences and IOP Publishing Ltd\n© 2009ChinesePhsicalSociet andtheInstituteofHighEnerg PhsicsoftheChineseAcadem ofSciencesandtheInstitute\n\nNo. X Chinese Physics C Vol. 37, No. 1 (2013) 010201 2\n\ntional procedure; on the other, fitting the interaction\nparameters to the experimental data of a large number of nuclei makes it possible to effectively take into\naccount the influence of certain interaction features.\nHowever, following the accumulation of new data in\nexperiments with radioactive beams, the question of\nthe influence of the tensor contribution on the calculations of the nuclear structure in many-particle models\nhas again become relevant.\n\nThe role of tensor forces in the formation of new\n\nmagic numbers and its influence on the shape of various nuclei was investigated in a",
+        "score": -6.833266097620914,
+        "dense_score": null,
+        "bm25_score": 13.960590302225336,
+        "graph_score": 0.0,
+        "rerank_score": -10.51980209350586,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2737,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2692914__2309.00225__Rapid_single-shot_parity_spin_readout_in_a_silicon_double_quantum_dot_with_fidelity_exceed.md",
+        "title": "2024__recid_2692914__2309.00225__Rapid_single-shot_parity_spin_readout_in_a_silicon_double_quantum_dot_with_fidelity_exceed",
+        "text": "**Title:**\n\nRapid single-shot parity spin readout in a silicon double quantum dot with fidelity exceeding 99 %\n\n**Author list:**\n\nKenta Takeda [1, *], Akito Noiri [1], Takashi Nakajima [1], Leon C. Camenzind [1], Takashi Kobayashi [2],\n\nAmir Sammak [3,4], Giordano Scappucci [3,5], and Seigo Tarucha [1, 2 *]\n\n**Affiliations:**\n\n1 RIKEN Center for Emergent Matter Science (CEMS), Wako, Japan.\n\n2 RIKEN Center for Quantum Computing (RQC), Wako, Japan.\n\n3 QuTech, Delft University of Technology, Delft, The Netherlands.\n\n4 Netherlands Organisation for Applied Scientific Research (TNO), Delft, The Netherlands.\n\n5 Kavli Institute of Nanoscience, Delft University of Technology, Delft, The Netherlands.\n\n*Correspondence to: Kenta Takeda (kenta.takeda@riken.jp) or Seigo Tarucha (tarucha@riken.jp)\n\n**Abstract** :\n\nSilicon-based spin qubits offer a potential pathway toward realizing a scalable quantum computer\n\nowing to their compatibility with semiconductor manufacturing technologies. Recent experiments in\n\nthis system have demonstrated crucial technologies, including high-fidelity quantum gates and\n\nmultiqubit operation. However, the realization of a fault-tolerant quantum computer requires a high\n\nfidelity spin measurement faster than decoherence. To address this challenge, we characterize and\n\noptimize the initialization and measurement procedures using the parity-mode Pauli spin blockade\n\ntechnique. Here, we demonstrate a rapid (with a duration of a few  s) and accurate (with >99%\n\nfidelity) parity spin measurement in a silicon double quantum dot. These results represent a significant\n\nstep forward toward implementing measurement-based quantum error correction in silicon. (116\n\nwords)\n\n**Main text** :\n\nHigh-fidelity measurement of quantum states is crucial for the operation of a quantum computer. This\n\nis particularly important for quantum error correction protocols, which rely on feedback quantum gates\n\nthat are based on syndrome measurements . In order to implement these protocols effectively, the\n\nqubit measurements must be performed much faster than decoherence. While previous experiments\n\nwith spin qubits in silicon have achieved significant milestones such as quantum non-demolition\n\nmeasurement, high-fidelity quantum gates, and multi-qubit control, single-shot\n\nmeasurement of single-spin states has generally been slow and with modest fidelity.\n\nThe readout of a single-spin state typically relies on spin-to-charge conversion techniques, such as\n\nenergy-selectiv",
+        "score": -6.865684527319831,
+        "dense_score": null,
+        "bm25_score": 14.220093247882353,
+        "graph_score": 0.0,
+        "rerank_score": -10.569868087768555,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 347,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2645809__2303.14079__The_Astri_Mini-Array_of_Cherenkov_Telescopes.md",
+        "title": "2023__recid_2645809__2303.14079__The_Astri_Mini-Array_of_Cherenkov_Telescopes",
+        "text": "a function of the off-axis angle for a point-like source (for\nenergies greater than 2 TeV and 50 hours of exposure ). The MAGIC sensitivity is also shown for comparison\n\nwith other IACTs\n\n**4.** **Scientific operations**\n\nDuring the first three years of operations the ASTRI Mini-Array will be run as an experiment.\n\nThe ASTRI Science team will develop a strategy to concentrate the observational time on a limited\n\nnumber of programs with clearly identified objectives ( see [11] ). After this initial period the\n\nproject will move towards an observatory model (see [12] and [13] ).\n\nThe scientific observations of the ASTRI Mini-Array will cover both Galactic and extragalactic\n\ntargets. One of the main scientific goals will be the characterization and identification of the\n\nPeVatron candidates detected by particle shower detectors like HAWC or LHAASO [14]. Many\n\nof these sources are non-identified and possibly associated with many counterparts. In particular,\n\nASTRI Mini-Array, thanks to its good angular resolution, will be able to investigate the morphology\n\nof these sources, to identify the astrophysical process at the basis of the emission, and then help to\n\nunderstand the nature of the Galactic PeVatrons. Other Galactic targets in the scientific program are\n\nPulsar Wind Nebulae (PWN) and TeV Halos. The energy-dependent maps produced by the ASTRI\n\nMini-Array observations will allow an understanding of how these sources work.\n\nThe ASTRI Mini-Array will contribute on the extragalactic side to monitor and characterise\n\nBlazar emission. The observation of these sources can also lead to the evidence of exotic processes\n\nof fundamental physics, like e.g. Lorentz Invariance Violation (LIV) or Axion-like particles (ALP)\n\nproductions. ASTRI Mini-Array will also follow up transient events of particular interest (for\n\nexample, events with known low redshift) like Gamma-Ray Bursts and Gravitational Events. The\n\nASTRI Mini-Array science is not limited to 훾-ray astrophysics, but it will include the measurement\n\nand study of primary Cosmic Rays.\n\nAll these studies require long exposures especially for energies larger than few tens of TeV.\n\nThe observational strategy will then focus on few sky fields to obtain long exposures on selected\n\ntargets. At this scope, the large field of view of the ASTRI Mini-Array will play an important role\n\nin allowing the observation (on the Galactic plane) of a few sources at a time. Observations at large\n\n5\n\n_The Astri Mini-Array of Cherenko",
+        "score": -6.893221788719052,
+        "dense_score": null,
+        "bm25_score": 16.733562252505248,
+        "graph_score": 0.0,
+        "rerank_score": -10.613783836364746,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 769,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2661012__2305.10957__High-quality_superconducting_alpha-Ta_film_sputtered_on_the_heated_silicon_substrate.md",
+        "title": "2023__recid_2661012__2305.10957__High-quality_superconducting_alpha-Ta_film_sputtered_on_the_heated_silicon_substrate",
+        "text": "-shape feature of the grains is\nevident. At 400 °C, a tight network of elongated needle-shaped grains uniformly distributed across the surface\n\n**Figure 1.** ( **a** ) XRD pattern of α-Ta films deposited on ­TiN x /Si at different temperatures ranging from RT to\n500 °C. The curves are shifted upward for a better display. ( **b** ) and ( **c** ) Enlarged XRD pattern near (110) peaks\nand (220) peaks shown in ( **a** ). The intensities are plotted on a logarithmic scale to see the important behavior at\nlower intensities shown in ( **b** ) and ( **c** ).\n\n**Scientific Reports** | (2023) 13:12810 | https://doi.org/10.1038/s41598-023-39420-y\n\nVol:.(1234567890)\n\n2\n\nwww.nature.com/scientificreports/\n\n**Figure 2.** AFM images and cross section TEM of α-Ta/Si at different temperatures. ( **a**, **f** ) RT, ( **b** ) 150 °C, ( **c** )\n300 °C, ( **d** ) 400 °C, ( **e**, **f** ) 500 °C. White arrows are used for guiding holes in ( **a** ) and ( **e** ).\n\n[Fig. 2d]. Compared to the one sputter deposited at 300 °C, the size of the needle-shaped grains at 400 °C is wider\nand more homogeneous. Next at 500 °C, as shown in Fig. 2e, the grains look elongated, highly homogeneous in\nsize and uniformly distributed on the surface. Moreover, the density of defects such as holes with varying size and\ndepth in the surface of α-Ta grown at RT are much higher than these of α-Ta films grown at high temperatures.\nFigure 2f–g reveal that α-Ta films deposited at RT and 500 °C are highly dense and not porous, which suggests\nholes observed from AFM images only appear on the surface. These results reflect substrate temperature plays a\ncritical role in controlling the surface morphology of the α-Ta film. The difference in the topographic feature is\nanswerable for the different quality of macroscopic electrical transport properties in the films as discussed below.\nClose microstructure analysis near the hetero-interface between α-Ta film and Si by high-resolution highangle annular dark-field scanning transmission electron microscopy (HAADF-STEM) and Energy Dispersive\nSpectrometer (EDS) is shown in Fig. 3. For α-Ta film grown at RT, the HAADF-STEM micrograph revealed that\nthere is about 5 nm ­TiN x buffer layer between the Ta film and the Si substrate [Fig. 3a]. Additionally, the ­TiN x\nbuffer layer growth on the bare Si substrates is correlated with the formation of an amorphous layer (1~2 nm\nthick) during the pre-deposition procedure, which is consistent with previous ­reports [36] (Supplement",
+        "score": -6.903452838306696,
+        "dense_score": null,
+        "bm25_score": 14.43769695213954,
+        "graph_score": 0.0,
+        "rerank_score": -10.628280639648438,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 771,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2661012__2305.10957__High-quality_superconducting_alpha-Ta_film_sputtered_on_the_heated_silicon_substrate.md",
+        "title": "2023__recid_2661012__2305.10957__High-quality_superconducting_alpha-Ta_film_sputtered_on_the_heated_silicon_substrate",
+        "text": "x buffer layer as discussed above. Meanwhile, the distribution of contaminants such as H, C and\n4\nO in the bulk of films of these two samples are detected. As shown in Fig. c and d, similar O, C and H profiles\n\n**Scientific Reports** | (2023) 13:12810 | https://doi.org/10.1038/s41598-023-39420-y\n\n3\n\nVol.:(0123456789)\n\nwww.nature.com/scientificreports/\n\n**Figure 3.** Ta-Si interface of α-Ta/Si films grown at RT ( **a** – **c** ) and 500 °C ( **d** – **f** ). ( **a**, **d** ) High resolution HAADFSTEM images showing Ta-Si interface; ( **b** – **c**, **e** – **f** ) EDS maps of Ta and Si.\n\n**Figure 4.** TOF-SIMS depth profiles of α-Ta/Si films deposited at ( **a**, **b** ) RT and ( **c**, **d** ) 500 °C respectively. The\nintensities are plotted on a logarithmic scale to see the important behavior at lower intensities.\n\n**Scientific Reports** | (2023) 13:12810 | https://doi.org/10.1038/s41598-023-39420-y\n\nVol:.(1234567890)\n\n4\n\nwww.nature.com/scientificreports/\n\n**Figure 5.** Temperature dependence of the electrical transport properties for α-Ta films deposited at ( **a** ) RT and\n( **b** ) 500 °C respectively. The inset shows R-T curve near ­T c .\n\n~~are also observed. In addition, their concentrations are just above the detection levels. Based on this discussion,~~\nwe can conclude that the insignificant intensity of contaminants is nearly the same in the bulk of these two films.\nThe electrical properties were detected from the two α-Ta films grown at RT and 500 °C with four-point probe\nmeasurements. The resistivity measured as a function of temperature is shown in Fig. 5. The ­T c values are found\nto be 3.8 and 3.9 K for samples grown at RT and at 500 °C respectively. These Tc values are comparable to that\nof the bulk α-Ta but much higher than that of the bulk β-Ta ­(T c < 1), directly verifying the deposited Ta film is\nin the α phase, which is consistent with the above XRD results. For the α-Ta film grown at 500 °C, its RRR value\n(RRR = ρ(300 K)/ρ(5 K)) is 3.85. Compared to α-Ta film grown at RT, where RRR = 1.85, the RRR value of α-Ta\nfilm grown at 500 °C is much higher and the resistivity much smaller. This is likely due to the larger grain sizes\nand the existence of fewer ­defects [37][–][40] rather than the presence of contaminants in the α-Ta film grown at 500 °C,\nwhich have been discussed above. Moreover, according to earlier ­studies [13][,][39][,][40], a higher RRR in the α-Ta film\ngrown at 500 °C render it more suitable as a base material for super",
+        "score": -6.989967038896349,
+        "dense_score": null,
+        "bm25_score": 15.904972238983564,
+        "graph_score": 0.0,
+        "rerank_score": -10.76234245300293,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.418635359033942,
+    "generation_latency_s": 3.403984010219574e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.418635359033942,
+    "generation_latency_s": 3.403984010219574e-07
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "mul004",
+    "query_type": "multi_hop",
+    "query": "How can graph retrieval connect a detector technology to a performance metric?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "graph",
+      "retrieval"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can graph retrieval connect a detector technology to a performance metric?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7341,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2931804__2506.06684__A_Concise_Primer_on_Solid-State_Quantum_Emitters.md",
+        "title": "2025__recid_2931804__2506.06684__A_Concise_Primer_on_Solid-State_Quantum_Emitters",
+        "text": "iques, offering a notable\nadvantage. Additionally, their dipole moments are often\norders of magnitude larger than those of atoms, as the\nphysical dimensions of solid-state emitters typically span\nthousands of crystal lattices. This leads to significantly\nfaster photon emission rates, which is highly desirable for\nlight-emitting applications. Moreover, by leveraging advanced nanofabrication technologies, solid-state emitters\ncan be integrated into various photonic nanostructures,\nenabling scalable and integrable device designs. These\ncombined advantages make solid-state emitters a popular choice for quantum light sources.\nHowever, there are notable challenges. Unlike atomic\nsystems, where uniformity is typically maintained when\nthe species are the same, solid-state emitters often exhibit large variability. This leads to a wide spread in\n\nemission properties, such as wavelength and lifetime. Another critical factor is the quality of the crystal or material in which the emitters reside, as lattice imperfections directly impact the emitted photon characteristics.\nEnsuring high material purity and minimising defects is\ncrucial for achieving high-quality quantum light sources.\nThe quality of quantum emitters is characterised by\nseveral key metrics. Below, we outline these metrics,\nhighlighting their importance in evaluating emitter performance and suitability for quantum applications.\n\n- **Radiative rate:** This metric is inversely linked to\nthe emitter’s radiative lifetime, indicating the speed at\nwhich the emitter creates photons. For a bright emitter, the radiative rate should be high, typically on the\norder of hundreds of MHz or GHz.\n\n- **Spectra and linewidth:** This metric characterises\nthe quantum emitter in the spectral domain. Noise\nduring photon emission – such as the thermal, charge,\nand spin noise [9, 10] – directly impacts the emitter’s\nperformance. From a thermal noise perspective, the\ncoherent part of the emission spectrum is referred to\nas the zero-phonon line (ZPL), representing the transition that occurs without phonons’ involvement. This\nline is accompanied by a broad, incoherent phonon\nsideband[11]. The _ZPL portion_ within the emission\nspectrum indicates the fraction of “useful” photons,\nwhereas the ZPL _linewidth_ reveals information about\nother noise processes. Ideally, the ZPL portion should\napproach unity, and the linewidth should be narrow.\nHowever, there is a fundamental limit to how narrow\nthe linewidth can be: in the absence of decoh",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 25.785675062444774,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7342,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2931804__2506.06684__A_Concise_Primer_on_Solid-State_Quantum_Emitters.md",
+        "title": "2025__recid_2931804__2506.06684__A_Concise_Primer_on_Solid-State_Quantum_Emitters",
+        "text": "the ZPL _linewidth_ reveals information about\nother noise processes. Ideally, the ZPL portion should\napproach unity, and the linewidth should be narrow.\nHowever, there is a fundamental limit to how narrow\nthe linewidth can be: in the absence of decoherence,\nthe minimal linewidth is the inverse of the radiative\nlifetime, known as the Fourier limit or transform limit.\nThe ratio between the measured linewidth and this\nlimit serves as a key parameter for assessing the impact of decoherence on the emitter [12, 13].\n\n- **Quantum efficiency:** Quantum efficiency (intrinsic)\nrefers to the ratio of the radiative rate to the total decay rate (comprising both radiative and non-radiative\nrates). For an ideal quantum emitter, the photon creation process (i.e., excited-state preparation and radiative relaxation) should be _deterministic_, requiring a\nquantum efficiency of unity.\n\n- **Single-photon purity:** This metric is quantified by\nthe second-order correlation function at zero time delay, _g_ [(2)] (0), measured in a Hanbury Brown and Twiss\n(HBT) experiment[19](see Fig. 2a). The purity is defined as 1 - _g_ [(2)] (0), and is particularly important for\nsingle-photon sources. Ideally, a single-photon emitter\nshould produce no more than one photon at a time,\ncorresponding to _g_ [(2)] (0) = 0.\n\n- **Indistinguishability:** Indistinguishability reflects\nthe coherence of the generated photons and determines\nwhether they are quantum-mechanically identical in\n\n2\n\nproperties such as frequency, polarisation, and emission time. It is evaluated via Hong-Ou-Mandel (HOM)\ninterference[20]: when two identical photons interfere\nat a beamsplitter, they bunch and exit the same output\nport, whereas completely distinct photons have a 50%\nchance of exiting opposite outputs. Ideally, indistinguishable photons exhibit unit interference contrast[21]\n(see Fig. 2b).\n\n- **Entanglement fidelity:** This is a key metric for entangled photon sources, quantifying how closely the\ngenerated state matches the ideal entangled state.\nHigh fidelity indicates minimal decoherence and noise,\nwhile lower fidelity points to imperfections in the entangled state. A common approach for characterising\nentanglement fidelity is quantum state tomography[22],\nas illustrated in Fig. 2c for polarisation entanglement.\nHowever, quantum state tomography scales poorly\nwith the qubit number. For larger systems, fidelity\nwitnesses offer a practical alternative: GHZ states\nare assessed via parity measurements in the computati",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 25.767775914842066,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3412,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720277__2311.04858__Scalable_Fault-Tolerant_Quantum_Technologies_with_Silicon_Color_Centers.md",
+        "title": "2024__recid_2720277__2311.04858__Scalable_Fault-Tolerant_Quantum_Technologies_with_Silicon_Color_Centers",
+        "text": "ntanglement can be used as a resource to construct cluster states to be consumed for computation within the\nmeasurement-based computing paradigm [93, 94] or teleported gates in the traditional gate model of quantum\ncomputing [95, 96]. Both of the cluster state, and teleported gate models of quantum computation allow for\nblind-computing applications over a network [15, 97]. Below the focus is on teleported gates as an example implementation.\n\nFor this kind of quantum technology, quantum networks’ repeaters and quantum computing modules will\nbe almost identical in their core construction, which reflects the fact that the key to efficient, high-performance\nlarge-scale quantum networking and quantum computing\nis high-bandwidth high-connectivity entanglement distribution. In the long term, it is suggested that this unified\n\ntechnology will outperform architectures with disparate\nnetworking and computing cores that require extra layers\nof quantum interfaces which will inevitably compromise\nentanglement distribution rates and fidelities.\n\n**D.** **Computing and networking with T centres**\n\nEven in a loss-tolerant design, achieving efficient distribution of entanglement at scale is a critical performance metric for high-connectivity SFTQ. This further\nmotivates the adoption of solid-state spin-photon interfaces, ideally telecom colour centres, which can be directly placed into low-loss integrated photonic circuits in\nsilicon. Direct integration not only maximizes photon\ncollection efficiency from every single qubit, but also enhances the photon emission rate and quality using routine photonic engineering, while the spins, particularly\nlong-lived nuclear spins, can perform at the high levels\nnecessary for low-overhead QEC.\nThe above considerations foretell a future where scalable fault-tolerant quantum networks and scalable fault\ntolerant quantum computers will be the same core technology, with long-lived spins embedded into silicon integrated photonics, directly interfacing with telecom photons. In particular, silicon T centre [25, 98, 99] is proposed as the exemplary foundational quantum unit: in\naddition to direct telecom access, it contains one unpaired electron spin and up to three spin-1/2 nuclear\nspins (one hydrogen and two carbon atoms, see Figure 1),\neach of which serves as a high fidelity and long-lived qubit\nwith good performance comfortably above 1 K [25] where\nsubstantial cooling power is available for large-scale modular processors.\nSolid-state spin p",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 24.3765221186189,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3413,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720277__2311.04858__Scalable_Fault-Tolerant_Quantum_Technologies_with_Silicon_Color_Centers.md",
+        "title": "2024__recid_2720277__2311.04858__Scalable_Fault-Tolerant_Quantum_Technologies_with_Silicon_Color_Centers",
+        "text": "gen and two carbon atoms, see Figure 1),\neach of which serves as a high fidelity and long-lived qubit\nwith good performance comfortably above 1 K [25] where\nsubstantial cooling power is available for large-scale modular processors.\nSolid-state spin performance is largely determined by\nthe host crystal environment. High fidelity performance\nand ultra-long coherence times [79, 100] are common to\nmany silicon spin centres including T centres [25]. In\nparticular, the capability to isotopically purify silicon\nto the nuclear spin-free [28] Si isotope has shown nuclear\nspin coherence times of 3 hours [79], with fidelities above\n99.9% [78]. T centres in bulk [28] Si samples show spin coherence times ( _T_ 2 Hahn echo) of 2.1 ms for the electron\nand 1.1 s for the hydrogen nuclear spin; both spins have\n_T_ 1 lifetimes far longer than a second [25].\nThe T centre spins almost uniquely [101] possess a\ndirect telecom photonic interface in silicon. It can efficiently interact with a pump laser pulse and emit a\nspin-entangled O-band photon. A photonic cavity can\nchange the photonic environment around the T and enhance the emission of the photon into desired optical\nmodes through the Purcell effect [102]. These modes are\ncoupled to optical waveguides with well-defined modes,\nand therefore spin-entangled photons can be accurately\n(and with low loss) routed to their destination either\nthrough integrated photonic waveguides or by coupling\ninto optical fibre. Optical fibres can connect T centres across multiple chips, enabling a naturally modular\n\n6\n\nand horizontally-scalable architecture. Modular scaling\ncan relieve IO density challenges and environmental constraints that emerge as systems grow in size.\n\n**IV.** **QUANTUM OPERATIONS**\n\nThe silicon T centre, only recently rediscovered for\nquantum applications in 2020 [25], offers all the ideal\ncharacteristics listed above to enable high-performance\nSFTQ in the near and long term. It merges the advantages of silicon fabrication and scalability, telecom emission, and long-lived spin memories into a quantum system uniquely adapted to a modular, high-connectivity\narchitecture. Below it is described how the qubits of the\nT centre perform high-fidelity operations according to\nthis vision.\n\n**A.** **State preparation and measurement**\n\nFor readout and initialisation, the electron spin can\nbe projectively measured and initialized to high fidelity\nusing spin-dependent optical excitation (Figure 4a) [25].\nThe initialization and readout",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 24.217783510777956,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4458,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr.md",
+        "title": "2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr",
+        "text": ". ... ... ... ... ...\n\n_,_\n\nwhose non-trivial diagonals are at most _O_ ( _√N_ ) data\n\nqubits apart from each other. This represents the shuttling distance that is necessary to generate the full connectivity graph. Note that, since we take _B_ to correspond\nto an arbitrary LDPC code, the generation of most nontrivial diagonals involves only _O_ ( _√N_ ) qubits. The rest\n\nof the qubits are idle, and hence one needs to account\nfor the potential negative effects of idling on the code’s\nperformance in practice (see Section IV A).\n\n_3._ _Generalised bicycle codes_\n\nFinally, consider two-block LDPC codes whose parity\ncheck matrices take the form of\n\n_H_ _x_ = � _C, D_ � (1)\n\n_H_ _z_ = � _D_ _[T]_ _, C_ _[T]_ [ �] (2)\n\nwhere both _C_, _D_ are sparse binary matrices that commute. A way to ensure this commutation is to take _C_\nand _D_ as any two _l × l_ sparse circulant matrices that\nhave the form\n\n\n\n\n\n _,_\n\n\n\n_C_ =\n\n\n\n\n\n\n\n\n\n_a_ 0 _a_ _l−_ 1 _a_ _l−_ 2 _. . . a_ 1\n\n_a_ 1 _a_ 0 _a_ _l−_ 1 _. . . a_ 2\n\n_a_ 2 _a_ 1 _a_ 0 _. . . a_ 3\n\n_a_ 3 _a_ 2 _a_ 1 _. . . a_ 4\n\n... ... ... ... ...\n\nwhere _a_ _i_ _∈_ F (2) such that only a constant number of\n_a_ _i_ are non-trivial. These matrices have an intrinsically\ndiagonal structure, therefore, the number of shuttles required to generate the qubit connectivity graph for the\ncorresponding parity check matrices (Eqn. 1, 2) is constant. Codes constructed with such sparse circulant matrices have been shown to perform well within the code\ncapacity-based simulations [8], therefore, it is interesting\nto consider them in our 2 _×_ N architecture where shuttling noise has to be accounted for. While the number of\nshuttles is constant, note that, in general, the shuttling\ndistance for these codes scale with the size of the code\n\nblock.\nIn the following, we present realistic noise simulations\nof the mentioned codes under the 2 _×_ N architecture. We\n\nfocus on the rotated surface code for universal fault tolerant quantum computation and later discuss how codes\nfrom other classes can be used for efficient quantum mem\nory.\n\n**III.** **UNIVERSAL QUANTUM COMPUTATION**\n**ON A SPIN-QUBIT SURFACE CODE**\n\nThe previous section discussed how to embed an individual code block on a 2 _×_ N device by taking advantage\nof shuttling. This is only the first step towards the implementation of a fully functional quantum computer, as\nwe still need to discuss how operations between logical\nqubits can be implemented despite the strong architectural",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 23.97509532735653,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1841,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "en them. VELO tracks seed the reconstruction algorithm of the LHCb\nspectrometer and provide discriminatory information for event selection. The VELO has\nbeen redesigned [33] to be compatible with the luminosity increase and the trigger-less\n40 MHz readout requirement of the upgraded experiment. It must continue to provide\n\n12 These are VELO stations placed upstream of the interaction point.\n\n12\n\npattern recognition within an acceptable CPU budget, whilst maintaining the highest\ntrack-finding efficiency. The core technology of the new VELO is pixelated hybrid silicon\ndetectors, which are arranged into modules and cooled by a silicon microchannel cooler.\nOf the mechanical structures, only the principal vacuum vessel and motion services remain\nfrom the version that was in operation until 2018. In particular, the RF boxes, the\nenclosures that interface the detector to the LHC beams, were entirely redesigned reducing\nboth material and the inner radius of the VELO along the beam line. Furthermore, a\nnew structure, a _storage cell_, is fitted immediately upstream of the VELO detector in the\nbeam vacuum, see section 4. A summary of the changes is shown in table 1.\n\nTable 1: Specifications of the upgraded VELO compared to those of the original version.\n\n|Col1|2009–2018|2022|\n|---|---|---|\n|RF box inner radius (minimum thickness)<br>Inner radius of active silicon detector<br>Total fuence (silicon tip) [_n_eq_/_cm2 ]<br>Sensor segmentation<br>Total active area of Si detectors<br>Pitch (strip or pixel)<br>Technology<br>Number of modules<br>Total number of channels<br>Readout rate [ MHz ]<br>Whole-VELO data rate<br>Total power dissipation (in vacuum)|5_._5 mm (300 µm)<br>8_._2 mm<br>4_ ×_ 1014<br>_r −ϕ_ strips<br>0_._22 m2<br>37–97 µm<br>n-on-n<br>42<br>172 thousand<br>1, analogue<br>150 Gbit/s<br>800 W|3_._5 mm (150 µm)<br>5_._1 mm<br>_∼_8_ ×_ 1015<br>square pixels<br>0_._12 m2<br>55 µm<br>n-on-p<br>52<br>41 million<br>40, zero suppressed<br>_∼_2 Tbit/s<br>_∼_2 kW|\n\nThe combination of the pixel geometry, a smaller distance to the first measured point\nand reduced material means the performance of the VELO is significantly improved.\nHowever, the closer proximity to the LHC collisions and the step-change in design\nluminosity means the design must prepare for hit rates and radiation doses that are an\norder of magnitude higher than those experienced by the earlier VELO.\n\n##### **3.2 Design requirements**\n\nThe principal metric for a vertex detector design is impact paramete",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 23.88629315797895,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5911,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2751895__2401.14683__Generating_Shuttling_Procedures_for_Constrained_Silicon_Quantum_Dot_Array.md",
+        "title": "2025__recid_2751895__2401.14683__Generating_Shuttling_Procedures_for_Constrained_Silicon_Quantum_Dot_Array",
+        "text": "he quantum dots in a two-dimensional array and\nprovide a shared control gate connected to the quantum dots\nin the same row or column of the array [1] [2].\nThere are three challenges when it comes to implementing\nquantum gate operations in the quantum dot array using\nour approach. The first challenge is how to connect a qubit\narranged regularly in a two-dimensional array to read-out\ncircuits that can be placed on the rows at the end of the\narray. The second challenge is how to suppress of the crosstalk\nduring the quantum gate operation. In a single qubit operation\n(e.g., spin rotation to a qubit), the Larmor frequency of the\nqubit is selectively matched with the frequency of an externally\napplied RF wave. However, neighboring qubits around the\ntarget qubit also receive the effects of the RF wave from this\n\noperation, known as crosstalk, and its spin direction is slightly\ndisturbed. This reduces the fidelity of the neighboring qubits.\nThe third challenge is how to ensure the independent quantum\ngate operation of a single qubit in an array where control gates\nare shared by multiple quantum dots in a column or row. For\nexample, when a quantum gate operation is executed on a\nqubit using a control gate shared by the column, another qubit\nin that column will also be operated on.\nTo overcome these challenges, we have proposed _shuttling_\n_qubits_ [3] [4]. An electron in a quantum dot can be shuttled\nto a neighboring quantum dot if there is no electron in\nthe dot, which is executed by applying appropriate control\nvoltage to the control gates. Regarding the first challenge,\nan arbitrary qubit can be shuttled to the read-out circuit in\nthe end rows of the array. Crosstalk, the second challenge,\ncan be suppressed by evacuating the neighboring qubits away\nfrom the target qubit before the quantum gate operation. For\nthe third challenge, independent operation can be achieved\nby moving other qubits away from the target qubit. To allow\nhorizontal and vertical shuttling of qubits, we proposed twodimensional control gates [1]. The control gates in the first\nlayer are shared by quantum dots in the same column of the\narray. A qubit is shuttled horizontally using the column-shared\ncontrol gates in the first layer. If certain conditions are met,\nonly one qubit can be shuttled independently. Otherwise, all\nqubits in the same column move simultaneously in the same\ndirection. The shuttling in vertical directions is conducted by\nthe row-shared control gates in the second layer. A ro",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 23.8087713706164,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 7862,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors.md",
+        "title": "2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors",
+        "text": "mplitude of the photosensor signal _V_ _p_ ranges from 0.1 V to 3 V in 0.1 V increments, with a rise time\nof 100 ps and a decay time of 5 ns. A constant bias signal offset of 2.5 V is\n\n6\n\nadded to forward bias the diode and accommodate small signal amplitudes.\nThe capacitor _C_ _d_ decouples the DC offset prior to signal discrimination. The\ncomparator creates a square signal by comparing the circuit output to a\n100 mV threshold. We took measurements of the input amplitude and the\noutput Time-over-Threshold.\n\nFigure 4: Simulated circuit. The baseline of the photosensor signal _V_ _p_ is _V_ _dc_ . The capacitor\n_C_ _d_ decouples the DC component of the shaped signal before it reaches the discriminator.\n_R_ represents the resistive load.\n\n_3.1. Circuit performance without resistive load_\n\nThe first step was to evaluate the performance of the circuit under noload conditions. We set the shaper capacitance to 1 nF. Figure 5 shows the\nphotosensor signals for different peak amplitudes (left) and the corresponding\nshaped signals using the 1N5817 diode (right). The photosensor signal exhibits typical exponential decay ( _τ_ = 5 ns), while the shaped signal decreases\nat a constant rate of 31.7 mV/µs.\nAs shown in Fig. 6, the capacitor discharges at a constant current set\nby the diode. The discharge current remains close to the diode saturation\ncurrent (31.7 µA for the 1N5817 diode), and quickly drops to zero when the\ncapacitor is almost discharged, reaching the baseline voltage of 2.5 V.\n\n_3.2. Circuit performance with resistive load_\n\nIn this step, we evaluate the performance of the circuit after adding a\n50 Ωresistive load to reduce the discharge time of the capacitor. Figure 7\nshows how the diode current is shifts positively from 0 mA to a new reference\npoint of approximately 45 mA. The resistive load continuously drains current\n\n7\n\n5.5\n\n5.0\n\n4.5\n\n4.0\n\n3.5\n\n3.0\n\n2.5\n\n5.0\n\n4.5\n\n4.0\n\n3.5\n\n3.0\n\n2.5\n\n0 10 20 30 40 50 60\nTime [ns]\n\n0 20 40 60 80 100\nTime [μs]\n\nFigure 5: The left graph shows the simulated photosensor signal with a peak amplitude\nranging from 0.1 V to 3 V in 0.1 V increments. The output signal of the trailing edge\nshaper has a 1 nF shaping capacitance and no resistive load (right). The discharging rate\nis constant rate of 31.7 mV/µs.\n\n5\n\n0\n\n−5\n\n−10\n\n−15\n\n−20\n\n−25\n\n−30\n\n−35\n\n|Col1|Col2|\n|---|---|\n|||\n|||\n|0<br>20|40<br>60<br>80<br>1<br>Time [μs|\n\nFigure 6: Diode current during the discharge cycle for different photosensor signals. The\ndischarging current",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 23.80699428754015,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1842,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "means the design must prepare for hit rates and radiation doses that are an\norder of magnitude higher than those experienced by the earlier VELO.\n\n##### **3.2 Design requirements**\n\nThe principal metric for a vertex detector design is impact parameter resolution _σ_ IP, the\nprecision with which the perpendicular distance of a track to a point is measured. This\nmetric is a function of: track transverse-momentum, _p_ T ; the average axial distance of the\nmaterial before the second measurement, _r_ 1 ; the distances from the point to the first and\nsecond measurements, ∆ _i_ ( _i_ = 1 _,_ 2); and the position uncertainties of those measurements,\n_σ_ _i_ . In the VELO case, it can be approximated as [34],\n\n+ [∆] 2 [2] _[σ]_ 1 [2] [+ ∆] [2] 1 _[σ]_ 2 [2]\n∆ [2] 12\n� ~~��~~ ~~�~~\nextrapolation\n\n_r_ 1\n_σ_ IP [2] _[≈]_\n� _p_ T [ GeV/ _c_ ]\n\n2\n~~_x_~~\n0 _._ 0136 GeV/ _c_\n� � ~~�~~ _X_ 0\n\n1 + 0 _._ 038 ln _[x]_\n� _X_ 0\n\n�� 2\n\n(2)\n\n� ~~�~~ � ~~�~~\nmultiple scattering\n\nwhere _x/X_ 0 is the fraction of radiation length traversed before the second measurement.\nThe first term describes the degradation induced by multiple scattering. The second term\n\n13\n\nis the extrapolation error, which is dominated by detector geometry: pixel size and lever\narm, ∆ 12, between the first and second measured points. The upgraded VELO design\nwas optimised to achieve, within the nominal LHCb acceptance, a performance at least as\ngood as that of its predecessor VELO, in terms of both _σ_ IP and track-finding efficiency,\ndespite the increased instantaneous luminosity.\n\n**3.2.1** **LHC interface**\n\nThe VELO performance, as described by eq. (2), improves by reducing the radius of\nthe first pixel hits, though this must be balanced against the limitations of proximity to\nthe beam line. The minimal VELO aperture allowed by the requirements of the LHC\ncollimation and protection depends on several factors: the maximum expected separation of\nthe counter-rotating beams; their transverse sizes ( _β_ functions and transverse emittances);\nthe beam direction relative to the longitudinal axis of the VELO (crossing angle); the\nmechanical accuracy and stability of the RF boxes. A reduced, but still conservative,\nradial clearance of 3.5 mm is chosen [35,36] for the RF boxes, the structures that directly\ninterface with the LHC beam environment. This allows the silicon sensors to be arranged\nsuch that the radius of the closest active pixel edge is 5.1 mm from the beam line. The\ndecision takes into account the inte",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 23.70602035032551,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7064,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2885934__2502.11186__Development_of_Fast_Front-End_Electronics_for_the_Muon_Trigger_Detector_in_the_PSI_muEDM_E.md",
+        "title": "2025__recid_2885934__2502.11186__Development_of_Fast_Front-End_Electronics_for_the_Muon_Trigger_Detector_in_the_PSI_muEDM_E",
+        "text": "signals conform to LVTTL standards, ensuring compatibility with the kicker HV switch and\nDAQ system.\n\n_•_ **Performance Metrics:**\n\n**–**\nThe system must reliably operate at a muon trigger\nrate exceeding 120 kHz, with an expected stored\nmuon rate of approximately 0 _._ 5 kHz.\n\n**–**\nCoincidence and anti-coincidence efficiencies must\neach exceed 95%.\n\nIII. D ESIGN OF THE ELECTRONICS FOR THE MUON\n\nTRIGGER DETECTOR\n\nThe schematic diagrams of the electronics for the muon\ntrigger detector, illustrated in Fig. 4, comprise four components: the step-up DC-DC converter, gate electronics, aperture\nelectronics, and Anti-coincidence electronics. The gate and\naperture electronic circuits are similar, with the main difference being that the gate electronics connect to one SiPM, while\nthe aperture electronics connect to six SiPMs in parallel with a\nsingle output. The gate Detector utilizes eight SiPMs, with four\ndedicated to CW readout and four to CCW readout, where both\ndirections share a single set of electronics channels, resulting\nin four readout channels for the gate electronics. In contrast,\nthe aperture detector requires only one aperture electronics\nchannel.\n\nThe selected SiPM is the EQR20-11-3030S model from\nNovel Device Laboratory (NDL, Beijing), which features a\npeak photon detection efficiency (PDE) of approximately 46%\nat 420 nm, a gain of 8 _._ 2 _×_ 10 [5], a low dark count rate\n( _<_ 150 kHz mm _[−]_ [2] at 20 _[◦]_ C), and a low breakdown voltage\nof 27 _._ 5 V, making it well-suited for timing-sensitive applications in our detector system. The choice was driven by its\nhigh PDE in the blue spectral range, compact active area of\n3 _,_ mm _×_ 6 _,_ mm, a large number of microcells (corresponding\nto a total sensitive area of 2 _._ 500 mm [2] ), and low operating\nvoltage. The operating voltage used in this work was 32 _._ 5 V,\ncorresponding to an overvoltage of approximately 5 V. The\nSiPMs are also anticipated to operate at a temperature of 25 _[◦]_ C.\n\n_A. Step-up DC/DC Converter_\n\nA step-up DC/DC converter was utilized to power the\nSiPMs, as illustrated in Fig. 4(c). The chip used in the circuit is\n[the Analog LT1615. The driving voltage is +3](https://www.analog.com/en/products/lt1615.html) _._ 3 V. The output\nvoltage variation over time is displayed in Fig. 3, demonstrating consistent stability in the output voltage. The average\noutput voltage is approximately 32 _._ 68 V, with a resolution of\n_σ_ = 3 mV. The fluctuation range is 13 mV, which leads to a\nv",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 23.499970929111687,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.15556624345481396,
+    "generation_latency_s": 2.50060111284256e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.15556624345481396,
+    "generation_latency_s": 2.50060111284256e-07
+  }
+}

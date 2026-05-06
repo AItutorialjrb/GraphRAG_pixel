@@ -1,0 +1,391 @@
+{
+  "benchmark": {
+    "query_id": "fac001",
+    "query_type": "factoid",
+    "query": "What does HV-MAPS stand for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What does HV-MAPS stand for?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4913,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter.md",
+        "title": "2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter",
+        "text": "plied to the data. The time resolution at _𝑃_ _density_ = 0.9 W/cm [2]\n\nand HV = 200 V was measured to be (20.0 ± 1.0) ps before proton irradiation. At the highest proton\nfluence studied of 1 × 10 [16] n eq /cm [2], the time resolution became (53.1 ± 3.4) ps. An increase of the\nsensor bias voltage to HV = 300 V improved the result to (45.3 ± 1.6) ps.\nThe scan in sensor bias voltage of the board exposed to 1 × 10 [16] n eq /cm [2], showed that the\nplateau in detection efficiency was just reached at 300 V, while the time resolution did not yet reach\n\nits plateau value. These observations, supported by an estimation of the change in resistivity after\n1 × 10 [16] n eq /cm [2], imply that the sensor was not yet fully depleted at 300 V and suggest that the\nnominal working point at that proton fluence is beyond 300 V.\n\nIn conclusion, this study gives first hints that an amplifier using SiGe HBT is not affected\ngreatly by doses up to 1 × 10 [16] n eq /cm [2] . The data show that very high efficiency, very high time\nresolution and radiation tolerance can be obtained by monolithic pixelated silicon detectors without\n\ninternal gain layer that exploit low noise, low power and fast response SiGe HBTs. Commercial\n\nSiGe BiCMOS foundry processes therefore represent a very strong candidate to build monolithic\n\nsilicon detectors for 4D tracking systems at future colliders at a contained cost.\n\n**Acknowledgments**\n\nThis research is supported by the Horizon 2020 MONOLITH ERC Advanced Grant ID: 884447.\n\nThe authors wish to thank Coralie Husi, Javier Mesa, Gabriel Pelleriti, and the technical staff\n\nof the University of Geneva and IHP Microelectronics. The authors acknowledge the support of\n\nEUROPRACTICE in providing design tools and MPW fabrication services, as well as the CERN\n\nSPS testbeam team.\n\n– 13 –\n\n**References**\n\n[1] ATLAS Collaboration. Technical Design Report: A High-Granularity Timing Detector for the\nATLAS Phase-II Upgrade. _CERN-LHCC-2020-007; ATLAS-TDR-031_, June 2020.\n\n[2] CMS Collaboration. A MIP Timing Detector for the CMS Phase-2 Upgrade.\n\n_CERN-LHCC-2019-003; CMS-TDR-020_, March 2019.\n\n[3] G. Pellegrini et al. Technology developments and first measurements of Low Gain Avalanche\nDetectors (LGAD) for high energy physics applications. _Nuclear Instruments and Methods Section A_,\n765:12–16, 2014. Proceedings of the HSTD-9 2013 \"Hiroshima\" Symposium.\n\n[4] Hartmut F-W Sadrozinski, Abraham Seiden, and Nicolò Cartiglia. 4D tracking with ultra-fast silicon\ndetectors",
+        "score": -3.67447119436077,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8627450980392156,
+        "rerank_score": -5.755234718322754,
+        "matched_nodes": [
+          "An",
+          "At",
+          "HV",
+          "The",
+          "In",
+          "CERN"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4397,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors.md",
+        "title": "2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors",
+        "text": "PREPRINT SUBMITTED TO ARXIV – A MULTI-FUNCTION RADIATION-HARDENED HV AND LV LINEAR REGULATOR FOR SIPM-BASED HEP DETECTORS 1\n\n## A Multi-Function Radiation-Hardened HV and LV Linear Regulator for SiPM-based HEP Detectors\n\nPaolo Carniti, Claudio Gotti, and Gianluigi Pessina\n\n_**Abstract**_ **—The use of silicon photomultipliers (SiPMs) to detect**\n**light signals in highly radioactive environments presents several**\n**challenges, particularly due to their sensitivity on radiation,**\n**temperature, and overvoltage, requiring a proper management**\n**of their bias supply. This article presents the design and perfor-**\n**mance of ALDO2, an application-specific integrated circuit and**\n**power management solution tailored for SiPM-based high-energy**\n**physics detectors. The chip’s functions include adjustable and**\n**point-of-load linear regulation of the SiPM bias voltage (10-70 V,**\n**50 mA), monitoring of SiPM current, shutdown, over-current**\n**and over-temperature protection. The same functions are also**\n**available for the low-voltage regulator (1.6-3.3 V, 800 mA), used**\n**to generate the power supply of SiPM readout chips that often**\n**demand stable and well-filtered input voltages while consuming**\n**currents of up to several hundred milliamperes. The chip is**\n**intended to operate in radioactive environments typical of particle**\n**physics experiments, where it must withstand significant levels**\n**of radiation (total ionizing dose and 1-MeV-equivalent neutron**\n**fluence in the range of Mrad and 10** **[14]** **n** **eq** / **cm** **[2]** **, respectively). The**\n**article provides a comprehensive description of the chip design,**\n**as well as experimental measurements, offering insights into the**\n**chip’s performance under various conditions. Finally, radiation**\n**hardening, radiation qualification and reliability are discussed.**\n\nI. Introduction\n\nILICON photomultipliers (SiPMs, also known as multi# S pixel photon counters or MPPCs) [1] have gained wide\nspread use in various high-energy physics (HEP) experiments,\nprimarily due to their excellent photon counting performance,\ncompactness, and immunity to magnetic fields. Despite being\nmore practical and durable than vacuum-based photosensors,\nintegrating SiPMs into experiments still presents several challenges, particularly concerning their power supply. Radiation\ndamage, in fact, leads to a significant increase in the dark\ncurrent, reaching up to a few milliamperes per device, and a\nshift in the",
+        "score": -3.886412084997657,
+        "dense_score": 0.25873029232025146,
+        "bm25_score": null,
+        "graph_score": 0.7254901960784313,
+        "rerank_score": -6.069280624389648,
+        "matched_nodes": [
+          "For",
+          "AND",
+          "HV",
+          "The",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 135,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit.md",
+        "title": "2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit",
+        "text": "e\nuser (see Table A.5).\nAs an example, we show a calibration spectrum measured\nwith a SuperCDMS HVeV device [14] in Fig. 6, compared to a\nsimulation of the spectrum with G4CMP. The peaks in the spectrum correspond to the total phonon energies of integer numbers\nof e [−] /h [+] pairs for a 100 V detector bias, from a single pair at\n∼100 eV to seven pairs at ∼700 eV. Charge trapping and impact\nionization can result in phonon energies corresponding to nonintegral numbers of e [−] /h [+] pairs, tending to fill in the regions between the peaks. Because the phonon resolution of this device\n\nFigure 6: Simulated phonon-response energy spectrum (red) for a SuperCDMS\nHVeV detector operated with a 100 V bias and exposed to 635 nm (1.95 eV) calibration photons, compared to the measured spectrum (black) from Ref. [14].\nThe peaks correspond to integer numbers of e [−] /h [+] pairs. Events with energies between the peaks are attributed to experiencing the effects of charge trapping and impact ionization. The parameters used to simulate these processes\nin G4CMP were obtained by fitting the model in Ref. [48] to the measured\nspectrum.\n\n_T_ HV =\n\n\n\n0\n~~�~~\n\n_m_ ef 0\n\n_m_ _y_\n\n, (11)\n\n_m_ ef\n\n_m_ _z_\n\n\n\ninto a coordinate system in which the electron kinetic energy\nis independent of direction. In that space, _v_ [∗] _i_ [=] _[ v]_ _[i]_ [/][ √] _[m]_ [e][ff] [/] _[m]_ _[i]_ [,]\nwhere the effective mass _m_ eff is given by 3/ _m_ eff = 1/ _m_ _x_ +\n1/ _m_ _y_ + 1/ _m_ _z_ . For cubic crystals (including Si and Ge), the\ntwo masses perpendicular to the valley axis are degenerate,\nwith the different masses conventionally denoted as _m_ ∥ = _m_ _x_\nand _m_ ⊥ = _m_ _y_ = _m_ _z_ . The specific mass values are substratedependent numerical constants (see Ref. [17]). The electron’s\nequation of motion in the rotated conduction valley frame is\ntransformed to\n_eE_ [∗]\n_i_ _i_\n= _[dv]_ [∗] (12)\n_m_ eff _dt_ [.]\n\nFollowing the application of the Herring-Vogt transformation,\nthe same recipe that applies to holes for NTL-phonon emission\ncan be followed for electrons [17].\n\n_2.3.3. Charge trapping_ & _impact ionization_\n\nAs electrons and holes propagate through crystals, they may\ninteract with various types of impurities, conventionally labelled _D_ for donor and _A_ for acceptor impurities. At deeply\ncryogenic temperatures, the “overcharged” H [−] -like impurity\nstates ( _D_ [−] and _A_ [+] ) are dominant [59, 60]; only these impurity states are modeled in",
+        "score": -3.8967217599831376,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7254901960784313,
+        "rerank_score": -6.080899238586426,
+        "matched_nodes": [
+          "For",
+          "At",
+          "HV",
+          "The",
+          "In"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1192,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "d tesla-range magnetic fields [36].\nFurthermore, our easy-to-implement charge-stabilization\nscheme will find immediate applications in other quantum\ntechnology applications of SiV _[−]_, including the development\nof quantum repeaters [37], quantum networks [13, 38] or\nindistinguishable single photon sources [39]. Lastly, it is\nconceivable that our approach for generating and stabilizing\nnear-surface color centers with high optical coherence extends\nto other color centers in diamond or in other wide-bandgap\nhosts such as hBN [40] or SiC [41].\n\n**METHODS**\n\n**Optical Setups**\nTo characterize our diamond samples at room temperature (RT),\nwe employ a home-built confocal microscopy setup. This setup is\nequipped with a continuous wave (cw) 515 nm diode laser (Cobolt\n06-MLD) for off-resonant excitation. At low temperature ( _∼_ 7 K),\nthe sample is housed in a variable-temperature closed-cycle cryostat\n(attocube attoDRY800) and we perform optical spectroscopy again\nwith a home-built confocal microscopy setup. For this setup, we\nput to use cw 445 nm and cw 515 nm diode lasers (Cobolt 06-MLD)\nfor off-resonant excitation as well as a narrow-linewidth (200 kHz)\ntunable (720-739 nm) diode laser (Sacher Lasertechnik LION) for\nresonant excitation. Frequency modulation and control of the LION\nis achieved through a PID loop of a HighFinesse WS-U wavelength\nmeter. Additionally, we stabilize the intensity of the resonant laser\nthrough the PID loop of a home-built optical intensity stabilization\n(OIS) module (Physics Basel SP 999). In case of the resonant laser\nand if applicable to the experiment in question, we carve pulses with\nan acousto-optical modulator (AOM, G&H R15210), whereas the\noff-resonant lasers can be electronically modulated out of the box.\nFor both RT and LT, we focus laser light onto the sample with a\n\n6\n\n0.8 NA objective (Olympus LMPLFLN 100X) thermalized at RT,\nthrough which we also collect the signal. Photons are detected by\nsilicon-based single-photon counting modules (SPCM, Excelitas\nAQRH-33-FC). We perform photon-correlation measurements\nusing a time-correlated single-photon counting (TCSPC) system\n(PicoQuant PicoHarp 300) connected to the SPCMs. For optical\nlifetime measurements we use a pulsed laser (NKT Photonics\nSuperK Extreme EXW-12) tuned to 515 nm and said TCSPC system. Optical spectra are recorded on the camera of a spectrograph\n(Princeton Instruments SP-2500).\n\n**Data availability**\nThe data that support the findings of this study are available",
+        "score": -4.473634185379627,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803921568627451,
+        "rerank_score": -6.977747917175293,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7779,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco.md",
+        "title": "2026__recid_2933336__2506.09712__Optimization_and_validation_of_charge_transport_simulation_for_hybrid_pixel_detectors_inco",
+        "text": "repulsion 5.7 µm 4.3 µm 4.3 µm\nWith repulsion 6.2 µm 5.3 µm 5.6 µm\n\nphoton energy. At longer drift distances, where the repulsion\neffect diminishes toward the end of the transport, the differences in RMS among different photon energies become\nstable.\n\nFor a more quantitative understanding, the RMS values\nin Fig. 6 were weighted by the absorption probability and\nsummarized in Table 1. To provide a direct comparison,\nwe additionally computed RMS values from simulations\nperformed without the repulsion effect. For photon energies\nas low as 5 keV, the repulsion effect increases the overall\nRMS of the charge carrier distribution by approximately 9%\nrelative to simulations without repulsion. At higher photon\nenergies, the weighted RMSs are smaller due to the increased attenuation length; however, the relative impact of\nthe repulsion effect becomes more pronounced, as expected.\nThis phenomenon is consistent with the behavior observed\nin Fig. 2b.\nThe repulsion effect on minimized Ionizing Particles\n(MIPs) was also primarily tested using the comprehensive\nsimulation method. We used a 50 µm-thick sensor with a 20\nV depletion voltage, operated at a bias voltage of 50 V. For\na quick validation, we kept the linear approximation for the\ndrift electric field to emulate the fully depleted monolithic\nactive pixel sensors (MAPS). Assuming a MIP trajectory\nperpendicular to the sensor surface, the initial charge carrier\ndistribution was modeled as a uniform with a density of 80\n\nX. Xie et al.: _Preprint submitted to Elsevier_ Page 5 of 8\n\n**Figure 4:** Energy spectra of single pixels from the comprehensive simulation (red) and measurements (black) for 320 µm thick\nsensor at 150 V bias voltage, for (left) 15 keV, (middle) 25 keV X-ray photons, and at 90 V bias voltage for (right) 25 keV\nX-ray photons. The bin width is 0.1 keV, and the error bars represent the statistical uncertainties. The bottom panel displays the\ncorresponding ratio of simulation to measurement.\n\n**Figure 5:** Energy spectra of single pixels from the simplified simulation (red) and measurements (black) for 320 µm thick sensor\nat 150 V bias voltage, for (left) 15 keV, (middle) 25 keV X-ray photons, and at 90 V bias voltage for (right) 25 keV X-ray photons.\nThe bin width is 0.1 keV, and the error bars represent the statistical uncertainties. The bottom panel displays the corresponding\nratio of simulation to measurement.\n\npairs per µm across the sensor thickness. In the _𝑥_ and _𝑦_\ndirections, the initial distr",
+        "score": -4.785093035286548,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803921568627451,
+        "rerank_score": -7.456915378570557,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3551,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "nced, the event selection for\n\nthe May, 2023 data needed to focus on a clean electron sample without hadronic contamination.\n\nIn both cases, the datasets were pre-processed based on the HGCROC trigger sum word, which\n\nis measured per bunch crossing (i.e. every 25 ns). Each trigger sum word represents the signal sum\n\nof nine neighboring pad channels, in a primitive format (with reduced precision [16]). For every\n\nrecorded event, 8 trigger sums per layer were recorded for offline analysis within 10 bunch-crossing\n\nbins around the triggered event. In order to reject out-of-time events, an event is selected only if no\n\ncharge deposit before the signal bin was detected in any trigger sum word. In particular, this rejected\n\nevents which were recorded one bunch crossing too early. The decay of such signal charge pulses\n\nwould still be detected in the signal bin, and would hence distort the dataset. The black histogram\n\nin Fig. 22 shows the charge sum distribution of 80 GeV electrons, for all events which have passed\n\nthe trigger sum requirement. The charge sum is obtained by summing up the information around\n\nthe leading cell, in a 5x5 window over all layers.\n\nWhile — due to the high purity of the electron beams — a specific electron candidate selection\n\nwas not necessary for the November, 2022 data, hadronic events had to be rejected in the May,\n\n2023 data. Electron candidate events are obtained from the one-electron dataset in the pixel layers,\n\n– 26 –\n\n10 5\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n|Col1|ALICE FoC<br>May 2023,<br>80 GeV|al-E Pro<br>CERN S<br>electron|totype<br>PS H2<br>beam|Col5|\n|---|---|---|---|---|\n||All data<br> candid<br>−<br>1 e<br> cand<br>−<br> 2 e<br>≥<br>|ate (75.3<br>idate (19<br>|%)<br>.3 %)||\n||hadrons (5|.4 %)|||\n||||||\n||||||\n||||||\n\n0 10 20 30 40 50 60 70 80\nSignal sum Q sum (pC)\n\n**Figure 22** . Charge sum (5x5 around leading cell for all layers) of a) single-electron candidates, b) ≥ 2electron candidates, and c) hadron candidates measured using the pad layers after applying the selection\ncriteria defined by the ellipse cut, and the shower maximum criterion.\n\nas described in Sec. 5.3. The full red markers in Fig. 22 show the charge sum distribution after\n\nhaving applied the one-electron selection criteria. About 75 % of the events are selected with this\n\ncriterion, showing a prominent electron peak around 26 pC. The selected one-electron events still\n\nshow a peak from minimum ionizing particles slightly above zero. We attribute this to events",
+        "score": -4.904801835602405,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803921568627451,
+        "rerank_score": -7.641082763671875,
+        "matched_nodes": [
+          "For",
+          "Ps",
+          "The",
+          "In",
+          "We",
+          "CERN"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 30,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8253,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "ieved by exploiting the regions described above. This feature will not be used\nin 3D pixel modules, which will consist of two ROCs\nbump-bonded to two individual sensors. In this configuration, an uninstrumented gap of approximately 600 µm\nexists between the sensors. This decision is based on\n\nthe lack of a reliable process for producing large-area\n3D pixel sensors at the moment.\nTo match the readout chip pitch, a diagonal routing\nscheme is used for bump-bonding in 3D pixel sensors\nwith a 25 × 100 µm [2] cell size, as illustrated in Fig. 7.\n\nFigure 6: Schematic view of the CROCv1 and CROCv2 power distribution, highlighting the regions available for different tunings.\n\nFigure 7: Schematic top view of four adjacent 25 × 100 µm [2] pixel\ncells. One of the cells is delimited by a rectangle with dashed black\nlines for reference. The blue circles at the corners represent the _p_ [+]\n\ncolumns, while the light blue circle in the center represents the _n_ [+]\n\ncolumn. The orange elliptical pad on top of the _n_ [+] column represents\nthe metal contact for bump-bonding. Its counterpart on the readout\nchip is shown as a large orange circle. The two metal contacts are\nconnected by a diagonal orange rail.\n\n5\n\n**4. Irradiation and beam test setup**\n\n_4.1. Irradiation: facilities and setup_\n\nIrradiation campaigns of 3D pixel sensors for use in\nthe IT have been carried out at the Institut Pluridisci\nplinaire Hubert Curien (IPHC) [20], Zyklotron AG at\nthe Karlsruhe Institute of Technology (KIT) [21], the\nFermilab Irradiation Test Area (ITA), and the CERN\nPS [22]. The energy of the proton beam used at each\nirradiation facility and its corresponding hardness factor are provided in Table 2. The TID received by the\nmodules depends on the proton energy. For the IPHC\nand KIT facilities, a fluence of 1 × 10 [16] n eq /cm [2] corresponds to roughly 15 MGy, while for the ITA and\nCERN PS, it corresponds to about 5 MGy. For comparison, about 13.4 MGy is expected over the duration\nof the HL-LHC running period at the innermost layer of\nthe TBPX. Therefore, 6.7 MGy would be sufficient for\ntesting, considering the replacement of this layer after 6\nyears. Radiation damage studies using RD53 chips [23]\nconfirm their functionality up to a total ionizing dose of\n10 MGy. The requested target fluences for the devices\nin this paper were in the range 1–2 × 10 [16] n eq /cm [2] .\n\nTable 2: Proton energy of the beams used at the irradiation facilities\nand their corresponding hardness factor or k-fac",
+        "score": -4.978224192641423,
+        "dense_score": 0.2998141944408417,
+        "bm25_score": null,
+        "graph_score": 0.803921568627451,
+        "rerank_score": -7.759494781494141,
+        "matched_nodes": [
+          "For",
+          "Ps",
+          "The",
+          "In",
+          "To",
+          "CERN"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3046,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2703270__2309.14515__High_efficiency_muon_registration_system_based_on_scintillator_strips.md",
+        "title": "2024__recid_2703270__2309.14515__High_efficiency_muon_registration_system_based_on_scintillator_strips",
+        "text": "tion probability.\n\n_4.1. Calculation for charged particle registration probability for 4 layers by 15_\n\n_strips on each CRV module_\n\nThe GIANT model for the CRV module discussed in this chapter consists\n\nof 4 layers with 15 strips. The 2-mm-thick Al sheets are placed between layers\n\nand 0.5-mm-thick gap between sheet and strips was included also – so, the 3\n\nmm gap (0.5 mm+2mm+0.5mm) is between layers in total (Fig. 9a).\n\n(a) (b)\n\nFigure 9: Layout of the CRV Module and ”8-8-8” shift pattern example (a). Gaps\n\nbetween strips (b)\n\nAlso, the model includes gaps between scintillation volumes (so-called work\n\ning volumes) for neighbor strips. This gap should include a physical gap between\n\nneighbor strips and should also include the non-scintillation space of strip cre\n\nated by a reflective cover for the strip. The thickness of the strip reflective\n\ncover discussed in this article is 0.2 mm. Thus, the total gap between a neigh\n\nbor strip’s scintillation working volumes is 0.5 mm (0.2mm+0.1mm+0.2mm)\n\n(see 9b). Each layer is shifted to another by the step and the set of such steps\n\nrelated to all layers creates a so-called shift pattern for CRV module geometry\n\n15\n\n(Fig. 9a).\n\nThe charged particles registration probability with different shift pattern of\n\nlayer were studied for particles passing CRV module in various angle. Please\n\nnote, that this calculation does not include the real angular distribution of the\n\ncosmic muons, or, in other words, remaining flat. But the cosmic muons angu\n\nlar intensities distribution can be combined later with CRV module registration\n\nprobability depending on the module installation direction (horizontal, vertical,\n\netc.) to get real estimation of the overall module efficiency to detect cosmic\n\nmuons. The light yield calculated for the muon path according to the distribu\n\ntion we found in previous chapter by transversal scan of the strips.\n\nTo calculate charged particle registration probability on cosmic muon for\n\nCRV module, we created so called registration probability map, corresponding\n\nfor the different muon path by angle and by beginning point of the penetration\n\n(Fig. 10). We set the “0” on the middle of the 8th strip in top layer (the middle\n\nof the layer in a cross section). And angle “0” is the vertical to the strips. An\n\narea of “-40 to +40” mm (shown by red line on a figure) mm were studied with\n\nstep of 0.1 mm. In each step, the angles were varied within a cone from -75 to\n\n+75 degree with 1 degree step (orange lines",
+        "score": -5.162486924713733,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803921568627451,
+        "rerank_score": -8.037521362304688,
+        "matched_nodes": [
+          "An",
+          "AND",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2361,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676075__2307.04897__Spin-EPR-pair_separation_by_conveyor-mode_single_electron_shuttling_in_SiSiGe.md",
+        "title": "2024__recid_2676075__2307.04897__Spin-EPR-pair_separation_by_conveyor-mode_single_electron_shuttling_in_SiSiGe",
+        "text": "ified motional narrowing\nfactor (Fig. 2g). Remarkably, we arrive at very similar\nfitting parameters (see supplementary material).\n\n**Long distance shuttling**\n\nIn order to increase the distance of shuttling, we always\nshuttle at a maximum velocity _v_ max and once the shuttled electron returns to the right QD of the DQD (stage\nS), we recorded the ST 0 oscillations by waiting between\nadditional 0 to 1 _µ_ s prior to measure the EPR spin-state.\nWe plot the spin-singlet probability _P_ _S_ of the EPR-pair\nas a function of the total time _τ_ S _,_ DQD of shuttling and\nwaiting (Fig. 2h). Due to the limited length of the shuttle zone, we increase the cumulative distance by shuttling\nin- and out for one period _λ_ multiple times. The total\nnumber of periods ( _D_ ) shuttled forward plus backward\nis indicated on the left as the accumulated shuttle distance. For example for the trace labelled _D_ = 2, the\nvoltage pulses applied to S1-S4 are designed to shuttle\nthe electron one period _λ_ = 280 nm forward and same\ndistance back towards the spin-detector. For _D_ = 1, the\nelectron is shuttled half a period forward, and the same\ndistance back towards the detector. Strikingly, we still\nobserve ST 0 oscillations for the trace labelled _D_ = 12, for\nwhich the electron shuttles alternating six times forward\nand backward by _λ_ being nominally equivalent to an accumulated distance of 3 _._ 36 µm. The appearance of ST 0\noscillations show that the EPR-pair remained entangled\nafter such long shuttling distance.\n\n**Mapping local** _ν_ **variations**\n\nCoherent shuttling of a spin qubit and EPR separation allows us to collect information about ∆ _g_ ( _x_ ) along\nthe SQS. Instead of shuttling the spin-qubit forward and\nbackward with a _τ_ S -dependent _v_ S, we shuttle it by a distance _x_ along the 1DEC at maximum _v_ max = 2 _._ 8 m s _[−]_ [1],\n\n� 2\n\n2\n_l_ _c_\n_._ (3)\n_d_ + _l_ _c_\n�\n\n1\n� _T_ 2 _[∗]_ _,_ L\n\n1\n� _T_ 2 _[∗]_\n\n2\n\n=\n�\n\n+\n\n1\n� _T_ 2 _[∗]_ _,_ R\n\nTo incorporate the dependence of Gaussian decay _T_ 2 _[∗]_ [of]\nthe EPR-pair on shuttle distance _d_, we use the quadratic\naddition of inverse _T_ 2 _[∗]_ [times for the left (L) and right (R)]\nelectron spin and include a factor for motional narrowing\ndephasing time of the electron-spin that remains staticfor the shuttled qubit, where _T_ 2 _[∗]_ _,_ L [is the ensemble spin]\n\nin the outermost left QD, and _T_ 2 _[∗]_ _,_ S [(] _[d]_ [)] _[ ≡]_ _[T]_ _[ ∗]_ 2 _,_ R �\n\n_d_ + _l_ _c_\n\n2 _,_ S _[ ≡]_ 2 _,_ R _l_ _c_ rep\nresen",
+        "score": -5.487874974793079,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803921568627451,
+        "rerank_score": -8.538118362426758,
+        "matched_nodes": [
+          "For",
+          "ST",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6753,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "with a low field region)\nand 21 _._ 11% at high ∆ _V_ (without a low field region). This can\nbe compared with the measurement result of 22% at low ∆ _V_\nand 17% at high ∆ _V_ .\n\n_D. Comparison with SciFi light source_\n\nThe microlens parameters were optimised for the SciFi as\na light source and represent one of the goals of the MLA\nproject. The test with the SciFi was performed at CERN\nSPS with pions at a momentum of _p_ = 180 _GeV/c_ . The\nSciFi module was arranged to perform a longitudinal scan.\nThe distance between the particle beam and the photodetector\nwas varied between 20 _cm −_ 230 _cm_ and the light intensity of\nthe normal incident particles was measured. With a Gaussian\nfit, the median is extracted from the characteristic Landau\ndistribution introduced by the energy deposit fluctuations. This\nvalue is called the light yield (LY) of the SciFi tracker. As a\nconsequence of the mirror placed at the far end of the SciFi\nmat at a distance of 245 _cm_ from the SiPM, the detected light\nis composed of a direct component and a mirrored component.\nAt a distance of 20 _cm_, the mirrored component is reduced to\nabout 20% due to attenuation. A fibre mat of 130 _mm_ width\nwas equipped with four flat layer dies and four microlens dies,\n256 channels each. In Fig. 11 the LY is plotted as a function\n\nof ∆ _V_ and given for two distances from the detector. The LY\nmeasurement has been performed after a gain calibration with\na light injection system for each acquisition channel.\nFor the SciFi light distribution for a propagation length of\n230 _cm_, the simulated LY enhancement is 24 _._ 57% for low ∆ _V_\nand 18 _._ 59% for high ∆ _V_, and the measured values with SciFi\nare 22 _._ 5% for low ∆ _V_ and 20 _._ 5% for high ∆ _V_ . Note that the\nsimulation was performed with a light exit angle distribution\ncorresponding to a 230 _cm_ long fibre.\n\nVII. C ONCLUSION\n\nIn this work, we present a novel implementation of MLA\nwith the objective of improving the PDE of SiPMs. The\nimplementation was guided by the technology limitation of\nthe MLA deposit by a mold and a UV-curable polymer.\nTo optimise the most important parameters, the geometry\nof the SiPM pixel was simulated with three regions: the\ndead region, the low field region representing a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter,",
+        "score": -5.684071483200672,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803921568627451,
+        "rerank_score": -8.839959144592285,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "To",
+          "CERN"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "For": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "DOE": 1.0,
+      "At": 1.0,
+      "Ps": 1.0,
+      "HV": 1.0,
+      "ST": 1.0
+    },
+    "expanded_nodes": {
+      "For": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "DOE": 1.0,
+      "At": 1.0,
+      "Ps": 1.0,
+      "HV": 1.0,
+      "ST": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "Office": 0.7,
+      "Department": 0.7,
+      "CERN": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 15,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.841163842007518,
+    "generation_latency_s": 6.100162863731384e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 15.0,
+    "retrieval_latency_s": 5.841163842007518,
+    "generation_latency_s": 6.100162863731384e-07
+  }
+}

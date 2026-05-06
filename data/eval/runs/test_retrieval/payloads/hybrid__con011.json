@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con011",
+    "query_type": "conceptual",
+    "query": "Why is local deployment attractive for HEP collaborations?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "is",
+      "local",
+      "deployment"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why is local deployment attractive for HEP collaborations?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5634,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "vely being developed for HEP applications. Decades of\n\nR&D have made CMOS-based detector systems easy and cheap to manufacture and sensor can\n\nbe integrated into a single chip for easier assembly. Additionally, radiation damage in CMOS is\n\nwell understood due to decades of R&D and therefore the system can be optimized to be radiation\n\ntolerant. CMOS technology can be employed for 4D tracking by optimizing for spatial and temporal\n\nresolution. For example, FASTPIX is a monolithic CMOS sensor with pixel pitches tested from\n\n8.66 um to 20 um and its design is optimized for timing through the application of a doping implant\n\nin the sensor to shape the electric field uniformly to improve the drift path of charges[10, 11].\n\nFurthermore, in contrast to traditional pixel sensors, FASTPIX uses a hexagonal sensor grid that\n\nshortens drift time and reduces charge sharing at the edges[10, 11]. The demonstrator device has\n\nbeen experimentally measured to have a good timing resolution of 120 – 180 ps[11]. While CMOS\n\ntechnology shows promise, the current limitation is its trailing time resolution compared to 3D\n\nsilicon sensors and the associated high power consumption due to small pixel sizes.\n\nFinally, another attractive option developed in the last decade is Low Gain Avalanche Detectors\n\n(LGADs) which is the paper’s main focus of study. LGADs are silicon pixel detectors optimised\n\nfor timing performance[12] and a schematic is shown in figure 1. Particularly, LGADs have a\n\nlow internal gain of about 10 − 20 that is achieved by modifying the doping profile of a standard\n\np-n junction[2]. LGADs have excellent temporal and spatial resolution that are designed to fulfil\n\nthe requirements of 4D tracking. Optimising the gain and thickness parameters allow a sensor\n\nwith a fast charge collection time that could improve the time resolution in the order of 10 ps[2].\n\nExcellent spatial resolution can be achieved through innovative designs such as AC-LGADs that\n\nutilise charge sharing between multiple electrodes and therefore surpasses the spatial resolution\n\nlimitation of single pad detectors[13, 14]. In the context of radiation tolerance, LGADs can fulfil\n\nthis requirement by utilising carbon as a dopant for the gain layer and through the use of a narrower\n\ngain layer[15]. Last but not least, an internal gain layer reduces the need for amplifier electronics\n\nand hence reduces power consumption for the operation of HL-LHC[4].\n\nLGADs are an excellent candidate for 4D tracking an",
+        "score": -3.9357514193800633,
+        "dense_score": null,
+        "bm25_score": 18.56518806019155,
+        "graph_score": 0.0,
+        "rerank_score": -6.06382942199707,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8310,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "e a promising sensor type for future\nhigh-energy physics (HEP) experiments. This includes\ntracking or vertexing applications at a lepton collider like\nCLIC [1] or FCC-ee [2]. MAPS come with the benefit of\nintegrating the readout electronics and sensitive volume in\nthe same die, which inherently reduces the material budget\nbut also removes the necessity of the costly bump bonding\nprocess. A small collection electrode layout results in a\nsmall input capacitance to the first amplifier stage (order\nof fF), which reduces power consumption for a given signal\ncharge [3]. The TPSCo 65 nm ISC (Image Sensor CMOS)\nprocess [4] is a promising technology in that regard. It\nallows for a higher density of circuit elements than larger\nfeature size processes, and technology demonstrators such\nas APTS [5] or DPTS [6] have qualified it for applications\nin HEP.\nThe hybrid-to-monolithic (H2M) test chip is a MAPS\nproduced in this 65 nm ISC process. It explores complex\nper-pixel pulse processing functionality for time and amplitude measurements, at the cost of a pitch of 35 µm, which\nis 40 % larger than other prototypes developed for High\nEnergy Physics in this process. The architecture of the\nchip is based on readout concepts from earlier hybrid readout ASICs [7, 8, 9], with a clock distributed over the matrix\nand pulse-processing counters in every pixel. This porting\nprocess is interesting to explore, as the large set of hybrid\nchips for HEP applications may speed up the development\nof future monolithic sensors. The design applied a digitalon-top workflow, which is a contemporary strategy for the\ndesign of complex integrated circuitry. The digital logic is\nsynthesized around the analog building blocks such that\ncertain constraints (e.g. on timing) are fulfilled. The design effort included the composition of a compact digital\ncell library comprising a set of standard circuit elements\nwith a footprint reduced by about 25 % compared to the\nstandard cells.\n\nPreliminary results from the characterization and simulation of H2M are presented in [10, 11], respectively. Section 2 of this article describes the H2M chip design, its\nfeatures, and the data acquisition system utilised for the\npresented measurements. Laboratory characterization and\ncalibration are presented in Section 3, while the methodology for test-beam measurements and the resulting performance in the detection of minimum-ionizing particles\n(MIPs) are detailed in Section 4 and Section 5. Section 6\nsummarizes the employed s",
+        "score": -4.2863217178143955,
+        "dense_score": null,
+        "bm25_score": 15.483678399796446,
+        "graph_score": 0.0,
+        "rerank_score": -6.601426124572754,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5028,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec.md",
+        "title": "2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec",
+        "text": "intervals, frames were continuously sent by the software,\n\nwith the software transmission rate being constrained by the ASIC’s PGP link rate, corresponding\n\nto the ASIC’s clock frequency (e.g., a 250MHz clock resulted in a 250 Mbps link rate). Throughout\n\nall the steps of clock frequency tested, no bit errors were detected.\n\n– 10 –\n\n**5** **Application for Machine Learning-based At-Source Processing**\n\nIn light of the successful eFPGA design and fabrication, scientific applications of the technology\n\ncan be considered. A variety of HEP readout tasks can benefit from reconfigurable logic within an\n\nASIC. For example, silicon pixel detectors detect the passage of charged particles and are commonly\n\nthe first layer of high-energy collider detectors after the beam pipe, making them subject to the\n\nhighest particle fluxes and radiation doses of any subsystem. The new all-silicon ATLAS Inner\n\nTracker (ITk), to be installed in preparation for the HL-LHC, comprises 1.4 billion pixels with sizes\ndown to 250 _𝜇_ m [2], resulting in an overall data rate of O(10) Tb/s [22]. However, the large majority\n\nof this data rate goes to the recording of \"pileup\" particles, which arise not from the hard-scattering\n\nproton-proton collisions, but from soft adjacent collisions that are less likely to contain physics\n\nprocesses of interest.\nFuture detector designs for an _𝑒_ [+] _𝑒_ [−] Higgs factory could benefit from reduction of the data\n\nrate going off the detector to minimize material budget associated to data cabling or mitigate\n\nthe computational power required for trigger decisions. Further benefits of at-source ML-based\n\nprocessing will come to bear for detectors at future 10 TeV parton-center-of-mass “discovery\"\n\nmachines, such as the Future Circular Collider (hh), where data rates are expected to near 1 exabyte\n\nper second with unparalleled radiation doses [23].\n\nThe “smart pixel” collaboration provides a simulated dataset of particles propagated through\n\na futuristic pixel sensor, which can be utilized to study ML-based readout [24]. This dataset\n\ncomprises about 550,000 fitted tracks originating from high-energy pions collected by the Compact\n\nMuon Solenoid (CMS) experiment and propagated through a futuristic pixel detector. This detector\n\nfeatures sensors composed of a 21x13 pixel array with a 50 x 12.5 _𝜇_ m pitch, located at a radius of\n\n30 mm from the beamline within a magnetic field of 3.8 T. Each track is represented as a sequence\n\nof eight deposited charge array",
+        "score": -4.520818776053352,
+        "dense_score": 0.23213505744934082,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.9623823165893555,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 62,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "sful in\nhandling large detectors (order of 40 million pixels) with a\nmodest amount of logic and memory resources. This allowed\nits insertion into the existing LHCb readout hardware, for\nuse in the Run 3 physics data taking. This is a significant\nadvancement over the previous state-of-the-art in HEP. The\nprevious best performing cluster-finding system implemented\nin FPGAs has a throughput of about 100 kHz and requires the\ndeployment of about 4 parallel firmware copies, processing\nabout 15 MPixel/s each [17].\nMoving the VELO clustering reconstruction from the HLT1\nsequence to the FPGA readout cards leads to a measurable\nthroughput improvement. Without accounting for isolation\nflagging, for which no software implementation is available\nfor comparison, the present cluster finder firmware allows a\nsavings of about 11% of the computing power of the LHCb\nHLT1 full reconstruction sequence, allowing a corresponding\nincrease of the LHCb data-taking rate. As a further advantage,\na reduction of the VELO data size of approximately 14% was\nobtained, which allows to save resources both in the DAQ\nchain and in permanent data storage. Details on the GPU-based\nVELO clustering reconstruction can be found in Ref. [18].\nIn addition, the FPGA implementation consumes significantly\nless electrical power than its GPU analogue. From the data in\nFig. 22, it follows that the set of 52 VELO TELL40s requires\nabout 130 W of power to perform cluster reconstruction of the\nentire VELO, while the GPU implementation would require\nabout 6 kW (again not including isolation flagging). The power\nneeded to perform cluster reconstruction on GPUs is estimated\nby multiplying the GPU power usage (230 W) by the number\nof GPUs (236) required to process a 30 MHz input event rate\nand by the fraction of time spent in cluster reconstruction\n(11%). This is also in agreement with the measurements\npresented in Ref. [19].\n\nVIII. F URTHER CONSIDERATIONS\n\nIn a broader perspective, this work can be seen as a\nspecial case of Connected Component Labelling with Centre\nof Gravity calculation (COG) – a computation that often\noccurs in image processing systems with the purpose of\nidentifying connected sets of pixels belonging to the same\nvisual feature. The main difference is the modest size of the\n\nfeatures of our interest, that we could contain within a 3 _×_ 3\n\nmatrix, and their sparseness, that makes our problem somewhat\nsimpler. However, this greater simplicity comes with a ‘frame\nrate’ requirement (30 MHz) that i",
+        "score": -4.837729578548007,
+        "dense_score": 0.234670028090477,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.45013952255249,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5021,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec.md",
+        "title": "2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec",
+        "text": "Existing work to implement ML in the front-end focuses on dedicated ASIC designs for a\n\nparticular architecture or model [6, 7], which, while functional, is limiting in scope due to the\n\nrigidity of the hardware. eFPGAs can fill a crucial technology gap for high energy physics (HEP)\n\nexperiments by providing an ASIC that can allow not only the reconfiguration of ML model weights,\n\nbut the entire ML architecture itself onto the ASIC. As the transmission of data off the detector\n\nis often less efficient than data processing, the performance of sophisticated data compression and\n\nprocessing as close to the front-end as possible is a key task for modern collider experiments. Such\n\ncapability will become crucial for the more challenging environments of future colliders [8], where\n\nexperiments will have to cope with data rates on the exascale with even higher radiation doses and\n\n– 2 –\n\nlimited space for material budget or cooling services. As a result, community driven exercises on\n\ndetector R&D for HEP list increased intelligence on-detector as a key priority for the success of\n\nfuture detector upgrades and designs [9, 10].\n\nThis work describes the design and fabrication of eFPGAs using the 130nm and 28nm CMOS\n\ntechnology nodes. The open-source \"FABulous\" framework [11] is used to generate the eFPGA\n\nfabric. An application of the 28nm eFPGA for at-source ML-based classification is performed,\n\nusing data from simulated silicon pixel sensors in a high energy collider detector. The unique\n\nfeatures of the eFPGA, namely its high degree of flexibility, relatively low power and footprint, and\n\npublicly accessible design framework make it an ideal tool for known data acquisition challenges\n\nin collider physics.\n\n**2** **Developments in 130nm CMOS**\n\n**2.1** **eFPGA Customization**\n\nThe ability to customize the tiles of the eFPGA is provided by the FABulous framework [11].\n\nBecause this was our very first FABulous eFPGA to design, extreme conservatism was practiced,\n\nand the reference design provided by FABulous, known as “fabric_TSMC_example\", was utilized,\n\nwhich has been proven suitable for tapeout. A .csv file is used by FABulous framework to customize\n\nthe eFPGA tile configuration, which is shown in Figure 1 for the 130nm eFPGA. The eFPGA tiles\n\nutilized in this design included:\n\n - W_IO: A 2-bit general-purpose input/output (GPIO) interface with tri-mode support (input,\n\noutput, and high-impedance state)\n\n - RegFile: A simple dual-port LUTRAM, consisting of 32",
+        "score": -4.878966207822164,
+        "dense_score": null,
+        "bm25_score": 15.662646274073621,
+        "graph_score": 0.0,
+        "rerank_score": -7.513281345367432,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6360,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2811353__2407.18415__Modeling_of_surface-state_induced_inter-electrode_isolation_of_math_altimgsi219.svg_displa.md",
+        "title": "2025__recid_2811353__2407.18415__Modeling_of_surface-state_induced_inter-electrode_isolation_of_math_altimgsi219.svg_displa",
+        "text": "for future HEP-experiments where the radiation is largely due to hadrons.\n\n_∗_ Corresponding author\n_Email address:_ `timo.peltola@ttu.edu` (T. Peltola)\n\n_Preprint submitted to Journal of Instrumentation_ _February 20, 2025_\n\n**1. Introduction**\n\nIn the position sensitive _n_ -on- _p_ particle detectors that will be utilized in the experiments of the High\n\nLuminosity Large Hadron Collider (HL-LHC) like ATLAS and CMS, a parameter of particular concern is\n\nthe preservation of position resolution in extreme radiation environments. This is due to the disadvantage\n\nof the _n_ -on- _p_ sensors where the segmented _n_ [+] -electrodes can become shorted even when operated at high\n\nreverse bias voltages. The issue is caused by the radiation-induced accumulation of positive charge inside\n\nthe passivation SiO 2 and close to the Si/SiO 2 -interface that can attract electrons to the interface in the inter\n\nelectrode gap to the extent that creates a conduction channel and compromises the inter-electrode isolation\n\nof the sensor. This is typically alleviated by placing an additional highly _p_ -doped implant between the _n_ [+] \n\nelectrodes that breaks the conduction channel, due to its negative space charge, by suppressing the electron\n\ndensity at the vicinity of Si/SiO 2 -interface. The two solutions commonly utilized to produce the isolation im\n\nplants involve localized ( _p_ -stop) and uniformly distributed ( _p_ -spray) doping concentrations along the surface\n\nin the inter-electrode gap [1, 2, 3, 4, 5, 6, 7]. The _p_ -spray approach adds one and _p_ -stop two more lithography\n\nsteps and additional ion implantations [8, 9] to the processing steps of a conventional _p_ -on- _n_ sensor, increas\n\ning the production cost of _n_ -on- _p_ sensors. Additionally, since high doping concentrations in the isolation\n\nimplants have been observed to increase the probability of discharges or avalanche effects due to excessive\n\nlocalized electric fields [10, 7, 11], careful tuning of the processing parameters is required.\n\nIt should be noted that due to the positive oxide charge of SiO 2 at the Si/SiO 2 -interface ( _N_ ox ), the _n_ [+] \n\nelectrodes without isolation implants are shorted by default already before irradiation, but as shown in [12],\n\nbecome isolated by the application of reverse bias voltage above the _threshold voltage of inter-electrode_\n\n_isolation_ ( _V_ th,iso ) (e.g., _V_ th,iso _≤_ 100 V for _N_ ox _≤_ 7 _×_ 10 [10] cm _[−]_ [2] ).\n\nSurface damage in SiO 2 -",
+        "score": -5.408745713667436,
+        "dense_score": 0.22910958528518677,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.328140258789062,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5650,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708905__2310.06700__A_SWAP_Gate_for_Spin_Qubits_in_Silicon.md",
+        "title": "2025__recid_2708905__2310.06700__A_SWAP_Gate_for_Spin_Qubits_in_Silicon",
+        "text": "uantum dots, high fidelity SWAP gates have not been**\n\n**demonstrated due to the requirements of large circuit bandwidth and a highly adjustable ratio**\n\n**between the strength of the exchange coupling** 𝑱 **and the Zeeman energy difference** ∆𝑬 𝒛 **. Here**\n\n**we demonstrate a fast SWAP gate with a duration of ~25 ns based on quantum dots in**\n\n**isotopically enriched silicon, with a highly adjustable ratio between** 𝑱 **and** ∆𝑬 𝒛 **, for over two**\n\n**1** / **23**\n\n**orders of magnitude in our device. We are also able to calibrate the single-qubit local phases**\n\n**during the SWAP gate by incorporating single-qubit gates in our circuit. By independently**\n\n**reading out the qubits, we probe the anti-correlations between the two spins, estimate the**\n\n**operation fidelity and analyze the dominant error sources for our SWAP gate. These results pave**\n\n**the way for high fidelity SWAP gates, and processes based on them, such as quantum**\n\n**communication on chip and quantum simulation by engineering the Heisenberg Hamiltonian in**\n\n**silicon.**\n\n**2** / **23**\n\n## **Main text.**\n\nSingle-spin qubit in a silicon quantum dot is an attractive platform for quantum information processing\n\ndue to its long coherence times [1-4], robustness against thermal noise [5,6], and potential for scalability\n\nwith advanced semiconductor manufacturing technology [7-9] . Rapid progress over the past years have\n\nseen high fidelity initialization [10-13], readout [12-15], single-qubit operation (fidelity above 99.9%) [12,16,17]\n\ntwo-qubit operation (fidelity above 99.5%) [18-21], and three-qubit iToffoli gate [22], successfully achieved,\n\nputting single-spin qubits at the threshold of demonstrating quantum error correction [22] and the noisy\n\nintermediate-scale quantum (NISQ) era [23] .\n\nFor a fault-tolerant and scalable quantum computer architecture, efficient quantum information\n\ntransfer/communication on chip is essential. For a single-spin qubit in Si, the transfer of qubit state can\n\nbe realized by shuttling the electron directly [24-27] . The SWAP gate, via the isotropic Heisenberg\n\nexchange coupling native between quantum dots, can coherently swap states of two neighboring qubits\n\n28, and is a natural conduit for quantum information transfer as suggested in the original spin qubit\n\nproposal [29] . Meanwhile, the √SWAP gate allows two-qubit entangling operations and an extra SWAP\n\ngate can reduce circuit depth compared to using only the controlled-phase (CPhase) gate [30]",
+        "score": -5.48307231027786,
+        "dense_score": null,
+        "bm25_score": 16.138036909389832,
+        "graph_score": 0.0,
+        "rerank_score": -8.442872047424316,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1832,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "to hit clustering have been successfully implemented\nby different detectors. However, compression offers little advantage when the channel\noccupancy is high and so has not been used in some regions of the experiment. The\nrelatively modest radiation level in many parts of LHCb has allowed the widespread use\nof FPGAs although only after careful qualification procedures. These have brought many\nadvantages such as shorter design time and flexibility, as well as relaxing the demand\nfor specialised personpower and tools required for ASIC implementations. Efficient data\ncompression comes at the cost of variable latency, thus the data transport system in LHCb\nis asynchronous. To allow the proper reconstruction of event fragments downstream in\nthe system, data packets are tagged as early as possible with a unique time-stamp based\non the bunch-crossing identifier (BXID). Simplex data links, running at 4.8 Gbit/s, are\nconstructed from the gigabit transceiver (GBT) serialiser/deserialiser ASIC [14] and the\nversatile twin transmitter (VTTx) opto-electrical converter [15]. The only exception is\nthe VELO, where the serialiser is embedded directly in the FE ASIC. The duplex TFC\nand ECS links are constructed with the GBT, versatile link transceiver (VTRx) and slow\ncontrol adapter (SCA) [16]. This standardisation across LHCb has had major benefits\n\n5\n\nin easing both development and deployment, as well as the sharing of experience across\nthe wider LHC community. Power distribution has followed a similar common approach\nwith the use of FEASTMP DC-DC converters [17] for local power regulation. The specific\nimplementations of the FE architecture by each subdetector are described in subsequent\nsections. The BE electronics consist of custom PCI-express modules mounted in PC\nservers in the data centre. This module, known generically as PCIe generic back-end board\n(PCIe40), contains arrays of optical transmitters and receivers connected to a powerful\nFPGA. The PCIe40 was conceived and designed to fulfil the functionality required for both\ndata acquisition and controls. Hence, by the choice of the FPGA firmware, the module\ncan be configured for either data acquisition or controls. The role of the PCIe40 board\nfor data acquisition (TELL40) is to decode and process data, and then build multievent\npackets for transmission to the event-builder. The PCIe40 board for controls (SOL40) is\nthe ECS interface used to configure the FE electronics and transmit TFC commands to\nthe FE and TELL40s.",
+        "score": -5.643838806152344,
+        "dense_score": null,
+        "bm25_score": 16.37669666677457,
+        "graph_score": 0.0,
+        "rerank_score": -8.690521240234375,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8047,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2966093__2509.02285__FPGA-Based_RoCEv2-RDMA_Readout_Electronics_for_the_CTAO-LST_Advanced_Camera.md",
+        "title": "2026__recid_2966093__2509.02285__FPGA-Based_RoCEv2-RDMA_Readout_Electronics_for_the_CTAO-LST_Advanced_Camera",
+        "text": "As are required for high\nradiation environment [37], [38].\nThe original core has been modified by removing the entire\ndata reception path as well as support for all RDMA READ\noperations. The rationale behind this operation is not only the\nnature of the application but also due to cost reasons: the\nAdvCam is made of about 7000 channels to sample, readout,\nprocess, store and broadcast, and FPGA area will seriously\nimpact the overall cost per channel. As shown in Tab. I, the\nmodified core results in a lighter and more portable design\nsuitable for deployment on smaller FPGAs. Moreover, the\nRoCEv2 core guarantees reliability in data transfer. By using it\nin Reliable Connection (RC) mode, the core provides features\nsuch as acknowledgment and retransmission, ensuring that\ndata are delivered reliably and in order, making up for the\nintrinsic unreliability of the UDP layer. RC mode is mandatory\nin physics experiments applications because data fragments\nfrom different parts of the detector are funneled at random\ntimes through network devices (e.g. RoCEv2 endpoints and\nswitches) to DAQ servers for event building: this process\ncannot rely on a bare UDP transport which is lossy by\nconstruction and is unable to handle potential congestion of\nswitch ports [39].\nA candidate system design for AdvCam readout addresses\nchannels in groups of 48, all processed by a single FPGA.\nThe estimated transfer rate after zero suppression, local trigger\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, 2025 8\n\n_D. RoCEv2 Firmware Simulation_\n\nFig. 13: RoCEv2 firmware simulation block diagram.\n\nprocessing and global trigger validation is largely compatible\nwith 10 Gb/s Ethernet line rate. For this reason the R&D on\n\nRDMA based readout has focused on this type of network.\n\nAs RoCEv2 uses UDP as its transport protocol, a full\nUDP/MAC network stack has been implemented. The 10 GbE\nnetwork system is heavily based on the SLAC Ultimate RTL\nFramework (SURF) [40], which consists of an open-source\nmodular framework designed to facilitate data acquisition in\nFPGA-based systems [41]. The framework integrates VHDLbased hardware modules and IPs with the SLAC ROGUE\n\nsoftware [42], which provides a high-level software interface\nfor data control, monitoring, and transfer over Ethernet. This\nintegration allows for easy communication between the FPGA\nhardware and the software, enabling flexible and scalable data\nacquisition systems. Importantly, SURF also provides an additional layer called RUDP (Reliable UDP), which",
+        "score": -5.657851178903909,
+        "dense_score": 0.2819133996963501,
+        "bm25_score": 16.480130805645352,
+        "graph_score": 0.0,
+        "rerank_score": -8.720474243164062,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 259,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC.md",
+        "title": "2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC",
+        "text": "** A and RP **X** B\n\non both sides of IP when proton is tagged in all of them;\n\n - “RP **X** +RP **Y** ” means tagged proton in [(RP **X** A and RP **X** B\non side A) or (RP **Y** A and RP **Y** B on side A)] and [(RP **X** A\nand RP **X** B on side C) or (RP **Y** A and RP **Y** B on side C)].\n\n**6. Summary**\n\nDuring Long Shutdown 2, AFP underwent hardware upgrades before being deployed in the LHC tunnel. This should\nallow efficient data-taking with a focus on a diffractive and\nminimum-bias studies as well as BSM searches during Run 3.\nThe presence of Roman Pots in High-Luminosity LHC is being\ndiscussed within ATLAS as a variety of physics studies would\nbenefit from the forward proton tagging. This would require\nthe development of a rather complex integration design with\nthe new HL-LHC layout.\n\n1 At the moment of writing these proceedings, the decision was taken to not\nhave RPs around ATLAS during Run 4, with an opened possibility for Run 5\nand beyond.\n\nFigure 1: Studies for HL-LHC: mass acceptance for considered sets of stations\naround ATLAS collision point. See text for details.\n\n**Acknowledgements**\n\nThe work of MT was partially supported by Polish National\nScience Centre (project no. UMO-2019/34/E/ST2/00393).\nCopyright 2022 CERN for the benefit of the ATLAS Collaboration. Reproduction of this article or parts of it is allowed as\nspecified in the CC-BY-4.0 license.\n\n**References**\n\n[1] ATLAS Collaboration, _The ATLAS Experiment at the CERN Large Hadron_\n_Collider_, JINST **3** (2008) S08003\n\n[2] ATLAS Collaboration, _Technical Design Report for the ATLAS Forward_\n_Proton Detector_, CERN-LHCC-2015-009, ATLAS-TDR-024\n\n[3] K. Akiba et al., _LHC_ _Forward_ _Physics_, J. Phys. G: Nucl.\nPart. Phys. **43** (2016) 110201, [arXiv:1611.05079](http://arxiv.org/abs/1611.05079) [hep-ph],\nhttps://doi.org/10.48550/arXiv.1611.05079\n\n[4] M. Trzebinski, _Machine Optics Studies for the LHC Measurements_, in\nproceedings of XXXIV-th IEEE-SPIE Joint Symposium Wilga 2014,\n[SPIE 0277-786X, vol. 9290 (2014) 26, arXiv:1408.1836 [physics.acc-ph],](http://arxiv.org/abs/1408.1836)\nhttps://doi.org/10.1117/12.2074647\n\n[5] M. Trzebinski, R. Staszewski, J. Chwastowski, _LHC High Beta*_\n_Runs:_ _Transport_ _and_ _Unfolding_ _Methods_, ISRN High Energy\nPhysics **2012** (2012) 491460, [arXiv:1107.2064](http://arxiv.org/abs/1107.2064) [physics.ins-det],\nhttps://doi.org/10.5402/2012/491460\n\n[6] M. Backhaus, _Characterization of the FE-I4B pixel readout chip pro-_\n_duction run for the ATLAS",
+        "score": -5.747472827574787,
+        "dense_score": 0.2506520450115204,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.850184440612793,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.790077093057334,
+    "generation_latency_s": 5.00120222568512e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.790077093057334,
+    "generation_latency_s": 5.00120222568512e-07
+  }
+}

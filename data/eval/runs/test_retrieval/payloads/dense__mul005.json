@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "mul005",
+    "query_type": "multi_hop",
+    "query": "How does material budget influence vertexing through multiple scattering?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "does",
+      "material",
+      "budget"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How does material budget influence vertexing through multiple scattering?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1842,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "means the design must prepare for hit rates and radiation doses that are an\norder of magnitude higher than those experienced by the earlier VELO.\n\n##### **3.2 Design requirements**\n\nThe principal metric for a vertex detector design is impact parameter resolution _σ_ IP, the\nprecision with which the perpendicular distance of a track to a point is measured. This\nmetric is a function of: track transverse-momentum, _p_ T ; the average axial distance of the\nmaterial before the second measurement, _r_ 1 ; the distances from the point to the first and\nsecond measurements, ∆ _i_ ( _i_ = 1 _,_ 2); and the position uncertainties of those measurements,\n_σ_ _i_ . In the VELO case, it can be approximated as [34],\n\n+ [∆] 2 [2] _[σ]_ 1 [2] [+ ∆] [2] 1 _[σ]_ 2 [2]\n∆ [2] 12\n� ~~��~~ ~~�~~\nextrapolation\n\n_r_ 1\n_σ_ IP [2] _[≈]_\n� _p_ T [ GeV/ _c_ ]\n\n2\n~~_x_~~\n0 _._ 0136 GeV/ _c_\n� � ~~�~~ _X_ 0\n\n1 + 0 _._ 038 ln _[x]_\n� _X_ 0\n\n�� 2\n\n(2)\n\n� ~~�~~ � ~~�~~\nmultiple scattering\n\nwhere _x/X_ 0 is the fraction of radiation length traversed before the second measurement.\nThe first term describes the degradation induced by multiple scattering. The second term\n\n13\n\nis the extrapolation error, which is dominated by detector geometry: pixel size and lever\narm, ∆ 12, between the first and second measured points. The upgraded VELO design\nwas optimised to achieve, within the nominal LHCb acceptance, a performance at least as\ngood as that of its predecessor VELO, in terms of both _σ_ IP and track-finding efficiency,\ndespite the increased instantaneous luminosity.\n\n**3.2.1** **LHC interface**\n\nThe VELO performance, as described by eq. (2), improves by reducing the radius of\nthe first pixel hits, though this must be balanced against the limitations of proximity to\nthe beam line. The minimal VELO aperture allowed by the requirements of the LHC\ncollimation and protection depends on several factors: the maximum expected separation of\nthe counter-rotating beams; their transverse sizes ( _β_ functions and transverse emittances);\nthe beam direction relative to the longitudinal axis of the VELO (crossing angle); the\nmechanical accuracy and stability of the RF boxes. A reduced, but still conservative,\nradial clearance of 3.5 mm is chosen [35,36] for the RF boxes, the structures that directly\ninterface with the LHC beam environment. This allows the silicon sensors to be arranged\nsuch that the radius of the closest active pixel edge is 5.1 mm from the beam line. The\ndecision takes into account the inte",
+        "score": -0.8021254018147786,
+        "dense_score": 0.3808130621910095,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.2412185668945312,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 2667,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2690445__2308.11657__Multiple_scattering_of_855_MeV_electrons_in_amorphous_and_crystalline_silicon_Simulations_.md",
+        "title": "2024__recid_2690445__2308.11657__Multiple_scattering_of_855_MeV_electrons_in_amorphous_and_crystalline_silicon_Simulations_",
+        "text": "through the two types of\nmedium. This difference allows one to numerically evaluate the dissimilarity in the PDFs for the two types of\nmedium providing a quantitative measure of the disparity in scattering behaviour as well as to gain valuable\ninsights into the structural effects that influence the electron multiple scattering.\n\nhave been carried out. In the first set, the the vertical\nincident angle was fixed at Θ v = 3 mrad whereas the horizontal angle was varied within the interval 8.7 ≤ Θ h ≤ 52\nmrad. Similarly, in the second set the angle Θ h = 34.9\nmrad was fixed and the angular distributions was explored in the range 1 ≤ Θ v ≤ 10 mrad. These scanning parameters allowed us to investigate the angular\ndependence of the scattering phenomenon and to identify notable trends or/and extrema of the PDFs. For all\ncombinations (Θ h, Θ v ) considered the simulations were\nperformed using both the Moli`ere and Pacios potentials.\nThe PDF obtained were practically independent on the\npotential used. The minimum value of θ s due to the\ncoherent scattering has been found at Θ h = 34.9 mrad\nand Θ v = 2 mrad. This observation provided a crucial\nstarting point for further analysis and understanding of\nthe scattering behavior in silicon. To quantify the scattering distribution and to derive the PDF for scattered\nelectrons additional scans were performed fixing Θ v = 2\nmrad and varying Θ h as well as scanning over Θ v while\nfixing Θ h = 33 mrad. These scans allowed us to capture the variations in the PDF as we explored different\nscattering angles.\n\nFigure 3 shows the variation of θ s as a function of one\nof the incident angles (Θ h in left graph and Θ v in right\ngraph) while fixing the second incident angle (see the\nvalues indicated at the top of each graph). Solid and\ndashed lines stand for the crystalline and the amorphous\ntargets, respectively. The results of our simulations are\nshown as open diamond symbols connected with black\nlines. Statistical uncertainties due to the finite number\nof simulated trajectories are indicated with error bars.\nThe data reported in Ref. [14] are shown with filled circles connected with red lines (the experimental data) and\nwith open circles connected with green lines (the results\nof simulation with the CRYSTAL code [28]). For the\nsake of comparison we also present the value of multiple scattering angle calculated for the amorphous silicon\nby means of Eqs. (34.16), (34.25) and (34.26) from the\nreview by Particle Data Group [30] (see also Ap",
+        "score": -0.8278732895851135,
+        "dense_score": 0.42984747886657715,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.28206467628479,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2669,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2690445__2308.11657__Multiple_scattering_of_855_MeV_electrons_in_amorphous_and_crystalline_silicon_Simulations_.md",
+        "title": "2024__recid_2690445__2308.11657__Multiple_scattering_of_855_MeV_electrons_in_amorphous_and_crystalline_silicon_Simulations_",
+        "text": "randomly generated. For doing this the normal distribution\nwith the variance equal to u T is used. This algorithm\ndoes not exclude non-physical events when two (or more)\natoms will be located in close vicinity to each other. This\nwill result in the (local) increase in the scattering angle\nwhich inevitably will affect the multiple scattering angle\nas well.\n\nIV. CONCLUSION\n\nBy means of relativistic all-atom molecular dynamics\nimplemented in the MBN Explorer software package\nthe passage of ultra-relativistic electrons through crystalline and amorphous silicon media has been simulated.\nThe parameters of the 855 MeV electron beam and the\nthickness of the silicon targets utilized in the simulations\ncorrespond to those used in the experiment [14] which\nrevealed broad angular anisotropy of multiple scattering\nin the crystal. For each incident geometry considered\na sufficiently large number (≈ 4 × 10 [4] ) of statistically\nindependent trajectories has been generated. The statistical analysis carried out resulted in calculation of the\nprobability distribution functions (PDF) that allowed us\nto quantify the process of multiple scattering in terms of\nthe planar scattering angles. To double check the results,\nthe simulations and the analysis have been performed\nemploying both the Moli`ere and Pacios potentials for the\nelectron–Si-atom interaction. The dependencies of the\nscattering angle θ s on both the horizontal Θ h and vertical\nΘ v incident angles turned out to be virtually insensitive\nto the choice of the potential.\nWe have observed the differences in angular distributions of electrons deflected by the crystalline and the\n\n2 Also to be noted is that for the amorphous target our result\nand the experimental data both differ from the commonly used\nestimate [30] of the multiple scattering angle, see the dasheddotted lines in both graphs in Fig. 3.\n\n6\n\n0.24\n\n0.23\n\n0.22\n\n0.21\n\n0.20\n\n0.19\n\n0.18\n\n0.24\n\n0.23\n\n0.22\n\n0.21\n\n0.20\n\n0.19\n\n0.18\n\n10 20 30 40 50\nΘ h (mrad)\n\n2 4 6 8 10\nΘ v (mrad)\n\nFIG. 3. Left: Multiple scattering angle θ s as a function of the horizontal (left) and vertical (right) incident angles. Solid lines\nstand for the crystalline target, dashed lines indicate the results for the amorphous medium. Experimental data (red lines,\nfilled circles) and results of simulations with the CRYSTAL code (green lines, open circles) are from Ref. [14]. The results of\ncurrent simulations (black lines with diamonds) correspond to the Moli`ere potential. For the crystal Si, the",
+        "score": -1.1569201709994352,
+        "dense_score": 0.3698943257331848,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.7863646745681763,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 468,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment.md",
+        "title": "2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment",
+        "text": "oublets are\nformed first and are required to satisfy a pre-selection based on the ratio _δx/x_ 0, where _δx_ is the\ndifference of the _x_ coordinates for the two hits composing the doublet, while _x_ 0 indicates the _x_\n\ncoordinate on the detector layer closest to the interaction point. A window of three standard\ndeviations around the expected mean value of _δx/x_ 0 for true doublets, as determined in the\nsimulation, is used for this selection. This requirement ensures that the particles come from the\nIP. Triplets are subsequently constructed by combining doublet candidates with a requirement on\nthe maximum angle difference _δθ_ = ~~�~~ _δθ_ _xz_ [2] + _δθ_ _yz_ [2] of the doublet pairs. The maximum scattering\n\nthreshold is chosen to be 1 mrad and was optimised taking into account multiple scattering with\nthe detector material. Since triplets consist of three hits, they are formed either from the first\nto the third layer or from the second to the fourth layer.\nFigure 4 shows the distributions of _δx/x_ 0 for doublets (left) and _δθ_ for pairs of doublets\n(right) originating from true positron tracks, shown separately for low-energy ( _E_ _e_ + _<_ 3 GeV)\nand high-energy positrons ( _E_ _e_ + _>_ 3 GeV), as well as the chosen thresholds. The distributions\nare obtained using _ξ_ = 7, but are generally _ξ_ -independent. The _δx/x_ 0 distribution shows a\nslight dependence on positron energy, while the triplet _δθ_ distribution demonstrates that the\nscattering is more pronounced for lower energy positrons. The resulting pre-selection efficiencies\nare shown in Figure 5 (left) for both doublet and triplet finding, in the case of electron-laser\ninteraction for _ξ_ = 7. The pre-selection requirements are found to be nearly fully efficient for\nthe whole energy range, with a moderate efficiency loss, at the level of 16% for positron energies\nbelow 2 GeV, mostly due to multiple scattering with the detector material. Figure 5 (right) also\nshows the number of doublets and triplets passing the pre-selection criteria as a function of _ξ_ .\n\n**Figure 4.** Left: Distribution of doublet _δx/x_ 0 with red dashed lines indicating the range of\nthe pre-selection. Right: Distribution of angle difference _δθ_ for the doublet pairs composing the\ntriplets with a red dashed line indicating the upper limit allowed by the pre-selection.\n\nThree pattern recognition methods are employed and systematically compared to reconstruct\ntracks from the detector hits. The first method formulates t",
+        "score": -2.49643610875998,
+        "dense_score": 0.40156784653663635,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.848707675933838,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7850,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA.md",
+        "title": "2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA",
+        "text": "r of sigma deviations between the material stated on top of each plot compared\n\nwith those in the legend.\n\n– 8 –\n\n**Figure 6** : Absorption method fraction comparing the results from our simulation in gray with the\n\ntheoretical exponential function model in dashed read, for lead.\n\n**Figure 7** : Normalized scattering angle distributions for all materials using a 250 cm block.\n\nresulting angular distribution is fitted with a Gaussian function. For instance, for a 250 cm width\n\nblock, we show in Fig. 7 the scattering angle distribution for different materials. Lead exhibits a\n\nwider distribution compared to iron while for concrete it is much thinner. This means significantly\n\nnarrower angle dispersion.\n\nIn Fig 8 we see the influence of the block width on the FWHM. Wider blocks resulted in\n\nbroader scattering distributions. The lead curve moves away from all materials as the block gets\n\nwider, followed by iron. However, other materials are harder to differentiate since their errors\n\n– 9 –\n\n**Figure 8** : Width of the Gaussian fit of the scattering angle distribution varying the width of the\n\nblock for different materials.\n\nsuperimpose.\n\nTo quantify the difference between the FWHM for each material, we show in Fig. 9 the numbers\n\nof sigma (see Eq. 5.1). For the smallest size of the block (i.e. 50 cm) muons do not deviate much\n\nshowing a lower number of sigmas. However, as the block width increases, so does the number of\n\nsigmas. Because lead is denser and can absorb more muons than other materials, there is a larger\n\nnumber of sigmas between it and aluminum, concrete, water, and air. However, there are very low\n\nnumber of sigmas between concrete and aluminum or water and air. Thus it will be difficult to find\n\ndifferences between these materials, unless there is a larger observation time.\n\nWe compare for lead in Fig. 10 the simulated FWHM as a function of the size of the block with\n\nthe theoretical curve (see Eq. 2.1). Both follow the same trend, however, the simulation predicts\n\nsmaller angles.\n\nTo compare both methods we set 3 _𝜎_ as a common threshold to identify the materials. With\n\nthe absorption method it is possible do the following differentiation:\n\n - Between lead or iron and all other materials and widths of the object.\n\n - Between air and concrete or aluminium, for all object widths.\n\n - Between concrete and water for an object of 200 to 250 cm width.\n\n - Between air and water for an object of 100 to 250 cm width.\n\nFor the scattering method it is po",
+        "score": -2.633651857688779,
+        "dense_score": 0.4879452586174011,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.060599327087402,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7853,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA.md",
+        "title": "2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA",
+        "text": "which corresponds to a simplification\n\nof a larger and more complex object. Real objects can have holes or be made of different materials\n\nand have different geometries. These results already set a limit on which materials could be\n\nidentified.\n\nOur study demonstrated the efficiency of the fraction of detected particles using absorption\n\nmethods and the width of the Gaussian fit for scattering method as reliable methods for material\n\ndifferentiation in muon tomography. Dense materials like lead can absorb a higher number of\n\nmuons and muons scatter with a greater angle, showing as a result larger sigma values in their\n\ndifferentiation from other materials.\n\nThe absorption method shows significant differences in material differentiation. Lead and iron\n\nare distinguishable from all other materials at different object widths. The scattering method shows\n\nlower values of sigma than the absorption method. Using this method, we obtain a substantial\n\ndifference between an object made of different materials of all widths and an object of 250 cm\n\nwidth made of lead. We need less than 1 week with the absorption method for finding differences\n\nat 3 sigmas between lead or iron and other materials at all width of objects that we tested. For the\n\nscattering method at the same time and the same number of sigmas, we can find differences between\n\nlead and air.\n\nAlthough we can differentiate some materials, we recognize also the challenge of finding\n\ndifferences between aluminum and concrete, which exhibit only 0.9 sigmas with the absorption\n\nmethod and 0.1 with the scattering method at 250 cm of width of the object. This results shows the\n\ncomplexity of distinguishing between materials with close properties.\n\nOur study provides an understanding of material differentiation in the field of muon tomography.\n\nThe absorption method is more robust and allows us better separation power between materials.\n\nHowever, this result can improve with more statistics. It is necessary to refine these techniques to\n\nreduce the observation time and expand the horizons of muon tomography applications.\n\n– 14 –\n\n**Acknowledgments**\n\nJ. R. appreciates the support from the Peruvian National Council for Science, Technology and\n\nTechnological Innovation scholarship under Grant 23-2015-FONDECyT, thanks Dr. Hernan Asorey\n\nand Dr. Mauricio Suarez for their input on CORSIKA and GEANT4 and thanks again to Dr.\n\nMauricio Suarez and Dr. Israel Martinez for reading the manuscript and their useful suggestion",
+        "score": -3.1164793199108494,
+        "dense_score": 0.4476650357246399,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.8032684326171875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7849,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA.md",
+        "title": "2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA",
+        "text": "he case of the first method\n\nare the fractions of the absorption method and in the second method are the width of the Gaussian\n\nfit to the scattering angle distribution.\n\n**5.1** **Absorption method**\n\nIn Fig.4 we show the fraction of detected particles _𝑁_ _𝐼_ / _𝑁_ _𝑖_ for the absorption method, for several\n\nmaterials as a function of the width of the test block. These materials can be differentiated in\n\nmost cases, except for aluminum and concrete. Since the air block is the reference its fraction is\n\n1. Then this fraction decreases as the atomic number and density increases. As the block width\n\nincreases, the fraction decreases, as expected, and the differences between materials becomes more\n\npronounced.\n\nIn Fig. 5 we present the number of sigma differences between fraction of diverse materials. As\n\nan example, the differences between lead and iron ranged from 3.5 to 4.1 _𝜎_, but between lead and\n\naluminum were much more considerable, from 7 to 9.9 _𝜎_ . As expected, given their atomic numbers\n\nand densities lead is more similar to iron but more different than aluminum. Moreover, the results\n\nshow a relatively small difference of 0.7 to 0.9 _𝜎_ between aluminum and concrete, indicating that\n\nthey are similar in terms of material properties.\n\nAs an example, we compare the results for lead with the theoretical exponential function in Fig.\n\n6 using the absorption coefficient for muon impacting on lead [32]. Both results are compatible\n\nwithin the errors.\n\n**5.2** **Scattering method**\n\nThe scattering method evaluates the full width at half maximum (FWHM)of the Gaussian fit to\n\nthe muon scattering angles distribution. For this calculation we identify the muon hit positions\n\nby the emitted scintillation photons in each of the two planes of a sub-detector and calculate the\n\ncorresponding vector that joins the points of each sensor that is traversed. Using a vector from\n\neach sub-detector before and after the block we calculate the scattering angle of the muon. The\n\n– 7 –\n\n**Figure 4** : Absorption Method: fraction of particles detected in the sub-detector after the object and\n\nthose that should have arrived after passing through air for different materials as a function of the\n\nobject width.\n\n**Figure 5** : Number of sigma deviations between the material stated on top of each plot compared\n\nwith those in the legend.\n\n– 8 –\n\n**Figure 6** : Absorption method fraction comparing the results from our simulation in gray with the\n\ntheoretical exponential function m",
+        "score": -3.7166167748280063,
+        "dense_score": 0.37663328647613525,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.724775314331055,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5340,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2801359__2406.14915__Polarimetry_of_math_altimgsi51.svg_displayinline_idd1e478mimimath-rays_converting_to_math_.md",
+        "title": "2024__recid_2801359__2406.14915__Polarimetry_of_math_altimgsi51.svg_displayinline_idd1e478mimimath-rays_converting_to_math_",
+        "text": "iation of the performance with the values of the detector parameters.\n\n**Wafer Thickness**\n\nIncreasing the wafer thickness, all other geometrical param\n\neters being kept unchanged, obviously increases the sensitive\n(silicon) mass and therefore the effective area of the telescope.\nThat main effect is not what I aim to study here, so I generated event samples simulated with various wafer thicknesses,\nall samples with the same number of generated events of 10 [7],\nwhich corresponds, for these “thin” active targets, to detectors\nhaving the same silicon mass.\nThe residual variation of the performance for polarimetry is\npresented in Fig. 4. The selection efficiency decreases mildly\nwith increasing thickness (plot a), mainly due to an increase\nof the fraction of events with too large a number of clusters\nin the 2nd layer, while the polarization asymmetry obviously\ndecreases with increasing thickness due to multiple scattering\n(plot b), and so does the figure of merit ϵ × _A_ [2] (plot c).\n\n**Pixel Size**\n\nDecreasing the pixel size obviously improves the selection\nefficiency at high energies. At low energies on the contrary, it\n\n4\n\n**0.6**\n\n**0.5**\n\n**0.4**\n\n**0.3**\n\n**0.2**\n\n**0.1**\n\n**0**\n\n**2** **3**\n**10** **10** **10**\n\n**E ( MeV )**\n\n**2** **3**\n**10** **10** **10**\n\n**E ( MeV )**\n\n**0.005**\n\n**0.004**\n\n**0.003**\n\n**0.002**\n\n**0.001**\n\n**0**\n\n**0.14**\n\n**0.12**\n\n**0.1**\n\n**0.08**\n\n**0.06**\n\n**0.04**\n\n**0.02**\n\n**0**\n\n**2** **3**\n**10** **10** **10**\n\n**E ( MeV )**\n\nFigure 4: Study of the variation of the performance of the polarimeter with wafer thickness, _e_ ( _d_ = 1 cm, p = 500 µm). **(a)** Selection efficiency, ϵ, as a function of\nincident photon energy, _E_ . **(b)** Effective polarization asymmetry, _A_, as a function of incident photon energy. **(c)** Figure of merit, ϵ × _A_ [2], as a function of incident\nphoton energy.\n\n**0.6**\n\n**0.5**\n\n**0.4**\n\n**0.3**\n\n**0.2**\n\n**0.1**\n\n**0**\n\n**2** **3**\n**10** **10** **10**\n\n**E ( MeV )**\n\n**2** **3**\n**10** **10** **10**\n\n**E ( MeV )**\n\n**0.005**\n\n**0.004**\n\n**0.003**\n\n**0.002**\n\n**0.001**\n\n**0**\n\n**0.14**\n\n**0.12**\n\n**0.1**\n\n**0.08**\n\n**0.06**\n\n**0.04**\n\n**0.02**\n\n**0**\n\n**2** **3**\n**10** **10** **10**\n\n**E ( MeV )**\n\nFigure 5: Study of the variation of the performance of the polarimeter with pixel size, p ( _d_ = 1 cm, _e_ = 500 µm). **(a)** Selection efficiency, ϵ, as a function of incident\nphoton energy, _E_ . **(b)** Effective polarization asymmetry, _A_, as a function of incident photon energy. **(c)**",
+        "score": -3.7264718951405706,
+        "dense_score": 0.38132917881011963,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.740310192108154,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 481,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment.md",
+        "title": "2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment",
+        "text": "3)` .\n\n[16] R. E. Kalman, _A New Approach to Linear Filtering and Prediction Problems_ [, Journal of Basic Engineering](http://dx.doi.org/10.1115/1.3662552)\n**82** [(1960) no. 1, 35–45.](http://dx.doi.org/10.1115/1.3662552)\n\n[17] P. Billoir, _Track Fitting With Multiple Scattering: A New Method_ [, Nucl. Instrum. Meth. A](http://dx.doi.org/10.1016/0167-5087(84)90274-6) **225** (1984)\n[352–366.](http://dx.doi.org/10.1016/0167-5087(84)90274-6)\n\n[18] A. Peruzzo, J. McClean, P. Shadbolt, M.-H. Yung, X.-Q. Zhou, P. J. Love, A. Aspuru-Guzik, and J. L.\nO’Brien, _A variational eigenvalue solver on a photonic quantum processor_ [, Nat. Commun.](http://dx.doi.org/10.1038/ncomms5213) **5** (2014) 1.\n\n[19] M. Treinish, J. Gambetta, S. Thomas, P. Nation, qiskit bot, P. Kassebaum, D. M. Rodr´ıguez, S. de la\nPuente Gonz´alez, J. Lishman, S. Hu, L. Bello, J. Garrison, K. Krsulich, J. Huang, J. Yu, M. Marques,\nE. Arellano, J. Gacon, D. McKay, J. Gomez, L. Capelluto, Travis-S-IBM, A. Mitchell, A. Panigrahi,\nlerongil, R. I. Rahman, S. Wood, T. Itoko, A. Pozas-Kerstjens, and C. J. Wood, _Qiskit/qiskit: Qiskit_\n_0.42.1_, Mar., 2023. `[https://doi.org/10.5281/zenodo.7757946](https://doi.org/10.5281/zenodo.7757946)` .\n\n[20] K. M. Nakanishi, K. Fujii, and S. Todo, _Sequential minimal optimization for quantum-classical hybrid_\n_algorithms_, Phys. Rev. Res. **[2](http://dx.doi.org/10.1103/PhysRevResearch.2.043158)** (2020) 043158.\n\n[21] E. Farhi, J. Goldstone, and S. Gutmann, _A Quantum Approximate Optimization Algorithm_,\n\n[arXiv:1411.4028 (2014) .](http://dx.doi.org/10.48550/ARXIV.1411.4028)\n\n[22] S. Farrell et al., _Novel deep learning methods for track reconstruction_, in _4th International Workshop_\n_Connecting The Dots 2018_ . 10, 2018. `[arXiv:1810.06111 [hep-ex]](http://arxiv.org/abs/1810.06111)` .\n\n[23] X. Ju et al., _Performance of a geometric deep learning pipeline for HL-LHC particle tracking_ [, Eur. Phys. J.](http://dx.doi.org/10.1140/epjc/s10052-021-09675-8)\nC **81** [(2021) no. 10, 876,](http://dx.doi.org/10.1140/epjc/s10052-021-09675-8) `[arXiv:2103.06995 [physics.data-an]](http://arxiv.org/abs/2103.06995)` .\n\n[24] X. Ai et al., _A Common Tracking Software Project_ [, Comput. Softw. Big Sci.](http://dx.doi.org/10.1007/s41781-021-00078-8) **6** (2022) no. 1, 8,\n\n`[arXiv:2106.13593 [physics.ins-det]](http://arxiv.org/abs/2106.13593)` .\n\n[25] S. Bravyi, S. Sheldon, A. Kandala, D. C. Mckay, and J. M. Gambetta, _Mitigating measurement errors in_\n_multiqubit experiments_",
+        "score": -3.8249392803401165,
+        "dense_score": 0.3831896185874939,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.891898155212402,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3034,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2703043__2309.14905__Multimessenger_measurements_of_the_static_structure_of_shock-compressed_liquid_silicon_at_.md",
+        "title": "2024__recid_2703043__2309.14905__Multimessenger_measurements_of_the_static_structure_of_shock-compressed_liquid_silicon_at_",
+        "text": "al Basis for the Multi-Component Scattering Spectra (MCSS) Thomson Scattering Analysis Code (AWE, 2017).\n\n[12] M. Kasim, T. P. Galligan, J. Topp-Mugglestone, G. Gregori, and S. M. Vinko, Physics of Plasmas 26, 112706 (2019).\n\n[13] J. Vorberger, D. O. Gericke, and W.-D. Kraeft, High Energy Density Physics 9, 448 (2013).\n\n[14] W. Ebeling, H. Reinholz, and G. R¨opke, The European Physical Journal Special Topics 229, 3403 (2020).\n\n[15] S. Groth, T. Dornheim, T. Sjostrom, F. D. Malone, W. M. C. Foulkes, and M. Bonitz, Physical review letters 119, 135001\n(2017).\n\n[16] T. Dornheim, Z. A. Moldabekov, and P. Tolias, Physical Review B 103, 165102 (2021).\n\n[17] J.-P. Hansen and I. R. McDonald, Theory of simple liquids: with applications to soft matter (Academic press, 2013).",
+        "score": -4.40021751191881,
+        "dense_score": 0.4401007890701294,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.778112411499023,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 25,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.541767003014684,
+    "generation_latency_s": 3.7997961044311523e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 6.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.541767003014684,
+    "generation_latency_s": 3.7997961044311523e-07
+  }
+}

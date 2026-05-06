@@ -1,0 +1,274 @@
+{
+  "benchmark": {
+    "query_id": "neg011",
+    "query_type": "negative",
+    "query": "Which paper says HV-MAPS are impossible in principle?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "Which paper says HV-MAPS are impossible in principle?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 377,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "rs\ninvolved a visual inspection (VI) in addition to quantification of several electrical\nproperties [4]. Similarly, a major part of the QC of the HGCAL sensors is the electrical\n\n2\n\n**Figure 1.** (left) An HGCAL silicon sensor wafer, with a pad zoomed in. The diameter\nof the sensor is 8”. (right) An example of a scan map.\n\ncharacterization of the sensors, during which the sensors are biased up to 1000 V [5].\nDefects and dust on a sensor surface can potentially lead to an electrical failure of the\nsensor. Examples of a typical defect, a scratch, and a dust particle are shown in figure 2.\nGiven that these defects are rare and unwanted, they are referred to as anomalies. The\nanomalies can occur during manufacturing, packaging, delivery, or associated handling\nof the sensors. In an effort to prevent failures, the sensor surface is visually inspected\n\nis presented in the context of HGCAL sensor QC, the same approach could be applied\nto similar use cases of automating the VI of images.\n\n3\n\nThe PSA proposed in this work detects anomalous scan images via an ensemble\nof a deep convolutional autoencoder (AE) and a deep convolutional classifier neural\nnetwork. The AE acts on each scan image, and the classifier acts on patches of the\nimage, allowing for localization of anomalous areas (annotation). The PSA has been\ndeployed in a clean room at CERN, and data gathered in production are used to evaluate\nthe performance of the anomaly detection. The performance is mainly measured using\ntwo metrics: First, the False Negative Rate (FNR), defined as\n\nFalse Negative\nFNR = (1)\nFalse Negative + True Positive\n\nshould be minimized for a reliable PSA. Second, a relatively large False Positive Rate\n(FPR), defined as\n\nFalse Positive\nFPR = (2)\nFalse Positive + True Negative\n\nis allowed, but an upper limit of 10% is set to sufficiently automate the VI.\nThis paper is structured as follows. The data acquisition and characteristics are\ndescribed in section 2. An introduction to automated VI is given in section 3, followed\nby a description of the proposed architecture and the model training process in section\n4. The results of the deployment at CERN are presented in section 5. In section 6,\nthe efficiency and causes of incorrect predictions are discussed, and the proposal for\ncontinuous improvement of the anomaly detection capabilities is presented. Finally,\nconclusions are provided in section 7.\n\n**2. Setup and data set**\n\nA custom semi-automated VI system has been implemented in the cle",
+        "score": -3.976279338200887,
+        "dense_score": 0.2850719690322876,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.123763084411621,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6872,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+        "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+        "text": "* **4**\n\n4.1 Experimental Setup 4\n\n4.2 Data Samples 5\n\n4.3 Detection Efficiency 7\n\n4.4 Time Resolution 10\n\n**5** **Conclusions** **14**\n\n**1** **Introduction**\n\nMonolithic Active Pixel Sensors (MAPS [1]), which integrate the sensor and electronics within\n\nthe same CMOS substrate, are becoming more and more common in particle physics. Despite\n\ntheir relatively complex design phase, MAPS provide all the benefits of standard CMOS processing\n\nwhile avoiding the production challenges and high costs associated with bump-bonded hybrid pixel\n\nsensors. A large surface of MAPS was recently installed in the ALICE experiment at the LHC [2]\n\nand is operated successfully.\n\nIn the framework of the MONOLITH H2020 ERC Advanced project [3], this group is de\nveloping very fast MAPS. Prototypes were produced using the commercial SG13G2 130 nm\n\nsilicon-germanium (SiGe) BiCMOS process [4] by IHP Microelectronics, which includes a very\n\nfast and low-noise SiGe Heterojunction Bipolar Transistor (HBT) with a peak transition frequency\n\n_𝑓_ _𝑡_ = 350 GHz. In a testbeam experiment with minimum-ionizing particles (MIPs), a prototype\n\nwith a standard PN junction sensor without an internal gain layer produced with this technology\n\nprovided full efficiency and time resolution of 20 ps [5]. Several of these prototypes were irradiated\nwith 70 MeV protons up to a fluence 1 × 10 [16] n eq /cm [2] and tested with radioactive sources [6] and\nin a testbeam experiment with MIPs [7]. The SiGe HBT front-end electronics not only survived\n\nsuch large proton fluence but was still able to recover full efficiency and provide a time resolution\n\nof 45 ps with only a modest increase in sensor bias voltage. This performance underscores SiGe\n\nHBT radiation tolerance, meeting the stringent requirements of the challenging High-Luminosity\n\nLHC environment.\n\nIn parallel to the development of front-end electronics, the MONOLITH ERC project is also\n\nexploiting the picosecond avalanche detector (PicoAD) [8], a novel detector that implements a\n\ncontinuous deep gain layer to boost the timing performance. A proof-of-concept monolithic PicoAD\n\n– 1 –\n\nwas produced in 2022 using the photolithography masks of a prototype able to provide 36 ps [9]\n\nwith a sensor without internal gain layer. The proof-of-concept PicoAD was operated at a gain of\n\napproximately 20 [10], obtaining full efficiency and an average time resolution of 17 ps [11]. The\n\ntime resolution was found to depend strongly on the hit position on the pixel ar",
+        "score": -5.120654651201688,
+        "dense_score": 0.31968778371810913,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.886214256286621,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5129,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "e paper concludes (Section\n5) with a discussion on the results and an outlook for the project.\n\n**2. The ATLAS IBL and Pixel Radiation Damage Digitizer**\n\nThe ATLAS Collaboration developed and implemented an algorithm to include the\neffects of radiation damage to silicon pixel sensors in the Monte Carlo-simulated events.\nIn the following (Section 2.1), the ATLAS Pixel and IBL detectors will be briefly discussed.\nThe radiation damage digitizer for these detectors will be presented in Section 2.2.\n\n_2.1. The ATLAS IBL and Pixel Detector_\n\nThe ATLAS Pixel detector [ 7 ] has been in operation since the beginning of LHC Run1.\nIt comprises three barrel layers and three disks on each side. The barrel layer closest to\nthe interaction point (IP) is called the B-Layer and is positioned at a radius _R_ = 50.5 mm\nfrom the IP. All layers are composed of hybrid pixel modules, with sensors that are planar\nn [+] -on-n, 250 µm thick, and have a pitch of 50 _×_ 400 µm [2] (bending and transverse planes,\nrespectively).\nFor Run 2 of the LHC, which started in 2015, a new pixel layer was added: the\nInsertable B-Layer (IBL) [ 6 ], positioned 33 mm from the IP. The IBL is also composed of\nhybrid pixel modules. Compared to those in the Pixel detector, IBL modules feature thinner\nsensors, 200 µm instead of 250 µm, and a finer pitch of 50 _×_ 250 µm [2] . Planar n [+] -on-n\ntechnology is used for IBL sensors, except in the forward region, where novel 3D n [+] -on-p\nsensors are employed.\nBy the end of 2023, the IBL (B-Layer) planar sensors had integrated a fluence of\napproximately 1.2 (1.0) _×_ 10 [15] n eq cm _[−]_ [2] . These fluence levels led to a signal loss of about\n30% for both detectors.\n\n_Sensors_ **2024**, _1_, 0 3 of 19\n\n_2.2. The Radiation Damage Digitizer for Pixel and IBL Detectors_\n\nSignal reduction is the most important radiation damage effect for the performance\nof silicon pixel tracking detectors in ATLAS. It is important to have simulated data that\nreproduce the evolution of performance with the increase in radiation fluence. ATLAS\ncollaboration developed and implemented an algorithm that reproduces signal loss and\nchanges in Lorentz angle due to radiation damage [ 15 ]. This algorithm is now the default\nfor Run 3-simulated events [16].\nThe algorithm uses electric field profiles produced using TCAD tools to evaluate the\ntime carriers will take to reach the collecting electrode. The electric field is deformed by\nthe presence of defects due to radiation damage; in pa",
+        "score": -5.5161524566178475,
+        "dense_score": 0.274478554725647,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.491939544677734,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3047,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2703270__2309.14515__High_efficiency_muon_registration_system_based_on_scintillator_strips.md",
+        "title": "2024__recid_2703270__2309.14515__High_efficiency_muon_registration_system_based_on_scintillator_strips",
+        "text": "And angle “0” is the vertical to the strips. An\n\narea of “-40 to +40” mm (shown by red line on a figure) mm were studied with\n\nstep of 0.1 mm. In each step, the angles were varied within a cone from -75 to\n\n+75 degree with 1 degree step (orange lines on Figure 10 represent the borders\n\nfor the cone). The simulations of the muon registration probability for the CRV\n\nmodule with different pattern of shifts layers to each other were done. The\n\naverage light yield set to 21 ph.e. and the threshold (level of discrimination) set\n\nto 5 ph.e.\n\nFigure 10: Layout to create the registration probability map for CRV module\n\n16\n\nThe registration probability maps (2D distribution by the angle and by point\n\nof entrance) were created for more than 60000 patterns of CRV modules, and,\n\noverall, calculations took about 1 month. The examples of registration proba\n\nbility maps for various shift patterns for CRV modules based on 7x40 _mm_ [2] in\n\ncross-section strips were illustrated on Figure 11. White areas on plots represent\n\nthe areas with registration probability less than 99.5%. One can see that it is\n\ndifficult to achieve 99.99% efficiency for the module with current configuration\n\nof the 7-mm-thick strip.\n\n(a) ”20-20-20” (b) ”10-10-10”\n\n(c) ”8-8-8” (d) ”8-10-8”\n\n(e) ”8-10-10” (f) ”8-10-18”\n\nFigure 11: Examples of registration probability maps for various CRV modules shift\n\npatterns: an original ”20-20-20” shift pattern by TDR2020 (a)\n\nTable 2 presents the overall efficiency with no angular distribution for cosmic\n\n17\n\nmuons included for the best shift patterns with the average light yield set to 21\n\nph.e. and the threshold (level of discrimination) set to 5 ph.e.\n\n|Shift pattern|Overall efficiency|\n|---|---|\n|20-20-20 mm|0.99902|\n|10-10-10 mm|0.99976|\n|8-8-8 mm|0.99988|\n|8-10-6 mm|0.99983|\n|8-10-8 mm|0.99985|\n|8-10-10 mm|0.99981|\n|8-10-12 mm|0.99976|\n|8-10-14 mm|0.99968|\n|8-10-16 mm|0.99963|\n|8-10-18 mm|0.99958|\n\nTable 2: Best shift patterns for CRV modules based on 7x40 _mm_ [2] strips. The average\n\nlight yield set from the strip to 21 ph.e. and the threshold set to 5 ph.e.\n\nWe also did similar simulation for CRV modules based on 10x40 _mm_ [2] in\n\ncross-section strips. In this case, gaps, way to change particle propagation, etc.\n\nleft same, but the average light yield set to 30 ph.e. but the threshold (level of\n\ndiscrimination) remained same: 5 ph.e.. The results for 10-mm-thick case shows\n\nthat the charged particles registration probability was better than 99.99%. The",
+        "score": -5.786835975357981,
+        "dense_score": 0.31068938970565796,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.910983085632324,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5414,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2822608__2409.07543__Characterisation_of_analogue_MAPS_fabricated_in_65_nm_technology_for_the_ALICE_ITS3.md",
+        "title": "2024__recid_2822608__2409.07543__Characterisation_of_analogue_MAPS_fabricated_in_65_nm_technology_for_the_ALICE_ITS3",
+        "text": "## NIMA POST-PROCESS BANNER TO BE REMOVED AFTER FINAL ACCEPTANCE Characterisation of analogue MAPS fabricated in 65 nm technology for the ALICE ITS3\n\nKunal Gautam [a,b,1,][∗], Ajit Kumar [c]\n\n_a_ _Vrije Universiteit Brussel, Pleinlaan 2, 1050, Brussels, BE_\n_b_ _Universit¨at Z¨urich, Winterthurerstr. 190, 8057, Z¨urich, CH_\n_c_ _Universit´e de Strasbourg, CNRS, IPHC UMR 7178, F-67000, Strasbourg, FR_\n\n**Abstract**\n\nThe ALICE ITS3 project foresees the use of ultra-light MAPS, developed in the 65 nm imaging process, for the vertex detector in\nthe ALICE experiment at the LHC to drastically improve the vertexing performance. This new development, initiated by an international consortium of the ALICE ITS3 collaboration and the CERN EP R&D project, enhances the overall MAPS performance.\nSmall-scale prototypes are designed to study the analogue properties of the TPSCo 65 nm technology and compare the charge\ncollection performance in different processes, pitches, pixel geometries, and irradiation levels. Recent results from lab and testbeam characterisation detailing the efficiency and the spatial resolution of the APTS with different pixel geometries and pitches\nsatisfy the ALICE ITS3 requirements. A quantitative evolution of the charge collection and sharing among pixels is evident in the\nCE-65 with different in-pixel readouts. Attaining a spatial resolution better than 3 µm with a 10 µm pitch and over 99% efficiency\nin the moderate irradiation environment of ALICE also supports the viability of using 65 nm MAPS for FCC-ee vertex detectors.\n\n_Keywords:_ ALICE, MAPS, ITS3, TPSCo, APTS, CE-65, Vertex Detector, Silicon Sensor\n\n**1. ALICE ITS3 and the Small-Scale Prototypes**\n\nThe Inner Tracking System upgrade (ITS3) [1] of the ALICE\ndetector foresees the use of Monolithic Active Pixel Sensors\n\n(MAPS) developed in the 65 nm imaging process. The ITS3 upgrade is expected to drastically reduce the material budget and\nimprove the pointing resolution by a factor of 2 over the entire\nmomentum range of interest. Process modifications in the form\nof a blanket low-dose n-type implant and gaps at the edges of\npixel boundaries are introduced to achieve full depletion of the\nsensor and a more uniform electric field while keeping the effective pixel capacitance low [2, 3]. These modifications speed\nup charge collection and reduce charge sharing among neighbouring pixels. Two small-scale analogue prototypes were designed to characterise the charge-collection properties of the 65",
+        "score": -5.791814734719017,
+        "dense_score": 0.28021079301834106,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.916603088378906,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4399,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors.md",
+        "title": "2024__recid_2758109__2402.08297__A_Multifunction_Radiation-Hardened_HV_and_LV_Linear_Regulator_for_SiPM-Based_HEP_Detectors",
+        "text": "target radiation levels.\nI3T80 includes lateral and vertical double-diffused MOSFETs\n\n(DMOSFET) that can operate with V ds up to 70 V, as well as\nfloating wells, diodes, matched resistor arrays and bipolars. Both\nLV and HV n-type devices require specific custom layout modifications to attain the target radiation tolerance, as detailed in\nSec. VI. It is also known that DMOSFETs experience an increase\nin on-resistance as a result of displacement damage in the drift\nregions, although this effect is expected to become significant\nfor I3T80 only beyond the specified radiation levels [4].\nThe chip consists of two completely independent sections,\nHV and LV, as illustrated in the general block schematic in\nFig. 1. A photograph of the chip is also shown.\nThe HV section comprises two identical low drop-out (LDO)\nlinear regulators. Each one can regulate an input voltage of\n\nFig. 1. General block schematic of ALDO2 (left). Photograph of a decapsulated\nALDO2 in QFN64 package (right). Die dimensions are 2 _._ 5 × 2 mm [2] .\n\nPREPRINT SUBMITTED TO ARXIV – A MULTI-FUNCTION RADIATION-HARDENED HV AND LV LINEAR REGULATOR FOR SIPM-BASED HEP DETECTORS 2\n\nDAC\n\n|AD HV supply|HV supply|AD|Col4|\n|---|---|---|---|\n|Error<br>amplifier<br>Enable<br>C<br>SiP<br>AD<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|Error<br>amplifier<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|SiP<br>AD|SiP<br>AD|\n|Error<br>amplifier<br>Enable<br>C<br>SiP<br>AD<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|Error<br>amplifier<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|SiP<br>AD|SiP|\n|Error<br>amplifier<br>Enable<br>C<br>SiP<br>AD<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|Error<br>amplifier<br>Over-curr.<br>protection<br>1<br>2<br>80<br>HV<br>PMOS<br>Over-temp.<br>protection<br>Output<br>curr. meas.|||\n\nFig. 2. Simplified block schematic of the HV regulator (two identical ones are\nincluded in each ALDO2). Devices with thick drain are HV DMOSFETs.\n\nAux\noutput\n\nMain\n\n|LV supply|Col2|Col3|\n|---|---|---|\n|Error<br>amplifier<br>able<br>M<br>out<br>A<br>out<br><br>0.5 A<br>20 mA<br>Over-curr.<br>protection<br>Over-temp.<br>protection<br>Bandgap MOS<br>Bandgap PNP<br>Bandgap NPN|Error<br",
+        "score": -5.925452074050904,
+        "dense_score": 0.27123159170150757,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.121464729309082,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6912,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2859995__2412.10603__Bright_Purcell-Enhanced_Single_Photon_Emission_from_a_Silicon_G_Center.md",
+        "title": "2025__recid_2859995__2412.10603__Bright_Purcell-Enhanced_Single_Photon_Emission_from_a_Silicon_G_Center",
+        "text": "er, Z.; Seidlitz, A.; Senger, J.; Lee, Y. S.; Sevoyan, O.; Simmons,](http://paperpile.com/b/HjM51P/uyZ7Z)\n\n[S.; Soykal, O.; Stott, L.; Tran, Q.; Tserkis, S.; Ulhaq, A.; Vine, W.; Weeks, R.; Wolfowicz, G.;](http://paperpile.com/b/HjM51P/uyZ7Z)\n\n[Yoneda, I. Distributed Quantum Computing in Silicon.](http://paperpile.com/b/HjM51P/uyZ7Z) _[arXiv [quant-ph]](http://paperpile.com/b/HjM51P/uyZ7Z)_, 2024.\n\nhttp://arxiv.org/abs/2406.01704.\n\n[(12) Redjem, W.; Durand, A.; Herzig, T.; Benali, A.; Pezzagna, S.; Meijer, J.; Kuznetsov, A.](http://paperpile.com/b/HjM51P/GnAPi)\n\n[Y.; Nguyen, H. S.; Cueff, S.; Gérard, J.-M.; Robert-Philip, I.; Gil, B.; Caliste, D.; Pochet, P.;](http://paperpile.com/b/HjM51P/GnAPi)\n\n[Abbarchi, M.; Jacques, V.; Dréau, A.; Cassabois, G. Single Artificial Atoms in Silicon Emitting](http://paperpile.com/b/HjM51P/GnAPi)\n\nat Telecom Wavelengths. _Nature Electronics_ **2020**, _3_ (12), 738–743.\n\n[(13) Hollenbach, M.; Klingner, N.; Jagtap, N. S.; Bischoff, L.; Fowley, C.; Kentsch, U.;](http://paperpile.com/b/HjM51P/BJlPk)\n\nHlawacek, G.; Erbe, A.; Abrosimov, N. V.; Helm, M.; Berencén, Y.; Astakhov, G. V. Wafer-Scale\n\nNanofabrication of Telecom Single-Photon Emitters in Silicon. _Nat. Commun._ **2022**, _13_ (1), 7683.\n\n[(14) Redjem, W.; Zhiyenbayev, Y.; Qarony, W.; Ivanov, V.; Papapanos, C.; Liu, W.; Jhuria,](http://paperpile.com/b/HjM51P/7g1Xs)\n\n[K.; Al Balushi, Z. Y.; Dhuey, S.; Schwartzberg, A.; Tan, L. Z.; Schenkel, T.; Kanté, B. All-Silicon](http://paperpile.com/b/HjM51P/7g1Xs)\n\n[Quantum Light Source by Embedding an Atomic Emissive Center in a Nanophotonic Cavity.](http://paperpile.com/b/HjM51P/7g1Xs) _Nat._\n\n_Commun._ **2023**, _14_ (1), 3321.\n\n[(15) Prabhu, M.; Errando-Herranz, C.; De Santis, L.; Christen, I.; Chen, C.; Gerlach, C.;](http://paperpile.com/b/HjM51P/Oip2T)\n\n[Englund, D. Individually Addressable and Spectrally Programmable Artificial Atoms in Silicon](http://paperpile.com/b/HjM51P/Oip2T)\n\nPhotonics. _Nat. Commun._ **2023**, _14_ (1), 2380.\n\n[(16) Saggio, V.; Errando-Herranz, C.; Gyger, S.; Panuski, C.; Prabhu, M.; De Santis, L.;](http://paperpile.com/b/HjM51P/z3p8I)\n\n[Christen, I.; Ornelas-Huerta, D.; Raniwala, H.; Gerlach, C.; Colangelo, M.; Englund, D. Cavity-](http://paperpile.com/b/HjM51P/z3p8I)\n\nEnhanced Single Artificial Atoms in Silicon. _Nat. Commun._ **2024**, _15_ (1), 5296.\n\n[(17) Komza, L.; Samutpraphoot, P.; Odeh, M.; Tang, Y.-L.; Mathew, M.; Chang, J.; Song, H.;](http://paperpile.com/b/HjM51P/1YXIr)\n\n[Kim, M.-K.; Xi",
+        "score": -5.951157179646108,
+        "dense_score": 0.2804703712463379,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.161815643310547,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4505,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology.md",
+        "title": "2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology",
+        "text": "## Simulations and Performance Studies of a MAPS in 65 nm CMOS Imaging Technology\n\nAdriana Simancas [a,b,][∗], Justus Braach [c,d], Eric Buschmann [c], Ankur Chauhan [a], Dominik Dannheim [c], Manuel Del Rio\nViera [a,b], Katharina Dort [c,e], Doris Eckstein [a], Finn Feindt [a], Ingrid-Maria Gregor [a], Karsten Hansen [a], Lennart Huth [a],\nLarissa Mendes [a,b], Budi Mulyanto [a], Daniil Rastorguev [a,f], Christian Reckleben [a], Sara Ruiz Daza [a,b], Judith\nSchlaadt [a,g], Paul Sch¨utze [a], Walter Snoeys [c], Simon Spannagel [a], Marcel Stanitzki [a], Anastasiia Velyka [a], Gianpiero\nVignola [a,b], Håkan Wennl¨of [a]\n\n_a_ _Deutsches Elektronen-Synchrotron, Notkestraße 85, 22607 Hamburg,, Germany_\n_b_ _University of Bonn, Regina-Pacis-Weg 3, 53113 Bonn,, Germany_\n_c_ _Conseil Europ´een pour la Recherche Nucl´eaire, Esplanade des Particules 1, 1211 Geneva 23,, Switzerland_\n_d_ _University of Hamburg, Mittelweg 177, 20148 Hamburg,, Germany_\n_e_ _University of Giessen, Ludwigstraße 23, 35390 Gießen,, Germany_\n_f_ _University of Wuppertal, Gaußstraße 20, 42119 Wuppertal,, Germany_\n_g_ _Johannes Gutenberg University of Mainz, Saarstraße 21, 55122 Mainz,, Germany_\n\n**Abstract**\n\nMonolithic active pixel sensors (MAPS) produced in a 65 nm CMOS imaging technology are being investigated for\napplications in particle physics. The MAPS design has a small collection electrode characterized by an input capacitance of ∼fF, granting a high signal-to-noise ratio and low power consumption. Additionally, the 65 nm CMOS\nimaging technology brings a reduction in material budget and improved logic density of the readout circuitry, compared to previously studied technologies. Given these features, this technology was chosen by the TANGERINE\nproject to develop the next generation of silicon pixel sensors. The sensor design targets temporal and spatial resolutions compatible with the requirements for a vertex detector at future lepton colliders. Simulations and test-beam\ncharacterization of technology demonstrators have been carried out in close collaboration with the CERN EP R&D\nprogram and the ALICE ITS3 upgrade. TCAD device simulations using generic doping profiles and Monte Carlo\nsimulations have been used to build an understanding of the technology and predict the performance parameters of the\nsensor. Technology demonstrators of a 65 nm CMOS MAPS with a small collection electrode have been characterized\nin laboratory and test-beam facilities by studying performance parameters",
+        "score": -5.999095516517514,
+        "dense_score": 0.36732757091522217,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.238204956054688,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 64,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "es.\n\nHowever, all the above examples assume that the image\ndata arrive as an ordered sequence of pixels, and do not\nprovide detailed topology analysis of the found clusters, so\nthey could not be straightforwardly applied to our problem.\nConversely, the smallness of the components addressed by our\nsystem may not be of interest in general image processing\napplications; nevertheless, it cannot be excluded that some of\nthe ideas described in this article could find some use in image\nprocessing tasks, at least in some specific instances.\n\nA CKNOWLEDGEMENT\n\nWe are thankful for the support of the LHCb Real-Time\nAnalysis group, within which this project was developed. A\nspecial thank goes to the LHCb VELO group for the tight\ncollaboration, support, and integration coordination, without\nwhich this work would not have been possible. The authors\nwould also like to thank the LHCb computing and simulation\nteams for providing the simulated samples used in the paper.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2023 13\n\nR EFERENCES\n\n[1] LHCb Collaboration, “LHCb Trigger and Online Upgrade Technical\nDesign Report,” CERN, Geneva, Tech. Rep. CERN-LHCC-2014-016,\n[2014. [Online]. Available: https://cds.cern.ch/record/1701361](https://cds.cern.ch/record/1701361)\n\n[2] LHCb Collaboration, “Expression of Interest for a Phase-II LHCb\nUpgrade: Opportunities in flavour physics, and beyond, in the HL-LHC\nera,” CERN, Geneva, Tech. Rep., Feb 2017. [Online]. Available:\n[https://cds.cern.ch/record/2244311](https://cds.cern.ch/record/2244311)\n\n[3] LHCb Collaboration, “LHCb Upgrade GPU High Level Trigger\nTechnical Design Report,” CERN, Geneva, Tech. Rep. CERN-LHCC[2020-006, May 2020. [Online]. Available: https://cds.cern.ch/record/](https://cds.cern.ch/record/2717938)\n[2717938](https://cds.cern.ch/record/2717938)\n\n[4] R. Cenci _et al._, “Development of a High-Throughput Tracking\nProcessor on FPGA Boards,” in _Proc. Topical Workshop on Electronics_\n_for Particle Physics (TWEPP 2017)_, Santa Cruz, CA, USA, 2017.\n\n[[Online]. Available: https://pos.sissa.it/313/136/](https://pos.sissa.it/313/136/)\n\n[5] LHCb Collaboration, “LHCb VELO Upgrade Technical Design Report,”\nCERN, Geneva, Tech. Rep. CERN-LHCC-2013-021. LHCB-TDR-013,\n[2013. [Online]. Available: https://cds.cern.ch/record/1624070](https://cds.cern.ch/record/1624070)\n\n[6] G. Bassi _et al._, “FPGA implemention of a fast 2D clustering\nalgorithm (VHDL language),” 2019. [Online]. Available: [https:](https://doi.org/10.15161/oa",
+        "score": -6.420391483306885,
+        "dense_score": 0.30067941546440125,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.885217666625977,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 26,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2876,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2698795__2309.09610__Development_of_a_High_Granular_TOF_Neutron_Detector_for_the_BMN_Experiment.md",
+        "title": "2024__recid_2698795__2309.09610__Development_of_a_High_Granular_TOF_Neutron_Detector_for_the_BMN_Experiment",
+        "text": "/9903010](http://arxiv.org/abs/nucl-ex/9903010)`, `[doi:10.1103/PhysRevLett.83.1295](https://doi.org/10.1103/PhysRevLett.83.1295)` .\n\n[12] H. Liu, et al., Sideward flow in Au + Au collisions between 2-A-GeV and 8-A-GeV, Phys. Rev. Lett. 84 (2000)\n5488–5492. `[arXiv:nucl-ex/0005005](http://arxiv.org/abs/nucl-ex/0005005)`, `[doi:10.1103/PhysRevLett.84.5488](https://doi.org/10.1103/PhysRevLett.84.5488)` .\n\n[13] P. Chung, et al., Differential elliptic flow in 2-A-GeV - 6-A-GeV Au+Au collisions: A New constraint for the\nnuclear equation of state, Phys. Rev. C 66 (2002) 021901. `[arXiv:nucl-ex/0112002](http://arxiv.org/abs/nucl-ex/0112002)`, `[doi:10.1103/PhysRevC.](https://doi.org/10.1103/PhysRevC.66.021901)`\n`[66.021901](https://doi.org/10.1103/PhysRevC.66.021901)` .\n\n[14] P. Senger, Probing Dense Nuclear Matter in the Laboratory: Experiments at FAIR and NICA, Universe 7 (2021)\n171. `[doi:10.3390/universe7060171](https://doi.org/10.3390/universe7060171)` .\n\n[15] P. Senger, The heavy-ion program at the upgraded Baryonic Matter@Nuclotron Experiment at NICA, PoS\nCPOD2021 (2022) 033. `[doi:10.22323/1.400.0033](https://doi.org/10.22323/1.400.0033)` .\n\n[16] M. Kapishin, Heavy Ion BM@N and MPD Experiments at NICA, JPS Conf. Proc. 32 (2020) 010093. `[doi:](https://doi.org/10.7566/JPSCP.32.010093)`\n`[10.7566/JPSCP.32.010093](https://doi.org/10.7566/JPSCP.32.010093)` .\n\n[[17] Novel Device Laboratory Beijing, EQR15 Series SiPMs.](http://www.ndl-sipm.net/PDF/Datasheet-EQR15.pdf)\nURL `[http://www.ndl-sipm.net/PDF/Datasheet-EQR15.pdf](http://www.ndl-sipm.net/PDF/Datasheet-EQR15.pdf)`\n\n[[18] ELJEN Technology.](https://eljentechnology.com/products/plastic-scintillators/ej-228-ej-230)\nURL `[https://eljentechnology.com/products/plastic-scintillators/ej-228-ej-230](https://eljentechnology.com/products/plastic-scintillators/ej-228-ej-230)`\n\n[19] F. Guber, A. Ivashkin, N. Karpushkin, A. Makhnev, S. Morozov, D. Serebryakov, V. Baskov, V. Polyansky,\nMeasurement of Time Resolution of Scintillation Detectors with EQR-15 Silicon Photodetectors for the Time-ofFlight Neutron Detector of the BM@N Experiment (9 2023). `[arXiv:2309.03614](http://arxiv.org/abs/2309.03614)` .\n\n[20] N. Karpushkin, D. Finogeev, F. Guber, D. Lyapin, A. Makhnev, S. Morozov, D. Serebryakov, Analytical description\nof the time-over-threshold method based on the time properties of plastic scintillators equipped with silicon\nphotomultipliers (8 2023). `[arXiv:2308.08341](http://arxiv.org/abs/2308.08341)` .\n\n[21] D. Fi",
+        "score": -6.4635787156912,
+        "dense_score": 0.2782307267189026,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.949884414672852,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.561410862952471,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.561410862952471,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

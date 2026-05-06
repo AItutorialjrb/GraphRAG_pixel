@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "com011",
+    "query_type": "comparative",
+    "query": "Compare citation coverage and faithfulness.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "RAG"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare citation coverage and faithfulness.",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5232,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers.md",
+        "title": "2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers",
+        "text": "tatistics term. This is\n\nattributed to the low photon collection efficiency of the NEXT-White SiPMs due to their\n\n_∼_\nlow coverage ( 1%). The expected energy resolution as a function of SiPM coverage for\ndetectors like NEXT-White can be estimated by considering how each factor in Eq. 4.3\nwill change as a function of the coverage. The total number of photons collected by the\nSiPMs will be linearly proportional to the coverage, while the Fano contribution will not\nchange. The variance in the noise due to SiPMs will also increase linearly with coverage\nas the number of SiPMs increases. Using these relations and the results from NEXTWhite SiPMs, the estimated energy resolution as a function of coverage is calculated and\n\nshown in Figure 15. The colored blue region represents the estimated error based on the\nenergy resolution with krypton, which includes the systematic error found with the partial\nvolume, and the statistical error based on the number of photons collected (propagated to\nthe given coverage). An additional uncertainty is included to account for the uncertainty\nin the 1 _/√E_ scaling of the energy resolution of [83] _[m]_ Kr events to higher energy events and\n\nis shown as the gray dashed lines. This uncertainty is based on previous NEXT-White\nenergy resolution measurements with PMTs extrapolated from [83] _[m]_ Kr energies to higher\nenergies [6] compared with the measured energy resolution at higher energies [5]. This\nscaling uncertainty is likely an overestimate, as it is based on the PMTs, which have a\n\npoorer spatial uniformity than the SiPMs.\n\nWith this extrapolation, for a high enough coverage, the contribution to the energy\nresolution from the photostatisics, as well as the SiPM noise, will be small, resulting in an\n\nexcellent energy resolution, similar to that seen using PMTs in NEXT-White. With these\n\nconditions, the corrections will also be easier, as the issues with the response at low _z_ due\n\nto low coverage would be resolved.\n\n**8** **Discussion**\n\nBy using the full SiPM waveforms of run 8088, a new method for measuring the energy in the NEXT-White detector is demonstrated. This new method allows for studying the energy resolution and response throughout the detector. An energy resolution of\n(10.9 _±_ 0.6) % (FWHM) at 41 _._ 5 keV, with a mean of (731.4 _±_ 0 _._ 3) PE and a standard deviation of (33.9 _±_ 0 _._ 3) PE is obtained using an optimized region of the detector. This was\nslightly larger than the expected resolution, given the",
+        "score": -5.735584717109555,
+        "dense_score": null,
+        "bm25_score": 13.640338983284511,
+        "graph_score": 0.0,
+        "rerank_score": -8.832803726196289,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5234,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers.md",
+        "title": "2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers",
+        "text": "_−_ _y_ and _z_ (or\ntime). This increased event volume will increase the number of SiPMs and time samples\nused to calculate the event energy, thus increasing the total noise of the event. The event\nvolume is related to the event energy (or _N_ _PE_ ) as: _V ∝_ _N_ _PE_ _[γ]_ [. The] _[ γ]_ [ exponent is bounded]\nby 0 _< γ <_ 1. In the most conservative estimate of _γ_ = 1, then _σ_ _n_ [2] _[∝]_ _[V][ ∝]_ _[N]_ _[PE]_ [. This]\nwould result in the noise term of the energy resolution from Eq. 4.3 to scale as _Nσ_ _P E_ [2] _n_ [2] _[∝]_ _N_ _P E_ 1 [.]\nThus, the noise term, just like the photostatistics term, becomes smaller with larger energy\nevents. High energy events likely have additional factors that are important in the energy\nresolution, for example, taking into account the more complex topology compared to pointlike [83] _[m]_ Kr events studied here. However, these effects should be bounded in the dashed lines\n\n– 17 –\n\nof Figure 15 where the goal of sub-1% energy resolution is still achieved with appropriate\n\ncoverage.\n\nBy estimating the energy resolution as a function of coverage, it is shown that a NEXTWhite-like detector with a higher coverage of SiPMs can achieve an energy resolution below\n1% (FWHM) at _Q_ _ββ_ . Therefore, for a future detector or prototype using only SiPMs for\nenergy measurements, a higher coverage will be necessary.\n\n**A** **Energy resolution with PMT signal**\n\nThe _r_ and _z_ dependence of the energy resolution using the PMT signal is included here\nfor comparison with the SiPMs throughout this analysis. The event energy seen by the\nPMTs is corrected using the calibration maps extracted from the PMT energy, shown in\n\nFigure 16. The overall energy resolution using PMTs is consistent with the energy plane\ncoverage and the previous low energy resolution measurements [6].\n\n(a) (b)\n\n**Figure 16** : Corrections maps using the calibration sample of run 8088 extracted from\nPMT signal, based on an exponential decay with (a) an initial energy at _z_ = 0 of _E_ 0 and\n(b) lifetime _τ_ .\n\nFigure 17 shows the energy resolution as a function of the _z_ position. There is a known\ntrend of worsening energy resolution at higher _z_ (longer drift times), caused by the loss\nof energy from electron attachment to impurities in the gas. However, this effect is less\nprominent in Figure 17 than in previous NEXT analyses ([6]) due to the improvement in\nelectron lifetime throughout the data taking of NEXT-White. The lifetime in [6] was 2 ms,\nwhile this",
+        "score": -5.977575511932374,
+        "dense_score": null,
+        "bm25_score": 12.009812338185599,
+        "graph_score": 0.0,
+        "rerank_score": -9.203962326049805,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4718,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2770334__2403.13034__Study_of_silicon_photomultipliers_for_the_readout_of_a_leadscintillating-fiber_calorimeter.md",
+        "title": "2024__recid_2770334__2403.13034__Study_of_silicon_photomultipliers_for_the_readout_of_a_leadscintillating-fiber_calorimeter",
+        "text": "(profile). Left: SiPM. Right: PMT.\n\n**6** **Conclusions**\n\nA cut-out of the KLOE calorimeter has been equipped with SiPMs and PMTs in order to compare\n\ntheir performance for a potential application in an element (SAND) of the Near Detector complex\n\nof the future DUNE experiment. The PMT coupling was optimized in the KLOE calorimeter and\n\nit was kept unchanged for this study. Various optical couplings have been tested for adapting the\n\nSiPMs with the KLOE light guides and it was verified that the partial coverage of the light guide\n\ndoes not prevent reaching a proper readout of the signal. Efficiency and timing resolution have been\n\nmeasured and compared for both detectors. It was found that the SiPM noise cannot be neglected\n\nin the efficiency estimate. Specifically, the noise rejection implies a non-negligible reduction of the\n\npossible SiPM efficiency making it lower by a few percent with respect to that of the PMTs. For the\n\ntiming resolution, it was observed that PMTs reach a value lower than 220 ps for the scintillation\n\nsignal, while SiPMs exhibit a resolution above 240 ps. Even if the difference is small, PMTs seem\n\nto perform better.\n\nIn conclusion, the difficulties in coupling SiPMs to ECAL without major mechanical changes,\n\nthe lack of improvement, the cost, and the necessary commissioning time, advise against the\n\nsubstitution of the 4880 available and tested PMTs with new SiPMs in the KLOE calorimeter to\n\nbe reused in the Near Detector complex in DUNE. Nonetheless, the results from this study do not\n\nexclude the possible use of SiPMs for other calorimetry applications.\n\n**Acknowledgments**\n\nWe would like to thank Stefano Miscetti (INFN, Laboratori Nazionali di Frascati) who delivered\n\nus the stack of lead foils and scintillating fibers. We thank also Antonio Di Domenico (Sapienza,\n\nRome) and Alessandro Montanari (INFN, Sezione di Bologna) for their fruitful comments and\n\nsuggestions.\n\n– 14 –\n\n**References**\n\n[1] F. Acerbi and S. Gundacker, _Understanding and simulating SiPMs_, Nucl. Instr. and Meth. A 926\n(2019) 16.\n\n[2] S. Gundacker and A. Heering, _The silicon photomultiplier: fundamentals and applications of a_\n_modern solid-state photon detector_, Phys. Med. Biol. 65 (2020) TR01.\n\n[3] M. Adinolfi et al., _The KLOE electromagnetic calorimeter_, Nucl. Instr. and Meth. A 482 (2002) 364.\n\n[4] A. Abed Abud et al. (DUNE Collaboration), _Deep Underground Neutrino Experiment (DUNE) Near_\n_Detector Conceptual Design Report_, Instruments 5 (2021) 31.",
+        "score": -6.148981952667236,
+        "dense_score": null,
+        "bm25_score": 12.799728598029503,
+        "graph_score": 0.0,
+        "rerank_score": -9.468385696411133,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3120,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2703632__2309.15463__Tomography_of_entangling_two-qubit_logic_operations_in_exchange-coupled_donor_electron_spi.md",
+        "title": "2024__recid_2703632__2309.15463__Tomography_of_entangling_two-qubit_logic_operations_in_exchange-coupled_donor_electron_spi",
+        "text": "ntary Fig. 7, a) and SPAM extracted\n(Supplementary Fig. 7, b) results. The error bars were then calculated by finding the 95% confidence interval of the\nresulting fidelity distribution, which represents 2 _σ_ . The mean of the 10 originally measured fidelity values is then\ntaken as the final fidelity value reported.\n\n33\n\na b\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|Col11|percentile<br>percentile|\n|---|---|---|---|---|---|---|---|---|---|---|---|\n||||||||||2.5%<br>Mean<br>97.5%|2.5%<br>Mean<br>97.5%|percentile<br> percentile|\n|||||||||||||\n|||||||||||||\n|||||||||||||\n|||||||||||||\n|||||||||||||\n|||||||||||||\n|||||||||||||\n|||||||||||||\n\n|2.5% percent<br>Mean<br>97.5% perce|Col2|Col3|ile<br>ntile|Col5|Col6|Col7|Col8|Col9|Col10|Col11|\n|---|---|---|---|---|---|---|---|---|---|---|\n|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|ile<br>ntile|ile<br>ntile|ile<br>ntile|ile<br>ntile|||||\n|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|ile<br>ntile|ile<br>ntile|ile<br>ntile||||||\n|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|ile<br>ntile|ile<br>ntile|ile<br>ntile||||||\n|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|ile<br>ntile|ile<br>ntile|||||||\n|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|2.5% percent<br>Mean<br>97.5% perce|ile<br>ntile||||||||\n|2.5% percent<br>Mean<br>97.5% perce|||||||||||\n\nFidelity Fidelity\n\nSupplementary Fig. 7. **Non-parametric bootstrapping error bar estimations.** Bell state fidelity distribution histogram,\nobtained by resampling 10 measured Bell state fidelity values, 1000 times. This was performed for both the SPAM included\ndataset ( **a.** ) and SPAM extracted dataset ( **b.** ).\n\n**11.** **CONCURRENCE**\n\nTo determine the degree of entanglement present between the electrons of the J-coupled system we calculated a\ncommonly used entanglement metric known as concurrence, _C_ . The definition of concurrence, which currently only\nexists for pairs of qubits, is given by [9]\n\n_C_ = _| ⟨_ Φ _|_ Φ [˜] _⟩|,_ (36)\n\nwhere _|_ Φ _⟩_ is the state of a pair of qubits, written in the basis _{|_ 00 _⟩_ _, |_ 01 _⟩_ _, |_ 10 _⟩_ _, |_ 11 _⟩}_ . _|_ Φ [˜] _⟩_ = ( ˆ _σ_ _y_ _⊗_ _σ_ ˆ _y_ ) _|_ Φ _[∗]_ _⟩_ is\nthe ‘spin-flip’ operation where _|_ Φ _[∗]_ _⟩_ is the complex con",
+        "score": -6.229507752932035,
+        "dense_score": 0.29378658533096313,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.592142105102539,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 65,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5869,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2748892__2401.09920__On_the_determination_of_the_interaction_time_of_GeV_neutrinos_in_large_argon_gas_TPCs.md",
+        "title": "2025__recid_2748892__2401.09920__On_the_determination_of_the_interaction_time_of_GeV_neutrinos_in_large_argon_gas_TPCs",
+        "text": "5 MeV protons, which provides a reasonable proxy for the\nshortest track that can be reconstructed at the anode (tracking) plane under the\ndiscussed gas conditions (see, e.g., [ 52 ]). We conclude that, upon lining the TPC\nfield cage with PTFE/Teflon: (i) neutral-current neutrino interactions with visible\nenergy in the range of 5–200 MeV, (ii) charged-current neutrino interactions where\nthe associated lepton would not be time-tagged externally, or (iii) stranded neutrons\nscattering off protons in the gas and transferring more than 5 MeV, would show a\nsignificant scintillation counterpart. This allows for spill and vertex assignment, and\nns-level time-of-flight determination. In general, any low-energy process (e.g., beyond\nthe Standard Model phenomena such as milli-charged particles) could similarly benefit\nfrom the TPC’s ability to perform stand-alone time-tagging.\nAdditional technical requirements to achieve the aforementioned performance\ninclude: (i) a photosensor coverage of the cathode plane of at least 38% (7.5 m [2] ), (ii) use\nof a SiPM-array, (iii) operation at _−_ 25 ℃, and (iv) read-out grouped by at least a factor\nof 16. Despite the general academic interest in neutrino generators for understanding\nhadro-production down to nuclear binding energies, current knowledge of neutrinonucleus interactions suggests a more modest energy scale, around 20 MeV, as being of\nimmediate interest. Two physical cases identified in ref. [ 8 ] are: (i) reconstruction of\nthe energy spectrum of protons modified due to final state interactions [ 56 – 58 ], and\n(ii) multi-pion production [ 59 ]. Given this, and considering the evolving understanding\nof neutrino interactions with nuclei, we briefly discuss the response to a 20 MeV\nhadron. In such a scenario, the Teflon reflector around the field cage might not be\nnecessary, as this energy would be above threshold for almost the entire chamber, with\na time resolution below 2 ns. With Teflon lining, a modest 10% photosensor coverage\nwould suffice to provide similar performance. If maintaining the Teflon lining and the\nproposed 38% coverage, operation of the photosensor plane close to 0 ℃would be\npossible. Approaching an _O_ (MeV) threshold, however, will certainly require all three\nassets (coverage, lining, and cooling) simultaneously.\nFinally, given the importance of reconstructing leptons from charged-current interactions for neutrino-oscillation experiments, we summarize the detector performance\nfor ‘internal’ and ‘ext",
+        "score": -6.259170797136095,
+        "dense_score": null,
+        "bm25_score": 12.86417128857078,
+        "graph_score": 0.0,
+        "rerank_score": -9.638040542602539,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2543,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2679745__2307.12531__A_few-degree_calorimeter_for_the_future_electron-ion_collider.md",
+        "title": "2024__recid_2679745__2307.12531__A_few-degree_calorimeter_for_the_future_electron-ion_collider",
+        "text": "coverage\ndown to _Q_ [2] = 0.11 GeV [2] and _Q_ [2] = 0.08 GeV [2], respectively.\nThe third option is the only viable one and is the focus of\nour work. In this study, we describe the design of a detector\nthat will cover a few degrees from the electron-beam direction.\nWe refer to this detector as the Few-Degree Calorimeter (FDC),\n\n_Preprint submitted to NIMA_ _July 25, 2023_\n\nwhich will cover the range of −4.6 < η < −3.6.\nFigure 1 illustrates the coverage in the _x_ vs. _Q_ [2] phase-space\nwithin the nominal range of the FDC for the top-energy settings for _eA_ collisions. The FDC has the potential to significantly extend acceptance into a key kinematic phase-space and\nenable the study of the predicted gluon-saturation transition in\ninclusive DIS [7], as well as many other observables such as\nexclusive vector-meson production [8, 9].\n\nFigure 3 shows that at _z_ = −307 cm, the electron beampipe\nfor IP6 has a radius of 4.5 cm, while the hadron beampipe has\na radius of 1.8 cm and is shifted 8.3 cm in the _x_ direction. As\nsuming a 5 mm clearance to the beampipe, similar to the ZEUS\nBPC [5], a calorimeter with an outer perimeter of 30 × 40 cm [2]\n\ncould cover the region −4.6 < η < −3.6 with non-uniform azimuthal coverage.\nThe shaded region on the FDC in Fig. 3 represents the area\nwhere electrons would encounter part of the crystal ECAL or its\nsupport structure before reaching the FDC [1] . This region, which\nis a few cm wide, would serve as a veto area.\n\n1 We approximate the path of the electron as a straight line and assume that\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|\n|---|---|---|---|---|---|---|---|---|\n||||||||||\n||||||||||\n||||||||||\n||**e**|**e**|||||||\n||||**p**||||||\n||||||||||\n||||||||||\n||||||||||\n||||||||||\n||||||||||\n||||||||||\n||||||||||\n||||||||||\n||||||||||\n\nFigure 3: Transverse view of the FDC, assuming a location at _z_ = −307 cm,\nwith rings of constant η superimposed. The electron and hadron beampipes are\nrepresented by their transverse cut, along with a 10×10 mm [2] grid for reference.\nThe non-shaded area is a projection from the ECAL hole.\n\nFigure 4 shows projections of the possible detector layout,\nincluding both the _yz_ and _xz_ views. The ECAL hole is currently\nassumed to have a height of 14.7 cm and a width of 20.5 cm,\n\nthe flat cables servicing the ECAL SiPMs can be arranged to avoid the hole\n\narea.\n\n2\n\ntaking into account the current version of the “micro-flange”\n(with a cam shape that is 15.2 cm wide and 11.1 cm tall) and a",
+        "score": -6.282418471888493,
+        "dense_score": null,
+        "bm25_score": 10.831831386312334,
+        "graph_score": 0.0,
+        "rerank_score": -9.672344207763672,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2542,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2679745__2307.12531__A_few-degree_calorimeter_for_the_future_electron-ion_collider.md",
+        "title": "2024__recid_2679745__2307.12531__A_few-degree_calorimeter_for_the_future_electron-ion_collider",
+        "text": "es. Furthermore, the system\nloads necessitate a support structure near the beampipe with adequate clearance margins, which further limits their coverage.\nThe EIC Yellow Report [1] established an acceptance requirement of −4 < η < 4. However, it is not feasible to meet\n\n∗ Corresponding author\n\nthe lower limit of this range using only a crystal calorimeter.\nThe current design of the EIC detector, ePIC, places the crystal\nECAL at _z_ = −174 cm, with an inner radius of ≈8 cm [2, 3],\nresulting in a nominal acceptance that reaches η ≈−3.6. This\nlimitation is mainly due to the assembly requirements of the\nECAL, which necessitate a hole large enough to allow it to slide\nthrough the flange further downstream.\nAt the highest EIC energy, η = −3.6 corresponds to _Q_ [2] ≈\n1 GeV [2] . Consequently, the limited acceptance of the ECAL\nhinders the study of the transition to the perturbative QCD domain, for which measuring _Q_ [2] < 1 GeV [2] is necessary. This\nlimitation affects various physics topics at the EIC, including\nflagship studies such as searches for gluon saturation.\nThe region of very low _Q_ [2] will be covered by far-backward\ntaggers [1]. However, the transition region 0.1 < _Q_ [2] < 1 GeV [2]\n\nremains beyond the capabilities of existing designs, creating the\nso-called “ _Q_ [2] gap” [4]. Some possible approaches to bridge the\n_Q_ [2] gap include lowering the electron beam energy, shifting the\ninteraction-point position, and adding dedicated instruments.\nLowering the electron beam energy, _E_, helps because the\nminimum accessible _Q_ [2] scales with _E_ [2] . While this is an elegant solution, it comes at the significant cost of reducing the\ncenter-of-mass energy of the collisions and, therefore, reducing the coverage at low values of _x_ (the minimum _x_ scales with\n1/ _E_ ). Consequently, this approach does not provide access to\nthe required kinematic region for gluon-saturation studies.\nThe second solution of shifting the interaction point was employed at HERA but is completely impractical at the EIC due\nto the presence of a beam crossing angle.\nThe third solution was implemented at HERA with the ZEUS\nBeam Pipe Calorimeter (BPC) [5] and the H1 Very Low _Q_ [2]\n\nspectrometer (VLQ) [6]. These detectors provided coverage\ndown to _Q_ [2] = 0.11 GeV [2] and _Q_ [2] = 0.08 GeV [2], respectively.\nThe third option is the only viable one and is the focus of\nour work. In this study, we describe the design of a detector\nthat will cover a few degrees from the electr",
+        "score": -6.309835816652346,
+        "dense_score": null,
+        "bm25_score": 10.384181743505586,
+        "graph_score": 0.0,
+        "rerank_score": -9.714343070983887,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5218,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers.md",
+        "title": "2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers",
+        "text": "the energy\nresolution and may be negligible when noise subtraction is applied appropriately, for highenergy events or larger SiPM coverage detectors. These results, which are extrapolated to\nestimate the response of large coverage SiPM planes, are promising for the development\nof future, SiPM-only, readout planes that can offer imaging and achieve similar energy\n\nresolution to that previously demonstrated with PMTs.\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **The NEXT-White detector** **2**\n\n**3** **Data acquisition** **3**\n\n**4** **Definition and contributions to the energy resolution** **4**\n\n**5** **PMT and SiPM data processing** **5**\n\n5.1 PMT data processing 6\n5.2 SiPM data processing 6\n\n5.2.1 SiPM noise subtraction 6\n\n5.2.2 Event energy and tracking measurements with SiPMs 7\n\n5.3 Correction Maps 8\n\n**6** **Results for energy resolution with SiPMs** **11**\n\n6.1 Study of the radial dependence 11\n\n6.2 Study of longitudinal dependence 11\n\n**7** **Energy resolution in quadrants** **11**\n\n7.1 Final Energy Resolution 13\n7.2 Estimation and extrapolation of energy resolution for higher coverage 14\n\n**8** **Discussion** **16**\n\n**A Energy resolution with PMT signal** **18**\n\n**1** **Introduction**\n\nThe nature of neutrinos, whether Majorana or Dirac, is still unknown. Neutrinoless double\nbeta decay (0 _νββ_ ) is the most promising method of determining if neutrinos are their own\nantiparticle, and many experiments have produced lower limits on the half-lives of this\nprocess for various isotopes [1–3]. The goal of the next generation of experiments is to\nreach a sensitivity to the half-life of 0 _νββ_ decay ( _T_ 1 [0] _/_ _[ν]_ 2 [) covering the inverted neutrino mass]\nordering, which requires ultra low-background tonne-scale detectors with excellent energy\nresolution [4].\nThe Neutrino Experiment with a Xenon TPC (NEXT) program searches for 0 _νββ_\ndecay with a high-pressure gaseous xenon time projection chamber (TPC), using the double beta decay isotope [136] Xe. In the current generation of NEXT detectors, photomultiplier tubes (PMTs) are used to measure the primary scintillation light and total energy\n\n– 1 –\n\nof events, while silicon photomultipliers (SiPMs), located behind an electroluminescence\n(EL) amplification region, are used to track the position and reconstruct the topology of\nevents. NEXT-White demonstrated excellent energy resolution, with less than 1% FWHM\nat 2 _._ 5 MeV [5] (the region of interest) and 4 _._ 5% FWHM at 41 _._ 5 keV [6] (t",
+        "score": -6.3098584343405335,
+        "dense_score": null,
+        "bm25_score": 12.182662414703188,
+        "graph_score": 0.0,
+        "rerank_score": -9.71539306640625,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 4822,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators.md",
+        "title": "2024__recid_2777880__2404.10066__Solar_reflection_of_dark_matter_with_dark-photon_mediators",
+        "text": "ts from XENON10 and XENON1T (S2only) as well as on the projections for a background-free 10 kg-yr and 100 kg-yr exposure experiment\nin Fig. 21. The only difference between the various lines labeled by “FF” is the choice of the xenon\nform factor that affects the direct-detection sensitivity, but SRDM flux simulations are the same. We\nsee that the constraints and projections agree generally within a factor of a few. Moreover, in Fig. 21\nwe compare our XENON1T (S2-only) constraint (black solid curve) for SRDM with the result from\nFig. 10 of [43] (blue solid curve with the label “Result 2108.10332”). Ref. [43] features an independent\nsimulation of the SRDM flux, a different xenon form factor (based on the FAC code [86] and also\nused in, e.g., [3, 87]), and an independent analysis of the detector response. We have confirmed that\nthe SRDM fluxes from both groups agree well with each other, and believe that the difference (less\nthan a factor of 3) most likely arises due to the use of a different xenon form factor and/or a different\ntreatment of the XENON1T data. Overall though, the agreement is good.\n\n**D** **Comparison with other silicon form factors**\n\nFor the constraints and projections from silicon-based detectors, we use `QCDark` [57, 58] and correct\nit with the Lindhard dielectric function [59–61] to account for in-medium screening and plasmon\nexcitations, as discussed in Section 2.5.3 and in [46]. We show in this section the impact of the collective\n\n– 33 –\n\n10 [-] [32]\n\n10 [-] [2] 10 [-] [1] 10 [0]\n\nDM mass m χ [MeV]\n\n**Figure 21** . Solar reflection exclusion limits and projections (90% CL) from xenon-based direct-detection\nexperiments for DM coupled to an ultralight dark photon. Using the simulations of the SRDM flux presented\nin this paper, we compare the constraints and projections for three different publicly-available xenon form\nfactors [5, 54, 55]. We also compare the XENON1T (S2-only) bound derived in this paper with the one\nderived in Ref. [43], which uses an independent simulation of the SRDM flux, an independent calculation\nof the xenon form factor (using the FAC package [86]), and an independent analysis of the bound from the\nXENON1T data. The excluded regions shaded in solar colors are from XENON10 [4, 5, 8], and XENON1T\n(S2-only) [14]. The region shaded in light blue on the left is the red giants cooling constraint [68]. For halo\nDM, the excluded region is the combined limit from SENSEI@SNOLAB [22] and SENSEI@MINOS [16]. The\nfreeze-in benchm",
+        "score": -6.663156423689444,
+        "dense_score": null,
+        "bm25_score": 10.203221876982427,
+        "graph_score": 0.0,
+        "rerank_score": -10.25782585144043,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 42,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1010,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system.md",
+        "title": "2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system",
+        "text": "us and the one being tested is given. Furthermore, the\n\npossibility of a direct comparison has the advantage that no\nradioactive source with fixed energy is needed so that the\nmeasurements can be made with cosmic rays as well.\n\n**3. General measurement methods**\n\nThe main focus in the development of the detector is to\nachieve a good time resolution. For this, not only a low rise\ntime but also a minimized jitter is important. We consider\nthe noise being Gaussian distributed, so jitter is defined as:\n\n_𝜎_ _𝑛_\n_Jitter_ = (1)\n_𝑑𝑈_ ∕ _𝑑𝑡_ _[.]_\n\nHere, _𝜎_ _𝑛_ is the width of the Gaussian distribution, and _[𝑑𝑈]_ ∕ _𝑑𝑡_\nis the slope of the signal at trigger voltage level. To compare\ndifferent circuits among each other, the amplitude (which\nwas taken as an average over 5 maximum voltages of the\nwaveform for the selection between the individual circuits,\nor 10 - 15 maximum voltages for the exact measurements of\nthe final circuits) measurements were made in comparison\nto the amplitude _𝐴_ _𝑟𝑒𝑓_ of the reference setup on the opposite\nside of the scintillator bar. If the noise of the SiPM circuits is\nthe same, the jitter is in first order proportional to\n\n_𝑡_ _𝑟𝑖𝑠𝑒_ ⋅ _𝐴_ _𝑟𝑒𝑓_\n_𝐽_ = (2)\n\n_𝐴_\n\nwhere _𝑡_ _𝑟𝑖𝑠𝑒_ denotes the rise time of the signal (defined as\nthe time required to rise from 10 % to 90 % of the maximum\nvoltage of the waveform) and _𝐴_ the signal amplitude. Thus,\na high amplitude is also beneficial to keep the jitter low. For\nthis reason, the parameter _𝐽_ was also taken into account when\ncomparing different circuits.\nFor all measurements, the “J-Series 60035” SiPMs from\nonsemi were used. The supply voltage was set to _𝑉_ _𝐵𝑖𝑎𝑠_ = 29 V\nfor one single SiPM. This was realized with “Caen A7585”\npower supplies. The triggering was performed at the 341 keV\n(or 1060 keV for the combination of the final preamplifier\nand SiPM array as in Section 5.3) Compton edge of the [22] Na\n\nsource.\n\n**4. Circuit development of a 2** × **2 SiPM array**\n\n_4.1. Known options for SiPM interconnection and_\n_their effects_\n\nAs with any electronic component, there are initially two\noptions for interconnecting SiPMs: series interconnection\nand parallel interconnection. Series connection of SiPMs\noffers two major advantages. First, it provides “automatic\novervoltage adjustment”, which means that despite different\nbreakdown voltages, the same overvoltage is automatically\nset [ 11 ]. This is possible because in a serial connection, the\nsame current flows through all SiPMs. Since the cur",
+        "score": -6.703318100759428,
+        "dense_score": 0.23378457129001617,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -10.320173263549805,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.52810358768329,
+    "generation_latency_s": 2.998858690261841e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.52810358768329,
+    "generation_latency_s": 2.998858690261841e-07
+  }
+}

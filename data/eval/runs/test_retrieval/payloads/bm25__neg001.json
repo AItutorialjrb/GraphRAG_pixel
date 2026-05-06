@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "neg001",
+    "query_type": "negative",
+    "query": "What is the measured Higgs boson mass in these pixel detector papers?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "measured"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the measured Higgs boson mass in these pixel detector papers?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 3663,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2730648__2312.02553__Design_and_test_for_the_CEPC_muon_subdetector_based_on_extruded_scintillator_and_SiPM.md",
+        "title": "2024__recid_2730648__2312.02553__Design_and_test_for_the_CEPC_muon_subdetector_based_on_extruded_scintillator_and_SiPM",
+        "text": "p and the implementation of techniques designed to optimize light collection efficiency.\n\nCosmic ray testing has shown that both NDL SiPMs and MPPCs are capable of highly efficient\n\nphoton collection, achieving efficiencies significantly exceeding 90% when employing a threshold\n\nof 8 photoelectrons. Additionally, the time resolution for detecting events at the distant end of a\n\nscintillator strip has been measured to be better than 1 _._ 7 ns. The remarkable performance observed\n\nlays the foundation for advancing R&D including prototype modules aiming for reference Technical\n\nDesign Report of CEPC detector recently.\n\nKeywords: Muon spectrometers; Scintillators and scintillating fibres and light guides; Photon\n\ndetectors for UV, visible and IR photons (solid-state) (PIN diodes, APDs, Si-PMTs, G-APDs,\n\nCCDs, EBCCDs, EMCCDs, CMOS imagers, etc); Performance of High Energy Physics Detectors\n\n[ArXiv ePrint: 2312.02553](https://arxiv.org/abs/2312.02553)\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Belle II KLM and scheme of a detector channel** **2**\n\n**3** **The major components for a detector channel** **4**\n\n3.1 Scintillator and WLS fiber 4\n\n3.2 Hamamatsu MPPCs and NDL SiPMs 4\n\n3.3 Readout electronics and data acquisition system 6\n\n**4** **Improvements for the photon collection** **6**\n\n**5** **Performance of an array of scintillator strips in cosmic ray tests** **7**\n\n**6** **Summary and discussion** **10**\n\n**1** **Introduction**\n\nIn the framework of the Standard Model of particle physics, the Higgs boson ( _𝐻_ ) is pivotal\n\nin shedding light on the origin of mass for quarks and leptons. With the Higgs boson’s mass\napproximately _𝑚_ _𝐻_ ≈ 125 GeV/ _𝑐_ [2], it enables the conceptualization of a new _𝑒_ [+] _𝑒_ [−] collider. This\ncollider would operate at a center-of-mass energy of ~~[√]~~ ~~_𝑠_~~ ∼ 240 GeV, effectively serving as a Higgs\n\nfactory. Several initiatives, including the International Linear Collider [1, 2], the Circular Electron\n\nPositron Collider (CEPC) [3, 4], and the Future Circular Collider [5], have been proposed in pursuit\n\nof this goal. The CEPC proposal, initiated in 2013, has since been followed by extensive research\n\nand development (R&D) efforts focused on both the accelerator and the detector components.\nThe primary process for Higgs boson generation via _𝑒_ [+] _𝑒_ [−] annihilation is _𝑒_ [+] _𝑒_ [−] → _𝐻_ + _𝑍_ [0],\nallowing for the precise determination of the _𝐻_ boson through the recoil of the _𝑍_ [0] boson, which\nexhibits",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 40.611000433831485,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6920,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "## Search for long-lived charged particles using the CMS detector in Run-2\n\nTamas Almos Vami _[∗]_\n\n_a_ _University of California Santa Barbara,, Santa Barbara, 93117, CA, USA_\n\n**Abstract**\n\nLong-lived charged particles are predicted by various theories beyond the\nStandard Model, leading to unique signatures that could reveal new physics.\nAt the LHC, the CMS detector enables searches for these massive particles,\nidentifiable by their characteristic ionization patterns. Using data collected\nduring 2017-2018, we search for signals of anomalous ionization in the silicon\ntracker. We present a novel approach to background prediction, utilizing\nthe distinct ionization measurements of the silicon pixel and strip detectors\nas independent variables. We interpret the results within several models\nincluding those with staus, stops, gluinos, and multiply charged particles as\nwell as a new model with decays from a Z _[′]_ boson.\n\n_Keywords:_ Long-lived, exotic physics, energy loss in silicon, CMS\n\n_∗_ On behalf of the CMS Collaboration\n\n_Preprint submitted to Nuclear Physics B_ _December 18, 2024_\n\n**1. Introduction**\n\nThe Standard Model (SM) is a quantum field theory that explains the\nuniverse at its fundamental level. Often we describe it by its particle content.\nThe force-carrying particles, known as bosons, mediate fundamental interactions: the photon for electromagnetic interaction, gluons for the strong\ninteraction, and the W and Z bosons for the weak interaction. The Higgs\nboson, a scalar particle, gives mass to elementary particles through the Higgs\nmechanism. The remaining particles, called fermions, make up matter and\nare divided into quarks and leptons. The quarks interact with all the three\nforces, while the (charged) leptons interact with (electromagnetic and) weak\ninteraction(s). There are three fermion families in the SM.\nDespite its many successes, the Standard Model cannot be the ultimate\ntheory of the universe, as it leaves several fundamental questions unanswered.\nFor example, according to the Big Bang theory, equal amounts of matter and\nantimatter should have been created, yet the observable universe consists\nalmost entirely of matter. What causes this matter-antimatter asymmetry?\nThere is strong evidence of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been seve",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 39.98467885680615,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6921,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "ce of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been several theoretical attempts to answer these questions.\nOne of the first popular solution was to introduce superpartners to the SM\nparticles [1, 2]: each boson would have a fermion partner, and each fermion\nwould have a boson partner. This model is called Supersymmetry (SUSY)\nand would answer all the questions above. The partner of the quarks and\ngluons are the squarks and gluinos, while the partner of the leptons are the\nsleptons. For example, the SUSY partner of the top quark is the stop squark,\nand the partner of the tau lepton is the stau slepton. Further theories that\nanswer part of the questions above have been proposed, too. Among them\nthe solution is provided by introducing additional heavy Z _[′]_ bosons, or a 4th\ngeneration of fermions ( _τ_ _[′]_ ), or several other Higgs bosons.\nThese questions and theories have remained open for decades, since no\nsignificant experimental evidence for physics beyond the Standard Model\n(BSM) has been observed to date. The collider searches at the Large Hadron\nCollider (LHC) and other laboratories have been looking for signatures in\nwhich the BSM particles decay promptly. However, there are several mechanisms that can lead to longer lifetime, even in the SM. With this we have a\n\n2\n\nnew direction to explore BSM physics and to look for long-lived particles [3].\nIn this work, we search for ”stable” particles–meaning not necessarily fundamentally stable, but stable on the detector level, where they traverse the\ndetector without decaying. Figure 1 shows a flow chart to categorize how\nthese particles interact with different forces and what models would predict\ntheir existence. If they are electrically charged, these particles are often\nreferred to as Heavy Stable Charged Particles (HSCPs) [4, 5, 6, 7].\n\nFigure 1: Flow chart for possible new directions in searches.\n\nIf the HSCPs have color charge that means they will hadronize. A BSM\nexample for this are the R-hadrons from split-SUSY [8, 9, 10, 11]. R-hadrons\nare a bound state of SM and SUSY particles. Some of these form negative, neutral, positive, or even double positive hadrons. The R-hadron’s\ninteractions with matter is described in the model in Ref. [12, 13]. If the\nHSCPs are colorless, one can think of several theories tha",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 35.41412831897544,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3664,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2730648__2312.02553__Design_and_test_for_the_CEPC_muon_subdetector_based_on_extruded_scintillator_and_SiPM.md",
+        "title": "2024__recid_2730648__2312.02553__Design_and_test_for_the_CEPC_muon_subdetector_based_on_extruded_scintillator_and_SiPM",
+        "text": "e detector components.\nThe primary process for Higgs boson generation via _𝑒_ [+] _𝑒_ [−] annihilation is _𝑒_ [+] _𝑒_ [−] → _𝐻_ + _𝑍_ [0],\nallowing for the precise determination of the _𝐻_ boson through the recoil of the _𝑍_ [0] boson, which\nexhibits a branching fraction of (3 _._ 3662 ± 0 _._ 0066)% for decay into a _𝜇_ [+] _𝜇_ [−] pair [6]. Consequently,\n\nthe muon detector is of paramount importance in a Higgs factory setting. Beyond the reconstruction\nof _𝑍_ [0] → _𝜇_ [+] _𝜇_ [−], the presence of muons in the final state is often regarded as the “golden channel\"\n\nin new particle searches [7]. As outlined in the Conceptual Design Report for the CEPC, its muon\n\ndetector is tasked with muon identification, calibrating shower leakage from calorimeters, and\n\nprobing for long-lived particles [4]. The muon detection system is expected to excel in detection\n\nefficiency, maintain a low rate of hadron misidentification, ensure precise position resolution, and\n\nachieve broad coverage. Additionally, clear muon signals are invaluable for enhancing the trigger\n\nsystem’s performance. The proposed layout for the CEPC muon detector, consisting of a barrel and\n\ntwo endcaps, incorporates eight sensitive layers interleaved with iron absorbers. This configuration\n\nis designed to achieve high standalone muon detection efficiency (95%), requiring minimum position\n\n– 1 –\n\nresolutions _𝜎_ _𝑟𝜙_ = 2 _._ 0 cm, _𝜎_ _𝑧_ = 1 _._ 5 cm, alongside precise time resolution and a rate capability\nranging from 50 − 100 Hz/cm [2], thereby facilitating crucial muon momentum insights [4].\n\nIn this article, we detail the R&D efforts for the CEPC muon detector, employing scintillator\nbased technology akin to the KLM of the Belle II experiment [8], which took reference to the\n\nT2K experiment [11, 12]. During the initial Belle experiment, Resistive Plate Chambers (RPCs)\n\nwere utilized within the KLM [9]. However, the prolonged recovery time of RPCs, when op\nerating under high luminosity conditions, led to a noticeable drop in efficiency, prompting the\n\npartial substitution with scintillator modules. These modules, composed of plastic scintillator\n\nstrips, wavelength-shifting (WLS) fibers, and silicon photomultipliers (SiPMs), have demonstrated\n\neffective performance in Belle II [10]. Their operation not only meets but also largely aligns with\n\nthe stringent requirements set for a muon detector in the CEPC, showcasing their potential for\n\nfuture applications. Meanwhile, the technology of employing p",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 33.807983882883676,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3328,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector.md",
+        "title": "2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector",
+        "text": "roperties also suggest, that an e [+] e _[−]_ Higgs factory could be a good place for the LLP searches due to its\nclean experimental environment and trigger-less operation.\nThe International Large Detector (ILD) [2] is a multipurpose detector concept for an experiment at the\nHiggs factory, originally proposed for the International Linear Collider (ILC) [3]. Its design is optimised\nfor the particle-flow reconstruction and provides almost 4 _π_ angular coverage. The core of the ILD\ntracking systems is a time projection chamber (TPC) which allows for almost continuous tracking and\ndE/dx measurement for particle identification. As most of LLP signatures can be categorised as tracks\nthat do not point to, or do not originate from the interaction point (IP), ILD with its TPC provides very\ninteresting prospects for these measurements.\nAn experiment-focused approach is taken here. Benchmark scenarios are selected based on their\nexperimental/kinematic properties, and not as preferred points in a model parameter space. The signature\nof two tracks coming from a displaced vertex is studied as a generic case of an LLP search. For generality,\nno other assumptions about the final state are made.\n\n### **2 Analysis framework**\n\nTwo opposite extreme scenarios are considered as the benchmarks. The more challenging case involves the production of heavy scalars with small-boost and non-pointing, low- _p_ _T_ track pair in the final\nstate. This is provided by the Inert Doublet Model (IDM) [4], which introduces four additional scalars,\nincluding two neutral ones (one of them, H, being a stable dark matter candidate). The neutral scalars, A\nand H, can be produced in e [+] e _[−]_ _→_ AH process, with A _→_ Z [(] _[∗]_ [)] H as the main decay channel. If the mass\nsplitting, ∆ _m_ _AH_ = _m_ _A_ _−_ _m_ _H_, between the two scalars is sufficiently small, A could be long-lived. This\nalso makes the Z boson highly virtual, so for high masses of the scalars (small boost), the observed decay\nproducts will be soft and will not point to the IP. Four IDM benchmarks are selected for the analysis, with\n∆ _m_ _AH_ = 1 _,_ 2 _,_ 3 _,_ 5 GeV, decay length _cτ_ of A fixed to 1 m, and its mass _m_ _A_ = 155 GeV. Only Z _[∗]_ decays to\nmuons are considered.\n\nThe second type of scenario under study is a production of a very light pseudoscalar, the decay\nproducts of which have a very high boost and are almost colinear. This is the case for an axion-like\nparticle (ALP), which in many scenarios has a m",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 32.39381010589527,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3457,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720464__2311.04720__Development_of_the_time-of-flight_particle_identification_for_future_Higgs_factories.md",
+        "title": "2024__recid_2720464__2311.04720__Development_of_the_time-of-flight_particle_identification_for_future_Higgs_factories",
+        "text": "_\n_Hamburg, Germany_\n\n∗ Speaker\n\n_TOF PID for future Higgs factories_ Bohdan Dudar\n\n**1.** **Introduction**\n\nThe particle physics community is in an active discussion about the next collider facility, an\n_𝑒_ [+] _𝑒_ [−] collider for precision studies of the Higgs boson, the top quark and the electroweak gauge\n\nbosons, as recommended by the current European strategy for particle physics from 2020 and\n\nthe recent Snowmass community study. Alongside the effort to converge on an optimal collider\n\nproposal, there is ongoing development of different detector designs for such future Higgs factories.\nOne open question for such detectors is the implementation of fast O(10 ps) timing into the detector\n\ndesign. Fast timing is interesting for several aspects: time-of-flight (TOF) particle identification\n\n(PID), 4D tracking, 5D calorimetry, background rejection and long-lived particle searches. This\n\nstudy focuses on the TOF PID of _𝜋_, _𝐾_ and _𝑝_ using the International Large Detector (ILD) [1] as\n\nan example case. We present the latest developments of the reconstruction algorithms necessary\n\nfor TOF PID, discuss involved challenges and present their performance. Additionally, we briefly\n\ntouch on implications for detector concepts with different main tracker technologies and potential\n\nphysics applications of the TOF PID.\n\n**2.** **Basics of time-of-flight particle identification**\n\nFor a simple helix track, the mass _𝑚_ of a particle can be expressed in terms of its momentum\n\n_𝑝_, its TOF _𝑇_ and its track length _𝐿_, as shown in Eq. (1):\n\n_𝑚_ = _𝑝_\n\n√︂\n\n_𝑐_ [2] _𝑇_ [2]\n\n− 1. (1)\n_𝐿_ [2]\n\nIn a realistic detector, energy loss and scattering lead to distortions from a simple helix, and\n\nthe relation becomes more complicated [2]. However, Eq. (1) remains a good approximation if\n\nappropriate definitions of _𝑝_ and, more importantly, _𝐿_ are used. Instead of the momentum of the\n\nparticle at some specific point, we use the weighted harmonic mean, as defined in Eq. (2):\n\n_𝑝_ =\n~~√~~\n\n⟨ _𝑝_ [2] ⟩ _𝐻𝑀_ =\n\n�\n_𝑛_\n\n_𝐿_ _𝑖_\n\n∑︁\n� _𝑖_ =1\n\n_𝑛_\n∑︁\n~~�~~ _𝑖_ =1\n\n_𝐿_ _𝑖_\n. (2)\n_𝑝_ [2] _𝑖_\n\nThe sum runs over all _𝑛_ track segments, with _𝐿_ _𝑖_ being _𝑖_ th segment length and _𝑝_ _𝑖_ being the\n\nmomentum of the particle reconstructed at the beginning of the given _𝑖_ th track segment. In practice,\n\nusing the harmonic mean instead of the momentum of the particle at the IP has a negligible impact.\n\n**3.** **Track length reconstruction**\n\nHistorically TOF PID was usually limited by the T",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 32.200663709166584,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6274,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex.md",
+        "title": "2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex",
+        "text": "itten as,\n\nBR [up]\n_S_ ( _ϵ_ [2] ) =\n\n2 _|F_ ( _m_ [2] A [)] _[|]_ [2] ~~�~~ 1 _−_ _[m]_ _m_ A [2][2] _η_\n\n3 _[,]_ (2)\n~~�~~\n\nin which _m_ A and _m_ _η_ are the masses of the dark photon and the _η_ meson respectively, and _F_ is the transition\nform factor of _η_ . The final _ϵ_ [2] sensitivity of one-month experiment to the dark photon is shown in Fig. 7. Our\nsimulation indicates a significant sensitivity to _ϵ_ [2], below 10 _[−]_ [7], which surpass the precisions of the previous\nexperimental measurements (HPS2015 [136], A1@MAMI [137], KLOE [138], NA48/2 [139], NA64 [140], E141\n\n[141], NuCal [142,143] and CHARM [144]). The proposed experiment will be a valuable compliment to other\ndark photon searches. With years running of the experiment, the parameter space below the _η_ mass will be\nalmost ruled out combined with many other experiments worldwide [136,137,142–150].\n\n**4.2** **Light dark higgs search**\n\nThe light dark higgs [38–44] is another representative dark portal particle, which couples the hidden scalar field\nwith the Higgs doublet. The dark higgs is thus weakly connected with the leptons and quarks via the Yukawa\ncoupling. Therefore the dark higgs can be produced in the hadronic process and it can decays into lepton\npairs and quark pairs. In a hadrophilic scalar model, the dark higgs mainly couples to the up quark, thus\nit dominantly decays into pions. At Huizhou eta factory, we could search for the dark higgs in the following\nchannels: _η →_ _π_ [0] _h →_ _π_ [0] _e_ [+] _e_ _[−]_ and _η →_ _π_ [0] _h →_ _π_ [0] _π_ [+] _π_ _[−]_ . In these _η_ rare decay channels, a bump in the\ninvariant mass distribution of _e_ [+] _e_ _[−]_ or _π_ [+] _π_ _[−]_ is a clear signal of the possible dark scalar particle.\nThe distribution of reconstructed invariant mass of _π_ [+] _π_ _[−]_ _π_ [0] is shown in Fig. 8. One sees clearly the peak of\n_η_ meson with a low background underneath. In GiBUU simulation, the background from the direct multi-pion\nproduction is low compared to the _η_ production, as the incident energy of proton is not large (1.8 GeV). The _η_\nsamples from _π_ [+] _π_ _[−]_ _π_ [0] can be selected with a high purity by performing a cut on the invariant mass of _π_ [+] _π_ _[−]_ _π_ [0]\n\nin the range of [ _m_ _η_ _−_ 3 _σ, m_ _η_ + 3 _σ_ ]. The low background does not hinder much our explorations for the rare\ndecays of _η_ meson.\n\n10\n\nFigure 8: The invariant mass distribution of _π_ [+] _π_ _[−]_ _π_ [0] from the simulation data for one-month r",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 30.514631839283496,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6275,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex.md",
+        "title": "2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex",
+        "text": "e of [ _m_ _η_ _−_ 3 _σ, m_ _η_ + 3 _σ_ ]. The low background does not hinder much our explorations for the rare\ndecays of _η_ meson.\n\n10\n\nFigure 8: The invariant mass distribution of _π_ [+] _π_ _[−]_ _π_ [0] from the simulation data for one-month running of\nHuizhou _η_ factory experiment.\n\nFigure 9: The estimated branching-ratio upperlimit of light dark higgs particle from _π_ [0] _e_ [+] _e_ _[−]_ channel for just\none-month running of Huizhou _η_ factory experiment, under a conservative event rate of 100 MHz of inelastic\nreactions. The invariant mass of _π_ [0] _e_ [+] _e_ _[−]_ is required to be in the _η_ mass region.\n\n11\n\nFigure 10: The estimated branching-ratio upperlimit of light dark higgs particle from _π_ [0] _π_ [+] _π_ _[−]_ channel for just\none-month running of Huizhou _η_ factory experiment, under a conservative event rate of 100 MHz of inelastic\nreactions. The invariant mass of _π_ [0] _π_ [+] _π_ _[−]_ is required to be in the _η_ mass region.\n\nFigure 11: The estimated _g_ _u_ sensitivity of light dark higgs particle in a hadrophilic scalar model [40, 41],\nfor just one-month running of Huizhou _η_ factory experiment, under a conservative event rate of 100 MHz of\ninelastic reactions. The previous experimental data for the shaded exclusion areas (BESIII, KLOE, MAMI,\nCHARM, and SN1987A) in the figure are taken from Refs. [40,83,151–154].\n\n12\n\nFrom the simulation, the efficiencies of _π_ [0] _e_ [+] _e_ _[−]_ channel and _π_ [0] _π_ [+] _π_ _[−]_ channel are all above 40% with the\nconceptual design of spectrometer. The resolutions for invariant masses of _e_ [+] _e_ _[−]_ and _π_ [+] _π_ _[−]_ are 2 MeV/c [2] and\n1 MeV/c [2] respectively. In our studies, the bin width for the invariant mass is six times of the resolution. The\nbackground distributions without the dark higgs particle are simulated with the GiBUU event generator, and\nthe total number of inelastic scattering events scales up to 5 _._ 9 _×_ 10 [11] . Since there is no dark higgs observed in\nour simulation data, the upper limit of branching ratio of the dark higgs particle is given with the formula in\nEq. (1). The BR upper limits of the light dark higgs particle in _π_ [0] _e_ [+] _e_ _[−]_ and _π_ [0] _π_ [+] _π_ _[−]_ channels are shown in\nFig. 9 and Fig. 10 respectively, as a function of the mass of the dark higgs.\nFrom Fig. 10, one sees that BR upper limit of dark higgs in _η →_ _π_ [0] _π_ [+] _π_ _[−]_ channel is at the level of 10 _[−]_ [6]\n\nto 10 _[−]_ [7], for one-month run",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 30.2834673902749,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3605,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723198__2311.10061__Status_of_dual-readout_calorimetry_for_future_high-energy_physics_experiments.md",
+        "title": "2024__recid_2723198__2311.10061__Status_of_dual-readout_calorimetry_for_future_high-energy_physics_experiments",
+        "text": "**\n\n**4** **Electromagnetic-shower size prototype** **4**\n\n**5** **Hadron shower-sized prototype: HiDRa** **7**\n\n**6** **Conclusions and future prospects** **9**\n\n**1** **Physics requirements on future calorimeters**\n\nThe discovery of a Higgs boson-like particle by the ATLAS and CMS experiments in 2012 provided\n\na definitive confirmation of the Standard Model predictive power. Future high-energy electron\npositron colliders, such as the Future Circular Collider [1] or the Circular Electron-Positron Col\nlider [2], will take advantage of the precise knowledge of the energy in the centre-of-mass frame\n\nand cleaner environment with respect to the LHC to reduce the systematic uncertainties and be able\n\nto identify also slight divergences from the Standard Model calculations.\n\n**Table 1** . Working points at the FCC-ee.\n\n|Working Point<br>√|Z, years 1-2|Z, later|+ −<br>𝑊 𝑊|HZ|𝑡𝑡|Col7|\n|---|---|---|---|---|---|---|\n|~~_𝑠_~~(GeV)|88, 91, 94|88, 91, 94|157, 163|240|340-350|365|\n|Lumi/IP (1034cm−2s−1)|115|230|28|8.5|0.95|1.55|\n|Lumi/year (ab−1, 2IP)|24|48|6|1.7|0.2|0.34|\n|Physics Goal (ab−1)|150|150|10|5|0.2|1.5|\n|Run time (year)|2|2|2|3<br>|1<br>|4<br>|\n|Number of Events|5 × 1012 Z|5 × 1012 Z|108 WW|106 HZ<br>+<br>25k_ 𝑊_+_𝑊_−→_𝐻_|106 _𝑡_~~_𝑡_~~<br>+ 200k HZ<br>+50k_ 𝑊_+_𝑊_−→_𝐻_|106 _𝑡_~~_𝑡_~~<br>+ 200k HZ<br>+50k_ 𝑊_+_𝑊_−→_𝐻_|\n\nTable 1 lists the energy working points that will be explored, the target luminosities and the\n\nexpected number of physics events at the FCC-ee. An extended electroweak, Higgs and top quark\nphysics precision-measurement programme is planned. Future _𝑒_ [+] _𝑒_ [−] colliders will provide copious\n\namounts of _𝑏_, _𝑐_ quarks and _𝜏_ leptons, allowing for heavy-flavour physics studies. Both direct and\n\nindirect searches for Beyond-the-Standard-Model processes will also be conducted over the whole\n\nphysics programme of future accelerators. At all mentioned working points, the large hadronic\nbranching fraction of the _𝑊_ [±], the _𝑍_ or the _𝐻_ bosons leads to a high multiplicity of hadron jets in\n\n– 1 –\n\nmost interesting final states. 90% of events will contain at least one hadronic jet. The capability\n\nto separate the on-shell W and Z bosons based on the invariant mass of the two consequent hadron\n\njets will drastically increase the statistics available for the analyses, which is today mostly limited\n\nto leptonic decays. In order to have distinct high-purity samples of Higgs decays into W or Z boson\n\n−\npairs, the jet energy resolution is require",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 29.43991760926042,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3606,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723198__2311.10061__Status_of_dual-readout_calorimetry_for_future_high-energy_physics_experiments.md",
+        "title": "2024__recid_2723198__2311.10061__Status_of_dual-readout_calorimetry_for_future_high-energy_physics_experiments",
+        "text": "ets will drastically increase the statistics available for the analyses, which is today mostly limited\n\nto leptonic decays. In order to have distinct high-purity samples of Higgs decays into W or Z boson\n\n−\npairs, the jet energy resolution is required to be as good as 3 4% to statistically separate the invariant\n\nmass of the on-shell W and Z boson. As the calorimeter performance on energy relative resolution\nusually scales with _𝜎_ / _𝐸_ ∝ 1 ~~√~~ _𝐸_, this benchmark is usually translated to a target relative resolution\n\nfor future calorimeters of _𝜎_ / _𝐸_ = 30%/ ~~√~~ _𝐸_ . This is a difficult requirement on hadron calorimetry\n\nand has currently never been achieved on a running collider experiment. There are currently two\n\nmain lines of research to achieve such a performance: highly granular calorimeters optimized for\n\nParticle Flow techniques, and dual-readout calorimeters. The first one is here briefly described,\n\nwhile the second is better detailed in Section 2. The idea behind Particle Flow calorimetry is\n\nto exploit as much as possible the information coming from the tracker detector, measuring with\n\na much better precision the momenta of charged tracks through their bending inside a magnetic\n\nfield. This technique greatly benefits from a very finely segmented calorimeter in both lateral and\n\nlongitudinal directions, removing energy contributions coming from charged tracks and replacing\n\nthem with the corresponding momenta. The remaining energy deposits in the calorimeter then\n\nbelong to photons and other neutral particles, whose energy usually sum up to about 10% of the\n\ntotal jet energy [3].\n\n**2** **Dual-readout calorimetry principles**\n\nAny hadron shower inherently comprises electromagnetic showers (through the _𝜋_ [0] _, 𝜂_ → 2 _𝛾_ decays)\n\nwhose fraction of energy with respect to the total shower one is called electromagnetic fraction\n\n_𝑓_ _𝑒𝑚_ . Naming _𝑒_ the calorimeter response to the electromagnetic component of a shower and _ℎ_\nthe non-electromagnetic one, calorimeters are tipically characterised by a ratio _𝑒_ / _ℎ_ ≠ 1, property\n\nknown as _non compensation_ . The limits on hadron energy measurements are related to large\n\nand event-based fluctuations in _𝑓_ _𝑒𝑚_, which exhibits a non-Gaussian and asymmetrical distribution,\n\nand that is also observed to increase with the overall shower energy (non-linearity of the detector\n\nresponse). The _dual-readout method_ [4] aims at improving the energy resolution specifically on\n\nhadron showers, b",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 28.961509852027802,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.1863402109593153,
+    "generation_latency_s": 2.300366759300232e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 6.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.1863402109593153,
+    "generation_latency_s": 2.300366759300232e-07
+  }
+}

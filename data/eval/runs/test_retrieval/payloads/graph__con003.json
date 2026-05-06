@@ -1,0 +1,400 @@
+{
+  "benchmark": {
+    "query_id": "con003",
+    "query_type": "conceptual",
+    "query": "Why is low material budget important for vertexing?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "is",
+      "low",
+      "material"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why is low material budget important for vertexing?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 537,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648915__2304.01362__Low-Loss_Si-Based_Dielectrics_for_High_Frequency_Components_of_Superconducting_Detectors.md",
+        "title": "2023__recid_2648915__2304.01362__Low-Loss_Si-Based_Dielectrics_for_High_Frequency_Components_of_Superconducting_Detectors",
+        "text": ". For example, the widely used magnetron sputtering (MS) proved to be a promising approach for fabricating\nmany devices with relatively low losses and applied temperatures in the range of 200-400 _[◦]_ C. This method improves\nfilm quality by increasing atom mobility with RF bias and\nhigher temperature on the substrate during film growth [6].\n\n( _Corresponding author: Marharyta Lisovenko)_\nM. Lisovenko is with the Argonne National Laboratory, 9700 South Cass\nAvenue, Lemont, IL, 60439, USA (email: mlisovenko@anl.gov)\nP. Barry is with Cardiff University, Cardiff CF10 3AT, UK (email: barryp2@cardiff.ac.uk)\nZ. Pan, T. Cecil, R. Gualtieri, J. Li, V. Novosad, G. Wang, and V.\nYefremenko are with the Argonne National Laboratory, 9700 South Cass\nAvenue, Lemont, IL, 60439, USA (emails: zpan@anl.gov; cecil@anl.gov;\nrgualtieri@anl.gov; juliang.li@anl.gov; novosad@anl.gov; gwang@anl.gov;\nyefremenko@anl.gov)\nC. L. Chang is with the Argonne National Laboratory, Argonne, IL 60439\nUSA, and the University of Chicago, 5640 South Ellis Avenue, Chicago, IL\n60637 USA (email: clchang@kicp.uchicago.edu)\n\nHowever, high temperatures can degrade the characteristics of\nother microwave circuit components and exclude the use of\nthe lift-off technique. We need to reduce the dielectric loss\nfrom two-level systems without complicating fabrication steps\nwith high temperatures, which can cause topical problems in\nsuperconducting detector development [7], [8], [9].\nFor this purpose, we consider two enhanced approaches of\nIBAS and PECVD. Ion-beam-assisted sputtering utilizes an\nion source, which provides additional energy on the outermost\ngrowing atomic layer and allows control over film density and\nmicrostructure at room temperature. The same time the flux\nand the energy of ions can be changed independently of the\nflux of the depositing atoms, thus allowing easy control of the\nstoichiometry of compound films [10], [11].\nThe applied plasma in the CVD process enhances film\nuniformity and step coverage while improving adhesion and\ncontrol over film growth. In PECVD, the precursors do not\nrequire high temperatures for the chemical reaction, which\nallows utilizing a temperature below 200 _[◦]_ C with better uniformity, adhesion and deposition rate compared to magnetron\nsputtering [12].\nThis paper aims to outline the typical dielectrics and related properties and the factors controlling their quality. We\ncompare several silicon-based dielectric films grown under\ndifferent conditions, which result i",
+        "score": -6.103055394007807,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.782464846980976,
+        "rerank_score": -9.48200798034668,
+        "matched_nodes": [
+          "In",
+          "For",
+          "The",
+          "We",
+          "USA",
+          "IL",
+          "University"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -6.225879711081708,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803143093465674,
+        "rerank_score": -9.673418045043945,
+        "matched_nodes": [
+          "In",
+          "For",
+          "At",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4603,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter.md",
+        "title": "2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter",
+        "text": "the optical budget for the ASE-sourced transmitter and evolution of the rawkey rate and QBER when seeding Alice’ polarization encoder with (b) the ASE-sourced and (c) the Ge-on-Si PIN light source.\n\ndrive to suppress symbol transitions. Before transmitting the photons to Bob, we used an optical attenuator to set the signal\nlaunch power to a mean photon number of μ Q = 0.1 photons/symbol.\n\nAt Bob’s side we manually aligned the polarization of the incoming signal to the axes of our polarization analyzer with a\npolarization controller (PC). The outputs of the polarization analyzer were connected to a pair of free-running InGaAs SPADs\nwith dark count rates of 560 and 525 cts/s. We consecutively measured the received quantum signal in the **H** / **V** and **D** / **A** bases\nand recorded the detection events of the SPADs with a TTM. A real-time QBER evaluation was then performed, which included\n\n|12 0.1<br>10 [kb/s] = Q<br>µ<br>8<br>rate<br>6<br>key<br>4<br>Raw<br>2<br>0<br>-16 -12 -8 -4<br>(a) Relative optica|hν/pulse|\n|---|---|\n|<br>0<br>2<br>4<br>6<br>8<br>10<br>12<br>-16 -12 -8<br>-4<br><br>**Relative optica**<br>**Raw key rate [kb/s]**<br>(a)<br>µQ = 0.1|0<br>4<br>8<br>12 16<br>**l budget****_OB_ [dB]**|\n|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|\n\nframe synchronization with the pre-defined pseudo random bit sequence transmitted by Alice, as well as temporal filtering to\n50% of the symbol period to reduce the dark counts. Additionally, basis sifting was performed during this process.\n\nTo confirm the correct operation of our transmitter and receiver architectures we also performed a classical\n\ncharacterization. For this we replaced the attenuator by an additional EDFA and the SPADs and TTM with balanced receivers\nand a real-time oscilloscope. The carved optical output at Alice ( _Ξ_ ) and the characteristic three-level signals ( _ρ_ ) for the **H** / **V** and\n**D** / **A** bases under 4-state polarization encoding are included in Fig. 3(a).\n\nIn order to assess the performance as a function of the optical budget (OB) between Alice and Bob, defined as the difference\nof the transmitted power level at Alice and the received optical power (ROP) at Bob, we used the ASE seed light for Al",
+        "score": -6.932943529059613,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803143093465674,
+        "rerank_score": -10.761208534240723,
+        "matched_nodes": [
+          "In",
+          "For",
+          "At",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3965,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2745759__2401.06033__Novel_photon_detectors.md",
+        "title": "2024__recid_2745759__2401.06033__Novel_photon_detectors",
+        "text": "2 × 10 [12] n cm [−][2]\n\n5\n\nFigure 13: Microlenses in front of SiPM cells: principle (top), angular acceptance as a function of a geometrical parameter (height of the array) for a\n128x128 array of 6 µm diameter CMOS SPADs at 25 µm pitch and a 5% fill\nfactor [28].\n\nFigure 14: Dark count rate of irradiated SiPMs [33].\n\nreported promising results when annealing at elevated temperatures [32]. In Fig. 15, dark counts are shown for operation\n\nFigure 15: Annealing of irradiated SiPMs as a function of annealing time:\ncomparison non-irradiated (blue) and irradiated up to 10 [11] n cm [−][2] (yellow),\n10 [12] n cm [−][2] (green) and 10 [13] n cm [−][2] (orange) [32].\n\nat -30 [o] C of irradiated Hamamatsu S13360-1350CS SiPMs as a\n\nfunction of annealing time and temperature [32]. In the same\nstudy, it was also shown that annealing helps even when operating at 77 K [32].\nOne of the possible solutions could also be the use of\nnew wider band-gap materials with a possibly lower rate of\nthermally-generated dark counts, higher radiation resistance,\npossible operation at higher temperatures, and (V)UV sensitivity. The dark count rate is in this case dominated by trapassisted tunneling. An interesting material is 4H-SiC with a\ngap of _E_ _g_ = 3.26 eV. At present, a PDE of about 10% was\nachieved, with a dark count rate of above 1 MHz/mm [2] and a\nnonuniform response [34]. We note here that the early versions\nof SiPMs also had similar properties so it is expected that this\nwill improve with more experience in the production.\n\n**4. Gas based photon detectors**\n\nIn gas-based photon detectors, one of the electrodes of the\ngas chamber is covered by a solid photo-sensitive substance.\nThe most common material is CsI evaporated on one of the\ncathodes. The largest scale application of this concept is the\nALICE RICH with 11 m [2] of photosensitive multiwire chambers [35]. Instead of a multiwire chamber detectors with multiple GEM or thick GEM (THGEM) gas amplification stages\nwith transmissive or reflective photocathodes can be used. An\nexample of such a combination is the photon detector for the\nRICH counter of the COMPASS experiment with the amplification stage comprised of a pair of THGEM steps and a MicroMegas [36].\nFor operation in environments with high particle flux densities over extended periods of time, aging due to photocathode\ndamage by ions produced in avalanches can become a limiting\nfactor. One of the mitigation strategies is to block the drifting\nof ions towards the phot",
+        "score": -6.9687733445810425,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8527708850289495,
+        "rerank_score": -10.822210311889648,
+        "matched_nodes": [
+          "In",
+          "For",
+          "An",
+          "At",
+          "The",
+          "We"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4864,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2778403__2404.10866__Spectroscopic_Measurements_and_Models_of_Energy_Deposition_in_the_Substrate_of_Quantum_Cir.md",
+        "title": "2024__recid_2778403__2404.10866__Spectroscopic_Measurements_and_Models_of_Energy_Deposition_in_the_Substrate_of_Quantum_Cir",
+        "text": "in the modeling we have performed and in the measurements we have made with conventional spectrometers and the TKID superconducting\nsensors. We find the PARMA model of atmospheric secondary cosmic rays to be good, though the best match to\nour measurements required rescaling the hadronic component (including muons) by 0.88 and the electromagnetic component by a location-varying factor ranging between 0.5 and 0.8. Apart from the intensity scaling, we\nargue it is important to include species other than muons\nin the cosmic ray model: electrons and gamma rays contribute to the backgrounds in silicon at the same energies\nas muons do, especially at higher-elevation sites. Critically, protons and neutrons generate rare events at substantially higher energies. For terrestrial gamma rays,\nthe spectra acquired in three widely separated sites varied\ngreatly in intensity (by a factor of 4), but not in shape.\nAn assumption of secular equilibrium in the [238] U and\n232 Th decay chains is supported by the measured spectra,\nconsiderably simplifying construction of the background\nmodels. The data support a break in equilibrium at the\nradon step in the [232] Th chain with a 3/2 activity ratio.\nThe data do not constrain the pre-radon section of the\n238 U chain, due the paucity of energetic gamma rays from\nthat portion of the decay chain. To model the spectrum\ncorrectly, it is necessary to account for Compton scattering of the terrestrial gamma-ray background. Finally,\nfor the conditions studied here (an unshielded, groundlevel laboratory, with devices on silicon substrates and\nmost reliable for events with _E >_ 40 keV), shielding by\nthe cryostat body and the laboratory ceiling plays only\na modest role. As a result, highly simplified geometric\nmodels of these components were adequate.\n\nIn summary, we present the first spectroscopic measurement of background events in a silicon die whose size\nand temperature is representative of the substrates used\n\nin superconducting quantum circuits. A model of these\nradiation backgrounds as the result of naturally occurring\nradioisotopes and of cosmic rays was matched to our specific local conditions via measurements performed with a\nstandard, commercially available gamma-ray spectrometer. This model, without free parameters, agrees quantitatively with spectral measurements of the radiation\nbackground when performed with energy sensors similar\nin size and composition to many quantum circuits. We\nuse the models to demonstrate how different c",
+        "score": -6.97466263191911,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803143093465674,
+        "rerank_score": -10.82539176940918,
+        "matched_nodes": [
+          "In",
+          "For",
+          "An",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8258,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "icularly for irradiated devices. The global threshold is\nindividually tuned for each module to achieve a target\nvalue after per-pixel adjustment between 1000 and 1200\nelectrons, or the lowest value that ensures the number\nof masked pixels remains below 1% for non-irradiated\nmodules and below 2% for irradiated modules. For ir\nradiated modules, the resulting global threshold is typically around 1500–1800 electrons for RD53A assemblies and 1000–1200 electrons for CROCv1 assemblies.\n\nThe per-pixel threshold adjustment is performed in\ntwo steps. First, the threshold of each pixel is trimmed\ntargeting a global threshold of approximately 2000\n(3000) electrons for non-irradiated (irradiated) modules. A binary search algorithm is applied to find the\nTDAC value that minimizes the distance of the pixel\nthreshold from the average threshold across the matrix.\nFor irradiated modules the procedure is repeated targeting a threshold of 2000 electrons. Finally, an ad\n\n(a)\n\n(b)\n\n(c)\n\nFigure 10: Examples of distributions obtained during the tuning procedure of a non-irradiated CROCv1 chip bonded to a 3D pixel sensor.\nSubfigure (a) represents the superposition of the S-curve of each pixel,\nwhile subfigures (b) and (c) represent the threshold and noise distributions, respectively.\n\n8\n\nditional threshold trimming is performed targeting a\nglobal threshold as specified above. In this step, the\nTDAC is incremented or decremented by a single unit\nto minimize changes to the local threshold. For nonirradiated modules, if the desired threshold is lower\nthan 1200 electrons, no further trimming has to be performed. An average TDAC distribution obtained at the\nend of the tuning procedure is shown in Fig. 11: successful tuning should lead to a peak around 16 without\naccumulations at the extreme ends of the distribution.\n\nFigure 11: Example of distribution obtained from the per-pixel threshold adjustment of a non-irradiated CROCv1 chip bonded to a 3D pixel\n\nsensor.\n\nAt the end of the tuning procedure “stuck\" and\n“noisy\" pixels are masked. Stuck pixels do not respond\nto charge injections while noisy pixels have an occupancy higher than 2 × 10 [−][5] without injecting charge.\nThis threshold corresponds to 1% of the occupancy expected in the first layer of TBPX (2 × 10 [−][3] ).\nFinally, a gain scan is performed to determine the\npixel-by-pixel relation between the ToT of the output\nsignal and the amplitude of the voltage step supplied to\nthe capacitor, in ∆VCal units. The results of this scan",
+        "score": -6.996385015875767,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7369727047146402,
+        "rerank_score": -10.850972175598145,
+        "matched_nodes": [
+          "In",
+          "For",
+          "An",
+          "At",
+          "The"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 454,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648447__2304.01103__Measurement_of_Dielectric_Loss_in_Silicon_Nitride_at_Centimeter_and_Millimeter_Wavelengths.md",
+        "title": "2023__recid_2648447__2304.01103__Measurement_of_Dielectric_Loss_in_Silicon_Nitride_at_Centimeter_and_Millimeter_Wavelengths",
+        "text": "amplifier or increase\nthe integration time during data collection. We also note that\nthe high-power microwave _Q_ _i_ of our microstrip with SiN _x_\nis lower than that reported by other groups [16], [17]. The\n_Q_ _i_ for resonators with aluminum inductors used in this paper\nstill has a positive slope vs. power at _−_ 90dBm, indicating\ntheir _Q_ _i_ is still being limited by dielectric loss there. However,\nthese resonators started to bifurcate at _∼−_ 90dBm. For all-Nb\n\nresonators with higher bifurcation power, we noticed that the\n_Q_ _i_ can reach 10 [5] at _−_ 70 dBm. For this paper, we are only\ninterested in the low-power limit of the _Q_ _i_ set by the dielectric\nloss. The other factors that limit our high-power _Q_ _i_ are orders\nof magnitude lower than the TLS loss.\n\nV. D IFFERENTIAL O PTICAL E FFICIENCY AT 150 GH Z\n\nThe third method compares optical efficiency for detectors\ncoupled through different lengths of microstrip lines, which\nrequests an mm-wave optical coupling setup. A temperaturecontrolled cryogenic blackbody provides a method to sweep\nthe incident power level, and is coupled to the detector sample\nbox through low-pass metal-mesh filters and infrared blockers\n(Fig. 6).\nThe optical setup we built is compatible with both 150 and\n220 GHz optical detector chips. Fig. 7 shows the detectors and\ntheir boxes. The 150 and 220 GHz chips were fabricated and\ndiced from the same silicon wafer.\n\nCryogenic\nblackbody\n\nFig. 6: Optical testing setup. The cryogenic blackbody is\nmounted on a copper plate with four heaters and thermometers\nfor temperature control. An infrared filter attenuates the power\nabove 1 THz, and two metal-mesh filters at 4 K and 1 K define\na low-pass frequency window below 280 GHz. The detectors\nare mounted in a sample box with feedhorns and backshorts.\nWe installed the optical components in a Bluefors dilution\nfridge shown on the left. The base temperature of the fridge\nis 8 mK. The optical window on the right of the CAD model\ncame with the fridge and was not used for this paper.\n\nFig. 7: 150 and 220 GHz sample boxes with detector chips\ninstalled. Left of each subfigure is the box bottom with the\ndetector chip. Right is the box lid with feedhorns.\n\nTo measure the optical response of the detectors, we heat the\nblackbody to different temperatures _T_ _BB_ and record the resonator frequency shift _df/f_ 0 vs. _T_ _BB_ . Here _df_ is the frequency\nshift, and _f_ 0 is the resonant frequency. We took measurements\nfor the 150 GHz device and",
+        "score": -7.020287650992596,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803143093465674,
+        "rerank_score": -10.895584106445312,
+        "matched_nodes": [
+          "For",
+          "An",
+          "At",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6238,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797552__2406.07768__Selective_Undercut_of_Undoped_Optical_Membranes_for_Spin-Active_Color_Centers_in_4H-_Silic.md",
+        "title": "2025__recid_2797552__2406.07768__Selective_Undercut_of_Undoped_Optical_Membranes_for_Spin-Active_Color_Centers_in_4H-_Silic",
+        "text": "**SELECTIVE UNDERCUT OF UNDOPED OPTICAL MEMBRANES FOR**\n\n**SPIN-ACTIVE COLOR CENTERS IN 4H-SIC**\n\nJonathan Dietz, Amberly Xie, Aaron M. Day, Evelyn L. Hu\n\nJohn A. Paulson School of Engineering and Applied Sciences\n\nHarvard University, Cambridge, MA. 02138, USA\n\nAbstract. Silicon carbide (SiC) is a semiconductor used in quantum information processing, micro\n\nelectromechanical systems, photonics, power electronics, and harsh environment sensors. However,\n\nits high temperature stability, high breakdown voltage, wide bandgap, and high mechanical strength\n\nare accompanied by a chemical inertness which makes complex micromachining difficult. Photoelec\n\ntrochemical etching is a simple, rapid means of wet processing SiC, including the use of dopant\n\nselective etch stops that take advantage of mature SiC homoepitaxy. However, dopant selective\n\nphotoelectrochemical etching typically relies on highly doped material, which poses challenges for\n\ndevice applications such as quantum defects and photonics that benefit from low doping to produce\n\nrobust emitter properties and high optical transparency. In this work, we develop a new, selective\n\nphotoelectrochemical etching process that relies not on high doping but on the electrical depletion\n\nof a fabricated diode structure, allowing the selective etching of an n-doped substrate wafer versus\n\nan undoped epitaxial ( _N_ _a_ = 1(10) [14] _cm_ _[−]_ [3] ) device layer. We characterize the photo-response and\n\nphotoelectrochemical etching behavior of the diode under bias and use those insights to suspend\n\nlarge ( _>_ 100 _µm_ [2] ) undoped membranes of SiC. We further characterize the compatibility of mem\n\nbranes with quantum emitters, performing comparative spin spectroscopy between undoped and\n\nhighly doped membrane structures, finding the use of undoped material improves ensemble spin\n\nlifetime by _>_ 3 _x_ . This work enables the fabrication of high-purity suspended thin films suitable for\n\nscalable photonics, mechanics, and quantum technologies in SiC.\n\n1. Introduction\n\nA high-yield, systematic means of producing high-quality thin-films is an outstanding challenge in\n\nrealizing scalable quantum and classical technology. The availability of single crystal thin films with\n\nhigh purity and optical quality has led to large advances in miniaturizing typically bulk optical com\n\nponents with equivalent integrated photonic devices and the development of micro-electromechanical\n\ncircuits.[1–4] One such approach to creating thin fi",
+        "score": -7.0499369086525085,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803143093465674,
+        "rerank_score": -10.941198348999023,
+        "matched_nodes": [
+          "In",
+          "For",
+          "MA",
+          "The",
+          "We",
+          "USA"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5221,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers.md",
+        "title": "2024__recid_2792988__2405.20427__Measurement_of_energy_resolution_with_the_NEXT-White_silicon_photomultipliers",
+        "text": "for events\nfarther from the EL region, due to electron attachment to impurities in the gas [6]. This\nloss of electrons can be described by an exponential decay, with the time constant known\n\nas the _electron lifetime_ .\n\n**3** **Data acquisition**\n\nThe detection of [83] _[m]_ Kr events is triggered when at least two of the three PMTs in the\ncenter ring of the energy plane [3] record a S2 signal from 5000 to 50000 analog-to-digital\ncounts (ADC), roughly corresponding to energies between 15 keV and 150 keV. The readout window is 1600 µs, centered around the trigger time at 800 µs, for both PMTs and\nSiPMs. The sampling periods for the two sensors are 25 ns (PMTs) and 1 µs (SiPMs). The\nPMTs provide a precise measurement of the S1 time with their finer binning, and then are\n\nrebinned to 1 µs for the rest of the analysis.\n\nAt the data acquisition level, the entire waveform for each PMT is recorded, while the\n\nwaveforms for the SiPMs are typically reduced by an algorithm called _zero suppression_ that\n\n– 3 –\n\nminimizes the data size. However, to allow the best possible understanding of an energy\nmeasurement from the SiPMs, this analysis uses a non-zero suppressed run, allowing for\n\nthe use of the entire waveform for each SiPM. This run, labeled as run 8088, was taken\n\nstarting July 11, 2020, for a total of 24.2 hours, with 694170 low-energy triggers. The\nconditions of this non-zero-suppressed run limit this analysis to the use of [83] _[m]_ Kr events.\n\n**Figure 2** : An example SiPM raw waveform (black) from run 8088 compared to an emulated zero suppressed waveform (red). The sharp peak is the S2 signal, while other\nsmaller peaks are thermal and electronic fluctuations. In this example, the zero suppressed\n\nwaveform successfully picks out the S2 region, in addition to a random region with high\n\ncoincidence noise.\n\n**4** **Definition and contributions to the energy resolution**\n\nIn this paper, we define the relative energy resolution of a detector by the mean signal _µ_\n\nand its standard deviation _σ_ is given as:\n\n_δE_\n\n_√_\n_E_ [= 2]\n\n2 ln 2 _[σ]_ _._ (4.1)\n\n_µ_\n\nFor an ideal Gaussian response, this would correspond to the full width at half maximum (FWHM), the typical metric used to quantify detector energy resolutions in nuclear\nphysics. For the NEXT-White detector, following [21] and assuming each contribution is\nindependent of the others, the energy resolution can be written as:\n\n_[n]_\n\n~~2~~ _,_ (4.2)\n_N_ _PE_\n\n_δE_\n\n_√_\n_E_ [= 2]\n\n2 ln 2\n\n~~�~~\n\n_F_ + [1]\n_",
+        "score": -7.086884989172886,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7369727047146402,
+        "rerank_score": -10.990202903747559,
+        "matched_nodes": [
+          "In",
+          "For",
+          "An",
+          "At",
+          "The"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2616,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera.md",
+        "title": "2024__recid_2685164__2308.01837__Reduction_of_light_output_of_plastic_scintillator_tiles_during_irradiation_at_cold_tempera",
+        "text": "perature wrapping holes current\n(Gy/hr) ( _µ_ A)\nBC-412 0.3 3% O 2 ESR - 10.13\nBC-412 0.3 3% O 2 ESR - 10.52\nBC-412 0.3 N 2 ESR - 10.63\nBC-412 0.3 Air ESR - 7.49\nFNAL 0.3 3% O 2 ESR - 5.70\nBC-412 0.3 3% O 2 ESR A 7.28\nBC-412 0.3 3% O 2 ESR B 7.89\nBC-412 0.3 3% O 2 Black - 0.45\nBC-412 0.3 3% O 2 - - 0.44\nBC-412 0.3 N 2 - - 0.45\nBC-412 0.3 Air - - 0.40\nFNAL 0.3 3% O 2 - - 0.49\nFNAL 0.3 N 2 - - 0.58\nBC-412 1.3 3% O 2 ESR - 38.14\nBC-412 1.3 Air ESR - 29.77\nEJ-208 1.3 3% O 2 ESR - 38.94\nEJ-208 1.3 Air ESR - 30.79\nBC-412 1.3 Air Tyvek [®] - 15.13\nBC-412 1.6 Air, 22° C ESR - 23.9\n\nBecause we acquired data from a given channel only once every several sec\n_∼_\nonds, from these data we cannot rule out the possibility of a rapid ( seconds)\ninitial decline in scintillator signals upon irradiation. To test for a rapid initial decline, we employed a second, lower dose rate irradiator that contributed\nwith a dose rate 10 _[−]_ [3] that of the main irradiator, and thus would have caused\nminimal radiation damage. We measured SiPM signals using this low dose rate\nirradiator both before and after a one minute exposure to the primary irradiator\n(which was the first irradiation the tiles received). A decrease in the ratio of\nafter/before SiPM signals would indicate radiation damage in the first minute\nof irradiation. We determined this ratio independently for tiles at -30° C in air\nand in 3% O 2 . For each gas, we computed the weighted average of the ratio\nfor two similar tiles, EJ-208 and BC-412, both wrapped in ESR. We find the\n\n12\n\nweighted mean for air is 1 _._ 003 _±_ 0 _._ 004, and for 3% O 2 is 0 _._ 999 _±_ 0 _._ 004; both are\nconsistent with no damage from one minute of irradiation, so the values from\nTable 1 are accurate measurements of the initial signal.\nFigure 7 shows the effect of temperature on signal loss during irradiation,\npresumably due to increasing radical density. The dataset shows the relative\nlight yield as a function of dose for a BC-412 tile wrapped in Tyvek [®] in air.\nInitially the temperature was -30° C. At the dose corresponding to the left vertical line, the temperature was changed to -15° C. At the right vertical line, the\ntemperature was changed to 0° C. During the first period at -30° C, there is a\nrapid light loss. When the temperature is changed to -15° C, the slope changes\nand the rate of decrease of light loss slows. When the temperature is changed to\n0° C, the light yield increases. An increase is expected if the higher temperature\nallows",
+        "score": -7.094752353598798,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803143093465674,
+        "rerank_score": -11.01014518737793,
+        "matched_nodes": [
+          "For",
+          "An",
+          "At",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "For": 1.0,
+      "An": 1.0,
+      "At": 1.0,
+      "PO": 1.0,
+      "Im": 1.0,
+      "MA": 1.0,
+      "OR": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "For": 1.0,
+      "An": 1.0,
+      "At": 1.0,
+      "PO": 1.0,
+      "Im": 1.0,
+      "MA": 1.0,
+      "OR": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "USA": 0.7,
+      "IL": 0.63,
+      "CA": 0.7,
+      "Physics": 0.7,
+      "University": 0.24499999999999997,
+      "Department": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 20,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 2.895723472815007,
+    "generation_latency_s": 5.299225449562073e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 20.0,
+    "retrieval_latency_s": 2.895723472815007,
+    "generation_latency_s": 5.299225449562073e-07
+  }
+}

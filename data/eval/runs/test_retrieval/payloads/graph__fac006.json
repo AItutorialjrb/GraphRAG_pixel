@@ -1,0 +1,397 @@
+{
+  "benchmark": {
+    "query_id": "fac006",
+    "query_type": "factoid",
+    "query": "What is a discriminator in a pixel front-end?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "a",
+      "discriminator"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is a discriminator in a pixel front-end?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4772,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "designed and produced in the LFoundry\n150-nm CMOS technology. The key building blocks\nare SPADs, with a fixed layout provided by the manufacturer. Four of these SPADs, with an active area of\n20×20 µm [2], form a pixel with a size of 69.6×76 µm [2],\nas shown in figure 1. The fill factor of a pixel, and\nhence the entire matrix, amounts to 30 %. This includes\nthe readout circuitry implementing the key pixel functionality, i.e. a masking mechanism, a variable quenching resistance (transistor), a discriminator, a counter (up\nto 2 bit), and a fast wired-OR connection to the quadrant’s Time-to-Digital Converter (TDC). A quadrant is\nthe next-larger building block of the chip. It comprises\n16 × 16 pixels, and features a 12 bit TDC with two\nstages, a validation logic, and multiplexers for the hit\nand timestamp information in the chip periphery. The\nTDC provides the time stamp of the first firing pixel\nwithin a 333 ns readout frame. An overview of the read\nout scheme is shown in figure 2, and a detailed description of the DESY dSiPM, including details on the circuit\ndesign and laboratory characterization, is given in [7].\nFor the reader’s convenience, a few measurements of\nkey properties of the DESY dSiPM from [7] are summa\n\nrized in the following. The sensors reach Geiger-mode\noperation at about 18 V, and the temperature coefficient\nof this breakdown voltage is about 16 mV K [−][1] . The dark\ncount rate strongly depends on temperature and over\nvoltage, defined as the difference between the applied\nbias and the breakdown voltage. At a typical working\npoint, e.g. an over voltage of 2 V and a temperature of\n0 [◦] C, it reaches 7 kHz per pixel, which corresponds to\n4.4 Hz µm [−][2] accounting for the active area. The time\nresolution of the TDC is reported to be 95.8±13.65 ps\n(average bin width).\nThe readout system for the sensor is based on the\nCaribou system [8]. The main building block of the\nsystem is a System-on-Chip (SoC) board, with a CPU\nand an FPGA on the same die. The CPU runs the\n\ndata-acquisition software, Peary [9], and the FPGA executes custom firmware blocks to handle configuration\nand readout of the chip. The Control and Readout (CaR)\nboard provides all the peripherals required for the chip\noperation, and the chip itself is glued and wire bonded to\na custom chip board with only few active components.\n\n**3. Test-Beam Setup and Reconstruction**\n\nTo explore the capabilities of the DESY dSiPM as\na detector for ionizing radiation, test-beam measurements have b",
+        "score": -1.9182908149073332,
+        "dense_score": 0.4817229211330414,
+        "bm25_score": 25.24682166798355,
+        "graph_score": 0.7999999999999999,
+        "rerank_score": -3.056466579437256,
+        "matched_nodes": [
+          "To",
+          "At",
+          "OR",
+          "The",
+          "For",
+          "It"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6740,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "radiation environment\nas an additional criterion, small pixel size and low excess\nbias voltage (over-voltage, ∆ _V_ ) are also preferred to reduce\nthe effect of increasing the dark count rate (DCR) (heat\ndissipation and self-heating), as well as reducing correlated\n\n“This work was supported by the Swiss National Science Foundation under\nGrant 215635 and 216604.”\n\nG. Haefeli, F. Blanc, E. Curr´as-Rivera, R. Marchevski, F. Ronchetti,\nO. Schneider, L. Shchutska, and G. Zunica are with the Institute of Physics,\n´Ecole Polytechnique F´ed´erale de Lausanne, Route de Sorge, Lausanne,\nSwitzerland.\nAt the time of this work, C. Trippl was with the Institute of Physics,\n´Ecole Polytechnique F´ed´erale de Lausanne, and is now at DS4DS, La Salle,\nUniversitat Ramon Llull, Barcelona, Spain.\nAt the time of this work, E. Zaffaroni was with the Institute of Physics,\n´Ecole Polytechnique F´ed´erale de Lausanne, and is now at Universit´e de\nGen`eve, Geneva, Switzerland.\n\nnoise. In summary, the small pixel size and the low ∆ _V_ are\nadvantageous in all aspects except for the PDE.\nThe hit detection efficiency of the scintillating fibre tracker\ntechnology depends on the actual signal (scintillating light)\nproduced and the PDE of the photodetector. For a given fibre\ntechnology and fibre length, stacking several layers of fibres\nis used to increase the signal for a traversing particle. This\ncomes at the cost of a higher material budget, a large signal\nspread for incident particles with a large incident angle, and\nlast but not least a higher cost for more scintillating fibres.\nThe implementation of microlens arrays (MLAs) aligned with\nthe pixel structure has been successfully tested, and the results\nare presented in the following.\n\nII. T HE MICROLENS ON S I PM S\n\nEnhancing imaging photodetectors with pixel level microlenses is commonly used for CCD and CMOS camera\nsensors [2] and has also been successfully applied to SPAD\narray sensors in the last years [3]–[5]. A good overview of\nthe fabrication process of refractive MLAs is given in [6],\nfocusing on spherical lenses, although cylindrical lenses can be\nobtained with the same process [7]. The process used for our\napplication is based on photoresist processing, followed by a\nthermal reflow yielding a master mold. This mold is used with\na UV-curable polymer to replicate the MLA on the wafer level.\nOther fabrication processes are microdroplet inkjet printing\nor MEMS-based. The implementation of microlenses requires\nhigh-precision manu",
+        "score": -5.165213888549805,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7999999999999999,
+        "rerank_score": -8.041252136230469,
+        "matched_nodes": [
+          "In",
+          "On",
+          "At",
+          "The",
+          "For",
+          "II"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4924,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "ne SiPMs. This results in negligible systematic and statistical uncertainties for this measurement. The out\nput pulse full width at half maximum (FWHM) increases only\nslightly from 2.4 ns to 2.8 ns for Hamamatsu SiPM-based pixels and similarly from 3.1 ns to 3.4 ns for pixels based on SensL\nSiPMs. For the first generation SiPM-based pixels using Excelitas SiPMs, the FWHM increased from 5.1 ns to 5.9 ns [19].\n\n**5. Expected LoNS and Cherenkov light responses**\n\n_5.1. Spectra and integrals_\n\nTo estimate the expected performance of our SiPM proto\n type modules we compared the spectral photon detection effi\nciency PDE(λ) curves of light sensors with the spectra of the\nLoNS and the Cherenkov light from air showers reaching the\ntelescope camera. The spectra are shown in figure 7. In recent years, MAGIC observations’ mean zenith distance (ZD),\nwhich denotes the angular distance between the telescope pointing direction and zenith, has steadily increased to cover a larger\nsolid angle with more astrophysical sources and a wider energy range. For an example see [29]. Therefore, it is important\nto compare the detector’s PDE with the Cherenkov and LoNS\nspectra not only close to the zenith but also at large zenith dis\ntances.\n\n4\n\nFigure 6: Comparison of the pulse shape of a single SiPM chip with the active\nsum of nine Hamamatsu SiPM chips. The pulse FWHM widens only slightly\nfrom 2.4 ns to 2.8 ns. The amplitudes were normalized for better visualization.\n\nThe Cherenkov light spectrum of air showers at the telescope\ncamera peaks at around 320 nm for low zenith observations, at\n\n an observational altitude of 2.2 km. The peak quantum effi\nciency (QE) of PMTs makes a good match with the Cherenkov\nlight spectrum. All of the SiPMs we used have their peak sensitivity at longer wavelengths, thus detecting a lower number of\nCherenkov photons from the main peak in the near UV region.\nOn the other hand, these collect more photons from the longwavelength tail of the Cherenkov spectrum. At large and verylarge zenith distances the peak of the Cherenkov light spectrum\nshifts towards the blue-green region. This is due to the longer\ndistance to the shower maximum region, from where the majority of photons arrive at the telescope. The longer paths attenuate\nthe near-UV part of the spectrum, due to the Rayleigh scattering and absorption effects. The Cherenkov spectra were generated with CORSIKA [30] and the photon propagation to the\nIACT camera was modeled with an adapted version of MARS,",
+        "score": -6.0665182106018065,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8545454545454544,
+        "rerank_score": -9.434335708618164,
+        "matched_nodes": [
+          "In",
+          "On",
+          "To",
+          "At",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4009,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs.md",
+        "title": "2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs",
+        "text": "and taking\n_U_ / _U_ ch = 1 and _x_ ≪ 1, we found that a crosstalk probability of\n10% (irrespective of whether it is prompt or delayed crosstalk)\nleads to _c_ = 0.101, whereas _c_ = 0.059 is obtained for the same\nprobability of afterpulsing. Notice that _c_ can be slightly greater\nthan the probability of crosstalk, which is defined as the probability of inducing one or more secondary avalanches. This is\npartly compensated by the fact that pixels at the borders of the\nSiPM have a lower crosstalk probability. The higher the number of pixels, the smaller these border effects. On the other\nhand, cascades of secondary avalanches due to any component\nof correlated noise contribute to increasing _c_, this effect being\nrelevant when the probability of correlated noise is high, as discussed in [10]. Analytical expressions of _c_ for crosstalk are\navailable in [8, 9], but the accurate value of _c_ should be obtained by simulation when afterpulsing is not negligible.\nAt high photon rates, where nonlinearity is significant, the\nuncompleted recovery of pixels reduces the gain factor due to\ncorrelated noise. For exponential light pulses, prompt crosstalk\nwas found to be more mitigated than delayed crosstalk and afterpulsing for the same probability. This is because seeds due\nto prompt crosstalk are mainly produced at the beginning of the\nlight pulse, just when the photon rate is highest. In contrast,\nseeds due to delayed crosstalk and afterpulsing are produced\nlater, when the photon rate is lower and the recovery of pixels is more advanced. These effects are more noticeable when\nstudying the shape of the output signal rather than the integrated\ncharge. In Fig. 4, averaged simulated signals for a probability\nof correlated noise of 20% (assuming a sole noise component\nin each case) are compared with that obtained in the absence\nof correlated noise. We used the same simulation parameters\nas before, i.e., τ d = 5 ns and τ rec = τ bulk = 10 ns. Prompt\ncrosstalk gives rise to an almost constant scale factor to the signal at _x_ = 0.5, but the effect is much lower at _x_ = 5 as a conse\n\n5\n\nFigure 4: Averaged SiPM signals simulated for different situations of correlated\nnoise (i.e., no noise, 20% of prompt crosstalk, 20% of afterpulsing, or 20% of\ndelayed crosstalk) and different amounts of seeds per pixel (i.e., _x_ = 0.5 and 5).\n\n|Shape|Probability density function|Mean ph. rate|\n|---|---|---|\n|Exponential|1<br>τd _e_−_t_/τd (_t_ ≥0)|_n_<br>2τd|\n|Rectangular|1<br>τw (0 ≤_t_",
+        "score": -6.182003038787841,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7999999999999999,
+        "rerank_score": -9.60554313659668,
+        "matched_nodes": [
+          "In",
+          "On",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7154,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "ws the time residuals between the TelePix2 fast\n\nHit-OR and H2M time stamps. The tail to the left is caused by\ntime-walk of H2M.\n\n5\n\n(b) Time difference between reference trigger and TelePix2 hit-or at a threshold of 16.\n\nFigure 9: The fast Hit-OR of TelePix2.\n\n_ATLAS ITk strips - timing plane mode_\n\nThe ATLAS inner tracker (ITk) [16] is a full silicon detector upgrade of the ATLAS tracking system for the high luminosity phase of the Large Hadron Collider (HL-LHC). To\nkeep the tracking performance in the expected harsh environment and balance the cost, micro-strip modules are used in the\nouter barrel and end-cap layers of ITk, operated in a binary\nreadout mode. The modules are required to have an operating\nthreshold window with hit detection efficiency above 99 % at a\nnoise occupancy below 0.1%. Different types of modules have\nbeen tested in the DESY II test beam facility. Already 1 % of\nfake tracks causes modules to not fulfil this stringent requirement. As the modules are significantly larger than the ADENIUM telescope’s active area, only the track timing feature of\nTelePix2 is used in the analysis. Figure 11 shows the comparison of the measured efficiency with and without TelePix2 as\ntiming plane as a function of the detection threshold of an nonirradiated short strip module. In the low threshold region, an\nimprovement in the determined efficiency of above 1 % is observed, resulting in a significant operating region, that would be\nhidden without the timing capabilities of TelePix2.\n\n_RD50-MPW4 - region of interest trigger and timing mode_\n\nThe _RD50-MPW4_ [17] is an HV-CMOS pixel sensor fabricated in a 150 nm process by _LFoundry_ . It consists of a 64 ×\n64 pixel matrix with a pitch of 62 × 62 µm [2], resulting in an active area of ≈ 4 × 4 mm [2] . The pixels are equipped with a timestamping logic, which allows for 25 ns time binning. The performance was evaluated in a test beam at the DESY II test beam\n\nSS sensor unirradiated\n\n**1.2**\n\n~~**1**~~\n\n**0.8**\n\n**0.6**\n\n**0.4**\n\n**0.2**\n\n**0**\n\n|s2|0 at 24o|C|Col4|Col5|Effici|ency w|ithout t|elepix|\n|---|---|---|---|---|---|---|---|---|\n||||||~~Effici~~<br>Eff =|~~ency w~~<br>0.99|~~ith tele~~|~~pix~~|\n||||||||||\n||||||||||\n||||||||||\n\n**20** **40** **60** **80** **100** **120** **140** **160** **180**\n\n**Threshold [DAC]**\n\n(a) Spatial correlations of H2M with (red) and without (blue) TelePix2 region of interest\ntrigger along x.\n\n(a) Measured module efficiency versus threshold.\n\n(b) Temporal correlations bet",
+        "score": -6.215563791656494,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7999999999999999,
+        "rerank_score": -9.657175064086914,
+        "matched_nodes": [
+          "In",
+          "To",
+          "OR",
+          "The",
+          "It",
+          "II"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3329,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector.md",
+        "title": "2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector",
+        "text": "red.\n\nThe second type of scenario under study is a production of a very light pseudoscalar, the decay\nproducts of which have a very high boost and are almost colinear. This is the case for an axion-like\nparticle (ALP), which in many scenarios has a macroscopic lifetime for masses of the order of GeV, and\ncould also be produced at e [+] e _[−]_ colliders in e [+] e _[−]_ _→_ a _γ_ channel [5]. The four analysed benchmarks\nassume different ALP masses, _m_ _a_ = 0 _._ 3 _,_ 1 _,_ 3 and 10 GeV, and decay lengths _cτ_ = 10 _· m_ _a_ mm/GeV to\nmaintain a consistent number of decays within the detector volume. Again, only ALP decays to muon\npairs are considered.\nW HIZARD 3.0.1 and 3.1.2 [6] was used to generate IDM at 500 GeV and ALP samples at 250 GeV\nILC, respectively, while the detector response simulation was based on G EANT 4 [7]. For the vertex\nfinding, an algorithm which is both simple and as general as possible has been developed. It is based on\nthe calculated distance between the track helices (which is required to be 25 mm at most) and the vertex\nis placed in between the points of the closest approach of the helices. At this stage a basic preselection\nis applied, aimed to reduce the number of fake vertices in the signal sample. The cuts are applied based\non track curvature, length, opening angle, and distance from the first hit to vertex.\n\n2\n\n_4_ _RESULTS IN THE TPC_\n\nFigure 1: Left: Number of displaced vertices found in the overlay sample as a function of distance from\nthe beam axis with no selection applied at all, just apart from the required maximum distance\nbetween track helices. Right: Total transverse momentum of tracks coming from a displaced\nvertex for the overlay (red) and one of the signal scenarios (blue; heavy scalars production with\n∆ _m_ _AH_ = 2 GeV) after imposing preliminary selection cuts.\n\n### **3 Background and its reduction**\n\nAt linear colliders, beam-induced background events can contribute in each bunch-crossing (BX). On\naverage, 1.05 events of the _γγ →_ hadrons process and a fraction of produced incoherent e [+] e _[−]_ pairs can be\nmeasured in the detector per single BX at the ILC. In most physics studies, this background can _overlay_\non a hard event and affect reconstruction results. However, when low- _p_ _T_ final states are expected in the\nsignal channel considered, these events can constitute background on their own and must be considered\nseparately.\nThis is also the case for the presented analysis, with the minimal num",
+        "score": -6.285640924835205,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7999999999999999,
+        "rerank_score": -9.764986038208008,
+        "matched_nodes": [
+          "In",
+          "On",
+          "At",
+          "The",
+          "For",
+          "It"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4926,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "For large and very large zenith distance air\nshowers (airmass ≳ 3 (AM3)) there is no dependency of the\nspectral shape on the energy or impact parameter. We, therefore, simulate air showers of 5 TeV gamma rays to achieve a\nhigh photon statistic per simulated event, with impact parameters between 0 – 600 m (same as used in the standard MAGIC\nMonte-Carlo (MC) simulations), randomly distributed along 2π\nin azimuth. We note that the increase in the simulated impact\nparameter range is not relevant for the determination of the\nCherenkov spectra, but only for a potential calculation of the\neffective collection area of the telescope. This is very similar\nto the approach used in [21]. The shown spectra in figure 7 are\nthe result of several thousand of such simulated events at zenith\n\ndistances 10 [◦] and 80 [◦] . We considered all photons reaching the\nimaging camera and did not include any simulation of a trigger\nlogic, since this happens only after the photons are converted\ninto electronic signals.\nBy multiplying the detection efficiency of a given detector\nwith the wavelength-dependent mirror reflectivity, the absorption of the camera entrance window, and the Cherenkov spectrum of a given zenith distance one can calculate the detectable\nfraction of Cherenkov photons for this detector type. This represents the maximum achievable efficiency as it does not take\ninto account camera and pixel fill factors. This fraction is shown\nin figure 8 for the four different light detectors under study.\nIn addition, we also show the resulting graph for the recent 7dynode Hamamatsu PMT R12992-100-05 as measured by [34]\nand used for the medium and large-size telescope imaging cameras of CTA. It is interesting to note that the SiPMs show a more\nflat behavior compared to the PMTs. All sensors show an efficiency drop once the majority of the Cherenkov light distribution is shifted towards longer wavelengths than the optimal\nPDE range.\nThe main reason for building a large IACT is to achieve a low\nenergy threshold. Especially low or medium zenith distance observations can provide a low threshold. On the other hand, over\nthe course of recent years MAGIC has maximized observations\nat large zenith distances, see for example [29, 33, 35]. These\nobservations can allow one to access sources in a wider solid\n\nangle as well as to extend the energy range of MAGIC towards\nhigher energies, from multiple tens of TeV to above 100 TeV.\nTo further motivate the necessity of larger zenith distance observ",
+        "score": -6.518821023559571,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9272727272727272,
+        "rerank_score": -10.138801574707031,
+        "matched_nodes": [
+          "In",
+          "On",
+          "To",
+          "The",
+          "We",
+          "For",
+          "It"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1192,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "d tesla-range magnetic fields [36].\nFurthermore, our easy-to-implement charge-stabilization\nscheme will find immediate applications in other quantum\ntechnology applications of SiV _[−]_, including the development\nof quantum repeaters [37], quantum networks [13, 38] or\nindistinguishable single photon sources [39]. Lastly, it is\nconceivable that our approach for generating and stabilizing\nnear-surface color centers with high optical coherence extends\nto other color centers in diamond or in other wide-bandgap\nhosts such as hBN [40] or SiC [41].\n\n**METHODS**\n\n**Optical Setups**\nTo characterize our diamond samples at room temperature (RT),\nwe employ a home-built confocal microscopy setup. This setup is\nequipped with a continuous wave (cw) 515 nm diode laser (Cobolt\n06-MLD) for off-resonant excitation. At low temperature ( _∼_ 7 K),\nthe sample is housed in a variable-temperature closed-cycle cryostat\n(attocube attoDRY800) and we perform optical spectroscopy again\nwith a home-built confocal microscopy setup. For this setup, we\nput to use cw 445 nm and cw 515 nm diode lasers (Cobolt 06-MLD)\nfor off-resonant excitation as well as a narrow-linewidth (200 kHz)\ntunable (720-739 nm) diode laser (Sacher Lasertechnik LION) for\nresonant excitation. Frequency modulation and control of the LION\nis achieved through a PID loop of a HighFinesse WS-U wavelength\nmeter. Additionally, we stabilize the intensity of the resonant laser\nthrough the PID loop of a home-built optical intensity stabilization\n(OIS) module (Physics Basel SP 999). In case of the resonant laser\nand if applicable to the experiment in question, we carve pulses with\nan acousto-optical modulator (AOM, G&H R15210), whereas the\noff-resonant lasers can be electronically modulated out of the box.\nFor both RT and LT, we focus laser light onto the sample with a\n\n6\n\n0.8 NA objective (Olympus LMPLFLN 100X) thermalized at RT,\nthrough which we also collect the signal. Photons are detected by\nsilicon-based single-photon counting modules (SPCM, Excelitas\nAQRH-33-FC). We perform photon-correlation measurements\nusing a time-correlated single-photon counting (TCSPC) system\n(PicoQuant PicoHarp 300) connected to the SPCMs. For optical\nlifetime measurements we use a pulsed laser (NKT Photonics\nSuperK Extreme EXW-12) tuned to 515 nm and said TCSPC system. Optical spectra are recorded on the camera of a spectrograph\n(Princeton Instruments SP-2500).\n\n**Data availability**\nThe data that support the findings of this study are available",
+        "score": -6.532295721435546,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7999999999999999,
+        "rerank_score": -10.144454956054688,
+        "matched_nodes": [
+          "In",
+          "To",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -6.544329613113403,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7999999999999999,
+        "rerank_score": -10.162968635559082,
+        "matched_nodes": [
+          "In",
+          "To",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4603,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter.md",
+        "title": "2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter",
+        "text": "the optical budget for the ASE-sourced transmitter and evolution of the rawkey rate and QBER when seeding Alice’ polarization encoder with (b) the ASE-sourced and (c) the Ge-on-Si PIN light source.\n\ndrive to suppress symbol transitions. Before transmitting the photons to Bob, we used an optical attenuator to set the signal\nlaunch power to a mean photon number of μ Q = 0.1 photons/symbol.\n\nAt Bob’s side we manually aligned the polarization of the incoming signal to the axes of our polarization analyzer with a\npolarization controller (PC). The outputs of the polarization analyzer were connected to a pair of free-running InGaAs SPADs\nwith dark count rates of 560 and 525 cts/s. We consecutively measured the received quantum signal in the **H** / **V** and **D** / **A** bases\nand recorded the detection events of the SPADs with a TTM. A real-time QBER evaluation was then performed, which included\n\n|12 0.1<br>10 [kb/s] = Q<br>µ<br>8<br>rate<br>6<br>key<br>4<br>Raw<br>2<br>0<br>-16 -12 -8 -4<br>(a) Relative optica|hν/pulse|\n|---|---|\n|<br>0<br>2<br>4<br>6<br>8<br>10<br>12<br>-16 -12 -8<br>-4<br><br>**Relative optica**<br>**Raw key rate [kb/s]**<br>(a)<br>µQ = 0.1|0<br>4<br>8<br>12 16<br>**l budget****_OB_ [dB]**|\n|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|\n\nframe synchronization with the pre-defined pseudo random bit sequence transmitted by Alice, as well as temporal filtering to\n50% of the symbol period to reduce the dark counts. Additionally, basis sifting was performed during this process.\n\nTo confirm the correct operation of our transmitter and receiver architectures we also performed a classical\n\ncharacterization. For this we replaced the attenuator by an additional EDFA and the SPADs and TTM with balanced receivers\nand a real-time oscilloscope. The carved optical output at Alice ( _Ξ_ ) and the characteristic three-level signals ( _ρ_ ) for the **H** / **V** and\n**D** / **A** bases under 4-state polarization encoding are included in Fig. 3(a).\n\nIn order to assess the performance as a function of the optical budget (OB) between Alice and Bob, defined as the difference\nof the transmitted power level at Alice and the received optical power (ROP) at Bob, we used the ASE seed light for Al",
+        "score": -6.629673355484009,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7999999999999999,
+        "rerank_score": -10.294266700744629,
+        "matched_nodes": [
+          "In",
+          "To",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "At": 1.0,
+      "Pixel": 1.0,
+      "Im": 1.0,
+      "OR": 1.0,
+      "MIN": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "At": 1.0,
+      "Pixel": 1.0,
+      "Im": 1.0,
+      "OR": 1.0,
+      "MIN": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "It": 0.7,
+      "II": 0.7,
+      "III": 0.7,
+      "Reaction Flux": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 15,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.131663685198873,
+    "generation_latency_s": 5.499459803104401e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 15.0,
+    "retrieval_latency_s": 6.131663685198873,
+    "generation_latency_s": 5.499459803104401e-07
+  }
+}

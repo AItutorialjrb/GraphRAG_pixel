@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "neg010",
+    "query_type": "negative",
+    "query": "What exact password should I use to access CERN GitLab?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "exact",
+      "password",
+      "should"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What exact password should I use to access CERN GitLab?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2008,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "in 2017.\nThe Conditions Database is stored in a Git repository hosted on the CERN GitLab\ninstance. Conditions data are accessed by a library, which also adds the time dimension\n(i.e. the interval of validity for a given condition) to the filename and versioning dimensions\nprovided by a Git repository. The `YAML` standard is used to persist condition data.\nConditions values in the Conditions Database are used in different contexts and have to\nsupport different use cases, in particular simulation and real data processing. In simulation,\nthe response of the detector for fixed sets of conditions is exploited. In real data processing,\nthe time evolution of conditions is followed, with the Git versioning of data used to\ntrack the evolution of the response of subdetectors, or improved alignment algorithms.\nConditions data can be generated automatically in the online environment, for example\ncalibration and alignment parameters or temperature and pressure values retrieved from\nprobes, or produced manually for example in offline workflows that require expert analysis\nbefore inclusion in the database. In the former case, conditions are automatically pushed\n\n–\nto the GitLab project and published to the CERNVM file system (CVMFS) [204 206],\nwhile the offline conditions have to be proposed in the form of GitLab merge requests,\nto undergo a review before being integrated and published.\n\n##### **12.3 Detector geometry description**\n\nThe description of the geometry of the LHCb detector serves a wide range of applications, from simulation to detector alignment, visualisation, and computation of material\nbudget. It must fulfil the LHCb needs in terms of flexibility, management, integration\nwith the conditions database, and speed of navigation between detector elements. The\nDetector Description for HEP (or DD4HEP ) toolkit [207] is used for the LHCb detector\ndescription. It replaces an XML-based framework [208], designed and implemented within\nthe collaboration, but not optimised for modern computing architectures and no longer\nmaintained. The DD4HEP toolkit builds on the experience gathered by LHC experiments\nand aims to bind the existing tools for detector description, simulation and visualisation to\nproduce a consistent toolkit. Its structure is modular, with a generic detector description\nmodel as its core, and a set of nonmandatory extensions or plugins that can be used when\nneeded. The object model and visualisation are provided by the ROOT framework. For\nsimulations,",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 20.813404051491602,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 190,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 2009,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "it. Its structure is modular, with a generic detector description\nmodel as its core, and a set of nonmandatory extensions or plugins that can be used when\nneeded. The object model and visualisation are provided by the ROOT framework. For\nsimulations, the Geant4 toolkit is used.\n\n##### **12.4 Software infrastructure**\n\nThe LHCb software stack depends on many software packages developed at CERN, in\nother scientific institutions, or in industry. Many of these packages are open source.\nExternal packages must be tracked, versioned, compiled and distributed. LHCb uses the\n_LCG releases_ [209], which are prepared by the EP-SFT groups at CERN, for packages\nthat are common among the LHC experiments. These releases are prepared using the\nLCGCmake [210] tool.\nAs many developers are involved in the development of the millions of lines needed\nfor the experiment framework, a strong version control system and good practices are\ncrucial to ensure the quality of the software. The LHCb code base is split into several\nprojects, versioned and managed independently, each having a distinct goal. Each of these\nprojects is managed using the Git [211] version control system. This allows keeping the\n\n161\n\nfull history of all code changes. Code reviews are prevalent in the software industry, as a\nway to improve code quality and harmonise development practices across organisations.\nLHCb Git projects are hosted on the CERN GitLab server, which also provides features\nallowing better collaboration between the members of the teams. New features to the code\nare peer-reviewed before being merged into the main code base. The projects are organised\naround the Jira [212] task management and the GitLab issue management systems,\nas deployed by the CERN IT department. This allows the developers within the LHCb\ncollaboration to follow the evolution of the projects and collaborate in a constructive\n\nmanner.\n\nA Software Configuration Database has been built to track all projects and their\ndependencies [213] using the Neo4j graph database [214]. This information is crucial to\nthe management of the software in the short term, but is also necessary to identify the\nsoftware needed to continue analysing the LHCb experiment data in the long term.\nIn order to ensure the quality of the software produced by the developers, automatic\nbuilds of the software are performed, as described in ref. [215]. This infrastructure relies\non the industry-tested Jenkins [216] automation server as deployed in the CERN IT\nOp",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 19.974998155597792,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 191,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 7058,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2877168__2502.03903__Caribou__A_versatile_data_acquisition_system_for_silicon_pixel_detector_prototyping.md",
+        "title": "2025__recid_2877168__2502.03903__Caribou__A_versatile_data_acquisition_system_for_silicon_pixel_detector_prototyping",
+        "text": "d recent extensions of the Caribou DAQ system for picosecond timing_\n_with an FPGA TDC_, JINST 18 C02005, TWEPP2022 (2022)\n\n[5] CLICdp Collaboration (eds. D. Dannheim et al), _Detector technologies for CLIC_, CERN Yellow\nReports: Monographs, CERN-2019-001 (2019)\n\n[[6] Peary software GitLab repository, https://gitlab.cern.ch/Caribou/peary](https://gitlab.cern.ch/Caribou/peary)\n\n[[7] CaR board GitLab repository, https://gitlab.cern.ch/Caribou/hardware/carboard](https://gitlab.cern.ch/Caribou/hardware/carboard)\n\n[[8] Boreal firmware GitLab repository, https://gitlab.cern.ch/Caribou/boreal](https://gitlab.cern.ch/Caribou/boreal)\n\n[9] S. Ruiz Daza et al., _H2M: Porting a hybrid readout architecture into a monolithic 65 nm CIS_, JINST,\nPIXEL2024 (2025)\n\n[[10] PetaCaribou Gitlab repository, https://gitlab.cern.ch/Caribou/peta-caribou](https://gitlab.cern.ch/Caribou/peta-caribou)\n\n[[11] Caribou project website, https://caribou-project.docs.cern.ch](https://caribou-project.docs.cern.ch)\n\n– 5 –",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 18.805018722317023,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4470,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr.md",
+        "title": "2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr",
+        "text": "view\non a 2 _×_ N spin-qubit device with strong constraints, such\nas the access to semi-global single-qubit gates only (apart\nfrom phase gates). In the following, we argue that our\nproposition is also practical, _i.e._ that the required physical error rates and resource requirements for such a device\nare not experimentally out of reach.\n\n_1._ _Noise model_\n\nFirst, let us discuss the noise model we adopt to estimate the performance of our system. The main ingredient we extensively make use of here and that requires\nmodelling is shuttling. When an electron is shuttled,\nits _g_ -factor varies due to inhomogeneities in the device,\nwhich induces unwanted phase rotations in the laboratory reference frame. Systematic rotations can be calibrated away, so that we are effectively describing an electron in a shuttled reference frame [18, 50, 51]. When the\nphase is not exactly cancelled out owing to incorrect calibration, one can expect the data qubits of the device to\neach undergo some small coherent rotation (remember\nthat only data qubits are shuttled). As coherent errors\nare difficult to simulate classically and potentially more\nharmful than stochastic errors, twirling is generally used\nto transform them into Pauli errors [52]. However, this\nmethod is unfortunately not fully permitted in our device\nas some of the single-qubit gates can only be implemented\nsemi-globally. As such, the only natural candidate for a\ntwirling gate set tailored to phase rotations and respecting our constraints is _W_ = _{I, X_ 1 _⊗_ _... ⊗_ _X_ _n_ _}_ (with _I_\nthe identity gate, _X_ _i_ the Pauli _X_ gate on data qubit _i_\nand _n_ the number of data qubits). Nonetheless, one can\neasily see that a Pauli _Z_ error on an even number of data\nqubits commutes with both gates of _W_ and will thus not\nbe extracted from the coherent phase rotations by the\ntwirling gates (another, more mathematical justification\n\ncan be obtained by using Eq. 7 of [53]). Therefore, only\nodd-order errors ( _i.e._ Pauli _Z_ errors affecting an odd\nnumber of qubits) will correctly be twirled. If this poses\nsome difficulties for the exact simulation of our system, it\nshould however not be fatal in terms of performance, as\nthe logical-level noise has been shown to behave similarly\nfor coherent and random errors in large enough surface\ncodes [54].\nTherefore, even though the twirling process is not perfect, we still approximate the remaining errors by some\nrandom dephasing of probability _p_ _sh_ for simulation purpose",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 18.182200692610483,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 21,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2023,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "mportantly,\nall basic analysis building blocks are shared between the trigger, the `sprucing` and the\noffline analysis, thus guaranteeing that the same software is used to compute the same\nquantities online and offline.\nFollowing this approach, the DaVinci analysis software is descoped (compared to\nthe versions designed to process the legacy data) to be only used for producing output\ntuples from input data (including simulation). Its core is an algorithm to produce _ntuples_\nthat stores measured quantities using _functors_ provided by the ThOr framework [250]\nwithin Moore . [88] These are the same functors that are used in the trigger or `sprucing`\nalgorithms, thus ensuring a one-to-one correspondence between applied selection requirements and observables used offline. It should be emphasised here that since no full offline\nreconstruction is foreseen in the computing model, the input data objects (tracks, clusters,\netc.) are identical online and offline [9,194].\n\n**12.6.4** **Data and analysis preservation**\n\nThe centrally produced samples are preserved on the distributed computing infrastructure\nand catalogued in a dedicated LHCb bookkeeping system (see section 12.7). In 2020\nLHCb ratified the CERN Open Data policy [251]. In accordance with the access policies\noutlined in this document, LHCb will make the output of the `Turbo` selections as well as\nthe output of the `sprucing` available to the public through the CERN Open Data portal.\nThe software necessary to read these files will be preserved as CVMFS releases. In order\nto enable secure access for third parties to the replicas of the data stored on the grid, a\n\n88 Ntuples are collections of variables related to an event, typically stored in a format suitable for Root\nor python packages. Functors are C [++] objects used in the LHCb code to return calculated kinematic\nvariables.\n\n171\n\nFigure 121: Diagram of a DIRAC release components. The concepts of (top) _horizontal_ and\n(bottom) _vertical_ extensibility are illustrated. Reproduced from [253]. © 2022 IOP Publishing\nLtd. CC BY 3.0.\n\nweb-based interface is under development, which will allow users to configure analysis\nproduction jobs with minimal knowledge of the LHCb software.\nTo facilitate flexibility and creativity in the end-user analysis, implementing a statistical\ninterpretation of the filtered data, only minimal constraints are placed on the necessary\nanalysis code. While commonly used libraries, such as RooFit, ScikitHEP [252], etc.\nare available",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 17.37990745470827,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 205,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7799,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+        "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+        "text": "ollected charge is reduced by 40% or more. In this report it was shown\nthat a combination of TCAD and Allpix [2] simulations deliver predictions on\ncollected charge that match quite well the value of saturated charge extracted\nfrom data. It was also shown that the voltage at which the saturation starts\ncan be correctly reproduced.\n\n13\n\nUsing this validated combined model predictions on collected charge at\nexpected fluences for the future ATLAS Inner Tracker were prepared. It was\nshown that the collected charge should always be well above the threshold,\nassuring a large signal-to-threshold ratio. The results also indicate that it\nwill not be necessary to run at the maximal voltage but a few hundreds of\nvolts less should anyhow assure full efficiency.\nSimilar studies are in preparation for 3D sensors which will be used in\nthe innermost layer of the ATLAS Inner Tracker; these sensors are expected\nto integrate fluences as high as Φ = 1 _._ 6 _×_ 10 [16] n eq _/_ cm [2] which is almost a\nfactor of 3 larger of what tested in this report. Given the different sensor\ngeometry and fluence range a dedicated study is needed.\nThe validated simulation model will be used to prepare look-up tables\nwhich will be input to the new algorithm [13] to include radiation damage\neffects in the ATLAS Monte Carlo event generator. It will be then possible\nto complete the assessment of the robustness of tracking and vertexing algorithms for ITk [10] exploring conditions close to those expected during data\ntaking.\n\n**Acknowledgements**\n\nThe author wants to thank Anna Macchiolo of Universität Zürich for\n\nsharing the CMS tracker group papers on passive CMOS pixels productions.\nThe author is thankful to the Allpix [2] developers and to Igor Mandić of Jožef\nStefan Institute of Ljubljana for the useful suggestions and discussions.\n\n**References**\n\n[1] I. Dawson, Radiation effects in the LHC experiments: Impact on detector performance and operation, CERN Yellow Reports: Monographs,\nCERN, Geneva, 2021. doi:10.23731/CYRM-2021-001.\nURL `https://cds.cern.ch/record/2764325`\n\n[2] M. Moll, Displacement damage in silicon detectors for high energy\nphysics, IEEE Transactions on Nuclear Science 65 (8) (2018) 1561–1582.\ndoi:10.1109/TNS.2018.2819506.\n\n[3] Performance of ATLAS Pixel Detector and Track Reconstruction at the\nstart of Run 3 in LHC Collisions at _[√]_ ~~_s_~~ = 900 _GeV_, Tech. rep., CERN,\n\n14\n\nGeneva (2022).\nURL `https://cds.cern.ch/record/2814766`\n\n[4] M. Aaboud, et al., Modelling radiation",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 17.077840446615284,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4204,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS.md",
+        "title": "2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS",
+        "text": "ance from the electrode. (b) Signal\n\nrise time as a function of distance. (c) Projection on the x axis of A pixel over the pixel area.\n\n(d) A pixel distribution for all the events in a pixel.\n\n**8. Calibration and alignment**\n\n_8.1. FAST2 calibration and saturation_\n\nTo ensure uniform response across the 7 pixels, the amplifier response of the\n\n14 FAST2 channels, 8 EVO1 and 6 EVO2, have been equalized by imposing\n\nthat the MPV i is the same for all electrodes. The calibration constants are the\n\nsame for all runs and vary between 0.9 and 1.1.\n\n_∼_\nThe FAST2 output signal saturates at about 300 mV ( 30 fC) for EVO1\n\n_∼_\nchannels and at about 250 mV ( 25 fC) for EVO2 channels. Since saturated\n\n17\n\nsignals introduce very strong distortions in the spatial and temporal reconstruc\n\ntions, this analysis did not use events with saturated amplifiers.\n\n_8.2. DUT-telescope alignment_\n\nThe telescope and the DUT have been aligned with a software procedure by\n\nintroducing an x- and y-offset and a rotation. The offset and the rotation were\n\napplied to the telescope reference system.\n\nThe offset was computed by exploiting the fact that the mean value of the\n\ntelescope x (y) hit positions should be centered on the nominal x (y) posi\n\ntion of the electrode with the highest amplitude. The data were divided into\n\n14 histograms, one per electrode, each containing the telescope hit position\n\nfor the events where that specific electrode has the highest signal. The differ\n\nence between the telescope mean value and the electrode coordinate, ∆x i =\n\n( _<_ x track _>_ – x el–max=i ), is the optimal shift for electrode i. Given the\n\npresence of a rotation, it is impossible to find a single shift in x (y) that min\n\nimizes the 14 ∆x i at once; what should be minimized is the sum all ∆x i . //\n\nΣ [14] i=1 [(] _[<]_ [ x] [track] _[ >]_ – x el–max=i ).\n\nFigure 11: Alignment procedure: first, the x-, y- offset is computed, then a rotation is applied.\n\nAfter having determined the best shift, the rotation was computed by min\n\nimizing the sum of the absolute value of the distances. // Σ [14] i=1 _[|][ <]_ [ x] [track] _[ >]_\n\n–x el–max=i _|_ . The rotation was found to be _θ_ = -0.025 radiants. This procedure\n\nis shown in Figure 11.\n\n18\n\n**9. Test beam results**\n\n_9.1. Spatial resolution_\n\nFor each of the bias voltages listed in Table 2, the spatial resolution in x,\n\ny were computed with three different algorithms: (i) the DPC method with\n\nthe signal amplitude, DPC [ampl], (ii) the ST method w",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 16.42349005359559,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 778,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2661012__2305.10957__High-quality_superconducting_alpha-Ta_film_sputtered_on_the_heated_silicon_substrate.md",
+        "title": "2023__recid_2661012__2305.10957__High-quality_superconducting_alpha-Ta_film_sputtered_on_the_heated_silicon_substrate",
+        "text": "ficreports/\n\n**Competing interests**\nThe authors declare no competing interests.\n\n**Additional information**\n**Supplementary Information** [The online version contains supplementary material available at https://​doi.​org/​](https://doi.org/10.1038/s41598-023-39420-y)\n[10.​1038/​s41598-​023-​39420-y.](https://doi.org/10.1038/s41598-023-39420-y)\n\n**Correspondence** and requests for materials should be addressed to K.X. or J.F.\n\n**Reprints and permissions information** is available at www.nature.com/reprints.\n\n**Publisher’s note** Springer Nature remains neutral with regard to jurisdictional claims in published maps and\ninstitutional affiliations.\n\n**Open Access** This article is licensed under a Creative Commons Attribution 4.0 International\nLicense, which permits use, sharing, adaptation, distribution and reproduction in any medium or\nformat, as long as you give appropriate credit to the original author(s) and the source, provide a link to the\nCreative Commons licence, and indicate if changes were made. The images or other third party material in this\narticle are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the\nmaterial. If material is not included in the article’s Creative Commons licence and your intended use is not\npermitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from\n[the copyright holder. To view a copy of this licence, visit http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/.](http://creativecommons.org/licenses/by/4.0/)\n\n© The Author(s) 2023\n\n**Scientific Reports** | (2023) 13:12810 | https://doi.org/10.1038/s41598-023-39420-y\n\n7\n\nVol.:(0123456789)",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 15.49872344198188,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2428,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "n, AMS-02 has also published\ndata on [3] He/ [4] He [150] and those on [2] H/ [4] He should follow soon. The production of these light nuclei should also\nbe revisited because these ratios provide complementary\nconstraints on CR propagation. Indeed, [2] H and [3] He are\nsecondary species and their predictions also suffer from\nnuclear reaction uncertainties [151]. A future work will\nalso quantify what are the critical reactions to be measured in that case.\n\n**ACKNOWLEDGMENTS**\n\nThis work has been supported by the “Investissements\nd’avenir, Labex ENIGMASS” and by the Programme\nNational des Hautes Energies of CNRS/INSU with INP\nand IN2P3, co-funded by CEA and CNES. IVM acknowledges partial support through NASA Grants No.\n80NSSC23K0169 and No. 80NSSC22K0718. M.U. acknowledges the support of the German Research Foundation DFG (Project No. 426579465). We thank the\nNA61/SHINE collaboration for their very useful feedback\nduring the _NA61++/SHINE: NA61++/SHINE: Physics_\n_Opportunities from Ions to Pions_ meeting, which motivated the calculations made for Section V.\n\n**Appendix A: Energy-dependent view of the**\n**fragmentation contributions, channels, and**\n**progenitors**\n\nIn this Appendix, we present an energy-dependent\nview of the various fragmentation contributions (shown\nat 10 GeV/n only in Table I), alongside an energydependent view of the rankings of the progenitors and\nchannels.\nFigures 7 to 12 provide, as a function of _E_ _k/n_, a graphical view of the CR origin, and the ranking of channels\nand progenitors (in three different panels, from top to\nbottom respectively). We choose to show a TOA energy\ndomain ranging from hundreds of MeV/n to hundreds\nof TeV/n, which corresponds to the range covered by recent and current CR experiments, Voyager 1, ACE-CRIS,\nAMS-02, and TRACER, ATIC, CREAM, NUCLEON,\nCALET, DAMPE. We consider here all CR elements\nfrom Li to Si, updating the results shown in Paper I for\nLi to N.\n\n**1.** **Origin of contributions**\n\nThe top panels of Figs. 7-12 extend the conclusions\nalready drawn (at one energy) from Table I, relative to\nthe primary ( _f_ prim ), fragmentation ( _f_ sec ), and radioactive ( _f_ rad ) nature of the various CR elements. Concerning _f_ rad, only B (top-left panel of Fig. 8) and Mg (topright panel of Fig. 11) have non-zero contributions (orange dotted lines), which quickly drop to zero as energy\n\n increases owing to a boosted lifetime of the associated _β_\nunstable parent CR. Concerning the energy dependence\nof _f_ sec",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 15.018703480809108,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 41,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2907,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2698935__2309.09626__Scalable_Atomic_Arrays_for_Spin-Based_Quantum_Computers_in_Silicon.md",
+        "title": "2024__recid_2698935__2309.09626__Scalable_Atomic_Arrays_for_Spin-Based_Quantum_Computers_in_Silicon",
+        "text": "**Configuration I** **18 keV** **[123]** **Sb⁺** **Configuration II**\n\n**Incident Ion beam**\n\n**35 nm**\n\n**<0.5° taper**\n\n**2° roll**\n\n**4° taper**\n\n2 4 6 8 10 12 14 16 18\n**E** **ion** **[keV]**\n\n1 2 3 4 5 6 7\n\n**q [keV]**\n\nFIG. 6. **a)** Schematic of two different geometric nano aperture\nconfigurations exposed to an incident beam of 18 keV [123] Sb\nions. **b)** Simulated kinetic ion energy distributions of _[∼]_ 50,000\n(i.e. 100%) ions after passing through two nano aperture configurations. c) Corresponding simulated signal spectra, plotted on a log scale for improved visibility, of the signal event\npercentage that originates from scattered ions. Cumulative\ndistribution line plots are provided in **b)** and **c)** .\n\ntures do not constitute a general scalability limitation for\nthe employed single ion detectors, since the latter can be\ncombined with a scatter-free focused ion beam (FIB) approach [33].\nIt is worth noting that implantation signal events from\nforward recoiled atoms sputtered from the aperture itself (Si, N, Au) are extremely rare due to the optimised\naperture design (totalling _≤_ 0.01%) and are not further\naddressed here.\n\n9\n\n**ACKNOWLEDGMENTS**\n\nThe research at the University of Melbourne and\nUNSW was funded by the Australian Research Council Centre of Excellence for Quantum Computation and\nCommunication Technology (Grant No. CE170100012)\nand the US Army Research Office (Contracts No.\nW911NF-17-1-0200 and W911NF-23-1-0113). We acknowledge a grant from the University of Melbourne Research and Infrastructure Fund (RIF) and use of the facilities of the Australian National Fabrication Facility\n(ANFF) at the Melbourne Centre for Nanofabrication\n(MCN) and at UNSW. The authors acknowledge access\nto the NCRIS funded Heavy Ion Accelerator Capability at the University of Melbourne. S.G.R and H.R.F.\nacknowledge the support of an Australian Government\nResearch Training Program Scholarship. A.M. Jakob acknowledges an Australia–Germany Joint Research Cooperation Scheme (UA-DAAD) travel scholarship that\nsupported collaboration with partner institutions in Germany. We are grateful to D. McCulloch of the RMIT Microscopy and Microanalysis Facility for use of SEM/FIB\nand TEM equipment. The views and conclusions contained in this document are those of the authors and\nshould not be interpreted as representing the official policies, either expressed or implied, of the ARO or the US\nGovernment. The US Government is authorized to reproduce and distribute reprints",
+        "score": 0.014084507042253521,
+        "dense_score": null,
+        "bm25_score": 14.963094683218817,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.1871470487676561,
+    "generation_latency_s": 1.2014061212539673e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.1871470487676561,
+    "generation_latency_s": 1.2014061212539673e-07
+  }
+}

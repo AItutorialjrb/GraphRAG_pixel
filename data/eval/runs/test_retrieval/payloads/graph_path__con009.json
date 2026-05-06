@@ -1,0 +1,405 @@
+{
+  "benchmark": {
+    "query_id": "con009",
+    "query_type": "conceptual",
+    "query": "Why is abstention important for scientific RAG?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "RAG"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why is abstention important for scientific RAG?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1010,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system.md",
+        "title": "2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system",
+        "text": "us and the one being tested is given. Furthermore, the\n\npossibility of a direct comparison has the advantage that no\nradioactive source with fixed energy is needed so that the\nmeasurements can be made with cosmic rays as well.\n\n**3. General measurement methods**\n\nThe main focus in the development of the detector is to\nachieve a good time resolution. For this, not only a low rise\ntime but also a minimized jitter is important. We consider\nthe noise being Gaussian distributed, so jitter is defined as:\n\n_𝜎_ _𝑛_\n_Jitter_ = (1)\n_𝑑𝑈_ ∕ _𝑑𝑡_ _[.]_\n\nHere, _𝜎_ _𝑛_ is the width of the Gaussian distribution, and _[𝑑𝑈]_ ∕ _𝑑𝑡_\nis the slope of the signal at trigger voltage level. To compare\ndifferent circuits among each other, the amplitude (which\nwas taken as an average over 5 maximum voltages of the\nwaveform for the selection between the individual circuits,\nor 10 - 15 maximum voltages for the exact measurements of\nthe final circuits) measurements were made in comparison\nto the amplitude _𝐴_ _𝑟𝑒𝑓_ of the reference setup on the opposite\nside of the scintillator bar. If the noise of the SiPM circuits is\nthe same, the jitter is in first order proportional to\n\n_𝑡_ _𝑟𝑖𝑠𝑒_ ⋅ _𝐴_ _𝑟𝑒𝑓_\n_𝐽_ = (2)\n\n_𝐴_\n\nwhere _𝑡_ _𝑟𝑖𝑠𝑒_ denotes the rise time of the signal (defined as\nthe time required to rise from 10 % to 90 % of the maximum\nvoltage of the waveform) and _𝐴_ the signal amplitude. Thus,\na high amplitude is also beneficial to keep the jitter low. For\nthis reason, the parameter _𝐽_ was also taken into account when\ncomparing different circuits.\nFor all measurements, the “J-Series 60035” SiPMs from\nonsemi were used. The supply voltage was set to _𝑉_ _𝐵𝑖𝑎𝑠_ = 29 V\nfor one single SiPM. This was realized with “Caen A7585”\npower supplies. The triggering was performed at the 341 keV\n(or 1060 keV for the combination of the final preamplifier\nand SiPM array as in Section 5.3) Compton edge of the [22] Na\n\nsource.\n\n**4. Circuit development of a 2** × **2 SiPM array**\n\n_4.1. Known options for SiPM interconnection and_\n_their effects_\n\nAs with any electronic component, there are initially two\noptions for interconnecting SiPMs: series interconnection\nand parallel interconnection. Series connection of SiPMs\noffers two major advantages. First, it provides “automatic\novervoltage adjustment”, which means that despite different\nbreakdown voltages, the same overvoltage is automatically\nset [ 11 ]. This is possible because in a serial connection, the\nsame current flows through all SiPMs. Since the cur",
+        "score": -6.605828390480567,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7313739432724975,
+        "rerank_score": -10.249452590942383,
+        "matched_nodes": [
+          "For",
+          "If",
+          "The",
+          "We",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1132,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2677240__2302.12669__Design_optimization_of_plastic_scintillators_with_wavelength-shifting_fibers_and_silicon_p.md",
+        "title": "2023__recid_2677240__2302.12669__Design_optimization_of_plastic_scintillators_with_wavelength-shifting_fibers_and_silicon_p",
+        "text": "ramatically.We\ncalculate the integral area under the red and the black line in the upper left and lower right panel of the Figure, then multiply the integral area\nof the red line in the upper left panel by the area in the lower right panel as the transmission performance of the whole region of option 4, do\nthe same for the black as for the red line; The product of the two integral areas is used as the transmission performance of the entire region\nof option 2. Finally; We divide the product of the integral area of the red line by the product of the black, and find that the ratio is 2.21. This\nshows that the transmission performance of the whole area of option 4 is 2.21 times better than that of option 2.\n\noption have been quantitatively explained and a good reference and guidance suggestions for the processing technology\nand structure design were provided.\nFor a PS detector, the most important factor, in addition to\nlight yield, is the muon tagging efficiency. In the next section,\nThe muon tagging efficiency and inefficiency are discussed.\n\n**C.** **Muon tagging efficiency and inefficiency**\n\nTo simplify the simulation process, assuming that the photon detection efficiency (PDE) of SiPM is equal to 30%. The\nsum of four SiPM outputs at both ends can be acquired un\n\nder different options to further study the muon tagging efficiency. Figure 10 shows the two-dimensional distribution of\nlight yield at both ends of option 2, option 3-1, and option 4 in\nsimulation, respectively. The abscissa is the sum of the SiPM\noutputs at one PS end, and the ordinate is the sum at the other\nend. The range of light yield at both ends of option 4 is the\nstrongest and most divergent. If the sums at both ends of an\nevent are greater than their respective threshold at the same\ntime, it is considered that this muon has been detected. The\nevent count of muon hitting the PS strip is noted as _N_ _all_, with\nthe event count of detected muon noted as _N_ _tag_ . The muon\ntagging efficiency is defined by the ratio _N_ _tag_ / _N_ _all_ . Here,\nthe environmental background is not considered, mainly to\n\n9\n\n600\n\n500\n\n400\n\n300\n\n200\n\n100\n\n400\n\n350\n\n300\n\n250\n\n200\n\n150\n\n100\n\n50\n\n200\n\n160\n\n140\n\n120\n\n100\n\n80\n\n60\n\n40\n\n20\n\n600\n\n500\n\n400\n\n300\n\n200\n\n100\n\n250\n\n200\n\n150\n\n100\n\n50\n\n600\n\n500\n\n400\n\n300\n\n200\n\n100\n\n0\n\n|Option2|Col2|\n|---|---|\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n|Option2||\n\n0 100 200 300 400 500 600",
+        "score": -6.668743334175636,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7313739432724975,
+        "rerank_score": -10.346244812011719,
+        "matched_nodes": [
+          "For",
+          "If",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4864,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2778403__2404.10866__Spectroscopic_Measurements_and_Models_of_Energy_Deposition_in_the_Substrate_of_Quantum_Cir.md",
+        "title": "2024__recid_2778403__2404.10866__Spectroscopic_Measurements_and_Models_of_Energy_Deposition_in_the_Substrate_of_Quantum_Cir",
+        "text": "in the modeling we have performed and in the measurements we have made with conventional spectrometers and the TKID superconducting\nsensors. We find the PARMA model of atmospheric secondary cosmic rays to be good, though the best match to\nour measurements required rescaling the hadronic component (including muons) by 0.88 and the electromagnetic component by a location-varying factor ranging between 0.5 and 0.8. Apart from the intensity scaling, we\nargue it is important to include species other than muons\nin the cosmic ray model: electrons and gamma rays contribute to the backgrounds in silicon at the same energies\nas muons do, especially at higher-elevation sites. Critically, protons and neutrons generate rare events at substantially higher energies. For terrestrial gamma rays,\nthe spectra acquired in three widely separated sites varied\ngreatly in intensity (by a factor of 4), but not in shape.\nAn assumption of secular equilibrium in the [238] U and\n232 Th decay chains is supported by the measured spectra,\nconsiderably simplifying construction of the background\nmodels. The data support a break in equilibrium at the\nradon step in the [232] Th chain with a 3/2 activity ratio.\nThe data do not constrain the pre-radon section of the\n238 U chain, due the paucity of energetic gamma rays from\nthat portion of the decay chain. To model the spectrum\ncorrectly, it is necessary to account for Compton scattering of the terrestrial gamma-ray background. Finally,\nfor the conditions studied here (an unshielded, groundlevel laboratory, with devices on silicon substrates and\nmost reliable for events with _E >_ 40 keV), shielding by\nthe cryostat body and the laboratory ceiling plays only\na modest role. As a result, highly simplified geometric\nmodels of these components were adequate.\n\nIn summary, we present the first spectroscopic measurement of background events in a silicon die whose size\nand temperature is representative of the substrates used\n\nin superconducting quantum circuits. A model of these\nradiation backgrounds as the result of naturally occurring\nradioisotopes and of cosmic rays was matched to our specific local conditions via measurements performed with a\nstandard, commercially available gamma-ray spectrometer. This model, without free parameters, agrees quantitatively with spectral measurements of the radiation\nbackground when performed with energy sensors similar\nin size and composition to many quantum circuits. We\nuse the models to demonstrate how different c",
+        "score": -6.825098000681569,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8419846725132338,
+        "rerank_score": -10.599893569946289,
+        "matched_nodes": [
+          "For",
+          "An",
+          "The",
+          "In",
+          "We",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5241,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "em [6]–[8]. (1) If the secondary photon is absorbed by\nthe neighboring Single Photon Avalanche Diode (SPAD) and\ntriggers an additional avalanche within the same SiPM, it\nis referred to as internal optical crosstalk (iCT) [9]. More\nspecifically, iCT can further be divided into direct crosstalk\nand delayed crosstalk based on whether the electron is produced in the depleted region or in the undepleted region.\nMore information can be found in [10]. (2) Secondary photons\ncan pass through the SiPM window, escape, and be detected\nby external photo-sensors, such as another SiPM facing the\nfirst one, known as external crosstalk (eCT) [11]. (3)The final\ncorrelated effect is optically-induced afterpulsing (AP) [12],\nresulting from electrons in the undepleted region within the\nsame cell [10]. As the result, optical-induced AP usually appears behind the primary pulse after hundreds of nanoseconds\nto microseconds because of the recharge time of SPADs. As a\nresult, optically-induced AP typically occurs after the primary\npulse, ranging from hundreds of nanoseconds to microseconds,\ndue to the recharge time of SPADs\nThese correlated effects could significantly impact experiments aiming to achieve a large photon-sensitive area using\nSiPM readout, as detailed in the Darkside and nEXO references [13] [14]. First of all, the light yield of the detector\nis probably overestimated since single incident photons would\ngenerate a signal with the integral area larger than 1 PE (photoelectron), because of the presence of iCT, eCT or AP. To\nestimate the corrected light yield, the knowledge of the probability of the three correlated effects is important. In addition\nto light yield overestimation, other negative effects need to\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 2\n\nbe considered. For instance, the presence of AP can impede\nthe n/ _γ_ pulse shape discrimination in the background rejection\nanalysis when using the prompt fraction method. Moreover, a\nhigh percentage of iCT and eCT would degrade the energy\nresolution. Additionally, eCT also generates unavoidable coincidental background in low threshold experiments, as eCT\nsignals always occur simultaneously.\nOverall, for any experiment employing large area SiPM\narrays, the understanding of SiPM correlated noises is mandatory. The iCT probability is calculated by _P_ _iCT_ = _N_ _[N]_ (0 [(][1] _._ _[.]_ 5 [5] _P E_ _[ P E]_ ) [)]\n\n[15], where _N_ (1 _._ 5 _PE_ ) is the dark count rate (DCR) with\n1.5 PE threshold",
+        "score": -6.847361657346605,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8893892707592637,
+        "rerank_score": -10.639760971069336,
+        "matched_nodes": [
+          "For",
+          "On",
+          "If",
+          "The",
+          "In",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5692,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2713966__2310.16805__Cavity-mediated_iSWAP_oscillations_between_distant_spins.md",
+        "title": "2025__recid_2713966__2310.16805__Cavity-mediated_iSWAP_oscillations_between_distant_spins",
+        "text": "nd _V_ RP [before] 2 . If their differences\nare both smaller than 0.3 mV, we proceed to the sequence for the next setting. Otherwise, the result is abandoned\nand the same measurement is retaken. It is important to note that the RP _i_ gates are located to the side of the dots\nand thus they have much smaller lever-arms compared to the top plunger gates. In a similar device, the lever-arm\nof a RP _i_ gate is measured to be 30 _µ_ eV/mV for the right dot and its lever-arm for the left dot is measured to be 17\n_µ_ eV/mV. Thus, the lever-arm for the inter-dot detuning is only 13 _µ_ eV/mV.\nFor single-qubit experiments, the workflow is similar except that the calibration and reference readout are executed\nonly for the qubit under investigation while the other qubit is parked in the left dot.\n\n**Readout**\n\nIn the regime of dispersive spin-photon coupling, the frequency of the resonator depends on the state of the qubit.\nTherefore, the qubit state can be detected by probing the transmission of a readout tone through the resonator.\nThe readout tone is generated at the frequency of the resonator when the qubit is in the _|_ 0 _⟩_ state. Thus, a high\ntransmission signal amplitude corresponds to the _|_ 0 _⟩_ state whereas a low transmission signal amplitude corresponds\nto the _|_ 1 _⟩_ state. The two states can also be distinguished by the phase difference in the signals but we choose to use\nthe amplitude for readout for its higher sensitivity in our operating regime.\nBecause of the magnetic field and the coupling to the spin, the linewidth of the resonator increases to _∼_ 5 MHz,\ncorresponding to a response time of _∼_ 200 ns, comparable to the _T_ 1 ’s of the qubits. Given the limited signal-to-noise\nratio obtained when averaging for a few 100 ns, single-shot qubit readout does not yield a meaningful fidelity. To\nenhance the signal-to-noise ratio, we average over many readout traces that have been down-modulated to 50 MHz,\nand then apply a fast Fourier transform to the averaged signal to extract its amplitude and phase.\n\n12\n\n**Appendix B: Measurement Setup**\n\n**Fig. 7:** Schematic overview of the measurement setup used in the experiment.\n\n**Resonator circuitry**\n\nAn AWG (Tektronix AWG5014C) generates the I,Q signals for the resonator probe tones using a sample rate of\n1 GS _/_ s. The I,Q signals are attenuated by 10 dB to enhance the voltage resolution allowing for improved calibration of\nthe I and Q amplitudes, compensating for possible asymmetries in the up-conve",
+        "score": -6.875218578746555,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7787785415185273,
+        "rerank_score": -10.669514656066895,
+        "matched_nodes": [
+          "For",
+          "An",
+          "If",
+          "The",
+          "In",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 21,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2847,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector.md",
+        "title": "2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector",
+        "text": "to spurious signal excesses. Even if correctly modeled,\n\nwe expect the presence of external crosstalk to corrupt the low-energy thresholds of dark matter\n\nsearches, such as in xenon and argon-based dark matter detectors [17]. This is because a single,\n\nthermally-generated avalanche (dark count) could induce a coincident signal in a separate device.\n\nThe probability for spurious _𝑁_ -fold coincident events at detector threshold thus rises accordingly,\n\nmaking it challenging to distinguish genuine signals at low energy. For a dark matter detector\n\nin which sensitivity improves with decreasing energy threshold, the usage of SiPMs could prove\n\ndetrimental.\n\nIn this article, we have measured the magnitude of external crosstalk in a dual-phase, liquid\n\nxenon time projection chamber (TPC) fully instrumented with SiPMs, with the goal of understanding\n\nthe severity of this effect for future xenon dark matter experiments. We find the probability that a\n\nsingle detected photon generates external crosstalk can grow to ≳ 5% in our detector. We interpolate\n\nour measurement to a future xenon dark matter experiment, showing the low-energy threshold would\n\nworsen, and comment on potential paths forward.\n\n**2** **Measurement of external crosstalk**\n\n**2.1** **Detector description**\n\nFull details of the dual-phase, liquid xenon TPC may be found in [3]. As shown in figure 1 (left), a\n\ncylindrical TPC is contained with PTFE walls holding three electrodes: cathode, gate, and anode,\n\n– 2 –\n\nas well as two SiPM arrays located at either end of the TPC. This design is meant to emulate an\n\nLZ-like detector. The two SiPM arrays each contain four Hamamatsu VUV4 S13371-6050CQ\n\nSiPM devices for a total of 32 (31 operating in this study) SiPM channels. One of the arrays is\n\npictured in figure 1 (right). Each array is mounted on a circuit board which provides an independent\n\nbias voltage to each device. This bias voltage is low-pass filtered with _𝑅_ = 10 kΩ and _𝐶_ = 10 nF.\n\nAdditionally, a 50 Ω resistance to ground is located immediately after the output of each device.\n\nThe output signal of each SiPM channel is sent directly to one of three digitizers (CAEN V1730S)\n\nwithout amplification. The digitizer bandwidth is 250 MHz.\nAn external [57] Co source is present during all measurements, including SiPM calibrations. The\n\nsource emits two prominent _𝛾_ -rays with energies of 122 keV (≈ 88% branching fraction) and 136 keV\n\n(≈ 12% branching fraction) which mainly photoabsorb in the liquid",
+        "score": -6.9748218635335455,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7313739432724975,
+        "rerank_score": -10.817134857177734,
+        "matched_nodes": [
+          "For",
+          "An",
+          "The",
+          "In",
+          "We",
+          "As"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6212,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope.md",
+        "title": "2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope",
+        "text": "ise contributions are much\nbelow the NSB fluctuations. On the opposite end of the signal\nchain’s dynamic range, we require a linear response of up to a\nfew hundred photoelectrons, which covers the expected range\nfor most events. For rare extreme events with signals beyond\nthe linear range, the dynamic range can be extended by considering the non-linear response of the signal chain in the analysis.\nThe angular size of the camera pixels, is driven by the science goals for the _Trinity_ Demonstrator and the EUSO-SPB2\nCherenkov telescope. Among other goals, both missions aim\nto measure backgrounds that mimic air showers from Earthskimming tau neutrinos. In _Trinity_ ’s case, we want to record\nthese events with the same 0.3 [◦] pixel size we plan for the final\n_Trinity_ telescopes. In EUSO-SPB2’s case, it was more impor\n\ntant to cover a large field-of-view to better study the spatial and\ntemporal characteristics of the NSB, even if it meant that the\npixel size would be larger than the 0.083 [◦] anticipated for POEMMA [10].\nEventually, we fixed the pixel size for EUSO-SPB2 at\n0.4 [◦] based on the 6 [◦] × 12 [◦] field-of-view of the EUSO-SPB2\nCherenkov telescope optics, the available power, and the projected power consumption per camera channel. Another benefit\nof this choice is that the required physical pixel size is the same\n6 mm required for _Trinity_ . The only difference between the two\ncameras is the number of pixels, which is 256 pixels for _Trin-_\n_ity_ and 512 pixels for EUSO-SPB2 to cover the fields of view\nof the respective telescopes they instrument. We, therefore, designed the modular camera architecture described in the next\nsection that meets the requirements for both instruments.\nThe signals of a Cherenkov telescope camera are not continuously recorded. Instead, the trigger electronics continuously\nscans the camera signals for a potentially interesting signal\ntopology in the camera. If the electronics senses the required\ntopology, the trigger sends a readout command to the digitizer.\nWe provide more details about the trigger topologies required\nin the _Trinity_ Demonstrator and the EUSO-SPB2 Cherenkov\ntelescope in Section 4.4.\nFrom an operational point of view, the EUSO-SPB2 camera\noperated in a much more challenging environment. As convective cooling becomes ineffective at 33 km altitude, the design\nof the camera cooling was driven by the EUSO-SPB2 requirements and adapted for the _Trinity_ camera (see Section 5.)\nBased on these design considera",
+        "score": -7.103799531186937,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8893892707592637,
+        "rerank_score": -11.034280776977539,
+        "matched_nodes": [
+          "For",
+          "On",
+          "If",
+          "The",
+          "In",
+          "We",
+          "As"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3716,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2732682__2312.04303__Neutrino_fog_for_dark_matter-electron_scattering_experiments.md",
+        "title": "2024__recid_2732682__2312.04303__Neutrino_fog_for_dark_matter-electron_scattering_experiments",
+        "text": "the _rate_ at which they decrease\ndepends on how badly the neutrino background overlaps with\nthe signal for that particular DM mass. This can be seen in\nFig. 3 where we show the decrease in the discovery limits for\nthree example DM masses in a silicon target experiment. The\nfact that these lines do not decrease as expected for Poissonian\nstatistics _σ ∝_ 1 _/_ _[√]_ Exposure—-and instead have temporary\nplateaus—this is the detrimental effect of the neutrino fog.\n\nSo to quantify the “opacity” of neutrino fog, we can just\nconsider the gradient of these lines. As in Ref. [75] we calcu\n\nlimit scales as _σ ∝_ ~~�~~ (1 + _Nδ_ **Φ** [2] ) _/N_, or _n >_ 2 [56]. Fi\nnally, when the number of observed events is so large that the\nexperiment can effectively measure its own background, the\nPoissonian regime returns. However, we emerge into this final regime only if there is some information present in the\nobservable at hand (in our case, the recoil spectrum), that distinguishes the signal from the background. If the signal and\nbackground lead to _identical_ observables, then there will be a\nhard neutrino floor: _n →∞_ .\nTo visualise the neutrino fog, we can simply colour-code\nthe DM parameter space by the value of _n_ . This leads to the\nplots in the right-hand panels of Fig. 2. We present the silicon\nand LXe neutrino fogs as representatives of solid and liquid\ndetectors. The neutrino fogs for the light mediator case, as\nwell as for germanium and LAr, are presented in Figs. 4 and\n5. The darker-coloured regions represent areas where _n >_ 2,\nmeaning the DM and neutrino event rates have greater spectral degeneracy. In most cases, there are slight differences\nbetween the DM and neutrino signals, which make it possible\nto distinguish the two in the high-statistics regime. Therefore,\nwe find that once _N_ has grown large enough, the scaling returns back to _n_ = 2 for very low cross sections.\nOn the other hand, for very low DM masses in the semiconductor and LAr cases, both the DM signal and the low-energy\ncomponent of the neutrino background ( _pep_ ) are contained\nonly in a single bin in _n_ _e_ . Because of this, we have a hard\nneutrino _floor_ . The reason behind this is related to what we\nstated above: when the signal and a background component\nare contained in a single bin, there is no information available\nto the experiment that could ever distinguish them, even in the\nlimit of a huge exposure. This occurs, for example, around\n1.5 MeV in the silicon case. Similar fe",
+        "score": -7.115394161224366,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -11.065221786499023,
+        "matched_nodes": [
+          "On",
+          "Fi",
+          "If",
+          "The",
+          "In",
+          "We",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6182,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2790339__2405.15922__Investigation_of_the_burst_phenomenon_in_SiPMs_in_liquid_nitrogen.md",
+        "title": "2025__recid_2790339__2405.15922__Investigation_of_the_burst_phenomenon_in_SiPMs_in_liquid_nitrogen",
+        "text": "s are related to the first SiPM signals of the burst event.\n\nIf burst events are related to the interaction of ionizing particles with the SiPM, the number of\n\nburst events should increase with the rate of ionizing particles interacting with it, such as when it\n\nis placed near a radioactive source. To verify this hypothesis, two SiPMs were placed one in front\n\nof the other in vertical configuration and a thoriated tungsten electrode for TIG welding was placed\n\nin between. As expected no coincidences between the burst events triggered in the two SiPMs\n\nwere observed, since no particles crossing both devices are expected. In this case, the bust rate can\n\nbe parameterized as the sum of the contribution from environmental radioactivity and that from\n\nthoriated tungsten electrode, called _𝑅_ _𝑇ℎ_, while the cosmic ray contribution is zero since the vertical\n\nconfiguration:\n\n_𝑅_ _𝑏𝑢𝑟𝑠𝑡_ = _𝑅_ _𝑒𝑛𝑣_ + _𝑅_ _𝑇ℎ_ (3.3)\n\n– 5 –\n\n**Figure 3** . Temporal distribution of single events inside the burst. Superimposed an exponential decay curve\nfit. In this example, the dacey time _𝜏_ is (118±2)ms\n\n_𝑅_ _𝑇ℎ_ was evaluated as the difference between the total burst rate measured in this test, equal to\n(93 ± 7) mHz, and _𝑅_ _𝑒𝑛𝑣_, which is constant and was previously evaluated 3.2. The result is:\n\n_𝑅_ _𝑇ℎ_ = (77 ± 7) mHz (3.4)\n\nThis burst rate contribution is in agreement, within the experimental error, with the expected number\nof particles hitting the SiPM produced by the thoriated tungsten electrodes, equal to (81 ± 1) mHz.\n\nThis result further validates our hypothesis that bursts are triggered by ionizing radiation that\n\nreleases their energy in the SiPM.\n\n**3.1** **Temporal distribution of events in a burst**\n\nWe further investigate the temporal distribution of the single events in the burst. To do that, we\n\nacquired many hours of data and we identified burst events with the technique described in [9]. For\n\neach burst of events (in total we analysed 549 bursts) we studied the rate of events inside the burst.\n\nLooking at the arrival time of the single events in the burst, we can reconstruct the time distribution\n\nof events as shown in figure 3. Here, we divided the total temporal length of the burst in several\n\n– 6 –\n\n**Figure 4** . Histogram of the decay constant _𝜏_ . Superimposed a Gaussian fit.\n\nslices and we counted the number of events that happened in each bin ( _𝐸𝑣𝑒𝑛𝑡𝑠_ ( _𝑡_ )). Given the shape\n\nof the obtained trend, as shown in figure 3, we supposed a simple expon",
+        "score": -7.129394971049001,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8419846725132338,
+        "rerank_score": -11.068042755126953,
+        "matched_nodes": [
+          "For",
+          "If",
+          "The",
+          "In",
+          "We",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 57,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "the matrix, that cannot be\nimmediately available for timing constraints. For this reason,\ninput line 0 (Fig. 18) has the priority over input line 1, which\nis put on hold as the matrix is initialised. In order to keep\na good load balancing, input lines are swapped when going\nfrom one matrix to the next: line 0 of a matrix feeds line 1 of\n\nthe next matrix and vice-versa. When EE words have arrived\n\non both input lines, the content of the matrix is moved to\nthe cluster-finder block. An error is raised if two different EE\nsignals are detected.\nDuring the second step, the cluster finder block processes\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2023 10\n\nFig. 20. Structure of a 8-to-1 encoder built from 2-to-1 encoders.\n\nFig. 19. Cluster finder block diagram and its data flow.\n\nthe content of the corresponding filled matrix. Figure 19 shows\nthe logic of how clusters are reconstructed, starting from the\nmatrix pixel content. Each pixel in a matrix checks if it belongs\nto one of the L-shaped patterns of the algorithm through the\npixel checker block. This process is performed in parallel at\nfull speed for each pixel in each matrix. When a pattern match\nis found, an anchor pixel in the matrix is identified. As a\nconsequence, the bit in the pixel flag vector corresponding\nto the position of the anchor pixel in the matrix is set to 1.\nAn encoder reads the pixel flag vector content and passes the\naddresses of all found anchor pixels to a multiplexer, one at\na time. The multiplexer extracts the 3 _×_ 3 cluster candidate\ncorresponding to the address received from the encoder. As\nsoon as an anchor pixel has been processed and corresponding\ncluster candidate found, the decoder block receives the pixel\naddress from the encoder and resets the corresponding bit to\nzero in the pixel flag vector. The reset operation is performed\nby means of the pixel flush signal. For each cluster, a word\ncontaining the matrix coordinates, the anchor pixel position\nand the 3 _×_ 3 cluster candidate is written in the matrix FIFO. A\n\nmerger reads the cluster candidates from all the matrix FIFOs\nand sends them to a LUT, which computes the centroid of each\ncluster (Fig. 18). The cluster position is obtained by combining\nthe matrix position in the detector, the anchor-pixel position\nin the matrix and the LUT output. The cluster words are then\nsaved into a FIFO that contains all the clusters from non\nisolated SPs of a VELO sensor that do not overflow the matrix\nchain. The two data",
+        "score": -7.133065458705662,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7787785415185273,
+        "rerank_score": -11.066202163696289,
+        "matched_nodes": [
+          "For",
+          "On",
+          "An",
+          "The",
+          "In",
+          "As"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "For": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "Fi": 1.0,
+      "If": 1.0,
+      "PO": 1.0,
+      "RA": 1.0,
+      "Im": 1.0
+    },
+    "expanded_nodes": {
+      "For": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "Fi": 1.0,
+      "If": 1.0,
+      "PO": 1.0,
+      "RA": 1.0,
+      "Im": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "As": 0.7,
+      "USA": 0.7,
+      "IL": 0.63,
+      "CERN": 0.48999999999999994,
+      "University": 0.24499999999999997,
+      "CA": 0.24499999999999997,
+      "Department": 0.24499999999999997,
+      "SPS": 0.17149999999999996,
+      "LHC": 0.17149999999999996
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 21,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.452995311003178,
+    "generation_latency_s": 3.604218363761902e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 21.0,
+    "retrieval_latency_s": 6.452995311003178,
+    "generation_latency_s": 3.604218363761902e-07
+  }
+}

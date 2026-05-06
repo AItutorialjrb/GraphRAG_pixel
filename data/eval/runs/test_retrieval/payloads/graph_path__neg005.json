@@ -1,0 +1,403 @@
+{
+  "benchmark": {
+    "query_id": "neg005",
+    "query_type": "negative",
+    "query": "What is the best stock to buy based on these detector papers?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "best"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the best stock to buy based on these detector papers?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5096,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors.md",
+        "title": "2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors",
+        "text": "ith the active area of tracking detectors constantly increasing, the high-energy physics community faces a\nchallenge in scaling production volumes and managing\ncosts to cover large-area detectors with high-resolution,\nradiation-hard silicon sensors. Based on this challenge,\nsensors for particle tracking are only produced by a few\nfoundries, creating the risk of a single-vendor scenario.\nThis study aims to tackle this challenge by exploring\nstrip sensors based on CMOS imaging technology. As\nCMOS imaging technology is widely used for industrial and commercial silicon sensor production, it can\noffer access to fast- and large-scale production by vari\n\n∗ Corresponding author.\n_Email address:_ `naomi.davis@desy.de` (Naomi Davis)\n\nous vendors. In addition, one can profit from the larger\nwafer size available in commercial processes.\nOn the other hand, the maximum reticle size in the\norder of O(1 cm [2] ) in industrial sensor production poses\na remaining challenge for fabricating different sensor\nformats to achieve large-area coverage in tracking detectors. To circumvent this issue, a sensor is divided\ninto individual parts matching the maximum reticle size,\nwhich are illuminated separately on the wafer with a\nslight overlap. This technique is referred to as _stitch-_\n_ing_ [1] in CMOS circuit production.\n\n**2. CMOS Strip Sensors**\n\nThe CMOS Strips project is investigating stitched,\npassive CMOS strip sensors fabricated by LFoundry [2]\nin a 150 nm technology. The sensors are produced on\na p-type, 8-inch, Float-Zone wafer with a resistivity between 3 kΩ and 5 kΩ. In addition, the wafer underwent\n\n_Preprint submitted to Nuclear Instruments and Methods in Physics Research A_ _May 15, 2024_\n\n(a) Regular design\n\n(b) Low Dose design\n\nFigure 1: Schematic layout of the Regular (top) and Low Dose 30/55\n(bottom) strip implant designs [3].\n\nan additional production step at IZM Berlin, where it\nwas thinned down to a thickness of (150 ± 10) µm from\nthe backside and a laser-annealed p [+] layer with a closing\nmetallisation layer was implemented as backside implant. The stitching technique enables the realisation of\na long (4.1 cm) and a short (2.1 cm) strip sensor format.\n\nThe strip implant design varies in doping concentration and width to study various electric field configurations. Figure 1 depicts the Regular and the two\nLow Dose design layouts. For the Regular design, the\nstrip implant consists of a highly doped n [+] layer with a\nlesser doped n-implant (Nwell) below and ha",
+        "score": -5.077995179176331,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -7.930761814117432,
+        "matched_nodes": [
+          "The",
+          "On",
+          "To",
+          "As",
+          "BASED",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8182,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3065864__2510.07690__Lithographic_Integration_of_TES_Microcalorimeters_With_SQUID_Multiplexer_Circuits_for_Larg.md",
+        "title": "2026__recid_3065864__2510.07690__Lithographic_Integration_of_TES_Microcalorimeters_With_SQUID_Multiplexer_Circuits_for_Larg",
+        "text": "tors, IF electronics, and _µ_ MUX readout integrated onto a single\nmonolithic wafer platform. The chip dimension are 10 mm _×_ 20 mm. TES\ndetectors are fabricated directly on bulk silicon and are not suspended. (a),\n(b), (c), (d), and (e) are higher magnification optical micrographs of the TES\ndetectors, TES-to-SQUID liftoff niobium interconnects, Nyquist inductors,\nshunt resistors, and the _µ_ MUX resonators, respectively.\n\nstrategically distributed throughout the wafer. As a diagnostic\nfor our _µ_ MUX JJs, we track the room temperature resistance\nR _n_ of 200 test JJs in series and utilize the AmbegaokarBaratoff approximation [17] to estimate I _c_ from R _n_,\n\n_I_ _c_ _R_ _n_ _≈_ _[π]_ [∆] (2)\n\n2 _e_ _[,]_\n\nwhere _e_ is the elementary charge and ∆ is the superconducting\nenergy gap calculated from BCS theory. As shown in our\nprevious work [18], the R _n_ measurements provide a reliable\nin-fab diagnostic to ensure our JJ performance is within\nthe design threshold. For post-fabrication, cryogenic testing\nof our rf-SQUIDs, we track the quantity _λ_ defined as the\nratio of self-inductance (L _s_ ) and Josephson-inductance (L _J_ )\nwithin the SQUID. For dissipationless rf-SQUIDs to respond\nmonotonically to the applied flux, the _λ_ is desired to be _∼_\n0.33 _±_ 20%. The L _s_ of our _µ_ MUX SQUIDs is designed to\nbe 22.4 pH, setting the target per unit area R _n_ to be (68.8\n_±_ 14) Ω _/µ_ m [2] . The uncertainty accounts for wafer-to-wafer\nmicrofabrication variations.\n\nIn TES-SoC, we tracked the performance of test JJ arrays\ndistributed at the center and corners of the wafer. Based on\n\nthese measurements, we calculated the average R _n_ of TESSoC JJs with area 6.25 _µ_ m [2] to be _∼_ 362 Ω. This equates to\nper unit area room temperature resistance of _∼_ 58 Ω _/µ_ m [2],\nwell within uncertainty due to variations in microfabrication.\n\n_C. TES Detectors Fabrication_\n\nOnce the room temperature diagnostic of our JJ is confirmed\nto be within specification, we proceed to L9 where we etch\nthe I1 at sites where TES MoAu bilayers, TES-to-SQUID\ninterconnects, and microwave resonators will be formed. In\nL10, to protect the _µ_ MUX and IF circuits from degradation\n\nduring MoAu processing, we deposit 400 nm of PECVD\nSiO 2 (I2). We then proceed to microfabricate MoAu bilayer\nTES detectors as described in [12]. To define TES detectors,\nwe follow the hybrid additive-subtractive TES process where\n45 nm of molybdenum is sputter-deposited, patterned, and\nthen etched using a ph",
+        "score": -5.463119318276474,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9512591389114541,
+        "rerank_score": -8.517486572265625,
+        "matched_nodes": [
+          "The",
+          "To",
+          "As",
+          "BASED",
+          "In",
+          "For",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -5.52170992115123,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9512591389114541,
+        "rerank_score": -8.607625961303711,
+        "matched_nodes": [
+          "The",
+          "To",
+          "At",
+          "As",
+          "In",
+          "For",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6022,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning.md",
+        "title": "2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning",
+        "text": "lies on the direct detection technique [5, 6]. These\nexperiments seek to observe rare interactions between\nDM particles from the Milky Way and detector materials placed deep underground in low-background envi\nronments.\nTraditionally, direct detection experiments have primarily focused on searching for nuclear recoil events induced by Weakly Interacting Massive Particles (WIMPs)\nscattering off target nuclei in crystals or liquid noble\ngases [7]. As a result, these experiments have mainly\nbeen sensitive to DM masses in the GeV – TeV range, as\nlighter particles would be unable to generate observable\nnuclear recoils.\n\n_∗_ [catena@chalmers.se](mailto:catena@chalmers.se)\n\n_†_ [urdshals@chalmers.se](mailto:urdshals@chalmers.se)\n\nWith the absence of direct evidence for WIMPs, efforts have been put in towards alternative experimental\napproaches better suited to probe DM particles with subGeV masses [8]. In this context, a crucial role is played\nby direct detection experiments designed to detect DMinduced electronic transitions or electron ejections in materials, offering a novel avenue for uncovering the nature\nof DM [9–20].\n\nTo interpret these experiments, a theoretical understanding of DM-electron interactions in detector materials is needed. In ref. [21–25], the interactions DM can\nhave with the electrons bound to silicon and germanium\ncrystals (as well as individual atoms and graphene targets) were classified and explored using a non-relativistic\neffective theory formalism. We implemented our formalism in QEdark-EFT [26], which interfaces with the planewave self-consistent field (PWscf) DFT code Quantum\nESPRESSO [27] and extends the QEdark code [28] to the\ncase of general DM-electron interactions. This allowed\nfor covering several DM models, although an extensive\nexploration was hindered by computational costs.\n\nThe deep neural network (DNN) developed in this paper is traned on the output of QEdark-EFT, and serves\nmainly two purposes. Firstly, it is easier to use and run\nthan QEdark-EFT. It takes less space on a hard drive\nand does not require computation of or access to material response functions. Secondly, it allows for evaluating a large number of DM-induced electronic transition\nrates cheaply on a laptop, and demonstrates the potential DNNs have for speeding up rate evaluations. Such a\nspeedup will be necessary to perform extensive parameter\nscans in the event of detection of a DM signal. For example, evaluating the rate of electron-hole pair creation\nin s",
+        "score": -5.914566856920381,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9025182778229083,
+        "rerank_score": -9.206247329711914,
+        "matched_nodes": [
+          "The",
+          "To",
+          "As",
+          "In",
+          "For",
+          "We",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4924,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "ne SiPMs. This results in negligible systematic and statistical uncertainties for this measurement. The out\nput pulse full width at half maximum (FWHM) increases only\nslightly from 2.4 ns to 2.8 ns for Hamamatsu SiPM-based pixels and similarly from 3.1 ns to 3.4 ns for pixels based on SensL\nSiPMs. For the first generation SiPM-based pixels using Excelitas SiPMs, the FWHM increased from 5.1 ns to 5.9 ns [19].\n\n**5. Expected LoNS and Cherenkov light responses**\n\n_5.1. Spectra and integrals_\n\nTo estimate the expected performance of our SiPM proto\n type modules we compared the spectral photon detection effi\nciency PDE(λ) curves of light sensors with the spectra of the\nLoNS and the Cherenkov light from air showers reaching the\ntelescope camera. The spectra are shown in figure 7. In recent years, MAGIC observations’ mean zenith distance (ZD),\nwhich denotes the angular distance between the telescope pointing direction and zenith, has steadily increased to cover a larger\nsolid angle with more astrophysical sources and a wider energy range. For an example see [29]. Therefore, it is important\nto compare the detector’s PDE with the Cherenkov and LoNS\nspectra not only close to the zenith but also at large zenith dis\ntances.\n\n4\n\nFigure 6: Comparison of the pulse shape of a single SiPM chip with the active\nsum of nine Hamamatsu SiPM chips. The pulse FWHM widens only slightly\nfrom 2.4 ns to 2.8 ns. The amplitudes were normalized for better visualization.\n\nThe Cherenkov light spectrum of air showers at the telescope\ncamera peaks at around 320 nm for low zenith observations, at\n\n an observational altitude of 2.2 km. The peak quantum effi\nciency (QE) of PMTs makes a good match with the Cherenkov\nlight spectrum. All of the SiPMs we used have their peak sensitivity at longer wavelengths, thus detecting a lower number of\nCherenkov photons from the main peak in the near UV region.\nOn the other hand, these collect more photons from the longwavelength tail of the Cherenkov spectrum. At large and verylarge zenith distances the peak of the Cherenkov light spectrum\nshifts towards the blue-green region. This is due to the longer\ndistance to the shower maximum region, from where the majority of photons arrive at the telescope. The longer paths attenuate\nthe near-UV part of the spectrum, due to the Rayleigh scattering and absorption effects. The Cherenkov spectra were generated with CORSIKA [30] and the photon propagation to the\nIACT camera was modeled with an adapted version of MARS,",
+        "score": -6.040924592593741,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8375304630381804,
+        "rerank_score": -9.392945289611816,
+        "matched_nodes": [
+          "The",
+          "On",
+          "To",
+          "At",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1481,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "rystals and**\n**photosensors, the development of the rad-hard electronics and**\n**the most important results of the irradiation tests. Construction**\n**of the mechanics is also reported. Status and plans for the**\n**calorimeter assembly and its first commissioning are described.**\n\n_**Index Terms**_ **—calorimeter, SiPM, crystal, CsI, CLFV**\n\nI. T HE M U 2 E EXPERIMENT AND C HARGED L EPTON\n\nF LAVOR V IOLATION P ROCESSES\n\nThe Mu2e experiment, under construction at Fermilab,\nwill search for the Charged Lepton Flavor Violating (CLFV)\nprocess of a muon converting into an electron in the electric\nfield of Al nuclei. The CLFV processes are forbidden in\nthe Standard Model (SM) and even assuming its minimal\nextension, that allows neutrino oscillations, their branching\nratio is completely negligible: _BR <_ 10 _[−]_ [50] [2].\nAny observation of CLFV processes in the muon sector\nwill be a clear hint of New Physics. In case of no signal\nevent observation, Mu2e will set a 90% upper limit on the\n\nratio between the conversion and the capture rates _R_ _µe_ _<_\n8 _×_ 10 _[−]_ [17], improving the current best limit [3] by four orders\nof magnitude. The experimental signature searched in Mu2e\nis a single electron with energy slightly below the muon rest\nmass, that is _E_ _e_ = 104 _._ 97 MeV.\nAs shown in Fig. 1 the Mu2e experiment is based on a\nsystem of three superconducting solenoids to enhance the\nnumber of negative muons arriving to the Stopping Target. A\n\nFig. 1. Layout of the Mu2e experiment: Production Solenoid, Transport\nand Detector solenoid are indicated in the picture. The Cosmic Ray Veto,\nsurrounding the DS and part of the TS, is not shown.\n\n8 GeV pulsed proton beam hitting the tungsten target inside\nthe Production Solenoid (PS) produces mostly low momentum\npions. Thanks to the graded magnetic field, particles produced\nforwards are reflected back towards the S-shaped Transport\nSolenoid (TS). This region allows having a very intense\n( _∼_ 10 [10] _µ/s_ ) pure low-momentum negative muon beam at\nthe entrance of the Detector Solenoids (DS) thanks to a\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. 70, NO. 7, 2023 2\n\nmiddle collimator to select the particle charge. The DS houses\nthe stopping target (made of 37 aluminum annular 105 _µ_ m\nthick foils, spaced 2.2 cm apart) and the detectors - a very\nprecise ( _σ_ _p_ = 200 keV at _E_ _e_ ) straw tubes tracker [4] and\nan electromagnetic calorimeter [5]. The tracker is composed\nof _∼_ 20000 low mass, very thin, straw drift t",
+        "score": -6.29256767616303,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8034118602761983,
+        "rerank_score": -9.776046752929688,
+        "matched_nodes": [
+          "The",
+          "On",
+          "As",
+          "HE",
+          "In",
+          "SCIENCE",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6740,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "radiation environment\nas an additional criterion, small pixel size and low excess\nbias voltage (over-voltage, ∆ _V_ ) are also preferred to reduce\nthe effect of increasing the dark count rate (DCR) (heat\ndissipation and self-heating), as well as reducing correlated\n\n“This work was supported by the Swiss National Science Foundation under\nGrant 215635 and 216604.”\n\nG. Haefeli, F. Blanc, E. Curr´as-Rivera, R. Marchevski, F. Ronchetti,\nO. Schneider, L. Shchutska, and G. Zunica are with the Institute of Physics,\n´Ecole Polytechnique F´ed´erale de Lausanne, Route de Sorge, Lausanne,\nSwitzerland.\nAt the time of this work, C. Trippl was with the Institute of Physics,\n´Ecole Polytechnique F´ed´erale de Lausanne, and is now at DS4DS, La Salle,\nUniversitat Ramon Llull, Barcelona, Spain.\nAt the time of this work, E. Zaffaroni was with the Institute of Physics,\n´Ecole Polytechnique F´ed´erale de Lausanne, and is now at Universit´e de\nGen`eve, Geneva, Switzerland.\n\nnoise. In summary, the small pixel size and the low ∆ _V_ are\nadvantageous in all aspects except for the PDE.\nThe hit detection efficiency of the scintillating fibre tracker\ntechnology depends on the actual signal (scintillating light)\nproduced and the PDE of the photodetector. For a given fibre\ntechnology and fibre length, stacking several layers of fibres\nis used to increase the signal for a traversing particle. This\ncomes at the cost of a higher material budget, a large signal\nspread for incident particles with a large incident angle, and\nlast but not least a higher cost for more scintillating fibres.\nThe implementation of microlens arrays (MLAs) aligned with\nthe pixel structure has been successfully tested, and the results\nare presented in the following.\n\nII. T HE MICROLENS ON S I PM S\n\nEnhancing imaging photodetectors with pixel level microlenses is commonly used for CCD and CMOS camera\nsensors [2] and has also been successfully applied to SPAD\narray sensors in the last years [3]–[5]. A good overview of\nthe fabrication process of refractive MLAs is given in [6],\nfocusing on spherical lenses, although cylindrical lenses can be\nobtained with the same process [7]. The process used for our\napplication is based on photoresist processing, followed by a\nthermal reflow yielding a master mold. This mold is used with\na UV-curable polymer to replicate the MLA on the wafer level.\nOther fabrication processes are microdroplet inkjet printing\nor MEMS-based. The implementation of microlenses requires\nhigh-precision manu",
+        "score": -6.412504859546256,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8375304630381804,
+        "rerank_score": -9.964607238769531,
+        "matched_nodes": [
+          "The",
+          "On",
+          "At",
+          "HE",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 3200,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2709989__2310.08457__A_plastic_scintillation_muon_veto_for_sub-Kelvin_temperatures.md",
+        "title": "2024__recid_2709989__2310.08457__A_plastic_scintillation_muon_veto_for_sub-Kelvin_temperatures",
+        "text": "scintillation detector. In\nsection 3 we present the first sub-Kelvin commissioning\nof a cryogenic muon veto inside a running dry dilution\nrefrigerator. An evaluation of the detector performance\n\n2\n\nof a cryogenic muon veto for the NUCLEUS experiment\nis presented.\n\n**2.** **ORGANIC PLASTIC SCINTILLATORS AT**\n\n**SUB-KELVIN TEMPERATURES**\n\nTo operate organic plastic scintillator within the experimental volume of a [3] He / [4] He dilution refrigerator, the\ndetector’s thermal material and light output properties\ndown to sub-Kelvin temperatures are of central interest.\nThe essential intrinsic properties of a material governing its thermalization behavior are the thermal conductivity and the heat capacity: the thermal conductivity\ndetermines the efficiency of heat transfer through conduction; the heat capacity influences thermal energy storage\nand release. Generally, achieving efficient thermalization\nof amorphous polymers below 1 K within a reasonable\ntimeframe can be challenging due to their inherently low\nthermal conductivity and considerable heat capacity [18],\nimpeding efficient heat transfer and requiring substantial\nenergy removal. Additionally, the thermal conductivity\nand heat capacity of amorphous polymers are known to\ndiffer by up to one order of magnitude between different polymers at similar temperatures [19]. Therefore,\nin order to develop tailored cool-down schemes, precise\nknowledge of the values and temperature dependencies\nof these parameters is crucial.\nThe effect of temperature on the photoluminescence\nproperties of organic plastic scintillators has been studied most commonly in the 0 _[◦]_ C to the +50 _[◦]_ C temperature range [20–22]. In particular, the time response of\norganic plastic scintillators, which is one crucial parameter for efficient background suppression by a particle\nveto system, is known to be affected by temperature.\nNotably, the scintillation decay time of various organic\nscintillators has been observed to increase towards lower\ntemperatures [23].\nFor either property, there is scarcity of reported studies conducted in the lower temperature range of _O_ (mK\n\n- 1 K). In the following, we present measurements of the\nthermal properties and the temperature dependence of\nthe measured light signals of a plastic scintillation detector down to sub-Kelvin temperatures. The organic\nplastic scintillator under study was the polystyrene-based\nscintillator UPS-923A [24], which is doped with 2 % PTP\nand 0.03 % POPOP.\n\n**2.1.** **Thermal M",
+        "score": -6.5713685947452305,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8375304630381804,
+        "rerank_score": -10.209012985229492,
+        "matched_nodes": [
+          "The",
+          "To",
+          "At",
+          "HE",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3992,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2745774__2401.06096__Precise_Characterization_of_a_Waveguide_Fiber_Interface_in_Silicon_Carbide.md",
+        "title": "2024__recid_2745774__2401.06096__Precise_Characterization_of_a_Waveguide_Fiber_Interface_in_Silicon_Carbide",
+        "text": "this is no solution to reduce the nickel related emitter density in waveguides.\n\n**Figure S5:** Formation and removal of nickel related surface defects in silicon carbide. The white\nscalebar corresponds to 2 µm in all confocal microscopy images. For detection, superconducting\nnanowire single-photon detectors were used.\n\n**5. Raman spectroscopy**\n\nTo estimate the strain inside the nanobeams, we performed Raman spectroscopy. For the\nmeasurements, we used a laser beam with a wavelength of 633 nm and a power of 6 mW.\nRaman maps were recorded by moving the sample with piezo controllers. The incident light\nwas aligned parallel to the c-axis of the crystal (perpendicular to the surface). Fig. S6 shows\na typical spectrum with the Raman-active phonon modes E1(TO), E2(TO) and A1(LO). The\npeak positions were fitted with a Voigt function and their shift Δυ was determined by with a\nRaman spectrum recorded far away from the waveguide where we expect unstrained bulk\nmaterial. The Raman shift of various modes depends on both the parallel and perpendicular\nstress 𝜎 para and 𝜎 perp according to the following equations [1] :\n\nΔυ 𝐸 1 = 2𝑎 𝐸 1 𝜎 perp + 𝑏 𝐸 1 𝜎 para\n\n_( 1)_\n\nΔυ 𝐸 2 = 2𝑎 𝐸 2 𝜎 perp + 𝑏 𝐸 2 𝜎 para\n\n_( 2)_\n\nΔυ 𝐴 1 = 2𝑎 𝐴 1 𝜎 perp + 𝑏 𝐴 1 𝜎 para\n\n_( 3)_\n\nwith the phonon-deformation potential constants 𝑎 𝐸 1 = −2.06 cm [−1] /GPa, 𝑎 𝐸 2 = −1.55 cm [−1] /\nGPa, 𝑏 𝐸 1 = −0.43 cm [−1] /GPa and 𝑏 𝐸 2 = −0.74 cm [−1] /GPa [1] . As these values have not been\nreported in the literature for the A1(LO) peak yet, we calculated 𝜎 para and 𝜎 perp from eqs. (3)\nand (4) and inserted those values into eq. (5) to determine 𝑎 𝐴 1 and 𝑏 𝐴 1 . We obtain 𝑎 𝐴 1 =\n\n7\n\n−1.124 cm [−1] /GPa and 𝑏 𝐴 1 = −0.651 cm [−1] /GPa . To minimize the error in determination of the\nstress components, we calculated multiple sets of ( 𝜎 para, 𝜎 perp ) by first using eqs. (1) and (2),\nthen eqs. (1) and (3) and finally eqs. (2) and (3). At the end, we average over all three values.\nFor stress to strain conversion, we use the relations [1] :\n\n𝜀 perp =\n\n𝐶 33 𝜎 perp −𝐶 13 𝜎 para\n𝐶 11 𝐶 33 + 𝐶 12 𝐶 33 −𝐶 132 ~~[,]~~\n\nand\n\n_( 4)_\n\n_( 5)_\n\n𝜀 para =\n\n2𝐶 13 𝜎 perp −(𝐶 11 + 𝐶 12 ) 𝜎 para\n\n2𝐶 132 −𝐶 33 (𝐶 11 + 𝐶 12 ),\n\nwith the elastic stiffness tensor components 𝐶 11 = 501 GPa, 𝐶 12 = 111 GPa, 𝐶 13 = 52 GPa and\n𝐶 33 = 553 GPa [1] . The resulting strain map for one waveguide is shown in fig. S7.\n\nThe parallel strain component 𝜀 para can take on values up to -0.1 %, and the perpendicular\ncomponent 𝜀 perp values up to -",
+        "score": -6.580165429690909,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8375304630381804,
+        "rerank_score": -10.222546577453613,
+        "matched_nodes": [
+          "The",
+          "To",
+          "At",
+          "As",
+          "For",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4570,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot.md",
+        "title": "2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot",
+        "text": "n\n\nefficiency, the hDOM intends to comprise 24 SiPM arrays in addition to 31 PMTs, where PMTs\n\nhave a large photon collection area and SiPM arrays exhibit high-precision time resolution [4]. The\n\n– 1 –\n\nSiPM array is aimed at achieving a detection area on the order of square centimeters and a SPTR at\n\nthe order of hundreds of picoseconds, to enhance the effective area and time resolution of hDOM\n\nand improve the angular resolution of the neutrino telescope. At the same time, due to the large\n\nnumber of hDOMs in TRIDENT, it is essential to minimize the power consumption and the number\n\nof readout channels of SiPM arrays.\n\nHowever, the increased area will seriously affect the time resolution of SiPMs due to the\n\nlarger detector capacitance, which increases the influence of electronic noise [10]. For instance, a\ntypical SPTR full width at half maximum (FWHM) result for a SiPM with a size of 1 × 1 mm [2]\n\nis approximately 80 ps, whereas this value for a size of 3 × 3 mm [2] can be around 180 ps [11].\n\nTo mitigate the effects of electronic noise, some front-end readout designs incorporate balun\n\ntransformers and radio frequency (RF) amplifiers, achieving measured SPTRs of less than 150\nps FWHM for 3 × 3 mm [2] Hamamatsu SiPMs and less than 100 ps FWHM for 4 × 4 mm [2] FBK\n\nSiPMs, respectively [12]. Besides, some application-specific integrated circuits (ASICs), such as\nNINO and PETIROC, have also obtained SPTRs of about 200 ps FWHM for many 3 × 3 mm [2]\n\nSiPMs [13–15]. However, achieving high-precision single-photon time measurements with these\n\nschemes will require a large number of readout channels for a SiPM array of square centimeter\n\nscale.\n\nFocusing on high-precision time measurements based on large-area SiPM arrays, we analyze\n\nthe existing challenges and propose an overall front-end readout scheme in section 2. In section 3,\n\nwe propose the design of the front-end readout electronics for the SiPM array, including the series\nparallel connection SiPM array and the two-stage amplification scheme. Additionally, we present\n\nthe experimental setup and some results and discussions of the SPTR measurements in section 4.\n\n**2** **SiPM array front-end readout scheme**\n\nAs mentioned in section 1, the primary challenge in the front-end readout of the SiPM array is\n\nmaintaining its high-precision time measurement capability while constructing a large-area SiPM\n\narray in one readout channel. Initially, the pre-amplifier requires a sufficiently high bandwidth to\n\nhand",
+        "score": -6.589520783999991,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8375304630381804,
+        "rerank_score": -10.236939430236816,
+        "matched_nodes": [
+          "The",
+          "To",
+          "At",
+          "As",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "The": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "At": 1.0,
+      "As": 1.0,
+      "De": 1.0,
+      "HE": 1.0,
+      "BASED": 1.0
+    },
+    "expanded_nodes": {
+      "The": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "At": 1.0,
+      "As": 1.0,
+      "De": 1.0,
+      "HE": 1.0,
+      "BASED": 1.0,
+      "In": 0.7,
+      "For": 0.7,
+      "We": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 19,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.6037804670631886,
+    "generation_latency_s": 3.902241587638855e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 19.0,
+    "retrieval_latency_s": 5.6037804670631886,
+    "generation_latency_s": 3.902241587638855e-07
+  }
+}

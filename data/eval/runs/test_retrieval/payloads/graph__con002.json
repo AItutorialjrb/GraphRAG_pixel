@@ -1,0 +1,411 @@
+{
+  "benchmark": {
+    "query_id": "con002",
+    "query_type": "conceptual",
+    "query": "Why does drift collection help timing?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "does",
+      "drift",
+      "collection"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why does drift collection help timing?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 57,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "the matrix, that cannot be\nimmediately available for timing constraints. For this reason,\ninput line 0 (Fig. 18) has the priority over input line 1, which\nis put on hold as the matrix is initialised. In order to keep\na good load balancing, input lines are swapped when going\nfrom one matrix to the next: line 0 of a matrix feeds line 1 of\n\nthe next matrix and vice-versa. When EE words have arrived\n\non both input lines, the content of the matrix is moved to\nthe cluster-finder block. An error is raised if two different EE\nsignals are detected.\nDuring the second step, the cluster finder block processes\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2023 10\n\nFig. 20. Structure of a 8-to-1 encoder built from 2-to-1 encoders.\n\nFig. 19. Cluster finder block diagram and its data flow.\n\nthe content of the corresponding filled matrix. Figure 19 shows\nthe logic of how clusters are reconstructed, starting from the\nmatrix pixel content. Each pixel in a matrix checks if it belongs\nto one of the L-shaped patterns of the algorithm through the\npixel checker block. This process is performed in parallel at\nfull speed for each pixel in each matrix. When a pattern match\nis found, an anchor pixel in the matrix is identified. As a\nconsequence, the bit in the pixel flag vector corresponding\nto the position of the anchor pixel in the matrix is set to 1.\nAn encoder reads the pixel flag vector content and passes the\naddresses of all found anchor pixels to a multiplexer, one at\na time. The multiplexer extracts the 3 _×_ 3 cluster candidate\ncorresponding to the address received from the encoder. As\nsoon as an anchor pixel has been processed and corresponding\ncluster candidate found, the decoder block receives the pixel\naddress from the encoder and resets the corresponding bit to\nzero in the pixel flag vector. The reset operation is performed\nby means of the pixel flush signal. For each cluster, a word\ncontaining the matrix coordinates, the anchor pixel position\nand the 3 _×_ 3 cluster candidate is written in the matrix FIFO. A\n\nmerger reads the cluster candidates from all the matrix FIFOs\nand sends them to a LUT, which computes the centroid of each\ncluster (Fig. 18). The cluster position is obtained by combining\nthe matrix position in the detector, the anchor-pixel position\nin the matrix and the LUT output. The cluster words are then\nsaved into a FIFO that contains all the clusters from non\nisolated SPs of a VELO sensor that do not overflow the matrix\nchain. The two data",
+        "score": -4.745648274458767,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7187758478081059,
+        "rerank_score": -7.386144638061523,
+        "matched_nodes": [
+          "In",
+          "On",
+          "The",
+          "For",
+          "IEEE",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5719,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2715321__2310.18607__Simulation_Study_of_Photon-to-Digital_Converter_PDC_Timing_Specifications_for_LoLX_Experim.md",
+        "title": "2025__recid_2715321__2310.18607__Simulation_Study_of_Photon-to-Digital_Converter_PDC_Timing_Specifications_for_LoLX_Experim",
+        "text": "trino experiments like\nnEXO [1], which requires 1% energy resolution at 2.5 MeV Qvalue of [136] Xe in its search for neutrinoless double beta decay\n(0 _ν_ 2 _β_ ). The Light-only Liquid Xenon (LoLX) experiment [2],\n\n[3] supports nEXO in testing candidate photosensor technologies and studying LXe light properties to achieve this goal. In a\nfuture phase of the experiment, LoLX will aim to achieve timebased Cerenkov-scintillation separation to explore new background rejection methods in LXe-based 0 _ν_ 2 _β_ experiments [4].\nMoreover, Cerenkov photons in LXe can potentially increase\nprompt photon statistics for fast timing applications such as\ntime-of-flight positron emission tomography (TOF-PET) [5],\n\n[6], [7]. For this application, LoLX’s goal is to confirm if a\n10 ps time resolution can be obtained in LXe to pave the way\nfor PET scanners with cutting edge performance [8].\nTo achieve those goals, current silicon photo-multipliers\n(SiPMs) installed in LoLX are expected to be replaced by\nphoton-to-digital converters (PDCs) [9], also known as digital\nSiPMs. Similar to SiPM, a PDC consists of thousands of single\nphoton avalanche diodes (SPADs), called pixels or micro-cells.\nHowever, instead of converting the SPADs’ Boolean information to into an analog current sum as done in SiPMs, PDCs\nhave each SPAD or group of SPADs directly timestamped by a\ntime-to-digital converter (TDC). Through this approach, PDCs\npromise to offer sub-100 ps timing for each observed photon\nand to address the intrinsic timing skew limitation of large\narea SiPMs [10].\nIn this study, the light output information from the LoLX\nsimulation model [11], [12] was redirected to a PDC simulator,\nthe digital SPAD array simulator (DSAS) [13]. The work\npresented here, through the redirection of the optical photons\nto the DSAS model, explores the feasibility of time-based\nCerenkov-scintillation separation on an event-by-event basis.\nThis exploration then defines target PDC specifications and\navailable margins to guide the design for the actual PDCs.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE 2\n\nII. S ETUPS & M ETHODS\n\n_A. LoLX Detector_\n\nThe LoLX detector cage is a 3D printed octagonal prism,\nenclosing a LXe volume of approximately 30 cm [3] (Fig. 1).\nThis cage is equipped with 24 Hamamatsu VUV4 Quad SiPM\nmodules (part number: S13371-6050CQ) [14], 4 SiPMs each,\nso 96 SiPMs in total. The performance of this SiPM family\nwas reported previously in [15] and [16]. To separate Cerenkov\nand scintillation, LoLX cur",
+        "score": -5.6483073091877705,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7187758478081059,
+        "rerank_score": -8.774850845336914,
+        "matched_nodes": [
+          "In",
+          "On",
+          "For",
+          "To",
+          "IEEE",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8302,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3073914__2510.21907__Evaluation_of_SiC_detector_performances_for_energy_and_timing_measurements.md",
+        "title": "2026__recid_3073914__2510.21907__Evaluation_of_SiC_detector_performances_for_energy_and_timing_measurements",
+        "text": "tion with α and proton beams_\nFinally, we performed a test using low-energy proton and _α_ beams provided by the singletron accelerator of the Dipartimento di Fisica and Astronomia (DFA) _Ettore Majorana_, of the University of Catania (Italy). The\n\n13\n\nFigure 9: (a) Energy of a pixel versus the energy of an adjacent pixel in coincidence\nevents. (b) Timing difference between the crossing time signals obtained with cuts shown\nin Figures (a,c,d). (c) Energy vs rise-time plot of a pixel in coincidence events with the\nadjacent pixel. (d) Energies sum of two pixels. _σ_ have been obtained within gaussian fits.\n\n14\n\nsingletron accelerator provided protons with energy of 1 MeV and _α_ with\nenergies of 1 and 2 MeV.\nThe measurement has been performed in a backscattering mode, placing the\n100 _µ_ m SiC detector at _θ ≈_ 150 _[◦]_ in the laboratory frame, inside a vacuum\nchamber. A thick carbon target with an evaporated Au layer _≈_ 20 _µ_ g _/_ cm [2]\n\nwas used. The thick carbon substrate was used to reduce the low energy\nbackscattering due to the steel target holder. Figure 10 displays the results\nobtained using the sharing method and the procedure discussed before, for _α_\nbeam at 2 MeV. For proton beam at 1 MeV a _σ_ =2709 _±_ 450 ps is obtained.\nWhile, in the case of _α_ beam at 1 MeV the shared signals are too low in\nenergy to be detected.\nTo conclude this timing investigation, Figure 11 shows the trend of the\nextracted _σ_ _pixel_ (ps) values as a function of the sharing energies. This trend\nroughly goes as _≈_ 1/E, in agreement with what expected. A fit has also been\nperformed and the extrapolation at a value of 10 MeV shows a _σ_ _pixel_ of _≈_ 50\nps. In addition, using a CAEN signal emulator, signals with a rise-time similar to the one observed with _α_ sources and several amplitudes, from 30 mV\nup to 800 mV, have been sent to the test input of the Mesytec preamplifier,\nin order to test the intrinsic timing resolution of the preamlifier coupled with\nthe CAEN digitizer. The values, showed as red points in Figure 11, show\nthat the used electronics is the most important limitation to the extracted\ntime resolution at high energy.\nWe underline that the figures and procedure have been discussed for two\nadjacent pixels, but this trend is also confirmed for the remaining adjacent\npixels. In conclusion, we were able to extract several information on the timing resolution as a function of the sharing energy. These information were\nextracted using _α_ radioactive sourc",
+        "score": -5.988190840911234,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8345740281224152,
+        "rerank_score": -9.311466217041016,
+        "matched_nodes": [
+          "In",
+          "Timing",
+          "The",
+          "We",
+          "For",
+          "To",
+          "Energy",
+          "University"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2749,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2692914__2309.00225__Rapid_single-shot_parity_spin_readout_in_a_silicon_double_quantum_dot_with_fidelity_exceed.md",
+        "title": "2024__recid_2692914__2309.00225__Rapid_single-shot_parity_spin_readout_in_a_silicon_double_quantum_dot_with_fidelity_exceed",
+        "text": "u-Zener\n\ntransition into the |↑↓⟩ state. To infer this, we perform a controlled-rotation experiment. Here, we\n\nmeasure the left qubit resonance peaks at a charge symmetry point with an exchange coupling of about\n\n25 MHz. Indeed, we see the peak position depends on the state of the control qubit (Q R )\n\n(Supplementary Fig. 2a). If we have imperfect initialization to the |↑↓⟩ state, there is a finite\n\npopulation of the |↓↑⟩ state. For the Z-CROT signal (red trace in Supplementary Fig. 2a), it results in\n\nan additional peak at the resonance condition for CROT. In our experiment, we do not see a clear peak\n\nstructure in our experiment (Supplementary Fig. 2b). For the number of samplings used in this\n\nexperiment (𝑁= 2,000), we are not able to distinguish a resonance peak from the noise expected from\n\nbinomial distribution (Supplementary Fig. 2c, standard deviation = 0.0017). Therefore, we expect the\n\nresidual population in |↓↑⟩ is at most comparable to this standard deviation. To measure it with higher\n\nprecision, it is necessary to increase 𝑁 significantly, but the limited stability of the device used in the\n\nexperiment did not allow for such a time-consuming experiment. Nonetheless, this initialization error\n\nwould not be a practical limitation since it can be suppressed by increasing the ramp time.\n\nSupplementary Fig. 2. Controlled rotation. **a**, EDSR spectra for two control qubit states Q R =|↓⟩ (red)\n\nand Q R =|↑⟩(blue). The imperfect visibility is mostly due to the miscalibration of microwave pulse\n\namplitude or length. We collect 2,000 single-shot data per one data point. **b**, Zoom up around the\n\nCROT resonance frequency 𝑓= 19162.5 MHz. The red points are measured data and the black line\n\nshows the average of the plotted data (0.004829). This average value is somewhat higher than the one\n\nmeasured in Fig.4 due to imperfect calibration. **c**, Comparison of the histogram of measured data (red\n\npoints) and the resampled data from a binomial distribution with an expectation value of 0.004829\n\n(black curve).\n\n**Inter-dot tunnel coupling dependence of** _**T**_ **1** **during spin readout**\n\nSupplementary Fig. 3 shows 𝑇 1 measured as a function of vB4 during spin readout. The direct\n\nmeasurement of 𝑡 c is difficult for the range of vB4 used in this measurement. As a reference,\n\nsupplementary Fig. 3b shows extrapolation from measurements where 𝑡 c is significantly larger than\n\nthe thermal broadening.\n\nSupplementary Fig. 3, **a**, 𝑇 1 of T - and T + measure",
+        "score": -6.378344067847266,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7535153019023987,
+        "rerank_score": -9.902099609375,
+        "matched_nodes": [
+          "In",
+          "If",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5243,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "r with the same overvoltage. In\nthis scenario, the photo-electron distribution of SiPM2 should\nbe free of pedestal due to the deployment of the 0.5 PE height\ntrigger. Subsequently, a software algorithm was used to search\nfor coincidence signals in SiPM1 within a time gate T 0 +dT,\nwhere dT=50ns and T 0 is the trigger time for SiPM2. If there\nis a PE signal in the time window, we integrate over the area\nof the PE signal (Fig. 1(a)) of SiPM1. On the contrary, if there\nis nothing but baseline in the gate, we integrate over the same\n\nregion of SiPM2 in SiPM1(Fig. 1(b)). In this trigger mode,\nthe PE distribution of SiPM1 has a majority of pedestal. For\nexample, Fig 2 displays the PE distributions of two SensL\nSiPMs in a dark environment at 4.5V overvoltage and liquid\nnitrogen temperature.\n\n(a)\n\n(b)\n\nFig. 1: Illustrations of the software selection for two SiPM\nsamples (SiPM1 and SiPM2)\n\n.\n\nThe coincidence probability _P_ _coin_ is defined as the ratio\nof PE events on SiPM1 in coincidence with PE events on\n\nSiPM2 to triggered PE events on SiPM2, resulting in _P_ _coin_\n= 2834/30000 = 9.45%, as shown in Fig 2. Initially, _P_ _coin_\nreflects the eCT level of both SiPM1 and SiPM2, as eCT\nphotons emitted from the dark noise of SiPM2 are then\nreceived by SiPM1, and vice versa, both contributing to the\ncoincidence probability. If this is accurate, an increase in the\novervoltage of SiPM2 would be expected to lead to a higher\n_P_ _coin_, as the overvoltage enhances the SiPM gain, resulting\nin more charge carriers in avalanches. Theoretically, a higher\nnumber of charge carriers in a single avalanche corresponds to\na higher eCT probability. In other words, _P_ _coin_ as a function of\nthe SiPM overvoltage _V_ _over_ is expected to be a monotonically\nincreasing function. However, our measurement indicates that\n_P_ _coin_ does not increase consistently with _V_ _over_ for SiPM2.\nFig 3 shows _P_ _coin_ as a function of _V_ _over_ for SiPM2. It is\nworth noting that accidental coincidences of dark signals are\ndisregarded, as the DCR of the SiPM is approximately 0.2\nHz/mm [2] at liquid nitrogen temperature. At this dark noise\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 3\n\nSiPM 1\n\nSiPM 2\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n-1 0 1 2 3 4 5 6\n\nPE\n\n-1 0 1 2 3 4 5 6\n\nPE\n\nFig. 2: PE distributions of two Sensl J-60035 SiPMs facing\neach other. Both graphs present 30000 dark signals in the trigger mode where only SiPM2 was triggered with the threshold\no",
+        "score": -6.402776750411546,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8842018196856907,
+        "rerank_score": -9.955169677734375,
+        "matched_nodes": [
+          "In",
+          "On",
+          "If",
+          "The",
+          "For",
+          "IEEE",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4926,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "For large and very large zenith distance air\nshowers (airmass ≳ 3 (AM3)) there is no dependency of the\nspectral shape on the energy or impact parameter. We, therefore, simulate air showers of 5 TeV gamma rays to achieve a\nhigh photon statistic per simulated event, with impact parameters between 0 – 600 m (same as used in the standard MAGIC\nMonte-Carlo (MC) simulations), randomly distributed along 2π\nin azimuth. We note that the increase in the simulated impact\nparameter range is not relevant for the determination of the\nCherenkov spectra, but only for a potential calculation of the\neffective collection area of the telescope. This is very similar\nto the approach used in [21]. The shown spectra in figure 7 are\nthe result of several thousand of such simulated events at zenith\n\ndistances 10 [◦] and 80 [◦] . We considered all photons reaching the\nimaging camera and did not include any simulation of a trigger\nlogic, since this happens only after the photons are converted\ninto electronic signals.\nBy multiplying the detection efficiency of a given detector\nwith the wavelength-dependent mirror reflectivity, the absorption of the camera entrance window, and the Cherenkov spectrum of a given zenith distance one can calculate the detectable\nfraction of Cherenkov photons for this detector type. This represents the maximum achievable efficiency as it does not take\ninto account camera and pixel fill factors. This fraction is shown\nin figure 8 for the four different light detectors under study.\nIn addition, we also show the resulting graph for the recent 7dynode Hamamatsu PMT R12992-100-05 as measured by [34]\nand used for the medium and large-size telescope imaging cameras of CTA. It is interesting to note that the SiPMs show a more\nflat behavior compared to the PMTs. All sensors show an efficiency drop once the majority of the Cherenkov light distribution is shifted towards longer wavelengths than the optimal\nPDE range.\nThe main reason for building a large IACT is to achieve a low\nenergy threshold. Especially low or medium zenith distance observations can provide a low threshold. On the other hand, over\nthe course of recent years MAGIC has maximized observations\nat large zenith distances, see for example [29, 33, 35]. These\nobservations can allow one to access sources in a wider solid\n\nangle as well as to extend the energy range of MAGIC towards\nhigher energies, from multiple tens of TeV to above 100 TeV.\nTo further motivate the necessity of larger zenith distance observ",
+        "score": -6.421608552252783,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7535153019023987,
+        "rerank_score": -9.968660354614258,
+        "matched_nodes": [
+          "In",
+          "On",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 3395,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science.md",
+        "title": "2024__recid_2720141__2311.04601__Fast_timing_detectors_with_applications_in_cosmic_ray_physics_and_medical_science",
+        "text": "is the first time that fast\nsampling will be performed in space. The idea is then to extract the ion identification ( _p_, _He_, _Au_, _Pb_, etc) and their energies by measuring the amplitude\nand duration of the signal. In order to determine the accuracy of such measurement, we performed a full simulation starting from the particle simulation using\nGEANT4 [4] to the interaction with the detector using Weightfield [5] and the\nextraction of the signal using LTspice [6].\nFrom the simulation, we identified the maximum amplitude of the signal in\nthe stopping layer and the time to reach 90% of the maximum of the signal\n(rise time) as key elements to perform particle identification and energy measurements. The maximum amplitude vs the rise time for p-Fe ions stopping in\nthe detector is shown in Fig 1. This allows to obtain particle identification (the\n_Z_ value) since the different curves do not overlap for most values of rise time.\nThere is still some inefficiencies for small rise time values where curves overlap\n(when the signals are too short). It is also worth noticing that we have large\ndifferences between a typical LGAD signal originating from a minimum ionizing\nelectron, 100 MeV proton or a Pb ion stopping in the detector, as an example. It leads to signals of about 3. 10 [7], 2. 10 _[−]_ [6] and 5. 10 _[−]_ [3] A, respectively.\nThese large ranges of signal amplitudes were the reason why we developed two\ndifferent amplification chains on our readout card allowing to measure lower\nsignal with better accuracy. In Fig. 2, we show the maximum amplitude vs rise\ntime for protons, [3] He, and [4] He ions. We see that we can distinguish between\nthe different He isotopes which is quite fundamental for cosmic ray models. In\nFig. 3, we display the rise time vs energy showing the possibility of measuring\nthe particle energy once the type of the particle is identified (using Fig. 1.\nThe launch of AGILE by NASA is foreseen by the end of 2023. Beam tests\nto check in depth the results of the simulation with respect to data occurred\nat Brookhaven National Laboratory at the end of May. Some tests were already performed at the University of Kansas and at NASA using a radioactive\nsource (Americium-241). In Fig. 4, we show on the left the amplitude vs time\ndistributions as measured by AGILE for alpha particles originating from the\nAmericium-241 radioactive source compared to simulation On the right, we display the maximum amplitude vs the 90% Rise time. A good agreement is fou",
+        "score": -6.574229407046234,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.727874276261373,
+        "rerank_score": -10.200424194335938,
+        "matched_nodes": [
+          "In",
+          "On",
+          "HE",
+          "The",
+          "We",
+          "University"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6182,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2790339__2405.15922__Investigation_of_the_burst_phenomenon_in_SiPMs_in_liquid_nitrogen.md",
+        "title": "2025__recid_2790339__2405.15922__Investigation_of_the_burst_phenomenon_in_SiPMs_in_liquid_nitrogen",
+        "text": "s are related to the first SiPM signals of the burst event.\n\nIf burst events are related to the interaction of ionizing particles with the SiPM, the number of\n\nburst events should increase with the rate of ionizing particles interacting with it, such as when it\n\nis placed near a radioactive source. To verify this hypothesis, two SiPMs were placed one in front\n\nof the other in vertical configuration and a thoriated tungsten electrode for TIG welding was placed\n\nin between. As expected no coincidences between the burst events triggered in the two SiPMs\n\nwere observed, since no particles crossing both devices are expected. In this case, the bust rate can\n\nbe parameterized as the sum of the contribution from environmental radioactivity and that from\n\nthoriated tungsten electrode, called _𝑅_ _𝑇ℎ_, while the cosmic ray contribution is zero since the vertical\n\nconfiguration:\n\n_𝑅_ _𝑏𝑢𝑟𝑠𝑡_ = _𝑅_ _𝑒𝑛𝑣_ + _𝑅_ _𝑇ℎ_ (3.3)\n\n– 5 –\n\n**Figure 3** . Temporal distribution of single events inside the burst. Superimposed an exponential decay curve\nfit. In this example, the dacey time _𝜏_ is (118±2)ms\n\n_𝑅_ _𝑇ℎ_ was evaluated as the difference between the total burst rate measured in this test, equal to\n(93 ± 7) mHz, and _𝑅_ _𝑒𝑛𝑣_, which is constant and was previously evaluated 3.2. The result is:\n\n_𝑅_ _𝑇ℎ_ = (77 ± 7) mHz (3.4)\n\nThis burst rate contribution is in agreement, within the experimental error, with the expected number\nof particles hitting the SiPM produced by the thoriated tungsten electrodes, equal to (81 ± 1) mHz.\n\nThis result further validates our hypothesis that bursts are triggered by ionizing radiation that\n\nreleases their energy in the SiPM.\n\n**3.1** **Temporal distribution of events in a burst**\n\nWe further investigate the temporal distribution of the single events in the burst. To do that, we\n\nacquired many hours of data and we identified burst events with the technique described in [9]. For\n\neach burst of events (in total we analysed 549 bursts) we studied the rate of events inside the burst.\n\nLooking at the arrival time of the single events in the burst, we can reconstruct the time distribution\n\nof events as shown in figure 3. Here, we divided the total temporal length of the burst in several\n\n– 6 –\n\n**Figure 4** . Histogram of the decay constant _𝜏_ . Superimposed a Gaussian fit.\n\nslices and we counted the number of events that happened in each bin ( _𝐸𝑣𝑒𝑛𝑡𝑠_ ( _𝑡_ )). Given the shape\n\nof the obtained trend, as shown in figure 3, we supposed a simple expon",
+        "score": -6.600347146307959,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7535153019023987,
+        "rerank_score": -10.243642807006836,
+        "matched_nodes": [
+          "In",
+          "If",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5241,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "em [6]–[8]. (1) If the secondary photon is absorbed by\nthe neighboring Single Photon Avalanche Diode (SPAD) and\ntriggers an additional avalanche within the same SiPM, it\nis referred to as internal optical crosstalk (iCT) [9]. More\nspecifically, iCT can further be divided into direct crosstalk\nand delayed crosstalk based on whether the electron is produced in the depleted region or in the undepleted region.\nMore information can be found in [10]. (2) Secondary photons\ncan pass through the SiPM window, escape, and be detected\nby external photo-sensors, such as another SiPM facing the\nfirst one, known as external crosstalk (eCT) [11]. (3)The final\ncorrelated effect is optically-induced afterpulsing (AP) [12],\nresulting from electrons in the undepleted region within the\nsame cell [10]. As the result, optical-induced AP usually appears behind the primary pulse after hundreds of nanoseconds\nto microseconds because of the recharge time of SPADs. As a\nresult, optically-induced AP typically occurs after the primary\npulse, ranging from hundreds of nanoseconds to microseconds,\ndue to the recharge time of SPADs\nThese correlated effects could significantly impact experiments aiming to achieve a large photon-sensitive area using\nSiPM readout, as detailed in the Darkside and nEXO references [13] [14]. First of all, the light yield of the detector\nis probably overestimated since single incident photons would\ngenerate a signal with the integral area larger than 1 PE (photoelectron), because of the presence of iCT, eCT or AP. To\nestimate the corrected light yield, the knowledge of the probability of the three correlated effects is important. In addition\nto light yield overestimation, other negative effects need to\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 2\n\nbe considered. For instance, the presence of AP can impede\nthe n/ _γ_ pulse shape discrimination in the background rejection\nanalysis when using the prompt fraction method. Moreover, a\nhigh percentage of iCT and eCT would degrade the energy\nresolution. Additionally, eCT also generates unavoidable coincidental background in low threshold experiments, as eCT\nsignals always occur simultaneously.\nOverall, for any experiment employing large area SiPM\narrays, the understanding of SiPM correlated noises is mandatory. The iCT probability is calculated by _P_ _iCT_ = _N_ _[N]_ (0 [(][1] _._ _[.]_ 5 [5] _P E_ _[ P E]_ ) [)]\n\n[15], where _N_ (1 _._ 5 _PE_ ) is the dark count rate (DCR) with\n1.5 PE threshold",
+        "score": -6.609750650405884,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -10.287308692932129,
+        "matched_nodes": [
+          "In",
+          "On",
+          "If",
+          "The",
+          "For",
+          "To",
+          "IEEE",
+          "Transactions",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3716,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2732682__2312.04303__Neutrino_fog_for_dark_matter-electron_scattering_experiments.md",
+        "title": "2024__recid_2732682__2312.04303__Neutrino_fog_for_dark_matter-electron_scattering_experiments",
+        "text": "the _rate_ at which they decrease\ndepends on how badly the neutrino background overlaps with\nthe signal for that particular DM mass. This can be seen in\nFig. 3 where we show the decrease in the discovery limits for\nthree example DM masses in a silicon target experiment. The\nfact that these lines do not decrease as expected for Poissonian\nstatistics _σ ∝_ 1 _/_ _[√]_ Exposure—-and instead have temporary\nplateaus—this is the detrimental effect of the neutrino fog.\n\nSo to quantify the “opacity” of neutrino fog, we can just\nconsider the gradient of these lines. As in Ref. [75] we calcu\n\nlimit scales as _σ ∝_ ~~�~~ (1 + _Nδ_ **Φ** [2] ) _/N_, or _n >_ 2 [56]. Fi\nnally, when the number of observed events is so large that the\nexperiment can effectively measure its own background, the\nPoissonian regime returns. However, we emerge into this final regime only if there is some information present in the\nobservable at hand (in our case, the recoil spectrum), that distinguishes the signal from the background. If the signal and\nbackground lead to _identical_ observables, then there will be a\nhard neutrino floor: _n →∞_ .\nTo visualise the neutrino fog, we can simply colour-code\nthe DM parameter space by the value of _n_ . This leads to the\nplots in the right-hand panels of Fig. 2. We present the silicon\nand LXe neutrino fogs as representatives of solid and liquid\ndetectors. The neutrino fogs for the light mediator case, as\nwell as for germanium and LAr, are presented in Figs. 4 and\n5. The darker-coloured regions represent areas where _n >_ 2,\nmeaning the DM and neutrino event rates have greater spectral degeneracy. In most cases, there are slight differences\nbetween the DM and neutrino signals, which make it possible\nto distinguish the two in the high-statistics regime. Therefore,\nwe find that once _N_ has grown large enough, the scaling returns back to _n_ = 2 for very low cross sections.\nOn the other hand, for very low DM masses in the semiconductor and LAr cases, both the DM signal and the low-energy\ncomponent of the neutrino background ( _pep_ ) are contained\nonly in a single bin in _n_ _e_ . Because of this, we have a hard\nneutrino _floor_ . The reason behind this is related to what we\nstated above: when the signal and a background component\nare contained in a single bin, there is no information available\nto the experiment that could ever distinguish them, even in the\nlimit of a huge exposure. This occurs, for example, around\n1.5 MeV in the silicon case. Similar fe",
+        "score": -6.667137903144086,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803143093465674,
+        "rerank_score": -10.352276802062988,
+        "matched_nodes": [
+          "In",
+          "On",
+          "If",
+          "The",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "DOE": 1.0,
+      "Timing": 1.0,
+      "HE": 1.0,
+      "If": 1.0,
+      "LE": 1.0,
+      "Im": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "DOE": 1.0,
+      "Timing": 1.0,
+      "HE": 1.0,
+      "If": 1.0,
+      "LE": 1.0,
+      "Im": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "Office": 0.7,
+      "Department": 0.7,
+      "IEEE": 0.7,
+      "Quantum": 0.7,
+      "Energy": 0.24499999999999997,
+      "University": 0.24499999999999997,
+      "Transactions": 0.24499999999999997,
+      "Nuclear": 0.24499999999999997,
+      "Nature": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 21,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 2.246701112948358,
+    "generation_latency_s": 8.596107363700867e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 21.0,
+    "retrieval_latency_s": 2.246701112948358,
+    "generation_latency_s": 8.596107363700867e-07
+  }
+}

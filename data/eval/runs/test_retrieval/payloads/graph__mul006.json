@@ -1,0 +1,393 @@
+{
+  "benchmark": {
+    "query_id": "mul006",
+    "query_type": "multi_hop",
+    "query": "How can ToT calibration influence spatial reconstruction?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "ToT"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can ToT calibration influence spatial reconstruction?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 386,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "80 pixels in both directions. Only the whole images not selected using the\ndefault grid would then be evaluated with the additional secondary grid.\nThe anomaly detector tends to select patches at a guard ring _§_, cell numbers and\ncell borders as false positive, due to the increase in the AE reconstruction error in these\nareas. In addition, contact marks are a common source of false positives, see (e) in\nfigure 11. With the proposed approach, where the detection is invariant to the anomaly\nlocation on the sensor, these cannot be eliminated.\n\n_6.2. Efficiency_\n\nAverage inference times for a whole image are reported in table 4, with both the default\ngrid and the secondary grid. An average sensor scan consisted of 335 images, for which\nthe picture-taking time is 9.2 minutes. On average, an inspector inspects a whole image\nin two seconds, evaluating one scan in 11 minutes. On an RTX A2000, the inference time\nis less than 6 minutes for the scan with both grids. The GPU is necessary, as the short\nrun time allows parallel picture-taking and pre-selection. At variance, the evaluation of\na scan would take approximately 45 minutes on a regular CPU, significantly delaying\nthe subsequent electrical characterization.\n\n**Table 4.** Average inference times on a GPU or a CPU for whole images using the\ndefault and secondary grids.\n\nGrid Run time [s]\n\nRTX A2000 GPU Default 0.8\n\n+ secondary 1.0\n\nCPU Default 8.1\n\n+ secondary 13.8\n\n_6.3. Continuous learning_\n\nGiven that new data will be measured continuously, the PSA should be retrained\nto adapt to the new data. Using new normal images to train the AE would not\nimprove its task of poor anomaly reconstruction, so it does not require retraining. Also\nthe background detector is considered to be robust enough to not require immediate\nretraining. However, the accuracy of the anomaly detector could be improved via\ntraining with novel anomalous patches. For example, training instances such as the\nmissed anomaly (d) in figure 10 did not exist in the original training data set.\nAnomalous images acquired after the initial deployment were given ground truth\nlabels to extend the training data set. The anomaly detector was retrained starting from\n\n_§_ A guard ring is a structure at the periphery of a sensor designed to protect it from currents from the\ncutting edge, and shown in figure 11 (f) as the black line with false positives.\n\n14\n\nrandomly initialized weights with 2.1 times more anomalous patches than the original\nmodel. An independ",
+        "score": -5.555619594607437,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8245614035087719,
+        "rerank_score": -8.64478588104248,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "At",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1421,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i.md",
+        "title": "2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i",
+        "text": "step (MCS).\nThe Ising spin glass is cooled from its initial infinite\ntemperature spin configuration at _T_ = 10 to _T_ = 0 _._ 6.\nAt each temperature, after an initial equilibration time\nof 10 [5] MCS, we check to see if the system is equilibrated\nusing the method of Bhatt and Young [47]. Details of\nthe equilibration are given in Appendix B.\nEach TLS has an electric dipole moment. These\nelectric dipoles are initialized with random orientations.\nSince the electric dipole-dipole interaction is an order of\nmagnitude smaller than the elastic dipole-dipole interaction, it is the elastic interactions between TLS that\ngoverns their dynamics. We represent these dynamics by\nthe Ising spin glass described above. Thus, each electric\ndipole has a corresponding Ising spin. If the Ising spin\nflips, then the corresponding electric dipole and its image\ndipole flip 180 _[o]_ . We consider two cases of electric dipole\norientations. In both cases, the magnitude of the dipole\nmoment is unity. In the first case, the dipoles are randomly oriented with random x, y, and z components. To\nbetter understand the contribution of each component,\nwe also consider a second case where the dipoles all lie\nparallel to one another along the x, y, or z axis, though\nthey are randomly oriented in the positive or negative\ndirection.\nLet us take a moment to describe the device geometry\nthat we have in mind. TLS that have both an electric\nand an elastic dipole moment are located on every site\n\nnoise power spectral density can be determined from\nthe Fourier transform of the autocorrelation function\n_C_ _i_ ( _τ_ ) = � _−∞∞_ _[δV]_ _[i]_ [(] _[t]_ [)] _[δV]_ _[i]_ [(] _[t]_ [ +] _[ τ]_ [)] _[dt]_ [.] For a time series of\n1 _∞_\nlength _t_ total : _S_ ( _f_ ) = _t_ total � _−∞_ _[C]_ _[i]_ [(] _[τ]_ [)] _[e]_ _[−]_ [2] _[πifτ]_ _[dτ]_ [. A useful]\nmethod for computing the power spectrum is the periodogram estimate [48]:\n\n1\n_S_ _i_ ( _f_ ) = _|δV_ _i_ ( _f_ ) _|_ [2] _,_ (14)\n_t_ total\n\nwhere _t_ total is the length of the potential time series, and\n_δV_ ( _f_ ) is the Fourier transform of the electric potential\ntime series. The Fourier transform is computed using\nthe C subroutine library FFTW [49]. At a given temperature, the time series _V_ _i_ ( _t_ ) is split into ten segments\nof equal length. The power spectrum is found for each\nsegment and is averaged over these segments to give a\nsmoother power spectrum. The power spectrum is normalized so that\n\n5\n\nFIG. 2. Plots of the electric dipole potential",
+        "score": -6.570895399327864,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7719298245614036,
+        "rerank_score": -10.20051383972168,
+        "matched_nodes": [
+          "In",
+          "To",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 53,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "he decoder is also responsible for converting the\nSOP-EOP protocol to the EndEvent (EE) protocol used within\nthe clustering architecture: a 32-bit EE word is interposed\nbetween SPs of different events in all the 8 data streams. Each\n\nEE word carries a specific flag to distinguish it from SPs, and\nan event identifier (5 bits), that can be used during subsequent\ndata processing to cross-check data synchronisation.\n\n_E. Isolation flagging_\n\nWithin the decoder block, SPs are flagged with an isolation\nbit. The flagging process includes five steps: read, buffer, load,\nflag and write, arranged in a pipeline, as shown in Fig. 13.\nFirst, all SPs of a given event are read and stored into\nregisters. The maximum number of SPs that can be stored\nin the read registers is not dynamically adjustable. It has been\nset to 144 based on the distribution of the expected number\nof SPs in the most crowded VELO module, requiring more\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2023 8\n\nthan 98% of the LHCb simulated events to be accommodated\n\ninto the read registers. In events where the number of SPs\nexceeds the size of the read registers, SPs are not sent to the\nflagging process but are instead bypassed and sent directly to\nthe matrix chains. This causes a local slowdown of the entire\n\nchain as the matrices need to reconstruct clusters from a high\nnumber of SPs. This effect is included in the measurement of\n\nthe average throughput of the entire system. In addition, as the\nnumber of input SPs increases, the fraction of SPs overflowing\nthe number of available matrices gets higher, increasing the\nnumber of split clusters. The corresponding increase in split\nclusters is also taken into account in the evaluation of the\n\nreconstruction performance.\nAs soon as all SPs of one event have been received, the\ncontent of the read registers is copied to the buffer. This\ndata exchange decouples the reading and flagging operations,\nallowing SPs of one event to be read in while the flagging\nof the previous event is still ongoing. The flagging process\ncompares the coordinates of each SP to the ones of the\nother SPs in the same event. A status vector is used to store\n\nthe isolation flag for each SP: if two SPs are found to be\nneighbours, the corresponding bits in the status vector are set\nto 1. SP comparisons are not all performed in a single clock\ncycle. On each clock, the load block extracts two subsets of\n16 SPs each from the buffer (Fig. 13). For each SP in the two\nsubsets it al",
+        "score": -6.663137258763899,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7719298245614036,
+        "rerank_score": -10.342424392700195,
+        "matched_nodes": [
+          "In",
+          "On",
+          "SP",
+          "The",
+          "For",
+          "VELO"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6164,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cavity (blue curved lines), after initialization in the bright (orange)\nor dark (blue) state. An exponential fit to the average fluorescence (solid lines) allows determining the cyclicity _ζ_ . Error bars:\n1 SD. **b,** After initialization, 71 pulses (red line in panel **a** and red circle in the inset) are applied on the spin-preserving line\nto read out the spin state. The probability distributions for the number of detected photons are clearly separated for the two\ninitial spin states (orange and blue), thus allowing for readout with a fidelity of 86 _._ 9(8) % using a threshold photon number\nof one (red line). Inset: Single-shot readout fidelity depending on the number of readout pulses while choosing the optimal\nphoton threshold.\n\nevery 10 µs, such that the readout with 71 pulses takes\n0 _._ 71 ms. Using the maximum rate allowed by the integration interval, this would be reduced to 0 _._ 22 ms.\nIn future experiments, the fidelity and speed of the\nreadout can be further increased by optimizing the photon outcoupling. In addition, one may attempt aligning the optical dipoles using a vector magnet [12], and\nfurther enhancing the quality factor of the cavity, where\neven a hundredfold increase seems feasible with improved\nnanofabrication [47]. The latter would enable other readout techniques, e.g. via cavity reflection measurements\n\n[7], that can fully eliminate photon scattering [48] and\nthus overcome the limitation currently imposed by the\nfinite cyclicity. We therefore expect that fidelities on par\nwith other solid-state emitters [11], and potentially even\napproaching common error correction thresholds [6] can\nbe achieved in future devices.\n\n**SUMMARY AND OUTLOOK**\n\nIn summary, we have demonstrated the first optical\nsingle-shot readout of a spin qubit in silicon, which constitutes a major leap towards scalable, integrated and\noptically controlled quantum information processing devices. To this end, the next key step will be the generation of spin-photon entanglement, which will be feasible\nin our setup using established cavity-enhanced protocols\n\n[7]. With this, our approach will find applications in two\nmain fields: distributed quantum information processing\nand quantum networking.\nFor quantum computing, large",
+        "score": -6.693056787725081,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7719298245614036,
+        "rerank_score": -10.38845443725586,
+        "matched_nodes": [
+          "In",
+          "To",
+          "An",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4577,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot.md",
+        "title": "2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot",
+        "text": "ltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\n1 [3]\n\n2 _[𝑉]_ [1PE] _[,]_ 2\n\npeak voltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\nbe obtained.\n\n**Figure 6** . An example of 200 waveforms, where the SiPM is operated at 60 V bias voltage, and its signal is\nprocessed by the pre-amplifier. For ease of observation, the amplitude of the synchronized signal from the\n\nlaser is scaled down to 1/40 and the timeline has been shifted.\n\nThe performance of the SiPM is closely related to the overvoltage, where a higher overvoltage\n\nleads to a higher gain but also results in a higher DCR and crosstalk rate, and more afterpulses. To\n\n– 7 –\n\n**Figure 7** . The distribution of the relative trigger time and the signal amplitude of a SiPM operating at 60 V\nbias voltage. The relative trigger time is the relative delay from when the laser signal is triggered, namely\nwhen the leading edge reaches the threshold, to when the SiPM signal is triggered.\n\ninvestigate the impact of overvoltage on SPTR and determine the appropriate operating voltage, we\n\ntest the SPTR of SiPMs at different operating voltages. The test result is shown in figure 8, where\n\nthe breakdown voltage can be obtained by linear fitting using the signal amplitudes at different bias\n\nvoltages. Since the SPTR measurement results vary at different threshold voltages, the best SPTR\n\nresults are obtained by scanning the threshold voltages. It can be observed from this graph that the\n\nSPTR measurement results stabilize at around 200 ps when the overvoltage exceeds 5 V.\n\n**Figure 8** . The signal amplitudes and SPTRs of a SiPM operating at different bias voltages. The breakdown\nvoltage can be found to be about 54 V by linear fitting.\n\nTo demonstrate the improvement of signal path differences by differential output, we conducted\n\nexperiments of a series-parallel SiPM array with two SiPMs in series, as shown in figure 9. We\n\n– 8 –\n\nextended the signal line length between the two SiPMs in series to about 10 cm, resulting in an\n\nexpected time delay of approximately 0.65 ns for the single-ended output signals of the two SiPMs.\n\nThe experiment result of single-ended output shows two distinct peaks for the single photon response\n\nin the relative trigger time, approximately 0.71 ns apart, consistent with expectations. In contrast,\n\nthe differential output result exhibits only one peak, indica",
+        "score": -6.715149606938948,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7719298245614036,
+        "rerank_score": -10.422443389892578,
+        "matched_nodes": [
+          "In",
+          "To",
+          "An",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7956,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie.md",
+        "title": "2026__recid_2963282__2508.16197__On_the_nature_and_charge_state_of_the_X-Defect_a_radiation-induced_Silicon_defect_with_fie",
+        "text": "nts of the _γ_ -irradiated diode for\ndifferent bias voltages are displayed in Figure 10\nand 11 (crosses). A shift of the X-Defect’s peak to\nlower temperatures with increasing bias is clearly\nvisible. Superimposed on these measurements are\nthe simulated spectra (solid lines), using the zerofield activation energy from Figure 7 and the capture\ncross-section obtained from DLTS measurements on\nthe same sample [ 19 ]. For this simulation the PAT\nenhancement model is used. A good, but not perfect match between measurement and simulation is\n\nfound. At the lower bias voltages, nearly perfect\nmatches are found. At higher biases, i.e. stronger\nelectric fields, the rising edge of the simulated peak\nis faster compared to the measured one, while the\n\n9\n\neffective doping concentration. The identification\nof PAT as an emission mechanism implies that the\nX-Defect is electrically neutral in the space charge\nregion, and therefore does not affect _N_ eff at ambient temperatures. Furthermore, the measured\ncharacteristics of the X-Defect, including apparent\nactivation energy, capture cross-section and emission mechanism, are in good agreement with literature values for the donor charge state of the singly\ncharged di-vacancy, V 2 (+ _/_ 0). The zero-field activation energy of the X-Defect is determined to be\n_E_ A,0 = (0 _._ 1962 _±_ 0 _._ 0007) eV.\nIn conclusion, the defect previously introduced\nas the X-Defect is indeed the singly charged Silicon\ndi-vacancy, V 2 (+ _/_ 0).\n\n**Appendix A. Validation of the PF model**\n\nTo validate the PF model implementation in the\nsimulation code, TSC measurements for the B i O i\ndefect were carried out on the _γ_ -irradiated diode at\ndifferent bias voltages, as the B i O i defect is known\nto be subject to the PF effect. The measurements\nalongside the simulation are shown in Figure A.12\nand A.13. An activation energy of 0 _._ 27 eV and a\ncapture-cross section of 1 _._ 05 _·_ 10 _[−]_ [14] cm [2] were used as\ninput parameters, taken from Ref. [ 14 ]. To obtain\nthe simulated spectra shown in Figure A.12, the\nemission enhancement factor Γ PF had to be modified by a factor of 0 _._ 97, a modification of 3 %. This\nadjustment is justified by the requirement formulated in Ref. [ 39 ]. Hartke states that the PF effect\narises from the electrostatic attraction between a\n\nsingly charged positive ion and an electron under the\ninfluence of a uniform electric field. The requirement\nof a uniform field might not be satisfied for a highly\ndoped, irradiated dio",
+        "score": -6.732633754763687,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8245614035087719,
+        "rerank_score": -10.45557689666748,
+        "matched_nodes": [
+          "In",
+          "To",
+          "An",
+          "At",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -6.7695999758201735,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7719298245614036,
+        "rerank_score": -10.506213188171387,
+        "matched_nodes": [
+          "In",
+          "To",
+          "At",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "t detectors in CE _ν_ NS exper\n\nASN oscillation parameters.\n\n**B.** **With Different Masses of the Detector**\n\n9\n\niment exhibit a mass advantage of one order of magnitude,\nassuming that measurements of eV-scale recoil thresholds are\nfeasible and a signal-to-background ratio of about 1 can be\nachieved in the experiment [60]. Figure 5 shows the ASN\nmixing sensitivity in sin [2] 2 _θ_ 14 – ∆ _m_ [2] 41 [plane at 95][%][ C.L. for]\nan exposure of 1 yr for different mass of the detector. Figure 5(a) shows for Si detector and Fig. 5(b) for Ge detector,\nboth with masses 10 kg, 50 kg, and 100 kg. It can be noted\nhere that, sensitivities are extracted considering a threshold of\n100 eV and 20 eV for silicon and germanium detector, respectively. At a given detector mass at higher ∆ _m_ [2] 41 [the sensitivity]\nin sin [2] 2 _θ_ 14 is more as compared to lower ∆ _m_ [2] 41 [. The sensi-]\ntivity improves in all regions of sin [2] 2 _θ_ 14 with an increase in\ndetector mass as the number of expected events increases. It\nis evident that the Ge detector excludes both allowed regions\nof the GALLIUM experiment.\n\n**C.** **With Various Detector Thresholds**\n\nAs previously discussed, the recoil energy of nuclei decreases as the mass number of the detector increases. There\nfore, detectors with low thresholds, such as Ge and Si can\nperform nuclear recoil discrimination down to the eV scale\nenergy threshold. Such detectors will be more useful if we\ncan observe the recoil energies as low as a few tens of eV. In\nthe context of CE _ν_ NS cross-section, as given in Eq. 1, the nuclear recoil energy _T_ serves as the relevant observable. For\na given neutrino energy, there is a limit to the maximum recoil energy. The cross-section is maximum for lower values of\n_T_, therefore, the total number of observed event rate sensitivity dependent on the low-energy threshold for nuclear recoil\n_T_ _min_ . A comprehensive study has been performed to assess\nthe impact of detector threshold on ASN mixing sensitivity,\nconsidering both Si and Ge detectors with a mass of 10 kg\nplaced at a distance of 4 m from U-Apsara reactor core. Figure 6 shows the sensitivity in sin [2] 2 _θ_ 14 –∆ _m_ [2] 41 [plane at 95][ %]\nC.L for detector with different threshold energies. The sensitivity of the detector at lower ∆ _m_ [2] 41 [is better at the lower de-]\ntector threshold. However, for ∆ _m_ [2] 41 _[≥]_ [1] _[.]_ [0] _[ eV]_ [ 2] [, the detector]\nthreshold has minimal impact on ASN mixing sensitivity.\n\nFIG. 7: The",
+        "score": -6.785484613652815,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7719298245614036,
+        "rerank_score": -10.530651092529297,
+        "matched_nodes": [
+          "In",
+          "NS",
+          "At",
+          "The",
+          "For",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2488,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "twin SET. **d), e)** Modulated\nreadout method using single SET 1 and single SET 2, respectively. _f_ mod = 25 kHz. **f)** Correlated readout method using\nthe twin SET modulated signal. _f_ mod = 25 kHz and the correlation function is given in Eq. 1. **g)** Square of the SNR\nas a function of integration time for the different techniques. Solid lines plot the fits to the function\nSNR [2] = _S_ 0 _τ/_ (1 + _A_ _f_ _τ_ _[α]_ ). **h)** Impact of the location of the charge transition on the charge readout infidelity for the\ndifferent techniques. _τ_ = 280 _µ_ s, _f_ mod = 25 kHz . Solid lines are used as guides to follow the trend of the points. The\ninset is a zoom-in to the region indicated by the box.\n\nwith integration time, consistent with signals affected by\n1 _/f_ _[α]_ (also known as “pink” or “flicker” for 0 _< α <_ 2)\nnoise [ 46, 47 ] (see Appendix F). In the regime where pink\nnoise is dominating, longer integration times will begin to\ncapture noise signals that are higher in amplitude, thus\nlosing the benefit of averaging over an increased number\nof samples. On the other hand, the modulation acts as a\nbandpass filter around _f_ mod, rendering the measurement\ninsensitive to pink noise. This result evidences the immunity to electrical noise provided by the modulation, and\nthe further improvement in readout sensitivity enabled\nby the correlation of the two signals.\n\nAn additional advantage of using a twin SET is that the\nreduction in signal that comes from moving the sensors\naway from the qubits can be compensated. In Fig. 2h),\nwe plot the charge readout infidelity obtained with the\ndifferent methods as a function of the double-dot pair,\nwhich is equivalent to changing the distance between\nthe center of the electric dipole and the sensors. For\ncomparison purposes, the total integration time in all\ncases is kept constant at 280 _µ_ s and the modulation\nfrequency is _f_ mod = 25 kHz . As expected, transitions\n\nbetween P1-P2 (P3-P4) are more weakly detected by\nSET 2 (SET 1 ) and the readout infidelity of the single SET\nmeasurement increases as the dipole is moved away from\nthe sensor. Notably, this monotonic trend is avoided by\nthe twin SET, with the correlation function providing\nbelow 0.3% readout infidelity ( _>_ 99 _._ 7% readout fidelity)\nthroughout the array.\n\n**IV.** **MODULATED SPIN READOUT**\n\nWe now study the impact that modulating the electron\nback and forth across a charge transition during readout\nhas on its spin degree of freedom. We load four el",
+        "score": -6.8042994635063305,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7719298245614036,
+        "rerank_score": -10.55959701538086,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1487,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "in Fig. 4\n\nFig. 7. Energy (Left) and time (Right) resolution obtained with the electron\nbeam test performed at BTF.\n\nperformed to study the performance expected with CE; due to\nlonger clusters and higher transversal leakage the linear and\nconstant term increased. An energy resolution better than 5\n(7.5)% was achieved at 100 MeV for runs at normal (at 50 _[◦]_ )\nincidence.\n\nTime resolution was evaluated as the difference between the\n\ntime of the two SiPM coupled to the same crystal, obtaining\na timing resolution better than 200 ps at 100 MeV. The fit\nfunction used for the time resolution is:\n\n_a_\n_σ_ _T_ = (2)\n_E_ [ _GeV_ ] _[⊕]_ _[b]_\n\nFig. 6. Left : Energy spectrum for a crystal irradiated with 6.13 MeV photons\nfrom the [16] _O_ . Right: primary and secondary distribution laser system.\n\nIII. C ALORIMETER PERFORMANCE\n\nTo verify the selected design before starting the massive\nproduction of the whole calorimeter components, a large size\nprototype was build and exposed to an electron beam at the\nBeam Test Facility of the National Laboratories of Frascati.\nThe Module-0 is composed of 52 undoped CsI crystals read\nout by 102 SiPM connected to FEE boards. Its mechanics\nwas designed to resemble as much as possible that of the\nfinal calorimeter, allowing the test assembly procedures and\ncooling. A detailed description of the setup and the main\nresults (reported in Fig. 7) obtained during the beam test can\nbe found in [13]. For what concerns the energy resolution, the\nfunction used to fit the data is:\n\n_σ_ _E_ _a_ _b_\n\n_a_ _b_\n\n_⊕_ (1)\n_E_ [ _GeV_ ] _E_ [ _GeV_ ] _[⊕]_ _[c]_\n\nwhere _a_ is proportional to the emission time constant of\nthe undoped CsI and _b_ represents the additional contribution\ndue to the readout electronics. In the years following the\ntest beam, the Module-0 has continuously operated to study\nthe behaviour in vacuum, at low temperature as well as for\ncarrying out vertical slice tests of increasing complexity, at a\nCosmic Ray test stand where the timing calibration algorithms\nwere improved. The timing resolution obtained subtracting\ntime of two SiPMs reading the same crystal is reported in\nFig. 8.\n\nFig. 8. Timing resolution of a single crystal of the large area prototype\n\nIV. C ALORIMETER PRODUCTION STATUS\n\n_A. Crystal and SiPMs characterization_\n\nThe physics requirements previously discussed were used\nto define a set of technical specifications for the undoped CsI\ncrystals and SiPMs. The selection criteria to accept crystals\nwere: _(i)_ a Light Y",
+        "score": -6.8926732199150225,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7719298245614036,
+        "rerank_score": -10.695556640625,
+        "matched_nodes": [
+          "In",
+          "To",
+          "An",
+          "The",
+          "For",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "NS": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "SP": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "NS": 1.0,
+      "At": 1.0,
+      "CA": 1.0,
+      "SP": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "CE": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "VELO": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 15,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.209400396794081,
+    "generation_latency_s": 3.403984010219574e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 15.0,
+    "retrieval_latency_s": 6.209400396794081,
+    "generation_latency_s": 3.403984010219574e-07
+  }
+}

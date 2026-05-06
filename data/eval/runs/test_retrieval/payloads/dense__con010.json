@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con010",
+    "query_type": "conceptual",
+    "query": "Why should retrieval and generation be evaluated separately?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "should",
+      "retrieval",
+      "and"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why should retrieval and generation be evaluated separately?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2023,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "mportantly,\nall basic analysis building blocks are shared between the trigger, the `sprucing` and the\noffline analysis, thus guaranteeing that the same software is used to compute the same\nquantities online and offline.\nFollowing this approach, the DaVinci analysis software is descoped (compared to\nthe versions designed to process the legacy data) to be only used for producing output\ntuples from input data (including simulation). Its core is an algorithm to produce _ntuples_\nthat stores measured quantities using _functors_ provided by the ThOr framework [250]\nwithin Moore . [88] These are the same functors that are used in the trigger or `sprucing`\nalgorithms, thus ensuring a one-to-one correspondence between applied selection requirements and observables used offline. It should be emphasised here that since no full offline\nreconstruction is foreseen in the computing model, the input data objects (tracks, clusters,\netc.) are identical online and offline [9,194].\n\n**12.6.4** **Data and analysis preservation**\n\nThe centrally produced samples are preserved on the distributed computing infrastructure\nand catalogued in a dedicated LHCb bookkeeping system (see section 12.7). In 2020\nLHCb ratified the CERN Open Data policy [251]. In accordance with the access policies\noutlined in this document, LHCb will make the output of the `Turbo` selections as well as\nthe output of the `sprucing` available to the public through the CERN Open Data portal.\nThe software necessary to read these files will be preserved as CVMFS releases. In order\nto enable secure access for third parties to the replicas of the data stored on the grid, a\n\n88 Ntuples are collections of variables related to an event, typically stored in a format suitable for Root\nor python packages. Functors are C [++] objects used in the LHCb code to return calculated kinematic\nvariables.\n\n171\n\nFigure 121: Diagram of a DIRAC release components. The concepts of (top) _horizontal_ and\n(bottom) _vertical_ extensibility are illustrated. Reproduced from [253]. © 2022 IOP Publishing\nLtd. CC BY 3.0.\n\nweb-based interface is under development, which will allow users to configure analysis\nproduction jobs with minimal knowledge of the LHCb software.\nTo facilitate flexibility and creativity in the end-user analysis, implementing a statistical\ninterpretation of the filtered data, only minimal constraints are placed on the necessary\nanalysis code. While commonly used libraries, such as RooFit, ScikitHEP [252], etc.\nare available",
+        "score": -6.31121661927965,
+        "dense_score": 0.32171034812927246,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.718111038208008,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 205,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5926,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2751895__2401.14683__Generating_Shuttling_Procedures_for_Constrained_Silicon_Quantum_Dot_Array.md",
+        "title": "2025__recid_2751895__2401.14683__Generating_Shuttling_Procedures_for_Constrained_Silicon_Quantum_Dot_Array",
+        "text": "electrons should\ninitially be placed as in (c). This also allows the two-qubit\ngate on _b_ 0 and _b_ 4 to be executed without adding the third row.\nAs this example shows, certain quantum circuits may not be\nexecutable depending on _A_, _R_, and _s_ 0 . That is, as shown in\nFig. 15(a), there may be no _p_ that satisfies the constraints and\nrequirements in the search space of _M_ .\nAs the scale of quantum circuits increases, it becomes\ndifficult to execute breadth-first search due to the limitation of\nmemory, so _M_ is explored using a depth-first search. However,\ndue to the complicated constraints and requirements, it is\npossible to search a space with no solution, as shown in Fig.\n15(b). An example is presented in Fig. 16. In this example, a\ntwo-qubit gate is executed on _b_ 0 and _b_ 1, followed by a twoqubit gate on _b_ 2 and _b_ 3 . The quantum dots in which _b_ 0 and\n_b_ 1 are trapped are not connected by channels. Therefore, in\n(a), _b_ 0 and _b_ 1 are shuttled to the bottom row of the array to\nexecute a two-qubit gate. However, this results in _b_ 0, _b_ 1, _b_ 2,\nand _b_ 3 being in the same row. This means that only shuttling\noperations that move these four electrons upward or downward\nat the same time can be executed. For example, _b_ 2 and _b_ 3\ncannot be adjacent to each other to conduct a two-qubit gate.\nOn the other hand, in (b), by moving _b_ 0 and _b_ 1 upward\nto the upper quantum dot, the four electrons are avoided to\nline up in the same row. As a result, a two-qubit gate for\n_b_ 2 and _b_ 3 can be executed with the procedure shown in (b).\nThis example suggests that certain operations may lead to a\nsituation in which subsequent quantum gate operations cannot\nbe executed. In such a case, it takes time to extract _p_ because it\nis necessary to exhaustively search a subspace with no solution\nand then move on to search another space by backtracking.\nDepending on the size of the subspace to be searched, the\nsearch may not be completed in a practical amount of time.\nOther quantum computers (e.g., superconducting quantum\ncomputers) have a similar problem, called the qubit mapping\nproblem, in which the constraint that the qubits to be executed\nin a two-qubit gate must be adjacent is called the nearest\nneighbor constraint (NN-constraint) [28] [29]. In the qubit\nmapping problem, the mapping between logical and physical\nqubits is changed by inserting a SWAP gate so that the NNconstraint is satisfied. The SWAP gate moves the contents of\nthe target qubi",
+        "score": -6.342372580272396,
+        "dense_score": 0.22709761559963226,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.764062881469727,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1999,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "channels like e.g. charm physics, hadronic beauty decays,\nleptonic decays, electroweak physics, etc. and will evolve during the experiment’s lifespan,\nas needed.\n\n##### **11.5 Alignment and calibration**\n\nThe fact that HLT2 performs a full offline-quality event reconstruction and selects the\nmajority of events based on the real-time analysis paradigm also necessitates an offlinequality alignment and calibration of the detector in real-time. This serves two separate\npurposes. The first is to provide the most accurate alignment and calibration parameters\nto the real-time reconstruction and selections. This ensures that the physics parameters\nof interest, such as particle masses or decay-times, are computed with the best possible\nresolution, maximising the selection efficiency. In addition, calibration parameters can\nbe stored and made available for offline physics analysis without (in most cases) the\nneed for further calibrations, simplifying the analysis workflow. The second is to provide\nlarge tag-and-probe samples which can be used offline to calibrate the difference between\nthe detector performance in real data taking and its performance in simulation. This\nis particularly critical for physics studies which require a permille-level accuracy of\nsingle-particle reconstruction and identification efficiencies for each particle type.\nAlignment and calibration procedures have been designed to maximise the physics\nreach and analysis flexibility rather than imposing centralised calibrations. For example,\nanalyses which can benefit from offline recalibration can be stored in the `FULL` stream. A\nnotable example is electroweak physics in which the very high transverse momentum of\nthe signal decay products are very sensitive to any residual misalignment. The optimal\nalignment needed for electroweak physics can be obtained using large samples of very high\nmomentum tracks (typical of _W_ and _Z_ boson decays) which can be collected only after a\nfew months of data taking, thus requiring an offline calibration which can be performed\nfor example once per year. Even these analyses, however, benefit from having the best\npossible alignment and calibration available in real time, as it minimises the difference\n\n154\n\n|run<br>of<br>(…)<br>End|run<br>of<br>(…)<br>End|run<br>of<br>(…)<br>End|run<br>of<br>(…)<br>End|run<br>of<br>(…)<br>End|run<br>of<br>(…)<br>End|run<br>of<br>(…)<br>End|run<br>of<br>(…)<br>End|\n|---|---|---|---|---|---|---|---|\n||||**FILL**|||||\n\nFigure 112: Sch",
+        "score": -6.41528772309769,
+        "dense_score": 0.22289063036441803,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.875934600830078,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 181,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2021,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "physics\nanalysis (data slimming).\nNormally, data which are saved in the `Turbo` stream by HLT2 are not further processed\nexcept for possible conversion to the final offline data format, creation of FSRs and\nstreaming ( _pass-through_ `sprucing` ). These steps correspond to the tasks performed in\nRun 2 by the Tesla application [177].\nIrrespective of the intermediate processing (skimming, slimming or pass-through),\ndata from both `FULL` and `Turbo` streams are eventually distributed into physics _streams_\noptimised to allow analysts to access reduced data sets categorised by physics topic. This\noptimises data processing time for a specific analysis as well as the use of computing\nresources such as disk access.\n\nCompared to HLT2, offline `sprucing` benefits from less strict limits on CPU time for\nselection algorithms. While no recalibration and no rerunning of the pattern recognition\nis planned, the `sprucing` selections will have more time for example for the analysis of\ncomplex cascade or many-particle final state decays where the number of track combinations to be tested increases very rapidly. In addition, offline `sprucing` allows detailed\nanalysis of physics topics where the full event information has to be taken into account\nsuch as electroweak physics or jet reconstruction.\nBoth exclusive and pass-through `sprucing` will run concurrently with data taking\nwhile global re `sprucing` campaigns will take place in end-of-year shutdowns whereby data\nwill be staged from tape.\n\n**12.6.2** **Distributed analysis productions**\n\nThe output of the `Turbo` stream and of the `sprucing` is split into multiple streams which\nare directly accessible to analysts. In the Run 1-2 (known as _legacy_ ) data model these\ndata sets would be processed by submitting user jobs to LHCb Dirac that filter one of\nthese streams to select physics-quantities of candidates for a specific analysis, typically\nresulting in a reduction in data volume of _O_ (10 [3] ) (see section 12.7 for all details on\ndistributed analysis). While this model works well for smaller data sets, scaling has been\nproblematic with legacy analyses requiring many thousands of jobs. This causes the\nmajority of analysts to be affected by site downtime, infrastructure instabilities and other\ndistributed computing issues. These problems are compounded by the imperative nature\nof user jobs where each one has exactly specified input data and cannot be adjusted to\nadapt to current grid conditions. To deal with these issu",
+        "score": -6.485830087372752,
+        "dense_score": 0.26341283321380615,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.986358642578125,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 203,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7670,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2898921__2503.07845__Characterization_of_the_SiPiC_payload_for_photon_detection_from_space.md",
+        "title": "2026__recid_2898921__2503.07845__Characterization_of_the_SiPiC_payload_for_photon_detection_from_space",
+        "text": "mperature as a function of time, storing data every 5 seconds during 25 minutes. At\nthe end of these measurements, the subsystem measures telemetry data (battery voltage\nand dosimeter readings, for example) and saves all the information in memory. The VS\nsubsystem runs the same subroutine but has resistor DUTs instead of SiPM sensors, as\npreviously explained.\nThe sequence executed by the CS to control all subsystems is shown in Figure 5.\nFirst, the CS sends a command to both subsystems to ensure that they are responsive.\nThen, it checks if 12 V signal is applied to the modules (needed by DCDCs for 30 V bias).\nIf this is the case, the experiment sequence is executed on the IS and VS and the CS measures telemetry data while it waits for them to finish. After experiment completion from\nall subsystems, the CS checks subsystem aliveness again. If all subsystems are alive, it asks\nfor experiment data from them and creates a report with that data and the telemetry to be\nread by the satellite’s main computer through CAN when requested. After that, another 25\n\n6\n\nminute experiment is run on all subsystems and the sequence repeats again.\nThe CAN protocol was chosen for communication with the host computer because of its\napplication in the aerospace industry [22, 23, 24], robustness and built-in error detection and\nerror handling mechanisms (checksum, acknowledgments, and automatic re transmission of\ncorrupted messages).\n\n### **3 Characterization Setup**\n\nFirst, the SiPM Optics subsystem was characterized before and after integration into the IS.\nFor this purpose, a 16 x 16 LED matrix (WS2812-compliant RGB Neopixel) was used. This\nmatrix was controlled with an Arduino microcontroller, to be able to turn on each LED in\nthe array individually with different pre-configured patterns. All tests were performed in a\ndark room.\n\nThe first test performed was before integration into the instrument, and a stand-alone\nSiPM was evaluated along with the optics. The SiPM was biased with a Keithley 2612B\nSourceMeter. The test consisted on placing the SiPM + pinhole at different distances from\nthe array and reading the SiPM photo-generated current while sequentially turning on each\nLED in the array. This approach allowed to calculate the FOV and the Angular Field-of-View\n(AFOV) of the optics prior to integration with the instrument.\nAfter the stand-alone SiPM + Optics characterization, these were integrated into the\nIS and a Day-in-the-Life Test (DITL) of the SiPiC Payload was perfor",
+        "score": -6.48907726366226,
+        "dense_score": 0.241851344704628,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.990571975708008,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1665,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2631760__2302.06522__Experimental_post-selection_loophole-free_time-bin_and_energy-time_nonlocality_with_integr.md",
+        "title": "2024__recid_2631760__2302.06522__Experimental_post-selection_loophole-free_time-bin_and_energy-time_nonlocality_with_integr",
+        "text": "ime-bin by one partner it is also detected in the central time-bin by the second\npartner. This is the crucial difference with respect to the Franson case as can be seen in Fig. A2.\nIn fact, this allows to perform a local post-selection of events. Alice and Bob can, independently, post-select the\n\n4\n\ndetections in the central time-bin and will end up with the same set of events. Obtaining an equal set of events\nthrough local post-selection guarantees that the set of post-selected coincidences is independent of the measurement\nsettings. Suppose that the measurement bases are randomly switched fast enough to guarantee space-like separation\nof the choices. In that way, the post-selection at Alice cannot depend on the measurement choice of Bob and viceversa. The post-selection could still depend on the local measurement settings, but if it did in some cases, one\ndetection might be selected by Alice and independently discarded by Bob or vice-versa, as the selections would reduce\nto independent Bernoulli trials whose success probability might depend on a common hidden variable but which are\notherwise independent of each-other.\nIn practice, it may happen that a detection happens on the central peak for one of the partners and on a lateral\npeak for the other. This can mainly be caused by double pairs, failed separation of the signal and idler photons, and,\nfinally, detection temporal jitter. Considering this, the independence from local phase settings of the post-selection\ncan no longer be guaranteed, but the post-selection can be treated as losses in the detection loophole by assigning\na fixed outcome in cases where one user discarded an event while the other post-selected it. Local post-selection is\nindeed valid as long as the union of events post-selected at each measurement station is considered (and not only their\nintersection, which would lead again to the post-selection loophole).\nThe complete post-selection procedure to obtain a valid violation is thus the following:\n\n1. Alice and Bob tell each other for which pump pulses they detected a photon in any of their detectors and in\nany time-bin. Under the fair sampling hypothesis, the subset of events where both photons were detected is\nrepresentative of the totality of events.\n\n2. The 50% of events where both photons are detected by the same partner are rightfully discarded as the selected\nevents are independent of remote and local phase settings (this can be verified by switching randomly the phase\nsettings at",
+        "score": -6.75328563117981,
+        "dense_score": 0.2121405005455017,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -10.395054817199707,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 1568,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2705261__2310.00585__Quantum_generative_adversarial_learning_in_photonics.md",
+        "title": "2023__recid_2705261__2310.00585__Quantum_generative_adversarial_learning_in_photonics",
+        "text": "it to produce a candidate quantum state ˆ _𝜌_ ( _𝜃_ [�] G ) that aims to imitate\nthe true state ˆ _𝜏_ and fool the discriminator. The discriminator performs ˆ\nmeasurements M( _𝜃_ [�] D ) on its input state. Based on the measurement\nresult, the discriminator determines whether the generated state is the\ntrue state ˆ _𝜏_ or not.\n\nAs illustrated in Fig. 1(a), we can make an analogy between QGAN\ntraining and arm wrestling, where the generator and discriminator\nimprove themselves by competing against each other on the difference\nin the measurement results\n\nd( _𝜃_ [�] G, _𝜃_ [�] D ) = tr[ ˆM( _𝜃_ [�] D ) ˆ _𝜌_ ( _𝜃_ [�] G )] − tr[M( [ˆ] _𝜃_ [�] D ) ˆ _𝜏_ ] . **(1)**\n��� ���\n\nIn each round, the discriminator and generator take turns in exerting\ntheir strength. The discriminator first unleashes his power by optimizing its parameters _𝜃_ [�] D in order to maximize d( _𝜃_ [�] G, _𝜃_ [�] D ), making it easier\nto distinguish between ˆ _𝜏_ and ˆ _𝜌_ ( _𝜃_ [�] G ) from the measurements. Next, the\ngenerator’s turn comes, and it updates the parameters _𝜃_ [�] G to prepare\na new synthetic state ˆ _𝜌_ ( _𝜃_ [�] G ) that can minimize d( _𝜃_ [�] G, _𝜃_ [�] D ) . A perfect\nevolution of the generator results in d( _𝜃_ [�] G, _𝜃_ [�] D ) ≈ 0, which makes the\ngenerator more adept at replicating ˆ _𝜏_ . By iterative competitions, the\nQGAN solves the minimax problem [3, 4]\n\nmin � _𝜃_ G max � _𝜃_ D d( _𝜃_ [�] G, _𝜃_ [�] D ). **(2)**\n\nIdeally, the competition can eventually approach the unique Nash\nequilibrium [ 3, 4, 22 ], where the generator counterfeits the true state\n\nLetter 2\n\n(a) Ideal (b) Noisy (c) Defective\n\nGenerator Discriminator\n\n� �\nmin � � G d( � G, � D )\n\n(d)\n\n� �\nmax � � D d( � G, � D )\n\n� � G � ~ � ( � � G, � G2 ) � � D � ~ � ( � � D, � D2 )\n\n_c_ [�] � ~ �( ) _c_ �\n\nSome � G _x_ are fixed\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|\n|---|---|---|---|---|---|---|---|---|---|\n|||||Controller||||||\n\nControl signal Crosstalk\n\nDefects\n\n|Generator|Col2|Col3|Discriminator<br>signal<br>G<br>Ququart projection Pˆ s (T D,s)<br>idler<br>G<br>Ququart projection PGˆ i (T D,i)<br>Measure%ˆ (T)<br>D|\n|---|---|---|---|\n||G|||\n||G|||\n|,<br>ˆ (<br>)<br>G<br>Ququart operation<br>_s_<br>_s_<br>_U_<br>T<br><br>,<br>ˆ (<br>)<br>G<br>Ququart operation<br>_i_<br>_i_<br>_U_ T<br>G<br>~~ˆ(~~<br>~~)~~<br>~~U T~~G<br>~~Generate quantum data~~<br>G|,<br>ˆ (<br>)<br>G<br>Ququart operation<br>_s_<br>_s_<br>_U_<br>T<br><br>,<br>ˆ (<br>)<br>G<br>Ququart operation<br>_i_<br>_i_<br>_U_ T<br>G<",
+        "score": -6.863316517188901,
+        "dense_score": 0.36255544424057007,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -10.56777572631836,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2412,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "r element _Z_ _j_ ), they weight the importance of both the\nvarious CR fluxes and production cross sections in a single energy-dependent number. As a result, ranking these\ncoefficients amounts to ranking the various contributors\n(or progenitors) of _j_ . We stress that in some cases, a progenitor may rank quite high while the associated channels (i.e. _P_ _i...j_ coefficient discussed in Section III.5.2) all\nrank low: the contribution of numerous subpercentage\nmultistep production channels sometimes combine into\na significant overall contribution. Finally, because these\ncoefficients include direct and multistep contributions in\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|Col11|Col12|Col13|Col14|Col15|Col16|Col17|Col18|Col19|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n||||||||||||||||||||\n||||||||||||||||||||\n||||||||||||||||||||\n||||||||||||||||||||\n||||||||||||||||||||\n||||||||||||||||||||\n||||||||||||||||||||\n|||||||||||||||~~DZ~~|i<br>~~Z~~j||~~.~~|~~%~~|\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|Col11|Col12|Col13|Col14|Col15|Col16|Col17|Col18|Col19|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n||||||||||||||||||||\n||||||||||||||||||||\n||||||||||||||||||||\n||||||||||||||||||||\n||||||||||||||||||||\n||||||||||||||||||||\n|||||||||||||||~~c~~<br>|~~mul~~<br><br>||||\n|||||||||||||||~~P~~<br>Zi|Zj||~~.~~|~~%~~|\n\nFIG. 1. Secondary production of GCR elements _Z_ _j_ (righthand side labels) from GCR elements _Z_ _i_ at 10 GeV/n. The\ncolor bar encodes log 10 of the contributing fractions for this\nproduction, from 2.0 (100%) down to -1.0 (0 _._ 1%); only contributions larger than 0 _._ 1% are shown. The top panel corresponds to the _D_ _Z_ _i_ _→Z_ _j_ coefficients (III.5.1) and the bottom\npanel to the _P_ _Z_ _i_ _→Z_ _j_ ones (III.5.3). For both cases, the sum\nof coefficients on one row is 100%, i.e. all the secondary production, but we recall that the latter ( _f_ sec ) is sometimes only\na small fraction of the total flux (see Table I). See text for\ndiscussion.\n\nthese coefficients provide a direct view of which primary\nelements contribute to the production of all GCR fluxes.\nWe stress that we focused the discussion on elements, but\nthe behavior and conclusions we just drew are similar if\nisotopes are considered instead; the associated _D_ _i→j_ and\n_P_ _i→j_ coefficients are shown in Appendix B.\nAs stressed in Section III.2, the full information on\nthe importance of the vari",
+        "score": -6.897505122736881,
+        "dense_score": 0.23756760358810425,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -10.618631362915039,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 25,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3150,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2708865__2310.06569__Single-spin-qubit_geometric_gate_in_a_silicon_quantum_dot.md",
+        "title": "2024__recid_2708865__2310.06569__Single-spin-qubit_geometric_gate_in_a_silicon_quantum_dot",
+        "text": ") = cos _γ_ + _i_ sin _γ_ sin _θe_ _[iφ]_ _−_ cos _θ_\n�\n\n_→_ _→_\n= _e_ _[iγ]_ _n ·_ _σ_ _,_\n�\n\nFIG. 3. (a) Schematic of the randomized benchmarking sequences. The reference sequence (top panel) includes m random Clifford gates, followed by the final recovery gate. The\ninterleaved sequence (bottom panel) is used to extract one target gate control fidelity. (b) Sequence fidelities for reference\nand each interleaved gate. The measurement fidelity results\nare shown on the right of the curves. All of these results reach\nthe tolerance requirement for quantum error correction using\nsurface codes. (c) Three evolution trajectories to construct\nsingle qubit geometric gates. (d) Sequence fidelities for two\ngeometric evolution paths. Each path includes a reference sequence and an interleaved geometric X gate to illustrate the\nresults.\n\n( _δ_ component, i.e., the fluctuation of _f_ rabi ). Alternatively, there is another proposal (’Path-2’ in Fig. 3(d)) in\nwhich the phase of the second evolution stage is replaced\nby _ϕ_ = _φ_ + _γ −_ _π/_ 2 to better eliminate the off-resonance\nnoise (∆ _f_ component, i.e., the fluctuation of _f_ qubit ).\nFigure 3(d) shows that the average geometric gate control fidelities of the two evolution paths are 98.42 %\nand 98.65 % and that the control fidelities of geometric X gates are 98.32 % and 98.83 %, respectively. All\nof these geometric gate fidelities are worse than the dynamic gates, which is unexpected, although theoretically\nit should be better than the dynamic gates. We conclude\nthe following two main reasons to explain its futility. On\nthe one hand, both the off-resonance noise and the systematic noise may be strong in our system, but one evolution loop is more effective against one type of noise. In\nthis case, one type of geometric gate will attend to the\nresistance of one typical noise and lose another, resulting\nin the inefficiency of the noise-resilient feature. On the\nother hand, the geometric gates spend twice or four times\nas long compared to the dynamic operations, which will\nsignificantly increase _t_ dur for the randomized benchmarking experiment. Therefore, the heating effect caused by\nMW is more severe than that of the dynamic gates, which\nmainly limits the control fidelity in our experiments (see\nSec. V). Here, the heating effect results in the exponentially damped readout probability ( _T_ decay defined as the\n\n4\n\ncharacteristic decay time, see Fig. 6 and Appendix C for\nmore details). Moreover, the readout probabili",
+        "score": -6.911637234938772,
+        "dense_score": 0.21415938436985016,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -10.638956069946289,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 8112,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3063253__2510.03654__A_novel_steerable_low-energy_proton_source_for_detector_characterization.md",
+        "title": "2026__recid_3063253__2510.03654__A_novel_steerable_low-energy_proton_source_for_detector_characterization",
+        "text": "eft, ions are born in the the gas discharge ion source (or penning\nion generator (PIG), see Section 2.1), are selected based on energy in the electro static\nanalyzer (ESA, see Section 2.2), selected based on momentum in the magneto-static analyzer (MSA see Section 2.3), pass through the steerer (see Section. 2.4), before being\ndeposited into the detector-under-test (DUT) (see Section 4).\n\naccepts the 1 m long Nab silicon detector, amplifier, and readout assembly\n\n[10, 2].\n\n_2.1. Penning Ion Generator_\n\nA Penning ion generator (PIG) source was installed to produce protons\nfor use in detector characterization experiments (see Figure 2) [9, 11]. A\nhydrogen-argon gas mixture is introduced into the high vacuum discharge\nregion where the rate is controlled by a manual needle valve. The argon gas\n\n3\n\nin the mixture functions as a buffer gas, limiting the mobility of free charge\nin the discharge vacuum region. This has the effect of regulating the source\ndischarge current and ultimately the stability of the discharge, resulting in\na continuous discharge. The relative concentrations of hydrogen and argon\ngases in the gas mixture were empirically determined by introducing increasing quantities of hydrogen gas until the source arc current was stable at _∼_\n1-3 mA.\n\n**Viton O-**\n\n**ring**\n\n**Glass**\n\n**Vacuum**\n\n**Discharge**\n\n**Region**\n\n**Neodymium**\n\n**Permanent**\n\n|Chamber Magnets<br>Ga<br>Feedthr<br>Extraction Tip<br>Optical Axis<br>Permanent|Col2|Col3|Col4|\n|---|---|---|---|\n|**Ga**<br>**Feedthr**<br>**Extraction Tip**<br>**Permanent**<br>**Chamber**<br><br>**Magnets**<br>**Optical Axis**<br>||||\n|**Ga**<br>**Feedthr**<br>**Extraction Tip**<br>**Permanent**<br>**Chamber**<br><br>**Magnets**<br>**Optical Axis**<br>||**Permanen**|**t**|\n|**Magnet**<br>**Anode Ring**<br>**Cathode**<br>**Extraction Plate**<br>~~**Ion Flux**~~||||\n\n**Anode Electrical Feedthrough**\n\nFigure 2: Cross-section of the penning ion generator used to create positive ions, including\nprotons. A hydrogen-argon gas mixture is fed through the gas feed-through into the\ndischarge region. A plasma is created between the extraction plate and the anode ring,\n“cracking” the hydrogen in to positive ions. The ions are then accelerated through a\npotential of 30 kV and electro-static forming plates (not shown) focus the ions into a\nbeam.\n\nIn the discharge region, once an ion reaches the anode/cathode it no\nlonger participates in the ionization process. A high critical-temperature\npermanent magnet (42% Neody",
+        "score": -6.978676414489746,
+        "dense_score": 0.28532856702804565,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -10.74483871459961,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.264529735315591,
+    "generation_latency_s": 4.796311259269714e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.264529735315591,
+    "generation_latency_s": 4.796311259269714e-07
+  }
+}

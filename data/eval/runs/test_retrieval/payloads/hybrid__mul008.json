@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "mul008",
+    "query_type": "multi_hop",
+    "query": "How can graph noise lead to hallucinated detector comparisons?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "graph",
+      "noise"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can graph noise lead to hallucinated detector comparisons?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1010,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system.md",
+        "title": "2023__recid_2673404__2306.17429__Development_of_the_front-end_electronics_for_a_cost-effective_PET-like_detector_system",
+        "text": "us and the one being tested is given. Furthermore, the\n\npossibility of a direct comparison has the advantage that no\nradioactive source with fixed energy is needed so that the\nmeasurements can be made with cosmic rays as well.\n\n**3. General measurement methods**\n\nThe main focus in the development of the detector is to\nachieve a good time resolution. For this, not only a low rise\ntime but also a minimized jitter is important. We consider\nthe noise being Gaussian distributed, so jitter is defined as:\n\n_𝜎_ _𝑛_\n_Jitter_ = (1)\n_𝑑𝑈_ ∕ _𝑑𝑡_ _[.]_\n\nHere, _𝜎_ _𝑛_ is the width of the Gaussian distribution, and _[𝑑𝑈]_ ∕ _𝑑𝑡_\nis the slope of the signal at trigger voltage level. To compare\ndifferent circuits among each other, the amplitude (which\nwas taken as an average over 5 maximum voltages of the\nwaveform for the selection between the individual circuits,\nor 10 - 15 maximum voltages for the exact measurements of\nthe final circuits) measurements were made in comparison\nto the amplitude _𝐴_ _𝑟𝑒𝑓_ of the reference setup on the opposite\nside of the scintillator bar. If the noise of the SiPM circuits is\nthe same, the jitter is in first order proportional to\n\n_𝑡_ _𝑟𝑖𝑠𝑒_ ⋅ _𝐴_ _𝑟𝑒𝑓_\n_𝐽_ = (2)\n\n_𝐴_\n\nwhere _𝑡_ _𝑟𝑖𝑠𝑒_ denotes the rise time of the signal (defined as\nthe time required to rise from 10 % to 90 % of the maximum\nvoltage of the waveform) and _𝐴_ the signal amplitude. Thus,\na high amplitude is also beneficial to keep the jitter low. For\nthis reason, the parameter _𝐽_ was also taken into account when\ncomparing different circuits.\nFor all measurements, the “J-Series 60035” SiPMs from\nonsemi were used. The supply voltage was set to _𝑉_ _𝐵𝑖𝑎𝑠_ = 29 V\nfor one single SiPM. This was realized with “Caen A7585”\npower supplies. The triggering was performed at the 341 keV\n(or 1060 keV for the combination of the final preamplifier\nand SiPM array as in Section 5.3) Compton edge of the [22] Na\n\nsource.\n\n**4. Circuit development of a 2** × **2 SiPM array**\n\n_4.1. Known options for SiPM interconnection and_\n_their effects_\n\nAs with any electronic component, there are initially two\noptions for interconnecting SiPMs: series interconnection\nand parallel interconnection. Series connection of SiPMs\noffers two major advantages. First, it provides “automatic\novervoltage adjustment”, which means that despite different\nbreakdown voltages, the same overvoltage is automatically\nset [ 11 ]. This is possible because in a serial connection, the\nsame current flows through all SiPMs. Since the cur",
+        "score": -1.0625629237440768,
+        "dense_score": 0.517461895942688,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.6435394287109375,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 713,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2657394__2305.03419__Silicon_photonics-integrated_time-domain_balanced_homodyne_detector_for_quantum_tomography.md",
+        "title": "2023__recid_2657394__2305.03419__Silicon_photonics-integrated_time-domain_balanced_homodyne_detector_for_quantum_tomography",
+        "text": "fer using the same\n\nprocedures; therefore, they exhibited a similar performance.\n\nTo measure the linearity of the detector, the intensity of the LO beam was tuned and the\n\nmeasurement result was shown in Figure 3b. The green square points represent the measured\n\nvariance, which is the sum of the shot and electronic noises. After subtracting the electronic\n\nnoise variances (black circle points, 7 × 10 [-5] V [2] ), the remaining variances shown as red triangle\n\npoints represent the shot noise variance. A maximum SENR of 19.42 dB is achieved. The\n\n2\n can be\n\nrelationship between the shot noise variance\n\nexpressed as follows:\n\n _V_ 2\nSN and photoelectron number\n\n _V_ SN2  _G_ 2  2 (1)\n\nwhere [] is the detection efficiency of the TBHD, and\n\nthe gain of TBHD can be calculated as follows:\n\n2\n is the LO beam intensity. From eq 1,\n\n_G_   _V_ SN  (2)\n\nThe gain is also the slope of the fitting dash line in Figure 3c. The horizontal and vertical\n\ncoordinate values of the black points are the square roots of the coordinate values of the red\n\npoints in Figure 3b. The term\n\n can be defined as the equivalent particle number. The\n\ngain of the detector was 1.25 × 10 [-5] V/photon, and the sum of squares of residual value was 2.27\n\n× 10 [-36] V [2] in the linear fitting, indicating that TBHD has good linearity.\n\n10\n\nFigure 4. Time-resolving power and stability of TBHD. (a) Correlation coefficient (CC)\n\nbetween n-th and (n + m)-th pulses. (b) Allan variance of the TBHD peak value in a period of\n\n10 [6] ms.\n\nThe correlation coefficient (CC) between adjacent pulses was calculated using eq 3 to check\n\nthe time-resolving power of TBHD. In the experiment, approximately 5 × 10 [6] output peak points\n\n_P i_ ( ) (， _i_  1,2,,5 10 + 9) 6 were used.\n\n(3)\n\n_m_\n\n\n\n\n\n|Col1|XY||X|Col5|Y|Col7|\n|---|---|---|---|---|---|---|\n|2<br>2<br>2<br>2<br>_X_<br>_X_<br>_Y_<br>_Y_<br><br>|2<br>2<br>2<br>2<br>_X_<br>_X_<br>_Y_<br>_Y_<br><br>|2<br>2<br>2<br>2<br>_X_<br>_X_<br>_Y_<br>_Y_<br><br>|2<br>2<br>2<br>2<br>_X_<br>_X_<br>_Y_<br>_Y_<br><br>|2<br>2<br>2<br>2<br>_X_<br>_X_<br>_Y_<br>_Y_<br><br>|2<br>2<br>2<br>2<br>_X_<br>_X_<br>_Y_<br>_Y_<br><br>|2<br>2<br>2<br>2<br>_X_<br>_X_<br>_Y_<br>_Y_<br><br>|\n\nwhere _X i_ ( )  _P i_ ( ) and\n\n_Y i_ ( )  _P i_ (  _m_ ) (， _i_  0,1,,5 10 ;  6 _m_  0,1, 2,,9) . Figure 4a presents\n\nthe CC when the pulse repetition rate is 1 MHz. A perfect correlation occurred when _m_  0,\n\n11\n\nwhereas the correlation vanishes for _m_",
+        "score": -1.6727022838592531,
+        "dense_score": 0.41341596841812134,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.581080436706543,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6532,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights.md",
+        "title": "2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights",
+        "text": "ge nuclear-recoil signal, in terms of standard\ndeviations, when considering the ionization yield and adjusted timing parameters, for three detectors that identified\npotential Weakly Interacting Massive Particles (WIMPs) with energies exceeding 25 keV. Specifically, the detectors\nT4Z6, T4Z2, and T1Z2 reported WIMP candidate events at energy levels of 37.3 keV, 73.3 keV, and 129.5 keV,\nrespectively. Additionally, the T4Z6 detector detected three more potential WIMP events within the lower energy\nbracket of 10–25 keV. The regions of the graph that are considered valid for WIMP candidate events are marked by\nshaded areas [83]. [80]. “Reproduced from Z. Ahmed et al., Search for Inelastic Dark Matter with the CDMS II\nExperiment, Phys. Rev. D - Part. Fields, Gravit. Cosmol. 83, 112002 (2011) with the permission of AIP Publishing.”\n\n_IV.A.2. Insights on CDMS Collaboration_\n\nCDMS collaboration due to the use of multiple types of detectors, including ZIP, BLIP, iZIP,\nand HV detectors, shows a robust approach to capturing various interactions and enhancing the\nsensitivity to dark matter particles. The ability to measure neutron backgrounds simultaneously in\nboth silicon and germanium without loss of detector performance is a considerable achievement,\nhelping to reduce background noise which is crucial for searching the rare events. The project has\nsuccessfully set more stringent upper limits on the spin-dependent and spin-independent crosssections of WIMP-nucleon interactions, pushing forward the boundaries of dark matter particle\ndetection. Extensive calibration and simulations have been effectively used to refine the detection\ncapabilities and filter out potential false signals.\nHowever, background noise and false signals **,** despite advances is still the issue which poses a\nsignificant challenge, as seen with the statistical likelihood of misinterpreting background noise as\npotential WIMP detections. The absolute energy scale necessary for nuclear recoils and the various\ncorrections required for accurate data interpretation add layers of complexity and potential error\nto the analyses. The decrease in ionization collection efficiency for nuclear recoils over 20 keV\nlimits the detector's effectiveness in higher energy ranges.\nWe expect enhanced detector materials and design could provide better efficiency at higher\nenergies and improved sensitivity at lower masses. Also, developing more sophisticated calibration\ntechniques that can more accurately mimic the expect",
+        "score": -2.3137980629416073,
+        "dense_score": null,
+        "bm25_score": 14.524544295730196,
+        "graph_score": 0.0,
+        "rerank_score": -3.567607879638672,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3387,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2719944__2311.03902__Measurement_of_the_electronhole_pair_creation_energy_in_a_4H-SiC_p-n_diode.md",
+        "title": "2024__recid_2719944__2311.03902__Measurement_of_the_electronhole_pair_creation_energy_in_a_4H-SiC_p-n_diode",
+        "text": "his is not sufficient to explain the observed energy resolution in\nthe range of 30 keV FWHM. Two possible sources of the lower-than- expected energy resolution are hypothesized:\n\n6\n\n(a) Measured Energy Spectrum for Silicon detector.\n\n(b) Measured Energy Spectrum for SiC detector with metallization.\n\n(c) Measured Energy Spectrum for SiC detector without metallization.\n\nFigure 4: Histograms of the measured α spectrum at a vacuum of 0.3 mbar for the Si (black) and SiC (red, blue) detectors. The Gaussian fits for\neach decay energy are indicated by dashed lines, with the sum shown using a solid line. For each energy, the fitted FWHM resolution is annotated.\n\nInhomogeneities in the thickness of the passivation and metal layers can lead to differences in energy absorbed by the\nα particles and broaden the energy distribution. For the metal layer, the inhomogeneities are related to areas around\nthe guard ring, where metal is only partially present. A collimator on top of the detector could be used to constrain\nthe detector area to the uniform sensitive area in the center. For the passivation layer, especially in the SiC detectors,\nthe height of the passivation is not always perfectly uniform due to manufacturing variations (observed in TEM). This\ncould be further improved by either thinning the passivation or by polishing.\nThe second possible source of a decreased energy resolution is imperfect collimation of the α-source. If the incidence\nangle of the α-particles on the sensor is not perfectly normal, this can lead to variations in the effective path length\nas well, again leading to stochastic fluctuations of the energy loss. Investigations in optimized source collimator\ngeometries are currently ongoing.\nAssuming a Fano factor of _F_ = 0.100 [17], the expected Fano noise σ Fano is smaller than 5 keV FWHM. This\nimplies that even with the best energy resolution currently obtained in SiC α-spectroscopy (15.7 keV using a Schottky\ndiode [29]), the Fano noise contributes only a negligible role. As the Fano noise grows with the square root of\nthe incident particle energy, it is much more prominent in the measurement of low energy x-rays and plays a less\nsignificant role in α-spectroscopy. Measurements using soft x-rays emitted by the nuclides present in the α-source\ncould be envisioned in the future to try and determine the Fano factor of 4H-SiC.\n\n7\n\n**5. Discussion**\n\nThe ionization energy of 4H silicon carbide (4H-SiC), where significant discrepancies in the literature",
+        "score": -2.5744070344501075,
+        "dense_score": null,
+        "bm25_score": 14.09288590409007,
+        "graph_score": 0.0,
+        "rerank_score": -3.968104839324951,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4651,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "ld of 100 electrons** (first row): if no value is\nreported in the plot, it means that 3 RMS noise - 100 electrons.\n\n - **Thresholds** (second row): threshold at which the chip achieves 99% detection efficiency.\n\n - **Noise RMS** (third row): is the noise of the DUT. The distance between\nthe noise and the threshold value at 99% gives an indication of the trend\nof the range of operability of the DUT.\n\nSeveral trends can be observed:\n\n - In the first column, in the comparison between designs at different V sub,\nthe modified designs show a larger operational margin w.r.t. the standard\ntype. For higher substrate reverse bias this is more and more evident,\ndue to the significantly reduced noise for modified and modified with gap\nsensors. This was expected from the larger CCE and smaller average\ncluster size observed for both the modified and modified with gap designs\nin Figure 10.\n\n - In the second column, different pixel pitches for the modified and modified\nwith gap designs are compared at _V_ sub = -1.2 V. All the pitches and designs\n\n4 All the efficiency plots are reported in the supplementary material.\n\n17\n\n|Pitch = 15 m Vsub = -1.2 V Mod. with gap, V|Col2|h = 15 m Vsu|Col4|Col5|Col6|ub = -1.2 V Mod. wit|Col8|Col9|Col10|th gap, V|Vsub = -1.2 V|\n|---|---|---|---|---|---|---|---|---|---|---|---|\n|90<br>92<br>94<br>96<br>98<br>100<br>Detection efficiency (%)<br>thr = 100e<br>99<br><br>**Mod. with gap**<br>**Modified**<br>**Standard**<br>sub<br>**Mod. with gap**<br>**Modified**<br><br>**Pitch = 10 m**<br>**Pitch = 15 m**<br>**Pitch = 20 m**<br>**Pitch = 25 m**<br>80<br>100<br>120<br>140<br>160<br>180<br>200<br>220<br>Threshold eff = 99% (e ) <br>~~0~~<br>~~-1.2~~<br>~~-2.4~~<br>~~-3.6~~<br>~~-4.8~~<br>Vsub (V)<br>24<br>26<br>28<br>30<br>32<br>34<br>36<br>38<br>Noise RMS (e ) <br>~~10~~<br>~~15~~<br>~~20~~<br>~~25~~<br>Pitch ( m)<br>None<br>1013 1 MeV neq c<br>1014|90<br>92<br>94<br>96<br>98<br>100<br>Detection efficiency (%)<br>thr = 100e<br>99<br><br>**Mod. with gap**<br>**Modified**<br>**Standard**<br>sub<br>**Mod. with gap**<br>**Modified**<br><br>**Pitch = 10 m**<br>**Pitch = 15 m**<br>**Pitch = 20 m**<br>**Pitch = 25 m**<br>80<br>100<br>120<br>140<br>160<br>180<br>200<br>220<br>Threshold eff = 99% (e ) <br>~~0~~<br>~~-1.2~~<br>~~-2.4~~<br>~~-3.6~~<br>~~-4.8~~<br>Vsub (V)<br>24<br>26<br>28<br>30<br>32<br>34<br>36<br>38<br>Noise RMS (e ) <br>~~10~~<br>~~15~~<br>~~20~~<br>~~25~~<br>Pitch ( m)<br>None<br>1013 1 MeV neq c<br>1014|s|s|s|s|b<br>|b<br>|b<br>|b<br>",
+        "score": -2.636763829895944,
+        "dense_score": 0.4212208390235901,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.064718246459961,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8321,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "knesses. No significant\ndifferences are observed between samples. The combination of noise and threshold dispersion defines the rate of\nfake hits at a certain threshold level. Towards lower bias\nvoltages ( _<_ 2 V), the detector capacitance increases and\nnoise dominates the fake hit rate. At higher bias voltages,\n\n7\n\n|500|Col2|Col3|Col4|Col5|Col6|Col7|×|×105 ×103|\n|---|---|---|---|---|---|---|---|---|\n|100<br>200<br>300<br>400<br>500<br>|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|Mean = 1.386 ± 0.004 THL DAC|0.00<br>0.25<br>0.50<br>0.75<br>1.00<br>1.25<br>Counts<br>|= 140.4 ± 0.1 THL DAC<br> = 2.9 ± 0.1 THL DAC<br>Gaussian fit|\n|0|||||||||\n\nFigure 13: Single-pixel noise distribution of the pixel matrix.\n\n(a)\n\n(b)\n\nFigure 15: Occupancy (left axis) and its derivative (right axis) for\nthe full matrix as a function of the threshold for the [55] Fe source.\n\nFigure 14: Threshold dispersion (a) and mean single-pixel noise (b)\nas a function of the bias voltage for samples with different total chip\nthicknesses.\n\nthreshold dispersion among pixels [1], but the single-pixel\nnoise still dominates the fake hit rate. To overcome the\n\nincreased threshold dispersion at _−_ 4 _._ 2 V, a lower value for\nthe `dac` `itrim` is used at the cost of masking additional\npixels. This results in a smaller step size in the tuning\nprocess, covering a smaller threshold dynamic range. Consequently, 5 extra pixels (8 out of 1024) are masked compared to the other bias voltages. Operating the chip at\ndifferent sensor bias voltages changes the tuning DAC setting by one or two DACs for approximately 20% of the\npixels in the matrix.\n\n_3.3. Threshold Calibration_\n\nTo determine the applied threshold in electrons, the chip\nis calibrated using an iron ( [55] Fe) radioactive source. As a\ncross-check of the measurements, a 75 µm thick titanium\n( [48] Ti) layer is placed beneath the [55] Fe to produce X-ray\nfluorescence from [48] Ti. Assuming a mean energy of (3 _._ 66 _±_\n0 _._ 03) eV is required to produce an electron-hole pair in\n\n1 A higher reverse bias voltage reduces the drive current of the\nNMOS, slowing down digital gates, and reduces the active channel\nvolume, making the transistor more sensitive to dopant fluctuations\nand thus increasing the threshold dispersion.\n\n|Col1|Linear fit|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n||slope = 35.4 ± 1.1 e<br>/ THL DAC<br>Linear fit<br>Bas",
+        "score": -2.6623079776763916,
+        "dense_score": 0.42552614212036133,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.10427188873291,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6625,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance.md",
+        "title": "2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance",
+        "text": "as a signal with larger charge\n\n(and hence TD) goes above the fixed threshold of the discriminator before a simultaneous signal\n\nwith a lower charge. This correlation is currently exploited to suppress noise hits by identifying an\n\nacceptance region in the correlation plot. In the figure an example cut is shown, defining a hit as\n\ngood if it lies between the two red lines. On the right of figure 4 we reported the preliminary results\n\non the detector efficiency for each wedge. First, the efficiency of each tile has been evaluated by\n\nexploiting the large track multiplicity generated by inelastic events. By checking the presence of hits\n\nin the nearby wedges and in the other tiles of the wedge, it was possible to compute the efficiency of\n\na given tile. The overall efficiency of a wedge is then determined with a combinatorial calculation,\n\nassuming all tiles have independent efficiency and defining a wedge as efficient if at least 2 tiles out\n\nof 4 have hits. All wedges show an efficiency of at least 96%, with a median of 99.7%. No noise\n\nsuppression based on the hit time stamps is performed. If we apply a tight selection cut as shown in\n\nthe left plot on all tiles, the median of the efficiency becomes 98.6%. Work is ongoing to define the\n\noptimal cut on the noise. Wedges with lower efficiency can eventually be recovered by exploiting\n\nthe azimuthal symmetry of inelastic events in the LHC collisions.\n\n**4.** **Conclusions**\n\nThe measurements performed by the TOTEM experiment brought a significant improvement\n\nin the forward diffractive physics, culminating in the discovery of the Odderon. The LHC approved\na special run to measure the total cross section at ~~[√]~~ ~~_𝑠_~~ = 13 _._ 6 TeV. The precise measurement of the\n\ntotal cross section through the luminosity independent method needed a new inelastic telescope to\n\nbe designed, based on scintillators read out by SiPMs. The detector, to address the extremely tight\n\nconstraint in terms of installation and commissioning time, has been divided in a passive inner part\n\n5\n\n_The TOTEM nT2 detector: architecture, operation and performance_ E. Bossini\n\n**Figure 4:** On the left, correlation plot between the particle arrival time and the signal TD, with an example\ncut superimposed. On the right, the preliminary efficiency of all wedges of the detector.\n\nincluded in the CMS forward radiation shield and an outer part. Large part of the electronics has\n\nbeen readapted from the timing system of the PPS sub-detector of C",
+        "score": -3.1354207809657266,
+        "dense_score": 0.40945935249328613,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.8311004638671875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5496,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "ed the most appropriate\nfor particle detector applications [19, 20, 21], and is characterized by an energy bandgap of 3.23\neV. An important characteristic of SiC detectors is the radiation hardness, i.e. the resistance to\ndamage caused by high doses of particle irradiation, where the traversing particles damages the\nlattice mainly by displacing a primary knock-on atom out of its lattice site. For 4H-SiC detectors\nthis process has a much larger energy threshold (≈ 25 eV) compared to the case of silicon (Si)\ndetectors (≈ 15 eV), which makes SiC a good alternative to Si.\n\n2\n\nFigure 1: A sectional view illustrating the internal structure of the prototype SiC device (not to scale).\n\nThe wide bandgap of SiC is also useful, as it significantly reduces the rate of thermal noise.\nSiC devices also present much smaller leakage current with respect to Si detectors [22]. In fact,\nthe reverse current density of SiC p-n junction is expected to be about 3 orders of magnitude\nsmaller than for Si. On the other hand, a particle with a certain energy, ideally converting all its\nenergy to the production of electron-hole pairs, generates about 3 times more charge carriers in Si\n(bandgap 1.12 eV) than in SiC. Detectors based on SiC, therefore, feature lower pulse amplitudes.\nHowever, if we consider applications for the heavy-ion detection, as in the case of the NUMEN\nproject, many primary charge carriers are generated, whose statistical fluctuations are not an\nissue. In addition, SiC detectors maintain a good signal-to-noise ratio at temperatures at which\nSi detectors require external cooling to keep the intrinsic carrier level sufficiently low [23].\nFor time resolution, SiC detectors can profit from the high saturation velocities of the charge\ncarriers (2 x 10 [7] cm/s), which is twice that in Si. Also it is possible to operate the devices at or\nclose to the carrier velocity saturation condition. This is because the breakdown field in SiC is\n3 MV/cm, ten times higher than in Si. The junctions on SiC can hence reach an extremely high\ninternal electric field in the depleted region. Values for the electric field as high as 10 [5] V/cm has\nbeen reached without any junction breakdown or significant increase of the reverse current [24].\nA timing resolution of hundreds of ps has been measured for SiC pixel detectors [25].\nThe radiation hardness of prototype SiC detectors constructed within the SiCILIA project [6]\nwere tested by irradiating them with 60 MeV H [+] at a maximum dose of 2",
+        "score": -3.1566877904691193,
+        "dense_score": 0.40444931387901306,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.863527774810791,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5585,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers.md",
+        "title": "2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers",
+        "text": "tiple non-local connections, which can be\ncarried out concurrently on a neutral atom platform.\nGiven a graph _G_ = ( _V, E_ ) that comprises a\nlist of vertices _V_ and edges _E_, the corresponding\ngraph state _|_ Ψ _G_ _⟩_ can be written as\n\n_deph_\n\n\n\n\n (28)\n\n _[,]_\n\n_K_ =\n\n\n\n\n\n\n\n\n1 0 0 0\n0 _√_ 1 _−_ _α_ 0 0\n0 0 _√_ 1 _−_ _α_ 0\n0 0 0 _√_ 1 _−_ _β_\n\nwhere _α_ and _β_ correspond to the probability of\ndecay to a state outside the computational basis\nduring the excitation time. Typically, _α_ and _β_\nhave different values, as they correspond to distinct paths in the process. Notice that _K_ _[†]_ _K ≤_ 1\nand the map is completely positive.\nFor multi-qubit gates, we implement a similar\nnoise model as for the two-qubit gates. Let _Q_ be\nthe set of qubits involved in multi-qubit gate operations, the error during the process is described\nwith a CPTN map that comprises the following\nsingle operator\n\n_,_ (29)\n\n�\n\n_M_ = � _M_ _j_ _M_ _j_ =\n\n_j∈Q_\n\n1 0\n0 _√_ 1 _−_ _α_\n�\n\nwhere _α_ is the leakage probability.\nThe passive qubits undergo free induction decay, characterised by _T_ 1 and _T_ 2 times. The _T_ 1\ntime is fundamentally limited by the vacuum lifetime of each atom, denoted as _T_ _vac_ . This can\nbe approximated using the relationship _T_ 1 =\n_T_ _vac_ _/N_, where _N_ signifies the number of atoms\npresent in the vacuum chamber. This estimation\ncharacterises the _collisional loss_ rate, which corresponds to the rate of collision with untrapped\nbackground atoms; hence, this rate serves as the\nupper bound for _T_ 1 [87]. The _T_ 1 decay is modelled using depolarising noise (Equation (13)),\nwhile the _T_ 2 decay is modelled with dephasing\nnoise (Equation (11)). Both types of noise account for energy loss and information loss resulting from collisions with background atoms.\n\nthat is stabilised by a set of stabilisers\n\n_S_ _G_ = _{X_ _j_ � _Z_ _k_ _| j ∈_ _V },_ (32)\n\n_k∈N_ _G_ ( _j_ )\n\nwhere _N_ _G_ ( _j_ ) is neighborhood of atom _j_ . In\nthe following, we emulate the preparation of two\n\n_|_ Ψ _G_ _⟩_ = �\n\n_CZ_\n\n� _i,j_ �\n\n_{i,j}∈E_ _v∈V_\n\n� _|_ + _⟩_ _v_ (31)\n\n_v∈V_\n\nAccepted in 2024-11-14, click title to verify. Published under CC-BY 4.0. 18\n\n0 ~~1~~ 1 ~~2~~ 2 ~~1~~ 3 ~~2~~ 4 ~~1~~ 5 ~~2~~ 6 ~~1~~ 7 ~~2~~ 8 ~~1~~ 9 ~~2~~ 10 ~~1~~ 11\n\n1\n\n1\n\n1\n\nillustrated in Figure 13b. Here, the logical state\n_|_ + _⟩_ _L_ _≡_ ( _|_ 0 _⟩_ _L_ + _|_ 1 _⟩_ _L_ ) _/√_ 2 is prepared by apply\ning the transversal Hadamard gate to the logical state _|_ 0 _⟩_ _L_, i.e., applying",
+        "score": -3.5405709700150925,
+        "dense_score": null,
+        "bm25_score": 13.744574758999004,
+        "graph_score": 0.0,
+        "rerank_score": -5.4540252685546875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 37,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 629,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker.md",
+        "title": "2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker",
+        "text": "s to verify that the detector is\nperforming as expected and to predict the detector performance using the flight readout system. Third, we will use these\nmeasurements to determine the placement of detectors within\nthe tracker, with higher-quality detectors being placed in the\nupper layers (where more anti-nuclei events are expected).\nIn Sec. II we describe the custom low-noise, lowtemperature testing system that was developed to allow fast\ncharacterization of this large sample of detectors. In Sec. III,\nwe describe our procedures for detector processing, testing,\nand data acquisition. In Sec. IV, we characterize this large\nsample of detectors using a physically-motivated noise model.\nWe conclude in Sec. V, demonstrating that large-area and lownoise Si(Li) detectors can be economically mass-produced and\ntested.\n\nII. D ETECTOR T ESTING S YSTEM\n\n_A. GAPS Detector Module_\n\nThe basic functional unit of the GAPS Si(Li) tracker is the\n_detector module_ (hereafter simply _module_ ) shown in Fig. 1.\nEach module contains four Si(Li) detectors mounted into\nan aluminum frame, to which the detectors are grounded\nvia their guard rings. Each detector is rigidly mounted into\nplace using several fluorosilicone O-rings and G10 clamps.\nThese clamps also secure a gold tab to the bottom ohmic\ncontact of each detector to supply the bias voltage. Finally, we\nsecure polypropylene windows on the top and bottom of each\ndetector module, providing a sealed volume for the detectors.\nThese windows (aluminized on their exterior surface to prevent\nmetal flakes within the detector volume) allow us to shield\nthe detectors from stray light, environmental contamination,\nand electromagnetic interference, and to flush the modules\nwith dry N 2 gas during payload assembly and testing to\nsuppress humidity. Each module also carries a _front-end board_\n(FEB) with several major roles. First, each FEB carries a\ncustom ASIC chip to which the Si(Li) strips are wirebonded,\nand which is responsible for processing and digitizing Si(Li)\nenergy deposits over a large dynamic range of tens of keV\nto ≳100 MeV [30]–[33]. Second, the FEBs also provide the\n250-V reverse-bias voltage to each detector. Lastly, the FEBs\nfacilitate a power and communication link between the flight\ncomputer and the ASICs.\nAs the FEBs and ASICs were being developed simultaneously with the Si(Li) detector testing, we require a different\nmethod of detector readout for the lab testing described in this\nwork. To that end, we replace the FE",
+        "score": -3.5697128242061984,
+        "dense_score": 0.44353002309799194,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.500550746917725,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.379583865404129,
+    "generation_latency_s": 3.501772880554199e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.379583865404129,
+    "generation_latency_s": 3.501772880554199e-07
+  }
+}

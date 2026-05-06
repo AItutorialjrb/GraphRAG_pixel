@@ -1,0 +1,420 @@
+{
+  "benchmark": {
+    "query_id": "mul007",
+    "query_type": "multi_hop",
+    "query": "How are leakage current, cooling, and noise linked after irradiation?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "are",
+      "leakage",
+      "current,"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How are leakage current, cooling, and noise linked after irradiation?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1481,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "rystals and**\n**photosensors, the development of the rad-hard electronics and**\n**the most important results of the irradiation tests. Construction**\n**of the mechanics is also reported. Status and plans for the**\n**calorimeter assembly and its first commissioning are described.**\n\n_**Index Terms**_ **—calorimeter, SiPM, crystal, CsI, CLFV**\n\nI. T HE M U 2 E EXPERIMENT AND C HARGED L EPTON\n\nF LAVOR V IOLATION P ROCESSES\n\nThe Mu2e experiment, under construction at Fermilab,\nwill search for the Charged Lepton Flavor Violating (CLFV)\nprocess of a muon converting into an electron in the electric\nfield of Al nuclei. The CLFV processes are forbidden in\nthe Standard Model (SM) and even assuming its minimal\nextension, that allows neutrino oscillations, their branching\nratio is completely negligible: _BR <_ 10 _[−]_ [50] [2].\nAny observation of CLFV processes in the muon sector\nwill be a clear hint of New Physics. In case of no signal\nevent observation, Mu2e will set a 90% upper limit on the\n\nratio between the conversion and the capture rates _R_ _µe_ _<_\n8 _×_ 10 _[−]_ [17], improving the current best limit [3] by four orders\nof magnitude. The experimental signature searched in Mu2e\nis a single electron with energy slightly below the muon rest\nmass, that is _E_ _e_ = 104 _._ 97 MeV.\nAs shown in Fig. 1 the Mu2e experiment is based on a\nsystem of three superconducting solenoids to enhance the\nnumber of negative muons arriving to the Stopping Target. A\n\nFig. 1. Layout of the Mu2e experiment: Production Solenoid, Transport\nand Detector solenoid are indicated in the picture. The Cosmic Ray Veto,\nsurrounding the DS and part of the TS, is not shown.\n\n8 GeV pulsed proton beam hitting the tungsten target inside\nthe Production Solenoid (PS) produces mostly low momentum\npions. Thanks to the graded magnetic field, particles produced\nforwards are reflected back towards the S-shaped Transport\nSolenoid (TS). This region allows having a very intense\n( _∼_ 10 [10] _µ/s_ ) pure low-momentum negative muon beam at\nthe entrance of the Detector Solenoids (DS) thanks to a\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. 70, NO. 7, 2023 2\n\nmiddle collimator to select the particle charge. The DS houses\nthe stopping target (made of 37 aluminum annular 105 _µ_ m\nthick foils, spaced 2.2 cm apart) and the detectors - a very\nprecise ( _σ_ _p_ = 200 keV at _E_ _e_ ) straw tubes tracker [4] and\nan electromagnetic calorimeter [5]. The tracker is composed\nof _∼_ 20000 low mass, very thin, straw drift t",
+        "score": -4.837959984974984,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7820512820512822,
+        "rerank_score": -7.535658359527588,
+        "matched_nodes": [
+          "In",
+          "On",
+          "AND",
+          "NO",
+          "The",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1489,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "S of the Breakdown voltage test of each cell of the SiPMs. The\nresults are reported for the three different temperature tested. The red lines\nrepresent the limits on the acceptable values.\n\nA random sample of SiPMs was selected to be irradiated\nwith neutron fluence up to _∼_ 10 [12] n 1 _MeV_ /cm [2] while other\nSiPMs were selected to evaluate their Mean Time To Failure.\nTo test an MTTF at the level of 10 [6] hours, the SiPMs under\ntest were kept in operation in a dedicated box at 65 _[◦]_ C for\n342 hours. At the end of the test, no failures were observed\nthus allowing us to estimate a MTTF _>_ 10 [7] . Results of the test\nare reported in Fig. 12.\n\nFig. 10. Results of the CMM measurements on the production crystals.\nFlatness (top left), parallelism (top center) and perpendicularity (top right)\nand the X (bottom left), Y (bottom center) and Z (bottom right) dimensions.\nThe black lines represent the requirements.\n\nThe specification for the Mu2e photosensors were: _(i)_ a\nPhoton Detection Efficiency (PDE) larger that 20% at 315\nnm; _(ii)_ a gain larger than 10 [6] at the operational voltage\n_V_ _op_ = _V_ _br_ + 3 V; _(iii)_ a recovery time ( _τ_ ) smaller than 100\nns for each of the 6 _×_ 6 mm [2] cell, when measured on a load\nlarger than 15 Ω; _(iv)_ a maximum acceptable operation voltage\nspread among the 6 SiPMs cells of _±_ 0.5%; _(v)_ a maximum\nacceptable dark current ( _I_ _dark_ ) spread at _V_ _op_ among the 6\nSiPMs cells of _±_ 15 %; _(vi) I_ _dark_ smaller than 10 mA at\noperation voltage and a gain reduction smaller than a factor of\n4 while irradiating SiPMs up to 3 _×_ 10 [12] n 1 _MeV_ /cm [2] at 20 _[◦]_\n\nFig. 12. Mean value of the currents of 15 SiPMs as a function of the elapsed\ntime during the MTTF test. The different line colors refers to different batches\ntested.\n\n_B. Front-End Electronics_\n\nThe FEE boards have to provide: _(i)_ a signal rise time of _∼_\n25 ns to allow an appropriate time reconstruction; _(ii)_ a rate\ncapability up to 1 MHz and a short fall time; _(iii)_ a radiationhardness for up to 100 krad and 10 [12] n 1 _MeV_ _eq_ /cm [2] ), _(iv)_ a\nprogrammable bias voltage up to 200 V via a 12-bit DAC, _(v)_\nthe possibility to set SiPM bias and to monitor current and\ntemperature via a 12-bit ADC.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. 70, NO. 7, 2023 6\n\nThe FEE boards were produced by ARTEL [17] with a\nnegligible rejection factor albeit all 2500 boards underwent a\nburn-in test at 65 _[◦]_ C in a climatic chamber in JINR (Dubna,",
+        "score": -5.121787645682311,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7435897435897437,
+        "rerank_score": -7.96776008605957,
+        "matched_nodes": [
+          "On",
+          "At",
+          "NO",
+          "The",
+          "To",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8390,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom.md",
+        "title": "2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom",
+        "text": "tine to yield _k_ _[′]_ = 0. This effectively separates the intrinsic\nnonlinearity, described by a final polynomial _g_ ( _E_ ), from\nthermal crosstalk. After correction, the residuals are reduced to\nthe 0 _._ 25 eV level (Fig. 10(b)). This characterization supports\nour strategy to pair flood illumination with focused laser\ncalibration [33] for accurate mapping of crosstalk in kilo-pixel\n\nIEEE TRANSACTIONS ON APPLIED SUPERCONDUCTIVITY, VOL. XX, NO. XX, MONTH 202X 7\n\nFig. 11. Energy resolution for Pixel 6, showing 0 _._ 9 eV FWHM at the carbon\nK-edge at _∼_ 280 eV. The energy resolution has a square-root dependence in\nenergy, which is expected to arise from downconversion phonon noise [34].\n\ndetector dynamic range provides flexibility to trade saturation\nenergy for potential improvements in spectral resolution.\n\nIV. C ONCLUSION\n\nFig. 9. Pulse-height histograms for laser photons collected on Pixel 6 at\ndifferent laser brightness settings. The average photon numbers _⟨n⟩_ for each\nPoisson-distributed group are shown above it.\n\nFig. 10. **a** A 7 [th] -order polynomial fit to the centroids obtained from the\npulse-height histogram vs. energy for Pixel 6. Residuals show evidence\nof thermal cross-talk arising from flood illumination. **b** Thermal-cross-talk\ncorrected polynomial fit, with residuals shown. We find a total cross-talk level\nof about 0.5%.\n\nWe have successfully fabricated and characterized prototype\ntransition-edge sensor (TES) microcalorimeters on a flexible,\nall-silicon architecture. Despite the choice of a novel substrate,\nwe find that the detector performance remains acceptable, establishing a critical baseline for future large-format soft X-ray\nspectrometers. A detailed electrothermal model parametrized\nby I-V curves and complex impedance measurements accurately predicts the measured energy resolution of our test\ndevices. We validated our electrothermal model by comparing its predictions to photon-counting spectra from a pulsed\noptical laser, confirming its accuracy in the small-signal limit.\nWe have also demonstrated that the thermal conductance of\n\nthese pixels can be reliably predicted from device geometry\nand fundamental silicon material properties, showcasing the\nrobustness and predictability of our SOI-based fabrication\n\nprocess.\nThe validated model is a powerful predictive tool for future\ndesigns. Using this model, we are designing a pixel with\n_T_ c _∼_ 30 mK that is projected to achieve an energy resolution\nof 0 _._ 3 eV at the carbon K",
+        "score": -5.513915350302672,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7435897435897437,
+        "rerank_score": -8.571033477783203,
+        "matched_nodes": [
+          "On",
+          "After",
+          "NO",
+          "The",
+          "We",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6754,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "enting a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter, lens height,\nand residual layer thickness. MLAs at the wafer level were\ndeposited on SiPM multichannel arrays with 41 _._ 7 _µm_ pixel\nsize from FBK and compared with bare and flat layer coated\ndevices. The performance was measured in the lab by injecting\nmonochromatic narrow normal incident light and in a fibre\ntracker module with high energetic particles. The results are\npresented in detail as a function of wavelength and ∆ _V_ for the\nlaboratory measurement and as a function of injection distance\nand ∆ _V_ for the SciFi measurement.\nIn summary, at ∆ _V_ = 2 _V_, an increase of 22% is observed\nfor the narrow normal light source and 17% at ∆ _V_ = 8 _V_ .\nFor the SciFi light source, the increase is 22 _._ 5% and 20 _._ 5%\nat ∆ _V_ = 2 _V_ and ∆ _V_ = 6 _V_, respectively. These values\ncorrespond to an overestimation of 10 _−_ 15% by simulation.\nAs the implementation depends on the precise alignment of\nthe MLA and the silicon structure as well as on the optical\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 8\n\nparameters of the implementation, the results of simulation\nand measurements can be considered in good agreement.\nIn addition to the higher PDE, MLA-enhanced detectors also\nshow a reduction of 40% of external cross-talk compared to\na flat coated detector. An improvement in timing performance\nin SPTR is expected due to the partial masking of the border\nregion (deflection of the photons towards the pixel centre by\nthe lens), which was reported in other works and seen in\npreliminary measurements in our lab.\nThe optical transparency of the less than 50 _µm_ thick\nMLA layer, in a wavelength range between 350 _nm_ and\n700 _nm_, was measured before and after irradiation. No\nmeasurable change was observed with a neutron equivalent\nfluence of the expected radiation level in the LHCb upgrade\n2 (3 _._ 0 _×_ 10 [12] 1 MeV n eq _/_ cm [2] ) and an ionising dose of\n1 _kGy_ . Further improvements by adding an anti-reflecting\ncoating (ARC) to the polymer surfaces of the MLA can\npotentially decrease the Fresnel reflection loss. A prototype\nwith optimised coating for the emission spectral range of\nthe SciFi light source is foreseen. For low ∆ _V_ = 2 _V_,\nthe prospects of MLA enhanced SiPMs with SciFi tr",
+        "score": -5.547340893916594,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8717948717948719,
+        "rerank_score": -8.63764476776123,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "NO",
+          "The",
+          "For",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1492,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status.md",
+        "title": "2023__recid_2697917__2401.15609__The_Mu2e_Crystal_and_SiPM_Calorimeter_Construction_Status",
+        "text": "eck\nthat all pieces were well fitting as shown in Fig. 16. A careful\nvacuum leak test was performed both on the crate manifolds\nand on the elbow joints between crates and manifolds: a\nmaximum leak rate of 10 _[−]_ [10] atm _×_ cc/s was achieved,\nsatisfying the experiment requirements.\nAt the moment, the down-stream disk (Disk1) is under\nassembly at the Silicon Detector facility (SiDet) at Fermilab\nin a clean room (ISO 7), while the up-stream disk (Disk0)\nhas all the mechanical parts assembled at LNF and is still\nwaiting to be shipped to Fermilab. The Disk1 assembly at\nSiDet started in June 2022 with the installation and alignment\nof the Outer Ring over its stand, and progressed with the Inner\nRing alignment. 674 crystals, among the over 1450 wrapped\nin Tyvek® and fully characterized with a source, were selected\nto be stacked in the down-stream disk. Before stacking, a set\nof two day long outgassing runs was performed in a dedicated\nvacuum vessel to reduce the residual single crystal outgassing\nlevel below 10 _[−]_ [4] Torr l/s. The positioning of the crystals in\nthe disk was carefully optimised, taking into account optical,\nmechanical and radiation hardness properties. Three areas have\nbeen identified as a function of the expected level of Total\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. 70, NO. 7, 2023 7\n\nThe first 500 ROUs were received at Fermilab in September\n2022. An outgassing campaign of these ROUs started in\nOctober 2022 to reduce their outgassing level below 10 _[−]_ [4] Torr\nl/s before inserting them in the FEE disk. In Fig. 18 the current\nstatus of the assembly is shown.\n\nFig. 18. Front and rear face of the down stream disk of the Mu2e calorimeter\n\nFig. 16. Calorimeter mechanical parts: (Top-left) Outer Ring, (Top-right)\nFEE plate, (Bottom-left) Inner Ring, (Bottom-right) Front plate with source\ntubing embedded in the aluminum honeycomb.\n\nIonizing Dose (TID), occupancy and resolution, considering\nthat TID and occupancy decrease radially moving toward the\noutermost part of the disk. The chosen crystal distribution is\nshown in Figure 17.\n\nFig. 17. Left:Distribution of the LY in photoelectrons/MeV and down-stream\ndisk filled with 674 crystals\n\nA 50 _µ_ m thick Tedlar® layer was placed between each\nstacked row; to keep the crystal matrix solidly connected,\neach row was then compressed using screws pushing on\nplastic shims at both row ends. A high precision bubble level\nallowed to check the accuracy of stacking procedure, that was\nlater reconstructe",
+        "score": -6.008704904751901,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7820512820512822,
+        "rerank_score": -9.336804389953613,
+        "matched_nodes": [
+          "On",
+          "An",
+          "At",
+          "NO",
+          "The",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8382,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom.md",
+        "title": "2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom",
+        "text": "thermal conductance ( _G_ ) values\non a single chip for characterization. The sensors are fabricated\nusing the “hasTES” process [20] with the Mo layer etched\ninto 7 µm wide filaments before Au deposition. The filaments\nenable a useful level of lithographic control of _T_ c and _α_ I . This\nnarrow rectangular sensor design has been shown to reduce\nmagnetic field sensitivity [21]. The sensor is thermally coupled\nto a 250 nm thick, 250 µm square gold “sidecar” absorber [22]\nwith a 250 nm thick Au link, measuring 18 µm _×_ 15 µm. The\nentire TES and absorber assembly is suspended on a silicon\nmembrane that is _∼_ 4 µm thick. The Si membrane has a\n_∼_ 350 nm thick SiO 2 layer deposited with plasma-enhanced\nchemical vapor deposition to prevent Mo-Si inter-diffusion.\nThe normal resistance ( _R_ n ) of the TESs is about 7 mΩ, and\nthe 3-square design is a good match to our bias circuit. The\nTES schematic is shown in Fig. 2.\nThe detector chip is wire-bonded to interface chips that\nprovide a shunt resistance _R_ shunt _≈_ 250 µΩ and an inductance\n_L ≈_ 120 nH. The interface chips are connected to a microwave\nmultiplexer ( _µ_ mux) chip capable of reading out 31 resonators\nplaced in a 500 MHz wide band [23]. A single RF coaxial line\ncarries the multiplexed signal from the _µ_ mux feedline inside\nthe detector box. As it leaves the cryostat, the signal passes\nthrough two amplification stages. The first is a High-ElectronMobility Transistor located at the 3 K stage, followed by a\nlow-noise amplifier at the 40 K stage.\nTo mitigate RF cavity modes and preserve the high microwave resonator quality factors ( _Q_ _i_ _>_ 100 _,_ 000) needed for\nlarge multiplexing factors ( _≈_ 500), we have incorporated a\nunique design feature into the detector box. We have machined\nthe cold plate to form cylindrical copper “ground bosses”,\napproximately 450 µm tall and 400 µm wide, positioned on\na 5 mm pitch within the region designated for resonator\nfabrication. We utilize the same DRIE step that is already\n\nIEEE TRANSACTIONS ON APPLIED SUPERCONDUCTIVITY, VOL. XX, NO. XX, MONTH 202X 3\n\nFig. 2. Schematic representation of a single TES detector. The Mo film\n(blue) is wet-etched to create two 7 µm wide filaments that are used to define\n_T_ c . The sensor and its “sidecar” absorber are suspended on a _∼_ 4 µm thick\nsilicon membrane (grey). Membrane perforations (red) are used to define the\nthermal conductance of the device to the bath. The jagged outermost boundary\nrepresents the outline of back",
+        "score": -6.379763269913503,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7051282051282053,
+        "rerank_score": -9.898550987243652,
+        "matched_nodes": [
+          "On",
+          "NO",
+          "The",
+          "We",
+          "To",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5241,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "em [6]–[8]. (1) If the secondary photon is absorbed by\nthe neighboring Single Photon Avalanche Diode (SPAD) and\ntriggers an additional avalanche within the same SiPM, it\nis referred to as internal optical crosstalk (iCT) [9]. More\nspecifically, iCT can further be divided into direct crosstalk\nand delayed crosstalk based on whether the electron is produced in the depleted region or in the undepleted region.\nMore information can be found in [10]. (2) Secondary photons\ncan pass through the SiPM window, escape, and be detected\nby external photo-sensors, such as another SiPM facing the\nfirst one, known as external crosstalk (eCT) [11]. (3)The final\ncorrelated effect is optically-induced afterpulsing (AP) [12],\nresulting from electrons in the undepleted region within the\nsame cell [10]. As the result, optical-induced AP usually appears behind the primary pulse after hundreds of nanoseconds\nto microseconds because of the recharge time of SPADs. As a\nresult, optically-induced AP typically occurs after the primary\npulse, ranging from hundreds of nanoseconds to microseconds,\ndue to the recharge time of SPADs\nThese correlated effects could significantly impact experiments aiming to achieve a large photon-sensitive area using\nSiPM readout, as detailed in the Darkside and nEXO references [13] [14]. First of all, the light yield of the detector\nis probably overestimated since single incident photons would\ngenerate a signal with the integral area larger than 1 PE (photoelectron), because of the presence of iCT, eCT or AP. To\nestimate the corrected light yield, the knowledge of the probability of the three correlated effects is important. In addition\nto light yield overestimation, other negative effects need to\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 2\n\nbe considered. For instance, the presence of AP can impede\nthe n/ _γ_ pulse shape discrimination in the background rejection\nanalysis when using the prompt fraction method. Moreover, a\nhigh percentage of iCT and eCT would degrade the energy\nresolution. Additionally, eCT also generates unavoidable coincidental background in low threshold experiments, as eCT\nsignals always occur simultaneously.\nOverall, for any experiment employing large area SiPM\narrays, the understanding of SiPM correlated noises is mandatory. The iCT probability is calculated by _P_ _iCT_ = _N_ _[N]_ (0 [(][1] _._ _[.]_ 5 [5] _P E_ _[ P E]_ ) [)]\n\n[15], where _N_ (1 _._ 5 _PE_ ) is the dark count rate (DCR) with\n1.5 PE threshold",
+        "score": -6.522219727834066,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8333333333333335,
+        "rerank_score": -10.132902145385742,
+        "matched_nodes": [
+          "In",
+          "On",
+          "NO",
+          "The",
+          "For",
+          "To",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6739,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "IEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 1\n\n# Microlens-enhanced SiPMs\n\nG. Haefeli, F. Blanc, E. Curr´as-Rivera, R. Marchevski, F. Ronchetti, O. Schneider, L. Shchutska,\n\nC. Trippl, E. Zaffaroni and G. Zunica\n\n_**Abstract**_ **—A novel concept to enhance the photo-detection**\n**efficiency (PDE) of silicon photomultipliers (SiPMs) has been**\n**applied and remarkable positive results can be reported. This**\n**concept uses arrays of microlenses to cover every second SiPM**\n**pixel in a chequerboard arrangement and aims to deflect the**\n**light from the dead region of the pixelised structure towards the**\n**active region in the centre of the pixel. The PDE is improved up**\n**to 24%, external cross-talk is reduced by 40% compared to a flat**\n**epoxy layer, and single photon time resolution is improved. This**\n**detector development is conducted in the context of the next**\n**generation LHCb scintillating fibre tracker located in a high**\n**radiation environment with a total of 700’000 detector channels.**\n**The simulation and measurement results are in good agreement**\n**and will be discussed in this work.**\n\n_**Index Terms**_ **—Cross-talk, Microlens, MLA, PDE, SciFi, SiPM,**\n**SPTR**\n\nI. I NTRODUCTION\n\nIn the context of the scintillating fibre tracker (SciFi\nTracker) [1], our group, the High Energy Physics Laboratory\n(LPHE) at EPFL, is working to improve the silicon photomultiplier (SiPM) photodetectors in order to overcome the\nchallenges imposed by radiation, detector size, and the low\nmaterial budget requirement for the next upgrade in 2034. The\nultimate goal of this development is to improve the signalto-noise ratio. We found that the enhancement of the SiPM\n\nwith microlenses not only significantly increases the signal\nbut also reduces external cross-talk and has the potential to\nreduce noise.\n\nThe choice of the ideal size of the SiPM pixel for a custom\ndesign is typically guided by the compromise between the\nhigh geometrical fill factor (GFF) and the resulting high photodetection efficiency (PDE) for large pixels and the manifold\ndisadvantages resulting from higher gain and therefore higher\ncorrelated noise, longer recovery time, lower dynamic range,\nand higher bias current. Adding the radiation environment\nas an additional criterion, small pixel size and low excess\nbias voltage (over-voltage, ∆ _V_ ) are also preferred to reduce\nthe effect of increasing the dark count rate (DCR) (heat\ndissipation and self-heating), as well as redu",
+        "score": -6.530164577826476,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7435897435897437,
+        "rerank_score": -10.134493827819824,
+        "matched_nodes": [
+          "In",
+          "On",
+          "NO",
+          "The",
+          "We",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8380,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom.md",
+        "title": "2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom",
+        "text": "d scalable microcalorimeter technology [11]–[13]. The thermodynamic limit to the energy resolution (∆ _E_ ) in TESs is of the form:\n\nwhere _T_ c is the critical temperature, _C_ is the total heat\ncapacity of the detector, _α_ I _≡_ _T/R·∂R/∂T_ is the temperature\nsensitivity, _β_ I _≡_ _I/R · ∂R/∂I_ is the current sensitivity [14],\nand _M_ denotes the “excess” Johnson noise term. Achieving\nour target resolution thus requires developing TESs with a\nlow _T_ c ( _≈_ 30 mK). Simultaneously, achieving a large collecting area requires a scalable architecture. Our approach\ncombines two key technologies: integrated fabrication of TES\nand SQUID components [15] and the use of a flexible silicon\nlayer to create a compact spectrometer focal plane [16] (see\nFig. 1). A key requirement for both fabrication strategies\nis the use of a silicon substrate, making silicon-on-insulator\n(SOI) wafers the necessary starting material. Consequently, our\nTESs must be supported by silicon membranes, in contrast to\nmore traditional designs on silicon nitride. We avoid nitride\nmembranes because etching it away to clear the substrate\nfor the readout circuitry would worsen the pristine substrate\nrequired for high- _Q_ superconducting resonators.\n\n∆ _E ∝_ 2 _._ 355\n�\n\n_k_ B _T_ c [2] _C_ ~~�~~\n\n(1 + 2 _β_ I )(1 + _M_ [2] ) _/α_ I _,_ (1)\n\nIEEE TRANSACTIONS ON APPLIED SUPERCONDUCTIVITY, VOL. XX, NO. XX, MONTH 202X 2\n\nII. E XPERIMENT\n\nFig. 1. (Top) A focused combined photograph of detector box containing\na 24-pixel TES array bent 90 degrees around the corner using a a section\nof _∼_ 4 µm thick flexible silicon. The TES detector array is wire-bonded to\nan inductor chip, a shunt chip and finally a microwave multiplexer chip that\nis instrumented using a single coaxial feedline. Copper “ground bosses” are\nmachined from the detector cold plate for RF cavity mode suppression (dotted\nwhite square, and inset). (Bottom) A 24-pixel integrated chip, showing the\nTES, inductors, shunts and SQUIDs fabricated on the same die in a 19+ layer\nprocess [15].\n\nTherefore, a complete electro-thermal characterization of\nthese silicon-based devices is a critical step. In this work, we\npresent such a model for our TESs on SOI, developed using\nI-V curves, complex admittance, pulse response, and noise\nspectra. We find that the silicon membranes provide acceptable\ncontrol of thermal conductance and that the devices exhibit\n\nreasonably sharp superconducting transitions. However, our\nmodel also reveals an unexplained exces",
+        "score": -6.558546163901305,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7435897435897437,
+        "rerank_score": -10.178157806396484,
+        "matched_nodes": [
+          "In",
+          "On",
+          "NO",
+          "The",
+          "We",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5243,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "r with the same overvoltage. In\nthis scenario, the photo-electron distribution of SiPM2 should\nbe free of pedestal due to the deployment of the 0.5 PE height\ntrigger. Subsequently, a software algorithm was used to search\nfor coincidence signals in SiPM1 within a time gate T 0 +dT,\nwhere dT=50ns and T 0 is the trigger time for SiPM2. If there\nis a PE signal in the time window, we integrate over the area\nof the PE signal (Fig. 1(a)) of SiPM1. On the contrary, if there\nis nothing but baseline in the gate, we integrate over the same\n\nregion of SiPM2 in SiPM1(Fig. 1(b)). In this trigger mode,\nthe PE distribution of SiPM1 has a majority of pedestal. For\nexample, Fig 2 displays the PE distributions of two SensL\nSiPMs in a dark environment at 4.5V overvoltage and liquid\nnitrogen temperature.\n\n(a)\n\n(b)\n\nFig. 1: Illustrations of the software selection for two SiPM\nsamples (SiPM1 and SiPM2)\n\n.\n\nThe coincidence probability _P_ _coin_ is defined as the ratio\nof PE events on SiPM1 in coincidence with PE events on\n\nSiPM2 to triggered PE events on SiPM2, resulting in _P_ _coin_\n= 2834/30000 = 9.45%, as shown in Fig 2. Initially, _P_ _coin_\nreflects the eCT level of both SiPM1 and SiPM2, as eCT\nphotons emitted from the dark noise of SiPM2 are then\nreceived by SiPM1, and vice versa, both contributing to the\ncoincidence probability. If this is accurate, an increase in the\novervoltage of SiPM2 would be expected to lead to a higher\n_P_ _coin_, as the overvoltage enhances the SiPM gain, resulting\nin more charge carriers in avalanches. Theoretically, a higher\nnumber of charge carriers in a single avalanche corresponds to\na higher eCT probability. In other words, _P_ _coin_ as a function of\nthe SiPM overvoltage _V_ _over_ is expected to be a monotonically\nincreasing function. However, our measurement indicates that\n_P_ _coin_ does not increase consistently with _V_ _over_ for SiPM2.\nFig 3 shows _P_ _coin_ as a function of _V_ _over_ for SiPM2. It is\nworth noting that accidental coincidences of dark signals are\ndisregarded, as the DCR of the SiPM is approximately 0.2\nHz/mm [2] at liquid nitrogen temperature. At this dark noise\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 3\n\nSiPM 1\n\nSiPM 2\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n10 4\n\n10 3\n\n10 2\n\n10\n\n1\n\n-1 0 1 2 3 4 5 6\n\nPE\n\n-1 0 1 2 3 4 5 6\n\nPE\n\nFig. 2: PE distributions of two Sensl J-60035 SiPMs facing\neach other. Both graphs present 30000 dark signals in the trigger mode where only SiPM2 was triggered with the threshold\no",
+        "score": -6.640606284312713,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8717948717948719,
+        "rerank_score": -10.319591522216797,
+        "matched_nodes": [
+          "In",
+          "On",
+          "At",
+          "NO",
+          "The",
+          "For",
+          "IEEE",
+          "VOL",
+          "Transactions"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "At": 1.0,
+      "After": 1.0,
+      "Radiation": 1.0,
+      "NO": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "At": 1.0,
+      "After": 1.0,
+      "Radiation": 1.0,
+      "NO": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "IEEE": 0.7,
+      "Physics Research Section": 0.7,
+      "VOL": 0.7,
+      "Transactions": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": true,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 16,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.94152773078531,
+    "generation_latency_s": 3.501772880554199e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 4.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 16.0,
+    "retrieval_latency_s": 5.94152773078531,
+    "generation_latency_s": 3.501772880554199e-07
+  }
+}

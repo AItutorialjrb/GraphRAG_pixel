@@ -1,0 +1,398 @@
+{
+  "benchmark": {
+    "query_id": "neg004",
+    "query_type": "negative",
+    "query": "What is the user password for the detector DAQ machine?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "DAQ"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the user password for the detector DAQ machine?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7162,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2899370__2503.09303__Development_of_a_test_system_for_data_links_of_the_ATLAS_Inner_Tracker_ITk_upgrade_silicon.md",
+        "title": "2025__recid_2899370__2503.09303__Development_of_a_test_system_for_data_links_of_the_ATLAS_Inner_Tracker_ITk_upgrade_silicon",
+        "text": "nks were qualified via S-parameter measurements, with specifications defined by\n\ninsertion loss (IL). Thus, the outputs of the DAQ system should be correlated against the IL.\n\nAdditionally, the study [6] demonstrates that IL can be employed for the precise prediction of BER\n\neye amplitude and width. Consequently, the IL of industry-standard miniDP cables was measured\n\nusing a Vector Network Analyzer (VNA). These cables were then used to generate virtual eye\n\ndiagrams from BER test scans to calibrate the test system and gain insight into its performance.\n\nDifferent cable lengths, representing varying signal losses, were employed, and all DAQ channels\n\nwere systematically tested to assess the correlation between the virtual eye openings and the IL.\n\nIdeally, one would use a 4-channel VNA to measure the S-parameters of a differential link.\n\nSince we only had a 2-channel VNA available (N9918A FieldFox) we employed the mixed-mode\n\nS-parameter approach studied in [4]. It shows a strong correlation between results from a 2-channel\n\nVNA and a 4-channel VNA. In this approach, the transmitted signal of a differential link, SDD21,\n\nis obtained from multiple measurements with the relation in (4.1). The IL is its complement.\n\n_𝑆𝐷𝐷_ 21 = [1] (4.1)\n\n2 [(] _[𝑆]_ [21][ −] _[𝑆]_ [23][ −] _[𝑆]_ [41][ +] _[ 𝑆]_ [43][)]\n\nAs an addtional note, the signal-to-noise ratio (SNR) is directly related to the BER [7]. It is\n\ninfluenced by two factors: crosstalk and IL [8]. In our setup, which employs twinax cables, the\n\nimpact of crosstalk can be disregarded, leaving insertion loss as the sole contributing factor.\n\n**5** **Results**\n\nIn this section, the results are presented in two parts, covering the calibration of the test system and\n\nthe preliminary test results on the first Twinax Type-1 prototype assembly.\n\n**5.1** **Calibration of the DAQ System**\n\nTo understand channel-to-channel variations in signal transmission within test system, we recorded\n\ntransmission data using 1m and 5m miniDP cables connected via miniDP adapters between the\n\nTX/RX channels. Each adapter provides six miniDP channels (J1-J6), with each channel mapping\n\nfive RTM differential lanes, as shown in Figure 3a. The data lanes have a fixed mapping (CMD\nCMD, D3-D0, D2-D1, D1-D2, D0-D3), limiting TX-to-RX connection options. We calibrated the\n\nfive lanes to evaluate RTM&COB signal paths, identify high-performing lanes for further tests, and\n\nrefine the calibration model for transmission variations. This follows to",
+        "score": -3.248971424347636,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8978847556528081,
+        "rerank_score": -5.133790969848633,
+        "matched_nodes": [
+          "The",
+          "In",
+          "To",
+          "As",
+          "DAQ",
+          "We",
+          "It"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 616,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2655423__2304.14926__Results_from_a_prototype_TES_detector_for_the_Ricochet_experiment.md",
+        "title": "2023__recid_2655423__2304.14926__Results_from_a_prototype_TES_detector_for_the_Ricochet_experiment",
+        "text": "from _∼_ 4 pA/ _√_ Hz\n\nfrequency from 30 kHz to 300 kHz reduces the DAQ noise from _∼_ 4 pA/ Hz\n\nto _∼_ 1 pA/ _√_ Hz.\n\nHz.\n\n**3. Detector Characterization and Performance**\n\n_3.1. TES Properties_\n\nWe characterized the TES chips through their bias current (IB) vs SQUIDmeasured TES current (IS) characteristics, referred to here as IBIS curves.\nAn example is illustrated in Fig. 4. Lines of constant slope intersecting the\norigin are proportional to the inverse of the TES resistance plus parasitic\nresistance from wiring. At high bias current the TES is kept normal through\n\n7\n\nself-heating, and the IBIS curve slope is relatively low indicating the normal\nresistance. As the bias current decreases the Joule heating power in the TES\ndecreases and it cools down. This decreases the resistance, increasing the\nslope between the data point and the origin. At a low enough bias current\nthe TES enters its superconducting state and the slope of the IBIS curve\nbecomes constant again, reflecting the parasitic resistance remaining in the\nTES readout circuit. In the measured IBIS curves we observe multiple transition features in each TES. We hypothesize this is due to a combination of\ntwo proximity effects: (1) the overlap between the gold and TES (5 _µ_ m), and\n(2) the overlap between the niobium pads and the TES (10 _µ_ m). The TES\n\n|summarized in Table 1.|Col2|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n|ummarized in Table 1.<br>~~Without Absorber~~<br>TMC = 25 mK<br>With Absorber<br>~~T~~MC~~ = 7 mK~~|ummarized in Table 1.<br>~~Without Absorber~~<br>TMC = 25 mK<br>With Absorber<br>~~T~~MC~~ = 7 mK~~|ummarized in Table 1.<br>~~Without Absorber~~<br>TMC = 25 mK<br>With Absorber<br>~~T~~MC~~ = 7 mK~~|ummarized in Table 1.<br>~~Without Absorber~~<br>TMC = 25 mK<br>With Absorber<br>~~T~~MC~~ = 7 mK~~|ummarized in Table 1.<br>~~Without Absorber~~<br>TMC = 25 mK<br>With Absorber<br>~~T~~MC~~ = 7 mK~~|ummarized in Table 1.<br>~~Without Absorber~~<br>TMC = 25 mK<br>With Absorber<br>~~T~~MC~~ = 7 mK~~|ummarized in Table 1.<br>~~Without Absorber~~<br>TMC = 25 mK<br>With Absorber<br>~~T~~MC~~ = 7 mK~~|\n||||||||\n||||||||\n|||||~~Withou~~<br>TMC|~~Withou~~<br>TMC|~~t Absorber~~<br>= 25 mK|\n||||||||\n||||With Absorber<br>|With Absorber<br>|With Absorber<br>|With Absorber<br>|\n||||~~T~~MC~~ = 7 mK~~||||\n||||||||\n||||||||\n\nFigure 4: Bias current vs SQUID-measured TES current (IBIS) curves. Data are shown\nfor the “with absorber” (blue crosses) and “without absorber” (red circles)",
+        "score": -3.443471115602011,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7957695113056164,
+        "rerank_score": -5.417625427246094,
+        "matched_nodes": [
+          "The",
+          "In",
+          "At",
+          "As",
+          "DAQ",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "t detectors in CE _ν_ NS exper\n\nASN oscillation parameters.\n\n**B.** **With Different Masses of the Detector**\n\n9\n\niment exhibit a mass advantage of one order of magnitude,\nassuming that measurements of eV-scale recoil thresholds are\nfeasible and a signal-to-background ratio of about 1 can be\nachieved in the experiment [60]. Figure 5 shows the ASN\nmixing sensitivity in sin [2] 2 _θ_ 14 – ∆ _m_ [2] 41 [plane at 95][%][ C.L. for]\nan exposure of 1 yr for different mass of the detector. Figure 5(a) shows for Si detector and Fig. 5(b) for Ge detector,\nboth with masses 10 kg, 50 kg, and 100 kg. It can be noted\nhere that, sensitivities are extracted considering a threshold of\n100 eV and 20 eV for silicon and germanium detector, respectively. At a given detector mass at higher ∆ _m_ [2] 41 [the sensitivity]\nin sin [2] 2 _θ_ 14 is more as compared to lower ∆ _m_ [2] 41 [. The sensi-]\ntivity improves in all regions of sin [2] 2 _θ_ 14 with an increase in\ndetector mass as the number of expected events increases. It\nis evident that the Ge detector excludes both allowed regions\nof the GALLIUM experiment.\n\n**C.** **With Various Detector Thresholds**\n\nAs previously discussed, the recoil energy of nuclei decreases as the mass number of the detector increases. There\nfore, detectors with low thresholds, such as Ge and Si can\nperform nuclear recoil discrimination down to the eV scale\nenergy threshold. Such detectors will be more useful if we\ncan observe the recoil energies as low as a few tens of eV. In\nthe context of CE _ν_ NS cross-section, as given in Eq. 1, the nuclear recoil energy _T_ serves as the relevant observable. For\na given neutrino energy, there is a limit to the maximum recoil energy. The cross-section is maximum for lower values of\n_T_, therefore, the total number of observed event rate sensitivity dependent on the low-energy threshold for nuclear recoil\n_T_ _min_ . A comprehensive study has been performed to assess\nthe impact of detector threshold on ASN mixing sensitivity,\nconsidering both Si and Ge detectors with a mass of 10 kg\nplaced at a distance of 4 m from U-Apsara reactor core. Figure 6 shows the sensitivity in sin [2] 2 _θ_ 14 –∆ _m_ [2] 41 [plane at 95][ %]\nC.L for detector with different threshold energies. The sensitivity of the detector at lower ∆ _m_ [2] 41 [is better at the lower de-]\ntector threshold. However, for ∆ _m_ [2] 41 _[≥]_ [1] _[.]_ [0] _[ eV]_ [ 2] [, the detector]\nthreshold has minimal impact on ASN mixing sensitivity.\n\nFIG. 7: The",
+        "score": -5.8292364773879,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7957695113056164,
+        "rerank_score": -9.088033676147461,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "At",
+          "As",
+          "It"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 982,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2671943__2306.14736__Investigation_of_the_Boron_removal_effect_induced_by_5.5MeV_electrons_on_highly_doped_EPI-.md",
+        "title": "2023__recid_2671943__2306.14736__Investigation_of_the_Boron_removal_effect_induced_by_5.5MeV_electrons_on_highly_doped_EPI-",
+        "text": "e electron\nemission of the defect, respectively. It should be mentioned\nhere that Eq. (9) is only valid if the defect concentration and the\nemission rate are position independent. For the investigated irradiated diodes, three different situations have to be considered\nwhen evaluating the B i O i concentration:\n(i) At the lowest fluence of 1 × 10 [15] cm [−][2] the diodes EPI-3\nand Cz-3 are partially depleted before and after emission of the\ndefect for all the applied bias voltages. As it can be observed\nin Fig. 5(c) the capacitance stays nearly constant, i.e. also the\ndepletion depth _w_ ( _T_ ) is constant in the temperature range of\ninterest. Therefore, Eq. (9) can be simplified to:\n\n_e_ _n_ = σ _n_ - _v_ _th_, _n_ - _N_ _C_ - exp �− _k_ _[E]_ _B_ _[a]_ _T_\n\n_e_ _p_ = σ _p_ - _v_ _th_, _p_ - _N_ _V_ - exp �− _k_ _[E]_ _Ba_ _T_ [′]\n\n�\n\n�\n\nWhere _w_ can be extracted from TS-Cap data as an average value\nin the range _T_ _s_ to _T_ _e_ .\n(ii) The sensor is partially depleted before emission and\nfully depleted after emission. This holds for the device EPI9, which was irradiated to Φ e = 6 × 10 [15] cm [−][2] . In this case, the\nconcentration can be evaluated from the TSC spectrum only if\n_w_ ( _T_ ) is extracted from TS-Cap measurements.\n(iii) Similar to case (i), the sensors are partially depleted before and after emission, but _C_ ( _T_ ) or _w_ ( _T_ ) shows visible changes\nin the temperature range where the electron emission from the\ndefect takes place(see Fig. 5(c) and 5(d) for the diodes EPI-7\nand Cz-7). In this case, the corresponding defect concentration\ncan be directly extracted from the TS-Cap measurement as described in the following.\nFor high defect concentration where the change in the occupancy of the defects due to the thermal emission of captured\nelectrons or holes leads to measurable variations of the capacitance with increasing temperature, the TS-Cap method can be\nused to extract the defect concentration. For the B i O i defect the\nTS-Cap can be described, in the 1-D approach, by the following\nequations:\n\n_C_ ( _T_ ) = [ϵ] [0] [ϵ] _[r]_ _[A]_ (11)\n\n_w_ ( _T_ )\n\n2 _T_ _e_\n_N_ _t_ = β _q_ 0 ˆ _T_ _s_\n\n_I_ _[e]_\n_TSC_ [(] _[T]_ [)]\n\n(10)\n_q_ 0 _Aw_\n\n_TSC_ [(] _[T]_ [)] _[Q]_\n\n_dT_ = [2][ ·]\n_A_ - _w_ _Aw_\n\n(5)\n\n(6)\n\n(7)\n\n_f_ ( _T_ ) = exp − [1]\n� β\n\nˆ _T T_ 0\n\n� _e_ _n_ ( _T_ [′] ) + _e_ _p_ ( _T_ [′] )� _dT_ [′]\n�\n\nwhere _T_ is the measured temperature, _w_ ( _T_ ) the depleted depth\nat temperature _T_, _x_ is the coordinate of the depth in t",
+        "score": -5.978695887101645,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7957695113056164,
+        "rerank_score": -9.317971229553223,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "At",
+          "As",
+          "It"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1541,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2705225__2310.00577__Conceptual_study_of_a_two-layer_silicon_pixel_detector_to_tag_the_passage_of_muons_from_co.md",
+        "title": "2023__recid_2705225__2310.00577__Conceptual_study_of_a_two-layer_silicon_pixel_detector_to_tag_the_passage_of_muons_from_co",
+        "text": "and readout techniques as\n\nmentioned above. In such a case, dedicated interconnects with very low thermal conductivity\n\nwould need to be utilized.\n\nThe design of a detector also requires support structures. Here, we particularly consider the\n\nmodule base and external supports, and leave other technical details of the module assembly to a\n\nfuture study. The module base material should be able to transfer the dissipated power away from\n\nthe silicon pixels, withstand any thermomechanical stress and shear, and should have a thermal\n\nexpansion coefficient ( _𝛼_ ) close enough to that of silicon to avoid inducing shear comparable\nto the pixel size, i.e., for pure silicon, the values of _𝛼_ range from 1 _._ 33 × 10 [−][9] K [−][1] at 14 K to\n−47 _._ 40 × 10 [−][8] K [−][1] at 78 K [60] and 2 _._ 59 × 10 [−][6] K [−][1] at 298.2 K [61]. Carbon fiber composites\n\nare viable candidates that could satisfy these requirements and have already been used in many\n\nhigh-energy particle physics experiments: At room temperatures, commercially available sheets of\n\n0.5 mm thickness used at the LHC are reported to have thermal conductivity values typically between\n400 and 500 WK [−][1] m [−][1] and as high as 1100 WK [−][1] m [−][1], a Young’s modulus of about 400 GPa, and\n_𝛼<_ 10 [−][6] K [−][1] along the fiber direction [23]. The exact temperature dependence of the properties\n\nof these composite materials are to be measured in the future, and it would be important to use\n\nmaterials that start with the highest thermal conductivity values at room temperature to remain as\n\nclose to the performance of copper as possible. For comparison, the thermal conductivity of copper\nranges from ∼ 400 WK [−][1] m [−][1] at room temperature [62] to around ∼ 140 WK [−][1] m [−][1] at 1 K (for a\n\nresidual resistance ratio _𝑅𝑅𝑅_ = 30, with higher _𝑅𝑅𝑅_ resulting in thermal conductivity values much\n\ncloser to that at room temperature) [63]. As for durability considerations, the curing process of\n\ncarbon fiber composites could be adapted for improved microcracking resistance and stability after\n\nmultiple cryogenic cycles [64].\n\nThe detector setup would also need an external support structure that allows mounting the\n\nsensor modules and distributes the cooling power from the copper flange. We would expect this\n\nsupport structure to have decent thermal conductivity, and its thickness, relative to its radiation\n\nlength, should be thin enough to avoid significant multiple scattering. Carbon foam-fiber h",
+        "score": -6.038351458085531,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7957695113056164,
+        "rerank_score": -9.409749031066895,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "At",
+          "As",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -6.277932439126558,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9416484318016046,
+        "rerank_score": -9.800329208374023,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "At",
+          "As",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6022,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning.md",
+        "title": "2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning",
+        "text": "lies on the direct detection technique [5, 6]. These\nexperiments seek to observe rare interactions between\nDM particles from the Milky Way and detector materials placed deep underground in low-background envi\nronments.\nTraditionally, direct detection experiments have primarily focused on searching for nuclear recoil events induced by Weakly Interacting Massive Particles (WIMPs)\nscattering off target nuclei in crystals or liquid noble\ngases [7]. As a result, these experiments have mainly\nbeen sensitive to DM masses in the GeV – TeV range, as\nlighter particles would be unable to generate observable\nnuclear recoils.\n\n_∗_ [catena@chalmers.se](mailto:catena@chalmers.se)\n\n_†_ [urdshals@chalmers.se](mailto:urdshals@chalmers.se)\n\nWith the absence of direct evidence for WIMPs, efforts have been put in towards alternative experimental\napproaches better suited to probe DM particles with subGeV masses [8]. In this context, a crucial role is played\nby direct detection experiments designed to detect DMinduced electronic transitions or electron ejections in materials, offering a novel avenue for uncovering the nature\nof DM [9–20].\n\nTo interpret these experiments, a theoretical understanding of DM-electron interactions in detector materials is needed. In ref. [21–25], the interactions DM can\nhave with the electrons bound to silicon and germanium\ncrystals (as well as individual atoms and graphene targets) were classified and explored using a non-relativistic\neffective theory formalism. We implemented our formalism in QEdark-EFT [26], which interfaces with the planewave self-consistent field (PWscf) DFT code Quantum\nESPRESSO [27] and extends the QEdark code [28] to the\ncase of general DM-electron interactions. This allowed\nfor covering several DM models, although an extensive\nexploration was hindered by computational costs.\n\nThe deep neural network (DNN) developed in this paper is traned on the output of QEdark-EFT, and serves\nmainly two purposes. Firstly, it is easier to use and run\nthan QEdark-EFT. It takes less space on a hard drive\nand does not require computation of or access to material response functions. Secondly, it allows for evaluating a large number of DM-induced electronic transition\nrates cheaply on a laptop, and demonstrates the potential DNNs have for speeding up rate evaluations. Such a\nspeedup will be necessary to perform extensive parameter\nscans in the event of detection of a DM signal. For example, evaluating the rate of electron-hole pair creation\nin s",
+        "score": -6.292788078308106,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -9.831981658935547,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "As",
+          "We",
+          "Quantum",
+          "It"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4570,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot.md",
+        "title": "2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot",
+        "text": "n\n\nefficiency, the hDOM intends to comprise 24 SiPM arrays in addition to 31 PMTs, where PMTs\n\nhave a large photon collection area and SiPM arrays exhibit high-precision time resolution [4]. The\n\n– 1 –\n\nSiPM array is aimed at achieving a detection area on the order of square centimeters and a SPTR at\n\nthe order of hundreds of picoseconds, to enhance the effective area and time resolution of hDOM\n\nand improve the angular resolution of the neutrino telescope. At the same time, due to the large\n\nnumber of hDOMs in TRIDENT, it is essential to minimize the power consumption and the number\n\nof readout channels of SiPM arrays.\n\nHowever, the increased area will seriously affect the time resolution of SiPMs due to the\n\nlarger detector capacitance, which increases the influence of electronic noise [10]. For instance, a\ntypical SPTR full width at half maximum (FWHM) result for a SiPM with a size of 1 × 1 mm [2]\n\nis approximately 80 ps, whereas this value for a size of 3 × 3 mm [2] can be around 180 ps [11].\n\nTo mitigate the effects of electronic noise, some front-end readout designs incorporate balun\n\ntransformers and radio frequency (RF) amplifiers, achieving measured SPTRs of less than 150\nps FWHM for 3 × 3 mm [2] Hamamatsu SiPMs and less than 100 ps FWHM for 4 × 4 mm [2] FBK\n\nSiPMs, respectively [12]. Besides, some application-specific integrated circuits (ASICs), such as\nNINO and PETIROC, have also obtained SPTRs of about 200 ps FWHM for many 3 × 3 mm [2]\n\nSiPMs [13–15]. However, achieving high-precision single-photon time measurements with these\n\nschemes will require a large number of readout channels for a SiPM array of square centimeter\n\nscale.\n\nFocusing on high-precision time measurements based on large-area SiPM arrays, we analyze\n\nthe existing challenges and propose an overall front-end readout scheme in section 2. In section 3,\n\nwe propose the design of the front-end readout electronics for the SiPM array, including the series\nparallel connection SiPM array and the two-stage amplification scheme. Additionally, we present\n\nthe experimental setup and some results and discussions of the SPTR measurements in section 4.\n\n**2** **SiPM array front-end readout scheme**\n\nAs mentioned in section 1, the primary challenge in the front-end readout of the SiPM array is\n\nmaintaining its high-precision time measurement capability while constructing a large-area SiPM\n\narray in one readout channel. Initially, the pre-amplifier requires a sufficiently high bandwidth to\n\nhand",
+        "score": -6.456884091898266,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8395331874544127,
+        "rerank_score": -10.060243606567383,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "At",
+          "As"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6753,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "with a low field region)\nand 21 _._ 11% at high ∆ _V_ (without a low field region). This can\nbe compared with the measurement result of 22% at low ∆ _V_\nand 17% at high ∆ _V_ .\n\n_D. Comparison with SciFi light source_\n\nThe microlens parameters were optimised for the SciFi as\na light source and represent one of the goals of the MLA\nproject. The test with the SciFi was performed at CERN\nSPS with pions at a momentum of _p_ = 180 _GeV/c_ . The\nSciFi module was arranged to perform a longitudinal scan.\nThe distance between the particle beam and the photodetector\nwas varied between 20 _cm −_ 230 _cm_ and the light intensity of\nthe normal incident particles was measured. With a Gaussian\nfit, the median is extracted from the characteristic Landau\ndistribution introduced by the energy deposit fluctuations. This\nvalue is called the light yield (LY) of the SciFi tracker. As a\nconsequence of the mirror placed at the far end of the SciFi\nmat at a distance of 245 _cm_ from the SiPM, the detected light\nis composed of a direct component and a mirrored component.\nAt a distance of 20 _cm_, the mirrored component is reduced to\nabout 20% due to attenuation. A fibre mat of 130 _mm_ width\nwas equipped with four flat layer dies and four microlens dies,\n256 channels each. In Fig. 11 the LY is plotted as a function\n\nof ∆ _V_ and given for two distances from the detector. The LY\nmeasurement has been performed after a gain calibration with\na light injection system for each acquisition channel.\nFor the SciFi light distribution for a propagation length of\n230 _cm_, the simulated LY enhancement is 24 _._ 57% for low ∆ _V_\nand 18 _._ 59% for high ∆ _V_, and the measured values with SciFi\nare 22 _._ 5% for low ∆ _V_ and 20 _._ 5% for high ∆ _V_ . Note that the\nsimulation was performed with a light exit angle distribution\ncorresponding to a 230 _cm_ long fibre.\n\nVII. C ONCLUSION\n\nIn this work, we present a novel implementation of MLA\nwith the objective of improving the PDE of SiPMs. The\nimplementation was guided by the technology limitation of\nthe MLA deposit by a mold and a UV-curable polymer.\nTo optimise the most important parameters, the geometry\nof the SiPM pixel was simulated with three regions: the\ndead region, the low field region representing a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter,",
+        "score": -6.6452631888831295,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8395331874544127,
+        "rerank_score": -10.350057601928711,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "At",
+          "As"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1797,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2657413__2305.03457__Parallelization_of_frequency_domain_quantum_gates_manipulation_and_distribution_of_frequen.md",
+        "title": "2024__recid_2657413__2305.03457__Parallelization_of_frequency_domain_quantum_gates_manipulation_and_distribution_of_frequen",
+        "text": "tup to parallelize\nthe measurement of such high quality entangled states by performing 34 quantum gates on\n17 frequency-entangled qubit pairs, in a first implementation of frequency-encoded quantum\ncommunication protocol.\n\n**4.** **Frequency-bin entangled photons for fully connected networks**\n\nIn this section, we show proof-of-principle of a fully connected network of up to 5 users in\nwhich every user can share a secure key with every other user, using frequency-bin entangled\nqubits generated by our broadband photon pair source. In previous implementations or proof-of\n–\nprinciple experiments based on time-bin or polarization-based entangled sources [28 31], the\nmain challenge was phase or polarization stabilization. In addition to previously mentionned\nassets, the frequency degree of freedom that we harness here has the advantage of requiring no\nphase stabilization for superposition analysis.\n\nIn this setup, polarization control is nevertheless necessary when entering the modulators.\nRecent advances have proposed schemes using polarization diversity electro-optic modulators\n(EOMs) to address this challenge [32], which is a relevant and additional asset for real world\napplications. As we encode frequency qubits on distinct pairs of adjacent frequencies, one can\nuse a PF as a demultiplexer to spectrally separate and distribute the pairs to respective users to\ncreate a network. For each mode pair, compensation for the bi-photon residual phase is required\nin order to produce the desired | _𝜙_ [+] ⟩ states [6].\nTo validate our scheme, we first show that the parallelization of the quantum gate enables\nmeasurement of entanglement for qubits separated by two guards modes, allowing for a measured\ncrosstalk ≤ 10 [−][3] between adjacent quantum gates (see appendix A). Fig. 4 shows the fidelity for\nthe accessible frequency-bin entangled pairs. We start from the _𝑛_ = 10 resonance from the pump\nfrequency, to avoid any residual pump laser leakage. The fidelity is higher than 0 _._ 8 for 14 pairs.\nThe few lower values are related to the dips observed in the coincidence spectrum shown in Fig.\n1 around the 50th and 70th resonances from the pump.\nImportant metrics for quantum networks are the key rate and qubit error rate. We deduce these\nparameters from our coincidence measurements, using the method proposed in [33]. We use the\ncoincidences in the Z basis ( _𝐶_ 0 _,_ 0, _𝐶_ 0 _,_ 1, _𝐶_ 1 _,_ 0, _𝐶_ 1 _,_ 1 ) and the X basis ( _𝐶_ + _,_ +, _𝐶_ + _,_ −, _𝐶_ − _,_ + and _𝐶_",
+        "score": -6.71592099047994,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7957695113056164,
+        "rerank_score": -10.452163696289062,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "As",
+          "We"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "The": 1.0,
+      "In": 1.0,
+      "For": 1.0,
+      "To": 1.0,
+      "At": 1.0,
+      "As": 1.0,
+      "De": 1.0,
+      "DAQ": 1.0
+    },
+    "expanded_nodes": {
+      "The": 1.0,
+      "In": 1.0,
+      "For": 1.0,
+      "To": 1.0,
+      "At": 1.0,
+      "As": 1.0,
+      "De": 1.0,
+      "DAQ": 1.0,
+      "We": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "It": 0.7,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 18,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 10.400589632801712,
+    "generation_latency_s": 3.501772880554199e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 18.0,
+    "retrieval_latency_s": 10.400589632801712,
+    "generation_latency_s": 3.501772880554199e-07
+  }
+}

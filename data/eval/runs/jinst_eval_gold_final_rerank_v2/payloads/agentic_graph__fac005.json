@@ -1,0 +1,1708 @@
+{
+  "query": "What does neq/cm2 measure?",
+  "expanded_query": "What does neq/cm2 measure?",
+  "mode": "agentic_graph+light_rerank",
+  "retrieved": [
+    {
+      "rank": 1,
+      "chunk_id": "7790",
+      "doc_id": "352",
+      "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+      "score": 10.425458631739852,
+      "retriever": "graph+light_rerank",
+      "text": "ten times larger\nthan the actual one in about ten years of operations [7]. Such an increase of\ncollisions rate and particles poses stringent constraints on the silicon detectors\nin terms of radiation damage - up to 10 times larger than today - to the\npoint that a new inner detector is needed in both experiments. ATLAS will\nimplement a new all silicon inner detector, the Inner Tracker (ITk) [8, 9].\nHybrid silicon n-on-p pixel modules will be used in the core part of ITk, with\nstrip detectors at larger radii. The innermost part of the ITk Pixel detector\nwill be instrumented with 3D sensors will all the rest will be equipped with\nplanar ones; more details on the ITk layout can be found in [10]. The largest\nfluence to be integrated by 3D and planar sensors is of about 1 _._ 6 _×_ 10 [16] and\n3 _._ 5 _×_ 10 [15] n eq _/_ cm [2] respectively.\nIt is extremely important to have predictions on charge collection performance after such large fluences and the combination of TCAD [1] and MC tools\nlike Allpix [2] [11] is perfect as with the first a precise simulation of the electric\nfield inside the sensor is possible while the latter is adapted for simulating\nparticles impinging on the detector under different conditions (temperature,\nthreshold, angle, etc.). This approach is being used for example in several\ncases in detector development for high energy physics [12, 13].\nAt the moment no data from irradiated modules equipped with the final\nversion of readout chip (ITkPixV2 [14]) for the ATLAS ITk pixel detector\nexist. In order to assess the expected collected charge existing data on similar\ndevices after HL-LHC like fluences have been identified; in particular the\nCMS tracker group investigated passive CMOS sensors [15, 16] bump bonded\nto an RD53A readout chip [17]. Results from testbeams for n-on-p sensors\nwith a thickness of 150 µm were reported. These results have been used to\nvalidate the predictions of TCAD and Allpix [2] .\nIn Section 2 the simulation setup will be presented, then its validation\nwill be discussed (Section 3). The expected charge collection performance of\nATLAS ITk planar pixel modules will be presented in Section 4; Section 5\n\n1 Technology Computer Aided Design\n\n2\n\nwill conclude the paper.\n\n**2. Simulation Setup**\n\nThe simulation of the irradiated silicon pixels sensors has been carried out\nusing the Geant4 [18, 19, 20] based Allpix [2] (v3.2.0) MC simulation framework, with precise electric field and weighting potential [21, 22] maps calculated",
+      "_rerank_score": 10.425458631739852,
+      "score_original": 11.682652057708822
+    },
+    {
+      "rank": 2,
+      "chunk_id": "5128",
+      "doc_id": "224",
+      "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+      "score": 9.704686718470395,
+      "retriever": "graph+light_rerank",
+      "text": "rs)\n\n_Sensors_ **2024**, _1_, 0 2 of 19\n\nThe effects of radiation damage are already measurable at the fluences of LHC Run 2\nand Run 3. For instance, the charge collection efficiency (CCE) of the innermost ATLAS\nPixel layer has now reduced to approximately _∼_ 70% at a fluence of about 1 _×_ 10 [15] n eq cm _[−]_ [2]\n\n[10].\nThe ATLAS, CMS, and LHCb collaborations have developed algorithms to incorporate\nradiation damage effects into their Monte Carlo (MC)-simulated events [ 11 ]. Thanks to these\nalgorithms, it is possible to track the evolution of pixel detector performance as radiation\ndamage accumulates. Despite the different approaches adopted by the three collaborations,\nthe level of agreement between data and Monte Carlo (MC) simulations is remarkable,\nachieving agreement at the _O_ ( % ) level [ 10 ]. These algorithms enable the prediction of\noperational parameters such as depletion voltage and make possible the generation of\nsamples for future detector conditions; these are essential for training reconstruction\nalgorithms.\nDespite the importance and success of these algorithms, some may not be viable for\nthe HL-LHC phase due to computing resource constraints. This is particularly true for the\nATLAS Pixel detectors. Therefore, there is a pressing need for faster yet equally precise\nalgorithms to meet the demands of the HL-LHC data-taking conditions.\nIn this paper, a new lightweight algorithm is presented which is able to address the\nchallenges posed by the HL-LHC on computing resources for the inclusion of radiation\ndamage effects in MC simulated events. The paper is organized as follows.\nIn Section 2, the ATLAS algorithm for simulating radiation damage effects to silicon\npixel sensors is presented along with some key results. Section 3 introduces the new\nalgorithm, which relies on Look-Up Tables (LUTs). This section also discusses the various\ntypes of simulations—TCAD (Technology–Computer-Aided Design) and Geant4 [ 12 – 14 ]\nbased—that serve as inputs to the new algorithm.\nIn order to validate the new algorithm, a series of closure tests were conducted,\ncomparing events simulated using the LUTs algorithm to fully simulated events. The\nresults of these closures tests are reported in Section 4. Finally, the paper concludes (Section\n5) with a discussion on the results and an outlook for the project.\n\n**2. The ATLAS IBL and Pixel Radiation Damage Digitizer**\n\nThe ATLAS Collaboration developed and implemented an algorithm to include the\neffects of radiat",
+      "_rerank_score": 9.704686718470395,
+      "score_original": 10.372157669946173
+    },
+    {
+      "rank": 3,
+      "chunk_id": "8245",
+      "doc_id": "371",
+      "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+      "score": 9.62491566179452,
+      "retriever": "graph+light_rerank",
+      "text": "## Evaluation of 3D pixel silicon sensors for the CMS Phase-2 Inner Tracker\n\nThe Tracker Group of the CMS Collaboration [1,][∗]\n\n**Abstract**\n\nThe high-luminosity upgrade of the CERN LHC requires the replacement of the CMS tracking detector to cope with\nthe increased radiation fluence while maintaining its excellent performance. An extensive R&D program, aiming at\nusing 3D pixel silicon sensors in the innermost barrel layer of the detector, has been carried out by CMS in collaboration with the FBK (Trento, Italy) and CNM (Barcelona, Spain) foundries. The sensors will feature a pixel cell size\nof 25 × 100 µm [2], with a centrally located electrode connected to the readout chip. The sensors are read out by the\nRD53A and CROCv1 chips, developed in 65 nm CMOS technology by the RD53 Collaboration, a joint effort between\nthe ATLAS and CMS groups. This paper reports the results achieved in beam test experiments before and after irradiation, up to a fluence of approximately 2.6 × 10 [16] n eq /cm [2] . Measurements of assemblies irradiated to a fluence of\n1 × 10 [16] n eq /cm [2] show a hit detection efficiency higher than 96% at normal incidence, with fewer than 2% of channels\nmasked, across a bias voltage range greater than 50 V. Even after irradiation to a higher fluence of 1.6 × 10 [16] n eq /cm [2],\nsimilar performance is maintained over a bias voltage range of 30 V, remaining well within CMS requirements.\n\n_Keywords:_\n3D Pixel, Silicon, Sensors, CMS experiment, High-Luminosity LHC, Radiation hardness.\n\n**1. Introduction**\n\nThe High-Luminosity LHC (HL-LHC) [1] is an upgrade of the CERN LHC expected to operate for a period longer than 10 years starting in 2030. It will run\nat a nominal center-of-mass energy of 14 TeV with a\n25 ns bunch spacing. The peak luminosity will reach\n5 × 10 [34] cm [−][2] s [−][1] with an average of up to 140 overlapping proton-proton collisions per bunch crossing. This\nwill enable the CMS experiment [2, 3] to collect an\nintegrated luminosity of up to 3000 fb [−][1] over its lifetime. The increased luminosity will greatly expand the\nphysics potential of the LHC, allowing precision studies of the standard model and searches for statistically\nrare processes beyond the standard model. The unprecedented conditions require upgrades to many components of the CMS detector. In particular, the innermost\nsub-detector, which is made of silicon pixel modules,\nwill be completely replaced with a new system called\nthe Inner Tracker (IT), to withstand",
+      "_rerank_score": 9.62491566179452,
+      "score_original": 10.227119385080943
+    },
+    {
+      "rank": 4,
+      "chunk_id": "1027",
+      "doc_id": "46",
+      "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+      "score": 7.85298518603183,
+      "retriever": "graph+light_rerank",
+      "text": "rd and endcap discs. In the process of evaluating pixel tracking performance, sensors with\n\nboth pixel sizes were measured. Guided by tracking and physics simulations of the entire tracking\n\nsystem, CMS has decided to use 100 µm × 25 µm pitch sensors throughout the entire IT (including\n\nthe 3D modules in barrel layer 1).\n\nA variety of prototype pixel sensors have been designed and fabricated. These include 3D and\n\nplanar sensors of both pixel sizes with p-stop or p-spray isolation and with or without a biasing\n\nscheme for sensor tests before flip-chip bump bonding [7]. The sensors evaluated in this paper are\n\nplanar sensors designed to match the layout of the RD53A readout chip (ROC), which is a half-size\n\nprototype of the final ROC developed by the RD53 Collaboration, a joint effort by the ATLAS and\n\nCMS Collaborations [8]. The measurements are performed using the _Linear front-end_ [9] of the\n\nRD53A chip.\n\nThis paper describes studies for a variety of RD53A-sensor assemblies with the aim to evaluate\n\ntheir performance and to select sensor designs that meet CMS specifications. A list of selected\n\nspecifications for planar pixel sensors is shown in Table 1. Since tuning of the chip parameters is\n\ncritical for an optimal performance of the assemblies and to obtain reliable results, a significant part\n\nof the paper is devoted to this aspect.\n\nThe pixel modules studied in this paper are described in Section 2. In Section 3, the tuning pro\ncedure and performance of the RD53A-sensor assemblies are described. Laboratory measurements\n\nof crosstalk in these modules are reported in Section 4. Evaluation of the sensors with particle\n\nbeams and the results are discussed in Section 5.\n\n**2** **Pixel Modules**\n\nA pixel module consists of a silicon pixel sensor bump bonded to one or more readout chips to form\n\na hybrid pixel detector. In this study, only single-chip modules are tested. The baseline choice for\nthe three outer barrel layers and the discs of the IT are fine-pitch n [+] -p planar pixel sensors with\n\n– 3 –\n\n**Table 1** . Selected requirements for planar pixel sensors used for this measurement and vendor qualification\ncampaign. The requirements for the procurement of sensors for the final experiment differ slightly. The full\ndepletion voltage and the hit efficiency are denoted by V depl and _𝜖_ hit, respectively.\n\nParameter Value Measured at\n\npolarity n [+] -p\n\nactive thickness 150 µm\n\nbulk resistivity 3 kΩcm to 20 kΩcm room temperature\n\npixel size 50 µm × 50",
+      "_rerank_score": 7.85298518603183,
+      "score_original": 14.278154883694235
+    },
+    {
+      "rank": 5,
+      "chunk_id": "3390",
+      "doc_id": "141",
+      "title": "2024__recid_2719944__2311.03902__Measurement_of_the_electronhole_pair_creation_energy_in_a_4H-SiC_p-n_diode",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2719944__2311.03902__Measurement_of_the_electronhole_pair_creation_energy_in_a_4H-SiC_p-n_diode.md",
+      "score": 7.180178747666925,
+      "retriever": "graph+light_rerank",
+      "text": "tron-hole pair creation energy in 4H-SiC epitaxial layer: An\nabsolute calibration approach, Applied Physics Letters 102 (3) (2013) 031109. `[doi:10.1063/1.4776703](https://doi.org/10.1063/1.4776703)` .\n\n[9] M. V. S. Chandrashekhar, C. I. Thomas, M. G. Spencer, Measurement of the mean electron-hole pair ionization energy in 4h sic, Applied\nPhysics Letters 89 (4) (2006) 042113. `[doi:10.1063/1.2243799](https://doi.org/10.1063/1.2243799)` .\n\n[10] A. Lebedev, A. Ivanov, N. Strokan, Radiation resistance of SiC and nuclear-radiation detectors based on SiC films, Semiconductors 38 (2)\n(2004) 125–147.\n\n[11] T. R. Garcia, A. Kumar, B. Reinke, T. E. Blue, W. Windl, Electron-hole pair generation in SiC high-temperature alpha particle detectors,\nApplied Physics Letters 103 (15) (2013) 152108. `[doi:10.1063/1.4824774](https://doi.org/10.1063/1.4824774)` .\n\n[12] A. Lo Giudice, F. Fizzotti, C. Manfredotti, E. Vittone, F. Nava, Average energy dissipated by mega-electron-volt hydrogen and helium ions\nper electron-hole pair generation in 4h-sic, Applied Physics Letters 87 (22) (2005) 222105. `[doi:10.1063/1.2135507](https://doi.org/10.1063/1.2135507)` .\n\n[13] B. Phlips, K. Hobart, F. Kub, R. Stahlbush, M. Das, B. Hull, G. De Geronimo, P. O’Connor, Silicon carbide pin diodes as radiation detectors,\nin: IEEE Nuclear Science Symposium Conference Record, 2005, Vol. 3, 2005, pp. 1236–1239. `[doi:10.1109/NSSMIC.2005.1596542](https://doi.org/10.1109/NSSMIC.2005.1596542)` .\n\n[14] A. Ivanov, E. Kalinina, A. Konstantininov, N. Onushkin, G.A.and Strokan, G. Kholuyanov, A. Hall´en, High-resolution short range ion\ndetectors based on 4h-sic films, Technical Physics Letters 30 (2004) 575–577. `[doi:10.1134/1.1783406](https://doi.org/10.1134/1.1783406)` .\n\n[15] G. Bertuccio, R. Casiraghi, Study of silicon carbide for x-ray detection and spectroscopy, IEEE Transactions on Nuclear Science 50 (1) (2003)\n175–185. `[doi:10.1109/TNS.2003.807855](https://doi.org/10.1109/TNS.2003.807855)` .\n\n8\n\n[16] C. A. Klein, Bandgap dependence and related features of radiation ionization energies in semiconductors, Journal of Applied Physics 39 (4)\n(1968) 2029–2038. `[doi:10.1063/1.1656484](https://doi.org/10.1063/1.1656484)` .\n\n[17] G. Bertuccio, S. Caccia, D. Puglisi, D. Macera, Advances in silicon carbide x-ray detectors, Nuclear Instruments and Methods in Physics\nResearch Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 652 (1) (2011) 193–196, symposium on Radiation\nMeasurements a",
+      "_rerank_score": 7.180178747666925,
+      "score_original": 15.782143177576225
+    },
+    {
+      "rank": 6,
+      "chunk_id": "5511",
+      "doc_id": "242",
+      "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+      "score": 7.150693014406453,
+      "retriever": "graph+light_rerank",
+      "text": "iaro, et al., The NUMEN Heavy Ion Multidetector for a Complementary Approach to the Neutrinoless\nDouble Beta Decay, Universe 6 (2020). doi: `[10.3390/universe6090129](http://dx.doi.org/10.3390/universe6090129)` .\n\n[18] F. Iazzi, et al., A new cooling technique for targets operating under very intense beams, WIT transactions on\nengineering sciences 116 (2017) 61–70.\n\n[19] P. Hazdra, J. Vobeck´y, Radiation defects created in n-type 4h-sic by electron irradiation in the energy range of\n1–10 mev, physica status solidi (a) 216 (2019) 1900312. doi: `[https://doi.org/10.1002/pssa.201900312](http://dx.doi.org/https://doi.org/10.1002/pssa.201900312)` .\n\n[20] P. Hazdra, P. Smrkovsk´y, J. Vobeck´y, A. Mihaila, Radiation resistance of high-voltage silicon and 4h-sic power\np-i-n diodes, IEEE Transactions on Electron Devices 68 (2021) 202–207. doi: `[10.1109/TED.2020.3038713](http://dx.doi.org/10.1109/TED.2020.3038713)` .\n\n[21] F. Nava, G. Bertuccio, A. Cavallini, E. Vittone, Silicon carbide and its use as a radiation detector material, Measurement Science and Technology 19 (2008) 102001. URL: `[https://dx.doi.org/10.1088/0957-0233/19/](https://dx.doi.org/10.1088/0957-0233/19/10/102001)`\n`[10/102001](https://dx.doi.org/10.1088/0957-0233/19/10/102001)` . doi: `[10.1088/0957-0233/19/10/102001](http://dx.doi.org/10.1088/0957-0233/19/10/102001)` .\n\n[22] S. M. Sze, K. K. Ng, Physics of semiconductor devices, John Wiley & Sons, Inc. (2006). doi: `[https://doi.org/](http://dx.doi.org/https://doi.org/10.1002/9780470068328.fmatter)`\n`[10.1002/9780470068328.fmatter](http://dx.doi.org/https://doi.org/10.1002/9780470068328.fmatter)` .\n\n[23] A. A. Lebedev, A. M. Ivanov, N. B. Strokan, Radiation resistance of sic and nuclear-radiation detectors based on\nsic films, Semiconductors 38 (2004) 125.\n\n[24] G. Lioliou, et al., 4h-sic schottky diode arrays for x-ray detection, Nuclear Instruments and Methods in Physics\nResearch Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 840 (2016) 145–152.\ndoi: `[https://doi.org/10.1016/j.nima.2016.10.002](http://dx.doi.org/https://doi.org/10.1016/j.nima.2016.10.002)` .\n\n[25] X. Zhang, et al., Characterizing the timing performance of a fast 4h-sic detector with an [241] am source, IEEE\nTransactions on Nuclear Science 60 (2013) 2352–2356.\n\n[26] S. Tudisco, Others, Silicon carbide for future intense luminosity nuclear physics investigations, Il Nuovo Cimento\nC 42 (2019). doi: `[10.1393/ncc/i2019-19074-1](http://dx.doi.org/10.1393",
+      "_rerank_score": 7.150693014406453,
+      "score_original": 15.728532753466277
+    },
+    {
+      "rank": 7,
+      "chunk_id": "3009",
+      "doc_id": "126",
+      "title": "2024__recid_2703043__2309.14905__Multimessenger_measurements_of_the_static_structure_of_shock-compressed_liquid_silicon_at_",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2703043__2309.14905__Multimessenger_measurements_of_the_static_structure_of_shock-compressed_liquid_silicon_at_.md",
+      "score": 6.811489683601421,
+      "retriever": "graph+light_rerank",
+      "text": "Multi-Messenger Measurements of the Static Structure of Shock-Compressed Liquid\nSilicon at 100 GPa\n\nH. Poole, [1,][ ∗] M. K. Ginnane, [2, 3] M. Millot, [4] G. W. Collins, [2] S. X. Hu, [2] D. Polsin, [2] R. Saha, [5] J.\nTopp-Mugglestone, [1] T. G. White, [5] D. A. Chapman, [6] J. R. Rygg, [2, 3] S. P. Regan, [2] and G. Gregori [1]\n\n1 Department of Physics, University of Oxford, Oxford OX1 3PU, UK\n2 Laboratory for Laser Energetics, University of Rochester, Rochester, New York 14623, USA\n3 Department of Mechanical Engineering, University of Rochester, Rochester, New York 14611, USA\n4 Lawrence Livermore National Laboratory, Livermore, CA 94550, USA\n5 Department of Physics, University of Nevada, Reno, Nevada 89557, USA\n6 First Light Fusion Ltd, Unit 9/10 Mead Road, Oxford Pioneer Park, Yarnton, Oxford OX5 1QU, UK\n(Dated: September 27, 2023)\n\nIonic structure of high pressure, high temperature fluids is a challenging theoretical problem with\napplications to planetary interiors and fusion capsules. Here we report a multi-messenger platform\nusing velocimetry and in situ angularly and spectrally resolved X-ray scattering to measure the\nthermodynamic conditions and ion structure factor of materials at extreme pressures. We document\nthe pressure, density, and temperature of shocked silicon near 100 GPa with uncertainties of 6%,\n2%, and 20%, respectively. The measurements are sufficient to distinguish between and rule out\nsome ion screening models.\n\nWith the advent of high-power lasers, a laboratorybased exploration into extreme states of matter, such as\nthose found in planetary interiors [1] or during asteroid\nimpacts [2], has been realized. This exotic state, referred\nto as warm dense matter (WDM) [3], is characterized by\ntemperatures and pressures on the order of 1, 000 K and\n100 GPa. Experimental measurement of material behavior and structure under such conditions is paramount for\ntesting theoretical models used in the pursuit of fusion\nenergy [4, 5] and for modeling planetary phenomena [6–\n9], where dynamic geophysics processes are dominated\nby changes in solid- and liquid-state structure.\nOver the last few decades, high-energy density (HED)\nfacilities have developed the capability of generating sufficiently long-lived WDM states to deploy suites of advanced diagnostics [10–12]. Using the X-ray free electron\nlaser (XFEL) at the Linac Coherent Light Source, highresolution X-ray scattering measurements have successfully probed the electronic and atomic structure of",
+      "_rerank_score": 6.811489683601421,
+      "score_original": 9.657253970184401
+    },
+    {
+      "rank": 8,
+      "chunk_id": "161",
+      "doc_id": "4",
+      "title": "2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit.md",
+      "score": 6.762266424416069,
+      "retriever": "graph+light_rerank",
+      "text": "doi.org/10.1070/PU1980v023n10ABEH005041)`\n`[PU1980v023n10ABEH005041](http://dx.doi.org/10.1070/PU1980v023n10ABEH005041)` .\n\n[60] A. Phipps, K. M. Sundqvist, A. Lam, B. Sadoulet, Optically Induced\nMeasurement of Electron and Hole Drift Velocities in a Germanium ⟨100⟩\nCDMS Detector at 50 mK, Journal of Low Temperature Physics 167\n(2012) 1112–1118. `[doi:10.1007/s10909-012-0472-3](http://dx.doi.org/10.1007/s10909-012-0472-3)` .\n\n[61] V. Aubry-Fortuna, A. Broniatowski, P. Dollfus, B. Young, B. Cabrera, A. Miller, Field dependence of electron velocity in high-purity germanium at cryogenic temperatures, AIP Conference Proceedings 1185\n(2009) 639–642. `[doi:10.1063/1.3292422](http://dx.doi.org/10.1063/1.3292422)` .\n\n[62] S. B. Kaplan, C. C. Chi, D. N. Langenberg, J. J. Chang, S. Jafarey, D. J.\nScalapino, Quasiparticle and phonon lifetimes in superconductors, Physical Review B 14 (1976) 4854–4873. `[doi:10.1103/PhysRevB.14.](http://dx.doi.org/10.1103/PhysRevB.14.4854)`\n\n`[4854](http://dx.doi.org/10.1103/PhysRevB.14.4854)` .\n\n[63] R. Agnese, Simulating the SuperCDMS Dark Matter Detector Response\nand Readout, Ph.D. thesis, University of Florida (2017). `[doi:10.2172/](http://dx.doi.org/10.2172/1457150)`\n`[1457150](http://dx.doi.org/10.2172/1457150)` .\n\n[64] Y. Hochberg, E. D. Kramer, N. Kurinsky, B. V. Lehmann, Directional\ndetection of light dark matter in superconductors (2021). `[arXiv:2109.](http://arxiv.org/abs/2109.04473)`\n`[04473](http://arxiv.org/abs/2109.04473)` .\n\n[65] Y. Minami, et al., Irradiation tests of superconducting detectors and comparison with simulations, Journal of Low Temperature Physics 199 (2020)\n118–129. `[doi:10.1007/s10909-020-02393-7](http://dx.doi.org/10.1007/s10909-020-02393-7)` .\n\n[66] R. K. Romani, et al., Thermal detection of single e-h pairs in a biased\nsilicon crystal detector, Applied Physics Letters 112 (2018) 043501. `[doi:](http://dx.doi.org/10.1063/1.5010699)`\n`[10.1063/1.5010699](http://dx.doi.org/10.1063/1.5010699)` .\n\n[67] R. Agnese, et al., First Dark Matter Constraints from a SuperCDMS\nSingle-Charge Sensitive Detector, Physical Review Letters 121 (2018)\n051301, [Erratum: Physical Review Letters 122, 069901 (2019)]. `[doi:](http://dx.doi.org/10.1103/PhysRevLett.121.051301)`\n`[10.1103/PhysRevLett.121.051301](http://dx.doi.org/10.1103/PhysRevLett.121.051301)` .\n\n[68] K. D. Irwin, S. W. Nam, B. Cabrera, B. Chugg, B. A. Young, A\nquasiparticle-trap-assisted transition-edge sensor for phonon-mediated\nparticle detection, Review o",
+      "_rerank_score": 6.762266424416069,
+      "score_original": 15.022302589847396
+    }
+  ],
+  "seed_nodes": [
+    "Measurement Science",
+    "Radiation Measurements",
+    "Optically Induced Measurement",
+    "Parameter Value Measured",
+    "Precision Measurement",
+    "Measurement Methods",
+    "Time Difference Measurement Technology Based",
+    "Multi-Messenger Measurements"
+  ],
+  "expanded_nodes": [
+    "AC-LGAD",
+    "ADC",
+    "ALICE",
+    "ASIC",
+    "ATLAS",
+    "Applied Physics",
+    "Applied Physics Letters",
+    "Associated Equipment",
+    "Austrian Research Promotion Agency",
+    "Beam Interactions",
+    "CMOS",
+    "CMS",
+    "CROCv1",
+    "Cambridge University",
+    "Casimir Force",
+    "Charge",
+    "Conceptual Design",
+    "Condensed Matter",
+    "Conference Proceedings",
+    "Creative Commons",
+    "Crystal Ball",
+    "Dark Matter",
+    "Dark Matter Search Results",
+    "Electron Devices",
+    "Energy Decay",
+    "European Physical Society Conference",
+    "European Regional Development Fund",
+    "First Dark Matter Constraints",
+    "First Light Fusion",
+    "Fraunhofer Institute",
+    "Geant4",
+    "Hamamatsu Photonics",
+    "High Energy Physics",
+    "High-resolution",
+    "Hole Drift Velocities",
+    "Impurity Scattering",
+    "In Section",
+    "International Conference",
+    "Irradiation",
+    "John Wiley",
+    "Kansas State",
+    "LGAD",
+    "Lawrence Livermore National",
+    "Low Energy",
+    "Low Temperature Physics",
+    "MAPS",
+    "Measurement Methods",
+    "Measurement Science",
+    "Medical Imaging Conference",
+    "Monte Carlo",
+    "Multi-Messenger Measurements",
+    "Nature Communications",
+    "Neutron",
+    "New York",
+    "Noise",
+    "Nonequilibrium",
+    "Nuclear Instruments",
+    "Nuclear Science",
+    "Nuclear Science Symposium",
+    "Optically Induced Measurement",
+    "Parameter Value Measured",
+    "Physical Review",
+    "Physical Review Letters",
+    "Physics Research",
+    "Physics Research Section",
+    "Pixel",
+    "Precision Measurement",
+    "Quantum Computation",
+    "RD53",
+    "RD53A",
+    "Radiation",
+    "Radiation Measurements",
+    "Research Section",
+    "Semiconductor",
+    "Sensors",
+    "Shock-Compressed Liquid Silicon",
+    "Silicon",
+    "Single-Charge Sensitive",
+    "Solid State",
+    "Soviet Physics Uspekhi",
+    "Spanish State Research Agency",
+    "Stanford University",
+    "Static Structure",
+    "Status Solidi",
+    "TCAD",
+    "Ted",
+    "The Casimir",
+    "The European Physical Journal",
+    "The University",
+    "Threshold",
+    "Time",
+    "Time Difference Measurement Technology Based",
+    "Total",
+    "User Manual",
+    "Version November",
+    "pixel detector",
+    "silicon pixel"
+  ],
+  "paths": [
+    [
+      "Measurement Science",
+      "Silicon"
+    ],
+    [
+      "Measurement Science",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Measurement Science",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Science",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Science",
+      "Austrian Research Promotion Agency"
+    ],
+    [
+      "Measurement Science",
+      "Austrian Research Promotion Agency",
+      "Silicon"
+    ],
+    [
+      "Measurement Science",
+      "Austrian Research Promotion Agency",
+      "Spanish State Research Agency"
+    ],
+    [
+      "Measurement Science",
+      "Austrian Research Promotion Agency",
+      "European Regional Development Fund"
+    ],
+    [
+      "Measurement Science",
+      "Time"
+    ],
+    [
+      "Measurement Science",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "Measurement Science",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "Measurement Science",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "Measurement Science",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Science",
+      "Nuclear Instruments",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Science",
+      "Nuclear Instruments",
+      "Associated Equipment"
+    ],
+    [
+      "Measurement Science",
+      "Nuclear Instruments",
+      "Silicon"
+    ],
+    [
+      "Measurement Science",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Science",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Science",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Measurement Science",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Measurement Science",
+      "Radiation"
+    ],
+    [
+      "Measurement Science",
+      "Radiation",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Science",
+      "Radiation",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Science",
+      "Radiation",
+      "Silicon"
+    ],
+    [
+      "Measurement Science",
+      "Nuclear Science"
+    ],
+    [
+      "Measurement Science",
+      "Nuclear Science",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Science",
+      "Nuclear Science",
+      "Associated Equipment"
+    ],
+    [
+      "Measurement Science",
+      "Nuclear Science",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Science",
+      "Associated Equipment"
+    ],
+    [
+      "Measurement Science",
+      "Associated Equipment",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Science",
+      "Associated Equipment",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Science",
+      "Associated Equipment",
+      "Nuclear Science"
+    ],
+    [
+      "Measurement Science",
+      "LGAD"
+    ],
+    [
+      "Measurement Science",
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "Measurement Science",
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "Measurement Science",
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "Measurement Science",
+      "Electron Devices"
+    ],
+    [
+      "Measurement Science",
+      "Electron Devices",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Science",
+      "Electron Devices",
+      "Silicon"
+    ],
+    [
+      "Measurement Science",
+      "Electron Devices",
+      "Associated Equipment"
+    ],
+    [
+      "Measurement Science",
+      "John Wiley"
+    ],
+    [
+      "Measurement Science",
+      "John Wiley",
+      "Semiconductor"
+    ],
+    [
+      "Measurement Science",
+      "John Wiley",
+      "Silicon"
+    ],
+    [
+      "Measurement Science",
+      "John Wiley",
+      "CMS"
+    ],
+    [
+      "Measurement Science",
+      "Ted"
+    ],
+    [
+      "Measurement Science",
+      "Ted",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Science",
+      "Ted",
+      "Silicon"
+    ],
+    [
+      "Measurement Science",
+      "Ted",
+      "Physics Research Section"
+    ],
+    [
+      "Radiation Measurements",
+      "Nuclear Instruments"
+    ],
+    [
+      "Radiation Measurements",
+      "Nuclear Instruments",
+      "Physics Research Section"
+    ],
+    [
+      "Radiation Measurements",
+      "Nuclear Instruments",
+      "Associated Equipment"
+    ],
+    [
+      "Radiation Measurements",
+      "Nuclear Instruments",
+      "Silicon"
+    ],
+    [
+      "Radiation Measurements",
+      "Physics Research Section"
+    ],
+    [
+      "Radiation Measurements",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Radiation Measurements",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Radiation Measurements",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Radiation Measurements",
+      "Nuclear Science"
+    ],
+    [
+      "Radiation Measurements",
+      "Nuclear Science",
+      "Nuclear Instruments"
+    ],
+    [
+      "Radiation Measurements",
+      "Nuclear Science",
+      "Associated Equipment"
+    ],
+    [
+      "Radiation Measurements",
+      "Nuclear Science",
+      "Physics Research Section"
+    ],
+    [
+      "Radiation Measurements",
+      "Associated Equipment"
+    ],
+    [
+      "Radiation Measurements",
+      "Associated Equipment",
+      "Physics Research Section"
+    ],
+    [
+      "Radiation Measurements",
+      "Associated Equipment",
+      "Nuclear Instruments"
+    ],
+    [
+      "Radiation Measurements",
+      "Associated Equipment",
+      "Nuclear Science"
+    ],
+    [
+      "Radiation Measurements",
+      "Neutron"
+    ],
+    [
+      "Radiation Measurements",
+      "Neutron",
+      "Charge"
+    ],
+    [
+      "Radiation Measurements",
+      "Neutron",
+      "Physics Research Section"
+    ],
+    [
+      "Radiation Measurements",
+      "Neutron",
+      "TCAD"
+    ],
+    [
+      "Radiation Measurements",
+      "High Energy Physics"
+    ],
+    [
+      "Radiation Measurements",
+      "High Energy Physics",
+      "Silicon"
+    ],
+    [
+      "Radiation Measurements",
+      "High Energy Physics",
+      "European Physical Society Conference"
+    ],
+    [
+      "Radiation Measurements",
+      "High Energy Physics",
+      "Creative Commons"
+    ],
+    [
+      "Radiation Measurements",
+      "Radiation"
+    ],
+    [
+      "Radiation Measurements",
+      "Radiation",
+      "Physics Research Section"
+    ],
+    [
+      "Radiation Measurements",
+      "Radiation",
+      "Nuclear Instruments"
+    ],
+    [
+      "Radiation Measurements",
+      "Radiation",
+      "Silicon"
+    ],
+    [
+      "Radiation Measurements",
+      "Silicon"
+    ],
+    [
+      "Radiation Measurements",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Radiation Measurements",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Radiation Measurements",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Radiation Measurements",
+      "Charge"
+    ],
+    [
+      "Radiation Measurements",
+      "Charge",
+      "TCAD"
+    ],
+    [
+      "Radiation Measurements",
+      "Charge",
+      "CMOS"
+    ],
+    [
+      "Radiation Measurements",
+      "Charge",
+      "Time"
+    ],
+    [
+      "Radiation Measurements",
+      "Applied Physics"
+    ],
+    [
+      "Radiation Measurements",
+      "Applied Physics",
+      "Physical Review"
+    ],
+    [
+      "Radiation Measurements",
+      "Applied Physics",
+      "Applied Physics Letters"
+    ],
+    [
+      "Radiation Measurements",
+      "Applied Physics",
+      "Physics Research Section"
+    ],
+    [
+      "Radiation Measurements",
+      "Applied Physics Letters"
+    ],
+    [
+      "Radiation Measurements",
+      "Applied Physics Letters",
+      "Physical Review"
+    ],
+    [
+      "Radiation Measurements",
+      "Applied Physics Letters",
+      "Physical Review Letters"
+    ],
+    [
+      "Radiation Measurements",
+      "Applied Physics Letters",
+      "Applied Physics"
+    ],
+    [
+      "Radiation Measurements",
+      "High-resolution"
+    ],
+    [
+      "Radiation Measurements",
+      "High-resolution",
+      "Silicon"
+    ],
+    [
+      "Radiation Measurements",
+      "High-resolution",
+      "Nuclear Science"
+    ],
+    [
+      "Radiation Measurements",
+      "High-resolution",
+      "Applied Physics Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Physical Review"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Physical Review",
+      "Physical Review Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Physical Review",
+      "Nature Communications"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Physical Review",
+      "Condensed Matter"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Low Temperature Physics"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Low Temperature Physics",
+      "Physical Review"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Low Temperature Physics",
+      "Applied Physics Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Low Temperature Physics",
+      "Physical Review Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Applied Physics Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Applied Physics Letters",
+      "Physical Review"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Applied Physics Letters",
+      "Physical Review Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Applied Physics Letters",
+      "Applied Physics"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Physical Review Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Physical Review Letters",
+      "Physical Review"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Physical Review Letters",
+      "Nature Communications"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Physical Review Letters",
+      "Applied Physics Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Solid State"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Solid State",
+      "Applied Physics Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Solid State",
+      "Physics Research Section"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Solid State",
+      "ATLAS"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Impurity Scattering"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Impurity Scattering",
+      "Physical Review"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Impurity Scattering",
+      "Low Temperature Physics"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Impurity Scattering",
+      "Applied Physics Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Stanford University"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Stanford University",
+      "Physical Review"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Stanford University",
+      "Low Temperature Physics"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Stanford University",
+      "Applied Physics Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Soviet Physics Uspekhi"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Soviet Physics Uspekhi",
+      "Applied Physics Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Soviet Physics Uspekhi",
+      "Physical Review"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Soviet Physics Uspekhi",
+      "Low Temperature Physics"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Hole Drift Velocities"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Hole Drift Velocities",
+      "Silicon"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Hole Drift Velocities",
+      "Physical Review"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Hole Drift Velocities",
+      "Physical Review Letters"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Conference Proceedings"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Conference Proceedings",
+      "Associated Equipment"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Conference Proceedings",
+      "Physics Research Section"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Conference Proceedings",
+      "Nuclear Instruments"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Irradiation"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Irradiation",
+      "Radiation"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Irradiation",
+      "Status Solidi"
+    ],
+    [
+      "Optically Induced Measurement",
+      "Irradiation",
+      "Neutron"
+    ],
+    [
+      "Optically Induced Measurement",
+      "First Dark Matter Constraints"
+    ],
+    [
+      "Optically Induced Measurement",
+      "First Dark Matter Constraints",
+      "Single-Charge Sensitive"
+    ],
+    [
+      "Optically Induced Measurement",
+      "First Dark Matter Constraints",
+      "Radiation"
+    ],
+    [
+      "Optically Induced Measurement",
+      "First Dark Matter Constraints",
+      "Dark Matter"
+    ],
+    [
+      "Parameter Value Measured",
+      "RD53A"
+    ],
+    [
+      "Parameter Value Measured",
+      "RD53A",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "RD53A",
+      "CROCv1"
+    ],
+    [
+      "Parameter Value Measured",
+      "RD53A",
+      "ATLAS"
+    ],
+    [
+      "Parameter Value Measured",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "CMS",
+      "ATLAS"
+    ],
+    [
+      "Parameter Value Measured",
+      "CMS",
+      "RD53A"
+    ],
+    [
+      "Parameter Value Measured",
+      "CMS",
+      "pixel detector"
+    ],
+    [
+      "Parameter Value Measured",
+      "ATLAS"
+    ],
+    [
+      "Parameter Value Measured",
+      "ATLAS",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "ATLAS",
+      "LGAD"
+    ],
+    [
+      "Parameter Value Measured",
+      "ATLAS",
+      "pixel detector"
+    ],
+    [
+      "Parameter Value Measured",
+      "silicon pixel"
+    ],
+    [
+      "Parameter Value Measured",
+      "silicon pixel",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "silicon pixel",
+      "pixel detector"
+    ],
+    [
+      "Parameter Value Measured",
+      "silicon pixel",
+      "ATLAS"
+    ],
+    [
+      "Parameter Value Measured",
+      "Pixel"
+    ],
+    [
+      "Parameter Value Measured",
+      "Pixel",
+      "CMOS"
+    ],
+    [
+      "Parameter Value Measured",
+      "Pixel",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "Pixel",
+      "ATLAS"
+    ],
+    [
+      "Parameter Value Measured",
+      "Hamamatsu Photonics"
+    ],
+    [
+      "Parameter Value Measured",
+      "Hamamatsu Photonics",
+      "Silicon"
+    ],
+    [
+      "Parameter Value Measured",
+      "Hamamatsu Photonics",
+      "LGAD"
+    ],
+    [
+      "Parameter Value Measured",
+      "Hamamatsu Photonics",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "Sensors"
+    ],
+    [
+      "Parameter Value Measured",
+      "Sensors",
+      "Nuclear Instruments"
+    ],
+    [
+      "Parameter Value Measured",
+      "Sensors",
+      "Physics Research Section"
+    ],
+    [
+      "Parameter Value Measured",
+      "Sensors",
+      "Silicon"
+    ],
+    [
+      "Parameter Value Measured",
+      "CMOS"
+    ],
+    [
+      "Parameter Value Measured",
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "Parameter Value Measured",
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "Parameter Value Measured",
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "Parameter Value Measured",
+      "pixel detector"
+    ],
+    [
+      "Parameter Value Measured",
+      "pixel detector",
+      "ATLAS"
+    ],
+    [
+      "Parameter Value Measured",
+      "pixel detector",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "pixel detector",
+      "Pixel"
+    ],
+    [
+      "Parameter Value Measured",
+      "In Section"
+    ],
+    [
+      "Parameter Value Measured",
+      "In Section",
+      "Monte Carlo"
+    ],
+    [
+      "Parameter Value Measured",
+      "In Section",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "In Section",
+      "pixel detector"
+    ],
+    [
+      "Parameter Value Measured",
+      "RD53"
+    ],
+    [
+      "Parameter Value Measured",
+      "RD53",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "RD53",
+      "RD53A"
+    ],
+    [
+      "Parameter Value Measured",
+      "RD53",
+      "ATLAS"
+    ],
+    [
+      "Parameter Value Measured",
+      "Fraunhofer Institute"
+    ],
+    [
+      "Parameter Value Measured",
+      "Fraunhofer Institute",
+      "CMS"
+    ],
+    [
+      "Parameter Value Measured",
+      "Fraunhofer Institute",
+      "Hamamatsu Photonics"
+    ],
+    [
+      "Parameter Value Measured",
+      "Fraunhofer Institute",
+      "Sensors"
+    ],
+    [
+      "Precision Measurement",
+      "Time"
+    ],
+    [
+      "Precision Measurement",
+      "Time",
+      "LGAD"
+    ],
+    [
+      "Precision Measurement",
+      "Time",
+      "Threshold"
+    ],
+    [
+      "Precision Measurement",
+      "Time",
+      "ASIC"
+    ],
+    [
+      "Precision Measurement",
+      "Conceptual Design"
+    ],
+    [
+      "Precision Measurement",
+      "Conceptual Design",
+      "Nuclear Instruments"
+    ],
+    [
+      "Precision Measurement",
+      "Conceptual Design",
+      "Geant4"
+    ],
+    [
+      "Precision Measurement",
+      "Conceptual Design",
+      "Time"
+    ],
+    [
+      "Precision Measurement",
+      "Nuclear Instruments"
+    ],
+    [
+      "Precision Measurement",
+      "Nuclear Instruments",
+      "Physics Research Section"
+    ],
+    [
+      "Precision Measurement",
+      "Nuclear Instruments",
+      "Associated Equipment"
+    ],
+    [
+      "Precision Measurement",
+      "Nuclear Instruments",
+      "Silicon"
+    ],
+    [
+      "Precision Measurement",
+      "Physics Research Section"
+    ],
+    [
+      "Precision Measurement",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Precision Measurement",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Precision Measurement",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Precision Measurement",
+      "Cambridge University"
+    ],
+    [
+      "Precision Measurement",
+      "Cambridge University",
+      "Silicon"
+    ],
+    [
+      "Precision Measurement",
+      "Cambridge University",
+      "Low Temperature Physics"
+    ],
+    [
+      "Precision Measurement",
+      "Cambridge University",
+      "Quantum Computation"
+    ],
+    [
+      "Precision Measurement",
+      "Associated Equipment"
+    ],
+    [
+      "Precision Measurement",
+      "Associated Equipment",
+      "Physics Research Section"
+    ],
+    [
+      "Precision Measurement",
+      "Associated Equipment",
+      "Nuclear Instruments"
+    ],
+    [
+      "Precision Measurement",
+      "Associated Equipment",
+      "Nuclear Science"
+    ],
+    [
+      "Precision Measurement",
+      "The European Physical Journal"
+    ],
+    [
+      "Precision Measurement",
+      "The European Physical Journal",
+      "Nuclear Instruments"
+    ],
+    [
+      "Precision Measurement",
+      "The European Physical Journal",
+      "Physics Research Section"
+    ],
+    [
+      "Precision Measurement",
+      "The European Physical Journal",
+      "Associated Equipment"
+    ],
+    [
+      "Precision Measurement",
+      "Nonequilibrium"
+    ],
+    [
+      "Precision Measurement",
+      "Nonequilibrium",
+      "Cambridge University"
+    ],
+    [
+      "Precision Measurement",
+      "Nonequilibrium",
+      "Noise"
+    ],
+    [
+      "Precision Measurement",
+      "Nonequilibrium",
+      "Energy Decay"
+    ],
+    [
+      "Precision Measurement",
+      "Crystal Ball"
+    ],
+    [
+      "Precision Measurement",
+      "Crystal Ball",
+      "ADC"
+    ],
+    [
+      "Precision Measurement",
+      "Crystal Ball",
+      "Time"
+    ],
+    [
+      "Precision Measurement",
+      "Crystal Ball",
+      "Total"
+    ],
+    [
+      "Precision Measurement",
+      "Version November"
+    ],
+    [
+      "Precision Measurement",
+      "Version November",
+      "The Casimir"
+    ],
+    [
+      "Precision Measurement",
+      "Version November",
+      "Silicon"
+    ],
+    [
+      "Precision Measurement",
+      "Version November",
+      "Cambridge University"
+    ],
+    [
+      "Precision Measurement",
+      "The Casimir"
+    ],
+    [
+      "Precision Measurement",
+      "The Casimir",
+      "Version November"
+    ],
+    [
+      "Precision Measurement",
+      "The Casimir",
+      "Cambridge University"
+    ],
+    [
+      "Precision Measurement",
+      "The Casimir",
+      "Nonequilibrium"
+    ],
+    [
+      "Precision Measurement",
+      "Casimir Force"
+    ],
+    [
+      "Precision Measurement",
+      "Casimir Force",
+      "Cambridge University"
+    ],
+    [
+      "Precision Measurement",
+      "Casimir Force",
+      "Nonequilibrium"
+    ],
+    [
+      "Precision Measurement",
+      "Casimir Force",
+      "Version November"
+    ],
+    [
+      "Measurement Methods",
+      "Geant4"
+    ],
+    [
+      "Measurement Methods",
+      "Geant4",
+      "Monte Carlo"
+    ],
+    [
+      "Measurement Methods",
+      "Geant4",
+      "ALICE"
+    ],
+    [
+      "Measurement Methods",
+      "Geant4",
+      "TCAD"
+    ],
+    [
+      "Measurement Methods",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Methods",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Methods",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Measurement Methods",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Measurement Methods",
+      "Radiation"
+    ],
+    [
+      "Measurement Methods",
+      "Radiation",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Methods",
+      "Radiation",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Methods",
+      "Radiation",
+      "Silicon"
+    ],
+    [
+      "Measurement Methods",
+      "Nuclear Science Symposium"
+    ],
+    [
+      "Measurement Methods",
+      "Nuclear Science Symposium",
+      "Medical Imaging Conference"
+    ],
+    [
+      "Measurement Methods",
+      "Nuclear Science Symposium",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Methods",
+      "Nuclear Science Symposium",
+      "ASIC"
+    ],
+    [
+      "Measurement Methods",
+      "Silicon"
+    ],
+    [
+      "Measurement Methods",
+      "Silicon",
+      "CMOS"
+    ],
+    [
+      "Measurement Methods",
+      "Silicon",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Methods",
+      "Silicon",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Methods",
+      "Physics Research"
+    ],
+    [
+      "Measurement Methods",
+      "Physics Research",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Methods",
+      "Physics Research",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Methods",
+      "Physics Research",
+      "Silicon"
+    ],
+    [
+      "Measurement Methods",
+      "International Conference"
+    ],
+    [
+      "Measurement Methods",
+      "International Conference",
+      "Physics Research Section"
+    ],
+    [
+      "Measurement Methods",
+      "International Conference",
+      "Nuclear Instruments"
+    ],
+    [
+      "Measurement Methods",
+      "International Conference",
+      "Radiation"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Physics Research Section"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Physics Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Physics Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Physics Research Section",
+      "Silicon"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Radiation"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Radiation",
+      "Physics Research Section"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Radiation",
+      "Nuclear Instruments"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Radiation",
+      "Silicon"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Low Energy"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Low Energy",
+      "Physics Research Section"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Low Energy",
+      "Dark Matter Search Results"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Low Energy",
+      "Charge"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Research Section"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Research Section",
+      "Nuclear Instruments"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Research Section",
+      "Associated Equipment"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Research Section",
+      "Physics Research Section"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Beam Interactions"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Beam Interactions",
+      "Physics Research Section"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Beam Interactions",
+      "Nuclear Instruments"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "Beam Interactions",
+      "Associated Equipment"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "User Manual"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "User Manual",
+      "Physics Research Section"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "User Manual",
+      "Radiation"
+    ],
+    [
+      "Time Difference Measurement Technology Based",
+      "User Manual",
+      "ALICE"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Lawrence Livermore National"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Lawrence Livermore National",
+      "Shock-Compressed Liquid Silicon"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Lawrence Livermore National",
+      "New York"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Lawrence Livermore National",
+      "Multi-Messenger Measurements"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "New York"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "New York",
+      "Lawrence Livermore National"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "New York",
+      "The University"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "New York",
+      "Kansas State"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Static Structure"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Static Structure",
+      "Lawrence Livermore National"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Static Structure",
+      "New York"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Static Structure",
+      "Multi-Messenger Measurements"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Shock-Compressed Liquid Silicon"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Shock-Compressed Liquid Silicon",
+      "Lawrence Livermore National"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Shock-Compressed Liquid Silicon",
+      "New York"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "Shock-Compressed Liquid Silicon",
+      "Multi-Messenger Measurements"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "First Light Fusion"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "First Light Fusion",
+      "Lawrence Livermore National"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "First Light Fusion",
+      "New York"
+    ],
+    [
+      "Multi-Messenger Measurements",
+      "First Light Fusion",
+      "Multi-Messenger Measurements"
+    ]
+  ],
+  "metrics": {
+    "retrieval_latency_s": 5.043741464614868,
+    "generation_latency_s": 0.0,
+    "unique_sources": 15,
+    "seed_node_count": 8,
+    "expanded_node_count": 97,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0
+  },
+  "answer": "",
+  "abstained": false,
+  "answer_abstained": false
+}

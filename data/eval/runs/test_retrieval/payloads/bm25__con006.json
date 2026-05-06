@@ -1,0 +1,275 @@
+{
+  "benchmark": {
+    "query_id": "con006",
+    "query_type": "conceptual",
+    "query": "Why is in-time efficiency important at the LHC?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "LHC"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why is in-time efficiency important at the LHC?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1039,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "eam triplet is used for the alignment and analysis in this case. For modules\n\nwith 100 µm × 25 µm pixel size, hits in the DUT within a distance from a track of 150 µm in the\n\nlong pixel direction and 100 µm in the short pixel direction are assigned to the track. For modules\n\nwith 50 µm × 50 µm pixel size, hits within a 100 µm distance in both directions are accepted. A\n\nhit is defined as a pixel with a signal above threshold. Adjacent hit pixels are combined into a\n\ncluster and its position in local coordinates is calculated as the weighted mean of the pixel positions\n\nwith the pixel charges in units of ToT as weights (center-of-gravity reconstruction method). The\n\ndifference between the extrapolation of the track and the position of the cluster in the DUT is used\n\nto determine the alignment of the DUT with respect to the telescope. Six alignment parameters are\n\ndetermined for the DUT: three local position coordinates and three rotation angles.\n\n**5.2** **Hit Efficiency**\n\nThe hit efficiency is studied for non-irradiated and irradiated pixel modules. It is defined as:\n\n_𝜖_ hit = _[𝑁]_ [hit] _,_ (5.1)\n\n_𝑁_ t\n\nwhere _𝑁_ hit is the number of reconstructed in-time tracks with a hit on the DUT within an acceptance\n\nregion that corresponds to the _Linear front-end_, excluding its two last rows and columns, and _𝑁_ t is\n\nthe total number of tracks traversing the DUT.\n\nNon-irradiated modules without a bias dot achieve an efficiency greater than 99% at bias\n\nvoltages as low as 10 V, which is well below the full depletion voltage of ≈75 V.\nModules without a bias dot irradiated to fluences of Φ eq = 4.4, 5.4, 7.4, 10, and 21 × 10 [15] cm [−][2]\n\nwere investigated. As shown in Fig. 8, all these modules reach 99% hit efficiency. Although\n\nsignificantly higher bias voltages are required to reach the efficiency goal, these voltages are still\n\nbelow the 800 V limit considered for the operation in CMS. It is not understood why the efficiency\n\ncurve for M542 is systematically above the one for M564 despite the larger fluence.\n\nModules with a punch-through bias dot suffer from charge loss when a particle hits the bias\n\ndot at a small angle with respect to the module normal. Hence, a hit inefficiency in the vicinity\n\nof the bias dot is expected, as shown in Fig. 9a, which displays the efficiency as a function of\n\n– 14 –\n\n100\n\n99\n\n98\n\n97\n\n96\n\n95\n\n94\n\n93\n\n92\n\n91\n\n90\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|\n|---|---|---|---|---|---|---|---|---|---|\n|||||||||||\n|||||",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 28.281327082159812,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7789,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+        "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+        "text": "## Simulation of irradiated hybrid planar pixels modules at fluences expected at HL-LHC\n\nM. Bomben\n\n_APC, Universite Paris Cite, CNRS/IN2P3, 10 rue Alice Domon et Leonie_\n_Duquet, Paris, 75013, France_\n\n**Abstract**\n\nSignal loss is the main limitation on tracking/vertexing performance due\nto radiation damage effect to hybrid pixel detectors when irradiated at fluences expected at High Luminosity LHC (HL-LHC). It is important to have\nreliable predictions on the charge collection performance after irradiation in\norder to predict operational voltage values and test tracking algorithms robustness. In this paper the validation of combined TCAD and Monte Carlo\nsimulations of hybrid silicon planar pixels sensors will be presented. In particular different trapping models will be compared to identify the one giving the\nbest predictions. Eventually predictions on the collected charge performance\nof planar pixels modules at HL-LHC will be discussed.\n\n_Keywords:_ silicon radiation detectors, simulations, radiation damage\n\n**1. Introduction**\n\nSilicon radiation detectors are exposed to unprecedented hadron fluences\nat Large Hadron Collider (LHC) experiments ATLAS, CMS and LHCb [1].\nDeep defects are created in the Si bandgap by hadrons determining modifications to the space charge distribution and to the generation rate [2]. As a\nresult the leakage current and the depletion voltage of the detector increases,\nwhile carriers being trapped result in a reduction of the signal amplitude.\nCharge trapping can lead to induced signals being below detection threshold,\ndetermining the distortion of cluster shapes, resulting in degradation of spatial resolution and hit efficiency [3]. It is extremely important to have Monte\nCarlo (MC) simulated events that can reproduce the loss of collected signal\nwith the increase of integrated luminosity, hence fluence. The ATLAS [4]\n\nand CMS [5] collaboration have developed and implemented algorithms that\nreproduce with percent precisioni [6] the loss of collected charge with the\naccumulated fluence.\nThe LHC will be upgraded into a high luminosity collider (HL-LHC),\ncapable of delivering proton-propton collisions at a rate five to seven times\nlarger than today with the goal to accumulate a data set ten times larger\nthan the actual one in about ten years of operations [7]. Such an increase of\ncollisions rate and particles poses stringent constraints on the silicon detectors\nin terms of radiation damage - up to 10 times larger than today - to the",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 24.171869687204044,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 256,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC.md",
+        "title": "2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC",
+        "text": "## Overview of ATLAS forward proton detectors for LHC Run 3 and plans for the HL-LHC\n\nMaciej Trzebi´nski, on behalf of ATLAS Forward Detectors\n\n_a_ _Institute of Nuclear Physics Polish Academy of Sciences, Radzikowskiego 152, Krakow, 31-342,, Poland_\n\n**Abstract**\n\nThe status of the ATLAS Roman Pot detectors (AFP and ALFA) for LHC Run 3 after all refurbishments and improvements done\nduring Long Shutdown 2 is discussed.\n\n_Keywords:_ ATLAS, AFP, Roman Pot, 3D Silicon Tracker, Time-of-Flight\n\n**1. ATLAS Forward Proton Detectors**\n\nDiffractive processes are an important part of the physics programme at hadron colliders. This is also true for ATLAS [1],\nwhere a large community works on both phenomenological and\nexperimental aspects of diffraction. ATLAS Forward Proton detectors (AFP) [2] aim to measure events in which one or both\nprotons remain intact after the interaction [3]. Since these protons are scattered at very small angles, dedicated detectors must\nbe located far away from the interaction point and close to the\nproton beam. This results in proton trajectories being influenced by the LHC components: magnets and collimators [4].\nSince settings of such components change over time, detectors\nmust have a possibility to move wrt. the accelerator beam pipe.\nThis is realised using the Roman Pot (RP) technology.\nAFP consists of four RP stations [2], two on each side of ATLAS. Stations located 204 m from ATLAS collision point are\ncalled NEAR whereas those at 217 m are named FAR. All sta\ntions contain 3D edgeless Silicon Trackers (SiT). FAR stations\nare also equipped with a Time-of-Flight system (ToF).\n\n**2. Silicon Tracker**\n\nThe purpose of the SiT is to provide a precise reconstruction\nof the proton trajectory necessary to unfold its kinematics [5].\nEach station houses four detector planes, each consisting of a\n230 µm thick silicon sensor. Sensor is a matrix of 336 × 80\npixels, each having size of 50 × 250 µm [2] . Sensors are coupled\nto the FE-I4b chip [6], radiation-hard (tested for > 250 Mrad)\nand produced with the “edgeless” technology with a dead edge\nfrom beam side of only about 100 µm. Detectors are tilted by\n14 degrees wrt. beam direction. The expected reconstruction\nresolution is 6 µm in _x_ and 30 µm in _y_ [7]. SiT can provide the\ntrigger signal with a dead-time of about 400 ns.\nDuring Run 2 data-taking SiT detectors showed very good\nefficiency. As discussed in Ref. [8], NEAR stations had an\noverall efficiency over 98% whereas FAR stations performed",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 22.33597264583598,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5057,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2783004__2405.01529__Characterization_of_Silicon_Photomultiplier_Photon_Detection_Efficiency_at_Liquid_Nitrogen.md",
+        "title": "2024__recid_2783004__2405.01529__Characterization_of_Silicon_Photomultiplier_Photon_Detection_Efficiency_at_Liquid_Nitrogen",
+        "text": "of collecting the VUV scintillation offers a large area of exposure to scintillation as opposed to\n\nusing VUV-sensitive SiPMs; in addition, the wavelength-shifting also better matches the spectral\n\nresponse of commercially available visible-light sensitive SiPMs. However, the total collection\n\nefficiency of the liquid argon detector — without accounting for shadowing from the LEGEND\n\ngeometry — is expected to be ∼ 0 _._ 1% of the total number of VUV photons produced [28].\n\nCharacterizing the photon detection efficiency (PDE) of SiPMs at cryogenic temperatures is\n\nimportant for modeling the LAr scintillation detector response of LEGEND-200 — the current\n\nphase of LEGEND that is actively taking data. The PDE is the probability of a SiPM detecting a\n\nsingle incident photon and converting it into a useful signal. The overall light collection efficiency\n\nof the LAr detector is the product of individual collection, absorption, transmission, emission, and\n\ndetection probabilities in the chain of steps a VUV photon takes from scintillation to detection in\n\na SiPM; the PDE is the final link in this concatenation. Cryogenic SiPM PDE measurements will\n\nalso inform the design of the future phase of LEGEND with 1000 kg of active isotope which aims\nto reach a discovery sensitivity for 0 _𝜈𝛽𝛽_ decay beyond 10 [28] years. Knowledge of the SiPMs’ PDE\n\nat liquid argon temperature (87 K) from experimental characterizations is important for optimizing\n\nLEGEND-1000’s LAr light readout, and for accurately projecting the background [23].\n\nAlthough most measurements of the cryogenic PDE of SiPMs tend to focus on SiPMs that\n\nare optimized for cryogenic operation [29–31], a number of measurements of the cryogenic PDE\n\nof non-cryogenically-optimized SiPMs have been made and are available [32, 33]. Several of\n\nthese measurements have shown that the PDE consistently drops by 20% to 30% at cryogenic\n\ntemperatures compared to room temperature values across a range of wavelengths [29, 32]. The\n\nphysical mechanism responsible for this decrease is not well understood, but is hypothesized to\n\noriginate from a decrease in either the quantum efficiency, the avalanche triggering probability, or\n\na combination of the two [32, 33]. A drop in quantum efficiency can be explained by an increase in\n\nabsorption length, and a drop in avalanche triggering probability can be explained by carrier freeze\nout at lower temperatures. The characterization of SiPMs at cryogenic temperatures is important\n\nfor",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 21.180564164829356,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2833,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2697671__2309.07395__Feasibility_study_to_characterize_the_production_of_antineutrons_in_high_energy_pp_collisi.md",
+        "title": "2024__recid_2697671__2309.07395__Feasibility_study_to_characterize_the_production_of_antineutrons_in_high_energy_pp_collisi",
+        "text": "realistic GEANT4 simulation resulted in a\n_̄𝑛_ identification and kinematic reconstruction efficiency of 0.006%, based solely on _̄𝑝𝑝_ pair observable.\nThus, the expected rate of identified and kinematically reconstructed _̄𝑛_ ’s should lie in the order of\n100,000 per second, illustrating the feasibility of the method.\n\nTo a first approximation, antiproton ( _̄𝑝_ ) and antineutron\n( _̄𝑛_ ) productions in high-energy proton-proton ( _𝑝𝑝_ ) collisions\nshould be approximately equal. Such a fact is implicit in the\ncoalescence model [1] calculations used to characterize light\nanti-nuclei production in high-energy heavy-ion collisions.\nYet, isotopic effects have recently been proposed [2] to\nsignificantly affect this symmetry, resulting in an enhanced _̄𝑛_\nproduction. This is expected to have a measurable impact in\nthe high precision cosmic ray _̄𝑝_ flux being measured by the\nAMS-02 experiment [2], having as background intergalactic\n_𝑝𝑝_ collisions. This led to the inclusion of an _̄𝑛_ / _̄𝑝_ asymmetry\nparameter, which ranges from 1 _._ 2 to 2 _._ 0, in the cosmic ray\ngalactic-transport code EPOS-LHC [3]. Such an important\neffect should be measurable in _𝑝𝑝_ collisions carried out at\nthe main LHC experiments, providing _̄𝑛_ production could be\nmeasured. Here we propose the use of the charge exchange\nreaction (CEX) _𝑛_ + _̄𝑛_ → _𝑝_ + _̄𝑝_ (see Figure 1), which\n\n∗ Corresponding author at: Posgrado en Ciencias Físicas, Universidad\nNacional Autónoma de México, Ciudad de México, México.\n∗∗ Corresponding author at: Instituto de Física, Universidad Nacional\nAutónoma de México, Circuito de la Investigación Científica, Ciudad\nUniversitaria, Ciudad de México, 04510, México. Tel: 52 5556225060\n\nlugofabiola@estudiantes.fisica.unam.mx (F. Lugo-Porras);\ndgomezco@fisica.unam.mx (D.M. Gomez-Coral); menchaca@fisica.unam.mx\n(A. Menchaca-Rocha)\nORCID (s): 0009-0008-7139-3194 (F. Lugo-Porras);\n0000-0002-9200-6607 (D.M. Gomez-Coral); 0000-0002-4856-8055 (A.\nMenchaca-Rocha)\n\n**Figure 1:** Charge exchange reaction (CEX) diagram for _̄𝑛_ + _𝑛_ →\n_̄𝑝_ + _𝑝_ .\n\nproduces easy-to-identify charged particles. Indeed, this\ntechnique led to the _̄𝑛_ discovery [4], and shortly after, to\nmeasure its mass, based on the kinematic analysis of the\nsame reaction [5]. The feasibility of using CEX to identify\nand reconstruct the kinematic properties of antineutrons\nproduced by LHC experiments via CEX interactions on their\nsilicon inner tracking devices is explored here, taking as\na working example ALI",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 21.158905554039638,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3924,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2744867__2401.04630__Characterisation_of_plastic_scintillator_paddles_and_lightweight_MWPCs_for_the_MID_subsyst.md",
+        "title": "2024__recid_2744867__2401.04630__Characterisation_of_plastic_scintillator_paddles_and_lightweight_MWPCs_for_the_MID_subsyst",
+        "text": "ifferent plastic scintillator\n\npaddles and MWPCs were studied at the CERN T10 test beam facility. This paper reports on the performance\n\nof the scintillator prototypes tested at different beam momenta (from 0.5 GeV/ _c_ up to 6 GeV/ _c_ ) and positions\n\n(horizontal, vertical, and angular scans). The MWPCs were tested at different momenta (from 0.5 GeV/ _c_ to\n\n10 GeV/ _c_ ) and beam intensities, their efficiency and position resolutions were verified beyond the particle rates\n\nexpected with the MID in ALICE 3.\n\n_Keywords:_ `Upgrade, Scintillators, SiPM, MWPC, ALICE experiment`\n\n**1. Introduction**\n\nALICE (A Large Ion Collider Experiment) is one of the four main experiments at the CERN Large Hadron\n\nCollider (LHC) and it is mainly devoted to heavy-ion physics [1]. Its main goal is to achieve the detailed\n\ncharacterisation of the strongly interacting quark–gluon plasma (QGP) that is theoretically predicted in lattice\n\nQCD, and that has been observed in relativistic heavy-ion collisions by experiments at RHIC and at the\n\nLHC [2, 3].\n\nIn spite of the ambitious upgrade and physics programs to be completed in the next eight years, crucial\n\nquestions will remain open after the ALICE data taking in the LHC Runs 3 and 4. These include the deeper\n\n_∗_ antonio.ortiz@nucleares.unam.mx\n\n_Preprint submitted to JINST_ _February 20, 2024_\n\nunderstanding of the rich phenomenology of QCD matter by connecting parton-energy loss, collective flow,\n\nhadronisation and electromagnetic radiation in a unified description. The successful completion of this task\n\nrequires the construction of a new detector with increased rate capabilities, improved vertexing and tracking\n\nover wide momentum and rapidity ranges. This project, named ALICE 3, is being optimized to have excellent\n\ncapabilities for heavy-flavour and electromagnetic radiation studies [4]. The ALICE 3 detector is expected to\n\ntake data during the LHC Run 5 (2035-2038) and Run 6 (2040-2041). The core of ALICE 3 will be a full\n\nsilicon tracking device covering eight units of pseudorapidity, a Time-Of-Flight (TOF) system consisting of\n\ntwo cylindrical layers with a time resolution of 20 ps, a Ring Imaging Cherenkov (RICH) detector that will\n\nallow e _/π_ separation up to 2 GeV/ _c_, and finally an electromagnetic calorimeter covering the barrel acceptance\n\nand one forward direction. All these detectors will be located inside a superconducting magnet, providing a\n\nmagnetic field of _B_ = 2 T. A Forward Conversion Tracker (FCT)",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 21.012395987425908,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6625,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance.md",
+        "title": "2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance",
+        "text": "as a signal with larger charge\n\n(and hence TD) goes above the fixed threshold of the discriminator before a simultaneous signal\n\nwith a lower charge. This correlation is currently exploited to suppress noise hits by identifying an\n\nacceptance region in the correlation plot. In the figure an example cut is shown, defining a hit as\n\ngood if it lies between the two red lines. On the right of figure 4 we reported the preliminary results\n\non the detector efficiency for each wedge. First, the efficiency of each tile has been evaluated by\n\nexploiting the large track multiplicity generated by inelastic events. By checking the presence of hits\n\nin the nearby wedges and in the other tiles of the wedge, it was possible to compute the efficiency of\n\na given tile. The overall efficiency of a wedge is then determined with a combinatorial calculation,\n\nassuming all tiles have independent efficiency and defining a wedge as efficient if at least 2 tiles out\n\nof 4 have hits. All wedges show an efficiency of at least 96%, with a median of 99.7%. No noise\n\nsuppression based on the hit time stamps is performed. If we apply a tight selection cut as shown in\n\nthe left plot on all tiles, the median of the efficiency becomes 98.6%. Work is ongoing to define the\n\noptimal cut on the noise. Wedges with lower efficiency can eventually be recovered by exploiting\n\nthe azimuthal symmetry of inelastic events in the LHC collisions.\n\n**4.** **Conclusions**\n\nThe measurements performed by the TOTEM experiment brought a significant improvement\n\nin the forward diffractive physics, culminating in the discovery of the Odderon. The LHC approved\na special run to measure the total cross section at ~~[√]~~ ~~_𝑠_~~ = 13 _._ 6 TeV. The precise measurement of the\n\ntotal cross section through the luminosity independent method needed a new inelastic telescope to\n\nbe designed, based on scintillators read out by SiPMs. The detector, to address the extremely tight\n\nconstraint in terms of installation and commissioning time, has been divided in a passive inner part\n\n5\n\n_The TOTEM nT2 detector: architecture, operation and performance_ E. Bossini\n\n**Figure 4:** On the left, correlation plot between the particle arrival time and the signal TD, with an example\ncut superimposed. On the right, the preliminary efficiency of all wedges of the detector.\n\nincluded in the CMS forward radiation shield and an outer part. Large part of the electronics has\n\nbeen readapted from the timing system of the PPS sub-detector of C",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 20.852669085617926,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1987,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "d\nas a mandatory requirement because a good portion of the signal efficiency can be\nachieved using tracks alone. A similar argument applies to electron identification\nor the reconstruction of downstream tracks, specifically _K_ S [0] _[→]_ _[π]_ [+] _[π]_ _[−]_ [and] _[ Λ][ →]_ _[pπ]_ _[−]_\n\ndecaying outside the VELO. Both would significantly benefit certain areas of the physics\nprogramme but they do not represent a strict requirement for a functioning HLT1.\n\n##### **11.2 Design overview**\n\n**11.2.1** **Hardware design**\n\nAs described in section 10 the centrepiece of LHCb trigger is the full detector readout\nand event building at 30 MHz . [80] In addition to its inherent flexibility, this approach also\nmatches the described physics requirements for HLT1, most notably the requirement that\nall the tracking algorithms must reconstruct the events at 30 MHz . Since the tracking\ndetectors constitute approximately two-thirds of LHCb overall data bandwidth, the cost of\na hardware trigger allowing the other one-third (principally RICH and calorimeters) to be\nread out at a lower rate does not justify the added complexity and reduced flexibility of such\na system. The trigger data flow from detector to offline storage is illustrated in figure 108.\nThe online disk buffer serves two purposes: it stores events selected by HLT1 while\nreal-time alignment and calibrations are being performed, and it allows events selected by\nHLT1 to be buffered for processing between LHC fills. This in turn effectively increases\nthe processing power of the HLT2 computing resources. Simulations of the LHC fill\nstructure [181] result in an optimal buffer size of around 30 PB, which allows around\n\n80 Although the LHC bunch crossing frequency is 40 MHz, the rate of events with some signal visible\ninside the LHCb acceptance ( _reconstructible_ events) is _∼_ 30 MHz.\n\n145\n\nFigure 108: Online data flow. Reproduced with permission from [180].\n\n80 hours of LHC collisions to be buffered at an HLT1 output rate of 1 MHz . The disk\nbuffer architecture is constrained not only by the total size but also by I/O limitations of\nindividual disks, which impose a minimum number of disks in the system.\nBecause the detector is fully read out upfront, there is in principle total freedom to\nchoose the computing architecture with which to process the data; the only constraints\nare the available budget and the capacity (racks and cooling) of the data centre. LHCb\nhas sought to take advantage of this freedom since abo",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 20.667454169608526,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 169,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1985,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "ements of these states are limited to the percentlevel by luminosity knowledge or data-driven determination of reconstruction efficiencies.\nTherefore the full data set is only needed in sparsely populated regions of the kinematic\nparameter space where the event rate is negligible. Strange hadrons have signal rates\nwhich are more than an order of magnitude higher than charm and beauty. However,\naccepting strange hadrons with high efficiency would conflict with the main physics aims\nof the experiment, which concern charm and beauty hadrons. Therefore preference is\ngiven to rare strange hadron decays, whose signal rates are negligible compared to the\nsingly-Cabibbo suppressed charm hadron decays at the centre of LHCb charm studies.\nSince the signal rates are so high, it is of paramount importance that the HLT1\nselects events due to the presence of signal as opposed to fake (“ghost”) tracks or random\ncombinations of tracks. [79] If this requirement is met, at a luminosity of 2 _×_ 10 [33] cm _[−]_ [2] s _[−]_ [1]\n\na maximal HLT1 output rate of 2 MHz is from first principles sufficient to cover the full\nLHCb physics programme.\nHaving defined the maximal HLT1 output rate which the trigger system should be\nable to support, it is important also to define the smallest HLT1 output rate at which\nit remains efficient for LHCb signals of interest. This is important because at times of\nvery high collider efficiency the HLT1 output rate might need to be reduced in order to\navoid overflowing the disk buffer. Studies [179] show that it is possible to reduce the\nHLT1 output rate to around 500 kHz while remaining relatively efficient for LHCb charm\nphysics channels. This rate is thus considered as a lower limit for the HLT1 output rate.\nAll these requirements imply that the HLT1 must be able to reconstruct and select at\nleast the following physics signatures:\n\n - Tracks or two-track vertices displaced from the primary _pp_ interaction, or primary\nvertex (PV). This signature can be used to select any event containing a long-lived\nhadron or _τ_ lepton, which covers the vast majority of LHCb analyses;\n\n Leptons, particularly muons, regardless of their displacement from the PV. Displaced\nleptons can be selected as any other tracks, although the efficiency can be kept\nhigher for the same output rate by using lepton identification criteria to allow\ndisplacement- or _p_ T -based criteria to be loosened. Non-displaced (di)leptons are\nparticularly important for spectroscopy studies,",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 20.50605551977507,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 167,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6920,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "## Search for long-lived charged particles using the CMS detector in Run-2\n\nTamas Almos Vami _[∗]_\n\n_a_ _University of California Santa Barbara,, Santa Barbara, 93117, CA, USA_\n\n**Abstract**\n\nLong-lived charged particles are predicted by various theories beyond the\nStandard Model, leading to unique signatures that could reveal new physics.\nAt the LHC, the CMS detector enables searches for these massive particles,\nidentifiable by their characteristic ionization patterns. Using data collected\nduring 2017-2018, we search for signals of anomalous ionization in the silicon\ntracker. We present a novel approach to background prediction, utilizing\nthe distinct ionization measurements of the silicon pixel and strip detectors\nas independent variables. We interpret the results within several models\nincluding those with staus, stops, gluinos, and multiply charged particles as\nwell as a new model with decays from a Z _[′]_ boson.\n\n_Keywords:_ Long-lived, exotic physics, energy loss in silicon, CMS\n\n_∗_ On behalf of the CMS Collaboration\n\n_Preprint submitted to Nuclear Physics B_ _December 18, 2024_\n\n**1. Introduction**\n\nThe Standard Model (SM) is a quantum field theory that explains the\nuniverse at its fundamental level. Often we describe it by its particle content.\nThe force-carrying particles, known as bosons, mediate fundamental interactions: the photon for electromagnetic interaction, gluons for the strong\ninteraction, and the W and Z bosons for the weak interaction. The Higgs\nboson, a scalar particle, gives mass to elementary particles through the Higgs\nmechanism. The remaining particles, called fermions, make up matter and\nare divided into quarks and leptons. The quarks interact with all the three\nforces, while the (charged) leptons interact with (electromagnetic and) weak\ninteraction(s). There are three fermion families in the SM.\nDespite its many successes, the Standard Model cannot be the ultimate\ntheory of the universe, as it leaves several fundamental questions unanswered.\nFor example, according to the Big Bang theory, equal amounts of matter and\nantimatter should have been created, yet the observable universe consists\nalmost entirely of matter. What causes this matter-antimatter asymmetry?\nThere is strong evidence of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been seve",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 20.50367020669743,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.7527136523276567,
+    "generation_latency_s": 3.497116267681122e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.7527136523276567,
+    "generation_latency_s": 3.497116267681122e-07
+  }
+}

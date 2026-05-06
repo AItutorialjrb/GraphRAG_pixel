@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con012",
+    "query_type": "conceptual",
+    "query": "Why does graph-path evidence improve inspectability?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "does",
+      "graph-path",
+      "evidence"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why does graph-path evidence improve inspectability?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2341,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "cays.\nOverall, it was found that the efficiency and resolution were\nnearly constant throughout the detector system and did not\nchange significantly when the edges of the scintillator bars\n(i.e., the corners of the detector) were reached. This is due\nto the fact that the GGS is so small that the source is\n\nstill far enough away from the edges of the detector and\nnever touches them (compare Fig. 1(b)). Furthermore, decays\nthat lie slightly outside the detector are also allowed for\nreconstruction, which significantly increases efficiency.\n\nFig. 3 shows the three-dimensional distribution (Fig. 3(a))\nof the individual reconstructed tracer sphere positions without\nany averaging or iterating of a source that has been placed\nat (50 | 50 | -40) cm within the GGS volume, as well as\nexemplarily its projection in the x-direction (Fig. 3(b)). A\nvery present background is visible, and the spatial resolution\nreads 104.3 mm in the x-, 103.5 mm in the y-, and 124.8 mm\nin the z-direction. This is a very poor resolution since the\nsize of the largest tracer sphere is much smaller than the\nbest resolution obtained this way (103.5 mm _≫_ 20 mm). To\n\nimprove this resolution, the simulated data were now averaged\nand iterated (as described in Section 2.5), resulting in a\nspatial resolution of 0.6 mm in x and y, and 1.1 mm in z. This\ncorresponds to an improvement by a factor of about 170 in the\nx- and y-directions and a factor of 110 in the z-direction. The\nassociated three-dimensional distribution and its projection\non the x-axis can be found in Fig. 4.\n\n_3.2. Model path_\n\nTo extend the simulation and reconstruction to a moving\nsource and to investigate the behavior of the reconstruction\nalgorithm at the highest possible velocities, a model curve\nwas created on which the source moves circularly (r = 10 cm)\nat 17 cm/s in the xy-plane and linearly between -6 and 2 cm\nat 7 cm/s in the z-direction. On average, these velocities\napproximate the maximum tracer sphere velocities within\nthe GGS derived from corresponding DEM simulations. As\nmentioned in Section 2.5, the buffer size was set down to\n6,000 events instead of 36,000, with re-averaging every 3,000\nevents to achieve good resolution. The measurement time of\nthe whole curve was 4 s.\n\nA three-dimensional view of the model curve is shown\n\nin Fig. 5, with the reconstructed tracer sphere locations\nshown in green and the actual simulated path as a black\ntrajectory. The corresponding one-dimensional projections\non the x, y, and z axes ar",
+        "score": -3.494844885190328,
+        "dense_score": 0.271436870098114,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.383863925933838,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6455,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "full paths travelled by the charge\ncarriers in an event, and can be activated for all propagation modules. These graphs are a useful tool for checking\nthe origin of particular sensor behaviours, but their creation takes a long time, so they should only be used to\ncheck a few key events. To capture the charge carrier\nmovement in sufficient detail, it is useful to reduce the\npropagation timestep. For thin silicon MAPS, a timestep\nsize between 0.05 ps and 0.5 ps has been found to give good\nresults that show the detail of the diffusion and drift paths.\nBy creating linegraphs of the same event with different values for the `integration` `time` parameter, the time evolution of collected charge can be visualised [7]. This can be\nuseful in determining charge collection time from different\nparts of a pixel.\n\n_Mobility models_\n\nMobility models can be selected in the propagation modules, and the default is the Jacoboni-Canali model [35].\nThe extended Canali model ( `masetti` ~~`c`~~ `anali` ) is used in\nthe example given in Listing 4.6. This model combines\nthe Jacoboni-Canali model with the Masetti model [36],\nto give a doping-dependent mobility parametrisation valid\nfor both low and high electric fields. From the available\nmobility models, two groups can be distinguished: dopingdependent and doping-independent models. It is advisable\nto utilise doping-dependent models when a significant doping concentration is present in the simulated sensor. If no\ndoping information is available, or the doping concentra\n\n11\n\ntion is low, doping-independent models (e.g. the JacoboniCanali model) suffice.\nFigure 11 shows linegraphs of electron propagation, using a doping-independent and a doping-dependent mobility model. A single MIP traversing the sensor is simulated,\nand the integration time is set to 5 ns to more clearly show\nthe differences in diffusion. Each line shows the path of\na single electron, in a sensor of the type described in Section 2 with a highly-doped substrate located at the bottom\n40 µm of the sensor.\n\n(a) Doping-independent mobility model\n\n(b) Doping-dependent mobility model\n\nFigure 11: Linegraphs of a single particle event, showing a significant\ndifference between mobility models in the substrate region.\n\nThere is a significant difference in charge propagation\nbehaviour in the substrate region for the two mobility models. The charge cloud is wider for the dopingindependent model, due to the larger diffusion in the\nhighly-doped substrate. This leads to unphysica",
+        "score": -3.7087329299970606,
+        "dense_score": 0.25496941804885864,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.711932182312012,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1717,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2639229__2303.04090__Assessment_of_the_errors_of_high-fidelity_two-qubit_gates_in_silicon_quantum_dots.md",
+        "title": "2024__recid_2639229__2303.04090__Assessment_of_the_errors_of_high-fidelity_two-qubit_gates_in_silicon_quantum_dots",
+        "text": "wing\nthe analysis of the process in lab time through Bayesian\ninference [27] . The fidelities estimated across the full experiment by FBT in Fig. 4 show a very large uncertainty,\nwhich can be understood from the plot of the estimated\nfidelity of the DCZ gate in device B as a function of lab\ntime. Over time, the gate calibration degrades and infidelities more than double.\n\n**Implications to large scale spin quantum computers**\n\nBesides the benefits for operation at scale, the consistency of the operations demonstrated here significantly\nimproves the quality of the physical conclusions that can\nbe drawn from experiments. We were able to identify\ncommonalities between gates implemented in different\ndevices, setups and adopting different strategies.\n\nThe stability of the operations over time, combined\nwith the theoretical and methodological improvements\nin process tomography, opens a window into the physics\nof spin qubit errors. With the possibility of consistently\nperforming high-fidelity one- and two-qubit gates for several hours, we can form hypotheses and test them in a\nrepeatable manner over many hours or days of experiments. Our work not only offers compelling evidence for\nthe microscopic nature of some of the error sources, but\nit also reveals some unknown processes with, as yet, unclear physical origins.\n\nOne of the most important conclusions is that the entangling gate fidelities achieved here can be systematically improved with a combination of better materials to\nreduce noise [37][,][38], active use of these tomographic results\nto recalibrate gates against Hamiltonian errors [12][,][34] and\npulse engineering to reduce the stochastic errors with robust gates and dynamical decoupling [39][–][42] (see also: Supplementary Discussion: Comparison with other high fidelity two spin systems in silicon). The fidelity estimates\nquoted here are far from being fundamentally limited by\nthe physics of spin qubits or by the minimum noise levels\nin materials.\n\nThe scalability of the traditional Loss and DiVincenzo\napproach [43] to spin qubits can be obscured by the overhead imposed by the strategies required for high-fidelity\noperation. Due to the relative phases, the number of\nparameters requiring feedback grows prohibitively fast\nwith the number of qubits if no mitigation strategy is\nadopted [44] . Moreover, circumventing errors with increasingly convoluted engineered pulses tailored to the idiosyncrasies of each qubit leads to control signals that\nare hard to gen",
+        "score": -5.516555343849072,
+        "dense_score": 0.29295551776885986,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.49481201171875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5414,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2822608__2409.07543__Characterisation_of_analogue_MAPS_fabricated_in_65_nm_technology_for_the_ALICE_ITS3.md",
+        "title": "2024__recid_2822608__2409.07543__Characterisation_of_analogue_MAPS_fabricated_in_65_nm_technology_for_the_ALICE_ITS3",
+        "text": "## NIMA POST-PROCESS BANNER TO BE REMOVED AFTER FINAL ACCEPTANCE Characterisation of analogue MAPS fabricated in 65 nm technology for the ALICE ITS3\n\nKunal Gautam [a,b,1,][∗], Ajit Kumar [c]\n\n_a_ _Vrije Universiteit Brussel, Pleinlaan 2, 1050, Brussels, BE_\n_b_ _Universit¨at Z¨urich, Winterthurerstr. 190, 8057, Z¨urich, CH_\n_c_ _Universit´e de Strasbourg, CNRS, IPHC UMR 7178, F-67000, Strasbourg, FR_\n\n**Abstract**\n\nThe ALICE ITS3 project foresees the use of ultra-light MAPS, developed in the 65 nm imaging process, for the vertex detector in\nthe ALICE experiment at the LHC to drastically improve the vertexing performance. This new development, initiated by an international consortium of the ALICE ITS3 collaboration and the CERN EP R&D project, enhances the overall MAPS performance.\nSmall-scale prototypes are designed to study the analogue properties of the TPSCo 65 nm technology and compare the charge\ncollection performance in different processes, pitches, pixel geometries, and irradiation levels. Recent results from lab and testbeam characterisation detailing the efficiency and the spatial resolution of the APTS with different pixel geometries and pitches\nsatisfy the ALICE ITS3 requirements. A quantitative evolution of the charge collection and sharing among pixels is evident in the\nCE-65 with different in-pixel readouts. Attaining a spatial resolution better than 3 µm with a 10 µm pitch and over 99% efficiency\nin the moderate irradiation environment of ALICE also supports the viability of using 65 nm MAPS for FCC-ee vertex detectors.\n\n_Keywords:_ ALICE, MAPS, ITS3, TPSCo, APTS, CE-65, Vertex Detector, Silicon Sensor\n\n**1. ALICE ITS3 and the Small-Scale Prototypes**\n\nThe Inner Tracking System upgrade (ITS3) [1] of the ALICE\ndetector foresees the use of Monolithic Active Pixel Sensors\n\n(MAPS) developed in the 65 nm imaging process. The ITS3 upgrade is expected to drastically reduce the material budget and\nimprove the pointing resolution by a factor of 2 over the entire\nmomentum range of interest. Process modifications in the form\nof a blanket low-dose n-type implant and gaps at the edges of\npixel boundaries are introduced to achieve full depletion of the\nsensor and a more uniform electric field while keeping the effective pixel capacitance low [2, 3]. These modifications speed\nup charge collection and reduce charge sharing among neighbouring pixels. Two small-scale analogue prototypes were designed to characterise the charge-collection properties of the 65",
+        "score": -5.556753145710807,
+        "dense_score": 0.24874602258205414,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.554901123046875,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4629,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2767184__2403.06114__Expected_performance_of_Cosmic_Muon_Veto_Detector.md",
+        "title": "2024__recid_2767184__2403.06114__Expected_performance_of_Cosmic_Muon_Veto_Detector",
+        "text": "en we look for the least closest distance among all walls, the left and right-side\n\nwalls have better resolution. In the cases where these two side walls are nearest, the majority of\n\nevents tend to have hits in the top wall due to the influence of trigger criteria and spatial arrangement\n\nof the walls. Given that the EPS strips in both the top and left/right walls are parallel, the closest\n\ndistance measurements are correlated as shown in figure 17 (a). This correlation contributes to\n\nthe observed improved resolution in the side walls when these walls were nearest. Conversely,\n\nfor the back and top walls, where the EPS strips are perpendicular to each other, the uncertainties\n\nin the top wall do not significantly affect the uncertainties in the back wall. Due to the lack of\n\ncorrelation between the closest distances in the top and back walls as shown in figure 17 (b), there\n\nis no significant change in distributions when the back wall is the nearest one.\n\n20\n\n10\n\n0\n\n−10\n\n−20\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n|||||(a)|||\n|||||(a)|||\n|||||(a)|||\n|||||(a)|||\n||||||||\n||||||||\n\n−20 −10 0 10 20\ntop\nd clos (cm)\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n||||||||\n|||||(b)|||\n|||||(b)|||\n|||||(b)|||\n|||||(b)|||\n|||||(b)|||\n|||||(b)|||\n||||||||\n\n−40 −20 0 20 40\ntop\nd clos (cm)\n\n20\n\n18\n\n16\n\n14\n\n12\n\n10\n\n8\n\n6\n\n4\n\n2\n\n0\n\n40\n\n20\n\n0\n\n−20\n\n60\n\n50\n\n40\n\n30\n\n20\n\n10\n\n0\n\n**Figure 17** : Closest distances between the reconstructed track and the supercluster line: (a) Su\nperclusters reconstructed in both top and left walls, and (b) Superclusters in top and back walls.\n\nEvents in the tail part originate from hits attributed to secondaries produced by muon interaction\n\nwith detector material.\n\n– 13 –\n\nThe miniICAL RPC detectors sometimes require troubleshooting and repair. To allow access\n\nto the RPCs, the CMVD design excludes the front side veto wall. As a result, in the absence of the\n\nfront wall, it is expected that there will be events where a muon did not pass through EPS strips,\n\nthough there was a trigger generated in the miniICAL system. During the data-taking periods, the\n\nmuon hits in the veto system will be identified by extrapolating the reconstructed muon trajectory\n\ntoward the veto walls. However, it was found through simulation th",
+        "score": -5.59316767648209,
+        "dense_score": 0.2550710141658783,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.61113452911377,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5528,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico.md",
+        "title": "2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico",
+        "text": "tions\nenhances the reach of the overall technique and should proof very useful in future works\nto characterise and understand very complex or radiation damaged device structures in\nthe application field of sensors or electronics.\n\n**Author Contributions:** Conceptualisation, M.M. and S.P.; methodology, M.F.G., M.M., S.P. and\nM.W.; software, M.F.G., M.M. and S.P.; validation, M.M. and S.P.; formal analysis, M.M. and S.P.;\ninvestigation, M.M. and S.P.; resources, M.M.; data curation, S.P.; writing—original draft preparation,\nM.M. and S.P.; writing—review and editing, M.F.G., M.M. and M.W.; visualization, M.M. and S.P.;\nsupervision, M.M.; project administration, M.M.; funding acquisition, M.M. All authors have read\nand agreed to the published version of the manuscript.\n\n**Funding:** This project was performed within the framework of RD50 and DRD3 and has received\nfunding from the European Union’s Horizon 2020 Research and Innovation programme under GA\nno 101004761 (AIDAinnova), the Wolfgang Gentner Program of the German Federal Ministry of\nEducation and Research (grant no. 05E18CHA), and the CERN Knowledge Transfer Fund, through a\ngrant awarded in 2017.\n\n**Informed Consent Statement:** Not applicable\n\n11 of 12\n\n**Data Availability Statement:** The data presented in this study are available on request from the\ncorresponding author. The data are not publicly available due to the complexity of the data and to\nmaintain an overview on usage.\n\n**Acknowledgments:** Not applicable\n\n**Conflicts of Interest:** The authors declare no conflict of interest. The funders had no role in the design\nof the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or\nin the decision to publish the results.\n\n**Abbreviations**\n\nThe following abbreviations are used in this manuscript:\n\nCC Collected charge\nDUT Device under test\n\nNDF Neutral density filter\nSNR Signal-to-noise ratio\nTCAD Technology Computer Aided Design\nTCT Transient Current Technique\nToT Time over threshold\n\nTPA Two Photon Absorption\nWPC Weighted prompt current\n\n**References**\n\n1. ECFA Detector R&D Roadmap Process Group. The 2021 ECFA detector research and development roadmap. Technical report,\n[Geneva, 2020. https://doi.org/10.17181/CERN.XDPL.W2EX.](https://doi.org/10.17181/CERN.XDPL.W2EX)\n2. Garcia-Sciveres, M.; Wermes, N. A review of advances in pixel detectors for experiments with high rate and radiation. _Reports on_\n_Progress in Physics_ **2018**, _81_ [, 066101. https://",
+        "score": -6.021728530930885,
+        "dense_score": 0.26329395174980164,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.270845413208008,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6394,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2811383__2407.18528__Time_performance_of_Analog_Pixel_Test_Structures_with_in-chip_operational_amplifier_implem.md",
+        "title": "2025__recid_2811383__2407.18528__Time_performance_of_Analog_Pixel_Test_Structures_with_in-chip_operational_amplifier_implem",
+        "text": "ively with respect to a chosen reference plane to\nincrease the tracking quality. These tracks are then interpolated at the plane of\nthe DUT. The six ALPIDE planes and the trigger plane (APTS-SF) are included\nin the tracking, excluding the DUT in order to obtain unbiased results. The\nfollowing quality selection criteria are applied to filter the data for the analysis:\n\n - a cluster is required in each tracking plane;\n\n - tracks are selected based on the quality of the fit, such that _χ_ [2] _/_ dof _<_ 5,\nwhere dof stands for the number of degrees of freedom;\n\n - only events with a single reconstructed track are selected, where an event\nhas to be triggered by the APTS-SF (cf. Sec. 3.1, Plane 4);\n\n - DUT clusters are associated to tracks passing within a radial distance of\n15 µm. A study was performed to select the proper association window\nradius, choosing it in order to guarantee the independence of the efficiency\nfrom this parameter (cf. App. B).\n\n - a Region Of Interest (ROI) is set to include only the associated tracks\ncrossing one of the three central pixels read out via the oscilloscope, in\norder to avoid border effects.\n\n10\n\nThe applied selection cuts reduce the statistics to roughly 20% of the recorded\nsamples quoted in Tab. 2.\n\n_Detection efficiency analysis._ In order to estimate the detection efficiency, a\ncluster is searched on the DUT plane, within the ROI, for each track. The\ndetection efficiency is computed as the ratio between the number of tracks providing an associated cluster in the DUT and the total number of tracks crossing\nthe ROI. It is worth noting that the choice of the above mentioned association\nwindow radius allows one to estimate the efficiency without any bias, taking\ninto account that the tracking resolution is much smaller, being equal to _σ_ track\n= 1 _._ 8 µm _±_ 0 _._ 1 µm, as obtained by the telescope optimiser tool [26]. Moreover,\nto assess the chip noise, an analysis of the baseline fluctuations was conducted\n(cf. App. C). The results in the following figures are shown for thresholds above\n75 e _[−]_, 3 times the maximum noise RMS.\n\n_Spatial resolution analysis._ For this analysis, the so-called _η_ -algorithm [27, 28]\nhas been applied to correct for the non-linear charge-sharing mechanism among\nthe pixels. Residual distributions are obtained by evaluating the distance between the intercept of each track on the DUT plane (reconstructed position)\nand the associated cluster position (corrected with the _η_ -algorithm), in",
+        "score": -6.041537589411582,
+        "dense_score": 0.3097309470176697,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.30335807800293,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 377,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "rs\ninvolved a visual inspection (VI) in addition to quantification of several electrical\nproperties [4]. Similarly, a major part of the QC of the HGCAL sensors is the electrical\n\n2\n\n**Figure 1.** (left) An HGCAL silicon sensor wafer, with a pad zoomed in. The diameter\nof the sensor is 8”. (right) An example of a scan map.\n\ncharacterization of the sensors, during which the sensors are biased up to 1000 V [5].\nDefects and dust on a sensor surface can potentially lead to an electrical failure of the\nsensor. Examples of a typical defect, a scratch, and a dust particle are shown in figure 2.\nGiven that these defects are rare and unwanted, they are referred to as anomalies. The\nanomalies can occur during manufacturing, packaging, delivery, or associated handling\nof the sensors. In an effort to prevent failures, the sensor surface is visually inspected\n\nis presented in the context of HGCAL sensor QC, the same approach could be applied\nto similar use cases of automating the VI of images.\n\n3\n\nThe PSA proposed in this work detects anomalous scan images via an ensemble\nof a deep convolutional autoencoder (AE) and a deep convolutional classifier neural\nnetwork. The AE acts on each scan image, and the classifier acts on patches of the\nimage, allowing for localization of anomalous areas (annotation). The PSA has been\ndeployed in a clean room at CERN, and data gathered in production are used to evaluate\nthe performance of the anomaly detection. The performance is mainly measured using\ntwo metrics: First, the False Negative Rate (FNR), defined as\n\nFalse Negative\nFNR = (1)\nFalse Negative + True Positive\n\nshould be minimized for a reliable PSA. Second, a relatively large False Positive Rate\n(FPR), defined as\n\nFalse Positive\nFPR = (2)\nFalse Positive + True Negative\n\nis allowed, but an upper limit of 10% is set to sufficiently automate the VI.\nThis paper is structured as follows. The data acquisition and characteristics are\ndescribed in section 2. An introduction to automated VI is given in section 3, followed\nby a description of the proposed architecture and the model training process in section\n4. The results of the deployment at CERN are presented in section 5. In section 6,\nthe efficiency and causes of incorrect predictions are discussed, and the proposal for\ncontinuous improvement of the anomaly detection capabilities is presented. Finally,\nconclusions are provided in section 7.\n\n**2. Setup and data set**\n\nA custom semi-automated VI system has been implemented in the cle",
+        "score": -6.209851011388443,
+        "dense_score": 0.2576400637626648,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.559951782226562,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3328,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector.md",
+        "title": "2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector",
+        "text": "roperties also suggest, that an e [+] e _[−]_ Higgs factory could be a good place for the LLP searches due to its\nclean experimental environment and trigger-less operation.\nThe International Large Detector (ILD) [2] is a multipurpose detector concept for an experiment at the\nHiggs factory, originally proposed for the International Linear Collider (ILC) [3]. Its design is optimised\nfor the particle-flow reconstruction and provides almost 4 _π_ angular coverage. The core of the ILD\ntracking systems is a time projection chamber (TPC) which allows for almost continuous tracking and\ndE/dx measurement for particle identification. As most of LLP signatures can be categorised as tracks\nthat do not point to, or do not originate from the interaction point (IP), ILD with its TPC provides very\ninteresting prospects for these measurements.\nAn experiment-focused approach is taken here. Benchmark scenarios are selected based on their\nexperimental/kinematic properties, and not as preferred points in a model parameter space. The signature\nof two tracks coming from a displaced vertex is studied as a generic case of an LLP search. For generality,\nno other assumptions about the final state are made.\n\n### **2 Analysis framework**\n\nTwo opposite extreme scenarios are considered as the benchmarks. The more challenging case involves the production of heavy scalars with small-boost and non-pointing, low- _p_ _T_ track pair in the final\nstate. This is provided by the Inert Doublet Model (IDM) [4], which introduces four additional scalars,\nincluding two neutral ones (one of them, H, being a stable dark matter candidate). The neutral scalars, A\nand H, can be produced in e [+] e _[−]_ _→_ AH process, with A _→_ Z [(] _[∗]_ [)] H as the main decay channel. If the mass\nsplitting, ∆ _m_ _AH_ = _m_ _A_ _−_ _m_ _H_, between the two scalars is sufficiently small, A could be long-lived. This\nalso makes the Z boson highly virtual, so for high masses of the scalars (small boost), the observed decay\nproducts will be soft and will not point to the IP. Four IDM benchmarks are selected for the analysis, with\n∆ _m_ _AH_ = 1 _,_ 2 _,_ 3 _,_ 5 GeV, decay length _cτ_ of A fixed to 1 m, and its mass _m_ _A_ = 155 GeV. Only Z _[∗]_ decays to\nmuons are considered.\n\nThe second type of scenario under study is a production of a very light pseudoscalar, the decay\nproducts of which have a very high boost and are almost colinear. This is the case for an axion-like\nparticle (ALP), which in many scenarios has a m",
+        "score": -6.418810653686523,
+        "dense_score": 0.3043612837791443,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.883506774902344,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5030,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec.md",
+        "title": "2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec",
+        "text": "ed to any other algorithmic operation, suggesting a potential\n\nfor further advancement with an eFPGA-based approach.\n\nThe 28nm eFPGA was used as a proof-of-concept for reconfigurable logic in pixel readout, via\n\nthe application of small ML-based methods for pileup classification using the smart pixel dataset.\n\nThe specific task was to output a probability that a particle passing through the detector/tracker has\n\na transverse momentum _𝑝_ _𝑇_ _>_ 2 GeV, indicating it is likely to be pileup and thus should not be\n\nretained for further offline analysis.\n\nAn initial attempt was to design a simple Neural Network (NN) with two or three fully\n\nconnected layers. Despite utilizing a few nodes per layer, this shallow NN required over 6,000\n\nLUTs, significantly exceeding the capacity of the 28nm eFPGA ASIC. As an alternative, a Boosted\n\nDecision Tree (BDT) model was considered, known for its fast training, robust performance, and\n\nresource efficiency. Since a BDT primarily relies on comparison operations and thresholds, which\n\ncan be directly embedded into the LUT logic and flip-flop registers, it does not require any block\n\nRAM or DSP resources, making it better suited to the resource-constrained hardware scenario.\n\nThe BDT models each track as a 1D array of 14 values, 13 of which are the _𝑦_ -profile for each\n\n– 12 –\n\npixel summed over time, and the distance of the pixel from the interaction point _𝑦_ 0, and outputs a\n\nprobability that the track has _𝑝_ _𝑇_ _<_ 2 GeV. The full smart pixel dataset is split into orthogonal train\n\nand test sets with a ratio of 80%:20%. As described in Section 4, the current 28nm eFPGA has a\n\nvery small logical capacity, with only 448 LUTs. Given these stringent resource constraints, this\n\nmodel consists of a single tree with a depth of 5 and uses gradient boosting with the scikit-learn\n\npackage [27], as shown in Figure 12.\n\nThe performance of the BDT for the pileup classification task is evaluated using the test dataset.\n\nThe background rejection, defined as the fraction of pileup tracks (with truth _𝑝_ _𝑇_ _<_ 2 GeV) that\n\nare correctly classified as background and thus rejected, is evaluated for a given signal efficiency,\n\ndefined as the fraction of tracks with truth _𝑝_ _𝑇_ _>_ 2 GeV that are correctly classified as signal.\n\nThe performance of the classifier is determined by setting a threshold for the BDT output above\n\nor below which a track is classified as signal or background, respectively. Before quantization, a\n\nbackground re",
+        "score": -6.4294988812627025,
+        "dense_score": 0.27151376008987427,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -9.898813247680664,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.671228818129748,
+    "generation_latency_s": 5.597248673439026e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.671228818129748,
+    "generation_latency_s": 5.597248673439026e-07
+  }
+}

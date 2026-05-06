@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "con012",
+    "query_type": "conceptual",
+    "query": "Why does graph-path evidence improve inspectability?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "does",
+      "graph-path",
+      "evidence"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why does graph-path evidence improve inspectability?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6920,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "## Search for long-lived charged particles using the CMS detector in Run-2\n\nTamas Almos Vami _[∗]_\n\n_a_ _University of California Santa Barbara,, Santa Barbara, 93117, CA, USA_\n\n**Abstract**\n\nLong-lived charged particles are predicted by various theories beyond the\nStandard Model, leading to unique signatures that could reveal new physics.\nAt the LHC, the CMS detector enables searches for these massive particles,\nidentifiable by their characteristic ionization patterns. Using data collected\nduring 2017-2018, we search for signals of anomalous ionization in the silicon\ntracker. We present a novel approach to background prediction, utilizing\nthe distinct ionization measurements of the silicon pixel and strip detectors\nas independent variables. We interpret the results within several models\nincluding those with staus, stops, gluinos, and multiply charged particles as\nwell as a new model with decays from a Z _[′]_ boson.\n\n_Keywords:_ Long-lived, exotic physics, energy loss in silicon, CMS\n\n_∗_ On behalf of the CMS Collaboration\n\n_Preprint submitted to Nuclear Physics B_ _December 18, 2024_\n\n**1. Introduction**\n\nThe Standard Model (SM) is a quantum field theory that explains the\nuniverse at its fundamental level. Often we describe it by its particle content.\nThe force-carrying particles, known as bosons, mediate fundamental interactions: the photon for electromagnetic interaction, gluons for the strong\ninteraction, and the W and Z bosons for the weak interaction. The Higgs\nboson, a scalar particle, gives mass to elementary particles through the Higgs\nmechanism. The remaining particles, called fermions, make up matter and\nare divided into quarks and leptons. The quarks interact with all the three\nforces, while the (charged) leptons interact with (electromagnetic and) weak\ninteraction(s). There are three fermion families in the SM.\nDespite its many successes, the Standard Model cannot be the ultimate\ntheory of the universe, as it leaves several fundamental questions unanswered.\nFor example, according to the Big Bang theory, equal amounts of matter and\nantimatter should have been created, yet the observable universe consists\nalmost entirely of matter. What causes this matter-antimatter asymmetry?\nThere is strong evidence of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been seve",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 12.893839713074144,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6921,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "ce of the existence of dark matter, but what the SM\ndoes not provide any candidate particle for it. Another puzzle is the hierarchy\nproblem: why is it that the gravity is orders of magnitude weaker than any\nother force in the SM?\n\nThere has been several theoretical attempts to answer these questions.\nOne of the first popular solution was to introduce superpartners to the SM\nparticles [1, 2]: each boson would have a fermion partner, and each fermion\nwould have a boson partner. This model is called Supersymmetry (SUSY)\nand would answer all the questions above. The partner of the quarks and\ngluons are the squarks and gluinos, while the partner of the leptons are the\nsleptons. For example, the SUSY partner of the top quark is the stop squark,\nand the partner of the tau lepton is the stau slepton. Further theories that\nanswer part of the questions above have been proposed, too. Among them\nthe solution is provided by introducing additional heavy Z _[′]_ bosons, or a 4th\ngeneration of fermions ( _τ_ _[′]_ ), or several other Higgs bosons.\nThese questions and theories have remained open for decades, since no\nsignificant experimental evidence for physics beyond the Standard Model\n(BSM) has been observed to date. The collider searches at the Large Hadron\nCollider (LHC) and other laboratories have been looking for signatures in\nwhich the BSM particles decay promptly. However, there are several mechanisms that can lead to longer lifetime, even in the SM. With this we have a\n\n2\n\nnew direction to explore BSM physics and to look for long-lived particles [3].\nIn this work, we search for ”stable” particles–meaning not necessarily fundamentally stable, but stable on the detector level, where they traverse the\ndetector without decaying. Figure 1 shows a flow chart to categorize how\nthese particles interact with different forces and what models would predict\ntheir existence. If they are electrically charged, these particles are often\nreferred to as Heavy Stable Charged Particles (HSCPs) [4, 5, 6, 7].\n\nFigure 1: Flow chart for possible new directions in searches.\n\nIf the HSCPs have color charge that means they will hadronize. A BSM\nexample for this are the R-hadrons from split-SUSY [8, 9, 10, 11]. R-hadrons\nare a bound state of SM and SUSY particles. Some of these form negative, neutral, positive, or even double positive hadrons. The R-hadron’s\ninteractions with matter is described in the model in Ref. [12, 13]. If the\nHSCPs are colorless, one can think of several theories tha",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 12.295524681183284,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6316,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes.md",
+        "title": "2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes",
+        "text": "There have been some efforts improving decoding accuracy of BP over GF(4) and GF(2). Over GF(4), MBP [21]\nachieves a threshold of 14.5% to 16% for the planar surface\ncode by modifying the step size in the _a posteriori_ probability\nupdates. However, MBP is limited to serial scheduling, and\nthe outer loop for searching step sizes increases its time\ncomplexity. Over GF(2), GBP [33] achieves a 14% threshold\nby combining generalized belief propagation with multiple\nrounds of decoding. This algorithm can be implemented in\nparallel, but the number of outer loops increases with the\ncode length, adding to its time complexity. BP-OTS [34]\nperiodically detects and breaks trapping sets using manually\nset parameters, allowing parallel implementation while maintaining the original complexity. It outperforms MBP for short\ncodes but does not achieve a significant threshold.\nPost-processing methods, such as OSD, SI (stabilizer inactivation) [35], MWPM [36]–[38] and UN [3] are often\nused to improve BP’s decoding accuracy. However, they also\nintroduce extra time cost and all have high time complexities,\nranging from _O_ ( _N_ [2] ) to _O_ ( _N_ [3] ). Improving BP’s decoding\naccuracy to get rid of its reliance on post-processing algorithms remains a significant challenge.\nIn this article, we mainly focus on improving BP’s decoding accuracy for surface codes, while we also believe that the\nideas used in these improvements will also work for some\nother quantum LDPC codes. There are several explanations\nfor why surface codes are challenging for BP decoding. From\nthe perspective of degeneracy [21], [39], stabilizers of surface\ncodes have much lower weights compared to the code distance, leading to multiple low-weight errors corresponding to\nthe same syndrome, thus having negative influence on BP’s\nerror convergence. From the perspective of short cycles [20],\na number of 4-cycles over GF(4) and 8-cycles over GF(2) in\nsurface codes can cause BP’s inaccurate updating. A more\nintuitive explanation involves trapping sets [34], [40], where\nsurface codes have many symmetric trapping sets causing BP\nmessages to oscillate periodically.\nThis paper approaches BP improvements from two perspectives: optimizing message updates inspired by gradient\noptimization, and optimizing _a priori_ probabilities using\ninformation of previous iterations, leading to the proposal of\nthree algorithms.\nFirst, inspired by the similarity between BP message update and gradient descent of the energy function, w",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 11.574030033896902,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1440,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i.md",
+        "title": "2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i",
+        "text": "glasses, Rep. Prog.\nPhys. **50**, 1657 (1987).\n\n[33] P. W. Anderson, B. I. Halperin, and C. M.\nVarma, Anomalous low-temperature thermal properties of glasses and spin glasses, The [Philosoph-](https://doi.org/10.1080/14786437208229210)\nical Magazine: A [Journal](https://doi.org/10.1080/14786437208229210) of Theoretical Ex\n\nperimental and [Applied](https://doi.org/10.1080/14786437208229210) Physics **25**, 1 (1972),\n[https://doi.org/10.1080/14786437208229210.](https://arxiv.org/abs/https://doi.org/10.1080/14786437208229210)\n\n[34] W. A. Phillips, Tunneling states in amorphous solids,\nJournal of Low Temperature Physics **7**, 351 (1972).\n\n[35] H. M. Carruzzo and C. C. Yu, Why phonon scattering\n[in glasses is universally small at low temperatures, Phys.](https://doi.org/10.1103/PhysRevLett.124.075902)\nRev. Lett. **[124](https://doi.org/10.1103/PhysRevLett.124.075902)**, 075902 (2020).\n\n[36] C. C. Yu and A. J. Leggett, Low temperature properties\nof amorphous materials: Through a glass darkly, Comments Cond. Mat. Phys. **14**, 231 (1988).\n\n[37] D. J. Salvino, S. Rogge, B. Tigner, and D. D. Osheroff,\nLow temperature AC dielectric response of glasses to high\nDC electric fields, Phys. Rev. Lett. **73**, 268 (1994).\n\n[38] H. M. Carruzzo, E. R. Grannan, and C. C. Yu, Nonequilibrium dielectric behavior in glasses at low temperatures:\nevidence for interacting defects, Phys. Rev. B **50**, 6685\n(1994).\n\n[39] J. Joffrin and A. Levelut, Virtual phonon exchange in\n[glasses, J. Phys. France](http://dx.doi.org/10.1051/jphys:01975003609081100) **36** (1975).\n\n[40] J. F. Berret and M. Meißner, How universal are the low\n[temperature acoustic properties of glasses?, Z. Phys. B](https://doi.org/10.1007/BF01320540)\n**70** [, 65 (1988).](https://doi.org/10.1007/BF01320540)\n\n[41] C. C. Yu and J. J. Freeman, Thermal conductivity and\nspecific heat of glasses, Phys. Rev. B **[36](https://doi.org/10.1103/PhysRevB.36.7620)**, 7620 (1987).\n\n[42] B. Golding, M. v. Schickfus, S. Hunklinger, and K. Dransfeld, Intrinsic electric dipole moment of tunneling systems in silica glasses, Phys. Rev. Lett. **[43](https://doi.org/10.1103/PhysRevLett.43.1817)**, 1817 (1979).\n\n[43] S. Kogan, _Electronic Noise and Fluctuations in Solids_\n(Cambridge University Press, Cambridge, 1996).\n\n[44] L. Faoro and L. B. Ioffe, Quantum two level systems\nand kondo-like traps as possible sources of decoherence\n[in superconducting qubits, Phys. Rev. Lett.](https://doi.org/10.1103/PhysRevLett.96.047001) **96**, 047001\n[",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 10.184858987842045,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 28,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2845,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector.md",
+        "title": "2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector",
+        "text": "Prepared for submission to JINST\n\n## **Why would you put a flashlight in a dark matter** **detector?**\n\n**R. Gibbons,** _[𝑎,𝑏]_ **H. Chen,** _[𝑏]_ **S.J. Haselschwardt,** _[𝑏]_ **Q. Xia,** _[𝑏]_ **and P. Sorensen** _[𝑏]_\n\n_𝑎_ _University of California, Berkeley, Department of Physics, Berkeley, CA 94720, USA_\n\n_𝑏_ _Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA_\n\n_E-mail:_ [rgibbons@berkeley.edu](mailto:rgibbons@berkeley.edu), [pfsorensen@lbl.gov](mailto:pfsorensen@lbl.gov)\n\nAbstract: Silicon photomultipliers (SiPMs) are solid-state, single-photon sensitive, pixelated\n\nsensors whose usage for scintillation detection has rapidly increased over the past decade. It is\n\nknown that the avalanche process within the device, which renders a single photon detectable,\n\ncan also generate secondary photons which may be detected by a separate device. This effect,\n\nknown as external crosstalk, could potentially degrade the science goals of future xenon dark matter\n\nexperiments. In this article, we measure the effect of external crosstalk in a dual-phase, liquid xenon\n\ntime projection chamber fully instrumented with SiPMs. We then consider the implications for a\n\nfuture xenon dark matter experiment utilizing SiPMs and discuss possible solutions.\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Measurement of external crosstalk** **2**\n\n2.1 Detector description 2\n\n2.2 SiPM calibration 3\n\n2.3 Analysis and Results 5\n\n**3** **Discussion** **6**\n\n**4** **Outlook** **7**\n\n**5** **Summary** **10**\n\n**1** **Introduction**\n\nAdvances in solid-state technologies have led to increased usage of silicon photomultipliers (SiPMs)\n\nfor scintillation light detection in particle physics instrumentation [1]. In particular, SiPMs are being\n\nactively considered for use in experiments aimed at the direct detection of dark matter such as the\n\nproposed XLZD experiment [2] and for potential upgrades to the LUX-ZEPLIN (LZ) detector [3–6].\n\nThe appeal is significant compared to photomultiplier tubes (PMTs): more compact footprint in\n\nboth size and amount of radioimpurities, resilience to magnetic fields, lower operating voltages,\n\nand a naturally pixelated photosensitive area which could improve event reconstruction. As a brief\n\ndescription, a SiPM is a pixelated array of avalanche photodiodes: p-n junctions reverse-biased\n\nbeyond their breakdown voltage. When a pixel detects a primary photon, the resulting Geiger-mode\n\navalanche of charge carriers also emits s",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 9.085148428143007,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6268,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex.md",
+        "title": "2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex",
+        "text": "means it has a small efficiency for neutron background and offers additional\nhadron background suppression capability. Our Geant4 simulation [118–120] finds that the low-energy neutrons\n( _E_ _k_ _<_ 0 _._ 3 GeV) generate almost no hit in the lead glass calorimeter, and the high-energy neutron (( _E_ _k_ _>_ 1\nGeV) has just about 45% probability to deposit more than 10 MeV energy in the calorimeter. As most of the\nneutrons from _pA →_ _X_ collision are low energy neutrons, the neutron background in the photon measurement\ncan be eliminated effectively with the lead glass calorimeter. With the inelastic events generated with GiBUU\npackage [121–124], we show in Fig. 3 the invariant mass distributions of two photons, with and without\nthe neutron background. The background for the _π_ [0] signal due to the neutron contamination is negligible,\nespecially for the channel _p_ [7] Li _→_ _π_ [+] _π_ _[−]_ _π_ [0] _X_ . In the simulation, the threshold for a hit in the calorimeter\ncorresponds to the signal generated by a 50 MeV photon. The neutron deposits less energy in the calorimeter\ncomparing to the photon, and with the same amount of energy deposition, the hadronic shower initiated by\nthe neutron generates less Cherenkov photons. That is why the abundant neutron background at low energy\nis strongly suppressed in the measurement of photon and _π_ [0] .\nAlthough lead glass calorimeter is effective at suppressing hadron backgrounds and is cost-effective, it has\nsignificant drawbacks compared to conventional crystal calorimeters. Firstly, the low Cherenkov light yield\nand severe light attenuation of lead glass result in poor energy resolution. Lead fluoride crystals, which have\nless light attenuation, can be used instead, but they are much more expensive. Another disadvantage is the\npoor radiation resistance. While radiation-resistant types of lead glass can be used to improve this, they suffer\nfrom worse light attenuation. Additionally, due to the low light yield, the Cherenkov light being mainly in\nthe UV range, and the detector being in a magnetic field, large-sized UV-sensitive SiPMs are required. These\ndrawbacks present challenges for the usage of lead glass in this project.\nOne option is to use the ADRIANO2 [125] dual-readout calorimeter currently being developed by the\nREDTOP group. This design combines scintillation material and lead glass to capture both Cherenkov light\nand scintillation light signals. It employs longitudinal layering and readout, providin",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 8.583018344342916,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 3518,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2721878__2311.07340__Performance_of_a_first_full-size_WOM-based_liquid_scintillator_detector_cell_as_prototype_.md",
+        "title": "2024__recid_2721878__2311.07340__Performance_of_a_first_full-size_WOM-based_liquid_scintillator_detector_cell_as_prototype_",
+        "text": "hlert _et al._, “Proof-of-principle measurements with a liquid-scintillator detector using\nwavelength-shifting optical modules,” JINST **14** (2019) no. 3, doi:10.1088/1748-0221/14/03/P03021 .\n\n[8] R. Diener _et al._, “The DESY II Test Beam Facility,” Nucl. Instrum. Meth. A **922** (2019), doi:10.1016/j\n\n.nima.2018.11.133.\n\n[9] K. Eguchi _et al._ [KamLAND], “First results from KamLAND: Evidence for reactor anti-neutrino\ndisappearance,” Phys. Rev. Lett. **90** (2003), doi:10.1103/PhysRevLett.90.021802 .\n\n– 46 –\n\n[10] G. Alimonti _et al._ [Borexino], “The Borexino detector at the Laboratori Nazionali del Gran Sasso,”\n\nNucl. Instrum. Meth. A **600** (2009), doi:10.1016/j.nima.2008.11.076 .\n\n[11] Z. Djurcic _et al._ [JUNO], “JUNO Conceptual Design Report,” arXiv:1508.07166 [physics.ins-det].\n\n[12] V. Albanese _et al._ [SNO+], “The SNO+ experiment,” JINST **16** (2021) no. 8,\n\ndoi:10.1088/1748-0221/16/08/P08059 .\n\n[13] S. Agostinelli _et al._, “Geant4 - a simulation toolkit,” Nucl. Instrum. Meth. A **506** (2003),\ndoi:10.1016/S0168-9002(03)01368-8 .\n\n[14] Z. Zhu _et al._, “Optical purification pilot plant for JUNO liquid scintillator,” Nucl. Instrum. Meth. A\n**1048** (2023), doi:10.1016/j.nima.2022.167890 .\n\n[15] J. P. Schmidt, Studies of Dip-Coating Methods to improve the Light Absorption in\nWavelength-Shifting Optical Modules, Master thesis, HU Berlin (2022).\n\n[16] C. J. Brinker, \"Dip coating,\" in Chemical Solution Deposition of Functional Oxide Thin Films,\nSpringer Vienna, 2013, doi:10.1007/978-3-211-99311-8 _10.\n\n[17] https://www.hamamatsu.com/content/dam/hamamatsuphotonics/sites/documents/99_SALES_LIBRARY/ssd/s13360_series_kapd1052e.pdf.\n\n[18] https://www.hamamatsu.com/content/dam/hamamatsuphotonics/sites/documents/99_SALES_LIBRARY/ssd/s14160_s14161_series_kapd1064e.pdf.\n\n[19] S. Gómez _et al._, “MUSIC: An 8 channel readout ASIC for SiPM arrays”, in Proceedings, Optical\nSensing and Detection IV, SPIE Photonics Europe, 2016, Brussels, Belgium, vol. 9899,\n\ndoi:/10.1117/12.2231095 .\n\n[20] D. Breton and J. Maalmi, “WaveCatcher Family User’s Manual,”\nURL: https://www.hep.ucl.ac.uk/pbt/wikiData/manuals/WaveCatcher/WaveCatcherFamily_V1.2.pdf\n\n[21] A. Ernst, Study of the position-dependent detector response of a liquid- scintillator detector\ninstrumented with WOMs and SiPMs using cosmic muons, Bachelor thesis, HU Berlin (2021).\n\n[22] A. Vagts, Improvement of light yield and spatial resolution of a liquid-scintillator detector equipped\nwith a wavelength-shifting op",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 8.41078370222016,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 50,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2493,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "ver, it is important to consider that the\nperiodic pulsing of the electron between the two charge\nconfigurations gives way to relaxation-induced errors. By\nspending time inside (3,1) and (4,0), states tend to relax\nto _|↓↓⟩_ and _|S_ (4 _,_ 0) _⟩_, respectively, thus reducing the spin\nreadout fidelity. It becomes necessary to minimize the\ntime spent on each side whilst still pulsing for a sufficiently\nlarge number of periods so as to not penalize the demodulation (see Appendix K). The results from Figs. 3d), e)\nprovide evidence that this condition is met by operating\nat high frequencies, which allows multiple crossings to\ntake place during short total times, limiting the _T_ 1 relaxation as more periods are required to accumulate enough\nprobability to decay (see Appendix I). On the other hand,\ntoo high modulation frequencies can lead to a regime\nwhere errors are dominated by crossing-induced spin flips.\nThe non-zero probability _P_ sf can quickly accumulate as\nthe frequency increases, resulting in limited spin readout\n\nfidelity even over short integration times, although spin\nfidelities have been demonstrated to be maintained after\nthousands of inter-dot crossings [49].\n\n**B.** **Generalization to Other Platforms**\n\nThe methods presented in this work are not exclusive\nto an RF-SET-based sensing scheme, and other highbandwidth techniques such as gate-based dispersive readout and single-electron boxes can benefit from the modulation and correlation of signals from a group of sensors.\nOne way in which we envision our technique being applied\nto dispersive readout is by using the detuning pulse to\nprobe the quantum capacitance of the system at a reference point [i.e., deep inside (3,1)] and compare it to\nthat at the charge transition ( _ε_ = 0). Depending on the\nspin state of the electrons, the capacitance at the charge\ntransition will change and the frequency of the resonator\nwill be modulated accordingly. Fig. 4 depicts a diagram of\nhow this implementation would work. It is not unrealistic\nto contemplate a distributed array of gate-based sensors,\neach capacitively coupled to a number of gates, in which\ncross-correlations between the independent modulated\ntraces are exploited to improve the joint sensitivity of the\nsystem.\n\n**Figure 4: Generalization to gate-based sensors.**\nSchematic of a way to apply the modulation technique to\ngate-based dispersive readout. A detuning pulse\nmodulates the frequency of the resonator by periodically\nprobing the quantum capacit",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 7.897168493125026,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 183,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2638493__2303.02067__Tagging_and_localization_of_ionizing_events_using_NbSi_transition_edge_phonon_sensors_for_.md",
+        "title": "2023__recid_2638493__2303.02067__Tagging_and_localization_of_ionizing_events_using_NbSi_transition_edge_phonon_sensors_for_",
+        "text": "3.5, 0.5) keV. This _lateral_ population overlaps partially\nthe magenta _intermediate_ one. Considering the relative\nstrength of the four population in Table II, the contamination of the _lateral_ population with _intermediate_\nevents should be small.\n\nTABLE II. Fraction of K-shell events in the different event\ncategories in Fig. 3. The errors are statistical only. The\nbias sign corresponds to _V_ _top_ _−_ _V_ _bottom_, i.e. electrons are\ncollected on the top electrode when _V >_ 0.\n\nThe origin of these four populations, and the reason\nwhy _E_ _top_ _< E_ _bottom_ for some of them, can be understood by inspecting the diagram in the bottom panel in\nFig. 3, where the color regions are defined by the geometry of the lines calculated with a COMSOL [®] [26]\nsimulation of the detector. All field lines connect to the\nbottom electrode, as it is the only one biased relative to\nthe grounded copper cover. There are two cases where\nthe other end of the field lines does not reach the top\nelectrode: some field lines intersect the surface covered\nby the NbSi sensor, while others exit the detector via its\ncylindrical lateral surface, which is not covered by an Al\nelectrode. The blue _center_ region is defined by all field\nlines connecting the bottom electrode to the 20 mm diameter region covered by the two NbSi films. In this\ncase, all the charge drifting upward will be collected in\nthe NbSi film, also set at ground. These charges are not\nread out, and therefore _E_ _top_ is zero, resulting in the blue\npopulation on the top panel of Fig. 3. In the other case\nwhere electrons or holes end their drift on the lateral\nsurface, the signals induced in both electrodes must be\n\ncalculated using the Shockley-Ramo theorem [27–30].\nThis will induce a reduced, but non-zero, signal on the\ntop electrode. The bottom electrode signal will also be\ndegraded, while remaining greater than the top one due\nto the field asymmetry. For example, the green _lateral_\narea on the bottom panel of Fig. 3 corresponds to the\nregion where the COMSOL [®] calculation predicts that\nthe signal induced in the bottom electrode corresponds\nto less than 95% of the total charge. This mechanism\nprovides an explanation for the green _lateral_ population\non the top panel of Fig. 3, where the bottom electrode\nsignal deviates from the nominal 10.37 keV _ee_ . The process of NTL amplification is also affected, and this population is also at the origin of the tails on the left-hand\nside of the L- and K-shell peaks obser",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 7.842335732265161,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5662,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708905__2310.06700__A_SWAP_Gate_for_Spin_Qubits_in_Silicon.md",
+        "title": "2025__recid_2708905__2310.06700__A_SWAP_Gate_for_Spin_Qubits_in_Silicon",
+        "text": "rther\n\nimproving the SWAP gate fidelity. When performing multiple SWAP gates, it may be beneficial to\n\nrecall that while the native SWAP gate requires uniform external field, it does not need to be\n\naccompanied by single-qubit gates. The accumulated single-qubit phase errors can be corrected at the\n\nend of a SWAP sequence. As such micromagnets can be placed strategically and with simple designs,\n\nallowing better scalability. As for improving SWAP gate fidelity, recall that coherent errors such as\n\nfinite 𝐽/|∆𝐸 𝑧 |, 𝐽 𝑜𝑓𝑓, and pulse errors are the dominant error sources for a SWAP gate. Pulse shape\n\ndesign could be an efficient approach to mitigate these coherent errors [36,61] . High circuit bandwidth\n\nand careful distortion calibration are also necessary to improve the gate fidelity. Last but not least,\n\nmodifying the exchange coupling 𝐽 through barrier gate voltage (instead of detuning) could lead to a\n\nwider range of 𝐽 values, making the 𝐽/∆𝐸 𝑧 ratio tunable in a larger range [62] .\n\nCompared to the two-qubit CPhase gate and the CROT gate, the SWAP gate is realized through control\n\nof exchange interaction only, whose fidelity is in turn dominated by the charge noise on 𝐽. When a\n\nseries of SWAP is performed, single-qubit phase correction is only needed at the end, making the\n\nwhole operation more streamlined. When using the SWAP gate to manipulate or transfer the qubit\n\nstates, the operation speed is typically faster than the two-qubit CPhase gate and the CROT gate due\n\nto the larger exchange coupling. In addition, in a quantum dot array, SWAP gates do not cause\n\nsignificant cross-talk and heating due to its very local nature, making it a more controllable tool in on\n\nchip communication. Lastly, the demonstration of a potentially high-fidelity SWAP gate here shows a\n\nclear promise to engineer the Heisenberg Hamiltonian [63-65] in silicon for the purpose of quantum\n\nsimulations.\n\n**13** / **23**\n\nIn summary, we demonstrate the native SWAP gate for spin qubits in a gate-defined double quantum\n\ndot in isotopically purified [28] Si. We implement a strategy to calibrate and eliminate local phase shifts\n\ninduced during the SWAP gate. The truth tables are measured to give the operation fidelity, and the\n\ninfluences of various error sources are analyzed to estimate and further improve gate fidelity. Although\n\nthe mis-calibrated SPAM error limits the extracted gate fidelity in our experiment, the demonstration\n\nindicates that a high-fidelity SWAP gate can be ach",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 7.673130764817266,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.7651345329359174,
+    "generation_latency_s": 3.497116267681122e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.7651345329359174,
+    "generation_latency_s": 3.497116267681122e-07
+  }
+}

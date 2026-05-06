@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "mul008",
+    "query_type": "multi_hop",
+    "query": "How can graph noise lead to hallucinated detector comparisons?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "graph",
+      "noise"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can graph noise lead to hallucinated detector comparisons?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4458,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr.md",
+        "title": "2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr",
+        "text": ". ... ... ... ... ...\n\n_,_\n\nwhose non-trivial diagonals are at most _O_ ( _√N_ ) data\n\nqubits apart from each other. This represents the shuttling distance that is necessary to generate the full connectivity graph. Note that, since we take _B_ to correspond\nto an arbitrary LDPC code, the generation of most nontrivial diagonals involves only _O_ ( _√N_ ) qubits. The rest\n\nof the qubits are idle, and hence one needs to account\nfor the potential negative effects of idling on the code’s\nperformance in practice (see Section IV A).\n\n_3._ _Generalised bicycle codes_\n\nFinally, consider two-block LDPC codes whose parity\ncheck matrices take the form of\n\n_H_ _x_ = � _C, D_ � (1)\n\n_H_ _z_ = � _D_ _[T]_ _, C_ _[T]_ [ �] (2)\n\nwhere both _C_, _D_ are sparse binary matrices that commute. A way to ensure this commutation is to take _C_\nand _D_ as any two _l × l_ sparse circulant matrices that\nhave the form\n\n\n\n\n\n _,_\n\n\n\n_C_ =\n\n\n\n\n\n\n\n\n\n_a_ 0 _a_ _l−_ 1 _a_ _l−_ 2 _. . . a_ 1\n\n_a_ 1 _a_ 0 _a_ _l−_ 1 _. . . a_ 2\n\n_a_ 2 _a_ 1 _a_ 0 _. . . a_ 3\n\n_a_ 3 _a_ 2 _a_ 1 _. . . a_ 4\n\n... ... ... ... ...\n\nwhere _a_ _i_ _∈_ F (2) such that only a constant number of\n_a_ _i_ are non-trivial. These matrices have an intrinsically\ndiagonal structure, therefore, the number of shuttles required to generate the qubit connectivity graph for the\ncorresponding parity check matrices (Eqn. 1, 2) is constant. Codes constructed with such sparse circulant matrices have been shown to perform well within the code\ncapacity-based simulations [8], therefore, it is interesting\nto consider them in our 2 _×_ N architecture where shuttling noise has to be accounted for. While the number of\nshuttles is constant, note that, in general, the shuttling\ndistance for these codes scale with the size of the code\n\nblock.\nIn the following, we present realistic noise simulations\nof the mentioned codes under the 2 _×_ N architecture. We\n\nfocus on the rotated surface code for universal fault tolerant quantum computation and later discuss how codes\nfrom other classes can be used for efficient quantum mem\nory.\n\n**III.** **UNIVERSAL QUANTUM COMPUTATION**\n**ON A SPIN-QUBIT SURFACE CODE**\n\nThe previous section discussed how to embed an individual code block on a 2 _×_ N device by taking advantage\nof shuttling. This is only the first step towards the implementation of a fully functional quantum computer, as\nwe still need to discuss how operations between logical\nqubits can be implemented despite the strong architectural",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 17.003630835609002,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 471,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment.md",
+        "title": "2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment",
+        "text": "g the subQUBO matrices of the desired size, by picking triplets in order of their impact. The impact\nis defined as the change in the value of the objective function when _T_ _i_ _→_ 1 _−_ _T_ _i_ . Each triplet\nis assigned an additional constant term representing the sum of all interactions with triplets\noutside of the sub-QUBO to retain sensitivity to the connections outside of each sub-QUBO\nwhen computing the value of the objective function. After the sub-QUBOs are solved, the\nsolution is combined. These steps are repeated for a number of iterations. The triplets selected\nby the QUBO minimisation are retained and matched to form track candidates.\n\n**Figure 7.** Diagram illustrating the QUBO solving procedure.\n\nAlternative algorithms for finding the optimal QUBO solution, such as the Quantum\nApproximate Optimisation Algorithm (QAOA) [21], were briefly investigated and were found to\n\nlead to significantly worse performance. A dedicated optimisation and characterisation of the\nresults of such alternative algorithms is left to future work.\n\n_4.2. Quantum graph neural network_\nThis approach is based on a graph neural network (GNN) [22, 23] that consists of both classical\nneural network layers and quantum circuits. The graph is constructed from doublets, where the\nhits are nodes and the connections between the hits are edges. All nodes of consecutive layers are\nconnected and only the ones that satisfy the pre-selection criteria are kept. The quantum graph\nneural network (QGNN) model follows the implementation of Ref. [11] and consists of three\nnetworks. First, the _InputNet_ takes the input node features, i.e. the three spatial coordinates,\nand produces hidden node features. For this purpose, a single fully connected neural network\nlayer that has 10 neurons with a _tanh_ activation function is used. Second, the _EdgeNet_ takes all\nconnected node pairs as input and produces a scalar edge feature for each of them using a _sigmoid_\nactivation function. This will later be the prediction score of the model for each doublet, as this\nmodel is essentially a segment classifier. _Circuit 10_ with two layers and 10 qubits is selected for\nthis task based on previous work [11]. Each layer of this circuit uses _R_ _Y_ gates and linear CNOT\nentanglers between all possible pairs of qubits. Third, the _NodeNet_ considers each node and\nits connecting nodes to update the hidden node features. The architecture of the _NodeNet_ is\nsimilar to _EdgeNet_, but it uses the _tanh_ activ",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 16.47997070459845,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 46,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "due to\nthe much lower interaction frequency (50 kHz) the firmware\ncan easily provide the necessary throughput also in this case.\n\nIV. P HYSICS PERFORMANCE\n\nThe FPGA cluster-finding architecture was designed with\nthe intent of replacing the raw pixel data with reconstructed hit\ncoordinates at the detector readout level. Except when running\nin debug mode (that preserves the full original information\n\ntogether with the cluster data), the raw pixel data are discarded\nand can not be recovered at any later stages. Therefore,\nextensive simulation studies were performed to assess the\neffect of using the FPGA-reconstructed clusters on the physics\nperformance of the LHCb reconstruction, both at the HLT1 and\nHLT2 stages. This was compared to the alternative scenario\nin which the VELO hits are reconstructed by a full-fledged\nsoftware reconstruction within the HLT system, free from all\nthe constraints imposed by the FPGA architecture, and from\nthe severe throughput requirements of operating at pre-build\nlevel (30 MHz vs. 0.17 MHz, where a farm of about 170 GPUs\nis assumed for HLT1).\n\nFor the sake of generality, comparisons are made to a CPUbased clustering algorithm, that is free from implementationspecific constraints. However, the actual HLT1 implementation\nat LHCb is GPU-based, but its performance is indistinguishable from the CPU version we take as reference. The key\ndifferences between the FPGA and CPU algorithms that can\npotentially affect reconstruction performances are the cluster\nfinding mechanism, the maximum cluster size in the FPGA\nalgorithm (limited to a 3 _×_ 3 pixel grid), and the constraints\nof the FPGA matrix filling scheme. They can potentially lead\nto inefficiencies, cluster splitting, or incomplete reconstruction\nof some clusters. An example of partial cluster reconstruction\nis illustrated in Fig. 7a, where the red pixel is left out of\nthe reconstructed cluster. The shift of the reconstructed hit\n\nposition may lead to a degradation of the precision on the\nreconstruction of the particle trajectory, or even to a loss of\nefficiency if the associated track is not reconstructed at all.\nFigure 7b shows an example of cluster splitting, where the\nalgorithm finds two clusters, with a pixel in common, from\nsix contiguous active pixels.\n\nTo perform the studies, a faithful software simulation of\nthe FPGA-based clustering algorithm has been produced. This\nsimulation was integrated within the official LHCb software\nsimulation, and a CPU–FPGA comparison was perfo",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 16.120807451703946,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3683,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2730668__2312.02917__PMUT-Powered_Photoacoustic_Detection_Revolutionizing_Microfluidic_Concentration_Measuremen.md",
+        "title": "2024__recid_2730668__2312.02917__PMUT-Powered_Photoacoustic_Detection_Revolutionizing_Microfluidic_Concentration_Measuremen",
+        "text": "sses between layers. Post-fabrication,\nthe PMUT was connected to a ceramic package with a pin grid\narray and covered with parylene-c to improve resistance to noise,\nas illustrated in Figure 1D. A futuristic representation of the\nmicrofluidic integrated micro photoacoustic device having an\narray of PMUTs integrated as receivers is depicted in Figure 1E.\nWith a wavelength tunable light source, such a device can be\nused as an on-chip spectrophotometer to detect and analyze fluid\nsamples.\n\n_B._ _PMUT Fabrication_\n\nThe PMUTs used in this study were produced following the\nprocedure depicted in Figure 2. This method begins with a\nsilicon-on-insulator wafer coated with titanium/platinum and\nfeaturing a 10 μm thick device layer (Figure 2i). Through\nmultiple repetitions of the sol-gel method, lead zirconate titanate\n(PZT) is spin-coated to attain the required thickness\n(approximately 0.5 μm), followed by an annealing process at\n650°C to create a consistent thin film (Figure 2ii). Next, the upper\nelectrode (Chrome/Gold – 30/120 nm) is patterned using\nlithography (Figure 2iii), and the PZT layer is subsequently\nremoved through wet etching (Figure 2iv). The composite is then\npatterned from the rear to eliminate the backside oxide using\nreactive ion etching (RIE), as illustrated in Figure 2v. In the final\nsteps, the supporting layer is etched via deep reactive ion etching\n(DRIE) to release the devices, and the buried oxide is etched\naway to relieve any residual stress in the released stack Figure\n2vi.\n\n_C._ _PMUT Characterization_\n\nPost piezoelectric poling, one of the typical cells in the\nPMUT die is characterized materially, to understand the\nproperties of the piezoelectric thin film, electrically, to\ndetermine the electrical impedance of the device and\nmechanically, to determine the device deflection sensitivity.\nThe electrical quality of the PZT thin film was evaluated\nthrough polarization, achieved by varying the voltage using a\nPrecision Materials Analyzer from Radiant Technologies Inc.\n\nThe resulting hysteresis loop is depicted in Figure 3A,\ndisplaying the characteristic ferroelectric switching of the PZT\nthin film in response to the applied electric field. Key\nparameters extracted from the graph include the remanent\npolarization (Pr), saturated polarization (Ps), and the coercive\nfield (Ec), measured at 25.4 μC/cm [2], 43 μC/cm [2], and 3.45 V,\nrespectively. To understand the AC characteristics of the\ndevice, electrical characterization was conducted using 4294A",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 14.883582144718664,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 54,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "the corresponding bits in the status vector are set\nto 1. SP comparisons are not all performed in a single clock\ncycle. On each clock, the load block extracts two subsets of\n16 SPs each from the buffer (Fig. 13). For each SP in the two\nsubsets it also computes the set of coordinates to be matched\nby the neighbours by one-unit additions and subtractions of the\ncoordinates of the SP row and column. The two SP subsets,\ntogether with the coordinates of the neighbours, are passed to\nthe flag block that performs the 16 _×_ 16 comparisons on the two\nsubsets. For each SP of the first subset, the flag block checks\nif the SP row is equal to one of the rows of the SPs in the\nsecond subset or to the row above or below; the same check is\nperformed on columns. If both the row and the column checks\nyield a positive result, the two SPs are flagged as neighbours,\nand the corresponding bits in the status vector are set to 1.\nOn each clock cycle, the load block selects a different pair\nof SP subsets from the buffer sending them to the flag block,\nuntil all possible combinations of 16-SP subsets have been\nchecked. The described architecture allows reusing the same\nlogic resources while updating the SP subsets to be flagged\nat each clock cycle. To perform the comparisons between _n_\n16-SP blocks, _n_ ( _n_ + 1) _/_ 2 clock cycles are needed.\nThe number of parallel comparisons performed for every\nclock cycle is the result of a trade-off between resource usage\nand throughput, and is based on the constraints of its use\nwithin the LHCb experiment.\nAs soon as all comparisons have been completed, the\ncontents of the flagging registers and the status vector are\ncopied to the write block, thus decoupling the flag and write\nprocesses. The write block is responsible for adding the\nisolation flag to the SP words and for sending flagged data\nto the next component, the switch. The data exchange within\nthe read-buffer-load-flag-write pipeline is regulated by backpressure: if a component cannot accept the data of an event\nbecause it is still processing the previous event, the control\nunit keeps the previous component on hold.\nThe decoder block, including flagging and bypass, uses 7%\n\nFig. 14. Block diagram of a 4 to 4 switching unit.\n\nof the logic and 1% of the M20K memories available in an\nArria 10 FPGA.\n\n_F. Switch block_\n\nThe cluster processing chain receives SPs from both sensors\nof a VELO half-module. The switch, placed after the decoder,\narranges SPs by sensor and by isolation flag, f",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 14.809398089893653,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7852,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA.md",
+        "title": "2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA",
+        "text": "less than 1 week\n\nfor an object of 250 cm width.\n\n– 12 –\n\n**Figure 12** : Time in hours to get 3 sigma deviations between widths of Gaussian fits of the histograms\n\nfor scattering angles after passing through the object.\n\n**Figure 13** : Number of sigmas comparing an object made of lead (Pb) and one made of iron\n\n(Fe) showing the two methods studied in this work. Grey line: absorption method and blue line:\n\nscattering method.\n\nIn order to compare both methods we show in Fig. 13 the number of sigmas versus the width\n\nof the object made of lead or iron. The absorption method has a larger difference between materials\n\nthan the scattering method.\n\n– 13 –\n\n**6** **Conclusions**\n\nIn this work, we have designed, simulated and analysed a detector easy to construct and transportable\n\nfor muon tomography, an innovative technique in archaeology, mineralogy, geology, etc. for\n\nscanning mid to large objects. We used a flux of cosmic rays simulated in CORSIKA to examine\n\nhow muons behave when passing through objects of several sizes made of different materials using\n\nGEANT4.\n\nOur detector is made of a plane array of 8 x 8 small unit sensors made of plastic scintillators\n\nand silicon photomultipliers enclosed in an aluminium case. Two of such plane arrays separated by\n\n20 cm made a sub-detector. In order to analyze an object, one subdetector is placed before it and\n\nthe second one after it. With this geometrical distribution the detector can measure the muon flux\n\nand the scattering angle of their trajectories after passing through an object. The sub-detector that\n\nis after the object will move around 90 [◦] to multiples angles to obtain more statistics. This rotation,\n\nthanks to the portability of this design, will increase the tested lines along the object, helping to\n\nfind structures inside the object. However, in order to reduce costs when constructing the array of\n\neach plane, we could use instead of rectangular detectors, strips of plastic scintillators overlapping\n\none under another. This detector has 1 [◦] of angular resolution. Comparing with gas detectors, most\n\nof them have better angular resolution, nevertheless, moving gas detectors is more complicated.\n\nThe analyzed object had a varying size from 50 to 250 cm, which corresponds to a simplification\n\nof a larger and more complex object. Real objects can have holes or be made of different materials\n\nand have different geometries. These results already set a limit on which materials could be\n\nidentified.\n\nOur",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 14.657013162689196,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 472,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment.md",
+        "title": "2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment",
+        "text": "linear CNOT\nentanglers between all possible pairs of qubits. Third, the _NodeNet_ considers each node and\nits connecting nodes to update the hidden node features. The architecture of the _NodeNet_ is\nsimilar to _EdgeNet_, but it uses the _tanh_ activation function for the last layer, as the _NodeNet_ is\nan intermediate step, and _sigmoid_ activation functions are known to lead to vanishing gradients.\nThe quantum graph neural network (QGNN) model first starts with the _InputNet_ . Then, the\n_EdgeNet_ and the _NodeNet_ are applied alternately four times to allow the node features to be\nupdated using farther nodes, as determined in a scan of the optimal model parameters. At the\nend, the _EdgeNet_ is applied one last time to obtain the predictions for each doublet connection.\nFinally, the edges are discarded if the prediction value is less than a fixed threshold (chosen to\nbe 0.5 in our simulations) and the rest are retained and used to form track candidates.\n\n_4.3. Combinatorial Kalman filter_\nA tracking algorithm based on A Common Tracking Software (ACTS) toolkit [24] with the\ncombinatorial Kalman Filter (CKF) technique for track finding and fitting is used as a\nbenchmark. In this classical tracking method, track finding starts from seeds, which are the\ntriplets formed from the first three detector layers. To avoid a combinatorial growth in the\nnumber of seeds at high particle density, further constraints are placed on seeds sharing the\nsame hits by prioritising the better-aligned seeds. An initial estimate of track parameters is\nobtained from the seed and is used to predict the next hit and is updated progressively, with\nthe measurement search performed at the same time as the fit.\n\n_4.4. Final track selection_\nA final step in the track reconstruction is common to all considered methods. Track candidates\nare required to have four hits and, as explained in the previous subsections, can be found with\nthe QUBO approach that combines triplets into quadruplets (see Section 4.1), by employing\nthe QGNN approach that combines doublets into quadruplets (see Section 4.2), or by using the\nclassical CKF method (see Section 4.3). After finding these track candidates, the final tracks\nnow have to be selected among these candidates, using a final step explained in the following.\nThe track candidates are fitted to straight lines with the least-square method, as the particles\npropagate through the tracking detector in absence of a magnetic field. A track candidate is\nconsid",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 14.549714281559442,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6532,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights.md",
+        "title": "2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights",
+        "text": "ge nuclear-recoil signal, in terms of standard\ndeviations, when considering the ionization yield and adjusted timing parameters, for three detectors that identified\npotential Weakly Interacting Massive Particles (WIMPs) with energies exceeding 25 keV. Specifically, the detectors\nT4Z6, T4Z2, and T1Z2 reported WIMP candidate events at energy levels of 37.3 keV, 73.3 keV, and 129.5 keV,\nrespectively. Additionally, the T4Z6 detector detected three more potential WIMP events within the lower energy\nbracket of 10–25 keV. The regions of the graph that are considered valid for WIMP candidate events are marked by\nshaded areas [83]. [80]. “Reproduced from Z. Ahmed et al., Search for Inelastic Dark Matter with the CDMS II\nExperiment, Phys. Rev. D - Part. Fields, Gravit. Cosmol. 83, 112002 (2011) with the permission of AIP Publishing.”\n\n_IV.A.2. Insights on CDMS Collaboration_\n\nCDMS collaboration due to the use of multiple types of detectors, including ZIP, BLIP, iZIP,\nand HV detectors, shows a robust approach to capturing various interactions and enhancing the\nsensitivity to dark matter particles. The ability to measure neutron backgrounds simultaneously in\nboth silicon and germanium without loss of detector performance is a considerable achievement,\nhelping to reduce background noise which is crucial for searching the rare events. The project has\nsuccessfully set more stringent upper limits on the spin-dependent and spin-independent crosssections of WIMP-nucleon interactions, pushing forward the boundaries of dark matter particle\ndetection. Extensive calibration and simulations have been effectively used to refine the detection\ncapabilities and filter out potential false signals.\nHowever, background noise and false signals **,** despite advances is still the issue which poses a\nsignificant challenge, as seen with the statistical likelihood of misinterpreting background noise as\npotential WIMP detections. The absolute energy scale necessary for nuclear recoils and the various\ncorrections required for accurate data interpretation add layers of complexity and potential error\nto the analyses. The decrease in ionization collection efficiency for nuclear recoils over 20 keV\nlimits the detector's effectiveness in higher energy ranges.\nWe expect enhanced detector materials and design could provide better efficiency at higher\nenergies and improved sensitivity at lower masses. Also, developing more sophisticated calibration\ntechniques that can more accurately mimic the expect",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 14.524544295730196,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8397,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_.md",
+        "title": "2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_",
+        "text": "ment of instantaneous luminosity, with a precision at least as good as\n5%, is therefore essential to ensure correct LHCb operation [4].\nIn this paper, a new algorithm for the determination of instantaneous luminosity\nis proposed and characterised. This algorithm relies solely on detector hits, _i.e._ lowlevel information made available at the very first stage of data acquisition by a new\nclustering procedure described in Ref. [5]. It can run continuously and independently of\nthe software-based event reconstruction. [1]\n\nThe paper is organised as follows: Sect. 2 describes the LHC collider and the relevant\nfeatures of the LHCb experiment, Sect. 3 introduces the concept of luminosity and the\nmethods normally used to measure it, Sect. 4 describes how hit counters are implemented\nto measure luminosity, and discusses the design choices. Then, Sect. 5 explains how\nthese counters are calibrated using collision data, Sect. 6 discusses the performance of the\nmethod and the possible sources of systematic uncertainties. Finally, Sect. 7 summarises\nthe findings.\n\n### **2 Experimental context**\n\nThe LHC is the highest-energy proton-proton ( _pp_ ) collider in the world, also capable of\ncolliding heavier nuclei, _e.g._ lead ions (Pb). It is a radio-frequency machine where each\nbeam is divided into 3564 bunches. During the 2024 nominal running conditions for _pp_\ncollision physics, 2133 bunches were colliding at the LHCb interaction point, each one\ncontaining up to about 1 _._ 6 _×_ 10 [11] protons [1].\nThe LHCb detector underwent a major upgrade in view of the ongoing LHC Run 3 [6],\nto support a fivefold increase of instantaneous luminosity compared to the previous running\nperiods, _i.e._ a target luminosity of _L_ = 2 _×_ 10 [33] cm _[−]_ [2] s _[−]_ [1], corresponding to 2000 Hz / µb .\nThe new detector is able to reconstruct events at a rate of 40 MHz and its finer granularity\nallows for smooth operation with increased event multiplicity. The tracking system has\nbeen completely replaced. In particular, a new silicon pixel VErtex LOcator (VELO)\nacts as the tracking detector closest to the _pp_ interaction region [7]. The VELO is placed\nin a vacuum box that locally replaces the LHC vacuum pipe. It consists of 26 detector\nlayers placed at different _z_ positions surrounding the luminous region, where the _z_ axis\nlies along the beamline and its origin lies within the VELO. Each layer is composed of two\nmodules, which can move horizontally as far as 25 mm and as close as",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 14.464117313236365,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3408,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720277__2311.04858__Scalable_Fault-Tolerant_Quantum_Technologies_with_Silicon_Color_Centers.md",
+        "title": "2024__recid_2720277__2311.04858__Scalable_Fault-Tolerant_Quantum_Technologies_with_Silicon_Color_Centers",
+        "text": "it operations on devices with (a) planar, nearest neighbour connectivity graphs\nand (b) non-local connectivity. A CNOT gate between two\ndistant qubits on the planar graph requires sequential swap\noperations. Each consecutive operation accumulates errors\nand the overall fidelity drops precipitously, even over the small\ndistances shown. With non-local connectivity, two qubit operations are equivalent across the graph and the device can\nscale with greater fidelity.\n\nQuantum Low Density Parity Check (QLDPC) codes,\nquantum analogues of the classical LDPC codes underpinning 5G telecommunications networks, are a class\nof codes characterized by low-weight stabilizer checks.\nWhen these codes are unshackled from the constraint of\nlocal connectivity, they can achieve truly astounding performance. A recent flurry of work [48–53] culminated in\nthe construction of QLDPC code families with asymptotically optimal code parameters, closing this long-open\nquestion after decades of relatively stagnant progress. In\nconjunction with previous work [54], these code families\nestablished that physical overheads could be driven significantly lower than those observed for planar code ar\n\n4\n\nchitectures. The inherent properties of QLDPC codes unlock additional performance perks including single-shot\noperation [55–58], which removes the requirement to repeat QEC cycles to separate measurement errors from\nqubit errors [59, 60]. The work to implement logical operations has only just begun, but early signs point to\nmethods on par to those of planar codes [61, 62]. Surprisingly, no-go theorems implying the need for costly\nmethods to achieve universality may not even apply to\ncertain QLDPC codes [63].\nEven more encouraging than these theoretical results\non high-connectivity QLDPC codes has been the assessment of their practical performance, which appears to\nmatch or outperform the planar code in essentially every\nway. They offer similar error thresholds [46, 64], similar\ncheck weights [45], and proven efficient decoding algorithms for large finite codes [65]. QLDPC codes that encode 1 logical qubit per every 3 physical qubits have been\ndemonstrated to saturate the quantum hashing bound\nunder depolarizing noise (one of the biggest points of\npride of the planar surface code) using decoders already\nin practical use today [66]. Even with rather small system\nsizes (where the asymptotic behavior of QLDPC codes\nneed not be representative of actual performance) and\nunder nuanced noise models, QLDPC",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 14.35101379148824,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.19581752130761743,
+    "generation_latency_s": 2.50060111284256e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.19581752130761743,
+    "generation_latency_s": 2.50060111284256e-07
+  }
+}

@@ -1,0 +1,400 @@
+{
+  "benchmark": {
+    "query_id": "fac007",
+    "query_type": "factoid",
+    "query": "What is depletion depth?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "depletion",
+      "depth"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is depletion depth?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5503,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "nt up to 90 µm. The edge of the curve corresponds\nto the depletion depth that in this case is W ≈ 97 µm, close to the nominal 100 µm depth of the\nepitaxial layer. On the contrary, the A149 SiC of the RA0089-27 wafer shows a not uniform _N_\nprofile which decreases with depth. Moreover, the depletion depth is W ≈ 93 µm, significantly\nsmaller than the nominal value.\n\nWhen the depletion region reaches the backward contact, the capacitance remains constant\n(see for example Figure 4a), this value is sometimes referred to as _end capacitance C_ _end_ . The\nvoltage at which this situation occurrs is referred to as the full depletion voltage _V_ _FDV_ . It is\npossible to define the effective doping concentration _N_ _e f f_ in correspondence to _C_ _end_ and _V_ _FDV_ as\nfound in Ref. [30]\n\n_end_\n| _N_ _e f f_ | = [2] _[V]_ _[FDV]_ _[C]_ [2] (2)\n_e_ ε _A_ [2]\n9\n\nFigure 6: Doping concentration profile vs. depth inside two SiC sensors. The A142 device of the TT0012-11 wafer and\nthe A149 device of the RA0089-27 wafer are shown as the magenta and orange lines, respectively. The depletion depth\nis also indicated for the two curves.\n\nThe effective doping concentrations were evaluated from the C-V characteristic for all the\nSiC devices analysed so far. Examples are represented in Figure 5. There is a clear correlation\nbetween the FDV and the doping concentration. In particular, for the TT0012-11 wafer, in which\nthe average FDV is 777 V, the average doping concentration is 8.8 × 10 [13] atoms/cm [3] (MAD =\n0.7 × 10 [13] atoms/cm [3] ), whereas for the RA0089-27, the doping concentrations are much smaller\n(average value 3.4 x 10 [13] atoms/cm [3] and MAD = 0.5 × 10 [13] atoms/cm [3] ), corresponding to an\naverage FDV of 270 V.\n\n**6. Measurements with radioactive sources**\n\nSome of the detectors characterized in the previous sections were further investigated by\nusing α-particle source. In particular, the A41 and A45 sensors of the TT0012-11 wafer, as well\nas the A102 and A106 sensors of the RA0089-27 wafer were tested. The aim was to measure the\nenergy resolution of the SiC sensors, and to estimate the depletion depth. A [228] Th α-decay source\nwas chosen to perform such measurements, since it is characterized by a wide energy spectrum\nof the emitted alphas (E α = 5 to 9 MeV), penetrating and probing the SiC device at different\ndepths. Furthermore, the same source can be used to irradiate the device from the back, since the\nemitted alphas able to cross the ≈ 10 µm dead laye",
+        "score": 2.76554163161674,
+        "dense_score": 0.4243420362472534,
+        "bm25_score": 17.883093362155456,
+        "graph_score": 0.7083333333333333,
+        "rerank_score": 4.15710973739624,
+        "matched_nodes": [
+          "On",
+          "Th",
+          "The",
+          "In",
+          "It"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 3329,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector.md",
+        "title": "2024__recid_2715676__2310.20534__Reconstructing_long-lived_particles_with_the_ILD_detector",
+        "text": "red.\n\nThe second type of scenario under study is a production of a very light pseudoscalar, the decay\nproducts of which have a very high boost and are almost colinear. This is the case for an axion-like\nparticle (ALP), which in many scenarios has a macroscopic lifetime for masses of the order of GeV, and\ncould also be produced at e [+] e _[−]_ colliders in e [+] e _[−]_ _→_ a _γ_ channel [5]. The four analysed benchmarks\nassume different ALP masses, _m_ _a_ = 0 _._ 3 _,_ 1 _,_ 3 and 10 GeV, and decay lengths _cτ_ = 10 _· m_ _a_ mm/GeV to\nmaintain a consistent number of decays within the detector volume. Again, only ALP decays to muon\npairs are considered.\nW HIZARD 3.0.1 and 3.1.2 [6] was used to generate IDM at 500 GeV and ALP samples at 250 GeV\nILC, respectively, while the detector response simulation was based on G EANT 4 [7]. For the vertex\nfinding, an algorithm which is both simple and as general as possible has been developed. It is based on\nthe calculated distance between the track helices (which is required to be 25 mm at most) and the vertex\nis placed in between the points of the closest approach of the helices. At this stage a basic preselection\nis applied, aimed to reduce the number of fake vertices in the signal sample. The cuts are applied based\non track curvature, length, opening angle, and distance from the first hit to vertex.\n\n2\n\n_4_ _RESULTS IN THE TPC_\n\nFigure 1: Left: Number of displaced vertices found in the overlay sample as a function of distance from\nthe beam axis with no selection applied at all, just apart from the required maximum distance\nbetween track helices. Right: Total transverse momentum of tracks coming from a displaced\nvertex for the overlay (red) and one of the signal scenarios (blue; heavy scalars production with\n∆ _m_ _AH_ = 2 GeV) after imposing preliminary selection cuts.\n\n### **3 Background and its reduction**\n\nAt linear colliders, beam-induced background events can contribute in each bunch-crossing (BX). On\naverage, 1.05 events of the _γγ →_ hadrons process and a fraction of produced incoherent e [+] e _[−]_ pairs can be\nmeasured in the detector per single BX at the ILC. In most physics studies, this background can _overlay_\non a hard event and affect reconstruction results. However, when low- _p_ _T_ final states are expected in the\nsignal channel considered, these events can constitute background on their own and must be considered\nseparately.\nThis is also the case for the presented analysis, with the minimal num",
+        "score": -6.354852469126383,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8541666666666666,
+        "rerank_score": -9.87788200378418,
+        "matched_nodes": [
+          "On",
+          "At",
+          "The",
+          "In",
+          "For",
+          "It"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1591,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2705261__2310.00585__Quantum_generative_adversarial_learning_in_photonics.md",
+        "title": "2023__recid_2705261__2310.00585__Quantum_generative_adversarial_learning_in_photonics",
+        "text": "deviation of the fluctuations is the signal to noise ratio (SNR)\n\nSNR = _[N]_ _√_\n\n_σ_ [=]\n\n_N_ . (S18)\n\nTherefore, when the integration time is limited, the low multiphoton count and the intense shot noise degrade the SNR and the\nprecision of the obtained probability distribution.\n\n###### (a) (b)\n\n0.20\n\nFidelity after convergence\n\nConvergence round\n2500\n\n1500\n\n1000\n\n1\n\n0.15\n\n0.10\n\n0.05\n\n0\n100 1000 10000\n\nCount level\n\nCount level\n\n0.95\n\n0.90\n\n0.85\n\n500\n\n250\n\n100\n\n25\n\n0.80\n100 500 1000 1500 2000\n\n**Fig. S9.** Effect of shot noise in photonics on (a) the obtained probability distribution and (b) the performance of quantum generative\nadversarial learning.\n\nHere, we give some examples demonstrating the effects of shot noise on the precision of measured probability distribution. Given a\ntheoretical probability distribution _[⃗]_ _P_ the, which is a 16-dimensional uniform distribution. We numerically simulated the experimentally\nobtained distribution _[⃗]_ _P_ exp affected by shot noise with a total count ranging from 100 to 10000. We calculate the total variance distance\nbetween _[⃗]_ _P_ the and _[⃗]_ _P_ exp\n\n_⃗_ _⃗_ 16\nTVD = ��� _P_ the _−_ _P_ exp ��� = 12 [∑] _i_ = 1 �� _P_ the,i _−_ _P_ exp,i ��. (S19)\n\nFor each count level, we repeat the simulation 1000 times and obtain the average of the TVD. The results in Fig. S9(a) clearly show that\nlow count levels degrade the precision of the obtained probability distribution. In our experiments, we set the two-photon integration\ntime as one second to ensure a total count of around 1500.\n\n8\n\nFor quantum generative learning in photonics, shot noise increases the instability of the learning process. We demonstrate the effects\nof shot noise on the learning result by performing 100 numerical simulations of quantum generative adversarial learning in photonics\nwith a total count ranging from 100 to 10000. The phase noise is set as 0. The results are presented in Fig. S9(b). It is obvious that\nlow count level and, thus, intense shot noise can degrade the performance of QGAN, leading to the reduction in the quality of the\ngenerated quantum state and the increase in the learning round.\n\n**6. EFFECT OF CIRCUIT DEFECTS ON QUANTUM GENERATIVE ADVERSARIAL LEARNING**\n\nAccording to Schmidt decomposition [ 9 ], preparing a two-body maximally entangled state requires applying the corresponding\nunitary transformation on the maximally entangled state. Currently, the generator circuit consists of two universal linear optical\nnetworks",
+        "score": -6.543833274841309,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9374999999999999,
+        "rerank_score": -10.17849349975586,
+        "matched_nodes": [
+          "On",
+          "The",
+          "In",
+          "For",
+          "We",
+          "Quantum",
+          "It"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 25,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 8388,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom.md",
+        "title": "2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom",
+        "text": ". Amorphous silica is known to exhibit\nanomalous excess heat capacity below 1 K due to two-level\nsystems [29], [30]. We plan to investigate this in the near\nterm by selectively removing the oxide under the absorber.\nUltimately, the implementation of overhanging absorbers [31]\nwill minimize the area of the membrane in contact with the\n\ndetectors and significantly reduce this contribution.\n\n_D. Nonlinearity and gain_\n\nWe used 2 _._ 4 eV photons produced by the pulsed laser to\nestablish the detector’s gain curve in the _<_ 500 eV range and\nmeasure the achieved energy resolution in the small signal\nlimit and at the carbon K-edge. The laser intensity was varied\nby adjusting the pulse-width (kept under 100 ns) and by using\na variable optical attenuator. Flood illumination from the laser\nproduces Poisson-distributed photon combs on each pixel,\n\nIEEE TRANSACTIONS ON APPLIED SUPERCONDUCTIVITY, VOL. XX, NO. XX, MONTH 202X 6\n\nTABLE I\n\nP ARAMETERS FOR THE ELECTROTHERMAL MODEL FIT SHOWN IN F IG . 8.\n\nParameter Value\n\n_Fixed Parameters_\n_R_ shunt 250 µΩ\n_R_ 0 470 µΩ\n_L_ 120 nH\n_TG_ 0TES _,_ bath 93 pW53 mK _/_ K\n_T_ bath 21 mK\n_S_ I _,_ SQUID 20 pA _/√_ Hz\n\n_E_ init 2 _._ 4 eV\n\n_Fit Parameters_\n_α_ I 1365 _±_ 27\n_β_ I 64 _±_ 1\n_C_ TES 161 _±_ 2 fJ/K\n_C_ hanging 52 _±_ 1 fJ/K\n_G_ TES _,_ hanging 655 _±_ 15 pW/K\n_M_ 2 _._ 2 _±_ 0 _._ 4\n\nvisible in the pulse-height histograms shown for a single pixel\nin Fig. 9. We fit each comb with a sum of Gaussians to\nprecisely determine the centroid of each multi-photon peak.\nPlotting these centroids against the known incident energies,\n_E_ _n_ = _nE_ _γ_, defines the detector’s gain curve (Fig. 10).\nThis gain curve exhibits significant nonlinearity (about 27%\nat carbon K-edge), which we initially model using a 7 [th] -order\npolynomial. While this provides a good global fit, the residuals\nshow a step-like structure, consistent with thermal crosstalk.\nDuring flood illumination, photons absorbed by neighboring\npixels generate heat that diffuses to the target pixel, slightly\nincreasing its pulse height. This manifests in Fig. 10(a) as\noffsets between photon combs of equal energy but different\nillumination levels (e.g., between the purple and red points).\nThe crosstalk energy shift, _δE_ _n_, is proportional to the average\nnumber of absorbed laser photons _⟨n⟩_ [32]. Therefore, we\nmodel the pulse height as a polynomial function (order _m_ ) of\nan effective energy:\n\nFig. 8. Combined pulse and noise fit for Pixel 6 at 7% _R_ _n_ . The pulse",
+        "score": -6.602976088205973,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7916666666666665,
+        "rerank_score": -10.252206802368164,
+        "matched_nodes": [
+          "On",
+          "The",
+          "In",
+          "For",
+          "We",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1287,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides.md",
+        "title": "2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides",
+        "text": "ection. The waveguide consists of crystalline silicon (black) on top of a silicon\ndioxide layer (blue). It supports a single guided TE-like mode\n(the color gradient shows the flux density). Erbium was implanted into the waveguides at three different combinations of\nimplantation dose and energy, resulting in an approximately\nhomogeneous vertical erbium distribution (right side, light\nred).\n\n2\n\nuide, and on the implantation and annealing conditions\n\n[20]. Here, one expects a trade-off: At higher temperatures, the crystal damage caused by the implantation\nwill be reduced, leading to a lower waveguide loss. In\naddition, a narrower inhomogeneous broadening of the\noptical transition frequency of the preferred erbium sites\nmay be observed in case the strain inhomogeneity is reduced by the annealing. However, the mobility of both\nerbium and other impurities in the crystal also increases\nwith temperature. They may thus form clusters, yielding\nmany possible other site configurations.\nTo investigate the integration into sites A and B in\nthe commercially-fabricated chips studied in this work,\nwe use the same techniques as in our earlier work [20].\nSpecifically, we measure pulsed fluorescence, i.e. the signal emitted after exciting the dopant ensemble with resonant laser pulses of 0 _._ 1 ms to 0 _._ 25 ms duration. The\npulses have a rectangular temporal profile, generated\nwith acousto-optical modulators with a rise time on the\norder of 10 ns. This is more than four orders of magnitude shorter than the emitter lifetime, which allows\nseparating the emission from the excitation. We first\nperform a broad scan of the excitation laser frequency,\nwhich is slightly modulated to avoid effects of persistent\nhole burning. The result of this measurement for several implantation and annealing conditions is shown in\nFig. 2A. For comparison, we also include a spectrum\nobtained in our earlier measurements [20] on high-purity\nfloat-zone (FZ) silicon waveguides, implanted at room\ntemperature and then annealed at 500 _[◦]_ C for approximately one minute, on which waveguides were fabricated\nby our group. These chips will be referred to as ‘homemade’ in this work.\n\nWe find that at 400 _[◦]_ C erbium is efficiently integrated\ninto the preferred sites A and B (marked blue and red, respectively), but also into pair- or precipitate sites (green)\nobserved previously. In addition, we observe several\nother peaks and a broadband background. A very similar\nspectrum is obtained in the samples that",
+        "score": -6.607704706192017,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9374999999999999,
+        "rerank_score": -10.27675724029541,
+        "matched_nodes": [
+          "At",
+          "The",
+          "In",
+          "For",
+          "We",
+          "It",
+          "To"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5241,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "em [6]–[8]. (1) If the secondary photon is absorbed by\nthe neighboring Single Photon Avalanche Diode (SPAD) and\ntriggers an additional avalanche within the same SiPM, it\nis referred to as internal optical crosstalk (iCT) [9]. More\nspecifically, iCT can further be divided into direct crosstalk\nand delayed crosstalk based on whether the electron is produced in the depleted region or in the undepleted region.\nMore information can be found in [10]. (2) Secondary photons\ncan pass through the SiPM window, escape, and be detected\nby external photo-sensors, such as another SiPM facing the\nfirst one, known as external crosstalk (eCT) [11]. (3)The final\ncorrelated effect is optically-induced afterpulsing (AP) [12],\nresulting from electrons in the undepleted region within the\nsame cell [10]. As the result, optical-induced AP usually appears behind the primary pulse after hundreds of nanoseconds\nto microseconds because of the recharge time of SPADs. As a\nresult, optically-induced AP typically occurs after the primary\npulse, ranging from hundreds of nanoseconds to microseconds,\ndue to the recharge time of SPADs\nThese correlated effects could significantly impact experiments aiming to achieve a large photon-sensitive area using\nSiPM readout, as detailed in the Darkside and nEXO references [13] [14]. First of all, the light yield of the detector\nis probably overestimated since single incident photons would\ngenerate a signal with the integral area larger than 1 PE (photoelectron), because of the presence of iCT, eCT or AP. To\nestimate the corrected light yield, the knowledge of the probability of the three correlated effects is important. In addition\nto light yield overestimation, other negative effects need to\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 2\n\nbe considered. For instance, the presence of AP can impede\nthe n/ _γ_ pulse shape discrimination in the background rejection\nanalysis when using the prompt fraction method. Moreover, a\nhigh percentage of iCT and eCT would degrade the energy\nresolution. Additionally, eCT also generates unavoidable coincidental background in low threshold experiments, as eCT\nsignals always occur simultaneously.\nOverall, for any experiment employing large area SiPM\narrays, the understanding of SiPM correlated noises is mandatory. The iCT probability is calculated by _P_ _iCT_ = _N_ _[N]_ (0 [(][1] _._ _[.]_ 5 [5] _P E_ _[ P E]_ ) [)]\n\n[15], where _N_ (1 _._ 5 _PE_ ) is the dark count rate (DCR) with\n1.5 PE threshold",
+        "score": -6.751604847590128,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7916666666666665,
+        "rerank_score": -10.480866432189941,
+        "matched_nodes": [
+          "On",
+          "The",
+          "In",
+          "For",
+          "IEEE",
+          "To"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2500,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "stogram as seen in Fig. 5a. The single-shot\nmeasurement for the Twin SET is obtained by finding\nthe axis on this histogram that maximizes the separation\nbetween the readout peaks and projecting the data along\nthat axis. For the particular case of the measurement\ndescribed in Sec. III and Fig. 2c), the projection results in\nthe linear combination Twin = 0 _._ 92 _·_ SET 1 _−_ 0 _._ 39 _·_ SET 2 .\nWe note that the easiest form of correlation function is\nto implement a Twin SET with the modulated measurements. Upon demodulating each SET trace independently,\nthe resulting scalars can be treated identically to a traditional measurement. The process of plotting the 2D\nhistogram and projecting the data along the axis that\nmaximizes the readout signal follows naturally from there,\nas shown in Fig. 5b.\nThe correlation function described in Eq. 1 has a free\ntuning parameter, _a_, which determines the weight between\nthe product, Π, and the difference, ∆, of the traces. The\nlarger the value of _a_, the more weight is given to ∆ and\n\n_−_ 10 0 10 20\n\n_D{_ SET 1 _}_ (a.u.)\n\n**(b)**\n\nSNR = 3.3\n\nSNR = 5.3\n\n100\n\n80\n\n60\n\n40\n\n20\n\n0\n\n20\n\n0\n\n_−_ 20\n\n_−_ 40\n\n20 40 60 80\n\n∆ _V_ SET 1 (mV)\n\n**(a)**\n\nCounts\n\n140\n\n120\n\n100\n\n80\n\n60\n\n40\n\n20\n\n0\n\nCounts\n\n100\n\n80\n\n60\n\n40\n\n20\n\n0\n\n**Figure 5:** Twin SET 2D histogram for the traditional\n(a) and modulated (b) readout. The projection along the\ndashed axis maximizes the SNR.\n\nthe suppression of uncorrelated noise enabled by Π is\nnot obtained. On the other hand, a value of _a_ close to\nzero will suppress ∆, and the information about the anticorrelation will be lost. Consequently, finding the optimal\nvalue of _a_ is critical to obtain the best SNR from the\ncorrelation function. In Fig. 6 we show the SNR fitting\nfor the Rabi measurement described in Section IV as a\nfunction of the value of _a_, and obtain an optimal value of\n_a_ = _−_ 0 _._ 04.\n\n**Figure 6:** SNR vs _a_ for the correlation function in Eq. 1\nand the Rabi measurement from Fig. 3.\n\nThe process of finding the optimal _a_ is analogous to finding the optimal projection axis in the IQ plane, commonplace of any reflectometry technique. It is independent of\nintegration time or modulation frequency (provided that\nthe modulation frequency is above the 1 _/f_ corner), but\ndependent on the raw values of SET 1 ( _t_ ) and SET 2 ( _t_ ). As\nsuch, it needs to be retuned for every pair of dots, since\nthe relative signals from SET 1 and SET 2 will vary. For\neach of the experiments described in thi",
+        "score": -6.772446732203165,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7916666666666665,
+        "rerank_score": -10.512930870056152,
+        "matched_nodes": [
+          "On",
+          "The",
+          "In",
+          "For",
+          "We",
+          "It"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4009,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs.md",
+        "title": "2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs",
+        "text": "and taking\n_U_ / _U_ ch = 1 and _x_ ≪ 1, we found that a crosstalk probability of\n10% (irrespective of whether it is prompt or delayed crosstalk)\nleads to _c_ = 0.101, whereas _c_ = 0.059 is obtained for the same\nprobability of afterpulsing. Notice that _c_ can be slightly greater\nthan the probability of crosstalk, which is defined as the probability of inducing one or more secondary avalanches. This is\npartly compensated by the fact that pixels at the borders of the\nSiPM have a lower crosstalk probability. The higher the number of pixels, the smaller these border effects. On the other\nhand, cascades of secondary avalanches due to any component\nof correlated noise contribute to increasing _c_, this effect being\nrelevant when the probability of correlated noise is high, as discussed in [10]. Analytical expressions of _c_ for crosstalk are\navailable in [8, 9], but the accurate value of _c_ should be obtained by simulation when afterpulsing is not negligible.\nAt high photon rates, where nonlinearity is significant, the\nuncompleted recovery of pixels reduces the gain factor due to\ncorrelated noise. For exponential light pulses, prompt crosstalk\nwas found to be more mitigated than delayed crosstalk and afterpulsing for the same probability. This is because seeds due\nto prompt crosstalk are mainly produced at the beginning of the\nlight pulse, just when the photon rate is highest. In contrast,\nseeds due to delayed crosstalk and afterpulsing are produced\nlater, when the photon rate is lower and the recovery of pixels is more advanced. These effects are more noticeable when\nstudying the shape of the output signal rather than the integrated\ncharge. In Fig. 4, averaged simulated signals for a probability\nof correlated noise of 20% (assuming a sole noise component\nin each case) are compared with that obtained in the absence\nof correlated noise. We used the same simulation parameters\nas before, i.e., τ d = 5 ns and τ rec = τ bulk = 10 ns. Prompt\ncrosstalk gives rise to an almost constant scale factor to the signal at _x_ = 0.5, but the effect is much lower at _x_ = 5 as a conse\n\n5\n\nFigure 4: Averaged SiPM signals simulated for different situations of correlated\nnoise (i.e., no noise, 20% of prompt crosstalk, 20% of afterpulsing, or 20% of\ndelayed crosstalk) and different amounts of seeds per pixel (i.e., _x_ = 0.5 and 5).\n\n|Shape|Probability density function|Mean ph. rate|\n|---|---|---|\n|Exponential|1<br>τd _e_−_t_/τd (_t_ ≥0)|_n_<br>2τd|\n|Rectangular|1<br>τw (0 ≤_t_",
+        "score": -6.788031656901041,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8541666666666666,
+        "rerank_score": -10.5443115234375,
+        "matched_nodes": [
+          "On",
+          "At",
+          "The",
+          "In",
+          "For",
+          "We"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6750,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "technology was measured to\n\n1 Generated by photons from a primary avalanche exiting the silicon,\nreflected on the entrance window and producing a sub-sequent avalanche.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 6\n\nFig. 9. (a) _V_ _bd_ is calculated by the extrapolation of the linear fit to the\nintercept with zero gain allowing all measurements to be presented at equal\n∆ _V_ . The gain is calculated from the slope of the linear fit and is given for\nbare, flat and microlens coated samples. Note that due to the coating, the\ngain is slightly increased. (b) a large increase of the cross-talk is seen for the\ncoated samples. The bare sample is expected to have no external cross-talk\nbut only internal. The error bars show the error of four measured identical\nchannels.\n\nFig. 8. (a) SEM image of two smaller size microlenses placed on top of the\nalignment marker. (b) Close view of the alignment markers filled with the\nmicrolenses. (c) Coated region with microlenses with coaxial illumination.\n(d) With a segmented diffuse light source, the reflection on each microlens\nis visible and illustrates the curved surface. In this mode, the flat regions\nbetween lenses appear black and the pixel structure (routing lines) is made\ninvisible due to the lenses.\n\nbe 32 _mV/K_ at room temperature. An integrated Pt1000\ntemperature sensor on the detector module gives access to\nprecise temperature monitoring. With the temperature in the\nlab stabilised by air conditioning, the variations were smaller\nthan _±_ 1 _K_ . To determine _V_ _BD_ and the gain (G), the bias\nvoltage was increased in steps of 1 _V_ and the current _I_ _Bias_\nrecorded. At the same time, pulse rates at thresholds of 0.5 and\n1.5 photo-electron amplitude (PE) ( _R_ 0 _._ 5, _R_ 1 _._ 5 ) were recorded\nwith a high-speed oscilloscope. The gain at every _V_ _BD_ point\nis calculated as the ratio between the current and the sum of\n\n_R_ 0 _._ 5 _P E_ and _R_ 1 _._ 5 _P E_ and is divided by the elementary charge\n(e) such that _G_ = _I_ _Bias_ _/_ ( _R_ 0 _._ 5 _P E_ + _R_ 1 _._ 5 _P E_ ) _/e_ . A linear fit is\nused to extrapolate _V_ _BD_ and the slope is extracted from the\nfit to determine the gain. The results are shown in Fig. 9. The\nmeasurement is performed with light illuminating the detector\nto enhance the precision of the current measurement but with\na sufficiently low pulse rate such that the random overlap of\npulses in time is negligible. The measurement is repeated for\nevery wavelength, and t",
+        "score": -6.81801875368754,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8541666666666666,
+        "rerank_score": -10.590445518493652,
+        "matched_nodes": [
+          "On",
+          "At",
+          "The",
+          "In",
+          "IEEE",
+          "To"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5674,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2713966__2310.16805__Cavity-mediated_iSWAP_oscillations_between_distant_spins.md",
+        "title": "2025__recid_2713966__2310.16805__Cavity-mediated_iSWAP_oscillations_between_distant_spins",
+        "text": "ates a second-order indirect coupling, i.e. the spin-spin coupling\nmediated by virtual photons, which enables the iSWAP gate.\n\n**II.** **DEVICE**\n\nThe device is fabricated on a [28] Si/SiGe heterostructure\nand was used in a previous experiment to demonstrate\ndispersive spin-spin coupling via spectroscopic measurements [25]. It contains an on-chip superconducting resonator with an impedance of 3 kΩ[29] and a double\nquantum dot (DQD) at both ends, with gate filters [30]\n(Fig. 1a). The resonator is etched out of a 5 nm to\n7 nm thick NbTiN film, and is 250 µm long. Its fundamental halfwave mode, with _ω_ _r_ _/_ 2 _π_ = 6 _._ 9105 GHz and a\nlinewidth of _κ_ _r_ _/_ 2 _π_ = 1 _._ 8 MHz ( _Q ≈_ 3800), is used in the\nexperiment for both two-qubit logic and dispersive spin\nreadout. The DQD is defined by a single layer of Al gate\nelectrodes (Fig. 1c). The gates labeled Res are galvanically connected to the resonator. On top of each DQD, a\npair of cobalt micromagnets is deposited (Fig. 1b). The\ndevice is mounted on a printed-circuit board attached\nto the mixing chamber of a dilution refrigerator with a\nbase temperature of 8 mK (see Appendix B for additional\ndetails on the experimental set-up).\n\nWe accumulate electrons in the DQD _i_ ( _i_ = 1 _,_ 2) via\nplunger gates Res and P _i_ . The interdot tunnel couplings\nare controlled by the tunnel-barrier gates, labeled T _i_ and\nB _i_ . The side gates RP _i_ and LP _i_ are used to control the\nelectrochemical potentials and thus the detuning for each\nDQD. In time-domain experiments, we pulse the detunings via the RP _i_ gates and drive single qubits by applying microwave bursts through the LP _i_ gates. The DC\nvoltages on these gates are chosen such that DQD 1 and\nDQD 2 are at the degeneracy point between the (1,0)(0,1) and the (2,3)-(3,2) charge configurations respectively, with both tunnel couplings _∼_ 4 _._ 8 GHz ((m,n) indicates the number of electrons in each DQD). At the\ncharge degeneracy point, the electron is delocalized between the two dots and the resulting charge dipole is\nmaximized, enabling a charge-photon coupling strength\nof _∼_ 192 MHz for both DQD’s. The magnetic field gradient produced by the micromagnets results in the hybridization of spin and charge states, which allows an\nindirect electric-dipole interaction between photons and\nspins (Fig. 1d). The spin-photon coupling can be effec\n\ntively switched off by pulsing the detuning via the RP _i_\ngate, to an operating point where the electron is tightly\nlo",
+        "score": -6.851819403330485,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8541666666666666,
+        "rerank_score": -10.642446517944336,
+        "matched_nodes": [
+          "On",
+          "At",
+          "The",
+          "In",
+          "We",
+          "It"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "On": 1.0,
+      "At": 1.0,
+      "Let": 1.0,
+      "De": 1.0,
+      "LE": 1.0,
+      "IS": 1.0,
+      "Th": 1.0,
+      "Ti": 1.0
+    },
+    "expanded_nodes": {
+      "On": 1.0,
+      "At": 1.0,
+      "Let": 1.0,
+      "De": 1.0,
+      "LE": 1.0,
+      "IS": 1.0,
+      "Th": 1.0,
+      "Ti": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "For": 0.7,
+      "We": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "IEEE": 0.7,
+      "It": 0.7,
+      "To": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 18,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.352282921783626,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 18.0,
+    "retrieval_latency_s": 4.352282921783626,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

@@ -1,0 +1,410 @@
+{
+  "query": "What is Time-of-Arrival used for?",
+  "expanded_query": "What is Time-of-Arrival used for? Time-of-Arrival ToA timing",
+  "mode": "graph_path",
+  "retrieved": [
+    {
+      "rank": 1,
+      "chunk_id": "2246",
+      "doc_id": "93",
+      "title": "2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device.md",
+      "score": 15.026024967118662,
+      "retriever": "graph",
+      "text": ", the emphasis was placed on the design of a 4H-SiC Low Gain\nAvalanche Detector (LGAD), especially the epitaxial structure and technical process which played the main roles. In addition, a simulation tool–\nRASER(RAdiation SEmiconductoR) was developed to simulate the performances including the electrical properties and time resolution of the\n4H-SiC LGAD we proposed. The working voltage and gain effectiveness\nof the LGAD were verified by the simulation of electrical performances.\nThe time resolution of the LGAD is (35.0 ± 0.2) ps under the electrical\nfield of -800 V, which is better than that of the 4H-SiC PIN detector.\n\n**Keywords:** Silicon carbide, LGAD, Radiation-resistant, Time resolution\n\n### **1 Introduction**\n\nLow gain avalanche detector (LGAD), as a novel detector technology,\nhas attracted extensive attention in recent years. By adding a gain layer\nunder the cathode of the PIN detector, a collision-ionization multiplication\nof the electron-hole pair occurs in the gain layer, resulting in excellent timing resolution[1]. In particular, for the requirements of the High Granularity\nTiming Detector (HGTD) in ATLAS and the End-cap Timing Layer (ETL)\nin CMS experiments, silicon-based LGAD with 50 ps time resolution has been\ndeveloped which can resist the radiation of 2×10 [15] _n_ _eq_ /cm [2] [2–5]. However, it\nhas been reported[6] that the charge collection efficiency (CCE) and time resolution of silicon-based LGAD will deteriorate with increasing irradiation flux\nand will not work normally under irradiation above 2×10 [15] _n_ _eq_ /cm [2] . In addition, in order to reduce power and improve the signal-to-noise ratio (SNR)\nof semiconductor detectors, silicon-based LGAD devices need to operate at a\nlow temperature of -30 ℃[7, 8], which greatly increases the operation cost of\ndetectors. Moreover, the low temperature cooling system not only increases\nvolume of the detector system, but also increases the difficulty of maintaining the stability of the detector system. Therefore, there is a high demand for\nresearch into a semiconductor detector with strong radiation resistance, excellent time resolution and stable operation at room temperature or even high\ntemperature.\nSilicon carbide (SiC), as the third generation semiconductor, has been\ninvestigated as a detector material for nearly 20 years[9]. In recent years, SiC\nhas received more attention due to the interest of semiconductor industries\n\nSpringer Nature 2021 L [A] TEX template\n\n_Design and simulation of"
+    },
+    {
+      "rank": 2,
+      "chunk_id": "695",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 14.846656984787284,
+      "retriever": "graph",
+      "text": "* **Time resolution**\n\nThe time resolution is one of the key parameters when assessing LGAD sensor performance and\n\nhas been explained in detail in [11]. To extract the DUTs’ time resolutions, the distributions of the\n\ndifference between the TOA of the DUTs and that of the time reference device (SiPM at DESY and\n\nCNM-0 at CERN) was used.\n\nDuring the DESY beam test campaign, there were two DUTs (labelled as 1 and 2 in equation 5.1)\n\nand one SiPM connected to the oscilloscope. Hence, it was possible to compute three time\n\n– 9 –\n\n0.0\n\n|Col1|ATLAS HGTD Preliminary Test Beam|\n|---|---|\n|5.0<br>7.5<br>0.0<br>2.5<br>5.0<br>7.5<br>0.0<br>|FBK-1.5 (-40 to -30oC, DESY 2022)<br>FBK-1.5 (-20oC, CERN 2021)<br>IHEP-1.5 (-43 to -30oC, DESY 2022)<br>IHEP-1.5 (-20oC, CERN 2021)<br>USTC-1.5 (-39 to -24oC, DESY 2022)|\n|.0<br>2.5|**ϕeq = 1.5x1015neqcm−2**|\n\n200 250 300 350 400 450 500 550\nBias Voltage[V]\n\n**Figure 4** : Collected charge as a function of bias voltage for different single-pad sensors: FBK-1.5,\n\nUSTC-1.5 and IHEP-1.5. Sensors FBK-1.5 and IHEP-1.5 were tested both at DESY with a 5 GeV\n\nelectron beam and at CERN with a 120 GeV pion beam, whereas sensor USTC-1.5 was tested only\n\nat DESY. The dashed line corresponds to the minimum required charge of 4 fC for a good timing\n\nmeasurement with the future HGTD.\n\ndifferences on an event-by-event basis between all these devices:\n\n\n\n\n\n_𝑡_ 1 − _𝑡_ 2\n\n_𝑡_ 1 − _𝑡_ _𝑆𝑖𝑃𝑀_\n\n_𝑡_ 2 − _𝑡_ _𝑆𝑖𝑃𝑀_\n\n(5.1)\n\nThe three distributions were fitted with a gaussian function, each of them giving a width _𝜎_ _𝑖𝑗_\nwhere _𝑖_ and _𝑗_ are the names of the devices used for each distribution. Assuming that the time\nresolution of the devices are independent, each of measured resolution _𝜎_ _𝑖𝑗_ corresponds to\n\n_𝜎_ _𝑖𝑗_ = _𝜎_ _𝑖_ ⊕ _𝜎_ _𝑗_ (5.2)\n\nwhere _𝜎_ _𝑖_ and _𝜎_ _𝑗_ are the resolutions of each device. This gives a system of three equations and three\nunknowns which can be solved analytically.\n\nNo matter which DUTs are tested, the SiPM time resolution should have the same value.\n\nOverall, during the DESY beam test campaign, the SiPM time resolution was measured 17 times\n\nwith this method and its average resolution was found to be _𝜎_ _𝑆𝑖𝑃𝑀_ = 62 _._ 6 ± 0 _._ 6 ps with variations\n\nup to 7 % due to differences in running conditions (e.g. bias voltage settings).\n\n– 10 –\n\n0\n\n### ATLAS HGTD Preliminary Test Beam\n\n|14|ATLAS HGTD Preliminary Test Beam|\n|---|---|\n|~~4~~<br>6<br>8<br>10<br>12<br><br>|**ϕeq = 2.5x1015neqcm−2**<br><br>FBK-2.5 (-46 t"
+    },
+    {
+      "rank": 3,
+      "chunk_id": "4559",
+      "doc_id": "197",
+      "title": "2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764025__2403.01052__Long-distance_signal_propagation_in_AC-LGAD.md",
+      "score": 14.806226696198433,
+      "retriever": "graph",
+      "text": "1\n\n# Long-Distance Signal Propagation in AC-LGAD\n\nC. Bishop, A. Das, J. Ding, M. Gignac, F. Martinez-McKinney, S. M. Mazza, A. Molnar,\nN. Nagel, M. Nizam, J. Ott, H. F.-W. Sadrozinski, B. Schumm, A. Seiden, T. Shin,\n\nA. Summerell, M. Wilder, Y. Zhao\n\n_SCIPP, Univ. of California Santa Cruz, CA 95064, USA_\n\n_Abstract–_ We investigate the signal propagation in AC-LGAD (aka RSD), which are LGAD with a\ncommon N [+] layer and segmented AC-coupled readout contacts, by measuring the response to IR laser TCT\non a large selection of AC-LGAD with strip readout. The interest for this topic derives from the realization\nthat while large charge sharing between neighboring strips is essential for good position resolution, large\nsharing beyond the next neighbor generates background signals which in general are detrimental to the\nsensor goal of low occupancy. Using AC-LGAD with strip readout produced by Hamamatsu Photonics\n(HPK), we evaluate the effects of a variety of sensor properties, including geometrical parameters (strip\nlength, width), process parameters like the N [+] layer resistivity, the coupling capacitance, and the thickness\nof the bulk on the signal sharing and the position resolution.\n\nPACS: 29.40.Gx, 29.40.Wk, 78.47jc\n\nKeywords: fast silicon sensors; charge multiplication; AC-LGAD strips; charge sharing.\n\n**1.** **Introduction**\n\nLow-gain Avalanche Detectors (LGAD) have been recently introduced as fast semiconductor timing\nsensors [1,2]. In their large-scale experimental applications, the High Granularity Timing Detector (HGTD)\nin ATLAS [3] and the MIP Timing Detector (MTD) in CMS [4], their segmentation is limited to pads with\nabout 1 mm pitch by consideration of power, fill-factor, and field uniformity. While the fill-factor and\nuniformity problems could be solved for small-scale applications with Trench-Isolated LGAD [5], an\nacceptable power density will limit the spatial resolution unless charge sharing between distant contacts is\nemployed. This is the principle of the AC-LGAD technology (aka Resistive Silicon Detector RSD) [6-8]\nwhich is based on a complete integration of four of the sensor layers in common sheets of the P-type bulk,\nthe P [+] gain layer, the N [+] layer and a dielectric sheet, separating the first three from the segmented metal\nreadout contacts (Fig. 1). A signal originating in the bulk and amplified in the gain layer is then shared\nbetween several electronics channels, allowing reconstruction of signal location with a resolution which"
+    },
+    {
+      "rank": 4,
+      "chunk_id": "3270",
+      "doc_id": "135",
+      "title": "2024__recid_2713370__2310.13926__Performance_of_AC-LGAD_strip_sensors_designed_for_the_DarkSHINE_experiment",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2713370__2310.13926__Performance_of_AC-LGAD_strip_sensors_designed_for_the_DarkSHINE_experiment.md",
+      "score": 14.67807922835869,
+      "retriever": "graph",
+      "text": "ng measurements of\n\nthe High Granularity Timing Detector of ATLAS[4] and the Endcap Timing Layer of CMS[5] for\n\n– 1 –\n\n(a) DarkSHINE experiment. (b) DarkSHINE tracking system.\n\n**Figure 1** . (a) Detector sketch of the DarkSHINE experiment[1]. Along the electron incident direction from\nleft to right in the picture, the red material with a blue brace is the dipole magnet. The tagging tracker is\nplaced at the center of it. The recoil tracker is located at the edge of the magnet. The target is caught in the\nmiddle. ECAL is placed after the recoil tracker, followed by HCAL. (b) Sketch of the DarkSHINE tracking\nsystem. From left to right: tagging tracker (with seven layers of tracking module), the tungsten target, and\nthe recoil tracker (with six layers of tracking module). For each layer, two strip sensors are shown in the\nsketch, placed at a small angle (100 mrad).\n\nthe High-Luminosity Large Hadron Collider. Figure 2-(a) shows a sketch of a LGAD sensor. The\n\nLGAD sensors are fabricated on high-resistivity _𝑝_ -type substrates with thickness of about 50 _𝜇_ m.\nBased on traditional _𝑛_ -in- _𝑝_ silicon sensor, the LGAD sensor has an additional highly-doped _𝑝_ [+]\n\nregion (namely “gain layer”) under the parallel _𝑛_ - _𝑝_ junction. When a bias voltage is applied across\nthe sensor, this _𝑝_ [+] layer will be depleted and create a strong local electric field, therefore introducing\n\nan internal gain.\n\n(a) LGAD sensor. (b) AC-LGAD sensor.\n\n**Figure 2** . (a) Sketch of a section of a single-pad standard LGAD and (b) a section of a segmented AC-LGAD\nsensor[6]. The sketches are not to actual scale.\n\nIn order to achieve better spatial resolution while maintaining similar gain and fast timing\n\nperformance, the AC-coupled LGAD (AC-LGAD) technology has been brought up where the\n\nsignal are capacitively induced and shared among the metal AC-pads. Figure 2-(b) shows a sketch\n\nof an AC-coupled LGAD sensor. The AC-pads of the sensor for signal readout are placed on a\nthin dielectric layer which is grown over the _𝑛_ [+] layer of the sensor. The AC-LGADs has much\n\n– 2 –\n\nless doped _𝑛_ [+] layer comparing to the _𝑛_ [++] layer in the standard LGADs. It results in an increased\ninter-pad resistance[6]. A highly-doped _𝑛_ [++] implant is still preserved at the edge of the active area\n\nof the sensor, in order to have DC-connection for electron current draining. The AC-LGAD design\n\ncan easily adapt to any detector geometry since the segmentation can be achieved by the AC-pads\n\nof a"
+    },
+    {
+      "rank": 5,
+      "chunk_id": "3269",
+      "doc_id": "135",
+      "title": "2024__recid_2713370__2310.13926__Performance_of_AC-LGAD_strip_sensors_designed_for_the_DarkSHINE_experiment",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2713370__2310.13926__Performance_of_AC-LGAD_strip_sensors_designed_for_the_DarkSHINE_experiment.md",
+      "score": 14.586730942110556,
+      "retriever": "graph",
+      "text": "nstruction and spatial resolution test** **6**\n\n3.1 Measurement setup 6\n\n3.2 Position reconstruction and spatial resolution 7\n\n**4** **Summary** **9**\n\n**1** **Introduction**\n\nDarkSHINE experiment[1] is a newly proposed electron-on-fixed-target experiment searching for\n\ndark photon produced via electron and nucleon interaction. The dark photon then decays to a pair\n\nof dark matter candidates, which is called invisible decay[2]. Dark matter pairs escape detection as\n\nmissing momentum and missing energy, also resulting in lower momentum and larger recoil angle\n\nof the recoil electron. The missing momentum signature is used to identify signal from various\n\nStandard Model background processes. Therefore, reconstruction of position and momentum of\n\nthe incident and recoil electrons is crucial for this experiment.\n\nFigure 1-(a) shows the sub-detector systems of DarkSHINE experiment. A tracking system\n\nis placed in a downward magnetic field of around 1.5 T which is provided by a superconducting\n\nmagnet system. The magnetic filed direction is defined as the _𝑦_ -direction and the electron beam\n\ndirection as the _𝑧_ -direction, hence the electron will be deflected in the _𝑥_ -direction perpendicular to\n\nthe magnetic field. As shown in Figure 1-(b), the DarkSHINE tracking system consists of seven\n\nlayers of tagging modules and six layers of recoil modules, while a tungsten target with 0 _._ 1X 0 decay\n\nlength is placed in between. Each layer of tracking module consists of two silicon sensors with\n\nlength of at least 20 mm, placed at a small angle (100 mrad). The sensors are expected to be as thin\n\nas possible, in order to avoid multi-track events caused by the interaction between charged particles\n\nand the nucleus of the detector material. The designed position (angle) resolution of the tracking\n\nsystem is better than 10 _𝜇_ m (0.1%) at the direction of the electron deflection. To achieve that,\n\nseveral small prototype sensors are designed with technology of AC-coupled Low-Gain Avalanche\n\nDetectors (AC-LGADs, also called Resistive Silicon Detectors).\n\nThe Low-Gain Avalanche Detector (LGAD)[3] has been developed in recent years, with a novel\n\nprecise detector technology initially proposed and designed for the precise timing measurements of\n\nthe High Granularity Timing Detector of ATLAS[4] and the Endcap Timing Layer of CMS[5] for\n\n– 1 –\n\n(a) DarkSHINE experiment. (b) DarkSHINE tracking system.\n\n**Figure 1** . (a) Detector sketch of the DarkSHINE experiment[1]. Along"
+    },
+    {
+      "rank": 6,
+      "chunk_id": "694",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 13.535882238631181,
+      "retriever": "graph",
+      "text": "/cm [2], respectively. Bias\nvoltages were kept lower than the single event burnout (SEB) voltage at which the sensor dies due to\n\na large amount of energy deposited by a highly energetic particle in the active zone [28]. All sensors\n\ncharacteristics are given in section 2. In both figures, the results come either from sensors tested at\n\nDESY with 5 GeV electrons or from sensors tested at CERN with 120 GeV pions. The methods to\n\nanalyse these two types of data from different tracking devices are described in sections 4.1 and 4.2.\n\n– 8 –\n\n**Figure 3** : Charge distribution for the sensor USTC-1.5 operated at 350 V. The distribution was\n\nfitted with a Landau-Gaussian convoluted function. The collected charge, defined as the most\n\nprobable value, is 6 _._ 3 ± 0 _._ 03 fC.\n\nFigure 4 shows that after an irradiation at a fluence of 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2], the collected charge\nis above the minimum required charge of 4 fC needed for a good timing measurement with the\n\nfuture HGTD detector. This minimum is reached at around 270 V for all sensors, however the\n\nsensor FBK-1.5 was tested at higher bias voltages. For sensor IHEP-1.5, the same performances\n\nwere found whether measurements were performed with a 5 GeV electron beam at DESY or with a\n\n120 GeV pion beam at CERN. For sensor FBK-1.5, at the same bias voltage, the collected charge\n\nwas slightly higher for measurements at DESY than for those at CERN. Between 350 V and 400 V,\n\nwhich is the range with common bias voltage, the sensors manufactured by IHEP and USTC showed\n\nbetter performances than those from FBK.\n\nThe comparison between figures 4 and 5 shows that the higher the fluence, the worse the\n\ncollected charge at the same bias voltage. Indeed, figure 5 shows that after an irradiation at a\nfluence of 2 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2], the minimum required collected charge of 4 fC is reached for a bias\nvoltage around 370 V for sensor IHEP-2.5, around 500 V for sensor FBK-1.5 and 470 V for sensor\n\nUSTC-2.5. Comparing the different sensors at this fluence, those manufactured by IHEP show\n\nbetter performance than sensors from FBK and USTC at the same bias voltage. This discrepancy\nis less significant at a fluence of 1 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] .\n\n**5.3** **Time resolution**\n\nThe time resolution is one of the key parameters when assessing LGAD sensor performance and\n\nhas been explained in detail in [11]. To extract the DUTs’ time resolutions, the distributions of the\n\ndifference between the TOA of t"
+    },
+    {
+      "rank": 7,
+      "chunk_id": "684",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 13.271014683175618,
+      "retriever": "graph",
+      "text": "ity is also studied as a function of the position of\n\nthe incident particle inside the sensor pad.\n\nKeywords: LGAD, Silicon sensors, Timing detectors, HL-LHC, ATLAS, HGTD\n\n[ArXiv ePrint: 2303.07728](http://arxiv.org/abs/2303.07728)\n\n### **Contents**\n\n**1** **Introduction** **1**\n\n**2** **Sensors** **2**\n\n2.1 FBK devices 3\n\n2.2 IHEP-IME devices 4\n\n2.3 USTC-IME devices 4\n\n**3** **Test beam set-up** **4**\n\n3.1 Set-up at DESY 5\n\n3.2 Set-up at CERN 5\n\n**4** **Data analysis** **6**\n\n4.1 Track reconstruction for data taken during DESY beam tests with EUDET-type\n\ntelescope 6\n\n4.2 Track reconstruction for data taken during CERN SPS beam tests with MALTA\n\ntelescope 7\n\n4.3 Oscilloscope data processing 7\n\n**5** **Sensors performance results** **8**\n\n5.1 Data selection 8\n\n5.2 Collected charge 8\n\n5.3 Time resolution 9\n\n5.4 Hit reconstruction efficiency 12\n\n5.4.1 Efficiency as a function of the bias voltage 13\n\n5.4.2 Efficiency uniformity 14\n\n**6** **Conclusion and outlook** **18**\n\n**1** **Introduction**\n\nThe High Granularity Timing Detector (HGTD) [1, 2] will be added to the ATLAS experiment [3]\n\nduring the so-called Phase-II upgrade preceding the high-luminosity phase of the LHC (HL\nLHC) [4, 5]. Low Gain Avalanche Detector (LGAD) sensors [6] have been extensively studied\n\nduring the R&D phase of the HGTD project. These sensors must meet performance targets\n\nregarding time resolution of 50 ps (70 ps) per hit, collected charge _>_ 4 fC and hit efficiencies of 97%\n(95%) at the start (end) of their lifetime. The expected maximum fluence is 2 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] [2].\nThese requirements should be achieved taking into account a discriminator of about 2 fC of the\n\nfront-end ASIC foreseen for HGTD, ALTIROC [7].\n\n– 1 –\n\nMany previous beam test campaigns were devoted to quantifying LGAD performances be\nfore [8, 9] and after [10, 11] irradiation. A variety of pad structures, such as single-pad diodes\n\nand segmented arrays of pad diodes with various granularities, from several vendors were tested\n\nto prove they meet the requirements to be operated over the entire HL-LHC lifetime. Irradiated\ndevices met the required performance up to 10 [15] n _𝑒𝑞_ /cm [2], however, some optimization was still\nrequired.\n\nIn beam tests [11] as well as in laboratory measurements [12], it was observed that the addition\n\nof carbon in the gain layer helps reducing the operating voltage needed to collect the same charge by a\n\nreduction of the acceptor removal rate after irradiation, hence impr"
+    },
+    {
+      "rank": 8,
+      "chunk_id": "5043",
+      "doc_id": "218",
+      "title": "2024__recid_2782083__2405.02550__Gain_suppression_study_on_LGADs_at_the_CENPA_tandem_accelerator",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2782083__2405.02550__Gain_suppression_study_on_LGADs_at_the_CENPA_tandem_accelerator.md",
+      "score": 10.635837454593878,
+      "retriever": "graph",
+      "text": "0.1016/j.nima.2018.08.040.\n\n[3] HGTD. Technical Design Report: A High-Granularity Timing Detector for the ATLAS Phase-II Upgrade. Technical Report CERN-LHCC-2020-007. ATLAS-TDR-031, CERN, Geneva, Jun 2020. URL `[https://cds.cern.ch/record/](https://cds.cern.ch/record/2719855)`\n`[2719855](https://cds.cern.ch/record/2719855)` .\n\n[4] CMS collaboration. A MIP Timing Detector for the CMS Phase-2 Upgrade. Technical Report CERN-LHCC-2019-003.\nCMS-TDR-020, CERN, Geneva, Mar 2019. URL `[https://cds.cern.ch/record/2667167](https://cds.cern.ch/record/2667167)` .\n\n8\n\n[5] Electron-Ion collider. URL `[https://www.bnl.gov/eic/](https://www.bnl.gov/eic/)` .\n\n[6] S. M. Mazza. An LGAD-Based Full Active Target for the PIONEER Experiment. _Instruments_, 5(4):40, 2021. doi:\n10.3390/instruments5040040.\n\n[7] M. Carmen Jimanez-Ramos et al. Study of ionization charge density-induced gain suppression in LGADs. _Sensors_,\n22(3), 2022. doi: 10.3390/s22031080. URL `[https://www.mdpi.com/1424-8220/22/3/1080](https://www.mdpi.com/1424-8220/22/3/1080)` .\n\n[8] E. Curr´as, M. Fern´andez, and M. Moll. Gain reduction mechanism observed in Low Gain Avalanche Diodes. _Nucl._\n_Instrum. Meth. A_, 1031:166530, May 2022. doi: 10.1016/j.nima.2022.166530. URL `[http://dx.doi.org/10.1016/j.nima.](http://dx.doi.org/10.1016/j.nima.2022.166530)`\n`[2022.166530](http://dx.doi.org/10.1016/j.nima.2022.166530)` .\n\n[9] D.W. Storm et al. Status of and operating experience with the university of washington superconducting booster\nlinac. _Nucl. Instrum. Meth A 287, 247_, 1990.\n\n[10] R. Padilla et al. Effect of deep gain layer and carbon infusion on LGAD radiation hardness. _Journal of Instrumentation_,\n15(10):P10003, 2020. doi: 10.1088/1748-0221/15/10/P10003. URL `[https://dx.doi.org/10.1088/1748-0221/15/10/P10003](https://dx.doi.org/10.1088/1748-0221/15/10/P10003)` .\n\n[11] M. Mayer. Simnra user’s guide. _Report IPP 9/113, Max-Planck-Institut f¨ur Plasmaphysik, Garching, Germany_, 1997.\n\n[12] Pstar. URL `[https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html](https://physics.nist.gov/PhysRefData/Star/Text/PSTAR.html)` .\n\n[13] S. M. Mazza et al. Synchrotron light source X-ray detection with Low-Gain Avalanche Diodes. _Journal of Instru-_\n_mentation_, 18(10):P10006, 2023. doi: 10.1088/1748-0221/18/10/P10006.\n\n9"
+    }
+  ],
+  "seed_nodes": [
+    "Timing",
+    "ToA",
+    "Time",
+    "Timing Detector",
+    "High Granularity Timing Detector",
+    "Tim",
+    "Ming",
+    "Endcap Timing Layer"
+  ],
+  "expanded_nodes": [
+    "AC-LGAD",
+    "ASIC",
+    "ATLAS",
+    "Bias",
+    "CMOS",
+    "CMS",
+    "Charge",
+    "Chinese Academy",
+    "Coherent Manipulation",
+    "Coherent Optical Transitions",
+    "Deterministic Coupling",
+    "Endcap Timing Layer",
+    "Geant4",
+    "Guo-Ping Guo",
+    "HGTD",
+    "High Granularity Timing Detector",
+    "High-Luminosity Large Hadron",
+    "Innovation Program",
+    "Key Laboratory",
+    "LGAD",
+    "Ming",
+    "National Natural Science Foundation",
+    "Not Irradiated",
+    "Nuclear Instruments",
+    "Particle Physics",
+    "Photonic Crystal",
+    "Quantum Information",
+    "Quantum Science",
+    "Resistive Silicon",
+    "SPAD",
+    "Sensors",
+    "Silicon",
+    "Single Nitrogen Vacancy Center",
+    "Standard Model",
+    "Technical Design",
+    "Technical Design Report",
+    "Threshold",
+    "Tim",
+    "Time",
+    "Timing",
+    "Timing Detector",
+    "ToA",
+    "Track"
+  ],
+  "paths": [
+    [
+      "Timing",
+      "LGAD"
+    ],
+    [
+      "Timing",
+      "Time"
+    ],
+    [
+      "Timing",
+      "Geant4"
+    ],
+    [
+      "Timing",
+      "Silicon"
+    ],
+    [
+      "Timing",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timing",
+      "ASIC"
+    ],
+    [
+      "Timing",
+      "SPAD"
+    ],
+    [
+      "Timing",
+      "CMS"
+    ],
+    [
+      "ToA",
+      "Time"
+    ],
+    [
+      "ToA",
+      "LGAD"
+    ],
+    [
+      "ToA",
+      "Bias"
+    ],
+    [
+      "ToA",
+      "Sensors"
+    ],
+    [
+      "ToA",
+      "HGTD"
+    ],
+    [
+      "ToA",
+      "Not Irradiated"
+    ],
+    [
+      "ToA",
+      "ATLAS"
+    ],
+    [
+      "ToA",
+      "Track"
+    ],
+    [
+      "Time",
+      "LGAD"
+    ],
+    [
+      "Time",
+      "Threshold"
+    ],
+    [
+      "Time",
+      "ASIC"
+    ],
+    [
+      "Time",
+      "Geant4"
+    ],
+    [
+      "Time",
+      "Timing"
+    ],
+    [
+      "Time",
+      "ATLAS"
+    ],
+    [
+      "Time",
+      "Charge"
+    ],
+    [
+      "Time",
+      "CMOS"
+    ],
+    [
+      "Timing Detector",
+      "LGAD"
+    ],
+    [
+      "Timing Detector",
+      "CMS"
+    ],
+    [
+      "Timing Detector",
+      "ATLAS"
+    ],
+    [
+      "Timing Detector",
+      "HGTD"
+    ],
+    [
+      "Timing Detector",
+      "ASIC"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design Report"
+    ],
+    [
+      "Timing Detector",
+      "Technical Design"
+    ],
+    [
+      "Timing Detector",
+      "Particle Physics"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "CMS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "ATLAS"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "HGTD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Endcap Timing Layer"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "AC-LGAD"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Time"
+    ],
+    [
+      "High Granularity Timing Detector",
+      "Silicon"
+    ],
+    [
+      "Tim",
+      "Particle Physics"
+    ],
+    [
+      "Tim",
+      "Coherent Manipulation"
+    ],
+    [
+      "Tim",
+      "National Natural Science Foundation"
+    ],
+    [
+      "Tim",
+      "Chinese Academy"
+    ],
+    [
+      "Tim",
+      "Deterministic Coupling"
+    ],
+    [
+      "Tim",
+      "Single Nitrogen Vacancy Center"
+    ],
+    [
+      "Tim",
+      "Photonic Crystal"
+    ],
+    [
+      "Tim",
+      "Coherent Optical Transitions"
+    ],
+    [
+      "Ming",
+      "Quantum Information"
+    ],
+    [
+      "Ming",
+      "Key Laboratory"
+    ],
+    [
+      "Ming",
+      "Guo-Ping Guo"
+    ],
+    [
+      "Ming",
+      "Charge"
+    ],
+    [
+      "Ming",
+      "Sensors"
+    ],
+    [
+      "Ming",
+      "National Natural Science Foundation"
+    ],
+    [
+      "Ming",
+      "Innovation Program"
+    ],
+    [
+      "Ming",
+      "Quantum Science"
+    ],
+    [
+      "Endcap Timing Layer",
+      "LGAD"
+    ],
+    [
+      "Endcap Timing Layer",
+      "CMS"
+    ],
+    [
+      "Endcap Timing Layer",
+      "ATLAS"
+    ],
+    [
+      "Endcap Timing Layer",
+      "High Granularity Timing Detector"
+    ],
+    [
+      "Endcap Timing Layer",
+      "Standard Model"
+    ],
+    [
+      "Endcap Timing Layer",
+      "AC-LGAD"
+    ],
+    [
+      "Endcap Timing Layer",
+      "Resistive Silicon"
+    ],
+    [
+      "Endcap Timing Layer",
+      "High-Luminosity Large Hadron"
+    ]
+  ],
+  "metrics": {
+    "retrieval_latency_s": 0.07085895538330078,
+    "generation_latency_s": 0.0,
+    "unique_sources": 5,
+    "seed_node_count": 8,
+    "expanded_node_count": 43,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0
+  },
+  "answer": ""
+}

@@ -1,0 +1,403 @@
+{
+  "benchmark": {
+    "query_id": "com007",
+    "query_type": "comparative",
+    "query": "Compare hybrid RAG and GraphRAG.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "GraphRAG",
+      "RAG"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare hybrid RAG and GraphRAG.",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8139,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3065173__2510.05301__Switchable_spinphoton_coupling_with_hole_spins_in_single-quantum_dots.md",
+        "title": "2026__recid_3065173__2510.05301__Switchable_spinphoton_coupling_with_hole_spins_in_single-quantum_dots",
+        "text": "λ_ _∥_ _/_ 2 _π_ (dashed, right axis) versus _F_ _x_ .\n(c,d) Same as (a,b) but versus _F_ _y_ . (e,f) Same as (a,b) for diagonal bias _F_ _x_ = _F_ _y_ with _B_ _y_ = 1 T. (g,h) Same as (a,b) but versus\nharmonic length.\n\ncoupling would require a large change in length. In practice, it is more effective to detune away from the cavity\nfrequency via _ℓ_ _x_ changes than to force _|_ _**λ**_ _⊥_ _|/_ 2 _π →_ 0.\nAlongside the transverse coupling, we plot\nRe( _λ_ _∥_ _e_ _[iφ]_ _[∥]_ ) = _λ_ _∥_ cos _φ_ _∥_, which equals the Larmorfrequency shift from an electric-field fluctuation\n_δF_ = _F_ zpf . This quantifies susceptibility to charge noise.\nIn Fig. 4(b), the qubit sits at a sweet spot at _F_ _x_ = 0 for\n**B** _∥_ _x_, and is largely insensitive to _F_ _y_ in Fig. 4(d) as well.\nThe longitudinal coupling is negligible _λ_ _∥_ cos _φ_ _∥_ _≈_ 0 and\nbarely changes with _ℓ_ as shown in Fig. 4(h). This metric\nhelps identify the optimal strategy: the qubit can be\nefficiently tuned away from the cavity frequency both by\nchanging _F_ _x_ or _ℓ_ _x_, but _F_ _x_ _̸_ = 0 displaces the operating\npoint away from the sweet spot, while changing _ℓ_ _x_\npreserves it. Therefore, in terms of coherence properties,\nthe preferred on/off protocol is the harmonic-length\ntuning, which keeps the hole spin at the sweet spot.\n\n**V.** **QUANTUM STATE TRANSFER AND**\n**TWO-QUBIT GATES**\n\nTo evaluate the potential of the hybrid spin-cQED\nsystem in the single-dot regime, we study quantum\nstate transfer between the qubit and the photon [36], a\nsideband-based two-qubit gate protocol [85], and an offresonant dispersive two-qubit gate [36]. We focus now on\nunstrained Ge devices since they are the most promising\nfor both single-dot spin-photon coupling and tunability.\nFrom now on, we choose the cavity frequency _ω_ _R_ _/_ 2 _π_ = 3\nGHz for all protocols.\n\n**A.** **Quantum state transfer**\n\nWhen the qubit and cavity are in resonance _|_ _**ω**_ _L_ _|_ = _ω_ _R_,\nthe spin undergoes a coherent exchange with the photon, preserving the total number of excitations within the\nrotating-wave approximation (RWA). This enables translating spin quantum information into photonic quantum\ninformation, which can be used to interface with distant\ncQED-compatible systems.\nThe pulse sequence for performing this quantum state\ntransfer (QST) is shown in Fig. 5(a). As the initial working point, we take _B_ _x_ = 1 T and _ℓ_ _x_ = _ℓ_ _y_ = 30 nm, yielding _|_ _**λ**_ _⊥_ _|/_ 2 _π ≈_ 21 MHz and _|_ _**ω**_ _L_ _|/",
+        "score": -5.703310777516029,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7563374030788509,
+        "rerank_score": -8.863921165466309,
+        "matched_nodes": [
+          "AND",
+          "The",
+          "In",
+          "To",
+          "We",
+          "As"
+        ],
+        "path_nodes": [
+          "AND"
+        ],
+        "community_id": "AND",
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 3858,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2737032__2312.08967__Strongly_coupled_spins_of_silicon-vacancy_centers_inside_a_nanodiamond_with_sub-megahertz_.md",
+        "title": "2024__recid_2737032__2312.08967__Strongly_coupled_spins_of_silicon-vacancy_centers_inside_a_nanodiamond_with_sub-megahertz_",
+        "text": "eratures [11]. Increasing the operation temperature is desirable to reduce technical overhead. A potential solution are SiV _[−]_ in nanodiamonds\n(NDs) with modified electron-phonon interactions [12]\nwhich can further be integrated in hybrid quantum systems such as photonic crystal cavities [13, 14].\n\nIn this letter, we show the observation of spins in a\nND strongly coupled to the electron spin of a SiV- center. The coupling strength of one of the spins is in good\nagreement to theoretical modeling of a nearest neighbor\n13 C nuclear spin [15]. We further show that for a SiV _−_\n\nin a ND the main mechanism for decoherence of its spin\nqubit, which is phonon-mediated dephasing, can already\nbe mitigated at temperatures of around 4K. The resulting suppressed decoherence rate, access to a local memory and fast initialization rates lay the foundations for\ncoherent control of an integratable hybrid quantum network node based on SiV _[−]_ s in NDs.\n\nThe SiV _[−]_ is a point defect in the diamond lattice,\nwhere a Silicon atom (Si) with an excess electron is\nsituated between two adjacent carbon vacancies (V) as\n\nschematically depicted in FIG. 1 a). An atomic force microscope scan of the ND containing the investigated SiV _[−]_\n\nrevealed an agglomeration of NDs as shown in FIG. 1 b).\nThe dimensions of the cluster are of a small enough size\nto be integratable into a cavity system [16], while individual NDs that form the cluster are of a size where a modified phonon-density of states (PDOS) can be expected\n\n[12]. The electronic level scheme of the SiV _[−]_ consists of\nfour spin-degenerate orbital states, two of which form the\nground-state (GS) and excited-state (ES), respectively.\nAs a consequence four optically active transitions arise,\nwhich we label as A, B, C and D. For the remainder of\nthe text we only use transition C, for which the spin levels are depicted in FIG. 1 c). The spin degeneracy of the\nGS and ES levels can be lifted by applying a magnetic\nfield, giving access to an electron spin qubit, e.g the one\nlabeled by _|↓⟩_ and _|↑⟩_ [17, 18]. When using such a spinqubit at liquid helium temperature, its coherence time is\nmainly limited through phonon-induced dephasing. The\nlatter can be mitigated by either cooling the system to\nmK temperatures [11], changing the PDOS [12] or increasing the GS-splitting, which suppresses phonon absorption [19, 20]. The use of NDs is an appealing choice\nas a host for the SiV _[−]_, since they can combine two of\nthe mentioned effe",
+        "score": -6.320545341343545,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7563374030788509,
+        "rerank_score": -9.813512802124023,
+        "matched_nodes": [
+          "An",
+          "The",
+          "In",
+          "For",
+          "We",
+          "As"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4775,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "ed pixels within the trigger acceptance. Compare to figure 1\nfor pixel layout.\n\nAn in-pixel efficiency map is obtained by projecting the reconstructed particle intercepts with the DESY\ndSiPM ( _x_ _track_, _y_ _track_ ) into a single pixel and averaging\nthe efficiency for the binned in-pixel positions. Such\na map is shown in figure 5, the displayed area corresponds to the one shown in figure 1. As can be seen, the\nDESY dSiPM is highly efficient when the electrons hit\nthe SPADs, but inefficient in the area in-between. The\ngeometric setup, due to an inhomogeneous distribution\nof material, does not allow estimating the track resolution at the position of the dSiPM. However, assuming a\ntrack resolution of about 6.1 µm, the results are in agreement with the hypothesis of smeared-out position information and a fully efficient SPAD of the nominal area.\nThis is supported by the fact that the measured total efficiency of about 32 % agrees with the fill factor of the\nsensor. Systematic effects due to dead time and fake hits\nare estimated to be on the order of a few percent.\nIn figure 6, the distribution of the residuals between\n_x_ _track_ and the position measurement provided by the\nDESY dSiPM itself ( _x_ _hit_ ) is shown. For a fully efficient\nsensor with the same pitch, the core of the distribution\nwould be expected to resemble a box, convolved with a\nGaussian to account for the finite track resolution. Due\nto the inefficiency between SPADs, shown in figure 5, a\ntwo-peaked structure appears instead. The background,\nvisible for values below −40 µm and above 40 µm, is\n\n60\n\n50\n\n40\n\n30\n\n20\n\n10\n0 −0.4 −0.2 0 0.2 0.4\nt dSiPM2 -t dSiPM1 [ns]\n\nFigure 7: Time residual between the time stamps provided by the two\ninstalled DESY dSiPMs, operated at a temperature of about 0 [◦] C and\nan over voltage of 2 V.\n\ndue to an association of noise hits. The standard devia\ntion of the distribution of about 21 µm is within expectations for a sensor of the given pitch and confirms a\nspatial resolution on the level of a single pixel.\n\nTo study the time resolution of the DESY dSiPM,\nthe residual between the time stamps provided by the\ntwo installed DESY dSiPMs is calculated. The sec\nond DESY dSiPM is operated at a similar temperature\nand over voltage, and referred to as dSiPM2. The time\nstamps are corrected for differential non-linearity in the\nTDCs. Corrections for propagation delays are expected\nto be small, due to the symmetry of the setup, and are\nnot applied. The corresponding distri",
+        "score": -6.482260562748573,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7563374030788509,
+        "rerank_score": -10.062305450439453,
+        "matched_nodes": [
+          "An",
+          "The",
+          "In",
+          "For",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3847,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": ", whereas (c) and (d) consider BI, IR, and AD scattering. The corresponding disorder parameters are the same as in Fig. 10.\n\ncyclotron radius w ≪ cℏk F /eB [40, 79–81]. Such a reduced\ndegeneracy is also possible without any spin polarization if\nthe valley splitting happens to be larger than the Fermi energy\nso that g v = 1 in the system.\n\nIn the strong screening limit q T F /2k F ≫ 1 (for the density\nrange of interest to us n e ≪ g [3] /16πa [2] B [), mobility increases]\nmonotonically with increasing g for a given impurity configuration. This monotonic behavior of mobility versus g has\nbeen shown in a comprehensive analysis of valley-dependent\n2D transport in (100), (110), and (111) Si inversion layers\nwith the same bare Coulomb disorder [39, 40]. A similar\nphenomenon was observed in an ambipolar gate-controlled\nSi(111)-vacuum field effect transistor, where by tuning the external gate voltage the 2D electron and hole transport can be\nstudied within the same device against the same background\nCoulomb disorder [42]. For the ambipolar transistor discussed\nin Ref. [42], the effective valley degeneracy is 6 for a 2D electron system,, whereas it is 1 for a 2D hole system, resulting\nin the peak electron mobility being approximately 20 times\ngreater than the peak hole mobility at low temperatures. This\ncan be qualitatively understood from the expression of the\nThomas-Fermi screening wave vector q T F = g/a B, implying\nthat higher g leads to improved screening and consequently,\nhigher mobility. However, the relationship between mobility\nand g is generally nontrivial, as g influences both q T F ∝ g\nand k F ∝ g [−][1][/][2] . For remote impurity scattering, it is evident from Eqs. (15), (16), (58), and (59) that µ RI ∝ g [1][/][2] and\n\nµ qRI ∝ g [3][/][2] . On the other hand, for short-range impurity scattering, µ S = µ qS ∝ g [2], as indicated by Eq. (20). As discussed\nin Section III, the g-dependence of background impurity scattering crosses over from short-range to remote impurity scattering behavior with increasing electron density, as detailed in\nEqs. (25-27). The crossover density is at n e = g/16πw [2] . For\ninterface roughness scattering, the mobilities µ IR and µ qIR\nare proportional to g [3] at low densities n e < g/4πΛ [2], transitioning to a long-range behavior where µ IR ∝ g [1][/][2] and\nµ qIR ∝ g [3][/][2] at higher densities, as shown in Eqs. (34-38).\nHowever, IR scattering at low densities n e < g/4πΛ [2] is typically overshadowed by the dominant sca",
+        "score": -6.517523908541034,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8781687015394255,
+        "rerank_score": -10.130989074707031,
+        "matched_nodes": [
+          "RI",
+          "The",
+          "In",
+          "For",
+          "Bi",
+          "IR",
+          "As"
+        ],
+        "path_nodes": [
+          "RI"
+        ],
+        "community_id": "RI",
+        "metadata": {
+          "chunk_index": 30,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4577,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot.md",
+        "title": "2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot",
+        "text": "ltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\n1 [3]\n\n2 _[𝑉]_ [1PE] _[,]_ 2\n\npeak voltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\nbe obtained.\n\n**Figure 6** . An example of 200 waveforms, where the SiPM is operated at 60 V bias voltage, and its signal is\nprocessed by the pre-amplifier. For ease of observation, the amplitude of the synchronized signal from the\n\nlaser is scaled down to 1/40 and the timeline has been shifted.\n\nThe performance of the SiPM is closely related to the overvoltage, where a higher overvoltage\n\nleads to a higher gain but also results in a higher DCR and crosstalk rate, and more afterpulses. To\n\n– 7 –\n\n**Figure 7** . The distribution of the relative trigger time and the signal amplitude of a SiPM operating at 60 V\nbias voltage. The relative trigger time is the relative delay from when the laser signal is triggered, namely\nwhen the leading edge reaches the threshold, to when the SiPM signal is triggered.\n\ninvestigate the impact of overvoltage on SPTR and determine the appropriate operating voltage, we\n\ntest the SPTR of SiPMs at different operating voltages. The test result is shown in figure 8, where\n\nthe breakdown voltage can be obtained by linear fitting using the signal amplitudes at different bias\n\nvoltages. Since the SPTR measurement results vary at different threshold voltages, the best SPTR\n\nresults are obtained by scanning the threshold voltages. It can be observed from this graph that the\n\nSPTR measurement results stabilize at around 200 ps when the overvoltage exceeds 5 V.\n\n**Figure 8** . The signal amplitudes and SPTRs of a SiPM operating at different bias voltages. The breakdown\nvoltage can be found to be about 54 V by linear fitting.\n\nTo demonstrate the improvement of signal path differences by differential output, we conducted\n\nexperiments of a series-parallel SiPM array with two SiPMs in series, as shown in figure 9. We\n\n– 8 –\n\nextended the signal line length between the two SiPMs in series to about 10 cm, resulting in an\n\nexpected time delay of approximately 0.65 ns for the single-ended output signals of the two SiPMs.\n\nThe experiment result of single-ended output shows two distinct peaks for the single photon response\n\nin the relative trigger time, approximately 0.71 ns apart, consistent with expectations. In contrast,\n\nthe differential output result exhibits only one peak, indica",
+        "score": -6.545426561207436,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7563374030788509,
+        "rerank_score": -10.159483909606934,
+        "matched_nodes": [
+          "An",
+          "The",
+          "In",
+          "For",
+          "To",
+          "We"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3312,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2715427__2310.18690__Modeling_an_efficient_singlet-triplet-spin-qubit-to-photon_interface_assisted_by_a_photoni.md",
+        "title": "2024__recid_2715427__2310.18690__Modeling_an_efficient_singlet-triplet-spin-qubit-to-photon_interface_assisted_by_a_photoni",
+        "text": "ue by utilizing the mini-stopband of the so-formed photonic crystal\nwaveguides [34], which is a result of the anti-crossing of different waveguide modes with the same symmetry. According\nto our simulations, such a mini-stopband opens from 1030 nm to 1058 nm after the removal of the red holes in Figure 2(b).\nIn order to shift the mini-stopband to the working wavelength of the OAQD, the holes marked in blue in Figure 2(b) are\ndownscaled to a lattice pitch _a_ _2_ = _a_ _3_ = 214 nm, as indicated by the blue and purple circles in Figure 2(c) and 2(d). The\ndownscaled holes have a radius of _r_ _2_ = 73 nm (marked in blue), while the holes closest to the openings (marked in purple)\nhave an increased radius of _r_ _3_ = 90 nm. This last modification allows for a wider mini-stopband without burdening the\nfabrication process further. Figure 2(e) shows the TE band structure calculated along the direction of the cavity opening.\nAs we can see, the mini-stopband is shifted to the wavelength range from 793 nm to 845 nm with an increased spectral\nwidth of 52 nm. The shaded areas represent the extended modes in the downscaled crystal (lattice constant _a_ _2_ and hole\nradius _r_ _2_ ). The guided waveguide modes are indicated by the black solid lines. The OAQD's working wavelength (823\nnm) falls within the center of this mini-stopband, achieved through parameter optimization for rapid decay of the\nelectromagnetic field along the openings.\n\nFigure 3. (a) Normalized cavity power spectrum from 780 nm to 880 nm obtained from a cavity ring-down simulation. The\ntarget mode, which has a high extraction efficiency, is marked by a green dashed circle at 823 nm. For comparison to the\ntarget mode, another cavity mode at 833 nm is also highlighted by a brown circle. (b) Real space cavity mode profile of the\n823 nm target mode excited by a y-dipole. An exponentially decaying electric field is observed along the cavity openings as\na consequence of the mini-stopband.\n\nWe performed three-dimensional finite-difference time-domain (3D FDTD) simulations to evaluate the theoretical\nperformance of the complete structure by using a commercially available software package (Lumerical FDTD). Since the\npolarization of the photon emitted by the OAQD by pure excitonic states is determined by the orientation of the in-plane\nmagnetic field in the Voigt configuration, as a consequence of the exciton state energy splitting, we model the OAQD by\nan electric dipole orientated in the _y_ -direction (V) wi",
+        "score": -6.686315395207069,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7563374030788509,
+        "rerank_score": -10.376235961914062,
+        "matched_nodes": [
+          "An",
+          "The",
+          "In",
+          "For",
+          "We",
+          "As"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6143,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2782384__2404.19592__Programmable_Activation_of_Quantum_Emitters_in_High-Purity_Silicon_with_Focused_Carbon_Ion.md",
+        "title": "2025__recid_2782384__2404.19592__Programmable_Activation_of_Quantum_Emitters_in_High-Purity_Silicon_with_Focused_Carbon_Ion",
+        "text": "rium, forms an eutectic alloy with a theoretical melting\npoint of 661 _[◦]_ C at the thermodynamic equilibrium [29].\nThis compound has a very low vapor pressure, an additional requirement for a good liquid metal alloy ion\nsource (LMAIS), of around 8 _×_ 10 _[−]_ [15] mbar [30]. To form\nand melt the alloy, it can be overheated for a short period of time to a vapor pressure of 10 _[−]_ [6] mbar at around\n1167 _[◦]_ C [30]. Tungsten emitter were electrochemically\n\nand C [+] 3 [(0.04%) are shown in brown. Ce ions are shown in]\npink (1.2% Ce [3+] ). Other contributions can be filtered and\nare indicated in gray. An image of the heated CeC emitter is\nshown in the inset.\n\netched as well as tantalum emitters were mechanically\nsharpened and could be wetted by the eutectic alloy.\nThe ion beam composition of multiple source has been\nanalyzed by measuring mass-to-charge ratio spectra using a Wien filter (Fig. 1) in a high resolution test-setup\nat HZDR as well as in a VELION FIB/SEM at Raith\nNanofabrication. The most abundant emitted ions are\nCe [2+] ions with 86.3%, followed by 2.9% Ce [+] and heavier\ncluster ions from Ce and C. Even thought 20 mol% of\ncarbon has been mixed into the alloy, the total intensity\nof atomic or cluster ions from carbon is only 0.28%. Carbon has a much higher first ionization energy of 11.1 eV\ncompared to 5.5 eV for Ce, resulting in a higher extraction field required to create carbon ions.\nWe measured a contribution of 0.18% of C [+] which\nis still more than sufficient beam current for color center creation. An total emission current of 10 _µ_ A was\nused which, after mass filtering and beam collimation\nby apertures, resulted in a C [+] beam current of around\n1 pA. Additional peaks from impurities found in the complete spectra (not shown) could be identified as Al, Fe,\nCu, Lu, Pt, Bi which probably originate from the raw\ncerium source material. These contributions can easily\nbe filtered using the Wien filter and do not contribute\nto the implantation itself. The observed Al contamination, likely originated from an ionic exchange of Ce\nand Al from the Al 2 O 3 crucible used in the preparation\nprocess. Consequently tantalum crucibles were used for\nsubsequent melting and source loading runs. The C [+] ion\nbeam could be focused into a spot size less than 50 nm,\nand a total source lifetime of around 80 hours has been\n\nachieved.\n\nIn order to demonstrate the advantage of our C-FIB,\nwe use a high-purity (100) p-type silicon wafer with resistivity of 35",
+        "score": -6.721951534123085,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7563374030788509,
+        "rerank_score": -10.431060791015625,
+        "matched_nodes": [
+          "An",
+          "The",
+          "In",
+          "To",
+          "We",
+          "Bi"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2488,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "twin SET. **d), e)** Modulated\nreadout method using single SET 1 and single SET 2, respectively. _f_ mod = 25 kHz. **f)** Correlated readout method using\nthe twin SET modulated signal. _f_ mod = 25 kHz and the correlation function is given in Eq. 1. **g)** Square of the SNR\nas a function of integration time for the different techniques. Solid lines plot the fits to the function\nSNR [2] = _S_ 0 _τ/_ (1 + _A_ _f_ _τ_ _[α]_ ). **h)** Impact of the location of the charge transition on the charge readout infidelity for the\ndifferent techniques. _τ_ = 280 _µ_ s, _f_ mod = 25 kHz . Solid lines are used as guides to follow the trend of the points. The\ninset is a zoom-in to the region indicated by the box.\n\nwith integration time, consistent with signals affected by\n1 _/f_ _[α]_ (also known as “pink” or “flicker” for 0 _< α <_ 2)\nnoise [ 46, 47 ] (see Appendix F). In the regime where pink\nnoise is dominating, longer integration times will begin to\ncapture noise signals that are higher in amplitude, thus\nlosing the benefit of averaging over an increased number\nof samples. On the other hand, the modulation acts as a\nbandpass filter around _f_ mod, rendering the measurement\ninsensitive to pink noise. This result evidences the immunity to electrical noise provided by the modulation, and\nthe further improvement in readout sensitivity enabled\nby the correlation of the two signals.\n\nAn additional advantage of using a twin SET is that the\nreduction in signal that comes from moving the sensors\naway from the qubits can be compensated. In Fig. 2h),\nwe plot the charge readout infidelity obtained with the\ndifferent methods as a function of the double-dot pair,\nwhich is equivalent to changing the distance between\nthe center of the electric dipole and the sensors. For\ncomparison purposes, the total integration time in all\ncases is kept constant at 280 _µ_ s and the modulation\nfrequency is _f_ mod = 25 kHz . As expected, transitions\n\nbetween P1-P2 (P3-P4) are more weakly detected by\nSET 2 (SET 1 ) and the readout infidelity of the single SET\nmeasurement increases as the dipole is moved away from\nthe sensor. Notably, this monotonic trend is avoided by\nthe twin SET, with the correlation function providing\nbelow 0.3% readout infidelity ( _>_ 99 _._ 7% readout fidelity)\nthroughout the array.\n\n**IV.** **MODULATED SPIN READOUT**\n\nWe now study the impact that modulating the electron\nback and forth across a charge transition during readout\nhas on its spin degree of freedom. We load four el",
+        "score": -6.754617168278359,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7563374030788509,
+        "rerank_score": -10.481315612792969,
+        "matched_nodes": [
+          "An",
+          "The",
+          "In",
+          "For",
+          "We",
+          "As"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3834,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS.md",
+        "title": "2024__recid_2736752__2312.07717__Understanding_disorder_in_silicon_quantum_computing_platforms_Scattering_mechanisms_in_SiS",
+        "text": "w = 5 − 7 nm, it suggests that the bending of the\nconduction band bottom due to the electric field from the top\ngate should not substantially alter the results. This reasoning\njustifies the use of the infinite potential well approximation\nin our calculations. One shortcoming of both the strict 2D\nand the infinite square well potential is that they cannot incorporate the short-range alloy disorder scattering arising from\nthe SiGe alloy on the barrier outside the well. We address\nthis shortcoming in the next section by using a finite well confinement model where the carrier wavefunction is allowed to\ntunnel into the barrier regime.\n\n9\n\nFigure 5. Mobility (µ) versus electron density (n e ) for quantum wells with widths of 5 nm (red) and 7 nm (blue). The experimental data\nare depicted by red and blue curves, with corresponding error bars shown as shaded areas. The solid black curves represent the theoretical\ntransport mobility, while the dashed black curves denote the quantum mobility, both calculated using the infinite potential well approximation\nwith the local field correction. (a) and (b) assume only RI near the capping layer n r ̸= 0. (c) and (d) assume only BI outside the quantum\nwell N 1 ̸= 0 and no BI inside N 2 = 0, while (e) and (f) assume N 1 = 0 and N 2 ̸= 0. To fit the data, the impurity concentrations and\nroughness parameters are chosen as (a) n r = 2.5 × 10 [12] cm [−][2] ; (b) n r = 2.1 × 10 [12] cm [−][2] ; (c) N 1 = 9.7 × 10 [15] cm [−][3] and N 2 = 0; (d)\nN 1 = 8.7 × 10 [15] cm [−][3] and N 2 = 0; (e) N 1 = 0 and N 2 = 7.2 × 10 [15] cm [−][3] ; (f) N 1 = 0 and N 2 = 3.8 × 10 [15] cm [−][3] .\n\nV. FINITE POTENTIAL WELL\n\nIn this section, to calculate the short-range alloy disorder\nscattering rate, we employ the finite potential well approximation to determine the wavefunction tail extending outside the\nquantum well. Furthermore, we recalculate the RI, BI and IR\nscattering rates using the finite potential well wavefunction,\nwhich enters the expressions of the form factors Eqs. (5, 6)\nand the lowest subband energy in Eq. (33). The comprehensive results combining the scattering mechanisms of RI (BI),\nIR and AD are shown in Figs. 7 and 8. The finite potential\nwell Schr¨odinger equation reads\n\nwhere V 0 = 180 meV [3, 35] and E F = ℏ [2] k F [2] [/][2][m] [⋆] [is the]\nFermi energy of the 2DEG. In the following we use V to\nrepresent V 0 − E F for simplicity. The bound state solutions\n(E < V ) for the lowest subband are\n\nψ(z) =\n\nCe [−][η][|][z][|], |z",
+        "score": -6.763711309358905,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8781687015394255,
+        "rerank_score": -10.50973892211914,
+        "matched_nodes": [
+          "RI",
+          "The",
+          "In",
+          "To",
+          "We",
+          "Bi",
+          "IR"
+        ],
+        "path_nodes": [
+          "RI"
+        ],
+        "community_id": "RI",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1878,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "emory.\nAfter the DSP the data are serialised with 320 Mbit/s rate, obtained by increasing the\nsystem clock frequency by a factor four and double data rate (DDR) transmission. An\nultra-low power ( _<_ 1 mW ) phase-locked loop (PLL) is used to generate the 160 MHz clock\nfrom the 40 MHz system clock. The data are sent out by an SLVS interface. The ASIC is\ncontrolled via the LHCb common protocol consisting of two interfaces: the TFC and the\nECS [70,71]. The TFC interface delivers the 40 MHz clock and other crucial information\nand commands, synchronised with the experiment clock, while the ECS serves to configure\nand monitor the ASIC and is realised through an I2C interface. The main specifications\nof the SALT ASIC are shown in table 6.\n\nThe 130 nm CMOS process is generally considered as intrinsically radiation resistant\nagainst total ionising dose. For this reason, and given the main clock frequency and\nthe expected charged particle fluence, SEE protection in the SALT is generally limited\nto SEU protection and monitoring. In a few specific blocks working with very small\ncurrents ( _<_ 1 µA ), like 7-bit baseline DACs, protection with NMOS enclosed layout\ntransistors was applied. To improve the ADC robustness against SEE, the ADC is reset\n\n45\n\nby the sampling signal if the previous conversion is not yet completed. The triple-voting\ntechnique is applied to almost every flip-flop in the whole digital part. The combination\nlogic is not triplicated, but clock and reset signals are. As a result, to triplicate the\ncomplete clock and reset trees, there are three PLLs and three input reset synchronisers.\nIn addition, the configuration registers have built-in self-correcting circuits that can correct\nthe radiation-induced bit flips (only one of the three copies) in each clock cycle.\nSeveral ASIC design iterations were required to meet the UT requirements. The\nchip versions used in the UT are the SALTv3.5 for most of the 4-chip hybrids and the\nSALTv3.9 for the 8-chip hybrids and some of the most exposed 4-chip hybrids. More\ndetailed information on the SALT ASIC can be found in ref. [68].\n\n##### **5.6 Readout chain**\n\n**5.6.1** **Hybrids**\n\nThe UT hybrids are the FE boards for the microstrip silicon sensors. Being mounted in\nthe detector acceptance, they were designed with mass minimisation in mind. They are\nlow-mass flex PCBs composed of a stack of conductive and dielectric layers [32] with a total\nthickness of about 72 µm Cu, 176 µm polyimide and 63 µm adhesive. Their f",
+        "score": -6.770291044087075,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7563374030788509,
+        "rerank_score": -10.5054292678833,
+        "matched_nodes": [
+          "An",
+          "The",
+          "In",
+          "For",
+          "To",
+          "As"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 60,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "An": 1.0,
+      "AND": 1.0,
+      "ID": 1.0,
+      "RA": 1.0,
+      "CO": 1.0,
+      "RI": 1.0,
+      "Hybrid": 1.0,
+      "Re": 1.0
+    },
+    "expanded_nodes": {
+      "An": 1.0,
+      "AND": 1.0,
+      "ID": 1.0,
+      "RA": 1.0,
+      "CO": 1.0,
+      "RI": 1.0,
+      "Hybrid": 1.0,
+      "Re": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "We": 0.7,
+      "CERN": 0.48999999999999994,
+      "PO": 0.48999999999999994,
+      "Bi": 0.7,
+      "IR": 0.7,
+      "As": 0.7,
+      "SPS": 0.17149999999999996,
+      "LHC": 0.17149999999999996,
+      "USA": 0.17149999999999996,
+      "IL": 0.15434999999999996
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 22,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.803485137876123,
+    "generation_latency_s": 6.002373993396759e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 22.0,
+    "retrieval_latency_s": 5.803485137876123,
+    "generation_latency_s": 6.002373993396759e-07
+  }
+}

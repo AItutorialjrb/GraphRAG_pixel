@@ -1,0 +1,399 @@
+{
+  "query": "Compare HV-MAPS and LGADs for timing.",
+  "expanded_query": "Compare HV-MAPS and LGADs for timing. AC-LGAD DC-LGAD DMAPS HV-CMOS HVMAPS High Voltage Monolithic Active Pixel Sensors LGAD Low Gain Avalanche Detector Low-Gain Avalanche Detector MAPS Monolithic Active Pixel Sensors TI-LGAD",
+  "mode": "graph_path",
+  "retrieved": [
+    {
+      "rank": 1,
+      "chunk_id": "5298",
+      "doc_id": "230",
+      "title": "2024__recid_2798272__2405.03187__LURAD_Design_study_of_a_comprehensive_radiation_monitor_package_for_the_gateway_and_the_lu",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2798272__2405.03187__LURAD_Design_study_of_a_comprehensive_radiation_monitor_package_for_the_gateway_and_the_lu.md",
+      "score": 21.019151925640152,
+      "retriever": "graph",
+      "text": "MeV/μm (20 μm height), 0.2 keV/μm to 5.8 MeV/μm (50 μm height). One sensor named PBS_Strip\n\n( _Figure 4_ c) is tailored to measure high flux SEP events, because it is divided to 5 readout channels for 1,\n\n5, 10, 15 and 20 SV respectively. The last sensor is named SPACEPAD ( _Figure 4_ d) and consists of 200 x\n\n200 SV with segments of 100, 200, 400, 500, 600, 700 and 5000 SV read separately in 7 channels.\n\nSPACEPAD is intended to measure the GCR field. Consequently, a readout application specific integrated\n\ncircuit (ASIC) with 32 channels is used. Each sensor type has different number of SVs to cover different\n\nranges of proton flux. The total proton flux which can be measured is up to 1.8∙10 [9] cm [-2] ∙ s [-1] . The worst 5\n\nmin average flux of protons with energy > 10 MeV for the 19 Oct 1989 SEP event calculated using\n\nCRÈME-96 is 4,35∙10 [11] m [-2] ∙sr [-1] ∙s [-1] . It would induce a mean count rate of 800 Hz in a single SV. This count\n\nrate can be easily handled by the electronic readout channels connected to the PBS_Strip sensor. On the\n\nother hand, SPACEPAD will provide about 480 counts in one min for a flux of 10 protons/cm [2] ∙s [-1] ∙sr [-1] (63\n\nprotons/cm [-2] ∙ s [-1] ) with energy > 10 MeV (LET< 8keV/μm(Si)). This will enable the system to provide early\n\nwarning for a possible SEP event.\n\n# 2.4 A CTIVE SILICON PIXEL SENSORS\n\nFollowing the initial study (Peric, 2007), fully depleted Si monolithic active pixel sensors (called HVCMOS\n\nor DMAPS) have been introduced in high energy physics experiments for measuring the tracks of\n\nminimum ionizing particles. Fully depleted Si pixels enable fast and less prone to radiation damage\n\ncharge collection. Today, research on achieving full integration of sensing and microelectronics in\n\nmonolithic CMOS pixel sensors has been identified by the European Committee for Future Accelerators\n\n(ECFA) as one of the themes of its global Detector R&D Roadmap (ECFA, 2021). Coarsely segmented Si\n\ndiode detectors are used in almost all instruments measuring the mixed radiation fields of the space\n\nenvironment. With starting event the installation of 5 Timepix units onboard the International Space\n\nStation in 2012 (Pinsky L., et al.,2014), hybrid Si pixel detectors have started to penetrate in space\n\nPage 8 of 28\n\ndosimetry. HardPix, a device using Timepix3 bump bonded to Si pixel sensors is included in the ERSA\n\npackage. The introduction of fully depleted Si monolithic active pixel sensors in space instrumentation"
+    },
+    {
+      "rank": 2,
+      "chunk_id": "684",
+      "doc_id": "31",
+      "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+      "score": 18.07745463263022,
+      "retriever": "graph",
+      "text": "ity is also studied as a function of the position of\n\nthe incident particle inside the sensor pad.\n\nKeywords: LGAD, Silicon sensors, Timing detectors, HL-LHC, ATLAS, HGTD\n\n[ArXiv ePrint: 2303.07728](http://arxiv.org/abs/2303.07728)\n\n### **Contents**\n\n**1** **Introduction** **1**\n\n**2** **Sensors** **2**\n\n2.1 FBK devices 3\n\n2.2 IHEP-IME devices 4\n\n2.3 USTC-IME devices 4\n\n**3** **Test beam set-up** **4**\n\n3.1 Set-up at DESY 5\n\n3.2 Set-up at CERN 5\n\n**4** **Data analysis** **6**\n\n4.1 Track reconstruction for data taken during DESY beam tests with EUDET-type\n\ntelescope 6\n\n4.2 Track reconstruction for data taken during CERN SPS beam tests with MALTA\n\ntelescope 7\n\n4.3 Oscilloscope data processing 7\n\n**5** **Sensors performance results** **8**\n\n5.1 Data selection 8\n\n5.2 Collected charge 8\n\n5.3 Time resolution 9\n\n5.4 Hit reconstruction efficiency 12\n\n5.4.1 Efficiency as a function of the bias voltage 13\n\n5.4.2 Efficiency uniformity 14\n\n**6** **Conclusion and outlook** **18**\n\n**1** **Introduction**\n\nThe High Granularity Timing Detector (HGTD) [1, 2] will be added to the ATLAS experiment [3]\n\nduring the so-called Phase-II upgrade preceding the high-luminosity phase of the LHC (HL\nLHC) [4, 5]. Low Gain Avalanche Detector (LGAD) sensors [6] have been extensively studied\n\nduring the R&D phase of the HGTD project. These sensors must meet performance targets\n\nregarding time resolution of 50 ps (70 ps) per hit, collected charge _>_ 4 fC and hit efficiencies of 97%\n(95%) at the start (end) of their lifetime. The expected maximum fluence is 2 _._ 5 × 10 [15] n _𝑒𝑞_ /cm [2] [2].\nThese requirements should be achieved taking into account a discriminator of about 2 fC of the\n\nfront-end ASIC foreseen for HGTD, ALTIROC [7].\n\n– 1 –\n\nMany previous beam test campaigns were devoted to quantifying LGAD performances be\nfore [8, 9] and after [10, 11] irradiation. A variety of pad structures, such as single-pad diodes\n\nand segmented arrays of pad diodes with various granularities, from several vendors were tested\n\nto prove they meet the requirements to be operated over the entire HL-LHC lifetime. Irradiated\ndevices met the required performance up to 10 [15] n _𝑒𝑞_ /cm [2], however, some optimization was still\nrequired.\n\nIn beam tests [11] as well as in laboratory measurements [12], it was observed that the addition\n\nof carbon in the gain layer helps reducing the operating voltage needed to collect the same charge by a\n\nreduction of the acceptor removal rate after irradiation, hence impr"
+    },
+    {
+      "rank": 3,
+      "chunk_id": "7790",
+      "doc_id": "352",
+      "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+      "score": 16.464816616374343,
+      "retriever": "graph",
+      "text": "ten times larger\nthan the actual one in about ten years of operations [7]. Such an increase of\ncollisions rate and particles poses stringent constraints on the silicon detectors\nin terms of radiation damage - up to 10 times larger than today - to the\npoint that a new inner detector is needed in both experiments. ATLAS will\nimplement a new all silicon inner detector, the Inner Tracker (ITk) [8, 9].\nHybrid silicon n-on-p pixel modules will be used in the core part of ITk, with\nstrip detectors at larger radii. The innermost part of the ITk Pixel detector\nwill be instrumented with 3D sensors will all the rest will be equipped with\nplanar ones; more details on the ITk layout can be found in [10]. The largest\nfluence to be integrated by 3D and planar sensors is of about 1 _._ 6 _×_ 10 [16] and\n3 _._ 5 _×_ 10 [15] n eq _/_ cm [2] respectively.\nIt is extremely important to have predictions on charge collection performance after such large fluences and the combination of TCAD [1] and MC tools\nlike Allpix [2] [11] is perfect as with the first a precise simulation of the electric\nfield inside the sensor is possible while the latter is adapted for simulating\nparticles impinging on the detector under different conditions (temperature,\nthreshold, angle, etc.). This approach is being used for example in several\ncases in detector development for high energy physics [12, 13].\nAt the moment no data from irradiated modules equipped with the final\nversion of readout chip (ITkPixV2 [14]) for the ATLAS ITk pixel detector\nexist. In order to assess the expected collected charge existing data on similar\ndevices after HL-LHC like fluences have been identified; in particular the\nCMS tracker group investigated passive CMOS sensors [15, 16] bump bonded\nto an RD53A readout chip [17]. Results from testbeams for n-on-p sensors\nwith a thickness of 150 µm were reported. These results have been used to\nvalidate the predictions of TCAD and Allpix [2] .\nIn Section 2 the simulation setup will be presented, then its validation\nwill be discussed (Section 3). The expected charge collection performance of\nATLAS ITk planar pixel modules will be presented in Section 4; Section 5\n\n1 Technology Computer Aided Design\n\n2\n\nwill conclude the paper.\n\n**2. Simulation Setup**\n\nThe simulation of the irradiated silicon pixels sensors has been carried out\nusing the Geant4 [18, 19, 20] based Allpix [2] (v3.2.0) MC simulation framework, with precise electric field and weighting potential [21, 22] maps calculated"
+    },
+    {
+      "rank": 4,
+      "chunk_id": "8344",
+      "doc_id": "373",
+      "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+      "score": 15.553649428683364,
+      "retriever": "graph",
+      "text": "rg/10.1140/epjst/e2019-900045-4)`\n`[epjst/e2019-900045-4](https://doi.org/10.1140/epjst/e2019-900045-4)` .\n\n[3] W. Snoeys, Monolithic pixel detectors for high energy physics,\nNucl. Instrum. Methods Phys. Res. A 731 (2013) 125–130, Pixel\n2012. `[doi:10.1016/j.nima.2013.05.073](https://doi.org/10.1016/j.nima.2013.05.073)` .\n\n[4] W. Snoeys, G. Aglieri Rinella, A. Andronic, M. Antonelli,\nR. Baccomi, et al., Optimization of a 65 nm CMOS imaging\nprocess for monolithic CMOS sensors for high energy physics,\nPoS Pixel2022 (2023) 083. `[doi:10.22323/1.420.0083](https://doi.org/10.22323/1.420.0083)` .\n\n[5] G. Aglieri Rinella, G. Alocco, M. Antonelli, R. Baccomi, S. M.\nBeole, et al., Characterization of analogue Monolithic Active\nPixel Sensor test structures implemented in a 65 nm CMOS\nimaging process, Nucl. Instrum. Methods Phys. Res. A 1069\n(2024) 169896. `[doi:10.1016/j.nima.2024.169896](https://doi.org/10.1016/j.nima.2024.169896)` .\n\n[6] G. Aglieri Rinella, A. Andronic, M. Antonelli, M. Aresti,\nR. Baccomi, et al., Digital pixel test structures implemented\nin a 65 nm CMOS process, Nucl. Instrum. Methods Phys. Res.\nA 1056 (2023) 168589. `[doi:10.1016/j.nima.2023.168589](https://doi.org/10.1016/j.nima.2023.168589)` .\n\n[7] X. Llopart, R. Ballabriga, M. Campbell, L. Tlustos, W. Wong,\nTimepix, a 65k programmable pixel readout chip for arrival\ntime, energy and/or photon counting measurements, Nucl. Instrum. Methods Phys. Res. A 581 (1) (2007) 485–494. `[doi:](https://doi.org/10.1016/j.nima.2007.08.079)`\n`[10.1016/j.nima.2007.08.079](https://doi.org/10.1016/j.nima.2007.08.079)` .\n\n[8] P. Valerio, J. Alozy, S. Arfaoui, R. Ballabriga, M. Benoit,\net al., A prototype hybrid pixel detector ASIC for the CLIC\nexperiment, J. Instrum. 9 (01) (2014) C01012. `[doi:10.1088/](https://doi.org/10.1088/1748-0221/9/01/C01012)`\n`[1748-0221/9/01/C01012](https://doi.org/10.1088/1748-0221/9/01/C01012)` .\n\n[9] M. J. Williams, Evaluation of fine-pitch hybrid silicon pixel detector prototypes for the CLIC vertex detector in laboratory\nand test-beam measurements, Ph.D. thesis, University of Glasgow (2021).\n\n20\n\n[10] S. Ruiz Daza, R. Ballabriga, E. Buschmann, M. Campbell,\nR. Casanova Mohr, et al., The H2M Monolithic Active Pixel\nSensor — characterizing non-uniform in-pixel response in a\n65 nm CMOS imaging technology, J. Instrum. 20 (06) (2025)\nC06037. `[doi:10.1088/1748-0221/20/06/C06037](https://doi.org/10.1088/1748-0221/20/06/C06037)` .\n\n[11] C. Lemoine, R. Ballabriga, E. Buschmann, M. Campbell,"
+    },
+    {
+      "rank": 5,
+      "chunk_id": "4637",
+      "doc_id": "202",
+      "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+      "score": 15.548096772763959,
+      "retriever": "graph",
+      "text": "xplored\nin several variants which differed by: doping levels, pixel geometries and pixel\npitches (10–25 µm). These variants have been tested following exposure to varying levels of irradiation up to 3 MGy and 10 [16] 1 MeV n eq cm _[−]_ [2] . Here the results\nfrom prototypes that feature direct analogue output of a 4 _×_ 4 pixel matrix are\nreported, allowing the systematic and detailed study of charge collection properties. Measurements were taken both using [55] Fe X-ray sources and in beam tests\nusing minimum ionizing particles. The results not only demonstrate the feasibility of using this technology for particle detection but also serve as a reference\nfor future applications and optimisations.\n\n_Keywords:_ MAPS, Solid state detectors, Silicon, CMOS, Particle detection,\nTest beam\n\n**1. Introduction**\n\nThe use of commercial CMOS imaging sensor technologies for particle sensors in High-Energy Physics (HEP) was successfully demonstrated over the last\ndecade with the notable examples of STAR PIXEL [1, 2] (based on ULTIMATE also known as MIMOSA28 sensors), and the ALICE ITS2 [3–5] (based\non ALPIDE sensors).\n\n2\n\nThis motivated the ALICE experiment and CERN EP R&D [6] to set out a\nprogram to investigate the use of the 65 nm CMOS Image Sensor (65 nm ISC)\ntechnology of Tower Partners Semiconductor Co. (TPSCo) [7] for future vertex\nand tracking detectors. Following a sensor optimization employing the same\nprinciple as for the 180 nm technology [8], several test chips were designed and\nfabricated in a first run to study charge collection properties and qualify the 65\nnm technology for HEP.\nThe foreseen upgrade of the ALICE Inner Tracking System, ITS3 [9], proposed for installation in 2026–2028 during the Long Shutdown 3 (LS3) of the\nLarge Hadron Collider (LHC) at CERN, will be the first application of this\ntechnology in HEP. Important requirements for this application are a spatial\nresolution better than 5 µm, particle detection efficiency larger than 99% after\nan exposure to _∼_ 10 kGy of Total Ionizing Dose (TID) and 10 [13] 1 MeV n eq cm _[−]_ [2]\n\nof Non Ionizing Energy Loss (NIEL). The ALICE 3 Vertex Tracker proposed\nto be installed during the LHC LS4 in 2033–2034, will impose even more agressive requirements for Monolithic Active Pixels Sensors (MAPS), including a\nradiation tolerance of _∼_ 300 kGy and 1.5 _×_ 10 [15] 1 MeV n eq cm _[−]_ [2] per year of\noperation [10].\n\n**2. The Analog Pixel Test Structure, APTS**\n\nThe APTS is a 1.5 mm _×_ 1.5 mm prototype c"
+    },
+    {
+      "rank": 6,
+      "chunk_id": "7621",
+      "doc_id": "343",
+      "title": "2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement.md",
+      "score": 15.546742306519123,
+      "retriever": "graph",
+      "text": "chieves energy resolution of\n10.4 ± 3.2% at 59.5 keV and 94 ± 6 µm depletion in a low-resistivity test silicon substrate.\n\n_Keywords:_\nsilicon, CMOS, gamma-ray detector, astrophysics instrumentation, MeV gamma ray\n\n∗ Present address: Oak Ridge National Laboratory, Tennessee,\nU.S.A.\n\n_Email addresses:_ `steinhebelal@ornl.gov` (Amanda L.\n\nSteinhebel), `daniel.p.violette@nasa.gov` (Daniel P. Violette),\n`regina.caputo@nasa.gov` (Regina Caputo)\n\n**1. Introduction**\n\nOver the past several decades, silicon strip detectors (SSDs) have been a key detector technology used\nin gamma-ray and cosmic-ray telescopes such as the\n_Fermi_ Large Area Telescope (LAT) [1], the Alpha Magnetic Spectrometer (AMS) [2], and DArk Matter Particle Explorer (DAMPE) [3]. Breakthroughs in particle\nphysics instrumentation have enabled the development\nof High Voltage-CMOS (HVCMOS) Monolithic Active\nPixel Sensors (MAPS) [4], which have the potential to\noffer significant advantages over other silicon-based detectors (such as SSDs).\nMAPS have signal amplification and readout circuits\nembedded in the sensor, without the need for a separate\nApplication Specific Integrated Circuit (ASIC), providing a more compact and scalable design. MAPS are traditionally low power devices, and they have by design\na reduced overall mass with limited passive material in\nthe active area of the detector. The two-dimensional hit\n\nlocation information provided by these pixelated detectors is an imperative feature for soft gamma-ray detection (< 10 MeV). These detector capabilities make them\na particularly compelling technology for future gammaray telescopes (see Refs. 5, 6 for more details).\nAstroPix is a HVCMOS MAPS being developed\nfor space-based mission concepts such as the Allsky Medium Energy Gamma-ray Observatory eXplorer\n(AMEGO-X) [6]. Inspiration is drawn from the ATLASPix chip, which was designed to detect charged\nparticles in the inner detector of the ATLAS Experiment [7]. The AstroPix project has subsequently coordinated incremental development away from the ATLASPix designs toward a final version which will be\noptimized for a space environment (see Table 1). The\ndevice under test and subject of this work is the third\niteration, or AstroPix_v3. The performance of AstroPix_v1 and AstroPix_v2 has been documented in\nRefs. 8, 9, 10, 11.\nIn addition to reviewing AstroPix_v3 operation and\nfunctionality, this work will overview noise and energy resolution performance. Current-voltage and\ncapacitance-voltage curve"
+    },
+    {
+      "rank": 7,
+      "chunk_id": "8195",
+      "doc_id": "370",
+      "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+      "score": 15.086992814234382,
+      "retriever": "graph",
+      "text": "r and the performance of the pixel matrix to\nbe within the ITS3 requirements. The MOSS chip demonstrates the feasibility\nof the ITS3 detector concept and provides insights for further optimisation and\ndevelopment.\n\n_Keywords:_ Monolithic Active Pixel Sensors, Solid state detectors, Silicon\nsensors, CMOS stitching\n\n**1. Introduction**\n\nMonolithic Active Pixel Sensors (MAPS) are used in high-energy physics\nexperiments as they enable the construction of ultra-thin, large-scale detectors.\nThey were first used in a collider environment in the STAR pixel detector [1].\nThe ALPIDE sensor implemented in a 180 nm CMOS imaging process [2, 3, 4]\nwas used on a much larger scale in the Inner Tracking System 2 (ITS2) of the\nALICE experiment at the CERN Large Hadron Collider (LHC) [5]. Since 2020,\nthe ALICE Collaboration [6], in synergy with CERN EP R&D [7], has been\ncarrying out extensive R&D for its ITS3 upgrade [8], which will replace the\nthree inner layers of the ITS2 and which is scheduled for installation during\nthe LHC Long Shutdown 3 (LS3, 2026–2030). The main objective of the ITS3\ndetector is to reduce the material budget from the current 0 _._ 36% X 0 per layer\ndown to about 0 _._ 09% X 0 per layer, coming mostly from the sensors themselves.\nFurthermore, a new beam pipe with an inner radius of 16 mm and wall-thickness\nof 500 µm is foreseen, which allows the innermost layer to be installed as close as\npossible to the beam axis. The required [1] radiation tolerance of the detector is\n4 kGy of Total Ionising Dose (TID) and 4 _×_ 10 [12] 1 MeV n eq cm _[−]_ [2] of Non-Ionising\nEnergy Loss (NIEL).\nTo meet these constraints, the ALICE Collaboration has adopted the 65 nm\nCMOS imaging technology developed by Tower Partners Semiconductor Co. [9].\nThis technology was validated for ALICE applications and beyond with a set\nof test structures [10, 11, 12, 13]. The 300 mm wafer size and the stitching\ntechnique [14, 15] allow the fabrication of sensors substantially larger than\nthe typical reticle size (about 3 cm _×_ 2 cm), with sensor dimensions reaching\n10 cm _×_ 27 cm. Thinning to 50 µm thickness allows these wafer-scale sensors\nto be bent and form a self-supporting, truly cylindrical structure. Dedicated\nstudies have demonstrated that MAPS maintain their performance after bending [16, 17]. Due to a relatively low power consumption of about 40 mW _/_ cm [2],\n\n1 Radiation tolerance requirement has been updated w.r.t. Ref. [8], while the corresponding\nmeasurements presented"
+    },
+    {
+      "rank": 8,
+      "chunk_id": "4193",
+      "doc_id": "184",
+      "title": "2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS",
+      "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS.md",
+      "score": 14.247624466909722,
+      "retriever": "graph",
+      "text": "## First test beam measurement of the 4D resolution of an RSD 450 µ m pitch pixel matrix connected to a FAST2 ASIC\n\nL. Menzio [a], F. Siviero [a], R. Arcidiacono [a,b], N. Cartiglia [a], M. Costa [a,c], T.\nCroci [a], M. Ferrero [a], C. Hanna [a], L. Lanteri [c], S. Mazza [d], R. Mulargia [a,c], H-F\nW. Sadrozinski [d], A. Seiden [d], V. Sola [a,c], R. White [a,c], M. Wilder [d]\n\n_a_ _INFN, Torino, Italy_\n_b_ _Universit`a del Piemonte Orientale, Italy_\n_c_ _Universit`a di Torino, Torino, Italy_\n_d_ _University of California at Santa Cruz, CA, US_\n\n**Abstract**\n\nThis paper reports on the spatial and temporal resolutions of an RSD 450 _µ_ m pitch\n\npixels array measured at the DESY test beam facility. RSDs, Resistive Silicon\n\nDetectors, also known as AC-LGAD, achieve excellent position and temporal\n\nresolution by exploiting charge sharing among neighboring electrodes. The RSD\n\nmatrix used in this study is part of the second FBK RSD production, RSD2,\n\nand it is composed of 450 _µ_ m pitch pixel with cross-shaped electrodes. A 7-pixel\n\nmatrix was read out by the FAST2 ASIC, a 16-channel amplifier fully custom\n\nASIC developed by INFN Torino using the 110 nm CMOS technology. The total\n\narea covered by the matrix is about 1.5 mm [2] . The position resolution reached in\n\nthis test is _σ_ x = 15 _µ_ m, about 4% of the pitch. The temporal resolution achieved\n\nin this work is _σ_ t = 60 ps, dominated by the FAST2 resolution. The work also\n\ndemonstrates that RSD sensors with cross-shaped electrodes achieve 100% fill\n\nfactor and homogenous resolutions over the whole matrix surface, making them\n\na suitable choice for 4D tracking applications.\n\n_Keywords:_ FAST2, Silicon, Fast detector, Low gain, Charge multiplication,\n\nLGAD, 4D tracking\n\n_2018 MSC:_ XX-XX, XX-XX\n\n_Email address:_ `luca.menzio@to.infn.it` (L. Menzio)\n\n_Preprint submitted to Elsevier_ _February 20, 2024_\n\n**1. Introduction**\n\nSilicon sensors based on resistive readout [1] combine many of the features\n\nneeded by future experiments: (i) excellent spatial and temporal resolutions, (ii)\n\nlow material budget (the active part can be a few tens of _µ_ m thick), (iii) 100% fill\n\nfactor, and (iv) good radiation resistance (presently, up to 1-2 _·_ 10 [15] n eq /cm [2] ).\n\nIn addition, given the large pixel size, RSDs are an enabling technology for\n\nconstructing 4D silicon trackers [2] with limited power consumption as they\n\nreduce the number of readout amplifiers by more than an order of magnitude.\n\nThe benefits of r"
+    }
+  ],
+  "seed_nodes": [
+    "CMOS",
+    "LGAD",
+    "MAPS",
+    "Pixel",
+    "Sensors",
+    "Timing",
+    "AC-LGAD",
+    "HV-CMOS"
+  ],
+  "expanded_nodes": [
+    "AC-LGAD",
+    "ALICE",
+    "ASIC",
+    "ATLAS",
+    "Abdul Khalek",
+    "CMOS",
+    "CMS",
+    "DAC",
+    "Geant4",
+    "HGTD",
+    "HV-CMOS",
+    "Hamamatsu Photonics",
+    "High Energy",
+    "ITS3",
+    "Inner Tracking System",
+    "LGAD",
+    "Let",
+    "Long Shutdown",
+    "MAPS",
+    "Nuclear Instruments",
+    "Physics Research Section",
+    "Pixel",
+    "RD53A",
+    "Radiation",
+    "SPAD",
+    "Sensors",
+    "Silicon",
+    "Springer Nature",
+    "TCAD",
+    "Time",
+    "Timing",
+    "pixel detector"
+  ],
+  "paths": [
+    [
+      "CMOS",
+      "MAPS"
+    ],
+    [
+      "CMOS",
+      "ASIC"
+    ],
+    [
+      "CMOS",
+      "ALICE"
+    ],
+    [
+      "CMOS",
+      "Silicon"
+    ],
+    [
+      "CMOS",
+      "TCAD"
+    ],
+    [
+      "CMOS",
+      "ITS3"
+    ],
+    [
+      "CMOS",
+      "SPAD"
+    ],
+    [
+      "CMOS",
+      "CMS"
+    ],
+    [
+      "LGAD",
+      "TCAD"
+    ],
+    [
+      "LGAD",
+      "ATLAS"
+    ],
+    [
+      "LGAD",
+      "AC-LGAD"
+    ],
+    [
+      "LGAD",
+      "CMS"
+    ],
+    [
+      "LGAD",
+      "HGTD"
+    ],
+    [
+      "LGAD",
+      "Springer Nature"
+    ],
+    [
+      "LGAD",
+      "Time"
+    ],
+    [
+      "LGAD",
+      "Silicon"
+    ],
+    [
+      "MAPS",
+      "CMOS"
+    ],
+    [
+      "MAPS",
+      "ALICE"
+    ],
+    [
+      "MAPS",
+      "ITS3"
+    ],
+    [
+      "MAPS",
+      "Inner Tracking System"
+    ],
+    [
+      "MAPS",
+      "TCAD"
+    ],
+    [
+      "MAPS",
+      "Long Shutdown"
+    ],
+    [
+      "MAPS",
+      "Pixel"
+    ],
+    [
+      "MAPS",
+      "Silicon"
+    ],
+    [
+      "Pixel",
+      "CMOS"
+    ],
+    [
+      "Pixel",
+      "CMS"
+    ],
+    [
+      "Pixel",
+      "ATLAS"
+    ],
+    [
+      "Pixel",
+      "pixel detector"
+    ],
+    [
+      "Pixel",
+      "ASIC"
+    ],
+    [
+      "Pixel",
+      "DAC"
+    ],
+    [
+      "Pixel",
+      "RD53A"
+    ],
+    [
+      "Pixel",
+      "TCAD"
+    ],
+    [
+      "Sensors",
+      "Nuclear Instruments"
+    ],
+    [
+      "Sensors",
+      "Physics Research Section"
+    ],
+    [
+      "Sensors",
+      "Silicon"
+    ],
+    [
+      "Sensors",
+      "CMOS"
+    ],
+    [
+      "Sensors",
+      "Radiation"
+    ],
+    [
+      "Sensors",
+      "LGAD"
+    ],
+    [
+      "Sensors",
+      "TCAD"
+    ],
+    [
+      "Sensors",
+      "CMS"
+    ],
+    [
+      "Timing",
+      "LGAD"
+    ],
+    [
+      "Timing",
+      "Time"
+    ],
+    [
+      "Timing",
+      "Geant4"
+    ],
+    [
+      "Timing",
+      "Silicon"
+    ],
+    [
+      "Timing",
+      "Nuclear Instruments"
+    ],
+    [
+      "Timing",
+      "ASIC"
+    ],
+    [
+      "Timing",
+      "SPAD"
+    ],
+    [
+      "Timing",
+      "CMS"
+    ],
+    [
+      "AC-LGAD",
+      "LGAD"
+    ],
+    [
+      "AC-LGAD",
+      "CMS"
+    ],
+    [
+      "AC-LGAD",
+      "ATLAS"
+    ],
+    [
+      "AC-LGAD",
+      "HGTD"
+    ],
+    [
+      "AC-LGAD",
+      "Hamamatsu Photonics"
+    ],
+    [
+      "AC-LGAD",
+      "Abdul Khalek"
+    ],
+    [
+      "AC-LGAD",
+      "High Energy"
+    ],
+    [
+      "AC-LGAD",
+      "TCAD"
+    ],
+    [
+      "HV-CMOS",
+      "CMOS"
+    ],
+    [
+      "HV-CMOS",
+      "ATLAS"
+    ],
+    [
+      "HV-CMOS",
+      "MAPS"
+    ],
+    [
+      "HV-CMOS",
+      "Pixel"
+    ],
+    [
+      "HV-CMOS",
+      "ASIC"
+    ],
+    [
+      "HV-CMOS",
+      "LGAD"
+    ],
+    [
+      "HV-CMOS",
+      "pixel detector"
+    ],
+    [
+      "HV-CMOS",
+      "Let"
+    ]
+  ],
+  "metrics": {
+    "retrieval_latency_s": 0.321779727935791,
+    "generation_latency_s": 0.0,
+    "unique_sources": 8,
+    "seed_node_count": 8,
+    "expanded_node_count": 32,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0
+  },
+  "answer": ""
+}

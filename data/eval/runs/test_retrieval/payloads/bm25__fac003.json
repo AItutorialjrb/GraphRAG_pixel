@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "fac003",
+    "query_type": "factoid",
+    "query": "What is Time-over-Threshold used for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "Time-over-Threshold",
+      "used"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is Time-over-Threshold used for?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8211,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "uted to a higher resistance in the reset and\nfeedback branch, and with a lower shot noise from a reduced current injected\ninto the collection electrode. is further supported by the expectation that a lower\n_I_ reset reduces shot noise at the collection electrode. Since _I_ reset also influences\nthe diode biasing, it can be adjusted to compensate for the increased leakage\ncurrent in sensors exposed to non-ionising radiation. To maintain uniformity in\nthe biasing conditions across different irradiation levels, without compromising\nthe noise performance, a nominal setting of 10 pA is adopted.\nAn increase in the front-end bias current, _I_ bias, reduces the fake-hit rate at\na given threshold. This is consistent with an increase in the overall front-end\nvoltage gain, and a reduction in the thermal noise of the input transistor M1.\nSince _I_ bias is the primary contributor to the power consumption of the in-pixel\nfront-end, a value of 25 nA is chosen as a trade-off between the ITS3 power\nbudget constraints [8] and fake-hit rate performance.\nVariations of discriminator current _I_ db, cascode voltage _V_ casn, and levelshifting voltage _V_ shift around their nominal values (100 nA, 330 mV, and 460 mV,\nrespectively) do not lead to significant changes in the observed performance.\nHowever, at elevated values of _V_ shift, the M0 transistor in the front-end circuit\n(see Fig. 4) enters the ohmic region, reducing the front-end gain. Consequently,\nthe fake-hit rate increases for a given threshold. A similar effect is observed for\nlow values of _V_ casn, where the M9 transistor also transitions into the ohmic region, again leading to degraded performance. While choosing a lower _I_ db current\ncan reduce dynamic power consumption, it requires a corresponding decrease in\n_V_ casb to compensate for the associated threshold reduction (see Sec. 2.1). However, this limits the available adjustment range of _V_ casb, particularly for sensors\naffected by threshold shifts due to ionising radiation, hence, the nominal value\nwas kept at 100 nA.\nOverall, the nominal operating point extracted from simulations was confirmed to yield optimal fake-hit rate performance for a given threshold and is\nadopted for all subsequent measurements and analyses presented in this work.\n\n_4.4. Time-over-Threshold measurement_\nThe Time-over-Threshold (ToT) quantifies the duration for which the signal\nat the discriminator input exceeds the threshold, thereby encoding the charge\ninformation in time. The T",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 15.872202869385339,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 3875,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures.md",
+        "title": "2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures",
+        "text": "ing is not present, the background is expected to\nbe uniform at small time differences.\nThe DCR and the detected photon rate on each SiPM for both experiments is shown in\nTable 1.\n\n|SiPM|DCR [kcps]|Signal experiment<br>rate [kcps]|Bkgnd. experiment<br>rate [kcps]|\n|---|---|---|---|\n|1<br>2|126_ ±_ 1<br>148_ ±_ 1|629_ ±_ 1<br>446_ ±_ 1|517_ ±_ 1<br>522_ ±_ 1|\n\nTable 1: SiPM parameters and rates for signal and background experiments.\n\nFor reference, these values would result in _F ∼_ 1 _._ 6. Compared to the use of APDs, this\nresults in an SNR and a bunching-peak relative height 20 % and 38 % lower, respectively.\n\n4\n\nThe measured coincidence rate between the two detectors in the 100 ns coincidence gate\nwas about 10 kcps. Considering the acquisition dead time, both signal and background\nexperiments were run for an effective time of 97 hs. Using Equation (3), the expected SNR\nfor that effective acquisition time is 80, while it would be 100 in the APD case.\n\n### **4 Event Selection**\n\nFor each event, several parameters were calculated from the digitized waveforms acquired.\nThese parameters were: the Baseline average and its standard deviation, Trigger Timestamp,\nTime-over-Threshold (ToT), waveform Amplitude, and waveform Maximum and Minimum\nvalues. These parameters were used for posterior event selection. An example of an acquired\nevent can be seen in Figure 2.\n\n150\n\n125\n\n100\n\n75\n\n50\n\n25\n\n0\n\n|Coincidence<br>window<br>Threshold|Col2|\n|---|---|\n|Bl. calc.<br>_dt_||\n\n0 25 50 75 100 125 150 175 200\n\nTime [ns]\n\nFigure 2: Example of an acquired event. The coincidence window of 100 ns is shown in\ngreen and the threshold for Timestamp determination is shown in black. The time difference\nbetween events, _dt_, in both SiPMs is shown as well. The Baseline level (Bl) was determined\nusing the first 16 ns of each waveform. An additional window of 10 ns width and centered in\n95 ns, which was used for posterior data selection, is shown in violet.\n\nAll parameters were calculated using digital pulse processing. To determine the Baseline\nmean and its standard deviation, the first 16 ns of each event were used. The Timestamp\nof the detected photon was determined using a linear interpolation of the waveform and\na software leading-edge discriminator. The Threshold used for the discriminator was set\n30 mV over the previously calculated Baseline level. To calculate the signal ToT, a fallingedge discriminator was used to obtain the second intercept between the waveform and the\nThreshol",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 14.996588855107252,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3527,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "nics K.K. (HPK) in the\n6-inch wafer fabrication process, is segmented in a matrix of 72, 1 × 1 cm [2], 320 _𝜇_ m thick pads. Two\n\nadditional pads of smaller size are inserted in the array for calibration purposes. The front plane of\n\nthe sensor is glued to the Printed Circuit Board (PCB) and wire bonded to the read-out electronics\n\nvia through-holes carrying the lines to the back of the boards. Other cavities are used to connect\n\nthe guard rings, high voltage, and ground connections. The depletion voltage is achieved by biasing\n\nthe sensors through the gold-plated common cathode on the wafer back side. More details, as well\n\nas the systematic studies of the sensors’ electrical properties, can be found in [15].\n\nFor the readout, each PCB hosts the HGCROC Application-Specific Integrated Circuit (ASIC)\n\noriginally developed by the OMEGA group for the CMS High Granularity Calorimeter (HG\n\n– 3 –\n\n**Figure 1** . Picture of the front, and back-plane of the single-pad board. The cavities are designed for wire\nbonding the individual silicon pads to the onboard electronics. At the center, some space is reserved for\npositioning the HGCROC readout chip. The Si wafer is aligned and glued to the back-plane, and it receives\nthe voltage for biasing the sensors through a connection routed by the board’s edges.\n\nCal) [16]. The energy deposit in each Si diode is converted into voltage pulses by the low-noise\n\npreamplification stage of the chip and later processed by a shape filter. The signal is then fed to the\n\nAnalog-to-Digital Converter (ADC) of the HGCROC which provides a linear response up to 320 fC,\n\nequivalent to about 100 Minimum Ionizing Particles (MIPs). The signal is also discriminated and\n\nprovided to two Time-to-Digital Converters (TDCs) used to extend the dynamic range via measuring\n\nthe Time-over-Threshold (ToT) of larger energy deposits. The ToT is measured relatively to a pre\ncise Time-of-Arrival (ToA) information, granting a total dynamic range going from 0.2 fC to 10 pC.\n\nThese quantities are sampled every 25 ns (40 MHz) and stored in a 512 sample deep circular buffer\n\nwhich is streamed to the acquisition electronics via 1.28 Gbit/s serial links when the HGCROC\n\nreceives a readout request through the Fast Command (FCMD) port. A buffer entry contains 72+2\n\nmeasurements of ADC, ToT, and ToA, the monitor of four common mode channels for coherent\n\nnoise subtraction, and the digital sums of groups of nine pads (eight sums for each sample) for\n\ntrigger generatio",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 14.855674168728013,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7153,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "Hit-OR is gauged\nby comparing it with a scintillator signal coupled to a PMT and\nread out via an oscilloscope. The result is depicted in figure 9b\nexemplarily for a quasi noise-free threshold of 16. A Gaussian\nfit to the distributions’ core yields a σ of 2.28(1) ns, sufficient\nfor precise triggering at test beams. The absolute delay of the\n\n4\n\n(a) Hitmap of a telescope plane with TelePix2 as trigger. A DESY logo is programmed to\nthe fast Hit-OR.\n\nFigure 8: Time difference between reference trigger and TelePix2 cluster time\nversus the row number.\n\ntrigger compared to the scintillator is 15.32(1) ns, which is an\nacceptable latency for test beam operation.\n\n**5. User Stories**\n\nTelePix2 is in user operation and utilized by multiple groups\nto enhance data taking efficiency and suppress ambiguities. In\nthe following three examples using the different operating modes\nare discussed and the improvement due to TelePix2 is highlighted.\n\n_H2M - region of interest trigger mode_\n\nThe H2M (Hybrid-to-Monolithic) is implemented in a 65 nm\nCMOS imaging process as proof of concept for a digital-on-top\ndesign workflow. It ports a hybrid pixel-detector architecture,\nwith digital pulse processing in each pixel, into a monolithic\nchip. The chip matrix consists of 64×16 square pixels, each\nwith a size of 35×35 µm [2], and a total active area of approximately 1.25 mm [2] . A 100 MHz clock is used for non-simultaneous\nTime-over-Threshold (ToT) or Time-of-Arrival (ToA) measure\nments.\n\nH2M has been tested in the DESY II test beam test beam\n\nfacility using the ADENIUM telescope. TelePix2 is used as\nregion of interest trigger plane. A region of interest of approximately 3 mm [2] is left unmasked in TelePix2 matching the H2M\narea with a safety margin.\nFigure 10a compares the correlations in X between H2M\nand the reference plane with data taken from a small region of\ninterest and the entire TelePix2. While a one order of magnitude higher background of uncorrelated events is observed for\nthe full region, for the small region, most of the events are correlated. The latter reduces the number of empty readout frames\nof H2M and highly improves the data taking efficiency. Moreover, time studies have been performed based on TelePix2. Figure 10b shows the time residuals between the TelePix2 fast\n\nHit-OR and H2M time stamps. The tail to the left is caused by\ntime-walk of H2M.\n\n5\n\n(b) Time difference between reference trigger and TelePix2 hit-or at a threshold of 16.\n\nFigure 9: The fast Hit-OR of",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 14.788154014637087,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7150,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "m setup. TelePix2 connects to a DUT interface of the\nAIDA-TLU and receives a 125 MHz clock and T 0 at run start while providing\na trigger output. The MIMOSA telescope operates in the EUDET mode to\nexchange the trigger ID, while ADENIUM [14] runs in AIDA+trigger ID mode.\nEUDAQ2 is used to steer the data taking. External DUTs are not shown.\n\nallows for fully synchronous data-taking without additional interactions between the TLU and TelePix2. The telescopes at\nDESY exchange a trigger ID with the AIDA-TLU, which stores\nthe timestamp for each trigger. The fast Hit-OR with a rising\nleading edge, an amplitude of approximately 1.2 V and a signal\nlength corresponding to the time-over-threshold can be directly\nfed into a trigger input of the AIDA-TLU. A sketch of a typical\ntest beam setup is shown in figure 3.\n\n_Event building with_ TelePix2\n\nTelePix2 can be used as a region of interest (ROI) trigger or\ntiming plane or both simultaneously. Depending on the usage,\nthe event building, illustrated in figure 4, works as follows:\n\n - **Region of interest trigger:** No additional timestamp information is provided; therefore, only the AIDA-TLU\ntimestamp can be used. In this case, it is essential to\nrecord only a single particle per event in the region of\n\nEvents Timing + ROI\n\nEvents ROI Trigger\n\nEvents with timing\n\nTelescope Readout\n\nROI trigger output\n\nTime\n\nparticles\n\nFigure 4: Sketch of the event building with a timing and/or trigger plane. Green\ncheck marks indicate correctly assigned particles, red crosses wrongly assigned\ntrack time stamps or events that will be rejected, orange question marks ambiguities and the orange loading symbol indicates that a second particle hit is read\nout in the telescope’s frame.\n\ninterest. An example of a failure of this is shown in event\n3 in figure 4.\n\n - **Timing plane:** TelePix2 is used as a timing plane, assigning a time stamp to each hit. This causes efficient\nsuppression of ambiguities but can result in unnecessary\ntriggering, like for event 4 in figure 4.\n\n - **ROI trigger and timing plane:** In this mode, the full potential of TelePix2 is being exploited. Particles outside\nthe ROI will not trigger a telescope and hence increase\ndata-taking efficiency. If two particles cross the ROI in\none event, the time tagging will allow for correct assignment of these tracks.\n\nFor user convenience, a custom corryvreckan [15] EventLoader is provided to access data for reconstruction. Three exemplary user stories highlighting each of the poss",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 14.718360919688068,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3550,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "ibration of the ADC, and the high-range\n\ncharge injection for the calibration of the ToT. The calibration measurement is performed by step\nwise increment of the voltage at the capacitor, using steps of 5 mV, and releasing 2000 charge\n\ninjections at each voltage step. The software records the response of ADC, ToT, and ToA per\n\ninjection.\n\nFor low-range injections, the dependence of the ADC on the injection charge is well described\n\nby a linear function. We determine the proportionality factor of the ADC with respect to the signal\n\ncharge from a linear fit whereas the channel-wise pedestal is obtained from dedicated pedestal runs.\n\nFor high-range injections above ≈ 2 pC, we observe a linear response of the ToT, and use a linear\n\nfit function to calibrate the ToT. For lower charge values (in particular in the turn-on region), the\n\nresponse of the ToT does not show the same linear behavior as for the higher charges, and we derive\n\na calibration in this range by linearly interpolating between the ToT response at 0 and 2 pC (where\n\nthe former one is always zero). The successful channel-by-channel calibrations were then used to\n\nconvert the response of the HGCROC channels to actual charge deposit in the individual sensor\n\npads.\n\nThe ToT and ToA units can be translated directly into the time-over-threshold and time-of\narrival of the charge pulse where 1 ToT unit = 50 ps, and 1 ToA unit = 25 ps. For the chosen\n\npreamplifier settings, 1 ADC unit is on average equivalent to 0.28 fC. Further details regarding the\n\ncalibration procedure can be found in Sec. A.\n\nIn the Geant4 simulation model, the energy deposition per pad (i.e. per channel) is recorded.\n\nThe energy signal is converted to charge by using the average ionization energy per electron-hole\npair in silicon of 3.65 eV/e-h-pair. A charge collection efficiency of 100 % is assumed, and noise\n\n(e.g. from the sensor or the electronics) is not implemented.\n\n**5.6** **Electron selection for pad-layer analysis**\n\nFor the electron analysis using the FoCal-E pad layers, both the November, 2022 and the May, 2023\n\ndata required a proper event selection. While for November data, events which were recorded with\n\nthe correct timing with respect to the HGCROC clocks had to be enhanced, the event selection for\n\nthe May, 2023 data needed to focus on a clean electron sample without hadronic contamination.\n\nIn both cases, the datasets were pre-processed based on the HGCROC trigger sum word, which\n\nis measured per bunch crossing (",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 14.603371101974519,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8212,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "alyses presented in this work.\n\n_4.4. Time-over-Threshold measurement_\nThe Time-over-Threshold (ToT) quantifies the duration for which the signal\nat the discriminator input exceeds the threshold, thereby encoding the charge\ninformation in time. The ToT of a MOSS front-end signal can be assessed in a\nspecific readout configuration. Here, the strobe signal is set to last much longer\nthan a typical front-end pulse. When charge is collected, the discriminator output activates, leading the hit to be stored in the corresponding in-pixel latch\n(see Sec. 2.2). This triggers a global signal indicating data presence in the pixel\n\n17\n\n|102<br>101<br>100<br>0 1<br>0 2<br>0<br>102<br>101<br>0|V (mV) V<br>casn shif<br>160<br>330|\n|---|---|\n|0<br>0<br>2<br>0<br>1<br>100<br>101<br>102<br>0<br>101<br>102|~~630~~<br>780<br>Ireset (pA)<br>~~ 5~~<br>10<br>~~20~~<br>30<br><br>Ibias/Ibias<br>~~12~~<br>25<br>~~50~~|\n|0<br>0<br>2<br>0<br>1<br>0|0<br>100<br>150<br>200<br>~~40~~<br>50<br>100<br>150<br>|\n\nFigure 13: Fake-hit rate as a function of the threshold average per region (set via _V_ casb ) for\ndifferent front-end parameter variations. The plots, arranged from top left to bottom right,\nshow the effect of varying _V_ casn, _V_ shift, _I_ reset, _I_ bias (together with _I_ biasn at a ratio 10:1), and\n_I_ db . The error bars indicate the statistical uncertainty of the fake-hit rate measurement. The\nnominal operating point extracted from simulations (red dashed lines) was confirmed to yield\noptimal fake-hit rate performance for a given threshold.\n\nmatrix. As soon as this signal is propagated to the test system, a readout command is sent. This initiates the readout of the pixel address(es) by the region\nperiphery and resets the in-pixel latch. As long as the strobe and discriminator output remain active, the pixel-hit latch will immediately reassert and the\nregion readout will read out the same pixel address repeatedly. The number of\ngenerated pixel addresses is then proportional to the duration of the front-end\nsignal, thereby providing ToT measurement.\nThe ToT response, similar to the threshold (see Sec. 4.1), exhibits pixel-topixel variations due to fabrication-related non-uniformities. Figure 14 presents\nthe ToT measured across a number of pixels within a selected region as a function of the pulsing voltage _V_ pulseh, modulating the injected charge. For each\npixel, the ToT response increases linearly with _V_ pulseh, but the slope and intercept of this relationship vary acro",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 14.596808310934799,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 20,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6497,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2823373__2408.17215__Precision_determination_of_the_track-position_resolution_of_beam_telescopes.md",
+        "title": "2025__recid_2823373__2408.17215__Precision_determination_of_the_track-position_resolution_of_beam_telescopes",
+        "text": "ns are briefly summarised. Figure 14 shows a sketch of the test beam setup [6]. A\npair of plastic scintillators provides the trigger. The beam track-position at the DUT is measured by two\nbeam telescope arms [13], one upstream and one downstream of the DUT. Each arm consists of 3 planes\nof Mimosa26 Monolithic Active Pixel Sensors (MAPS) with a pitch of 18 _._ 4 µm × 18 _._ 4 µm thinned down\nto a thickness of about 50 µm. The readout is binary, and the single-plane spatial resolution is 3 _._ 2 µm.\nThe MAPS are read out in 115 µs frames and a pixel sensor (Time REF) upstream of the scintillators is\nused to select the track in coincidence with the signal in the DUT. Time REF is a CMS Phase-1 pixel\ndetector [14] with a pixel size of 100 µm × 150 µm and 8-bit digital readout at a frequency of 40 MHz. The\nDUT is mounted on computer-controlled stages, which allow moving the DUT horizontally and vertically,\nand rotating it around one axis.\n\nFigure 14: Layout of the test beam setup: the six telescope planes, two trigger scintillators, the time reference detector, and the DUT.\nThe DUT material, relevant for multiple scattering and the energy loss of the electrons is: 150 + 150 µm Si for the sensor and the\nRD53A chip, respectively, the SnAg bumps, and a 1 mm thick aluminum support plate on the downstream side of the sensor.\n\nThe DUT is a CMS Phase-2 prototype pixel sensor [7] read out by the RD53A chip. The sensor design\nis presented in Sec. 2.1. The linear front-end section of the RD53A chip [9], bump-bonded to the sensor,\nis used for the readout. The chip is thinned down to a thickness of 150 µm. The readout operates at\na frequency of 40 MHz, and using the Time-over-Threshold (ToT) method, digitises the charge above an\nadjustable threshold with 4-bit accuracy. The relation between the ToT value and the input charge can also\nbe adjusted. A typical setting used for the measurements yielded a value of about 11 ToT units for a charge\nof 11 ke. It is noted that the relation between charge and ToT is only approximately linear.\nThe data were taken at room temperature and at a bias voltage of 120 V. The dark current of about\n3 µA and the power dissipation of the RD53A chip was sufficiently low so that air-flow cooling was\nsufficient. The electronics noise was about 70 e and the threshold for recording hits about 1250 e. The trackposition resolutions from the upstream ( _𝜎_ _up_ ) and the downstream ( _𝜎_ _down_ ) beam telescope arms extrapolated\nto the DUT are obtained us",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 14.580619412195073,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1030,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "ss factor for 23 MeV protons is\n\n2 _._ 2 ± 0 _._ 4 [19]. Irradiations of CMS pixel prototype modules with higher energy protons, resulting\n\nin a much reduced TID in the readout chip, are under way for comparison.\n\n**3** **Tuning and Operation of RD53A Modules**\n\nThe BDAQ53 data acquisition system was used to configure, tune, and operate the RD53A mod\nules [20]. A Xilinx KC705 evaluation board [21] was employed as the hardware platform for the\n\nsystem. The software part of the BDAQ53 is developed in the Python programming language and\n\nprovides a set of scripts for tuning and measurement purposes.\n\nThe RD53A ROC is designed for serial powering, which is the chosen powering scheme for the\n\nCMS IT Phase-2 Upgrade [22]. However, the RD53A chip also offers the possibility of bypassing\n\n– 5 –\n\n**Table 2** . Pixel modules studied in this paper. Modules M563i and M564i were irradiated at the MC40\ncyclotron facility in Birmingham while the others were irradiated at the ZAG Zyklotron AG in Karlsruhe.\nThe numbers in the last column refer to relevant figure numbers in this paper.\n\nID Pitch Bias dot Φ eq Threshold Figure\n(µm [2] ) (cm [−][2] ) (e)\n\nCrosstalk measurements\n\nM529 100 × 25 Yes 0 900 6\n\nEfficiency measurements\nM547 50 × 50 No 4.4 × 10 [15] 1200 8\n\nM564i 50 × 50 No 5.4 × 10 [15] 1200 8\n\nM542 100 × 25 No 7.4 × 10 [15] 1320 8\n\nM563i 100 × 25 No 1.0 × 10 [16] 1200 8\n\nM589 100 × 25 No 2.1 × 10 [16] 1240 8\n\nBias dot measurements\n\nM521 50 × 50 Yes 5.3 × 10 [15] 1230 9\n\nResolution measurements\n\nM563 100 × 25 No 0 700 10\n\nM564 50 × 50 No 0 600 10\n\nM521 50 × 50 Yes 5.3 × 10 [15] 1230 10\n\nthe internal power regulator to directly supply power from external units. The latter powering\n\nscheme was used in the measurements presented in this paper.\n\nA schematic diagram of the LIN FE is shown in Fig. 3. The readout chain begins with a low\npower charge sensitive amplifier (CSA) featuring a Krummenacher feedback circuit in order to cope\n\nwith the increased leakage current of the sensor after irradiation. The output of the CSA is digitized\n\nusing a high-speed current comparator and transimpedance amplifier, and is then processed by the\n\ndigital pixel logic including a 4-bit Time-over-Threshold (ToT) counter (not shown in the figure).\n\nThe global threshold for all pixels is applied to the _𝑉_ th input of the comparator. A 4-bit binary\n\nweighted digital-to-analog converter (DAC) allows for per-pixel threshold adjustment (trimming\n\nDAC, TDAC). All pixels of the RD53A chip are equi",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 14.468681389628015,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 792,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2662395__2305.14515__Effects_of_temperature_fluctuations_on_charge_noise_in_quantum_dot_qubits.md",
+        "title": "2023__recid_2662395__2305.14515__Effects_of_temperature_fluctuations_on_charge_noise_in_quantum_dot_qubits",
+        "text": "imeters, and together with a diffusion constant equal to\n_D ∼_ 2 _·_ 10 _[−]_ [5] m [2] /s, produced minimal frequencies of the\norder of 1 Hz or less.) To estimate the lowest frequency\nin the present system, the diffusion constant _D_ must be\nevaluated at low temperatures for the 2DEG. In what\nfollows, the diffusion constant is expressed in terms of\nquantities measured in the Si/SiGe 2DEG of ref. [5].\nIn a diffusive regime (which is assumed to be the case\nhere), the diffusion constant _D_ is related to the thermal\nconductivity _κ_ via\n\n_D_ = _[κ]_ (32)\n\n_C_ _[,]_\n\nwhere _κ_ is the thermal conductivity in W/K (in two dimensions) and _C_ is the specific heat in J _/_ (K _·_ m [2] ). For\nthe 2DEG, the specific heat is given by [1]\n\n_b_ _[T]_\n_C_ = _[πmk]_ [2] _,_ (33)\n3ℏ [2]\n\nwhere the carrier’s mass is _m_ = 0 _._ 19 _m_ _e_, and _m_ _e_ is the\nmass of the electron.\nThe thermal conductivity is rarely available experimentally. Using the Wiedemann–Franz law, it is possible\nto relate the thermal conductivity to the electric conductivity _σ_ :\n\n7\n\nIt is therefore highly unlikely that a 2DEG bath can satisfy the assumption underlying the calculation of Ahn _et_\n_al_ . [1].\n\nWe can obtain a slightly different estimate in a different 2DEG (AlN/GaN) system where the WiedemannFranz law was verified [11]. This paper measured the\nspecific heat as well as thermal and electrical conductivity of the 2DEG. The thermal conductivity has the form\n_κ_ = 90 _T/_ 275 W/(K m) (where _T_ is temperature) while\nthe specific heat is _C_ = 0 _._ 05 _T_ in J/(kg K). (Note that\nthe units are appropriate for 3D quantities; the paper\n\n[11] measured the thickness of the electron gas for the\nconversion.) The diffusion constant is then _D_ = _κ/ρC_\nwhere _ρ_ is the density of the material (GaN) and is equal\nto 6150 kg/m [3] . The temperature dependences cancel out\nand the diffusion constant is found to be approximately\n10 _[−]_ [3] m [2] /s. This value is slightly smaller than what has\nbeen estimated for the Si/SiGe case but does not change\nthe conclusion.\n\nFinally, the diffusion constants obtained above are significantly larger than those used by Voss and Clarke in\nthe context of metal thin films ( _D ∼_ 2 _·_ 10 _[−]_ [5] m [2] /s).\nHowever, even with such a diffusion constant, the conclusion remains unchanged (the lowest frequency drops\nto 6 MHz).\n\n**V.** **CONCLUSIONS**\n\nWe have considered a quantum dot whose charge noise\nis determined by a fluctuator coupled to a thermal bath\nwith a flu",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 14.403855929048905,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 1.4580875048413873,
+    "generation_latency_s": 3.3015385270118713e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.4580875048413873,
+    "generation_latency_s": 3.3015385270118713e-07
+  }
+}

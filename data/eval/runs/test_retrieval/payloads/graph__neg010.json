@@ -1,0 +1,404 @@
+{
+  "benchmark": {
+    "query_id": "neg010",
+    "query_type": "negative",
+    "query": "What exact password should I use to access CERN GitLab?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "exact",
+      "password",
+      "should"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What exact password should I use to access CERN GitLab?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2008,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "in 2017.\nThe Conditions Database is stored in a Git repository hosted on the CERN GitLab\ninstance. Conditions data are accessed by a library, which also adds the time dimension\n(i.e. the interval of validity for a given condition) to the filename and versioning dimensions\nprovided by a Git repository. The `YAML` standard is used to persist condition data.\nConditions values in the Conditions Database are used in different contexts and have to\nsupport different use cases, in particular simulation and real data processing. In simulation,\nthe response of the detector for fixed sets of conditions is exploited. In real data processing,\nthe time evolution of conditions is followed, with the Git versioning of data used to\ntrack the evolution of the response of subdetectors, or improved alignment algorithms.\nConditions data can be generated automatically in the online environment, for example\ncalibration and alignment parameters or temperature and pressure values retrieved from\nprobes, or produced manually for example in offline workflows that require expert analysis\nbefore inclusion in the database. In the former case, conditions are automatically pushed\n\n–\nto the GitLab project and published to the CERNVM file system (CVMFS) [204 206],\nwhile the offline conditions have to be proposed in the form of GitLab merge requests,\nto undergo a review before being integrated and published.\n\n##### **12.3 Detector geometry description**\n\nThe description of the geometry of the LHCb detector serves a wide range of applications, from simulation to detector alignment, visualisation, and computation of material\nbudget. It must fulfil the LHCb needs in terms of flexibility, management, integration\nwith the conditions database, and speed of navigation between detector elements. The\nDetector Description for HEP (or DD4HEP ) toolkit [207] is used for the LHCb detector\ndescription. It replaces an XML-based framework [208], designed and implemented within\nthe collaboration, but not optimised for modern computing architectures and no longer\nmaintained. The DD4HEP toolkit builds on the experience gathered by LHC experiments\nand aims to bind the existing tools for detector description, simulation and visualisation to\nproduce a consistent toolkit. Its structure is modular, with a generic detector description\nmodel as its core, and a set of nonmandatory extensions or plugins that can be used when\nneeded. The object model and visualisation are provided by the ROOT framework. For\nsimulations,",
+        "score": -1.8509482512320417,
+        "dense_score": 0.3185357451438904,
+        "bm25_score": 20.813404051491602,
+        "graph_score": 0.6865203761755486,
+        "rerank_score": -2.942709445953369,
+        "matched_nodes": [
+          "It",
+          "CERN",
+          "The",
+          "In",
+          "For",
+          "LHC"
+        ],
+        "path_nodes": [
+          "It"
+        ],
+        "community_id": "It",
+        "metadata": {
+          "chunk_index": 190,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 2009,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "it. Its structure is modular, with a generic detector description\nmodel as its core, and a set of nonmandatory extensions or plugins that can be used when\nneeded. The object model and visualisation are provided by the ROOT framework. For\nsimulations, the Geant4 toolkit is used.\n\n##### **12.4 Software infrastructure**\n\nThe LHCb software stack depends on many software packages developed at CERN, in\nother scientific institutions, or in industry. Many of these packages are open source.\nExternal packages must be tracked, versioned, compiled and distributed. LHCb uses the\n_LCG releases_ [209], which are prepared by the EP-SFT groups at CERN, for packages\nthat are common among the LHC experiments. These releases are prepared using the\nLCGCmake [210] tool.\nAs many developers are involved in the development of the millions of lines needed\nfor the experiment framework, a strong version control system and good practices are\ncrucial to ensure the quality of the software. The LHCb code base is split into several\nprojects, versioned and managed independently, each having a distinct goal. Each of these\nprojects is managed using the Git [211] version control system. This allows keeping the\n\n161\n\nfull history of all code changes. Code reviews are prevalent in the software industry, as a\nway to improve code quality and harmonise development practices across organisations.\nLHCb Git projects are hosted on the CERN GitLab server, which also provides features\nallowing better collaboration between the members of the teams. New features to the code\nare peer-reviewed before being merged into the main code base. The projects are organised\naround the Jira [212] task management and the GitLab issue management systems,\nas deployed by the CERN IT department. This allows the developers within the LHCb\ncollaboration to follow the evolution of the projects and collaborate in a constructive\n\nmanner.\n\nA Software Configuration Database has been built to track all projects and their\ndependencies [213] using the Neo4j graph database [214]. This information is crucial to\nthe management of the software in the short term, but is also necessary to identify the\nsoftware needed to continue analysing the LHCb experiment data in the long term.\nIn order to ensure the quality of the software produced by the developers, automatic\nbuilds of the software are performed, as described in ref. [215]. This infrastructure relies\non the industry-tested Jenkins [216] automation server as deployed in the CERN IT\nOp",
+        "score": -2.412986823772504,
+        "dense_score": 0.24363164603710175,
+        "bm25_score": 19.974998155597792,
+        "graph_score": 0.8432601880877744,
+        "rerank_score": -3.824708938598633,
+        "matched_nodes": [
+          "It",
+          "As",
+          "CERN",
+          "The",
+          "In",
+          "For",
+          "LHC"
+        ],
+        "path_nodes": [
+          "It"
+        ],
+        "community_id": "It",
+        "metadata": {
+          "chunk_index": 191,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6753,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "with a low field region)\nand 21 _._ 11% at high ∆ _V_ (without a low field region). This can\nbe compared with the measurement result of 22% at low ∆ _V_\nand 17% at high ∆ _V_ .\n\n_D. Comparison with SciFi light source_\n\nThe microlens parameters were optimised for the SciFi as\na light source and represent one of the goals of the MLA\nproject. The test with the SciFi was performed at CERN\nSPS with pions at a momentum of _p_ = 180 _GeV/c_ . The\nSciFi module was arranged to perform a longitudinal scan.\nThe distance between the particle beam and the photodetector\nwas varied between 20 _cm −_ 230 _cm_ and the light intensity of\nthe normal incident particles was measured. With a Gaussian\nfit, the median is extracted from the characteristic Landau\ndistribution introduced by the energy deposit fluctuations. This\nvalue is called the light yield (LY) of the SciFi tracker. As a\nconsequence of the mirror placed at the far end of the SciFi\nmat at a distance of 245 _cm_ from the SiPM, the detected light\nis composed of a direct component and a mirrored component.\nAt a distance of 20 _cm_, the mirrored component is reduced to\nabout 20% due to attenuation. A fibre mat of 130 _mm_ width\nwas equipped with four flat layer dies and four microlens dies,\n256 channels each. In Fig. 11 the LY is plotted as a function\n\nof ∆ _V_ and given for two distances from the detector. The LY\nmeasurement has been performed after a gain calibration with\na light injection system for each acquisition channel.\nFor the SciFi light distribution for a propagation length of\n230 _cm_, the simulated LY enhancement is 24 _._ 57% for low ∆ _V_\nand 18 _._ 59% for high ∆ _V_, and the measured values with SciFi\nare 22 _._ 5% for low ∆ _V_ and 20 _._ 5% for high ∆ _V_ . Note that the\nsimulation was performed with a light exit angle distribution\ncorresponding to a 230 _cm_ long fibre.\n\nVII. C ONCLUSION\n\nIn this work, we present a novel implementation of MLA\nwith the objective of improving the PDE of SiPMs. The\nimplementation was guided by the technology limitation of\nthe MLA deposit by a mold and a UV-curable polymer.\nTo optimise the most important parameters, the geometry\nof the SiPM pixel was simulated with three regions: the\ndead region, the low field region representing a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter,",
+        "score": -6.512250278472901,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -10.137308120727539,
+        "matched_nodes": [
+          "To",
+          "At",
+          "As",
+          "CERN",
+          "The",
+          "In",
+          "For",
+          "SPS"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2125,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2668562__2306.07673__Pipeline_quantum_processor_architecture_for_silicon_spin_qubits.md",
+        "title": "2024__recid_2668562__2306.07673__Pipeline_quantum_processor_architecture_for_silicon_spin_qubits",
+        "text": "e 10 ns as the\nrange of target shuttling times _τ_ _s_ . The exact shuttling\ntime should be determined to avoid LZ transitions to excited states, such as valley-orbit states. The systematic\n_Z_ -phases arising from _g_ -factor differences between sites\ncan be accounted for as part of single-qubit control, as\ndiscussed in Sec. III C.\nThe pulse sequence depicted in Fig. 2 **(e)** can realise\nthe shuttling and logic gate dynamics modulation. To this\nend, each gate is routed to an ac + dc voltage combining\ncircuit. The ac nodes from gates from a single column,\nand mod 5 steps, are combined at interconnect level with\na power splitter, whereas each gate receives an individual\ndc bias. Bias tees at gate nodes enable applying dc biases\nfrom individual dc sources. See Supplementary Sec. S 2 b\nfor footprint estimates. As there are signals with three\ndifferent periods, we could employ e.g. phase modulation\nor partially digital signal processing to generate the five\nshuttling biases, and hence shuttling biases for the entire\npipeline with only three voltage pulse generators. We can\nfill the pipeline up to every fifth physical gate column of\nQDs single electrons, which we refer to as maximal filling.\n\n**B.** **Initialization, readout and pre-configuration**\n\nInitialisation and readout is analogous to a shift register for single-electron spins, where electrons are moved\nthrough a pipe and electron reservoirs are located at\nthe input and output ends of the array. Preconfiguration\nof the unit cells can be done locally, utilizing initialization and readout nodes like the one depicted in Fig. 2\n**(f)** . Logical ground states _|↓_ _q_ _⟩_ are initialised using spindependent reservoir-to-dot tunneling [51]. The fidelity is\ntypically determined by the relative magnitude of the\nspin Zeeman energy splitting and _k_ _B_ _T_ where _T_ is the\ntemperature of the electron reservoirs and _k_ _B_ is Boltz\n\nmann’s constant. For example, at _B_ 0 = 1 T, _F �_ 0 _._ 9999\nat _T_ ≲ 73 mK. The initialization time is determined\nby the reservoir-to-dot tunnelling time 1 _/_ Γ _ψ_ R, which can\nbe controlled with a barrier gate, and can reach tens of\nGHz [52]. At higher electron reservoir temperatures, required fidelities could be obtained using real-time monitoring of the qubit through a negative-result measurement at the expense of longer initialization times [53].\nFor readout, we employ the so-called Elzerman readout, where we detect spin states using the reverse of the\nspin-dependent tunnel",
+        "score": -7.002424654861977,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7335423197492164,
+        "rerank_score": -10.859857559204102,
+        "matched_nodes": [
+          "To",
+          "At",
+          "As",
+          "The",
+          "For",
+          "We"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1541,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2705225__2310.00577__Conceptual_study_of_a_two-layer_silicon_pixel_detector_to_tag_the_passage_of_muons_from_co.md",
+        "title": "2023__recid_2705225__2310.00577__Conceptual_study_of_a_two-layer_silicon_pixel_detector_to_tag_the_passage_of_muons_from_co",
+        "text": "and readout techniques as\n\nmentioned above. In such a case, dedicated interconnects with very low thermal conductivity\n\nwould need to be utilized.\n\nThe design of a detector also requires support structures. Here, we particularly consider the\n\nmodule base and external supports, and leave other technical details of the module assembly to a\n\nfuture study. The module base material should be able to transfer the dissipated power away from\n\nthe silicon pixels, withstand any thermomechanical stress and shear, and should have a thermal\n\nexpansion coefficient ( _𝛼_ ) close enough to that of silicon to avoid inducing shear comparable\nto the pixel size, i.e., for pure silicon, the values of _𝛼_ range from 1 _._ 33 × 10 [−][9] K [−][1] at 14 K to\n−47 _._ 40 × 10 [−][8] K [−][1] at 78 K [60] and 2 _._ 59 × 10 [−][6] K [−][1] at 298.2 K [61]. Carbon fiber composites\n\nare viable candidates that could satisfy these requirements and have already been used in many\n\nhigh-energy particle physics experiments: At room temperatures, commercially available sheets of\n\n0.5 mm thickness used at the LHC are reported to have thermal conductivity values typically between\n400 and 500 WK [−][1] m [−][1] and as high as 1100 WK [−][1] m [−][1], a Young’s modulus of about 400 GPa, and\n_𝛼<_ 10 [−][6] K [−][1] along the fiber direction [23]. The exact temperature dependence of the properties\n\nof these composite materials are to be measured in the future, and it would be important to use\n\nmaterials that start with the highest thermal conductivity values at room temperature to remain as\n\nclose to the performance of copper as possible. For comparison, the thermal conductivity of copper\nranges from ∼ 400 WK [−][1] m [−][1] at room temperature [62] to around ∼ 140 WK [−][1] m [−][1] at 1 K (for a\n\nresidual resistance ratio _𝑅𝑅𝑅_ = 30, with higher _𝑅𝑅𝑅_ resulting in thermal conductivity values much\n\ncloser to that at room temperature) [63]. As for durability considerations, the curing process of\n\ncarbon fiber composites could be adapted for improved microcracking resistance and stability after\n\nmultiple cryogenic cycles [64].\n\nThe detector setup would also need an external support structure that allows mounting the\n\nsensor modules and distributes the cooling power from the copper flange. We would expect this\n\nsupport structure to have decent thermal conductivity, and its thickness, relative to its radiation\n\nlength, should be thin enough to avoid significant multiple scattering. Carbon foam-fiber h",
+        "score": -7.045538670447507,
+        "dense_score": null,
+        "bm25_score": 14.42237825038505,
+        "graph_score": 0.7962382445141066,
+        "rerank_score": -10.939367294311523,
+        "matched_nodes": [
+          "At",
+          "As",
+          "The",
+          "In",
+          "For",
+          "We",
+          "LHC"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "t detectors in CE _ν_ NS exper\n\nASN oscillation parameters.\n\n**B.** **With Different Masses of the Detector**\n\n9\n\niment exhibit a mass advantage of one order of magnitude,\nassuming that measurements of eV-scale recoil thresholds are\nfeasible and a signal-to-background ratio of about 1 can be\nachieved in the experiment [60]. Figure 5 shows the ASN\nmixing sensitivity in sin [2] 2 _θ_ 14 – ∆ _m_ [2] 41 [plane at 95][%][ C.L. for]\nan exposure of 1 yr for different mass of the detector. Figure 5(a) shows for Si detector and Fig. 5(b) for Ge detector,\nboth with masses 10 kg, 50 kg, and 100 kg. It can be noted\nhere that, sensitivities are extracted considering a threshold of\n100 eV and 20 eV for silicon and germanium detector, respectively. At a given detector mass at higher ∆ _m_ [2] 41 [the sensitivity]\nin sin [2] 2 _θ_ 14 is more as compared to lower ∆ _m_ [2] 41 [. The sensi-]\ntivity improves in all regions of sin [2] 2 _θ_ 14 with an increase in\ndetector mass as the number of expected events increases. It\nis evident that the Ge detector excludes both allowed regions\nof the GALLIUM experiment.\n\n**C.** **With Various Detector Thresholds**\n\nAs previously discussed, the recoil energy of nuclei decreases as the mass number of the detector increases. There\nfore, detectors with low thresholds, such as Ge and Si can\nperform nuclear recoil discrimination down to the eV scale\nenergy threshold. Such detectors will be more useful if we\ncan observe the recoil energies as low as a few tens of eV. In\nthe context of CE _ν_ NS cross-section, as given in Eq. 1, the nuclear recoil energy _T_ serves as the relevant observable. For\na given neutrino energy, there is a limit to the maximum recoil energy. The cross-section is maximum for lower values of\n_T_, therefore, the total number of observed event rate sensitivity dependent on the low-energy threshold for nuclear recoil\n_T_ _min_ . A comprehensive study has been performed to assess\nthe impact of detector threshold on ASN mixing sensitivity,\nconsidering both Si and Ge detectors with a mass of 10 kg\nplaced at a distance of 4 m from U-Apsara reactor core. Figure 6 shows the sensitivity in sin [2] 2 _θ_ 14 –∆ _m_ [2] 41 [plane at 95][ %]\nC.L for detector with different threshold energies. The sensitivity of the detector at lower ∆ _m_ [2] 41 [is better at the lower de-]\ntector threshold. However, for ∆ _m_ [2] 41 _[≥]_ [1] _[.]_ [0] _[ eV]_ [ 2] [, the detector]\nthreshold has minimal impact on ASN mixing sensitivity.\n\nFIG. 7: The",
+        "score": -7.0578645473348685,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8432601880877744,
+        "rerank_score": -10.958147048950195,
+        "matched_nodes": [
+          "It",
+          "At",
+          "As",
+          "The",
+          "In",
+          "For",
+          "Si"
+        ],
+        "path_nodes": [
+          "It"
+        ],
+        "community_id": "It",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4603,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter.md",
+        "title": "2024__recid_2766626__2403.13505__Towards_an_All-Silicon_QKD_Transmitter_Sourced_by_a_Ge-on-Si_Light_Emitter",
+        "text": "the optical budget for the ASE-sourced transmitter and evolution of the rawkey rate and QBER when seeding Alice’ polarization encoder with (b) the ASE-sourced and (c) the Ge-on-Si PIN light source.\n\ndrive to suppress symbol transitions. Before transmitting the photons to Bob, we used an optical attenuator to set the signal\nlaunch power to a mean photon number of μ Q = 0.1 photons/symbol.\n\nAt Bob’s side we manually aligned the polarization of the incoming signal to the axes of our polarization analyzer with a\npolarization controller (PC). The outputs of the polarization analyzer were connected to a pair of free-running InGaAs SPADs\nwith dark count rates of 560 and 525 cts/s. We consecutively measured the received quantum signal in the **H** / **V** and **D** / **A** bases\nand recorded the detection events of the SPADs with a TTM. A real-time QBER evaluation was then performed, which included\n\n|12 0.1<br>10 [kb/s] = Q<br>µ<br>8<br>rate<br>6<br>key<br>4<br>Raw<br>2<br>0<br>-16 -12 -8 -4<br>(a) Relative optica|hν/pulse|\n|---|---|\n|<br>0<br>2<br>4<br>6<br>8<br>10<br>12<br>-16 -12 -8<br>-4<br><br>**Relative optica**<br>**Raw key rate [kb/s]**<br>(a)<br>µQ = 0.1|0<br>4<br>8<br>12 16<br>**l budget****_OB_ [dB]**|\n|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|drive to suppress<br>launch power to<br>At Bob’s side<br>polarization cont<br>with dark count r<br>and recorded th<br>**Fig. 4.** (a) QBER a<br>key rate and QBE|\n\nframe synchronization with the pre-defined pseudo random bit sequence transmitted by Alice, as well as temporal filtering to\n50% of the symbol period to reduce the dark counts. Additionally, basis sifting was performed during this process.\n\nTo confirm the correct operation of our transmitter and receiver architectures we also performed a classical\n\ncharacterization. For this we replaced the attenuator by an additional EDFA and the SPADs and TTM with balanced receivers\nand a real-time oscilloscope. The carved optical output at Alice ( _Ξ_ ) and the characteristic three-level signals ( _ρ_ ) for the **H** / **V** and\n**D** / **A** bases under 4-state polarization encoding are included in Fig. 3(a).\n\nIn order to assess the performance as a function of the optical budget (OB) between Alice and Bob, defined as the difference\nof the transmitted power level at Alice and the received optical power (ROP) at Bob, we used the ASE seed light for Al",
+        "score": -7.171703857290335,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7962382445141066,
+        "rerank_score": -11.127714157104492,
+        "matched_nodes": [
+          "To",
+          "At",
+          "The",
+          "In",
+          "For",
+          "We",
+          "Si"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4772,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "designed and produced in the LFoundry\n150-nm CMOS technology. The key building blocks\nare SPADs, with a fixed layout provided by the manufacturer. Four of these SPADs, with an active area of\n20×20 µm [2], form a pixel with a size of 69.6×76 µm [2],\nas shown in figure 1. The fill factor of a pixel, and\nhence the entire matrix, amounts to 30 %. This includes\nthe readout circuitry implementing the key pixel functionality, i.e. a masking mechanism, a variable quenching resistance (transistor), a discriminator, a counter (up\nto 2 bit), and a fast wired-OR connection to the quadrant’s Time-to-Digital Converter (TDC). A quadrant is\nthe next-larger building block of the chip. It comprises\n16 × 16 pixels, and features a 12 bit TDC with two\nstages, a validation logic, and multiplexers for the hit\nand timestamp information in the chip periphery. The\nTDC provides the time stamp of the first firing pixel\nwithin a 333 ns readout frame. An overview of the read\nout scheme is shown in figure 2, and a detailed description of the DESY dSiPM, including details on the circuit\ndesign and laboratory characterization, is given in [7].\nFor the reader’s convenience, a few measurements of\nkey properties of the DESY dSiPM from [7] are summa\n\nrized in the following. The sensors reach Geiger-mode\noperation at about 18 V, and the temperature coefficient\nof this breakdown voltage is about 16 mV K [−][1] . The dark\ncount rate strongly depends on temperature and over\nvoltage, defined as the difference between the applied\nbias and the breakdown voltage. At a typical working\npoint, e.g. an over voltage of 2 V and a temperature of\n0 [◦] C, it reaches 7 kHz per pixel, which corresponds to\n4.4 Hz µm [−][2] accounting for the active area. The time\nresolution of the TDC is reported to be 95.8±13.65 ps\n(average bin width).\nThe readout system for the sensor is based on the\nCaribou system [8]. The main building block of the\nsystem is a System-on-Chip (SoC) board, with a CPU\nand an FPGA on the same die. The CPU runs the\n\ndata-acquisition software, Peary [9], and the FPGA executes custom firmware blocks to handle configuration\nand readout of the chip. The Control and Readout (CaR)\nboard provides all the peripherals required for the chip\noperation, and the chip itself is glued and wire bonded to\na custom chip board with only few active components.\n\n**3. Test-Beam Setup and Reconstruction**\n\nTo explore the capabilities of the DESY dSiPM as\na detector for ionizing radiation, test-beam measurements have b",
+        "score": -7.2462708154875655,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.780564263322884,
+        "rerank_score": -11.240575790405273,
+        "matched_nodes": [
+          "To",
+          "It",
+          "At",
+          "OR",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -7.246928482055664,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9090909090909091,
+        "rerank_score": -11.256813049316406,
+        "matched_nodes": [
+          "To",
+          "At",
+          "As",
+          "The",
+          "In",
+          "For",
+          "We",
+          "Col2"
+        ],
+        "path_nodes": [
+          "To"
+        ],
+        "community_id": "To",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4061,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2750105__2401.11438__Tensor_force_impact_on_shell_evolution_in_neutron-rich_Si_and_Ni_isotopes.md",
+        "title": "2024__recid_2750105__2401.11438__Tensor_force_impact_on_shell_evolution_in_neutron-rich_Si_and_Ni_isotopes",
+        "text": "id splitting. However, in this case,\nthe SGII+T interaction succeeds at reproducing the\nbehavior of the dependence at a qualitative level.\nRegarding the influence of the neutron excess on\nthe single-particle states of neutrons, here the presence of tensor interaction also leads to changes in\nSPEs, and the effect will be opposite compared to\nthe case of np-interaction. As seen from Fig. 2(c,d),\nas ν1d 3/2 is filled, the neutron states with j - are repelled, and with the filling ν1f 7/2 the attraction is\nstrengthened by the shell. At the same time, the unsatisfactory description of experimental estimates for\n1d2s states should be noted. On the other hand, it\nshould be noted that the accuracy of the experimental data based on the spectroscopy of single-nucleon\ntransfer reactions drops dramatically for the states\nlying much lower than the Fermi surface. Nevertheless, Fig. 3b shows that for the range of nuclei up to\n\n34 Si, it is the inclusion of tensor forces that makes it\npossible to qualitatively reproduce the dependence of\nthe neutron spin-orbit splitting of the d-states.\nFor neutron single-particle states, we can also consider the splitting between 1d 3/2 and 1f 7/2 . The\nexperimental data demonstrate a maximum in [34] Si\nrelated to the manifestation of the magic number\n\nN = 20 and a substantial drop to very small values\nas ν1f 7/2 is filled, which illustrates the decrease in\nthe role of shell effects in highly neutron-rich silicon\nisotopes. As can be seen in Fig. 3c, it is not possible to reproduce this character of the experimental\ndependence without including the tensor component,\nand the SGII+T parametrization makes it possible to\nreproduce the dependence at a qualitative level. The\nresults with SLy5+T also give a maximum in [34] Si,\nand the splitting value agrees with the experimental\n\nestimates.\n\nIt is important to note that the scale of the effect\nfor neutrons is comparable to that observed earlier\nfor protons (Fig. 3a). In [9] it is shown that in the\nmost elementary case, when α T = β T, the interaction of like nucleons (governed purely by the isovector\ncomponent of the forces) is 2 times weaker than npinteraction (dependant on both isoscalar and isovector components). Therefore, traditionally, when considering the effects associated with tensor interaction,\none treats the influence of the neutron excess on the\nstates of protons in isotopes or vice versa, the influence of the number of protons on the states of neutrons in isotones. In the case of i",
+        "score": -7.248407054506499,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8432601880877744,
+        "rerank_score": -11.251289367675781,
+        "matched_nodes": [
+          "It",
+          "At",
+          "As",
+          "The",
+          "In",
+          "For",
+          "Si"
+        ],
+        "path_nodes": [
+          "It"
+        ],
+        "community_id": "It",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "To": 1.0,
+      "It": 1.0,
+      "At": 1.0,
+      "As": 1.0,
+      "CERN": 1.0,
+      "SH": 1.0,
+      "OR": 1.0,
+      "SE": 1.0
+    },
+    "expanded_nodes": {
+      "To": 1.0,
+      "It": 1.0,
+      "At": 1.0,
+      "As": 1.0,
+      "CERN": 1.0,
+      "SH": 1.0,
+      "OR": 1.0,
+      "SE": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "For": 0.7,
+      "We": 0.7,
+      "SPS": 0.7,
+      "LHC": 0.7,
+      "Col2": 0.42,
+      "Si": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 16,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 7.689385280944407,
+    "generation_latency_s": 3.702007234096527e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 16.0,
+    "retrieval_latency_s": 7.689385280944407,
+    "generation_latency_s": 3.702007234096527e-07
+  }
+}

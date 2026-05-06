@@ -1,0 +1,277 @@
+{
+  "benchmark": {
+    "query_id": "neg001",
+    "query_type": "negative",
+    "query": "What is the measured Higgs boson mass in these pixel detector papers?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "the",
+      "measured"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the measured Higgs boson mass in these pixel detector papers?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 3664,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2730648__2312.02553__Design_and_test_for_the_CEPC_muon_subdetector_based_on_extruded_scintillator_and_SiPM.md",
+        "title": "2024__recid_2730648__2312.02553__Design_and_test_for_the_CEPC_muon_subdetector_based_on_extruded_scintillator_and_SiPM",
+        "text": "e detector components.\nThe primary process for Higgs boson generation via _𝑒_ [+] _𝑒_ [−] annihilation is _𝑒_ [+] _𝑒_ [−] → _𝐻_ + _𝑍_ [0],\nallowing for the precise determination of the _𝐻_ boson through the recoil of the _𝑍_ [0] boson, which\nexhibits a branching fraction of (3 _._ 3662 ± 0 _._ 0066)% for decay into a _𝜇_ [+] _𝜇_ [−] pair [6]. Consequently,\n\nthe muon detector is of paramount importance in a Higgs factory setting. Beyond the reconstruction\nof _𝑍_ [0] → _𝜇_ [+] _𝜇_ [−], the presence of muons in the final state is often regarded as the “golden channel\"\n\nin new particle searches [7]. As outlined in the Conceptual Design Report for the CEPC, its muon\n\ndetector is tasked with muon identification, calibrating shower leakage from calorimeters, and\n\nprobing for long-lived particles [4]. The muon detection system is expected to excel in detection\n\nefficiency, maintain a low rate of hadron misidentification, ensure precise position resolution, and\n\nachieve broad coverage. Additionally, clear muon signals are invaluable for enhancing the trigger\n\nsystem’s performance. The proposed layout for the CEPC muon detector, consisting of a barrel and\n\ntwo endcaps, incorporates eight sensitive layers interleaved with iron absorbers. This configuration\n\nis designed to achieve high standalone muon detection efficiency (95%), requiring minimum position\n\n– 1 –\n\nresolutions _𝜎_ _𝑟𝜙_ = 2 _._ 0 cm, _𝜎_ _𝑧_ = 1 _._ 5 cm, alongside precise time resolution and a rate capability\nranging from 50 − 100 Hz/cm [2], thereby facilitating crucial muon momentum insights [4].\n\nIn this article, we detail the R&D efforts for the CEPC muon detector, employing scintillator\nbased technology akin to the KLM of the Belle II experiment [8], which took reference to the\n\nT2K experiment [11, 12]. During the initial Belle experiment, Resistive Plate Chambers (RPCs)\n\nwere utilized within the KLM [9]. However, the prolonged recovery time of RPCs, when op\nerating under high luminosity conditions, led to a noticeable drop in efficiency, prompting the\n\npartial substitution with scintillator modules. These modules, composed of plastic scintillator\n\nstrips, wavelength-shifting (WLS) fibers, and silicon photomultipliers (SiPMs), have demonstrated\n\neffective performance in Belle II [10]. Their operation not only meets but also largely aligns with\n\nthe stringent requirements set for a muon detector in the CEPC, showcasing their potential for\n\nfuture applications. Meanwhile, the technology of employing p",
+        "score": -0.18931159271913417,
+        "dense_score": 0.5080512762069702,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.2991671562194824,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 3606,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2723198__2311.10061__Status_of_dual-readout_calorimetry_for_future_high-energy_physics_experiments.md",
+        "title": "2024__recid_2723198__2311.10061__Status_of_dual-readout_calorimetry_for_future_high-energy_physics_experiments",
+        "text": "ets will drastically increase the statistics available for the analyses, which is today mostly limited\n\nto leptonic decays. In order to have distinct high-purity samples of Higgs decays into W or Z boson\n\n−\npairs, the jet energy resolution is required to be as good as 3 4% to statistically separate the invariant\n\nmass of the on-shell W and Z boson. As the calorimeter performance on energy relative resolution\nusually scales with _𝜎_ / _𝐸_ ∝ 1 ~~√~~ _𝐸_, this benchmark is usually translated to a target relative resolution\n\nfor future calorimeters of _𝜎_ / _𝐸_ = 30%/ ~~√~~ _𝐸_ . This is a difficult requirement on hadron calorimetry\n\nand has currently never been achieved on a running collider experiment. There are currently two\n\nmain lines of research to achieve such a performance: highly granular calorimeters optimized for\n\nParticle Flow techniques, and dual-readout calorimeters. The first one is here briefly described,\n\nwhile the second is better detailed in Section 2. The idea behind Particle Flow calorimetry is\n\nto exploit as much as possible the information coming from the tracker detector, measuring with\n\na much better precision the momenta of charged tracks through their bending inside a magnetic\n\nfield. This technique greatly benefits from a very finely segmented calorimeter in both lateral and\n\nlongitudinal directions, removing energy contributions coming from charged tracks and replacing\n\nthem with the corresponding momenta. The remaining energy deposits in the calorimeter then\n\nbelong to photons and other neutral particles, whose energy usually sum up to about 10% of the\n\ntotal jet energy [3].\n\n**2** **Dual-readout calorimetry principles**\n\nAny hadron shower inherently comprises electromagnetic showers (through the _𝜋_ [0] _, 𝜂_ → 2 _𝛾_ decays)\n\nwhose fraction of energy with respect to the total shower one is called electromagnetic fraction\n\n_𝑓_ _𝑒𝑚_ . Naming _𝑒_ the calorimeter response to the electromagnetic component of a shower and _ℎ_\nthe non-electromagnetic one, calorimeters are tipically characterised by a ratio _𝑒_ / _ℎ_ ≠ 1, property\n\nknown as _non compensation_ . The limits on hadron energy measurements are related to large\n\nand event-based fluctuations in _𝑓_ _𝑒𝑚_, which exhibits a non-Gaussian and asymmetrical distribution,\n\nand that is also observed to increase with the overall shower energy (non-linearity of the detector\n\nresponse). The _dual-readout method_ [4] aims at improving the energy resolution specifically on\n\nhadron showers, b",
+        "score": -0.39455346377169503,
+        "dense_score": 0.5258760452270508,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.6158325672149658,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3457,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2720464__2311.04720__Development_of_the_time-of-flight_particle_identification_for_future_Higgs_factories.md",
+        "title": "2024__recid_2720464__2311.04720__Development_of_the_time-of-flight_particle_identification_for_future_Higgs_factories",
+        "text": "_\n_Hamburg, Germany_\n\n∗ Speaker\n\n_TOF PID for future Higgs factories_ Bohdan Dudar\n\n**1.** **Introduction**\n\nThe particle physics community is in an active discussion about the next collider facility, an\n_𝑒_ [+] _𝑒_ [−] collider for precision studies of the Higgs boson, the top quark and the electroweak gauge\n\nbosons, as recommended by the current European strategy for particle physics from 2020 and\n\nthe recent Snowmass community study. Alongside the effort to converge on an optimal collider\n\nproposal, there is ongoing development of different detector designs for such future Higgs factories.\nOne open question for such detectors is the implementation of fast O(10 ps) timing into the detector\n\ndesign. Fast timing is interesting for several aspects: time-of-flight (TOF) particle identification\n\n(PID), 4D tracking, 5D calorimetry, background rejection and long-lived particle searches. This\n\nstudy focuses on the TOF PID of _𝜋_, _𝐾_ and _𝑝_ using the International Large Detector (ILD) [1] as\n\nan example case. We present the latest developments of the reconstruction algorithms necessary\n\nfor TOF PID, discuss involved challenges and present their performance. Additionally, we briefly\n\ntouch on implications for detector concepts with different main tracker technologies and potential\n\nphysics applications of the TOF PID.\n\n**2.** **Basics of time-of-flight particle identification**\n\nFor a simple helix track, the mass _𝑚_ of a particle can be expressed in terms of its momentum\n\n_𝑝_, its TOF _𝑇_ and its track length _𝐿_, as shown in Eq. (1):\n\n_𝑚_ = _𝑝_\n\n√︂\n\n_𝑐_ [2] _𝑇_ [2]\n\n− 1. (1)\n_𝐿_ [2]\n\nIn a realistic detector, energy loss and scattering lead to distortions from a simple helix, and\n\nthe relation becomes more complicated [2]. However, Eq. (1) remains a good approximation if\n\nappropriate definitions of _𝑝_ and, more importantly, _𝐿_ are used. Instead of the momentum of the\n\nparticle at some specific point, we use the weighted harmonic mean, as defined in Eq. (2):\n\n_𝑝_ =\n~~√~~\n\n⟨ _𝑝_ [2] ⟩ _𝐻𝑀_ =\n\n�\n_𝑛_\n\n_𝐿_ _𝑖_\n\n∑︁\n� _𝑖_ =1\n\n_𝑛_\n∑︁\n~~�~~ _𝑖_ =1\n\n_𝐿_ _𝑖_\n. (2)\n_𝑝_ [2] _𝑖_\n\nThe sum runs over all _𝑛_ track segments, with _𝐿_ _𝑖_ being _𝑖_ th segment length and _𝑝_ _𝑖_ being the\n\nmomentum of the particle reconstructed at the beginning of the given _𝑖_ th track segment. In practice,\n\nusing the harmonic mean instead of the momentum of the particle at the IP has a negligible impact.\n\n**3.** **Track length reconstruction**\n\nHistorically TOF PID was usually limited by the T",
+        "score": -0.7212520906419466,
+        "dense_score": 0.5110575556755066,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.1177771091461182,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 4156,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi.md",
+        "title": "2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi",
+        "text": "e sensitivity of the search for\nkeV-scale sterile neutrinos. Generally, the measured\ndetector properties, such as energy resolution, pixel\nhomogeneity, stability, and linearities, currently serve\nas a basis for a global sensitivity study, based on a\nfull model of the measured tritium spectrum. As these\nsensitivity studies are still ongoing at the moment, we\nrefer the reader to a future publication for the final\nassessment of detector-related systematic uncertainties\nand their impact on the final sensitivity.\n\nThe next step in the development of the detector\nsystem is the assembly and characterization of an\nintegrated system, consisting of multiple detector modules. Additionally, a high-luminosity electron gun is\ncurrently under developed and will be used to validate\nthe results also at the envisioned rate of 100 kcps per\npixel. Finally, the preparations for the integration of\nthe detector system into the KATRIN beam line, after\nits neutrino mass measurement campaign is completed\nend of 2025, are currently ongoing.\n\n**Acknowledgements** We acknowledge the support of\nHelmholtz Association (HGF); Ministry for Education\nand Research BMBF (05A17PM3, 05A17PX3, 05A17VK2,\n05A17PDA, 05A17WO3, 05A20VK3, 05A20PMA and\n05A20PX3); Helmholtz Alliance for Astroparticle Physics\n(HAP); the doctoral school KSETA at KIT; Helmholtz\nYoung Investigator Group (VH-NG-1055); Max Planck Research Group (MaxPlanck@TUM); Deutsche Forschungsgemeinschaft DFG (Research Training Group grant nos. GRK\n1694 and GRK 2149); Graduate School grant no. GSC 1085KSETA, SFB-1258, and Excellence Cluster ORIGINS in Germany; Ministry of Education, Youth and Sport (CANAMLM2015056, LTT19005) in the Czech Republic; the Department of Energy through grants DE-FG02-97ER41020, DEFG02-94ER40818, DE-SC0004036, DE-FG02-97ER41033,\nDE-FG02-97ER41041, DE-SC0011091 and DE-SC0019304;\nand the Federal Prime Agreement DE-AC02-05CH11231 in\nthe USA. This project has received funding from the European Research Council (ERC) under the European Union\nHorizon 2020 research and innovation programme (grant\nagreement no. 852845). We thank the computing cluster support at the Institute for Astroparticle Physics at Karlsruhe\nInstitute of Technology, Max Planck Computing and Data\nFacility (MPCDF), and National Energy Research Scientific\nComputing Center (NERSC) at Lawrence Berkeley National\nLaboratory.\n\n**References**\n\n[1] R. Adhikari _et al._ “A White Paper on keV sterile neutrino Dark Matter”. _JCAP_ 2017.01 (2017),\ndoi: `[10.1088",
+        "score": -0.7525724844499069,
+        "dense_score": 0.4910534620285034,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.1647968292236328,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 27,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 8111,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3063253__2510.03654__A_novel_steerable_low-energy_proton_source_for_detector_characterization.md",
+        "title": "2026__recid_3063253__2510.03654__A_novel_steerable_low-energy_proton_source_for_detector_characterization",
+        "text": "irements for the Neutron-ab (Nab) experiment, where _a_, and _b_ are the\nparameters being measured.\nThe Nab detectors have a 117 mm diameter active area divided into 127\nhexagonal pixels (each with _∼_ 10 mm height). The proton beam was required\nto traverse the entire face of the detector, while maintaining a small “spot\nsize”, less than 6 _._ 5 mm [2] area to remain within the envelope of the pixelation,\nenabling single pixel study without significant charge sharing between the\npixels. The performance and analysis of the Nab silicon detectors using the\nfacility is reported here [7], while this work focuses on the development and\nperformance of the proton source used for these studies. In what follows, we\nbreak down the stages within the proton source (Section 2), going through\neach segment in turn, and then discuss the studies performed to understand\nthe beam parameters under typical operation (see Section 3).\n\n**2. Components of the Proton Source**\n\nThe Manitoba II mass spectrometer was a double-focusing (velocity and\nangle) high precision instrument built in 1967 for precise mass measurements\nof positively charged ions [8]. After serving the atomic physics community\nfor over forty years, it gained a second lease on life through the adaptation\nto a steerable low-energy “pencil beam” proton source for detector characterization [9]. Figure 1 shows a schematic of the proton source facility after\nmodifications. A gas discharge source is used to produce an ion beam, replacing the old tantalum oven-ized source (see 2.1). The diffusion pumps were\nremoved from the vacuum system to reduce the risk of backward contamination to sensitive detector instrumentation in favor of more conventional\n\nturbo-molecular pumps, backed by diaphragm roughing pumps. The ion\nbeam then passes through the unmodified Electro-static Analyzer (ESA) (see\n2.2) and Magneto-static Analyzer (MSA) (see 2.3). An electrostatic steerer\nwas installed after the MSA to deflect the proton beam over the face of a\ndetector in the Detector Region. (see 2.4). The Detector Region includes\na vacuum cross with a long cylindrical vacuum vessel downstream which\n\n2\n\nFigure 1: Top-down schematic of the Manitoba II proton source. Starting counterclockwise from top-left, ions are born in the the gas discharge ion source (or penning\nion generator (PIG), see Section 2.1), are selected based on energy in the electro static\nanalyzer (ESA, see Section 2.2), selected based on momentum in the magneto-static analyzer (M",
+        "score": -0.8197904379888513,
+        "dense_score": 0.4765937924385071,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.2674052715301514,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6276,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex.md",
+        "title": "2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex",
+        "text": "n in\nFig. 9 and Fig. 10 respectively, as a function of the mass of the dark higgs.\nFrom Fig. 10, one sees that BR upper limit of dark higgs in _η →_ _π_ [0] _π_ [+] _π_ _[−]_ channel is at the level of 10 _[−]_ [6]\n\nto 10 _[−]_ [7], for one-month running of the experiment. From Fig. 9, one sees that the upper limit in _π_ [0] _e_ [+] _e_ _[−]_\n\nchannel is obviously below 10 _[−]_ [8] in the most range of dark higgs mass. This is mainly due to the less electron\nbackground in _p −_ _A_ collisions, comparing to the strong pion background. One also finds that the upper limit\nin _e_ [+] _e_ _[−]_ channel falls down quickly, reaching a value below 10 _[−]_ [8] when the mass is above 0.14 GeV. This is\nbecause most of the _e_ [+] _e_ _[−]_ background comes from the _π_ [0] decay. Therefore the _e_ [+] _e_ _[−]_ channel has the advantage\nin searching the dark higgs of the mass heavier than the pion mass. With years running of the Huizhou eta\nfactory experiment, we are confident that the accumulated data would provide the strong constraints of the\npossible dark higgs particle.\nUnder the hadrophilic scalar model [40,41], the sensitivity to the parameter _g_ _u_ (the coupling of dark scalar\nto the first-generation quark) is computed and shown in Fig. 11, compared with the constraints provided by\nthe previous experimental data (BESIII [151], KLOE [83], MAMI [152], CHARM [153,154] and SN1987A [40]).\nOne finds that the _g_ _u_ sensitivity from one-month running of the proposed Huizhou _η_ factory will exceed the\ncurrent experimental limits in the accessed mass range. The proposed super _η_ factory will play an important\nrole in searching the light dark scalar portal particles.\n\n**4.3** **C and CP violation in** _η →_ _π_ [+] _π_ _[−]_ _π_ [0]\n\nFigure 12: The event distributions of _η →_ _π_ [+] _π_ _[−]_ _π_ [0] decay channel (black squares) in different _X_ and _Y_ bins,\nfor just one-month running of Huizhou _η_ factory experiment, under a conservative event rate of 100 MHz of\ninelastic reactions. The Dalitz distribution of _η →_ _π_ [+] _π_ _[−]_ _π_ [0] is fitted with a simple model (the red lines). See\nthe main text for more explanations.\n\nThe CP violation in the flavor-nondiagonal process due to the Cabibbo-Kobayashi-Maskawa (CKM) matrix\nphase is not enough to explain the matter-antimatter asymmetry in the universe. Therefore, searching for new\nsources and flavor-diagonal CP violation has been a hot topic in high-energy physics. The _π_ [+] _π_ _[−]_ _π_ [0] decay\nc",
+        "score": -1.0413403646269843,
+        "dense_score": 0.5095449686050415,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.6100988388061523,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6273,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex.md",
+        "title": "2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex",
+        "text": "rgy electron, it can be effectively identified with\nthe energy decomposition _dE/dx_ measured by the silicon pixel tracker. And for the high-energy electron, it\ncan be identified with the help of the calorimeter, as the pion initiates very few Cherenkov photons in the lead\nglass calorimeter.\nThe distribution of reconstructed invariant mass of _e_ [+] _e_ _[−]_ _γ_ is shown in Fig. 5. One sees clearly the peaks of\n_π_ [0] and _η_ with just very low background underneath. Owing to the suppression of bremsstrahlung radiations\nin the proton scattering process, the electron and photon backgrounds are not significant. The _η_ samples can\nbe selected with a high purity by performing a cut on the invariant mass of _e_ [+] _e_ _[−]_ _γ_ . In this simulation study,\nthe invariant mass is required to be in the range of [ _m_ _η_ _−_ 3 _σ, m_ _η_ + 3 _σ_ ].\nTo estimate the sensitivity of the proposed experiment to the dark photon, we carefully studied the background distribution with the simulation. The background events are generated with GiBUU and with some\ndecay chains added by us. In the simulation data, there is no bump in the invariant mass distribution of electron and position. We assume there is no dark photon in the simulation and the invariant mass distribution\nof _e_ [+] _e_ _[−]_ is the pure background distribution. No observation of the dark photon means that the statistical\nsignificance of the dark photon peak is smaller than 3 _σ_ . As a result, we get a formula for the branching-ratio\n(BR) upper limit of the dark photon channel, which is given by,\n\n~~�~~ _N_ bg _× ϵ_ bg\nBR [up] = [3] _[ ×]_ _N_ _η_ _× ϵ_ sig _,_ (1)\n\nwhere _N_ bg is the number of background events, _ϵ_ bg is efficiency for the background event, _N_ _η_ is the total\nnumber of eta mesons produced in the experiment, and _ϵ_ sig is the efficiency for the dark photon channel.\n_N_ bg _× ϵ_ bg is actually the number of background events survived after all the event selections. Based on the\nsimulation of one-month experiment of Huizhou eta factory, the BR upper limit of dark photon in _η_ decay\nis evaluated and shown in Fig. 6. The sensitivity of kinematic mixing parameter _ϵ_ [2] is closely related to the\nupper limit of branching ratio, which is written as,\n\nBR [up]\n_S_ ( _ϵ_ [2] ) =\n\n2 _|F_ ( _m_ [2] A [)] _[|]_ [2] ~~�~~ 1 _−_ _[m]_ _m_ A [2][2] _η_\n\n3 _[,]_ (2)\n~~�~~\n\nin which _m_ A and _m_ _η_ are the masses of the dark photon and the _η_ meson respectively, and _F_ is the transition\nform",
+        "score": -1.2703437440925174,
+        "dense_score": 0.500962495803833,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.9618536233901978,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6275,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex.md",
+        "title": "2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex",
+        "text": "e of [ _m_ _η_ _−_ 3 _σ, m_ _η_ + 3 _σ_ ]. The low background does not hinder much our explorations for the rare\ndecays of _η_ meson.\n\n10\n\nFigure 8: The invariant mass distribution of _π_ [+] _π_ _[−]_ _π_ [0] from the simulation data for one-month running of\nHuizhou _η_ factory experiment.\n\nFigure 9: The estimated branching-ratio upperlimit of light dark higgs particle from _π_ [0] _e_ [+] _e_ _[−]_ channel for just\none-month running of Huizhou _η_ factory experiment, under a conservative event rate of 100 MHz of inelastic\nreactions. The invariant mass of _π_ [0] _e_ [+] _e_ _[−]_ is required to be in the _η_ mass region.\n\n11\n\nFigure 10: The estimated branching-ratio upperlimit of light dark higgs particle from _π_ [0] _π_ [+] _π_ _[−]_ channel for just\none-month running of Huizhou _η_ factory experiment, under a conservative event rate of 100 MHz of inelastic\nreactions. The invariant mass of _π_ [0] _π_ [+] _π_ _[−]_ is required to be in the _η_ mass region.\n\nFigure 11: The estimated _g_ _u_ sensitivity of light dark higgs particle in a hadrophilic scalar model [40, 41],\nfor just one-month running of Huizhou _η_ factory experiment, under a conservative event rate of 100 MHz of\ninelastic reactions. The previous experimental data for the shaded exclusion areas (BESIII, KLOE, MAMI,\nCHARM, and SN1987A) in the figure are taken from Refs. [40,83,151–154].\n\n12\n\nFrom the simulation, the efficiencies of _π_ [0] _e_ [+] _e_ _[−]_ channel and _π_ [0] _π_ [+] _π_ _[−]_ channel are all above 40% with the\nconceptual design of spectrometer. The resolutions for invariant masses of _e_ [+] _e_ _[−]_ and _π_ [+] _π_ _[−]_ are 2 MeV/c [2] and\n1 MeV/c [2] respectively. In our studies, the bin width for the invariant mass is six times of the resolution. The\nbackground distributions without the dark higgs particle are simulated with the GiBUU event generator, and\nthe total number of inelastic scattering events scales up to 5 _._ 9 _×_ 10 [11] . Since there is no dark higgs observed in\nour simulation data, the upper limit of branching ratio of the dark higgs particle is given with the formula in\nEq. (1). The BR upper limits of the light dark higgs particle in _π_ [0] _e_ [+] _e_ _[−]_ and _π_ [0] _π_ [+] _π_ _[−]_ channels are shown in\nFig. 9 and Fig. 10 respectively, as a function of the mass of the dark higgs.\nFrom Fig. 10, one sees that BR upper limit of dark higgs in _η →_ _π_ [0] _π_ [+] _π_ _[−]_ channel is at the level of 10 _[−]_ [6]\n\nto 10 _[−]_ [7], for one-month run",
+        "score": -1.6920975271024201,
+        "dense_score": 0.49177056550979614,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.610311985015869,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6407,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2811383__2407.18528__Time_performance_of_Analog_Pixel_Test_Structures_with_in-chip_operational_amplifier_implem.md",
+        "title": "2025__recid_2811383__2407.18528__Time_performance_of_Analog_Pixel_Test_Structures_with_in-chip_operational_amplifier_implem",
+        "text": "measurements. Monolithic active pixel sensors based on the\n65 nm CMOS imaging technology are promising candidates not only for future\nhigh-energy physics vertex detectors but also for other applications demanding\nprecise timing information in combination with full detection efficiency and high\nspatial resolution.\n\n18\n\n**Acknowledgements**\n\nThis project has received funding from the European Union’s Horizon Europe research and innovation programme under grant agreement No 101057511.\nFunding sources: (1) Project “Dipartimenti di eccellenza” at the Dept of Physics,\nUniversity of Turin, funded by Italian MIUR. (2) The National Research Foundation of Korea (NRF) grant funded by the Korean government (MSIT) (No.\n2022R1A6A3A03054907) Project 2022LJT55R, Concession Decree No. 104 of\n02.02.2022 adopted by the Italian Ministry of University and Research, cup\nD53D23002810006. The measurements leading to these results have been performed at the SPS Test Beam Facility at CERN (Switzerland). We would like\nto thank the coordinators at CERN for their valuable support of these test\nbeams measurements and for the excellent test beam environment. We would\n\nlike, also, to thank Federico Picollo for providing access to high brillance beam\nfacility for the detector characterization. ITS3 R&D and construction is supported by several ITS3 project grants including LM2023040 of the Ministry of\nEducation, Youth, and Sports of the Czech Republic and Suranaree University of Technology, the National Science and Technology Development Agency\n(JRA-CO-2563-12905-TH, P-2050706), and the NSRF via the Program Management Unit for Human Resources & Institutional Development, Research and\nInnovation (PMU-B B47G670091) of Thailand.\n\n**References**\n\n[1] G. Contin, _et al._, “The STAR MAPS-based PiXeL detector”, _NIMA_ **[907](http://dx.doi.org/https://doi.org/10.1016/j.nima.2018.03.003)**\n[(2018) 60–80. Advances in Instrumentation and Experimental Methods](http://dx.doi.org/https://doi.org/10.1016/j.nima.2018.03.003)\n(Special Issue in Honour of Kai Siegbahn).\n\n[2] F. Reidt, “Upgrade of the ALICE ITS detector”, _NIMA_ **1032** [(2022)](http://dx.doi.org/https://doi.org/10.1016/j.nima.2022.166632)\n[166632.](http://dx.doi.org/https://doi.org/10.1016/j.nima.2022.166632)\n\n[3] O. Aberle, _et al._, _[High-Luminosity Large Hadron Collider (HL-LHC):](http://dx.doi.org/10.23731/CYRM-2020-0010)_\n_[Technical design report](http://dx.doi.org/10.23731/CYRM-2020-0010)_ . CERN Yellow Reports: Monographs. CERN,\nG",
+        "score": -2.0037479480107625,
+        "dense_score": 0.47989165782928467,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.089099407196045,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1024,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "Prepared for submission to JINST\n\n## **Evaluation of Planar Silicon Pixel Sensors with the** **RD53A Readout Chip for the Phase-2 Upgrade of the** **CMS Inner Tracker**\n\n**The Tracker Group of the CMS Collaboration** [1]\n\n_E-mail:_ [georg.steinbrueck@uni-hamburg.de](mailto:georg.steinbrueck@uni-hamburg.de)\n\nAbstract: The Large Hadron Collider at CERN will undergo an upgrade in order to increase\nits luminosity to 7.5 × 10 [34] cm [−][2] s [−][1] . The increased luminosity during this High-Luminosity\n\nrunning phase, starting around 2029, means a higher rate of proton-proton interactions, hence\n\na larger ionizing dose and particle fluence for the detectors. The current tracking system of\n\nthe CMS experiment will be fully replaced in order to cope with the new operating conditions.\n\nPrototype planar pixel sensors for the CMS Inner Tracker with square 50 µm × 50 µm and rectangular\n\n100 µm × 25 µm pixels read out by the RD53A chip were characterized in the lab and at the DESY-II\n\ntestbeam facility in order to identify designs that meet the requirements of CMS during the High\nLuminosity running phase. A spatial resolution of approximately 3.4 µm (2 µm) is obtained using\n\nthe modules with 50 µm × 50 µm (100 µm × 25 µm) pixels at the optimal angle of incidence before\nirradiation. After irradiation to a 1 MeV neutron equivalent fluence of Φ eq = 5.3 × 10 [15] cm [−][2], a\nresolution of 9.4 µm is achieved at a bias voltage of 800 V using a module with 50 µm × 50 µm\n\npixel size. All modules retain a hit efficiency in excess of 99% after irradiation to fluences up to\n2.1 × 10 [16] cm [−][2] . Further studies of the electrical properties of the modules, especially crosstalk,\n\nare also presented in this paper.\n\nKeywords: Large Hadron Collider, Compact Muon Solenoid Experiment, Pixel Detector, RD53A,\n\nTestbeam\n\n1Corresponding author: Georg Steinbrück\n\n**Contents**\n\n**1** **Introduction** **2**\n\n**2** **Pixel Modules** **3**\n\n**3** **Tuning and Operation of RD53A Modules** **5**\n\n**4** **Crosstalk** **9**\n\n**5** **Sensor Evaluation with Particle Beams** **12**\n\n5.1 Data Analysis 14\n\n5.2 Hit Efficiency 14\n\n5.3 Spatial Resolution 15\n\n**6** **Summary and Outlook** **19**\n\n**The Tracker Group of the CMS Collaboration** **22**\n\n– 1 –\n\n**1** **Introduction**\n\nThe Large Hadron Collider (LHC) at CERN will be upgraded in order to increase the instantaneous\nluminosity from currently 2 × 10 [34] cm [−][2] s [−][1] to 7.5 × 10 [34] cm [−][2] s [−][1], boosting the physics potential\nof",
+        "score": -2.32985431172631,
+        "dense_score": 0.4757887125015259,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.590510129928589,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.759552710223943,
+    "generation_latency_s": 7.599592208862305e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.759552710223943,
+    "generation_latency_s": 7.599592208862305e-07
+  }
+}

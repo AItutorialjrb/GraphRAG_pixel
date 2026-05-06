@@ -1,0 +1,402 @@
+{
+  "benchmark": {
+    "query_id": "fac005",
+    "query_type": "factoid",
+    "query": "What does neq/cm2 measure?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "does",
+      "neq/cm2",
+      "measure"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What does neq/cm2 measure?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6212,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope.md",
+        "title": "2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope",
+        "text": "ise contributions are much\nbelow the NSB fluctuations. On the opposite end of the signal\nchain’s dynamic range, we require a linear response of up to a\nfew hundred photoelectrons, which covers the expected range\nfor most events. For rare extreme events with signals beyond\nthe linear range, the dynamic range can be extended by considering the non-linear response of the signal chain in the analysis.\nThe angular size of the camera pixels, is driven by the science goals for the _Trinity_ Demonstrator and the EUSO-SPB2\nCherenkov telescope. Among other goals, both missions aim\nto measure backgrounds that mimic air showers from Earthskimming tau neutrinos. In _Trinity_ ’s case, we want to record\nthese events with the same 0.3 [◦] pixel size we plan for the final\n_Trinity_ telescopes. In EUSO-SPB2’s case, it was more impor\n\ntant to cover a large field-of-view to better study the spatial and\ntemporal characteristics of the NSB, even if it meant that the\npixel size would be larger than the 0.083 [◦] anticipated for POEMMA [10].\nEventually, we fixed the pixel size for EUSO-SPB2 at\n0.4 [◦] based on the 6 [◦] × 12 [◦] field-of-view of the EUSO-SPB2\nCherenkov telescope optics, the available power, and the projected power consumption per camera channel. Another benefit\nof this choice is that the required physical pixel size is the same\n6 mm required for _Trinity_ . The only difference between the two\ncameras is the number of pixels, which is 256 pixels for _Trin-_\n_ity_ and 512 pixels for EUSO-SPB2 to cover the fields of view\nof the respective telescopes they instrument. We, therefore, designed the modular camera architecture described in the next\nsection that meets the requirements for both instruments.\nThe signals of a Cherenkov telescope camera are not continuously recorded. Instead, the trigger electronics continuously\nscans the camera signals for a potentially interesting signal\ntopology in the camera. If the electronics senses the required\ntopology, the trigger sends a readout command to the digitizer.\nWe provide more details about the trigger topologies required\nin the _Trinity_ Demonstrator and the EUSO-SPB2 Cherenkov\ntelescope in Section 4.4.\nFrom an operational point of view, the EUSO-SPB2 camera\noperated in a much more challenging environment. As convective cooling becomes ineffective at 33 km altitude, the design\nof the camera cooling was driven by the EUSO-SPB2 requirements and adapted for the _Trinity_ camera (see Section 5.)\nBased on these design considera",
+        "score": -4.418202449187068,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7519083969465647,
+        "rerank_score": -6.8863067626953125,
+        "matched_nodes": [
+          "As",
+          "The",
+          "We",
+          "In",
+          "For",
+          "Cherenkov"
+        ],
+        "path_nodes": [
+          "As"
+        ],
+        "community_id": "As",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7504,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2964877__2509.06791__Toward_Axion_Signal_Extraction_in_Semiconductor_Spin_Qubits_via_Spectral_Engineering.md",
+        "title": "2025__recid_2964877__2509.06791__Toward_Axion_Signal_Extraction_in_Semiconductor_Spin_Qubits_via_Spectral_Engineering",
+        "text": "ly below the gates.\nThen the quantum dot array repeats the set-up for P2–P4.\n\nWe now consider an ensemble of _N_ independent electron spins qubit subjected to the oscillating axion field.\nOver each spin coherence time _T_ 2, it accumulates a phase\nshift _ϕ_ sig = _γ_ _e_ _B_ eff _T_ 2 . Recent advances on applicationspecific integrated circuits integrated analogue-to-digital\nconversion (ASIC ADC), particularly the development of\nSkipper-type architectures, have enabled single-electron\nsensitivity with effectively zero readout noise [47, 48].\nBy performing multiple non-destructive charge measurements on the same sensing element, Skipper ADCs can\nsuppress the readout noise to sub-electron levels to extract the spin polarizations by spin–to–charge conversion.\nAs a result, in such measurement platforms, though the\nmagnetic field _δB_ = _η_ _B_ _/_ _[√]_ _T_ 2 for a single spin contributes\nan uncertainty\n\nThe energy eigenvalues for the two-level system are:\n\n_ω_ 0\n_E_ _±_ = _±_\n� 2\n\n0 _[g]_ _[ae]_ _[v]_\n\n2 [+] 2 _m_\n\n�\n\n2 _ρ_ _a_ sin( _m_ _a_ _t −_ _k_ _z_ _z_ + _φ_ ) _._ (14)\n�\n\n2 _m_ _e_\n\nAt _t_ = 0, we prepare _|ψ_ (0) _⟩_ = _c_ + (0) _|↑⟩_ + _c_ _−_ (0) _|↓⟩_, with\n_c_ + (0) and _c_ _−_ (0) are arbitrary. Evolving under _E_ _±_, the\nstate can be expressed as _|ψ_ ( _t_ ) _⟩_ = _c_ + (0) _e_ _[−][iϕ]_ [+] [(] _[t]_ [)] _|↑⟩_ +\n_c_ _−_ (0) _e_ _[−][iϕ]_ _[−]_ [(] _[t]_ [)] _|↓⟩_ . Now we can evaluate the spin polarization expectations as a function of _t_, for the _σ_ _z_\ncomponent _⟨σ_ _z_ ( _t_ ) _⟩_ = _⟨ψ_ ( _t_ ) _|σ_ _z_ _|ψ_ ( _t_ ) _⟩_, which is _⟨σ_ _z_ ( _t_ ) _⟩_ =\n_∥c_ + _∥_ [2] _−∥c_ _−_ _∥_ [2], a constant. For _⟨σ_ _x_ ( _t_ ) _⟩_ term, we have\n_⟨σ_ _x_ ( _t_ ) _⟩_ = 2 Re � _c_ _[∗]_ + _[c]_ _[−]_ _[e]_ _[−][i]_ [∆] _[ϕ]_ [(] _[t]_ [)] [�], where ∆ _ϕ_ ( _t_ ):\n\n_−ω_ 0 _t −_ _[g]_ _[ae]_ _[v][√]_ [2] _[ρ]_ _[a]_ (cos( _m_ _a_ _t −_ _k_ _z_ _z_ + _φ_ ) _−_ cos _φ_ ) _._ (15)\n\n2 _m_ _e_ _ω_ _a_\n\nIf we consider the initialization of the state is _|ψ_ (0) _⟩_ =\n( _|↑⟩_ + _|↓⟩_ ) _/√_ 2, the _⟨σ_ _z_ ( _t_ ) _⟩_ term will be 0. The _⟨σ_ _x_ ( _t_ ) _⟩_\n\nread:\n\ncos _ω_ 0 _t_ + _[g]_ _[ae]_ _[v]_ ~~_[√]_~~ [2] _[ρ]_ _[a]_ (cos( _m_ _a_ _t −_ _k_ _z_ _z_ + _φ_ ) _−_ cos _φ_ ) (16)\n� 2 _m_ _e_ _ω_ _a_ �\n\n∆ _ϕ_ = _γ_ _e_ _δBT_ 2 = _γ_ _e_ _η_ _B_ �\n\n_T_ 2 _._ (17)\n\nAfter repeating _M_ the measurement over a total integration time _t_ improves the SNR by _M_ = _t/T_ 2, leading to\nthe array total SNR:\n\n_t_ _√t_\n= _[B]_ [eff] _._ (18)\n_T_ 2 _η_ _B_\n\nSNR = _[",
+        "score": -4.785600207219598,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.866412213740458,
+        "rerank_score": -7.4650983810424805,
+        "matched_nodes": [
+          "At",
+          "As",
+          "Re",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6232,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope.md",
+        "title": "2025__recid_2797375__2406.08274__The_camera_and_readout_for_the_Trinity_Demonstrator_and_the_EUSO-SPB2_Cherenkov_telescope",
+        "text": "entire camera _A_ _c_ . The SiPM bias\ncorrection ∆ _U_ bias for a pixel is then obtained by multiplying\nthe nominal 4.5 V overvoltage with the relative deviation of the\npixel average from the camera average.\n\n∆ _U_ bias = 4.5 V · _[A]_ _[c]_ [ −] _[A]_ _[p]_ (2)\n\n_A_ _c_\n\nThe SiPM bias correction is then subtracted from the eMUSIC\n\ntrim voltage for that pixel. After updating the bias voltages of\nall pixels accordingly, the camera is flashed again with light\npulses, and the procedure is repeated until a uniform camera\nresponse is achieved. After completion of the flat-fielding, the\npixel response is uniform, with a standard deviation of 0.05 (see\n\nFigure 44). This is mostly dominated by the finite number of\n1,000 flashes, which results in a relative uncertainty of the perpixel average amplitude of 1/ [√] 1, 000 = 0.03.\n\nFigure 44: Distribution of the average amplitudes of all camera pixels after flat\nfielding.\n\n**9. Current Monitor**\n\nWe characterized and calibrated the current monitor output of\nthe eMUSICs by illuminating the SiPMs with a steady LED. By\nvarying the current through the LED, we varied its intensity and\nthus could scan a wide range of SiPM currents from ∼ 10 µA to\n450 µA. For comparison, the typical SiPM current in the _Trinity_\nDemonstrator is 14 µA per pixel.\nFigure 45 shows that the current monitor output is linear over\nthe tested range and shows very little dependence on temperature. We tested the current monitor at −40 [◦] C and 25 [◦] C. At\n\nlow SiPM currents, the current monitor is limited by the small\n5.3 µV/µA slope such that despite the 16-bit effective resolution\nof the ADC, we obtain a resolution of 7.6 µA/ADC count.\n\n**10. Summary and Outlook**\n\nWe have developed and built the cameras and readout for\nthe _Trinity_ Demonstrator and the EUSO-SPB2 Cherenkov telescope. Both are pathfinder and pioneering experiments exploring the detection of Earth-skimming VHE and UHE neutrinos\nwith the imaging atmospheric Cherenkov technique.\nOur cameras are the first SiPM cameras aiming at detecting\nEarth-skimming neutrinos. The spectral response of the SiPMs\nis a good fit for the Cherenkov spectrum expected to be detected by _Trinity_ ’s telescopes [9], allowing for compact telescopes with good sensitivity and low energy threshold.\nIn building and bench testing the cameras, we verified their\nfunctionality and characterized and calibrated the photon detection efficiency, the response of the signal chain, the trigger system, and the current monitor",
+        "score": -4.895334507330683,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7519083969465647,
+        "rerank_score": -7.62035608291626,
+        "matched_nodes": [
+          "At",
+          "The",
+          "We",
+          "In",
+          "For",
+          "Cherenkov"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 12,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2629741__2302.02044__Neutron_capture-induced_silicon_nuclear_recoils_for_dark_matter_and_CENS.md",
+        "title": "2023__recid_2629741__2302.02044__Neutron_capture-induced_silicon_nuclear_recoils_for_dark_matter_and_CENS",
+        "text": "pectra. The\ncapture cross section is assumed to be 0.171 barns, from\n2003 measurements at Brookhaven National Lab [23]\n(this value is also used in the EGAF (Evaluated Gamma\nActivation File) database [24]). This value is about 4%\nhigher than the value given by evaluations a few years\nearlier at Los Alamos National Lab that are used in\nENDF and the JENDL 5 database [25] and the cross\nsection measurements made by Raman [9].\n\n7\n\nFor a CEνNS experiment with a 1 MW reactor at a\ndistance of 8 m we arbitrarily compared a thermal neutron flux of 0.1% of the sea level value. We have used\nthe Mueller spectrum for the reactor anti-neutrinos [26].\nThe detector resolution function is assumed to have a\n10 eV baseline that rises to 30 eV at a recoil energy of\n25 eV. We use this form for the energy-varying resolution: � _σ_ 0 [2] [+] _[ AE]_ _[r]_ [;] _[ E]_ _[r]_ [ is the recoil energy and] _[ σ]_ [0] [ and] _[ A]_\n\nare constants.\nFor the dark matter comparisons in Fig. 9 we used a\n1 GeV mass dark matter particle with a cross section just\nbelow the limit produced in recent SuperCDMS work [21,\n27].\nFigure 9 shows that both for dark matter searches and\nCEνNS the spectral overlap of thermal neutron capture\ninduced NRs can interfere with measurements especially\nin cases where the detector baseline resolutions are larger\nthan 10 eV — true for all but the best modern detectors.\n\n**VI.** **CONCLUSION**\n\nWe have carefully derived and simulated the spectrum\nof NRs following thermal neutron captures in silicon. The\nspectra do not match the contemporary `Geant4` particle\ntransport code, indicating the details of decay-in-flight\nand atomic slowing-down are poorly modeled.\nThe level of thermal neutron fluxes that may be\npresent in underground laboratories (mostly from radiogenic sources in deep labs) is comparable to the contemporary rate limits on dark matter scattering. Furthermore, in the CEνNS venue the thermal neutron capture\nbackground could also play an important role due to the\nproximity of some experiments to neutron-generating reactors [28, 29]. In both of these situations the authors\nrecommend studies of the thermal neutron flux levels and\ntaking the thermal neutron capture background into account during data analysis.\n\n**ACKNOWLEDGMENTS**\n\nWe gratefully acknowledge support from the U.S. Department of Energy (DOE) Office of High Energy Physics\nand from the National Science Foundation (NSF). This\nwork was supported by DOE Grant No. DE-SC0021364\nand in part by NSF Grant No. 2",
+        "score": -4.936371590112001,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8854961832061068,
+        "rerank_score": -7.699315071105957,
+        "matched_nodes": [
+          "DOE",
+          "The",
+          "We",
+          "Office",
+          "Department",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "DOE"
+        ],
+        "community_id": "DOE",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 733,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2658264__2305.05571__Dispersive_readout_of_a_silicon_quantum_device_using_an_atomic_force_microscope-based_rf_g.md",
+        "title": "2023__recid_2658264__2305.05571__Dispersive_readout_of_a_silicon_quantum_device_using_an_atomic_force_microscope-based_rf_g",
+        "text": "e of the _Q_ quadrature acquired with a\nsampling rate of 240 kHz and _τ_ = 16 _._ 7 ms is shown in\nFig. 3(a). We estimate the SNR as the separation of the\non- and off-states divided by the standard deviation [25]:\n\n_IQ_ -histograms acquired in the on- and off-states are\nshown in Fig. 3(b) and yield a SNR = 5 _._ 3. The SNR\nincreases as we apply more power [Fig. 3(c)]. Figure 3(d) shows how the charge transition also broadens\nwith increasing _P_ . We achieve an optimal SNR with\n_P ∼−_ 87 dBm. Finally, we measure the SNR as a function of _τ_ at the optimal power [Fig. 3(e)]. For _τ ≈_ 2 _._ 7 ms\nwe can detect the charge transition with a SNR = 2. The\nexpected square root behavior is observed for _τ_ ≲ 25 ms.\nAt higher integration times, the SNR saturates around\na value of _∼_ 5 meaning that longer averaging does not\nimprove the SNR due to low frequency charge noise.\n\n**V.** **DOUBLE QUANTUM DOT DISPERSIVE**\n**CHARGE SENSING**\n\nFinally, we demonstrate AFM-based dispersive charge\nsensing of a DQD. Figure 4(a) shows a false-color SEM\n\n_⟨I_ on _−_ _I_ off _⟩_ [2] + _⟨Q_ on _−_ _Q_ off _⟩_ [2]\nSNR = (1)\n\nstd[( _I_ on _−_ _I_ off ) [2] + ( _Q_ on _−_ _Q_ off ) [2] ] _[.]_\n\n(a)\n\nB1\n\n50 250\n\nB2\n\n|Col1|IS (pA) 25 50|Col3|Col4|\n|---|---|---|---|\n||(0,0)<br>(1,0)<br>(0,1)<br>(1,1)|(0,0)<br>(1,0)<br>(0,1)<br>(1,1)|(0,0)<br>(1,0)<br>(0,1)<br>(1,1)|\n|||||\n|||||\n\n_V_ B2 = 60 mV 480 _V_ B2 = 140 mV\n\n520\n\n490\n\n450\n\n|ΔΦ (°) -0.04 0|Col2|Col3|\n|---|---|---|\n|_V_B2 = 60 mV<br>(1,0)<br>(2,0)<br>(2,1)<br>(1,1)|_V_B2 = 60 mV<br>(1,0)<br>(2,0)<br>(2,1)<br>(1,1)|_V_B2 = 60 mV<br>(1,0)<br>(2,0)<br>(2,1)<br>(1,1)|\n|_V_B2 = 60 mV<br>(1,0)<br>(2,0)<br>(2,1)<br>(1,1)|_V_B2 = 60 mV<br>(1,0)<br>(2,0)<br>(2,1)<br>(1,1)|_V_B2 = 60 mV<br>(1,0)<br>(2,0)<br>(2,1)<br>(1,1)|\n||||\n||||\n||||\n\n|VP2 (mV) 550 500 ΔΦ (°) -0.04 0|Col2|Col3|Col4|\n|---|---|---|---|\n|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|\n|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|\n|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|(0,0)<br>(1,1)<br>(1,0)<br>(0,1)<br>_V_B2 = 140 mV|||\n\n_V_ P2 (mV) 510 460 _V_ P2 (mV)\n\n470 _V_ 510\n\n460 _V_ 490\n\nFIG. 4. (a) False-color SEM image of the DQD device accompanied by a conve",
+        "score": -5.09609199651325,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7251908396946563,
+        "rerank_score": -7.926048755645752,
+        "matched_nodes": [
+          "At",
+          "The",
+          "We",
+          "For",
+          "Col1",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6070,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2774168__2404.03236__Bright_Heralded_Single-Photon_Source_Saturating_Theoretical_Single-photon_Purity.md",
+        "title": "2025__recid_2774168__2404.03236__Bright_Heralded_Single-Photon_Source_Saturating_Theoretical_Single-photon_Purity",
+        "text": "shows the measured coincidence rates, together with a polynomial fitting. At a pump power\nof 7.10 mW, we obtain a coincidence rate of 1.51 MHz and a corresponding CAR of 16 _._ 77 _±_ 0 _._ 01. To our\nknowledge, this coincidence rate surpasses all previous SFWM results. Indeed, near-MHz coincidence rate\nwas only achieved with an SPDC source but at a lower CAR of 7.5 [23]. In **Figure 5**, we plot the measured\nCAR as a function of the coincidence rate denoted by hollow squares.\n\nTo explain the observed monotonic decrease CAR with the coincidence rate, we resort to Equation (4)\nand use the heralding relation _S_ _s_ ( _i_ ) = _C/η_ _i_ ( _s_ ) to derive the expression of CAR in terms of _C_ and _η_ _s_ ( _i_ ) for a\npulsed pump with a repetition rate _R_\n\nCAR = _[η]_ _[s]_ _[η]_ _[i]_ _[R]_ _._ (7)\n\n_C_\n\nAs expected from Equation (7), the CAR value decreases along with the increasing coincidence rate _C_, with\nthe highest CAR being 4630 _±_ 614. Note that our data reproduces excellently the theoretical dependence\nof CAR on _C_ in Equation (7) (the red solid curve). In the inset of Figure 5, we present an example of a\ncorrelation histogram, which is measured at an on-chip power of 0.35 mW. In extracting the CAR value,\nwe choose a time-bin width of _τ_ = 0 _._ 4 ns to cover the entire coincidence peak.\nTo compare against the theoretical limit for single-photon purity in Equation (5), we measure _g_ h [(2)] [(0)]\nunder the coherent condition using the heralded HBT setup, which involves the three-fold coincidence\nmeasurement. Note that a CAR value can be extracted from the time stamp data of the heralding and one\nof the heralded detectors. The results together with error bars (red symbols) are plotted in Figure 1(b).\nThe lowest _g_ h [(2)] [(0) is measured as 0] _[.]_ [00094] _[ ±]_ [ 0] _[.]_ [00002 with CAR equaling to 2220] _[ ±]_ [ 90, which is among the]\nbest _g_ h [(2)] [(0) values reported to date for an HSPS. We note that an even lower] _[ g]_ h [(2)] [(0) with a reasonably]\nsmall uncertainty can in principle be obtained with our source but at the cost of measurement time, as\nthis requires a lower pump power, which however is not the main pursuit of this work. For overall _g_ h [(2)] [(0)]\nversus CAR relation, the experimental data indeed reach the theoretical limit, suggesting that our source\nproduces the ideal single-photon purity permitted by a parametric heralded source. We attribute this\nachievement to both effective spectral filtering [24] and the",
+        "score": -5.100107109186303,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8091603053435115,
+        "rerank_score": -7.942173004150391,
+        "matched_nodes": [
+          "At",
+          "As",
+          "The",
+          "We",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 564,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2653851__2304.11992__Terzina_on_board_NUSES_A_pathfinder_for_EAS_Cherenkov_Light_Detection_from_space.md",
+        "title": "2023__recid_2653851__2304.11992__Terzina_on_board_NUSES_A_pathfinder_for_EAS_Cherenkov_Light_Detection_from_space",
+        "text": "lescope at the bottom\nduring the flight.\n\nZiré is made of a scintillating fiber tracker, a stack of\nplastic scintillator counters and an array of LYSO crystals.\n\n∗ email:leonid.burmistrov@unige.ch\n\nAn active veto system and a Low Energy Module (LEM)\nare also part of the payload. SiPM will be used as light\nsensors. The instrument will perform spectral measurements of electrons, protons and light nuclei from few up\nto hundreds of MeV, also testing new tools for the detection of 0.1-10 MeV photons [2], and monitoring Van Allen\nradiation belts and space weather effects.\nTerzina is a satellite-based detector designed for\nCherenkov light detection from EAS induced by UHECR\nin the Earth’s atmosphere. Terzina will aim to the detection of Earth-skimming ultra-high energy neutrinos [3]\nand ultra-high energy cosmic rays with energy above\n100 PeV [4]. It will prove for the first time the spacebased detection of Cherenkov light from EAS. The detection principle is discussed in [4–6].\nWe expect to see the highest rate of detectable signal\nfrom UHECRs when their interactions happen at the atmospheric height of about 30 km for protons of 100 PeV\n(see Fig. 2)\n\n**2 The Terzina telescope**\n\nThe Terzina payload is composed by the following elements: the optical head unit, which is a near-UV-optical\ntelescope, the focal plane assembly (FPA), the thermal\ncontrol system, and the external harness and electronic\nunits which will be in a separate box.\nThe optical system of the telescope is based on a\ndual mirror configuration composed of two parabolic primary and secondary mirrors with a corrector lens in order to cope with aberrations on the photon detection plane,\n\nFigure 2: **Left:** Grammage of a cosmic particle as a function of its impact parameter. The insert at the top-right schematically shows\nincoming particles with different impact parameters. In case the impact parameter is larger than the radius of the Earth, the maximum\nair mass seen by the particle doubles. **Right :** Photon surface density (z-axis) as a function of the viewing angle and height of a\nUHECR (primary particle: 100 PeV proton) estimated with EASCherSim [11] (see Sec. 3). The total number of simulated protons is\nabout 1.1 × 10 [5] .\n\n|Col1|RoC∗|Distance<br>to primary mirror|Diameter|\n|---|---|---|---|\n|units|m|mm|mm|\n|Big mirror<br>Small mirror<br>Camera plane<br>Corrector|0.80<br>0.36<br>0.30<br>-|0<br>280<br>40<br>350|394<br>144<br>121<br>362|\n|Equivalent focal length : 925 mm|Equivalent focal length :",
+        "score": -5.10280507691944,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7251908396946563,
+        "rerank_score": -7.936376571655273,
+        "matched_nodes": [
+          "EAS",
+          "The",
+          "We",
+          "In",
+          "Cherenkov",
+          "Col1"
+        ],
+        "path_nodes": [
+          "EAS"
+        ],
+        "community_id": "EAS",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1433,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i.md",
+        "title": "2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i",
+        "text": "alculated as the second moment of this overlap and then averaged over 200\ndifferent realizations of bonds and anisotropy axes. This\ndisorder average is denoted by [ _. . ._ ] av :\n\nav\n\n� 2 [] \n\n_χ_ [(] SG _[n]_ [)] [(] _[t]_ [) =] [1]\n\n_N_\n\n\n\n\n\n_N_\n�\n� _i_ =1\n\n� s [(] _i_ _[n]_ [)] ( _t_ 0 ) _·_ s [(] _i_ _[n]_ [)] ( _t_ 0 + _t_ )\n\n_i_ =1\n\n\n\n_._ (B2)\n\nThe equilibration time _t_ 0 is chosen from the sequence\n1 _,_ 3 _,_ 10 _,_ 30 _,_ 100 _,_ 300 _, . . ._, etc. The idea is to compare\ns [(] _i_ _[n]_ [)] ( _t_ 0 ) to s [(] _i_ _[n]_ [)] ( _t_ 0 + _t_ ) as _t →∞_ to see whether s [(] _i_ _[n]_ [)] ( _t_ 0 + _t_ )\nhas lost its “memory” of s [(] _i_ _[n]_ [)] ( _t_ 0 ). In practice, the comparison is done as _t →_ _t_ 0 . The spin glass susceptibility\nin Eq. (B2) is averaged over a length of time _t_ 0 :\n\nav\n\n� 2 [] \n\n_N_\n�\n� _i_ =1\n\n� s [(] _i_ _[n]_ [)] ( _t_ 0 ) _·_ s [(] _i_ _[n]_ [)] ( _t_ 0 + _t_ )\n\n_i_ =1\n\n1\n_χ_ [(] SG _[n]_ [)] [=] _Nt_ 0\n\n\n\n\n\n2 _t_ 0 _−_ 1\n�\n\n_t_ = _t_ 0\n\n\n\n_._\n\n(B3)\n\n(B7)\nFor all temperatures, as the equilibration time is approached, the spin glass susceptibilities converge; the two\ntimes susceptibility ~~_χ_~~ SG (Eq. (B5)) approaches the true\nsusceptibility from above and the replica susceptibility\n_χ_ SG (Eq. (B7)) from below. This is shown in Fig. 7 for\nthe Ising spin glass at _T_ = 2.\nAfter sufficiently long equilibration times, _χ_ SG and ~~_χ_~~ SG\nagree. We define the system to be equilibrated if\n\n∆ _χ_ _SG_ = 1 _|χ_ SG _−_ ~~_χ_~~ SG _|_ (B8)\n\n~~_[χ]_~~ [SG] [)]\n2 [(] _[χ]_ [SG] [ +]\n\nis less than 5% for three consecutive times in the _t_ 0\nsequence; then we declare it equilibrated at the fourth\ntime. For example, if the last three equilibration times\nare _t_ 1 = 3 _×_ 10 [3], _t_ 2 = 10 [4], _t_ 3 = 3 _×_ 10 [4], then the equilibration time _t_ 4 = 10 [5] . At each temperature, the initial\nequilibration time is 10 [5] MCS, and it is increased if the\nsystem is not equilibrated.\n\nFIG. 7. Two times and replica susceptibility for the 2D (16 _×_\n16) Ising spin glass for _T_ = 2 averaged over 200 runs. For\nsufficiently long equilibration times, the two susceptibilities\nagree, and the system is in equilibrium.\n\n**3.** **Specific Heat and Susceptibility**\n\nAs a check of this equilibration method, we calculate\nthe block-averaged specific heat and magnetic susceptibility in a similar method to Yu and Carruzzo [59]. We\nuse the form of specific heat\n\n1\n_C_ _V_ = � _⟨E_ [2] _⟩−⟨E⟩_ [2] [�]\n_k_ _B_ _T_ [2] (B9)\n\n= _[N]_ sites [",
+        "score": -5.136168491480005,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8091603053435115,
+        "rerank_score": -7.997652053833008,
+        "matched_nodes": [
+          "At",
+          "As",
+          "The",
+          "We",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 21,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2203,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2668563__2306.07453__Navigating_the_16-dimensional_Hilbert_space_of_a_high-spin_donor_qudit_with_electric_and_m.md",
+        "title": "2024__recid_2668563__2306.07453__Navigating_the_16-dimensional_Hilbert_space_of_a_high-spin_donor_qudit_with_electric_and_m",
+        "text": "y accumulating a positive phase _θ_ _m_ _I_ _−_ 1 _↔m_ _I_ ( _τ/_ 2),\nand a negative phase _−θ_ _m_ _I_ _−_ 1 _↔m_ _I_ ( _τ/_ 2) of equal magnitude. In the presence of a quadratic contribution, the sign\nof _θ_ _m_ _I_ _−_ 1 _↔m_ _I_ ( _τ/_ 2) does not change and thus gives a net accumulated phase of 2 _|θ_ _m_ _I_ _−_ 1 _↔m_ _I_ ( _τ/_ 2) _|_ . For a unipolar\npulse, the spin accumulates a phase during the first time _τ_ from both the linear _η_ 1 _E_ and quadratic _η_ 2 _E_ [2] contributions\nof the electric field.\n\n�� Reference �� Unipolar �� Bipolar\n\nτ τ τ τ τ τ\n\n_X_ _X_ _X_ _X_ _X_ _X_ _X_ _X_ _X_\nπ/2 π π/2 π/2 π π/2 π/2 π π/2\n\n|Col1|τ|τ|\n|---|---|---|\n|_X_<br>_X_<br>_X_|||\n\n1.0\n\n0.8\n\n0.6\n\n0.4\n\n0.2\n\n0.0\n\n0 10\n\n0 10 0 10 20\n\nτ(µs) τ(µs) τ(µs)\n\n**FIG. S7: Linear and quadratic hyperfine Stark effect on a neutral** [123] **Sb** [0] **donor. a)** Hahn echo experiment on\nthe neutral nucleus, without unipolar/bipolar pulses, used as a reference. As expected, the absence of electric pulses\nduring the free precession causes no phase accumulation. **b)** Hahn echo experiment with a unipolar voltage pulse of\namplitude _V_ DC = 40 mV during the first free precession time _τ_ . An accumulated phase as a function of _τ_ is resolved\nin the oscillatory return probability. The unipolar pulse causes the spin to accumulate a phase given by Eq. S20. **c)**\nHahn echo experiment with a bipolar pulse with amplitude _±V_ DC = 40 mV and duration _τ/_ 2. The lack of\noscillations indicates that the quadratic contribution is small and its effect cannot be resolved for _τ <_ 20 _µ_ s.\n\nThe data for these experiments is presented in Fig. S7 a-c. We confirm that the absence of an electric pulse causes\nno phase accumulation in the nuclear spin, and the return probability stays flat (Fig. S7 a).\nWhen a unipolar pulse of amplitude _V_ DC = 40 mV is applied, we observe that the return probability oscillates. The\noscillation frequency is obtained by fitting the data to a sinusoidal function _P_ sin (2 _πft_ + _ϕ_ ) + _P_ offset, and using\nEq. S20 and Eq. S21 with _θ_ _−_ 7 _/_ 2 _↔−_ 5 _/_ 2 = _π_ and _τ_ = 2 _._ 3 µs we calculate a ∆ _f_ _m_ [NMR] _I_ _−_ 1 [0] _↔m_ _I_ [= 217(2) kHz][. Using the the]\nestimated parameters for the Stark effect obtained from directly measuring the spectrum as a function of gate voltage\n(Fig. 4. b), we find ∆ _f_ _m_ [NMR] _I_ _−_ 1 [0] _↔m_ _I_ [= 235(3) kHz][,showing an excellent agreement between the two methods.]\nThe experiment with the bipolar pulse, sh",
+        "score": -5.235169826827887,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7251908396946563,
+        "rerank_score": -8.1400146484375,
+        "matched_nodes": [
+          "As",
+          "The",
+          "We",
+          "In",
+          "For",
+          "Col1"
+        ],
+        "path_nodes": [
+          "As"
+        ],
+        "community_id": "As",
+        "metadata": {
+          "chunk_index": 40,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 25,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630139__2302.03646__Studies_of_time_resolution_light_yield_and_crosstalk_using_SiPM-on-tile_calorimetry_for_th.md",
+        "title": "2023__recid_2630139__2302.03646__Studies_of_time_resolution_light_yield_and_crosstalk_using_SiPM-on-tile_calorimetry_for_th",
+        "text": "ade thinner than the width of a groove in a megatile, the use of a 3D-printed frame has\n\nthe potential to reduce the amount of deadzone between cells. A cross-sectional schematic of the\n\nboundary between cells using each of these three methods is shown in Fig. 5.\n\n**3.5** **Radioactive-Source Setup**\n\nIn the radioactive-source setup, we used an Sr-90 radioactive source in a sealed disk (SN-9796,\n\n0.1 _𝜇_ Ci) to generate signals within the tiles. Similar to the cosmic-ray setup, we used two back-to\nback hexagonal tiles on the measurement boards for measuring the time and light yields. For the\n\ntrigger, we used a third tile which was read out from one of the trigger boards, and placed directly\n\nbelow the lower of the two measurement boards. This setup is shown in Fig. 6.\n\n– 7 –\n\n**Figure 6** . Setup for the tests with the radioactive source. Left: block diagram. Right: 3D rendering.\n\n**4** **Results**\n\n**4.1** **Light Yield**\n\nThe light-yield distribution for the SiPM on one of the measurement tile from the cosmic-ray setup\n\nis shown in the left panel of Fig. 7. We fit this distribution to a Landau function with most-probable\n\nvalue _𝜇_, which is used do define the light yield. The results were _𝜇_ =59.6±0.7 and _𝜇_ =64.2±0.8\n\nphotoelectrons for the two SiPMs; the significant difference of about ≈8% suggests a systematic\n\nuncertainty that could arise from the variations in tile optical quality or other source.\n\n|Col1|Cosmic<br>Landau fit<br>= 59.6 ± 0.7<br>= 12.7 ± 0.7|\n|---|---|\n|~~0~~<br>~~50~~<br>|~~100~~<br>|\n\n|Sr-90<br>Landau+pedestal fit<br>= 78.8 ± 0.3<br>= 17.1 ± 0.3|Col2|\n|---|---|\n|~~0~~<br>~~50~~<br>~~100~~<br>||\n\n**Figure 7** . Light yield measured with cosmic-rays (left) and Sr-90 (right).\n\nAs a cross-check, we determined the light-yield distribution for three-fold coincidence events\n\nwith the Sr-90 setup (right panel of Fig. 7) and fit it to a Landau function with an added constant\n\n– 8 –\n\nterm (to account for background3) and obtained _𝜇_ =78.8±0.3. Strictly speaking, the electrons from\n\nSr-90 are not MIPs, and the expected energy loss per unit length depends on their energy. However,\n\nby requiring that the electrons produce 3-fold coincidence, our sample is biased towards the higher\n\nend of the possible phase space, where the maximum energy allowed in the Sr-90→Y-90→Zr-90\n\ndecay chain is 2.274 MeV. In the 1.3-2.3 MeV range, the ratio of the energy loss per unit length for\n\nelectrons to that of MIPs4 is fairly flat, at around 1.3. Dividing the",
+        "score": -5.254196678481939,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7251908396946563,
+        "rerank_score": -8.169286727905273,
+        "matched_nodes": [
+          "As",
+          "The",
+          "We",
+          "In",
+          "For",
+          "Col1"
+        ],
+        "path_nodes": [
+          "As"
+        ],
+        "community_id": "As",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "DOE": 1.0,
+      "At": 1.0,
+      "As": 1.0,
+      "Re": 1.0,
+      "EAS": 1.0,
+      "CM": 1.0,
+      "Do": 1.0,
+      "OE": 1.0
+    },
+    "expanded_nodes": {
+      "DOE": 1.0,
+      "At": 1.0,
+      "As": 1.0,
+      "Re": 1.0,
+      "EAS": 1.0,
+      "CM": 1.0,
+      "Do": 1.0,
+      "OE": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "Office": 0.7,
+      "Department": 0.7,
+      "In": 0.7,
+      "For": 0.7,
+      "Cherenkov": 0.7,
+      "Col1": 0.5599999999999999,
+      "Quantum": 0.7,
+      "Express": 0.7,
+      "Optica": 0.7,
+      "Integrated": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 20,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.815614372957498,
+    "generation_latency_s": 5.299225449562073e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 20.0,
+    "retrieval_latency_s": 5.815614372957498,
+    "generation_latency_s": 5.299225449562073e-07
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "fac003",
+    "query_type": "factoid",
+    "query": "What is Time-over-Threshold used for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "Time-over-Threshold",
+      "used"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is Time-over-Threshold used for?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7859,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors.md",
+        "title": "2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors",
+        "text": "2018.\nTime-over-threshold (ToT) readouts measure the time difference between\nthe leading and trailing edges of a signal, typically the logic signal output of\na discriminator. This methodology significantly reduces the required buffer\nsize, circuit complexity, and power consumption, thereby improving circuit\nintegration and counting rates. The main drawbacks of ToT systems are\nthe degradation of energy resolution, dynamic range, and linearity [2]. ToT\nsystems for measuring particle energy have been implemented in ApplicationSpecific Integrated Circuits (ASICs) [3, 4, 5].\nThere are different approaches to implementing the analog signal discrimination required for ToT measurement. One approach is to compare the\ndetector pulse signal with a constant threshold and another one is to compare\nit a dynamic threshold [6]. A third approach is to hold the maximum pulse\namplitude and compare it with a dynamic threshold [4, 7], as shown in Fig.\n1. However, these approaches have drawbacks, such as implementation complexity, power consumption per channel, nonlinearities, and limited detection\n\n2\n\nrate capacity. Table 1 summarizes the characteristics of ToT methods.\n\na) b)\n\n|c)|Col2|Col3|\n|---|---|---|\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|S1<br>S2<br>ToT1<br>ToT2<br>c)||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n|S1<br>S2<br>ToT1<br>ToT2<br>c)|||\n\nFigure 1: Different approaches to time-over-threshold measurement: (a) ToT based on\nconstant threshold comparison, (b) ToT based on dynamic threshold, (c) ToT based on\npeak holding/dynamic threshold, and (d) ToT based on pulse trailing edge linearization.\n\n**ToT method** **Linearity** **Range** **Power consumption** **Counting rate**\nconstant threshold low low low high\ndynamic threshold medium medium medium medium\nD&H + dynamic th. high high high low\nTrailing edge shaping high medium low high\n\nTable 1: Characteristics of different ToT methods.\n\nIn this work, we present a simple signal shaping method that improves the\nToT determination and features good linearity, a large bandwidth, low power\nconsumption, and high integrability. We characterized the ToT method was\nunder controlled conditions and tested it in the DiRICH readout system of\nthe Ring Cherenkov detector of the Compressed Baryonic Matter experiment\nat FAIR [8].\n\n**2. Pulse trailing edge linearization**\n\nThe fundamental problem with single-threshold ToT converters in photosensor r",
+        "score": 3.4422351628577226,
+        "dense_score": 0.3636249303817749,
+        "bm25_score": 13.71729886300083,
+        "graph_score": 0.0,
+        "rerank_score": 5.281722545623779,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8212,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "alyses presented in this work.\n\n_4.4. Time-over-Threshold measurement_\nThe Time-over-Threshold (ToT) quantifies the duration for which the signal\nat the discriminator input exceeds the threshold, thereby encoding the charge\ninformation in time. The ToT of a MOSS front-end signal can be assessed in a\nspecific readout configuration. Here, the strobe signal is set to last much longer\nthan a typical front-end pulse. When charge is collected, the discriminator output activates, leading the hit to be stored in the corresponding in-pixel latch\n(see Sec. 2.2). This triggers a global signal indicating data presence in the pixel\n\n17\n\n|102<br>101<br>100<br>0 1<br>0 2<br>0<br>102<br>101<br>0|V (mV) V<br>casn shif<br>160<br>330|\n|---|---|\n|0<br>0<br>2<br>0<br>1<br>100<br>101<br>102<br>0<br>101<br>102|~~630~~<br>780<br>Ireset (pA)<br>~~ 5~~<br>10<br>~~20~~<br>30<br><br>Ibias/Ibias<br>~~12~~<br>25<br>~~50~~|\n|0<br>0<br>2<br>0<br>1<br>0|0<br>100<br>150<br>200<br>~~40~~<br>50<br>100<br>150<br>|\n\nFigure 13: Fake-hit rate as a function of the threshold average per region (set via _V_ casb ) for\ndifferent front-end parameter variations. The plots, arranged from top left to bottom right,\nshow the effect of varying _V_ casn, _V_ shift, _I_ reset, _I_ bias (together with _I_ biasn at a ratio 10:1), and\n_I_ db . The error bars indicate the statistical uncertainty of the fake-hit rate measurement. The\nnominal operating point extracted from simulations (red dashed lines) was confirmed to yield\noptimal fake-hit rate performance for a given threshold.\n\nmatrix. As soon as this signal is propagated to the test system, a readout command is sent. This initiates the readout of the pixel address(es) by the region\nperiphery and resets the in-pixel latch. As long as the strobe and discriminator output remain active, the pixel-hit latch will immediately reassert and the\nregion readout will read out the same pixel address repeatedly. The number of\ngenerated pixel addresses is then proportional to the duration of the front-end\nsignal, thereby providing ToT measurement.\nThe ToT response, similar to the threshold (see Sec. 4.1), exhibits pixel-topixel variations due to fabrication-related non-uniformities. Figure 14 presents\nthe ToT measured across a number of pixels within a selected region as a function of the pulsing voltage _V_ pulseh, modulating the injected charge. For each\npixel, the ToT response increases linearly with _V_ pulseh, but the slope and intercept of this relationship vary acro",
+        "score": 2.3852177851715486,
+        "dense_score": 0.33148297667503357,
+        "bm25_score": 14.596808310934799,
+        "graph_score": 0.0,
+        "rerank_score": 3.6554789543151855,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 20,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3876,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures.md",
+        "title": "2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures",
+        "text": "iscriminator. The Threshold used for the discriminator was set\n30 mV over the previously calculated Baseline level. To calculate the signal ToT, a fallingedge discriminator was used to obtain the second intercept between the waveform and the\nThreshold. The ToT was obtained as the difference between the Trigger Timestamp and the\nfalling edge intercept. The waveform Amplitude was calculated as the waveform Maximum\nminus the Baseline level.\n\n5\n\nOnly events with the following properties were accepted to be included in the timedifference histogram:\n\n1. Baseline standard deviation lower than 4 mV. This selection cut removes events with\n\nnoisy or fluctuating baselines. An unstable baseline degrades the time resolution of the\nTrigger Timestamp determination.\n\n2. At least one of the Trigger Timestamps present inside a 10 ns window centered at\n95 ns. Due to the way the digitizer acquisition was configured, at least one of the\nchannel triggers is expected inside this window. This selection window is shown in\nviolet in Figure 2.\n\n3. No samples above the threshold on the baseline calculating region. This selection cut is\nemployed because the baseline can’t be correctly estimated if a previous pulse is present\nin that region.\n\n4. Events with ToT _<_ 80 ns. Large values of ToT indicate a spurious pile-up event and\nwere rejected.\n\n5. Waveforms with an amplitude less than 200 mV. This selects events with only one\ndetected photon -or dark count-. This removes events with crosstalk or events with\ntwo coincident photon detections on the same SiPM.\n\n### **5 Results and Discussion**\n\nAfter event selection, the time-difference histogram was constructed for the two experiments\nperformed. On both histograms, an unwanted sinusoidal-like systematic pattern with a\nperiod of 2 ns was observed. The reason for this effect is that the digitizer-board channels\nare only synchronized down to its sampling period of 2 ns. The top histogram of Figure 3\nshows the raw data points with this structure. The amplitude of this electronic jitter is\nnegligible compared to the mean entry number, but relevant for observing the bunching\npeak. Due to this, a procedure had to be devised to remove this systematic effect. First,\nthe time-difference histogram of the background dataset was cut into 2-ns slices. Then, all\nthese slices were averaged into a single 2-ns window. Only systematic artifacts survive this\nprocedure, so this is a good method to estimate this structure generated from the imperfect\nDAQ hard",
+        "score": -0.28527407111203085,
+        "dense_score": 0.4637211561203003,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.44771042466163635,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7153,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "Hit-OR is gauged\nby comparing it with a scintillator signal coupled to a PMT and\nread out via an oscilloscope. The result is depicted in figure 9b\nexemplarily for a quasi noise-free threshold of 16. A Gaussian\nfit to the distributions’ core yields a σ of 2.28(1) ns, sufficient\nfor precise triggering at test beams. The absolute delay of the\n\n4\n\n(a) Hitmap of a telescope plane with TelePix2 as trigger. A DESY logo is programmed to\nthe fast Hit-OR.\n\nFigure 8: Time difference between reference trigger and TelePix2 cluster time\nversus the row number.\n\ntrigger compared to the scintillator is 15.32(1) ns, which is an\nacceptable latency for test beam operation.\n\n**5. User Stories**\n\nTelePix2 is in user operation and utilized by multiple groups\nto enhance data taking efficiency and suppress ambiguities. In\nthe following three examples using the different operating modes\nare discussed and the improvement due to TelePix2 is highlighted.\n\n_H2M - region of interest trigger mode_\n\nThe H2M (Hybrid-to-Monolithic) is implemented in a 65 nm\nCMOS imaging process as proof of concept for a digital-on-top\ndesign workflow. It ports a hybrid pixel-detector architecture,\nwith digital pulse processing in each pixel, into a monolithic\nchip. The chip matrix consists of 64×16 square pixels, each\nwith a size of 35×35 µm [2], and a total active area of approximately 1.25 mm [2] . A 100 MHz clock is used for non-simultaneous\nTime-over-Threshold (ToT) or Time-of-Arrival (ToA) measure\nments.\n\nH2M has been tested in the DESY II test beam test beam\n\nfacility using the ADENIUM telescope. TelePix2 is used as\nregion of interest trigger plane. A region of interest of approximately 3 mm [2] is left unmasked in TelePix2 matching the H2M\narea with a safety margin.\nFigure 10a compares the correlations in X between H2M\nand the reference plane with data taken from a small region of\ninterest and the entire TelePix2. While a one order of magnitude higher background of uncorrelated events is observed for\nthe full region, for the small region, most of the events are correlated. The latter reduces the number of empty readout frames\nof H2M and highly improves the data taking efficiency. Moreover, time studies have been performed based on TelePix2. Figure 10b shows the time residuals between the TelePix2 fast\n\nHit-OR and H2M time stamps. The tail to the left is caused by\ntime-walk of H2M.\n\n5\n\n(b) Time difference between reference trigger and TelePix2 hit-or at a threshold of 16.\n\nFigure 9: The fast Hit-OR of",
+        "score": -0.6172726690769196,
+        "dense_score": null,
+        "bm25_score": 14.788154014637087,
+        "graph_score": 0.0,
+        "rerank_score": -0.9580637216567993,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7857,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors.md",
+        "title": "2026__recid_2956170__2508.00739__Shaping_circuit_for_improving_linearity_bandwidth_and_dynamic_range_in_ToT-based_detectors",
+        "text": "## Graphical Abstract\n\n**Shaping circuit for improving linearity, bandwidth, and dynamic**\n**range in ToT-based detectors**\n\nJ. Pe˜na-Rodr´ıguez, J. F¨ortsch, C. Pauly, K.-H. Kampert\n\n## Highlights\n\n**Shaping circuit for improving linearity, bandwidth, and dynamic**\n**range in ToT-based detectors**\n\nJ. Pe˜na-Rodr´ıguez, J. F¨ortsch, C. Pauly, K.-H. Kampert\n\n A conditioning circuit to improve the bandwidth, linearity, and dynamic range of particle detector readouts based on Time-over-Threshold.\n\n Validation of the proposed concept by implementing it in the readout\nelectronics of the Ring Imaging Cherenkov detector of the Compressed\nBaryonic Matter experiment.\n\n The simplicity of the proposed concept reduces power consumption\nand improves the integrability of the circuit per channel, enhancing its\nimplementation in Application Specific Integrated Circuits (ASICs) for\nparticle detectors.\n\n## Shaping circuit for improving linearity, bandwidth, and dynamic range in ToT-based detectors\n\nJ. Pe˜na-Rodr´ıguez [a], J. F¨ortsch [a], C. Pauly [a], K.-H. Kampert [a]\n\n_a_ _Bergische Universit¨at Wuppertal, Fakult¨at f¨ur Mathematik und Naturwissenschaften,_\n_Gaußstraße 20, 42119 Wuppertal, Germany,_\n\n**Abstract**\n\nThe quantitative measurement of energy deposits in particle detectors, particularly in calorimeters, is usually accomplished with the help of Analog-toDigital converters (ADCs) due to their precision, wide measurement range,\nand good linearity. However, drawbacks such as power consumption, data\nvolume, and bandwidth limit their use in the next generation of high-energy\nphysics experiments. Time-over-threshold (ToT) systems offer simplicity, low\npower consumption, easy integrability, and wide bandwidth, but they lack\nprecision, linearity, and dynamic range. In this work, we propose a shaper\ncircuit that improves the weaknesses of ToT systems without sacrificing performance. We simulated and implemented the concept in the readout system\nof the Ring Imaging Cherenkov detector of the Compressed Baryonic Matter\nexperiment at FAIR.\n\n_Keywords:_ Time-over-Threshold, linearity, dynamic range, bandwidth,\nPhotomultiplier Tube, Silicon Photomultiplier\n\n**1. Introduction**\n\nMost particle detectors use photosensors, such as silicon photomultipliers\n(SiPMs) or photomultiplier tubes (PMTs) to record the photons produced\nby the interaction of particles with the detector bulk material ionization,\nCherenkov radiation, or scintillation processes. SiPMs comprise thousands\nof aval",
+        "score": -0.6916307307496855,
+        "dense_score": null,
+        "bm25_score": 13.788038123706496,
+        "graph_score": 0.0,
+        "rerank_score": -1.0708632469177246,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3875,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures.md",
+        "title": "2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures",
+        "text": "ing is not present, the background is expected to\nbe uniform at small time differences.\nThe DCR and the detected photon rate on each SiPM for both experiments is shown in\nTable 1.\n\n|SiPM|DCR [kcps]|Signal experiment<br>rate [kcps]|Bkgnd. experiment<br>rate [kcps]|\n|---|---|---|---|\n|1<br>2|126_ ±_ 1<br>148_ ±_ 1|629_ ±_ 1<br>446_ ±_ 1|517_ ±_ 1<br>522_ ±_ 1|\n\nTable 1: SiPM parameters and rates for signal and background experiments.\n\nFor reference, these values would result in _F ∼_ 1 _._ 6. Compared to the use of APDs, this\nresults in an SNR and a bunching-peak relative height 20 % and 38 % lower, respectively.\n\n4\n\nThe measured coincidence rate between the two detectors in the 100 ns coincidence gate\nwas about 10 kcps. Considering the acquisition dead time, both signal and background\nexperiments were run for an effective time of 97 hs. Using Equation (3), the expected SNR\nfor that effective acquisition time is 80, while it would be 100 in the APD case.\n\n### **4 Event Selection**\n\nFor each event, several parameters were calculated from the digitized waveforms acquired.\nThese parameters were: the Baseline average and its standard deviation, Trigger Timestamp,\nTime-over-Threshold (ToT), waveform Amplitude, and waveform Maximum and Minimum\nvalues. These parameters were used for posterior event selection. An example of an acquired\nevent can be seen in Figure 2.\n\n150\n\n125\n\n100\n\n75\n\n50\n\n25\n\n0\n\n|Coincidence<br>window<br>Threshold|Col2|\n|---|---|\n|Bl. calc.<br>_dt_||\n\n0 25 50 75 100 125 150 175 200\n\nTime [ns]\n\nFigure 2: Example of an acquired event. The coincidence window of 100 ns is shown in\ngreen and the threshold for Timestamp determination is shown in black. The time difference\nbetween events, _dt_, in both SiPMs is shown as well. The Baseline level (Bl) was determined\nusing the first 16 ns of each waveform. An additional window of 10 ns width and centered in\n95 ns, which was used for posterior data selection, is shown in violet.\n\nAll parameters were calculated using digital pulse processing. To determine the Baseline\nmean and its standard deviation, the first 16 ns of each event were used. The Timestamp\nof the detected photon was determined using a linear interpolation of the waveform and\na software leading-edge discriminator. The Threshold used for the discriminator was set\n30 mV over the previously calculated Baseline level. To calculate the signal ToT, a fallingedge discriminator was used to obtain the second intercept between the waveform and the\nThreshol",
+        "score": -0.9516368037269962,
+        "dense_score": null,
+        "bm25_score": 14.996588855107252,
+        "graph_score": 0.0,
+        "rerank_score": -1.4727414846420288,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8313,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "mic range, of this fine-tuning is determined by another\n8-bit DAC in the periphery ( `dac` ~~`i`~~ `trim` ), which defines the\ncurrent used in the tuning DACs.\nThe front-end also offers test pulse injection through\na dedicated capacitor connected to the CSA input. Test\npulses are enabled via the `tp` ~~`e`~~ `nable` DAC, and their amplitude is controlled by a global 8-bit DAC ( `dac` ~~`v`~~ `tpulse` ).\nThis amplitude determines the voltage step applied to the\ninjection capacitor, enabling the injection of a controlled\namount of charge into the pixel. Individual pixels can be\n\nFigure 3: Schematic of the pixel analog front-end.\n\nmasked by disabling their digital logic and setting the analog front-end into a low-power mode. A schematic of the\npixel analog front-end is shown in Figure 3.\nThe inverting amplifier amplifies and converts the negative output of the charge collected by electrons into a\npositive output. The gain simulations are presented in Section 2.4. The linear discharge rate of the CSA is controlled\nby a feedback current ( _ikrum_ ), which is set by an 8-bit\nDAC in the chip periphery. This feedback current defines\nhow fast the amplifier resets after a hit. It compensates\nfor leakage current, and enables energy measurements, as\nthe time the signal remains above the threshold is proportional to the input charge. Figure 4 (top) illustrates a\ntriangular signal shape for two different _ikrum_ settings. A\nhigher _ikrum_ results in a steeper return-to-baseline slope\n(faster signal decay).\nTwo additional 8-bit DACs are included in the analog\nperiphery, `dac` ~~`i`~~ `bias` and `dac` ~~`v`~~ `ref`, which set the CSA\ncurrent bias and the Krummenacher reference voltage, respectively.\n\n_2.3. Digital Logic & Acquisition Modes_\n\nThe H2M test chip can operate in four non-simultaneous\nacquisition modes: Time-over-Threshold (ToT), Time-ofArrival (ToA), photon counting, and triggered. For this\npurpose, each pixel includes a configurable 8-bit counter,\nwhich is used differently in each acquisition mode. A\nschematic layout of the four acquisition modes is shown\nin Figure 4. In ToT, ToA, and photon counting modes, a\nshutter signal controls the data acquisition, while in triggered mode, it is controlled by a strobe signal.\nToA records the time at which the signal exceeds the\nthreshold during charge collection, while ToT measures\nhow long the signal stays above that threshold. More\nspecifically, the ToA is defined as the number of clock\ncycles from the moment the sign",
+        "score": -1.3429353766971164,
+        "dense_score": null,
+        "bm25_score": 14.118624674679001,
+        "graph_score": 0.0,
+        "rerank_score": -2.073533058166504,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 8314,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": ".\nToA records the time at which the signal exceeds the\nthreshold during charge collection, while ToT measures\nhow long the signal stays above that threshold. More\nspecifically, the ToA is defined as the number of clock\ncycles from the moment the signal crosses the threshold\nuntil the shutter closes, and the ToT as the number of\nclock cycles between the rising and falling edges of the\nsignal crossing the threshold within a single shutter. If\n\n3\n\nFigure 4: Schematic layout of the four acquisition modes. On top,\nthe CSA output signal is represented with a triangular shape, whose\nreturn-to-baseline slope depends on the _ikrum_ setting. In the middle,\nfor the high _ikrum_, the signal is compared to a reference voltage\nthreshold, and the corresponding measured counts in ToT, ToA, and\nphoton counting modes are indicated. At the bottom, a readout\nin triggered mode is depicted, using as an example, a configurable\npreset of 253 counts and a strobe duration of 2 clock cycles.\n\nmultiple signals cross the threshold within the same shutter window, their respective ToT values are accumulated\nfor each pixel. The acquisition runs at an externally generated 100 MHz, corresponding to 10 ns per clock cycle,\nand setting a lower limit on the time/energy resolution in\nToA/ToT modes of 10 ns _/√_ 12 _≈_ 2 _._ 9 ns. A time walk cor\nrection cannot be applied since a simultaneous ToT and\nToA measurement is not possible with the chip.\nIn the photon counting mode, each pixel registers the\nnumber of times that the signal crosses the threshold\nwithin a shutter window.\n\nIn triggered mode, an external trigger signal is used to\nvalidate hits before readout. The in-pixel 8-bit counter is\npreset with a value corresponding to the expected fixed delay of the trigger latency. When a pixel fires, the counter\nstarts incrementing from this preset value and generates\na carry signal once it reaches its maximum. This carry\nsignal lasts for one clock cycle. A strobe signal, provided\nexternally after the trigger signal arrives, is distributed\nto the pixels using the same line as the shutter in other\n\nFigure 5: Simulated amplitude response of the CSA as a function of\nthe injected signal `vtpulse`, for three different _ikrum_ settings.\n\nacquisition modes. This signal defines an adjustable coincidence window, accommodating for the H2M time walk.\nIf the carry and strobe signals coincide, a binary readout\nis issued. In this way, shorter shutter durations can be\nutilized in test beam measurements compared to",
+        "score": -1.442624890804291,
+        "dense_score": 0.4236261546611786,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.2278363704681396,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5641,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ution from the data. In this procedure, the time of arrival of a particle incident\n\non the detector is defined to be at a threshold on the rising edge of the signal that is a certain\n\nfraction of the signal’s maximum height[2]. Particularly, the time of arrival at thresholds from\n\n10% to 90% at an increment of 10% were extracted for both signals. The time difference can then\n\nbe defined, where it is the difference between the time of arrival extracted from the front and rear\n\ndetectors. Using the same time difference thresholds, the time difference values were extracted for\n\neach set of events and subsequently binned into a histogram. The number of bins in the histogram\n\ncould be manually set to some reasonable value. However, the optimal bin size was dynamically\n\nselected based on a method used to minimise the mean integrated squared error associated with\n\nthe statistics. The resulting histogram is a Gaussian distribution and its sigma is what is known as\n\nthe time resolution of the detectors. This calculated value is the system’s average timing resolution\n\nand to calculate the individual devices’ timing resolution, an important assumption was made in\n\n– 7 –\n\n**Figure 5** . An illustration of the setup to measure time resolution. A Sr-90 source generates a beam of\n_𝛽_ -particles that passes through both detectors and the signal registered by the devices mounted on the PCBs,\nwhere they serve as 1st stage amplifiers. The PCBs are connected to 2nd stage amplifiers and then the signals\nare displayed by the oscilloscope. The entire setup is placed on top of a breadboard purchased at Thorlabs,\n\nInc.\n\nthe analysis: it is assumed that the detectors have similar time resolution. This comes from the\n\nfact that identical detectors from the same region of the wafer were selected. As there are two\nplanes of detectors, the calculated timing resolution was divided by a factor of ~~√~~ 2. Furthermore,\n\nas part of the analysis, different combinations of constant fractions from both detectors were used.\n\nFor example, the front detector’s 50% to the rear detector’s 30%. As such, a total of 81 timing\n\nresolution values were calculated and the best timing resolution from the combinations was extracted\n\nfrom each measurement run. Finally, the uncertainty from the measurements was extracted by the\n\nfollowing procedure: the measurement was repeated 5 times for a certain bias voltage value with the\n\nentire setup being turned off for an hour between each measurement. The measureme",
+        "score": -1.5001327611223052,
+        "dense_score": 0.34546715021133423,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.3147125244140625,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7091,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2891313__2502.13949__Characterization_of_the_large-size_NDL_EQR20_silicon_photomultipliers.md",
+        "title": "2025__recid_2891313__2502.13949__Characterization_of_the_large-size_NDL_EQR20_silicon_photomultipliers",
+        "text": "pulses ignited by a pulsed UV LED (~10 ns-long). Therefore, the\nstatements from [5] on the nature of the pulse shape distortion are not fully applicable for the largesize EQR20 11-6060D-S SiPMs.\n\nShortening of the rise time could be caused by an abrupt increase in the local electric field strength\nduring the avalanche, and shall thus depend on the pulse charge rather than on the number of\nmicrocells fired. Such dependencies measured at various overvoltage follow each other most\nclosely, as shown in Fig. 16 (top-right) – the rise time shortens twofold for signals as large as 2.7\nnC with a full spread of ±18% (or 14% s.d.).Definitive explanation of the nature of the pulse shape\ndistortion requires precise info on the internal structure of the NDL SiPMs, which is not public.\nAlthough, as shown in Fig.16, NDL EQR20 11-6060D-S SiPMs maintain the ~1:1000 dynamic\nrange unaffected by any kind of distortion (from single photon up to ~100 pC). We assume this\nrange is a subject of optimization of the internal structure of the EQR SiPMs.\n\nIt is worth to note that variation of the rise time may not be pronounced in case the input light\npulse is longer than the rise time of the undistorted pulse (~3 ns), which is the case for the BCF12 scintillation fibers projected for the ALICE FoCal-H hadron calorimeter (see below). While\nthis and other key performance parameters of the NDL EQR20 11-6060D-S SiPMs allow for their\napplication as the photon readout option in FoCal-H, elongation of the recovery time as a function\nof the microcell occupancy poses a significant complication for signal processing and detector\ncalibration.\n\nApart from a Poisson-based correction of the signal amplitude applicable to any SiPM type, NDL\nEQR20 11-6060D-S SiPMs require additional correction to reconstruct the linear dependence\nbetween the input pulse intensity and output signal amplitude. Moreover, the distortion of the\nsignal shape affects the results of time-over-threshold (TOT) measurement. Extension of the pulse\ntail not only reduce the TOT dynamic range, but, depending on the threshold used, can create\nambiguity in signal charge reconstruction from TOT readings if a coupling capacitance is used.\nSee Fig.18 for the comparison of pulse shapes in log scale measured with the coupling capacitance\nC2 shorted (top-left) and with C2 = 62 pF (top-right). Waveforms in the bottom plot are also\nmeasured with C2 = 62 pF but under the BCF-12 scintillation light, representing the realistic pulses\none can s",
+        "score": -1.6009373362750223,
+        "dense_score": null,
+        "bm25_score": 14.032998421550865,
+        "graph_score": 0.0,
+        "rerank_score": -2.4703567028045654,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.621501275803894,
+    "generation_latency_s": 4.00003045797348e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.621501275803894,
+    "generation_latency_s": 4.00003045797348e-07
+  }
+}

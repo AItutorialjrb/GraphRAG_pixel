@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con004",
+    "query_type": "conceptual",
+    "query": "Why can high reverse bias improve charge collection?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "can",
+      "high",
+      "reverse"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why can high reverse bias improve charge collection?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4668,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "h\nthe increasing NIEL dose due to the deterioration of the charge collection\nefficiency, in agreement with the [55] Fe measurement (see Figure 10). Due\nto the lower average cluster size, there is a slight worsening in the resolution for higher irradiation levels, for all pitches. Due to the decrease\nin the average cluster size, the difference in the hit/no-hit and analogue\nresolution is even less visible.\n\n**6. Conclusions**\n\nThe performance of several versions of the first production of analogue MAPS\nfor high energy physics implemented in the TPSCo 65 nm ISC process has been\nstudied. Various designs (standard, modified and modified with gap), splits,\nn-well/p-well geometry (variants) and pitches (10 to 25 µm), have been tested\nat different reverse substrate bias and NIEL and TID irradiation levels, both\nwith an [55] Fe source and in a beam test setup.\nCompared to other designs, the modified with gap design demonstrated a\nhigh CCE and little charge sharing, leading to a smaller average cluster size and\na higher signal-to-noise ratio, and hence a larger operation margin in terms of\nefficiency. As expected the spatial resolution instead is better for the standard\nthan for the modified with gap designs, reaching _∼_ 2 µm, due to the increase\nof charge sharing. An energy resolution of 4% for the Mn-K _α_ peak from [55] Fe\nhas also been obtained for the modified with gap design. The modified with\ngap design always reached a detection efficiency higher than 99%, regardless\nof substrate bias and pitch. Larger pitches provide a slight improvement in\noperating margin but only up to moderate NIEL levels.\nBoth [55] Fe and test-beam measurements showed a deterioration of charge collection of the modified with gap design with increasing NIEL or TID irradiation\ndoses. Nevertheless, a signal peak was still visible after 10 [16] 1 MeV n eq cm _[−]_ [2] .\nThe detection efficiency still reached 99% after 3 _×_ 10 [6] Gy, thus meeting the TID\nrequirements for ALICE ITS3 as well as for the ALICE 3 vertex detector. The\nefficiency also reached 99% or higher for all pitches, at a temperature of _∼_ 15 _[◦]_ C,\nup to a NIEL of 10 [14] 1 MeV n eq cm _[−]_ [2], above the ALICE ITS3 requirements.\nThis remained the case up to 1 _×_ 10 [15] 1 MeV n eq cm _[−]_ [2] for a pixel pitch of\n15 µm, and up to 2 _×_ 10 [15] 1 MeV n eq cm _[−]_ [2] for a pixel pitch of 10 µm.\nAfter process modifications and pixel designs based on general principles\nalready explored in the 180 nm technology, thi",
+        "score": 2.072613079018063,
+        "dense_score": 0.45219114422798157,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 3.181156873703003,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 33,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4646,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "an\nthe undepleted part of the n-well, making the dimension of the latter dominant in the capacitance calculation. This explains the small influence of\nthe reverse bias on the sensor capacitance in the standard design.\n\nFor the modified and modified with gap designs, the depletion starts at\nthe junction formed by the low-dose deep n-type implant, and does not\nyet reach the n-well electrode at zero reverse bias. With increasing reverse\nbias, it extends towards the n-well electrode and significantly reduces the\nsize of the undepleted region around the collection electrode, dominant\n\n12\n\nfor the capacitance value. Ultimately, the depletion also converges to\nnear the n-well boundary as in the standard design, resulting in the same\ncapacitance value of about 2fF.\n\n- In the first column, last two rows, a lower CCE is observed for the standard type together with a higher average cluster size; this was expected\nconsidering that the charge is collected more by drift for the modified\ndesigns with consequent lower charge losses.\n\n- In the second column, fixing the voltage at _V_ sub = -1.2 V and varying the\npitch, lower CCE values can be observed for the standard design for larger\npitches; this is attributed to the larger charge transport path together with\nthe expected smaller (lateral) extension of the depletion region relative to\nthe pixel pitch. Moreover, an increase in average cluster size is observed,\nboth for the standard and modified design, as expected from the increased\ncharge diffusion for larger pitches. The pattern is opposite for the modified\nwith gap design, due to the smaller relative size of the gap region for\nlarger pitches, and the fact that the field induced by the gap counteracts\nor prevents charge sharing for hits closer to the pixel center.\n\n- In the third column, different splits are also compared. To compare all\nthe splits, the reverse substrate voltage has been fixed at _V_ sub = -4.8 V.\nFor the splits 1 and 2 the signal only becomes visible at reverse substrate\nvoltages larger than 3.6 V, due to the larger capacitance causing a reduction of the signal amplitude. The splits 3 and 4 are not subject to\nthis larger capacitance and are considered better choices in terms of chip\nperformance. Since split 4 was the most optimized [13], it was used for\nall studies reported from this point onwards, with the benefit of a slightly\nsmaller capacitance at _V_ sub = 0 V.\n\n- In the fourth column the performance of the different geometric variants\nare compar",
+        "score": 1.7729837475596248,
+        "dense_score": 0.449770987033844,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 2.720390796661377,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8331,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "yer due to the drift path of charge carriers (see Figure 1). In contrast to the n-well of the analog front-end, the n-wells of the digital logic are thin, as\nsketched in Figure 3, mitigating this effect.\nThis slow charge collection leads to a mismatch between\nthe charge collection time and the fast response of the\nCSA. As a result, the CSA begins to reset before the full\ncharge is collected, resulting in a reduced signal amplitude\n(ballistic deficit) and, consequently, a drop in the hit efficiency over a large part of the pixel cell.\nIn Figure 26a, the sensor is operated at low bias voltage,\n_−_ 1 _._ 2 V, with a high threshold of 330 electrons and high\n_ikrum_ to aggravate this effect. Increasing the bias voltage\nenhances the electric field within the sensor, and reducing\nthe feedback current effectively increases the integration\ntime of the CSA. Both factors contribute to reducing the\n\nFigure 27: Cluster size distributions for different thresholds. The\nsensor is biased at _−_ 1 _._ 2 V.\n\nballistic deficit, and improving the hit detection efficiency.\nFigure 26b shows a homogeneous in-pixel efficiency map\nat low _ikrum_, a threshold of 224 electrons, and a sensor\nbias of _−_ 3 _._ 6 V.\n\nTo fully understand this effect, detailed simulations of\nthe sensor and front-end have been performed, which are\npresented in Section 6.\n\n_5.2. Cluster Size_\n\nThe relatively large pixel pitch, thin epitaxial layer, and\nthe _modified with n-gap_ sensor layout minimize charge\nsharing between neighboring pixels. Lowering the threshold increases the probability of inducing a signal in adjacent pixels, making two-pixel clusters more frequent, as\nshown in Figure 27. For a threshold of 177 electrons, the\naverage cluster size is (1 _._ 19 _±_ 0 _._ 01), with 18% of events\nwith two-pixel clusters. Figure 28 shows the mean cluster\nsize as a function of the threshold. At lower bias voltages,\nthe electric field is reduced, leading to slower charge collection. This leaves more time for charge carrier diffusion,\nresulting in a slight increase in cluster size. Towards higher\ndetection thresholds (above 700 electrons), the mean cluster size increases due to the detection of delta-rays, which\nare more likely to deposit large amounts of energy.\nAlthough the right side of the pixel cell experiences\nslower charge collection as discussed in Section 5.1, this\ndoes not impact the charge sharing. As a result, the inpixel cluster-size maps remain symmetric, as shown in Figure 29. Near the collectio",
+        "score": 1.6370851143082576,
+        "dense_score": 0.47329050302505493,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 2.5105557441711426,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6447,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "d\nin order to improve the charge collection efficiency of the\n\nFigure 6: Simulated hexagonal pixel cell in TCAD. The colours correspond to doping level, and the plane marked C1 is a cut for display\npurposes. The electric field magnitude for this cut is shown in Figure 7.\n\nsensor in incident positions further from the readout implant [13, 14]. In Figure 9 the signals for the centre and\ncorner incident positions for the _n-gap_ layout are shown.\nThe duration of the signal is dependent on the MIP incident position; the faster charge collection is observed in\nthe centre of the pixel, due to the immediate proximity\nto the readout implant. The charges are deposited 0.5 ns\nafter the start of the simulation, leading to the rising edge\nof the pulse.\nFigure 10 shows the signals for corner incident positions,\nfor all three layouts. The _n-blanket_ has a larger depletion\nregion compared to the _standard_ layout, and the _n-gap_ has\nan additional area with a stronger lateral electric field component, which improves the charge collection far from the\npixel centre. As the _standard_ layout is undepleted in the\npixel corners, charges formed there move slowly by diffusion, and the charge collection thus takes a comparatively\nlong time.\n\n_3.7. Generating weighting potentials_\n\nTransient simulations using TCAD are computationally\nintensive, and it can thus be beneficial to perform transient simulations using e.g. Allpix [2] instead. A weighting\npotential is required to be able to perform transient simulations using the Shockley-Ramo theorem [21, 22]. The\npotential can be calculated by taking the difference of the\nelectrostatic potentials arising from applying two slightly\ndifferent bias voltages to one collection electrode in a sensor, keeping the other collection electrodes at a constant\nbias voltage. The two required electrostatic potentials can\nbe simulated using TCAD, using the same sensor geometry with a difference of 0.01 V in the bias voltage of a\nsingle collection electrode. By calculating the difference\nbetween the two potentials in each mesh point, and dividing the difference by the difference in collection electrode\nbias voltage, the weighting potential is acquired. Before\n\n7\n\n(a) _Standard_ layout\n\n(b) _N-gap_ layout\n\nFigure 7: Electric field magnitude as output from a TCAD simulation\nfor a hexagonal pixel in the _standard_ and _n-gap_ layouts. The white\nlines denote depletion boundaries, and the colour scale denotes the\nmagnitude of the electric field.\n\nare show",
+        "score": 0.4817237202435324,
+        "dense_score": 0.4501495957374573,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.7337372303009033,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4639,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in.md",
+        "title": "2024__recid_2768850__2403.08952__Characterization_of_analogue_Monolithic_Active_Pixel_Sensor_test_structures_implemented_in",
+        "text": "ell, which shields n-wells within the circuitry from the epitaxial layer, preventing them from collecting charge and thus enabling full\nCMOS circuitry. The depletion zone is balloon-shaped extending from\nthe junction at the collection electrode without reaching the pixel edges.\nThe charge generated outside the depletion region is collected primarily\nby diffusion, but this collection is relatively slow and subject to charge\ntrapping in defects generated by exposure to non-ionizing radiation.\n\n - **Modified**, Figure 2(b): a deep low-dose n-type implant is added under the\nfull pixel area and creates a planar junction deep in the sensor, separated\nfrom the collection electrode extending over the full pixel area. With some\nreverse substrate bias, this allows full depletion of the epitaxial layer and\nsignal charge collection by drift.\n\n - **Modified with gap**, Figure 2(c): a gap of 2.5 µm is introduced in the\nlow-dose n-type implant at the pixel boundaries. This creates a vertical\njunction to increase the lateral electric field pushing the charge from the\n\n4\n\npixel boundary towards the collection electrode, thus reducing the charge\nsharing among neighbouring pixels.\n\nMoving from the pixel design 2(a) to 2(c), charge collection by drift becomes largely dominant, reducing charge sharing among pixels. This results in\na larger fraction of the charge collected by a single pixel and, consequently, in\nan increased signal to noise ratio (S/N) providing greater operational margins.\nTo optimise the sensor for ionizing-particle detection, where signal charge is\ngenerated over the full depth, the modified with gap design has been produced\nin four so-called _splits_ (named 1, 2, 3, 4), gradually modifying the doping levels\nof various implants [13].\nIn addition, to explore the influence on capacitance and charge collection,\nthe geometry and size of both n-well collection electrode and the p-well were\nimplemented in four different _variants_ :\n\n - **Reference** : n-well collection electrode size of 1.14 µm and a square p-well\nenclosure of 4.14 µm, see Figure 3(a) for the top view.\n\n - **Smaller p-well enclosure** : p-well enclosure of 3.14 µm.\n\n - **Larger n-well collection electrode** : n-well collection electrode of 2.28 µm.\n\n - **Finger-shaped p-well enclosure** : the shape of the p-well enclosure\nis changed as sketched in Figure 3(b) resulting in p-well fingers further\napproaching the collection electrode.\n\n(a) (b)\n\nFigure 3: Top view of half a pitch of a modified with g",
+        "score": 0.32938781181971233,
+        "dense_score": 0.43306753039360046,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.5003402233123779,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8312,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "ayout [4].\nEach pixel has a small n-type collection electrode and integrates full CMOS circuitry using the quadruple well technology [12]. This enables the implementation of PMOS\ntransistors in n-wells and NMOS transistors in p-wells,\nshielded by a deep p-well to prevent charge collection by\nthese n-wells. The positions of these n-wells and p-wells\nwithin the deep p-well are sketched in Figure 2. The ntype collection electrode is held at a positive potential of\n0 _._ 8 V.\n\nThe sensor is reverse-biased from the front side via a\n\ncontact located outside the pixel matrix, connecting the pwell and p-substrate to the same potential. The limitations\nof this reverse bias are discussed in Section 3.1. In the\n\nfollowing, this reverse bias applied to the p-well and psubstrate is referred to as the _sensor bias voltage_ . Since\n\n2\n\nFigure 2: Simplified layout of the n-well and p-well positions within\nthe deep p-well in four pixels. The locations of the analog front-end\nand digital logic are shown. The collection electrode, placed outside\nthe deep p-well, is also indicated. The pixel cell boundary is marked\nwith a dashed red line.\n\nthere is no junction isolation at the location of the gap\nin the deep n-type implant between the p-well and the\np-substrate, current flows through the deep implant gap\nwhen the p-well is biased differently from the p-substrate.\nThis prevents the sensor from operating with different pwell and p-substrate bias voltages.\nIn this work, the impact of backside thinning (reduction\nof the substrate thickness) on chip performance will be discussed through laboratory and test beam measurements.\nIn particular, results on samples thinned on single-die level\nby backside grinding to between 21 µm and 30 µm will be\npresented.\n\n_2.2. Analog Front-End_\n\nThe in-pixel front-end consists of a collection electrode\nwith a charge-sensitive amplifier (CSA) with Krummenacher feedback [13], followed by a continuous-time threshold comparator.\nThe global threshold is defined by `dac` `vthr`, an 8-bit\ndigital-to-analog converter (DAC) located in the chip periphery. Local fine-tuning of the threshold is achieved\nthrough an additional 4-bit DAC ( `tuning` `dac` ) implemented within each pixel. The step size, and thus the dynamic range, of this fine-tuning is determined by another\n8-bit DAC in the periphery ( `dac` ~~`i`~~ `trim` ), which defines the\ncurrent used in the tuning DACs.\nThe front-end also offers test pulse injection through\na dedicated capacitor connected to",
+        "score": 0.17462579135832035,
+        "dense_score": 0.4197673797607422,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.26298704743385315,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6463,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic.md",
+        "title": "2025__recid_2813828__2408.00027__Simulating_monolithic_active_pixel_sensors_A_technology-independent_approach_using_generic",
+        "text": "the pixels in this layout are only depleted around the pixel centre. As charge\nmoves predominantly by diffusion outside this region, the\nmovement is slow and charge has a higher probability of\nbeing recombined before it reaches a collection electrode,\nor not being collected within the integration time window\n(25 ns in this case, corresponding to the LHC bunch crossing frequency). The increased charge sharing due to diffusion also leads to each pixel receiving less charge so that\nit is less likely that the total collected charge in a pixel\nwill reach above the threshold value. In the _n-gap_ layout,\nthe charge collection is more complete, and the efficiency\nis higher and more uniform. The charge sharing is also\nreduced, as the pixels are fully depleted and charge moves\nprimarily by drift towards the collection electrodes.\n\n_5.3. Impact of threshold value_\n\nStudies of the dependence of observables on the detection threshold can be performed by running simulations\nwith different detection threshold values in the digitisation\nstage. Figure 19 shows the mean cluster size of the sensor\nversus the threshold value, for the three investigated sensor layouts. The results are presented for a pixel size of\n25 _×_ 25 µm [2] at a bias voltage of _−_ 4 _._ 8 V. Each data point\nin the graphs is the mean result of 500 000 single-electron\nevents, so the statistical errors are small.\nThe mean cluster size becomes smaller as the threshold\n\nincreases, as fewer pixels receive a signal above the threshold, especially when the charge is shared among multiple\n\n15\n\n(a) _Standard_ layout\n\n(b) _N-gap_ layout\n\nFigure 18: In-pixel efficiency for four adjacent pixels with a pixel\nsize of 25 _×_ 25 µm [2], at a bias voltage of _−_ 4 _._ 8 V and a threshold of\n200 electrons.\n\nFigure 20: Threshold dependency of the detection efficiency, at a\nbias voltage of _−_ 4 _._ 8 V for a sensor with a 25 _×_ 25 µm [2] pixel size.\n\nsults are shown for a bias voltage of _−_ 1 _._ 2 V. For the _n-gap_\nlayout, the efficient threshold range is slightly smaller than\nfor the larger pixel size at this bias voltage. This is due to\na reduced efficiency in the gap in the n-blanket between\npixels; in a smaller pixel this region takes up a larger fractional volume, as the gap size remains the same. The trend\nbetween the different layouts remains the same, with the\n_n-blanket_ layout more efficient than the _standard_ layout,\nand the _n-gap_ layout more efficient than the _n-blanket_ lay\nout.\n\nFigure 19: Threshold",
+        "score": -0.05549044531734684,
+        "dense_score": 0.44295406341552734,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.09218588471412659,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 31,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5416,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2822608__2409.07543__Characterisation_of_analogue_MAPS_fabricated_in_65_nm_technology_for_the_ALICE_ITS3.md",
+        "title": "2024__recid_2822608__2409.07543__Characterisation_of_analogue_MAPS_fabricated_in_65_nm_technology_for_the_ALICE_ITS3",
+        "text": "the devices due to the increase in the effective capacitance of the pixels but also significantly improves the range of\noperation over 99% efficiency. The considerable charge sharing\namong neighbouring pixels in the standard process causes a significant drop in efficiency with increasing thresholds compared\nto sensors with process modification. Different pixel geometries, in the form of varying shapes and sizes of the collection\nelectrode and the PWELL enclosure, do not significantly affect the performance, the most notable being the variant with\na larger collection electrode, which has a higher noise but is\nslightly more radiation tolerant.\n\nof 1.2 V, as is shown in Figure 2. The effect of depletion on the\ndetection efficiency is depicted in Figure 3. An AC-coupled\nhigh voltage provides full depletion of the sensor while disentangled from the readout electronics, gaining high efficiencies even at high thresholds. The depletion depends on the bias\nvoltage for the source-follower configuration, whereas the DCcoupled variant only achieves partial depletion in the absence\nof biasing, leading to reduced efficiencies at high thresholds.\n\n|100<br>99<br>95<br>90<br>(%)<br>85 AC Am<br>Efficiency<br>DC Am<br>80 SF (Vbb<br>75<br>Beam test pr<br>70 @CERN-PS M<br>65<br>0 50|Col2|Col3|Col4|Col5|Col6|50|\n|---|---|---|---|---|---|---|\n|0<br>50<br>65<br>70<br>75<br>80<br>85<br>90<br>95<br>100<br>Efficiency (%)<br>99<br>Beam test pr<br>~~@CERN-PS M~~<br>~~AC Am~~<br>DC Am<br>SF (V~~bb~~|||||||\n|0<br>50<br>65<br>70<br>75<br>80<br>85<br>90<br>95<br>100<br>Efficiency (%)<br>99<br>Beam test pr<br>~~@CERN-PS M~~<br>~~AC Am~~<br>DC Am<br>SF (V~~bb~~|~~AC Am~~|~~p. (HV=10 V)~~|||||\n|0<br>50<br>65<br>70<br>75<br>80<br>85<br>90<br>95<br>100<br>Efficiency (%)<br>99<br>Beam test pr<br>~~@CERN-PS M~~<br>~~AC Am~~<br>DC Am<br>SF (V~~bb~~|DC Am<br>SF (V~~b~~|p.<br>=3.3 V)|||||\n|0<br>50<br>65<br>70<br>75<br>80<br>85<br>90<br>95<br>100<br>Efficiency (%)<br>99<br>Beam test pr<br>~~@CERN-PS M~~<br>~~AC Am~~<br>DC Am<br>SF (V~~bb~~|||||||\n|0<br>50<br>65<br>70<br>75<br>80<br>85<br>90<br>95<br>100<br>Efficiency (%)<br>99<br>Beam test pr<br>~~@CERN-PS M~~<br>~~AC Am~~<br>DC Am<br>SF (V~~bb~~|Beam test pr<br>|eliminary<br>|||||\n|0<br>50<br>65<br>70<br>75<br>80<br>85<br>90<br>95<br>100<br>Efficiency (%)<br>99<br>Beam test pr<br>~~@CERN-PS M~~<br>~~AC Am~~<br>DC Am<br>SF (V~~bb~~|Beam test pr<br>|100<br>150<br>~~ay 2022, 10 GeV/c hadr~~|200<br>25<br>~~ons~~|0<br>300<br>3|0<br>300<br>3|0<br>300<br>",
+        "score": -0.31057732823567513,
+        "dense_score": 0.4429668188095093,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.4847146272659302,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8211,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "uted to a higher resistance in the reset and\nfeedback branch, and with a lower shot noise from a reduced current injected\ninto the collection electrode. is further supported by the expectation that a lower\n_I_ reset reduces shot noise at the collection electrode. Since _I_ reset also influences\nthe diode biasing, it can be adjusted to compensate for the increased leakage\ncurrent in sensors exposed to non-ionising radiation. To maintain uniformity in\nthe biasing conditions across different irradiation levels, without compromising\nthe noise performance, a nominal setting of 10 pA is adopted.\nAn increase in the front-end bias current, _I_ bias, reduces the fake-hit rate at\na given threshold. This is consistent with an increase in the overall front-end\nvoltage gain, and a reduction in the thermal noise of the input transistor M1.\nSince _I_ bias is the primary contributor to the power consumption of the in-pixel\nfront-end, a value of 25 nA is chosen as a trade-off between the ITS3 power\nbudget constraints [8] and fake-hit rate performance.\nVariations of discriminator current _I_ db, cascode voltage _V_ casn, and levelshifting voltage _V_ shift around their nominal values (100 nA, 330 mV, and 460 mV,\nrespectively) do not lead to significant changes in the observed performance.\nHowever, at elevated values of _V_ shift, the M0 transistor in the front-end circuit\n(see Fig. 4) enters the ohmic region, reducing the front-end gain. Consequently,\nthe fake-hit rate increases for a given threshold. A similar effect is observed for\nlow values of _V_ casn, where the M9 transistor also transitions into the ohmic region, again leading to degraded performance. While choosing a lower _I_ db current\ncan reduce dynamic power consumption, it requires a corresponding decrease in\n_V_ casb to compensate for the associated threshold reduction (see Sec. 2.1). However, this limits the available adjustment range of _V_ casb, particularly for sensors\naffected by threshold shifts due to ionising radiation, hence, the nominal value\nwas kept at 100 nA.\nOverall, the nominal operating point extracted from simulations was confirmed to yield optimal fake-hit rate performance for a given threshold and is\nadopted for all subsequent measurements and analyses presented in this work.\n\n_4.4. Time-over-Threshold measurement_\nThe Time-over-Threshold (ToT) quantifies the duration for which the signal\nat the discriminator input exceeds the threshold, thereby encoding the charge\ninformation in time. The T",
+        "score": -0.40204631147846104,
+        "dense_score": 0.4937130808830261,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.6272176504135132,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 3349,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2715913__2310.19398__Radiation_tolerance_of_SiGe_BiCMOS_monolithic_silicon_pixel_detectors_without_internal_gai.md",
+        "title": "2024__recid_2715913__2310.19398__Radiation_tolerance_of_SiGe_BiCMOS_monolithic_silicon_pixel_detectors_without_internal_gai",
+        "text": "es that deposit charge all along their path in the\nsubstrate; thus, the amount of charge produced is expected to increase for larger depleted volumes. In addition,\nan increase of the depleted volume with increasing sensor bias voltage also decreases the capacity of the sensor,\nleading to a higher signal amplitude for the same amount of charge. A concurrent reduction of charge trapping\nwith increasing bias voltage might also contribute to the measured trend.\nFigure 7 shows the dependence of the mode of the distribution of the signal amplitudes on the sensor bias\nvoltage for the chip not irradiated of the first row of Table 2 and the chip irradiated to 1 × 10 [16] n eq /cm [2] of the\nninth row of Table 2. In the case of the chip not irradiated, the mode of the amplitude does not vary with the\nsensor bias voltage, which demonstrates that 200 V is enough bias to deplete the sensor fully. On the other\nhand, in the case of the chip irradiated to 1 × 10 [16] n eq /cm [2] the mode of the amplitude is found to increase with\nincreasing sensor bias; this observation suggests that increasing the sensor bias voltage above 200 V increases\nthe depletion volume, thus producing more charge and reducing the capacitance, and reduces charge trapping.\nTo quantify the effect of this change in signal amplitude on the timing performance, Figure 8 shows the\n90 Sr\naverage time jitter of the most-probable signal amplitude _𝜎_ _𝑡_ as a function of the sensor bias voltage, measured\nfor the same two chips of Figure 7. When the sensor bias voltage is varied between 200 and 325 V, the value\nof _𝜎_ _𝑡_ 90 Sr remains flat at approximately 20 ps for the chip not irradiated, while it gradually improves from _𝜎_ _𝑡_ 90 Sr =\n(46.4 ± 3.5) ps to (38.0 ± 1.9) ps for the chip irradiated to 1 × 10 [16] n eq /cm [2] .\n\n– 9 –\n\n_**MONOLITH**_ prototype2 (2022) - no gain layer\n\n12\n\n10\n\n8\n\n6\n\n4\n\n2\n\n0\n\n|Col1|Col2|Col3|Col4|\n|---|---|---|---|\n|||||\n|||||\n|||||\n|**Sr d**<br>**90**|**C**<br>°<br>**ata, T = -35**|=<br>Φ|2<br>/cm<br>eq<br> n<br>16<br> 10<br>×<br>1|\n|densit<br>P|2<br> = 0.90 W/cm<br>y|Chip|Not Irradiated|\n\n200 250 300 350\n\nHigh Voltage [V]\n\n**Figure 7** . Average mode of the signal amplitude measured with [90] Sr as a function of the sensor bias voltage for one of the\nthree chips not irradiated and one of the two chips irradiated to 1 × 10 [16] n eq /cm [2] . The values plotted represent the mode of\nthe amplitude distributions obtained by fits using a Landau functional form. The amplitude was",
+        "score": -0.5714041888713837,
+        "dense_score": 0.479611337184906,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.887496829032898,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 1.680493621621281,
+    "generation_latency_s": 3.1013041734695435e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 6.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.680493621621281,
+    "generation_latency_s": 3.1013041734695435e-07
+  }
+}

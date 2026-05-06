@@ -1,0 +1,273 @@
+{
+  "benchmark": {
+    "query_id": "neg012",
+    "query_type": "negative",
+    "query": "What is the guaranteed future cost of a full HV-MAPS production wafer?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the guaranteed future cost of a full HV-MAPS production wafer?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1325,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2682136__2309.14439__Wavelength-shifting_light_traps_for_SWGO_and_other_applications.md",
+        "title": "2023__recid_2682136__2309.14439__Wavelength-shifting_light_traps_for_SWGO_and_other_applications",
+        "text": "the width varies between 4 ns and\n\n6 ns, depending on the molecule decay time. Compared to PMTs the time resolution is slower by a\n\nfactor of two for the single-shift layout and by a factor of three to six for the double-shift layout, but\n\nshould still be enough for a good direction reconstruction of the showers, observed by SWGO. We\n\nexpect that having many light traps in one detection unit and taking a mean of the signal can reduce\n\nthis uncertainty.\n\n**6.** **Cost estimate**\n\nFor a single-shift design with 4 SiPM matches attached along the borders of a WLS tile, the\nfollowing cost can be estimated: We paid 250 e per WLS plate and 25 e per SiPM but considering\n\na mass production for 5000 water Cherenkov detector units the cost will be strongly reduced.\n\n7\n\n_Wavelength-shifting light traps for SWGO and other applications_ M. Pihet\n\nTherefore, we assume 100 e and 10 e for the cost of one tile and one SiPM match, respectively.\n\nAssuming to put 4 SiPMs for the readout of each light trap and 6 light traps per detection unit,\nthis would mean a total cost of 4.2 Million e. This corresponds to 40 % of the estimated cost,\n\ngiven for the scenario of PMTs for SWGO [1]. It is only a rough preliminary estimate (without\n\nconsideration of possible additional costs, e. g. for reflecting elements along the border, electronics\n\nand structural parts for the integration into the water tank) but we take this as a tentative indication\n\nfor the feasibility of the light-trap solution in terms of cost. In terms of efficiency however, the\n\ncompetitiveness still has to be evaluated in detail and we provided information about it in this\n\ncontribution.\n\n**7.** **Conclusion and Outlook**\n\nWe have presented an alternative photo detection module called wavelength-shifting light trap,\n\nusing low cost WLS materials and SiPMs for light detection. Results concerning the light detection\n\nefficiency and the temporal performance of different possible layouts show that WLS light traps are\n\nefficient, fast and cheap and a promising technology to be developed, improved and possibly applied\n\nfor SWGO or other future Cherenkov experiments/applications. Our currently favored design is the\n\nsingle-shift layout, which is more efficient, more robust and less exposed to systematic uncertainties,\n\nintroducing less potential sources of loss in the system. Future work on this project will be focused\n\non the improvement of efficiency (also trying other materials), construction of a first complete light\n\ntr",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 31.693613301574686,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 687,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+        "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+        "text": "2 µm\n\nand the active thickness in most of the wafers is 45 µm. In particular, with respect to the previous\n\nproduction run UFSD3, this one has an optimization of the carbon level and a different array inter\npad gap. Devices in W19 have a thinner bulk for a better time resolution and a combination of deep\n\ngain layer and carbon implantation. Different boron doses are considered: 0.70, 0.74, 0.78 (W19),\n\n0.94 and 0.98 (W7) in arbitrary units (a.u.). as well as carbon doses: 0.4, 0.6 (W19), 0.8 and 1 (W7)\n\nin a.u. Different diffusion cycles are used, in particular, low (W7) and high (W19) implantation\n\nenergies. The units could not be made available due to non-disclosure agreement and are not the\n\n– 3 –\n\nsame for all the producers mentioned in this paper.\n\nThe combination of deep gain layer, high doping and carbon implantation shows exceptional\n\nperformance for the devices from wafer W19 compared with those from wafer W7 (shallow gain\n\nlayer, carbon, same type as FBK old production UFSD3, 55 µm active thickness). W19 shows\n\nimproved behavior: lower voltage for a similar collected charge, better time resolution and lower\n\npower dissipation. The carbon dose for devices in W19 is 0.6 a.u. The acceptor removal mechanism\n\nreduces the effective doping concentration in the gain layer and the sensor performance can be\n\npartially recovered by increasing the applied bias voltage after irradiation. The gain layer depletion\nvoltage, V _𝑔𝑙_, varies with the fluence as given by:\n\n_𝑉_ _𝑔𝑙_ = _𝑉_ _𝑔𝑙_ 0 × _𝑒𝑥𝑝_ (− _𝑐_ × _𝜙_ _𝑒𝑞_ ) (2.1)\n\nwhere c is the acceptor removal coefficient. For these devices (W19), this coefficient is 1 _._ 73 ×\n10 [−][16] cm [2] [17].\n\n**2.2** **IHEP-IME devices**\n\nThe production run for the IHEP-IME devices considered in this paper is called version 2 [18],\n\nyielding silicon wafers with a 50 µm-thick high-resistivity epitaxial layer, from which 3 out of 8\n\nare carbonated. The wafers were split into four quadrants. The implantation and diffusion scheme\n\nis carbon implantation and diffusion plus boron implantation and diffusion (CHBL) for wafers W7\n\nand W8, and CLBL for wafer W4. The carbon doses differed from quadrant to quadrant in the wafer\n\nand the values that were considered in the full production are 0.2, 0.5, 1, 3, 5, 6, 8, 10 and 20 a.u.\n\nThe most promising devices belong to wafer W7 and quadrant Q2 with a carbon dose of 0.5 a.u.\nThe acceptor removal coefficient for these devices (W7Q2) is 1.14×10 [−][16] cm [2] . The breakdown\nvoltage, V _𝑏𝑑",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 30.41832544490099,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 8367,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3100118__2601.05985__Novel_high-radiopurity_doped_amorphous_silicon_resistors_for_low-background_detectors.md",
+        "title": "2026__recid_3100118__2601.05985__Novel_high-radiopurity_doped_amorphous_silicon_resistors_for_low-background_detectors",
+        "text": "at a direct optical ellipsometry measurement of aSi layer thickness\nused for wafers could not be made for the non-flat spacer/resistor surface.\n\n10\n\nTable 3: Results of the pilot spacer/resistor run for 0.7 sccm silane/phosphine 50/50\ndopant mixture flow rate (pure silane flow at 200 sccm). Shown are the sheet resistance,\nthe aSi layer thickness, and the resistivity as provided by the witness wafer, as well as the\nmeasured room temperature part resistance. The projected spacer/resistor resistance at\n295 K for the standard dimensions of 17 mm length, 6 mm OD, 4 mm ID produced with\nthe same doped aSi properties are given for comparison.\n\n|dopant flow<br>[sccm]|sR<br>[kΩ/sq]|thickness<br>[nm]|ρ [Ω cm]|projected<br>spacer/resistor<br>(295 K) [MΩ]|\n|---|---|---|---|---|\n|0.7|3764_ ±_ 209|278_ ±_ 31|105_ ±_ 13|3_._39_ ±_ 0_._57|\n\nControl of aSi layer thickness is done by placing a “witness” wafer in the\nfurnace for each spacer/resistor run, which is then checked optically.\nWe observed that the produced parts showed smaller resistance than expected for aSi coating of the outer surface of the part; however, our fixturing\ndoes not prevent aSi coating of the inner “bore” of each spacer as the support\nrods are 2 mm smaller in diameter than the inner bore (4 mm). In fact, the\nresults showed that the inner bore is apparently coated to the same thickness as the outer surface, and given the 6 mm to 4 mm radius ratio of these\nsurfaces, which constitute resistors in parallel, the expected resistance is 3/5\nthe size of the outer surface alone. To a good approximation, this factor of\n0.6 is what we observe. There is no obvious disadvantage that we are aware\nof in having outer and inner resistive coating on these parts, but if necessary\na more elaborate fixturing scheme could be used to “mask out” the inner\nbore.\nWitness wafers, fused silica (for sheet resistance data) and silicon (for\nthickness data), were included in the furnace for the pilot run. The results\nfor these wafers are given in Table 3. Of the six spacer/resistors produced,\nthree were not used for radiopurity testing or other purposes and were found\nto have the average characteristics given in Table 4.\nThe encouraging results of these tests motivated a “production” run of 25\nspacer/resistors. The setup used in the furnace at MBNL for the production\nrun is shown in Figure 6, which illustrates the silica rod fixturing method.\nWitness wafers were included in the furnace for the production run, and the\nresults for th",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 30.21474525067351,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5499,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "ed with datasheets from the company, in which the leakage current value for each sensor is reported. This first characterization performed by the company\nallowed for the subdivision of the 84 sensors in 3 main categories, based on the order of magnitude of the leakage current value: i) 10 [−][11] to 10 [−][9] A; ii) 10 [−][9] to 10 [−][6] A; iii) > 10 [−][6] A. We\nemphasize that the maximum bias voltage applied in the company tests was 200 V, which was\nreached only for the first two sensor categories. The very large current value in the third category\nlimited the bias voltages to lower values. It is expected that the good sensors, characterized by\ngood energy and time resolution, belong to the first category, whereas sensors belonging to the\nthird category can not be used as particle detectors. Regarding the second category, further investigation is needed to judge how these sensors behave in terms of energy and time resolution.\n\n4\n\nFigure 2: SiC sensors belonging to the RA0089-27 and TT0012-11 wafers. The colored label indicate the class of\nmeasured inverse currents at maximum 200 V bias voltage, taken from the company datasheet.\n\nThe inverse current values measured for the first category of good sensors correspond to a current\ndensity from 4 pA/cm [2] to 0.4 nA/cm [2], which are in good agreement with values reported in a\nrecent paper on SiC microstrip detectors [27].\nThe classification of the devices inside the two wafers is reported in Figure 2 with different\ncolors for the different inverse current categories. The four devices at the edge of the wafers,\nindicated in yellow, were not tested at the company. There is also a central region of the wafers\n(labelled as _test area_ in Figure 2) devoted to a test pattern for process and technology development. Since the production of the two wafers was the first one for such large area SiC detectors,\nthe test area was quite large. In the future it will be possible to reduce it, optimizing the area\ndevoted to detector production.\nFrom a first inspection of the two wafers, we notice a difference in the production yield\nof good devices. Indeed, we find 14 good sensors in the TT0012-11 wafer, and only 6 good\nsensors in the RA0089-27 wafer (displayed in green in Figure 2 and belonging to the first inverse\ncurrent category). However, in the RA0089-27 wafer we find more sensors belonging to the\nsecond inverse current category with respect to the TT0012-11 wafer that need further inspections\n(indicated in blue in Figu",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 29.561759177071497,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 5507,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment.md",
+        "title": "2024__recid_2843037__2411.03933__Characterization_of_newly_developed_large_area_SiC_sensors_for_the_NUMEN_experiment",
+        "text": "detectors were performed in order\nto verify their performances in terms of the NUMEN project requirements. Sensors were produced from two different wafers, built from the same bulk material, doped with different doping\nconcentration corresponding to different full depletion voltages. The values of the FDV and the\ndoping profile were determined by measurements of the SiC I-V and C-V characteristics. Also\nthe energy resolution and the depletion depth were deduced from α-source irradiation tests. In\ngeneral, the tested SiC sensors display a good energy resolution (≈ 0.5 % FWHM), which complies with the NUMEN requirements. Differences were found in the depletion depth for SiC\nbelonging to the two wafers.\n\n13\n\nFigure 9: Calibrated energy spectra measured with the [228] Th α-source irradiating the back side of the TT0012-11 A41\n(top panel) and RA0089-27 A106 (bottom panel) sensors at their FDVs. Peak labels refers to the α-decay energies listed\nin Table 1. Peaks labeled with an asterisk correspond to the residual [228] Th α-source radioactivity from the decay of the\n220 Rn gaseous daughter nucleus.\n\n14\n\nThe observed spread in the FDV values (≈ 7% for the TT0012-11 wafer and ≈ 16% for the\nRA0089-27 one) is quite large compared to the typical values for the standard Silicon detectors.\nHowever, this is the first time that p-n junction, large area (≈ 2 cm [2] ), 100 µm thick epitaxial\nlayer SiC devices are produced from 6” wafers, thus the uniformity is not known _a priori_ . The\nproduction of the devices studied in the present work was a pioneering one, aimed also to guide\nfurther R&D activities.\nThe TT0012-11 wafer was doped with ≈ 9 × 10 [13] atoms/cm [3] . Devices belonging to this wafer\ndisplayed good C-V characteristics and doping profile, and they reach a depletion depth of ≈ 100\nµm, as expected. However, these sensors are characterized by quite high FDV, up to 950 V, which\nis challenging if we want to use more than 700 detectors in a low-pressure gas environment, as in\nthe focal plane detector of the MAGNEX spectrometer, due to an high probability of discharges\nand electrical instabilities.\nOn the other hand, sensors belonging to the RA0089-27 wafer, doped with ≈ 3 × 10 [13]\n\natoms/cm [3], are characterized by a much lower FDV (≈ 200-300 V), more suitable for the NUMEN purposes. However, from the analyses reported in this paper, their performance is worse,\nespecially in terms of the doping profile and depletion depth. Moreover, looking at the production yie",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 29.07828496502132,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4291,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2756402__2402.04365__A_method_to_observe_field-region_oxide_charge_and_inter-electrode_isolation_from_CV-charac.md",
+        "title": "2024__recid_2756402__2402.04365__A_method_to_observe_field-region_oxide_charge_and_inter-electrode_isolation_from_CV-charac",
+        "text": "nel HGCAL sensors, two\n\nmeasurement setups were utilized at Texas Tech University (TTU). The capacitance-voltage ( _CV_ ) charac\n\nterizations of the test structures were carried out with a single-channel custom probe station. The reverse\n\n4 Metal-Oxide-Semiconductor\n5 Early prototype wafer for the HGCAL.\n6 Consecutive advanced HPK production stages towards the final HGCAL sensor production parameters.\n7 For shortness, the prototypes will be referred to as ‘HGCAL sensors’ in the following sections.\n\n4\n\n(a) (b)\n\nFigure 1: Test structure samples. (a) ‘Half-moon’ samples with test structures diced from a 6-inch wafer [21]. Top:\n\nthree test diodes, two MOS-capacitors (second and third from left) and other test structures. Bottom: nine test diodes.\n\n(b) Close-up of a test-structure sample diced from an 8-inch HGCAL wafer with the MOS-capacitor connected to the\n\nmeasurement circuit by a probe needle. A test diode enclosed by its guard-ring is visible on the left-side of the MOS\n\ncapacitor.\n\nbias voltage of the test diode (or the gate voltage of the MOS-capacitor) was supplied by a Keithley 2410\n\nsource measure unit (SMU) while the capacitance was read out by a Keysight E4980AL LCR-meter. The\n\n_−_\nnegative high voltage ( HV) was provided to the backplane of the test structure by a vacuum chuck, and the\n\nconnection to the measurement circuit was realized with a probe needle on the segmented front surface, as\n\nshown in Figure 1b. A second probe needle was applied for the grounding of the test-diode’s guard-ring. The\n\nsetup is described in detail in refs. [10, 21].\n\nThe corresponding _CV_ -characterizations of the HGCAL sensors were carried out with a multi-channel\n\nsetup utilizing an automated ARRAY dual-card setup [23] that enables the electrical characterizations of the\n\n8-inch sensors containing several hundred individual cells. For the connection to the measurement circuit a\n\ndedicated probe card for each sensor type in Figure 2 was required. Probe cards for full sensors in Figures 2a\n\nand 2b and for HD-partial sensor in Figure 2c utilized front-side and back-side biasing, respectively. The\n\nguard-ring next to the HV-ring in Figure 3 is left floating in all probe-card types. The remote control and data\n\nacquisition functions were realized with a LabVIEW™-based custom program (HexDAQ version 1.7 [8] ). The\n\nsame SMU and LCR-meter units were used for both single-channel and multi-channel circuit measurements.\n\nThe 2D device-simulations were carried out using the S",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 28.873968654378483,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8235,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "afers.\n\n_5.8. Discussion on the yield of ITS3 layers_\n\nThe series-testing data can be used to estimate the counts of ITS3 half-layers\nthat could be produced in the hypothetical scenario of building them with MOSS\nsensors and with the yield observed within the ER1 engineering batch. Each\nhalf-layer can be produced from a single wafer by dicing a set of adjacent MOSS\nsensors that meet the acceptance criteria. The ITS3 half-layers for Layer 0, 1,\n\n35\n\nand 2 would need respectively four, five or six adjacent functional MOSS sensors\non one wafer. Each ER1 wafer contains six adjacent sensors (see Sec. 2), allowing\nmultiple possible mappings of half-layers to wafers. The ITS3 requirements\ntolerate loosing up to 2% of the sensitive area [8] due to local defects, which for\nMOSS corresponds to 2% region failures. The following estimates of acceptable\nhalf-layer counts are based on 12 fully tested [11] MOSS wafers, a half of a typical\nproduction lot, limiting the total number of possible combinations for each halflayer. Priority was given to achieving equal numbers of different half-layers\nrather than favouring a particular layer size. Finally, it should be emphasized\nthat these estimates are based on an exploratory prototype sensor, which still\nlacks features needed for ITS3, such as high-speed serialisers and the ability to\npower the entire sensor exclusively from the end-caps.\nFigure 34 shows the number of ITS3 half-layers that can be successfully\nassembled from a set of twelve fully analysed wafers, under different acceptance assumptions. Two scenarios are presented, following the reasoning in the\nprevious section: (a) excluding only region failures attributed to the readout\narchitecture, and (b) excluding both readout architecture and powering-related\nfailures. The latter condition is less restrictive for sensor quality as it assumes\nthat manufacturing imperfections associated with the metal stack can be fully\nmitigated in the future productions, which is yet to be demonstrated. Three\ncases are considered, i) region failures amount to less than 2%, ii) less than 3%,\nand iii) less than 5%. If 2% of failures are tolerated than the scenario which\nexcludes both readout architecture and powering-related failures would provide\nenough sensors to assemble the full ITS3 barrel, given that two half-layers per\nlayer size are needed and three for each one are found. In the first scenario,\nwhich excludes only region failures attributed to the readout architecture, one\nwould",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 28.61152306567999,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 43,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5096,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors.md",
+        "title": "2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors",
+        "text": "ith the active area of tracking detectors constantly increasing, the high-energy physics community faces a\nchallenge in scaling production volumes and managing\ncosts to cover large-area detectors with high-resolution,\nradiation-hard silicon sensors. Based on this challenge,\nsensors for particle tracking are only produced by a few\nfoundries, creating the risk of a single-vendor scenario.\nThis study aims to tackle this challenge by exploring\nstrip sensors based on CMOS imaging technology. As\nCMOS imaging technology is widely used for industrial and commercial silicon sensor production, it can\noffer access to fast- and large-scale production by vari\n\n∗ Corresponding author.\n_Email address:_ `naomi.davis@desy.de` (Naomi Davis)\n\nous vendors. In addition, one can profit from the larger\nwafer size available in commercial processes.\nOn the other hand, the maximum reticle size in the\norder of O(1 cm [2] ) in industrial sensor production poses\na remaining challenge for fabricating different sensor\nformats to achieve large-area coverage in tracking detectors. To circumvent this issue, a sensor is divided\ninto individual parts matching the maximum reticle size,\nwhich are illuminated separately on the wafer with a\nslight overlap. This technique is referred to as _stitch-_\n_ing_ [1] in CMOS circuit production.\n\n**2. CMOS Strip Sensors**\n\nThe CMOS Strips project is investigating stitched,\npassive CMOS strip sensors fabricated by LFoundry [2]\nin a 150 nm technology. The sensors are produced on\na p-type, 8-inch, Float-Zone wafer with a resistivity between 3 kΩ and 5 kΩ. In addition, the wafer underwent\n\n_Preprint submitted to Nuclear Instruments and Methods in Physics Research A_ _May 15, 2024_\n\n(a) Regular design\n\n(b) Low Dose design\n\nFigure 1: Schematic layout of the Regular (top) and Low Dose 30/55\n(bottom) strip implant designs [3].\n\nan additional production step at IZM Berlin, where it\nwas thinned down to a thickness of (150 ± 10) µm from\nthe backside and a laser-annealed p [+] layer with a closing\nmetallisation layer was implemented as backside implant. The stitching technique enables the realisation of\na long (4.1 cm) and a short (2.1 cm) strip sensor format.\n\nThe strip implant design varies in doping concentration and width to study various electric field configurations. Figure 1 depicts the Regular and the two\nLow Dose design layouts. For the Regular design, the\nstrip implant consists of a highly doped n [+] layer with a\nlesser doped n-implant (Nwell) below and ha",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 28.575061561926876,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2699,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2691282__2308.14195__Fabrication_of_a_Silicon_Electron_Multiplier_sensor_using_metal_assisted_chemical_etching_.md",
+        "title": "2024__recid_2691282__2308.14195__Fabrication_of_a_Silicon_Electron_Multiplier_sensor_using_metal_assisted_chemical_etching_",
+        "text": "sible shortcomings and\nnew approaches have been introduced. This section aims to further discuss improvements and give an outlook for forthcoming\nstudies of the SiEM.\n\n_Metallisation:_ A changed metallisation procedure could be\nimplemented to avoid residual metal along the pillar wall that\ncould potentially shorten the p–n junction. Approaches such as\nhot embossing of metal film [27] followed by a second lithography, or trench filling of dielectric before metal evaporation and\na second lithography should limit this effect. These approaches\nwould also allow several pillars to be grouped together, for instance to target a given readout ASIC pitch. Alternatively, a\ndeep junction could be implemented into the starting wafer to\nensure no metal channels cross the junction.\n\n7\n\n_Etching:_ The silicon nano-wires, which result from the\ndewetting cracks in the Pt layer, can agglomerate when the aluminium is deposited. They can then lean onto the pillars, which\ncould be a potential source of current noise. The nano-wires\ncan however be minimised by increasing the Pt film thickness\nand etching in an oxygen rich environment, which should be\nused as a standard approach.\n_Oxidation steps:_ Sharp edges due to imperfections in pattern transfer and edge effects next to the multiplication electrode could be minimised by an oxidation step. This would\nsmooth the interface, thus limiting both the high fields due to\nsharp edges and in addition separating the electrode from the\netched out wall such that the fields and operation conditions in\nthe silicon are milder.\n\n_Pattern:_ The first version of the pattern included a very large\nmultiplication electrode. The extent of this electrode should\nbe limited in future patterns to minimise the Schottky diode\ncontribution.\n\n_Material:_ In the first production a high resistivity n-type\nwafer was used. A second production should use a p-type wafer\nin order to collect and multiply electrons.\n_Measurements:_ The next step of the electrical characterisation is to probe the sensor response to ionising radiation. Lasers\nand radioactive sources should be used to study pulse shapes,\nfill factor, collection efficiency and to make comparisons with\nsimulations. A study should be performed to better understand\nthe currents observed. Interface area scaling could be studied\nby using circular diode-like structures with different diameters.\nDefect spectroscopy, in particular between the multiplication\nelectrode and readout electrode, should be performed",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 28.48370917408334,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2396,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "ons, uncertainties from production cross sections\ndominate compared to uncertainties from inelastic cross\nsections, and we fix the parameterization of the latter to\nthat of [97]; we refer readers to [98] for a recent discussion of the inelastic cross-sections models [2] used in GCR\nphysics.\nThe existing models for the isotopic production cross\nsections were discussed at length in Paper I [3] . To encompass the typical uncertainties on these models, as in Paper I, we consider two parameterizations available from\nthe GALPROP code [4] [98], namely its options OPT12\nand OPT22. Both are based on a careful inspection\nof the quality and systematics of all available nuclear\ndatasets for each reaction in MeV/n–GeV/n range, and\nthe use of specifically designed approximations, semiempirical formulas, and nuclear codes normalized to data\nwhen available [99–104]: _for marginally important re-_\n_actions,_ OPT12 uses the WNEW code [105–108] and\nOPT22–the YIELDX code [109, 110], providing a representative dispersion for cross sections where no data\nare available. For more details on the nuclear package in GALPROP see [66] and references therein. For\nmost of our rankings, we actually use a third parameterization, based on a mixture of GALPROP-OPT12 and\nGALPROP-OPT22 [12, 76]. This parameterization is\nbased on GALPROP-OPT12 and renormalizes, for the\nmost important reaction involved in the production of\nLiBeB [76] and F [12], GALPROP-OPT22 cross sections\nto nuclear data, which became available after the GALPROP nuclear cross-section package was developed. Indeed, with these new nuclear data, the fragmentation of\nFe appears to be very important [76], compared to how\nit was ranked in Paper I. This parameterization can be\nseen as a partial update of the original GALPROP routines, which is used here to update the ranking for the\nLiBeB elements provided in Paper I.\nA full update of the GALPROP parameterizations,\nbased on a comprehensive survey of the literature for\nnuclear data relevant for the production of all elements\nconsidered here would be ideal. However, this is an extremely time-consuming task yet to be completed. While\nworking to achieve this goal, we provide the best rankings\navailable at this time. As new data becomes available,\nour results will be updated in the follow-up papers.\n\n**II.3.** **Primary vs. secondary origin of F to Si**\n\nBefore defining which rankings are performed and what\nthey are, it is important to briefly introduce the most\n\n2 Note that there are ma",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 28.34050081791469,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.09265770623460412,
+    "generation_latency_s": 2.598389983177185e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.09265770623460412,
+    "generation_latency_s": 2.598389983177185e-07
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "fac004",
+    "query_type": "factoid",
+    "query": "What is Time-of-Arrival used for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "Time-of-Arrival",
+      "used"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is Time-of-Arrival used for?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5641,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ution from the data. In this procedure, the time of arrival of a particle incident\n\non the detector is defined to be at a threshold on the rising edge of the signal that is a certain\n\nfraction of the signal’s maximum height[2]. Particularly, the time of arrival at thresholds from\n\n10% to 90% at an increment of 10% were extracted for both signals. The time difference can then\n\nbe defined, where it is the difference between the time of arrival extracted from the front and rear\n\ndetectors. Using the same time difference thresholds, the time difference values were extracted for\n\neach set of events and subsequently binned into a histogram. The number of bins in the histogram\n\ncould be manually set to some reasonable value. However, the optimal bin size was dynamically\n\nselected based on a method used to minimise the mean integrated squared error associated with\n\nthe statistics. The resulting histogram is a Gaussian distribution and its sigma is what is known as\n\nthe time resolution of the detectors. This calculated value is the system’s average timing resolution\n\nand to calculate the individual devices’ timing resolution, an important assumption was made in\n\n– 7 –\n\n**Figure 5** . An illustration of the setup to measure time resolution. A Sr-90 source generates a beam of\n_𝛽_ -particles that passes through both detectors and the signal registered by the devices mounted on the PCBs,\nwhere they serve as 1st stage amplifiers. The PCBs are connected to 2nd stage amplifiers and then the signals\nare displayed by the oscilloscope. The entire setup is placed on top of a breadboard purchased at Thorlabs,\n\nInc.\n\nthe analysis: it is assumed that the detectors have similar time resolution. This comes from the\n\nfact that identical detectors from the same region of the wafer were selected. As there are two\nplanes of detectors, the calculated timing resolution was divided by a factor of ~~√~~ 2. Furthermore,\n\nas part of the analysis, different combinations of constant fractions from both detectors were used.\n\nFor example, the front detector’s 50% to the rear detector’s 30%. As such, a total of 81 timing\n\nresolution values were calculated and the best timing resolution from the combinations was extracted\n\nfrom each measurement run. Finally, the uncertainty from the measurements was extracted by the\n\nfollowing procedure: the measurement was repeated 5 times for a certain bias voltage value with the\n\nentire setup being turned off for an hour between each measurement. The measureme",
+        "score": 0.229984565958625,
+        "dense_score": 0.3925170302391052,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.3449951708316803,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6882,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+        "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+        "text": "99%.\n\nThe oscilloscope samplings were interpolated linearly to measure the time of arrival (ToA) of\n\nthe signals. In the case of the two MCPs, the ToA was taken as the time at which the interpolated\n\nsignal crossed 50% of the maximum value of the amplitude, thus correcting most of the time walk.\n\nIn the case of the DUT, the ToA was taken as the time at which the interpolated signal crossed a\n\nfixed voltage threshold. The threshold value V ToA was set at the integer value in mV closest to\n\nseven times the voltage noise _𝜎_ _𝑉_ measured in that dataset. As reported in Table 1, the threshold\n\nranged from 3 to 9 mV, depending on the front-end electronics working point. Finally, for each\n\nDUT signal, the ToA value was determined by linearly interpolating between the two oscilloscope\n\nsamplings with amplitudes just below and above the threshold.\n\nThe dataset with the largest statistics was used to compute the time resolution of the MCP0 using\n\nthe method adopted in [5]: the time resolution for each of the three ToA differences, constructed\n\nfrom pairs among DUT, MCP0, and MCP1, was measured by fitting the distribution with a Gaussian\n\nfunctional form, and the resulting system of three equations with three unknowns was solved. This\nmethod yielded a time resolution for MCP0 of _𝜎_ _𝑡,_ MCP0 = (5 _._ 4 ± 0 _._ 4) ps.\n\n– 10 –\n\nOnce this value was established, the time resolution of the DUT at each operating point was\n\ndetermined by performing a Gaussian fit on the ToA DUT - ToA MCP0 distribution and then subtracting\nthe measured _𝜎_ _𝑡,_ MCP0 in quadrature.\n\nThe two panels on the left of Figure 10 show the ToA DUT - ToA MCP0 distributions before the\ntime-walk correction of the DUT signals for the datasets acquired at HV = 180 V with _𝑃_ _density_ = 0.3\nW/cm [2] (top) and 2.6 W/cm [2] (bottom). After subtraction of _𝜎_ _𝑡,_ MCP0, the time resolution results to\nbe (33.2 ± 0.7) ps and (24.3 ± 0.2) ps, respectively. Table 2 reports the time resolution before time\nwalk correction for all datasets with efficiency larger than 99%. As expected, the time resolution is\n\nmeasured to improve with increasing preamplifier power density and increasing sensor bias voltage.\n\n|MONOLITH prototype2 (2024) with gain layer<br>CERN SPS Testbeam 120 GeV/c pions Entries<br>300 P T d=en s-i5ty° = C 0.3 W/cm2, HV = 180 V Entries 3269<br>FWHM/2.355 [ps]27.2 ± 3.0<br>250 χ2/NDF 45/17<br>200 Threshold at 7σ V σ TaGailuss s[ %[p ]s] 34.2 ± 4 0 .4.7 1<br>No Time Walk<br>Correction<br>150<br>100<br",
+        "score": -1.8607288779982603,
+        "dense_score": 0.3143497705459595,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.869147300720215,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1847,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "a pixel-hit is recorded, it is time-stamped, labelled with the pixel\naddress and sent from the ASIC immediately, without the need for a trigger signal. One of\nthe main differences between Timepix3 and the VeloPix is the hit rate capability. Timepix3\nis limited to a maximum hit rate of 80 million hits/s while the VeloPix can handle 900\nmillion hits/s. Several modifications have been necessary to achieve this capability. The\ntime-of-arrival information is removed so VeloPix records only the occurrence of the hit\n( _binary_ readout). The time-stamp granularity increases from 1.56 to 25 ns, the FE is\noptimised for a negative input charge and the power budget of the VeloPix is raised to\n\n_∼_\nfacilitate an increased throughput. An additional data reduction ( 30%) comes from\ngrouping 2 _×_ 4 neighbouring pixels into a SPP, thereby removing duplication of the time\nstamp and address fields.\nWith a 40 MHz acquisition rate, up to 20.48 Gbit/s can flow from one ASIC [45] via\nfour, highly optimised serial links each running at 5.12 Gbit/s . A custom serialiser, gigabit\nwireline transmitter (GWT), has been designed for this purpose [46]. This bandwidth is\nsignificantly greater than the 15.1 Gbit/s anticipated from the busiest ASIC. A notable\nachievement of the VeloPix development is the power consumption: 1.2 W typical, 1.9 W\nmaximum, which is 65% of the original expectation. Table 2 lists the key VeloPix features.\n\n**3.3.2** **Sensors**\n\nThe 208 silicon pixel sensors are each 200 µm thick and 43 _._ 470 mm _×_ 14 _._ 980 mm large,\nincluding 450 µm wide inactive edges in which lie the guard rings. They are manufactured [14]\n\nusing a float-zone p-bulk with n-type implants insulated between pixels by p-stops. The\nquoted bulk resistivity is 3–8 kΩcm . The sensors are designed to provide charge collection\n\n13 By TSMC TM Taiwan Semiconductor Manufacturing Company.\n14 Hamamatsu Photonics K.K. TM, Hamamatsu, Shizuoka 435-8558, Japan.\n\n17\n\nTable 2: Summary of the VeloPix capabilities.\n\nTechnology TSMC 130 nm CMOS\nRadiation hardness _>_ 4 MGy, SEU tolerant\nPixel size (analogue part) 55 µm _×_ 55 µm (55 µm _×_ 14 _._ 5 µm)\nPeak rate per ASIC (per pixel) 9 _×_ 10 [8] hits _/_ s (5 _×_ 10 [4] hits _/_ s)\nMaximum of charge distribution 16 000 _e_ _[−]_\n\nMinimum threshold 500 _e_ _[−]_\n\nTiming resolution (range) 25 ns (9 bits)\nSuper-pixel data size 30 bits\nMaximum data rate per ASIC 20 _._ 48 Gbit/s\nPower consumption per ASIC _∼_ 1 _._ 2 W (spec. 3 W)\n\nefficiency greater than 99% an",
+        "score": -1.9613175413825297,
+        "dense_score": 0.3041217029094696,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.0235304832458496,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 3553,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "data, at the cost of a significant reduction of the sample size. Since\n\nafter the ToA selection, the events are in a certain phase, such that the sampling of the ADC is\n\nissued at a constant point in time with respect to the arrival of the particle, the pad-layer response\n\nwas improved. We have validated the ToA-based phase selection with the 150 GeV electron run\n\nfrom May, 2023. Detailed studies confirmed that at 150 GeV the ToA criterion was not affected\n\nby time-walk effects. It can therefore be used as an intrinsic time measurement of the particle’s\n\nphase of arrival with respect to the clock. We observed that for the lower energies, the shower\n\nsignal in the leading cell in layer 9 can fluctuate so low that the ToA measurement is not fired (i.e.\n\n≲ 0 _._ 2 pC). Applying the ToA criterion to these energies would therefore enhance the event selection\n\ntowards high intensity showers, and introduce a bias to the data. As a result, FoCal-E pad data from\n\nNovember, 2022 at electron energies below 150 GeV are not used for analysis, but replaced with\n\nthe complementary May, 2023 data, resulting in a combined dataset which covers the full energy\n\nrange from 20 to 300 GeV.\n\n**5.7** **Longitudinal shower profiles of electrons**\n\nThe longitudinal segmentation of the FoCal-E prototype makes the measurement of the longitudinal\n\nshower profile of EM showers with a granularity of ≈ 1 _𝑋_ 0 possible. Here, and in the following this\n\nis done by measuring the signal charge per pad layer by summing up the information around the\n\nleading cell in a 5 × 5 window (i.e. in a 5 cm × 5 cm square), relating to the charge by using the\n\ncalibration described in Sec. 5.5.\n\nIn the following, we present the longitudinal shower profile measured with the FoCal-E layers\n\nfor nine different electron energies (20 to 300 GeV). In order to mitigate the effect of transverse\n\nshower leakage, only central shower events were used for analysis. The position of the shower\n\ncenter in transverse direction is defined event-by-event from the channel with highest signal in layer\n\n9. Since the beam spot fluctuated on a cm-scale between the various beam energies, three central\n\npads were globally determined which were reasonably close to the beam center for all beams, thus\n\nproviding sufficient statistics for all analyzed runs. Events are rejected if the shower center is not\n\nlocated in one of the three central channels.\n\nFigure 23 shows the signal sum distributions for each of the 18 pad layers for 100",
+        "score": -2.3925675185685304,
+        "dense_score": 0.2949439287185669,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.6864242553710938,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 32,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1655,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2631760__2302.06522__Experimental_post-selection_loophole-free_time-bin_and_energy-time_nonlocality_with_integr.md",
+        "title": "2024__recid_2631760__2302.06522__Experimental_post-selection_loophole-free_time-bin_and_energy-time_nonlocality_with_integr",
+        "text": "oincident events should\nbe applied: since the photons can be emitted at any time,\nthere is no possibility of performing post-selection locally.\nIn the TB case, the pump interferometer must have the\nsame imbalance as the measurement interferometers. In\nthis case, the three possible arrival times of each photon are known in advance. However, also in this case, to\nselect only the central arrival times for both photons a\nnon-local post-selection is necessary.\n\nIn the hug configuration, the two measurement interferometers are connected such that detections at both Alice and Bob can only be due to the two down-converted\nphotons propagating on paths of the same length: either both taking the short paths or both taking the long\npaths. In the ET case, it is thus sufficient to discard\nevents where two photons are received on the same side\nto be left with coincidence events that always result from\nthe two-photon interference of these two indistinguishable processes. In the TB case instead, as illustrated\nin Fig. 1, the two photons have three possible detection times with respect to the pump pulse emission even\nfor coincidences. This leads in Bell tests to the same\nthree-peaks histogram of arrival times that is obtained\nby using the Franson interferometer and only the photon\npairs detected in the central TB display interference (case\n2 of Fig. 1). Coincidences in the first and last TB can\ninstead be associated with a single known emission time\nand propagation path (cases 1 and 3 of Fig. 1). Nonetheless, when looking at the time differences between detections at Alice and Bob we have a single peak as the\ngeneration time and the traveled optical path lengths are\nequal. This fact is illustrated in the upper pane of Fig. 1\nwhere most detections lie on the main diagonal, and will\nallow to close the post-selection loophole. Indeed, no\ncommunication between the two parties is needed for the\npost-selection which can be done locally without introducing any loophole. Alice and Bob locally post-select\n\n2\n\nFIG. 1. a) Joint histogram of detection time moduli at Alice\nand Bob using the hug interferometer in our PIC. The vertical and horizontal bands represent the post-selection windows\nof Alice and Bob. With a Franson interferometer the orange\narea contains on average twice as many detections as the ones\nin the green area which exhibit interference (see Fig. A2), so\na Bell violation is only possible by post-selecting the intersection of the two bands, which introduces a loophole. I",
+        "score": -2.463444863046919,
+        "dense_score": 0.2949160933494568,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.795409679412842,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3872,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures.md",
+        "title": "2024__recid_2742842__2401.01316__Silicon_photomultipliers_for_detection_of_photon_bunching_signatures",
+        "text": "ignal-to-Noise Ratio**\n\nThe usual sensors used in Quantum Optics are the avalanche photodiodes (APDs). The\ntraditional way to measure photon bunching is to use a beamsplitter and two sensors that\nare triggered in coincidence [23, 24] and then measure the time difference between photon\narrivals, _dt_ . In this approach, a Signal-to-Noise Ratio (SNR) can be defined as the ratio\nbetween bunched events to total coincidence fluctuations in a resolving time _τ_ _R_ . The resolving time is the overall time resolution of the experimental setup. The main contribution to\nthis time is the 2-SiPM’s composite jitter. The total coincidence fluctuations are just the\nPoisson fluctuations of total counts (and so they can be calculated as _√_ total counts). These\n\nhave two contributions: The accidental (non-bunched photons plus dark counts) event fluctuations and the signal (bunched photons) event fluctuations. It is usually the case that the\naccidental count fluctuations are much larger than the signal fluctuations, so these are often\nnot considered in this calculation. With this in mind, the SNR can be calculated as [15]\n\nSNR APD = _τ_ _c_ ~~�~~ _R_ 1 _R_ 2 _V_ [2]\n\n~~�~~\n\n_T_\n_,_ (1)\n_τ_ _R_\n\nwhere _τ_ _c_ is the coherence time of the field, _R_ _i_ is the photon rate in detector _i_, _V_ is the\ndegree of spatial coherence, _T_ is the integration time and _τ_ _R_ is the resolving time of the\nexperiment. The coherence time is the time in which the phase of the field remains correlated\n\n2\n\nor predictable, and the integration time is the total measurement time of the experiment. This\nSNR formula is valid for linearly polarized light, which will be the case for our experiment.\nA time-difference histogram with the registered events will have a background of accidental events and a bunching excess peak, centered at zero time-difference if the optical path\nof both sensors is the same. When normalized using the accidental background [25], this\nhistogram is the second order correlation function _g_ [(2)] . As previously mentioned, the background fluctuations are accidental (random) coincidences of sensor counts, which come from\nnon-correlated light and dark counts. In a case where the sensor has non-negligible dark\ncounts, like in an SiPM, these have to be taken into account. If the resolving time _τ_ _R_ is much\nlarger than the coherence time _τ_ _c_, the rate of coincidences _R_ _c_ in a window of duration _τ_ _R_\nis [26]\n\nsignal\n~~�~~ �� ~~�~~\n_R_ 1 _R_ 2 _τ_ _c_ _V_ [2]\n\n_R_",
+        "score": -2.760913877487183,
+        "dense_score": 0.3177814483642578,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.254290580749512,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4771,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "ar pn-junctions enhanced by a thin layer\nwith high doping concentration, resulting in a high electric field, such that Geiger-mode operation is feasible at\nreverse bias voltages of a few 10 V. A Geiger discharge\ncan be triggered by ionizing radiation or single photons\n\n in the optical wavelength regime, with detection effi\nciencies on the order of 50 %. Due to the avalanche\n\n multiplication, the signal rise times of SiPMs are suffi\nciently short to reach a temporal resolution of a particles\n\n∗ Corresponding author\n_Email address:_ `finn.feindt@desy.de` (Finn Feindt)\n1 Also at University of Hamburg, Germany\n2 Also at University of Wuppertal, German\n3 Also at University of Bonn, Germany\n\ntime-of-arrival on the order of few 10 ps. Comprehensive introductions into the topic are given in for example\nin [1, 2, 3].\n\nAnother feature of the avalanche multiplication is that\nthe amplitude of the current induced by the avalanche is\nindependent of the amount of charge carriers produced\nby a particle or photon interaction. This absence of\ncharge information suggests the conversion into a binary\nsignal, by means of a discrimination, without any loss\nof information. On the other hand, digital signal processing on a SPAD level adds a lot of benefits. For example it allows to extract the position of a firing SPAD\nwithin the SPAD array. Such digital SiPMs (dSiPMs),\nproduced in a standard CMOS process, where first introduced in [4].\n\nApplications for dSiPMs include the use of dSiPMs\nas light-sensitive sensor for the readout of scintillating\nfibers [5]. This work explores the possibility to use a\n\n_Preprint submitted to Nucl. Instrum. Methods Phys. Res. A_ _February 3, 2025_\n\nFigure 1: Microscopic image of a single pixel. The four squares with\ncut-off corners are the SPADs. The in-pixel circuitry is visible at the\nbottom of the image. Taken from [7].\n\ndSiPM, designed at Deutsches Elektronen Synchrotron\n(DESY), as a 4D-tracking detector. In this case, a 4Dtracking device is to be understood as a detector providing the measurement of a Minimum-Ionizing-Particle’s\n(MIPs) impact coordinates and time-of-arrival, as discussed in [6]. The said dSiPM will be briefly described\nin the following section.\n\n**2. The DESY dSiPM**\n\nThe sensor is designed and produced in the LFoundry\n150-nm CMOS technology. The key building blocks\nare SPADs, with a fixed layout provided by the manufacturer. Four of these SPADs, with an active area of\n20×20 µm [2], form a pixel with a size of 69.6×76 µm [2],\na",
+        "score": -3.2235020586938568,
+        "dense_score": 0.349321186542511,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.967392444610596,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 7835,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2947501__2507.11593__Characterizing_the_delivered_spill_structure_of_medical_proton_and_carbon-ion_beams_at_Med.md",
+        "title": "2026__recid_2947501__2507.11593__Characterizing_the_delivered_spill_structure_of_medical_proton_and_carbon-ion_beams_at_Med",
+        "text": "y, this nature emerges in measurements\nleading to the exponential shapes in the inter-arrival time distributions. Due to empty bucket channeling, the interarrival times exhibit a modulation leading to non-Poissonian behavior [39]. These considerations are particularly\nrelevant in experimental settings that require reliable single-particle detection with minimal pileup.\n\n**Acknowledgements**\n\nThe financial support of the Austrian Ministry of Education, Science and Research is gratefully acknowledged for\nproviding beam time and research infrastructure at MedAustron. This project has received funding from the Austrian\nResearch Promotion Agency FFG, grant number 918092.\n\n**References**\n\n[1] M. Durante, R. Orecchia, J. S. Loeffler, Charged-particle therapy in cancer: clinical uses and future perspectives,\nNature Reviews Clinical Oncology 14 (8) (2017) 483–495. `[doi:10.1038/nrclinonc.2017.30](http://dx.doi.org/10.1038/nrclinonc.2017.30)` .\n\n[2] J.-i. Kim, J. M. Park, H.-G. Wu, Carbon ion therapy: A review of an advanced technology, Progress in Medical\nPhysics 31 (3) (2020) 71–80. `[doi:10.14316/pmp.2020.31.3.71](http://dx.doi.org/10.14316/pmp.2020.31.3.71)` .\n\n[3] F. Ulrich-Pur, T. Bergauer, A. Burker, S. Hatamikia, A. Hirtl, C. Irmler, S. Kaser, P. Paulitsch, F. Pitters, V. Teufelhart, Imaging with protons at MedAustron, Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment 978 (2020) 164407.\n`[doi:10.1016/j.nima.2020.164407](http://dx.doi.org/10.1016/j.nima.2020.164407)` .\n\n[4] G. Magrin, H. Palmans, M. Stock, D. Georg, State-of-the-art and potential of experimental microdosimetry in\nion-beam therapy, Radiotherapy and Oncology 182 (2023) 109586. `[doi:10.1016/j.radonc.2023.109586](http://dx.doi.org/10.1016/j.radonc.2023.109586)` .\n\n[5] S. Waid, J. Maier, P. Gaggl, A. Gsponer, P. Sieberer, M. Babeluk, T. Bergauer, Detector development for particle\nphysics, in: 2023 Austrochip Workshop on Microelectronics (Austrochip), IEEE, 2023, pp. 40–43. `[doi:10.](http://dx.doi.org/10.1109/Austrochip61217.2023.10285161)`\n`[1109/Austrochip61217.2023.10285161](http://dx.doi.org/10.1109/Austrochip61217.2023.10285161)` .\n\n[6] W. Treberspurg, A. Rezaei, R. Kralofsky, A. Sinn, A. Stren, C. Scharlemann, Radiation tests of a CubeSat OBC\n74 (3) 1253–1260. `[doi:10.1016/j.asr.2024.05.035](http://dx.doi.org/10.1016/j.asr.2024.05.035)` .\n\n[7] O. Jäkel, C. Bert, P. Fossati, T. Kamada, C. Karger, N. Matsufuji, M. S",
+        "score": -3.2547342484997164,
+        "dense_score": 0.3911052346229553,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.015968322753906,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5168,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2791032__2405.18403__Batch_VUV4_characterization_for_the_SBC-LAr10_scintillating_bubble_chamber.md",
+        "title": "2024__recid_2791032__2405.18403__Batch_VUV4_characterization_for_the_SBC-LAr10_scintillating_bubble_chamber",
+        "text": "[.]_ (3.4)\n\n_𝑄>_ 1 _._ 5PE\n\nThen, P [ˆ] CA, under the assumption that P PCA and P DCA are independent which is true for low\n\nprobabilities (see ref. [30]), is approximately equal to\n\nˆP CA = ˆP PCA + ˆP DCA _._ (3.5)\n\nFinally, ¯ _𝜏_ DCA is the average of the DCA arrival times with respect to the first pulse. This can be\n\ncalculated from a background-subtracted re-binned histogram of the time difference with respect to\n\nthe first pulse with additional bins, _𝑀_, for a better timing resolution. This can be expressed as\n\n_𝑀_\n¯ � _𝑖_ _[𝑡]_ _[𝑖]_ [(] _[𝑘]_ _[𝑖]_ [−] _[𝑁]_ [DCR][ Δ][t] [i] [)]\n_𝜏_ DCA = ~~�~~ _𝑖𝑀_ _𝑘_ _𝑖_ − _𝑁_ DCR Δt i _._ (3.6)\n\nAll of the timing parameters are calculated for all SiPMs at each OV and both temperatures.\n\n– 13 –\n\n**4** **Results**\n\nThe analysis results for all 32 SBC VUV4 Hamamatsu Quads are presented in this section. The\n\nplots are labelled to distinguish between the two different Quad batches as discussed in section 1,\n\nand to differentiate between the testing temperatures. The plots have the example SiPM discussed\n\nin section 3 (Quad ID 200 and SiPM 1) visualized using semi-transparent grey lines whenever\n\npossible. Additionally, any single numbers extracted from the data, such as averages or temperature\n\ncoefficients, will come in pairs. The first shows the SiPM-to-SiPM variations where the reported\n\nerror is the standard deviation of the spread. The second value (labelled as _𝑠_ _𝑥_ where _𝑥_ is the\n\nparameter of interest) is the average of the single SiPM errors which reflects the uncertainty of\n\neach single calculated value. The dispersion _𝑉_ BD and _𝑚_ within the SiPMs in a Quad will also be\n\ndiscussed.\n\n**4.1** **SiPM-to-SiPM parameters spread**\n\nShown in figure 9, the average value for _𝑉_ BD has been calculated for both batches, and they are\ndetailed in table 1. On average between both temperatures, _𝑉_ BD [Batch 1] is always smaller than _𝑉_ BD [Batch 2] .\nThis difference could be attributed to a slight difference in the manufacturing process, causing\n\nbatch-to-batch variations only on long-term batch time differences. Another possible cause of the\n\nvariations is storage damage. Despite the efforts to minimize humidity damage over the past several\nyears since acquisition, humidity could have caused the _𝑉_ BD [Batch 1] to drift more in batch one than\nin batch two. The second option is less likely because _𝑉_ BD variations are from variations in the\n\nepitaxial layer resistivity that is dominated by manufacturing proc",
+        "score": -3.468067910936144,
+        "dense_score": 0.36405450105667114,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.344036102294922,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1659,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2631760__2302.06522__Experimental_post-selection_loophole-free_time-bin_and_energy-time_nonlocality_with_integr.md",
+        "title": "2024__recid_2631760__2302.06522__Experimental_post-selection_loophole-free_time-bin_and_energy-time_nonlocality_with_integr",
+        "text": "n Fig. 3.\nTo minimize the reduction of the Bell parameter due to\nthe local post-selection procedure, it is essential to have\na separation between the time-bins allowing for clear discrimination of the events belonging to the central peaks\nand to the lateral peaks. Assuming a Gaussian distribution of the detection time moduli for each time-bin,\nthe delay of 116 ps between long and short arms in our\nPIC required us to lower the standard deviation of such\nGaussians around 20 ps to have a negligible impact on\nthe CHSH violation. The use of low-jitter SNSPD detectors (Single Quantum Eos) and time-taggers (Qutools\nQuTAG), along with a high precision synchronization to\nthe fluctuations of the pump laser repetition rate allowed\nus to achieve this. First, we derived through frequency\nsynthesis on an FPGA a signal at 10 MHz locked to the\n76 MHz signal of the pump laser, which was used as clock\nfor our time-tagger. Then, given that we could still observe a drift in the average detection time modulus for\n\n4\n\neach time-bin, we implemented a real-time interpolation\nalgorithm allowing us to correct for this drift and achieve\narrival time distributions with standard deviations as low\nas 8 _._ 2 _±_ 0 _._ 1 ps as shown in Fig. 1 when detection rates\nare high enough to sample the drift.\n\nThe Bell test was performed by measuring the correlations in the four different basis combinations by maintaining the corresponding phase-shifters voltages in a predetermined sequence. A value of _S_ _LP_ = 2 _._ 42 _±_ 0 _._ 05 was\nobtained which represents a violation of the CHSH inequality by more than 7 standard deviations. We identified several factors lowering the value of the violation.\nFirst, the visibility of the two-photon interference in the\nhug configuration depends on the indistinguishability between the signal and idler photons, which we assessed\nthrough Hong-Ou-Mandel interference to be 94 _._ 7 _±_ 0 _._ 3%\nfor this Type II SPDC source. Second, the output beamsplitters of our interferometer were not perfectly balanced, we measured power-splitting ratios of 55 _._ 6 _±_ 0 _._ 1%\nand 56 _._ 02 _±_ 0 _._ 04%, similar fabrication imperfections of\nSilicon Nitride directional couplers were also mentioned\nin [54]. The interferometric visibility measured in the\ncentral peak by scanning the pump interferometer was\n89 _._ 2 _±_ 0 _._ 7% for around seven hundred coincidences per\nsecond. The experiment also suffered from thermal crosstalk between the phase-modulators, introducing a phas",
+        "score": -3.487445406383938,
+        "dense_score": 0.30174559354782104,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.371283531188965,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 1.2830720427446067,
+    "generation_latency_s": 3.3015385270118713e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.2830720427446067,
+    "generation_latency_s": 3.3015385270118713e-07
+  }
+}

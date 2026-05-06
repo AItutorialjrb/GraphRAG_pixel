@@ -1,0 +1,275 @@
+{
+  "benchmark": {
+    "query_id": "mul006",
+    "query_type": "multi_hop",
+    "query": "How can ToT calibration influence spatial reconstruction?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "ToT"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can ToT calibration influence spatial reconstruction?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8334,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "e\nrow direction as a function of the threshold for different\nsensor bias voltages in triggered mode. A few additional\n\n points measured in ToT mode, for which calibration and η\ncorrection have been applied, are also included. The pixelto-pixel variations and nonlinear charge sharing inside the\npixel cell lead to a deterioration of the reconstructed cluster position when these corrections are not applied. Due to\nthe fact that a majority of the interactions have a cluster\nsize of one, no significant difference is found between the\nspatial resolution in ToT mode (with 8 bits) and triggered\nmode (binary readout), and a spatial resolution close to\nthe pitch _/√_ 12 _∼_ 10 _._ 1 µm is measured. Moreover, no\n\nsignificant differences between sensor bias voltages are observed.\n\nThe increase in charge sharing at a threshold below\n240 electrons leads to an improvement of the spatial resolution. In particular, a spatial resolution of (9 _._ 3 _±_ 0 _._ 1) µm\nis measured at a threshold of (178 _±_ 5) electrons. No significant dependence on the sensor bias voltages is observed.\nBetween approximately 240 and 400 electrons, the spatial\nresolution remains constant at about 9 _._ 7 µm, corresponding to a range dominated by single-cluster events. Above\n400 electrons, the above-mentioned asymmetric residuals (caused by the lower efficiency) result in a reduced\n\n14\n\nFigure 32: Spatial resolution as a function of the threshold for different sensor bias voltages in triggered and ToT modes.\n\nσ _RMS,_ 3σ, and therefore in an improvement of the spatial\nresolution.\n\n_5.4. Signal Distribution_\n\nThe seed pixel is defined as the pixel with the highest\nsignal within a cluster. Figure 33 shows the seed pixel\ncharge distribution fitted using a convolution of a Landau\nand Gaussian function.\nAn MPV of (680 _±_ 20) electrons has been measured,\nwhich is higher than measured in other prototypes from\nthe same submission [5]. The discrepancy could be attributed to the ToT calibration procedure, which assumes\na uniform in-pixel response of the sensor. During calibration, test pulses are injected and their amplitudes and\ncorresponding ToT values are measured to obtain a single calibration function per pixel (see Section 3.4). However, when a charged particle passes through the sensor,\nthe non-uniform in-pixel response, which leads to slower\ncharge collection and smaller amplitudes, also results in\nlarger ToT values in the right part of the pixel. This is\nshown in the in-pixel seed-pixel ToT map of",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 18.64501050488778,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 26,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8325,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "m the expected MIP value,\nthe measured ToT values vary between pixels, and the\nmaximum mean value is reached at 1 µs, coinciding with\n\nFigure 23: Amplitude spectrum of the [55] Fe source after calibration.\n\nthe acquisition frame duration. This large threshold of\n600 electrons is chosen in this measurement for consistency\nwith the ToT spectrum of the [55] Fe source measurements\npresented below.\nNext, the ToT and amplitude measurements can be\ncombined. Figure 20 shows the ToT as a function of the\ntest pulse amplitude in electrons for a single pixel. A surrogate function\n\nC\nToT = Ax + B + (2)\nx _−_ D\n\nis used to fit each pixels data, where x is the test pulse\namplitude, A modulates the linear component at higher\namplitudes, B adjusts the ToT offset, C represents the\ncurvature part at low amplitudes, and D indicates the offset in amplitude [25]. The inverse of the surrogate function\nallows the conversion of measured ToT in clock cycles to\nsignal amplitude in electrons.\nTo verify the calibration procedure, a ToT spectrum of\n55 Fe is recorded in ToT mode, as shown in Figure 22. The\n\n10\n\nthreshold of approximately 600 electrons is the same as\nused during the calibration. This spectrum is then converted into electrons, as shown in Figure 23, after applying the threshold and ToT calibration. The peak is described by a Gaussian with µ = 1640 _±_ 40 electrons corresponding to the resolved K α 1 amplitude with an accuracy\nsmaller than 5 %. The dominant systematic uncertainty\narises from the threshold calibration uncertainty.\nThe ToT calibration is applied to the test beam reconstructed data acquired in ToT mode down to a threshold\nof 300 electrons. For lower thresholds, the surrogate function fits (Equation (2)) do not converge —particularly the\nparameter C, which models the curvature at low thresholds.\n\n**4. Methodology for Test Beam Measurements**\n\nThis section describes the experimental setup and analysis procedure for the test beam measurements, where the\nH2M performance in MIP detection is studied.\n\n_4.1. Experimental Setup_\n\nThe data have been recorded at the DESY II [26] and\nCERN SPS [27] Test Beam Facilities employing the ADENIUM [28] and CLICdp Timepix3 [29] beam telescopes, respectively. Each beam telescope comprises three upstream\nand three downstream reference planes, with the device\nunder test (DUT) in between. These planes are arranged\nand oriented to optimise the pointing spatial resolution of\nthe beam telescope at the DUT position. With the used\nconfig",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 16.032124161105788,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3586,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "Δ _𝑄_ [HG] inj [−][LG] 150 fC\nΔ _𝑈_ 0 = = (A.2)\n_𝐶_ inj _,_ high − _𝐶_ inj _,_ low 8 _._ 0 pF − 0 _._ 5 pF [=][ 20 mV] _[,]_\n\nwhich is in reasonable agreement with the expectation of 30 mV. The channel-wise calibration\nparameters are obtained from linear fits in the domain _𝑄_ inj _<_ 0 _._ 2 pC for the ADC, and _𝑄_ inj _>_ 2 pC\nfor ToT, as shown in Fig. 37. The calibrated ToT values are corrected by the constant charge offset\nΔ _𝑄_ inj . For lower charge values (in particular in the turn-on region), the response of the ToT is not\nlinear, and we derive a calibration by linearly interpolating between the ToT response at 0 and 2 pC\n\n(where the former one is always zero). Figure 39 shows the distribution of the fitted slope parameters\n\nfor the ADC amplitude (left panel) and the ToT response (right panel). The two populations in\n\nthe histograms are most likely related to the slightly different architectures in the two halves of the\n\nHGCROC, and therefore to the ID of the front-end channels. For the ADC response we obtain from\nour calibration procedure a mean response factor of 3650 units/ pC = 3 _._ 65 units/ fC for channel IDs\n_<_ 36 and 3500 units/ pC = 3 _._ 50 units/ fC for channel IDs ≥ 36. In particular, the ADC response\nto a minimum ionizing particle is expected to be around 3 _._ 6 units/ fC · 3 _._ 7 fC = 13 _._ 3 units, where\n\nthe MPV of 3.7 fC was used to describe the charge generated by a MIP in 300 _𝜇_ m silicon. The\nslope of the ToT response was calibrated to be 310 units/ pC and 305 units/ pC, respectively, and\n\nthe ToT offset was in the order of 120 units (not shown). In channels where the high-range ToT\n\ncalibration procedure failed, the mean values of the fitted parameters in the corresponding ASIC\n\nhalf were assigned. For the ADC only the proportionality factor was used for the calibration, and\n\nthe channel-wise pedestal to subtract was determined from dedicated pedestal runs without beam\n\nsignal. The successful calibrations were then used to convert the response of the HGCROC to actual\n\ncharge deposit in the pad sensors components.\n\n– 54 –\n\n**Figure 39** . Fitted slope parameter for the calibration of ADC and ToT response. The two populations in the\nhistograms are related to the slighlty different architectures in the two halves of the HGCROC.\n\n**B** **Inter-calibration of the SiPMs for FoCal-H**\n\nOne of the main ingredients for the calibration of the FoCal-H is the gain (inter-)calibration of\n\nthe SiPMs. The second prototype of FoCal-H u",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 13.604400553028189,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 65,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2348,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "ection, 4.7 mm in the\ny-direction, and 3.4 mm in the z-direction. These are pretty\ngood results since all spatial resolutions are better than the\nsmallest size of the spheres used (1.3 mm _≪_ 10 mm).\nNext up is the extension of the existing reconstruction\nalgorithm to clustering to ensure better cross-checking and\na straightforward extension to multiple sources. The most\nrecent and promising methods are introduced in the review\narticle by Windows-Yule et al. (2022). However, extension\nto multiple sources can also be achieved by extending the\nlikelihood fit, which was introduced and tested in Oppotsch\net al. (2024).\nAnother pending issue is the investigation of the influence\nof a [22] Na source on the reconstruction. This is necessary\nbecause such a source will be used in the upcoming measurements to generate the 511 keV gamma-ray pairs for\nthe reconstruction, but the simulations have so far been\nperformed with 511 keV gamma rays only. During the decay\nof the [22] Na source, gamma rays with an energy of 1275 keV\nare emitted as well. Hence, the influence of these additional\ngamma rays on the tracer particle reconstruction has to be\ninvestigated.\n\n**Declaration of competing interest**\n\nThe authors declare that they have no known competing\nfinancial interests or personal relationships that could have\nappeared to influence the work reported in this paper.\n\n**Acknowledgments**\n\nThis work has been funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – ProjectID 422037413 – TRR 287.\n\n**Appendix A.** **DEM simulations of the generic grate**\n\n**system**\n\nThe discrete element method (DEM) simulations were performed with an in-house code. The equations for translational\n\n_This is the accepted manuscript version of an article accepted for publication in Particuology. The final version is available online at_\n_https://doi.org/10.1016/j.partic.2023.09.003_ _Page 11 of 13_\n\n**Table 4**\n\nCollision parameters for DEM simulations.\n\nSphere on sphere Sphere on bar Sphere on wall\n\nCoefficient of restitution _𝑒_ _[𝑛]_ 0.926 0.870 0.838\nCoefficient of static friction _𝜇_ _𝑐_ 0.242 0.178 0.191\nCoefficient of rolling friction _𝜇_ _𝑟_\n\nSphere 10 mm 5.257 × 10 [−5] 4.180 × 10 [−5] 2.973 × 10 [−5]\n\nSphere 15 mm 4.702 × 10 [−5] 4.041 × 10 [−5] 2.874 × 10 [−5]\n\nSphere 20 mm 4.146 × 10 [−5] 3.901 × 10 [−5] 2.775 × 10 [−5]\n\nand rotational motion are given by\n\n_𝑑_ [2] _⃗𝑥_ _𝑖_\n_𝑚_ _𝑖_ _𝑑𝑡_ [2] [=]\n\n_𝑁_\n∑ _⃗𝐹_ _𝑖𝑗_ + _𝑚_ _𝑖_ _⃗𝑔_ (4)\n\n_𝑗_ =1\n\n_𝑁_\n∑\n\n_𝑗_ =1\n\nΘ _𝑖_",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 13.513685012364684,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 8323,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "factor of (35 _._ 4 _±_ 1 _._ 1) electrons per THL DAC. This\nvalue corresponds to 111 mV _/_ ke _[−]_ [2], and agrees with the\nanalog front-end simulations presented in 2.4. The gain is\nthe inverse of the calibration factor, and it is shown in Figure 17 for different bias voltages of the sensor and feedback\ncurrents. The _low ikrum_ setting corresponds to 1 _._ 65 nA,\nwhile the _high ikrum_ setting corresponds to 3 _._ 75 nA. Additionally, no significant differences are observed between\nsamples with different thicknesses.\nA second peak is visible at lower amplitudes of approximately 126 DACs in Figure 15. This effect, which is related to loss of signal height due to ballistic deficit [24], as\n\n2 The conversion from voltage to DAC units is obtained by measuring the voltage using the ADCs on the CaR board while scanning\nthe DACs. A conversion factor of (3 _._ 928 _±_ 0 _._ 001) mV _/_ THL DAC is\ndetermined for the `dac` ~~`v`~~ `thr` setting.\n\nFigure 19: Uncalibrated (left axis) and calibrated (right axis) test\npulse amplitudes of the full matrix. The mean amplitude is shown\nin red.\n\nexplained in Section 5.1, results in two signal amplitudes\nfor the K α 1 peak, depending on the position of the X-ray\nenergy deposition within the pixel cell. Since the ballistic\ndeficit does not strongly affect the position of the right\npeak, this is utilized for calibration. If spatial information\nis available, the calibration procedure could be improved\nby applying different calibration factors to different parts\nof the pixel cell.\n\n_3.4. ToT Calibration_\n\nThe results of the threshold calibration can now be used\n\nto calibrate the ToT response of each pixel individually.\nTo achieve this, test pulses are injected into the analog\nfront-end and the corresponding response is characterised\nin terms of the amplitude (in threshold units) and ToT.\nSimilar to the procedure described in Section 3.3, the\nthreshold is scanned in counting mode while injecting test\npulses of a given positive amplitude above baseline. A\npixel registers one count (i.e., a threshold crossing) per\ninjected test pulse if the threshold lies between the baseline\nlevel and the pulse amplitude. If the threshold is lower\nthan the baseline or higher than the pulse amplitude, the\npulse is not detected (no threshold crossing), and no count\nis added. When the threshold is close to the baseline level,\nnoise (or other perturbations such as undershoot in the\nreturn to baseline) can cause a higher number of threshold\ncrossi",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 13.348326454666402,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8259,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "layer of TBPX (2 × 10 [−][3] ).\nFinally, a gain scan is performed to determine the\npixel-by-pixel relation between the ToT of the output\nsignal and the amplitude of the voltage step supplied to\nthe capacitor, in ∆VCal units. The results of this scan\nare shown in Fig. 12. The conversion of the charge, _Q_,\nfrom ∆VCal units to electrons is performed using the\nfollowing relation:\n\n[ref] _Q_ [∆VCal] _C_ inj\n\n2 4096 _e_\n\n_Q_ [electrons] = _[V]_ [ref]\n\n(1)\n4096 _e_\n\nThe formula from Eq. 1 has been measured to still\nwork well also for irradiated devices and is thus as\nsumed to be valid throughout the rest of the paper.\n\nFigure 12: Example of distribution obtained from the gain calibration\nof a non-irradiated CROCv1 chip bonded to a 3D pixel sensor. A\nlinear dependence between ToT and ∆VCal is clearly visible. The\nresults for all the pixels are superimposed on the same histogram.\n\n**6. Data analysis**\n\nData collected at the CERN SPS test beam facil\nity have been analyzed using the Corryvreckan framework [31]. Corryvreckan provides a flexible offline\nevent building facility to combine data from detectors\nwith different readout schemes, with or without trigger information, and includes the possibility to correlate data from multiple devices based on timestamps.\nWhile the most recent data collected at the DESY test\n\nbeam facility were analyzed using Corryvreckan, previous DESY test beam data and data collected at FTBF\n\nwere processed using dedicated software frameworks.\nAll frameworks follow the same key steps: data decoding, noisy and stuck pixel masking, hit clustering,\ntrack reconstruction, telescope alignment, DUT alignment, and DUT analysis. A more detailed description\nof these steps is provided below, using the Corryvreckan\nexample.\n\n_6.1. O_ ffl _ine reconstruction and alignment_\n\nThe first step of the offline reconstruction is the decoding of the data coming from the MIMOSA26 telescope planes and the DUTs. The six MIMOSA26 sensors are read out in binary mode, meaning that a global\nthreshold is applied on the chip and only the positions\nof the pixels exceeding the threshold are recorded. A\nthreshold of 5 or 6 times the individual pixel noise is\n\nwhere _V_ ref is the ROC internal reference voltage (typically around 0.8 V), _e_ is the elementary charge, _C_ inj\nis the injection capacitor capacitance (8 fF), and 4096\nrepresents the number of possible charge values for the\n12-bit ADC of the charge injection circuit. The gain\nof the CROCv1 charge injection circuit",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 12.874296105687977,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 3550,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "ibration of the ADC, and the high-range\n\ncharge injection for the calibration of the ToT. The calibration measurement is performed by step\nwise increment of the voltage at the capacitor, using steps of 5 mV, and releasing 2000 charge\n\ninjections at each voltage step. The software records the response of ADC, ToT, and ToA per\n\ninjection.\n\nFor low-range injections, the dependence of the ADC on the injection charge is well described\n\nby a linear function. We determine the proportionality factor of the ADC with respect to the signal\n\ncharge from a linear fit whereas the channel-wise pedestal is obtained from dedicated pedestal runs.\n\nFor high-range injections above ≈ 2 pC, we observe a linear response of the ToT, and use a linear\n\nfit function to calibrate the ToT. For lower charge values (in particular in the turn-on region), the\n\nresponse of the ToT does not show the same linear behavior as for the higher charges, and we derive\n\na calibration in this range by linearly interpolating between the ToT response at 0 and 2 pC (where\n\nthe former one is always zero). The successful channel-by-channel calibrations were then used to\n\nconvert the response of the HGCROC channels to actual charge deposit in the individual sensor\n\npads.\n\nThe ToT and ToA units can be translated directly into the time-over-threshold and time-of\narrival of the charge pulse where 1 ToT unit = 50 ps, and 1 ToA unit = 25 ps. For the chosen\n\npreamplifier settings, 1 ADC unit is on average equivalent to 0.28 fC. Further details regarding the\n\ncalibration procedure can be found in Sec. A.\n\nIn the Geant4 simulation model, the energy deposition per pad (i.e. per channel) is recorded.\n\nThe energy signal is converted to charge by using the average ionization energy per electron-hole\npair in silicon of 3.65 eV/e-h-pair. A charge collection efficiency of 100 % is assumed, and noise\n\n(e.g. from the sensor or the electronics) is not implemented.\n\n**5.6** **Electron selection for pad-layer analysis**\n\nFor the electron analysis using the FoCal-E pad layers, both the November, 2022 and the May, 2023\n\ndata required a proper event selection. While for November data, events which were recorded with\n\nthe correct timing with respect to the HGCROC clocks had to be enhanced, the event selection for\n\nthe May, 2023 data needed to focus on a clean electron sample without hadronic contamination.\n\nIn both cases, the datasets were pre-processed based on the HGCROC trigger sum word, which\n\nis measured per bunch crossing (",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 12.789513877716677,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5522,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico.md",
+        "title": "2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico",
+        "text": "t the back side to _z_ Si _>_ 286 µm.\n\nFigure 4b presents the comparison between the simulated and the measured ToT. Both\nToT profiles show the same features and the agreement in absolute values is best at the\nmiddle and back side of the DUT. A disagreement of about 1 ns is found at the top and the\nreason for the disagreement could be multifold, as discussed in section 4.1. The back side in\nthe measured ToT is again affected by the reflection, which leads in this case to a mirroring\nof the focal point, i.e. the excess charge distribution, and thus leads to a peak at the back\nside [ 16 ]. However, the features are present in both ToT profiles and the before discussed\nshift of the median at the top side is experimentally found as well. Applying the linear\nfitting procedure in order to compensate for the shifting median to the experimental ToT\nat the top side yields a ToT of 13.6 ns, compared to the 13 ns extracted from the measured\ncurrent transients. The fitting procedure can not be applied to the experimental back side\nToT, because it is dominated by reflection. Anyhow the influence of the shifting median is\nexpected to be smaller when the focal point is reflected back into the active volume, as such\nreflection folds back part of the excess charge carrier volume, which reduces the influence\nof a shifting median.\n\n_4.4. Weighted prompt current_\n\n**(a)** **(b)**\n\n**Figure 5.** Simulated (a) and measured (b) weighted prompt current for different prompt current times\nalong the device depth. The valleys at the device boundaries are an effect of a shifting median of the\nexcess charge (see text in section 4.3).\n\n7 of 12\n\nThe weighted prompt current (WPC) method was introduced in order to correct for\na position dependent charge carrier generation [ 17 ]. Similar to the prompt current, it is\nan approximation to the drift velocity and weighting is obtained by dividing the prompt\ncurrent by the CC. Figure 5 shows the simulated (a) and measured (b) WPC for different\nprompt current times _t_ pc along the DUT depth. The absolute values of the simulated and\nmeasured WPC profiles are in good agreement, as the absolute values of the prompt current\nand CC are in good agreement. Absolute values for the WPC profiles are not presented\nhere, because all WPC profiles are normalised to the value at _z_ _Si_ = 150 µm, to ease the\ncomparability between the different _t_ pc values. The simulated and measured WPC profiles\nshow the same features. Valleys are found at the top and back",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 12.682116613210297,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6953,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement.md",
+        "title": "2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement",
+        "text": "arges, allowing even pixels that do not collect the charge carriers\nto trigger. We conclude that the cluster size measurement is a promising method for evaluating the energy deposited by a\ncharged particle in the TimePix3 detector.\n\n_Keywords:_ Charged particle, Silicon pixel detector, TimePix3, Detector simulation\n\n**1. Introduction**\n\nPixelated silicon semiconductor detectors can measure\n\ncharged particles and are used in various fields, including\nnuclear and particle physics experiments [1, 2, 3, 4]. The\nTimePix3 detector [5] is one of these detectors, developed\nby the MediPix Collaboration3 [6], CERN, Nikhef and the\nUniversity of Bonn as a successor to the TimePix detector [7]. A TimePix3 detector consists of a silicon sensor\nand a TimePix3 readout chip, divided into 256 _×_ 256 pixels\nwith a 55 µ m pitch. The detector collects holes to the pixel\nelectrodes. It employs ToT (Time over Threshold) and ToA\n(Time of Arrival) methods to determine the energy and arrival time of radiation. By using the data-driven mode of\nTimePix3, we can obtain the arrival time of the radiation\nwith a 1.56 ns temporal resolution and the energy deposition in each pixel, simultaneously.\nThe ToT method provides a wide dynamic range for\nthe energy measurements. Therefore, this instrumental\nmethod can be used to evaluate the energy of various types\nof charged particles across extended energy ranges, from\nlight ions to heavy ions, in addition to X-ray and _γ_ -ray\n\n[1]. However, there are two issues affecting high energy\nmeasurements using TimePix3 detectors. The first one\nis the difficulty to calibrate ToT values corresponding to\nhigh energies. The detection efficiency of a silicon sensor\nwith a thickness of several hundred µ m is low for highenergy photons. For example, the detection efficiency of\na 500 µ m silicon sensor is less than 4 % for 60 keV photons, according to calculations performed with the Geant4\ntoolkit [8]. In addition, charge clouds generated by the incidence of high-energy radiations spread across multiple\npixels. These physical effects make the calibration of ToT\nvalues corresponding to energies above 60 keV inefficient,\nas the calibration function of the TimePix3 detector cannot\n\nbe expressed by a monotonically increasing linear function.\nThe second issue is that high energy deposition leads to a\nsaturation or a decrease of ToT values [9, 10, 11]. The ToT\nvalue is measured using a 10-bit clock signal for each pixel\nand the range of the ToT value is 0 to 1022 [5",
+        "score": 0.014084507042253521,
+        "dense_score": null,
+        "bm25_score": 12.061618985429718,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1232,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2680732__2307.13965__Towards_a_cosmic_ray_composition_measurement_with_the_IceAct_telescopes_at_the_IceCube_Neu.md",
+        "title": "2023__recid_2680732__2307.13965__Towards_a_cosmic_ray_composition_measurement_with_the_IceAct_telescopes_at_the_IceCube_Neu",
+        "text": "he number\n\nof events for the helium and aluminum nuclei. Figure 5 shows how the template-fitting technique\n\ntreats this example, for one energy slice. The fit is strictly required to reconstruct the correct number\n\n**Figure 5:** True input into the tested composition hypothesis (histogrammed data) and reconstructed fractions\n(solid line) for one example energy slice.\n\nof total events and not less than zero events for any nucleus, which leads to asymmetric error bars.\n\nThe fitted values agree within the errors with the true number of events used in this hypothesis.\n\n7\n\n_IceAct composition measurement_\n\n**8.** **Summary and Outlook**\n\nPreparation of the data set for performing a mass composition analysis is ongoing and quality\n\nparameters to study the atmospheric conditions show promising prospects [5]. Both telescopes have\n\nbeen calibrated and the calibration is stable over the years of operation. The GNN reconstruction\n\npresented in this work yields resolutions that are a promising first step for future mass composition\n\nanalyses. More statistics for the higher energies can increase the reconstruction performance.\n\nFurther improvement might also be achieved by optimizing the GNN parameters.\n\nThe RFs can successfully reconstruct the general trend of the mass output for a single telescope\n\nanalysis for the presented simulated data set. Improvements can be achieved by better reconstructed\n\ninput parameters from the GNN into the RF and more simulated events, especially at high energies.\n\nAdditionally, the RF settings have not yet been optimized. The template fit method will be used\n\nto determine the real fractions for each element group over the whole energy range. An example\n\nhypothesis has been reconstructed using template fitting. The results show room for improvement\n\nachievable by advances in the previous analysis steps.\n\nA simultaneous reconstruction of two telescopes with one GNN is also in preparation; this\n\nshould help especially with the energy reconstruction and the reconstruction of the distance between\n\nthe telescope and the shower core, which are the most difficult to reconstruct with a Cherenkov\n\ntelescope alone. This should also improve RF analysis where a two-telescope expansion is also in\n\npreparation.\n\n**References**\n\n[1] **IceCube** Collaboration, M. G. Aartsen _et al. JINST_ **12** [no. 03, (2017) P03012.](http://dx.doi.org/10.1088/1748-0221/12/03/P03012)\n\n[2] **IceCube** Collaboration, R. Abbasi, _[et al. Nucl. Instr. and Meth. A](http://",
+        "score": 0.013888888888888888,
+        "dense_score": null,
+        "bm25_score": 12.010299387695587,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.03208833700045943,
+    "generation_latency_s": 2.50060111284256e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.03208833700045943,
+    "generation_latency_s": 2.50060111284256e-07
+  }
+}

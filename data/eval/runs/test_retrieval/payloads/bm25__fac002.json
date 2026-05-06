@@ -1,0 +1,275 @@
+{
+  "benchmark": {
+    "query_id": "fac002",
+    "query_type": "factoid",
+    "query": "What does LGAD stand for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "LGAD"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What does LGAD stand for?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 169,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2634722__2302.09172__Performance_of_the_wavelength-shifting_fiber_upgrade_for_the_Mu2e_cosmic-ray_veto_detector.md",
+        "title": "2023__recid_2634722__2302.09172__Performance_of_the_wavelength-shifting_fiber_upgrade_for_the_Mu2e_cosmic-ray_veto_detector",
+        "text": "in the Fermilab test\n\nbeam to determine the light yield gain from larger fiber diameter for fibers of the same age. A\n\n24% light yield gain was measured for the 1.8 mm fiber over the original 1.4 mm fiber. During\n\nthe fiber testing runs at the University of Virginia (UVA), a sample di-counter was created by\n\nthreading 1.4 mm diameter fiber through one scintillator side and 1.8 mm through the other side\n\nand tested with UVA’s cosmic test stand [14] to determine the actual light yield increase expected\n\nin the CRV sectors. The larger diameter fiber once again recorded about a 25% light yield increase\n\nover the 1.4 mm fiber which is consistent with geometrical expectations. In addition, several fully\n\nconstructed CRV modules with the new 1.8 mm fiber also show a similar light yield increase.\n\nBoth the test-beam data and measurements from the cosmic ray test stand confirm that larger fiber\n\ndiameter achieves the expected gain in light yield. However, the larger than expected light yield\n\nincrease as measured by the fiber scanner, beyond what was measured in the fully constructed\n\ndi-counters, hinted at potential aging effects in the fiber for wavelengths outside of the spectral\n\nsensitivity range of the SiPMs. This is described in the following section.\n\n**4.4** **Fiber aging studies**\n\nAfter observing that the benchmark 1.8 mm fiber spool, fabricated in 2015, had a significant\n\n∼\ndecrease ( 30%) in light yield in comparison to the new spools from 2021, and that all of the\n\nproduction 1.8 mm spools had a larger than expected increase in light yield over the older 1.4\n\nmm fiber (∼ 60% − 70%), it was decided to investigate potential fiber aging effects. Specifically,\n\nfive of the thirty-four new 1.8 mm fiber spools, and the benchmark 1.8 mm fiber spool, were\n\n– 6 –\n\nremeasured after approximately one year with both the spectrometer and photodiode to provide a\n\ndirect measurement of aging effects.4\n\nThe results, shown in figure 7, indicate a few percent decrease in light yield in the newer spools\n\nbut no appreciable aging effects in the benchmark spool. This hints that aging might occur within the\n\nfirst years of a fiber’s lifetime, but slows down significantly in later years. In addition, the increase\n\nin light yield loss with the distance from the readout end points to a decrease in attenuation length.\n\nFrom figure 5, there are hints of decreasing attenuation lengths for these wavelengths above 520\n\nnm; however, there is also large run-to-run variance for thes",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 15.592321761393368,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5637,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ns has shown that devices with a thickness of 50 µm\n\nwith a gain in the magnitude of 10 − 20 provide the best time resolution. Therefore, LGAD\n\nwafers fulfilling these technical requirements were fabricated by Micron Semiconductor Ltd and\n\nsubsequently characterised at the University of Glasgow.\n\n**2.2** **LGAD Samples**\n\nTiming studies were performed on the 50 µm LGAD wafer fabricated from Micron Semiconductor\n\nLtd. The wafer 3331-19 contains devices with varying pixel sizes, doping concentrations, and\n\njunction termination extension (JTE) width. For devices 1 - 7 in the wafer, the devices are single\npixel devices with pixel sizes varying from 0 _._ 22 mm to 2 mm and JTE widths ranging from 10 µm to\n\n50 µm. Device 7 from the northern section of the wafer with a pixel size of 0 _._ 5 mm and JTE width\n\nof 10 µm was tested as part of the timing studies. As part of the timing measurement experiment,\n\nanother device from the same region was used to ensure that the devices have similar geometry and\n\ncharacteristic parameters.\n\nIt is vital to understand what parameters affect timing resolution and make sure performance is\n\non-par with other manufacturers of LGADs. Therefore, devices manufactured by CNM Barcelona\n\nwere also measured. Particularly, 50 µm LGAD devices W7-LGB-52 and W7-LGB-31 from run\n9088 were studied. The two devices are single-pad LGADs with an active area of 3 _._ 3 × 3 _._ 3 mm [2] .\n\n**2.3** **IV and CV: Setup**\n\nThe characterisation of the IV and CV curves of LGADs was done within the Glasgow Laboratory\n\nfor Advanced Detector Development using a dedicated probe station setup.\n\nThe main setup for characterising the IV curve consists of a power supply, a dark box, the\n\nprobe, and the chuck. The setup is depicted in figure 2. In this setup, devices are mounted on top\n\nof a chuck that is held in place by a vacuum pump. A probe composed of a tungsten filament of\n\n20 microns is then lowered into contact with the device and a Keithley-273 DC power supply is\n\nconnected to the probe through the positive terminal. For current to flow, the chuck is connected to\n\nthe power supply at the negative terminal and is grounded. Finally, the entire setup apart from the\n\npower supply is placed inside the dark box from Wentworth to shield it from external interferences\n\nsuch as light and vibrations. During the IV measurements, the setup is connected to a computer\n\nand data is displayed through a dedicated LabView user interface.\n\nThe CV measurement setup is more c",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 14.566315234534924,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5524,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico.md",
+        "title": "2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico",
+        "text": "he charge generation.\nThe complexity in simulating this effect is lying in the fact that the charge generated\nin the avalanche process is impacting on the electric field in the gain layer and thus, for\nthe simulation process, has a feedback-loop to the impact ionization process itself. In such\nsituation, the drifting charges and the electric field cannot be treated independently, which\nprevents the use of fast signal solvers that are based on static electric fields, i.e. solving the\npoisson equation to acquire the electric field prior to the simulation of the movement of the\nexcess charges forming the sensor signal. A simulation solving the coupled semiconductor\nequations, like the present TCAD simulation, is required, as well as a very good knowledge\nof the gain layer doping profiles.\nThe purpose of this work is to demonstrate that TCAD simulations can reproduce the\ngain suppression effect. More profound studies aiming to develop LGAD structures with\nlower gain suppression or to produce parametrizations that could be used to model the\ngain suppression in fast signal solvers with static electric fields are not addressed here.\nFigure 6 demonstrates the gain suppression effect in comparing TPA-TCT CC measurements performed on a PIN diode (Figure 6a) and on an LGAD structure (Figure 6b).\nThe TPA-TCT experimental settings and the used devices are those described in section 2\nand the measurement method is equivalent to the one described in section 4.2 for the PIN\ndiode. Several CC profiles for different laser pulse energies are shown in the figure, where\nthe legend gives the angular setting of the Neutral Density Filter (NDF) with the highest\nlaser pulse intensity obtained for the smallest angular setting.\n\n8 of 12\n\n**(a)** **(b)**\n\n**Figure 6.** Experimental data: Charge collection within 20 ns as function of the device depth for\na PIN diode (a) and an LGAD (b). Both devices are fully depleted and operated at _−_ 860 V (PIN)\nand _−_ 900 V (LGAD), respectively. The charge collection profiles were obtained with different laser\npulse intensities. The legend gives the angular setting of the NDF with the highest laser pulse\nintensity for the smallest angular setting.\n\nThe figure shows that the CC profile shape for the PIN does not depend on the laser\npulse intensity and that for the PIN the same charge is collected as function of deposition\ndepth. For the LGAD the situation is different due to the internal gain of the device. A\nconstant charge collection profile is",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 14.550049792903863,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5525,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico.md",
+        "title": "2024__recid_2858952__2412.09017__TCAD_Simulation_of_Two_Photon_AbsorptionTransient_Current_Technique_Measurements_on_Silico",
+        "text": "IN does not depend on the laser\npulse intensity and that for the PIN the same charge is collected as function of deposition\ndepth. For the LGAD the situation is different due to the internal gain of the device. A\nconstant charge collection profile is only seen for very small laser pulse intensities. With\nrising intensity, less and less charge multiplication is observed for charge deposition close\nto the top surface at _z_ _Si_ = 0 (i.e. close to the gain layer) of the device compared to charge\ndeposition at the backside (i.e. far away from the gain layer). The characteristic shape of\nthe CC profile gave rise to the naming as shark-fin effect. It is explained by the fact that\nelectrons of the charge clouds deposited closer to the backside of the device have to drift a\nlonger distance to the gain layer than charge clouds deposited closer to the front side [20].\nDue to diffusion, the electron charge clouds from the back side of the device are further\nexpanded than the ones deposited closer to the front side upon arrival at the gain layer.\nCorrespondingly, the charge density is lower for the clouds arriving from the back of the\ndevice and thus less gain suppression is observed.\n\n**(a)** **(b)**\n\n**Figure 7.** Waveforms recorded at the top side (30 µm ) and back side (250 µm ) of the LGAD for an\ninjected charge of (a) 6.5 fC (NDF 140 _[◦]_ ) and (b) 68 fC (NDF 110 _[◦]_ ). The solid lines represent the\nexperimental data and the dashed lines the corresponding TCAD simulations.\n\nFigure 7 shows waveforms recorded with charge injection close to the top of the LGAD\nsensor at 30 µm and close to the back of the sensor at 250 µm for two different laser pulse\nintensities resulting in (a) 6.5 fC and (b) 68 fC of deposited charge in the sensor. It is clearly\nvisible that for the ten times higher charge deposition, a more significant difference between\nthe CC (i.e. integral of the waveform) at the front and at the back is observed. In addition\n\n9 of 12\n\nto the experimental data, the simulated waveforms are shown. A good agreement is seen\nbetween simulation and experiment, taking into account that the simulated data is the\nunaltered simulation result, without any additional scaling factor.\n\n**(a)** **(b)**\n\n**Figure 8.** Simulation: (a) Charge collection within 20 ns along the device depth for the LGAD with\nthe same laser intensity settings as the experimental data shown in Fig.6. (b) The gain as function of\ndepth in the device as obtained by dividing the CC in the LGAD by",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 14.355653493599457,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7244,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2907611__2504.02570__Time_resolution_limits_in_silicon_sensors_from_Landau_fluctuations_and_electronics_noise.md",
+        "title": "2025__recid_2907611__2504.02570__Time_resolution_limits_in_silicon_sensors_from_Landau_fluctuations_and_electronics_noise",
+        "text": "nt amplifier peaking times for the standard silicon sensor,\nassuming _T_ _e_ = _T_ _h_ = _T_ . The time resolution is normalized to the centroid time resolution of _σ_ _τ_ = _w_ ( _d/λ_ ) _× T/√_ 180. For\n\nlong peaking times the time resolution becomes equal to the centroid time resolution and independent of threshold. For\nshort peaking times there is a significant threshold dependence.\n\neven tending to zero for zero threshold. It is clear that in absence of noise and with infinite bandwidth\n(i.e. _t_ _p_ _→_ 0) one can achieve infinite time resolution due to the fact that induced current signal from\nEq. 4 is instantaneous and has and ’infinitely steep’ leading edge at _t_ = 0. The question on the fastest\napplicable amplifier or the lowest possible threshold will be determined by the noise.\n\nWe can now perform the same procedure for the LGAD signal, but it is evident that for any choice\nof amplifier peaking time or threshold, the time resolution will always be equal to the centroid time\nresolution. When assuming only the gain signal from Eq.10 the signal is simply a ’box’ starting at time\n_t_ = _z/v_ _e_ and having a duration of _T_ = _d/v_ _h_ . When convoluting this signal with any transfer function we\nwill find a signal that does not vary in shape and is just randomly shifting by _t_ = _z/v_ _e_, so at any applied\nthreshold we will see the same time fluctuation as the one for the original current signal, which is equal\nto the centroid time fluctuation. In this approximation, the time resolution of an LGAD sensor cannot\nbe improved beyond the centroid time resolution. The choice of amplifier peaking time _t_ _p_ will therefore\nmainly determined by the lowest achievable noise jitter.\n\n9\n\n**8. Jitter from electronics noise, optimum filter**\n\nI(t)\n\n**T** **T**\n\nstandard\n\nLGAD\n\nt\n\nFigure 8: Average normalized signal of a standard silicon sensor and and LGAD sensor of the same thickness, assuming\n_T_ _e_ _≈_ _T_ _h_ _≈_ _T_ . The average LGAD signal has twice the duration compared to the standard sensor signal.\n\nIn addition to the Landau fluctuations there is of course the electronics noise that will contribute to the\ntime resolution. Assuming a typical average signal shape from the silicon sensor and assuming only series\nnoise related to the sensor capacitance _C_ we can use the theory of optimum filtering to minimise the time\njitter. We first assume again a standard sensor at very high electric field, which is constant throughout\nthe sensor and we assume eq",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 14.242211059320947,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2254,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device.md",
+        "title": "2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device",
+        "text": "he 4H-SiC LGAD. The\nC-V curve, shown as the Figure 5(b), demonstrates the depletion voltage of\ngain layer V _GL_ and the full depletion voltage V _F D_ . In detail, different from the\nPIN device, the C-V curve of the LGAD device shows a platform at around 130\nV, which indicats that the gain layer of the device can be completely depleted\nat around 130 V. In addition, the full depletion voltage of the 4H-SiC LGAD\nobtained from Figure 5(b) is 400 V. Combined with the breakdown voltage, it\ncan be considered that the working voltage range of the 4H-SiC LGAD is 400\nV _∼_ 3700 V.\nFigure 5(a) and Figure 5(b) show the I-V and C-V curves of LGAD and\nPIN, respectively. These two devices are identical in structure and doping,\nexcept that the PIN has no gain layer. In terms of the IV curve, the breakdown\nvoltage V _BD_ of 4H-SiC LGAD is about 3700 V, it is smaller than that of PIN\nwhich does not breakdown until the reverse voltage is 4000 V. The reason\nfor the phenomenon is that the high doping concentration of the gain layer\nin LGAD created an electric field peak, which makes easier for the carriers\nto accelerate and reach the breakdown energy. And at the same voltage, the\nleakage current of LGAD is larger than that of PIN due to the presence of the\ngain layer in LGAD. However, in terms of the CV curve, LGAD has one more\ninflection point than PIN. Different from the PIN devices, with the increase of\nthe reverse voltage, the gain layer of the LGAD device is depleted before the\nbulk layer.\nThe IV and CV curves of PIN and LGAD we simulated show that, unlike\nthe structure of PIN, LGAD has a gain layer and low gain multiplier effect.\nThe structure of LGAD that we have designed is reasonable.\n\nSpringer Nature 2021 L [A] TEX template\n\n10 _Design and simulation of a novel 4H-SiC LGAD timing device_\n\n**Fig. 5** The (a) current - voltage characteristics and the (b) capacitance - voltage characteristics of 4H-SiC LGAD and 4H-SiC PIN, used DEVSIM simualtion.\n\n**3.3 The time resolution simulation of 4H-SiC LGAD**\n\n**detector**\n\nThe time resolution of a detector is defined by the accuracy of the measured\narrival time of a detected particle. It can be calculated by the following formula\n\n[26]:\n\n_σ_ _t_ [2] [=] _[ σ]_ _T imeW alk_ [2] [+] _[ σ]_ _Landau_ [2] [+] _[ σ]_ _Distortion_ [2] [+] _[ σ]_ _Jitter_ [2] [+] _[ σ]_ _T DC_ [2] (2)\n\nwhere the terms _σ_ _T imeW alk_ and _σ_ _Landau_ is from the random energy deposition\nof the detected particle, the physical process correspoding to",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 14.214541372460445,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2249,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device.md",
+        "title": "2024__recid_2669648__2306.09576__Design_and_simulation_of_a_novel_4H-SiC_LGAD_timing_device",
+        "text": "layer with a doping\nconcentration of 5×10 [19] cm _[−]_ [3] and a thickness of 0.3 _µm_ should be epitaxially grown on the N [+] gain layer. The highly doped P [++] layer is easy to form\nohmic contact, improving its charge collection efficiency and time resolution.\nOverall, the epitaxial structure of 4H-SiC LGAD is\n_P_ [++] _/N_ _gain_ [+] _[/N]_ _bulk_ _[ −]_ _[/N]_ _[buffer]_ _[/N]_ _substrate_ [ ++] [as shown in Figure 1(a). Besides, the]\naluminum ions and nitrogen ions were used as p-doping and n-doping, respectively. The epitaxial structure of 4H-SiC LGAD was prepared based on the\nabove design. In order to prove the technological feasibility of the design\nscheme and the accuracy of epitaxial parameters such as doping concentration\nand thickness, secondary ion mass spectrometry (SIMS) has been carried out\nfor characterization at a depth of 3 _µm_, and the results are shown as Figure\n1(b). The actual thickness and doping concentration of the device were consistent with the corresponding designed parameters, which provided support\nfor our subsequent research on the time resolution of 4H-SiC LGAD.\n\n#### (a) (b)\n\n**Fig. 1** (a) Schematic diagram of SiC LGAD epitaxial structure with doping concentration\nand thickness. (b) Comparison of SIMS measurement of doping concentration and thickness\nand the designed parameters.\n\nSpringer Nature 2021 L [A] TEX template\n\n_Design and simulation of a novel 4H-SiC LGAD timing device_ 5\n\n**2.2 Technical processes**\n\nIt has been reported that the breakdown voltage of conventional planar 4HSiC devices is mainly determined by the local electric field caused by the device\nboundary effect [15]. For the 4H-SiC LGAD designed in this work, the high\nelectric field region generated in the gain layer is close to the device surface, and\nthe boundary effect is particularly obvious, resulting in more serious premature\nbreakdown. In addition, the operating voltage of the 4H-SiC LGAD needs\nto be greater than the full depletion voltage to work properly, which means\nthat the operating voltage should be relatively high. Therefore, ensuring that\nthe device does not break down in advance is a major consideration for the\ntechnical process. Etching the terminal junction is an effective method to avoid\npremature breakdown caused by the boundary effect of high electric field[16].\nIn this work, etching table with 7° has been used and the technical process\ndesigned on the existing epitaxial wafer is shown in Figure 2(a). In addition,\nthe design and",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 14.171459936383691,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5067,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2783004__2405.01529__Characterization_of_Silicon_Photomultiplier_Photon_Detection_Efficiency_at_Liquid_Nitrogen.md",
+        "title": "2024__recid_2783004__2405.01529__Characterization_of_Silicon_Photomultiplier_Photon_Detection_Efficiency_at_Liquid_Nitrogen",
+        "text": "ghly the same number of photons when the test stand is\n\nat both room and cryogenic temperatures. Thus there is neither a shift in the emission spectrum of\n\nthe LED nor a shift in the reflectivity of the integrating sphere. This measurement also serves as an\n\n_in situ_ cross-check that the optical fibers’ transmission probability is not temperature dependent.\n\n– 9 –\n\n**Figure 5** . Comparing the number of photons detected by the reference SiPM located at the lid during\nroom and cryogenic temperature PDE measurements shows that there are no systematic shifts in the LED’s\nemission spectrum or the transmission coefficient of the optical fibers.\n\nWe ensured that condensation was not forming inside the integrating sphere or on the surfaces\n\nof the SiPMs. First, prior to data taking, a liquid nitrogen fill was performed and the dewar insert was\n\nlifted to visually check that no condensation was present. Second, the number of photons detected by\n\nthe reference SiPM at the lid does not change significantly between room temperature and cryogenic\n\ntemperature measurements in Fig. 5: any change in reflectivity engendered by condensation inside\n\nthe integrating sphere would cause a systematic change in the number of photons detected by the\n\nreference SiPM. The nitrogen gas boil-off from the liquid nitrogen ensures that condensation cannot\n\nform. Therefore, any changes in the optical properties of the test stand between the two temperatures\n\ndo not account for the observed decrease in PDE.\n\nThe decrease in PDE at 77 K indicates that some combination of the quantum efficiency,\n\navalanche triggering probability, and effective fill factor may be changing with temperature. Similar\n\nreductions of the PDE at cryogenic temperatures have been found in other SiPMs at 10 K using\n\na calibrated system [38], and at 77 K using uncalibrated systems [30, 32, 33, 39] and calibrated\n\nsystems [19, 29]. These systems show similar decreases in PDE of roughly 30% at liquid nitrogen\n\ntemperatures for wavelengths close to 560 nm. An FBK NUV-HD-cryo SiPM operated at 3 V\n\novervoltage was measured to have a PDE drop from ∼24% at room temperature to ∼18% at 75 K\n\nfor 525 nm light; however, the decrease in PDE at 5 V overvoltage is much smaller, dipping from\n\n∼34% down to only ∼29% [32]. A VUV-sensitive Hamamtsu SiPM at 4 V overvoltage displayed\n\na similar decrease in PDE from 28.4% at room temperature to 20.1% at 77 K for 570 nm light as\n\nreported in [29]. Because silicon is an indirect band-gap s",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 14.1608899912973,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1765,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2655375__2304.14435__Classical_chaos_in_quantum_computers.md",
+        "title": "2024__recid_2655375__2304.14435__Classical_chaos_in_quantum_computers",
+        "text": "the state energy on the dynamics.** (a) Lyapunov exponents for computational states of increasing energy. (b)\nLyapunov exponents for configurations including transmons initialized in states _E_ 0 _,_ 1 _,_ 2 _,_ 3 including values outside the computational sector. Values given are from a 10 qubit transmon chain with _E_ _C_ = 250\nMHz, _E_ _J_ = 10 GHz, and _δE_ _J_ = 559 MHz. Each point is the mean\nvalue of 20 _,_ 000 disorder realizations. For discussion, see text.\n\nsector [43].) Two features stand out: The Lyapunov exponents reach (i) larger values, however, these maximal values\nare attained (ii) only for larger values of the coupling. We reason that the relatively higher inertia to changes in _T_ has to do\nwith the fact that for larger energies of individual transmons\nthe coupling represents a relatively weaker perturbation. We\nnote that these findings are consistent with a recent study [44]\nof a (quantum) Bose-Hubbard model, that finds a suppression\nof the effective interaction between states with large occupation numbers on individual transmon sites.\n\n**IV.** **PREDICTIVE POWER OF CLASSICAL SIMULATIONS**\n\nAt this point, we have discussed key signatures of the classical dynamics of small scale transmon arrays. The big question\nnow of course is what bearings these findings have for our actual subject of interest, the quantum processor. In this section,\nwe formulate an answer in a succession of steps. First, as a\nwarmup, we show that several of the observations of the previous section afford a quantum interpretation. We then compare our results above with those of quantum simulations for\nthe ten transmon array, and for identical material parameters\n(except that now ℏ = 0 _̸_, of course), to observe a high level of\nagreement: classical chaos implies quantum chaos, and vice\nversa. We finally turn to the trump card of the classical approach, namely the option to reliably simulate arrays of thousands of transmons. Assuming that the quantum-to-classical\nfidelity extends to large numbers, we thus have a tool to obtain stability measures for realistic quantum hardware outside\nthe reach of quantum simulation on classical computers. In\nsection V, we substantiate this point by simulating large scale\ntwo-dimensional transmon arrays of current IBM design.\n\nQuantum mechanically, the passage from integrable to\nchaotic dynamics upon increasing _T_ is a manifestation of\na Fock space (de)localization transition: In the transmon\nregime, _E_ _J_ _≫_ _E_ _C_, Eq. (3) is wel",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 13.775447971484574,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5040,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2782083__2405.02550__Gain_suppression_study_on_LGADs_at_the_CENPA_tandem_accelerator.md",
+        "title": "2024__recid_2782083__2405.02550__Gain_suppression_study_on_LGADs_at_the_CENPA_tandem_accelerator",
+        "text": "gains at 1 MIP deposition, the charge is injected in\na straight line with increased density.\n\n**4. Data analysis**\n\nThe 1 GHz digital oscilloscope was used to save the voltage waveforms,\nwhich were converted into ROOT files and analyzed offline. The waveforms\nwere imported into a SCIPP data analysis package, which produced eventlevel variables. The waveforms are inverted to show a positive pulse for\nconvenience, and the baseline is corrected using the first flat part of the\nwaveform. The variables calculated include p-max (pulse maximum), pmin (pulse-minimum), pulse positive area, undershoot area, combined pulse\narea, rise time, fall time, and the pulse full-width half maximum (FWHM).\nRise and fall times were calculated as the time interval between the 10%\nand 90% points of the pulse maximum on the rising edge and the 90% and\n10% of the pulse maximum on the falling edge, respectively. The FWHM\nvalue was determined as the time interval between the 50% of the pulse\nmaximum on the rising edge and the 50% of the pulse maximum on the\nfalling edge. The pulse positive area was the area from the positive pulse\ncreated from the event signal, and the undershoot area was the negative\npulse caused by amplifier effects. The combined area is the addition of the\ntwo areas (subtracting the undershoot area from the pulse area), which is\n\n5\n\n(a) (b)\n\nFigure 3: Gain as a function of angle for different bias voltages for HPK 3.1 and 3.2\nLGADs, for proton energies of (a) 1.8 MeV and (b) 3 MeV.\n\nthen divided by the total amplifier trans-impedance (4700 Ω) to calculate\nthe collected charge. Lastly, the gain is calculated as the collected charge of\nthe LGAD divided by the collected charge of the same-size PIN with the same\nenvironmental running conditions (energy and angle). The PIN performance\ndoes not depend on the bias voltage after drift velocity saturation, and the\ncollected charge is the same even before saturation, although with a different\npulse shape. Therefore, the bias voltage applied to the PIN does not affect\nthe gain calculation using the collected charge.\n\n**5. Results**\n\nThe behavior of the devices was probed as a function of the proton incidence angle and applied bias voltage. The PIN sensor was tested for only\ntwo voltages: 30V to test the response with non-saturated drift velocity and\n200V to test the response with saturated drift velocity. Almost no variation\nin the total charge deposition was observed. The gain as a function of angle for the two LGAD devices",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 13.486538943506524,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 1.4424810451455414,
+    "generation_latency_s": 3.497116267681122e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.4424810451455414,
+    "generation_latency_s": 3.497116267681122e-07
+  }
+}

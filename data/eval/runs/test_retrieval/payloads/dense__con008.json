@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "con008",
+    "query_type": "conceptual",
+    "query": "Why can BM25 be strong in technical detector corpora?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "BM25"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why can BM25 be strong in technical detector corpora?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2654,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2688618__2308.08341__Analytical_description_of_the_time-over-threshold_method_based_on_time_properties_of_plast.md",
+        "title": "2024__recid_2688618__2308.08341__Analytical_description_of_the_time-over-threshold_method_based_on_time_properties_of_plast",
+        "text": "scintillators with SiPM readout, focusing on slewing correction by\nToT, has been proposed for the highly granular neutron detector of the BM@N experiment. The application of the\nslewing correction technique improves the time resolution by approximately 50%, achieving a resolution of 130 ps for\nthe JINR-produced scintillator equipped with the SiPM EQR15 11-6060D-S, meeting the requirements of the detector\nproject [ 4 ]. The time resolution obtained with the slewing correction by ToT is only _∼_ 15 ps worse compared to the\ntime resolution achieved with slewing correction based on the measured signal amplitude. This result is considered\nsatisfactory and represents an acceptable compromise for the opportunity to simplify the design and to reduce the cost\nof the acquisition system by using only TDCs. The designed model effectively describes the data within the region of\ninterest for all 34 tested scintillator detectors and provides a method to estimate the signal charge from its ToT, resulting\nin a charge resolution better than 20%.\n\n**Acknowledgments**\n\nThis work was carried out at the Institute for Nuclear Research, Russian Academy of Sciences, and supported by the\nRussian Scientific Foundation grant №22-12-00132.\n\n**References**\n\n[1] S. Afanasiev, G. Agakishiev, E. Aleksandrov, I. Aleksandrov, P. Alekseev, K. Alishina, V. Astakhov, E. Atkin,\nT. Aushev and V. Azorskiy, _et al._ The BM@N spectrometer at the NICA accelerator complex Nucl. Instrum. Meth.\nA **1065** (2024), 169532 doi:10.1016/j.nima.2024.169532\n\n[2] M. Kapishin, Heavy Ion BM@N and MPD Experiments at NICA, JPS Conf. Proc. 32 (2020) 010093. `[doi:](https://doi.org/10.7566/JPSCP.32.010093)`\n`[10.7566/JPSCP.32.010093](https://doi.org/10.7566/JPSCP.32.010093)` .\n\n[3] P. Senger, The heavy-ion program at the upgraded Baryonic Matter@Nuclotron Experiment at NICA, PoS\nCPOD2021 (2022) 033. `[doi:10.22323/1.400.0033](https://doi.org/10.22323/1.400.0033)` .\n\n[4] F. Guber, et al., Development of High Granular Neutron Time-of-Flight Detector for the BM@N experiment (9\n2023). `[arXiv:2309.09610](http://arxiv.org/abs/2309.09610)` .\n\n[5] F. Guber, A. Ivashkin, N. Karpushkin, A. Makhnev, S. Morozov, D. Serebryakov, V. Baskov, V. Polyansky,\nMeasurement of Time Resolution of Scintillation Detectors with EQR-15 Silicon Photodetectors for the Time-ofFlight Neutron Detector of the BM@N Experiment (9 2023). `[arXiv:2309.03614](http://arxiv.org/abs/2309.03614)` .\n\n[[6] Novel device laboratory beijing, eqr15 series sipms.",
+        "score": -3.0052178166129373,
+        "dense_score": 0.3977108597755432,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.629530906677246,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6807,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment.md",
+        "title": "2025__recid_2854931__2412.00455__The_Highly-Granular_time-of-flight_Neutron_Detector_for_the_BMN_experiment",
+        "text": "cation detectors include Time-of-Flight (ToF)\nsystems ToF 400 and ToF 700, based on multi-gap resistive plate chamber (mRPC) technology, enabling hadron (pi, K, p) and light nuclei separation with momentum up to a\nfew GeV/c. The collision geometry detectors consist of the Forward Hadron Calorimeter\n(FHCal), the Forward Quartz Hodoscope (FQH) and the Scintillation Wall (ScWall) used\nto estimate centrality and reaction plane of the collision. The trigger system contains\nthe barrel detector together with the group of beam detectors producing trigger signal\nfor the DAQ of the BM@N.\n\nFigure 1: Schematic view of the BM@N experiment. The legend has list of sub-detectors [15].\n\nTaking into account the available space to place the HGND at BM@N experimental\narea, two options are considered. The possible positions of the HGND are shown in Fig. 2.\nAt position (1) the distance from the target is 5 m and at position (2) the distance is 7\nm. At these positions the angles of the HGND relative to the incident direction of the\nion beam are 17 and 10 degrees, correspondingly. In order to compensate the decreasing\nof detector acceptance at larger distance, the HGND positioned at 7 m is proposed to be\ndivided into two parts (”arms”) placed out of the horizontal plane. The side view of the\nHGND options at the BM@N is shown in Fig. 2 (right).\nThe HGND concept positioned at 5m from the target includes 16 alternating active\nlayers with 121 scintillator cells grouped in an 11×11 array, with copper absorber plates\nof 3 cm thickness placed in between [16]. The first scintillation layer will be used as\na VETO detector for charged particles. As already mentioned, each module of the ”2arms” HGND positioned at 7m is shorter and consists of 8 scintillator layers with copper\nabsorber in between. The HGND module schematic view is shown in Fig. 3 (left). The\narray of scintillators is assembled in a common support frame (Fig. 3, right). The cells\n\n3\n\nFigure 2: Left (a): Top view of position options for the HGND at BM@N experimental area. Position\n1 (red box) is for 16 layers single module option. Position 2 (blue boxes) is for ”2-arms” option. Right\n(b): The side view of the single and ”2-arms” options of the HGND at the BM@N.\n\nFigure 3: Left: schematic view of HGND structure. Right: The HGND active layer view.\n\n4\n\nare made up of 4 _×_ 4 _×_ 2 _._ 5 _cm_ [3] plastic scintillators based on polystyrene with additions of\n1.5% paraterphenyl and 0.01% POPOP. This plastic scintillator, with a light",
+        "score": -3.1953033879597985,
+        "dense_score": 0.4148057699203491,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.923030853271484,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1871,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "or signal shape must be minimised. This is\nfurther specified in the FE ASIC section.\n\n Radiation damage: the UT detector needs to maintain its performance up to an\nintegrated luminosity of at least 50 fb _[−]_ [1], taking into account that the radiation\ndose has a strong radial dependence. The sensitive elements near the beam pipe\nneed to withstand fluences up to 4 _×_ 10 [14] _n_ eq _/_ cm [2], while the maximum fluence is\nless than 2 _×_ 10 [13] _n_ eq _/_ cm [2] for most of the detector area, with the outermost sensors\nreceiving less than 10 [12] _n_ eq _/_ cm [2] . In addition, the near detector electronics need to\nwithstand a radiation level of the order of 1 kGy.\n\n Occupancy: the charged particle density follows a similar radial trend as the radiation\nfluence. The detector segmentation must be finer near the beam pipe in order to\nkeep the occupancy below a few percent.\n\n Material budget: the detector and its enclosure must be designed with the goal of\nobtaining a significant overall reduction of material in the forward region of the\nacceptance when compared to the LHCb detector of Run 1 and Run 2.\n\nA silicon microstrip detector technology was chosen to fulfil these requirements.\n\n**5.1.2** **Geometry overview**\n\nThe UT detector comprises four planes of silicon detectors organised in two stations, as\nshown in figure 27. The circular hole in the middle provides clearance for the beam pipe.\nThe silicon strip pitches and lengths are matched to the expected occupancy. The silicon\nsensors, shown as coloured boxes in the image, are described in section 5.4. They are arranged in vertical units, called _staves_, described in section 5.3. The first station (labeled ‘a’)\nis composed of an _x_ -measuring layer (UTaX) with vertical strips and a stereo layer (UTaU)\nwith strips inclined by 5 _[◦]_ . Both layers are made of 16 staves each. The second station (‘b’) is\nsimilar, with first a stereo layer (UTbV) with opposite inclination, and a layer with vertical\nstrips (UTbX). Both layers contain 18 staves each. The two pairs of stations are symmetrically arranged around _z_ = 2485 mm . There is a gap of 205 mm between the nominal _z_ positions of UTaU and UTbV, and of 55 mm between the UTaX and UTaU or UTbV and UTbX.\nTo ensure full coverage in the vertical direction, the sensors are arranged on both sides\nof the staves such as to obtain a vertical overlap. Similarly, a _z_ -staggered arrangement of\nthe staves with horizontal overlaps facilitates a full horizontal cov",
+        "score": -3.5789551200636898,
+        "dense_score": 0.40248361229896545,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.512572288513184,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 53,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1405,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_.md",
+        "title": "2023__recid_2690098__2308.11403__Searching_for_Charged_Lepton_Flavour_Violation_with_Mu3e_",
+        "text": "_ [+] _→_ _e_ [+] _e_ _[−]_ _e_ [+] with a\nsensitivity to branching ratios in the order of 10 _[−]_ [15] in phase I and 10 _[−]_ [16] in phase II of the\nexperiment [ 1 ]—surpassing the current strongest limit of _B_ ( _µ_ [+] _→_ _e_ [+] _e_ _[−]_ _e_ [+] ) _<_ 1.0 _×_ 10 _[−]_ [12]\n\nat a 90 % confidence level (CL) set by the SINDRUM experiment [ 2 ] by four orders\nof magnitude.\nThe search will be conducted free of background. The SM background process\n_µ_ [+] _→_ _e_ [+] _e_ _[−]_ _e_ [+] ~~_ν_~~ _µ_ _ν_ _e_ is distinguished from signal decays solely by the momentum carried\naway by the undetectable neutrinos. A further source of background stems from accidental\ncombinations of _e_ [+] and _e_ _[−]_ from SM muon decays, photon conversion, Bhabha scattering\nand misreconstructed tracks. This type of background can be suppressed by kinematic\nselections as well as selections on the reconstructed vertex and the coincidence of the\n\ndecay products.\nIn addition to excellent momentum and high vertex and time resolution, operating at\nhigh muon decay rates of 1 _×_ 10 [8] muons/ s (phase I) up to 2 _×_ 10 [9] muons/ s (phase II) puts\nfurther demands on the detector and data acquisition (DAQ).\nThe phase I detector is under construction and will be operated at the Compact Muon\nBeamline at PSI. For phase II, the detector will be upgraded and operated at the new HighIntensity Muon Beamline, which is currently being planned at PSI [ 3 ]. In the following, the\nphase I experiment is discussed in further detail.\n\n_2.1. Detector Concept_\n\nThe Mu3e experiment is a spectrometer placed in a 1 T solenoidal magnetic field.\nMultiple Coulomb scattering dominates the momentum resolution of the experiment as\nthe decay particles have momenta of only a few 10 MeV . For this reason, the material in\nthe active detector volume is kept to a minimum. A schematic of the Mu3e experiment is\nshown in Figure 2.\nThe _µ_ [+] beam is stopped in a thin, hollow, double-cone target built from Mylar in\nthe centre of the detector. The trajectories of the decay _e_ [+] and _e_ _[−]_ are measured with a\nbarrel-shaped, silicon pixel tracker. Mu3e utilises 50 µm thin pixel sensors built in the\nHigh-Voltage Monolithic Active Pixel Sensor technology [ 4 ] leading to a material amount\nof only 0.1 % of a radiation length per tracking layer including the flex-print for readout\nand powering and the mechanical support structures. There are four tracking layers in the\ncentral detector part, two of which are located",
+        "score": -3.838861404146467,
+        "dense_score": 0.3906922936439514,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.911435127258301,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3943,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2745344__2401.05087__Lowering_the_energy_threshold_using_a_plastic_scintillator_and_radiation-damaged_SiPMs.md",
+        "title": "2024__recid_2745344__2401.05087__Lowering_the_energy_threshold_using_a_plastic_scintillator_and_radiation-damaged_SiPMs",
+        "text": "er the energy threshold to approximately 34% (from\n128 keV to 43 keV) compared to that of at 20 [◦] C. Accordingly, we conclude\nthat the energy threshold can be lowered to approximately 15% by using a\ncombination of these three methods.\n\nKeywords: Gamma-ray Detector; Plastic Scintillator; Silicon\nPhotomultiplier (SiPM, MPPC); Coincidence; Current Waveform\n\nAmplifier; Low Temperature\n\n1. Introduction\n\nIn soft gamma-ray observations, the entire detector is generally surrounded\nby an active shield that can effectively reduce potential background events using an anti-coincidence technique. Recent soft gamma-ray observation satellites often use Be 4 Ge 3 O 12 (BGO) inorganic scintillators as an active shield,\nthat facilitate high-sensitivity observations due to their high blocking capacity against gamma rays and charged particles[1]. However, BGO has the\ndisadvantages of heavy mass and slow decay time, which is in the range of\nseveral hundred ns. Organic plastic scintillators, which are composed of C\nand H, are approximately one-seventh the density of BGO, low-cost, and exhibit a fast decay time of several ns. Additionally, the light yield of plastic\nscintillator is similar to that of BGO. Ce:Gd 3 Al 2 Ga 3 O 12 (GAGG) exhibits\na large light yield, however BGO and GAGG are heavy and thus not suitable for CubeSats. For example, in the case of 1U CubeSat, if we use BGO\nplates with dimensions of 10cm × 10cm × 3cm, five plates are required to\ncover; hence, the weight of CubeSat becomes 10 kg. This weight will limit\nthe resources allocated for other subsystems onboard the satellite. A lighter\nscintillator is better for satellite attitude control or orbit control. As a re\nsult, detectors combining a plastic scintillator and a silicon photomultiplier\n(SiPM) are suitable for small satellites such as the CubeSats. However, the\nproblem with this setup is that when SiPMs are in the satellite orbit, dark\ncurrent is bound to increase drastically due to the radiation damage caused\nby cosmic rays, especially by protons[2][3]. Therefore, the present study attempts to address this issue by lowering the energy threshold of a detector\nconsisting of a plastic scintillator and radiation-damaged SiPMs. In this\npaper, we define the energy threshold as the limit below which cannot be\ndetected.\n\nFirst, the plastic scintillator has a short decay time of several ns and\nnoise has various time scales; hence, the signal to noise ratio of the pulse\nheight is larger for the SiPM raw output th",
+        "score": -3.8484403636720446,
+        "dense_score": 0.4432176947593689,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.929224491119385,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2341,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "cays.\nOverall, it was found that the efficiency and resolution were\nnearly constant throughout the detector system and did not\nchange significantly when the edges of the scintillator bars\n(i.e., the corners of the detector) were reached. This is due\nto the fact that the GGS is so small that the source is\n\nstill far enough away from the edges of the detector and\nnever touches them (compare Fig. 1(b)). Furthermore, decays\nthat lie slightly outside the detector are also allowed for\nreconstruction, which significantly increases efficiency.\n\nFig. 3 shows the three-dimensional distribution (Fig. 3(a))\nof the individual reconstructed tracer sphere positions without\nany averaging or iterating of a source that has been placed\nat (50 | 50 | -40) cm within the GGS volume, as well as\nexemplarily its projection in the x-direction (Fig. 3(b)). A\nvery present background is visible, and the spatial resolution\nreads 104.3 mm in the x-, 103.5 mm in the y-, and 124.8 mm\nin the z-direction. This is a very poor resolution since the\nsize of the largest tracer sphere is much smaller than the\nbest resolution obtained this way (103.5 mm _≫_ 20 mm). To\n\nimprove this resolution, the simulated data were now averaged\nand iterated (as described in Section 2.5), resulting in a\nspatial resolution of 0.6 mm in x and y, and 1.1 mm in z. This\ncorresponds to an improvement by a factor of about 170 in the\nx- and y-directions and a factor of 110 in the z-direction. The\nassociated three-dimensional distribution and its projection\non the x-axis can be found in Fig. 4.\n\n_3.2. Model path_\n\nTo extend the simulation and reconstruction to a moving\nsource and to investigate the behavior of the reconstruction\nalgorithm at the highest possible velocities, a model curve\nwas created on which the source moves circularly (r = 10 cm)\nat 17 cm/s in the xy-plane and linearly between -6 and 2 cm\nat 7 cm/s in the z-direction. On average, these velocities\napproximate the maximum tracer sphere velocities within\nthe GGS derived from corresponding DEM simulations. As\nmentioned in Section 2.5, the buffer size was set down to\n6,000 events instead of 36,000, with re-averaging every 3,000\nevents to achieve good resolution. The measurement time of\nthe whole curve was 4 s.\n\nA three-dimensional view of the model curve is shown\n\nin Fig. 5, with the reconstructed tracer sphere locations\nshown in green and the actual simulated path as a black\ntrajectory. The corresponding one-dimensional projections\non the x, y, and z axes ar",
+        "score": -4.060511036617,
+        "dense_score": 0.40275442600250244,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.253506660461426,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 6533,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights.md",
+        "title": "2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights",
+        "text": "ranges.\nWe expect enhanced detector materials and design could provide better efficiency at higher\nenergies and improved sensitivity at lower masses. Also, developing more sophisticated calibration\ntechniques that can more accurately mimic the expected dark matter signals could help in further\nrefining the experimental setups. Continued efforts to minimize and understand background noise\nthrough better shielding, isolation, and background modeling are crucial.\n\n_**IV.B. EDELWEISS**_\n\nEDELWEISS ( **E** xpérience pour **DE** tecter **L** es **W** IMPs **E** n **S** ite **S** outerrain) is [a dark](https://en.wikipedia.org/wiki/Dark_matter)\n[matter search experiment located at the Modane Underground Laboratory in France. The](https://en.wikipedia.org/wiki/Dark_matter)\nexperiment employs cryogenic detectors that simultaneously measure the phonon and ionization\nsignals resulting from particle interactions within germanium crystals. These detectors are made\nfrom high-purity germanium mono-crystals and function as bolometers. They are fitted with\nNeutron Transmutation Doped (NTD) Germanium sensors that act as thermistors to detect\ntemperature changes. Additionally, the detectors are equipped with concentric aluminum ring\nelectrodes [116].\n\n14\n\nThe initial EDELWEISS experiments started with an exposure of 62 kg-days and reduced the\ndetector threshold from 30 keV to 13 keV by employing a phonon trigger [117–119].\nImplementing Monte-Carlo simulations using Geant4 to analyze gamma and neutron backgrounds\nfrom radioactive decays and upgrading both electronics (readout and DAQ) and cryogenic\nsystems, along with improved shielding and the use of newly designed Fully Inter-Digitized (FID)\ndetectors achieved a rejection power of R surf < 4 × 10 [−5] per α at 90% confidence level using a\n\n210 Pb source. Furthermore, the experiment was capable of rejecting bulk γ-ray events using γcalibrations with a 133 Ba source, resulting in a misidentification rate R γ−mis−FID < 2.5×10 [−6] at\n\n90% confidence level [120–124].\n\n_IV.B.1. Insights on EDELWEISS_\n\nUtilizing the Migdal effect and NTL effect to target dark matter particles as light as 32 MeV/c²\nindicates a strategic shift towards exploring a broader range of dark matter masses. Achieving a\nrecord sensitivity of 0.53 electron-hole pairs sets a new standard in detector resolution. Continuous\nimprovements in this area could enable the detection of even subtler signals from dark matterelectron interactions, enhancing the likelihoo",
+        "score": -4.111340152007947,
+        "dense_score": 0.4207637310028076,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.332942485809326,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6011,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2765150__2403.02668__Material_Properties_of_Popular_Radiation_Detection_Scintillator_Crystals_for_Optical_Physi.md",
+        "title": "2025__recid_2765150__2403.02668__Material_Properties_of_Popular_Radiation_Detection_Scintillator_Crystals_for_Optical_Physi",
+        "text": "BGO is caused by poor energy resolution blurring it with\nthe other [152] Eu photopeak (244.7 keV). This can be observed in Fig. (4e).\n\nthe optical response from the scintillator crystals. Doublesum peaks were negligible in the [22] Na energy spectra for\nCLLBC:Ce, NaI:Tl, and CsI:Tl (Figs. (3d), (5d), and (7d))\ndue to their smaller attenuation coefficients, making it less\nlikely for both gamma rays to interact with them in the\nsame time window. GAGG:Ce and BGO’s larger attenuation\n\n50\n\n40\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2024 6\n\nFig. 7. Experimental (black line) and simulated (red line) [109] Cd (a), [57] Co\n(b), [137] Cs (c), [22] Na (d), and [152] Eu (e) gamma ray energy spectra for the\nCsI:Tl scintillation detector. The color version is available online.\n\ncoefficients (see Table (I)) corresponded to less statistical\nnoise in the [137] Cs spectra (Figs. (2c) and (4c)) compared\nto the other scintillators. Statistical noise was more prevalent\nfor [137] Cs compared to other isotopes because [137] Cs had the\nlowest radioactivity. The peak immediately above the lowlevel detection threshold observed in the 137 Cs and 22 Na\n\nexperimental spectra (e.g., GAGG:Ce in Figs. (2c) and (2d))\nwas attributed to electronic noise. This peak was not observed\nin the simulated spectra because electronic noise was not\naccounted for in the simulation platform.\nThe average difference between simulated and experimental\nphotopeak FWHM was _<_ 1% for CsI:Tl, 1% for GAGG:Ce\nand CLLBC:Ce, 2% for NaI:Tl, and 4% for BGO. For each\nscintillator, the energy resolution generally improved as the\ncharacteristic gamma ray energy increased. Although this was\ntrue for [152] Eu within the photopeaks for the same source,\nit was not true between photopeaks of other isotopes. For\nexample, the 344 keV and 964 keV [152] Eu photopeaks for\nCsI:Tl had a FWHM of 9.72% and 7.92% respectively, however, the FWHM for the 662 keV photopeak was 7.47%. This\nphenomenon was attributed to cascade summing from multiple\n152 Eu radioactive decays. The poor energy resolution of BGO\nblurred the 122 keV and 136 keV [57] Co photopeaks together so\nthat the 136 keV photopeak could not be resolved, as shown\nin Fig. (4b). Moreover, the poor energy resolution of BGO\nwas attributed to the 16% difference between the simulated\nand experimental 245 keV [152] Eu photopeak FWHM. Overall,\n\nCLLBC:Ce had the best energy resolution (lowest photopeak\nFWHM) across the 30 keV to 2 MeV energy range (see Fig.\n(6)",
+        "score": -4.13728389993627,
+        "dense_score": 0.393615186214447,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.3707804679870605,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1893,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "6 _×_ 10 [11] 1 MeV _n_ eq _/_ cm [2] is expected. The NIEL damage will increase the rate of pixel\navalanches per channel initiated by thermal electrons, occurring without incident light,\nand is commonly referred to as dark noise or dark count rate (DCR). The SiPMs are to be\n\n42 The distribution is Poisson-like in its shape, due to variations in the total path of the charged particle\nthrough the scintillating fibre matrix, fluorescence processes, and saturation from large ionisation energy\ndeposits.\n\n59\n\ncooled below _−_ 40 _[◦]_ C as the damage increases in order to suppress the rate of accidental\nclusters and maintain the required detector performance.\nA significant portion of the detector infrastructure is dedicated to managing the\nradiation effects on the fibres and the SiPMs, as well as handling the large data rates\ngenerated by the increased instantaneous luminosity of the LHCb upgrade where, after\nzero suppression, up to 20 Tbit/s of data are sent to the DAQ from the SciFi Tracker FE\nelectronics.\n\n##### **6.2 Scintillating fibres**\n\nBlue-green emitting double-clad plastic scintillating fibres with a 250 µm diameter were\nchosen for the LHCb SciFi Tracker. [43] The production of the over 11 000 km of fibre needed\nfor the tracker was delivered on time and of a very high and constant quality, which led\nto negligible rejection rates.\nThe manufacturer states an intrinsic light yield of 8000 photons per MeV of ionisation\nenergy deposited. The decay time constant was measured to be 2 _._ 4 ns, slightly faster than\nthe 2 _._ 8 ns declared by the manufacturer [81,82]. The double-clad fibre achieves a minimum\ntrapping efficiency of 5.3% per hemisphere through total internal refection with the two\ncladding layers. The fibres have a mean nominal attenuation length of approximately\n3 _._ 5 m. However, the transparency of the fibres will degrade due to the received ionising\ndose. This effect has a strong wavelength dependence and may result in losses that peak\nin the UV/blue regions. The emission spectrum of the fibre has a maximum at 450 nm .\nIt has also been observed that the attenuation length degrades by 1–2% per year due to\nradical production resulting from the interaction of oxygen with the polymer [83–85].\n\n**6.2.1** **Fibre quality control**\n\nThe fibre supply was delivered in 48 individual shipments (batches) in weekly (100 km ) or\nbi-weekly (300 km ) intervals on 12 _._ 5 km spools. After the arrival of each shipment, fibre\nsamples for quality control wer",
+        "score": -4.399797530607744,
+        "dense_score": 0.41278398036956787,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.775912284851074,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 75,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 409,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt.md",
+        "title": "2023__recid_2648205__2304.00912__Sterile_neutrino_searches_with_reactor_antineutrinos_using_coherent_neutrino-nucleus_scatt",
+        "text": "t detectors in CE _ν_ NS exper\n\nASN oscillation parameters.\n\n**B.** **With Different Masses of the Detector**\n\n9\n\niment exhibit a mass advantage of one order of magnitude,\nassuming that measurements of eV-scale recoil thresholds are\nfeasible and a signal-to-background ratio of about 1 can be\nachieved in the experiment [60]. Figure 5 shows the ASN\nmixing sensitivity in sin [2] 2 _θ_ 14 – ∆ _m_ [2] 41 [plane at 95][%][ C.L. for]\nan exposure of 1 yr for different mass of the detector. Figure 5(a) shows for Si detector and Fig. 5(b) for Ge detector,\nboth with masses 10 kg, 50 kg, and 100 kg. It can be noted\nhere that, sensitivities are extracted considering a threshold of\n100 eV and 20 eV for silicon and germanium detector, respectively. At a given detector mass at higher ∆ _m_ [2] 41 [the sensitivity]\nin sin [2] 2 _θ_ 14 is more as compared to lower ∆ _m_ [2] 41 [. The sensi-]\ntivity improves in all regions of sin [2] 2 _θ_ 14 with an increase in\ndetector mass as the number of expected events increases. It\nis evident that the Ge detector excludes both allowed regions\nof the GALLIUM experiment.\n\n**C.** **With Various Detector Thresholds**\n\nAs previously discussed, the recoil energy of nuclei decreases as the mass number of the detector increases. There\nfore, detectors with low thresholds, such as Ge and Si can\nperform nuclear recoil discrimination down to the eV scale\nenergy threshold. Such detectors will be more useful if we\ncan observe the recoil energies as low as a few tens of eV. In\nthe context of CE _ν_ NS cross-section, as given in Eq. 1, the nuclear recoil energy _T_ serves as the relevant observable. For\na given neutrino energy, there is a limit to the maximum recoil energy. The cross-section is maximum for lower values of\n_T_, therefore, the total number of observed event rate sensitivity dependent on the low-energy threshold for nuclear recoil\n_T_ _min_ . A comprehensive study has been performed to assess\nthe impact of detector threshold on ASN mixing sensitivity,\nconsidering both Si and Ge detectors with a mass of 10 kg\nplaced at a distance of 4 m from U-Apsara reactor core. Figure 6 shows the sensitivity in sin [2] 2 _θ_ 14 –∆ _m_ [2] 41 [plane at 95][ %]\nC.L for detector with different threshold energies. The sensitivity of the detector at lower ∆ _m_ [2] 41 [is better at the lower de-]\ntector threshold. However, for ∆ _m_ [2] 41 _[≥]_ [1] _[.]_ [0] _[ eV]_ [ 2] [, the detector]\nthreshold has minimal impact on ASN mixing sensitivity.\n\nFIG. 7: The",
+        "score": -4.418398859189905,
+        "dense_score": 0.3945484161376953,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.803389549255371,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.5830239010974765,
+    "generation_latency_s": 3.096647560596466e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.5830239010974765,
+    "generation_latency_s": 3.096647560596466e-07
+  }
+}

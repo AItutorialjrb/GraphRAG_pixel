@@ -1,0 +1,420 @@
+{
+  "benchmark": {
+    "query_id": "con010",
+    "query_type": "conceptual",
+    "query": "Why should retrieval and generation be evaluated separately?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "should",
+      "retrieval",
+      "and"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why should retrieval and generation be evaluated separately?",
+    "mode": "agentic_graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 386,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "80 pixels in both directions. Only the whole images not selected using the\ndefault grid would then be evaluated with the additional secondary grid.\nThe anomaly detector tends to select patches at a guard ring _§_, cell numbers and\ncell borders as false positive, due to the increase in the AE reconstruction error in these\nareas. In addition, contact marks are a common source of false positives, see (e) in\nfigure 11. With the proposed approach, where the detection is invariant to the anomaly\nlocation on the sensor, these cannot be eliminated.\n\n_6.2. Efficiency_\n\nAverage inference times for a whole image are reported in table 4, with both the default\ngrid and the secondary grid. An average sensor scan consisted of 335 images, for which\nthe picture-taking time is 9.2 minutes. On average, an inspector inspects a whole image\nin two seconds, evaluating one scan in 11 minutes. On an RTX A2000, the inference time\nis less than 6 minutes for the scan with both grids. The GPU is necessary, as the short\nrun time allows parallel picture-taking and pre-selection. At variance, the evaluation of\na scan would take approximately 45 minutes on a regular CPU, significantly delaying\nthe subsequent electrical characterization.\n\n**Table 4.** Average inference times on a GPU or a CPU for whole images using the\ndefault and secondary grids.\n\nGrid Run time [s]\n\nRTX A2000 GPU Default 0.8\n\n+ secondary 1.0\n\nCPU Default 8.1\n\n+ secondary 13.8\n\n_6.3. Continuous learning_\n\nGiven that new data will be measured continuously, the PSA should be retrained\nto adapt to the new data. Using new normal images to train the AE would not\nimprove its task of poor anomaly reconstruction, so it does not require retraining. Also\nthe background detector is considered to be robust enough to not require immediate\nretraining. However, the accuracy of the anomaly detector could be improved via\ntraining with novel anomalous patches. For example, training instances such as the\nmissed anomaly (d) in figure 10 did not exist in the original training data set.\nAnomalous images acquired after the initial deployment were given ground truth\nlabels to extend the training data set. The anomaly detector was retrained starting from\n\n_§_ A guard ring is a structure at the periphery of a sensor designed to protect it from currents from the\ncutting edge, and shown in figure 11 (f) as the black line with false positives.\n\n14\n\nrandomly initialized weights with 2.1 times more anomalous patches than the original\nmodel. An independ",
+        "score": -4.8998256889319105,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7467209407507914,
+        "rerank_score": -7.650775909423828,
+        "matched_nodes": [
+          "On",
+          "An",
+          "At",
+          "The",
+          "In",
+          "For"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -6.242451839855061,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7860696517412935,
+        "rerank_score": -9.72228717803955,
+        "matched_nodes": [
+          "At",
+          "The",
+          "In",
+          "For",
+          "We",
+          "To",
+          "Col2",
+          "Col3",
+          "Col4",
+          "Col1"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5193,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2791763__2405.19974__Atomistic_Compositional_Details_and_Their_Importance_for_Spin_Qubits_in_Isotope-Purified_S.md",
+        "title": "2024__recid_2791763__2405.19974__Atomistic_Compositional_Details_and_Their_Importance_for_Spin_Qubits_in_Isotope-Purified_S",
+        "text": "erve a postgrowth diffusional broadening of the Ge and Si profiles caused by annealing. The slight profile broadening\nis resolved by means of APT but not by ToF-SIMS measurements. Both APT and ToF-SIMS reveal\nsignatures of segregation of Ge during the growth process, which becomes evident in a slightly retarded\nonset of the Ge compared to the Si profile for the top Si 0 _._ 7 Ge 0 _._ 3 / [28] Si interface.\n\n**2.3** **Experimental analysis of the** [28] **Si/SiGe bottom interface**\n\nFigure 3 displays the depth-resolved composition profiles across the [28] Si/Si 0 _._ 7 Ge 0 _._ 3 bottom QW interface\nby ToF-SIMS and APT as well as the corresponding fits to the profiles. For highest resolution of this\ninterface, we we plot results of the APT specimens analyzed in top-down configuration.\nFigure 3a shows the Ge- and the Si profiles acquired by ToF-SIMS, both for as-grown and post-growth\nannealed samples. We find these profiles to be very similar to those observed for the top interface in Figure\n2d. Indeed, all profiles are accurately described with a simple error-function, following the model given by\nEq. 1 in the Experimental Section. Note, however, that for a Si overgrowth of Ge or SiGe, a segregation of\nGe atoms into the Si overgrowth layer has been reported and experimentally resolved for as-grown MBE\nstructures grown at higher substrate temperatures than our heterostructure in the past [59,60,62]. During\nSi overgrowth of SiGe, a self-limiting mechanism of Ge segregation at the growth front is invoked [60],\nleading to a stretched Ge concentration profile, termed as _trailing edge_ in the literature [59]. We conclude\nthat our experiments show that a Ge segregation and in particular its self-limiting character for [28] Si\novergrowth of SiGe at the bottom interface cannot be resolved via ToF-SIMS for this QW grown at 350 _[◦]_ C.\nIn contrast, a stretched Ge profile at the QW bottom interface is clearly resolved by means of APT as\nshown in Figure 3b. While the Si profiles _C_ (Si) are accurately described with the error-function of Eq. 1\n(see Experimental Section), this is not the case for the Ge profiles _C_ (Ge). After a drop in Ge concentration,\nfrom a certain threshold value, the decrease in the Ge concentration is less pronounced. This is indicative\nof a self-limitation of Ge segregation with increasing Si neighbouring and corresponds to the trailing edge\ndiscussed in the literature. To our knowledge, this is the most narrow trailing edge (as a consequenc",
+        "score": -6.372317401184354,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7617970752299109,
+        "rerank_score": -9.918420791625977,
+        "matched_nodes": [
+          "Ge",
+          "The",
+          "In",
+          "For",
+          "We",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "Ge"
+        ],
+        "community_id": "Ge",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 922,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu.md",
+        "title": "2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu",
+        "text": "nt materials and conditions\n\n(i.e., strain and composition) we consider, as well as the related electronic transition levels\n\n( _ε_ ) associated with ionization or charge-trapping processes that may occur in qubit devices\n\nunder operation. [13] We additionally evaluate energy barriers associated with instantaneous\n\ncharge-transfer between defect states, as may be expected for optical excitations or tunneling\n\nprocesses that can induce high- or low-frequency charge noise.\n\nIn a typical Si/Si 1 _−x_ Ge _x_ quantum well device architecture, a strained Si layer is sand\n\nwiched between Si 1 _−x_ Ge _x_ layers to introduce a two-dimensional electron gas (2DEG) confined\n\nin the strained Si layer as shown schematically in Figure 1. The choice of Si 1 _−x_ Ge _x_ composi\n\ntion influences the details of the heterostructure band diagram, through both strain and band\n\ngap effects, with a typical design using _∼_ 30% Ge leading to high performing devices. [14] The\n\nbottom layer is a relaxed Si 1 _−x_ Ge _x_ layer grown on a graded Si 1 _−x_ Ge _x_ virtual substrate that\n\nhas compositional variations to tune both the strain in the quantum well and the resulting\n\n2DEG quality while minimizing dislocations generated during the growth process. [14] Even\n\n_−_\nwith optimized growth processes, threading dislocation densities on the order of 10 [5] 10 [6]\n\ncm _[−]_ [2] have been reported. [14,15] The top layers can also include relaxed Si 1 _−x_ Ge _x_ layers with\n\nadditional doped layers to contribute carriers to the 2DEG. Owing to the presence of strain\n\nand likely compositional variations, including strain variations associated with defects and\n\ndevice patterning, we investigate the dependence of defect energy levels associated with DBs\n\nfrom Si and Ge, exploring the role of the local and global chemical environment. Specifically,\n\nwe consider DBs from Si and Ge that are back-bonded to Si and Ge in bulk Si and Ge host\n\n3\n\nmaterials to evaluate the scenarios of locally Si-rich and Ge-rich compositions, respectively.\n\nTo avoid confusing notation with substitutional defects, we adopt a subscript in front to\n\ndenote back-bonding that helps to clarify the local environment. For example, an isolated Si\n\nDB in Si is redundantly labeled as Si Si Si, an isolated Ge Si DB in Si is represented as Si Ge Si,\n\nwhile a locally-Ge rich region with all Ge nearest neighbors to the Ge Si is labeled as Ge Ge Si .\n\nWe summarize schematics of studied DB structures in Fig. 2. We additionally cons",
+        "score": -6.445206347717557,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7617970752299109,
+        "rerank_score": -10.030557632446289,
+        "matched_nodes": [
+          "Ge",
+          "The",
+          "In",
+          "For",
+          "We",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "Ge"
+        ],
+        "community_id": "Ge",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 926,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu.md",
+        "title": "2023__recid_2668222__2306.06229__Dangling_Bonds_as_Possible_Contributors_to_Charge_Noise_in_Silicon_and_SiliconGermanium_Qu",
+        "text": "ations are\n\nshown in Fig. 2 and the insets of Fig. 1. In addition to Si DBs in Si ( Si Si Si ), we consider the\n\nDBs of Ge Si in Si ( Si Ge Si ), and Si Ge in Ge ( Ge Si Ge ) as proxies for the influence of the local\n\nchemical environment for different Si 1 _−x_ Ge _x_ compositions. With the ordered SiGe structure\n\n(analogous to 3C-SiC), we evaluate both Si and Ge dangling bonds that are back-bonded to\n\ndifferent sets of Si and Ge atoms: namely, Si DBs that are back-bonded to Ge ( Ge Si Si ) and Si\n\n(e.g. Si Ge antisites, Si Si Ge ), as well as Ge DBs back-bonded to Si ( Si Ge Ge ) and Ge (e.g. Ge Si\n\nantisites, s Ge Ge Si ). This provides another means to evaluate the variability of the energies of\n\nthe states with local coordination. An analogous procedure was performed for _β_ -cristobalite\n\nSiO 2 as a proxy for Si and Ge (Ge Si ) DBs in oxide layers, also using 216-atom reference cells\n\nfor the bulk SiO 2 lattice. For the oxide we only consider the Si and Ge Si DBs for atoms\n\nthat are back-bonded to O, and do not consider the additional effects of a more Ge-rich\n\nenvironment in next-nearest neighbor shells or beyond. For all defects, we characterize the\n\ndegree of localization of any states induced within the band gap, i.e. deep versus shallow,\n\nfrom the density of states and projected charge densities.\n\nWe calculate defect formation energies ( _E_ _[f]_ ) and the associated charge-state transition\n\nlevels ( _ϵ_ ) to determine the favorable charge states ( _q_ ) of each defect under different conditions,\n\nusing the standard supercell approach. [29] For example, the formation energy of a generic DB\n\ndefect in Si is given as a function of Fermi level ( _ϵ_ _F_ ) by\n\n_E_ _[f]_ [DB _[q]_ ]( _ϵ_ _F_ ) = _E_ tot [DB _[q]_ ] _−_ _E_ tot [DB:passivated] + _µ_ H + _q_ ( _ϵ_ _F_ + _ϵ_ _v_ ) + ∆ _[q]_ _,_ (1)\n\nwhere _E_ tot [DB _[q]_ ] represents the total energy of the supercell containing the defect _D_ in charge\n\nstate _q_, and _E_ tot [DB : passivated] represents the reference DB structure that has all DBs fully\n\npassivated. The chemical potential of the H atom removed from the passivated DB structure\n\nis included as _µ_ H, referenced as [1] 2 [the energy of an isolated H] [2] [ molecule. The electrons are]\n\n8\n\nexchanged with a reservoir whose chemical potential is _ϵ_ _F_, which we reference to the energy\n\nof the valence-band maximum (VBM), _ϵ_ _v_ . The effects of spin-orbit coupling were included as\n\na correction to _ϵ_ _v_ by including a shift of one-thir",
+        "score": -6.50684042002176,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8070254786672697,
+        "rerank_score": -10.132198333740234,
+        "matched_nodes": [
+          "An",
+          "Ge",
+          "The",
+          "In",
+          "For",
+          "We",
+          "Si"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5188,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2791763__2405.19974__Atomistic_Compositional_Details_and_Their_Importance_for_Spin_Qubits_in_Isotope-Purified_S.md",
+        "title": "2024__recid_2791763__2405.19974__Atomistic_Compositional_Details_and_Their_Importance_for_Spin_Qubits_in_Isotope-Purified_S",
+        "text": "Ge isosurface is used. Moreover, it has been shown [53–55] that collecting an APT profile\nfrom SiGe across an interface with Si is less precise than collecting it from Si across the interface with\nSiGe, because of the different evaporation fields of each material. Hence, to ensure highest resolution, we\nhave produced dedicated specimen tips (Figure 1b) for the APT analysis of each QW interface, to always\nprobe a heterostructure interface from Si across SiGe. Thus, the _bottom interface_ is analyzed using a\nspecimen tip probed in a _top-down_, while the _top interface_ is analyzed using a specimen tip probed in a\n_bottom-up_ configuration, as sketched by arrows in Figure 1b and conducted in Ref. [54]. We measured two\ntips of each type and compared the results with another set of, in total, four specimens, which we annealed\nprior to preparing the tips (see Experimental Section). The interface broadenings of the Si and Ge profiles\nat the top and bottom QW interfaces determined from each individual analyzed tip are provided in the\nSupporting Information.\nTo determine interface profile widths, we fit the experimental, depth-resolved concentration profiles\nwith an error-function model which has been widely used for the analysis of isotope profiles [56–58]. For\nall TEM, ToF-SIMS and APT experimental profiles, we chose to fit the top and bottom interface together\nwithin one profile by using a model with two opposing error functions, to suppress numerical errors (see\nExperimental Section). As discussed below, for APT profiles, we extend the error function fit at the bottom\ninterface to better take into account a self-limiting effect of Ge segregation during growth of a Si/SiGe\ninterface [59,60]. Both fit models are shown on an exemplary APT profile in Figure 1c and are discussed\nin the Experimental Section.\nIn the following, _C_ ( _X_ ) denotes the depth-resolved composition profile of _X_, while _C_ ( _z_ ; _X_ ) is the composition value of _X_ at the depth _z_ in growth direction. Along the manuscript, _X_ will either be _Si_ (standing\nhere for the sum of the composition in the isotopes [29] _[,]_ [30] Si), _Ge_ (standing for the sum of the composition\nin the isotopes [70] _[,]_ [72] _[,]_ [73] _[,]_ [74] _[,]_ [76] Ge) or a specific isotope, in particular [28] _Si_ . Also, _r_ t;b _[′]_ [(] _[X]_ [)][ stands for the interface]\nwidth of the profile of _X_ at the QW interface _y_ in the as-grown heterostructure, while _r_ t;b ( _X_ ) represents\nthe post-growth an",
+        "score": -6.672649565948758,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7617970752299109,
+        "rerank_score": -10.380470275878906,
+        "matched_nodes": [
+          "Ge",
+          "The",
+          "In",
+          "For",
+          "We",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "Ge"
+        ],
+        "community_id": "Ge",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4061,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2750105__2401.11438__Tensor_force_impact_on_shell_evolution_in_neutron-rich_Si_and_Ni_isotopes.md",
+        "title": "2024__recid_2750105__2401.11438__Tensor_force_impact_on_shell_evolution_in_neutron-rich_Si_and_Ni_isotopes",
+        "text": "id splitting. However, in this case,\nthe SGII+T interaction succeeds at reproducing the\nbehavior of the dependence at a qualitative level.\nRegarding the influence of the neutron excess on\nthe single-particle states of neutrons, here the presence of tensor interaction also leads to changes in\nSPEs, and the effect will be opposite compared to\nthe case of np-interaction. As seen from Fig. 2(c,d),\nas ν1d 3/2 is filled, the neutron states with j - are repelled, and with the filling ν1f 7/2 the attraction is\nstrengthened by the shell. At the same time, the unsatisfactory description of experimental estimates for\n1d2s states should be noted. On the other hand, it\nshould be noted that the accuracy of the experimental data based on the spectroscopy of single-nucleon\ntransfer reactions drops dramatically for the states\nlying much lower than the Fermi surface. Nevertheless, Fig. 3b shows that for the range of nuclei up to\n\n34 Si, it is the inclusion of tensor forces that makes it\npossible to qualitatively reproduce the dependence of\nthe neutron spin-orbit splitting of the d-states.\nFor neutron single-particle states, we can also consider the splitting between 1d 3/2 and 1f 7/2 . The\nexperimental data demonstrate a maximum in [34] Si\nrelated to the manifestation of the magic number\n\nN = 20 and a substantial drop to very small values\nas ν1f 7/2 is filled, which illustrates the decrease in\nthe role of shell effects in highly neutron-rich silicon\nisotopes. As can be seen in Fig. 3c, it is not possible to reproduce this character of the experimental\ndependence without including the tensor component,\nand the SGII+T parametrization makes it possible to\nreproduce the dependence at a qualitative level. The\nresults with SLy5+T also give a maximum in [34] Si,\nand the splitting value agrees with the experimental\n\nestimates.\n\nIt is important to note that the scale of the effect\nfor neutrons is comparable to that observed earlier\nfor protons (Fig. 3a). In [9] it is shown that in the\nmost elementary case, when α T = β T, the interaction of like nucleons (governed purely by the isovector\ncomponent of the forces) is 2 times weaker than npinteraction (dependant on both isoscalar and isovector components). Therefore, traditionally, when considering the effects associated with tensor interaction,\none treats the influence of the neutron excess on the\nstates of protons in isotopes or vice versa, the influence of the number of protons on the states of neutrons in isotones. In the case of i",
+        "score": -6.789225590321555,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7014925373134329,
+        "rerank_score": -10.550725936889648,
+        "matched_nodes": [
+          "On",
+          "At",
+          "The",
+          "In",
+          "For",
+          "Si"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4009,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs.md",
+        "title": "2024__recid_2746277__2401.06581__Understanding_the_Nonlinear_Response_of_SiPMs",
+        "text": "and taking\n_U_ / _U_ ch = 1 and _x_ ≪ 1, we found that a crosstalk probability of\n10% (irrespective of whether it is prompt or delayed crosstalk)\nleads to _c_ = 0.101, whereas _c_ = 0.059 is obtained for the same\nprobability of afterpulsing. Notice that _c_ can be slightly greater\nthan the probability of crosstalk, which is defined as the probability of inducing one or more secondary avalanches. This is\npartly compensated by the fact that pixels at the borders of the\nSiPM have a lower crosstalk probability. The higher the number of pixels, the smaller these border effects. On the other\nhand, cascades of secondary avalanches due to any component\nof correlated noise contribute to increasing _c_, this effect being\nrelevant when the probability of correlated noise is high, as discussed in [10]. Analytical expressions of _c_ for crosstalk are\navailable in [8, 9], but the accurate value of _c_ should be obtained by simulation when afterpulsing is not negligible.\nAt high photon rates, where nonlinearity is significant, the\nuncompleted recovery of pixels reduces the gain factor due to\ncorrelated noise. For exponential light pulses, prompt crosstalk\nwas found to be more mitigated than delayed crosstalk and afterpulsing for the same probability. This is because seeds due\nto prompt crosstalk are mainly produced at the beginning of the\nlight pulse, just when the photon rate is highest. In contrast,\nseeds due to delayed crosstalk and afterpulsing are produced\nlater, when the photon rate is lower and the recovery of pixels is more advanced. These effects are more noticeable when\nstudying the shape of the output signal rather than the integrated\ncharge. In Fig. 4, averaged simulated signals for a probability\nof correlated noise of 20% (assuming a sole noise component\nin each case) are compared with that obtained in the absence\nof correlated noise. We used the same simulation parameters\nas before, i.e., τ d = 5 ns and τ rec = τ bulk = 10 ns. Prompt\ncrosstalk gives rise to an almost constant scale factor to the signal at _x_ = 0.5, but the effect is much lower at _x_ = 5 as a conse\n\n5\n\nFigure 4: Averaged SiPM signals simulated for different situations of correlated\nnoise (i.e., no noise, 20% of prompt crosstalk, 20% of afterpulsing, or 20% of\ndelayed crosstalk) and different amounts of seeds per pixel (i.e., _x_ = 0.5 and 5).\n\n|Shape|Probability density function|Mean ph. rate|\n|---|---|---|\n|Exponential|1<br>τd _e_−_t_/τd (_t_ ≥0)|_n_<br>2τd|\n|Rectangular|1<br>τw (0 ≤_t_",
+        "score": -6.8888943315477515,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7014925373134329,
+        "rerank_score": -10.704062461853027,
+        "matched_nodes": [
+          "On",
+          "At",
+          "The",
+          "In",
+          "For",
+          "We"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1130,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2677240__2302.12669__Design_optimization_of_plastic_scintillators_with_wavelength-shifting_fibers_and_silicon_p.md",
+        "title": "2023__recid_2677240__2302.12669__Design_optimization_of_plastic_scintillators_with_wavelength-shifting_fibers_and_silicon_p",
+        "text": "d of trade-offs and\nthe overall difference is small from the lower left and upper\nright panel of Figure 9. The R-value of option 4 and option 2\nhas a big differences from the upper left and lower right panel\nof Figure 9. The distribution of R values in the PS region has\nbeen get, To obtain a quantitative relationship between the optical transmission performance of option 2 and option 4 in the\nentire region, An explanation of mathematical integration (Rvalue) were provided. We calculate the integral area under the\nred and the black line in the upper left and lower right panel\nof Figure 9, then multiply the integral area of the red line in\nthe upper left panel by the area in the lower right panel as the\ntransmission performance of the whole region of option 4, do\nthe same for the black as for the red line; The product of the\ntwo integral areas is used as the transmission performance of\nthe entire region of option 2. Finally; We divide the product\nof the integral area of the red line by the product of the black,\nand find that the ratio is 2.21. This shows that the transmission performance of the whole area of option 4 is 2.21 times\nbetter than that of option 2. Therefore, we can understand\nwhy the overall photon number of option 4 is more than that\nof option 2. At the same time, we can also see from the curve\nthat the R-value distribution range of option 4 is larger than\nthat of option 2, which means that the optical export uniformity of option 4 is worse than that of option 2, which is the\nresult of uneven optical fiber layout. In short, we found if the\noptical fiber in the PS middle region is in higher density and\nuniform, the higher the effective light yield will be, Therefore, to achieve a higher light yield, it is possible to consider\nplacing as many optical fibers as possible in the middle of the\nPS.\n\nSo far, in terms of light yield, many simulations and made\nmassive comparisons have done, The best configuration have\nobtained that is option 4 under the current design conditions.\nAt the same time, to some extent, The reason why it is the best\n\n8\n\n|Col1|opti|on2|Col4|Col5|Col6|Col7|Col8|\n|---|---|---|---|---|---|---|---|\n|||||||||\n||opti|n4||||||\n|||||||||\n|||||||||\n|||||||||\n|||||||||\n|||||||||\n\n|Col1|o|ptio|n2|Col5|Col6|Col7|Col8|Col9|Col10|Col11|Col12|\n|---|---|---|---|---|---|---|---|---|---|---|---|\n|||||||||||||\n||o|ptio|n4|||||||||\n|||||||||||||\n|||||||||||||\n|||||||||||||\n|||||||||||||\n|||||||||||||\n|||||||||||||\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Co",
+        "score": -6.8938588041575555,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8312980551786523,
+        "rerank_score": -10.731270790100098,
+        "matched_nodes": [
+          "An",
+          "At",
+          "The",
+          "In",
+          "We",
+          "To",
+          "Col2",
+          "Col3",
+          "Col4",
+          "Col1"
+        ],
+        "path_nodes": [
+          "An"
+        ],
+        "community_id": "An",
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4924,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "ne SiPMs. This results in negligible systematic and statistical uncertainties for this measurement. The out\nput pulse full width at half maximum (FWHM) increases only\nslightly from 2.4 ns to 2.8 ns for Hamamatsu SiPM-based pixels and similarly from 3.1 ns to 3.4 ns for pixels based on SensL\nSiPMs. For the first generation SiPM-based pixels using Excelitas SiPMs, the FWHM increased from 5.1 ns to 5.9 ns [19].\n\n**5. Expected LoNS and Cherenkov light responses**\n\n_5.1. Spectra and integrals_\n\nTo estimate the expected performance of our SiPM proto\n type modules we compared the spectral photon detection effi\nciency PDE(λ) curves of light sensors with the spectra of the\nLoNS and the Cherenkov light from air showers reaching the\ntelescope camera. The spectra are shown in figure 7. In recent years, MAGIC observations’ mean zenith distance (ZD),\nwhich denotes the angular distance between the telescope pointing direction and zenith, has steadily increased to cover a larger\nsolid angle with more astrophysical sources and a wider energy range. For an example see [29]. Therefore, it is important\nto compare the detector’s PDE with the Cherenkov and LoNS\nspectra not only close to the zenith but also at large zenith dis\ntances.\n\n4\n\nFigure 6: Comparison of the pulse shape of a single SiPM chip with the active\nsum of nine Hamamatsu SiPM chips. The pulse FWHM widens only slightly\nfrom 2.4 ns to 2.8 ns. The amplitudes were normalized for better visualization.\n\nThe Cherenkov light spectrum of air showers at the telescope\ncamera peaks at around 320 nm for low zenith observations, at\n\n an observational altitude of 2.2 km. The peak quantum effi\nciency (QE) of PMTs makes a good match with the Cherenkov\nlight spectrum. All of the SiPMs we used have their peak sensitivity at longer wavelengths, thus detecting a lower number of\nCherenkov photons from the main peak in the near UV region.\nOn the other hand, these collect more photons from the longwavelength tail of the Cherenkov spectrum. At large and verylarge zenith distances the peak of the Cherenkov light spectrum\nshifts towards the blue-green region. This is due to the longer\ndistance to the shower maximum region, from where the majority of photons arrive at the telescope. The longer paths attenuate\nthe near-UV part of the spectrum, due to the Rayleigh scattering and absorption effects. The Cherenkov spectra were generated with CORSIKA [30] and the photon propagation to the\nIACT camera was modeled with an adapted version of MARS,",
+        "score": -6.914810001942649,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7014925373134329,
+        "rerank_score": -10.743932723999023,
+        "matched_nodes": [
+          "On",
+          "At",
+          "The",
+          "In",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "At": 1.0,
+      "RA": 1.0,
+      "SH": 1.0,
+      "Ge": 1.0,
+      "ATE": 1.0
+    },
+    "expanded_nodes": {
+      "On": 1.0,
+      "An": 1.0,
+      "AND": 1.0,
+      "At": 1.0,
+      "RA": 1.0,
+      "SH": 1.0,
+      "Ge": 1.0,
+      "ATE": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "For": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "CERN": 0.48999999999999994,
+      "PO": 0.48999999999999994,
+      "Col2": 0.42,
+      "Si": 0.7,
+      "G4CMP": 0.48999999999999994,
+      "ODEL": 0.48999999999999994,
+      "SPS": 0.17149999999999996,
+      "LHC": 0.17149999999999996,
+      "USA": 0.17149999999999996,
+      "IL": 0.15434999999999996,
+      "Col3": 0.147,
+      "Col4": 0.147,
+      "Col1": 0.147,
+      "Geant4": 0.17149999999999996
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "agentic_graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 27,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 9.814593642950058,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 27.0,
+    "retrieval_latency_s": 9.814593642950058,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

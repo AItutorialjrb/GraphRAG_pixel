@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "con001",
+    "query_type": "conceptual",
+    "query": "Why are HV-MAPS attractive for high-rate tracking?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why are HV-MAPS attractive for high-rate tracking?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7289,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2913434__2504.13098__Irradiation_studies_of_the_Resistive_AC-coupled_Silicon_Detector_RSDAC-LGAD.md",
+        "title": "2025__recid_2913434__2504.13098__Irradiation_studies_of_the_Resistive_AC-coupled_Silicon_Detector_RSDAC-LGAD",
+        "text": "nts in Low Gain Avalanche\nDiodes (LGADs) has culminated in 1.3 × 1.3 mm [2] sensors capable of < 50 ps time resolutions in the high radiation environments expected at the HL-LHC [1, 2, 3]. These sensors are now\nbeing used in the phase-2 upgrade projects at CMS and ATLAS\nfor timing layers. The evolution of LGADs from simple R&D\nprojects to full scale production detectors has motivated an entirely new generation of detectors capable of high spatial and\ntemporal resolution.\nAs with timing layers, constructing a tracking layer with such\nsensors can further improve pile-up discrimination in high rate\nenvironments (e.g. HL-LHC, FCC-hh) or provide time-of-flight\ninformation used for particle identification (e.g. FCC-ee). Additionally, constructing a full tracking system with multiple layers of such sensors allows for the possibility of ’4D’ tracking.\n’4D’ tracking would allow for the inclusion of timing information while tracks are created, thus greatly reducing track finding\ncombinatorics.\n\nSeveral novel ideas for devices to enable ’4D’ tracking are\nunder study, one such idea is the Resistive AC-coupled Silicon\nDetector (RSD) [4, 5, 6]. The RSD sensors utilize a gain implant similar to LGADs, but the segmentation into ”pixels” is\n\n∗ corresponding author\n_email:_ brendan.regnery@kit.edu\n\nprovided by AC-coupled electrodes, to enable high spatial resolution of hit via charge sharing. This allows for precise position resolution providing a 100% fill factor and requiring fewer\nreadout channels than traditional pixel sensors. The key to controlling the charge sharing is a precisely tuned n+ resistive layer\nas shown in figure 1. This differs from a Standard LGAD which\nuses a much more conductive, highly doped, n++ layer [6, 4].\n\nFigure 1: An RSD utilizes charge sharing on AC pads to provide high spatial\nresolution. A key difference between the RSD and a standard LGAD is the\nn+ resistive layer which is significantly less doped than the n++ layer in a\nstandard LGAD in order to provide the high resistivity needed to allow for\ncharge sharing.\n\n_Preprint submitted to VCI Proceedings in NIM A_ _April 18, 2025_\n\nIn several applications, such as adding RSD in a future HLLHC tracker or tracking for a future collider, the RSD sensors\nwill need to be able to operate in high fluence environments.\nThe second RSD production at FBK [7] focused on preparing\nfunctional RSD sensors by optimizing readout pad shapes and\nimproving the n+ resistive layer. However, these RSD sensors\nhave not",
+        "score": -1.6203611102470985,
+        "dense_score": 0.4099111258983612,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.5011472702026367,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7630,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement.md",
+        "title": "2026__recid_2871202__2501.11698__AstroPix_A_pixelated_HVCMOS_sensor_for_space-based_gamma-ray_measurement",
+        "text": "are controlled due to the use of in-pixel\nlow- and high-pass filtering respectively (Fig. 3). This\nfiltering helps mitigate their dependence on pixel capacitance, as the pixel capacitance is roughly 1 pF. Pixel\ncapacitance is dominated by the capacitance of metal\ntraces over each pixel and not by the diode capacitance.\nThe trace routing will be optimized in further versions\nof AstroPix and is expected to decrease to 500 fF per\npixel. The HVCMOS nature of the AstroPix design necessarily carries higher capacitance values than standard\nCMOS pixels, however the optimized future design is\naligned with other HVCMOS chips.\n\nLarge fluctuations with a low rate are likely noise\nfrom the environment in which the sensor is operated.\nThe dark count rate can be mitigated during data collection by setting the comparator threshold higher than\n50 mV above baseline. A 22.1 keV photopeak from\ncadmium-109 is visible in measurements made in Sec. 5\n\nwith a 200 mV threshold, so the 50 mV fluctuations can\nbe disregarded and do not impact the operational range.\nThe impact of increasing threshold on noise is shown in\nFig. 7.\n\nThreshold values of 200 mV allow the detection of\n\n25 keV signals as required in Table 1 (see Section 5\nfor details). As shown in Sec. 5, a 22 keV photopeak\nfrom cadmium-109 is visible with a 200 mV threshold,\nso that the electronics fluctuations do not impact the operational range. With nominal operational settings (see\nTable 3), < 0.5% of pixels per array are too noisy for\ndata collection and must be masked (their comparators\ndisabled).\n\nThe variation in dark count rate also illustrates a de\ngree of variation between pixels within the same array.\nProcess variations and device mismatch lead to this nat\nural variation in amplifier gain which cause some pixels\nto be sensitive to noise which remains below threshold\n\n7\n\nFigure 7: Dark count hit map for a wafer 2 chip at different comparator thresholds with no disabled pixels. The _z_ -axis shows the number of hits per\npixel over 5 s integration time.\n\nin other pixels. This leads to pixel responses varying\n20 − 35% relative to one another [5] . Individual-pixel calibration therefore is required to correct for this variation. Section 5 outlines this calibration strategy and its\nresults.\n\nThe in-pixel comparator does not collect subthreshold hits. AstroPix_v3 is designed to reduce\ncharge sharing, or signal splitting between neighboring\npixels due to ionizing particle positioning. Improperly\naccounting for charge sh",
+        "score": -2.1385019963787446,
+        "dense_score": 0.43170976638793945,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.2986879348754883,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 5633,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ectors. Traditional silicon tracking detectors provide a high spatial resolution\n\nin the order of 10 µm derived from decades of intensive R&D efforts and current HEP collider\n\nexperiments such as the Large Hadron Collider (LHC) have low enough event densities to allow\n\nthe reconstruction of every event through this technology. However, this outlook is expected to\n\nchange with the upcoming High Luminosity (HL) LHC. The rate of events is expected to increase\n\nby approximately a factor of 5 compared to the luminosity in the LHC Run-2 [1]; this will result in\n\na high event pile-up that would pose a challenge of separating individual tracks for reconstruction.\n\nHowever, the inclusion of precise timing information in the order of 10 ps could solve this problem\n\nby discriminating compatible hits based on timing information in what is known as 4D tracking[2].\n\nSeveral candidate technologies have been proposed to fulfil this task in addition to other requirements\n\nsuch as but not limited to high radiation tolerance and costs.\n\nOne candidate technology is 3D silicon sensors which have a detector design with an electric\n\nfield parallel to the detector surface, unlike traditional planar silicon sensors. This novel architecture\n\nwas first introduced by Parker, et. al. [3] in 1997 and introduces advantages such as short drift time,\n\nradiation tolerance, and low depletion voltage[4–6]. Recent innovations in 3D silicon detectors have\n\ndesigns with small pixel pitches of 25 µm × 100 µm and 50 µm × 50 µm that provide excellent spatial\n\nresolution and temporal resolution[7]. Particularly, 50 µm × 50 µm devices were experimentally\n\n– 1 –\n\ndemonstrated to provide a peak time resolution in the order of 30 ps[8]. However, the technology\n\ncomes with several limitations. The manufacturing process of 3D silicon sensors is complicated[9].\n\nFurthermore, small pixel sizes needed for good time resolution increase power consumption due to\n\nthe density of the electronic channels and the lack of gain in the technology will require appropriate\n\ncircuitry for amplification that further increases power consumption[4].\n\nAnother candidate technology is complementary metal-oxide-semiconductor (CMOS), which\n\nhas been available for decades and is actively being developed for HEP applications. Decades of\n\nR&D have made CMOS-based detector systems easy and cheap to manufacture and sensor can\n\nbe integrated into a single chip for easier assembly. Additionally, radiation damage in CMOS is\n\nwell under",
+        "score": -2.3135930445459154,
+        "dense_score": 0.43028879165649414,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.5679209232330322,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 8310,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "e a promising sensor type for future\nhigh-energy physics (HEP) experiments. This includes\ntracking or vertexing applications at a lepton collider like\nCLIC [1] or FCC-ee [2]. MAPS come with the benefit of\nintegrating the readout electronics and sensitive volume in\nthe same die, which inherently reduces the material budget\nbut also removes the necessity of the costly bump bonding\nprocess. A small collection electrode layout results in a\nsmall input capacitance to the first amplifier stage (order\nof fF), which reduces power consumption for a given signal\ncharge [3]. The TPSCo 65 nm ISC (Image Sensor CMOS)\nprocess [4] is a promising technology in that regard. It\nallows for a higher density of circuit elements than larger\nfeature size processes, and technology demonstrators such\nas APTS [5] or DPTS [6] have qualified it for applications\nin HEP.\nThe hybrid-to-monolithic (H2M) test chip is a MAPS\nproduced in this 65 nm ISC process. It explores complex\nper-pixel pulse processing functionality for time and amplitude measurements, at the cost of a pitch of 35 µm, which\nis 40 % larger than other prototypes developed for High\nEnergy Physics in this process. The architecture of the\nchip is based on readout concepts from earlier hybrid readout ASICs [7, 8, 9], with a clock distributed over the matrix\nand pulse-processing counters in every pixel. This porting\nprocess is interesting to explore, as the large set of hybrid\nchips for HEP applications may speed up the development\nof future monolithic sensors. The design applied a digitalon-top workflow, which is a contemporary strategy for the\ndesign of complex integrated circuitry. The digital logic is\nsynthesized around the analog building blocks such that\ncertain constraints (e.g. on timing) are fulfilled. The design effort included the composition of a compact digital\ncell library comprising a set of standard circuit elements\nwith a footprint reduced by about 25 % compared to the\nstandard cells.\n\nPreliminary results from the characterization and simulation of H2M are presented in [10, 11], respectively. Section 2 of this article describes the H2M chip design, its\nfeatures, and the data acquisition system utilised for the\npresented measurements. Laboratory characterization and\ncalibration are presented in Section 3, while the methodology for test-beam measurements and the resulting performance in the detection of minimum-ionizing particles\n(MIPs) are detailed in Section 4 and Section 5. Section 6\nsummarizes the employed s",
+        "score": -2.5760531508794395,
+        "dense_score": 0.3508954644203186,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.9689486026763916,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3786,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2734694__2312.06501__Silicon_vertex_detector_of_the_Belle_II_experiment.md",
+        "title": "2024__recid_2734694__2312.06501__Silicon_vertex_detector_of_the_Belle_II_experiment",
+        "text": "cked) in a high background run.\n\nparticular, the differences of cluster times are used in filters trained on simulation and applied\n\nwhen creating pairs or triplets of clusters during the track candidate reconstruction. These filters\n\ngreatly reduce the random combinations of clusters when forming a track, and help avoid using\n\nbackground hits for signal tracks. The filters, though, can’t reject _off-time_ real track candidates\n\nfrom beam-backgrounds since their clusters have compatible times. Moreover, at high-luminosity,\n\nthe combinatorics increases significantly because of the higher detector occupancy, and also the\n\nnumber of _off-time_ real tracks increases, consequently these filters are not enough to assure the\n\ntracking performance needed for physics. To reduce the load on the filters, certain pre-selection\n\ncriteria have been developed.\n\nThe _HitTimeSelection_ is applied when pairing clusters from the two sides of the sensors, and it\nuses two simple time cuts: �� _𝑡_ _𝑢,𝑣_ �� _<_ 50 ns and | _𝑡_ _𝑢_ − _𝑡_ _𝑣_ | _<_ 20 ns, where _𝑡_ _𝑢_ ( _𝑣_ ) is the time of u/P (v/N)\nside cluster. With this selection, it is possible to suppress 50% of background hits, while retaining\n\n99% of hit efficiency. Figure 8a compared to Figure 7 shows the effect of this selection on data,\nexcept for the �� _𝑡_ _𝑢,𝑣_ �� _<_ 50 ns cut, indicated by vertical lines on the plot. The _HitTimeSelection_ allows\nsetting the layer 3 occupancy limit for good tracking to around 4.5%, which is almost the same\n\nas the expected one at the target luminosity with the nominal extrapolation (shown in Figure 6),\n\nleaving no safety margin to spare.\n\nAn alternative pre-selection, namely the _ClusterGrouping_, has been recently developed and it is\n\nunder test. This method better exploits the information provided by the cluster times, classifying the\n\nclusters in groups on an event-by-event basis. An example is shown in Figure 9 where contributions\n\nfrom at least two bunch-crossings can be seen. In this method, each cluster is represented by a\n\nnormalised Gaussian centered at the time of the cluster, with a width equal to the cluster-time\n\nresolution (stored in the database). The single event is thus represented as the sum of all the\n\nGaussian associated to the clusters in that event, with the result of _smoothing_ the original cluster\n\ntime histogram. Each group of time-correlated clusters forms a peak in the smoothed distribution;\neach peak _𝑗_ is identified and fitted with a Gaussian with a",
+        "score": -2.698481016471738,
+        "dense_score": 0.43833357095718384,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.160336494445801,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1986,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "lthough the efficiency can be kept\nhigher for the same output rate by using lepton identification criteria to allow\ndisplacement- or _p_ T -based criteria to be loosened. Non-displaced (di)leptons are\nparticularly important for spectroscopy studies, exotic searches, and electroweak\nphysics.\n\nBased on these constraints, requirements on the track reconstruction itself can be defined:\n\n HLT1 must reconstruct all tracks in the VELO detector acceptance in order to\naccurately determine the position of primary vertices and calculate the displacement\nof tracks and secondary vertices produced in the decay of long-lived particles;\n\n79 Fake tracks are the result of the pattern recognition algorithms that may reconstruct false trajectories\nfrom random combinations of hits.\n\n144\n\n HLT1 must be able to reconstruct tracks regardless of whether they are displaced\nfrom the PV or not;\n\n HLT1 must be able to reconstruct track momenta at the percent level, in order\nto ensure a fast rise of the turn-on curve of the HLT1 efficiency versus the HLT2\n\n_._\nreconstructed particle momentum (where the resolution is around 0 5%);\n\n the HLT1 reconstruction must provide an accurate and precise covariance matrix of\nthe track measurement closest to the beam line, in order that the turn-on curve of\nHLT1 efficiency versus the HLT2 reconstructed particle displacement remains sharp;\n\n HLT1 must be able to identify tracks as muons or non-muons.\n\nIt is crucial that HLT1 is able to reconstruct tracks above a certain kinematic threshold\n\nwhich depends on the physics in question. Experience from Run 1 and Run 2 shows\nthat a _p_ T threshold of 500 MeV is adequate for most of the beauty and charm physics\nprogramme, although being able to reconstruct tracks down to _p_ T = 200 MeV would be\nhighly beneficial for many areas of charm physics studies. For rare strange hadron decays\nit is important to reconstruct tracks with a _p_ T as low as possible, and a more natural\ncutoff is to require 3 GeV of momentum, which corresponds to the lowest momentum at\nwhich it is possible to identify muons in LHCb.\nWhile there are studies which could benefit from the reconstruction of calorimeter\nquantities (like e.g. energy deposits by photons) in HLT1, this is not considered\nas a mandatory requirement because a good portion of the signal efficiency can be\nachieved using tracks alone. A similar argument applies to electron identification\nor the reconstruction of downstream tracks, specifically _K_ S [0] _[→]_ _[π]_ [+]",
+        "score": -3.3073453002505833,
+        "dense_score": 0.38564589619636536,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.095702171325684,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 168,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7154,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "ws the time residuals between the TelePix2 fast\n\nHit-OR and H2M time stamps. The tail to the left is caused by\ntime-walk of H2M.\n\n5\n\n(b) Time difference between reference trigger and TelePix2 hit-or at a threshold of 16.\n\nFigure 9: The fast Hit-OR of TelePix2.\n\n_ATLAS ITk strips - timing plane mode_\n\nThe ATLAS inner tracker (ITk) [16] is a full silicon detector upgrade of the ATLAS tracking system for the high luminosity phase of the Large Hadron Collider (HL-LHC). To\nkeep the tracking performance in the expected harsh environment and balance the cost, micro-strip modules are used in the\nouter barrel and end-cap layers of ITk, operated in a binary\nreadout mode. The modules are required to have an operating\nthreshold window with hit detection efficiency above 99 % at a\nnoise occupancy below 0.1%. Different types of modules have\nbeen tested in the DESY II test beam facility. Already 1 % of\nfake tracks causes modules to not fulfil this stringent requirement. As the modules are significantly larger than the ADENIUM telescope’s active area, only the track timing feature of\nTelePix2 is used in the analysis. Figure 11 shows the comparison of the measured efficiency with and without TelePix2 as\ntiming plane as a function of the detection threshold of an nonirradiated short strip module. In the low threshold region, an\nimprovement in the determined efficiency of above 1 % is observed, resulting in a significant operating region, that would be\nhidden without the timing capabilities of TelePix2.\n\n_RD50-MPW4 - region of interest trigger and timing mode_\n\nThe _RD50-MPW4_ [17] is an HV-CMOS pixel sensor fabricated in a 150 nm process by _LFoundry_ . It consists of a 64 ×\n64 pixel matrix with a pitch of 62 × 62 µm [2], resulting in an active area of ≈ 4 × 4 mm [2] . The pixels are equipped with a timestamping logic, which allows for 25 ns time binning. The performance was evaluated in a test beam at the DESY II test beam\n\nSS sensor unirradiated\n\n**1.2**\n\n~~**1**~~\n\n**0.8**\n\n**0.6**\n\n**0.4**\n\n**0.2**\n\n**0**\n\n|s2|0 at 24o|C|Col4|Col5|Effici|ency w|ithout t|elepix|\n|---|---|---|---|---|---|---|---|---|\n||||||~~Effici~~<br>Eff =|~~ency w~~<br>0.99|~~ith tele~~|~~pix~~|\n||||||||||\n||||||||||\n||||||||||\n\n**20** **40** **60** **80** **100** **120** **140** **160** **180**\n\n**Threshold [DAC]**\n\n(a) Spatial correlations of H2M with (red) and without (blue) TelePix2 region of interest\ntrigger along x.\n\n(a) Measured module efficiency versus threshold.\n\n(b) Temporal correlations bet",
+        "score": -3.489863793990191,
+        "dense_score": 0.39077773690223694,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.37693977355957,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 573,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2653851__2304.11992__Terzina_on_board_NUSES_A_pathfinder_for_EAS_Cherenkov_Light_Detection_from_space.md",
+        "title": "2023__recid_2653851__2304.11992__Terzina_on_board_NUSES_A_pathfinder_for_EAS_Cherenkov_Light_Detection_from_space",
+        "text": "itor**\n\nFigure 13: The expected aperture for Terzina versus proton energy during the first year of operation.\n\n(forming a cluster). If a cluster is found, the event is validated and the analog to digital conversion is performed,\notherwise the event is discarded.\n\nWe decide to assign the same data rate to the two\ntriggering mechanisms, namely 1/2 of the maximum rate\neach. In particular, considering the aforementioned data\n\nThe camera monitor based on hit-maps for low and high\nthresholds, aims to monitor the average background rate\nin the two parts of the camera: the upper row of 5 arrays+ASICs in the camera plane will be sensitive to the\nEarth region and so to UHE neutrinos, but also to undesired blind occurrences due to storms or city light pollution; the lower part of the camera plane will be sensitive to\nthe limb. Very recent changes in the designing of the readout system opens the possibility to store on the FPGA the\nhit-map after the high-threshold trigger is satisfied. The\nsingle pixel hit-map is less vulnerable, with respect to dou\n\nFigure 14: Signal with NGB and DCR\n\nof sensors of 6.6% and DCR of 77 kHz/mm [2], as expected\nfor NUV-HD-MT.\n\nFor the single pixel trigger, which requires crossing the\nthreshold in a single pixel, the threshold will have to be\nincreased during the lifetime of the mission due to the increasing radiation damage as discussed in Sec. 2. To satisfy the data throughput requirement, the threshold has to\nbe set at the levels of: 9.2 p.e., 11.7 p.e, 13.1 p.e., 14.3 p.e\n(blue horizontal line), correspondingly at BoL, after the\nfirst year, after the second year, at EoL, respectively.\nThe number of possible pixel configurations which\nform a two-pixel cluster (see Fig. 16) in a single ASIC\nof 64 channels is equal to 210 or 2100 in the full camera.\nThe number of all possible two-pixel configurations in a\nsingle ASIC is given by the _n_ − _k_ combination equation:\n\n|Col1|1|\n|---|---|\n||2|\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n\nFigure 15: Single pixel trigger rate as a function of the\nthreshold expressed in p.e. for DCR + NGB values estimated at different times during the mission life. The\nhorizontal blue dashed line corresponds to the maximum\ntrigger rate of (120 Hz). Horizontal blue line corresponds\nto the maximum single pixel trigger rate (120 Hz/640 ∼\n0.18 Hz per pixel). The horizontal red line corresponds\nto 1250 Hz (maximum single pixel rate for configuration\nwith two pixels cluster). The vertical lines shows thresholds for single (blue)",
+        "score": -3.5461241486198025,
+        "dense_score": 0.34919148683547974,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.461243629455566,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1987,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "d\nas a mandatory requirement because a good portion of the signal efficiency can be\nachieved using tracks alone. A similar argument applies to electron identification\nor the reconstruction of downstream tracks, specifically _K_ S [0] _[→]_ _[π]_ [+] _[π]_ _[−]_ [and] _[ Λ][ →]_ _[pπ]_ _[−]_\n\ndecaying outside the VELO. Both would significantly benefit certain areas of the physics\nprogramme but they do not represent a strict requirement for a functioning HLT1.\n\n##### **11.2 Design overview**\n\n**11.2.1** **Hardware design**\n\nAs described in section 10 the centrepiece of LHCb trigger is the full detector readout\nand event building at 30 MHz . [80] In addition to its inherent flexibility, this approach also\nmatches the described physics requirements for HLT1, most notably the requirement that\nall the tracking algorithms must reconstruct the events at 30 MHz . Since the tracking\ndetectors constitute approximately two-thirds of LHCb overall data bandwidth, the cost of\na hardware trigger allowing the other one-third (principally RICH and calorimeters) to be\nread out at a lower rate does not justify the added complexity and reduced flexibility of such\na system. The trigger data flow from detector to offline storage is illustrated in figure 108.\nThe online disk buffer serves two purposes: it stores events selected by HLT1 while\nreal-time alignment and calibrations are being performed, and it allows events selected by\nHLT1 to be buffered for processing between LHC fills. This in turn effectively increases\nthe processing power of the HLT2 computing resources. Simulations of the LHC fill\nstructure [181] result in an optimal buffer size of around 30 PB, which allows around\n\n80 Although the LHC bunch crossing frequency is 40 MHz, the rate of events with some signal visible\ninside the LHCb acceptance ( _reconstructible_ events) is _∼_ 30 MHz.\n\n145\n\nFigure 108: Online data flow. Reproduced with permission from [180].\n\n80 hours of LHC collisions to be buffered at an HLT1 output rate of 1 MHz . The disk\nbuffer architecture is constrained not only by the total size but also by I/O limitations of\nindividual disks, which impose a minimum number of disks in the system.\nBecause the detector is fully read out upfront, there is in principle total freedom to\nchoose the computing architecture with which to process the data; the only constraints\nare the available budget and the capacity (racks and cooling) of the data centre. LHCb\nhas sought to take advantage of this freedom since abo",
+        "score": -3.5897921669310415,
+        "dense_score": 0.3878884017467499,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.5305609703063965,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 169,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5028,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec.md",
+        "title": "2024__recid_2781737__2404.17701__Embedded_FPGA_developments_in_130_nm_and_28_nm_CMOS_for_machine_learning_in_particle_detec",
+        "text": "intervals, frames were continuously sent by the software,\n\nwith the software transmission rate being constrained by the ASIC’s PGP link rate, corresponding\n\nto the ASIC’s clock frequency (e.g., a 250MHz clock resulted in a 250 Mbps link rate). Throughout\n\nall the steps of clock frequency tested, no bit errors were detected.\n\n– 10 –\n\n**5** **Application for Machine Learning-based At-Source Processing**\n\nIn light of the successful eFPGA design and fabrication, scientific applications of the technology\n\ncan be considered. A variety of HEP readout tasks can benefit from reconfigurable logic within an\n\nASIC. For example, silicon pixel detectors detect the passage of charged particles and are commonly\n\nthe first layer of high-energy collider detectors after the beam pipe, making them subject to the\n\nhighest particle fluxes and radiation doses of any subsystem. The new all-silicon ATLAS Inner\n\nTracker (ITk), to be installed in preparation for the HL-LHC, comprises 1.4 billion pixels with sizes\ndown to 250 _𝜇_ m [2], resulting in an overall data rate of O(10) Tb/s [22]. However, the large majority\n\nof this data rate goes to the recording of \"pileup\" particles, which arise not from the hard-scattering\n\nproton-proton collisions, but from soft adjacent collisions that are less likely to contain physics\n\nprocesses of interest.\nFuture detector designs for an _𝑒_ [+] _𝑒_ [−] Higgs factory could benefit from reduction of the data\n\nrate going off the detector to minimize material budget associated to data cabling or mitigate\n\nthe computational power required for trigger decisions. Further benefits of at-source ML-based\n\nprocessing will come to bear for detectors at future 10 TeV parton-center-of-mass “discovery\"\n\nmachines, such as the Future Circular Collider (hh), where data rates are expected to near 1 exabyte\n\nper second with unparalleled radiation doses [23].\n\nThe “smart pixel” collaboration provides a simulated dataset of particles propagated through\n\na futuristic pixel sensor, which can be utilized to study ML-based readout [24]. This dataset\n\ncomprises about 550,000 fitted tracks originating from high-energy pions collected by the Compact\n\nMuon Solenoid (CMS) experiment and propagated through a futuristic pixel detector. This detector\n\nfeatures sensors composed of a 21x13 pixel array with a 50 x 12.5 _𝜇_ m pitch, located at a radius of\n\n30 mm from the beamline within a magnetic field of 3.8 T. Each track is represented as a sequence\n\nof eight deposited charge array",
+        "score": -4.077123907423511,
+        "dense_score": 0.3462986946105957,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.278049468994141,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 1.3341339798644185,
+    "generation_latency_s": 4.302710294723511e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.3341339798644185,
+    "generation_latency_s": 4.302710294723511e-07
+  }
+}

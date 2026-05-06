@@ -1,0 +1,274 @@
+{
+  "benchmark": {
+    "query_id": "neg012",
+    "query_type": "negative",
+    "query": "What is the guaranteed future cost of a full HV-MAPS production wafer?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "HV-MAPS"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the guaranteed future cost of a full HV-MAPS production wafer?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8239,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "ts of a comprehensive testing and characterisation campaign, of the MOSS sensor, a novel\nwafer-scale prototype CMOS MAPS sensor, assembled from ten identical sensors using sophisticated stitching techniques. Its design and testing represented\nkey milestones in the development of stitched MAPS and the prototyping of\nfuture ALICE ITS3 sensors, while also generating valuable know-how that will\nbe reflected in the subsequent sensor design iteration. The sensor is fully functional, and demonstrates the viability of implementing the stitching technique\nas a means to manufacture sensing devices of different size with one modular\ndesign, in line with the integration requirements of the ITS3 half-layers. Complex power distribution with multiple power nets, metal interconnects across\nstitching boundaries, and transmission of signals on-sensor over about 25 cm\nhave been validated.\n\nA total of 82 full MOSS sensors were tested systematically in the lab, each\none containing 10 Repeated Sensor Units, amounting to 6560 powered and controlled pixel matrices, and over half a billion individually characterised pixels.\nThe testing of the ER1 lot identified an excess rate of faults in the sensor power\ngrid. A detailed failure analysis was conducted and enabled the identification of\nmanufacturing imperfections associated with the metal stack, newly introduced\nby the foundry to meet the specific requirements of the project. Feedback was\nshared with the foundry, enabling the identification of the root cause and the implementation of corrective measures that are expected to drastically reduce the\nlikelihood of these defects in future productions with the same metal stack [27].\nDespite these faults, the qualification demonstrated correct operation and\nacceptable performance of the individual building blocks and a resilient design,\nwith a comprehensive functional yield exceeding 98%. Extrapolations based\non the systematic functional qualification of the MOSS sensors show a yield\nsufficient to construct ITS3 half-layers from single wafers. The results of the\nsystematic laboratory analysis did not find significant variations of characteristics inside a wafer and from wafer-to-wafer, once the faults related to the\nmetal-stack issue were excluded. Significantly, no change of the functional failure rates was observed in relation to the different layout densities prototyped\nin the two halves of the MOSS sensor, providing experimental evidence of the\npossibility to relax some of the conser",
+        "score": -2.425203856580398,
+        "dense_score": 0.31750786304473877,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.737417697906494,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 47,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8236,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "vide\nenough sensors to assemble the full ITS3 barrel, given that two half-layers per\nlayer size are needed and three for each one are found. In the first scenario,\nwhich excludes only region failures attributed to the readout architecture, one\nwould have to tolerate 5% of region failures to be able to obtain two half-layers\nof each type from the given twelve wafers. However, increasing the initial number of wafers would likely allow assembly of a full ITS3 barrel even under the\nmost stringent conditions of less than 2% region failures.\n\n**6. Single-Event Effect measurements**\n\nThe collisions in the LHC create a radiation environment with a flux of particles that can generate stochastic Single-Event Effects (SEE), and in particular\nSingle-Event Upset (SEU) and Single-Event Latch-up (SEL) in CMOS circuits.\nThe future ITS3 sensor shall exhibit sufficient robustness against SEU to achieve\nreliable operation under these operating conditions. It shall also have low sensitivity to SEL to prevent potentially destructive radiation-induced over-currents.\nDedicated SEE tests were carried out on the MOSS sensor, which does not implement TMR redundancy techniques, to quantitatively evaluate the impact of\n\n11 The remaining two wafers contained one mechanically broken sensor each, and thus were\nexcluded from this exercise.\n\n36\n\n|Col1|Col2|\n|---|---|\n|||\n\n|Col1|Col2|\n|---|---|\n|||\n\n|Excluding failures due to readout architecture<br>Excluding failures due to readout architecture and powering<br>L1 L2 L1 L2<br>Maximum number of HLs H H H H|Col2|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n|HL0<br>HL0<br>HL1<br>HL2<br>~~from a set of 12 wafers~~|HL0|HL0|||||\n|HL0<br>HL0<br>HL1<br>HL2<br>~~from a set of 12 wafers~~|HL0||||||\n|~~2%~~<br>~~3%~~|~~2%~~<br>~~3%~~|~~5%~~|~~5%~~|~~5%~~|~~5%~~|~~5%~~|\n\nFigure 34: The number of ITS3 half-layers (HL) that can be successfully assembled with\nMOSS sensors from a set of 12 wafers [11] under different assumptions on the allowed region\nfailure rate and the types of excluded failures. Both scenarios are expected to be compatible\nwith the final production.\n\nSingle Event Effects and to assess the potential need for mitigation measures in\nthe final ITS3 sensor design.\nSensitivity to SEU was measured by programming specific data patterns\ninto sensor registers and recording bit flips as a function of irradiation type,\nflux (typically hadrons), and exposure time. SEU characterisation tests were\nperformed at the NPI cyclotron in Řež, usi",
+        "score": -2.9424637260207214,
+        "dense_score": 0.3211436867713928,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.533354759216309,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 44,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 1915,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "ed by the RICH collaboration and quality-assured to verify the requested technical\nspecifications, among which are a gain larger than 10 [6] and a dark-count rate less than\n_<_ 2 _._ 5 kHz _/_ cm [2] . A full set of quality assurance (QA) tests was implemented to qualify the\nwhole MaPMT production. Two of the typical QA parameter scans, the signal amplitude\n\n51 The fill factor is the fraction of active area with respect to the total detector area.\n52 Hamamatsu TM R13742 (1-inch) and R13743 (2-inch). The R13742 and R13743 models are custom\nvariants of the commercial models R11265 and R12699, respectively. The difference between the custom\nand commercial units stands on the requested technical specifications described in the text.\n\n78\n\nFigure 58: Left: the MaPMTs selected for the upgraded RICH detectors with the 2-inch model\non the left and the 1-inch model on the right. Right: scheme of the internal structure of the\nMaPMT. Reproduced from [111]. CC BY 4.0.\n\nas a function of the HV and the quantum efficiency (QE) as a function of the wavelength,\nare shown in figure 59.\n\nFigure 59: Left: typical signal amplitude spectra for a pixel as a function of the HV value.\nReprinted from [112], Copyright (2023), with permission from Elsevier. Right: QE curves for a\nbatch of 1-inch MaPMTs from the production: the ultra bi-alkali photocathode allows to reach\nexcellent QE values.\n\n**7.1.2** **Front-end electronics and elementary cell**\n\nThe average hit rate in the high occupancy regions of RICH1 can exceed 10 [7] hits/s per pixel\non average. Furthermore, the estimated total integrated dose over the detector lifetime,\nin the regions closer to the beam pipe is estimated to be about 2 kGy for RICH1 [113].\nRadiation-hard fast readout electronics is therefore needed, with low power consumption\nto minimise heating. This motivated the design of a custom 8-channel front-end ASIC\nnamed CLARO [114]. CLARO, shown in figure 60, is designed in 350 nm CMOS Austria\nMicro Systems (AMS) technology, with the exception of configuration registers as will be\ndiscussed in section 7.1.5.\n\n79\n\nFigure 60: Left: CLARO ASIC with its packaging. Reproduced from [114]. © 2017 IOP\nPublishing Ltd and Sissa Medialab. All rights reserved. Right: block schematic of a CLARO\nchannel. The purpose of the dummy amplifier is to give each channel a differential structure,\nimproving the power supply rejection ratio and allowing DC-coupled input to the discriminator.\nReproduced from [115]. © 2022 IOP Publishing Ltd",
+        "score": -3.668866438250388,
+        "dense_score": 0.3772179186344147,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.65309476852417,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 97,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 8235,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "afers.\n\n_5.8. Discussion on the yield of ITS3 layers_\n\nThe series-testing data can be used to estimate the counts of ITS3 half-layers\nthat could be produced in the hypothetical scenario of building them with MOSS\nsensors and with the yield observed within the ER1 engineering batch. Each\nhalf-layer can be produced from a single wafer by dicing a set of adjacent MOSS\nsensors that meet the acceptance criteria. The ITS3 half-layers for Layer 0, 1,\n\n35\n\nand 2 would need respectively four, five or six adjacent functional MOSS sensors\non one wafer. Each ER1 wafer contains six adjacent sensors (see Sec. 2), allowing\nmultiple possible mappings of half-layers to wafers. The ITS3 requirements\ntolerate loosing up to 2% of the sensitive area [8] due to local defects, which for\nMOSS corresponds to 2% region failures. The following estimates of acceptable\nhalf-layer counts are based on 12 fully tested [11] MOSS wafers, a half of a typical\nproduction lot, limiting the total number of possible combinations for each halflayer. Priority was given to achieving equal numbers of different half-layers\nrather than favouring a particular layer size. Finally, it should be emphasized\nthat these estimates are based on an exploratory prototype sensor, which still\nlacks features needed for ITS3, such as high-speed serialisers and the ability to\npower the entire sensor exclusively from the end-caps.\nFigure 34 shows the number of ITS3 half-layers that can be successfully\nassembled from a set of twelve fully analysed wafers, under different acceptance assumptions. Two scenarios are presented, following the reasoning in the\nprevious section: (a) excluding only region failures attributed to the readout\narchitecture, and (b) excluding both readout architecture and powering-related\nfailures. The latter condition is less restrictive for sensor quality as it assumes\nthat manufacturing imperfections associated with the metal stack can be fully\nmitigated in the future productions, which is yet to be demonstrated. Three\ncases are considered, i) region failures amount to less than 2%, ii) less than 3%,\nand iii) less than 5%. If 2% of failures are tolerated than the scenario which\nexcludes both readout architecture and powering-related failures would provide\nenough sensors to assemble the full ITS3 barrel, given that two half-layers per\nlayer size are needed and three for each one are found. In the first scenario,\nwhich excludes only region failures attributed to the readout architecture, one\nwould",
+        "score": -3.994542771891544,
+        "dense_score": 0.3354376256465912,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.152535438537598,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 43,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6872,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal.md",
+        "title": "2025__recid_2858064__2412.07606__Testbeam_characterization_of_a_SiGe_BiCMOS_monolithic_silicon_pixel_detector_with_internal",
+        "text": "* **4**\n\n4.1 Experimental Setup 4\n\n4.2 Data Samples 5\n\n4.3 Detection Efficiency 7\n\n4.4 Time Resolution 10\n\n**5** **Conclusions** **14**\n\n**1** **Introduction**\n\nMonolithic Active Pixel Sensors (MAPS [1]), which integrate the sensor and electronics within\n\nthe same CMOS substrate, are becoming more and more common in particle physics. Despite\n\ntheir relatively complex design phase, MAPS provide all the benefits of standard CMOS processing\n\nwhile avoiding the production challenges and high costs associated with bump-bonded hybrid pixel\n\nsensors. A large surface of MAPS was recently installed in the ALICE experiment at the LHC [2]\n\nand is operated successfully.\n\nIn the framework of the MONOLITH H2020 ERC Advanced project [3], this group is de\nveloping very fast MAPS. Prototypes were produced using the commercial SG13G2 130 nm\n\nsilicon-germanium (SiGe) BiCMOS process [4] by IHP Microelectronics, which includes a very\n\nfast and low-noise SiGe Heterojunction Bipolar Transistor (HBT) with a peak transition frequency\n\n_𝑓_ _𝑡_ = 350 GHz. In a testbeam experiment with minimum-ionizing particles (MIPs), a prototype\n\nwith a standard PN junction sensor without an internal gain layer produced with this technology\n\nprovided full efficiency and time resolution of 20 ps [5]. Several of these prototypes were irradiated\nwith 70 MeV protons up to a fluence 1 × 10 [16] n eq /cm [2] and tested with radioactive sources [6] and\nin a testbeam experiment with MIPs [7]. The SiGe HBT front-end electronics not only survived\n\nsuch large proton fluence but was still able to recover full efficiency and provide a time resolution\n\nof 45 ps with only a modest increase in sensor bias voltage. This performance underscores SiGe\n\nHBT radiation tolerance, meeting the stringent requirements of the challenging High-Luminosity\n\nLHC environment.\n\nIn parallel to the development of front-end electronics, the MONOLITH ERC project is also\n\nexploiting the picosecond avalanche detector (PicoAD) [8], a novel detector that implements a\n\ncontinuous deep gain layer to boost the timing performance. A proof-of-concept monolithic PicoAD\n\n– 1 –\n\nwas produced in 2022 using the photolithography masks of a prototype able to provide 36 ps [9]\n\nwith a sensor without internal gain layer. The proof-of-concept PicoAD was operated at a gain of\n\napproximately 20 [10], obtaining full efficiency and an average time resolution of 17 ps [11]. The\n\ntime resolution was found to depend strongly on the hit position on the pixel ar",
+        "score": -4.227458360460069,
+        "dense_score": 0.37490135431289673,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.5123291015625,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 688,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+        "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+        "text": "e 0.2, 0.5, 1, 3, 5, 6, 8, 10 and 20 a.u.\n\nThe most promising devices belong to wafer W7 and quadrant Q2 with a carbon dose of 0.5 a.u.\nThe acceptor removal coefficient for these devices (W7Q2) is 1.14×10 [−][16] cm [2] . The breakdown\nvoltage, V _𝑏𝑑_, is around 170 V. Before irradiation V _𝑔𝑙_ is 24.4 V.\n\n**2.3** **USTC-IME devices**\n\nThe production run for the USTC-IME devices considered in this paper is called version 2.1 [19],\n\nyielding 8-inch wafers with a 50 µm epitaxial layer from which 4 out of 5 are carbonated. The\n\ngain layer dose is medium and the energy is low. The implantation is boron and the carbon dose is\n\n1 a.u. The wafers include small arrays. The average breakdown voltage is about 190 V, the V _𝑏𝑑_\n\nis in the range of 150 to 240 V. An under bump metallization was deposited on the wafers and\n\nafterwards were diced. This version aimed to lower the V _𝑏𝑑_ to enhance the irradiation hardness\n\nfurther and improve and evaluate the yield of the 15×15 arrays. Devices from wafer W17 show\n\nimpressive radiation hardness. The acceptor removal coefficient for these devices (W17) is about\n1.23×10 [−][16] cm [2] .\n\nTable 2 summarizes the different properties of the tested sensors in terms of V _𝑔𝑙_ 0, diffusion\nscheme and acceptor removal coefficient.\n\n**3** **Test beam set-up**\n\nOne HGTD beam test campaign was conducted at DESY [20] on beamline 24 using a 5 GeV electron\n\nbeam followed by a campaign at the CERN SPS [21] H6A line using a high-momentum 120 GeV\n\n– 4 –\n\n**Table 2** : Summary of properties for FBK, USTC-IME and IHEP-IME LGAD sensors studied in\n\nthe 2021 and 2022 beam test periods.\n\n|Device name|V 𝑔𝑙0 [V]|Diffusion|c [cm2]|\n|---|---|---|---|\n|FBK-1.5/2.5|50|H|1_._73 × 10~~−16~~|\n|USTC-1.5/2.5|27|L|1_._23 × 10~~−16~~|\n|IHEP-1.5/2.5|25|CHBL|1_._14 × 10~~−16~~|\n\npion beam. The beam profile size was about 2 × 2 cm [2] in both cases. The set-up used at DESY was\n\nidentical to the set-up described in detail in [11].\n\nThe LGADs were mounted on custom readout boards [22] with on-board and external amplific\nation stages to enhance their signal. The position of the devices under test (DUTs) was coherently\n\ncontrolled by a micrometric _𝑥_ − _𝑦_ motor stage in the plane perpendicular to the beam axis ( _𝑧_\n\ndirection).\n\nThe set-up included a beam telescope in which six planes were used to track the incident\n\ncharged particles. The telescope’s role was to provide the position of the incoming particles in the\n\nframe of each DUT to perform efficiency measur",
+        "score": -4.286705448316492,
+        "dense_score": 0.3078572750091553,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.6007843017578125,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 377,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee.md",
+        "title": "2023__recid_2646315__2303.15319__Automated_visual_inspection_of_CMS_HGCAL_silicon_sensor_surface_using_an_ensemble_of_a_dee",
+        "text": "rs\ninvolved a visual inspection (VI) in addition to quantification of several electrical\nproperties [4]. Similarly, a major part of the QC of the HGCAL sensors is the electrical\n\n2\n\n**Figure 1.** (left) An HGCAL silicon sensor wafer, with a pad zoomed in. The diameter\nof the sensor is 8”. (right) An example of a scan map.\n\ncharacterization of the sensors, during which the sensors are biased up to 1000 V [5].\nDefects and dust on a sensor surface can potentially lead to an electrical failure of the\nsensor. Examples of a typical defect, a scratch, and a dust particle are shown in figure 2.\nGiven that these defects are rare and unwanted, they are referred to as anomalies. The\nanomalies can occur during manufacturing, packaging, delivery, or associated handling\nof the sensors. In an effort to prevent failures, the sensor surface is visually inspected\n\nis presented in the context of HGCAL sensor QC, the same approach could be applied\nto similar use cases of automating the VI of images.\n\n3\n\nThe PSA proposed in this work detects anomalous scan images via an ensemble\nof a deep convolutional autoencoder (AE) and a deep convolutional classifier neural\nnetwork. The AE acts on each scan image, and the classifier acts on patches of the\nimage, allowing for localization of anomalous areas (annotation). The PSA has been\ndeployed in a clean room at CERN, and data gathered in production are used to evaluate\nthe performance of the anomaly detection. The performance is mainly measured using\ntwo metrics: First, the False Negative Rate (FNR), defined as\n\nFalse Negative\nFNR = (1)\nFalse Negative + True Positive\n\nshould be minimized for a reliable PSA. Second, a relatively large False Positive Rate\n(FPR), defined as\n\nFalse Positive\nFPR = (2)\nFalse Positive + True Negative\n\nis allowed, but an upper limit of 10% is set to sufficiently automate the VI.\nThis paper is structured as follows. The data acquisition and characteristics are\ndescribed in section 2. An introduction to automated VI is given in section 3, followed\nby a description of the proposed architecture and the model training process in section\n4. The results of the deployment at CERN are presented in section 5. In section 6,\nthe efficiency and causes of incorrect predictions are discussed, and the proposal for\ncontinuous improvement of the anomaly detection capabilities is presented. Finally,\nconclusions are provided in section 7.\n\n**2. Setup and data set**\n\nA custom semi-automated VI system has been implemented in the cle",
+        "score": -4.729486265949819,
+        "dense_score": 0.3142493963241577,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.282321929931641,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6676,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments.md",
+        "title": "2025__recid_2838612__2410.06417__A_Multichannel_Silicon_Package_for_Large-Scale_Skipper-CCD_Experiments",
+        "text": "tical steps in optimizing the design\nand recipe for full-scale OSCURA production. Although we\ntested various fabrication and design iterations using different\nsubstrate types, metals, and SiO 2 layers, we omitted the results\nsince the outcomes did not significantly impact the final\ndesign and recipes. For completeness, Table II summarizes\nthe main wafer fabrication runs, highlighting their distinct\ncharacteristics in terms of fabrication process and design. Stars\ndenote fully assembled and tested wafers, while we indicate\nthe wafers explicitly reported in this work by bold letters,\nspecifically, in section V, we present results for Fabrication id.\n1 and 3, in section VI for fabrication id. 3, and in section VII\nfor fabrication ids. 8 and 10. It took about five iterations\nto achieve the first working N-type wafer (id. 1), resulting\nin a ∼20% yield, and two attempts to produce the first Ptype wafer (id. 3), with a ∼50% yield. By the end of the\ndevelopment process, the yield for the final six wafers (ids. 5\n\nIEEE SENSORS JOURNAL, VOL. XX, NO. XX, XXXX 2024 9\n\n4\n\n3\n\n2\n\n1\n\n0\n\n0 200 400 600 800 1000 1200 1400\nANSAMP\n\n1\n\n10 ~~1~~\n\n10 2\n\n10 3\n\nFig. 14. (Left) Final multi-chip module design fabricated on a intrinsic silicon\nsubstrate. The new design includes the length matching of the video output\ntraces, a ground fill, and several markers and features for fabrication and\nassembly purposes. (Right) Same module after assembly with CCDs and\nflex cables attached.\n\nmaterials and processes similar to those used for CCDs, paired\nwith analogous background mitigation strategies to address\nchallenges such as radon plate-out [24] and cosmogenic activation [25]. In this framework, meeting the background\nrequirements for the multi-chip modules builds on the ongoing\nefforts to achieve the stringent fabrication standards established\nfor the CCDs. Although no dedicated high-sensitivity study\nhas yet been performed to assess the radiogenic background of\nthe silicon interconnect, multiple measurements of OSCURA\nCCDs conducted at a shallow underground facility have not\nindicated any radiogenic concerns [15]. Furthermore, tests on\na silicon interconnect fabricated with similar materials and\n\nprocesses have shown that the package does not contribute to\nan increase in dark current [26], [27].\n\nVIII. S UMMARY\n\nIn this work, we first presented the design, production,\nassembly, and testing of a novel silicon-based package for\nmulti-kilogram skipper-CCD detectors, a.k.a. multi-chip modules",
+        "score": -4.775883073517771,
+        "dense_score": 0.35541707277297974,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.355670928955078,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 687,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t.md",
+        "title": "2023__recid_2656931__2303.07728__Performance_in_beam_tests_of_carbon-enriched_irradiated_Low_Gain_Avalanche_Detectors_for_t",
+        "text": "2 µm\n\nand the active thickness in most of the wafers is 45 µm. In particular, with respect to the previous\n\nproduction run UFSD3, this one has an optimization of the carbon level and a different array inter\npad gap. Devices in W19 have a thinner bulk for a better time resolution and a combination of deep\n\ngain layer and carbon implantation. Different boron doses are considered: 0.70, 0.74, 0.78 (W19),\n\n0.94 and 0.98 (W7) in arbitrary units (a.u.). as well as carbon doses: 0.4, 0.6 (W19), 0.8 and 1 (W7)\n\nin a.u. Different diffusion cycles are used, in particular, low (W7) and high (W19) implantation\n\nenergies. The units could not be made available due to non-disclosure agreement and are not the\n\n– 3 –\n\nsame for all the producers mentioned in this paper.\n\nThe combination of deep gain layer, high doping and carbon implantation shows exceptional\n\nperformance for the devices from wafer W19 compared with those from wafer W7 (shallow gain\n\nlayer, carbon, same type as FBK old production UFSD3, 55 µm active thickness). W19 shows\n\nimproved behavior: lower voltage for a similar collected charge, better time resolution and lower\n\npower dissipation. The carbon dose for devices in W19 is 0.6 a.u. The acceptor removal mechanism\n\nreduces the effective doping concentration in the gain layer and the sensor performance can be\n\npartially recovered by increasing the applied bias voltage after irradiation. The gain layer depletion\nvoltage, V _𝑔𝑙_, varies with the fluence as given by:\n\n_𝑉_ _𝑔𝑙_ = _𝑉_ _𝑔𝑙_ 0 × _𝑒𝑥𝑝_ (− _𝑐_ × _𝜙_ _𝑒𝑞_ ) (2.1)\n\nwhere c is the acceptor removal coefficient. For these devices (W19), this coefficient is 1 _._ 73 ×\n10 [−][16] cm [2] [17].\n\n**2.2** **IHEP-IME devices**\n\nThe production run for the IHEP-IME devices considered in this paper is called version 2 [18],\n\nyielding silicon wafers with a 50 µm-thick high-resistivity epitaxial layer, from which 3 out of 8\n\nare carbonated. The wafers were split into four quadrants. The implantation and diffusion scheme\n\nis carbon implantation and diffusion plus boron implantation and diffusion (CHBL) for wafers W7\n\nand W8, and CLBL for wafer W4. The carbon doses differed from quadrant to quadrant in the wafer\n\nand the values that were considered in the full production are 0.2, 0.5, 1, 3, 5, 6, 8, 10 and 20 a.u.\n\nThe most promising devices belong to wafer W7 and quadrant Q2 with a carbon dose of 0.5 a.u.\nThe acceptor removal coefficient for these devices (W7Q2) is 1.14×10 [−][16] cm [2] . The breakdown\nvoltage, V _𝑏𝑑",
+        "score": -4.836360865169101,
+        "dense_score": 0.3394250273704529,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.448033809661865,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5096,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors.md",
+        "title": "2024__recid_2785649__2405.08667__Characterisation_and_simulation_of_stitched_CMOS_strip_sensors",
+        "text": "ith the active area of tracking detectors constantly increasing, the high-energy physics community faces a\nchallenge in scaling production volumes and managing\ncosts to cover large-area detectors with high-resolution,\nradiation-hard silicon sensors. Based on this challenge,\nsensors for particle tracking are only produced by a few\nfoundries, creating the risk of a single-vendor scenario.\nThis study aims to tackle this challenge by exploring\nstrip sensors based on CMOS imaging technology. As\nCMOS imaging technology is widely used for industrial and commercial silicon sensor production, it can\noffer access to fast- and large-scale production by vari\n\n∗ Corresponding author.\n_Email address:_ `naomi.davis@desy.de` (Naomi Davis)\n\nous vendors. In addition, one can profit from the larger\nwafer size available in commercial processes.\nOn the other hand, the maximum reticle size in the\norder of O(1 cm [2] ) in industrial sensor production poses\na remaining challenge for fabricating different sensor\nformats to achieve large-area coverage in tracking detectors. To circumvent this issue, a sensor is divided\ninto individual parts matching the maximum reticle size,\nwhich are illuminated separately on the wafer with a\nslight overlap. This technique is referred to as _stitch-_\n_ing_ [1] in CMOS circuit production.\n\n**2. CMOS Strip Sensors**\n\nThe CMOS Strips project is investigating stitched,\npassive CMOS strip sensors fabricated by LFoundry [2]\nin a 150 nm technology. The sensors are produced on\na p-type, 8-inch, Float-Zone wafer with a resistivity between 3 kΩ and 5 kΩ. In addition, the wafer underwent\n\n_Preprint submitted to Nuclear Instruments and Methods in Physics Research A_ _May 15, 2024_\n\n(a) Regular design\n\n(b) Low Dose design\n\nFigure 1: Schematic layout of the Regular (top) and Low Dose 30/55\n(bottom) strip implant designs [3].\n\nan additional production step at IZM Berlin, where it\nwas thinned down to a thickness of (150 ± 10) µm from\nthe backside and a laser-annealed p [+] layer with a closing\nmetallisation layer was implemented as backside implant. The stitching technique enables the realisation of\na long (4.1 cm) and a short (2.1 cm) strip sensor format.\n\nThe strip implant design varies in doping concentration and width to study various electric field configurations. Figure 1 depicts the Regular and the two\nLow Dose design layouts. For the Regular design, the\nstrip implant consists of a highly doped n [+] layer with a\nlesser doped n-implant (Nwell) below and ha",
+        "score": -5.113202877742489,
+        "dense_score": 0.32136964797973633,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.873032569885254,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.812404579948634,
+    "generation_latency_s": 3.3993273973464966e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.812404579948634,
+    "generation_latency_s": 3.3993273973464966e-07
+  }
+}

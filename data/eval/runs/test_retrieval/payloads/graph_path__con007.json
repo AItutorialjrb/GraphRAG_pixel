@@ -1,0 +1,454 @@
+{
+  "benchmark": {
+    "query_id": "con007",
+    "query_type": "conceptual",
+    "query": "Why can dense retrieval fail on detector terminology?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "can",
+      "dense",
+      "retrieval"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why can dense retrieval fail on detector terminology?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5241,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature.md",
+        "title": "2024__recid_2794363__2406.02249__A_Novel_Measurement_Method_for_SiPM_External_Crosstalk_Probability_at_Low_Temperature",
+        "text": "em [6]–[8]. (1) If the secondary photon is absorbed by\nthe neighboring Single Photon Avalanche Diode (SPAD) and\ntriggers an additional avalanche within the same SiPM, it\nis referred to as internal optical crosstalk (iCT) [9]. More\nspecifically, iCT can further be divided into direct crosstalk\nand delayed crosstalk based on whether the electron is produced in the depleted region or in the undepleted region.\nMore information can be found in [10]. (2) Secondary photons\ncan pass through the SiPM window, escape, and be detected\nby external photo-sensors, such as another SiPM facing the\nfirst one, known as external crosstalk (eCT) [11]. (3)The final\ncorrelated effect is optically-induced afterpulsing (AP) [12],\nresulting from electrons in the undepleted region within the\nsame cell [10]. As the result, optical-induced AP usually appears behind the primary pulse after hundreds of nanoseconds\nto microseconds because of the recharge time of SPADs. As a\nresult, optically-induced AP typically occurs after the primary\npulse, ranging from hundreds of nanoseconds to microseconds,\ndue to the recharge time of SPADs\nThese correlated effects could significantly impact experiments aiming to achieve a large photon-sensitive area using\nSiPM readout, as detailed in the Darkside and nEXO references [13] [14]. First of all, the light yield of the detector\nis probably overestimated since single incident photons would\ngenerate a signal with the integral area larger than 1 PE (photoelectron), because of the presence of iCT, eCT or AP. To\nestimate the corrected light yield, the knowledge of the probability of the three correlated effects is important. In addition\nto light yield overestimation, other negative effects need to\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 2\n\nbe considered. For instance, the presence of AP can impede\nthe n/ _γ_ pulse shape discrimination in the background rejection\nanalysis when using the prompt fraction method. Moreover, a\nhigh percentage of iCT and eCT would degrade the energy\nresolution. Additionally, eCT also generates unavoidable coincidental background in low threshold experiments, as eCT\nsignals always occur simultaneously.\nOverall, for any experiment employing large area SiPM\narrays, the understanding of SiPM correlated noises is mandatory. The iCT probability is calculated by _P_ _iCT_ = _N_ _[N]_ (0 [(][1] _._ _[.]_ 5 [5] _P E_ _[ P E]_ ) [)]\n\n[15], where _N_ (1 _._ 5 _PE_ ) is the dark count rate (DCR) with\n1.5 PE threshold",
+        "score": -5.22920369555723,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9638118214716528,
+        "rerank_score": -8.159103393554688,
+        "matched_nodes": [
+          "In",
+          "On",
+          "To",
+          "NO",
+          "The",
+          "For",
+          "VOL",
+          "IEEE",
+          "Transactions",
+          "SCIENCE",
+          "XX",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8388,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom.md",
+        "title": "2026__recid_3105105__2601.09629__Characterization_of_Silicon-Membrane_TES_Microcalorimeters_for_Large-Format_X-Ray_Spectrom",
+        "text": ". Amorphous silica is known to exhibit\nanomalous excess heat capacity below 1 K due to two-level\nsystems [29], [30]. We plan to investigate this in the near\nterm by selectively removing the oxide under the absorber.\nUltimately, the implementation of overhanging absorbers [31]\nwill minimize the area of the membrane in contact with the\n\ndetectors and significantly reduce this contribution.\n\n_D. Nonlinearity and gain_\n\nWe used 2 _._ 4 eV photons produced by the pulsed laser to\nestablish the detector’s gain curve in the _<_ 500 eV range and\nmeasure the achieved energy resolution in the small signal\nlimit and at the carbon K-edge. The laser intensity was varied\nby adjusting the pulse-width (kept under 100 ns) and by using\na variable optical attenuator. Flood illumination from the laser\nproduces Poisson-distributed photon combs on each pixel,\n\nIEEE TRANSACTIONS ON APPLIED SUPERCONDUCTIVITY, VOL. XX, NO. XX, MONTH 202X 6\n\nTABLE I\n\nP ARAMETERS FOR THE ELECTROTHERMAL MODEL FIT SHOWN IN F IG . 8.\n\nParameter Value\n\n_Fixed Parameters_\n_R_ shunt 250 µΩ\n_R_ 0 470 µΩ\n_L_ 120 nH\n_TG_ 0TES _,_ bath 93 pW53 mK _/_ K\n_T_ bath 21 mK\n_S_ I _,_ SQUID 20 pA _/√_ Hz\n\n_E_ init 2 _._ 4 eV\n\n_Fit Parameters_\n_α_ I 1365 _±_ 27\n_β_ I 64 _±_ 1\n_C_ TES 161 _±_ 2 fJ/K\n_C_ hanging 52 _±_ 1 fJ/K\n_G_ TES _,_ hanging 655 _±_ 15 pW/K\n_M_ 2 _._ 2 _±_ 0 _._ 4\n\nvisible in the pulse-height histograms shown for a single pixel\nin Fig. 9. We fit each comb with a sum of Gaussians to\nprecisely determine the centroid of each multi-photon peak.\nPlotting these centroids against the known incident energies,\n_E_ _n_ = _nE_ _γ_, defines the detector’s gain curve (Fig. 10).\nThis gain curve exhibits significant nonlinearity (about 27%\nat carbon K-edge), which we initially model using a 7 [th] -order\npolynomial. While this provides a good global fit, the residuals\nshow a step-like structure, consistent with thermal crosstalk.\nDuring flood illumination, photons absorbed by neighboring\npixels generate heat that diffuses to the target pixel, slightly\nincreasing its pulse height. This manifests in Fig. 10(a) as\noffsets between photon combs of equal energy but different\nillumination levels (e.g., between the purple and red points).\nThe crosstalk energy shift, _δE_ _n_, is proportional to the average\nnumber of absorbed laser photons _⟨n⟩_ [32]. Therefore, we\nmodel the pulse height as a polynomial function (order _m_ ) of\nan effective energy:\n\nFig. 8. Combined pulse and noise fit for Pixel 6 at 7% _R_ _n_ . The pulse",
+        "score": -5.653398980576684,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8685162846803379,
+        "rerank_score": -8.800422668457031,
+        "matched_nodes": [
+          "In",
+          "On",
+          "NO",
+          "The",
+          "We",
+          "For",
+          "VOL",
+          "IEEE",
+          "Transactions",
+          "XX"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6006,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2765150__2403.02668__Material_Properties_of_Popular_Radiation_Detection_Scintillator_Crystals_for_Optical_Physi.md",
+        "title": "2025__recid_2765150__2403.02668__Material_Properties_of_Popular_Radiation_Detection_Scintillator_Crystals_for_Optical_Physi",
+        "text": "nted in the simulation platform\nare displayed in Table (II) with refractive index, reflectivity,\nand absorption length presented in Figs. (8c) and (8d) in\nthe appendix. SiPM-3000 read-out electronics, detector housing, detector holder, radioactive check source, table, and lab\nenvironment (walls and floor) were included in the Geant4\napplication. The description, dimensions, and materials for\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2024 3\n\nTABLE III\n\nC OMPONENT, DIMENSIONS, AND MATERIAL PROPERTIES OF THE\nS I PM-3000 AND SURROUNDING GEOMETRIES IMPLEMENTED IN THE\nG EANT 4 APPLICATION . M ATERIAL DENSITY IS REPRESENTED BY _ρ_ . T HE\nEPOXY WAS COMPOSED OF HCO WITH A DENSITY OF 1.2 G _/_ CM [3] .\n\nFig. 1. Experimental (a) and simulated (b) SiPM-based scintillation detector\nplatforms. With reference to the simulation platform geometries outlined in\nTable (III), the 15 components are: (1) detector cover, (2) radioactive check\nsource, (3) scintillator, (4) lip, (5) optical pad, (6) SiPM array, (7) SiPM array\nPCB, (8) fixture, (9) internal PCBs, (10) gasket, (11) join, (12) detector holder\nbase, (13) bulk, (14) plug and pin connectors, and (15) detector holder legs.\n\neach geometry are summarised in Table (III). In the simulation\nplatform, the centre of the first and second lab walls were\npositioned at ( _x_ =1710 mm, _y_ = _−_ 1205 mm) and ( _−_ 1980\nmm, _−_ 430 mm) relative to the centre of the table. Other\nlab components, e.g., the remaining walls, were disregarded\nas their contribution of Compton scattering was assumed to\nbe negligible as they were further away from the detector.\nSurrounding environmental air was modelled using the builtin Geant4 material G4 AIR [31]. An OpenGL wire trace\nvisualisation of the detector, detector holder, and radioactive\ncheck source implemented in Geant4 is shown in Fig. (1b).\n\n_C. Geant4 Application Physics and Optical Surface Modelling_\n\nThe Geant4 Option4 EM physics list\n(G4EmStandardPhysics option4) was used to model the\ngamma ray, X-ray, and electron transport in the simulation\nplatform [5, 31]. The settings for radioactive decay, atomic\nde-excitation, PIXE, auger electrons, and fluorescence were\nenabled. Moreover, the particle production length cut was\nset to 100 _µ_ m as it was the smallest dimension in the\nsimulation platform. Finally, the low energy cut off was\nfixed at 100 eV to match the low energy limit of the Geant4\nphysics model [32]. Optical photon absorption, reflection,\nand refraction at optica",
+        "score": -5.68697292628363,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7587454764776842,
+        "rerank_score": -8.839071273803711,
+        "matched_nodes": [
+          "In",
+          "On",
+          "NO",
+          "The",
+          "VOL",
+          "IEEE",
+          "Transactions",
+          "SCIENCE",
+          "XX",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7061,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2885934__2502.11186__Development_of_Fast_Front-End_Electronics_for_the_Muon_Trigger_Detector_in_the_PSI_muEDM_E.md",
+        "title": "2025__recid_2885934__2502.11186__Development_of_Fast_Front-End_Electronics_for_the_Muon_Trigger_Detector_in_the_PSI_muEDM_E",
+        "text": "n a weakly\nfocusing field created by the weak focusing coil. The activation\nof the kick coils is carefully synchronized with the muon’s\ntransit through the weakly focusing field. Ultimately, the stored\nmuon will decay into a positron, and the decay process\ndepends on the muon’s spin orientation at the time of its\ndecay. The measurement of the EDM signal will conclude by\nevaluating the asymmetry in the rates of upward and downward\npositrons exceeding a specified energy threshold, which varies\nover time.\n\nThe muon trigger detector represents a pivotal element\nof the experiment, composed of two distinct detectors: the\n_gate detector_ and the _aperture detector_ . Both detectors are\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2025 2\n\n**a muon**\n\n**trajectory**\n\n**100 μm** **-thin gate**\n\n**scintillators**\n\nFig. 2: A schematic layout of the electronic circuit responsible for delivering the current pulse to the kick coils is presented.\nThe structure of the muon trigger detector is illustrated in the upper left corner, whereas the arrangement of the kick coils is\ndepicted in the upper right corner.\n\nprecisely aligned with the nominal reference trajectory of the\nmuons. The gate detector is responsible for identifying the\ninjected muons and generating a trigger signal to activate the\nswitch for the kicker coils. Conversely, the aperture detector inhibits the generation of trigger signals if the muons\ndeviate from the acceptance phase space of the solenoid,\nthus creating an anti-coincidence system. This configuration\neffectively selects muons within the solenoid’s acceptance,\napproximately 4 _×_ 10 _[−]_ [3] of the incoming muons. It triggers\nthe pulsed magnetic kicker required to deflect the muon into\nits designated storage orbit, thereby reducing the kicker power\nsupply pulse rate from approximately 120 kHz to 0.5 kHz,\nwhich alleviates operational burdens and demands.\n\nTo meet the stringent demands of the muEDM experiment,\nseveral critical requirements must be fulfilled. First, the pulsed\nmagnetic field must be activated within a latency range of\n120 ns to 150 ns to ensure prompt muon deflection, which\nnecessitates rigorous minimization of system-wide delays,\nespecially in the muon trigger detector and the high-voltage\nswitch of the pulse generator. Second, the front-end readout\nelectronics of the muon trigger detector must operate reliably\nwithin a 3-T solenoidal magnetic field while maintaining\nminimal interference with the field. Additionally,",
+        "score": -5.825560115004334,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7587454764776842,
+        "rerank_score": -9.052282333374023,
+        "matched_nodes": [
+          "On",
+          "To",
+          "NO",
+          "The",
+          "VOL",
+          "IEEE",
+          "Transactions",
+          "SCIENCE",
+          "XX",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4699,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2769638__2508.16324__A_Two-Prong_Approach_to_the_Simulation_of_DC-RSD_TCAD_and_SPICE.md",
+        "title": "2024__recid_2769638__2508.16324__A_Two-Prong_Approach_to_the_Simulation_of_DC-RSD_TCAD_and_SPICE",
+        "text": "well documented in literature\n\n[12]. As suggested in [12], a proper electrical connection of\nneighbouring pads provides a low impedance path towards the\nfront-end amplifiers to a higher portion of the charge, allowing\nfor higher collection efficiency, especially for events that took\nplace close to the sensor edges. Moreover, the connection\nbetween neighbouring pads allows for insulating one pixel\n(i.e., a cluster of four pads) from its adjacent, thus improving\nthe signal confinement and the spatial resolution.\n\nFig. 8. Impact of two different values of the sheet resistance (200 Ω/sq and\n1 kΩ/sq) on the DC behavior of a 50 µm-pitch four-pad DC-RSD detector.\n\nFig. 9. Signals generated by a MIP in a 50 µm-pitch four-pad DC-RSD\ndetector, biased at 200 V at room temperature. The green, cyan, red and blue\ncurves are the signals read out by the four pads, and the magenta curve is the\ntotal signal read out by the contact on the back.\n\nIV. D ESIGN AND OPTIMIZATION OF DC-RSD\n\nAccording to the suggestions in [12], we have modeled\nwithin the TCAD environment the strip-connected DC-RSD\ndevice represented in Fig. 13. As shown in the inset, a direct\ncoupling of the strips to the resistive silicon layer has been\nrealized, as well as a fine-tuning of the strip resistance (i.e.,\ngeometry and material) such that it is lower than the resistive\nsheet, but not enough to short circuit the front-end electronics.\nAs shown in Fig. 14, the distortion is strongly reduced by\nadding the low-resistive strips between the collecting pads. In\nthe picture, it is represented the upper left quadrant of the\nmap of the injected and reconstructed impact positions. The\nsix red circles are the injection points, and the green crosses\nand blue diamonds are the reconstructed ones in the case of\n\nDC-RSD flavour without strips and with strips, respectively.\nThe accuracy of the position reconstruction improves when\ninter-pad resistive strips are used, because they help to confine\nthe signal spreading within the pixel (see Fig. 15).\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2020 6\n\nFig. 10. Spatial distribution of electron current over the detector surface (left)\nand within the bulk (right), immediately after the passage of the MIP (a) and\na few hundred picoseconds later (b).\n\nFig. 11. Map of the injected and reconstructed impact positions, which has\nbeen obtained by TCAD simulation of a 105 µm-pitch four-pad DC-RSD\ndetector. The red circles are the injection points, and the green cro",
+        "score": -5.963296816969665,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7587454764776842,
+        "rerank_score": -9.264184951782227,
+        "matched_nodes": [
+          "In",
+          "On",
+          "NO",
+          "The",
+          "VOL",
+          "IEEE",
+          "Transactions",
+          "SCIENCE",
+          "XX",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6739,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "IEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 1\n\n# Microlens-enhanced SiPMs\n\nG. Haefeli, F. Blanc, E. Curr´as-Rivera, R. Marchevski, F. Ronchetti, O. Schneider, L. Shchutska,\n\nC. Trippl, E. Zaffaroni and G. Zunica\n\n_**Abstract**_ **—A novel concept to enhance the photo-detection**\n**efficiency (PDE) of silicon photomultipliers (SiPMs) has been**\n**applied and remarkable positive results can be reported. This**\n**concept uses arrays of microlenses to cover every second SiPM**\n**pixel in a chequerboard arrangement and aims to deflect the**\n**light from the dead region of the pixelised structure towards the**\n**active region in the centre of the pixel. The PDE is improved up**\n**to 24%, external cross-talk is reduced by 40% compared to a flat**\n**epoxy layer, and single photon time resolution is improved. This**\n**detector development is conducted in the context of the next**\n**generation LHCb scintillating fibre tracker located in a high**\n**radiation environment with a total of 700’000 detector channels.**\n**The simulation and measurement results are in good agreement**\n**and will be discussed in this work.**\n\n_**Index Terms**_ **—Cross-talk, Microlens, MLA, PDE, SciFi, SiPM,**\n**SPTR**\n\nI. I NTRODUCTION\n\nIn the context of the scintillating fibre tracker (SciFi\nTracker) [1], our group, the High Energy Physics Laboratory\n(LPHE) at EPFL, is working to improve the silicon photomultiplier (SiPM) photodetectors in order to overcome the\nchallenges imposed by radiation, detector size, and the low\nmaterial budget requirement for the next upgrade in 2034. The\nultimate goal of this development is to improve the signalto-noise ratio. We found that the enhancement of the SiPM\n\nwith microlenses not only significantly increases the signal\nbut also reduces external cross-talk and has the potential to\nreduce noise.\n\nThe choice of the ideal size of the SiPM pixel for a custom\ndesign is typically guided by the compromise between the\nhigh geometrical fill factor (GFF) and the resulting high photodetection efficiency (PDE) for large pixels and the manifold\ndisadvantages resulting from higher gain and therefore higher\ncorrelated noise, longer recovery time, lower dynamic range,\nand higher bias current. Adding the radiation environment\nas an additional criterion, small pixel size and low excess\nbias voltage (over-voltage, ∆ _V_ ) are also preferred to reduce\nthe effect of increasing the dark count rate (DCR) (heat\ndissipation and self-heating), as well as redu",
+        "score": -6.019495469902048,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8431845597104948,
+        "rerank_score": -9.360647201538086,
+        "matched_nodes": [
+          "In",
+          "On",
+          "NO",
+          "The",
+          "We",
+          "VOL",
+          "IEEE",
+          "Transactions",
+          "SCIENCE",
+          "XX",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 40,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "nt reconstruction. First, it finds track segments in\nthe VErtex LOcator detector (VELO), attaching to them hits\nfrom the further tracking stations upstream and downstream\nof the magnet to obtain complete tracks; then, the positions of\nthe primary vertices of the proton-proton ( _pp_ ) collisions are\nfound, as well as those of displaced vertices that constitute the\nmain signature of heavy-flavour particle decays.\nThe feasibility of implementing several parts of this sequence in a specialised architecture, using programmable\ndigital electronics co-processors (FPGAs), has been studied\nwith the aim of achieving a faster and cheaper reconstruction,\nespecially in view of future runs, moving parts of it before the\nevent-building stage [4].\nIn this article, we address the very first step in the HLT1\nevent reconstruction, that is the search for clusters of active\npixels in the VELO [5]. Grouping contiguous pixels in clusters\nis a conceptually simple but computationally demanding task,\ndue to the two-dimensional (2D) geometry and the large\nnumber of pixels of the VELO detector (approximately 40\nmillion). In the preliminary version of the HLT1, designed\nto run entirely on CPUs, this task alone consumed 17%\nof the time required by the complete HLT1 reconstruction\nsequence. We address here this issue and describe an efficient\narchitecture of this functionality, requiring a very modest\namount of FPGA resources, while providing the throughput\nand the performance required for its use within the LHCb\nDAQ system. The core ideas underlying the design of this\narchitecture are based on studies of an FPGA-based track\nfinding system, performed within the INFN-RETINA R&D\nproject [4]. The overall structure of our algorithm and its main\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2023 2\n\nFig. 1. Illustration of the basic constituents of a VELO layer [5]. Red dots\nmark the origin, pixel (0,0), of the local cartesian coordinate system of each\nsensor (see Sect. III). As an example, the axis orientation is displayed in both\nsensors of the upper module.\n\nbuilding blocks are rather general, and can be applied to any\npixel detector. A baseline version is available for download\nfrom a public code repository [6]. However, the LHCb version\ncontains specific features tailored to the VELO detector.\n\nII. F ORMAT AND FEATURES OF VELO DATA\n\nThe Run 3 VELO is a silicon pixel detector consisting of 26\nlayers both downstream (19) and upstream (7) of the nominal\npoint of _pp_ collisi",
+        "score": -6.040695030067454,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8431845597104948,
+        "rerank_score": -9.393261909484863,
+        "matched_nodes": [
+          "In",
+          "On",
+          "NO",
+          "The",
+          "We",
+          "VOL",
+          "IEEE",
+          "Transactions",
+          "SCIENCE",
+          "XX",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 8090,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3062964__2510.02971__Millimeter-Wavelength_Lens-Absorber-Coupled_TiAl_Kinetic_Inductance_Detectors.md",
+        "title": "2026__recid_3062964__2510.02971__Millimeter-Wavelength_Lens-Absorber-Coupled_TiAl_Kinetic_Inductance_Detectors",
+        "text": "and for the ground plane\nof the microstrip microwave readout line.\n\nFig. 2 shows each spiral absorber placed at the lower focus\nof an extended hemispherical Si lens with a clear aperture\ndiameter of 5 mm and a radius-normalized extension length of\n_L/R_ = 0 _._ 39 to synthesize an ellipsoidal shape [27]. The single\nspiral absorber in (a) was coupled to an _f_ # = 0 _._ 63 lens to\nmaximize the power collection while avoiding the deepest lens\nconfiguration at _f_ # = 0 _._ 54, where the lens radius coincides\nwith the clear aperture diameter. This results in a focal field\nsampling of 1 _λ_ Si _f_ #, where _λ_ Si is the wavelength in silicon.\nOn the other hand, the 4 _×_ 4 spiral-array in (b) was coupled\nto an _f_ # = 1 _._ 2 lens to maximize the power coupling with the\nabsorber lateral dimension being 2 _λ_ Si _f_ # .\nTo avoid reflections at the silicon-vacuum interface, the\nlens top is shaped with vertical (non-conformal) frustras to\n\ncreate a broadband anti-reflection (AR) coating suitable for\ncryogenic temperatures [28]. The design and performance of\nthe AR-coating is reported in Fig. 3 for a broadside plane-wave\nincidence. The performance of the two lens-coupled absorber\ndesigns was simulated with CST Studio Suite [29] in terms\nof their broadside plane-wave response for two orthogonal\npolarizations. In order to restrict the plane wave to the lens\nclear aperture we added a perfectly absorbing sheet with\nthe free-space impedance. The results of both designs are\nshown in Fig. 2 indicating a lens-aperture efficiency _η_ ap for\nboth polarizations of more than 70% for about 10% relative\nbandwidth for the single spiral absorber in (a), and for an\noctave for the spiral array in (b).\n\nIII. F ABRICATION\n\nWe have fabricated two lens-less MKID devices: a small\n\n3 _×_ 3 cm chip for testing the new designs, comprising 5 spiral\narray detectors and 4 single spiral detectors; and a �4” largeformat demonstrator with 253 spiral array detectors. Both\ndevices were made from high-resistivity ( _ρ >_ 1000 µΩ _·_ cm)\ndouble-side-polished float-zone silicon wafers, with a thickness of about 280 µm to realize a quarter-wavelength backing\nreflector. The recipe is the same for both devices. We first\nsputter-deposit on the wafer 10 nm of Ti and then, without\n\nTRANSACTIONS IN APPLIED SUPERCONDUCTIVITY, VOL. XX, NO. YY, MONTH YYYY 3\n\n1 _._ 00\n\n0 _._ 96\n\n10 _[−]_ [1]\n\n10 _[−]_ [2]\n\n10 _[−]_ [3]\n\n|Col1|Col2|0|λ 1 .1|\n|---|---|---|---|\n||0.25_λ_|8˚<br>||\n|8˚|8˚|8˚|8˚|\n|||||\n|||||\n\n80 90 1",
+        "score": -6.045794186103186,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8202653799758747,
+        "rerank_score": -9.398391723632812,
+        "matched_nodes": [
+          "In",
+          "On",
+          "To",
+          "NO",
+          "The",
+          "We",
+          "VOL",
+          "Transactions",
+          "XX"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6011,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2765150__2403.02668__Material_Properties_of_Popular_Radiation_Detection_Scintillator_Crystals_for_Optical_Physi.md",
+        "title": "2025__recid_2765150__2403.02668__Material_Properties_of_Popular_Radiation_Detection_Scintillator_Crystals_for_Optical_Physi",
+        "text": "BGO is caused by poor energy resolution blurring it with\nthe other [152] Eu photopeak (244.7 keV). This can be observed in Fig. (4e).\n\nthe optical response from the scintillator crystals. Doublesum peaks were negligible in the [22] Na energy spectra for\nCLLBC:Ce, NaI:Tl, and CsI:Tl (Figs. (3d), (5d), and (7d))\ndue to their smaller attenuation coefficients, making it less\nlikely for both gamma rays to interact with them in the\nsame time window. GAGG:Ce and BGO’s larger attenuation\n\n50\n\n40\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2024 6\n\nFig. 7. Experimental (black line) and simulated (red line) [109] Cd (a), [57] Co\n(b), [137] Cs (c), [22] Na (d), and [152] Eu (e) gamma ray energy spectra for the\nCsI:Tl scintillation detector. The color version is available online.\n\ncoefficients (see Table (I)) corresponded to less statistical\nnoise in the [137] Cs spectra (Figs. (2c) and (4c)) compared\nto the other scintillators. Statistical noise was more prevalent\nfor [137] Cs compared to other isotopes because [137] Cs had the\nlowest radioactivity. The peak immediately above the lowlevel detection threshold observed in the 137 Cs and 22 Na\n\nexperimental spectra (e.g., GAGG:Ce in Figs. (2c) and (2d))\nwas attributed to electronic noise. This peak was not observed\nin the simulated spectra because electronic noise was not\naccounted for in the simulation platform.\nThe average difference between simulated and experimental\nphotopeak FWHM was _<_ 1% for CsI:Tl, 1% for GAGG:Ce\nand CLLBC:Ce, 2% for NaI:Tl, and 4% for BGO. For each\nscintillator, the energy resolution generally improved as the\ncharacteristic gamma ray energy increased. Although this was\ntrue for [152] Eu within the photopeaks for the same source,\nit was not true between photopeaks of other isotopes. For\nexample, the 344 keV and 964 keV [152] Eu photopeaks for\nCsI:Tl had a FWHM of 9.72% and 7.92% respectively, however, the FWHM for the 662 keV photopeak was 7.47%. This\nphenomenon was attributed to cascade summing from multiple\n152 Eu radioactive decays. The poor energy resolution of BGO\nblurred the 122 keV and 136 keV [57] Co photopeaks together so\nthat the 136 keV photopeak could not be resolved, as shown\nin Fig. (4b). Moreover, the poor energy resolution of BGO\nwas attributed to the 16% difference between the simulated\nand experimental 245 keV [152] Eu photopeak FWHM. Overall,\n\nCLLBC:Ce had the best energy resolution (lowest photopeak\nFWHM) across the 30 keV to 2 MeV energy range (see Fig.\n(6)",
+        "score": -6.183348777886035,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8069963811821474,
+        "rerank_score": -9.608442306518555,
+        "matched_nodes": [
+          "On",
+          "NO",
+          "The",
+          "For",
+          "CE",
+          "VOL",
+          "IEEE",
+          "Transactions",
+          "SCIENCE",
+          "XX",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6754,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "enting a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter, lens height,\nand residual layer thickness. MLAs at the wafer level were\ndeposited on SiPM multichannel arrays with 41 _._ 7 _µm_ pixel\nsize from FBK and compared with bare and flat layer coated\ndevices. The performance was measured in the lab by injecting\nmonochromatic narrow normal incident light and in a fibre\ntracker module with high energetic particles. The results are\npresented in detail as a function of wavelength and ∆ _V_ for the\nlaboratory measurement and as a function of injection distance\nand ∆ _V_ for the SciFi measurement.\nIn summary, at ∆ _V_ = 2 _V_, an increase of 22% is observed\nfor the narrow normal light source and 17% at ∆ _V_ = 8 _V_ .\nFor the SciFi light source, the increase is 22 _._ 5% and 20 _._ 5%\nat ∆ _V_ = 2 _V_ and ∆ _V_ = 6 _V_, respectively. These values\ncorrespond to an overestimation of 10 _−_ 15% by simulation.\nAs the implementation depends on the precise alignment of\nthe MLA and the silicon structure as well as on the optical\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 8\n\nparameters of the implementation, the results of simulation\nand measurements can be considered in good agreement.\nIn addition to the higher PDE, MLA-enhanced detectors also\nshow a reduction of 40% of external cross-talk compared to\na flat coated detector. An improvement in timing performance\nin SPTR is expected due to the partial masking of the border\nregion (deflection of the photons towards the pixel centre by\nthe lens), which was reported in other works and seen in\npreliminary measurements in our lab.\nThe optical transparency of the less than 50 _µm_ thick\nMLA layer, in a wavelength range between 350 _nm_ and\n700 _nm_, was measured before and after irradiation. No\nmeasurable change was observed with a neutron equivalent\nfluence of the expected radiation level in the LHCb upgrade\n2 (3 _._ 0 _×_ 10 [12] 1 MeV n eq _/_ cm [2] ) and an ionising dose of\n1 _kGy_ . Further improvements by adding an anti-reflecting\ncoating (ARC) to the polymer surfaces of the MLA can\npotentially decrease the Fresnel reflection loss. A prototype\nwith optimised coating for the emission spectral range of\nthe SciFi light source is foreseen. For low ∆ _V_ = 2 _V_,\nthe prospects of MLA enhanced SiPMs with SciFi tr",
+        "score": -6.188566393158548,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.9638118214716528,
+        "rerank_score": -9.635046005249023,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "NO",
+          "The",
+          "For",
+          "VOL",
+          "IEEE",
+          "Transactions",
+          "SCIENCE",
+          "XX",
+          "Nuclear"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "NS": 1.0,
+      "CA": 1.0,
+      "De": 1.0,
+      "NO": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "NS": 1.0,
+      "CA": 1.0,
+      "De": 1.0,
+      "NO": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "CE": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "VOL": 0.7,
+      "IEEE": 0.7,
+      "Transactions": 0.7,
+      "Department": 0.24499999999999997,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "Review": 0.24499999999999997,
+      "XX": 0.24499999999999997,
+      "Nuclear": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 27,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.5997627060860395,
+    "generation_latency_s": 3.8975849747657776e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 27.0,
+    "retrieval_latency_s": 6.5997627060860395,
+    "generation_latency_s": 3.8975849747657776e-07
+  }
+}

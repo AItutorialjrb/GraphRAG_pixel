@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con007",
+    "query_type": "conceptual",
+    "query": "Why can dense retrieval fail on detector terminology?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "can",
+      "dense",
+      "retrieval"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why can dense retrieval fail on detector terminology?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 2346,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "mm, respectively.\nAll spatial resolutions and three-dimensional deviations\ndetermined in this work can also be looked up in Table 2 and\nTable 3.\n\n**4. Conclusion and outlook**\n\nThis work is the second part of a simulation study investigating the performance of an envisaged cost-effective PET-like\ndetector system capable of tracking tracer particle movement\nin dense and optically opaque granular assemblies. Following\non from the work done in Oppotsch et al. (2024) (and therefore\nreferred to as the previous studies for the rest of this section),\nwhich investigated the performance of the detector system for\na stationary source within the detector system filled with\nair only (referred to as the empty detector), the generic\n\n_This is the accepted manuscript version of an article accepted for publication in Particuology. The final version is available online at_\n_https://doi.org/10.1016/j.partic.2023.09.003_ _Page 10 of 13_\n\n**Table 3**\n\nThree-dimensional deviations for all scenarios.\n\nScenario Deviation Δr (mm)\n\nStationary source 2.1 ± 0.8\nModel path (buffer size = 6,000) 4.0 ± 1.6\nDEM path 2.3 ± 0.9\nModel path (buffer size = 36,000) 6.5 ± 1.5\n\ngrate system and the detector system completely filled with\nparticles, the goal of this work was to improve the existing\nreconstruction software (by extending it to oversampling\n(calculating a moving average for the position determination\nof the tracer particle) and iteration) and extend both the\nreconstruction and simulation software to a tracer sphere\nmoving along a selected model path and a path given by a\nDEM simulation. Moreover, the PET-like detector system was\nscaled down to a total of 88 cost-effective plastic scintillator\nbars to better fit the size of the generic grate system and to\nfurther reduce cost.\n\nThus, for a stationary source within the GGS, spatial\nresolutions of 0.6 mm in the x- and y-direction and 1.1 mm\nin the z-direction, as well as an average three-dimensional\ndeviation of the reconstructed tracer sphere positions from\nthe simulated position of (2.1 ± 0.8) mm were determined.\nFurthermore, it could be shown that the iteration leads to an\nimprovement of the resolution by a factor of about 170 in x\nand y and by a factor of 110 in the z-direction. By measuring\nthe position dependency of the reconstruction, it was found\nthat the efficiency is nearly constant throughout the detector\nsystem (due to the small size of the generic grate system), so\nboundary effects can be neglected.\nTo investigate the spat",
+        "score": -3.562003130912781,
+        "dense_score": 0.42288482189178467,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.487697124481201,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7212,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2902407__2503.15721__Minimal_material_maximum_coverage_Silicon_Tracking_System_for_high-occupancy_conditions.md",
+        "title": "2025__recid_2902407__2503.15721__Minimal_material_maximum_coverage_Silicon_Tracking_System_for_high-occupancy_conditions",
+        "text": "xplore promising prospects in both scientific and medical fields.\n\n_Keywords:_ Silicon strip detectors, heavy-ion physics, high-occupancy detectors, free-streaming readout, detector integration,\nparticle tracking\n\n**1. Silicon Tracking System of the CBM experiment**\n\nThe Compressed Baryonic Matter (CBM) experiment at the\nupcoming FAIR facility in Darmstadt, Germany, is designed\nto investigate strongly interacting matter under extreme density\nconditions. Its primary objectives include analysing differential cross-sections and flows of multi-strange particles, studying higher-order fluctuations, and examining dilepton spectra\nto explore the caloric curve of dense nuclear matter. These\nand other observations require high statistics, requiring a beamtarget interaction rate of ≤ 10 MHz with kinetic energies of\nheavy-ion and proton beams up to 11 _A_ GeV and 29 GeV, respectively [1, 2].\nThe Silicon Tracking System (STS) is a key tracking detector in the CBM experiment, designed to tackle the unique challenges of heavy-ion physics. It operates in an extremely dense\nenvironment, handling about thousand charged particle tracks\nper typical Au-Au collision. The SIS-100 accelerator will deliver continuous high-intensity beams, requiring CBM detectors\n\n∗ Corresponding author\n_Email address:_ `m.teklishyn@gsi.de` (M. Teklishyn)\n\nto function in free-streaming mode. Therefore, the STS will\nprovide timing information to enable on-line event detection,\nreconstruction and selection [3].\n\nThe STS will be housed within a gas-tight thermal enclosure, positioned inside the aperture of the 1 Tm superconducting dipole magnet, at a distance of (0.3–1.0) m downstream of\nthe vacuum chamber, which hosts the target and the MicroVertex Detector (MVD) based on Monolithic Active Pixel Sensor (MAPS) technology featuring MIMOSIS chip [4]. These\ntwo silicon tracking detectors of CBM share a high degree of\nmechanical integration, as well as common services and cooling infrastructure [5]. Together with the MVD, the STS plays a\ncrucial role in momentum measurement and vertex reconstruc\ntion for complex cascade decays. In particular, CBM performance simulations have demonstrated the ability to reconstruct\ndecays with neutral products, _i. e._ Σ [±] → _n_ π [±] without direct\ndetection of the neutron by identifying the kink between the\nmother and daughter particle tracks [2]. Due to the necessity of\nreconstructing the soft-momentum reaction products, the spatial precision of the STS and MVD is pr",
+        "score": -3.822635155507963,
+        "dense_score": 0.4184328317642212,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.88835334777832,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2333,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "to moving particles. Moreover, the\nenvisaged detector system was revised to better fit the generic\ngrate system. In the course of this, the number of scintillator\nbars has been reduced from a total of 192 to 88, which in turn\nled to a corresponding reduction of the readout electronics.\nThis not only increases the solid angle coverage (by removing\nsome of the scintillator bars while maintaining the same bar\nheight, the walls can be moved closer to the vessel so that the\nopening above and below the generic grate system becomes\nsmaller) but also leads to a significant reduction in the overall\ncost of the detector system. However, it is still possible to\nexpand the detector to a larger size if necessary.\nIn order to improve accuracy in localizing the position\nof the tracer particle, the reconstruction algorithm itself\nhas been extended to include the features of iteration and\n\noversampling (for more details, see Section 2.5). In addition,\nthe homogeneity of the reconstruction was investigated.\nThis is important because the recorded point cloud of the\nreconstructed positions can be truncated if the tracer particle\ngets too close to the scintillators. However, when the center\nof gravity is formed from such a truncated point cloud, it is\nsystematically shifted with respect to the actual position (this\nis referred to as boundary effects within this work). Since\nthe generic grate system is small compared to the detector\nsystem, homogeneous reconstruction within the considered\nvolume can be ensured so that the reconstruction must not be\nadapted to boundary effects.\nThe detection efficiency is dependent on the threshold\nsince only the Compton spectrum is available due to the use\nof plastic scintillators. For the simulations, a threshold of\n30 keV is used (see Section 2.5). Averaged over the detector\nvolume, this results in an efficiency of about 1.4 % (Oppotsch\net al., 2024).\nConcerning the structure of this paper, Section 2 gives\na brief overview of the underlying setup. This includes the\ndetector geometry (Section 2.1), vessel (Section 2.2), and\ngranular assembly (Section 2.3) under investigation, as well\nas the source (Section 2.4), boundary conditions, and tracking\nmethod (Section 2.5) used. Following the setup, the results\nare presented in Section 3. To conclude, Section 4 gives a\nbrief summary and outlook on the upcoming work.\n\n**2. Setup**\n\nFor the simulation studies, the intended detector system,\nincluding the vessel and granular assembly, has been implement",
+        "score": -4.6092574764700505,
+        "dense_score": 0.4261685907840729,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.09908390045166,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 2341,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "cays.\nOverall, it was found that the efficiency and resolution were\nnearly constant throughout the detector system and did not\nchange significantly when the edges of the scintillator bars\n(i.e., the corners of the detector) were reached. This is due\nto the fact that the GGS is so small that the source is\n\nstill far enough away from the edges of the detector and\nnever touches them (compare Fig. 1(b)). Furthermore, decays\nthat lie slightly outside the detector are also allowed for\nreconstruction, which significantly increases efficiency.\n\nFig. 3 shows the three-dimensional distribution (Fig. 3(a))\nof the individual reconstructed tracer sphere positions without\nany averaging or iterating of a source that has been placed\nat (50 | 50 | -40) cm within the GGS volume, as well as\nexemplarily its projection in the x-direction (Fig. 3(b)). A\nvery present background is visible, and the spatial resolution\nreads 104.3 mm in the x-, 103.5 mm in the y-, and 124.8 mm\nin the z-direction. This is a very poor resolution since the\nsize of the largest tracer sphere is much smaller than the\nbest resolution obtained this way (103.5 mm _≫_ 20 mm). To\n\nimprove this resolution, the simulated data were now averaged\nand iterated (as described in Section 2.5), resulting in a\nspatial resolution of 0.6 mm in x and y, and 1.1 mm in z. This\ncorresponds to an improvement by a factor of about 170 in the\nx- and y-directions and a factor of 110 in the z-direction. The\nassociated three-dimensional distribution and its projection\non the x-axis can be found in Fig. 4.\n\n_3.2. Model path_\n\nTo extend the simulation and reconstruction to a moving\nsource and to investigate the behavior of the reconstruction\nalgorithm at the highest possible velocities, a model curve\nwas created on which the source moves circularly (r = 10 cm)\nat 17 cm/s in the xy-plane and linearly between -6 and 2 cm\nat 7 cm/s in the z-direction. On average, these velocities\napproximate the maximum tracer sphere velocities within\nthe GGS derived from corresponding DEM simulations. As\nmentioned in Section 2.5, the buffer size was set down to\n6,000 events instead of 36,000, with re-averaging every 3,000\nevents to achieve good resolution. The measurement time of\nthe whole curve was 4 s.\n\nA three-dimensional view of the model curve is shown\n\nin Fig. 5, with the reconstructed tracer sphere locations\nshown in green and the actual simulated path as a black\ntrajectory. The corresponding one-dimensional projections\non the x, y, and z axes ar",
+        "score": -4.662023716285581,
+        "dense_score": 0.47916939854621887,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.181171417236328,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2724,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2692561__2308.16433__Effect_of_large-angle_incidence_on_particle_identification_performance_for_light-charged_m.md",
+        "title": "2024__recid_2692561__2308.16433__Effect_of_large-angle_incidence_on_particle_identification_performance_for_light-charged_m",
+        "text": "ufficient to affect the performance of the particle discrimination. This decrease can be expressed as a function of the penetration depth of the charged particles\ninto the detector, which varies for each nuclide.\n\n_Keywords:_ NTD silicon detector, particle identification, pulse shape analysis, incident angle dependence\n\n**1. Introduction**\n\nParticle identification (PID) is an essential process in nuclear\nreaction measurements. In addition to the conventional energy\nloss (∆ _E_ ) and total energy deposit ( _E_ ) method, PID methods\nbased on the digital pulse-shape analysis (DPSA) of neutrontransmutation-doped silicon (nTD-Si) detectors have been developed in recent years [1–7] and are becoming more common\ndue to increasing sophistication of data acquisition systems.\nThe DPSA method has the following advantages over the\n∆ _E_ - _E_ method. There is no need to use two detectors as required\nby the ∆ _E_ - _E_ method, and only a single detector is sufficient for\nPID. In particular, when identifying low-energy particles, the\n∆ _E_ - _E_ method requires a rather thin, fragile detector that must\nbe handled with great care. In contrast, the DPSA method requires only one thick detector. Instead, a waveform digitizer\ncapable of acquiring waveform information is essential for the\nDPSA method.\n\nHighly segmented detectors such as double-sided silicon\nstrip detectors (DSSSD) are widely used in modern nuclear\n\n∗ Corresponding author.\n_Email address:_ `kawase@aees.kyushu-u.ac.jp` (Shoichiro Kawase)\n1 Present address: National Institute of Advanced Industrial Science and\n\nTechnology (AIST), AIST Tsukuba Central 2, Tsukuba, Ibaraki, 305-8568,\nJapan\n\nphysics experiments, in which a high angular resolution of the\nscattered particles is usually required. However, the increased\nnumber of channels makes such a detector and the signal readout electronics more costly. On the other hand, pad-type silicon\ndetectors have the advantage of a single detector being able to\ncover a large solid angle at the cost of not obtaining position and\nangle information. The small number of channels requires simple and inexpensive data acquisition electronics. This advantage is still of great benefit for certain types of measurements\nthat do not require precise angular information — for example, measurements of charged particle emission after the muon\nnuclear capture reaction [8].\n\nIn such experiments, one should place the detector closer to\nthe target and cover a large solid angle in order to obtain",
+        "score": -4.984768529636105,
+        "dense_score": 0.4037437438964844,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.675441265106201,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4144,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi.md",
+        "title": "2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi",
+        "text": "the readout anode. This reduces the charge collection efficiency which is therefore a function of the\ninteraction depth [52]. Since a fraction of the energy\nis lost in the region of the entrance window, the measured energy is shifted to lower values. In addition, the\nfull energy peak becomes asymmetric featuring a pronounced low-energy tail. This effectively decreases the\nenergy resolution of the detection system. The effect\nof the entrance window on the detector response decreases with higher electron energies and smaller en\n\ntrance window thicknesses, since then a smaller fraction\nof the total energy is lost. For previous TRISTAN detectors consisting of 7 pixels, the energy shift has been\ndetermined to be (29 _±_ 2) eV for electrons with an energy of 30 _._ 4 keV (using the M-line of a [83m] Kr source).\nAssuming a simplified step-like dead layer model for\nthe entrance window charge collection efficiency, an\nentrance window thickness of (49 _±_ 3) nm was determined [51]. This value can only be considered as a rough\nestimation; a more realistic model can be found in [53].\n\n_Backscattering tail_\n\nAnother effect of incomplete charge collection is due\nto the backscattering of electrons. The incoming electrons as well as the secondary electrons undergo scattering inside the detector material which changes their\nmomenta. As a result, the electrons can change their\ndirections such that they eventually leave the detector\nbefore having deposited their entire energy in the sensitive volume. In the energy spectrum, this gives rise\nto a backscattering tail, i.e. an extended continuum\ntowards lower energies. For low-energetic electrons in\nthe keV range, the probability of backscattering is on\nthe order of 20 % [54]. The amount of backscattering decreases with higher electron energies and with smaller\nincidence angles (the incident angle of an electron beam\nperpendicular to the detector surface is 0 _[◦]_ ).\n\n10\n\n_Electron response in the monitor spectrometer_\n\nTo test the electron response of the TRISTAN detector\nmodule in an environment that closely resembles the\nKATRIN experiment, in particular the MAC-E filter,\na detector module (S0-166-4) has been installed in the\nmonitor spectrometer. As described in Section 3.3,\nthe apparatus provides different quasi-monoenergetic\nelectron sources. Typical energy spectra for the individual pixels measured in the presence of a [83m] Kr\nsource are shown in figure 9c. To increase the rate\nof electrons hitting the detector, the sou",
+        "score": -5.005380994395207,
+        "dense_score": 0.4135623574256897,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.707671165466309,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2733,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2692561__2308.16433__Effect_of_large-angle_incidence_on_particle_identification_performance_for_light-charged_m.md",
+        "title": "2024__recid_2692561__2308.16433__Effect_of_large-angle_incidence_on_particle_identification_performance_for_light-charged_m",
+        "text": "esented only by the penetration depth. Once this\nratio has been measured for the detector to be used, the detector\nresponse can be simulated using the nuclide and its incident angle distribution as input. This enables us to evaluate the particle\ndiscrimination performance in future experimental setups.\nIn addition, this relationship may enable the nTD-Si detector\nto be used as an incident angle detector. If the incident nucleus is identified, the ⟨ _I_ max ⟩/ _Q_ ratio can be used to determine\n\n5\n\nFigure 9: Variation of _I_ max for hydrogen isotopes with various incident regions.\nThe error bars represent standard errors of the _I_ max distributions.\n\nthe penetration depth and, thus, provide information on the incident angle of low-energy charged particles. It can be used, for\nexample, to evaluate the background events due to charged particles not originating from the target and to identify the target\nfrom which the charged particles are originating from in multiple target measurements.\nFigure 13 depicts the ⟨ _I_ max ⟩/ _Q_ ratio as a function of penetration depth for different nuclides at an incident angle of 0 [◦] . The\nmagnitude of the ⟨ _I_ max ⟩/ _Q_ ratios for hydrogen and helium are\ndistributed in a similar range, but the slope is steeper for helium\nthan that for hydrogen. The slope for nuclides with the same\nnumber of protons tends to increase slightly with an increasing mass number, although the difference is smaller than that\nfor different proton numbers. The dependence on the number\nof protons and mass number at large penetration depths can be\nqualitatively discussed because as the number of protons and\nmass number increases, the width of the Bragg peak narrows\nand the position distribution of the energy loss becomes closer\nto the end of the range, thereby resulting in a larger ⟨ _I_ max ⟩/ _Q_ ratio. On the other hand, in the shallow penetration depth region,\nthe electric field is weaker due to the under-depletion bias. It is\npossible that the space charge effect, although small, is present\nbecause the charge density generated at the Bragg peak is larger\nfor particles with larger proton and mass numbers, thereby resulting in slightly longer charge collection times.\n\n400\n\n300\n\n200\n\n100\n\n0\n\n400\n\n300\n\n200\n\n100\n\n0\n\n|(a) 0 deg|(b) 15 deg|\n|---|---|\n|||\n|(c) 30 deg<br>|(d) 45 deg|\n\n0 5 10 15 20\n\n0 5 10 15 20\n\n_E_ (MeV)\n\nFigure 10: Particle identification plots for light-charged particles with various\nincident angles.\n\nresult enables the evaluation of",
+        "score": -5.0421143180192125,
+        "dense_score": 0.38842713832855225,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.762537956237793,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6533,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights.md",
+        "title": "2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights",
+        "text": "ranges.\nWe expect enhanced detector materials and design could provide better efficiency at higher\nenergies and improved sensitivity at lower masses. Also, developing more sophisticated calibration\ntechniques that can more accurately mimic the expected dark matter signals could help in further\nrefining the experimental setups. Continued efforts to minimize and understand background noise\nthrough better shielding, isolation, and background modeling are crucial.\n\n_**IV.B. EDELWEISS**_\n\nEDELWEISS ( **E** xpérience pour **DE** tecter **L** es **W** IMPs **E** n **S** ite **S** outerrain) is [a dark](https://en.wikipedia.org/wiki/Dark_matter)\n[matter search experiment located at the Modane Underground Laboratory in France. The](https://en.wikipedia.org/wiki/Dark_matter)\nexperiment employs cryogenic detectors that simultaneously measure the phonon and ionization\nsignals resulting from particle interactions within germanium crystals. These detectors are made\nfrom high-purity germanium mono-crystals and function as bolometers. They are fitted with\nNeutron Transmutation Doped (NTD) Germanium sensors that act as thermistors to detect\ntemperature changes. Additionally, the detectors are equipped with concentric aluminum ring\nelectrodes [116].\n\n14\n\nThe initial EDELWEISS experiments started with an exposure of 62 kg-days and reduced the\ndetector threshold from 30 keV to 13 keV by employing a phonon trigger [117–119].\nImplementing Monte-Carlo simulations using Geant4 to analyze gamma and neutron backgrounds\nfrom radioactive decays and upgrading both electronics (readout and DAQ) and cryogenic\nsystems, along with improved shielding and the use of newly designed Fully Inter-Digitized (FID)\ndetectors achieved a rejection power of R surf < 4 × 10 [−5] per α at 90% confidence level using a\n\n210 Pb source. Furthermore, the experiment was capable of rejecting bulk γ-ray events using γcalibrations with a 133 Ba source, resulting in a misidentification rate R γ−mis−FID < 2.5×10 [−6] at\n\n90% confidence level [120–124].\n\n_IV.B.1. Insights on EDELWEISS_\n\nUtilizing the Migdal effect and NTL effect to target dark matter particles as light as 32 MeV/c²\nindicates a strategic shift towards exploring a broader range of dark matter masses. Achieving a\nrecord sensitivity of 0.53 electron-hole pairs sets a new standard in detector resolution. Continuous\nimprovements in this area could enable the detection of even subtler signals from dark matterelectron interactions, enhancing the likelihoo",
+        "score": -5.201375718550248,
+        "dense_score": 0.409477174282074,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.009109497070312,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1914,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "tion, the detector geometry and channel granularity have\nbeen optimised taking into account existing overall mechanical constraints and the number\nof readout channels, which have significant impact on the cost. As described in the\nfollowing, the photon detection planes are subdivided into two regions having different\ngranularity, with the aim of keeping the optimal performance while maximising the cost\nsavings. In addition, in order to ensure stable operations of the upgraded RICH detectors,\nan evaluation of the photon detection chain performance under high radiation fields has\nbeen performed as described in section 7.1.5.\n\n**7.1.1** **Photon detectors**\n\nThe main parameters driving the choice of photon detectors have been good spatial resolution on a large active area, high detection efficiency in the wavelength range 200–600 nm,\nand very low background noise to allow single photon detection despite the high occupancy\nforeseen. The MaPMTs had already been considered during the first construction of the\n\n_∼_\nRICH detectors, but were rejected mostly due to the limited fill factor ( 40%) of such devices at the time. [51] The latest models available on the market are instead characterised by\na fill factor exceeding 80% and could be adopted as the upgraded RICH photon detectors.\nThe selected MaPMT models both consist of a matrix of 8 _×_ 8 anodes. RICH1 and the\ncentral region of RICH2 are equipped with 1-inch MaPMT modules [52] with a pixel size of\n2 _._ 88 _×_ 2 _._ 88 mm [2], ideal for the high occupancy areas of the RICH system. The outer region\nof RICH2 has been equipped with a 2-inch device [52], with a pixel size of 6 _×_ 6 mm [2] . The\ndecision to install detectors with a coarser granularity in the peripheral regions of RICH2\nallowed a significant reduction in the number of MaPMT units and readout channels,\nwhile having a negligible impact on the overall RICH performance as demonstrated by\nsimulation studies. The MaPMTs installed in the upgraded RICH detectors, together\nwith the schematic view of their internal structure, are shown in figure 58.\nA total of 1888 (768) 1-inch MaPMTs are installed in RICH1 (RICH2) and 384\n2-inch MaPMTs are installed in RICH2. Over 3500 units, including spares, have been\npurchased by the RICH collaboration and quality-assured to verify the requested technical\nspecifications, among which are a gain larger than 10 [6] and a dark-count rate less than\n_<_ 2 _._ 5 kHz _/_ cm [2] . A full set of quality assurance (QA) tests was i",
+        "score": -5.239843958777351,
+        "dense_score": 0.41712331771850586,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.068574905395508,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 96,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6521,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights.md",
+        "title": "2025__recid_2828391__2409.08900__Germanium_and_Silicon_detectors_for_WIMP_searches_Key_experimental_insights",
+        "text": "metry breaking at energy scales\nconsidered low for particle physics, such as 100 GeV. The energy transfer involved in these direct\ndetection events is very small, often just a few hundred MeV [50].\n\n**Inelastic Scattering** : While elastic scattering is the common search strategy, inelastic\nscattering also plays a role [42,43,51,52]. In such cases, the WIMP interaction leaves the nucleus\nin an excited state, which then emits a gamma-ray upon de-excitation, providing an additional\nsignal [53]. For example, the inelastic scattering of a WIMP with a 129 Xe nucleus leads to energy\nrelease primarily through electronic recoil as the emitted photon dissipates energy within the liquid\nxenon of the detector, after the nuclear recoil event [54].\n\n**III. Germanium and Silicon Detectors**\n\n_**III.A. Detector Technologies**_\n\n**Cryogenic Detectors** : In the past decade, the pursuit of dark matter has spurred the\nadvancement of cryogenic detectors by various research groups [55–59], inspired by the\ncompelling advantage that at extremely low temperatures, these detectors exhibit a heat capacity\nthat adheres to the T [3] at Debye law, allowing for highly sensitive calorimetric measurements of\nminuscule energy deposits. Impressively, these detectors have achieved the capability to detect\nrecoil energies below 1 keV. For instance, a 1 keV energy deposit in a 100 g cryogenic detector at\n10 mK can cause a measurable temperature to rise of about 1 µK, detectable with standard\nelectronics. Moreover, the energy needed to excite an elementary phonon in these detectors is less\nthan 1 meV, a fraction of the energy required in traditional detectors like semiconductors or\nscintillators, paving the way for unparalleled sensitivity and energy resolution in dark matter\ndetection [57–60]. The fundamental resolution of these detectors can be approximated by the\nthermodynamic fluctuations in the energy of the detector:\n\n∆E FWHM ≈ 2.35 ~~√~~ k 𝐵 CT [2],\n\n(1)\n\nWhere k B is the Boltzmann constant, C is the heat capacity of the detector, and T is the\ntemperature. This resolution lies in the tens of electron-volt range for a 100 g detector at a\ntemperature of 20 mK [61].\n\n**Ionization Detectors** : Charge-phonon detectors utilize a discrimination technique that\ndifferentiates between electron recoils and nuclear recoils by measuring their distinct ionization\nefficiencies (Figure 1), known as the quenching factor. This factor is determined through\nexperimental procedures involving neutron sourc",
+        "score": -5.289236530303955,
+        "dense_score": 0.3853917419910431,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.142671585083008,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.735123093239963,
+    "generation_latency_s": 5.299225449562073e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 6.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.735123093239963,
+    "generation_latency_s": 5.299225449562073e-07
+  }
+}

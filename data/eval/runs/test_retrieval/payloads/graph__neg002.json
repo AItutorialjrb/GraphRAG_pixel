@@ -1,0 +1,395 @@
+{
+  "benchmark": {
+    "query_id": "neg002",
+    "query_type": "negative",
+    "query": "Which paper in this corpus proves supersymmetry was discovered?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Which",
+      "paper",
+      "in",
+      "this"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "Which paper in this corpus proves supersymmetry was discovered?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6260,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex.md",
+        "title": "2025__recid_2803543__2407.00874__Plan_for_a_super__factory_at_Huizhou_accelerator_complex",
+        "text": "## The plan for a super η factory at Huizhou accelerator complex\n\nXurong Chen [1,2], Xionghong He [1,2], Qiang Hu [1,2], Dexu Lin [1,2], Yang Liu [1,2], Hao Qiu [1,2], Xu\nSun [1,2], Ye Tian [1,2], Rong Wang [1,2], Honglin Zhang [1,2], Yapeng Zhang [1,2], and Chengxin Zhao [1,2]\n\n1 Institute of Modern Physics, Chinese Academy of Sciences, Lanzhou 730000, China\n2 School of Nuclear Science and Technology, University of Chinese Academy of Sciences,\nBeijing 100049, China\n\nMay 2024\n\n**Abstract**\n\nAs an approximate Goldstone boson with zero quantum number and zero standard model charge,\nthe decay processes of long-lived _η_ meson offer a unique opportunity to explore new physics beyond the\nstandard model and new sources of CP violation, as well as test the low-energy QCD theory and measure\nthe fundamental parameters of light quarks. To pursue these goals in the physics frontiers, we propose a\nplan to construct a super _η_ factory at HIAF high-energy terminal or at CiADS after its energy upgrade. The\nhigh-intensity proton beam at HIAF enables the production of a vast number of _η_ samples, exceeding 10 [13]\n\nevents per year in the first stage, utilizing multiple layers of thin targets made of light nucleus. This paper\npresents the physics goals, the first-version conceptual design of the spectrometer, and some preliminary\nsimulation results.\n\n### **1 Introduction**\n\nThe high-luminosity frontier is one way to the new physics [1], as any small deviations from the standard model\n(SM) predictions in the high-precision measurements are implications of the new physics beyond the SM. In\nthe next decade, the upcoming high-intensity proton accelerator will offer a unique opportunity for searching\nthe new physics at an unprecedented level. Actually, there are more and more signs of new physics, such as\nthe anomalous muon magnetic moment ( _g −_ 2) _µ_ [2–4], the X17 boson from the decay of the excited state of\n8 Be [5–7], the lepton flavor universality violation in bottom quark decays [8–12], the excesses of the cosmic\npositron and electron [13–16], the narrow _γ_ ray emission from the galactic bulge [17], and the unexplored\nnatures of dark matter [18–22] and dark energy [23–27]. Up to now, physicists do not observe any new physics\nin the high-energy frontier with the large hadron collider. Therefore, some people argue that the new physics of\nthe hidden sector is at low energies [28,29], but it is faintly coupled to SM matter, which makes it elusive. For\nexample, the produc",
+        "score": -3.517171697123667,
+        "dense_score": 0.36830955743789673,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -5.534214019775391,
+        "matched_nodes": [
+          "In",
+          "As",
+          "Up",
+          "The",
+          "For",
+          "To",
+          "University"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4929,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "lutions, our model\nagrees with [46], although we note that the LoNS increase at\n532 nm is rather small with increasing zenith distance, as can\nalso be seen in figure 24.\nTo estimate the systematic uncertainties of this atmospheric\nmodeling we used the radiance ratio of the _SKYCALC_ model to\nthe FORS 1 spectra presented by [43]. As described in their paper, we divided the radiance ratio curve into two sections, one\nfor B+V optical bands and one for longer wavelengths. We then\ncalculated the 68% (1 σ) containment levels and used these as\nthe initial uncertainty levels from the _SKYCALC_ model. [43]\nmentions larger uncertainties for airmass > 2. Therefore, we\nassume that the model uncertainty for each wavelength scales\nlinearly with the airmass. Further systematic uncertainties for\nthe light guide efficiency, non-linearity of the readout, and mirror reflectivity were taken from [47]. The uncertainty of the\nphoton-detection efficiency for the PMTs was taken from [48].\nFor the SiPMs we used the spread between the used sensors for\nthe systematic uncertainty calculation.\nThe measured direct current (DC) versus prediction from our\nmodel is shown in figure 10 where we show the average current of a PMT and a SiPM-based module during a moon-less\n\nFigure 10: Average PMT (orange) scaled by a factor of 3 for better visibility\nand Hamamatsu SiPM DCs (red) compared to our predictions from our LoNS\nmodel based on [42] (blue, green). In both cases, the average of seven pixels\nis plotted during real telescope observations of one source during one night of\nmoon-less data taking. The observations were all conducted after 23 UT, which\nproves to be relevant due to a change of the street lighting at midnight local\ntime as described in section 9 of [46].\n\nnight observing a single astrophysical target. We note that\nwe accounted for the fact that the SiPM modules are located\n\nat the camera edge and therefore the observed zenith distance\nis slightly different for the SiPM pixels than for the central\nPMTs. Not accounting for this effect would, for example, lead\nto a 7.5% error in the determined airmass at 70 [◦] . It can be\nseen that our LoNS model sufficiently describes the qualitative\nchanges of the measured pixel current averages. The biggest\ndiscrepancy is seen for the SiPM pixels at very large zenith\ndistances where the model over-predicts the measurement by\n4% at ZD=70 [◦], 9% at ZD=74 [◦] . The brightest star in the field\nof view (FoV) near the SiPM pixels during this observat",
+        "score": -4.792664187954922,
+        "dense_score": null,
+        "bm25_score": 16.73233001479288,
+        "graph_score": 0.831372549019608,
+        "rerank_score": -7.47827672958374,
+        "matched_nodes": [
+          "In",
+          "As",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 494,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648847__2304.01261__Novel_prediction_for_secondary_positrons_and_electrons_in_the_Galaxy.md",
+        "title": "2023__recid_2648847__2304.01261__Novel_prediction_for_secondary_positrons_and_electrons_in_the_Galaxy",
+        "text": "each CR\nspecies is included, as well as nuisance parameters to allow freedom in the default fragmentation cross-sections\nfor the production of secondary CRs. A new custom\nmodification introduced for this paper is the inclusion of\nthe _e_ _[±]_ production cross section following the recent in\nRef. [40] as detailed in Sec. II B.\n\n**B.** **Fit to nuclei cosmic ray data**\n\n_1._ _Dataset_\n\nWe fit the latest data measured by the AMS-02 experiment after 7 years of data taking, from 2011 to 2018, [51].\nIn particular we fit the absolute fluxes of protons, He, C,\nO, N, B/C, Be/C and Li/C. The ratio of secondaries\nover primaries (B/C, Be/C and Li/C) are particularly\nrelevant for fixing the propagation parameters, while the\none of He, C, O, N to derive the injection spectra. Moreover, in the ratio some systematic uncertainties cancel\nout with respect to the absolute flux of secondary CRs.\nSince all the AMS-02 measurements considered have been\nmeasured for the same data-taking period, we adopt one\nunique Fisk potential for the all the species.\n\n5\n\nThe AMS-02 data for the fluxes available for _R >_ 1 GV\nare complemented with the proton and helium data from\nVoyager [69] above 0.1 GeV/nuc. The addition of Voyager data helps to calibrate the interstellar injection spectrum. We use Voyager data only above 0.1 GeV/nuc to\navoid further complications which might arise at very low\nenergies, like stochasticity effects due to local sources or\nthe possible presence of a further low energy break in the\nspectra [70].\nThe total number of data points considered in the analysis is 552. Since the number of free parameters in the\nmodel is between 25 and 30, a good _χ_ [2] is expected to be\nof the order or below 500.\n\n_2._ _Fitting procedure_\n\nThe statistical analysis performed in this paper is similar to the one presented in [36, 37, 71]. We recap in what\nfollows the key points and the novelties introduced.\nThe main goal of the analysis is to find the parameters\nof the model by fitting CR absolute flux data or flux ratios between secondary and primary CRs. To optimize\nthe computation time, we rely on a hybrid strategy to\nexplore the wide parameter space, comprising of up to\nabout 30 free parameters, as done in Refs. [36, 37]. We\nuse the MultiNest [72] algorithm to sample all parameters that depend on the evaluation of Galprop [3] . As\na result, we obtain the posterior distributions and the\nBayesian evidence. For the other parameters which do\nnot need a new evaluation of Galprop (for exa",
+        "score": -4.869066608189602,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.831372549019608,
+        "rerank_score": -7.589357376098633,
+        "matched_nodes": [
+          "In",
+          "As",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6022,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning.md",
+        "title": "2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning",
+        "text": "lies on the direct detection technique [5, 6]. These\nexperiments seek to observe rare interactions between\nDM particles from the Milky Way and detector materials placed deep underground in low-background envi\nronments.\nTraditionally, direct detection experiments have primarily focused on searching for nuclear recoil events induced by Weakly Interacting Massive Particles (WIMPs)\nscattering off target nuclei in crystals or liquid noble\ngases [7]. As a result, these experiments have mainly\nbeen sensitive to DM masses in the GeV – TeV range, as\nlighter particles would be unable to generate observable\nnuclear recoils.\n\n_∗_ [catena@chalmers.se](mailto:catena@chalmers.se)\n\n_†_ [urdshals@chalmers.se](mailto:urdshals@chalmers.se)\n\nWith the absence of direct evidence for WIMPs, efforts have been put in towards alternative experimental\napproaches better suited to probe DM particles with subGeV masses [8]. In this context, a crucial role is played\nby direct detection experiments designed to detect DMinduced electronic transitions or electron ejections in materials, offering a novel avenue for uncovering the nature\nof DM [9–20].\n\nTo interpret these experiments, a theoretical understanding of DM-electron interactions in detector materials is needed. In ref. [21–25], the interactions DM can\nhave with the electrons bound to silicon and germanium\ncrystals (as well as individual atoms and graphene targets) were classified and explored using a non-relativistic\neffective theory formalism. We implemented our formalism in QEdark-EFT [26], which interfaces with the planewave self-consistent field (PWscf) DFT code Quantum\nESPRESSO [27] and extends the QEdark code [28] to the\ncase of general DM-electron interactions. This allowed\nfor covering several DM models, although an extensive\nexploration was hindered by computational costs.\n\nThe deep neural network (DNN) developed in this paper is traned on the output of QEdark-EFT, and serves\nmainly two purposes. Firstly, it is easier to use and run\nthan QEdark-EFT. It takes less space on a hard drive\nand does not require computation of or access to material response functions. Secondly, it allows for evaluating a large number of DM-induced electronic transition\nrates cheaply on a laptop, and demonstrates the potential DNNs have for speeding up rate evaluations. Such a\nspeedup will be necessary to perform extensive parameter\nscans in the event of detection of a DM signal. For example, evaluating the rate of electron-hole pair creation\nin s",
+        "score": -5.34882234358694,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.831372549019608,
+        "rerank_score": -8.32744312286377,
+        "matched_nodes": [
+          "In",
+          "As",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 1797,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2657413__2305.03457__Parallelization_of_frequency_domain_quantum_gates_manipulation_and_distribution_of_frequen.md",
+        "title": "2024__recid_2657413__2305.03457__Parallelization_of_frequency_domain_quantum_gates_manipulation_and_distribution_of_frequen",
+        "text": "tup to parallelize\nthe measurement of such high quality entangled states by performing 34 quantum gates on\n17 frequency-entangled qubit pairs, in a first implementation of frequency-encoded quantum\ncommunication protocol.\n\n**4.** **Frequency-bin entangled photons for fully connected networks**\n\nIn this section, we show proof-of-principle of a fully connected network of up to 5 users in\nwhich every user can share a secure key with every other user, using frequency-bin entangled\nqubits generated by our broadband photon pair source. In previous implementations or proof-of\n–\nprinciple experiments based on time-bin or polarization-based entangled sources [28 31], the\nmain challenge was phase or polarization stabilization. In addition to previously mentionned\nassets, the frequency degree of freedom that we harness here has the advantage of requiring no\nphase stabilization for superposition analysis.\n\nIn this setup, polarization control is nevertheless necessary when entering the modulators.\nRecent advances have proposed schemes using polarization diversity electro-optic modulators\n(EOMs) to address this challenge [32], which is a relevant and additional asset for real world\napplications. As we encode frequency qubits on distinct pairs of adjacent frequencies, one can\nuse a PF as a demultiplexer to spectrally separate and distribute the pairs to respective users to\ncreate a network. For each mode pair, compensation for the bi-photon residual phase is required\nin order to produce the desired | _𝜙_ [+] ⟩ states [6].\nTo validate our scheme, we first show that the parallelization of the quantum gate enables\nmeasurement of entanglement for qubits separated by two guards modes, allowing for a measured\ncrosstalk ≤ 10 [−][3] between adjacent quantum gates (see appendix A). Fig. 4 shows the fidelity for\nthe accessible frequency-bin entangled pairs. We start from the _𝑛_ = 10 resonance from the pump\nfrequency, to avoid any residual pump laser leakage. The fidelity is higher than 0 _._ 8 for 14 pairs.\nThe few lower values are related to the dips observed in the coincidence spectrum shown in Fig.\n1 around the 50th and 70th resonances from the pump.\nImportant metrics for quantum networks are the key rate and qubit error rate. We deduce these\nparameters from our coincidence measurements, using the method proposed in [33]. We use the\ncoincidences in the Z basis ( _𝐶_ 0 _,_ 0, _𝐶_ 0 _,_ 1, _𝐶_ 1 _,_ 0, _𝐶_ 1 _,_ 1 ) and the X basis ( _𝐶_ + _,_ +, _𝐶_ + _,_ −, _𝐶_ − _,_ + and _𝐶_",
+        "score": -5.581810462712307,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.831372549019608,
+        "rerank_score": -8.68588638305664,
+        "matched_nodes": [
+          "In",
+          "As",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2435,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "btained from the original ASCII files, available to download from ZENODO\n\n[154].\n\nIn the first column, Tables VI to XVI list the reactions\nranked at 10 GeV/n for the production of secondary Li\nthrough Si species in CRs. The next 3-column block\nshows the flux impact (minimum, mean, and maximum\nvalue calculated from our three cross-section parameterizations), i.e. how much this reaction contributes, in fraction, to the calculated GCR fluxes. As discussed in Sec\n\ntion III.2 and contrarily to the _D_ and _P_ coefficients, we\nrecall that the sum of the _f_ _abc_ coefficients (for a given _c_ )\nis larger than one. The fifth column presents the minimal and maximal cross-section values for each reaction.\nThe next-to-last column (check symbol) indicates when\nat least one data point exists for the listed cross section.\nWhile there can be several data points available for some\nreactions, for some others only 1–2 points may exist, and\nyet in a limited energy range. This is for instance the\ncase for the reactions involved in the production of F\n(see Table XI): at the first glance, the cross sections are\nwell-constrained as the most important reactions have at\nleast one data point, but as discussed in [12], it appears\nthat all these data points are located in the rising portion\nof the cross sections, leaving the exact asymptotic values\nat high energy quite uncertain.\nThe last column shows the ratio of the reaction\ncross section to the cumulative one, _σ/σ_ [cumul] (see Section III.1); in Paper I, we showed instead _σ_ [cumul] _/σ_, but\nwe feel the inverse of this ratio is a natural choice. Reactions with _σ/σ_ [cumul] _<_ 1 indicate that the isotope produced comes from its direct production and the production of ghosts (highlighted in boldface); see also Section III.1 and Eq. 3). For instance, for F (see Table XI),\nthe contribution from the short-lived nucleus [19] Ne (see\nTable II) can reach half the cumulative production at\nmost. We stress that these coefficients and tables are relative to the secondary production. As shown in Table I,\nsome of these species are mostly primary (e.g., O and\nSi). Hence, the relative importance of the reactions for\nthe total flux is reduced. To illustrate this, we insert lines\n(in the tables) highlighting that coefficients above these\nlines make up some given fractions (25%, 50%, 75%; etc.)\nof the secondary or total fluxes. We also provide graphical views in Figs. C and 15 of the _f_ _aHc_ coefficients not\nshown in Section IV; we refer th",
+        "score": -5.732396829365749,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.831372549019608,
+        "rerank_score": -8.917557716369629,
+        "matched_nodes": [
+          "In",
+          "As",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 48,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 124,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit.md",
+        "title": "2023__recid_2631587__2302.05998__G4CMP_Condensed_matter_physics_simulation_using_the_Geant4_toolkit",
+        "text": "sport method; however, they could, in principle, be approximated with additional G4CMP physics processes\nwithin the Geant4 framework.\n\nOur goal with this article is to update the description of the\nG4CMP package, which has evolved from the Monte Carlo\ntechniques originally described in Refs. [1, 2, 17]. [2] This includes covering details of the physics processes supported by\nthe package (Sec. 2). For practical use, some of the important features and functionality of G4CMP are outlined (Sec. 3).\nFinally, with the recent broadening of the use of the package,\nconcise examples are provided to demonstrate the breadth of\napplication (Sec. 4). Section 5 provides a summary and a brief\ndiscussion of desired features that may be pursued in future development of the package.\n\n**2. Physics processes modeled in G4CMP**\n\nThe physics processes modeled in G4CMP enable Geant4\ntracking of production and transport of nonequilibrium phonons\nand charges in solid-state materials. As of this writing, the official G4CMP release includes processes for such tracking in\ngermanium and silicon semiconductor lattices, with the option\nto include charge and phonon sensors (or “electrodes”) on the\nsurfaces.\n\nThese processes capture a class of solid-state devices in\nwhich the surfaces of single-crystal semiconductor substrates\nare instrumented with superconducting circuits. This includes\ndevices explicitly designed for sensitivity to energy absorption\n\n2 This article presents the status of G4CMP for package version 8.2 under\nGeant4 version 10.07.p03, which are each available online for download [18,\n19]. Documentation on GitHub at Ref. [18] indicates how the community may\ncontribute to the package if desired.\n\nwithin the substrate or superconducting circuits, such as darkmatter detectors [10], photon sensors using microwave kineticinductance detectors (MKIDs) [20], and superconductingnanowire single-photon detectors (SNSPDs) [21, 22]. Also\nincluded are devices whose performance benefits from insensitivity to environmental disturbances, such as superconducting qubits affected by ionizing radiation [15, 23, 24]. In\nthis section, we review the physics processes modeled in\nG4CMP that enable tracking of nonequilibrium excitations in\nthis broad class of devices. The majority of the section describes phonon and charge production and transport in semiconductor substrates. We also describe the superconductor processes that G4CMP currently includes to enable simulation of\nquasiparticle-sensitive sen",
+        "score": -5.894654359406116,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.803921568627451,
+        "rerank_score": -9.163932800292969,
+        "matched_nodes": [
+          "In",
+          "As",
+          "The",
+          "We",
+          "For",
+          "Physics"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4864,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2778403__2404.10866__Spectroscopic_Measurements_and_Models_of_Energy_Deposition_in_the_Substrate_of_Quantum_Cir.md",
+        "title": "2024__recid_2778403__2404.10866__Spectroscopic_Measurements_and_Models_of_Energy_Deposition_in_the_Substrate_of_Quantum_Cir",
+        "text": "in the modeling we have performed and in the measurements we have made with conventional spectrometers and the TKID superconducting\nsensors. We find the PARMA model of atmospheric secondary cosmic rays to be good, though the best match to\nour measurements required rescaling the hadronic component (including muons) by 0.88 and the electromagnetic component by a location-varying factor ranging between 0.5 and 0.8. Apart from the intensity scaling, we\nargue it is important to include species other than muons\nin the cosmic ray model: electrons and gamma rays contribute to the backgrounds in silicon at the same energies\nas muons do, especially at higher-elevation sites. Critically, protons and neutrons generate rare events at substantially higher energies. For terrestrial gamma rays,\nthe spectra acquired in three widely separated sites varied\ngreatly in intensity (by a factor of 4), but not in shape.\nAn assumption of secular equilibrium in the [238] U and\n232 Th decay chains is supported by the measured spectra,\nconsiderably simplifying construction of the background\nmodels. The data support a break in equilibrium at the\nradon step in the [232] Th chain with a 3/2 activity ratio.\nThe data do not constrain the pre-radon section of the\n238 U chain, due the paucity of energetic gamma rays from\nthat portion of the decay chain. To model the spectrum\ncorrectly, it is necessary to account for Compton scattering of the terrestrial gamma-ray background. Finally,\nfor the conditions studied here (an unshielded, groundlevel laboratory, with devices on silicon substrates and\nmost reliable for events with _E >_ 40 keV), shielding by\nthe cryostat body and the laboratory ceiling plays only\na modest role. As a result, highly simplified geometric\nmodels of these components were adequate.\n\nIn summary, we present the first spectroscopic measurement of background events in a silicon die whose size\nand temperature is representative of the substrates used\n\nin superconducting quantum circuits. A model of these\nradiation backgrounds as the result of naturally occurring\nradioisotopes and of cosmic rays was matched to our specific local conditions via measurements performed with a\nstandard, commercially available gamma-ray spectrometer. This model, without free parameters, agrees quantitatively with spectral measurements of the radiation\nbackground when performed with energy sensors similar\nin size and composition to many quantum circuits. We\nuse the models to demonstrate how different c",
+        "score": -5.895300376652736,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.831372549019608,
+        "rerank_score": -9.16817855834961,
+        "matched_nodes": [
+          "In",
+          "As",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2847,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector.md",
+        "title": "2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector",
+        "text": "to spurious signal excesses. Even if correctly modeled,\n\nwe expect the presence of external crosstalk to corrupt the low-energy thresholds of dark matter\n\nsearches, such as in xenon and argon-based dark matter detectors [17]. This is because a single,\n\nthermally-generated avalanche (dark count) could induce a coincident signal in a separate device.\n\nThe probability for spurious _𝑁_ -fold coincident events at detector threshold thus rises accordingly,\n\nmaking it challenging to distinguish genuine signals at low energy. For a dark matter detector\n\nin which sensitivity improves with decreasing energy threshold, the usage of SiPMs could prove\n\ndetrimental.\n\nIn this article, we have measured the magnitude of external crosstalk in a dual-phase, liquid\n\nxenon time projection chamber (TPC) fully instrumented with SiPMs, with the goal of understanding\n\nthe severity of this effect for future xenon dark matter experiments. We find the probability that a\n\nsingle detected photon generates external crosstalk can grow to ≳ 5% in our detector. We interpolate\n\nour measurement to a future xenon dark matter experiment, showing the low-energy threshold would\n\nworsen, and comment on potential paths forward.\n\n**2** **Measurement of external crosstalk**\n\n**2.1** **Detector description**\n\nFull details of the dual-phase, liquid xenon TPC may be found in [3]. As shown in figure 1 (left), a\n\ncylindrical TPC is contained with PTFE walls holding three electrodes: cathode, gate, and anode,\n\n– 2 –\n\nas well as two SiPM arrays located at either end of the TPC. This design is meant to emulate an\n\nLZ-like detector. The two SiPM arrays each contain four Hamamatsu VUV4 S13371-6050CQ\n\nSiPM devices for a total of 32 (31 operating in this study) SiPM channels. One of the arrays is\n\npictured in figure 1 (right). Each array is mounted on a circuit board which provides an independent\n\nbias voltage to each device. This bias voltage is low-pass filtered with _𝑅_ = 10 kΩ and _𝐶_ = 10 nF.\n\nAdditionally, a 50 Ω resistance to ground is located immediately after the output of each device.\n\nThe output signal of each SiPM channel is sent directly to one of three digitizers (CAEN V1730S)\n\nwithout amplification. The digitizer bandwidth is 250 MHz.\nAn external [57] Co source is present during all measurements, including SiPM calibrations. The\n\nsource emits two prominent _𝛾_ -rays with energies of 122 keV (≈ 88% branching fraction) and 136 keV\n\n(≈ 12% branching fraction) which mainly photoabsorb in the liquid",
+        "score": -5.971206431654388,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8901960784313726,
+        "rerank_score": -9.291925430297852,
+        "matched_nodes": [
+          "In",
+          "As",
+          "CO",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2854,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector.md",
+        "title": "2024__recid_2697675__2309.07913__Why_would_you_put_a_flashlight_in_a_dark_matter_detector",
+        "text": "expect this effect to be\n\nprominent. We confirmed this by inspecting waveforms of the bottom array when they are set to\n\n0 V bias, while the top array is above breakdown voltage, and do not see any induced pulses in the\n\nbottom array indicative of electronic crosstalk.\n\n**4** **Outlook**\n\nWe have shown that SiPM external crosstalk complicates the device calibration in a bias-voltage\ndependent way. The measured effect also presents issues for accidental coincidence in scintillators.\n\nTo illustrate this, we consider the effect of external crosstalk on the _𝑁_ -fold coincidence rate in an\n\narbitrarily sized xenon detector with the same top-bottom array geometry as our detector. As an\n\nexample, an _𝑁_ -fold coincidence signal can be produced as follows: first, a dark count generated in\n\nthe bottom array induces a signal via external crosstalk in the top array with a probability _𝑃_ . In\n\nturn, this induces yet another signal in the bottom array, again via external crosstalk. This process\n\ncan continue on with a single dark count producing signal in _𝑁_ SiPM devices.\n\nWe use our measurement of external crosstalk probability in this extrapolation. Although we\n\nhave only measured the bottom-to-top crosstalk probability, we assume the top-to-bottom probability\n\nis the same. In actuality the two cases would be slightly different due to the presence of the liquid\nvapor interface. We additionally assume that optical effects concerning the light emitted by the\n\nSiPM [7], such as absorption lengths in xenon and surface reflectivity of e.g., PTFE, do not affect\n\nthe result when scaling to larger detectors.\n\nTo quantify the total _𝑁_ -fold coincident rate, we first consider the rate of uncorrelated _𝑁_ -fold\n\ncoincident dark counts, without external crosstalk. That is, _𝑁_ SiPM devices each producing a dark\n\ncount in a coincident time window. Given _𝑀_ total SiPM devices, each with dark count rate _𝑅_ _𝐷𝐶_,\n\nthe rate of _𝑁_ -fold uncorrelated coincidence pulses _𝑆_ _𝑁_ in a coincidence window of length _𝑇_ is\n\n_𝑀_ !\n\n_𝑆_ _𝑁_ ≈ _𝑇_ [1] ( _𝑀_ − _𝑁_ )! � _𝑅_ _𝐷𝐶_ _𝑇𝑒_ [−] _[𝑅]_ _[𝐷𝐶]_ _[𝑇]_ [�] _[𝑁]_ _,_ (4.1)\n\n– 7 –\n\nwhere _𝑅_ _𝐷𝐶_ _𝑇<<_ 1. Then, we consider the contribution of external crosstalk to this rate. For 2-fold\n\ncoincidences, there is a probability _𝑃_ for a single dark count to produce signal in another device,\n\ntherefore, the _total_ rate of 2-fold coincidences _𝑅_ 2 is,\n\n_𝑅_ 2 = _𝑆_ 2 + _𝑃𝑆_ 1 _._ (4.2)\n\nFollowing similar logic for the total rate of 3-fold co",
+        "score": -6.000975835560817,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.831372549019608,
+        "rerank_score": -9.330756187438965,
+        "matched_nodes": [
+          "In",
+          "As",
+          "The",
+          "We",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "As": 1.0,
+      "WA": 1.0,
+      "CO": 1.0,
+      "OR": 1.0,
+      "Up": 1.0,
+      "IS": 1.0,
+      "Red": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "As": 1.0,
+      "WA": 1.0,
+      "CO": 1.0,
+      "OR": 1.0,
+      "Up": 1.0,
+      "IS": 1.0,
+      "Red": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "To": 0.7,
+      "University": 0.5599999999999999,
+      "CA": 0.5599999999999999,
+      "Physics": 0.5599999999999999
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 15,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.128835855983198,
+    "generation_latency_s": 3.604218363761902e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 15.0,
+    "retrieval_latency_s": 6.128835855983198,
+    "generation_latency_s": 3.604218363761902e-07
+  }
+}

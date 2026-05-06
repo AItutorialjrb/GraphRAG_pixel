@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "fac010",
+    "query_type": "factoid",
+    "query": "What is equivalent noise charge?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "equivalent",
+      "noise"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is equivalent noise charge?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4149,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi.md",
+        "title": "2024__recid_2751455__2401.14114__Development_of_a_silicon_drift_detector_array_to_search_for_keV-scale_sterile_neutrinos_wi",
+        "text": "easured energy _E_, the equivalent noise\ncharge _n_ ENC (ENC) of the detector system was calculated. It describes the number of electrons that would\n\nbe created in the detector anode by a signal with the\nintensity of the root mean square (rms) of the noise. To\ncalculate _n_ ENC, the following equation was used:\n\n_∆E_ = 2 _√_\n\n2 ln 2 _·_\n�\n\n_n_ [2] ENC _[·][ w]_ [2] [ +] _[ F][ ·][ w][ ·][ E.]_ (3)\n\n12\n\n(a) X-ray resolution map ( [55] Fe source, Mn-K _α_ line)\n\n(b) Electron resolution map ( [83m] Kr source, L-32 line)\n\n(c) Entrance window effects in x-ray measurement\n\n(d) Electron resolution map (20 keV electrons, electron gun)\n\nFig. 10: Pixel maps of the detectors S0-166-4 and S0-166-6 showing the energy resolution and entrance window\neffects. Disabled pixels are colored in grey. (a) Measured energy resolution of the Mn-K _α_ line at 5 _._ 9 keV using an\n55\nFe source in the test bench setup. The average energy resolution of all pixels is 143 _._ 7 eV FWHM (energy filter\nrise time of 2 µs). (b) Pixel map showing the energy resolution for electrons of the L-32 line at 30 _._ 8 keV using a\n83m\nKr source in the monitor spectrometer. The average energy resolution of all pixels is 336 _._ 7 eV FWHM (energy\nfilter rise time of 2 µs). The pixels with grey values correspond to pixels with an additional substance on the\ndetector that could be removed after the measurement campaign had been completed. (c) Entrance window effects\nobserved in the [55] Fe energy spectra (same measurement as in (a)). The map shows the ratio of the counts in\nthe range from 5 _._ 2 keV to 5 _._ 6 keV (region corresponding to entrance window effects) and the counts in the range\nfrom 5 _._ 8 keV to 6 _._ 1 keV (full energy deposition). It shows the same structure as the energy resolution of electrons\nin (b). (d) Measured energy resolution of monoenergetic electrons (20 keV) in the vacuum chamber setup. The\naverage energy resolution of all pixels is 246 eV FWHM (energy filter rise time of 2 µs).\n\n13\n\n|e|@ vac.|chamber|(e gun)|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n||||~~De~~<br> <br>|~~tector S0-~~<br>@ test be<br>~~@ MoS (55~~<br>|~~166-4~~<br>nch (241A<br>~~Fe)~~<br>|m)|\n\n|Col1|Col2|Col3|(5.9|9 keV)|) from 55F|Fe @|@ tes|st b|be|enc|ch|h|Col14|3|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n||||~~ (5.~~|~~9 keV)~~|~~ from55~~|~~Fe @~~|~~ M~~|~~oS~~|||||||\n||||||||||||||||\n||||||||||||||||\n\n|Col1|Col2|Col3|Col4|Col5|Col6|Col7|\n|---|---|---|---|---|---|---|\n|~~1~~|~~0~",
+        "score": 1.9964546573334847,
+        "dense_score": 0.4182477295398712,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 3.0636649131774902,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 20,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7235,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2907611__2504.02570__Time_resolution_limits_in_silicon_sensors_from_Landau_fluctuations_and_electronics_noise.md",
+        "title": "2025__recid_2907611__2504.02570__Time_resolution_limits_in_silicon_sensors_from_Landau_fluctuations_and_electronics_noise",
+        "text": "bers of primary charges the results derived in this report are equal to the ones derived in [1]. However\nthey are also valid for arbitrarily small number of primary charge deposits and therefore applicable to a\nwider range of sensors.\n\nTo study the impact of electronic noise on time resolution, commonly referred to as _time jitter_ or simply _jitter_, we begin by analyzing the average silicon signal with superimposed series noise and evaluate\noptimal filters that maximize the signal slope-to-noise ratio. We then examine how closely these optimal\nfilters can be approximated by practical amplifier designs.\n\n**2. Charge Deposit in Silicon**\n\nA charged particle interacts with the silicon sensor at discrete positions with an average distance of _λ_,\nwhich is shown in Fig. 1a as a function of the particle velocity. For large particle velocities this number\n\n_Preprint submitted to Elsevier_ _April 4, 2025_\n\napproaches a constant value of _λ ≈_ 0 _._ 2 _µ_ m, equivalent to 5 clusters/ _µ_ m. It has to be noted that this\nbehaviour is not universal for all materials. As an example, for Argon gas the value of _λ_ increases again\nbeyond a minimum at _βγ ≈_ 3. The energy transferred in these interactions produces localized clusters\nof e-h pairs with a cluster size distribution _p_ _clu_ ( _n_ ) shown in Fig. 1b. We see that for large velocities\nthe probability for larger clusters shows a slight increase. The resulting average energy loss per unit of\nlength, typically approximated by the Bethe-Bloch function, shows therefore a slight increase for large\nvelocities, called the ’relativistic rise’ (Fig. 1c).\n\nc)\n\nb)\n\na)\n\nFigure 1: a) Average number of clusters per micrometer in silicon as a function of particle velocity. b) Cluster size\ndistribution for values of _βγ_ = 1 (bottom), 4, 10, 100 (top) c) Average energy loss of a charged particle per unit of length\nin silicon. The numbers are from Garfield++ [2] and Heed++ [3].\n\n2\n\n**3. General expression for the centroid time fluctuation in a silicon sensor**\n\nWe assume a single e-h pair in a general sensor of thickness _d_ at position _z_ with 0 _<z<d_ . Two specific\nexamples with constant electric field are given in Fig. 3, but the following discussion holds for arbitrary\nfield dependence in the sensor. The movement of the electron and hole from this position _z_ will result in\na signal _I_ ( _z, t_ ). The centroid time of this signal is defined by\n\n_τ_ 1 ( _z_ ) =\n\n� _tI_ ( _z, t_ ) _dt_\n(1)\n~~�~~ _I_ ( _z, t_ ) _dt_\n\nAssu",
+        "score": -1.8173865583207873,
+        "dense_score": 0.45879805088043213,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.8045263290405273,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2488,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "twin SET. **d), e)** Modulated\nreadout method using single SET 1 and single SET 2, respectively. _f_ mod = 25 kHz. **f)** Correlated readout method using\nthe twin SET modulated signal. _f_ mod = 25 kHz and the correlation function is given in Eq. 1. **g)** Square of the SNR\nas a function of integration time for the different techniques. Solid lines plot the fits to the function\nSNR [2] = _S_ 0 _τ/_ (1 + _A_ _f_ _τ_ _[α]_ ). **h)** Impact of the location of the charge transition on the charge readout infidelity for the\ndifferent techniques. _τ_ = 280 _µ_ s, _f_ mod = 25 kHz . Solid lines are used as guides to follow the trend of the points. The\ninset is a zoom-in to the region indicated by the box.\n\nwith integration time, consistent with signals affected by\n1 _/f_ _[α]_ (also known as “pink” or “flicker” for 0 _< α <_ 2)\nnoise [ 46, 47 ] (see Appendix F). In the regime where pink\nnoise is dominating, longer integration times will begin to\ncapture noise signals that are higher in amplitude, thus\nlosing the benefit of averaging over an increased number\nof samples. On the other hand, the modulation acts as a\nbandpass filter around _f_ mod, rendering the measurement\ninsensitive to pink noise. This result evidences the immunity to electrical noise provided by the modulation, and\nthe further improvement in readout sensitivity enabled\nby the correlation of the two signals.\n\nAn additional advantage of using a twin SET is that the\nreduction in signal that comes from moving the sensors\naway from the qubits can be compensated. In Fig. 2h),\nwe plot the charge readout infidelity obtained with the\ndifferent methods as a function of the double-dot pair,\nwhich is equivalent to changing the distance between\nthe center of the electric dipole and the sensors. For\ncomparison purposes, the total integration time in all\ncases is kept constant at 280 _µ_ s and the modulation\nfrequency is _f_ mod = 25 kHz . As expected, transitions\n\nbetween P1-P2 (P3-P4) are more weakly detected by\nSET 2 (SET 1 ) and the readout infidelity of the single SET\nmeasurement increases as the dipole is moved away from\nthe sensor. Notably, this monotonic trend is avoided by\nthe twin SET, with the correlation function providing\nbelow 0.3% readout infidelity ( _>_ 99 _._ 7% readout fidelity)\nthroughout the array.\n\n**IV.** **MODULATED SPIN READOUT**\n\nWe now study the impact that modulating the electron\nback and forth across a charge transition during readout\nhas on its spin degree of freedom. We load four el",
+        "score": -1.9853040897718042,
+        "dense_score": 0.37821340560913086,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.0601038932800293,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1426,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i.md",
+        "title": "2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i",
+        "text": "d\nphase produced by randomly oriented fluctuating electric dipoles as well as dipoles aligned along various axes\n(see Figure 6). Fig. 6(a) shows that there is correlation\n\nFIG. 4. (a) Plot of electric potential noise correlations between QDs 1 and 2 vs. temperature for 0 _._ 8 _≤_ _T ≤_ 3 resulting\nfrom fluctuating electric dipoles with random orientations.\nQD separations of 3, 5, 7, and 10 lattice spacings are shown.\n(b) Lin-log plot of the charge noise correlations between QDs\nas a function of QD separation at _T_ = 1 and _T_ = 2. The\nnoise correlations decrease exponentially with increasing QD\nseparation _d_ . The error bars shown in (a) and (b) correspond\nto the standard deviation that is calculated as described in\n\nthe text.\n\nin the noise between the two dots as we saw in the Pearson correlation. These correlations are due largely to the\ngeometry of the location of the dipoles with respect to\nthe QDs. There is no noticeable frequency dependence\nin either the magnitude or the phase of the correlations\nbecause unlike the experimental case [13], our QDs have\n\n7\n\nFIG. 5. Plots of the (a) magnitude and (b) phase of electric\npotential noise correlations between QDs 1 and 2 vs. frequency at _T_ = 1 for QD separations of 3, 5, 7, and 10 lattice\nspacings. The noise correlations decrease with increasing distance. The noise arises from fluctuating electric dipoles with\nrandom orientations.\n\nno dynamics.\n\nThe magnitude of the noise correlation is larger for the\nx-axis and z-axis dipoles compared to the y-axis dipoles,\nand comparable to that for randomly oriented dipoles\n(see Figs. 10(f) and 6(a)). Even though the numerator of Eq. (17) is about two orders of magnitude larger\nfor dipoles aligned along the z-axis compared to those\naligned along the x-axis, the normalization by the noise\namplitude in the denominator makes the noise correlation\nof the x and z axis dipoles comparable. The sizeable contribution of the x-axis dipoles, especially those located at\nor near the same y-coordinate as the QDs, is due to the\nlarge value of ( _⃗p_ _η,i_ ( _t_ ) _·_ _R_ [ˆ] _η_ ), the numerator of Eq. (10),\ncoupled with the small value of the denominator _R_ _η,i_ [2] [.]\n( _⃗p_ _η,i_ ( _t_ ) _·_ _R_ [ˆ] _η_ ) is large when _⃗p_ _η,i_ ( _t_ ) is collinear with _R_ [ˆ] _η_ .\nOn the other hand, the y-axis dipoles have small values\nof ( _⃗p_ _η,i_ ( _t_ ) _·_ _R_ [ˆ] _η_ ) when the y-coordinate of their location is\ncomparable to that of the QDs because the y-axis dipole\nis almost per",
+        "score": -2.108666706336172,
+        "dense_score": 0.37575873732566833,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.2497706413269043,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 821,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2664241__2305.19681__A_2D_quantum_dot_array_in_planar_28SiSiGe.md",
+        "title": "2023__recid_2664241__2305.19681__A_2D_quantum_dot_array_in_planar_28SiSiGe",
+        "text": "ev, T. Ladd, S. Merkel, I. Milosavljevic, E. Pritchett, M. Rakher, R. Ross,\nA. Schmitz, A. Smith, J. Wright, M. Gyure, and A. Hunter, “Reduced sensitivity to charge noise in semiconductor spin qubits via symmetric operation,” Physical Review Letters **[116](http://dx.doi.org/ 10.1103/physrevlett.116.110402)** (2016), 10.1103/phys[revlett.116.110402.](http://dx.doi.org/ 10.1103/physrevlett.116.110402)\n17 W. I. L. Lawrie, H. G. J. Eenink, N. W. Hendrickx, J. M. Boter, L. Petit, S. V.\nAmitonov, M. Lodari, B. P. Wuetz, C. Volk, S. G. J. Philips, G. Droulers,\nN. Kalhor, F. van Riggelen, D. Brousse, A. Sammak, L. M. K. Vandersypen, G. Scappucci, and M. Veldhorst, “Quantum dot arrays in silicon\n[and germanium,” Applied Physics Letters](http://dx.doi.org/ 10.1063/5.0002013) **116**, 080501 (2020).\n18 C. Volk, A. M. J. Zwerver, U. Mukhopadhyay, P. T. Eendebak, C. J. van\nDiepen, J. P. Dehollain, T. Hensgens, T. Fujita, C. Reichl, W. Wegscheider, and L. M. K. Vandersypen, “Loading a quantum-dot based “qubyte”\nregister,” npj Quantum Information **5** [(2019), 10.1038/s41534-019-0146-y.](http://dx.doi.org/ 10.1038/s41534-019-0146-y)\n19 L. DiCarlo, H. J. Lynch, A. C. Johnson, L. I. Childress, K. Crockett, C. M.\nMarcus, M. P. Hanson, and A. C. Gossard, “Differential charge sensing and\n[charge delocalization in a tunable double quantum dot,” Physical Review](http://dx.doi.org/ 10.1103/physrevlett.92.226801)\nLetters **92** [(2004), 10.1103/physrevlett.92.226801.](http://dx.doi.org/ 10.1103/physrevlett.92.226801)\n20 C. J. van Diepen, P. T. Eendebak, B. T. Buijtendorp, U. Mukhopadhyay,\nT. Fujita, C. Reichl, W. Wegscheider, and L. M. K. Vandersypen, “Auto[mated tuning of inter-dot tunnel coupling in double quantum dots,” Applied](http://dx.doi.org/ 10.1063/1.5031034)\nPhysics Letters **[113](http://dx.doi.org/ 10.1063/1.5031034)**, 033101 (2018).\n21 T. J. Knapp, R. T. Mohr, Y. S. Li, B. Thorgrimsson, R. H. Foote, X. Wu,\nD. R. Ward, D. E. Savage, M. G. Lagally, M. Friesen, S. N. Coppersmith,\nand M. A. Eriksson, “Characterization of a gate-defined double quantum\n\n7\n\n**(a)** vB12 = -5 mV vB12 = 137 mV vB12 = 241 mV vB12 = 417 mV\n\n200\n\n(1,1, (1,1, (1,1,\n1,1) 1,1) 1,1)\n\n0\n\n|(1,1,<br>1,1)|Col2|\n|---|---|\n|||\n\n|(1,1,<br>1,1)|Col2|\n|---|---|\n|||\n\n|(1,1,<br>1,1)|Col2|\n|---|---|\n|||\n\n|Col1|vB12 = 417 mV|Col3|\n|---|---|---|\n||(1,1,<br> 1,1)|(1,1,<br> 1,1)|\n||||\n||||\n\n**(b)**\n\n**(c)**\n\n**(d)**\n\n−200\n\n−200 0 200\n\nvB23 = 643 mV vB23 = 739 mV vB23 = 844 mV vB23 = 940 mV\n\n200\n\n−200\n\n|vB23 = 6",
+        "score": -2.2887000030086884,
+        "dense_score": 0.46822506189346313,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.529761791229248,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 8260,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker.md",
+        "title": "2026__recid_3070095__2510.13304__Evaluation_of_3D_pixel_silicon_sensors_for_the_CMS_Phase-2_Inner_Tracker",
+        "text": "0.8 V), _e_ is the elementary charge, _C_ inj\nis the injection capacitor capacitance (8 fF), and 4096\nrepresents the number of possible charge values for the\n12-bit ADC of the charge injection circuit. The gain\nof the CROCv1 charge injection circuit can be doubled\nto inject larger charges into the pixel front-end. In this\nregime, the charge values computed from the formula\nabove must be multiplied by 2.\n\n9\n\nused, as explained in Ref. [28]. For the DUTs the response of pixels above threshold is digitized with a 4-bit\nprecision ToT counter and stored together with the pixel\npositions.\nThe “local density\" noise estimation method, taken\nfrom the Proteus framework [32], is exploited to identify noisy pixels on the telescope planes. It uses a local\nestimate of the expected hit rate to find pixels that are\na certain number of standard deviations away from this\nestimate. The local density method is not applied to the\nDUTs, and only the pixels identified during the tuning\nprocedure described in Section 5 are masked.\nThe decoded hits in the DUT and telescope are then\nclustered. For the telescope planes, the cluster position\nis calculated using a simple arithmetic mean of the pixel\ncoordinates. For the DUTs, a “center-of-gravity” algorithm is applied, computing the cluster position as the\nweighted mean of the pixel positions, with the reconstructed charges serving as weights.\nThe next step is the alignment, which determines the\nposition and orientation of the telescope planes and the\nDUTs relative to an alignment-reference plane, which\ncan be either one of the telescope planes or the timingreference plane. This alignment is necessary to ensure\nthat the positions and orientations of all planes are accurately known, allowing for a reliable reconstruction\nof the observables defined in Section 6.3.\nA preliminary telescope alignment is achieved by\ntranslating each plane along the _x_ and _y_ axes to minimize the average distance between the hit positions\non the telescope planes and those on the alignmentreference plane in both directions. After this coarse\nalignment, tracks are reconstructed using a wide matching distance for track-hit association on each plane. This\nmatching distance corresponds to the spatial region defined by an ellipse, whose semi-major and semi-minor\naxes are each set to ten times the hit position uncertainty\nin the respective directions. Two tracking algorithms are\napplied to the data presented in this paper: a “straightline\" fit and the General Bro",
+        "score": -2.304235975882586,
+        "dense_score": 0.41983190178871155,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.5528969764709473,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8210,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "charge (noise\ninjection) at the input when the strobe begins.\n\n|102|2|Thres|\n|---|---|---|\n|10<br>1<br>100<br>Str<br>10<br>3<br>10<br>2<br>10<br>1<br>100<br>101<br><br>||Thres<br>1<br>1<br>|\n|10<br>1<br>100<br>Str<br>10<br>3<br>10<br>2<br>10<br>1<br>100<br>101<br><br>||1|\n|10<br>1<br>100<br>Str<br>10<br>3<br>10<br>2<br>10<br>1<br>100<br>101<br><br>|||\n|10<br>1<br>100<br>Str<br>10<br>3<br>10<br>2<br>10<br>1<br>100<br>101<br><br>||1<br>2<br>|\n|10<br>1<br>100<br>Str<br>10<br>3<br>10<br>2<br>10<br>1<br>100<br>101<br><br>||10<br>10<br><br>be length ( s)|\n\nFigure 12: Fake-hit rate as a function of strobe length at different thresholds. The strobe\nperturbation causes a sharp increase in the fake-hit rate at a strobe length of about 2 µs.\nThe apparent rise at very short strobe lengths and the apparent decrease at very long strobe\nlengths are misleading due to the construction of the fake-hit rate observable.\n\nThis finding leads to the conclusion to operate the sensor during the pixel\nmatrix characterisation with a short strobe length of 0 _._ 6 µs. It mitigates the\nimpact of the perturbation by closing the strobe window before the perturbation\nhas a significant effect on the fake-hit rate and ensures that the fake-hit rate is\nnot underestimated, as it would be the case for a longer strobe length (>100 µs).\nThe final ITS3 sensor will use a layout without strobe-bias crossings and edgebased latching of a hit, ensuring a fake-hit rate independent of acquisition time.\n\n_4.3. Working point validation of the in-pixel front-end_\n\nThe front-end operating point, as a function of bias parameters, was extensively studied to validate the design simulations and optimize the signal-to-noise\n\n16\n\nratio. Figure 13 illustrates the relation of the fake-hit rate and the threshold\nas individual front-end parameters are varied. The parameter _V_ casb serves as\na linear handle to compensate for threshold shifts induced by other front-end\nsettings, allowing consistent threshold tuning without affecting overall front-end\noperation (see Sec. 2.1).\nStarting with the parameter _I_ reset, a reduction in the fake-hit rate at a\ngiven threshold is observed as _I_ reset decreases. This behaviour is consistent with\nan increased front-end gain, attributed to a higher resistance in the reset and\nfeedback branch, and with a lower shot noise from a reduced current injected\ninto the collection electrode. is further supported by the expectation that a lower\n_I_ reset reduces shot noise at the collecti",
+        "score": -2.41856541633606,
+        "dense_score": 0.4578028917312622,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.729283332824707,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6638,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2836000__2409.20290__The_search_for_light_dark_matter_with_DAMIC-M.md",
+        "title": "2025__recid_2836000__2409.20290__The_search_for_light_dark_matter_with_DAMIC-M",
+        "text": "ow-noise electronics is used to run\n\nskipper CCDs. The goal is to have the DAMIC-M detector online in early 2025 and search for light\n\nDM.\n\n**References**\n\n[1] J. Janesick, et al., _New advancements in charge-coupled device technology - Sub-electron_\n\n_noise and 4096 x 4096 pixel CCDs_, _Proc. SPIE_ **[1242](https://doi.org/10.1117/12.19452)** (1990) 223.\n\n[2] C. E. Chandler, et al., _Sub-electron noise charge-coupled devices_, _Proc. SPIE_ **[1242](https://doi.org/10.1117/12.19457)** (1990)\n\n[238.](https://doi.org/10.1117/12.19457)\n\n5\n\n_The search for light dark matter with DAMIC-M_ Radomir Smida\n\n[3] J. Tiffenberg et al. (SENSEI Collaboration), _Single-electron and single-photon sensitivity with_\n\n_a silicon Skipper CCD_, _PRL_ **119** [(2017) 131802 [arXiv:1706.00028].](https://doi.org/10.1103/PhysRevLett.119.131802)\n\n[4] Arnquist, I. et al. (DAMIC-M Collaboration), _The DAMIC-M Low Background Chamber_,\n\n[[arXiv:2407.17872].](https://doi.org/10.48550/arXiv.2407.17872)\n\n[5] S. E. Holland, _Fully depleted charge-coupled device design and technology development_,\n\n_Astron. Notes_, **344** [(2023) e20230058.](https://doi.org/10.1002/asna.20230072)\n\n[6] A. Aguilar-Arevalo, et al. (DAMIC Collaboration), _Measurement of radioactive contamination_\n\n_in the high-resistivity silicon CCDs of the DAMIC experiment_, _JINST_ **10** [(2015) P08014](https://doi.org/10.1088/1748-0221/10/08/P08014)\n\n[arXiv:1506.02562].\n\n[7] A. Aguilar-Arevalo, et al. (DAMIC Collaboration), _Measurement of the bulk radioactive_\n\n_contamination of detector-grade silicon with DAMIC at SNOLAB_, _JINST_ **16** [(2021) P06019](https://doi.org/10.1088/1748-0221/16/06/P06019)\n\n[arXiv:2011.12922].\n\n[8] A. Aguilar-Arevalo, et al. (DAMIC Collaboration), _Characterization of the background spec-_\n\n_trum in DAMIC at SNOLAB_, _PRD_ **105** [(2022) 062003 [arXiv:2110.13133].](https://doi.org/10.1103/PhysRevD.105.062003)\n\n[9] D. Norcini et al. (DAMIC-M Collaboration), _Precision measurement of Compton scatter-_\n\n_ing in silicon with a skipper CCD for dark matter detection_, _PRD_ **106** [(2022) 092001](https://doi.org/10.1103/PhysRevD.106.092001)\n\n[arXiv:2207.00809].\n\n[10] K. J. McGuire, et al., _Nuclear recoil identification in a scientific charge-coupled device_, _[PRD](https://doi.org/10.1103/PhysRevD.110.043008)_\n\n**110** [(2024) 043008 [arXiv:2309.07869].](https://doi.org/10.1103/PhysRevD.110.043008)\n\n[11] R. Saldanha, et al., _Cosmogenic activation of silicon_, _PRD_ **102** [(2020) 102006](https",
+        "score": -2.4223396309664555,
+        "dense_score": 0.41456106305122375,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.734260320663452,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7525,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2964877__2509.06791__Toward_Axion_Signal_Extraction_in_Semiconductor_Spin_Qubits_via_Spectral_Engineering.md",
+        "title": "2025__recid_2964877__2509.06791__Toward_Axion_Signal_Extraction_in_Semiconductor_Spin_Qubits_via_Spectral_Engineering",
+        "text": "**[96](https://doi.org/10.1103/PhysRevLett.96.097009)**, 097009 (2006).\n\n[35] E. J. Connors, J. Nelson, H. Qiao, L. F. Edge, and J. M.\nNichol, _Low-frequency charge noise in si/sige quantum_\n_dots_, Phys. Rev. B **[100](https://doi.org/10.1103/PhysRevB.100.165305)**, 165305 (2019).\n\n[36] A. P. Zhitnitskii, _Possible suppression of axion-hadron_\n_interactions_ [, Sov. J. Nucl. Phys. (Engl. Transl.); (United](https://www.osti.gov/biblio/7063072)\nStates) **[31:2](https://www.osti.gov/biblio/7063072)** (1980).\n\n[37] M. Dine, W. Fischler, and M. Srednicki, _A simple solution_\n_to the strong cp problem with a harmless axion_ [, Physics](https://doi.org/https://doi.org/10.1016/0370-2693(81)90590-6)\nLetters B **[104](https://doi.org/https://doi.org/10.1016/0370-2693(81)90590-6)**, 199 (1981).\n\n[38] M. Shifman, A. Vainshtein, and V. Zakharov, _Can con-_\n_finement ensure natural cp invariance of strong interac-_\n_tions?_ [, Nuclear Physics B](https://doi.org/https://doi.org/10.1016/0550-3213(80)90209-6) **166**, 493 (1980).\n\n[39] J. E. Kim, _Composite invisible axion_ [, Phys. Rev. D](https://doi.org/10.1103/PhysRevD.31.1733) **31**,\n[1733 (1985).](https://doi.org/10.1103/PhysRevD.31.1733)\n\n[[40] Q. Yang and R. Huang, Search for qcd axions in light of](https://arxiv.org/abs/2408.06652)\n[string theory (2024), arXiv:2408.06652 [hep-ph].](https://arxiv.org/abs/2408.06652)\n\n[41] D. Culcer, X. Hu, and S. Das Sarma, _Interface rough-_\n_ness, valley-orbit coupling, and valley manipulation in_\n_quantum dots_, Phys. Rev. B **[82](https://doi.org/10.1103/PhysRevB.82.205315)**, 205315 (2010).\n\n[42] J. J. Pla, K. Y. Tan, J. P. Dehollain, W. H. Lim, J. J. L.\nMorton, D. N. Jamieson, A. S. Dzurak, and A. Morello,\n\n11\n\n_A single-atom electron spin qubit in silicon_ [, Nature](https://doi.org/10.1038/nature11449) **489**,\n[541 (2012).](https://doi.org/10.1038/nature11449)\n\n[43] R. Winkler, _Spin-orbit_ _[Coupling](https://doi.org/10.1007/b13586)_ _Effects_ _in_ _Two-_\n_[Dimensional Electron and Hole Systems](https://doi.org/10.1007/b13586)_, 1st ed., Springer\nTracts in Modern Physics, Vol. 191 (Springer Berlin, Heidelberg, 2003) pp. XII, 228.\n\n[44] S. Alexander and R. Sims, _Detecting axions via induced_\n_electron spin precession_, Phys. Rev. D **[98](https://doi.org/10.1103/PhysRevD.98.015011)**, 015011 (2018).\n\n[45] B. Yi, U. Sinha, D. Home, A. Mazumdar, and S. Bose,\n_Massive spatial qubits: Testing macroscopic nonclassical-_\n_ity and casimir entanglement_ [, Phys. Rev. Res.](http",
+        "score": -2.486441184691529,
+        "dense_score": 0.4257797300815582,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.8333308696746826,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 30,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 960,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2669039__2306.08716__Radiation-Induced_Degradation_Mechanism_of_X-Ray_SOI_Pixel_Sensors_With_Pinned_Depleted_Di.md",
+        "title": "2023__recid_2669039__2306.08716__Radiation-Induced_Degradation_Mechanism_of_X-Ray_SOI_Pixel_Sensors_With_Pinned_Depleted_Di",
+        "text": "while the sense-node capacitance depends only on _Q_ BOX .\nThus, the BOX charge at 40 krad(SiO 2 ) was first determined\nto be _Q_ BOX = 2 _._ 4 _×_ 10 [12] cm _[−]_ [2] . As shown in Fig. 3, this value\nwas chosen to reproduce the experimental results of gain and\nreadout noise, which depend on the sense-node capacitance.\nThen, by comparing with the experimental results of dark\ncurrent, the surface recombination velocity at 40 krad(SiO 2 )\nwas determined to be _S_ = 5 _._ 0 _×_ 10 [5] cm _/_ s.\nThe chosen values of _Q_ BOX and _S_ at 40 krad(SiO 2 ) are\nreasonable compared with the previous works and literature.\nAccording to Schwank et al. [15], the BOX charge is written\n\nas\n\n_D_\n_Q_ BOX = 8 _._ 1 _×_ 10 [12] _× f ×_\n� rad\n\n_t_ BOX\n_×_\n� � cm\n\ncm _[−]_ [2]\n�\n\n= 6 _._ 5 _×_ 10 [12] _× f_ cm _[−]_ [2] _,_ (1)\n\nwhere _D_ = 40 krad(SiO 2 ) is total dose, _t_ BOX = 0 _._ 2 _µ_ m\nis the thickness of BOX, and _f_ is the fraction of unrecombined holes (charge yield). The charge yield _f_ depends\non the electric field strength in BOX and the linear energy\ntransfer (LET) of the ionizing particle. According to Oldham\n& McGarrity [29] and Paillet et al. [30], a charge yield of\n_f_ = 0 _._ 2–0 _._ 4 is reasonable for 100-MeV protons with a\nLET of 6 _._ 0 MeV cm [2] _/_ g and an electric field strength of\n_∼_ 0 _._ 1 MV _/_ cm. Thus, the determined value of BOX charge\nof _Q_ BOX = 2 _._ 4 _×_ 10 [12] cm _[−]_ [2] is acceptable. On the other\nhand, the surface recombination velocity _S_ = 5 _._ 0 _×_ 10 [5] cm _/_ s\nat 40 krad(SiO 2 ) determined in this work roughly matches that\nof _S_ = 1 _._ 7 _×_ 10 [5] cm _/_ s at 10 krad(SiO 2 ) determined in the\nprevious work [19].\nIn addition to the simulations for the 100-MeV proton experiment described above, simulations with a slightly smaller\n\nFig. 4. Simulated dark current as a function of total dose (blue solid\nline and blue dotted line), compared with experimental data (red triangle\nand filled circle). The experimental data is the same as that presented in\nHayashida et al. [18]. For discriminating the effects of the increases in BOX\ncharge _Q_ BOX and surface recombination velocity _S_, the simulated dark\ncurrent with a constant BOX charge _Q_ BOX = 2 _._ 0 _×_ 10 [11] cm _[−]_ [2] was also\nshown in a blue dashed line.\n\nBOX charge _Q_ BOX were also performed to mimic the 6MeV proton experiment. Although the literature does not\nprovide actual measurements of the charge yield for 6-MeV\nprotons [29], [30], it should be smaller th",
+        "score": -2.631173362288364,
+        "dense_score": 0.3851081132888794,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.054220199584961,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.656925057061017,
+    "generation_latency_s": 3.7997961044311523e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.656925057061017,
+    "generation_latency_s": 3.7997961044311523e-07
+  }
+}

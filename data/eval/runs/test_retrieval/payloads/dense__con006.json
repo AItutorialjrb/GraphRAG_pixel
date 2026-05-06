@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "con006",
+    "query_type": "conceptual",
+    "query": "Why is in-time efficiency important at the LHC?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "LHC"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why is in-time efficiency important at the LHC?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "medium",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1987,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "d\nas a mandatory requirement because a good portion of the signal efficiency can be\nachieved using tracks alone. A similar argument applies to electron identification\nor the reconstruction of downstream tracks, specifically _K_ S [0] _[→]_ _[π]_ [+] _[π]_ _[−]_ [and] _[ Λ][ →]_ _[pπ]_ _[−]_\n\ndecaying outside the VELO. Both would significantly benefit certain areas of the physics\nprogramme but they do not represent a strict requirement for a functioning HLT1.\n\n##### **11.2 Design overview**\n\n**11.2.1** **Hardware design**\n\nAs described in section 10 the centrepiece of LHCb trigger is the full detector readout\nand event building at 30 MHz . [80] In addition to its inherent flexibility, this approach also\nmatches the described physics requirements for HLT1, most notably the requirement that\nall the tracking algorithms must reconstruct the events at 30 MHz . Since the tracking\ndetectors constitute approximately two-thirds of LHCb overall data bandwidth, the cost of\na hardware trigger allowing the other one-third (principally RICH and calorimeters) to be\nread out at a lower rate does not justify the added complexity and reduced flexibility of such\na system. The trigger data flow from detector to offline storage is illustrated in figure 108.\nThe online disk buffer serves two purposes: it stores events selected by HLT1 while\nreal-time alignment and calibrations are being performed, and it allows events selected by\nHLT1 to be buffered for processing between LHC fills. This in turn effectively increases\nthe processing power of the HLT2 computing resources. Simulations of the LHC fill\nstructure [181] result in an optimal buffer size of around 30 PB, which allows around\n\n80 Although the LHC bunch crossing frequency is 40 MHz, the rate of events with some signal visible\ninside the LHCb acceptance ( _reconstructible_ events) is _∼_ 30 MHz.\n\n145\n\nFigure 108: Online data flow. Reproduced with permission from [180].\n\n80 hours of LHC collisions to be buffered at an HLT1 output rate of 1 MHz . The disk\nbuffer architecture is constrained not only by the total size but also by I/O limitations of\nindividual disks, which impose a minimum number of disks in the system.\nBecause the detector is fully read out upfront, there is in principle total freedom to\nchoose the computing architecture with which to process the data; the only constraints\nare the available budget and the capacity (racks and cooling) of the data centre. LHCb\nhas sought to take advantage of this freedom since abo",
+        "score": 0.34637820858563956,
+        "dense_score": 0.5247347354888916,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 0.5248528122901917,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 169,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8399,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_.md",
+        "title": "2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_",
+        "text": "ormation is used to create higher-level objects. The process of reconstruction and data\nfiltering happens in two software-based trigger stages, HLT1 and HLT2, where high-level\nphysical quantities such as particle tracks and collision vertices are reconstructed and\nmade available for both real-time and offline analysis [6].\nBy design, LHCb operates at a levelled luminosity [3], kept at a lower value with\nrespect to ATLAS and CMS. To achieve this, the LHC beams colliding at LHCb are\nsteered based on real-time luminosity feedback from the experiment. In Run 3, the LHCb\nluminosity levelling strategy requires a precision of at least 5% on the measurement of\ninstantaneous luminosity [4]. In the Run 1 and Run 2 data-taking periods, the activity\nin the LHCb calorimeter was used to measure the instantaneous luminosity, using hence\ninformation available at the first stage of the trigger (L0), implemented in hardware. In\nRun 3, following the removal of the L0 trigger stage, new methods have been introduced to\nmonitor luminosity. A dedicated detector, Probe for LUminosity MEasurement (PLUME),\nhas been designed and installed for this purpose [4], and several other quantities, either\navailable at the detector readout level or computed in HLT1, are used as real-time\nluminometers. A method using hit counting in the muon system has been studied with\nRun 2 data [14]. A metal-foil based detector, the RMS-R3, is used to monitor beam and\nbackground conditions continuously during LHCb operation, and, when calibrated on\nPLUME, it can be used to monitor luminosity in real time [15]. The two ring-imaging\nCherenkov (RICH) detectors, used for particle identification, have also proved capable\nof providing real-time luminosity measurements using both MaPMT anode currents and\nhit counting [16]. The availability of independent luminosity measurements is important\nin order to maximise the reliability of the luminosity-levelling feedback, as well as to\nuse them for cross-calibration in measurements of both instantaneous and integrated\nluminosity. The possibility of using VELO hits reconstructed in real time to measure\nluminosity [17] has the additional potential of producing an accurate measurement with\na fast time response. This new method has been implemented, and it is described in\n\n2\n\nthis paper. The algorithm, presented in detail in Sect. 4, is developed around two core\ncomponents. The first one operates on the TELL40 boards, running in parallel with\nstandard data taking and leveragi",
+        "score": -0.4901841693454319,
+        "dense_score": 0.5035490989685059,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.7616081237792969,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2026,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "nting a proper monitoring, easily maintainable\ncode with increasing functionality tests, the use of continuous integration tools and\nperformance tests, better documentation and user support.\nThe Dirac jobs are handled by the workload management system (WMS) and by the\nDirac data management system (DMS). Data sets are retrieved through a bookkeeping\ntool. The LHCb bookkeeping is a metadata and provenance catalogue used to record\ninformation about the data sets. In order to cope with the rapidly increasing data size,\nthe main bookkeeping tables and indexes are partitioned. This allows to run more efficient\nqueries using, for example, partition-wise joins.\n\n##### **12.8 Computing model**\n\nThe new paradigm for the trigger selection process, described in the previous section,\nimplies necessary changes in the offline computing model. Owing to the five-times higher\ninstantaneous luminosity and higher foreseen trigger efficiency, the LHCb upgrade has a\n\n173\n\nsignal yield per time unit approximately ten times higher than that of the Run 1-2 LHCb\nexperiment. The pileup also increases at upgrade instantaneous luminosity, resulting\nin an average event size increase by a factor of three. As a consequence a data volume\nlarger by more than a factor of 30 is expected. A corresponding necessity to generate\nsignificantly larger samples of simulated events arises, as the number of events to simulate\nis proportional to the integrated luminosity. The computing resource requirements are\nsubstantially mitigated by the novel real-time data processing model and by the massive\nuse of fast simulation techniques, as discussed in the previous sections.\n\n**12.8.1** **Data processing flow**\n\nBuilding on the experience developed during LHC Run 2, in the LHCb upgrade most of\nthe activities related to data processing, such as event reconstruction and calibration and\nalignment of subdetectors, are performed online. The output produced by the HLT is\nstored on tape through three streams: `FULL`, `Turbo` and calibration ( `TurCal` ). The `Turbo`\nstream undergoes only minimal offline processing before being stored to disk. The `FULL`\nand `TurCal` streams instead requires further offline filtering.\nThe online reconstruction and trigger selection process execute the order of thousand\ntrigger lines, each of which is associated to one of the three ( `Turbo`, `TurCal` or `FULL` )\nstreams that are subsequently stored offline. The offline processing of the `Turbo` stream,\nwhich comprises the bulk of t",
+        "score": -0.6500283403056009,
+        "dense_score": 0.4525510370731354,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.0055381059646606,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 208,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1827,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "_ 10 [32] cm _[−]_ [2] s _[−]_ [1] to keep the average number of visible primary _pp_ interactions\n( _pile-up_ ) close to unity [4], LHCb has been successfully operated for most of Run 1 and\nRun 2 at _L ∼_ 4 _×_ 10 [32] cm _[−]_ [2] s _[−]_ [1], demonstrating the capability to run and to produce excellent physics results at higher luminosity and with a pile-up larger than initially foreseen.\nA proposal for a major upgrade to operate LHCb at substantially larger instantaneous\nluminosity than Run 1-2 was thus formalised in a Letter of Intent [5] and detailed in a\nFramework TDR [6]. The physics motivations for this upgrade have been discussed in\ngreat detail in refs. [3,5,6], assuming an expected total luminosity of _∼_ 50 fb _[−]_ [1] integrated\nby the end of LHC Run 4.\nThe LHCb Run 1-2 system design would not allow a significant increase in statistics,\nespecially for fully hadronic final state decays, the main limitation coming from the\nmaximum allowed output rate of the first trigger stage, the L0, implemented in hardware [7].\nThe simple inclusive selection criteria implemented in the L0 trigger stage, based essentially\non particle transverse momentum, would result in an effective loss of efficiency with\nincreasing luminosity, especially for the most abundant processes with hadrons in the\nfinal state, and in the saturation of the event yield, as clearly visible in the left panel of\nfigure 1.\nIn addition, inclusive flavour physics signals have relatively large cross sections and, at\nthe upgrade luminosity, every event in the LHCb acceptance will contain on average two\nlong-lived hadrons not containing heavy quarks [8,9]. Therefore, simple cuts based on\ndisplaced vertices or on _p_ T would be either not effective in rejecting background or, once\nenough purity is reached, would amount to downscaling the signal as shown in the right\npanel of figure 1. Profiting from a higher luminosity to collect significantly more data is\ntherefore only possible by removing the L0 trigger stage and introducing selections that\nare more discriminating than simple inclusive criteria. In particular a full-software trigger\ndiscriminating signal channels based on the full event reconstruction has been deemed\nessential for this strategy.\nBased on these considerations the LHCb upgrade has been designed to run at a nominal\n\n1\n\nFigure 1: Left: relative trigger yields as a function of instantaneous luminosity, normalised to\n_L_ = 2 _×_ 10 [32] cm _[−]_ [2] s _[−]_ [1] . Reproduced from",
+        "score": -1.1072722699907092,
+        "dense_score": 0.5373443365097046,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.7120428085327148,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 258,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC.md",
+        "title": "2023__recid_2640906__2310.11783__Overview_of_ATLAS_forward_proton_detectors_for_LHC_Run_3_and_plans_for_the_HL-LHC",
+        "text": "were\ninstalled to improve cooling capabilities. Finally, developments\nof a new trigger module and picosecond Time to Digital Converter (TDC) readout are ongoing.\n\n_Preprint submitted to Nuclear Physics B_ _October 19, 2023_\n\n**5. High Luminosity LHC Consideration**\n\nAt the HL-LHC high pile-up environment the key focus is on\nphoton-induced processes and Beyond Standard Model (BSM)\nsearches. The presence of RPs during Run 4 may improve the\nmeasure/search capabilities of “central” detectors. The discussion about HL-LHC physics case with use of RPs is held in [10]\nand references within [11]. Below only an idea is described.\nProcesses which are particularly interesting to be studied are\n_pp_ → _pXp_, where _p_ denotes a proton staying intact and _X_\ndenotes a “central” system, _e.g._ photon-induced WW (γγ →\n_WW_ ) production, axion-like particles γγ → _a_ → γγ, supersymmetry and dark matter particles (γγ → _l_ [˜] _l_ [˜] ). The information from the forward protons, combined with that of the central\ndetector where particles are produced out of the energy lost by\nthe protons, allows full kinematic reconstruction of the events\nusing the difference and sum of the energy lost by the two protons, respectively.\nThe presence of pileup makes things more complicated, because the association between the central and forward systems\nis not obvious, and the two protons tagged by the forward detectors are likely originating from different collisions. For this\nreason, and especially in the extreme pile-up scenarios foreseen\nat the HL-LHC, it is essential that the position measurements\nfrom the pixel detectors is complemented by a high-resolution\nToF detectors.\n\nAs there are significant constraints on using RPs due to the\nHL-LHC layout, a discussion of project feasibility is ongoing\nwithin the ATLAS community [1] . According to the newest available HL-LHC machine layout only a few locations are possible for the RP installation: 195.5 m (RP1A), 198.0 m (RP1B),\n217.0 m (RP2A), 219.5 m (RP2B), 234.0 m (RP3A), 237.0 m\n(RP3B) and 245.0 m (RP3C). Depending on the number of stations and their location, the mass acceptance was estimated –\nsee Fig. 1. The legend should be interpreted as:\n\n - “RP **X** ” means combination two stations RP **X** A and RP **X** B\n\non both sides of IP when proton is tagged in all of them;\n\n - “RP **X** +RP **Y** ” means tagged proton in [(RP **X** A and RP **X** B\non side A) or (RP **Y** A and RP **Y** B on side A)] and [(RP **X** A\nand RP **X** B on side C",
+        "score": -1.9647674728842344,
+        "dense_score": 0.5236120820045471,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.030637741088867,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7154,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "ws the time residuals between the TelePix2 fast\n\nHit-OR and H2M time stamps. The tail to the left is caused by\ntime-walk of H2M.\n\n5\n\n(b) Time difference between reference trigger and TelePix2 hit-or at a threshold of 16.\n\nFigure 9: The fast Hit-OR of TelePix2.\n\n_ATLAS ITk strips - timing plane mode_\n\nThe ATLAS inner tracker (ITk) [16] is a full silicon detector upgrade of the ATLAS tracking system for the high luminosity phase of the Large Hadron Collider (HL-LHC). To\nkeep the tracking performance in the expected harsh environment and balance the cost, micro-strip modules are used in the\nouter barrel and end-cap layers of ITk, operated in a binary\nreadout mode. The modules are required to have an operating\nthreshold window with hit detection efficiency above 99 % at a\nnoise occupancy below 0.1%. Different types of modules have\nbeen tested in the DESY II test beam facility. Already 1 % of\nfake tracks causes modules to not fulfil this stringent requirement. As the modules are significantly larger than the ADENIUM telescope’s active area, only the track timing feature of\nTelePix2 is used in the analysis. Figure 11 shows the comparison of the measured efficiency with and without TelePix2 as\ntiming plane as a function of the detection threshold of an nonirradiated short strip module. In the low threshold region, an\nimprovement in the determined efficiency of above 1 % is observed, resulting in a significant operating region, that would be\nhidden without the timing capabilities of TelePix2.\n\n_RD50-MPW4 - region of interest trigger and timing mode_\n\nThe _RD50-MPW4_ [17] is an HV-CMOS pixel sensor fabricated in a 150 nm process by _LFoundry_ . It consists of a 64 ×\n64 pixel matrix with a pitch of 62 × 62 µm [2], resulting in an active area of ≈ 4 × 4 mm [2] . The pixels are equipped with a timestamping logic, which allows for 25 ns time binning. The performance was evaluated in a test beam at the DESY II test beam\n\nSS sensor unirradiated\n\n**1.2**\n\n~~**1**~~\n\n**0.8**\n\n**0.6**\n\n**0.4**\n\n**0.2**\n\n**0**\n\n|s2|0 at 24o|C|Col4|Col5|Effici|ency w|ithout t|elepix|\n|---|---|---|---|---|---|---|---|---|\n||||||~~Effici~~<br>Eff =|~~ency w~~<br>0.99|~~ith tele~~|~~pix~~|\n||||||||||\n||||||||||\n||||||||||\n\n**20** **40** **60** **80** **100** **120** **140** **160** **180**\n\n**Threshold [DAC]**\n\n(a) Spatial correlations of H2M with (red) and without (blue) TelePix2 region of interest\ntrigger along x.\n\n(a) Measured module efficiency versus threshold.\n\n(b) Temporal correlations bet",
+        "score": -1.994750620875248,
+        "dense_score": 0.4672481417655945,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.075108289718628,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4898,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter.md",
+        "title": "2024__recid_2779289__2404.12885__Testbeam_results_of_irradiated_SiGe_BiCMOS_monolithic_silicon_pixel_detector_without_inter",
+        "text": "e to 300 V provides an efficiency to 99.7% at that proton fluence. The timing resolution of\n20 ps measured before irradiation rises for a proton fluence of 1 × 10 [16] n eq /cm [2] to 53 and 45 ps at\nHV = 200 and 300 V, respectively.\n\n1Corresponding author.\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Data samples and experimental set-up** **3**\n\n**3** **Detection efficiency** **4**\n\n**4** **Time resolution** **8**\n\n**5** **Summary and Conclusions** **13**\n\n**1** **Introduction**\n\nTo cope with the large event pile up foreseen during the CERN LHC High-Luminosity data-taking\n\nperiod, the experiments showed evidence for the need to upgrade the present detectors with layers\n\nwith timing capability of the order of tens of picoseconds. The major LHC Collaborations foresee\n\nthe addition of timing layers [1, 2] to match the required performance. One choice is to build these\ntiming layers with mm [2] silicon pads based on the low-gain avalanche detectors (LGAD) [3], which\n\nfeature an internal gain layer under the pixel.\n\nThe particle-physics community is presently attempting to develop a new generation of silicon\n\nsensors able to achieve both high spatial granularity and excellent timing capabilities [4, 5], although\n\nthe radiation tolerance of the gain layer still constitutes a problem to place these sensors at small\n\nradii in present and future high-energy hadron colliders, where radiation will be very high. Studies\n\nto overcome the limited radiation tolerance of the gain layer are ongoing [6–8]. A particularly\n\ninteresting approach is to use a resistive layer that spreads the signal among four adjacent pixels\n\nand, by reconstructing the hit position from those signals, reduces drastically the number of detection\n\nchannels needed to have spatial resolutions at the level of 10 _𝜇_ m, at the price of a reduction of the\n\ntiming performance by approximately a factor of two [9–11].\n\nThe MONOLITH Horizon 2020 ERC Advanced project utilises the SG13G2 130 nm SiGe\n\nBiCMOS process by IHP to produce low noise, low power and very fast frontend electronics,\n\nimplemented in a fully sensitive high granularity monolithic sensor able to provide excellent timing.\n\nThe foundry masks of the first prototype of the MONOLITH project [12] were used to produce a\n\nproof-of-concept picosecond avalanche detector (PicoAD) [13], a novel detector that implements a\ncontinuous deep gain layer [14]. At a power density of 2.7 W/cm [2], this proof-of-concept monolithic\n\nASIC provided full e",
+        "score": -1.9953586411476136,
+        "dense_score": 0.510508120059967,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.07747483253479,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 61,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "ers\ncorrectly. The overall final chip occupancy turns out to be\nabout 75%. Some tuning was required to fix timing violations\noccurring due to the large fraction of resource usage and to\nthe complex connectivity of the design. The complete firmware\nwas then compiled and loaded on the LHCb readout boards,\nand successfully tested within the DAQ system by means\nof signal injection in the detector front-end. The firmware\nhas also been tested on the detector readout boards using an\ninternal front-end generator within the firmware, capable of\ngenerating input data at the nominal data rate (64 Gb/s). At\nthe time of this writing, the firmware is fully commissioned\nand has started to take physics data in LHC Run 3.\n\nThe FPGA power consumption of all VELO TELL40s is\nmeasured at the nominal event rate of 30 MHz (Fig. 22). For\ncomparison, the same measurements are performed using the\nfirmware without the cluster finding block, outputting SPs\ninstead of clusters. The average power consumption of an\nFPGA within a TELL40 card when processing an event rate\nof 30 MHz with the readout firmware only is 6.1 W; this\nincreases to a total of 8.6 W for the full firmware, including\nthe clustering block. The same measurements are repeated for\ndifferent values of the input event rate, showing a very slow\nincrease of power consumption with the input rate.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2023 12\n\nVII. S UMMARY AND C ONCLUSIONS\n\nA novel two-dimensional clustering architecture was developed, implemented in the VHDL language, and integrated\nin the LHCb readout FPGA cards. The architecture exploits\nthe principles developed within the INFN-RETINA R&D\nproject [4] for real-time track reconstruction, and effectively\nrepresents its first processing stage.\nThis firmware proved capable of directly processing every\nevent at the 30 MHz LHC crossing rate (a total flow of\n5 Tb/s) without time-multiplexing or buffering of any sort, in a\nmanner that serves the needs of an actual high-energy physics\nexperiment. The physics performances of the algorithm were\nextensively studied and showed to be effectively indistinguishable from software clustering algorithms. The sparse-matrix\ntechnique adopted in its implementation proved successful in\nhandling large detectors (order of 40 million pixels) with a\nmodest amount of logic and memory resources. This allowed\nits insertion into the existing LHCb readout hardware, for\nuse in the Run 3 physics data taking. This is a significant\nadva",
+        "score": -2.1181656296939066,
+        "dense_score": 0.49718010425567627,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.266092538833618,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5633,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ectors. Traditional silicon tracking detectors provide a high spatial resolution\n\nin the order of 10 µm derived from decades of intensive R&D efforts and current HEP collider\n\nexperiments such as the Large Hadron Collider (LHC) have low enough event densities to allow\n\nthe reconstruction of every event through this technology. However, this outlook is expected to\n\nchange with the upcoming High Luminosity (HL) LHC. The rate of events is expected to increase\n\nby approximately a factor of 5 compared to the luminosity in the LHC Run-2 [1]; this will result in\n\na high event pile-up that would pose a challenge of separating individual tracks for reconstruction.\n\nHowever, the inclusion of precise timing information in the order of 10 ps could solve this problem\n\nby discriminating compatible hits based on timing information in what is known as 4D tracking[2].\n\nSeveral candidate technologies have been proposed to fulfil this task in addition to other requirements\n\nsuch as but not limited to high radiation tolerance and costs.\n\nOne candidate technology is 3D silicon sensors which have a detector design with an electric\n\nfield parallel to the detector surface, unlike traditional planar silicon sensors. This novel architecture\n\nwas first introduced by Parker, et. al. [3] in 1997 and introduces advantages such as short drift time,\n\nradiation tolerance, and low depletion voltage[4–6]. Recent innovations in 3D silicon detectors have\n\ndesigns with small pixel pitches of 25 µm × 100 µm and 50 µm × 50 µm that provide excellent spatial\n\nresolution and temporal resolution[7]. Particularly, 50 µm × 50 µm devices were experimentally\n\n– 1 –\n\ndemonstrated to provide a peak time resolution in the order of 30 ps[8]. However, the technology\n\ncomes with several limitations. The manufacturing process of 3D silicon sensors is complicated[9].\n\nFurthermore, small pixel sizes needed for good time resolution increase power consumption due to\n\nthe density of the electronic channels and the lack of gain in the technology will require appropriate\n\ncircuitry for amplification that further increases power consumption[4].\n\nAnother candidate technology is complementary metal-oxide-semiconductor (CMOS), which\n\nhas been available for decades and is actively being developed for HEP applications. Decades of\n\nR&D have made CMOS-based detector systems easy and cheap to manufacture and sensor can\n\nbe integrated into a single chip for easier assembly. Additionally, radiation damage in CMOS is\n\nwell under",
+        "score": -2.282101947382877,
+        "dense_score": 0.4894205927848816,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.5180110931396484,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 8397,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_.md",
+        "title": "2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_",
+        "text": "ment of instantaneous luminosity, with a precision at least as good as\n5%, is therefore essential to ensure correct LHCb operation [4].\nIn this paper, a new algorithm for the determination of instantaneous luminosity\nis proposed and characterised. This algorithm relies solely on detector hits, _i.e._ lowlevel information made available at the very first stage of data acquisition by a new\nclustering procedure described in Ref. [5]. It can run continuously and independently of\nthe software-based event reconstruction. [1]\n\nThe paper is organised as follows: Sect. 2 describes the LHC collider and the relevant\nfeatures of the LHCb experiment, Sect. 3 introduces the concept of luminosity and the\nmethods normally used to measure it, Sect. 4 describes how hit counters are implemented\nto measure luminosity, and discusses the design choices. Then, Sect. 5 explains how\nthese counters are calibrated using collision data, Sect. 6 discusses the performance of the\nmethod and the possible sources of systematic uncertainties. Finally, Sect. 7 summarises\nthe findings.\n\n### **2 Experimental context**\n\nThe LHC is the highest-energy proton-proton ( _pp_ ) collider in the world, also capable of\ncolliding heavier nuclei, _e.g._ lead ions (Pb). It is a radio-frequency machine where each\nbeam is divided into 3564 bunches. During the 2024 nominal running conditions for _pp_\ncollision physics, 2133 bunches were colliding at the LHCb interaction point, each one\ncontaining up to about 1 _._ 6 _×_ 10 [11] protons [1].\nThe LHCb detector underwent a major upgrade in view of the ongoing LHC Run 3 [6],\nto support a fivefold increase of instantaneous luminosity compared to the previous running\nperiods, _i.e._ a target luminosity of _L_ = 2 _×_ 10 [33] cm _[−]_ [2] s _[−]_ [1], corresponding to 2000 Hz / µb .\nThe new detector is able to reconstruct events at a rate of 40 MHz and its finer granularity\nallows for smooth operation with increased event multiplicity. The tracking system has\nbeen completely replaced. In particular, a new silicon pixel VErtex LOcator (VELO)\nacts as the tracking detector closest to the _pp_ interaction region [7]. The VELO is placed\nin a vacuum box that locally replaces the LHC vacuum pipe. It consists of 26 detector\nlayers placed at different _z_ positions surrounding the luminous region, where the _z_ axis\nlies along the beamline and its origin lies within the VELO. Each layer is composed of two\nmodules, which can move horizontally as far as 25 mm and as close as",
+        "score": -2.433788095967153,
+        "dense_score": 0.46204763650894165,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.7503395080566406,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 1.92621063394472,
+    "generation_latency_s": 3.702007234096527e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.92621063394472,
+    "generation_latency_s": 3.702007234096527e-07
+  }
+}

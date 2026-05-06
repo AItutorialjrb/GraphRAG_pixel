@@ -1,0 +1,277 @@
+{
+  "benchmark": {
+    "query_id": "com004",
+    "query_type": "comparative",
+    "query": "Compare SPADs and linear silicon sensors for LiDAR-like detection.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "SPAD",
+      "LiDAR"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare SPADs and linear silicon sensors for LiDAR-like detection.",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5106,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L.md",
+        "title": "2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L",
+        "text": "ed of arrays of passively-quenched Single-Photon Avalanche\n\nDiodes (SPADs), also referred to as “microcell”, all connected in parallel\n\nand working above breakdown condition, in Geiger mode [1]. These\n\ndetectors have gained increasing interest in the past decade in many fields\n\nsuch as medical imaging [2], automotive LiDAR (Light Detection And\n\nRanging) [3], Cherenkov telescopes [4], and big physics experiments [5].\n\nIn recent years the continuous improvement of SiPM performance,\n\ncombined with their advantages like ruggedness, compactness, lightweight\n\nand low operating bias, as well as high photon detection efficiency from the\n\nultraviolet to the near infrared, opened new possibilities for these detectors\n\n - _Corresponding author_ : _smerzi@fbk.eu_\n\nin space applications, such as satellites operations for cosmic ray studies\n\n[6]-[7], atmospheric LiDAR [8], and navigation LiDAR.\n\nWhen SiPM are used in such kind of applications, as well as in others,\n\nlike in large high-energy physics experiments [9]-[11], the main drawback\n\nis the high radiation doses to which they are exposed, deteriorate their\n\nperformance over time (especially as increase to dark count rate) due to\n\ndamage caused by both ionizing and non-ionizing radiation effects [12]. In\n\nparticular ionizing dose induces damages (interface states) at the silicon\n\nsurface (or interfaces between silicon and dielectrics) while displacement\n\ndamage dose induces defects in the bulk of the silicon detector. Several\n\nstudies have been conducted in recent years to evaluate the effects of\n\nradiation damage on SiPM functionality [12]-[21]. The majority of the\n\nworks report that the main effects of radiation damage is an increase in dark\n\n**2**\n\ncount rate (DCR), particularly induced by non-ionizing energy loss (NIEL),\n\nproportional to the fluence while minor consensus was found on other\n\nparameters, such as signal amplitude, gain and photon detection efficiency.\n\nIn FBK we conducted a series of experiments, with protons and X-rays,\n\nas reported in [18]-[21], using several SiPM produced over the years with\n\ndifferent versions of layout and based on different process technology.\n\nWhile these works provided insightful information on the behaviour of\n\nSiPMs after radiation damage, it was not easy to correlate different samples\n\nand to isolate the effect of a single parameter in the effects of radiation\n\ndamage on their performance.\n\nIn this paper we present a systematic study of radiation damage on\n\nSiPM, of both",
+        "score": 1.272522049565469,
+        "dense_score": 0.5428824424743652,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 1.9490413665771484,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7567,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2857516__2412.06687__Test_beam_characterization_of_a_digital_silicon_photomultiplier.md",
+        "title": "2026__recid_2857516__2412.06687__Test_beam_characterization_of_a_digital_silicon_photomultiplier",
+        "text": "k probability, as well as the experimental methods required for the\ncharacterization of such a sensor type in a particle beam are presented.\n\n_Keywords:_ Silicon sensors, digital SiPMs, CMOS SPADs, charged particle\ndetection, MIP detection, test beam\n\n**1. Introduction**\n\nSilicon photomultipliers (SiPMs) contain an array of single-photon avalanche\ndiodes (SPADs). SPADs are operated in Geiger-mode and sensitive to ionizing radiation and even single photons. One key feature of the Geiger-mode\noperation are fast-rising signal edges, facilitating single photon time resolutions on the order of 10 ps [1]. Structure, operation principle, and applications\nof SiPMs are discussed, for example, in [2, 3, 4].\nAn effect of the Geiger-mode operation is that the SPAD signal contains\nno information about the energy deposition by the interacting quanta. This\ninherent digital nature of the SPAD signal makes thinking of a SiPM as a digital device seem natural. As SPAD layouts in CMOS processes are available,\nCMOS circuitry can be embedded in the SiPM design, which allows profiting\nfrom digital signal processing. Introduced as digital SiPMs (dSiPMs) in [5],\nthese devices come with several advantages compared to analog SiPMs. The\ncircuitry allows storing information about the position of a firing SPAD (order of 10 µm precision), the masking of noisy SPADs, and on-chip pattern\nrecognition. Parallel connection of the whole SPAD array can be avoided,\nwhich reduces the input capacitance to the readout circuit, and thus improves\nsignal rise times. Finally, it can ease system integration, as no separate device\nfor signal digitization is required. One clear disadvantage is the quality of\nthe SPADs, yielding generally higher dark count rates (DCRs) in dSiPMs [6],\nwhich will certainly improve once more sophisticated SPAD designs become\navailable in CMOS processes. Another is the reduction of the fill factor, as\na part of the surface area is needed for the CMOS circuitry, with increasing\ncircuit complexity.\nPossible applications have to find a trade-off between these advantages\nand disadvantages. Especially, the availability of position information is\na key point to consider. One example is to use dSiPMs for the readout of\nscintillating-fiber bundles [7], where the available position information is used\n\n2\n\nFigure 1: Microscopic image of a pixel. The four-SPAD structure with shared electronics\nin the lower part of the pixel is visible. The total area of the pixel is 69 _._ 6 _×_ 76 µm [",
+        "score": 0.8828706623611179,
+        "dense_score": 0.4710509181022644,
+        "bm25_score": 20.354446914447532,
+        "graph_score": 0.0,
+        "rerank_score": 1.3421854972839355,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 796,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2663245__2305.17762__Measurements_of_the_Cherenkov_effect_in_direct_detection_of_charged_particles_with_SiPMs.md",
+        "title": "2023__recid_2663245__2305.17762__Measurements_of_the_Cherenkov_effect_in_direct_detection_of_charged_particles_with_SiPMs",
+        "text": "mber\nof firing cells, reaching values below 20 ps. These measurements provide significant insight into the capabilities of SiPM sensors in direct\ndetection of charged particles and their potential for several applications.\n\n**Keywords:** SiPM, tracking\n\n### **1 Introduction**\n\nIn [1] it was quantitatively shown that the response of different Silicon PhotoMultipliers (SiPMs) to the passage of a charged particle was characterized\nby an excess of firing cells (SPADs) with respect to the expectations from\nCrossTalk (CT). In [2] it was shown that the effect was not related to internal\nsilicon bulk, but to the presence of a protection layer where, at the passage\nof the charged particle, the Cherenkov effect produces a significant amount of\nphotons that arrive at the same time on the SiPM surface generating a large\nsignal with many firing SPADs. In both papers time resolution measurements\nwere reported. In particular, reference [2] showed an improvement with the\nnumber of fired SPADs, reaching values of about 30-40 ps for _≥_ 4 SPADs.\nIn this work, results of a new beam test are reported where a position scan\nwas performed on SiPMs with different protection layers, aiming to compare\nthem both in terms of SPADs distribution and time resolution, well beyond\nthe previous range of measured SPADs.\nThis work is part of the R&D studies for the TOF timing layer of the\nALICE 3 [3] experiment at the LHC.\n\n### **2 Experimental setup**\n\n**2.1 Detectors**\n\nFor the present study available NUV-HD-RH SiPMs produced by Fondazione\nBruno Kessler (FBK) were used [4]. These detectors are based on the NUV-HD\ntechnology [5] and have an active area of 1 _×_ 1 mm [2], hexagonal pixel, with an\nequivalent rectangular pixel pitch of 20 _µ_ m, 2444 SPADs, 72% fill factor and\n\nSpringer Nature 2021 L [A] TEX template\n\n3\n\nV _bd_ 33.0 _±_ 0.1 V [1]. The detectors were produced with standard protection\nlayers; in particular, in this paper three different protection layers of 1.0 and\n1.5 mm silicon resin (refraction index 1.5, named SR1 and SR15) and 1.0 mm\nepoxy resin (refraction index 1.53, named ER1), thickness with respect to the\nboard hosting the sensor, have been studied. Since the sensor itself is 550 _µ_ m\nthick, the two thicknesses correspond to an effective protection layer on top of\nthe sensor of 450 and 950 _µ_ m respectively for the 1.0 and 1.5 mm. A fourth\nprototype was produced without any protection resin (named WR) and was\nthe same used in [2].\nDifferently from [1, 2], the prototy",
+        "score": 0.5109621531993983,
+        "dense_score": 0.4319096803665161,
+        "bm25_score": 23.42892372863068,
+        "graph_score": 0.0,
+        "rerank_score": 0.7699918746948242,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7566,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2857516__2412.06687__Test_beam_characterization_of_a_digital_silicon_photomultiplier.md",
+        "title": "2026__recid_2857516__2412.06687__Test_beam_characterization_of_a_digital_silicon_photomultiplier",
+        "text": "## Test Beam Characterization of a Digital Silicon Photomultiplier\n\nFinn King _[∗]_, Inge Diehl, Ono Feyens [1], Ingrid-Maria Gregor [2], Karsten\nHansen, Stephan Lachnit, Frauke Poblotzki, Daniil Rastorguev [3], Simon\nSpannagel, Tomas Vanat, Gianpiero Vignola [2]\n\n_Deutsches Elektronen-Synchrotron DESY, Notkestr. 85, 22607 Hamburg, Germany_\n\n**Abstract**\n\nConventional silicon photomultipliers (SiPMs) are well established as light\ndetectors with single-photon-detection capability and used throughout high\nenergy physics, medical, and commercial applications. The possibility to produce single photon avalanche diodes (SPADs) in commercial CMOS processes\ncreates the opportunity to combine a matrix of SPADs and an applicationspecific integrated circuit in the same die. The potential of such digital SiPMs\n(dSiPMs) is still being explored, while it already is an established technology\nin certain applications, like light detection and ranging (LiDAR).\nA prototype dSiPM, produced in the LFoundry 150-nm CMOS technology, was designed and tested at DESY. The dSiPM central part is a matrix\nof 32 by 32 pixels. Each pixel contains four SPADs, a digital front-end, and\nhas an area of 69 _._ 6 _×_ 76 µm [2] . The chip has four time-to-digital converters\nand includes further circuitry for data serialization and data links.\nThis work focuses on the characterization of the prototype in an electron\nbeam at the DESY II Test Beam facility, to study its capability as a tracking and timing detector for minimum ionizing particles (MIPs). The MIP\ndetection efficiency is found to be dominated by the fill factor and on the\norder of 31 %. The position of the impinging MIPs can be measured with a\nprecision of about 20 µm, and the time of the interaction can be measured\n\n_∗_ Corresponding author\n_Email address:_ `finn.king@desy.de` (Finn King)\n1 Also at Vrije Universiteit Brussel, Belgium\n2 Also at Rheinische Friedrich-Wilhelms-Universit¨at Bonn, Germany\n3 Also at Bergische Universit¨at Wuppertal, Germany\n\n_Preprint submitted to Nucl. Instrum. Methods Phys. Res. A_ _December 10, 2024_\n\nwith a precision better than 50 ps for about 85 % of the detected events. In\naddition, laboratory studies on the breakdown voltage, dark count rate, and\ncrosstalk probability, as well as the experimental methods required for the\ncharacterization of such a sensor type in a particle beam are presented.\n\n_Keywords:_ Silicon sensors, digital SiPMs, CMOS SPADs, charged particle\ndetection, MIP detection, test beam",
+        "score": -0.06780545577765204,
+        "dense_score": 0.5338974595069885,
+        "bm25_score": 20.379432801585196,
+        "graph_score": 0.0,
+        "rerank_score": -0.12089983373880386,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4693,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2769638__2508.16324__A_Two-Prong_Approach_to_the_Simulation_of_DC-RSD_TCAD_and_SPICE.md",
+        "title": "2024__recid_2769638__2508.16324__A_Two-Prong_Approach_to_the_Simulation_of_DC-RSD_TCAD_and_SPICE",
+        "text": "two innovative paradigms have been intro-duced in the design of silicon sensors for particle detection:\n\nthe internal low-gain and the resistive read-out. The internal\nlow-gain has been introduced with the Low-Gain Avalanche\n\nManuscript received July 19, 2023; revised July 19, 2023. This project\nhas received funding from the European Union’s Horizon 2020 research and\ninnovation programme under GA No 101004761 and from the Italian MIUR\nPRIN under GA No 2017L2XKTJ.\nT. Croci and A. Morozzi are with INFN, Section of Perugia, via A. Pascoli\n23c, 06123 Perugia, Italy (e-mail: tommaso.croci@pg.infn.it).\nL. Menzio, V. Sola, R. Mulargia and V. Monaco are with University of\nTorino, Department of Physics and with INFN, Section of Torino, via P. Giuria\n1, 10125 Torino, Italy.\nR. Arcidiacono and M. Arneodo are with Universit`a del Piemonte Orientale,\nLargo Donegani 2/3, 20100 Novara, Italy and with INFN, Section of Torino,\nvia P. Giuria 1, 10125 Torino, Italy.\nF. Moscatelli and P. Asenov are with CNR-IOM of Perugia and with INFN,\nSection of Perugia, via A. Pascoli 23c, 06123 Perugia, Italy.\nN. Cartiglia and M. Ferrero are with INFN, Section of Torino, via P. Giuria\n1, 10125 Torino, Italy.\nD. Passeri and A. Fondacci are with University of Perugia, Department of\nEngineering, via G. Duranti 93, 06125 Perugia, Italy and with INFN, Section\nof Perugia, via A. Pascoli 23c, 06123 Perugia, Italy.\nE. Robutti is with INFN, Section of Genova, via Dodecaneso 33, 16146\nGenova, Italy.\n\nDiode (LGAD) detector, which is a planar n-in-p silicon\nsensor that provides large signals and low noise, yielding a\ntemporal precision in the order of tens of picoseconds [1]\n\n[2]. For this reason, the LGAD sensors are ideal to perform\ntiming in particle detection. On the other side, the detector\nsegmentation strongly affects the fill factor, resulting in low\nspatial resolution. Thanks to the introduction of the resistive\nread-out in silicon sensors, it has been possible to avoid the\ndetector segmentation, thus improving the spatial precision.\nThe resistive read-out has been introduced with the AC\ncoupled Resistive Silicon Detector (RSD), that is essentially\nan LGAD-based silicon sensor optimized for both timing\nand spatial particle detection, which makes use of an ACcoupled read-out [3] [4]. As shown in Fig. 1a, the major\npeculiarity of the RSD paradigm is the use of a continuous\n_n_ [+] -resistive sheet and a continuous _p_ [+] -gain layer that ensure\nsignal sharing among neighbouring pads and 100%",
+        "score": -0.3111549808475423,
+        "dense_score": 0.4111890196800232,
+        "bm25_score": 17.639811669337476,
+        "graph_score": 0.0,
+        "rerank_score": -0.49202781915664673,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2801,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2694196__2309.03131__Demonstration_of_particle_tracking_with_scintillating_fibres_read_out_by_a_SPAD_array_sens.md",
+        "title": "2024__recid_2694196__2309.03131__Demonstration_of_particle_tracking_with_scintillating_fibres_read_out_by_a_SPAD_array_sens",
+        "text": "the single pixel pitch. Hence, each SPAD pixel can be considered as an independent readout channel. This is made possible by placing the\ncircuitry for digitisation of single-SPAD signal on the chip near the pixels, at the\nexpense of a slightly lower fill factor. Depending on the application that includes\nLIDAR [24], Non-Line-of-Sight Imaging [25], and Raman Spectroscopy [26], different SPAD arrays and SPAD test structures reported in literature demonstrate\na pitch down to just above 2 _µ_ m [27, 28], time gate based readout, as well as\nmulti-pixel time-stamping using time-to-digital converters (TDCs) with _∼_ 50 ps\ntimestamp resolution [24]. In [29], SPAD array sensors have been proposed to readout SciFi. However, particle tracking has not been demonstrated with prototypes\n\nyet.\nIn this article, we report the demonstration of particle tracking with SwissSPAD2 [30] and propose a SciFi detector read out with SPAD array sensors as\n\n3\n\na cost-effective solution for high-resolution neutrino active target detectors. The\ndemonstration of particle tracking is obtained by exposing a bundle of scintillating\nfibres to [90] Sr electrons and reading out with SwissSPAD2. In the last part of the\narticle, the simulation of a SPAD array based SciFi neutrino detector is studied\nboth considering the SwissSPAD2 response parameters, as well as an improved\ndesign that the authors are currently developing. Such configuration would allow\na reduction of the number of readout channels, which would scale with the detector surface rather than the number of scintillating fibres, and, at the same time,\npreserve the finest spatial resolution possible in a massive fully-active scintillator\nvolume so that even low-momentum protons can be tracked. Finally, plans for the\nfuture R&D are discussed.\n\n### **2 Demonstration of readout of scintillating fi-** **bres with SwissSPAD2**\n\nA demonstrator consisting of SciFi read out with the SwissSPAD2 sensor [30] has\nbeen built and studied. SwissSPAD2 is a 512 _×_ 512 pixel SPAD array sensor with\na pixel pitch of 16 _._ 38 _µ_ m, resulting in total surface of 8 _._ 4 _×_ 8 _._ 4 mm [2], of which\n10 _._ 5% is active. The Photon Detection Probability (PDP) of these pixels peaks at\na wavelength of around 500 nm with values of 55%, using a 7 V excess bias _V_ ex .\nDuring operation, the exposure time of one frame _t_ gate can be tuned from 10 ns\nto 10 _µ_ s, and data from the whole array is read out in about 10 _µ_ s.\nA first prototype of the proposed SciF",
+        "score": -0.4218008092192353,
+        "dense_score": 0.5618882775306702,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.6577515602111816,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4770,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "## The DESY Digital Silicon Photomultiplier: Device Characteristics and First Test-Beam Results\n\nInge Diehl, Finn Feindt [∗], Karsten Hansen, Stephan Lachnit [1], Frauke Poblotzki, Daniil Rastorguev [2], Simon\nSpannagel, Tomas Vanat, Gianpiero Vignola [3]\n\n_Deutsches Elektronen-Synchrotron DESY, Notkestr. 85, 22607 Hamburg, Germany_\n\n**Abstract**\n\nSilicon Photomultipliers (SiPMs) are state-of-the-art photon detectors used in particle physics, medical imaging, and\nbeyond. They are sensitive to individual photons in the optical wavelength regime and achieve time resolutions of a\nfew tens of picoseconds, which makes them interesting candidates for timing detectors in tracking systems for particle\nphysics experiments. The Geiger discharges triggered in the sensitive elements of a SiPM, Single-Photon Avalanche\nDiodes (SPADs), yield signal amplitudes independent of the energy deposited by a photon or ionizing particle. This\nintrinsically digital nature of the signal motivates its digitization already on SPAD level.\nA digital SiPM (dSiPM) was designed at Deutsches Elektronen Synchrotron (DESY), combining a SPAD array\nwith embedded CMOS circuitry for on-chip signal processing. A key feature of the DESY dSiPM is its capability\nto provide hit-position information on pixel level, and one hit time stamp per quadrant at a 3 MHz readout-frame\nrate. The pixels comprise four SPADs and have a pitch of about 70 µm. The four time stamps are provided by 12 bit\nTime-to-Digital Converters (TDCs) with a resolution better than 100 ps.\nThe chip was characterized in the laboratory to determine dark count rate, breakdown voltage, and TDC characteristics. Test-beam measurements are analyzed to assess the DESY dSiPMs performance in the context of a 4D-tracking\napplications. The results demonstrate a spatial hit resolution on a pixel level, a minimum-ionizing particle detection\nefficiency of about 30 % and a time resolution in the order of 50 ps.\n\n_Keywords:_ Silicon, CMOS sensor, digital silicon photomultipliers, dSiPM, photon detection, APDs, SPADs, particle\ndetection, tracking detectors, 4D tracking, test beam\n\n**1. Introduction**\n\nSilicon Photomultipliers (SiPMs) are arrays of\nSingle-Photon Avalanche Diodes (SPADs). These\nSPADS are planar pn-junctions enhanced by a thin layer\nwith high doping concentration, resulting in a high electric field, such that Geiger-mode operation is feasible at\nreverse bias voltages of a few 10 V. A Geiger discharge\ncan be triggered by ionizing radiation",
+        "score": -0.849543141948858,
+        "dense_score": 0.4434877038002014,
+        "bm25_score": 18.47384094016946,
+        "graph_score": 0.0,
+        "rerank_score": -1.3223772048950195,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 7127,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2897994__2503.05450__Quantitative_determination_of_spatial_resolution_and_linearity_of_position-sensitive_LG-Si.md",
+        "title": "2025__recid_2897994__2503.05450__Quantitative_determination_of_spatial_resolution_and_linearity_of_position-sensitive_LG-Si",
+        "text": "I machines) [12]. SiPMs are arrays of\nSingle Photon Avalanche Diodes (SPADs) biased over the breakdown voltage\n(thus working in Geiger mode) and connected in parallel to have a common\nreadout. The typical microcell size varies between few to tens of microns\nand, generally, it is possible to build SiPMs with active areas up to 10 _×_\n10 mm [2] [12, 3]. Due to the Geiger mode operation of SiPMs, these devices\nare single photon sensitive. In each microcell (i.e. SPAD) the high electric\nfield produces a relevant current pulse in response to a detected photon. The\ngain (i.e. number of carriers produced per each avalanche pulse) is in the\norder of 10 [6] .\n\nThere are two common approaches for realizing a SiPMs-based positionsensitive detector over large areas: building an array of several SiPMs or using\nposition-sensitive SiPMs (PS-SiPMs). The first option requires numerous\nreadout channels over large detection areas. Moreover, the resulting position\nresolution is limited by the size of the used SiPM chips. On the other hand,\nPS-SiPMs offer a sharper position resolution with fewer readout channels [3,\n13].\n\n_2.2. Linearly-Graded SiPMs_\n\nSeveral PS-SiPMs approaches have been proposed in the last years, especially in the field of medical physics [2, 1, 10, 5, 8, 6, 14]. In the present\nwork, we used the linearly graded SiPMs (LG-SiPM) technology, developed\nby FBK, both with NUV-HD SiPMs technology [15, 3] (with higher photodetection efficiency toward blue-ultraviolet light) and RGB-HD SiPMs [16, 3]\n(targeting visible light). These light sensors were mainly tested in the context of small-animal PET scanners [10, 5], even though other applications\nfor High-Energy physics were proposed [14]. LG-SiPMs working principle is\nbased on a weighted avalanche charge division through two linearly-graded\ncurrent dividers. At the detection of a photon, the charge of each microcell\navalanche is divided into two paths through a current divider (one for vertical\ncoordinate and one for horizontal coordinate).\nThe two split output currents are further divided by the current dividers\nconnected to the two readout channels (e.g. ChA and ChB for the horizontal\ndirection in figure 1). These current dividers allow the reconstruction of\nthe triggered SPAD position. This is possible thanks to vary to produce a\nlinearly increasing conductivity from the 0-th to the n-th node [10, 3]. The\namplitude and charge of the four output signals allow for determining the\n\n3\n\nchip’s light interaction locat",
+        "score": -1.0173855197735322,
+        "dense_score": 0.42285144329071045,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.5721118450164795,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 2798,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2694196__2309.03131__Demonstration_of_particle_tracking_with_scintillating_fibres_read_out_by_a_SPAD_array_sens.md",
+        "title": "2024__recid_2694196__2309.03131__Demonstration_of_particle_tracking_with_scintillating_fibres_read_out_by_a_SPAD_array_sens",
+        "text": "# Demonstration of particle tracking with scintillating fibres read out by a SPAD array sensor and application as a neutrino active target\n\n#### Matthew Franks [1], Till Dieminger [1], Kodai Kaneyasu [2], Davide Sgalaberna [∗][1], Claudio Bruschini [2], Edoardo Charbon [2], Umut Kose [1], Botao Li [1], Paul Mos [2], Michael Wayne [2], Tim Weber [1], and Jialin Wu [1] 1 Institute for Particle Physics and Astrophysics (IPA), ETH Z¨urich, Ramistrasse, Z¨urich, 8093, Switzerland 2 Advanced Quantum Architecture Lab (AQUA), EPFL, Rue de la Maladi`ere, Neuchˆatel, 2000, Switzerland November 14, 2023\n\n**Abstract**\n\nScintillating fibre detectors combine sub-mm resolution particle\ntracking, precise measurements of the particle stopping power and\nsub-ns time resolution. Typically, fibres are read out with silicon\nphotomultipliers (SiPM). Hence, if fibres with a few hundred _µ_ m diameter are used, either they are grouped together and coupled with\na single SiPM, losing spatial resolution, or a very large number of\nelectronic channels is required. In this article we propose and provide a first demonstration of a novel configuration which allows each\nindividual scintillating fibre to be read out regardless of the size of\nits diameter, by imaging them with Single-Photon Avalanche Diode\n(SPAD) array sensors. Differently from SiPMs, SPAD array sensors\nprovide single-photon detection with single-pixel spatial resolution.\n\n∗ Corresponding author. Email: davide.sgalaberna@cern.ch\n\n1\n\nIn addition, O(us) or faster coincidence of detected photons allows\nto obtain noise-free images. Such a concept can be particularly advantageous if adopted as a neutrino active target, where scintillating\nfibres alternated along orthogonal directions can provide isotropic,\nhigh-resolution tracking in a dense material and reconstruct the kinematics of low-momentum protons (down to 150 MeV/c), crucial for an\naccurate characterisation of the neutrino-nucleus cross section. In this\n\nwork the tracking capabilities of a bundle of scintillating fibres coupled\nto SwissSPAD2 is demonstrated. The impact of such detector configuration in GeV-neutrino experiments is studied with simulations and\nreported. Finally, future plans, including the development of a new\nSPAD array sensor optimised for neutrino detection, are discussed.\n\nKeywords: Particle Detectors, SPAD array sensor, Scintillating fibres, Neu\ntrino\n\n### **1 Introduction**\n\nLong-baseline neutrino oscillation (LBL) experiments are searching for the vi",
+        "score": -1.1788063514232636,
+        "dense_score": 0.4190511107444763,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.8202790021896362,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7253,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2907611__2504.02570__Time_resolution_limits_in_silicon_sensors_from_Landau_fluctuations_and_electronics_noise.md",
+        "title": "2025__recid_2907611__2504.02570__Time_resolution_limits_in_silicon_sensors_from_Landau_fluctuations_and_electronics_noise",
+        "text": "Smirnov, Heed++ toolkit, Modeling of ionization produced by fast charged particles in gases,\nNIMA 554 (2005) 474-493\n\n[4] G. Pellegrini et al., Technology developments and first measurements of Low Gain Avalanche Detectors (LGAD) for high energy physics applications, NIMA 765 (2014) 12-16\n\n[5] L. Anderlini et al., Intrinsic time resolution of 3D-trench silicon pixels for charged particle detection,\nJINST 15, P09029, 2020\n\n[6] D. Brunde et al., Accurate modelling of 3D-trench silicon sensor with enhances timing performance\nand comparison with test beam measurements, JINST16, P09028, 2021\n\n[7] W. Blum, W. Riegler, L. Rolandi, Particle detection with drift chambers; 2nd ed., Springer (2008)\n\n17",
+        "score": -1.4045570329030357,
+        "dense_score": 0.4289804697036743,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -2.168036460876465,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.549129608087242,
+    "generation_latency_s": 3.296881914138794e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.549129608087242,
+    "generation_latency_s": 3.296881914138794e-07
+  }
+}

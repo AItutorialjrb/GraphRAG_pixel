@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "fac010",
+    "query_type": "factoid",
+    "query": "What is equivalent noise charge?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "equivalent",
+      "noise"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is equivalent noise charge?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4440,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759954__2402.12516__Skipper-in-CMOS_Nondestructive_Readout_With_Subelectron_Noise_Performance_for_Pixel_Detect.md",
+        "title": "2024__recid_2759954__2402.12516__Skipper-in-CMOS_Nondestructive_Readout_With_Subelectron_Noise_Performance_for_Pixel_Detect",
+        "text": "splays the noise standard deviation (σ) for the\ngroup of pixels at each NSAMP value. The noise, presented in\nequivalent carrier units using an absolute calibration method\n(described in the following section), is depicted by the black\nline with asterisks. The green line represents the theoretically\n\n4\n\nexpected noise starting from the first measurement at NSAMP\n= 1. As per the 1/√N law, where N is the number of\n\nmeasurements, the noise reduction should follow a decreasing\ntrend with increasing NSAMP. As evident in Fig. 6, the\nmeasured noise aligns with this behavior, up to the maximum\ntested NSAMP of 3025. The last point indicates a deep subelectron noise performance of 0.18e [−], crucial for resolving\nsingle electrons in subsequent tests. The integration time\nemployed in this case is 4.6 µs. The single sample noise,\napproximately 11e [−], is higher than expected, which can be\nattributed to the lack of optimization of the testing setup.\nPreliminary measurements on standalone transistors within the\nchip demonstrated lower noise performance.\nUsing the technique aforementioned, a square signal is\napplied to V ref . This signal amplified is measured at the input\nof the ADC, allowing to compute the gain in terms of ADUs/V,\nG v = 26.6ADUs/µ V. Finally, the noise is measured in the flat\nareas of this square signal, above and below, to obtain the noise\nof the stand-alone transistor. The noise of the standalone MA\n\nsource follower transistor was measured at 0.2e [−] using this\ntechnique.\n\nFig. 6. Noise as a function of NSAMP. The black line with asterisks is the\nmeasured noise, while the green line is the theoretical expected value.\n\nB. Charge transfer process in the output stage\n\nAfter demonstrating that the noise can be reduced with the\nnumber of samples NSAMP, another key parameter of the\noutput stage is the transfer efficiency between the SG and\nthe SN nodes. Once the noise is reduced below the expected\nsignal from a single carrier, any charge collected by the readout\nstage should be seen as a discrete jump in a temporal series of\nconsecutive measurements[13]. If the charge is not dumped,\nthe consecutive pixels should give the same discretized charge\ninformation. This method was previously explored in [30] to\ncharacterize the output stage of the Skipper-CCD and CMOS\nsensors [13]. Following this concept, multiple measurements\nare taken by repeating the voltage sequence to move the charge\nback and forth from the SN to SG without dumping the charge\ninto the drain c",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 14.437784299825127,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4623,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2767184__2403.06114__Expected_performance_of_Cosmic_Muon_Veto_Detector.md",
+        "title": "2024__recid_2767184__2403.06114__Expected_performance_of_Cosmic_Muon_Veto_Detector",
+        "text": "ent using\n\na DRS4 [12], at 2.5 _𝑉_ _𝑜𝑣_ and room temperature, mirroring the conditions of the upcoming CMVD\n\nexperiment. The DRS4 was triggered randomly, and the charge was integrated within randomly\n\nselected 100 _𝑛𝑠_ time windows. This noise charge will be identical to what is expected in the data\n\ntriggered by the miniICAL. The choice of 100 _𝑛𝑠_ time window is taken as more than 90% of muon\n\npulse observed in the SiPM is contained within this duration. The correlated noise between two\n\nSiPMs in an adapter board is shown in figure 11. In the current simulation, integrated noise is\n\nintroduced to all 3000 SiPMs from the test-setup data.\n\nDue to the fluctuation of all these processes and a given threshold for storing the signal of\n\n– 7 –\n\n**Figure 8** : Di-counter test setup: (a) Photograph of the experimental setup. Tr1, Tr2, and Tr3 are\n\nused to generate cosmic muon trigger [3], (b) Diagram of the GEANT4 simulation geometry.\n\n### 10 −2 10 −3 10 −4 10 −5\n\n|10−2<br>10−3<br>10−4<br>10−5<br>0 0.5 1 1.5 2 2.5 3 3.5 4<br>Charge (pC)<br>Test Setup Data<br>Monte Carlo|Col2|\n|---|---|\n||Test Setup Data<br>Monte Carlo<br>~~0~~<br>~~0.5~~<br>~~1~~<br>|\n\n### 0 5 10 15 20 25 30 35 40 Charge (pC)\n\n**Figure 9** : Simulated (blue) and real charge spectrum (red) of one of the SiPMs in di-counter testing\n\nsetup. Insert is the zoomed-in view near the pedestal.\n\nSiPM signal, there is a possibility that SiPM(s) associated with an EPS does not have any valid\n\ndigitised signal even though a muon passed through the EPS. Similarly, due to the fluctuation in the\n\nnoise, there might be a signal in the SiPM without any muon in the associated EPS. At least two\n\nSiPMs associated with an EPS must have digitised signal above the certain threshold in terms of\n\nthe required p.e. to reconstruct muon position in the EPS.\n\nIn the simulation two position coordinates are obtained from the layer number and the strip\n\nnumber of the EPS having a valid hit while the coordinate along the length of the EPS is not\n\nconsidered due to larger uncertainties in the timing.\n\n– 8 –\n\n**Figure 10** : Timing resolution comparison between test-setup data (blue) and simulation (red) for\n\nnearer (a) and farther (b) side channel.\n\n|5|Col2|\n|---|---|\n|||\n|||\n|||\n|||\n|||\n|||\n\n**Figure 11** : Correlated integrated noise between two adjacent SiPMs connected to the same elec\ntronic board.\n\n**4** **Hits, Cluster and Supercluster Formation**\n\nTo meet the minimum efficiency criteria of 99 _._ 99% and fake rate less than",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 13.904359990587823,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 964,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2669039__2306.08716__Radiation-Induced_Degradation_Mechanism_of_X-Ray_SOI_Pixel_Sensors_With_Pinned_Depleted_Di.md",
+        "title": "2023__recid_2669039__2306.08716__Radiation-Induced_Degradation_Mechanism_of_X-Ray_SOI_Pixel_Sensors_With_Pinned_Depleted_Di",
+        "text": "_._ 7 fF and _C_ I = 4 _._ 0 fF are the feedback\ncapacitance and the input capacitance of the CSA, respectively.\nThe design value of the open-loop gain is approximately\n_A ≃_ 108 [31]. In this equivalent circuit, the gain of the CSA\ndefined as output voltage relative to input charge from the\nsense node is written as\n\n_A_\n_G_ = _._ (2)\n_C_ D + _C_ I + ( _A_ + 1) _C_ FB\n\n6\n\nFig. 7. Simulated sense-node capacitance as a function of total dose.\n\nFig. 9. Gain calculated from the simulated sense-node capacitance as a\nfunction of total dose (blue solid line and blue dotted line), compared with\nexperimental data (red triangle and filled circle). The experimental data is the\nsame as that presented in Hayashida et al. [18]. The vertical axis is normalized\nwith the pre-irradiation value.\n\nFig. 8. A schematic of the equivalent circuit of the CSA in the pixel circuit.\nThe sense-node capacitance _C_ D affects the magnitudes of noise and output\nsignal (i.e., gain).\n\nIn the ideal case with an infinite open-loop gain of _A_ = _∞_, the\ngain depends only on the feedback capacitance as _G ≃_ 1 _/C_ FB .\nHowever, with the actual value of _A ≃_ 108, the effect of the\nsense-node capacitance _C_ D is not negligible.\nThe gain affected by the increasing sense-node capacitance\nis shown in Fig. 9. As the sense-node capacitance increases\nwith irradiation (Fig. 7), the gain also monotonically decreases.\nCompared with the experimental data, the gain calculated\nwith the simulated sense-node capacitance well reproduces\nthe experiments, indicating the gain degradation due to the\nirradiation is primarily caused by the increase in the sensenode capacitance. This is the same mechanism as in the case\nof the previous XRPIX [17].\nThe sense-node capacitance also affects the noise performance of XRPIX through the CSA. According to Kamehama et al. [8], under the assumption that the flicker noise\nis dominant rather than the thermal noise, the input-referred\nnoise _N_ of the CSA approximately depends on the sense-node\ncapacitance _C_ D as\n\n_C_ D + _C_ I + _C_ FB\n\n[1]\n\n_G_ _C_\n\n_N ∝_ [1]\n\n_._ (3)\n_C_ FB\n\nFig. 10. Readout noise calculated from the simulated sense-node capacitance\nas a function of total dose (blue solid line and blue dotted line), compared\nwith experimental data (red triangle and filled circle). In the experimental data\nshown here, the shot noise of the dark current is subtracted from the original\nplot presented in Hayashida et al. [18].\n\ndence on ( _C_ D + _C_ I + _C_ FB ) _/C_ FB bec",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 13.81068798629671,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 7216,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2902407__2503.15721__Minimal_material_maximum_coverage_Silicon_Tracking_System_for_high-occupancy_conditions.md",
+        "title": "2025__recid_2902407__2503.15721__Minimal_material_maximum_coverage_Silicon_Tracking_System_for_high-occupancy_conditions",
+        "text": "ggling, twisting, or even slight misalignment can introduce excessive noise in the affected channels. The total capacitance of\na given trace in the microcable stack was measured to be approximately _C_ _tot_ = 0.38 ± 0.02 pF/cm. Numerical simulations\nusing the ANSYS package yield closely matching results [10].\n\n_SMX read-out chip._ The STS detector utilizes a customdesigned readout chip, STS-MUCH-XYTER (SMX) v2.2,\nwhich enables simultaneous free-streaming readout of 128\nchannels. Each channel features two analog processing paths\nfor the concurrent measurement of amplitude and time. The 5bit flash analog-to-digital converter (ADC) provides a dynamic\nrange of < 94 ke (< 625 ke in low-gain mode), while the 14-bit\ntime-to-digital converter (TDC) operates with a clock period of\n3.125 ns [11]. This capability enables the STS to provide 5D\ntracking information, simultaneously measuring the interaction\nposition, time, and deposited charge within the silicon sensor\n\n[6]. The intrinsic equivalent noise charge of an SMX channel\n\n3\n\n**4. Performance of the series production modules**\n\nThe CBM STS detector is currently in the mass production\nstage. Over one-third of the detector modules have been assembled and evaluated, providing an initial insight into the anticipated detector performance.\nEach module undergoes a calibration procedure for its flash\nADC, followed by noise evaluation through pulse-scan analysis. The details of this procedure are provided in Ref. [7]. Examples of the resulting plots are shown in Fig.10.\n\nFigure 10: Equivalent noise charge for a selected STS module.\n\nThe measured noise can be compared to the theoretical estimate of thermal noise, based on the total capacitive load, using\nthe expression from Ref. [7]. The difference between the observed and estimated ENC for various module form factors is\n\npresented in Fig. 11. For larger sensor sizes, the ENC values\nappear to be underestimated, with the exact cause still under\ninvestigation.\n\nFigure 12: CAD rendering of the mSTS setup.\n\nHigh-intensity heavy-ion beams from SIS18 enabled rate\nscan studies, allowing us to evaluate detector performance under high-occupancy conditions. The distribution of the time\ninterval between sequential signals, relative to the amplitude of\nthe initial signal, as shown in Fig. 13, suggests a single-channel\ndead time of ≈ 350 ns.\n\nFigure 11: The difference between measured and estimated ENC for n-side of\nmodules of different form factors.\n\n**5. Detector prototypes and app",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 13.680454990536692,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 7750,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2925840__2505.20517__Performance_of_the_prototype_Silicon_Tracking_System_of_the_CBM_experiment_tested_with_hea.md",
+        "title": "2026__recid_2925840__2505.20517__Performance_of_the_prototype_Silicon_Tracking_System_of_the_CBM_experiment_tested_with_hea",
+        "text": "t\n\n: _Preprint submitted to Elsevier_ Page 12 of 14\n\nPerformance of the prototype Silicon Tracking System of the CBM experiment tested with heavy-ion beams at SIS18\n\nwas searched for hits using the fit results of the hit-track residual distribution. A hit is considered to belong to a track\nif its position is within 3 _𝜎_ from the extrapolated impact point, as from Fig. 5.\nThe efficiency was found to be very uniform across the sensor active area, while the missing hits are concentrated\nalong noisy or dead strips of the module. The particle loss is thus a direct consequence of the module production\ndefects. The efficiency of the module areas with nominal strip noise and absence of bonding defects is about 98%.\n\n**Figure 10:** Top: Signal amplitude distribution for n- and p-side. The overflow bin is filled at the upper end of the charge\ndigitization range. Bottom: correlation between the signal amplitude on both sides of a module. Clusters that include one\nor more signals in the overflow bin result in vertical and horizontal lines at multiples of the digitization range.\n\nFurthermore, the threshold dependence of the hit reconstruction efficiency was studied. If the signal amplitude\ndeposited in a given strip is below the digitization threshold, the signal in that channel is not recorded, resulting in a\nloss of information. If a major part of the energy deposited by the particle’s passage through the detector is recorded\nby neighboring strips, only the spatial resolution is worsened; however, increasingly high thresholds will result in a\nreduction of hit detection efficiency. For these studies, the entire data analysis was performed for discrete increments\nof the digitization thresholds of raw strip signals. Figure 9 shows the hit reconstruction efficiency for the modules in\nthe middle station as a function of the digitization threshold.\n\n**3.9. Amplitude measurement and signal-to-noise ratio**\nThe measured signal amplitude is compared to the noise measurements determined beforehand in the module\ncharacterization to evaluate the signal-to-noise ratio. The noise (N) is quantified as the average equivalent noise charge\nof the modules from the smearing of the discriminator response to a given pulse value. It amounts to around 1000 e\nENC, in agreement with the estimation based on the total detector capacitance [3]. The signal (S) is determined by the\nmost probable charge amplitude produced by minimum ionizing particles produced in the collision.\nFigure 10 shows the",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 13.286601581619196,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4686,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768871__2403.09244__High-precision_CSNS_beam_monitor_system_conceptual_design_based_on_SiC.md",
+        "title": "2024__recid_2768871__2403.09244__High-precision_CSNS_beam_monitor_system_conceptual_design_based_on_SiC",
+        "text": "nsor is about 1 × 10 [12] and charge collection\nefficiency is 98% according to the relationship.\n\n**4. Performance of readout board**\n\n_4.1. USCS single channel board_\n\nThe performance of UCSC single channel board [10] is studied to apply the\nboard to the beam monitor system. It is a transimpedence amplifier (TIA),\nand its gain is 20 dB. The feedback resistance is the main electric component\naffecting amplification factor. Simulations and _β_ source tests are performed to\nstudy its performance.\n\n_4.2. NGspice simulation_\n\n(a)\n\n(b)\n\nFigure 5: NGspice simulation result of the performance of pre-amplifier when the resistance\nof the feedback resistor changes. (a) shows the relationship between resistance of the feedback\nresistor and the amplitude of output signal. (b) shows the relationship between resistance of\nthe feedback resistor and the width of output signal.\n\n5\n\nNGspice [17] is used to simulate the performance of the pre-amplifier circuit.\nThe results of simulation are shown in Fig. 5 by adjusting the value of the feedback resistor. Gain of the board reaches an maximum with a 4000 Ωfeedback\nresistor as Fig. 5(a) shows, which is what we expect. The result indicates that\nboard with 4000 Ωfeedback resistor has the best performance in amplifying.\n\n_4.3. β source test on SiC PIN_\n\n(a)\n\n(b)\n\nFigure 6: The result of _β_ source test on the UCSC single channel board with 475 Ωfeedback\nresistor and 4000 Ωfeedback resistor. (a) shows the distribution of signal peaks, (b) shows\nthe distribution of charge.\n\n90 Sr _β_ source tests are finished with UCSC board before and after changing\nthe feedback resistor. The source meter is Keithley 2470 and SiC PIN sensor is\nsupplied with 500 V reverse bias voltage. The output signal is connected to a\n20 dB main amplifier PE1513. The trigger voltage is set to be 21 mV. Results\nare shown in Fig. 6. It is indicated in Fig. 6 that board with 4000 Ωfeedback\nresistor is able to detect electrons in a larger charge range than 475 Ωfeedback\nresistor and the average peak voltage is larger, which means more electrons can\nbe detected. Therefore 4000 Ωis selected to be the feedback resistor.\n\n**5. Systematic uncertainties**\n\nThe uncertainty of detecting beam fluence can be divided into Landau noise\n_σ_ Landau, electronic noise _σ_ elec, noise from proton radiation effects _σ_ rad and\nbeam fluctuation _σ_ fluc . Uncertainty in this system is defined as signal loss\n(N loss _/_ N signal ) _×_ 100%. The total uncertainty is _σ_ total .\n\n_σ_ tota",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 13.260726324444393,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2488,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations.md",
+        "title": "2024__recid_2677753__2307.07724__Improved_Single-Shot_Qubit_Readout_Using_Twin_rf-SET_Charge_Correlations",
+        "text": "twin SET. **d), e)** Modulated\nreadout method using single SET 1 and single SET 2, respectively. _f_ mod = 25 kHz. **f)** Correlated readout method using\nthe twin SET modulated signal. _f_ mod = 25 kHz and the correlation function is given in Eq. 1. **g)** Square of the SNR\nas a function of integration time for the different techniques. Solid lines plot the fits to the function\nSNR [2] = _S_ 0 _τ/_ (1 + _A_ _f_ _τ_ _[α]_ ). **h)** Impact of the location of the charge transition on the charge readout infidelity for the\ndifferent techniques. _τ_ = 280 _µ_ s, _f_ mod = 25 kHz . Solid lines are used as guides to follow the trend of the points. The\ninset is a zoom-in to the region indicated by the box.\n\nwith integration time, consistent with signals affected by\n1 _/f_ _[α]_ (also known as “pink” or “flicker” for 0 _< α <_ 2)\nnoise [ 46, 47 ] (see Appendix F). In the regime where pink\nnoise is dominating, longer integration times will begin to\ncapture noise signals that are higher in amplitude, thus\nlosing the benefit of averaging over an increased number\nof samples. On the other hand, the modulation acts as a\nbandpass filter around _f_ mod, rendering the measurement\ninsensitive to pink noise. This result evidences the immunity to electrical noise provided by the modulation, and\nthe further improvement in readout sensitivity enabled\nby the correlation of the two signals.\n\nAn additional advantage of using a twin SET is that the\nreduction in signal that comes from moving the sensors\naway from the qubits can be compensated. In Fig. 2h),\nwe plot the charge readout infidelity obtained with the\ndifferent methods as a function of the double-dot pair,\nwhich is equivalent to changing the distance between\nthe center of the electric dipole and the sensors. For\ncomparison purposes, the total integration time in all\ncases is kept constant at 280 _µ_ s and the modulation\nfrequency is _f_ mod = 25 kHz . As expected, transitions\n\nbetween P1-P2 (P3-P4) are more weakly detected by\nSET 2 (SET 1 ) and the readout infidelity of the single SET\nmeasurement increases as the dipole is moved away from\nthe sensor. Notably, this monotonic trend is avoided by\nthe twin SET, with the correlation function providing\nbelow 0.3% readout infidelity ( _>_ 99 _._ 7% readout fidelity)\nthroughout the array.\n\n**IV.** **MODULATED SPIN READOUT**\n\nWe now study the impact that modulating the electron\nback and forth across a charge transition during readout\nhas on its spin degree of freedom. We load four el",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 13.066006671490557,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 1033,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg.md",
+        "title": "2023__recid_2674353__2307.01580__Evaluation_of_planar_silicon_pixel_sensors_with_the_RD53A_readout_chip_for_the_Phase-2_Upg",
+        "text": "ence\nof Φ eq = 2.1 × 10 [16] cm [−][2], LDAC_LIN = 200 was used.\n\nThe global threshold, Vthreshold_LIN, is set for each module individually to achieve the lowest\n\npossible threshold while keeping the Equivalent Noise Charge (ENC) below 100 e and the number\n\nof noisy pixels below one percent after per-pixel adjustment. A pixel is considered noisy if it has\na noise hit probability _>_ 2 × 10 [−][5] in a 25 ns sensitive time window, which corresponds to 2 hits in\n1 × 10 [5] random triggers. Per-pixel threshold adjustment is performed in two steps, using the charge\n\ninjection system. First, the threshold of each pixel is adjusted using a series of iterative threshold\n\nscans at a high global threshold of approximately 2500 e. In each iteration, the threshold of each\n\npixel is compared to the mean of the thresholds of all pixels and its TDAC is adjusted in order to\n\nminimize the width of the threshold distribution. This results in a set of TDAC values for all pixels.\n\nNext, the ROC is configured using the TDAC values obtained in the first step and the trimming\n\nprocedure is performed again at a lower global threshold of around 1000 e. This step produces\n\na set of fine-tuned TDAC values for low-threshold operation. The other parameters remained the\n\nsame for all reported measurements except for the module irradiated to the highest fluence, where\n\na different set of parameters was necessary as mentioned above (Table 3).\n\nThe tuning results for a non-irradiated module with 50 µm × 50 µm pixel size at room tempera\nture and with a sensor bias voltage of 120 V are shown in Fig. 4. As visible in Fig. 4a, the distribution\n\n– 8 –\n\nof the TDAC values after the tuning procedure for all pixels has an apparent double-peak structure,\n\nwhile a Gaussian distribution is expected. This feature is not present anymore in the next version\n\nof the chip. The distribution has a mean of 7.9 and a standard deviation of 3.0. The threshold\n\nis determined using the charge injection system of the RD53A chip. A voltage step supplied to\n\nthe charge injection capacitors determines the quantity of the injected charge. The amplitude of\n\nthe voltage step, ΔVCAL, is controlled by the difference of two 12-bit voltage DAC outputs. The\n\ncorresponding difference in DAC units between the two DACs is referred to as ΔCAL. Following\n\nthe recommendation of the RD53A designers, the following conversion equation between ΔCAL\n\nand the charge Q in units of the elementary charge e is used:\n\nQ(e) = ΔCAL · 10 _._",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 12.997960167604056,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 792,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2662395__2305.14515__Effects_of_temperature_fluctuations_on_charge_noise_in_quantum_dot_qubits.md",
+        "title": "2023__recid_2662395__2305.14515__Effects_of_temperature_fluctuations_on_charge_noise_in_quantum_dot_qubits",
+        "text": "imeters, and together with a diffusion constant equal to\n_D ∼_ 2 _·_ 10 _[−]_ [5] m [2] /s, produced minimal frequencies of the\norder of 1 Hz or less.) To estimate the lowest frequency\nin the present system, the diffusion constant _D_ must be\nevaluated at low temperatures for the 2DEG. In what\nfollows, the diffusion constant is expressed in terms of\nquantities measured in the Si/SiGe 2DEG of ref. [5].\nIn a diffusive regime (which is assumed to be the case\nhere), the diffusion constant _D_ is related to the thermal\nconductivity _κ_ via\n\n_D_ = _[κ]_ (32)\n\n_C_ _[,]_\n\nwhere _κ_ is the thermal conductivity in W/K (in two dimensions) and _C_ is the specific heat in J _/_ (K _·_ m [2] ). For\nthe 2DEG, the specific heat is given by [1]\n\n_b_ _[T]_\n_C_ = _[πmk]_ [2] _,_ (33)\n3ℏ [2]\n\nwhere the carrier’s mass is _m_ = 0 _._ 19 _m_ _e_, and _m_ _e_ is the\nmass of the electron.\nThe thermal conductivity is rarely available experimentally. Using the Wiedemann–Franz law, it is possible\nto relate the thermal conductivity to the electric conductivity _σ_ :\n\n7\n\nIt is therefore highly unlikely that a 2DEG bath can satisfy the assumption underlying the calculation of Ahn _et_\n_al_ . [1].\n\nWe can obtain a slightly different estimate in a different 2DEG (AlN/GaN) system where the WiedemannFranz law was verified [11]. This paper measured the\nspecific heat as well as thermal and electrical conductivity of the 2DEG. The thermal conductivity has the form\n_κ_ = 90 _T/_ 275 W/(K m) (where _T_ is temperature) while\nthe specific heat is _C_ = 0 _._ 05 _T_ in J/(kg K). (Note that\nthe units are appropriate for 3D quantities; the paper\n\n[11] measured the thickness of the electron gas for the\nconversion.) The diffusion constant is then _D_ = _κ/ρC_\nwhere _ρ_ is the density of the material (GaN) and is equal\nto 6150 kg/m [3] . The temperature dependences cancel out\nand the diffusion constant is found to be approximately\n10 _[−]_ [3] m [2] /s. This value is slightly smaller than what has\nbeen estimated for the Si/SiGe case but does not change\nthe conclusion.\n\nFinally, the diffusion constants obtained above are significantly larger than those used by Voss and Clarke in\nthe context of metal thin films ( _D ∼_ 2 _·_ 10 _[−]_ [5] m [2] /s).\nHowever, even with such a diffusion constant, the conclusion remains unchanged (the lowest frequency drops\nto 6 MHz).\n\n**V.** **CONCLUSIONS**\n\nWe have considered a quantum dot whose charge noise\nis determined by a fluctuator coupled to a thermal bath\nwith a flu",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 12.873528715838948,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4439,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759954__2402.12516__Skipper-in-CMOS_Nondestructive_Readout_With_Subelectron_Noise_Performance_for_Pixel_Detect.md",
+        "title": "2024__recid_2759954__2402.12516__Skipper-in-CMOS_Nondestructive_Readout_With_Subelectron_Noise_Performance_for_Pixel_Detect",
+        "text": "he resulting\n\noutput video signal is fed to a front-end electronic board,\nwhich is connected to the Low Threshold Acquisition (LTA)\nreadout system (both of these are referenced in [29]). The LTA\nprovides clocks and biases for the sensor, digitizes the video\nsignal, and performs digital post-processing to obtain the pixel\nvalue through a digital Double Sampling Integrator (DSI).\nTo bias the MR transistor, a readout system clock signal\nis used. Applying a small square signal (V ref ) around the\npolarization point enables verification of the correct biasing of\nthe output transistor MA, achieved by examining the output\nraw video signal. This process allows for the measurement\nof the gate gain from the Sense Node (SN) to the input of\nthe ADC in the readout controller (located at the end of the\nvideo chain). The sensitivity of the node in ADUs/e [−] is instead\ncalibrated in absolute terms based on the single electron peaks.\nAdditionally, the LTA controls the LED in sync with the\nreadout sequence. The flexibility offered by this process makes\nit an important feature of the readout architecture.\nSeveral specific and novel tests were developed to experimentally demonstrate the operation and performance of the\nproposed pixel architecture with non-destructive readout. Since\na single pixel of the test structure is instrumented, the PPD\nand the output stage were operated in different modes to\nreveal the diverse capabilities of the pixel. Throughout this\narticle, multiple pixel measurements refer to the repetition of\nmeasurements on the same single pixel.\n\nA. Multiple non-destructive measurements\n\nThe first step involved characterizing the noise reduction\ncapability with varying numbers of non-destructive samples\n(NSAMP). To achieve this, the readout stage was isolated\nfrom the PPD by maintaining H1 and H2 at a low voltage\nto mitigate potential noise sources from charge collection.\nMultiple pixel measurements were recorded in this mode,\nwhere no charge contribution was expected. This provided\nnoise information from the output transistors and the readout\nchain. The procedure was iterated for different NSAMP values\nper pixel. The maximum value of NSAMP was set to get the\ndesired noise performance for peak resolution.\nFig. 6 displays the noise standard deviation (σ) for the\ngroup of pixels at each NSAMP value. The noise, presented in\nequivalent carrier units using an absolute calibration method\n(described in the following section), is depicted by the black\nline with asteri",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 12.872000590622626,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 1.441670548170805,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 1.441670548170805,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

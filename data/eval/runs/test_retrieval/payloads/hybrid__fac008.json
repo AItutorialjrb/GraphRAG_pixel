@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "fac008",
+    "query_type": "factoid",
+    "query": "What is a test beam used for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "a",
+      "test"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is a test beam used for?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4509,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology.md",
+        "title": "2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology",
+        "text": "sured noise is about 30 electrons. More details on\n\nthe DAQ system and calibration are reported in [4].\n\n**4. Test-Beam Setup**\n\nTest-beam studies allow for the characterization of\n\nnew detector prototypes for particle physics applications under realistic conditions.\n\nThe test-beam setup consists of a MIMOSA26 telescope [17], composed of six planes and used for beam\nparticle track reconstruction. The device under test\n(DUT), in this case, the APTS, is placed between the\nthird and fourth telescope planes. The TelePix [18] detector is used as a trigger plane with a configurable acceptance window and is the last detector plane downstream. Finally, a Trigger Logic Unit (TLU) [19] manages the trigger signals of the setup to synchronize the\ndata acquisition between all the devices.\n\nThe employed data acquisition software is EUDAQ2 [20], which controls the storage and synchronization of data from all systems. The data analysis framework for online monitoring and offline event\nbuilding is Corryvreckan [21].\n\nTwo triggering schemes have been employed. To find\nthe position of the DUT relative to the beam telescope,\nit was operated in self-triggered mode. To allow for unbiased efficiency measurements, it was triggered externally using TelePix, where a mask was applied to trigger\non only a small region around the DUT.\n\nThe test-beam campaigns have been carried out at\nDESY-II [22], with a 4 GeV electron beam and a maximum beam particle rate of 5 kHz.\n\n**5. Test-Beam Characterization**\n\nThis section describes the reconstruction procedure\nof the test-beam data and discusses the results of cluster\nsize and efficiency studies.\n\n_5.1. Data Analysis_\n\nWhen the DAQ receives a trigger, the respective\nwaveforms are recorded. These are processed for each\npixel during the data analysis; their amplitude is measured and transformed to charge using the calibration\nmentioned in Section 3.\n\nTo calculate the amplitude, two regions are defined:\nthe baseline region (1 µs interval before the pulse starts)\nand the peak region (1.5 µs interval around the expected\npulse maximum). The baseline is obtained by averaging the values in the baseline region. The maximum\nof the pulse is taken from the peak region, and the amplitude is obtained by subtracting the baseline from the\nmaximum value. A threshold is applied to define pixel\nhits. The studied thresholds are in the typical operating\nrange, from 90 (∼ 3σ _noise_ ) to 400 electrons.\nIndividual hits on the same device that belong to\nthe same par",
+        "score": 2.487789361159007,
+        "dense_score": 0.45436739921569824,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 3.8201887607574463,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 7146,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "timing and trigger layer for test beams.\n\n**1. Introduction**\n\nDeveloping new detectors for particle physics experiments\nis crucial improving the understanding of fundamental forces\nand interactions. Characterisation of novel detectors under con\nditions as close as possible to the final experiment can be done\nat test beams, where minimum ionizing particles are provided\nfor tests. Precise reference systems - so-called beam telescopes\n\n- are used to tag the spatial and temporal presence of a particle.\nDESY hosts a test beam facility [1] at the DESY II accelerator\nwith three independent beamlines of which two are equipped\nwith EUDET-style beam telescopes [2], based on MINMOSA26 sensors [3, 4] with an active area of approximately 2 _x_ 1 cm [2] .\nCopies of these telescopes can also be found at CERN. These\ntelescopes have an integration time of up to 230 µs, no timestamping and are read out in externally triggered rolling shutter\nmode. The telescope is fully integrated with EUDAQ2 [5] and\nthe AIDA-TLU [6], allowing users to integrate devices under\ntest (DUT) with minimal effort.\nUnder typical operation conditions, up to 6 electrons pass the\ntelescope in a single readout frame. This causes ambiguities\nin track reconstruction. In addition, it is likely not to trigger\nthe particle passing through potentially small DUTs, which results in inefficient data taking. A pixelated timing layer with a\n\n_Email address:_ `lennart.huth@desy.de` (L. Huth)\n\nconfigurable trigger region resolves both issues by assigning a\ntimestamp to each particle passing the telescope and only triggering the telescope readout if the selected region is hit. Previously used hybrid approaches [7] have reduced timing capabilities, are operated in 40 MHz LHC-like readouts and add significant material. The time resolution of a suitable layer has to\nbe below 1 µs to be able to discriminate particles coming from\ndifferent circulations of the primary beam and below 5 ns to provide insight into the timing for LHC like detectors. The active\narea should correspond to the telescope’s active area. TelePix2\nis the successor of a small-scale prototype TelePix [8], that already fulfilled all requirements except for the size.\n\n**2. T** ele **P** ix **2**\n\nTelePix2 is a system-on-chip pixel detector produced in\na 180 nm HV-CMOS process and based on the developments\nwithin the Mu3e and ATLAS context [9, 10]. It has an active\narea of 2 × 1 cm [2] to match the active area of the MIMOSA-26\n\nchips. The matrix consist",
+        "score": 1.7251492927279595,
+        "dense_score": 0.48791876435279846,
+        "bm25_score": 19.956667841532248,
+        "graph_score": 0.0,
+        "rerank_score": 2.6393914222717285,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4773,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result.md",
+        "title": "2024__recid_2777111__2402.12305__The_DESY_digital_silicon_photomultiplier_Device_characteristics_and_first_test-beam_result",
+        "text": "chip itself is glued and wire bonded to\na custom chip board with only few active components.\n\n**3. Test-Beam Setup and Reconstruction**\n\nTo explore the capabilities of the DESY dSiPM as\na detector for ionizing radiation, test-beam measurements have been performed at the DESY II Test Team\nFacility [10], which offers a beam of electrons or\npositrons with selectable momenta between 1 GeV/c\nand 6 GeV/c. A schematic picture of the setup is shown\nin figure 3. The main reference system is an EUDETtype beam telescope [11]. It consists of six tracking planes, each a MIMOSA-26 sensor [12], arranged\nin an upstream and downstream arm of three planes.\nFour plastic scintillators with photomultiplier readout\nare used to provide a trigger signal. Three of the scintillator signals are used in coincidence, while the 4th scintillator features a 2 mm hole in its center and provides\na veto signal, such that particles traversing the hole are\nmost likely to cause a trigger signal. This setup maximizes the fraction of triggers where a particle traverses\nthe active area of the DESY dSiPM, and yields a trigger\nrate on the order of 100 Hz. An AIDA Trigger Logic\nUnit (TLU) [13] is used for the distribution of clock\nand trigger signals. Since it is not trivial to provide\na time reference with sufficient precision, two DESY\ndSiPMs were installed, such that their time stamps can\nbe compared. The chip boards with the DESY dSiPMs\nare placed inside an aluminum encasing, for physical\nand light protection, which is in contact with a cooling element allowing stable temperatures down to about\n−5 [◦] C. Both DESY dSiPMs and their encasing share\n\n2\n\nFigure 2: Simplified readout scheme of a quadrant of the DESY dSiPM.\n\nN2\n\ny\n\nz\n\ne [-]\n\n**Downstream**\n\n**Scintillator**\n\n**VETO**\n\n**Telescope**\n**Downstream Arm**\n\n**Upstream**\n**Scintillators**\n\n**Telescope**\n**Upstream Arm**\n\n30\n\n25\n\n20\n\n15\n\n10\n\n5\n\n0\n\nFigure 3: Schematic picture of the test-beam setup used for the presented measurements.\n\na PMMA box flushed with nitrogen to avoid condensation. The chip boards, the encasing, and the PMMA box\nfeature windows to minimize multiple coulomb scattering. Thin aluminum and polyimide sheets are used to\nkeep light-, and air-tightness, respectively.\n\nThe reconstruction framework Corryvreckan [14, 15]\nis used for the analysis of the recorded data. The reconstruction chain starts with decoding of the beamtelescope and DESY dSiPM data. Events are defined\nbased on the trigger IDs provided by the TLU. For each\ndet",
+        "score": 0.7338650695035156,
+        "dense_score": 0.4627505838871002,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 1.1214392185211182,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6484,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2823373__2408.17215__Precision_determination_of_the_track-position_resolution_of_beam_telescopes.md",
+        "title": "2025__recid_2823373__2408.17215__Precision_determination_of_the_track-position_resolution_of_beam_telescopes",
+        "text": "## Precision determination of the track-position resolution of beam telescopes\n\nM. Antonello [∗], L. Eikelmann, E. Garutti, R. Klanner, J. Schwandt, G. Steinbrück, A. Vauth\n\n_Institute for Experimental Physics, University of Hamburg,_\n_Luruper Chaussee 149, 22761, Hamburg, Germany._\n\n**Abstract**\n\nBeam tests using tracking telescopes are a standard method for determining the spatial resolution of\ndetectors. This requires the precise knowledge of the position resolution of beam tracks reconstructed at the\nDevice Under Test (DUT). A method is proposed which achieves this using a segmented silicon detector\nwith readout with charge digitization. It is found that the DUT spatial resolution for single minimum\nionizing particles with normal incidence is less than 1 µm for events where clusters consist of two pixels\n(or strips). Given this high accuracy, the residuals between the beam track-position at the DUT and the\nreconstructed position in the DUT represent a direct measurement of the beam track-position resolution\ndistribution. The method is developed using simulated events, which are also used to study how to deal with\ncross-talk, electronics noise, energetic _𝛿_ -electrons, and incident beams with a few degrees off the normal\nto the sensor plane. To validate the method, the position resolution of beam tracks reconstructed by the\nEUDET beam telescope of the DESY II Test Beam Facility is determined using a CMS Phase-2 prototype\npixel sensor.\n\n_Keywords:_ Silicon pixel detectors, beam tests, track-position resolution of beam telescopes.\n\n**1. Introduction**\n\nBeam tests are one of the preferred methods to experimentally determine the spatial resolution of segmented silicon detectors. This is achieved by measuring the residual between the track-position extrapolated\nfrom a beam telescope to the Device Under Test (DUT) and the position reconstructed in the DUT. In this\npaper, the resolution of the extrapolation from the beam telescope of the track-position at the DUT will\nbe also referred to as \"track-position resolution\". By quadratically subtracting the track-position resolution\nfrom the residual, the DUT spatial resolution is obtained. Typically, the DUT spatial resolution is similar to\nthe track-position resolution, therefore a precise knowledge of the latter is important. There are a number\nof methods for determining the track-position resolution of beam telescopes:\n\n - Measurement of the residuals at the DUT of the track-positions from two beam telescope ar",
+        "score": -0.08055350417402429,
+        "dense_score": null,
+        "bm25_score": 20.54350438123965,
+        "graph_score": 0.0,
+        "rerank_score": -0.13151243329048157,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6497,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2823373__2408.17215__Precision_determination_of_the_track-position_resolution_of_beam_telescopes.md",
+        "title": "2025__recid_2823373__2408.17215__Precision_determination_of_the_track-position_resolution_of_beam_telescopes",
+        "text": "ns are briefly summarised. Figure 14 shows a sketch of the test beam setup [6]. A\npair of plastic scintillators provides the trigger. The beam track-position at the DUT is measured by two\nbeam telescope arms [13], one upstream and one downstream of the DUT. Each arm consists of 3 planes\nof Mimosa26 Monolithic Active Pixel Sensors (MAPS) with a pitch of 18 _._ 4 µm × 18 _._ 4 µm thinned down\nto a thickness of about 50 µm. The readout is binary, and the single-plane spatial resolution is 3 _._ 2 µm.\nThe MAPS are read out in 115 µs frames and a pixel sensor (Time REF) upstream of the scintillators is\nused to select the track in coincidence with the signal in the DUT. Time REF is a CMS Phase-1 pixel\ndetector [14] with a pixel size of 100 µm × 150 µm and 8-bit digital readout at a frequency of 40 MHz. The\nDUT is mounted on computer-controlled stages, which allow moving the DUT horizontally and vertically,\nand rotating it around one axis.\n\nFigure 14: Layout of the test beam setup: the six telescope planes, two trigger scintillators, the time reference detector, and the DUT.\nThe DUT material, relevant for multiple scattering and the energy loss of the electrons is: 150 + 150 µm Si for the sensor and the\nRD53A chip, respectively, the SnAg bumps, and a 1 mm thick aluminum support plate on the downstream side of the sensor.\n\nThe DUT is a CMS Phase-2 prototype pixel sensor [7] read out by the RD53A chip. The sensor design\nis presented in Sec. 2.1. The linear front-end section of the RD53A chip [9], bump-bonded to the sensor,\nis used for the readout. The chip is thinned down to a thickness of 150 µm. The readout operates at\na frequency of 40 MHz, and using the Time-over-Threshold (ToT) method, digitises the charge above an\nadjustable threshold with 4-bit accuracy. The relation between the ToT value and the input charge can also\nbe adjusted. A typical setting used for the measurements yielded a value of about 11 ToT units for a charge\nof 11 ke. It is noted that the relation between charge and ToT is only approximately linear.\nThe data were taken at room temperature and at a bias voltage of 120 V. The dark current of about\n3 µA and the power dissipation of the RD53A chip was sufficiently low so that air-flow cooling was\nsufficient. The electronics noise was about 70 e and the threshold for recording hits about 1250 e. The trackposition resolutions from the upstream ( _𝜎_ _up_ ) and the downstream ( _𝜎_ _down_ ) beam telescope arms extrapolated\nto the DUT are obtained us",
+        "score": -0.2730108400257759,
+        "dense_score": 0.42440277338027954,
+        "bm25_score": 20.09353038948511,
+        "graph_score": 0.0,
+        "rerank_score": -0.43232715129852295,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3494,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2721878__2311.07340__Performance_of_a_first_full-size_WOM-based_liquid_scintillator_detector_cell_as_prototype_.md",
+        "title": "2024__recid_2721878__2311.07340__Performance_of_a_first_full-size_WOM-based_liquid_scintillator_detector_cell_as_prototype_",
+        "text": "horizontal axis on the\n\ndetector cell is labelled as _𝑥_, the vertical axis _𝑦_ and the beam direction _𝑧_ . In this coordinate system,\n\nthe movable table allowed for translation of the cell along _𝑥_ and _𝑦_, and the rotating platform allowed\n\nfor rotation around the _𝑦_ -axis of the cell in steps of 15 [◦] . The movable table was approximately 3 m\n\naway from the beam exit window. The beam height in the test beam area is approximately 1.7 m\n\nand a 2 mm × 2 mm secondary collimator was used to focus the beam. The momentum spread in\nthe beam was measured to be (158 ± 6) MeV/c over the full momentum range. The DESY test beam\n\ntelescope, consisting of four small plastic scintillators coupled to PMTs, was located between the\n\ncollimator and the LS prototype detector, in line with the beam. A detailed description of the beam\n\nand telescope can be found in [8]. The coincidence signal of these four PMTs was used to trigger\n\nthe data acquisition with the WaveCatcher digitiser.\n\nIn the specified coordinate system, the central point of the cell is the origin of the _𝑥_ and _𝑦_ axes.\n\nThe angular orientation is defined such that when the wall of the detector that houses the WOM\n\nvessels and electronics is orthogonal to the beam, the angle is 0 [◦] . Clockwise rotation of the cell\n\non the platform is defined as a positive angle. For the orientation of the detector prototype in the\n\nupright position as shown in Fig. 17, the WOM located in the upper place is called \"WOM up\" in\n\nthe following, the WOM located in the lower place \"WOM down\" accordingly.\n\n**7.2** **Readout electronics and data acquisition**\n\nFor the readout of photons collected by the two WOM, a novel and adaptable readout electronics\n\nsystem has been devised to accommodate the considerable flexibility required during the develop\nmental phases of detector R&D [25]. Each readout board is equipped with a total of 40 Hamamatsu\n\nS14160-3050HS SiPMs [18] to convert the photons delivered by the WOM into electrical charge\n\nsignals and is equipped with a complement of 40 Hamamatsu S14160-3050HS SiPMs [18]. A\n\nshared voltage source powers each SiPM, with a 10 nF capacitor placed at the cathode to provide\n\nadditional input charge to the cathode during the break down process.The anodes of the SiPMs are\n\nindividually connected to a 100-pin SAMTEC LSHM-150-XX.X-X-DV-A-N high density connec\ntor by a 0 Ω resistor. All signal lines are meticulously isolated from adjacent ones through pins\n\nthat establish ground connections",
+        "score": -0.3536683699053325,
+        "dense_score": 0.5231068134307861,
+        "bm25_score": 19.602879834346005,
+        "graph_score": 0.0,
+        "rerank_score": -0.5585687756538391,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 26,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 558,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2649676__2304.02944__Design_and_performance_testing_of_a_T0_detector_for_the_CSR_External-target_Experiment.md",
+        "title": "2023__recid_2649676__2304.02944__Design_and_performance_testing_of_a_T0_detector_for_the_CSR_External-target_Experiment",
+        "text": "[40] Ar beam with a kinetic energy of 320 MeV/u was used here. The\nscintillator thickness of the T0 prototype under test was 0.8 mm. Fig. 17 depicts\nthe layout of the test setup at RIBLL2-ETF. Heavy-ion beams from the left\nside successively passed through a trigger detector, two multi-wire drift chamber\n(MWDC) trackers, and a multi-sampling ionization chamber (MUSIC) and then\nreached the T0 prototype. The [40] Ar beam would lose its energy when crossing\nthese detectors and hit the T0 prototype with an energy of _∼_ 310 MeV/u. The\nT0 prototype was installed on a 2-D moving platform, allowing X-Y movement\nin the range of (-4 cm, -4 cm) to (4 cm, 4 cm)\nThe readout electronics used in the heavy-ion beam test are similar to those\nused in the laboratory, as shown in Fig 14. The difference is that the NINO\nelectronics employed a self-trigger mode for readout triggering and data selection\nin the beam test. A specific trigger logic that required all 16 SiPMs on one side\n\n15\n\nFigure 17: Heavy ion beam test detector layout\n\nof the T0 prototype to fire simultaneously (within a short time window of XX\nns) was implemented to trigger a valid heavy-ion event. A copy of this trigger\nwas sent to the QDC for the SiPM signal charge measurement.\n\n(a) pedstal (b) beam signal\n\nFigure 18: Charge spectrum measured by QDC\n\nThe SiPMs worked at a bias voltage of 62 V. Fig. 18 shows the charge\nspectrum of SiPM 8, measured by QDC (CAEN V965A,0.2 pC/ch), where plots\n(a) and (b) represent the pedestal and signal charges with and without beam\ncrossing, respectively. It can be calculated that with a [40] Ar beam crossing, the\naverage number of photoelectrons received by SiPM 8 was:\n\n(2390 _−_ 150 _._ 7) _×_ 0 _._ 2\n_NPE_ = 1 _._ 6 _×_ 10 _[−]_ [7] _×_ 20 _×_ 6 _._ 77 _×_ 10 [5] [= 206] _[.]_ [7] (6)\n\nwhere 6 _._ 77 _×_ 10 [5] represents the gain of SiPM 8 at a bias voltage of 62 V,\naccording to the gain test results in Fig. 16.\nThe reference time of T0 can be self-calibrated using the time information\n\n16\n\n(a) (b)\n\nFigure 19: T0 system time resolution calibrated by 16 SiPMs. (a) Time resolution after\nT-TOT correction. (b) Time resolution via a number of iterations.\n\nof the 16 SiPMs measured by TDM:\n\n16\n_T_ _ref_ = � _i_ =1 [(] _[t]_ ~~�~~ _[i]_ _[ −]_ 16 _i_ =1 _[tcor]_ [1] _[/σ]_ _[i]_ _[ −]_ _i_ [2] _[t]_ [0][)] _[/][σ]_ _i_ [2]\n\n(7)\n\nwhere _tcor_ _i_ is the T-TOT correction term, _σ_ _i_ represents the time resolution of\n_i_ _th_ SiPM and t0 is the weighted mean time of 16 SiPMs, define",
+        "score": -0.4077210316152284,
+        "dense_score": 0.4962661862373352,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.635421633720398,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4683,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2768871__2403.09244__High-precision_CSNS_beam_monitor_system_conceptual_design_based_on_SiC.md",
+        "title": "2024__recid_2768871__2403.09244__High-precision_CSNS_beam_monitor_system_conceptual_design_based_on_SiC",
+        "text": "ource [3], Associated Proton beam Experiment Platform (APEP), proton test\n\n_∗_ Corresponding authors\n_Email addresses:_ `suyu.xiao@iat.cn` (Suyu Xiao), `shixin@ihep.ac.cn` (Xin Shi)\n\n_Preprint submitted to Elsevier_ _March 15, 2024_\n\nbeam facility and muon beam facility. The white neutron source and APEP have\nbeen built, while others are still in progress. A beam monitor system is necessary\nto detect the fluence of proton beam. Diamond is commonly used is ATLAS [4]\nand CMS [5] for beam monitor, while silicon carbide sensors are used in beam\nmonitors for its good performance in radiation hardness and timing resolution\n\n[6, 7] compared to diamond sensors. Studies have shown the uncertainty of\nbeam fluence measured by beam monitor based on semiconductor detector is\nabout 10 % [8]. Several methods are taken to improve the precision and reduce\nthe uncertainty to 1% at 1 Hz counting rate in this work.\nThe preliminary design of the beam monitor system is finished which consists\nof detector board, pre-amplifier, and readout system. The detector board is\nbased on 5 mm _×_ 5 mm SiC PIN sensors [9] fabricated by Nanjing University\n(NJU). Radiation impact on leakage current, capacitance and charge collection\nefficiency of the SiC PIN sensors are studied and the results prove that the\nperformance of the SiC PIN meets the requirements of the beam monitor system.\n8 movable SiC PINs are used around the beam cross section on a mechanical\n\nsystem. A pre-amplifier board is optimised according to UCSC single channel\nboard [10] by changing the shape of the board to satisfy spatial constraints\naround the beam line. The readout system is designed for the signals from\nfront-end electronics and calculate the beam fluence.\n\n**2. Design of the beam monitor system**\n\nThe beam monitor system consists of pre-amplifier, readout system and mechanical design [11]. The system is based on 5 mm _×_ 5 mm SiC PIN sensors\nfabricated by NJU to detect the proton beam. Fig. 1(a) shows the position of\ndetectors around the beam line. Each SiC PIN sensor is equipped with motor\nto tune the position of the SiC PIN sensors to proper location.\n\n_2.1. Beam parameter_\n\nThe energy of the proton beam is designed to be 1.6 GeV [2] in CSNS upgrade, and fluence is 2 _._ 35×10 [8] n eq _/_ cm [2] . Radiation dose is 6.75 × 10 [14] n eq _/_ cm [2]\n\nat center and 1 × 10 [10] n eq _/_ (cm [2] _×_ s _[−]_ [1] ) at edge as shown in Fig. 1(b). The\nbeam fluence is uniformly distributed in the beam center and decreases",
+        "score": -0.40849702237308894,
+        "dense_score": 0.48053649067878723,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -0.6362607479095459,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 7153,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "Hit-OR is gauged\nby comparing it with a scintillator signal coupled to a PMT and\nread out via an oscilloscope. The result is depicted in figure 9b\nexemplarily for a quasi noise-free threshold of 16. A Gaussian\nfit to the distributions’ core yields a σ of 2.28(1) ns, sufficient\nfor precise triggering at test beams. The absolute delay of the\n\n4\n\n(a) Hitmap of a telescope plane with TelePix2 as trigger. A DESY logo is programmed to\nthe fast Hit-OR.\n\nFigure 8: Time difference between reference trigger and TelePix2 cluster time\nversus the row number.\n\ntrigger compared to the scintillator is 15.32(1) ns, which is an\nacceptable latency for test beam operation.\n\n**5. User Stories**\n\nTelePix2 is in user operation and utilized by multiple groups\nto enhance data taking efficiency and suppress ambiguities. In\nthe following three examples using the different operating modes\nare discussed and the improvement due to TelePix2 is highlighted.\n\n_H2M - region of interest trigger mode_\n\nThe H2M (Hybrid-to-Monolithic) is implemented in a 65 nm\nCMOS imaging process as proof of concept for a digital-on-top\ndesign workflow. It ports a hybrid pixel-detector architecture,\nwith digital pulse processing in each pixel, into a monolithic\nchip. The chip matrix consists of 64×16 square pixels, each\nwith a size of 35×35 µm [2], and a total active area of approximately 1.25 mm [2] . A 100 MHz clock is used for non-simultaneous\nTime-over-Threshold (ToT) or Time-of-Arrival (ToA) measure\nments.\n\nH2M has been tested in the DESY II test beam test beam\n\nfacility using the ADENIUM telescope. TelePix2 is used as\nregion of interest trigger plane. A region of interest of approximately 3 mm [2] is left unmasked in TelePix2 matching the H2M\narea with a safety margin.\nFigure 10a compares the correlations in X between H2M\nand the reference plane with data taken from a small region of\ninterest and the entire TelePix2. While a one order of magnitude higher background of uncorrelated events is observed for\nthe full region, for the small region, most of the events are correlated. The latter reduces the number of empty readout frames\nof H2M and highly improves the data taking efficiency. Moreover, time studies have been performed based on TelePix2. Figure 10b shows the time residuals between the TelePix2 fast\n\nHit-OR and H2M time stamps. The tail to the left is caused by\ntime-walk of H2M.\n\n5\n\n(b) Time difference between reference trigger and TelePix2 hit-or at a threshold of 16.\n\nFigure 9: The fast Hit-OR of",
+        "score": -0.6773249137228814,
+        "dense_score": null,
+        "bm25_score": 20.635816417845554,
+        "graph_score": 0.0,
+        "rerank_score": -1.049842119216919,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6486,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2823373__2408.17215__Precision_determination_of_the_track-position_resolution_of_beam_telescopes.md",
+        "title": "2025__recid_2823373__2408.17215__Precision_determination_of_the_track-position_resolution_of_beam_telescopes",
+        "text": "positions reconstructed\nby the beam telescope and by the DUT. The multiple Coulomb scattering implementation in the track\nreconstruction algorithm was verified by this analysis.\n\nIn this paper a method is proposed which, for beam tests of segmented silicon detectors with readout with\ncharge digitization, allows the experimental determination of the track-position resolution of single minimum\nionizing particles directly from the data. Similar to Ref. [5], it uses the well-known fact that, for normally\nincident particles, the spatial resolution of segmented silicon detectors at the boundary between pixels (or\nstrips) is less than 1 µm. The method is demonstrated using both simulations and real beam test data,\nmeasured at the DESY II Test Beam Facility [6], from a non-irradiated CMS prototype pixel sensor [7] for\nthe CMS Phase-2 upgrade [8], read out by the RD53A chip [9]. In the next section, the method is explained\nand studied using simulated data. In Section 3, a short summary of the DESY II Test Beam Facility, the\npixel sensors used, and the data-taking conditions is provided. The proposed method is then validated\nusing experimental data. In the conclusions, the main results are summarized. Finally, in Appendix A, the\nmethod is compared to the one from [2, 3, 4] mentioned above.\n\n**2. Method**\n\n_2.1. Simulation_\n\nThe method described aims to determine the position resolution of tracks reconstructed in a beam\ntelescope and extrapolated to the DUT. Events with a DUT spatial resolution significantly better than the\ntrack-position resolution are selected, and the latter is obtained from the differences between the trackpositions reconstructed by the beam telescope and those by the DUT. In this section, details on the selection\ncriteria, position-reconstruction and spatial resolution of such events are presented. Furthermore, the impact\nof various factors, such as electronics noise, cross-talk, and energetic _𝛿_ -electrons is investigated.\nThe method is demonstrated using 1 × 10 [5] events simulated with the program PIXELAV [10]. The\nresponse of a 150 µm thick silicon sensor with 25 µm × 100 µm pixels to 40 GeV/c pions, uniformly\ndistributed over one pixel with normal incidence, was simulated. Figure 1 shows the pixel layout of the\nactual sensor used, which corresponds to the layout of a prototype pixel sensor for the CMS Tracker Phase-2\nupgrade [7]. The coordinate normal to the 100 µm width is called _𝑥_, the one normal to the 25 µm width,\n_𝑦_, and _𝑧_ the no",
+        "score": -0.742376567155887,
+        "dense_score": null,
+        "bm25_score": 20.12843783981673,
+        "graph_score": 0.0,
+        "rerank_score": -1.1490211486816406,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.736429202836007,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 7.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.736429202836007,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "benchmark": {
+    "query_id": "neg003",
+    "query_type": "negative",
+    "query": "What is the exact private LHCb Upgrade II internal schedule?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "LHC"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "What is the exact private LHCb Upgrade II internal schedule?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1997,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "rformance in\ndifferent momentum regimes, except for muons where the muon system plays a dominant\nrole in all cases. The particle identification performance depends critically on an accurate\nknowledge of the track trajectory within each particle identification subdetector, and\ntherefore requires the use of Kalman fitted tracks in order to achieve the best results.\nThe standalone RICH reconstruction is described in detail elsewhere [105]. It has\nundergone few conceptual changes but the software has been rewritten and reoptimised\nfor computational efficiency and speed.\nThe standalone muon reconstruction has been gradually improved throughout Run 1-2,\nand for the upgrade, new variables have been introduced which further improve the\nperformance in the high-occupancy regime of the upgrade by considering correlations\nbetween the hits in the different layers of the muon detector [193].\nWhile optimal absolute performance is achieved by combining the information provided\nby each subdetector into global multivariate classifiers, it is equally important to have\na particle identification performance which can be accurately calibrated using data tagand-probe samples, as described in section 11.5.3. [83] This is particularly true of the\nprecision measurements which make up the bulk of LHCb physics programme and which\nrequire permille-level control of particle identification efficiencies and misidentification\nrates in order not to be limited by systematic errors. For this reason, multiple multivariate\nclassifiers, trained on simulation and tuned to have a better and more stable performance\nin different kinematic regions, exist. The choice of which classifier is optimal for any given\nanalysis and where particle identification information is used at the trigger level is left to\nthe analysts which have to ensure the relevant samples exist which can calibrate these\nclassifiers in the kinematic regions of interest.\n\n**11.4.2** **Selections**\n\nUnlike HLT1, where a limited number of largely inclusive selections are sufficient to\nselect the most interesting events, HLT2 relies on about one thousand different selection\nalgorithms, each tuned for a particular signal topology and/or physics analysis. Although\nthe software framework provides full flexibility to schedule interleaved sequences of\nreconstruction and selection steps, in practice almost all selection algorithms are executed\nonce the complete offline-quality reconstruction has been performed.\nIn order for these selections",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 24.32299592688993,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 179,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 1993,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "which traverse\nregions of the detector particularly critical for the tracker alignment or RICH mirror\nalignment. HLT1 throughput scales to _O_ (100) selections. It is therefore likely that\nnumerous triggers for specific hard-to-select signals will be implemented as data taking\nprogresses. Examples from previous LHCb data-taking periods included diproton triggers,\ndiphoton triggers, decay-time unbiased charm triggers, and others. [81]\n\n##### **11.4 Second trigger stage**\n\nThe second level trigger (HLT2) uses the information provided by the real-time alignment\nand calibration of the detector to perform an offline-quality reconstruction, followed by\n_O_ (1000) selection algorithms which decide whether or not to retain any given event. If\nan event is retained, the selection algorithms specify which portions of the full event are\nrecorded to permanent storage following the real-time analysis paradigm developed during\nRun 2 [176,177].\n\n**11.4.1** **Reconstruction**\n\nThe LHCb reconstruction is divided into four main components: charged particle pattern\nrecognition, calorimeter reconstruction, particle identification, and the Kalman fit of\nreconstructed tracks which allows their parameters to be measured with the best possible\nprecision and accuracy (see section 11.4). [82] As the upgrade detector design is not\nfundamentally different from that of the previous LHCb detector, its reconstruction is\nalso conceptually similar to what was used during Run 1 and Run 2 . Nevertheless some\nchanges and improvements have been possible in specific areas, as described here.\n\n**Charged particle pattern recognition.** Different tracking algorithms exist to reconstruct different track types, illustrated in figure 110. Tracks which originate in the\nvertex detector ( _VELO tracks_ ) are used to determine the positions of the primary _pp_\ncollisions, a process known as primary vertex finding. The combination of PV positions\nand track trajectories, in turn, allows tracks which originate from the decays of long-lived\nparticles and are therefore displaced from the PV to be precisely identified. As there\nis effectively zero magnetic field inside the VELO, these tracks must be extrapolated\ninto the region covered by the UT ( _upstream tracks_ ) and SciFi Tracker ( _long tracks_ ) in\norder to measure their momentum. Long tracks have the most precise and most accurate\nmomentum determination and are used in nearly all LHCb analyses. In addition to\n\n81 Although there is no full calorimeter r",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 23.14143513282416,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 175,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 2010,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "ensure the quality of the software produced by the developers, automatic\nbuilds of the software are performed, as described in ref. [215]. This infrastructure relies\non the industry-tested Jenkins [216] automation server as deployed in the CERN IT\nOpenShift service. The build nodes are provided by the CERN IT department in the\nform of OpenStack [217] virtual machines. Results are gathered and displayed on a\ncustom made web application [218].\nUnit tests are run straight after the builds and the results are published to the LHCb\nDashboard. Integration tests requiring more resources are run using LHCbPR, the LHCb\nperformance and regression testing service [219]. LHCbPR is responsible for systematically\nrunning regression tests, collecting and comparing results of these tests so that any changes\nbetween different setups can be easily observed. The framework is based on a microservice\narchitecture where a project is broken into loosely coupled modules communicating with\neach other through APIs. The test service requests from LHCbPR information on how to\nrun tests, then runs them and finally saves the results back to LHCbPR . Users have the\nability to retrieve and analyse these test results.\nThe LHCb software is distributed using the CERN software deployment service\nCVMFS. Private installations of the software stack, as well as full management of the\ninstalled packages, are also possible. In this case, the applications are packaged in the\nRPM package manager [220] format, which allows specifying dependencies for applications\nrelying on external packages (e.g. an installation of the analysis package relies on more\nthan a hundred different packages).\nThe LHCb software stack is supported on 64-bit Intel architecture. Other architectures\n(ARM, IBM Power, GPUs) are handled by the LHCb build and release infrastructure,\nproviding that the operating system used by LHCb can be installed, that packages using\nLCGCMake are ported and released, and that nodes for that architecture can be\nmanaged by the experiment’s instance of Jenkins.\nThe LHCb software is preserved in the long term by the same tools used in the LHCb\ndevelopment process, more specifically the version control system as well as the CVMFS\nrepositories, virtual machines and containers. Databases containing information about\nthe software artefacts, their dependencies and their use in physics analysis ensure that\napplications can be rebuilt and rerun if necessary.\nSeveral collaborative tools are used to coordinate",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 22.934338614713926,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 192,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 439,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648434__2304.00973__Fabrication_Development_for_SPT-SLIM_a_Superconducting_Spectrometer_for_Line_Intensity_Map.md",
+        "title": "2023__recid_2648434__2304.00973__Fabrication_Development_for_SPT-SLIM_a_Superconducting_Spectrometer_for_Line_Intensity_Map",
+        "text": "ully line-of-sight,\nthe sidewalls of the membrane step are also coated with Nb\nproviding a continuous film from the top of the membrane\nlayer, over the sidewalls, and on to the bare silicon surface.\nDC connectivity tests demonstrated electrical connectivity of\nthe Nb film over the step edge.\nTo fully characterize the stepdown process we have fabricated test arrays using the same well-characterized SPT3G+ leKIDs described above that now incorporate different\namounts of SiN _x_ under the resonator. Photos of a representative chip are shown in Figure 5. There are three resonator\ntypes: resonators that sit entirely on the SiN _x_, resonators with\ninductors on the SiN _x_ and capacitors on bare silicon, and\nresonators entirely on bare silicon. Figure 6 shows the internal\nquality factors for a similar chip with sixteen resonators:\nfour entirely on SiN _x_, eight with inductors on the SiN _x_ and\n\nASC2022-2EPO2E-01 5\n\nIV. P ROTOTYPE C HIPS\n\nFig. 5. (Top) Photo of a membrane step test chip with three different SPT-3G+\nstyle leKID variations used to characterize the impact of the SiN _x_ membrane\nlayer: left leKID - entire leKID on SiN _x_ membrane; center three leKID inductors on SiN _x_ membrane and capacitors on bare silicon; and right leKID\n\n- entire leKID on bare silicon. (Bottom left) Closeup of leKID in blue box.\n(Bottom right) Closeup of membrane stepdown shown in red box. The leKID\nNb layer transitions from SiN _x_ to SiO 2 to bare silicon, pink to grey to light\nblue, respectively.\n\nFig. 6. Measured internal quality factors for resonators on a stepdown test\nchip. Resonators circled with the dashed lines were identified by frequency\nschedule as those entirely on SiN _x_ . All the resonators fabricated with\ncapacitors on bare silicon, with the exception of one, have internal quality\nfactors greater than 10 [5] . Each resonance was measured five times with the\nmedian value indicated by a dot and the standard deviation shown with error\nbars.\n\ncapacitors on bare silicon, and four entirely on bare silicon.\nAll sixteen resonators are present suggesting that the stepdown does not impact resonator yield. Based upon frequency\nscheduling we identify the resonators circled by the dashed\nline as those resonators entirely on SiN _x_, which also are\namong the lowest internal quality factors. Eleven of the twelve\nother resonators have internal quality factors greater than 10 [5] ;\nthe cause of the 5th resonator with low internal quality factor\nis unclear. Following qualit",
+        "score": 0.013513513513513514,
+        "dense_score": null,
+        "bm25_score": 19.760682126026122,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 3746,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2734139__2312.05098__Comparison_of_readout_systems_for_high-rate_silicon_photomultiplier_applications.md",
+        "title": "2024__recid_2734139__2312.05098__Comparison_of_readout_systems_for_high-rate_silicon_photomultiplier_applications",
+        "text": "photopeak separation at low intensities and not too high rates. Moreover, the\nchannel-to-channel coincidence can be programmed in any way needed, providing a vast reduction of background\ndata. However, this system’s price per channel is the highest of all the compared ones. With KLauS6b, a dead\ntime of 0 _._ 352(77) µs was obtained, making it the second-best choice for detectors demanding low dead time.\nThis is the second most affordable system. TwinPeaks+TRB5sc can operate with the highest data throughput of\nall the studied systems, which makes it a suitable candidate for applications where the efficiency is crucial. It\nis also the only system of the scalable ones that can operate on signals of both polarities. Its price per channel\nis relatively high. DT5742 provides second-best time- and energy resolution. However, it has higher dead time\nand worse efficiency when operating at higher rates, as well as a relatively smaller dynamic range. This system\nis not suitable for detectors with large number of channels, but its ability to register full waveforms makes it\na good choice for applications still in the detector development and troubleshooting. While TOFPET2c is the\noptimal system for the application in the SiFi-CC detector, each of the tested DAQ systems turned out to perform\nvery well in at least one category, as a result of various features being prioritized by the producers. Depending\non the use case, a different system can be optimal and by performing this comparison, we would like to provide\na broad look on the data acquisition systems for high rate SiPM applications as well as to facilitate the choice\n\nof one.\n\n– 10 –\n\n**Acknowledgements**\n\nThis work was supported by the Polish National Science Centre (grant 2017/26/E/ST2/00618) and by the\nJagiellonian University (MNS2021 U1U/P05/NO/03.29 and RSM U1U/W17/NO/28).\n\n**References**\n\n[1] I. Zurbano Fernandez et al., _High-Luminosity Large Hadron Collider (HL-LHC): Technical design report_, .\n\n[2] G. Aad et al., _The Phase-I trigger readout electronics upgrade of the ATLAS Liquid Argon calorimeters_, _[JINST](https://doi.org/10.1088/1748-0221/17/05/P05024)_ **17**\n\n[(2022) P05024 [2202.07384].](https://doi.org/10.1088/1748-0221/17/05/P05024)\n\n[3] CMS Tracker collaboration, _The Upgrade of the CMS Tracker at HL-LHC_, _JPS Conf. Proc._ **[34](https://doi.org/10.7566/JPSCP.34.010006)** (2021) 010006\n\n[[2102.06074].](https://arxiv.org/abs/2102.06074)\n\n[4] LHCb collaboration, _The LHCb upgrade I_ [, 2305.105",
+        "score": 0.013157894736842105,
+        "dense_score": null,
+        "bm25_score": 19.640983573633193,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 3747,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2734139__2312.05098__Comparison_of_readout_systems_for_high-rate_silicon_photomultiplier_applications.md",
+        "title": "2024__recid_2734139__2312.05098__Comparison_of_readout_systems_for_high-rate_silicon_photomultiplier_applications",
+        "text": "collaboration, _The Upgrade of the CMS Tracker at HL-LHC_, _JPS Conf. Proc._ **[34](https://doi.org/10.7566/JPSCP.34.010006)** (2021) 010006\n\n[[2102.06074].](https://arxiv.org/abs/2102.06074)\n\n[4] LHCb collaboration, _The LHCb upgrade I_ [, 2305.10515.](https://arxiv.org/abs/2305.10515)\n\n[5] S. Yamada, R. Itoh, K. Nakamura, M. Nakao, S.Y. Suzuki, T. Konno et al., _Data Acquisition System for the Belle II_\n\n_Experiment_, _[IEEE Transactions on Nuclear Science](https://doi.org/10.1109/tns.2015.2424717)_ **62** (2015) 1175.\n\n[6] Mu2e collaboration, _Mu2e Technical Design Report_ [, 1501.05241.](https://arxiv.org/abs/1501.05241)\n\n[7] W. Gohn, _Data Acquisition for the New Muon g-2 Experiment at Fermilab_, _[Journal of Physics: Conference Series](https://doi.org/10.1088/1742-6596/664/8/082014)_\n\n**664** [(2015) 082014.](https://doi.org/10.1088/1742-6596/664/8/082014)\n\n[8] Belle II Software Group collaboration, _Belle II at the Start of Data Taking_, _EPJ Web Conf._ **[214](https://doi.org/10.1051/epjconf/201921409004)** (2019) 09004.\n\n[9] Muon g-2 collaboration, _Muon g-2 Reconstruction and Analysis Framework for the Muon Anomalous Precession_\n\n_Frequency_, _J. Phys. Conf. Ser._ **[1085](https://doi.org/10.1088/1742-6596/1085/3/032039)** [(2018) 032039 [1710.07839].](https://arxiv.org/abs/1710.07839)\n\n[10] V. Babiano, J. Balibrea, L. Caballero, D. Calvo, I. Ladarescu, J. Lerendegui et al., _First i-TED demonstrator: A_\n_Compton imager with Dynamic Electronic Collimation_, _[Nuclear Instruments and Methods in Physics Research](https://doi.org/https://doi.org/10.1016/j.nima.2019.163228)_\n\n_[Section A: Accelerators, Spectrometers, Detectors and Associated Equipment](https://doi.org/https://doi.org/10.1016/j.nima.2019.163228)_ **953** (2020) 163228.\n\n[11] E. Muñoz, A. Ros García, M. Borja-Lloret, J. Barrio, P. Dendooven, J. Oliver et al., _Proton range verification with_\n_MACACO II Compton camera enhanced by a neural network for event selection_, _[Scientific Reports](https://doi.org/10.1038/s41598-021-88812-5)_ **11** (2021) 9325.\n\n[12] E. Draeger, D. Mackin, S. Peterson, H. Chen, S. Avery, S. Beddar et al., _3D prompt gamma imaging for proton beam_\n_range verification_, _[Physics in Medicine and Biology](https://doi.org/10.1088/1361-6560/aaa203)_ **63** (2018) 035019.\n\n[13] A. Koide, J. Kataoka, T. Masuda, S. Mochizuki, T. Taya, K. Sueoka et al., _Precision imaging of 4.4 MeV gamma rays_\n_using a 3-D position sensitive Compton camera_, _[Scientific Reports](http",
+        "score": 0.012987012987012988,
+        "dense_score": null,
+        "bm25_score": 19.33177830602027,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8396,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_.md",
+        "title": "2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_",
+        "text": "#### EUROPEAN ORGANIZATION FOR NUCLEAR RESEARCH (CERN)\n\nCERN-EP-2026-024\n\nLHCb-DP-2025-006\n\nFebruary 15, 2026\n\n# **A method for luminosity**\n# **determination based on real-time hit** **reconstruction with the LHCb silicon** **pixel detector**\n\nLHCb collaboration [†]\n\n**Abstract**\n\nThe data acquisition system of the upgraded LHCb experiment includes the fast\nreconstruction of all hits in the vertex locator (VELO) pixel detector at the beamcrossing rate of 40 MHz, implemented as on-the-fly clustering embedded in the\nfirmware of the readout board FPGAs. The availability of a high rate of reconstructed\nclusters in real time enables a new fast approach for measuring luminosity and\nmonitoring the LHCb luminous region, directly at the detector readout level. This\nmethodology has been implemented as an array of real-time cluster counters in\nthe VELO readout FPGAs and has been in operation since the start of the 2024\nphysics run of LHCb. This paper describes the methodology and its features and\nperformance, both on proton-proton and lead-lead collision data. The method\nshows a statistical resolution better than the percent level, and a sensitivity to\nvariable running conditions of the same level. This is achieved with an intrinsic time\ngranularity better than 100 ms, undersampled to 3 s for analysis purposes. Nonlinear\nbehaviour is compatible with zero in a luminosity range including the LHCb Run 3\noperating point.\n\nSubmitted to JINST\n\n[© 2026 CERN for the benefit of the LHCb collaboration. CC BY 4.0 licence.](https://creativecommons.org/licenses/by/4.0/)\n\n- Authors are listed at the end of this paper.\n\nii\n\n### **1 Introduction**\n\nThe LHCb experiment, installed at the Large Hadron Collider (LHC) [1], was primarily\ndesigned for precision tests of _CP_ violation in the decays of heavy-flavour hadrons, and\nfor the study of their rare decays. Over time, its physics programme has successfully\nexpanded to encompass a broad range of topics, including quantum chromodynamics,\nhadron spectroscopy, heavy-ion collisions, and fixed-target physics [2].\nWith respect to other LHC experiments, LHCb is designed to operate at a lower\nluminosity, kept constant via a procedure known as luminosity levelling [3]. A reliable\nreal-time measurement of instantaneous luminosity, with a precision at least as good as\n5%, is therefore essential to ensure correct LHCb operation [4].\nIn this paper, a new algorithm for the determination of instantaneous luminosity\nis proposed and characterised. Th",
+        "score": 0.01282051282051282,
+        "dense_score": null,
+        "bm25_score": 19.106368046070326,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 64,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector.md",
+        "title": "2023__recid_2630670__2302.03972__A_FPGA-Based_Architecture_for_Real-Time_Cluster_Finding_in_the_LHCb_Silicon_Pixel_Detector",
+        "text": "es.\n\nHowever, all the above examples assume that the image\ndata arrive as an ordered sequence of pixels, and do not\nprovide detailed topology analysis of the found clusters, so\nthey could not be straightforwardly applied to our problem.\nConversely, the smallness of the components addressed by our\nsystem may not be of interest in general image processing\napplications; nevertheless, it cannot be excluded that some of\nthe ideas described in this article could find some use in image\nprocessing tasks, at least in some specific instances.\n\nA CKNOWLEDGEMENT\n\nWe are thankful for the support of the LHCb Real-Time\nAnalysis group, within which this project was developed. A\nspecial thank goes to the LHCb VELO group for the tight\ncollaboration, support, and integration coordination, without\nwhich this work would not have been possible. The authors\nwould also like to thank the LHCb computing and simulation\nteams for providing the simulated samples used in the paper.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2023 13\n\nR EFERENCES\n\n[1] LHCb Collaboration, “LHCb Trigger and Online Upgrade Technical\nDesign Report,” CERN, Geneva, Tech. Rep. CERN-LHCC-2014-016,\n[2014. [Online]. Available: https://cds.cern.ch/record/1701361](https://cds.cern.ch/record/1701361)\n\n[2] LHCb Collaboration, “Expression of Interest for a Phase-II LHCb\nUpgrade: Opportunities in flavour physics, and beyond, in the HL-LHC\nera,” CERN, Geneva, Tech. Rep., Feb 2017. [Online]. Available:\n[https://cds.cern.ch/record/2244311](https://cds.cern.ch/record/2244311)\n\n[3] LHCb Collaboration, “LHCb Upgrade GPU High Level Trigger\nTechnical Design Report,” CERN, Geneva, Tech. Rep. CERN-LHCC[2020-006, May 2020. [Online]. Available: https://cds.cern.ch/record/](https://cds.cern.ch/record/2717938)\n[2717938](https://cds.cern.ch/record/2717938)\n\n[4] R. Cenci _et al._, “Development of a High-Throughput Tracking\nProcessor on FPGA Boards,” in _Proc. Topical Workshop on Electronics_\n_for Particle Physics (TWEPP 2017)_, Santa Cruz, CA, USA, 2017.\n\n[[Online]. Available: https://pos.sissa.it/313/136/](https://pos.sissa.it/313/136/)\n\n[5] LHCb Collaboration, “LHCb VELO Upgrade Technical Design Report,”\nCERN, Geneva, Tech. Rep. CERN-LHCC-2013-021. LHCB-TDR-013,\n[2013. [Online]. Available: https://cds.cern.ch/record/1624070](https://cds.cern.ch/record/1624070)\n\n[6] G. Bassi _et al._, “FPGA implemention of a fast 2D clustering\nalgorithm (VHDL language),” 2019. [Online]. Available: [https:](https://doi.org/10.15161/oa",
+        "score": 0.012195121951219513,
+        "dense_score": null,
+        "bm25_score": 18.792784369703107,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 26,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 8397,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_.md",
+        "title": "2026__recid_3120618__2602.14067__A_method_for_luminosity_determination_based_on_real-time_hit_reconstruction_with_the_LHCb_",
+        "text": "ment of instantaneous luminosity, with a precision at least as good as\n5%, is therefore essential to ensure correct LHCb operation [4].\nIn this paper, a new algorithm for the determination of instantaneous luminosity\nis proposed and characterised. This algorithm relies solely on detector hits, _i.e._ lowlevel information made available at the very first stage of data acquisition by a new\nclustering procedure described in Ref. [5]. It can run continuously and independently of\nthe software-based event reconstruction. [1]\n\nThe paper is organised as follows: Sect. 2 describes the LHC collider and the relevant\nfeatures of the LHCb experiment, Sect. 3 introduces the concept of luminosity and the\nmethods normally used to measure it, Sect. 4 describes how hit counters are implemented\nto measure luminosity, and discusses the design choices. Then, Sect. 5 explains how\nthese counters are calibrated using collision data, Sect. 6 discusses the performance of the\nmethod and the possible sources of systematic uncertainties. Finally, Sect. 7 summarises\nthe findings.\n\n### **2 Experimental context**\n\nThe LHC is the highest-energy proton-proton ( _pp_ ) collider in the world, also capable of\ncolliding heavier nuclei, _e.g._ lead ions (Pb). It is a radio-frequency machine where each\nbeam is divided into 3564 bunches. During the 2024 nominal running conditions for _pp_\ncollision physics, 2133 bunches were colliding at the LHCb interaction point, each one\ncontaining up to about 1 _._ 6 _×_ 10 [11] protons [1].\nThe LHCb detector underwent a major upgrade in view of the ongoing LHC Run 3 [6],\nto support a fivefold increase of instantaneous luminosity compared to the previous running\nperiods, _i.e._ a target luminosity of _L_ = 2 _×_ 10 [33] cm _[−]_ [2] s _[−]_ [1], corresponding to 2000 Hz / µb .\nThe new detector is able to reconstruct events at a rate of 40 MHz and its finer granularity\nallows for smooth operation with increased event multiplicity. The tracking system has\nbeen completely replaced. In particular, a new silicon pixel VErtex LOcator (VELO)\nacts as the tracking detector closest to the _pp_ interaction region [7]. The VELO is placed\nin a vacuum box that locally replaces the LHC vacuum pipe. It consists of 26 detector\nlayers placed at different _z_ positions surrounding the luminous region, where the _z_ axis\nlies along the beamline and its origin lies within the VELO. Each layer is composed of two\nmodules, which can move horizontally as far as 25 mm and as close as",
+        "score": 0.012048192771084338,
+        "dense_score": null,
+        "bm25_score": 18.749794651905052,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 2390,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to.md",
+        "title": "2024__recid_2676584__2307.06798__Current_status_and_desired_precision_of_the_isotopic_production_cross_sections_relevant_to",
+        "text": "e most striking is the AMS-02 preliminary claim\nof the detection of six [3] He and two [4] He events [48].\nThe number of detected events (8) and the ratio\n4 He _/_ 3 He =1 _/_ 3 is too high for them to be produced\nthrough coalescence [49–52].\n\nBesides, new data yield a deeper understanding of the\ninternal works of our Galaxy. Observations of the breaks\n(hardening) in the spectra of (mostly) primary ( _p_, He, C,\nO, Ne, Mg, Si, Fe), secondary (Li, Be, B, F), and intermediate (N, Na, Al) nuclei at the same magnetic rigidity\n_R≈_ 300 GV by PAMELA [53], _Fermi_ -LAT [54], AMS02 [3, 55–63], while the spectral slopes of these groups\nof nuclei are different. This may imply a change in the\nspectrum of the interstellar turbulence [64–66] or an influence of a passing star (such as _ϵ_ Eri) [67, 68]; for a\nsummary of current models see [69]. There is also an\nevidence of some fraction of primary Li in CRs [70], the\nunexpected low-energy excess in CR Fe [71] and Al [72],\nand a hint at the presence of primary F in CRs [11], all\ndiscovered using the combined GalProp–HelMod framework; alternative interpretations of the Li and F data\ninvoke spatially-dependent diffusion model [13] or, what\n\n2\n\nconcerns us particularly in this paper, uncertainties on\nthe production cross sections [12, 73–76].\nAnomalously high CR isotopic ratios 12 C/ 16 O,\n22 Ne/ 20 Ne, and 58 Fe/ 56 Fe [77, 78] and a recent detection of radioactive [60] Fe in CRs by the ACE-CRIS [79]\nindicate a relatively recent supernovae (SNe) activity in\nthe solar neighborhood and align well with the discovered low-energy excess in CR Fe [71]. The discovery of\nthe _Fermi_ bubbles in the _Fermi_ -LAT data [80, 81], huge\n_≈_ 10-kpc-across structures emanating from the GC, and\neven larger bubbles by eROSITA [82] add to our understanding of the activity of the central supermassive black\nhole and its ability to accelerate particles.\n\nThe listed discoveries imply that new physics may be\ninvolved, however, the significance of these findings critically depends on the accuracy of the underlying datasets,\nespecially isotopic production cross sections. The latter\nare used for evaluation of the CR propagation parameters, which, in turn, is the cornerstone of all calculations\ninvolving CR particles, their emissions, and related backgrounds.\n\nThe paper is organized as follows: in Section II, we\npresent the propagation setup and reference isotopic production cross-section parametrizations used for our calculations. We also highlight t",
+        "score": 0.011627906976744186,
+        "dense_score": null,
+        "bm25_score": 18.56507499548547,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.05552122090011835,
+    "generation_latency_s": 1.2991949915885925e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 6.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.05552122090011835,
+    "generation_latency_s": 1.2991949915885925e-07
+  }
+}

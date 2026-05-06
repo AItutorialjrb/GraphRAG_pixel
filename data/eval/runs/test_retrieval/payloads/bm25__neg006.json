@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "neg006",
+    "query_type": "negative",
+    "query": "Which student fabricated data in these papers?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Which",
+      "student",
+      "fabricated",
+      "data"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "Which student fabricated data in these papers?",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7256,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2909952__2504.06671__Defects_in_Silicon_Carbide_as_Quantum_Qubits_Recent_Advances_in_Defect_Engineering.md",
+        "title": "2025__recid_2909952__2504.06671__Defects_in_Silicon_Carbide_as_Quantum_Qubits_Recent_Advances_in_Defect_Engineering",
+        "text": "um information transfer over fiber-optic\n\nnetworks.\n\nAs illustrated in Figure 1, the number of research publications on quantum qubits has increased\n\nsignificantly over the past decade, reflecting the growing interest in defect-based quantum technologies.\n\nThe data was obtained from the Web of Science Core Collection using the keyword search “quantum\n\nqubits.” This trend underscores the expanding role of SiC as a key material in the development of next\ngeneration quantum devices.\n\n15000\n\n12500\n\n10000\n\n7500\n\n5000\n\n2500\n\n0\n\n|Col1|Web of Science Core Collection<br>Topic: Quantum Qubits|Col3|\n|---|---|---|\n||||\n||||\n||||\n||||\n||||\n||||\n\n1995-2005 2005-2015 2015-2025\n\n**Figure 1** . The total number of publications on quantum qubits. Data are extracted from the Web of Science Core\n\nCollection with the topic “quantum qubits”.\n\nWith the rapid growth of quantum-related research, the number of review papers in this field has\n\nexpanded significantly. These reviews play a crucial role in summarizing recent advancements, identifying\n\nkey challenges, and outlining future research directions. Several comprehensive reviews have been\n\npublished, covering various aspects of quantum defect physics, material platforms, and semiconductor\n\nqubits. Some of the most notable reviews include:\n\ni) Zhang et al. [22], \"Material Platforms for Defect Qubits and Single-Photon Emitters\". This\n\nreview provides a broad overview of solid-state systems pivotal for spin-based quantum\n\ntechnologies. It discusses advancements in solid-state spins and single-photon emitters across\n\nmultiple host materials, including diamond, silicon carbide (SiC), hexagonal boron nitride\n\n(hBN), silicon, and two-dimensional semiconductors. The authors also emphasize the role of\n\ntheoretical and computational methods in guiding experimental progress in defect-based\n\nquantum technologies.\n\nii) Chatterjee et al. [23], \"Semiconductor Qubits in Practice\". This paper provides a detailed\n\nanalysis of semiconductor-based qubits, covering their implementation in quantum\n\ncomputing, quantum simulation, quantum sensing, and quantum networking. The review\n\nhighlights the key challenges and progress in integrating these systems into scalable quantum\n\narchitectures.\n\niii) Wolfowicz et al. [24], \"Quantum Guidelines for Solid-State Spin Defects\". This review offers a\n\nset of broad guidelines for the development and application of solid-state spin defects in\n\nquantum information processing. The authors discuss defect properties,",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 12.917685054657142,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4462,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr.md",
+        "title": "2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr",
+        "text": "e as it can be used to fit in the four clavier gates per\nelectron required by the conveyor-belt mode of shuttling.\n\n**B.** **Logical gates and qubit layout**\n\nOne of the major constraints discussed above is the absence of local single-qubit gates (apart from phase gates).\nAs such, if one wants to implement, say, a logical _X_ gate\non a given logical qubit, applying transversal _X_ gates on\nthe corresponding surface code would not meet our constraints, as these gates would have to be applied on all\ndata qubits in the device, thereby implementing a global\nlogical _X_ . Local transversal single-logical-qubit gates are\nthus not permitted in our device (apart from _Z_ gates).\nThis motivates the choice of a protocol that would not\nmake use of such transversal gates, but rather, of lattice surgery only. Indeed, this operation can be made\nlocal as our device does feature selective _CZ_ gates. One\nsuch approach is described in [46, 47]: using Clifford+ _T_\nas a universal gate set, these papers show that Clifford\ngates can be commuted through _T_ gates and incorporated in later measurements, thereby only leaving multiqubit Pauli measurements and multi-qubit _π/_ 8 rotations\nto implement (Fig. 4 in [47]). These rotations can in turn\nbe performed by consuming a magic state through additional multi-qubit measurements. This protocol thus removes the necessity to implement local Clifford gates that\nare impractical in our device. However, it comes at the\ncost of complexified measurements which require a modified lattice surgery protocol. As for the magic state, it\ncan be prepared via state injection and subsequent magic\nstate distillation. The latter only requires the implementation of logical CNOTs, which can equally be performed\nvia lattice surgery. Using this scheme, the remaining operations our device must be able to implement for universal quantum computation are thus: ( _i_ ) stabiliser measurements, ( _ii_ ) all variants of lattice surgery as described\nin [46] and ( _iii_ ) state injection. An implementation of\nthese three components within our architectural limitations is described in Section III C.\n\nBefore discussing the circuit-level implementation of\nthese elements, it is first relevant to discuss the layout\nthat we adopt for our logical qubits, as this will have an\nimpact on the ordering of the gates in each circuit ( _e.g._\nto avoid distance-reducing hook errors).\nIn order to embed an _n × m_ grid of _d × d_ tiles of data\nqubits (as in [47]) in a 2 _×_ N devi",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 12.860578869721614,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 13,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 249,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2640598__2303.05580__Beam_Test_Results_of_the_RADiCALA_Radiation_Hard_Innovative_EM_Calorimeter.md",
+        "title": "2023__recid_2640598__2303.05580__Beam_Test_Results_of_the_RADiCALA_Radiation_Hard_Innovative_EM_Calorimeter",
+        "text": "initially conceived to target precision calorimetry for use in\nfuture hadron collider experiments [1]. The requirements of\nsuch a collider include timing resolution under 50 ps and\nan EM energy resolution approaching _σ_ _E_ _/E_ = 10% ~~�~~ ( _E_ ) _⊕_\n\n0 _._ 3 _/E ⊕_ 0 _._ 7% [2].\nTo address these challenges the RADiCAL concept envisions a shashlik style sampling calorimeter composed of many\nindividual modules each 13 cm long and 1.4 x 1.4 cm [2] in cross\nsection. Fig. 1 is a generic schematic of a single prototype\nRADiCAL module. Comprising such a module are 28 tiles\nof tungsten (2.5 mm thick) and 29 tiles of LYSO (1.5 mm\nthick). The radiation length of this structure is 4.7 mm and\nthe Moli´ere radius is 13.7 mm [3]. There are four 1.3 mm\n\nWe thank the staff at the Fermilab Test Beam Facility (FTBF). This work\nhas been supported in part by: DOE grant DE-SC0017810, NSF grant NSFPHY-1914059, the University of Notre Dame – through the Resilience and\nRecovery Grant Program, and QuarkNet for HS Teacher and Student support.\n\nFig. 1. Top: Diagram of a RADiCAL module. Bottom: Diagram of a\nRADiCAL tile.\n\nand one 0.9 mm diameter holes in each tile to allow for the\n\ninsertion of quartz capillaries through the length of the module\nfor optical readout, Fig. 1, Bottom.\n\nMonte Carlo simulations using GEANT4 [4]–[6] and previous test beam experiments of the RADiCAL concept using a\n4 x 4 array of RADiCAL modules demonstrated realistic expectations for achieving energy resolution performance goals\n\nFig. 2. Assembly of a RADiCAL module. The top shows the tiles being\nstacked, the bottom shows the delrin assembly.\n\nFig. 3. A RADiCAL module in the beam line at Fermilab Test Beam Facility,\nJune, 2022.\n\n[3], [7], and that testing an individual module is sufficient to\ninvestigate timing characteristics [3].\nTo further explore the potential timing characteristics, a\nsingle RADiCAL module was tested at the Fermilab Test\nBeam Facility (FTBF) [9] in June 2022 using a low energy\nmixed pion-electron beam E = 28 GeV, with preliminary\nresults reported here.\n\nII. E XPERIMENTAL S ETUP\n\nA single RADiCAL module was prepared by stacking\nalternating tiles of LYSO and tungsten, separated by laser-cut\nsheets of Tyvek, and placed in a milled delrin housing, shown\nin Fig. 2. Quartz capillaries were then inserted and readout\ncards attached. A RADiCAL module with both electronics\n\ncards attached is shown in the beam line in Fig. 3.\nA RADiCAL capillary is a hollow quartz tube. Each\ncapillary is 18",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 12.674007793812493,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 1431,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i.md",
+        "title": "2023__recid_2691406__2308.13674__Interacting_two-level_systems_as_a_source_of_mathmrowmn1mnmomomifmimrowmath_charge_noise_i",
+        "text": "TLS, assuming that all the\nTLS contribute to the specific heat. _P_ is the subset of\nTLS that flip fast enough to scatter phonons and affect\nthermal conductivity and ultrasonic attenuation. (Heat\ntransport in amorphous insulators is due phonons [56].)\nTypically _n_ _o_ is about an order of magnitude larger than\n_P_ . The relation between _n_ _o_ and _P_ is given by [57, 58]:\n\nwhere _c_ ( _T, t_ ) is the time dependent specific heat and _τ_ is\nthe minimum relaxation time for TLS. The specific heat\nincreases logarithmically with time due to slowly relaxing\nTLS that have large tunneling barriers.\n\nWe note that some papers [19, 24] that attribute charge\nnoise at the quantum dot to a 2D layer of noninteracting\nTLS use a TLS density _ρ ∼_ 10 [11] /cm [2] which corresponds\nto a TLS separation of about 30 nm, while other papers\n\n[26, 27] use _ρ ∼_ 10 [10] /cm [2] corresponding to a TLS separation of 100 nm. These estimates are based on _P_ obtained\n\nfrom thermal relaxation measurements of vitreous silica\n\n_∼_\nat low temperatures ( 200 mK) [58]. The TLS involved\nin those experiments tunnel on the time scale ( _∼_ 10 [3] s) of\nthe measurements. We have used _n_ _o_ because we are interested in TLS interacting with one another over a wide\nrange of time scales.\n\n_c_ ( _T, t_ ) = _[π]_ [2]\n\n_[π]_ [2] 4 _t_\n\n12 _[k]_ _[B]_ _[TP]_ [ ln] � _τ_\n\n_τ_\n\n(A2)\n�\n\n**Appendix B: Equilibration**\n\n**1.** **Equilibration and Recording Times**\n\nThe Ising spin glass systems are equilibrated for\n10 [5] MCS at _T_ = 10. As the system is cooled, the equilibration and recording times are increased if the system\nis not in equilibrium. These times as a function of temperature are shown in Table I.\n\n|Temperature|Equilibration and<br>Recording Times (MCS)|\n|---|---|\n|1_ ≤T ≤_10|10~~5~~|\n|0_._8_ ≤T ≤_0_._95|3_ ×_ 10~~5~~|\n|_T_ = 0_._75|10~~6~~|\n|0_._65_ ≤T ≤_0_._7|3_ ×_ 10~~6~~|\n|_T_ = 0_._6|10~~7~~|\n\nTABLE I. Equilibration and recording times for the 2D (16 _×_\n16) Ising spin glass with random electric dipole orientations\nfor 0 _._ 6 _≤_ _T ≤_ 10.\n\n**2.** **Spin Glass Susceptibility**\n\nThe test for equilibration follows Bhatt and Young’s\nprocedure for the equilibration of Ising spin glasses [47].\nTwo independent replicas of each system with the same\nexchange couplings are created and run in parallel. The\ninitial spin configurations for the two replicas are different and random. For the set of spins _{_ s _i_ _}_ with _N_ lattice\nsites, the spin autocorrelation function for the replica _n_,\naf",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 12.590805129525794,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4895,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2778430__2404.11192__A_beam-driven_proton_irradiation_setup_for_precision_radiation_damage_tests_of_silicon_det.md",
+        "title": "2024__recid_2778430__2404.11192__A_beam-driven_proton_irradiation_setup_for_precision_radiation_damage_tests_of_silicon_det",
+        "text": "each sensor is determined via CV measurements at different frequencies. The expected increase of\n\n6\n\nis assumed, in accordance to the expected increase due\nto energy loss by ionization.\n\n**7. Conclusion**\n\nIn this work, a modern proton irradiation site at the\nBonn Isochronous Cyclotron (BIC) of Bonn University\nis described. DUTs are irradiated with 13.6 MeV protons inside a cool box at ≤−20 [◦] C which is moved\n\ntrough the stationary beam along a scan grid. Custom\nbeam diagnostics facilitate online beam parameter monitoring at the extraction to the setup, enabling a beamdriven irradiation routine as well as a purely beam-based\non- and offline dosimetry. Test irradiations of titanium\nfoils verify that the beam-based and standard dosimetry\nvia foil activation yield comparable results whereas the\nbeam-based methods provide a lower uncertainty. Performing electrical characterization of thin sensors before and after irradiation allows to extract a proton hardness of κ p = 3.71±0.11, in agreement with expectations.\nDue to the low proton energy at the BIC, DUTs with a\nthickness ≤ 300 µm silicon are preferable to ensure accurate NIEL scaling.\n\n**References**\n\n[1] D. Sauerland, P. Wolf, P.-D. Eversheim, R. Beck, J. Dingfelder,\nProton irradiation site for si-detectors at the bonn isochronous\n\ncyclotron, in: 13th Int. Particle Acc. Conf., no. 13 in\nInternational Particle Accelerator Conference, JACoW Publishing, 2022, pp. 130–132. doi:10.18429/JACoW-IPAC2022MOPOST030.\n\nURL `https://ipac2022.vrws.de/papers/mopost030.`\n```\n pdf\n```\n\n[2] H. Garnir, P. Dumont, Y. Baudinet-Robinet, Secondary electron\nemission from thin foils under fast ion bombardment, Nuclear\nInstruments and Methods in Physics Research 202 (1) (1982)\n187–192. doi:https://doi.org/10.1016/0167-5087(82)90394-5.\nURL `https://www.sciencedirect.com/science/`\n```\n article/pii/0167508782903945\n```\n\n[3] C. Peterson, R. Laubert, Carbon accumulation on target surfaces\nirradiated by protons, IEEE Transactions on Nuclear Science\n24 (3) (1977) 1542–1544. doi:10.1109/TNS.1977.4329004.\n\n[4] D. Sauerland, P. Wolf, P.-D. Eversheim, R. Beck, J. Dingfelder,\nProton irradiation site for high-uniformity radiation hardness\ntests of silicon detectors at the bonn isochronous cyclotron, in:\n23rd Int. Conf. on Cyclotrons and their Applications, no. 23 in\nInternational Conference on Cyclotron and their Applications,\nJACoW Publishing, 2022, pp. 130–132. doi:10.18429/JACoWIPAC2022-MOPOST030.\n\nURL `https://ipac2022.vrws.de/papers/mopos",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 12.424840828681731,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5600,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers.md",
+        "title": "2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers",
+        "text": "connectivity shown in Figure 17. The\nansatz is iteratively refined, where in each iteration several intermediate ansätze are given, then\nthe one with the lowest energy is chosen and simplified further by removing the superfluous gates.\nWe use the natural gradient descent (also called\nimaginary-time evolution) method [61] to train\nour parameters. Finally, we execute the VQE on\nour virtual superconducting qubits device, with\nerror parameters outlined in Table 5 in the appendix. The optimisation results are presented\nin Figure 18.\n\nAccepted in 2024-11-14, click title to verify. Published under CC-BY 4.0. 25\n\nnarrowly predict its performance. This illustrates\nthe utility of the VQD platform as a kind of fastprototyping tool – hardware teams can explore a\nrange of systems and parameters in emulation in\norder to identify the most promising systems to\nactually fabricate.\n\n### 9 Conclusion and further discussion\n\nThis paper has introduced the Virtual Quantum\nDevice (VQD) tool and demonstrated its utility\nthrough a series of small studies – each focusing\non a different form of quantum computing technology. We have explored ion traps in the context of remote Bell state generation, NV-centre\ntype architectures as simulators for BCS models,\nstabiliser measurements in neutral atom devices,\nBell state preparation in silicon spin systems, and\nVQE algorithms with superconducting systems.\nIn each case, we have linked to either state-of-theart experiments (replicating the results of those\npapers with a close fit) or recently proposed theoretical ideas and protocols.\n\nThese various demonstrations show that the\n\nVQD system is a valuable tool both for experimentalists wishing to understand data or test proposed designs, and for theorists who may want to\nexplore ideas for algorithms and subroutines by\ntesting them on a wide variety of platforms. Some\nof the studies are quite interesting investigations\nin their own right, and each of the VQDs that\nwe created can straightforwardly be extended to\nmatch given physical devices even more closely.\n\n### 10 Acknowledgements\n\nThe authors would like to express their gratitude\nto the following contributors for their valuable\ncontributions to this work:\n\nMohammed Alghadeer, Mohamed Abobeih,\nAlessandro Ciani, Shuxiang Cao, Andrew Daley, Joseph Goodwin, Fernando Gonzalez-Zalba,\nTomas Kozlej, Peter Leek, David Nadlinger,\nNatalie Pearson, Gerard Pelergi, Cody Poole,\nJonathan Pritchard, Mark Saffman, Jason Smith,\nand Joanna Zajac.\nThe authors w",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 11.915334322516909,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 52,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7799,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC.md",
+        "title": "2026__recid_2934049__2506.10823__Simulation_of_irradiated_hybrid_planar_pixels_modules_at_fluences_expected_at_HL-LHC",
+        "text": "ollected charge is reduced by 40% or more. In this report it was shown\nthat a combination of TCAD and Allpix [2] simulations deliver predictions on\ncollected charge that match quite well the value of saturated charge extracted\nfrom data. It was also shown that the voltage at which the saturation starts\ncan be correctly reproduced.\n\n13\n\nUsing this validated combined model predictions on collected charge at\nexpected fluences for the future ATLAS Inner Tracker were prepared. It was\nshown that the collected charge should always be well above the threshold,\nassuring a large signal-to-threshold ratio. The results also indicate that it\nwill not be necessary to run at the maximal voltage but a few hundreds of\nvolts less should anyhow assure full efficiency.\nSimilar studies are in preparation for 3D sensors which will be used in\nthe innermost layer of the ATLAS Inner Tracker; these sensors are expected\nto integrate fluences as high as Φ = 1 _._ 6 _×_ 10 [16] n eq _/_ cm [2] which is almost a\nfactor of 3 larger of what tested in this report. Given the different sensor\ngeometry and fluence range a dedicated study is needed.\nThe validated simulation model will be used to prepare look-up tables\nwhich will be input to the new algorithm [13] to include radiation damage\neffects in the ATLAS Monte Carlo event generator. It will be then possible\nto complete the assessment of the robustness of tracking and vertexing algorithms for ITk [10] exploring conditions close to those expected during data\ntaking.\n\n**Acknowledgements**\n\nThe author wants to thank Anna Macchiolo of Universität Zürich for\n\nsharing the CMS tracker group papers on passive CMOS pixels productions.\nThe author is thankful to the Allpix [2] developers and to Igor Mandić of Jožef\nStefan Institute of Ljubljana for the useful suggestions and discussions.\n\n**References**\n\n[1] I. Dawson, Radiation effects in the LHC experiments: Impact on detector performance and operation, CERN Yellow Reports: Monographs,\nCERN, Geneva, 2021. doi:10.23731/CYRM-2021-001.\nURL `https://cds.cern.ch/record/2764325`\n\n[2] M. Moll, Displacement damage in silicon detectors for high energy\nphysics, IEEE Transactions on Nuclear Science 65 (8) (2018) 1561–1582.\ndoi:10.1109/TNS.2018.2819506.\n\n[3] Performance of ATLAS Pixel Detector and Track Reconstruction at the\nstart of Run 3 in LHC Collisions at _[√]_ ~~_s_~~ = 900 _GeV_, Tech. rep., CERN,\n\n14\n\nGeneva (2022).\nURL `https://cds.cern.ch/record/2814766`\n\n[4] M. Aaboud, et al., Modelling radiation",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 11.50311715881925,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5842,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2743105__2401.01747__Study_of_the_time_and_energy_resolution_of_an_ultracompact_sampling_calorimeter_RADiCAL_mo.md",
+        "title": "2025__recid_2743105__2401.01747__Study_of_the_time_and_energy_resolution_of_an_ultracompact_sampling_calorimeter_RADiCAL_mo",
+        "text": "stigation, Writing – Review and Editing.\n\n**10. Acknowledgements**\n\nWe thank the CERN SPS Coordination Team for their\n\nexpert assistance in providing excellent beam conditions and logistics to make the experimental tests described above very successful. And We thank colleagues from the COMPASS experiment for the loan\nof Pb glass detectors which were used for backing\ncalorimetry.\nThis is work has been supported in part by: US\nDOE grant DE-SC0017810, US NSF grant NSF-PHY1914059, the University of Notre Dame through its Resilience and Recovery Grant Program, and QuarkNet for\nhigh school teacher and student participation.\n\n**References**\n\n[1] A. Abada, et al., FCC Physics Opportunities, The\nEuropean Physical Journal C 79 (6) (2019) 474.\n`[doi:10.1140/epjc/s10052-019-6904-3](https://doi.org/10.1140/epjc/s10052-019-6904-3)` .\nURL `[https://doi.org/10.1140/epjc/](https://doi.org/10.1140/epjc/s10052-019-6904-3)`\n\n```\n s10052-019-6904-3\n\n```\n\n[[2] A. Abada, et al., FCC-ee: The Lepton Collider, The European](https://doi.org/10.1140/epjst/e2019-900045-4)\nPhysical Journal Special Topics 228 (2) (2019) 261–623.\n`[doi:10.1140/epjst/e2019-900045-4](https://doi.org/10.1140/epjst/e2019-900045-4)` .\nURL `[https://doi.org/10.1140/epjst/](https://doi.org/10.1140/epjst/e2019-900045-4)`\n\n```\n e2019-900045-4\n\n```\n\n[3] A. Abada, et al., FCC-ee: The Lepton Collider: Future\nCircular Collider conceptual design report volume 2, Eur.\nPhys. J. ST 228 (2) (2019) 261–623. `[doi:10.1140/epjst/](https://doi.org/10.1140/epjst/e2019-900045-4)`\n\n`[e2019-900045-4](https://doi.org/10.1140/epjst/e2019-900045-4)` .\n\n[4] A. Abada, et al., FCC-hh: The Hadron Collider: Future Circular Collider conceptual design report volume 3, Eur. Phys.\nJ. ST 228 (4) (2019) 755–1107. `[doi:10.1140/epjst/](https://doi.org/10.1140/epjst/e2019-900087-0)`\n\n`[e2019-900087-0](https://doi.org/10.1140/epjst/e2019-900087-0)` .\n\n[5] M. Aleksa, et al., Calorimeters for the FCC-hh (2019). `[arXiv:](http://arxiv.org/abs/1912.09962)`\n\n`[1912.09962](http://arxiv.org/abs/1912.09962)` .\n\n[[6] B. Fleming, et al., Basic research needs for high energy physics](https://www.osti.gov/biblio/1659761)\n[detector research & development: Report of the office of sci-](https://www.osti.gov/biblio/1659761)\n[ence workshop on basic research needs for HEP detector re-](https://www.osti.gov/biblio/1659761)\n[search and development: December 11-14, 2019 (12 2019).](https://www.osti.gov/biblio/1659761)\n`[doi:10.2172/1659761](https://doi.org/10.2172/16",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 11.450554179937953,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1284,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides.md",
+        "title": "2023__recid_2681756__2307.14017__Erbium_emitters_in_commercially_fabricated_nanophotonic_silicon_waveguides",
+        "text": "**Erbium emitters in commercially fabricated nanophotonic silicon waveguides**\n\nStephan Rinner, _[∗]_ Florian Burger, _[∗]_ Andreas Gritsch, _[∗]_ Jonas Schmitt, and Andreas Reiserer _[†]_\n\n_Max-Planck-Institut f¨ur Quantenoptik, Quantum Networks Group,_\n_Hans-Kopfermann-Strasse 1, D-85748 Garching, Germany and_\n_Technical University of Munich, TUM School of Natural Sciences_\n_and Munich Center for Quantum Science and Technology (MCQST),_\n_James-Franck-Straße 1, D-85748 Garching, Germany_\n\nQuantum memories integrated into nanophotonic silicon devices are a promising platform for large\nquantum networks and scalable photonic quantum computers. In this context, erbium dopants are\nparticularly attractive, as they combine optical transitions in the telecommunications frequency band\nwith the potential for second-long coherence time. Here we show that these emitters can be reliably\nintegrated into commercially fabricated low-loss waveguides. We investigate several integration\nprocedures and obtain ensembles of many emitters with an inhomogeneous broadening of ≲ 2 GHz\nand a homogeneous linewidth of ≲ 30 kHz. We further observe the splitting of the electronic spin\nstates in a magnetic field up to 9 T that freezes paramagnetic impurities. Our findings are an\nimportant step towards long-lived quantum memories that can be fabricated on a wafer-scale using\nCMOS technology.\n\n**I.** **INTRODUCTION**\n\nA long-lived quantum memory for light is an essential\ningredient for the development of large-scale quantum\nnetworks [1] and all-optical quantum computers [2, 3].\nIn this context, ensembles of rare-earth dopants are particularly promising, as they allow for the creation of efficient memories [4, 5] that can have exceptional coherence when storing excitations in the spin of such dopants\n\n[6, 7]. Most landmark experiments on this platform,\nsuch as the storage of entanglement in separate crystals [8–10], used bulk crystals. For scaling up, however,\nit is desirable to use nanophotonic devices that have a\nsmall footprint and can be fabricated in large numbers,\nwhich is required for the parallel operation of multiple devices. Pioneering steps in this direction used rare-earth\nemitters in photonic waveguides [11–14] and nanophotonic cavities [15–18] made from the same host crystals\nas used in the bulk experiments, such as yttrium orthovanadate [15], yttrium orthosilicate [14, 16, 17] or calcium tungstate [18]. Unfortunately, these and related\nmaterials are not compatible with wafer",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 11.294489282754135,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 1193,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "hotonics\nSuperK Extreme EXW-12) tuned to 515 nm and said TCSPC system. Optical spectra are recorded on the camera of a spectrograph\n(Princeton Instruments SP-2500).\n\n**Data availability**\nThe data that support the findings of this study are available from the\ncorresponding author upon reasonable request.\n\n**ACKNOWLEDGEMENTS**\n\nWe gratefully acknowledge Christoph Becher and Dennis Herrmann\nfor fruitful discussions as well as Silvia Ruffieux for helping to fabricate PRs on sample A. We further acknowledge financial support\nthrough QuantERA project “sensExtreme” (Grant No. 205573), from\nthe Swiss Nanoscience Institute, and through the Swiss NSF Project\nGrant No. 188521.\n\n**AUTHOR INFORMATION**\n\nThese authors contributed equally: Josh A. Zuber, Minghao Li.\n\n**Authors and Affiliations**\n**Department of Physics, University of Basel, Klingelbergstrasse**\n**82, Basel, CH-4056, Switzerland**\nJ. A. Zuber, M. Li, M. Grimau Puigibert, J. Happacher, P. Reiser, B.\nJ. Shields & P. Maletinsky\n\n**Swiss Nanoscience Institute,** **Klingelbergstrasse 82,** **Basel,**\n**CH-4056, Switzerland**\nJ. A. Zuber & P. Maletinsky\n\n**Contributions**\n\nAll experiments, data analysis and sample preparation shown here\nwere conducted by J.A.Z. and M.L. under the supervision of P.M..\nM.G.P. started the project under P.M.’s supervision, built the first\nsetup and fabricated preliminary samples. M.G.P., together with\nJ.H., conducted preliminary studies on and fabricated Sample B.\nP.R. fabricated PRs on sample A with the help of J.A.Z. and M.L..\nB.J.S. fabricated PRs on preliminary samples. J.A.Z., M.L. and P.M.\nwrote the manuscript. All authors discussed the data and commented\non the manuscript.\n\n**Competing interests**\nThe Authors declare no competing interests.\n\n**Correspondence** and requests for materials should be addressed to\nP. Maletinsky\n\n**REFERENCES**\n\n[1] Hedrich, N. _et al._ Nanoscale mechanics of antiferromagnetic\ndomain walls. _Nat. Phys._ **17**, 574–577 (2021).\n\n[2] Bian, K. _et al._ Nanoscale electric-field imaging based on a\nquantum sensor and its charge-state control under ambient condition. _Nat Commun_ **12**, 2457 (2021).\n\n[3] Neumann, P. _et al._ High-Precision Nanoscale Temperature\nSensing Using Single Defects in Diamond. _Nano Lett._ **13**,\n2738–2742 (2013).\n\n[4] Vindolet, B. _et al._ Optical properties of SiV and GeV color\ncenters in nanodiamonds under hydrostatic pressures up to 180\nGPa. _Phys. Rev. B_ **106**, 214109 (2022).\n\n[5] Liu, W. _et al._ Silicon-Vacancy Nanod",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 11.18943150173553,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.03785959864035249,
+    "generation_latency_s": 2.50060111284256e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.03785959864035249,
+    "generation_latency_s": 2.50060111284256e-07
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "con002",
+    "query_type": "conceptual",
+    "query": "Why does drift collection help timing?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should explain the detector principle and cite retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Why",
+      "does",
+      "drift",
+      "collection"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Why does drift collection help timing?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5994,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc.md",
+        "title": "2025__recid_2764040__2403.00627__Considerations_on_time_resolution_of_neutron_irradited_single_pixel_3D_structures_at_fuenc",
+        "text": "tector [2]. The sensor design,\ndecoupling charge-generating volume from the drift distance,\naccommodates shorter electrode spacing, consequently\ndecreasing the charge carrier trapping probability. Recent\nstudies using the Transient Current Technique (TCT) [3, 4],\nhave further substantiated the exceptional timing performance\nof such devices. For vertically incident events, the orthogonal\nrelationship between drift direction and particle trajectory\nresults in an absence of Landau fluctuations **,** key factor in\nextending theoretical timing performance of such devices,\nprimarily constrained only by the signal's drift time.\n\nThis excellent performance is nevertheless impacted by\nfield non-uniformities, intrinsic to the column geometry of the\ncollection electrodes. The resulting radially expanding field\nwithin the pixel volume increases signal time-jitter, degrading\n\ntime resolution. Such a geometry, though detrimental under\nnormal operation, can lead to high field densities near the\ncollection electrode (> 30 V/μm) at higher bias voltages\n(> 500 V) typically used after irradiation. In this operating\nmode, impact ionization and charge multiplication occur near\nthe collection electrode in a similar way as in Multi-Wire\nProportional Chambers (MWPCs) and can compensate for\ntrapping induced charge collection efficiency issues.\n\nIn this study, three different geometries are examined after\nproton and neutron irradiation, using 120 GeV SPS pion\nbeams [5]. Pixel sizes of 55 x 55 μm [2] [6], 25 x 100 μm [2] and\n50 x 50 μm [2] [7] in substrates of 230 μm (190 μm active depth)\nfor the first geometry and 150 μm (130 μm active depth) for\nthe second and third, are tested to establish the minimum\nactive thickness and pixel size still yielding sufficient charge\nand low enough jitter to achieve a 30 ps time resolution.\nQuestions of signal integrity, bandwidth and efficiency are\ntreated.\n\n**2.** **Timing and Signal Integrity**\n\nStudies under a [90] Sr source of the 50 x 50 μm variety single\npixel structure (Figure 1 top), yield collected charge of\n1.73 ± 0.02 fq (10,830 e [-] ), in agreement with the theoretically\npredicted value of ~ 82 e/μm for a MIP in fully depleted Si [8]\nat a bias voltage of 20 V at -20 [o] C. Signals are characterized\nby a fast rise time (10 % - 90 %) of 175 ± 4 ps, but present a\ntail at the slower end, characteristic of filed non-uniformities.\nAlthough charge per micrometer in the 3D device is reduced\nby a factor of 60 with respect to a typical LGAD [1]",
+        "score": 0.8561983678076003,
+        "dense_score": 0.42816781997680664,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": 1.3086812496185303,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5847,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2748892__2401.09920__On_the_determination_of_the_interaction_time_of_GeV_neutrinos_in_large_argon_gas_TPCs.md",
+        "title": "2025__recid_2748892__2401.09920__On_the_determination_of_the_interaction_time_of_GeV_neutrinos_in_large_argon_gas_TPCs",
+        "text": "through the addition of a small fraction of a molecular gas [ 14 ] (typically,\nat the few-percent level or above). This helps as well with the stabilization of the\navalanche process [ 15 ] by absorbing the very energetic scintillation photons emitted by\nrare gases, as well as quenching its emission [16].\nThe above creates an apparent technological dilemma: in a GArTPC, good tracking\ncapabilities and usable levels of scintillation seem to be incompatible. In the LArTPCs\nused as neutrino detectors, the primary-scintillation signal provides the absolute\ntiming of the recorded tracks, which is required to disambiguate their position along\nthe drift direction. In a GArTPC, although one could in principle rely on external\ninstrumentation to time those neutrino interactions through tracks escaping the TPC,\nthat would leave unreconstructed the 3D position of many reactions of interest. Even\n\n1 The subscripts T and L stand, respectively, for the charge spread _transverse_ (perpendicular) or\n_longitudinal_ (colinear) to the drift field.\n\n2\n\n**Fig. 1** Escape probability (estimated using Geant4 [ 17 – 19 ]) of protons from a cylindrical TPC, 5 m\nin diameter and 5 m long, housed in a high-pressure steel vessel filled with Ar/CF 4 (99/1) at 10 bar.\nThe blue data correspond to a 1-cm-thick vessel; the orange data to a 3-cm-thick one. Protons were\ngenerated isotropically from the center of the detector.\n\nin the gaseous phase, tracks of up to 100–200 MeV may range-out inside the TPC\ndepending on the conditions (see figure 1). In other words, the main advantage of a\nGArTPC, its ability to reconstruct low-energy interactions, would be hindered by its\ninability to time-tag them.\nAn appealing path forward is to induce wavelength-shifting of the argon scintillation\ndirectly in the gas, as this process can simultaneously remove the avalanche-destabilizing\nvacuum-ultraviolet (VUV) photons from argon, while preserving a significant fraction\nof the scintillation yield. One can anticipate additional advantages like easier light\ncollection and detection away from the VUV, or a faster time response (given the\nvery long time constant of 3.2 µs from the Ar _[∗]_ 2 [triplet state [] [20] [], responsible for about]\n80–90% of the argon scintillation emission [ 21 ]). If gaseous wavelength-shifting can\nbe accomplished through a molecular species, then the suppression of diffusion to\nmanageable levels as well as the enhancement of the avalanche multiplication factor\ncan be expected too.\nRec",
+        "score": -1.2835663029005828,
+        "dense_score": 0.3780893087387085,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.9823013544082642,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 7530,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F.md",
+        "title": "2025__recid_2969837__2509.11918__Extraction_of_Electron_and_Hole_Drift_Velocities_in_Thin_4H-SiC_PIN_Detectors_Using_High-F",
+        "text": "ynchrotron (MedAustron), and the transient currents are compared.\n\n**2. Materials and Methods**\n\nIn solid-state detector applications, the quest for higher readout bandwidths has been driven\nmainly by timing applications, such as silicon low-gain avalanche diodes (LGADs) [ 13, 14 ] or silicon\nphotomultipliers (SiPMs) [ 15, 16 ]. However, timing applications do not necessarily call for the highest\npossible bandwidth, but instead limit the bandwidth to the frequency content of the detector signal in\norder to achieve the best slope-to-noise ratio and time resolution. If, however, the signal-to-noise ratio\n(SNR) is sufficiently high, for example, when a large amount of charge is deposited (greater than that\nof a minimum ionizing particle) or when waveform averaging is used, the readout bandwidth can be\nfurther increased and the transient charge carrier drift can be resolved in detail.\nTypical silicon-based timing detectors in high-energy physics applications have capacitances of\n1-2 pF and a readout bandwidth below 2 GHz, in accordance with the length of the detector signal [ 14 ].\nTo increase the bandwidth (and decrease signal rise-times), either the detector capacitance or the input\nimpedance of the amplifier has to be reduced. For the latter, approaches using shunt-resistors exist,\nreducing the input impedance to 10 Ω [ 17 ]. However, resistances smaller than this are not practically\nfeasible at GHz frequencies, and most of the signal is lost through the shunt. Another way to reduce\nthe input impedance is to use active feedback. Nevertheless, the bandwidths that can be achieved in\nthis approach are limited due to signal transfer delays. The detector capacitance is a result of the sensor\ngeometry and, in general, for 50 µm thick semiconductor detectors, the electrically active area should\nbe below 0.5 mm [2] to achieve capacitances of below 1 pF, which corresponds to signal bandwidths\nabove 3 GHz for an input impedance of 50 Ω.\nThe following sections describe the 4H-SiC sensor used in the measurements, the high-frequency\nreadout design, and a Monte-Carlo simulation framework based on technology computer-aided design\n(TCAD), Allpix [2], and SPICE simulations to model the measured transient signals.\n\n**Figure 1.** Diode cross-section showing the p-n junction, low-doped epitaxial layer, highly-doped substrate, pad\n(contact), and guard rings.\n\n3 of 13\n\n_2.1. Silicon Carbide Sensors_\n\nThe silicon carbide sensors used for this study were manufactured by IMB-CNM, B",
+        "score": -1.980814009025449,
+        "dense_score": 0.44442105293273926,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.0562334060668945,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5636,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "pendent factors summed to\ngether: time walk, Landau noise, jitter, and time-to-digital converter (TDC). That is,\n\n_𝜎_ _𝑇𝑜𝑡𝑎𝑙_ [2] [=] _[ 𝜎]_ _𝑇𝑖𝑚𝑒𝑊𝑎𝑙𝑘_ [2] [+] _[ 𝜎]_ _𝐿𝑎𝑛𝑑𝑎𝑢𝑁𝑜𝑖𝑠𝑒_ [2] [+] _[ 𝜎]_ _𝐷𝑖𝑠𝑡𝑜𝑟𝑡𝑖𝑜𝑛_ [2] [+] _[ 𝜎]_ _𝐽𝑖𝑡𝑡𝑒𝑟_ [2] [+] _[ 𝜎]_ _𝑇𝐷𝐶_ [2] _[.]_ (2.1)\n\nThe first term, the Time Walk, is defined as the uncertainty generated due to signals with different\n\namplitudes crossing the same threshold at different times. The second term, the Landau noise, is\n\nthe result of the variation of the charge deposited in each event that leads to the irregularity of the\n\nsignal shape. Next, the distortion is the uncertainty caused by the non-uniform weighting field and\n\nvariations in the drift velocity of the electron; these factors cause the signal’s shape to change. Jitter\n\nis the uncertainty caused by the electronic noise that causes the threshold to be reached at different\n\ntimes. Finally, the time-digital converter (TDC) uncertainty is due to the effect of digitising the\n\nsignal during readout.\n\nThe fabrication process of LGADs, therefore, involves fine-tuning the parameters such as\n\nthickness, gain and doping profile to minimise all the uncertainties described in equation 2.1. The\n\n– 3 –\n\ntime walk and jitter are minimised by maximising the slew rate _𝑡_ _𝑟𝑖𝑠𝑒_ _𝑆_ [where] _[ 𝑆]_ [is the amplitude and]\n_𝑡_ _𝑟𝑖𝑠𝑒_ is the rise time. Furthermore, jitter can be further minimised by increasing the gain of the\n\ndevice. The distortion can be minimised by operating the device at a high bias voltage to saturate\n\nthe drift velocity and make use of a parallel plate capacitor geometry of the sensor to make the\n\nweighting field uniform. According to simulations, the Landau noise can be minimised by reducing\n\nthe thickness of the sensor. Finally, the uncertainty due to the TDC can be neglected, as it does not\n\nmake a significant contribution to the uncertainty and is not due to the sensor itself.\n\nBased on these parameters in simulations, LGADs with the best timing resolution are achieved\n\nthrough thin devices and high gain. However, it must be emphasised that devices that are too\n\nthin will increase the capacitance of the devices, which have shown to worsen the time resolution.\n\nOptimising this balance through simulations has shown that devices with a thickness of 50 µm\n\nwith a gain in the magnitude of 10 − 20 provide the best time resolution. Therefore, LGAD\n\nwafers fulfilling these technical requirements were fabricated by Micron Semiconductor Ltd and\n\nsubsequent",
+        "score": -3.2926048358281452,
+        "dense_score": 0.35850706696510315,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.071956157684326,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 593,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2653863__2304.11930__Label-free_timing_analysis_of_SiPM-based_modularized_detectors_with_physics-constrained_de.md",
+        "title": "2023__recid_2653863__2304.11930__Label-free_timing_analysis_of_SiPM-based_modularized_detectors_with_physics-constrained_de",
+        "text": "~CNN~~|\n|||||||\n|||0.69p(x|~~-~~0.037,0.053)<br>0.69p(x|~~-~~0.031,0.018)|+0.31p(x|0.<br>+0.31p(x|0.|+0.31p(x|0.<br>+0.31p(x|0.|075,0.053)<br>068,0.018)|\n|||||||\n|||||||\n|||||||\n|||||||\n\nFigure 5: Histograms of timing differences by CFD and CNN when two distinct\nmodalities exist in the dataset. We fit the histograms to a Gaussian mixture with\ntwo components. CNN gives enough resolution to distinguish two peaks, while CFD is\nunable to display such feature.\n\n_same_ for all examples in the dataset. By analysing the loss function, the concept drift\nintroduces a bias term when predictions are assumed to be accurate. Though theoretical\nproof of the property under this condition is non-trivial and lies beyond the scope of\nthe paper, empirical demonstrations can be made with quantitative results.\nIn figure 5, we visualize the distribution of timing residuals when the actual\ndifference of arrival time between two analog channels takes two distinct values. To\nour surprise, the NN model can be trained to provide accountable predictions against\nconcept drift, and achieve fairly well performance. To be more specific, we fit the\nhistograms to the following function:\n\n_f_ ( _x_ ; _a, µ_ 1 _, µ_ 2 _, σ_ ) = _a · p_ ( _x_ ; _µ_ 1 _, σ_ ) + (1 _−_ _a_ ) _· p_ ( _x_ ; _µ_ 2 _, σ_ ) (6)\n\nwhere _p_ ( _x_ ; _µ, σ_ ) is the probability density of a Gaussian distribution. The fitting results\nare exhibited on the right side of the figure. For CNN, the standard deviation of\neach Gaussian component is _∼_ 18 ps, which is slightly worse than the single modality\ncondition but still remarkable. By examining the portion parameter ( _a_ ) and mean\nparameters ( _µ_ 1 _, µ_ 2 ), it can be seen that the means of two components are at a distance\nof approximately one sample interval (0.1 ns), and the combined mean value is located\nnear the origin. For CFD, it is unable to separate two Gaussian peaks due to its\n\n_∼_\nrelatively poor resolution. The standard deviation ( 53 ps) shows accordance with the\nsingle modality condition regardless of concept drift.\n\n_Label-free timing for modularized detectors_ 14\n\nFor CNN, it is interesting to draw an analogy with solving a second-order\nminimizing problem with bias in one of two components. Here, the major difference\nis that the variable originally in the analogical problem is itself a mapping function with\nits own inputs and trainable parameters, which makes the analytical solution intractable.\n\n_3.2. Electromagnetic calorimeter at NICA-MPD_\n\nIn this s",
+        "score": -3.6990658772297396,
+        "dense_score": 0.3628462553024292,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.6977739334106445,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 5644,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ed at 120 V at a temperature\n\nof −10 °C. The error was found to be ∼ 1 ps for both devices.\n\n**3.4** **Discussion**\n\nA holistic observation of all the results reveals important factors that influence the timing reso\nlution of LGADs. The time resolution of LGADs improves with higher bias voltage and lower\n\ntemperatures. This is because figure 7 indicates that gain increases for higher bias voltage and lower\n\ntemperatures that result in the gain reaching closer to 10 − 20.\n\nComparing the time resolution of both devices provides further insight into the time resolution\n\nof LGADs. Best timing performance using CFD was achieved for thresholds ranging from 20% −\n\n50% for CNM devices while for Micron devices, it corresponded to a narrow range of around\n\n20% − 30%. One possible explanation of better timing performance at a lower threshold for both\n\ndevices is due to the signal strength being similar at the base of the signal and hence yielding a\n\nmore consistent time difference resulting in a narrower time difference histogram. It is observed\n\nthat for the same bias voltage range, the time resolution of Micron devices appears to be better than\n\nCNM devices. One possible reason is due to CNM devices’ larger pixel size of 3 _._ 3 mm compared\n\nto Micron devices’ 0 _._ 5 mm which results in higher capacitance (as shown in figure 6) and therefore\n\nworse timing performance. Another explanation is that despite the higher breakdown voltage of the\n\nCNM devices, the time resolution was only measured up to 170 V compared to Micron devices’\n\n200 V. This was because of CNM devices’ high leakage current that made higher bias voltage\n\nmeasurements difficult due to its contribution to smearing the signal. Overall, measurements on\n\nLGADs manufactured by Micron Semiconductor Ltd. indicate that the timing performance is on par\n\nwith LGADs from other manufacturers. For example, similar time resolution measurements using\n\npairs of LGADs was done on other devices manufactured by CNM that achieved time resolution in\n\nthe upper 20 ps and lower 30 ps.\n\n– 11 –\n\n**4** **Conclusion**\n\nLGADs are promising technology for 4D tracking in future HEP experiments due to their simultane\nous excellent spatial and temporal resolution. The best time resolution for LGADs can be achieved\n\nby optimising the geometry and gain of the devices. To fulfil these requirements, LGADs were\n\nproduced by Micron Semiconductor Ltd. and their timing performance was characterised for the\n\nfirst time. In addition, availa",
+        "score": -4.357958162432969,
+        "dense_score": 0.344669371843338,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.70999002456665,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 7827,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2947501__2507.11593__Characterizing_the_delivered_spill_structure_of_medical_proton_and_carbon-ion_beams_at_Med.md",
+        "title": "2026__recid_2947501__2507.11593__Characterizing_the_delivered_spill_structure_of_medical_proton_and_carbon-ion_beams_at_Med",
+        "text": "] . Since\nthe internal memory of the oscilloscope is limited to 2 GPts, the 10 s spills were recorded in segments of 200 ms. Data\nacquisition was triggered using the accelerator timing system. The horizontal offset of the oscilloscope was incrementally increased between the recorded segments, with 20 ms overlap. This approach allows for time-resolved analysis\nof the entire detector signal over the full duration of the spill. The process is indicated in figure 1b. Particle crossings\nwere identified in the signal as rising-edge threshold crossings above the RMS noise level, 5 · σ RMS . The average\nsignal waveform for a particle crossing exhibits a risetime of ∼100 ps and a full width at half maximum (FWHM)\nof ∼500 ps. Since the signal rise time is shorter than the sampling interval of 300 ps, each timestamp directly corresponds to the acquired peak maximum. This results in a timing uncertainty of σ _t_ = 300 ps/ ~~√~~ 12 ≈ 87 ps, which is\n\nnegligible compared to the beam modulation timescale of several hundred ns. The approach enables a measurement\nof the inter-arrival time between consecutive particles, as shown in figure 2. To ensure sufficient temporal separation\nfor reliable event discrimination, the minimum accepted interval between consecutive hits was set to 1 ns.\n\n3\n\n_2.3. Measurements at MedAustron_\n\nThe SiC-based HF readout was tested at MedAustron, characterizing proton and carbon-ion spills at medical intensities. Data were collected for the highest and lowest available clinical energies (62.4–252.7 MeV for protons and\n120–402.8 MeV u [−][1] for carbon-ions) with a spill length of 10 s. A second set of proton and carbon data with reduced\nparticle flux but otherwise unaltered accelerator settings was acquired. To this end, the intensity-degrader in the injector was employed [34]. A degradation down to nominally 10 % of the clinical rate was chosen. During the irradiation,\nthe detector was placed in the isocentre of the MedAustron irradiation room one (IR1). As a reference measurement,\nthe intensity and beam spot position, along with its horizontal and vertical spot size, were monitored on a spill-by-spill\nbasis throughout the entire campaign using the beam delivery system installed in IR1 . The average measured particle\nrate was on the order of 10 [8] s [−][1] for the carbon-ion spills and 10 [9] s [−][1] for the proton spills.\n\n|carbon-ion spills at<br>2.4–252.7 MeV for p<br>n and carbon data wi<br>intensity-degrader i<br>chosen. During the i<br>",
+        "score": -4.43202952893575,
+        "dense_score": 0.37272781133651733,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.825686454772949,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 8335,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "rticle passes through the sensor,\nthe non-uniform in-pixel response, which leads to slower\ncharge collection and smaller amplitudes, also results in\nlarger ToT values in the right part of the pixel. This is\nshown in the in-pixel seed-pixel ToT map of Figure 34.\nThis occurs because, for lower signal amplitudes, the feedback current of the CSA is not fully saturated, effectively\nreducing the _ikrum_, slowing the pulse discharge, and increasing the measured ToT value. As a consequence, the\nMPV of the seed-pixel charge distribution shifts towards\nlarger values.\n\n_5.5. Time Resolution_\n\nThe time residuals are defined as the difference between\nthe trigger timestamp (t trigger ) and the H2M hit timestamp (t hit ), measured when the chip operates in ToA\nmode. For clusters with more than one pixel, t hit is assigned to the earliest pixel timestamp within the cluster.\nFigure 35 shows the in-pixel ToA projected onto four\npixels. Under the position of the n-wells of the analog\n\nFigure 33: Seed-pixel charge distribution after calibration. The sensor is biased at _−_ 1 _._ 2 V, and the threshold is approximately 300 electrons. The scale (width) and Most Probable Value (MPV) of the\nLandau distribution, and the standard deviation of the Gaussian\ncomponent (σ) in the Landau-Gaussian convolution fit, are shown.\n\nFigure 34: Mean seed pixel ToT map projected onto four pixels. The\nsensor is biased at _−_ 1 _._ 2 V, the threshold is 300 electrons, and a low\n_ikrum_ is set. The pixel cell boundary is marked with a dashed red\nline.\n\n15\n\n|6|Col2|×103 RMS = 28.4 ±|0.2 ns|Col5|\n|---|---|---|---|---|\n|1<br>2<br>3<br>4<br>5<br><br>Events|||||\n|1<br>2<br>3<br>4<br>5<br><br>Events|||||\n|1<br>2<br>3<br>4<br>5<br><br>Events|||||\n|1<br>2<br>3<br>4<br>5<br><br>Events|||||\n|1<br>2<br>3<br>4<br>5<br><br>Events|||||\n|1<br>2<br>3<br>4<br>5<br><br>Events|||||\n|1<br>2<br>3<br>4<br>5<br><br>Events|||||\n|1<br>2<br>3<br>4<br>5<br><br>Events|||||\n\n|Col1|Col2|\n|---|---|\n|||\n\nFigure 35: ToA map projected onto four pixels. The sensor is biased\nat _−_ 3 _._ 6 V, the threshold is 224 electrons, and a low _ikrum_ is set. The\npixel cell boundary is marked with a dashed red line.\n\nfront-end, there is a slower charge collection, leading to\nlower efficiency due to the ballistic deficit, as explained in\nSection 5.1. In contrast to the efficiency pattern, the ToA\nasymmetry remains visible even at the lowest thresholds\nand high sensor bias voltages.\nThis non-uniform in-pixel response results in nonGaussian time r",
+        "score": -4.860281636867118,
+        "dense_score": 0.3507114052772522,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.483084678649902,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 27,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3780,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2734694__2312.06501__Silicon_vertex_detector_of_the_Belle_II_experiment.md",
+        "title": "2024__recid_2734694__2312.06501__Silicon_vertex_detector_of_the_Belle_II_experiment",
+        "text": "the small-pitch sensors, in reasonable agreement with the expectations, while the cluster time\n\nresolution is measured to be below 3 ns. The effect of radiation damage is visible, but not affecting\n\nthe performance. As the luminosity increases, higher machine backgrounds are expected and the\n\nexcellent hit-time information in SVD can be exploited for background rejection. In particular, we\n\nhave recently developed a novel procedure to select hits by grouping them event-by-event based\n\non their time. This new procedure allows a significant reduction of the fake rate, while preserving\n\nthe tracking efficiency, and it has therefore replaced the previous cut-based procedure. We have\n\ndeveloped a method that uses the SVD hits to estimate the track time (previously unavailable) and\n\nthe collision time. It has a similar precision to the estimate based on the drift chamber readout but\n\nits execution time is three orders of magnitude smaller, allowing a faster online reconstruction that\n\nis crucial in a high luminosity regime. The track time is a powerful information that allows, together\n\nwith the aforementioned grouping selection, to raise the occupancy limit above that expected at\n\nnominal luminosity, leaving room for a safety factor. Finally, in June 2022 the data taking of the\n\nBelle II experiment was stopped to install a new two-layer DEPFET detector (PXD) and upgrade\n\ncomponents of the accelerator. The whole silicon tracker (PXD+SVD) has been extracted from\n\nBelle II, the new PXD installed, the detector closed and commissioned. We briefly describe the\n\nSVD results of this upgrade.\n\nKeywords: strip detector, tracking, high-luminosity, background rejection\n\n**Contents**\n\n**1** **Introduction** **1**\n\n**2** **Belle II Silicon Vertex Detector** **2**\n\n**3** **SVD Operation and Reconstruction Performance** **3**\n\n**4** **Exploiting the Hit Time to Improve Reconstruction** **4**\n\n**5** **Activities on SVD During the Long Shutdown** **8**\n\n**6** **Conclusion** **8**\n\n**Acknowledgement** **9**\n\n**References** **9**\n\n**1** **Introduction**\n\nThe Belle II experiment [1] is a particle physics experiment at the intensity frontier, collecting\n\ndata at the high-luminosity _𝐵_ -Factory SuperKEKB [2] in Tsukuba, Japan. The main objective of\n\nBelle II is the search for physics beyond the Standard Model through high-precision measurements\n\non extensive datasets of mainly _𝐵_ mesons, _𝜏_ leptons and charm hadrons.\n\nSuperKEKB is an asymmetric electron-positron collider operated",
+        "score": -5.1824429225921635,
+        "dense_score": 0.3818091154098511,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.980681419372559,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7418,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2943744__2507.16409__Yield_noise_and_timing_studies_of_ALICE_ITS3_stitched_sensor_test_structures_The_MOST.md",
+        "title": "2025__recid_2943744__2507.16409__Yield_noise_and_timing_studies_of_ALICE_ITS3_stitched_sensor_test_structures_The_MOST",
+        "text": "## Yield, noise and timing studies of ALICE ITS3 stitched sensor test structures: the MOST\n\nJ. Sonneveld [a,b], R. Barthel [a,c], S. Bugiel [d], L. Cecconi [d,1], J. De Melo [d,2], M.\nFransen [a], A. Grelli [a,c], I. Hobus [a,b], A. Isakov [a,c], A. Junique [d], P. Leitao [d], M.\nMager [d], Y. Otarid [d], F. Piro [d,3], M.J. Rossewij [a,c], M. Selina [a,c], S. Solokhin [a,b],\nW. Snoeys [d], N. Tiltmann [d], A. Vitkovskiy [a], H. Wennl¨of [a,b], on behalf of the\nALICE collaboration\n\n_a_ _Nikhef, Science Park 105, Amsterdam, 1098XG, The Netherlands_\n_b_ _University of Amsterdam, Science Park 904, Amsterdam, 1098XH, The Netherlands_\n_c_ _Utrecht University, Princetonplein 5, Utrecht, 3584CC, The Netherlands_\n_d_ _CERN, CH-1211, Geneve 23, Switzerland_\n\n**Abstract**\n\nIn the LHC long shutdown 3, the ALICE experiment upgrades the inner\nlayers of its Inner Tracker System with three layers of wafer-scale stitched\nsensors bent around the beam pipe. Two stitched sensor evaluation structures, the MOnolithic Stitched Sensor (MOSS) and MOnolithic Stitched Sensor with Timing (MOST) allow the study of yield dependence on circuit\ndensity, power supply segmentation, stitching demonstration for power and\ndata transmission, performance dependence on reverse bias, charge collection performance, parameter uniformity across the chip, and performance of\nwafer-scale data transmission.\n\nThe MOST measures 25.9 cm x 0.25 cm, has more than 900,000 pixels\nof 18x18 _µ_ m [2] and emphasizes the validation of pixel circuitry with maximum density, together with a high number of power domains separated by\nswitches allowing to disconnect faulty circuits. It employs 1 Gb/s 26 cm long\ndata transmission using asynchronous, data-driven readout. This readout\npreserves information on pixel address, time of arrival and time over thresh\n\n_Email address:_ `jory.sonneveld@nikhef.nl` (J. Sonneveld)\n1 Now with University of Geneva, Switzerland.\n2 Now with Brookhaven National Laboratory, US.\n3 Now with Miromico IC, Zurich, Switzerland.\n\n_Preprint submitted to Nuclear Instruments & Methods in Physics Research, Section AJuly 23, 2025_\n\nold. In the MOSS, by contrast, regions with different in-pixel densities are\nimplemented to study yield dependence and are read synchronously.\nMOST test results validated the concept of power domain switching and\nthe data transmission over 26 cm stitched lines which are to be employed\non the full-size, full-functionality ITS3 prototype sensor, MOSAIX. Jitter of\nthis transmi",
+        "score": -5.228457750491242,
+        "dense_score": 0.3909033536911011,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -8.051817893981934,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 2.629814328160137,
+    "generation_latency_s": 3.501772880554199e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 2.629814328160137,
+    "generation_latency_s": 3.501772880554199e-07
+  }
+}

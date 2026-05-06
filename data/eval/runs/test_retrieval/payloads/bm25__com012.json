@@ -1,0 +1,278 @@
+{
+  "benchmark": {
+    "query_id": "com012",
+    "query_type": "comparative",
+    "query": "Compare reranking and graph expansion.",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should contrast the two technologies or metrics and cite both sides where possible."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Compare",
+      "reranking",
+      "and",
+      "graph"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "Compare reranking and graph expansion.",
+    "mode": "bm25_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 5586,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers.md",
+        "title": "2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers",
+        "text": "~1~~ 9 ~~2~~ 10 ~~1~~ 11\n\n1\n\n1\n\n1\n\nillustrated in Figure 13b. Here, the logical state\n_|_ + _⟩_ _L_ _≡_ ( _|_ 0 _⟩_ _L_ + _|_ 1 _⟩_ _L_ ) _/√_ 2 is prepared by apply\ning the transversal Hadamard gate to the logical state _|_ 0 _⟩_ _L_, i.e., applying a Hadamard gate to\neach qubit. The expected value of each stabiliser\nand logical Pauli operators _X_ _L_ and _Z_ _L_ are measured. The stabiliser is defined by Equation (32)\nwith the graph given in Figure 13b. The logical\nPauli operators are defined as _X_ _L_ = _X_ 0 _X_ 1 _X_ 3 and\n_Z_ _L_ = _Z_ 0 _Z_ 1 _Z_ 3, which ideally result in _⟨X_ _L_ _⟩_ = 1\nand _⟨Z_ _L_ _⟩_ = 0 for the logical state _|_ + _⟩_ _L_ . The\nmeasurement results are shown in Figure 14b, obtained by simulating 2000 measurements. The\naverage expected values of the plaquette _X_ and\n_Z_ operators are _⟨S_ _X_ _⟩_ = 0 _._ 51 and _⟨S_ _Z_ _⟩_ = 0 _._ 73, respectively, which the numbers agree with the experiment. The expected value of the logical Pauli\nmeasurements in the simulation are _⟨X_ _L_ _⟩_ = 0 _._ 76\nand _⟨Z_ _L_ _⟩_ = _−_ 0 _._ 02, while the experiments yield\n_⟨X_ _L_ _⟩_ = 0 _._ 71 and _⟨Z_ _L_ _⟩_ = _−_ 0 _._ 02.\n\n- 1\n\n0 5 10 15 20 25 30 35\n\n(a) 1D cluster state.\n\n4\n\n - 5 0 5 10 15\n\n3\n\n2\n\n1\n\n0\n\n- 1\n\n4\n\n3\n\n2\n\n1\n\n4\n\n3\n\n2\n\n1\n\n4\n\n3\n\n2\n\n1\n\n4\n\n3\n\n2\n\n1\n\n(b) Seven-qubit Steane code logical state.\n\nFigure 13: Representation and preparation of a 12-qubit\n1D cluster state and seven-qubit Steane code logical\nstate. The graph representation of each graph state\nis shown using white circles and numbered edges; the\nquantum register configurations involved in the process\nare depicted in the tables. Numbered red dots represent atoms, blue disks indicate the blockade radii of the\natoms, and numbered edges correspond to the atom configurations required to implement the entangling gates\nthat operate concurrently. The initial register configuration is labelled “initial,” followed by a sequence of configurations implementing controlled- _Z_ gates. Having the\natoms within the overlapping blockade radii, denoted by\noverlapping blue disks, is necessary to implement twoqubit gates between them.\n\ngraph states and measure their stabilisers given\ngraphs shown in Figure 13.\nThe preparation of a 12-qubit linear 1D cluster state is achieved using the three sequential\natomic configurations illustrated in Figure 13a.\nWe measure the expected values of each stabiliser\n_S_ _j_, where _S_ _j_ is defined by Equation (32) with\nthe graph given in Figure 13a. The resulting",
+        "score": 0.01639344262295082,
+        "dense_score": null,
+        "bm25_score": 13.616749711344752,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 38,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 471,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment.md",
+        "title": "2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment",
+        "text": "g the subQUBO matrices of the desired size, by picking triplets in order of their impact. The impact\nis defined as the change in the value of the objective function when _T_ _i_ _→_ 1 _−_ _T_ _i_ . Each triplet\nis assigned an additional constant term representing the sum of all interactions with triplets\noutside of the sub-QUBO to retain sensitivity to the connections outside of each sub-QUBO\nwhen computing the value of the objective function. After the sub-QUBOs are solved, the\nsolution is combined. These steps are repeated for a number of iterations. The triplets selected\nby the QUBO minimisation are retained and matched to form track candidates.\n\n**Figure 7.** Diagram illustrating the QUBO solving procedure.\n\nAlternative algorithms for finding the optimal QUBO solution, such as the Quantum\nApproximate Optimisation Algorithm (QAOA) [21], were briefly investigated and were found to\n\nlead to significantly worse performance. A dedicated optimisation and characterisation of the\nresults of such alternative algorithms is left to future work.\n\n_4.2. Quantum graph neural network_\nThis approach is based on a graph neural network (GNN) [22, 23] that consists of both classical\nneural network layers and quantum circuits. The graph is constructed from doublets, where the\nhits are nodes and the connections between the hits are edges. All nodes of consecutive layers are\nconnected and only the ones that satisfy the pre-selection criteria are kept. The quantum graph\nneural network (QGNN) model follows the implementation of Ref. [11] and consists of three\nnetworks. First, the _InputNet_ takes the input node features, i.e. the three spatial coordinates,\nand produces hidden node features. For this purpose, a single fully connected neural network\nlayer that has 10 neurons with a _tanh_ activation function is used. Second, the _EdgeNet_ takes all\nconnected node pairs as input and produces a scalar edge feature for each of them using a _sigmoid_\nactivation function. This will later be the prediction score of the model for each doublet, as this\nmodel is essentially a segment classifier. _Circuit 10_ with two layers and 10 qubits is selected for\nthis task based on previous work [11]. Each layer of this circuit uses _R_ _Y_ gates and linear CNOT\nentanglers between all possible pairs of qubits. Third, the _NodeNet_ considers each node and\nits connecting nodes to update the hidden node features. The architecture of the _NodeNet_ is\nsimilar to _EdgeNet_, but it uses the _tanh_ activ",
+        "score": 0.016129032258064516,
+        "dense_score": null,
+        "bm25_score": 13.419373672087396,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 3643,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2726713__2311.14833__Surface_Scattering_Expansion_of_the_CasimirPolder_Interaction_for_Magneto-Dielectric_Bodie.md",
+        "title": "2024__recid_2726713__2311.14833__Surface_Scattering_Expansion_of_the_CasimirPolder_Interaction_for_Magneto-Dielectric_Bodie",
+        "text": ".\n41. Bimonte, G.; Emig, T.; Kardar, M. Casimir-Polder force between anisotropic nanoparticles and\ngently curved surfaces. _Phys. Rev. D_ **2015**, _92_, 025028.\n42. Reid, M.T.H.; White, J.; Johnson, S.G. Fluctuating surface currents: an algorithm for efficient\nprediction of Casimir interactions among arbitrary materials in arbitrary geometries. _Phys. Rev._\n_A_ **2013**, _88_, 022514.\n43. Chew, W.; Tong, M. _Integral Equations Methods for Electromagnetic and Elastic Waves_ ; Synthesis\nLectures on Computational Electromagnetics Series, Morgan and Claypool Publishers, 2009.\n44. Volakis, S.K. _Integral Equations Methods for Electromagnetics_ ; SciTech Publishing, 2012.\n\nVersion November 28, 2023 submitted to _Physics_ 13\n\n45. Balian, R.; Duplantier, B. Electromagnetic waves near perfect conductors. I. Multiple scattering\nexpansions. Distribution of modes. _Ann. Phys (NY)_ **1977**, _104_, 300–335.\n46. Balian, R.; Duplantier, B. Electromagnetic waves near perfect conductors. II. Casimir effect.\n_Ann. Phys. (NY)_ **1978**, _112_, 165–208.\n47. Emig, T.; Bimonte, G. Multiple scattering expansion for dielectric Media: Casimir effect. _Phys._\n_Rev. Lett._ **2023**, _130_, 200401.\n48. Bimonte, G.; Emig, T. Casimir and Casimir-Polder Interactions for Magneto-dielectric Materials:\nSurface Scattering Expansion. _Phys. Rev. A_ **2023**, _108_, 052807.\n49. Müller, C. _Foundations of the mathematical theory of electromagnetic waves_ ; Springer, 1969.\n50. Decca, R.S.; Lopez, D.; Fischbach, E.; Klimchitskaya, G.K.; Krause, D.E.; Mostepanenko, V.M.\nNovel constraints on light elementary particles and extra-dimensional physics from the Casimir\neffect. _Eur. Phys. J. C_ **2007**, _51_, 963.\n51. Noruzifar, E.; Emig, T.; Mohideen, U.; Zandi, R. Collective charge fluctuations and Casimir\ninteractions for quasi-one-dimensional metals. _Phys. Rev. B_ **2012**, _86_, 115449.",
+        "score": 0.015873015873015872,
+        "dense_score": null,
+        "bm25_score": 13.29418172674902,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5584,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers.md",
+        "title": "2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers",
+        "text": "t-flip error. The parameter _α_ corresponds to the probability of a phase flip occurring during the gate\nduration _t_ . There is a finite bit-flip error probability which is typically asymmetric, i.e., probability of the event _|_ 0 _⟩�→|_ 1 _⟩_ is not equal to the\nevent _|_ 1 _⟩�→|_ 0 _⟩_ .\nThe realization of the two-qubit _CZ_ ( _ϕ_ ) gate\nutilises the blockade mechanism in highly excited\nRydberg states. The typical error in this mechanism arises from spontaneous emission from Rydberg states, associated with the possibility of the\nsystem decaying to states outside the computational basis. We model this error using a CPTN\nmap consisting of the following single operator:\n\nReconfiguring the atoms (a ‘move’) is accomplished through the manipulation of optical\ntweezers. The move operators constitute operations that modify the atoms’ locations such as\n_SWAPLoc_ and _ShiftLoc_ . The process typically requires a substantial duration in practice, on the\norder of hundreds of microseconds. Additionally,\natoms in motion acquire extra heat – especially\nwhen they are moving fast, resulting in an enhanced dephasing process. The errors acquired\nduring this process constitute the depolarising _T_ 1\ndecay (Equation (13)) and the enhanced dephasing _κT_ 2 -decay to account for the thermal effect,\nnamely,\n\n�\n\n1 _−_ _e_ _[−][κ]_ [∆] _[t]_ _/T_ 2\n\n2\n\n�\n\n_,_ (30)\n\nwhere the factor _κ ≥_ 1 intensifies the decay due\nto the presence of heat. Ideally, _κ_ is affected by\nthe speed and the distance of the moves; for simplicity, we set _κ_ to be a constant.\n\n6.4 Graph state construction and Steane code\npreparation on Neutral Atoms\n\nHere, we replicate a recent neutral atom experiment presented in [14] in our virtual neutral atom\ndevice. The experiment involves the preparation\nof a 1D linear cluster state and a seven-qubit\nSteane code logical state, followed by stabiliser\nmeasurements to benchmark the resulting states.\nBoth of these states are graph states [35], which\ncan be efficiently represented using graphs as illustrated in Figure 13. In these graphs, vertices\ncorrespond to plus states _|_ + _⟩_ := ( _|_ 0 _⟩_ + _|_ 1 _⟩_ ) _/√_ 2,\n\nand edges represent controlled- _Z_ gates. The\npreparation of such states requires the generation\nof multiple non-local connections, which can be\ncarried out concurrently on a neutral atom platform.\nGiven a graph _G_ = ( _V, E_ ) that comprises a\nlist of vertices _V_ and edges _E_, the corresponding\ngraph state _|_ Ψ _G_ _⟩_ can be written as\n\n_deph_",
+        "score": 0.015625,
+        "dense_score": null,
+        "bm25_score": 12.95609693785805,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 36,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6329,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes.md",
+        "title": "2025__recid_2808294__2407.11523__Improved_Belief_Propagation_Decoding_Algorithms_for_Surface_Codes",
+        "text": "P (Algo-_\n_rithm 2) realizes an exponentially weighted average of past_\n_horizontal message updates, specifically expressed as_\n\nloops, or global communication, thus not introducing any\nsignificant overhead. Therefore, the overall time complexity\nof the proposed algorithms remains _O_ ( _jτN_ ), where _j_ is the\naverage degree of the Tanner graph, and _τ_ is the number of\niterations.\n\nIn terms of space complexity, traditional BP requires storing messages and probability values, resulting in _O_ ( _N_ ) space\nrequirements. Our algorithms only add extra storage space\nto accumulate gradients or maintain exponential weighted\naverages which is proportional to the number of variable\nnodes and does not change the overall space complexity.\nThus, our improved algorithms maintain the same efficiency\nin both time and space as traditional BP, ensuring scalability\nand feasibility for practical implementation.\n\n**IV. SIMULATION RESULTS**\n\nIn all simulations, the criterion for successful decoding is that\nthe error estimate satisfies _E_ [ˆ] _∈_ _ES_, rather than _E_ [ˆ] = _E_\nas in classical information. All cases not meeting the above\ncondition are referred to as _logical errors_ in this article.\nHerein, a _detected error_ refers to _EE_ [ˆ] being anti-commutative\nwith any one stabilizer _EE_ ˆ commutes with all stabilizers, i.e., _S ∈S_ ; an _undetected error_ ˆ _EE ∈_ _N_ implies( _S_ ) _\\S_,\nwhere the result of error correction is a logical operator. Each\ndata point on the experimental curves represents the mean of\nat least 10 [4] simulations.\n\nWithout further specification, our simulations employ a\ndepolarizing channel, where each qubit has an equal probability _p/_ 3 of experiencing Pauli _X_, _Y_, or _Z_ errors, and a\nprobability of 1 _−_ _p_ of no error occurring. Additionally, for\nease of comparison, we adopt the simple noise model which\ndoes not consider measurement errors or error propagation in\nquantum circuits.\n\n_**A. BREAKING THE TRAPPING SETS**_\n\nWe first compare the performance of improved BP on the\ntrapping set shown in Fig. 2. In this example, qubit 1 and\nqubit 2 experience X errors, resulting in an error syndrome\nof [1 _,_ 0 _,_ 1 _,_ 0]. Fig. 3 shows the comparison between the\ntraditional LLR-BP 4 and AdaGrad-BP in Section III-A under\nparallel and serial scheduling, with the maximum iteration\nset to 50 and the _a priori_ probabilities set to 0.01. The hard\ndecision result of the traditional BP oscillates continuously\nbetween all _X_ and all _I_, where",
+        "score": 0.015384615384615385,
+        "dense_score": null,
+        "bm25_score": 12.855797498323973,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 4453,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr.md",
+        "title": "2024__recid_2759979__2402.12599__Towards_Early_Fault_Tolerance_on_a_math_displayinline_overflowscrollmn2mnmomomiNmimath_Arr",
+        "text": "feature is that the adjacent qubits from separate rails are allowed to interact “across the ridge” to perform two-qubit operations\nsuch as controlled-Z (CZ) and controlled-X (CNOT), see\nFig. 1. Clearly such a structure might support other interactions, for example qubits in one or both rails may be\nable to interact with nearest neighbour qubits within the\nsame rail. However, controlling such interactions might\nimply additional engineering cost, and in fact such capabilities are _not_ required in the approaches we describe.\nSo far the qubit connectivity graph for our 2 _×_ N architecture is very limited. To make this more suitable for a\nwide range of quantum circuits and codes, we introduce\nthe second feature of the architecture - qubit shuttling.\nShuttling will play a crucial role in generating different\nkinds of connectivity graphs that can be used for QEC.\nSince we are dealing with 1D rails of qubits, we can constrain the shuttling to a ‘conveyor-belt’ model where the\nwhole rail of qubits simultaneously moves along the rail\nin one direction or the other. After the move, the qubits\nof one rail may again interact with adjacent qubits in the\nother rail. Since only the respective qubit positioning of\none rail to the other is important, we can always fix one\nof the rails to stay static.\nIn this way, the rail of qubits can be shuttled multiple times during a single QEC cycle to generate the desired connectivity graph for syndrome extraction. Here,\nwe consider the canonical syndrome extraction method\nwhere ancilla qubits are coupled to the data qubits of\nthe code. If there are no other interactions, the connectivity graph is bipartite — its exact structure depends on\nthe specific choice of the code. However, by locating all\nancilla qubits on one rail and all data qubits on the other,\nany bipartite connectivity graph (corresponding to an arbitrary code) can be generated using a sufficient number\nof (possibly long) shuttles. As noted above, this generally\nwould not be practical, and therefore, for each QEC cycle we either set the numbe<r of shuttles (of any length)\nto be some small constant number that does not scale\n\n3\n\nwith the code size, or we restrict the overall shuttling\ndistance (without constraining the number of shuttles).\nDue to this, we do not expect to produce asymptotically\nscalable QEC protocols. The same conclusions are also\nsupported by numerical results presented later in the pa\nper.\n\nTherefore, there seem to be only a limited number of\nclasses o",
+        "score": 0.015151515151515152,
+        "dense_score": null,
+        "bm25_score": 12.743462422532435,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 4,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 2667,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2690445__2308.11657__Multiple_scattering_of_855_MeV_electrons_in_amorphous_and_crystalline_silicon_Simulations_.md",
+        "title": "2024__recid_2690445__2308.11657__Multiple_scattering_of_855_MeV_electrons_in_amorphous_and_crystalline_silicon_Simulations_",
+        "text": "through the two types of\nmedium. This difference allows one to numerically evaluate the dissimilarity in the PDFs for the two types of\nmedium providing a quantitative measure of the disparity in scattering behaviour as well as to gain valuable\ninsights into the structural effects that influence the electron multiple scattering.\n\nhave been carried out. In the first set, the the vertical\nincident angle was fixed at Θ v = 3 mrad whereas the horizontal angle was varied within the interval 8.7 ≤ Θ h ≤ 52\nmrad. Similarly, in the second set the angle Θ h = 34.9\nmrad was fixed and the angular distributions was explored in the range 1 ≤ Θ v ≤ 10 mrad. These scanning parameters allowed us to investigate the angular\ndependence of the scattering phenomenon and to identify notable trends or/and extrema of the PDFs. For all\ncombinations (Θ h, Θ v ) considered the simulations were\nperformed using both the Moli`ere and Pacios potentials.\nThe PDF obtained were practically independent on the\npotential used. The minimum value of θ s due to the\ncoherent scattering has been found at Θ h = 34.9 mrad\nand Θ v = 2 mrad. This observation provided a crucial\nstarting point for further analysis and understanding of\nthe scattering behavior in silicon. To quantify the scattering distribution and to derive the PDF for scattered\nelectrons additional scans were performed fixing Θ v = 2\nmrad and varying Θ h as well as scanning over Θ v while\nfixing Θ h = 33 mrad. These scans allowed us to capture the variations in the PDF as we explored different\nscattering angles.\n\nFigure 3 shows the variation of θ s as a function of one\nof the incident angles (Θ h in left graph and Θ v in right\ngraph) while fixing the second incident angle (see the\nvalues indicated at the top of each graph). Solid and\ndashed lines stand for the crystalline and the amorphous\ntargets, respectively. The results of our simulations are\nshown as open diamond symbols connected with black\nlines. Statistical uncertainties due to the finite number\nof simulated trajectories are indicated with error bars.\nThe data reported in Ref. [14] are shown with filled circles connected with red lines (the experimental data) and\nwith open circles connected with green lines (the results\nof simulation with the CRYSTAL code [28]). For the\nsake of comparison we also present the value of multiple scattering angle calculated for the amorphous silicon\nby means of Eqs. (34.16), (34.25) and (34.26) from the\nreview by Particle Data Group [30] (see also Ap",
+        "score": 0.014925373134328358,
+        "dense_score": null,
+        "bm25_score": 12.664066524378196,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 5587,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers.md",
+        "title": "2025__recid_2668575__2306.07342__The_Virtual_Quantum_Device_VQD_A_tool_for_detailed_emulation_of_quantum_computers",
+        "text": "ster state is achieved using the three sequential\natomic configurations illustrated in Figure 13a.\nWe measure the expected values of each stabiliser\n_S_ _j_, where _S_ _j_ is defined by Equation (32) with\nthe graph given in Figure 13a. The resulting expected values in Figure 14a are obtained from\n2000 simulated measurements. Error parameters\nare manually adjusted to fit the experimental results. The average of stabiliser measurements in\nthe simulation is _⟨S_ _i_ _⟩_ = 0 _._ 87, which is equal to\nthat in the experiment. Without the SPAM errors, we obtain _⟨S_ _i_ _⟩_ = 0 _._ 97, while the experiment\nyields _⟨S_ _i_ _⟩_ = 0 _._ 91.\nPreparing a logical seven-qubit Steane code can\nbe achieved using five register configurations, as\n\n|■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|Col11|Col12|Col13|Col14|\n|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n|||||||||||||||\n|||||||||||||||\n\n|1.0<br>■ ■ ■<br>0.8 ■ ■ ■<br>0.6<br>0.4<br>0.2<br>0.0<br>S0 S1 S2 S3 S4 S5|Col2|Col3|Col4|Col5|Col6|Col7|Col8|Col9|Col10|\n|---|---|---|---|---|---|---|---|---|---|\n|**■■■**<br>**■■■**<br>S0 S1 S2 S3 S4 S5<br>0.0<br>0.2<br>0.4<br>0.6<br>0.8<br>1.0|**■■■**<br>**■■■**|**■■■**<br>**■■■**|**■■■**<br>**■■■**|**■■■**<br>**■■■**|**■■■**<br>**■■■**|**■■■**<br>**■■■**||||\n|**■■■**<br>**■■■**<br>S0 S1 S2 S3 S4 S5<br>0.0<br>0.2<br>0.4<br>0.6<br>0.8<br>1.0|**■■■**<br>**■■■**|**■■■**<br>**■■■**|**■■■**<br>**■■■**|||||||\n|**■■■**<br>**■■■**<br>S0 S1 S2 S3 S4 S5<br>0.0<br>0.2<br>0.4<br>0.6<br>0.8<br>1.0||||||||||\n|**■■■**<br>**■■■**<br>S0 S1 S2 S3 S4 S5<br>0.0<br>0.2<br>0.4<br>0.6<br>0.8<br>1.0||||||||||\n|**■■■**<br>**■■■**<br>S0 S1 S2 S3 S4 S5<br>0.0<br>0.2<br>0.4<br>0.6<br>0.8<br>1.0|||||||XL ZL|XL ZL|XL ZL|\n\nFigure 14: Measurement statistics of: (a) stabilisers of\nthe 1D cluster state with the graph shown in Figure 13a,\nand (b) stabilisers (left) and logical _X_ and _Z_ measurements (right) of the seven-qubit Steane code prepared\nin the logical state _|_ + _⟩_, with the graph shown in Figure 13b. The green and orange bars indicate plaquette\noperators of _X_ ( _S_ 0 _, S_ 1, and _S_ 3 ) and _Z_ ( _S_ 3 _, S_ 4 _,_ and _S_ 5 ),\nrespectively. We took 2000 shots of simulated measurements for each operator. The square markers indicate\nthe results without SPAM errors. The dashed bars denote the results from the experiments performed in [14].\nThe error parameters used in this simulation are tabulated in Table 3 in the Appendix.\n\nIt is important to emphasise that simp",
+        "score": 0.014705882352941176,
+        "dense_score": null,
+        "bm25_score": 12.09863818374565,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 39,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 290,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2645720__2303.14072__Alignment_of_the_Alpha_Magnetic_Spectrometer_AMS_in_space.md",
+        "title": "2023__recid_2645720__2303.14072__Alignment_of_the_Alpha_Magnetic_Spectrometer_AMS_in_space",
+        "text": "external\nlayers as rigid bodies have been observed.\n\n### **7 Dynamic alignment of the external tracker layers in** **space**\n\nAfter AMS was launched into space, we found that the positions of ladders and sensors were\npermanently changed up to tens of microns compared to their positions on the ground. In\naddition, the continuous temperature variations on orbit, through the thermal deformation\nof the support structures, cause the periodic movements of the whole external layers at\n\n_∼_\nhundreds of microns per half-obit ( 46 min). The first kind of displacement is corrected by\nthe static alignment with billions of cosmic-ray events, which will be discussed in section 8.\nThe second kind of displacement is corrected by the dynamic alignment with instantaneously\ncollected cosmic-ray events and will be reported in this section. Prior to the static alignment,\nthe dynamic alignment should be applied to remove large periodic movements of the external\nlayers and decrease the inaccuracy of the external tracker layers to the same level as that of\nthe inner tracker.\n\n##### **7.1 Thermal environment and data collection on orbit**\n\nThe ISS orbits the Earth every 93 minutes with an orbital inclination of 52 _[◦]_ . The thermal\nenvironment of AMS on the ISS has both short-term and long-term variations. The regular\nshort-term variation is the periodic temperature cycle that follows orbital day and night\ntransition. The long-term variation is mainly due to the change of the angle between the\nISS orbital plane and the direction to the Sun, or solar beta angle, which has a precession\nperiod of 60 days and can reach up to _±_ 75 _[◦]_ . Other thermal variables such as the positions\nof the ISS radiators and solar arrays, ISS attitude changes for visiting vehicles and reboosts,\n\n26\n\n**Alignment of the Alpha Magnetic Spectrometer (AMS) in space** Preprint\n\nand shading of AMS by adjacent payloads can also have a big influence on the temperature\nchanges at different time scales, from minutes to months.\n\nThe sensor positions with respect to the carbon fiber reinforced ladders should not change\nover time, as carbon fiber has near zero coefficient of thermal expansion. Likewise, the\npositions of ladders on the carbon fiber skinned planes is stable. The positions of the inner\ntracker layers should also not change as their planes are firmly embedded in the carbon\nfiber cylinder. However, the variation of the temperature and gradients across the aluminum\nmechanical structures (mainly the TR",
+        "score": 0.014492753623188406,
+        "dense_score": null,
+        "bm25_score": 11.96940350612969,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 29,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 4939,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "which are caused by the\nCOVID-19 pandemic and a volcanic eruption.\nWe marked changes in the SiPM module configuration e.g. the\nchange of the operational voltage or the installation of a bandpass filter. To study the differences between the readout channels of one module we permuted the optical fibers of the connected pixels during the course of two years. We however note\nthat such differences are not part of the systematic uncertainty\ndue to the pixel-wise calibration procedure. Only if a mean or\nglobal calibration procedure would be applied such a systematic uncertainty would need to be considered.\nTo assess the long-term systematic uncertainty of the calibration we binned the obtained calibration constants by pixel\ntemperature during the calibration run and determined the standard deviation of the calibration constants within a 0.5 [◦] C wide\n\nbin. We only used data that had the same hardware and software configurations to eliminate other effects from this study.\nThe maximum long-term standard deviation obtained is 19%.\nFinally, we would like to note that other calibration methods, which can even work with unresolved single-photoelectron\nspectra [68], exist but were beyond the scope of this work and\nshould be studied in a follow-up work.\n\n~~_n_~~ phe = 8 · ln 2 · _F_ [2] \n\n_Q_\n\n_FWHM_\n\n2\n\n. (4)\n\n\n\n[52] showed that a branching Poisson process provides expressions for the probability distributions and excess noise of\nSiPM signals with cross-talk. We adopt\n\n1 1\n_F_ = 1 − λ [=] 1 − ln 1−1 _p_ . (5)\n\nThis is equal to the _ENF_ of a branching Poisson process in\n\n[52] table 2 without the Taylor expansion. This analytical form\nproved to be computationally less demanding than calculating\nall necessary leading order terms of the Taylor expanded form.\nThe cross-talk probability _p_ depends on the applied overvoltage _U_ over . Also the dark current _I_ dark rises with increasing\nover-voltage. We conducted lab measurements of _p_ and _I_ dark at\nvarying _U_ over . To achieve transferable results we read out _I_ dark\nand _U_ over with a setup identical to the slow control electronics in\nour SiPM modules. By using _p_ ( _I_ dark ) the dependence on _U_ over\nis removed and we can directly calculate _p_ and consequently _F_\nfor every given _I_ dark in a meaningful range. Without the dependency on _U_ over also the temperature dependency is removed for\nour operating conditions. For the calibration of a SiPM module\nduring telescope operations, we use the measu",
+        "score": 0.014285714285714285,
+        "dense_score": null,
+        "bm25_score": 11.804583041674842,
+        "graph_score": 0.0,
+        "rerank_score": null,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 23,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": true,
+        "needs_abstention_caution": false,
+        "query_family": "relational"
+      },
+      "mode_requested": "bm25_only"
+    },
+    "retrieval_latency_s": 0.6472024759277701,
+    "generation_latency_s": 3.1990930438041687e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 0.6472024759277701,
+    "generation_latency_s": 3.1990930438041687e-07
+  }
+}

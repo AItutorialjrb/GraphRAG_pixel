@@ -1,0 +1,412 @@
+{
+  "benchmark": {
+    "query_id": "mul012",
+    "query_type": "multi_hop",
+    "query": "How can agentic routing improve multi-hop detector questions?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "agentic",
+      "routing"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can agentic routing improve multi-hop detector questions?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 6754,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "enting a reduced PDE\nregion at low ∆ _V_ and the fully active region. The MLA\nconsists of spherical lenses placed in a checkerboard pattern\naligned with the pixel structure. The simulation enables the\noptimisation of the parameters for lens diameter, lens height,\nand residual layer thickness. MLAs at the wafer level were\ndeposited on SiPM multichannel arrays with 41 _._ 7 _µm_ pixel\nsize from FBK and compared with bare and flat layer coated\ndevices. The performance was measured in the lab by injecting\nmonochromatic narrow normal incident light and in a fibre\ntracker module with high energetic particles. The results are\npresented in detail as a function of wavelength and ∆ _V_ for the\nlaboratory measurement and as a function of injection distance\nand ∆ _V_ for the SciFi measurement.\nIn summary, at ∆ _V_ = 2 _V_, an increase of 22% is observed\nfor the narrow normal light source and 17% at ∆ _V_ = 8 _V_ .\nFor the SciFi light source, the increase is 22 _._ 5% and 20 _._ 5%\nat ∆ _V_ = 2 _V_ and ∆ _V_ = 6 _V_, respectively. These values\ncorrespond to an overestimation of 10 _−_ 15% by simulation.\nAs the implementation depends on the precise alignment of\nthe MLA and the silicon structure as well as on the optical\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 8\n\nparameters of the implementation, the results of simulation\nand measurements can be considered in good agreement.\nIn addition to the higher PDE, MLA-enhanced detectors also\nshow a reduction of 40% of external cross-talk compared to\na flat coated detector. An improvement in timing performance\nin SPTR is expected due to the partial masking of the border\nregion (deflection of the photons towards the pixel centre by\nthe lens), which was reported in other works and seen in\npreliminary measurements in our lab.\nThe optical transparency of the less than 50 _µm_ thick\nMLA layer, in a wavelength range between 350 _nm_ and\n700 _nm_, was measured before and after irradiation. No\nmeasurable change was observed with a neutron equivalent\nfluence of the expected radiation level in the LHCb upgrade\n2 (3 _._ 0 _×_ 10 [12] 1 MeV n eq _/_ cm [2] ) and an ionising dose of\n1 _kGy_ . Further improvements by adding an anti-reflecting\ncoating (ARC) to the polymer surfaces of the MLA can\npotentially decrease the Fresnel reflection loss. A prototype\nwith optimised coating for the emission spectral range of\nthe SciFi light source is foreseen. For low ∆ _V_ = 2 _V_,\nthe prospects of MLA enhanced SiPMs with SciFi tr",
+        "score": -5.044796504254691,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6886582653817642,
+        "rerank_score": -7.842804908752441,
+        "matched_nodes": [
+          "In",
+          "On",
+          "An",
+          "The",
+          "For",
+          "SCIENCE",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 6622,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance.md",
+        "title": "2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance",
+        "text": "rm of the\n\ndetector before the installation.\n\nsplicer connects, with a glue-less connection, the WLS fiber to a clear fiber of 2 m length to reduce\n\nthe light attenuation from the sensor to the light detector. This design ensures that both the tiles and\n\nthe external fibers can be independently and quickly replaced in case of failure. The nT2 is then\n\nassembled in quarters, two for each side of the interaction point (called _arm_ ), designed to be closed\n\naround the beam pipe (figure 1, center and right). The size of one arm of the detector, after being\n\nclosed around the beam pipe, is ∼ 25 cm in the direction along the beam axis, with an outer diameter\n\nof ∼ 50 cm, including the external support structure. Each quarter is made up of 4 detection layers,\n\neach one formed by 4 tiles arranged on a semi-circle with a partial overlap. A set of 4 aligned tiles\n\nis called a _wedge_ . Hence, each particle will traverse at least 4 aligned tiles in the wedge, providing\n\na good level of redundancy for particle detection and noise suppression. With such a design, the\n\ninstallation of the inner section of the detector on pre-installed rails can be done in few minutes\n\nand, after routing the fiber bundles through the available slot, the shields of CMS can be closed\n\nfor a much safer environment to work in, leaving only passive components inside (figure 2). The\n\nfibers are read out with an S13361-6050 16-channels SiPM matrix from Hamamatsu, one for each\n\nquarter, located outside the shields in the outer section of the detector together with the rest of the\n\nelectronics. The MPPC bias is generated by temperature-compensated voltage converters, one for\n\neach matrix, controlled through a serial interface. To digitize the signal the detector relies on a\n\nfast discriminator, the NINO chip [8], a differential amplifier and fixed threshold discriminator. An\n\nadditional feature of the chip is that the digital output signal has a Time Duration (TD) that depends\n\n3\n\n_The TOTEM nT2 detector: architecture, operation and performance_ E. Bossini\n\nshielding\n\nnT2\n\nOptical\nfibers\n\nNear-beam\n\nelectronics\n\n**Figure 2:** On the left, a drawing of the detector integrated in CMS. The beam pipe is perpendicular to the\npicture, in the center of the nT2 detector. On the center and right, two pictures taken during the installation\ntraining with a mock-up.\n\non the input charge Q, with higher charges generating longer TD.\n\nFor the read-out and control electronics, we benefit from the fruitful colla",
+        "score": -5.683663284060721,
+        "dense_score": 0.3145983815193176,
+        "bm25_score": 7.742681843714221,
+        "graph_score": 0.6160118606375092,
+        "rerank_score": -8.828201293945312,
+        "matched_nodes": [
+          "On",
+          "To",
+          "An",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6750,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "technology was measured to\n\n1 Generated by photons from a primary avalanche exiting the silicon,\nreflected on the entrance window and producing a sub-sequent avalanche.\n\nIEEE TRANSACTIONS ON NUCLEAR SCIENCE, VOL. XX, NO. XX, XXXX 2017 6\n\nFig. 9. (a) _V_ _bd_ is calculated by the extrapolation of the linear fit to the\nintercept with zero gain allowing all measurements to be presented at equal\n∆ _V_ . The gain is calculated from the slope of the linear fit and is given for\nbare, flat and microlens coated samples. Note that due to the coating, the\ngain is slightly increased. (b) a large increase of the cross-talk is seen for the\ncoated samples. The bare sample is expected to have no external cross-talk\nbut only internal. The error bars show the error of four measured identical\nchannels.\n\nFig. 8. (a) SEM image of two smaller size microlenses placed on top of the\nalignment marker. (b) Close view of the alignment markers filled with the\nmicrolenses. (c) Coated region with microlenses with coaxial illumination.\n(d) With a segmented diffuse light source, the reflection on each microlens\nis visible and illustrates the curved surface. In this mode, the flat regions\nbetween lenses appear black and the pixel structure (routing lines) is made\ninvisible due to the lenses.\n\nbe 32 _mV/K_ at room temperature. An integrated Pt1000\ntemperature sensor on the detector module gives access to\nprecise temperature monitoring. With the temperature in the\nlab stabilised by air conditioning, the variations were smaller\nthan _±_ 1 _K_ . To determine _V_ _BD_ and the gain (G), the bias\nvoltage was increased in steps of 1 _V_ and the current _I_ _Bias_\nrecorded. At the same time, pulse rates at thresholds of 0.5 and\n1.5 photo-electron amplitude (PE) ( _R_ 0 _._ 5, _R_ 1 _._ 5 ) were recorded\nwith a high-speed oscilloscope. The gain at every _V_ _BD_ point\nis calculated as the ratio between the current and the sum of\n\n_R_ 0 _._ 5 _P E_ and _R_ 1 _._ 5 _P E_ and is divided by the elementary charge\n(e) such that _G_ = _I_ _Bias_ _/_ ( _R_ 0 _._ 5 _P E_ + _R_ 1 _._ 5 _P E_ ) _/e_ . A linear fit is\nused to extrapolate _V_ _BD_ and the slope is extracted from the\nfit to determine the gain. The results are shown in Fig. 9. The\nmeasurement is performed with light illuminating the detector\nto enhance the precision of the current measurement but with\na sufficiently low pulse rate such that the random overlap of\npulses in time is negligible. The measurement is repeated for\nevery wavelength, and t",
+        "score": -5.760937470500429,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7331356560415122,
+        "rerank_score": -8.9498291015625,
+        "matched_nodes": [
+          "In",
+          "On",
+          "To",
+          "An",
+          "The",
+          "SCIENCE",
+          "IEEE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 5800,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2736533__2312.07957__Scintillation_characteristics_of_an_undoped_CsI_crystal_at_low-temperature_for_dark_matter.md",
+        "title": "2025__recid_2736533__2312.07957__Scintillation_characteristics_of_an_undoped_CsI_crystal_at_low-temperature_for_dark_matter",
+        "text": "attering\n(CE _ν_ NS) [7, 8]. Since event rates are larger at low energy,\nlow threshold detectors are essential for dark matter or\n\nCE _ν_ NS detection. In the case of scintillators, higher light\nyields are strongly associated with lower energy thresholds.\nThe introduction of dopants during crystal growth, such\nas thallium in halide crystals (i.e., CsI(Tl) and NaI(Tl)),\nenhances radiative recombination and improves light emission efficiency. These doped crystals have been widely\nutilized at room temperature, coupled with photomultipliers, for dark matter and CE _ν_ NS detection experiments [7, 8, 9, 10, 11, 12, 13, 14]. The highest reported\nlight yields from doped NaI(Tl) crystals were 22 photoelectrons (PE) per keV [8] with a novel crystal encapsulation\ntechnique [15]. There have been reports suggesting that\nundoped CsI and NaI crystals exhibit higher light yields\nat low temperatures with PMTs [16, 17, 18, 19, 20, 21, 22]\nor silicom photomultipliers (SiPMs) [23]. At the liquid\n\n_Email addresses:_ `hylee@ibs.re.kr` (H. Y. Lee),\n`kwkim@ibs.re.kr` (K. W. Kim), `hyunsulee@ibs.re.kr` (H. S. Lee)\n\nnitrogen temperature of 77 K, the undoped CsI crystal,\ncoupled with SiPMs and a wavelength shifter, achieved a\nlight yield of 30.1 PE/keV [24].\n\nWe investigate the scintillation characteristics of an undoped CsI crystal to assess their temperature-dependent\nbehavior. To maximize the light collection efficiency of the\nundoped CsI crystal, two SiPMs are directly attached to\nthe crystal. In a temperature range between 86 K and\n293 K, we measured the light yield, scintillation decay\ntime, and energy resolution. Due to the exhibition of high\ndark count rates and crosstalks [25, 26], we have carefully\nanalyzed and corrected effects of them on the analysis of\n\nmeasurements.\n\nThe technique for radiopure CsI crystal growth [27,\n28, 29] has been developed for the KIMS experiment,\nwhich used CsI(Tl) crystals coupled with photomultipliers (PMTs) for WIMP dark matter search [30, 31, 32].\nThe production of 200 kg undoped CsI crystals can be performed at the Institute for Basic Science (IBS), Korea,\nwhich offers a powder purification facility [33, 34, 35] and\nKyropoulos crystal growers [36], installed and employed\nfor the growth of radiopure NaI(Tl) crystals [37, 38]. Additionally, about 400 kg of purified CsI powder remnants\nfrom the KIMS CsI(Tl) crystal growing have been stored\nat the Yangyang underground laboratory. We conducted\n\n_Preprint submitted to Astroparticle Physics_ _Augu",
+        "score": -5.905801921006041,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7197924388435878,
+        "rerank_score": -9.171116828918457,
+        "matched_nodes": [
+          "In",
+          "To",
+          "NS",
+          "The",
+          "We",
+          "CE"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4235,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2756306__2402.04473__Performance_of_a_phonon-mediated_kinetic_inductance_detector_at_the_NEXUS_cryogenic_facili.md",
+        "title": "2024__recid_2756306__2402.04473__Performance_of_a_phonon-mediated_kinetic_inductance_detector_at_the_NEXUS_cryogenic_facili",
+        "text": "n on energy deposited in the substrate is limited to _σ_ _E_ = 318 _±_ 29 eV. We further model\nboth the signal pulse shape as a function of device temperature to extract quasiparticle lifetimes,\nand the observed noise spectra.\n\n**Report Number:** FERMILAB-PUB-23-674-LDRD-PPD\n\n**I.** **INTRODUCTION**\n\nNull results from searches for particle dark matter\n(DM) with mass above 1 GeV _/c_ [2] [1] motivate the development of detector technologies that can probe the\nremainder of the thermal relic parameter space down to\nthe fermionic mass limit of a few keV. The average kinetic energy carried by DM with 1 MeV _/c_ [2] mass is about\n500 meV. As such, sensitivity to light DM requires the\nability to detect meV-scale quanta. Detectors employing\nsuperconducting thin films to sense athermal phonons are\na class of sensors that can achieve this requirement. [2].\nOne detector architecture in this class is the kinetic in\n\n_∗_ [dtemples@fnal.gov](mailto:dtemples@fnal.gov)\n\n_†_ Presently at 6\n\n_‡_ Presently at Department of Physics, University of California,\nBerkeley, CA, 94720, USA\n_§_ Presently at Department of Physics and Astronomy, Wellesley\nCollege, Wellesley, MA, 02481, USA\n\n_¶_ Presently at LPSC, National Centre for Scientific Research, Universit´e Grenoble Alpes, Grenoble, France\n_∗∗_ Presently at Department of Physics, University of Toronto,\nToronto, ON, Canada\n\n_††_ Presently at IRFU, Alternative Energies and Atomic Energy\nCommission, Universit´e Paris-Saclay, France\n\nductance phonon-mediated (KIPM) detector, which uses\nmicrowave kinetic inductance detectors (MKIDs) to read\nout phonon signals in the device substrate [3–8]. Phonons\nproduced by particle interactions in the substrate propagate to the superconducting films on the surface, where\nthey break Cooper pairs into quasiparticles, provided the\nphonon carries an energy larger than the Cooper pair\nbinding energy, 2∆. This transient increase in quasiparticle density increases the surface impedance (AC resistance and kinetic inductance) of the resonator, shifting its resonant frequency _f_ _r_ and quality factor _Q_ to\nlower values. This shift can be measured in both magnitude and phase by interrogating the resonator with a microwave/radiofrequency (RF) probe tone at the quiescent\nresonant frequency and measuring the complex forward\nscattering parameter _S_ 21 .\n\nKIPM detectors have a number of attractive features\n\nthat motivate their use to detect low-mass dark matter. The energy carried by a phonon quantum is 2–3",
+        "score": -6.184154507387471,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.815418828762046,
+        "rerank_score": -9.610679626464844,
+        "matched_nodes": [
+          "On",
+          "CA",
+          "The",
+          "We",
+          "USA",
+          "University",
+          "Physics",
+          "Department"
+        ],
+        "path_nodes": [
+          "On"
+        ],
+        "community_id": "On",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6155,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "**Optical single-shot readout of spin qubits in silicon**\n\nAndreas Gritsch, Alexander Ulanowski, Jakob Pforr, and Andreas Reiserer _[∗]_\n\n_Max-Planck-Institute of Quantum Optics, Quantum Networks Group,_\n_Hans-Kopfermann-Straße 1, 85748 Garching, Germany and_\n_Technical University of Munich, TUM School of Natural Sciences,_\n_Physics Department and Munich Center for Quantum Science and Technology (MCQST),_\n_James-Franck-Straße 1, 85748 Garching, Germany_\n\nThe digital revolution was enabled by nanostructured devices made from silicon. A similar prominence of this material is anticipated in the upcoming quantum era as the unrivalled maturity of\nsilicon nanofabrication offers unique advantages for integration [1] and up-scaling [2, 3], while its\nfavorable material properties [4] facilitate quantum memories with hour-long coherence [5]. While\nsmall spin-qubit registers have exceeded error-correction thresholds [6], their connection to large\nquantum computers is an outstanding challenge. To this end, spin qubits with optical interfaces [7]\noffer key advantages: they can minimize the heat load [8] and give access to modular quantum computing architectures that eliminate cross-talk and offer a large connectivity via room-temperature\nphoton routing [9]. Here, we implement such an efficient spin-photon interface based on erbium\ndopants in a nanophotonic resonator [10]. We thus demonstrate optical single-shot readout [11, 12]\nof a spin in silicon whose coherence exceeds the Purcell-enhanced optical lifetime, paving the way\nfor entangling remote spins via photon interference [13, 14]. As erbium dopants can emit coherent\nphotons [15, 16] in the minimal-loss band of optical fibers, and tens of such qubits can be spectrally\nmultiplexed [15, 17] in each resonator, the demonstrated hardware platform offers unique promise\nfor distributed quantum information processing and the implementation of a quantum internet [18]\nbased on integrated silicon devices.\n\n**INTRODUCTION**\n\nIn the last decades, quantum information processing\nhas seen major advances, and first systems have outperformed classical devices in certain tasks [19, 20]. Advanced solid-state systems in this context are superconducting circuits [19] and spin qubits in silicon [21]. The\nlatter can operate at higher temperatures _>_ 1 K [22], enable very dense integration [23], and give access to longterm quantum memories [5]. So far, however, up-scaling\nof such systems is hampered by cross-talk and heating\ncaused by the",
+        "score": -6.2224736472639535,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7116382505559674,
+        "rerank_score": -9.65733814239502,
+        "matched_nodes": [
+          "In",
+          "To",
+          "The",
+          "We",
+          "University",
+          "Quantum",
+          "Department"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4577,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot.md",
+        "title": "2024__recid_2764987__2403.02948__Front-end_electronics_development_of_large-area_SiPM_arrays_for_high-precision_single-phot",
+        "text": "ltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\n1 [3]\n\n2 _[𝑉]_ [1PE] _[,]_ 2\n\npeak voltage falls within the range of � 12 _[𝑉]_ [1PE] _[,]_ [3] 2 _[𝑉]_ [1PE] �, a SPTR of approximately 200 ps FWHM can\n\nbe obtained.\n\n**Figure 6** . An example of 200 waveforms, where the SiPM is operated at 60 V bias voltage, and its signal is\nprocessed by the pre-amplifier. For ease of observation, the amplitude of the synchronized signal from the\n\nlaser is scaled down to 1/40 and the timeline has been shifted.\n\nThe performance of the SiPM is closely related to the overvoltage, where a higher overvoltage\n\nleads to a higher gain but also results in a higher DCR and crosstalk rate, and more afterpulses. To\n\n– 7 –\n\n**Figure 7** . The distribution of the relative trigger time and the signal amplitude of a SiPM operating at 60 V\nbias voltage. The relative trigger time is the relative delay from when the laser signal is triggered, namely\nwhen the leading edge reaches the threshold, to when the SiPM signal is triggered.\n\ninvestigate the impact of overvoltage on SPTR and determine the appropriate operating voltage, we\n\ntest the SPTR of SiPMs at different operating voltages. The test result is shown in figure 8, where\n\nthe breakdown voltage can be obtained by linear fitting using the signal amplitudes at different bias\n\nvoltages. Since the SPTR measurement results vary at different threshold voltages, the best SPTR\n\nresults are obtained by scanning the threshold voltages. It can be observed from this graph that the\n\nSPTR measurement results stabilize at around 200 ps when the overvoltage exceeds 5 V.\n\n**Figure 8** . The signal amplitudes and SPTRs of a SiPM operating at different bias voltages. The breakdown\nvoltage can be found to be about 54 V by linear fitting.\n\nTo demonstrate the improvement of signal path differences by differential output, we conducted\n\nexperiments of a series-parallel SiPM array with two SiPMs in series, as shown in figure 9. We\n\n– 8 –\n\nextended the signal line length between the two SiPMs in series to about 10 cm, resulting in an\n\nexpected time delay of approximately 0.65 ns for the single-ended output signals of the two SiPMs.\n\nThe experiment result of single-ended output shows two distinct peaks for the single photon response\n\nin the relative trigger time, approximately 0.71 ns apart, consistent with expectations. In contrast,\n\nthe differential output result exhibits only one peak, indica",
+        "score": -6.3237734384303455,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7561156412157153,
+        "rerank_score": -9.818452835083008,
+        "matched_nodes": [
+          "In",
+          "To",
+          "An",
+          "The",
+          "We",
+          "For",
+          "It"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 6164,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cavity (blue curved lines), after initialization in the bright (orange)\nor dark (blue) state. An exponential fit to the average fluorescence (solid lines) allows determining the cyclicity _ζ_ . Error bars:\n1 SD. **b,** After initialization, 71 pulses (red line in panel **a** and red circle in the inset) are applied on the spin-preserving line\nto read out the spin state. The probability distributions for the number of detected photons are clearly separated for the two\ninitial spin states (orange and blue), thus allowing for readout with a fidelity of 86 _._ 9(8) % using a threshold photon number\nof one (red line). Inset: Single-shot readout fidelity depending on the number of readout pulses while choosing the optimal\nphoton threshold.\n\nevery 10 µs, such that the readout with 71 pulses takes\n0 _._ 71 ms. Using the maximum rate allowed by the integration interval, this would be reduced to 0 _._ 22 ms.\nIn future experiments, the fidelity and speed of the\nreadout can be further increased by optimizing the photon outcoupling. In addition, one may attempt aligning the optical dipoles using a vector magnet [12], and\nfurther enhancing the quality factor of the cavity, where\neven a hundredfold increase seems feasible with improved\nnanofabrication [47]. The latter would enable other readout techniques, e.g. via cavity reflection measurements\n\n[7], that can fully eliminate photon scattering [48] and\nthus overcome the limitation currently imposed by the\nfinite cyclicity. We therefore expect that fidelities on par\nwith other solid-state emitters [11], and potentially even\napproaching common error correction thresholds [6] can\nbe achieved in future devices.\n\n**SUMMARY AND OUTLOOK**\n\nIn summary, we have demonstrated the first optical\nsingle-shot readout of a spin qubit in silicon, which constitutes a major leap towards scalable, integrated and\noptically controlled quantum information processing devices. To this end, the next key step will be the generation of spin-photon entanglement, which will be feasible\nin our setup using established cavity-enhanced protocols\n\n[7]. With this, our approach will find applications in two\nmain fields: distributed quantum information processing\nand quantum networking.\nFor quantum computing, large",
+        "score": -6.330218987580137,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7197924388435878,
+        "rerank_score": -9.824066162109375,
+        "matched_nodes": [
+          "In",
+          "To",
+          "An",
+          "The",
+          "We",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1878,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "emory.\nAfter the DSP the data are serialised with 320 Mbit/s rate, obtained by increasing the\nsystem clock frequency by a factor four and double data rate (DDR) transmission. An\nultra-low power ( _<_ 1 mW ) phase-locked loop (PLL) is used to generate the 160 MHz clock\nfrom the 40 MHz system clock. The data are sent out by an SLVS interface. The ASIC is\ncontrolled via the LHCb common protocol consisting of two interfaces: the TFC and the\nECS [70,71]. The TFC interface delivers the 40 MHz clock and other crucial information\nand commands, synchronised with the experiment clock, while the ECS serves to configure\nand monitor the ASIC and is realised through an I2C interface. The main specifications\nof the SALT ASIC are shown in table 6.\n\nThe 130 nm CMOS process is generally considered as intrinsically radiation resistant\nagainst total ionising dose. For this reason, and given the main clock frequency and\nthe expected charged particle fluence, SEE protection in the SALT is generally limited\nto SEU protection and monitoring. In a few specific blocks working with very small\ncurrents ( _<_ 1 µA ), like 7-bit baseline DACs, protection with NMOS enclosed layout\ntransistors was applied. To improve the ADC robustness against SEE, the ADC is reset\n\n45\n\nby the sampling signal if the previous conversion is not yet completed. The triple-voting\ntechnique is applied to almost every flip-flop in the whole digital part. The combination\nlogic is not triplicated, but clock and reset signals are. As a result, to triplicate the\ncomplete clock and reset trees, there are three PLLs and three input reset synchronisers.\nIn addition, the configuration registers have built-in self-correcting circuits that can correct\nthe radiation-induced bit flips (only one of the three copies) in each clock cycle.\nSeveral ASIC design iterations were required to meet the UT requirements. The\nchip versions used in the UT are the SALTv3.5 for most of the 4-chip hybrids and the\nSALTv3.9 for the 8-chip hybrids and some of the most exposed 4-chip hybrids. More\ndetailed information on the SALT ASIC can be found in ref. [68].\n\n##### **5.6 Readout chain**\n\n**5.6.1** **Hybrids**\n\nThe UT hybrids are the FE boards for the microstrip silicon sensors. Being mounted in\nthe detector acceptance, they were designed with mass minimisation in mind. They are\nlow-mass flex PCBs composed of a stack of conductive and dielectric layers [32] with a total\nthickness of about 72 µm Cu, 176 µm polyimide and 63 µm adhesive. Their f",
+        "score": -6.411152348463937,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7642698295033358,
+        "rerank_score": -9.953847885131836,
+        "matched_nodes": [
+          "In",
+          "To",
+          "An",
+          "UT",
+          "The",
+          "For"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 60,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 5773,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices.md",
+        "title": "2025__recid_2715994__2310.20434__Rapid_cryogenic_characterization_of_1024_integrated_silicon_quantum_dot_devices",
+        "text": ", further oscillations are required, but\ngiven the disorder, the presence of additional dots cannot\nbe conclusively ruled out. Furthermore, a remote charge\nsensor would be required to verify we have reached the\nsingle-electron regime, so here we instead find the distribution of gate voltages corresponding to the first transition observable using our charge sensing methods (insitu reflectometry and dc transport), in order to establish\nthe trends and variability between devices. Though we\ncannot guarantee reaching the single-electron regime, the\nCoulomb diamonds recorded are indicative of the fewelectron regime.\nAs stated above, a single measurement is used to extract all of these parameters, by monitoring the device as\n_V_ GS and _V_ DS are varied (see Methods). A measurement\nof this kind is shown in Fig. 1c. In the farm, 8 transistor variants were tested with increasing gate lengths ( _L_ )\n28 nm, 40 nm, 60 nm and 80 nm and channel widths ( _W_ )\n80 nm and 100 nm.\nOur first observation shows that not all transistors\ncan provide good QDs (Fig 4a). For these devices, we\ntherefore cannot extract the QD parameters described\nabove, and so they must first be filtered out. We have\ntrained a convolutional neural network (CNN) to categorise our devices into three categories: clear Coulomb\nblockade (good), no Coulomb blockade (bad) and multiple series QDs (multi), which present as non-closing diamonds. Each device is manually labelled by a domain\nexpert and these labels are used to train the CNN (see\nMethods). The proportion of devices that fall into each\ncategory is shown in Fig 4b.\nTo automatically extract parameters we developed\ntools to process data acquired through both transport\n(dc) and reflectometry (rf) measurements. Transistor\ncharacteristic measurements are commonly performed in\ndc; thus, the dc data presented here serves as a reference\nfor comparison with the rf data, revealing a good agreement between both techniques (Fig. 4c-e and Fig. 6). All\n\n5\n\nparameters _V_ 1e, _α_ G and _α_ D _−_ _α_ S can be determined from\nthe pair of intersecting lines in a charge map (see Fig. 1c).\nThe intercept gives _V_ 1e, and the lever arms can be calculated from the gradients of the two lines (see Methods).\nFor each charge map, we perform a fitting routine which\nfinds the best pair of lines, with higher weight given to\n_V_ 1e at lower voltages, and intercept close to _V_ DS = 0.\n\n**VARIABILITY OF INDUSTRIALLY**\n\n**FABRICATED QUANTUM DOTS**\n\nTo assess inherent process var",
+        "score": -6.54385097055315,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6753150481838399,
+        "rerank_score": -10.147461891174316,
+        "matched_nodes": [
+          "In",
+          "To",
+          "The",
+          "We",
+          "For",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "In"
+        ],
+        "community_id": "In",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "NS": 1.0,
+      "CA": 1.0,
+      "De": 1.0,
+      "UT": 1.0
+    },
+    "expanded_nodes": {
+      "In": 1.0,
+      "On": 1.0,
+      "To": 1.0,
+      "An": 1.0,
+      "NS": 1.0,
+      "CA": 1.0,
+      "De": 1.0,
+      "UT": 1.0,
+      "The": 0.7,
+      "We": 0.7,
+      "For": 0.7,
+      "CE": 0.7,
+      "USA": 0.7,
+      "University": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7,
+      "VELO": 0.7,
+      "Department": 0.24499999999999997,
+      "Physical Review": 0.24499999999999997,
+      "SCIENCE": 0.24499999999999997,
+      "Journal": 0.24499999999999997,
+      "IEEE": 0.24499999999999997,
+      "Review": 0.24499999999999997,
+      "It": 0.24499999999999997,
+      "LHC": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 26,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.0733133857138455,
+    "generation_latency_s": 3.7997961044311523e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 8.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 26.0,
+    "retrieval_latency_s": 5.0733133857138455,
+    "generation_latency_s": 3.7997961044311523e-07
+  }
+}

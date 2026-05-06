@@ -1,0 +1,279 @@
+{
+  "benchmark": {
+    "query_id": "mul004",
+    "query_type": "multi_hop",
+    "query": "How can graph retrieval connect a detector technology to a performance metric?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "How",
+      "can",
+      "graph",
+      "retrieval"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can graph retrieval connect a detector technology to a performance metric?",
+    "mode": "vector_only",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 1842,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I.md",
+        "title": "2024__recid_2660905__2305.10515__The_LHCb_Upgrade_I",
+        "text": "means the design must prepare for hit rates and radiation doses that are an\norder of magnitude higher than those experienced by the earlier VELO.\n\n##### **3.2 Design requirements**\n\nThe principal metric for a vertex detector design is impact parameter resolution _σ_ IP, the\nprecision with which the perpendicular distance of a track to a point is measured. This\nmetric is a function of: track transverse-momentum, _p_ T ; the average axial distance of the\nmaterial before the second measurement, _r_ 1 ; the distances from the point to the first and\nsecond measurements, ∆ _i_ ( _i_ = 1 _,_ 2); and the position uncertainties of those measurements,\n_σ_ _i_ . In the VELO case, it can be approximated as [34],\n\n+ [∆] 2 [2] _[σ]_ 1 [2] [+ ∆] [2] 1 _[σ]_ 2 [2]\n∆ [2] 12\n� ~~��~~ ~~�~~\nextrapolation\n\n_r_ 1\n_σ_ IP [2] _[≈]_\n� _p_ T [ GeV/ _c_ ]\n\n2\n~~_x_~~\n0 _._ 0136 GeV/ _c_\n� � ~~�~~ _X_ 0\n\n1 + 0 _._ 038 ln _[x]_\n� _X_ 0\n\n�� 2\n\n(2)\n\n� ~~�~~ � ~~�~~\nmultiple scattering\n\nwhere _x/X_ 0 is the fraction of radiation length traversed before the second measurement.\nThe first term describes the degradation induced by multiple scattering. The second term\n\n13\n\nis the extrapolation error, which is dominated by detector geometry: pixel size and lever\narm, ∆ 12, between the first and second measured points. The upgraded VELO design\nwas optimised to achieve, within the nominal LHCb acceptance, a performance at least as\ngood as that of its predecessor VELO, in terms of both _σ_ IP and track-finding efficiency,\ndespite the increased instantaneous luminosity.\n\n**3.2.1** **LHC interface**\n\nThe VELO performance, as described by eq. (2), improves by reducing the radius of\nthe first pixel hits, though this must be balanced against the limitations of proximity to\nthe beam line. The minimal VELO aperture allowed by the requirements of the LHC\ncollimation and protection depends on several factors: the maximum expected separation of\nthe counter-rotating beams; their transverse sizes ( _β_ functions and transverse emittances);\nthe beam direction relative to the longitudinal axis of the VELO (crossing angle); the\nmechanical accuracy and stability of the RF boxes. A reduced, but still conservative,\nradial clearance of 3.5 mm is chosen [35,36] for the RF boxes, the structures that directly\ninterface with the LHC beam environment. This allows the silicon sensors to be arranged\nsuch that the radius of the closest active pixel edge is 5.1 mm from the beam line. The\ndecision takes into account the inte",
+        "score": -2.0887618866333595,
+        "dense_score": 0.4569406509399414,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -3.221763849258423,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 24,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 4506,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology.md",
+        "title": "2024__recid_2760883__2402.14524__Simulations_and_performance_studies_of_a_MAPS_in_65_nm_CMOS_imaging_technology",
+        "text": "of the technology and predict the performance parameters of the\nsensor. Technology demonstrators of a 65 nm CMOS MAPS with a small collection electrode have been characterized\nin laboratory and test-beam facilities by studying performance parameters such as cluster size, charge collection, and\nefficiency. This work compares simulation results to test-beam data. The experimental results establish this technology as a promising candidate for a vertex detector at future lepton colliders and give valuable information for\nimproving the simulation approach.\n\n_Keywords:_ Silicon, CMOS, monolithic active pixel sensors, MAPS, particle detection, test-beam, Allpix2, TCAD\n\n**1. Introduction**\n\nLepton colliders have been established as the highestpriority next collider by the European Strategy Update\nfor Particle Physics [1]. Vertex detectors are an essential part of experiments at such colliders. They require\nsimultaneous advances in material budget, granularity,\nand spatial and temporal resolution. Monolithic CMOS\n\n∗ Corresponding author\n_Email address:_ `adriana.simancas@desy.de` (Adriana\nSimancas)\n\nsensors are promising candidates given these requirements and have the advantage of cost-efficient mass production capabilities in commercial foundries. The TPSCo 65 nm ISC imaging CMOS technology is currently\nbeing studied for applications in particle physics. Introducing this node size in high energy detectors will\nimprove the in-pixel logic density and/or will allow for\na reduction in the pixel pitch.\n_Monolithic active pixel sensors_ (MAPS) can be produced with a small or a large collection electrode. This\nwork explores the small collection electrode type MAPS\nmotivated by the small intrinsic capacitance (in the or\n\n_Preprint submitted to Nucl. Instrum. Methods Phys. Res. A_ _February 23, 2024_\n\nTable 1: Requirements for vertex detectors at lepton colliders. Derived from sources such as [7].\n\n**Parameters** **Requirements**\nMaterial Budget <1% _X_ 0\nSingle-point Resolution ≤ 3 µ _m_\nTime Resolution ∼ ns\n\nGranularity ≤ 25 µ _m_ × 25 µ _m_\nRadiation Tolerance - 10 [11] _n_ _eq_ / _cm_ [2]\n\nder of fF) and, hence, a large signal-to-noise ratio. The\nactivities are carried out within the context of the TAN\nGERINE Project [2, 3, 4], which aims to develop the\nnext generation of silicon detectors for vertex-finding at\nfuture lepton colliders. To achieve this, the performance\ntargets shown in Table 1, must be fulfilled. The developments are pursued in collaboration with the C",
+        "score": -2.8569858170762847,
+        "dense_score": 0.4160696268081665,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.402178764343262,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 7585,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2857516__2412.06687__Test_beam_characterization_of_a_digital_silicon_photomultiplier.md",
+        "title": "2026__recid_2857516__2412.06687__Test_beam_characterization_of_a_digital_silicon_photomultiplier",
+        "text": ". This increases the number of entries in the time\nresidual distribution, to compensate for the events discarded due to void time\nstamps.\n\n**6. Performance of the dSiPM**\n\nThe performance of a tracking detector is characterized by its capability\nof detecting MIPs. The key benchmarks are the detection efficiency, the\nspatial, and the temporal resolution.\n\n20\n\nFigure 10: Average hit-detection efficiency as a function of the in-pixel position, measured\nat an overvoltage of 2 V. The regions of maximum efficiency correspond to the position of\nthe SPADs, shown in figure 1.\n\n_6.1. Hit-Detection Efficiency_\n\nOne of the major differences in the use of SPADs for MIP detection, compared to their conventional use as photodetectors, lies in the energy deposited\nby a MIP. While a photon in the optical wavelength regime generates a single\nelectron-hole pair, a MIP generates more than 50 electron-hole pairs per micrometer [39, 40]. This gives raise to the assumption, that the hit-detection\nefficiency of the dSiPM is close to the nominal fill factor of 30 %.\nThis is confirmed in figure 10, where the reconstructed efficiency _ϵ_ rec is\nshown as a function of the in-pixel position, also discussed in [37]. The\nin-pixel positions correspond to the reconstructed track intercept with the\ndSiPM, overlaying all selected pixels to obtain sufficient statistics. Comparing figure 10 with figure 1, shows that the efficiency reaches a maximum when\nthe track intercepts the center of the SPAD, and a minimum in-between the\nSPADs. One should note that the tracking uncertainty determines the resolution of the in-pixel efficiency image. It is assumed that the efficiency in\nthe SPAD center is actually close to 100 %, and appears lower due to the\nsmearing caused by this finite resolution.\nFigure 11 shows the hit-detection efficiency _ϵ_ of the two installed dSiPMs\n(labeled dSiPM ~~0~~ and dSiPM ~~1~~ ) as a function of the overvoltage, and for two\ndifferent temperature settings. The results include the corrections introduced\n\n21\n\nFigure 11: Hit-detection efficiency of two different DESY dSiPMs as a function of overvoltage, for two temperature settings, which result in slightly different chip temperatures\ndue to different cooling contacts. The expectation from the nominal fill factor is included.\n\nin equation 7, and the error bars indicate statistical uncertainties only. All\nfour measurements are found to agree within 0 _._ 5 %. The small systematic\nuncertainties are assumed to be due to the rel",
+        "score": -2.857278403394363,
+        "dense_score": 0.40928471088409424,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -4.4021477699279785,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 469,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment.md",
+        "title": "2023__recid_2648824__2304.01690__Quantum_Algorithms_for_Charged_Particle_Track_Reconstruction_in_the_LUXE_Experiment",
+        "text": "osing the\ntriplets with a red dashed line indicating the upper limit allowed by the pre-selection.\n\nThree pattern recognition methods are employed and systematically compared to reconstruct\ntracks from the detector hits. The first method formulates the tracking problem as a quadratic\nunconstrained binary optimisation (QUBO), similar to the one used in Ref. [8], which is then\nprocessed with quantum algorithms. The second method uses a hybrid quantum-classical graph\nneural network approach [11], but is limited to specific scenarios compatible with the available\ndevices. Finally, the results obtained with the quantum approaches are compared to an optimised\nclassical approach based on a Kalman filter [16, 17], which is taken to be the reference for the\nstate-of-the-art using no quantum computers.\n\n**Figure 5.** Left: Doublet and triplet-finding efficiency as a function of the positron true energy.\nThe combined efficiency is also shown. Right: Doublet and triplet multiplicities as a function\nof _ξ_ (lower _x_ -axis), corresponding to the average number of positrons (upper _x_ -axis).\n\n_4.1. Quadratic unconstrained binary optimisation_\nIn this approach, the pairs of triplet candidates that can be combined to form tracks are identified\nby solving a QUBO problem. The QUBO is expressed via the objective function\n\n� _b_ _ij_ _T_ _i_ _T_ _j_ +\n\n_j<i_\n\n_N_\n� _a_ _i_ _T_ _i_ _,_ (2)\n\n_i_ =1\n\n_O_ =\n\n_N_\n�\n\n_i_\n\nwhere _T_ _i_ and _T_ _j_ are triplets of hits and _a_ _i_ and _b_ _ij_ are real coefficients. The triplets _T_ _i_ and _T_ _j_\nassume binary values. The solution of the QUBO determines whether each triplet is considered\nfalse and rejected, by being set to zero, or true and selected, by being set to one. The linear term\nof the QUBO weighs the individual triplets by their quality quantified by the coefficient _a_ _i_ . The\n_a_ _i_ coefficient is set to the value of _δθ_ scaled to populate the [ _−_ 1; 1] range. The quadratic term\nrepresents the interactions between triplet pairs, where the coefficient _b_ _ij_ characterises their\ncompatibility. The coefficient _b_ _ij_ is computed from the doublets forming the two considered\ntriplets. It is taken to be the norm of the sum of the standard deviations of the doublet angles\nin the _xy_ and _yz_ planes, translated and scaled to populate the [ _−_ 1; _−_ 0 _._ 9] range. If the two\ntriplets are in conflict, the coefficient _b_ _ij_ is set to one. If the triplets are not connected, it is set\nto zero.\nThe QUBO in Eq. (2) c",
+        "score": -3.823389117857989,
+        "dense_score": 0.44811347126960754,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.8900556564331055,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 629,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker.md",
+        "title": "2023__recid_2655730__2305.00283__Large-Scale_Detector_Testing_for_the_GAPS_SiLi_Tracker",
+        "text": "s to verify that the detector is\nperforming as expected and to predict the detector performance using the flight readout system. Third, we will use these\nmeasurements to determine the placement of detectors within\nthe tracker, with higher-quality detectors being placed in the\nupper layers (where more anti-nuclei events are expected).\nIn Sec. II we describe the custom low-noise, lowtemperature testing system that was developed to allow fast\ncharacterization of this large sample of detectors. In Sec. III,\nwe describe our procedures for detector processing, testing,\nand data acquisition. In Sec. IV, we characterize this large\nsample of detectors using a physically-motivated noise model.\nWe conclude in Sec. V, demonstrating that large-area and lownoise Si(Li) detectors can be economically mass-produced and\ntested.\n\nII. D ETECTOR T ESTING S YSTEM\n\n_A. GAPS Detector Module_\n\nThe basic functional unit of the GAPS Si(Li) tracker is the\n_detector module_ (hereafter simply _module_ ) shown in Fig. 1.\nEach module contains four Si(Li) detectors mounted into\nan aluminum frame, to which the detectors are grounded\nvia their guard rings. Each detector is rigidly mounted into\nplace using several fluorosilicone O-rings and G10 clamps.\nThese clamps also secure a gold tab to the bottom ohmic\ncontact of each detector to supply the bias voltage. Finally, we\nsecure polypropylene windows on the top and bottom of each\ndetector module, providing a sealed volume for the detectors.\nThese windows (aluminized on their exterior surface to prevent\nmetal flakes within the detector volume) allow us to shield\nthe detectors from stray light, environmental contamination,\nand electromagnetic interference, and to flush the modules\nwith dry N 2 gas during payload assembly and testing to\nsuppress humidity. Each module also carries a _front-end board_\n(FEB) with several major roles. First, each FEB carries a\ncustom ASIC chip to which the Si(Li) strips are wirebonded,\nand which is responsible for processing and digitizing Si(Li)\nenergy deposits over a large dynamic range of tens of keV\nto ≳100 MeV [30]–[33]. Second, the FEBs also provide the\n250-V reverse-bias voltage to each detector. Lastly, the FEBs\nfacilitate a power and communication link between the flight\ncomputer and the ASICs.\nAs the FEBs and ASICs were being developed simultaneously with the Si(Li) detector testing, we require a different\nmethod of detector readout for the lab testing described in this\nwork. To that end, we replace the FE",
+        "score": -4.151531476974488,
+        "dense_score": 0.43650734424591064,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.3946638107299805,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 3,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 1329,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2682873__2310.07561__Commissioning_Calibration_and_Performance_of_the_Cherenkov_Telescope_on_EUSO-SPB2.md",
+        "title": "2023__recid_2682873__2310.07561__Commissioning_Calibration_and_Performance_of_the_Cherenkov_Telescope_on_EUSO-SPB2",
+        "text": ", detects and stores the signal so that the ASAD can perform the\n\n2\n\nOscar Fernando Romero Matamala\n\ndigitization. The AGET uses 512 time bins each with 10 _𝑛𝑠_ time width. The ASAD has a 12-bit\n\nADC which reads out the stored analog signal in the AGET and digitizes it for the Concentration\n\nBoard (CoBo) to compress, time stamp, and package for storage in the computer. In preparation\nfor flight, the telescope was tested extensively to obtain relative and absolute calibrations for its\ndifferent components in the signal chain.\n\n**2.** **Calibration**\n\n**2.1 Photon Detection Efficiency**\n\nA central component to the telescope’s performance is the SiPMs present in the camera.\n\nCharacterizing their response and calibrating it is central to understanding observations done with\n\nthe CT. One of the most important characteristics of the SiPMs is determining the photon-detection\nefficiency (PDE) of the SiPMs [16]. It was determined that the performance of each SiPM within a\nmatrix did not vary considerably. Therefore, just one pixel was used for measuring the characteristics\n\nof each of the matrices. A setup as described in [16] for measuring the PDE of a SiPM was used. The\nPDE of the detector is recorded at different bias voltages and the voltage to obtain 90% breakdown\nprobability is chosen. This bias is the nominal operational voltage and is the one at which all\n\ncalibrations and measurements are taken.\n\n**2.2 Spectral Response**\n\nThe sensitivity of these detectors to different wavelengths of light had to be characterized to\nfurther compare their performance. The spectral response setup uses a monochromator and a white\n\nlight Xe lamp. The light beam is then concentrated by a lens and split into 2 beams. One of them\n\ngoes to a calibrated monitor diode and the other to the SiPM [16]. The spectrum ranging from 200\n\nnm to 1000 nm is scanned and a spectral response of the detector is obtained. The spectral response\n\nof a single SiPM is shown in Figure 3 and the matrices’ dispersion is shown in Figure 4.\n\n**2.3 System Response Linearity**\n\nUsing a picosecond laser and the full readout system, the amplitude in ADC counts for\ndifferent laser intensities were recorded. Using an oscilloscope the single photo-electron amplitude\nwas recorded along with the amplitude in mV for each light intensity. Thus, a direct relation could\nbe drawn from pe to mV and then from mV to ADC. Since the flashed laser is a picosecond laser,\nit is safe to assume that all the photons are bunched up",
+        "score": -4.385220754986078,
+        "dense_score": 0.4282252788543701,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -6.754077434539795,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5641,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma.md",
+        "title": "2025__recid_2708847__2310.06183__30_ps_time_resolution_with_50_math_altimgsi9.svg_displayinline_idd1e188mi_mathvariantnorma",
+        "text": "ution from the data. In this procedure, the time of arrival of a particle incident\n\non the detector is defined to be at a threshold on the rising edge of the signal that is a certain\n\nfraction of the signal’s maximum height[2]. Particularly, the time of arrival at thresholds from\n\n10% to 90% at an increment of 10% were extracted for both signals. The time difference can then\n\nbe defined, where it is the difference between the time of arrival extracted from the front and rear\n\ndetectors. Using the same time difference thresholds, the time difference values were extracted for\n\neach set of events and subsequently binned into a histogram. The number of bins in the histogram\n\ncould be manually set to some reasonable value. However, the optimal bin size was dynamically\n\nselected based on a method used to minimise the mean integrated squared error associated with\n\nthe statistics. The resulting histogram is a Gaussian distribution and its sigma is what is known as\n\nthe time resolution of the detectors. This calculated value is the system’s average timing resolution\n\nand to calculate the individual devices’ timing resolution, an important assumption was made in\n\n– 7 –\n\n**Figure 5** . An illustration of the setup to measure time resolution. A Sr-90 source generates a beam of\n_𝛽_ -particles that passes through both detectors and the signal registered by the devices mounted on the PCBs,\nwhere they serve as 1st stage amplifiers. The PCBs are connected to 2nd stage amplifiers and then the signals\nare displayed by the oscilloscope. The entire setup is placed on top of a breadboard purchased at Thorlabs,\n\nInc.\n\nthe analysis: it is assumed that the detectors have similar time resolution. This comes from the\n\nfact that identical detectors from the same region of the wafer were selected. As there are two\nplanes of detectors, the calculated timing resolution was divided by a factor of ~~√~~ 2. Furthermore,\n\nas part of the analysis, different combinations of constant fractions from both detectors were used.\n\nFor example, the front detector’s 50% to the rear detector’s 30%. As such, a total of 81 timing\n\nresolution values were calculated and the best timing resolution from the combinations was extracted\n\nfrom each measurement run. Finally, the uncertainty from the measurements was extracted by the\n\nfollowing procedure: the measurement was repeated 5 times for a certain bias voltage value with the\n\nentire setup being turned off for an hour between each measurement. The measureme",
+        "score": -4.607226422097948,
+        "dense_score": 0.4584151804447174,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.096587657928467,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 2341,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "cays.\nOverall, it was found that the efficiency and resolution were\nnearly constant throughout the detector system and did not\nchange significantly when the edges of the scintillator bars\n(i.e., the corners of the detector) were reached. This is due\nto the fact that the GGS is so small that the source is\n\nstill far enough away from the edges of the detector and\nnever touches them (compare Fig. 1(b)). Furthermore, decays\nthat lie slightly outside the detector are also allowed for\nreconstruction, which significantly increases efficiency.\n\nFig. 3 shows the three-dimensional distribution (Fig. 3(a))\nof the individual reconstructed tracer sphere positions without\nany averaging or iterating of a source that has been placed\nat (50 | 50 | -40) cm within the GGS volume, as well as\nexemplarily its projection in the x-direction (Fig. 3(b)). A\nvery present background is visible, and the spatial resolution\nreads 104.3 mm in the x-, 103.5 mm in the y-, and 124.8 mm\nin the z-direction. This is a very poor resolution since the\nsize of the largest tracer sphere is much smaller than the\nbest resolution obtained this way (103.5 mm _≫_ 20 mm). To\n\nimprove this resolution, the simulated data were now averaged\nand iterated (as described in Section 2.5), resulting in a\nspatial resolution of 0.6 mm in x and y, and 1.1 mm in z. This\ncorresponds to an improvement by a factor of about 170 in the\nx- and y-directions and a factor of 110 in the z-direction. The\nassociated three-dimensional distribution and its projection\non the x-axis can be found in Fig. 4.\n\n_3.2. Model path_\n\nTo extend the simulation and reconstruction to a moving\nsource and to investigate the behavior of the reconstruction\nalgorithm at the highest possible velocities, a model curve\nwas created on which the source moves circularly (r = 10 cm)\nat 17 cm/s in the xy-plane and linearly between -6 and 2 cm\nat 7 cm/s in the z-direction. On average, these velocities\napproximate the maximum tracer sphere velocities within\nthe GGS derived from corresponding DEM simulations. As\nmentioned in Section 2.5, the buffer size was set down to\n6,000 events instead of 36,000, with re-averaging every 3,000\nevents to achieve good resolution. The measurement time of\nthe whole curve was 4 s.\n\nA three-dimensional view of the model curve is shown\n\nin Fig. 5, with the reconstructed tracer sphere locations\nshown in green and the actual simulated path as a black\ntrajectory. The corresponding one-dimensional projections\non the x, y, and z axes ar",
+        "score": -4.784992332169504,
+        "dense_score": 0.4536401033401489,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.369685173034668,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 12,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 5127,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "ss article\n\ndistributed under the terms and\n\nconditions of the Creative Commons\n\n[Attribution (CC BY) license (https://](https://creativecommons.org/licenses/by/4.0/)\n\n[creativecommons.org/licenses/by/](https://creativecommons.org/licenses/by/4.0/)\n\n4.0/).\n\n**1. Introduction**\n\nSilicon radiation detectors are at the core of experiments conducted at high-energy\ncolliders, such as the CERN Large Hadron Collider (LHC) [ 1 ]. Multiple layers of pixel and\nstrip detectors are utilized to accurately measure the momentum and vertices of charged\nparticles. Examples of such detector systems are part of the CMS [ 2 ] Silicon Tracker [ 3 ] and\nthe ATLAS [4] Inner Detector [5].\nHybrid pixel detectors, positioned close to the beam’s interaction point, offer fine\nsegmentation of a few tens of micrometers, ensuring spatial resolution on a single point\ndown to 10 µm . Precision measurements and the discovery potential heavily rely on the\nperformance of tracking devices, particularly for energy/momentum resolution and flavor\nidentification. Notably, both ATLAS [ 6, 7 ] and CMS [ 8 ] pixel detectors are equipped with\nthin planar n [+] -on-n silicon sensors (ATLAS Innermost B-Layer includes sensors made in\n3D n [+] -on-p technology in the forward region).\nThe LHC is scheduled for an upgrade to a high-luminosity machine (HL-LHC) [ 9 ],\nwith the goal of integrating a dataset of 4000 fb _[−]_ [1] ; this is twenty times larger than its current\ncapacity, allowing for the full exploitation of the physics reach of the LHC machine. To\nintegrate such a large dataset within a reasonable time, the instantaneous luminosity will\nneed to increase by a factor of 5–7 beyond the nominal value, reaching 7 _×_ 10 [34] cm _[−]_ [2] s _[−]_ [1] .\nThis increase in instantaneous luminosity will lead to a corresponding rise in particle flux,\ntrack densities, and hit rates. Consequently, the current inner tracking systems will need to\nbe replaced to cope with this challenging environment, as radiation levels affecting both\nsensors and electronics will also increase by a similar amount.\n\n_Sensors_ **2024**, _1_ [, 0. https://doi.org/10.3390/s1010000](https://doi.org/10.3390/s1010000) [https://www.mdpi.com/journal/sensors](https://www.mdpi.com/journal/sensors)\n\n_Sensors_ **2024**, _1_, 0 2 of 19\n\nThe effects of radiation damage are already measurable at the fluences of LHC Run 2\nand Run 3. For instance, the charge collection efficiency (CCE) of the innermost ATLAS\nPixel layer has now reduced to approxi",
+        "score": -4.81581655619801,
+        "dense_score": 0.4394019842147827,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.416752338409424,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7220,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2902407__2503.15721__Minimal_material_maximum_coverage_Silicon_Tracking_System_for_high-occupancy_conditions.md",
+        "title": "2025__recid_2902407__2503.15721__Minimal_material_maximum_coverage_Silicon_Tracking_System_for_high-occupancy_conditions",
+        "text": "0)`\n`[10.22323/1.419.0050](http://dx.doi.org/10.22323/1.419.0050)` .\n\n[16] D. A. Ramirez Zaldivar, Vertex reconstruction and tracking performance\nof the STS detector with the mCBM setup at SIS18, year = 2024,\nmonth = apr, pages = 064, publisher = Sissa Medialab, series = VERTEX2023, collection = VERTEX2023, doi = 10.22323/1.448.0064,, in:\nProceedings of The 32nd International Workshop on Vertex Detectors —\nPoS(VERTEX2023).\n\n[17] K. Aoki, S. Ashikaga, W.-C. Chang, T. Chujo, R. Ejima, H. En’yo,\nS. Esumi, D. Rodriguez Garces, H. Hamagaki, J. M. Heuser, R. Honda,\nM. Ichikawa, D. Ishii, S. Kajikawa, J. Kakunaga, K. Kanno, A. Kiyomichi, Y. Hori, C.-H. Lin, Y. Morino, T. N. Murakami, R. Muto, S. Nagafusa, W. Nakai, S. Nakasuga, M. Naruki, T. Nonaka, H. Noumi, S. Ochiai,\nM. Ogura, K. Ozawa, A. Rodriguez Rodriguez, T. Sakaguchi, H. Sako,\nF. Sakuma, S. Sato, S. Sawada, M. Sekimoto, K. Shigaki, K. Shirotori,\nH. Sugimura, T. N. Takahashi, T. Taniguchi, M. Teklishyn, A. Toia, R. Yamada, K. H. Yamaguchi, Y. L. Yamaguchi, S. Yanai, S. Yokkaichi, Experimental investigation of vector mesons in medium through dielectron decay at J-PARC, Journal of Subatomic Particles and Cosmology 3 (2025)\n100019. `[doi:10.1016/j.jspc.2024.100019](http://dx.doi.org/10.1016/j.jspc.2024.100019)` .\n\n[18] D. Hymers, S. Schroeder, O. Bertini, J. Heuser, J. Lehnert, C. J. Schmidt,\n[D. Muecher, A high-rate, highly-segmented charged particle tracker,](https://www.dpg-verhandlungen.de/year/2025/conference/koeln/part/hk/session/21/contribution/2)\nPresented at DPG Spring Meeting 2025, Cologne, Germany, accessed:\nMarch 21, 2025(2025).\nURL `[https://www.dpg-verhandlungen.de/year/2025/](https://www.dpg-verhandlungen.de/year/2025/conference/koeln/part/hk/session/21/contribution/2)`\n```\n conference/koeln/part/hk/session/21/contribution/2\n\n```\n\n5",
+        "score": -4.8800480416563685,
+        "dense_score": 0.49256011843681335,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -7.5165934562683105,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 9,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "vector_only",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 4.694731129333377,
+    "generation_latency_s": 5.397014319896698e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 4.694731129333377,
+    "generation_latency_s": 5.397014319896698e-07
+  }
+}

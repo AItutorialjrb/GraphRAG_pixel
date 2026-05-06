@@ -1,0 +1,407 @@
+{
+  "benchmark": {
+    "query_id": "fac003",
+    "query_type": "factoid",
+    "query": "What is Time-over-Threshold used for?",
+    "answer": "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk.",
+    "claims": [
+      "Reference answer to be finalised from the indexed source passage. The expected answer should be a concise detector fact supported by a cited paper chunk."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "What",
+      "is",
+      "Time-over-Threshold",
+      "used"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "What is Time-over-Threshold used for?",
+    "mode": "graph_path_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 7152,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco.md",
+        "title": "2025__recid_2898757__2503.08177__TelePix2_Full_scale_fast_region_of_interest_trigger_and_timing_for_the_EUDET-style_telesco",
+        "text": "o\nfour pixels in the corners and two at the edges.\n\nFigure 6: In pixel efficiency of TelePix2 at a bias of −85 V. Thresholds from\ntop to bottom: 16, 21, 28, 40. Please note the change in the z-scale.\n\n_Time Resolution_\n\nThe time resolution is determined relative to a trigger scintillator sampled with a 781.25 ps timestamp by the AIDA-TLU.\nOnly clusters assigned to a track are used, while the cluster time\nstamp is defined by the pixel timestamp with the largest ToT in\na cluster. The time resolution of the complete sensor is shown\nin figure 7 for different detection thresholds. A Gaussian fit\nto the core of the distribution leads to a σ of 3.844(2) ns at a\ndetection threshold of 16 and a supply voltage of 2 V. This is\nunprecedented for a large area chip in this technology and well\nwithin the specifications for a timing layer for the DESY II test\nbeam. Data taken at the default 1.8 V supply voltage show systematically worse timing performance. At threshold 16 a σ of\n4.970(5) ns is determined at a larger absolute delay. With increasing threshold, the time resolution is worsening as expected\ndue to the increased impact of time walk. At lower thresholds, better time resolution is expected at the price of increased\nnoise, which is likely not desired if operated as reference sensors and is currently under investigation. Studying the row dependency of the time residuals, compare figure 8, two effects\nare observed: Firstly, four sharp cuts are visible. These cuts\ncorrespond to rows where changes in the metal layers for signal\n\nFigure 7: Time difference between reference trigger and TelePix2 cluster time.\n\nrouting occur, which results in different capacitance. Secondly,\nthe small slope might be caused by longer transmission lines or\nvoltage drops. Correction for these effects and time-walk is a\nwork in progress and will be presented elsewhere.\n\n_Region of Interest Triggering_\n\nThe region of interest trigger mode has been evaluated with\na supply voltage of 2 V. The possibility of selecting an arbitrary pixel arrangement is showcased by only enabling the fast\nHit-OR for pixels assembling a DESY logo and reading out a\ntriggered telescope reference pixel sensor; compare figure 9a.\nFurthermore, the time resolution of the fast Hit-OR is gauged\nby comparing it with a scintillator signal coupled to a PMT and\nread out via an oscilloscope. The result is depicted in figure 9b\nexemplarily for a quasi noise-free threshold of 16. A Gaussian\nfit to the distributions’ core yields a",
+        "score": -1.79086075049115,
+        "dense_score": 0.3374408185482025,
+        "bm25_score": null,
+        "graph_score": 0.771309394269133,
+        "rerank_score": -2.8516011238098145,
+        "matched_nodes": [
+          "At",
+          "Time",
+          "OR",
+          "The",
+          "In"
+        ],
+        "path_nodes": [
+          "At"
+        ],
+        "community_id": "At",
+        "metadata": {
+          "chunk_index": 7,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 8209,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit.md",
+        "title": "2026__recid_3068698__2510.11463__Characterisation_of_the_first_wafer-scale_prototype_for_the_ALICE_ITS3_upgrade_The_monolit",
+        "text": "also agrees with the expected bias recovery time from\nsimulation.\n\nFigure 12 shows the dependence of the fake-hit rate on the strobe signal,\nillustrating the cumulative effect of perturbations over time on the probability\nof observing a fake hit. For random noise, the number of fake hits per unit\ntime is expected to be independent of strobe length. In practice, however,\ntwo systematic effects modify the measured fake-hit rate. At very short strobe\nlengths, the measurement is dominated by the few noisiest, continuously active\npixels. At very long strobe lengths, the fake-hit rate is underestimated because\nthe in-pixel latch can be asserted only once, limiting the contribution of the\nnoisiest pixels to a single fake hit. Consequently, the dependence of the fakehit rate on strobe duration is expected to decrease monotonically. Instead, a\nsudden increase is observed approximately 2 µs after the strobe is asserted. This\n\n15\n\n|40|Col2|Col3|\n|---|---|---|\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~||Dela<br>1.<br>~~1.~~|\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~||2.<br>3.|\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|||\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|||\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|||\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|~~I~~bias~~ origin~~|~~V~~shift~~ origin~~|\n|0<br>50<br>10<br>10<br>0<br>10<br>20<br>30<br>40<br> Threshold (e )<br>~~I~~bias~~ origin~~|~~I~~bias~~ origin~~|150<br>200<br>Column|\n\nFigure 11: Column profile of threshold variation measured at different time delays after the\nstrobe is asserted. To isolate the effect of the perturbation, the threshold measured at a delay\nof 8 _._ 8 µs when the system is assumed to have recovered from the perturbation, is subtracted\nfrom the measurements at shorter delays. The small peak substructure arises from the different\ncoupling with the steering signals discussed in Sec. 4.1.\n\nbehaviour is consistent with the timescale for amplifying a small charge (noise\ninjection) at the input when the strobe begins.\n\n|102|2|Thres|\n|---|---|---|\n|10<br>1<br>100<br>Str<br>10<br>3<br>10<br>2<br>10<br>1<br>100<br>101<br><br>||Thres<br>1<br>1<br>|\n|10<br>1<br>100<br>Str<br>10<br>3<br>10<br>2<br>10<br>1<br",
+        "score": -2.997246916476566,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8197315923104823,
+        "rerank_score": -4.708255767822266,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "To",
+          "Col2",
+          "Col3"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 6953,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement.md",
+        "title": "2025__recid_2870942__2501.10964__The_energy_dependence_of_cluster_size_and_its_physical_processes_in_the_proton_measurement",
+        "text": "arges, allowing even pixels that do not collect the charge carriers\nto trigger. We conclude that the cluster size measurement is a promising method for evaluating the energy deposited by a\ncharged particle in the TimePix3 detector.\n\n_Keywords:_ Charged particle, Silicon pixel detector, TimePix3, Detector simulation\n\n**1. Introduction**\n\nPixelated silicon semiconductor detectors can measure\n\ncharged particles and are used in various fields, including\nnuclear and particle physics experiments [1, 2, 3, 4]. The\nTimePix3 detector [5] is one of these detectors, developed\nby the MediPix Collaboration3 [6], CERN, Nikhef and the\nUniversity of Bonn as a successor to the TimePix detector [7]. A TimePix3 detector consists of a silicon sensor\nand a TimePix3 readout chip, divided into 256 _×_ 256 pixels\nwith a 55 µ m pitch. The detector collects holes to the pixel\nelectrodes. It employs ToT (Time over Threshold) and ToA\n(Time of Arrival) methods to determine the energy and arrival time of radiation. By using the data-driven mode of\nTimePix3, we can obtain the arrival time of the radiation\nwith a 1.56 ns temporal resolution and the energy deposition in each pixel, simultaneously.\nThe ToT method provides a wide dynamic range for\nthe energy measurements. Therefore, this instrumental\nmethod can be used to evaluate the energy of various types\nof charged particles across extended energy ranges, from\nlight ions to heavy ions, in addition to X-ray and _γ_ -ray\n\n[1]. However, there are two issues affecting high energy\nmeasurements using TimePix3 detectors. The first one\nis the difficulty to calibrate ToT values corresponding to\nhigh energies. The detection efficiency of a silicon sensor\nwith a thickness of several hundred µ m is low for highenergy photons. For example, the detection efficiency of\na 500 µ m silicon sensor is less than 4 % for 60 keV photons, according to calculations performed with the Geant4\ntoolkit [8]. In addition, charge clouds generated by the incidence of high-energy radiations spread across multiple\npixels. These physical effects make the calibration of ToT\nvalues corresponding to energies above 60 keV inefficient,\nas the calibration function of the TimePix3 detector cannot\n\nbe expressed by a monotonically increasing linear function.\nThe second issue is that high energy deposition leads to a\nsaturation or a decrease of ToT values [9, 10, 11]. The ToT\nvalue is measured using a 10-bit clock signal for each pixel\nand the range of the ToT value is 0 to 1022 [5",
+        "score": -4.00880257266027,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8438520130576713,
+        "rerank_score": -6.26735258102417,
+        "matched_nodes": [
+          "For",
+          "Time",
+          "The",
+          "In",
+          "We",
+          "University"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -4.825914190292359,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 1.0,
+        "rerank_score": -7.54294490814209,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "We",
+          "To",
+          "Col2",
+          "Col3",
+          "Col4",
+          "Col1"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 4942,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "of one detector module of the given type (red and green). Camera air temperature measured at the front (blue). Two periods of interrupted operation can be seen due\nto stopped operations during the COVID-19 pandemic in 2020 and a volcanic\neruption in La Palma end of 2021.\n\n**8. Performance**\n\n_8.1. Calibration light performance_\nFirst, we evaluate the performance of the SiPM-based modules with light pulses from the calibration laser. During data ac\n\n12\n\nquisition, the MAGIC cameras are homogeneously illuminated\nwith the light pulses from a Nd:YAG laser, operating at the third\nharmonic (355 nm). The duration of an individual pulse is 1 ns,\nand the laser is fired at the frequency of 25 Hz [3]. The Excelitas and the Hamamatsu-based SiPM modules were calibrated\n\nusing the single photoelectron spectra, while the SensL-based\nSiPM module, due to the high dark rate, was calibrated using\nthe F-factor method. The mean extracted charge of 1000 calibration events (≡ 40 s of observation) is shown in figure 17 for\nthe typical duration of an astrophysical source during one night.\nThe obtained number of photo-electrons is in good agreement\nwith the expectation using the PDE value of the SiPMs at the\ncalibration laser wavelength from figure 7. In the MAGIC camera, the PMT pixel calibration factors are updated periodically\nusing the same 1000 calibration events. A similar procedure can\nbe applied also to the SiPM-based pixels, which are operated at\nthe close to saturation applied overvoltage.\n\n_8.2. Time resolution_\n\nTo study the time resolution of the camera modules we followed the procedure in [69]. This required correcting for DRS4\nnon-equal sampling delay effects, which is part of the standard\nMAGIC analysis procedure [3] and also described in [69]. We\nfirst determine the mean arrival time for all light sensors of one\ntype. Then we calculate the difference of the arrival time in each\npixel to its type’s mean arrival time. For 5000 events this arrival\ntime deviation is calculated and subsequently fit by a Gaussian\ndistribution. The final time spread ∆ _T_ is calculated as the mean\nof all pixel standard deviations. This procedure is repeated for\ncalibration light flashes of several different intensities that yield\nfrom a few to several hundred photoelectrons. The number of\nphotoelectrons _N_ phe is determined individually for each pixel\nand event. Due to the Poissonian distribution of the intensity\nof laser light pulses this binning in single phes might provide a\nmore accu",
+        "score": -5.565799895696464,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8438520130576713,
+        "rerank_score": -8.66273307800293,
+        "matched_nodes": [
+          "For",
+          "Time",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 26,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 7234,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2907611__2504.02570__Time_resolution_limits_in_silicon_sensors_from_Landau_fluctuations_and_electronics_noise.md",
+        "title": "2025__recid_2907611__2504.02570__Time_resolution_limits_in_silicon_sensors_from_Landau_fluctuations_and_electronics_noise",
+        "text": "## Time resolution limits in silicon sensors from Landau fluctuations and electronics noise\n\nW. Riegler\n\n_CERN_\n\n**Abstract**\n\nIn this report, we derive analytical expressions for the time resolution limits of standard silicon sensors,\nLGADs, and 3D trench sensors. We separately examine the effects of Landau fluctuations and electronic noise. To analyze Landau fluctuations, we relate the time resolution of a single electron-hole pair\ngenerated at a random position in the sensor to the time resolution associated with the full ionization\npattern produced by a charged particle. For electronic noise, we explore optimal filtering techniques that\nminimize its impact on time resolution, and evaluate how closely these can be approximated by practical\nfilters. Finally, we demonstrate that the combined effect of Landau fluctuations and electronic noise\ncannot, in general, be simply expressed as the quadratic sum of the individual contributions.\n\n**1. Introduction**\n\nIn [1] the fluctuation of the centroid time of the sensor signal was identified as a key quantity defining\nthe intrinsic time resolution of a silicon sensor. It was shown that this picture applies if the preamplifier\nintegration time is of the same order or longer than the signal duration. Since the fluctuations arise from\ncharge deposit fluctuations called ’Landau fluctuations’, this contribution is sometimes called ’Landau\nnoise’. The expressions in [1] were derived for situations with a large number of e-h pairs, where this\nnumber can be assumed to be a continuous variable instead of a discrete one. In this report the exact\nexpressions based on the discrete nature of the charge deposit are derived and they are therefore valid for\narbitrarily thin sensors. It is also shown that one only has to calculate the time resolution for a single e-h\npair with a uniformly distributed random position in the sensor, which directly yields the time resolution\nfor a charged particle passing the sensor. We will first review the characteristics of charge deposit in\nsilicon and then calculate the fluctuations of the centroid time for different detector geometries. We\nthen discuss the effect of Landau fluctuations for arbitrary amplifier bandwidth and thresholds. For large\nnumbers of primary charges the results derived in this report are equal to the ones derived in [1]. However\nthey are also valid for arbitrarily small number of primary charge deposits and therefore applicable to a\nwider range of sensors.\n\nTo study the i",
+        "score": -5.812607184819998,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8438520130576713,
+        "rerank_score": -9.042436599731445,
+        "matched_nodes": [
+          "For",
+          "Time",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 5116,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L.md",
+        "title": "2024__recid_2786044__2405.07191__Radiation_Damage_on_Silicon_Photomultipliers_from_Ionizing_and_Non-Ionizing_Radiation_of_L",
+        "text": "uences.\n\n_**5.5.**_ _**Gain, Crosstalk and Afterpulse**_\n\n|Col1|Col2|Col3|Col4|Col5|Col6|\n|---|---|---|---|---|---|\n|+06<br>1E+|07<br>1E+|08<br>1E|+09<br>1E|+10<br>1E|+11<br>1E|\n\nIn Fig. 9 are reported the gain, crosstalk probability and afterpulse\n\nprobability measured at 4 V of excess bias before and after irradiation. Gain\n\nand AP were measured on SPADs at room temperature, CT measurement\n\nwas performed on 1x1 mm² at room temperature and on 0.2x0.2 mm²\n\nSiPMs at -20°C after irradiation, to discriminate single events in high DCR\n\nconditions.\n\nNo significant change in gain is observed after irradiation, apart from\n\nsome fluctuation caused by the uncertainty of the measurement on samples\n\nwith high noise level. For CT measurements, time constraints and\n\ninstability of the amplifiers operated at low temperatures limited the\n\nnumber of tested devices, but the results do not show a link between\n\nradiation damage and a change in crosstalk probability.\n\nIn the case of AP measurements, it is observed a significant increase for\n\nalmost all devices after irradiation. This effect is related to the defects\n\ngenerated in the silicon by NIEL. The defects act as a trapping centres for\n\ncharges, thus increasing the AP probability for irradiated samples. A few\n\nsamples do not show this increase, but this is mainly attributed to\n\nlimitations in the measurement setup and software, which is not able to\n\ndetect AP events below a certain amplitude and will underestimate their\n\nnumber in case of cells with long recharge time.\n\nDespite the increase in AP, its contribution to the total ECF is limited\n\nas its probability remains relatively low. Moreover, the gain and the CT do\n\nnot show a significant variation in samples measured before and after\n\nirradiation. This proves the validity of the hypothesis used in the calculation\n\nof the DCR, where it was assumed that the Gain current, i.e. the gain\n\nmultiplied by the excess charge factor, do not change with proton\n\nirradiation.\n\nFig. 9: Top to bottom: gain, crosstalk probability and afterpulse\nprobability measured before and after proton irradiation at 4 V of excess\nbias.\n\n_**5.6.**_ _**Activation energy**_\n\nTo calculate the activation energy (Ea) of the SiPMs it was taken the IV\n\nmeasurements at different temperatures. At the same time, it was measured\n\nalso the temperature dependence of the breakdown voltage with\n\ntemperature. For irradiated samples the IVs were taken at temperatures\n\nbetween -30°C and 20, with 2°C steps, to avoid",
+        "score": -5.830476762779217,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.873050417120058,
+        "rerank_score": -9.073387145996094,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "To",
+          "Col2",
+          "Col3",
+          "Col4",
+          "Col1"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 11,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 7851,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA.md",
+        "title": "2026__recid_2954646__2403.14948__Design_of_an_atmospheric_muon_tomographer_for_material_identification_based_on_CORSIKA_GEA",
+        "text": "of the object.\n\n - Between air and concrete or aluminium, for all object widths.\n\n - Between concrete and water for an object of 200 to 250 cm width.\n\n - Between air and water for an object of 100 to 250 cm width.\n\nFor the scattering method it is possible to differentiate in the following cases:\n\n - Between air or water for an object of 100 to 250 cm width.\n\n - Between air and iron for an object of 150 to 250 cm width.\n\n– 10 –\n\n**Figure 9** : Number of sigma deviation between FWHM of different materials, as a function of the\n\ntest block width.\n\n**Figure 10** : FWHM of lead, as a function of test block size comparing our simulation with the\n\ntheoretical curve.\n\n– 11 –\n\n**Figure 11** : Time in hours to get 3 sigma deviations between the observed fraction of particles\n\ndetected in the sub-detectors after the object and before it for different object materials.\n\n - Between lead and iron for an object of 250 cm width.\n\n - Between lead and aluminum or concrete for sizes between 100 to 250 cm.\n\nTo quantify the actual measurement time to obtain 3 _𝜎_ we need to consider the following.\n\nWe simulated one hour of cosmic ray showers in CORSIKA, however to increase the statistics in\n\nGEANT4 we included two modifications. The first is the movement of the second sub-detector\n\naround the object, which multiplies by 9 the real time, because of all positions are simulated at the\n\nsame time. The second modification was the initial directions of the secondary cosmic rays which\n\nwere changed to a single direction. In one hour without the modified directions, 125 muons reached\n\nthe last sub-detector, however setting the fixed direction, 5423 arrived. Taking these two factors\n\ninto account, it would take approximately 16.4 days to obtain the number of sigmas shown in Fig.\n\n5 and Fig. 9.\n\nThe real number of hours to reach 3 _𝜎_ are shown in Fig. 11 for the absorption method and in\n\nFig. 12 for scattering method. Setting as threshold less than 1 week for obtaining 3 _𝜎_ we get the\n\nfollowing results for the absorption method:\n\n - Between lead and air or water or aluminum or concrete.\n\n - Between iron and air or water.\n\n - Between air and aluminum or concrete.\n\nFor the scattering method only between lead and air the acquisition time is less than 1 week\n\nfor an object of 250 cm width.\n\n– 12 –\n\n**Figure 12** : Time in hours to get 3 sigma deviations between widths of Gaussian fits of the histograms\n\nfor scattering angles after passing through the object.\n\n**Figure 13** : Number of s",
+        "score": -5.978971568517508,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8438520130576713,
+        "rerank_score": -9.298381805419922,
+        "matched_nodes": [
+          "For",
+          "Time",
+          "The",
+          "In",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 10,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 1183,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost.md",
+        "title": "2023__recid_2679966__2307.12753__Shallow_Silicon_Vacancy_Centers_with_Lifetime-Limited_Optical_Linewidths_in_Diamond_Nanost",
+        "text": "al optical lifetime of 1 _._ 69 _±_ 0 _._ 04 ns.\n\nanneal the implanted diamond in a home-built high-vacuum\noven at 400 °C, 800 °C and 1300 °C for 4 h, 11 h and 2 h respectively. This corresponds to a slight modification of the\nprocedure introduced by Evans et al. [22], where we increase\nthe temperature of the last annealing step, as it has been\nshown that higher temperatures benefit the optical coherence\nof SiV _[−]_ [25]. Successful SiV _[−]_ creation is confirmed by observing its room-temperature (RT) ZPL around 738 nm, under\noff-resonant optical excitation at a wavelength of _λ_ = 515 nm.\nSubsequently, in order to enhance the emitters’ collection and\nexcitation efficiencies, we nanofabricate parabolic reflectors\n(PRs) with diameters at the apex of _∼_ 300 nm on the sample.\nFor this, we use electron-beam lithography defined SiO _x_ etch\nmasks and a sequence of plasma etching steps (detailed elsewhere [21]). PRs are arranged in arrays [Fig. 2(b)] to facilitate\nboth the fabrication procedure and systematic characterization\nof SiV _[−]_ . The fabricated PRs employ the same design other\n\n**(a)**\n\n**(b)**\n\n2. Anneal T > 1200°C\n\n**(c)**\n\n**(d)**\n\n**(e)**\n\n4\n\n3\n\n2\n\n1\n\n-50 0 50\nTime delay [ns]\n\n150\n\n100\n\n20 60 100\nPower [nW]\n\n2 4 6\nTime [ns]\n\n10 [1]\n\n0\n\nwise used for diamond scanning tips in scanning NV magnetometry [28], which will expedite future use of SiV _[−]_ for\nscanning probe microscopy.\nAfter diamond nanofabrication, we perform a second anneal\nidentical to the first one, as Evans et al. [22] have shown\nthat the optical coherence of SiV _[−]_ increases by removing\nsub-surface damage from the diamond lattice by annealing\nand subsequent acid cleaning. Additionally, we observe a\nsignificant increase of SiV _[−]_ yield after the second annealing\nstep, as many PRs do not show a SiV _[−]_ ZPL immediately after\nfabrication at the implantation dose we employed. Thus the\nannealing steps before and after PR fabrication are a crucial\ningredient for creating individual and coherent SiV _[−]_ centers\nin nanostructures.\n\nTo characterize our PR arrays, we perform systematic measurements at RT using an automized, home-built confocal\nmicroscopy setup (see Methods). We measure optical spectra,\noff-resonant saturation curves [SI Fig. S2] and off-resonant\nsecond order correlation functions _g_ [(][2][)] ( _τ_ ) for each pillar in\nthe array. An exemplary data set of a background corrected\n_g_ [(][2][)] ( _τ_ ) recorded from a PR is shown in Fig. 2(c) with a fit\nrevealing _g_",
+        "score": -6.0185216821954866,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8438520130576713,
+        "rerank_score": -9.359228134155273,
+        "matched_nodes": [
+          "For",
+          "Time",
+          "The",
+          "We",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 5,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7468,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2954331__2507.18172__Silicon_Single-Photon_Detector_Achieving_Over_84_Photon_Detection_Efficiency_With_Flexible.md",
+        "title": "2025__recid_2954331__2507.18172__Silicon_Single-Photon_Detector_Achieving_Over_84_Photon_Detection_Efficiency_With_Flexible",
+        "text": "_S_ = _V_ _dd_ _−_ _i_ 1 _∗_ _R_ 1 _−_ _V_ _GS_, where _i_ 1 is the\ncurrent through the branch, which depends on _V_ _GS_ and is\ndetermined by the volt-ampere characteristics of D1. At low\nvoltages, _i_ 1 increases slowly with _V_ _GS_ . As _V_ _GS_ approaches the\nZener voltage ( _V_ _Zener_ ) of D1, _i_ 1 increases sharply, causing a\nsteep drop in _V_ _S_ . The red curve in Fig.2 (b) illustrates this\nrelationship between _V_ _S_ and _V_ _GS_ for this branch. For the\nsecond branch, _V_ _dd_ -M1-SPAD anode, _V_ _S_ can be solved from\nthe current balance equation, which is: _i_ 1 + _[V]_ _[dd]_ _R_ _M_ _[−]_ 1 _[V]_ _[S]_ = _[V]_ _R_ _[S]_ _[,]_\n\nwhere _R_ _M_ 1 is the resistance of M1, which is determined by\n_V_ _GS_, and _R_ is the resistance between the SPAD anode and\nGND. When _V_ _GS_ is low, _R_ _M_ 1 is large, so _V_ _S_ is nearly 0 V.\nAs _V_ _GS_ approaches the threshold voltage ( _V_ _on_ ) of M1, _R_ _M_ 1\ndrops to approximately 1 Ω, and _V_ _S_ approaches _V_ _dd_ . This\ntrend is shown by the blue line in Fig. 2 (b). In the stable idle\nstate, the circuit reaches equilibrium at the intersection of the\nred and blue curves, where _V_ _GS_ is just below _V_ _on_ and _V_ _S_ is\nslightly less than _V_ _dd_ . In the circuits, the _V_ _Zener_ is 4.3 V and\nthe _V_ _on_ is _∼_ 2.5 V.\nWhen the QUENCHING signal transitions from HIGH to\nLOW, _V_ _S_ rises from 0 V to a high voltage, switching the\nSPAD from the armed to the idle state. The rise time of _V_ _S_ is\n\na critical factor that limits both the maximum count rate and\n\nthe gate-off speed. To accelerate this transition, an inductor\nL1 is employed. In the armed state, M2 conducts, allowing\ncurrent to flow from _V_ _dd_ through R1, L1, and M2 to GND.\nWhen M2 turns off, L1 momentarily maintains the current via\nfreewheeling through D1, causing _V_ _GS_ to briefly reach _V_ _Zener_ .\n\n4\n\n**(b)** 100 mm\n\nFig. 3. (a) The design diagram of the Si SPD module. (b) The photograph of the SPD module.\n\nThis turns M1 fully on, significantly boosting the rise speed\nof _V_ _S_ .\n\nConversely, during the transition from the idle to the armed\nstate, the QUENCHING signal switches from LOW to HIGH,\nrapidly turning on M2 and switching off M1. However, due\nto the high impedance between the SPAD anode and GND in\nthis state, the anode voltage decreases slowly. To accelerate\nrecovery, the RESET signal is briefly asserted, activating M3,\nwhich quickly pulls the anode voltage to GND. This active\nreset also occurs during the gate-on p",
+        "score": -6.1259675421045445,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8438520130576713,
+        "rerank_score": -9.524529457092285,
+        "matched_nodes": [
+          "For",
+          "At",
+          "The",
+          "In",
+          "To",
+          "Si"
+        ],
+        "path_nodes": [
+          "For"
+        ],
+        "community_id": "For",
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "For": 1.0,
+      "At": 1.0,
+      "Time": 1.0,
+      "Im": 1.0,
+      "SH": 1.0,
+      "E-": 1.0,
+      "OR": 1.0,
+      "SE": 1.0
+    },
+    "expanded_nodes": {
+      "For": 1.0,
+      "At": 1.0,
+      "Time": 1.0,
+      "Im": 1.0,
+      "SH": 1.0,
+      "E-": 1.0,
+      "OR": 1.0,
+      "SE": 1.0,
+      "The": 0.7,
+      "In": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "Col2": 0.42,
+      "University": 0.7,
+      "Si": 0.7,
+      "Col3": 0.147,
+      "Col4": 0.147,
+      "Col1": 0.147,
+      "Department": 0.24499999999999997
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_path_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 19,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 6.48662432981655,
+    "generation_latency_s": 5.299225449562073e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 10.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 19.0,
+    "retrieval_latency_s": 6.48662432981655,
+    "generation_latency_s": 5.299225449562073e-07
+  }
+}

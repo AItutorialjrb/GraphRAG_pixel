@@ -1,0 +1,276 @@
+{
+  "benchmark": {
+    "query_id": "mul006",
+    "query_type": "multi_hop",
+    "query": "How can ToT calibration influence spatial reconstruction?",
+    "answer": "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence.",
+    "claims": [
+      "Reference answer to be finalised by the detector expert. The expected answer should connect at least two detector concepts through retrieved evidence."
+    ],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "ToT"
+    ],
+    "should_abstain": false
+  },
+  "payload": {
+    "query": "How can ToT calibration influence spatial reconstruction?",
+    "mode": "hybrid_no_graph",
+    "answer": "",
+    "abstained": false,
+    "confidence": "low",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 8334,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "e\nrow direction as a function of the threshold for different\nsensor bias voltages in triggered mode. A few additional\n\n points measured in ToT mode, for which calibration and η\ncorrection have been applied, are also included. The pixelto-pixel variations and nonlinear charge sharing inside the\npixel cell lead to a deterioration of the reconstructed cluster position when these corrections are not applied. Due to\nthe fact that a majority of the interactions have a cluster\nsize of one, no significant difference is found between the\nspatial resolution in ToT mode (with 8 bits) and triggered\nmode (binary readout), and a spatial resolution close to\nthe pitch _/√_ 12 _∼_ 10 _._ 1 µm is measured. Moreover, no\n\nsignificant differences between sensor bias voltages are observed.\n\nThe increase in charge sharing at a threshold below\n240 electrons leads to an improvement of the spatial resolution. In particular, a spatial resolution of (9 _._ 3 _±_ 0 _._ 1) µm\nis measured at a threshold of (178 _±_ 5) electrons. No significant dependence on the sensor bias voltages is observed.\nBetween approximately 240 and 400 electrons, the spatial\nresolution remains constant at about 9 _._ 7 µm, corresponding to a range dominated by single-cluster events. Above\n400 electrons, the above-mentioned asymmetric residuals (caused by the lower efficiency) result in a reduced\n\n14\n\nFigure 32: Spatial resolution as a function of the threshold for different sensor bias voltages in triggered and ToT modes.\n\nσ _RMS,_ 3σ, and therefore in an improvement of the spatial\nresolution.\n\n_5.4. Signal Distribution_\n\nThe seed pixel is defined as the pixel with the highest\nsignal within a cluster. Figure 33 shows the seed pixel\ncharge distribution fitted using a convolution of a Landau\nand Gaussian function.\nAn MPV of (680 _±_ 20) electrons has been measured,\nwhich is higher than measured in other prototypes from\nthe same submission [5]. The discrepancy could be attributed to the ToT calibration procedure, which assumes\na uniform in-pixel response of the sensor. During calibration, test pulses are injected and their amplitudes and\ncorresponding ToT values are measured to obtain a single calibration function per pixel (see Section 3.4). However, when a charged particle passes through the sensor,\nthe non-uniform in-pixel response, which leads to slower\ncharge collection and smaller amplitudes, also results in\nlarger ToT values in the right part of the pixel. This is\nshown in the in-pixel seed-pixel ToT map of",
+        "score": 0.08245985060037686,
+        "dense_score": 0.3592284321784973,
+        "bm25_score": 18.64501050488778,
+        "graph_score": 0.0,
+        "rerank_score": 0.11211691051721573,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 26,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 2348,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "ection, 4.7 mm in the\ny-direction, and 3.4 mm in the z-direction. These are pretty\ngood results since all spatial resolutions are better than the\nsmallest size of the spheres used (1.3 mm _≪_ 10 mm).\nNext up is the extension of the existing reconstruction\nalgorithm to clustering to ensure better cross-checking and\na straightforward extension to multiple sources. The most\nrecent and promising methods are introduced in the review\narticle by Windows-Yule et al. (2022). However, extension\nto multiple sources can also be achieved by extending the\nlikelihood fit, which was introduced and tested in Oppotsch\net al. (2024).\nAnother pending issue is the investigation of the influence\nof a [22] Na source on the reconstruction. This is necessary\nbecause such a source will be used in the upcoming measurements to generate the 511 keV gamma-ray pairs for\nthe reconstruction, but the simulations have so far been\nperformed with 511 keV gamma rays only. During the decay\nof the [22] Na source, gamma rays with an energy of 1275 keV\nare emitted as well. Hence, the influence of these additional\ngamma rays on the tracer particle reconstruction has to be\ninvestigated.\n\n**Declaration of competing interest**\n\nThe authors declare that they have no known competing\nfinancial interests or personal relationships that could have\nappeared to influence the work reported in this paper.\n\n**Acknowledgments**\n\nThis work has been funded by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – ProjectID 422037413 – TRR 287.\n\n**Appendix A.** **DEM simulations of the generic grate**\n\n**system**\n\nThe discrete element method (DEM) simulations were performed with an in-house code. The equations for translational\n\n_This is the accepted manuscript version of an article accepted for publication in Particuology. The final version is available online at_\n_https://doi.org/10.1016/j.partic.2023.09.003_ _Page 11 of 13_\n\n**Table 4**\n\nCollision parameters for DEM simulations.\n\nSphere on sphere Sphere on bar Sphere on wall\n\nCoefficient of restitution _𝑒_ _[𝑛]_ 0.926 0.870 0.838\nCoefficient of static friction _𝜇_ _𝑐_ 0.242 0.178 0.191\nCoefficient of rolling friction _𝜇_ _𝑟_\n\nSphere 10 mm 5.257 × 10 [−5] 4.180 × 10 [−5] 2.973 × 10 [−5]\n\nSphere 15 mm 4.702 × 10 [−5] 4.041 × 10 [−5] 2.874 × 10 [−5]\n\nSphere 20 mm 4.146 × 10 [−5] 3.901 × 10 [−5] 2.775 × 10 [−5]\n\nand rotational motion are given by\n\n_𝑑_ [2] _⃗𝑥_ _𝑖_\n_𝑚_ _𝑖_ _𝑑𝑡_ [2] [=]\n\n_𝑁_\n∑ _⃗𝐹_ _𝑖𝑗_ + _𝑚_ _𝑖_ _⃗𝑔_ (4)\n\n_𝑗_ =1\n\n_𝑁_\n∑\n\n_𝑗_ =1\n\nΘ _𝑖_",
+        "score": -0.8099861800670624,
+        "dense_score": null,
+        "bm25_score": 13.513685012364684,
+        "graph_score": 0.0,
+        "rerank_score": -1.254546046257019,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 19,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 4726,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2771003__2403.14577__Application_of_the_VMM_ASIC_for_SiPM-based_calorimetry.md",
+        "title": "2024__recid_2771003__2403.14577__Application_of_the_VMM_ASIC_for_SiPM-based_calorimetry",
+        "text": "G data, and use that for our reconstruction,\n\neffectively increasing the dynamic range. The effect of such a calibration can be seen in Figure 8\nwhere the distribution of ( _𝑄_ [HG] event [) is compared to the distribution of] _[ 𝑄]_ event [MIX] [for 200 GeV. Usage of]\n\nthe rescaled LG values instead of the saturated HG values induces a shift of the total reconstructed\n\n– 6 –\n\n40000\n\n35000\n\n30000\n\n25000\n\n20000\n\n15000\n\n10000\n\n5000\n\n0\n\n|ALICE FoCal-H Prototype 2<br>September 2023, CERN SPS H4|Slope 91.62 ± 0.09809<br>Constant −837.6 ± 9.014|\n|---|---|\n|||\n|||\n|||\n|||\n|||\n|||\n|||\n\n0 50 100 150 200 250 300 350 400\nBeam Energy [GeV]\n\n**Figure 7** . Top panel: Dependence of the mean values of _𝑄_ [HG] as a function of the hadron beam energy.\nBottom panel: Ratio between the mean values of _𝑄_ [HG] and the values predicted by the fit as a function of the\nhadron beam energy. SiPM bias voltage set to 55.4 V.\n\ncharge by about 4.7%. The relative resolution _𝜎_ ( _𝑄_ )/ _𝑄_ increases from 14.8% for _𝑄_ [HG] event [to 16.6%]\nfor _𝑄_ [MIX] event [.]\nThe dependence of the mean of _𝑄_ [MIX] event [as a function of the beam energy is presented on Figure][ 9]\n(top). Again, a linear fit is performed for the energy range 60 GeV to 150 GeV, and the function is\nextrapolated to 350 GeV. In the ratios between the reconstructed _𝑄_ [MIX] event [and the fit prediction shown]\non Figure 9 (bottom) the departure from linearity reaches 2% at the 300 GeV data point compared\n\nto 250 GeV when only using HG. A loss of linearity is still observed even though the LG channels\n\ndo not saturate. This could be due to transversal and longitudinal shower leakage due to the finite\n\ndimensions of the FoCal-H prototype and to saturation before the digitization stage at the VMM.\n\nWhile not being the main focus of the presented study, the dependence of the relative energy\nresolution ( _𝜎_ ( _𝑄_ [MIX] event [)/] _[𝑄]_ [MIX] event [) is presented in Figure][ 10][ as a function of the beam energy.]\nThe energy dependence of the resolution is approximated using\n\n_𝜎_ ( _𝑄_ )\n\n⊕ _[𝐵]_\n_𝐸_ _𝐸_\n\n(3.5)\n_𝐸_ [⊕] _[𝐶]_\n\n( _𝑄_ ) _𝐴_\n\n=\n_𝑄_ ~~√~~\n\nwhere _𝐴_ is the term describing stochastic effects, _𝐵_ is the noise term relating to the readout\n\n– 7 –\n\n2000\n\n1800\n\n1600\n\n1400\n\n1200\n\n1000\n\n800\n\n600\n\n400\n\n200\n\n0\n\n|ALICE F|oCal-H Prot|otype 2|Col4|200 GeV Had<br>HG|rons, 55.4V Si<br>channels only|PM Bias|\n|---|---|---|---|---|---|---|\n|Septemb|er 2023, CE|RN SPS H4||HG|+ LG channels||\n||||||||\n||||||||\n||||||||\n||||||||\n|",
+        "score": -1.154980578687456,
+        "dense_score": 0.4495728313922882,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -1.78544020652771,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 6,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 8323,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "factor of (35 _._ 4 _±_ 1 _._ 1) electrons per THL DAC. This\nvalue corresponds to 111 mV _/_ ke _[−]_ [2], and agrees with the\nanalog front-end simulations presented in 2.4. The gain is\nthe inverse of the calibration factor, and it is shown in Figure 17 for different bias voltages of the sensor and feedback\ncurrents. The _low ikrum_ setting corresponds to 1 _._ 65 nA,\nwhile the _high ikrum_ setting corresponds to 3 _._ 75 nA. Additionally, no significant differences are observed between\nsamples with different thicknesses.\nA second peak is visible at lower amplitudes of approximately 126 DACs in Figure 15. This effect, which is related to loss of signal height due to ballistic deficit [24], as\n\n2 The conversion from voltage to DAC units is obtained by measuring the voltage using the ADCs on the CaR board while scanning\nthe DACs. A conversion factor of (3 _._ 928 _±_ 0 _._ 001) mV _/_ THL DAC is\ndetermined for the `dac` ~~`v`~~ `thr` setting.\n\nFigure 19: Uncalibrated (left axis) and calibrated (right axis) test\npulse amplitudes of the full matrix. The mean amplitude is shown\nin red.\n\nexplained in Section 5.1, results in two signal amplitudes\nfor the K α 1 peak, depending on the position of the X-ray\nenergy deposition within the pixel cell. Since the ballistic\ndeficit does not strongly affect the position of the right\npeak, this is utilized for calibration. If spatial information\nis available, the calibration procedure could be improved\nby applying different calibration factors to different parts\nof the pixel cell.\n\n_3.4. ToT Calibration_\n\nThe results of the threshold calibration can now be used\n\nto calibrate the ToT response of each pixel individually.\nTo achieve this, test pulses are injected into the analog\nfront-end and the corresponding response is characterised\nin terms of the amplitude (in threshold units) and ToT.\nSimilar to the procedure described in Section 3.3, the\nthreshold is scanned in counting mode while injecting test\npulses of a given positive amplitude above baseline. A\npixel registers one count (i.e., a threshold crossing) per\ninjected test pulse if the threshold lies between the baseline\nlevel and the pulse amplitude. If the threshold is lower\nthan the baseline or higher than the pulse amplitude, the\npulse is not detected (no threshold crossing), and no count\nis added. When the threshold is close to the baseline level,\nnoise (or other perturbations such as undershoot in the\nreturn to baseline) can cause a higher number of threshold\ncrossi",
+        "score": -2.0144292202362646,
+        "dense_score": null,
+        "bm25_score": 13.348326454666402,
+        "graph_score": 0.0,
+        "rerank_score": -3.1074059009552,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 15,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 2347,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "uring\nthe position dependency of the reconstruction, it was found\nthat the efficiency is nearly constant throughout the detector\nsystem (due to the small size of the generic grate system), so\nboundary effects can be neglected.\nTo investigate the spatial resolution of a source moving\nat maximum velocity within the GGS, a model curve was\ndeveloped. On this curve, the tracer sphere performed a\ncircular motion (radius 10 cm) with a velocity of 17 cm/s\nin the x- and y-direction and a linear motion (between -6\nand 2 cm) with a velocity of 7 cm/s in the z-direction. The\nreconstruction was executed with two different buffer sizes:\nA smaller buffer of 6,000 events for each averaging, where\nevery new averaging was done after 3,000 newly collected\nevents, and a larger buffer size (36,000 events per buffer\nand a re-averaging every 18,000 new events) chosen to meet\nthe DEM path conditions. For these two cases, it became\nclear that the buffer size should not be too large for higher\nvelocities. Otherwise, the gaps between the individual data\npoints become relatively large. In addition, the fast motion\nof the sphere during data acquisition results in a small time\nshift for each buffer (visible by a small but uniform offset\nof the reconstructed tracer sphere positions to the simulated\npositions in the projections onto the three axes). However,\neven if a relatively good spatial resolution has been achieved,\nit is not very meaningful due to the paucity of statistics.\nWith the smaller buffer, these phenomena did not occur, so\n\na good resolution of 2.1 mm in x, 2.2 mm in y, and 3.0 mm\nin z could be achieved. The three-dimensional deviation was\n\n(4.0 ± 1.6) mm on average.\nFinally, a path taken from a DEM simulation was examined as a trajectory for the source. Here, an excellent spatial\nresolution of 1.1 mm in x, 1.0 mm in y, and 1.3 mm in z,\nwith a three-dimensional deviation of (2.3 ± 0.9) mm was\nobtained. Thus, there is an improvement of about 0.2 mm\ncompared to the previous studies within the empty detector\n(representing the best results possible since the gamma rays\nare not scattered or absorbed). With respect to the previous\nstudies within the generic grate system, the spatial resolution\ncould be improved by 4.8 mm in the x-direction, 4.7 mm in the\ny-direction, and 3.4 mm in the z-direction. These are pretty\ngood results since all spatial resolutions are better than the\nsmallest size of the spheres used (1.3 mm _≪_ 10 mm).\nNext up is the extension of the existing reconstru",
+        "score": -2.2489428251281924,
+        "dense_score": 0.4348703622817993,
+        "bm25_score": 9.6525740013455,
+        "graph_score": 0.0,
+        "rerank_score": -3.4738640785217285,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 18,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 2345,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p.md",
+        "title": "2024__recid_2673399__2306.17416__A_simulation_study_on_spatial_and_time_resolution_for_a_cost-effective_positron_emission_p",
+        "text": "compared to 4.0 mm with more reconstructed\nevents/smaller buffer size). Therefore, attention should always\nbe paid to ensure an appropriate adaptation of the reconstruction to the scenario being reconstructed.\n\n_3.5. Comparison with data from previous paper_\n\nThis section is intended to provide a comparison to the\ndata obtained in the previous work (Oppotsch et al. (2024)),\nin which the reconstruction algorithm was tested in three\ndifferent geometries with a resting tracer sphere. This resulted\nin a spatial resolution of about 1.2 - 1.5 mm for the detector\nonly filled with air, a spatial resolution of a resting source\nplaced inside the generic grate system of about 4.7 - 5.9 mm,\nand a spatial resolution of the detector system completely\nfilled with particles of about 9.7 - 12.7 mm.\nAfter scaling down the detector, as well as adjusting\nand improving the reconstruction algorithm, it was possible\nto determine a stationary source within the GGS with a\nspatial resolution of 0.6 mm in the x- and y-directions and\n1.1 mm in the z-direction. Thus, the resolution was improved\nby about 5.2 mm in the x- and y-directions and 3.6 mm in\nthe z-direction. Even compared to the results obtained with\nthe detector system under ideal conditions (filled with air\nonly so that no scattering or absorption occurs), there is an\nimprovement in spatial resolution of about 0.6 mm in the\nx- and y-directions and an improvement of 0.4 mm in the\nz-direction.\n\nConsidering the case of a moving source (whether on the\nmodel curve or the DEM path), once more, a significantly\nbetter resolution within the GGS than before the abovementioned adjustments is seen. Looking specifically at the\nparticle motion resulting from a DEM simulation, the spatial\nresolution again exceeds the results obtained for the empty\n\n**Table 2**\n\nOverview of all spatial resolutions.\n\nScenario Spatial resolution (mm)\n\nStationary source Δx = 0.559\nΔy = 0.566\nΔz = 1.145\n\nModel path (buffer size = 6,000) Δx = 2.128\nΔy = 2.232\nΔz = 3.036\n\nDEM path Δx = 1.095\nΔy = 0.995\nΔz = 1.304\n\nModel path (buffer size = 36,000) Δx = 4.215\nΔy = 4.035\nΔz = 3.256\n\ndetector system (improvement of about 0.2 mm) and is thus\nbetter than the previous resolution in the GGS by about\n4.8 mm, 4.7 mm, and 3.4 mm, respectively.\nAll spatial resolutions and three-dimensional deviations\ndetermined in this work can also be looked up in Table 2 and\nTable 3.\n\n**4. Conclusion and outlook**\n\nThis work is the second part of a simulation study investigating the per",
+        "score": -2.4747212590495207,
+        "dense_score": 0.4261329770088196,
+        "bm25_score": 11.111464403730709,
+        "graph_score": 0.0,
+        "rerank_score": -3.822085380554199,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 16,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 8325,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor.md",
+        "title": "2026__recid_3075397__2510.26741__Characterization_of_the_H2M_monolithic_CMOS_sensor",
+        "text": "m the expected MIP value,\nthe measured ToT values vary between pixels, and the\nmaximum mean value is reached at 1 µs, coinciding with\n\nFigure 23: Amplitude spectrum of the [55] Fe source after calibration.\n\nthe acquisition frame duration. This large threshold of\n600 electrons is chosen in this measurement for consistency\nwith the ToT spectrum of the [55] Fe source measurements\npresented below.\nNext, the ToT and amplitude measurements can be\ncombined. Figure 20 shows the ToT as a function of the\ntest pulse amplitude in electrons for a single pixel. A surrogate function\n\nC\nToT = Ax + B + (2)\nx _−_ D\n\nis used to fit each pixels data, where x is the test pulse\namplitude, A modulates the linear component at higher\namplitudes, B adjusts the ToT offset, C represents the\ncurvature part at low amplitudes, and D indicates the offset in amplitude [25]. The inverse of the surrogate function\nallows the conversion of measured ToT in clock cycles to\nsignal amplitude in electrons.\nTo verify the calibration procedure, a ToT spectrum of\n55 Fe is recorded in ToT mode, as shown in Figure 22. The\n\n10\n\nthreshold of approximately 600 electrons is the same as\nused during the calibration. This spectrum is then converted into electrons, as shown in Figure 23, after applying the threshold and ToT calibration. The peak is described by a Gaussian with µ = 1640 _±_ 40 electrons corresponding to the resolved K α 1 amplitude with an accuracy\nsmaller than 5 %. The dominant systematic uncertainty\narises from the threshold calibration uncertainty.\nThe ToT calibration is applied to the test beam reconstructed data acquired in ToT mode down to a threshold\nof 300 electrons. For lower thresholds, the surrogate function fits (Equation (2)) do not converge —particularly the\nparameter C, which models the curvature at low thresholds.\n\n**4. Methodology for Test Beam Measurements**\n\nThis section describes the experimental setup and analysis procedure for the test beam measurements, where the\nH2M performance in MIP detection is studied.\n\n_4.1. Experimental Setup_\n\nThe data have been recorded at the DESY II [26] and\nCERN SPS [27] Test Beam Facilities employing the ADENIUM [28] and CLICdp Timepix3 [29] beam telescopes, respectively. Each beam telescope comprises three upstream\nand three downstream reference planes, with the device\nunder test (DUT) in between. These planes are arranged\nand oriented to optimise the pointing spatial resolution of\nthe beam telescope at the DUT position. With the used\nconfig",
+        "score": -2.5475886052654633,
+        "dense_score": null,
+        "bm25_score": 16.032124161105788,
+        "graph_score": 0.0,
+        "rerank_score": -3.9280519485473633,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 17,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4207,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS.md",
+        "title": "2024__recid_2755068__2402.01517__First_test_beam_measurement_of_the_4D_resolution_of_an_RSD_pixel_matrix_connected_to_a_FAS",
+        "text": "linearly on the noise-to-signal ratio. For values of A pixel / _σ_ added noise\n\n21\n\nFigure 14: Fit to the RSD resolution (ST [ampl] ). The constant term dominates the resolution.\n\nThe points are obtained using the ST [ampl] method.\n\nabove _∼_ 50, the measured spatial resolution is reached.\n\nThe effects of incorrectly calibrating an amplifier are shown in Figure 17\n\nfor the run taken at Bias = 130 V. The result is obtained by calculating the\n\nhit position resolution and offset while increasing up to 40% the gain of one\n\nof the four amplifiers. The result shows that the position resolution increases\n\nby about 20%, and the difference between the mean RSD hit position and the\n\ntracker position goes from 0 to 12 _µ_ m for a 40% amplifier gain miscalibration.\n\nThese two systematic studies demonstrate that the RSD spatial resolution\n\nremains very good even if the readout is much noisier than FAST2, an important\n\nconsideration in view of using RSDs in much larger systems.\n\n22\n\nFigure 15: Left: the difference x trk - x RSD in the x trk -y trk plane for the 7 pixels used at\n\nthe test beam. Right: the same plot for the y coordinate. The points below two standard\n\ndeviations are shown in blue, while those above two standard deviations are shown in red.\n\nThe plots are obtained using the ST [ampl] method\n\n23\n\nFigure 16: Degradation of the spatial resolution as a function of added noise. Top: spatial\n\nresolution plotted versus the sigma of the added Gaussian noise. Bottom: the same data\n\nplotted versus the signal-to-added-noise ratio.\n\n24\n\nFigure 17: Position resolution and offset as a function of the % of one amplifier gain miscali\n\nbration. The study is performed using the run with Bias = 130 V.\n\n25\n\n_9.3. Temporal resolution_\n\nGiven the difficulties in computing the inverse of the covariance matrix, the\n\nhit time t [rec] hit [has been calculated using Eq. 10. The RSD temporal resolution]\n\n_σ_ hit [rec] [is calculated by subtracting in quadrature from the RMS of the distribution]\n\nt trigger – t [rec] hit [the resolution of the trigger,] _[ σ]_ [trigger] [ = 12 ps. Since the EVO1]\n\nand EVO2 channels of FAST2 have a different signal-to-noise ratio, the results\n\nare based only on events collected by the three pixels fully read out by EVO1\n\nchannels (see Figure 3 for details). The results are reported in Figure 18 as\n\na function of ~~��~~ 4i [A] [2] i [. The best resolution obtained in this study is] _[ σ]_ hit [rec] [=]\n\n60.6 ps, about 20 ps higher than the intrinsic RSD",
+        "score": -3.5117994019479464,
+        "dense_score": 0.4344979524612427,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.410926818847656,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 14,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 3585,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca.md",
+        "title": "2024__recid_2722124__2311.07413__Performance_of_the_electromagnetic_and_hadronic_prototype_segments_of_the_ALICE_Forward_Ca",
+        "text": "tively, 300 and 400 units. These settings results in a gap of 100 fCbetween the\n\n– 52 –\n\n**Figure 37** . Top: Response of the ADC, ToA, and ToT as a function of the injected charge for a single channel\nof ASIC 7. The calibration is operated over the full high-range injection range spanning from 0–8.0 pC.\nBottom: The response for the low-range injection region going from 0–0.5 pC. The TOT response is fitted in\nthe range from 2 to 8 pC in the high-range injection mode (top), and the ADC amplitude from 0 pC to 200 fC\nin the low-range injection mode (bottom).\n\ndynamic range of the ADC and the turn-on region of the ToT. However, it significantly reduced the\n\nnoise of ToT and ToA, leading to an overall more stable detector operation.\n\nWhile the chip’s performance shows a good linearity (about ± 0.1% of the full dynamic range)\n\nin the tests performed by the development team [16], a design error in the grounding routing of the\n\nASIC produces an irreducible voltage offset, Δ _𝑈_ 0 = 30 mV, in the charge injection schematic. This\neffectively limits the minimum injection to about Δ _𝑄_ [LG] min [=][ 0] _[.]_ [5 pF][ ×][ 30 mV][ =][ 15 fC. Similarly,]\nthis contribution results in an offset of Δ _𝑄_ [HG] max [=][ 8] _[.]_ [0 pF][ ×][ 30 mV][ =][ 240 fC in the high-range]\nregime. This effect is shown in Fig. 38, where the ToT is reported as a function of the injected\n\ncharge. For our detector, we determine Δ _𝑈_ 0 from data by evaluating per channel the discrepancy\n\nin the turn-on position of the ToT between low-range and high-range injection. A simple computer\n\nprogram was written which coarsely finds the position (expressed in units of charge according to\n\nEq. A.1) where the first ToT values _>_ 0 are measured, as depicted in Fig. 38 (left). The distribution\n\n– 53 –\n\n**Figure 38** . Left: ToT response as a function of the injected charge for high-range and low-range injection\nregimes. Right: the difference, Δ _𝑄_ [HG][−][LG], of the ToT turn-on position between high-range and low-range\ninj\ninjection, fitted with a Gaussian curve in order to extract the mean.\n\nof evaluated offsets between the two ranges is shown in Fig. 38 (right). We evaluate an offset of\nΔ _𝑄_ [HG][−][LG] = 150 fC from a Gaussian fit to the main peak.\ninj\n\nΔ _𝑄_ [HG] inj [−][LG] 150 fC\nΔ _𝑈_ 0 = = (A.2)\n_𝐶_ inj _,_ high − _𝐶_ inj _,_ low 8 _._ 0 pF − 0 _._ 5 pF [=][ 20 mV] _[,]_\n\nwhich is in reasonable agreement with the expectation of 30 mV. The channel-wise calibration\nparameters are obtained from",
+        "score": -3.525124293879459,
+        "dense_score": null,
+        "bm25_score": 11.627387577492572,
+        "graph_score": 0.0,
+        "rerank_score": -5.430353164672852,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 64,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 7125,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2897994__2503.05450__Quantitative_determination_of_spatial_resolution_and_linearity_of_position-sensitive_LG-Si.md",
+        "title": "2025__recid_2897994__2503.05450__Quantitative_determination_of_spatial_resolution_and_linearity_of_position-sensitive_LG-Si",
+        "text": "## Quantitative Determination of Spatial Resolution and Linearity of Position-Sensitive LG-SiPMs at Sub-Millimeter Scale via Ricean Distribution Fitting\n\nAramis Raiola [a,] _[∗]_, Fabio Acerbi [d], Cyril Alispach [a], Hossein Arabi [b,c],\nDomenico della Volpe [a], Alberto Gola [d], Habib Zaidi [b,c]\n\n_a_ _D´epartment de Physique Nucl´eaire et Corpusculaire (DPNC), Universit´e de_\n_Gen`eve, quai Ernest-Ansermet 24 1211, Gen`eve 4, Switzerland_\n_b_ _D´epartement de Radiologie et Informatique M´edicale, Universit´e de Gen`eve, rue_\n_Gabrielle-Perret-Gentil 4 1211, Gen`eve 14, Switzerland_\n_c_ _Service de M´edecine Nucl´eaire et Imagerie Mol´eculaire, Hˆopitaux Universitaires Gen`eve_\n_(HUG), rue Gabrielle Perret-Gentil 4 1205, Gen`eve, Switzerland_\n_d_ _Center for Sensor and Devices (SD), Fondazione Bruno Kessler (FBK), Via Santa_\n_Croce 77 38122, Trento, Italy_\n\n**Abstract**\n\nPosition-sensitive SiPMs are useful in all light detection applications requiring a small number of readout channels while preserving the information\nabout the incoming light’s interaction position. Focusing on a 2x2 array of\nLG-SiPMs covering an area of _∼_ 15 _._ 5 _×_ 15 _._ 5 mm with just 6 readout channels, we proposed a quantitative method to evaluate image reconstruction\nperformance. The method is based on a statistical approach to assess the\ndevice’s precision (spatial resolution) and accuracy (linearity) in reconstructing the light spot center of gravity. This evaluation is achieved through a\nRice probability distribution function fitting. We obtained an average sensor\nspatial resolution’s best value of 81 _±_ 3 _µ_ m (standard deviation), which is\nachieved by reconstructing each position with the amplitude of the channels’\noutput signals. The corresponding accuracy is of 231 _±_ 4 _µ_ m.\n\n_Keywords:_ Light sensors, Silicon Photomultipliers, Position sensitive\ndetectors, Nuclear medicine, High Energy Physics, Spatial resolution,\nLinearity correction\n\n_∗_ Corresponding author\n_Email address:_ `aramis.raiola@unige.ch` (Aramis Raiola)\n\n_Preprint submitted to NIM-A_ _March 10, 2025_\n\n**1. Introduction**\n\nThe demand for sub-millimeter precision position-sensitive (PS) light sensors is a hot topic in various fields of modern experimental physics as well\nas for several industrial and/or medical applications [1, 2, 3, 4, 5, 6, 7, 8, 9].\nGiven an incoming light beam, PS light detectors are devices designed to\ndetermine the light spot’s center of gravity (CoG) position on the sensor’s\nsu",
+        "score": -3.6052346603194283,
+        "dense_score": 0.4338872730731964,
+        "bm25_score": null,
+        "graph_score": 0.0,
+        "rerank_score": -5.554551601409912,
+        "matched_nodes": [],
+        "path_nodes": [],
+        "community_id": null,
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {},
+    "expanded_nodes": {},
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "hybrid_no_graph",
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.354498255997896,
+    "generation_latency_s": 3.5995617508888245e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 0.0,
+    "path_hit_fraction": 0.0,
+    "unique_sources": 6.0,
+    "seed_node_count": 0.0,
+    "expanded_node_count": 0.0,
+    "retrieval_latency_s": 5.354498255997896,
+    "generation_latency_s": 3.5995617508888245e-07
+  }
+}

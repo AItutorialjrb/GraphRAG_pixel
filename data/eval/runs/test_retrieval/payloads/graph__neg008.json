@@ -1,0 +1,396 @@
+{
+  "benchmark": {
+    "query_id": "neg008",
+    "query_type": "negative",
+    "query": "Which unpublished collaboration result is hidden in the corpus?",
+    "answer": "The system should abstain unless the indexed detector corpus contains direct evidence for this claim.",
+    "claims": [],
+    "gold_sources": [],
+    "gold_chunk_ids": [],
+    "gold_entities": [
+      "Which",
+      "unpublished",
+      "collaboration",
+      "result"
+    ],
+    "should_abstain": true
+  },
+  "payload": {
+    "query": "Which unpublished collaboration result is hidden in the corpus?",
+    "mode": "graph_rag",
+    "answer": "",
+    "abstained": false,
+    "confidence": "high",
+    "retrieved": [
+      {
+        "rank": 1,
+        "chunk_id": 4038,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2750102__2401.11036__Heavy_Flavor_Physics_at_the_sPHENIX_Experiment.md",
+        "title": "2024__recid_2750102__2401.11036__Heavy_Flavor_Physics_at_the_sPHENIX_Experiment",
+        "text": "## **Heavy Flavor Physics at the sPHENIX** **Experiment**\n\nZhaozhong Shi [1], on behalf of the sPHENIX Collaboration\n\n1 Physics Division, Los Alamos National Laboratory, Los Alamos, NM, 87545 USA\n\nzhaozhongshi@lanl.gov\n\nJanuary 23, 2024\n\n**Abstract**\n\nThe sPHENIX experiment is a state-of-the-art jet and heavy flavor physics de\n\ntector which successfully recorded its first Au + Au collision data at 200 GeV at\n\nRHIC. sPHENIX will provide heavy flavor physics measurements covering an unex\n\nplored kinematic region and unprecedented precision at RHIC to probe the parton\n\nenergy loss mechanism, parton transport coefficients in quark-gluon plasma, and the\n\nhadronization process under various medium conditions. At the center of sPHENIX,\n\nthe Monolithic-Active-Pixel-Sensor (MAPS) based VerTeX detector (MVTX) is a\n\nhigh-precision silicon pixel detector. The MVTX provides excellent position resolu\n\ntion and the capability of operating in continuous streaming readout mode, allowing\n\nprecise vertex determination and recording a large data sample, both of which are par\n\nticularly crucial for heavy flavor physics measurements. In this work, we will show the\n\ngeneral performance of heavy-flavor hadron reconstruction. In addition, we will discuss\n\nthe commissioning experience with sPHENIX. Finally, we will provide the projection\n\nof b-hadron and jet observables and discuss the estimated constraints on theoretical\n\nmodels.\n\n1\n\n### **1 Introduction**\n\nThe sPHENIX experiment [1] is the first new experiment at RHIC in over 20 years.\n\nAccording to the 2015 [2] and 2023 [3] United States Nuclear Science Advisory Committee\n\n(NSAC) Long Range Plan for Nuclear Science, the sPHENIX is considered as a Depart\n\nment of Energy flagship experiment in heavy-ion physics. The physics goal of sPHENIX\n\nis to probe the inner workings of quark-gluon plasma (QGP) by resolving its properties\n\nat shorter and shorter length scales and is complementary with experiments at the LHC.\n\nsPHENIX is a state-of-the-art heavy flavor and jet detector at RHIC. It has a 2 _π_\n\nangular acceptance over the rapidity range of _|y| <_ 1. It consists of tracking and calorimeter\n\nsystems with excellent capabilities for studying the strongly interacting QCD matter at\n\nRHIC. In addition, sPHENIX is equipped with a minimum bias detector (MBD) and zero\n\ndegree calorimeter (ZDC) in the far forward region and a trigger system for global event\n\ncharacterization. A schematic drawing of the sPHENIX detector is shown in Figure",
+        "score": -6.183428402509846,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7704918032786885,
+        "rerank_score": -9.604240417480469,
+        "matched_nodes": [
+          "The",
+          "In",
+          "Collaboration",
+          "At",
+          "LHC",
+          "Physics"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 0,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 2,
+        "chunk_id": 5128,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L.md",
+        "title": "2024__recid_2789925__2405.15060__A_Lightweight_Algorithm_to_Model_Radiation_Damage_Effects_in_Monte_Carlo_Events_for_High-L",
+        "text": "rs)\n\n_Sensors_ **2024**, _1_, 0 2 of 19\n\nThe effects of radiation damage are already measurable at the fluences of LHC Run 2\nand Run 3. For instance, the charge collection efficiency (CCE) of the innermost ATLAS\nPixel layer has now reduced to approximately _∼_ 70% at a fluence of about 1 _×_ 10 [15] n eq cm _[−]_ [2]\n\n[10].\nThe ATLAS, CMS, and LHCb collaborations have developed algorithms to incorporate\nradiation damage effects into their Monte Carlo (MC)-simulated events [ 11 ]. Thanks to these\nalgorithms, it is possible to track the evolution of pixel detector performance as radiation\ndamage accumulates. Despite the different approaches adopted by the three collaborations,\nthe level of agreement between data and Monte Carlo (MC) simulations is remarkable,\nachieving agreement at the _O_ ( % ) level [ 10 ]. These algorithms enable the prediction of\noperational parameters such as depletion voltage and make possible the generation of\nsamples for future detector conditions; these are essential for training reconstruction\nalgorithms.\nDespite the importance and success of these algorithms, some may not be viable for\nthe HL-LHC phase due to computing resource constraints. This is particularly true for the\nATLAS Pixel detectors. Therefore, there is a pressing need for faster yet equally precise\nalgorithms to meet the demands of the HL-LHC data-taking conditions.\nIn this paper, a new lightweight algorithm is presented which is able to address the\nchallenges posed by the HL-LHC on computing resources for the inclusion of radiation\ndamage effects in MC simulated events. The paper is organized as follows.\nIn Section 2, the ATLAS algorithm for simulating radiation damage effects to silicon\npixel sensors is presented along with some key results. Section 3 introduces the new\nalgorithm, which relies on Look-Up Tables (LUTs). This section also discusses the various\ntypes of simulations—TCAD (Technology–Computer-Aided Design) and Geant4 [ 12 – 14 ]\nbased—that serve as inputs to the new algorithm.\nIn order to validate the new algorithm, a series of closure tests were conducted,\ncomparing events simulated using the LUTs algorithm to fully simulated events. The\nresults of these closures tests are reported in Section 4. Finally, the paper concludes (Section\n5) with a discussion on the results and an outlook for the project.\n\n**2. The ATLAS IBL and Pixel Radiation Damage Digitizer**\n\nThe ATLAS Collaboration developed and implemented an algorithm to include the\neffects of radiat",
+        "score": -6.595183618139048,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7213114754098361,
+        "rerank_score": -10.231884002685547,
+        "matched_nodes": [
+          "The",
+          "In",
+          "Collaboration",
+          "For",
+          "LHC",
+          "CMS"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 3,
+        "chunk_id": 18,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2023__recid_2630139__2302.03646__Studies_of_time_resolution_light_yield_and_crosstalk_using_SiPM-on-tile_calorimetry_for_th.md",
+        "title": "2023__recid_2630139__2302.03646__Studies_of_time_resolution_light_yield_and_crosstalk_using_SiPM-on-tile_calorimetry_for_th",
+        "text": "nown as a “SiPM-on-tile” approach [1, 2], have been proposed for a number of\n\nexperiments in various facilities [3–11] to enable the particle-flow paradigm [12, 13]; notably, a\n\nlarge-scale use is being deployed for an upgrade for CMS at the LHC [14]. A large number of\n\nbeam-test studies of this technology have been performed by the CALICE Collaboration [13].\n\nThe SiPM-on-tile approach provides flexibility in calorimeter design; for example, the shape\n\nand size of cells can be straightforwardly tuned, varying with position in the detector for specific\n\nneeds based on factors such as cost, noise, or radiation tolerance. It also requires a less arduous and\n\ncomplex assembly procedure compared to traditional designs based on waveshifting fibers.\n\nWe recently proposed to use the SiPM-on-tile approach for a design of a calorimeter insert for\n\nthe ePIC detector at the future Electron-Ion Collider (EIC) [15], which would cover 3 _< 𝜂<_ 4\n\nand maximize acceptance near the beampipe. Each layer in the calorimeter is slightly different\n\nto accommodate a beampipe with a 25 mrad crossing angle. As such, the natural choice for the\n\nshape of most cells is hexagons, which can help tessellate complicated areas effectively. Moreover,\n\nthe design is enabled by the fact that the EIC generates relatively minor radiation fluence—not\nexceeding 10 [12] neutrons/cm [2] per year at design luminosity (10 [34] cm [−][2] s [−][1] ) [16]. The modest\n\namount of radiation damage to SiPMs could be mitigated with annealing after each run [15, 17].\n\n– 1 –\n\nThe design for the calorimeter insert is driven by the need to maintain a sufficient signal-to-noise\n\nratio at EIC radiation fluences without active cooling, large light yield to keep the possibility of cell\nby-cell calibration with minimum-ionizing particles, as well as the need to maximize acceptance in\n\nthe complicated volume near the EIC beampipe. The area of the calorimeter insert is only about\n60×60 cm [2], so constraints related to construction at scale and cost are not as stringent.\n\nIn this work, we seek to define the parameters of the building blocks suitable for the EIC\n\napplication, specifically the light yield, time resolution, and optical crosstalk. We performed\n\nstudies using UV LEDs, cosmic rays, and a radioactive source (Sr-90). We also determined the\n\nlevel of optical crosstalk between cells using the traditional megatile approach and a novel strategy\n\nbased on a 3D-printed frame.\n\n**2** **The high-granularity calorimete",
+        "score": -6.83647142178895,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7213114754098361,
+        "rerank_score": -10.603096008300781,
+        "matched_nodes": [
+          "The",
+          "In",
+          "Collaboration",
+          "We",
+          "LHC",
+          "CMS"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 4,
+        "chunk_id": 6022,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning.md",
+        "title": "2025__recid_2767720__2403.07053__Dark_matter-induced_electron_excitations_in_silicon_and_germanium_with_deep_learning",
+        "text": "lies on the direct detection technique [5, 6]. These\nexperiments seek to observe rare interactions between\nDM particles from the Milky Way and detector materials placed deep underground in low-background envi\nronments.\nTraditionally, direct detection experiments have primarily focused on searching for nuclear recoil events induced by Weakly Interacting Massive Particles (WIMPs)\nscattering off target nuclei in crystals or liquid noble\ngases [7]. As a result, these experiments have mainly\nbeen sensitive to DM masses in the GeV – TeV range, as\nlighter particles would be unable to generate observable\nnuclear recoils.\n\n_∗_ [catena@chalmers.se](mailto:catena@chalmers.se)\n\n_†_ [urdshals@chalmers.se](mailto:urdshals@chalmers.se)\n\nWith the absence of direct evidence for WIMPs, efforts have been put in towards alternative experimental\napproaches better suited to probe DM particles with subGeV masses [8]. In this context, a crucial role is played\nby direct detection experiments designed to detect DMinduced electronic transitions or electron ejections in materials, offering a novel avenue for uncovering the nature\nof DM [9–20].\n\nTo interpret these experiments, a theoretical understanding of DM-electron interactions in detector materials is needed. In ref. [21–25], the interactions DM can\nhave with the electrons bound to silicon and germanium\ncrystals (as well as individual atoms and graphene targets) were classified and explored using a non-relativistic\neffective theory formalism. We implemented our formalism in QEdark-EFT [26], which interfaces with the planewave self-consistent field (PWscf) DFT code Quantum\nESPRESSO [27] and extends the QEdark code [28] to the\ncase of general DM-electron interactions. This allowed\nfor covering several DM models, although an extensive\nexploration was hindered by computational costs.\n\nThe deep neural network (DNN) developed in this paper is traned on the output of QEdark-EFT, and serves\nmainly two purposes. Firstly, it is easier to use and run\nthan QEdark-EFT. It takes less space on a hard drive\nand does not require computation of or access to material response functions. Secondly, it allows for evaluating a large number of DM-induced electronic transition\nrates cheaply on a laptop, and demonstrates the potential DNNs have for speeding up rate evaluations. Such a\nspeedup will be necessary to perform extensive parameter\nscans in the event of detection of a DM signal. For example, evaluating the rate of electron-hole pair creation\nin s",
+        "score": -6.976680845792177,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6721311475409837,
+        "rerank_score": -10.812976837158203,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "We",
+          "To",
+          "Quantum"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 5,
+        "chunk_id": 6922,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2.md",
+        "title": "2025__recid_2860341__2412.12125__Search_for_long-lived_charged_particles_using_the_CMS_detector_in_Run-2",
+        "text": "and SUSY particles. Some of these form negative, neutral, positive, or even double positive hadrons. The R-hadron’s\ninteractions with matter is described in the model in Ref. [12, 13]. If the\nHSCPs are colorless, one can think of several theories that would predict\nthem. For example a magnetic monopole [14], i.e. the magnetic equivalent\nof an isolated electric charge, would act as an HSCP. However, it would bend\ndifferently, and because of that we do not consider it in this work. Sleptons\nin GGM SUSY [15] are predicted to be long-lived. We consider both pair\nproduction and cascade production of staus from GMSB SUSY [16, 17] in\nthis work. Furthermore, 4th generation leptons ( _τ_ _[′]_ ) are considered too, both\n\n3\n\nwith singly and doubly charge. We consider both pair-production and a production through a boosted Z _[′]_ boson. This last model is especially interesting,\nas it was proposed as a solution an excess seen by ATLAS [18].\nATLAS reported a 3 sigma excess with SM compatible v/c ( _β_ ) [19]. The\nresolution of this by the phenomenologist was to produce the doubly charged\n_τ_ _[′]_ from the decay of a boosted Z _[′]_ particle. In this scenario the ionization will\nbe high while the _β_ can be high too.\nOne common aspect of all these models is that they have a distinctively\ndifferent characteristic ionization loss (dE/dx) from the SM particles. That\nis why this work presents a signature driven, model independent search with\nmany possible interpretations. The HSCP signature is an isolated track of\nhigh _p_ _T_ with large energy deposits in the tracker (large dE/dx).\nThis analysis is carried out using the CMS detector at the LHC. A detailed description of the CMS detector, together with a definition of relevant\nkinematic variables, can be found in Ref. [20]. All figures in this proceedings\nare part of the results submitted to JHEP with ArXiv ID of 2410.09164 [21],\nwith supplementary material under CMS-EXO-18-002, also available under\nHEPData [22].\n\n**2. Ionization observables**\n\nWe use four observables in this analysis. Eq. 1 shows a discriminator\nin the pixel detector, called _F_ i [Pixels], where _P_ _j_ _[′]_ [is a hit level minimum ioniz-]\ning particle (MIP) compatibility based on the Tracker Detector Performance\nGroup’s detailed calibrations, n is the number of pixel hits (excluding layer\n1).\n\n_n−_ 1\n�\n\n_k_ =0\n\n_−_\n\n[ ln( [�] _[n]_ _j_ =1 _[P]_ _[ ′]_ _j_ [)]] _[k]_ (1)\n\n_k_ !\n\n_F_ i [Pixels] = 1 _−_\n\n_n_\n\n_P_ _[′]_\n\n� _j_\n\n_j_ =1\n\nThe calibrations a",
+        "score": -7.005460234907807,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8360655737704918,
+        "rerank_score": -10.876672744750977,
+        "matched_nodes": [
+          "The",
+          "In",
+          "ID",
+          "For",
+          "We",
+          "LHC",
+          "CMS"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 2,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 6,
+        "chunk_id": 6163,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon.md",
+        "title": "2025__recid_2784765__2405.05351__Optical_single-shot_readout_of_spin_qubits_in_silicon",
+        "text": "For now, the observed decay entails a trade-off: At high\npower, the readout fidelity will be reduced by the moderate cyclicity. At low power, instead, the readout duration\nis increased, and therefore detector dark counts will start\nto play a role.\n\nWe find that the intermediate power used in the above\ncyclicity measurement, Fig. 5a, is a good compromise.\nThus, using the same data set we continue with the analysis of the readout fidelity _F_, which is given by the probability to correctly detect the intended spin state. As\nthis can differ for the two spin states, _F_ _↓_ = _̸_ _F_ _↑_, we use\nthe smaller value as a lower bound: _F ≡_ min( _F_ _↓_ _, F_ _↑_ ).\nTo study the dependence of _F_ on the pulse number\n_N_, we individually register all detected photons during each single-shot readout sequence. Thus, we can\ndetermine the value of _N_ that gives the best _F_ when\nadapting the photon threshold accordingly. The result\nis shown in the inset of Fig. 5b. Using _N_ = 71 readout\npulses and a threshold of one detected photon, we achieve\n_F_ = 86 _._ 9(8) %. For these conditions, the resulting histograms for both states are shown in Fig. 5b.\n\nWhile errors in both the initialization and the read\nout contribute to a reduction of _F_, based on the histograms — in particular the continuous shape of the\nbright state distribution (orange) at low photon numbers — we find that readout errors dominate. Similarly,\ndue to the short optical lifetime achieved in our experiment, detector dark counts ( _≈_ 10 Hz) only lead to a minor reduction of _≈_ 0 _._ 3 %. Instead, the extracted singleshot readout fidelity is limited by the high probability\nof zero-photon-detection events in the bright state, and\nspin-flips in the dark state — in other words by _ζ_ . Thus,\n_F_ is reduced for higher pulse powers as shown in Fig. 6\n(red crosses). In contrast, a lower excitation probability can lead to a slightly higher fidelity at the cost of a\nlonger readout duration. For technical reasons, the excitation pulses in the shown measurements are repeated\n\n5\n\n|Col1|Col2|Col3|Col4|Col5|\n|---|---|---|---|---|\n|||0<br>200<br>400<br>Readout pulses<br>0.5<br>~~1.0~~<br>Fidelity|||\n||||||\n||||||\n||||||\n||0|2<br>4<br>6<br>8<br>10<br>Detected photons per readout|2<br>4<br>6<br>8<br>10<br>Detected photons per readout||\n\nFIG. 5. **Spin cyclicity and single-shot readout. a,** The spin is probed on the spin-preserving transition (red arrow in\nthe level scheme in the inset), which is resonant with the cav",
+        "score": -7.010946424077769,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7213114754098361,
+        "rerank_score": -10.871519088745117,
+        "matched_nodes": [
+          "The",
+          "In",
+          "At",
+          "For",
+          "We",
+          "To"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 7,
+        "chunk_id": 4954,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "wer to\nthe problem under study. For this purpose, we built three SiPMbased 7-pixel modules with sensors from three different manufacturers. To achieve a similar active area as for the PMTs in\n\nthe imaging camera, we developed an analog electronic circuit\nthat actively sums the outputs of seven/nine SiPM chips into\na composite pixel, thereby virtually preserving the fast signal\ntiming of a single chip. We calculated the SNR for SiPM and\nPMT pixels using simulated LoNS and Cherenkov light spectra and showed that a similar performance can be achieved at\nmost zenith distances with both types of sensors. At low zenith\ndistances, the PMTs have a slightly higher SNR. At medium\nto very large zenith distances, our SiPM-based pixels show a\ncomparable SNR to the MAGIC PMTs. The newer PMTs used\nin the LSTs consistently achieve a higher SNR, while matching\nour second generation of SiPM-based pixels within uncertainties at ZD> 50 [◦] . It is worth noting that even in the hypothetical\nabsence of the effect of cross-talk, PMTs and SiPMs demonstrate very similar SNRs across all zenith distances, except for\nmarginally higher SNR of SiPMs in the range between ∼ 45 [◦]\n\nand ∼ 65 [◦] . We performed measurements to validate the simulations by using Cherenkov light from cosmic-ray air showers\nas well as ns fast laser pulses at 355 nm. Simulations and measurements are in agreement. We validated our LoNS spectrum\nmodel for a wide range of zenith distances by using the signal\ncurrents in SiPM and PMT pixels. Two types of calibrations\nwere applied, one using the single photoelectron spectrum and\n\nWe are very grateful to the members of the MAGIC collaboration for allowing us to install the SiPM modules in the\nMAGIC-I imaging camera and operate them routinely for many\nyears. We would like to express our gratitude to the electronics and mechanical engineers at the Max Planck Institute\nfor Physics (MPP) Werner Haberer, Ronald Maier, and Holger\nWetteskind. We are thankful to the local La Palma crew Javier\n\nHerrera, Victor Acciari, Auni Somero, Marie Karjalainen, and\nEduardo Colombo for their extensive support, and we thank Julian Sitarek for his fruitful inputs to this manuscript. Thanks\nshould also go to the shift crews helping with the data taking, especially to Martin Will (MPP) and Juliane van Scherpenberg (MPP). We would like to thank the Instituto de Astrof´ısica de Canarias (IAC) for the excellent working condi\n\nFigure 26: Ratios of the Cherenkov photons detected by using filters",
+        "score": -7.029240555341127,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6721311475409837,
+        "rerank_score": -10.893837928771973,
+        "matched_nodes": [
+          "The",
+          "At",
+          "For",
+          "We",
+          "To",
+          "Physics"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 38,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 8,
+        "chunk_id": 4924,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko.md",
+        "title": "2024__recid_2779690__2404.14346__Direct_comparison_of_SiPM_and_PMT_sensor_performances_in_a_large-size_imaging_air_Cherenko",
+        "text": "ne SiPMs. This results in negligible systematic and statistical uncertainties for this measurement. The out\nput pulse full width at half maximum (FWHM) increases only\nslightly from 2.4 ns to 2.8 ns for Hamamatsu SiPM-based pixels and similarly from 3.1 ns to 3.4 ns for pixels based on SensL\nSiPMs. For the first generation SiPM-based pixels using Excelitas SiPMs, the FWHM increased from 5.1 ns to 5.9 ns [19].\n\n**5. Expected LoNS and Cherenkov light responses**\n\n_5.1. Spectra and integrals_\n\nTo estimate the expected performance of our SiPM proto\n type modules we compared the spectral photon detection effi\nciency PDE(λ) curves of light sensors with the spectra of the\nLoNS and the Cherenkov light from air showers reaching the\ntelescope camera. The spectra are shown in figure 7. In recent years, MAGIC observations’ mean zenith distance (ZD),\nwhich denotes the angular distance between the telescope pointing direction and zenith, has steadily increased to cover a larger\nsolid angle with more astrophysical sources and a wider energy range. For an example see [29]. Therefore, it is important\nto compare the detector’s PDE with the Cherenkov and LoNS\nspectra not only close to the zenith but also at large zenith dis\ntances.\n\n4\n\nFigure 6: Comparison of the pulse shape of a single SiPM chip with the active\nsum of nine Hamamatsu SiPM chips. The pulse FWHM widens only slightly\nfrom 2.4 ns to 2.8 ns. The amplitudes were normalized for better visualization.\n\nThe Cherenkov light spectrum of air showers at the telescope\ncamera peaks at around 320 nm for low zenith observations, at\n\n an observational altitude of 2.2 km. The peak quantum effi\nciency (QE) of PMTs makes a good match with the Cherenkov\nlight spectrum. All of the SiPMs we used have their peak sensitivity at longer wavelengths, thus detecting a lower number of\nCherenkov photons from the main peak in the near UV region.\nOn the other hand, these collect more photons from the longwavelength tail of the Cherenkov spectrum. At large and verylarge zenith distances the peak of the Cherenkov light spectrum\nshifts towards the blue-green region. This is due to the longer\ndistance to the shower maximum region, from where the majority of photons arrive at the telescope. The longer paths attenuate\nthe near-UV part of the spectrum, due to the Rayleigh scattering and absorption effects. The Cherenkov spectra were generated with CORSIKA [30] and the photon propagation to the\nIACT camera was modeled with an adapted version of MARS,",
+        "score": -7.051224299039998,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.7704918032786885,
+        "rerank_score": -10.939311027526855,
+        "matched_nodes": [
+          "The",
+          "In",
+          "On",
+          "At",
+          "For",
+          "To"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 8,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 9,
+        "chunk_id": 6740,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs.md",
+        "title": "2025__recid_2848260__2411.09358__Microlens-Enhanced_SiPMs",
+        "text": "radiation environment\nas an additional criterion, small pixel size and low excess\nbias voltage (over-voltage, ∆ _V_ ) are also preferred to reduce\nthe effect of increasing the dark count rate (DCR) (heat\ndissipation and self-heating), as well as reducing correlated\n\n“This work was supported by the Swiss National Science Foundation under\nGrant 215635 and 216604.”\n\nG. Haefeli, F. Blanc, E. Curr´as-Rivera, R. Marchevski, F. Ronchetti,\nO. Schneider, L. Shchutska, and G. Zunica are with the Institute of Physics,\n´Ecole Polytechnique F´ed´erale de Lausanne, Route de Sorge, Lausanne,\nSwitzerland.\nAt the time of this work, C. Trippl was with the Institute of Physics,\n´Ecole Polytechnique F´ed´erale de Lausanne, and is now at DS4DS, La Salle,\nUniversitat Ramon Llull, Barcelona, Spain.\nAt the time of this work, E. Zaffaroni was with the Institute of Physics,\n´Ecole Polytechnique F´ed´erale de Lausanne, and is now at Universit´e de\nGen`eve, Geneva, Switzerland.\n\nnoise. In summary, the small pixel size and the low ∆ _V_ are\nadvantageous in all aspects except for the PDE.\nThe hit detection efficiency of the scintillating fibre tracker\ntechnology depends on the actual signal (scintillating light)\nproduced and the PDE of the photodetector. For a given fibre\ntechnology and fibre length, stacking several layers of fibres\nis used to increase the signal for a traversing particle. This\ncomes at the cost of a higher material budget, a large signal\nspread for incident particles with a large incident angle, and\nlast but not least a higher cost for more scintillating fibres.\nThe implementation of microlens arrays (MLAs) aligned with\nthe pixel structure has been successfully tested, and the results\nare presented in the following.\n\nII. T HE MICROLENS ON S I PM S\n\nEnhancing imaging photodetectors with pixel level microlenses is commonly used for CCD and CMOS camera\nsensors [2] and has also been successfully applied to SPAD\narray sensors in the last years [3]–[5]. A good overview of\nthe fabrication process of refractive MLAs is given in [6],\nfocusing on spherical lenses, although cylindrical lenses can be\nobtained with the same process [7]. The process used for our\napplication is based on photoresist processing, followed by a\nthermal reflow yielding a master mold. This mold is used with\na UV-curable polymer to replicate the MLA on the wafer level.\nOther fabrication processes are microdroplet inkjet printing\nor MEMS-based. The implementation of microlenses requires\nhigh-precision manu",
+        "score": -7.056433852774198,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.8196721311475409,
+        "rerank_score": -10.95315170288086,
+        "matched_nodes": [
+          "The",
+          "In",
+          "On",
+          "At",
+          "HE",
+          "For"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      },
+      {
+        "rank": 10,
+        "chunk_id": 6620,
+        "source": "/eos/home-r/rjiang/RAG_pixel/main_markdown/2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance.md",
+        "title": "2025__recid_2835788__2409.20093__The_TOTEM_nT2_detector_architecture_operation_and_performance",
+        "text": "m | _𝑡_ | = 0 [3]. The two sets of measurements, total cross section and _𝜌_, lead to the\n\nfirst evidence of the Odderon [4], C-odd counterpart of the Pomeron, the latter being the main actor\n\nin the Regge theory for diffractive forward physics. Combing TOTEM and D0 data, collected at\nFermilab in _𝑝_ ~~_𝑝_~~ collisions at ~~[√]~~ ~~_𝑠_~~ = 1 _._ 96 TeV, the discovery was claimed [5].\n\nDifferently from the other LHC experiments, TOTEM requires a special configuration of the\n\nmachine optics to be able to detect elastic protons scattered at a few microradians. Such optics,\n\ncharacterized by a very high value of the beta function at the IP _𝛽_ [∗] (from 90 m up to 6 km), requires\n\ndedicated LHC fills, referred to as _special run_ . To better constrain the theoretical models on the\nOdderon, additional special runs were approved by the LHC, in particular one at ~~[√]~~ ~~_𝑠_~~ = 13 _._ 6 TeV\n\nwith _𝛽_ [∗] =90 m, aiming to determine the total cross section, scheduled for June 2023.\n\nThe precise measurement of the total cross section with the _luminosity-independent_ method [6]\n\nrequires the simultaneous determination of the differential elastic cross section and the inelastic\n\nevent rate. The detection of very forward protons originating from elastic collisions is performed\n\nin the Roman Pots (RP), movable pipe insertions with a secondary vacuum, symmetrically located\n\nat around 200–220 m from the LHC IP5. The RPs can be moved into the primary vacuum\n\nof the machine through vacuum bellows, allowing the equipped detector to approach the LHC\n\nbeam down to few millimetres. In TOTEM, they are instrumented with silicon strip detectors [1].\n\nInelastic events are instead detected by dedicated detectors, called forward telescopes, symmetrically\n\nintegrated with the CMS structure at few meters from the IP, instrumenting the forward pseudorapity\n\n_𝜂_ region. For the previous measurements of TOTEM, two inelastic telescopes were in use, T1 and\n\nT2 [1]. However, after having successfully sustained a radiation damage 10 times above the\n\ndesign requirements, they have been dismounted. An R&D was hence initiate to replace the\n\ninelastic detector T2 with a new inelastic telescope, called nT2 [7]. The nT2 is designed to cover a\npseudorapidity region 5.3 < | _𝜂_ | < 6.5, allowing to detect more than 90% of the inelastic events.\n\n**2.** **The nT2 detector for inelastic event tagging**\n\nTo cope with the project budget, requirements and R&D schedule, scintillators coupled to\n\nSilicon",
+        "score": -7.071996731336,
+        "dense_score": null,
+        "bm25_score": null,
+        "graph_score": 0.6721311475409837,
+        "rerank_score": -10.959616661071777,
+        "matched_nodes": [
+          "The",
+          "In",
+          "For",
+          "To",
+          "LHC",
+          "CMS"
+        ],
+        "path_nodes": [
+          "The"
+        ],
+        "community_id": "The",
+        "metadata": {
+          "chunk_index": 1,
+          "type": "md",
+          "ingest_method": "ocr_text",
+          "diagnostics": {}
+        }
+      }
+    ],
+    "seed_nodes": {
+      "The": 1.0,
+      "In": 1.0,
+      "On": 1.0,
+      "Collaboration": 1.0,
+      "At": 1.0,
+      "De": 1.0,
+      "HE": 1.0,
+      "ID": 1.0
+    },
+    "expanded_nodes": {
+      "The": 1.0,
+      "In": 1.0,
+      "On": 1.0,
+      "Collaboration": 1.0,
+      "At": 1.0,
+      "De": 1.0,
+      "HE": 1.0,
+      "ID": 1.0,
+      "For": 0.7,
+      "We": 0.7,
+      "To": 0.7,
+      "LHC": 0.7,
+      "CMS": 0.7,
+      "Nature": 0.7,
+      "Quantum": 0.7,
+      "Physics": 0.7
+    },
+    "diagnostics": {
+      "query_info": {
+        "needs_graph": false,
+        "needs_abstention_caution": false,
+        "query_family": "local"
+      },
+      "mode_requested": "graph_rag",
+      "seed_node_count": 8,
+      "expanded_node_count": 16,
+      "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    },
+    "retrieval_latency_s": 5.84516986599192,
+    "generation_latency_s": 3.6973506212234497e-07
+  },
+  "metrics": {
+    "MRR": 0.0,
+    "MAP": 0.0,
+    "P@1": 0.0,
+    "R@1": 0.0,
+    "NDCG@1": 0.0,
+    "Hit@1": 0.0,
+    "P@3": 0.0,
+    "R@3": 0.0,
+    "NDCG@3": 0.0,
+    "Hit@3": 0.0,
+    "P@5": 0.0,
+    "R@5": 0.0,
+    "NDCG@5": 0.0,
+    "Hit@5": 0.0,
+    "P@8": 0.0,
+    "R@8": 0.0,
+    "NDCG@8": 0.0,
+    "Hit@8": 0.0,
+    "graph_hit_fraction": 1.0,
+    "path_hit_fraction": 1.0,
+    "unique_sources": 9.0,
+    "seed_node_count": 8.0,
+    "expanded_node_count": 16.0,
+    "retrieval_latency_s": 5.84516986599192,
+    "generation_latency_s": 3.6973506212234497e-07
+  }
+}
